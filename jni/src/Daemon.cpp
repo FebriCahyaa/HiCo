@@ -320,6 +320,8 @@ void Daemon::publish(const thermal::Temperatures &t) const {
     kv("device", dev.codename);
     kv("device_profile", dev.in_database ? "verified" : "generic");
     kv("soc", to_string(dev.soc));
+    kv("rom", to_string(dev.rom));
+    kv("rom_name", dev.rom_name);
     kv("backends", controller_.backend_names());
     kv("pid", std::to_string(getpid()));
     kv("version", HICO_VERSION);

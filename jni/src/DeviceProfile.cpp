@@ -15,6 +15,7 @@
 #include <algorithm>
 #include <cctype>
 #include <string>
+#include <tuple>
 
 namespace hico {
 
@@ -30,6 +31,28 @@ std::string lower(std::string v) {
 }
 
 } // namespace
+
+std::string_view to_string(RomFamily r) {
+    switch (r) {
+    case RomFamily::HyperOS: return "hyperos";
+    case RomFamily::Miui: return "miui";
+    case RomFamily::Lineage: return "lineage";
+    case RomFamily::Aosp: return "aosp";
+    }
+    return "aosp";
+}
+
+std::pair<RomFamily, std::string> detect_rom() {
+    if (const std::string v = props::get("ro.mi.os.version.name"); !v.empty()) return {RomFamily::HyperOS, "HyperOS " + v};
+    if (const std::string v = props::get("ro.miui.ui.version.name"); !v.empty()) return {RomFamily::Miui, "MIUI " + v};
+    if (const std::string v = props::get("ro.lineage.version"); !v.empty()) {
+        const std::string mod = props::get("ro.modversion");
+        return {RomFamily::Lineage, mod.empty() ? "LineageOS " + v : mod};
+    }
+    std::string name = props::get("ro.modversion");
+    if (name.empty()) name = props::get("ro.build.display.id");
+    return {RomFamily::Aosp, name.empty() ? "AOSP" : name};
+}
 
 bool is_valid_codename(std::string_view s) {
     if (s.empty() || s.size() > 64) return false;
@@ -73,6 +96,7 @@ DeviceProfile DeviceProfile::detect(std::span<const DeviceRecord> db) {
         p.model = props::get("ro.product.model");
         p.platform = props::get("ro.board.platform");
     }
+    std::tie(p.rom, p.rom_name) = detect_rom();
     // A record from an older dump may lack the platform; the live device always knows it.
     if (p.soc == SocVendor::Unknown) {
         for (const char *prop : {"ro.board.platform", "ro.soc.model", "ro.hardware"}) {

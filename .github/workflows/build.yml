@@ -71,4 +71,4 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: hico-build
-          path: ${{ steps.compileZip.outputs.zip-name }}
+          path: ${{ steps.compileZip.outputs.zips }}

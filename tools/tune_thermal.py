@@ -9,7 +9,8 @@
 """Tune every collected Xiaomi thermal config for its chipset, and verify it.
 
 Reads   devices/xiaomi/<codename>.prop              (platform -> chipset policy)
-        devices/xiaomi/<codename>/thermal/*.conf    (stock vendor configs)
+        devices/xiaomi/<codename>/thermal/*.conf    (stock vendor configs, thermal-engine syntax)
+        devices/xiaomi/<codename>/thermal/thermal_info_config*.json (thermal HAL)
 Writes  devices/xiaomi/<codename>/tuned/*.conf      (relaxed configs, for review)
         docs/THERMAL_TUNING.md                      (per-device report)
 
@@ -64,7 +65,9 @@ def tune_device(hicod: str, prop: Path, margin: int) -> dict:
         return result
 
     extra = ["--platform", platform or "unknown"] + (["--margin", str(margin)] if margin else [])
-    for conf in sorted(thermal_dir.glob("*.conf")):
+    # thermal-engine / mi_thermald configs and thermal HAL JSON (AOSP-based ROMs, newer vendors).
+    configs = sorted([*thermal_dir.glob("*.conf"), *thermal_dir.glob("thermal_info_config*.json")])
+    for conf in configs:
         result["files"] += 1
         r = run(hicod, "thermal", "tune", str(conf), *extra)
         report = dict(REPORT_RE.findall(r.stderr.decode(errors="replace").splitlines()[0] if r.stderr else ""))

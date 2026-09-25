@@ -80,10 +80,41 @@ unzip -o "$ZIPFILE" 'verify.sh' -d "$TMPDIR" >&2
 [ -f "$TMPDIR/verify.sh" ] || abort_box "Unable to extract verify.sh, the zip may be corrupted."
 . "$TMPDIR/verify.sh"
 
+# Build flavor: arm64 / arm zips carry one binary, the universal zip both.
+flavor=universal
+if unzip -l "$ZIPFILE" flavor >/dev/null 2>&1; then
+	extract "$ZIPFILE" flavor "$TMPDIR"
+	flavor=$(head -n 1 "$TMPDIR/flavor")
+fi
+abi32=$(getprop ro.product.cpu.abilist32)
+if [ "$ARCH" = "arm64" ] && [ -z "$abi32" ]; then
+	ui_print "- CPU: $ABI, 64-bit-only ROM (no 32-bit userspace)"
+elif [ "$ARCH" = "arm64" ]; then
+	ui_print "- CPU: $ABI (64-bit ROM with 32-bit support)"
+else
+	ui_print "- CPU: $ABI (32-bit ROM)"
+fi
+case "$flavor" in
+arm64)
+	[ "$ARCH" = "arm64" ] || abort_box "This is the 64-bit (arm64) build of HiCo Thermal," \
+		"but this ROM runs a 32-bit (armeabi-v7a) userspace." \
+		"Install the 32-bit build: hico-*-arm.zip"
+	;;
+arm)
+	[ "$ARCH" = "arm" ] || abort_box "This is the 32-bit (arm) build of HiCo Thermal," \
+		"but this ROM is 64-bit (arm64-v8a)." \
+		"Install the 64-bit build: hico-*-arm64.zip"
+	;;
+universal) ;;
+*) abort_box "Unknown build flavor '$flavor', the zip may be corrupted." ;;
+esac
+ui_print "- Build: $flavor"
+
 ui_print "- Extracting module files"
 for f in module.prop service.sh uninstall.sh action.sh LICENSE EULA.md NOTICE.md; do
 	extract "$ZIPFILE" "$f" "$MODPATH"
 done
+echo "$flavor" >"$MODPATH/flavor"
 cp "$MODPATH/module.prop" "$MODPATH/module.prop.orig"
 
 extract "$ZIPFILE" "libs/$ABI/hicod" "$TMPDIR"
@@ -120,6 +151,7 @@ if printf '%s\n' "$device_info" | grep -q '^database: yes'; then
 else
 	ui_print "- Device $(printf '%s\n' "$device_info" | sed -n 's/^codename: //p') is not in the device database: runtime detection"
 fi
+ui_print "  ROM: $(printf '%s\n' "$device_info" | sed -n 's/^rom: //p' | cut -d';' -f1)"
 ui_print "  Thermal backends: $(printf '%s\n' "$device_info" | sed -n 's/^backends: //p')"
 
 ui_print "- HiCo Thermal installed. Reboot to activate."

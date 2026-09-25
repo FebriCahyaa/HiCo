@@ -9,6 +9,7 @@
 #pragma once
 
 #include <cstdint>
+#include <utility>
 #include <span>
 #include <string>
 #include <string_view>
@@ -17,6 +18,19 @@
 #include "DeviceDatabase.hpp"
 
 namespace hico {
+
+/// The ROM running on the device (the database describes the stock firmware).
+enum class RomFamily {
+    HyperOS,
+    Miui,
+    Lineage, ///< LineageOS and ROMs built on it (crDroid, ...)
+    Aosp,    ///< any other AOSP-based ROM
+};
+
+[[nodiscard]] std::string_view to_string(RomFamily r);
+
+/// ROM family and display name from system properties.
+[[nodiscard]] std::pair<RomFamily, std::string> detect_rom();
 
 /**
  * The thermal facts HiCo knows about the running device.
@@ -39,6 +53,8 @@ struct DeviceProfile {
     SocVendor soc = SocVendor::Unknown;
     std::uint32_t traits = 0;  ///< Trait bits
     bool in_database = false;  ///< true: built from a compiled record
+    RomFamily rom = RomFamily::Aosp; ///< ROM actually running (detect() only)
+    std::string rom_name;      ///< e.g. "HyperOS OS2.0", "LineageOS 22.1"
 
     [[nodiscard]] bool has(Trait t) const { return (traits & t) != 0; }
 

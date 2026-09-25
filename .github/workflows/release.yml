@@ -3,8 +3,8 @@ name: Release
 # Builds HiCo Thermal from this private repository and publishes it to the
 # PUBLIC release channel (vars.RELEASE_REPO, default FebriCahyaa/HiCo-Release):
 #
-#   - a GitHub Release there with the flashable zip and its SHA-256
-#   - update.json, changelog.md, EULA.md and README.md on its default branch
+#   - a GitHub Release there with the flashable zips (arm64, arm, universal) and SHA-256s
+#   - update.json, update-arm64.json, update-arm.json, changelog.md, EULA.md and README.md on its default branch
 #
 # Root managers read update.json through `updateJson` in module.prop and
 # download the zip from the public release, so users get update
@@ -84,11 +84,11 @@ jobs:
 
       - name: Checksum and notes
         env:
-          ZIP: ${{ steps.build.outputs.zip-name }}
+          ZIPS: ${{ steps.build.outputs.zips }}
         run: |
           set -euo pipefail
-          sha256sum "$ZIP" >"$ZIP.sha256"
-          echo "ZIP_SHA256=$(cut -d' ' -f1 "$ZIP.sha256")" >>"$GITHUB_ENV"
+          mapfile -t zips <<<"$ZIPS"
+          for zip in "${zips[@]}"; do sha256sum "$zip" >"$zip.sha256"; done
           echo "VERSION_CODE=$(git rev-list --count HEAD)" >>"$GITHUB_ENV"
 
           previous=$(git describe --tags --abbrev=0 HEAD 2>/dev/null || true)
@@ -101,23 +101,33 @@ jobs:
             echo
             echo "## Install"
             echo
-            echo "Requires **Flux Tweaks v1.2.0+**. Flash \`$ZIP\` in Magisk, KernelSU or APatch and reboot,"
-            echo "or update from the root manager. By installing you accept the [EULA](EULA.md)."
+            echo "Requires **Flux Tweaks v1.2.0+**. Flash the zip for your ROM in Magisk, KernelSU or APatch"
+            echo "and reboot, or update from the root manager. By installing you accept the [EULA](EULA.md)."
             echo
-            echo "| File | SHA-256 |"
-            echo "|---|---|"
-            echo "| \`$ZIP\` | \`$(cut -d' ' -f1 "$ZIP.sha256")\` |"
+            echo "| ROM | File | SHA-256 |"
+            echo "|---|---|---|"
+            for zip in "${zips[@]}"; do
+              case "$zip" in
+              *-arm64.zip) rom="64-bit (arm64-v8a), incl. 64-bit-only ROMs" ;;
+              *-arm.zip) rom="32-bit (armeabi-v7a)" ;;
+              *) rom="Universal (64-bit and 32-bit)" ;;
+              esac
+              echo "| $rom | \`$zip\` | \`$(cut -d' ' -f1 "$zip.sha256")\` |"
+            done
           } >"$RUNNER_TEMP/notes.md"
 
       - name: Publish release (public channel)
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-          ZIP: ${{ steps.build.outputs.zip-name }}
+          ZIPS: ${{ steps.build.outputs.zips }}
         run: |
           set -euo pipefail
+          mapfile -t zips <<<"$ZIPS"
+          files=()
+          for zip in "${zips[@]}"; do files+=("$zip" "$zip.sha256"); done
           flags=()
           [[ "$PRERELEASE" == "true" ]] && flags+=(--prerelease)
-          gh release create "$TAG" "$ZIP" "$ZIP.sha256" --repo "$RELEASE_REPO" \
+          gh release create "$TAG" "${files[@]}" --repo "$RELEASE_REPO" \
             --title "HiCo Thermal $TAG" --notes-file "$RUNNER_TEMP/notes.md" "${flags[@]}"
 
       - name: Publish update.json (public channel)
@@ -125,13 +135,14 @@ jobs:
         if: env.PRERELEASE != 'true'
         env:
           ZIP: ${{ steps.build.outputs.zip-name }}
+          ZIP_ARM64: ${{ steps.build.outputs.zip-arm64 }}
+          ZIP_ARM: ${{ steps.build.outputs.zip-arm }}
         run: |
           set -euo pipefail
           dir="$RUNNER_TEMP/release-repo"
           git clone --depth 1 "https://x-access-token:${RELEASE_TOKEN}@github.com/${RELEASE_REPO}.git" "$dir"
           branch=$(git -C "$dir" rev-parse --abbrev-ref HEAD)
           raw="https://raw.githubusercontent.com/$RELEASE_REPO/$branch"
-          zip_url="https://github.com/$RELEASE_REPO/releases/download/$TAG/$ZIP"
 
           {
             echo "## HiCo Thermal $TAG"
@@ -144,7 +155,13 @@ jobs:
           } >"$RUNNER_TEMP/changelog.md"
           { echo "# HiCo Thermal Changelog"; echo; cat "$RUNNER_TEMP/changelog.md"; } >"$dir/changelog.md"
 
-          python3 - "$TAG" "$VERSION_CODE" "$zip_url" "$raw/changelog.md" "$ZIP_SHA256" "$dir/update.json" <<'PY'
+          # One update channel per build: each installed zip keeps getting its own flavor
+          # (module.prop updateJson points at update.json, update-arm64.json or update-arm.json).
+          for pair in "update.json:$ZIP" "update-arm64.json:$ZIP_ARM64" "update-arm.json:$ZIP_ARM"; do
+            json=${pair%%:*}
+            zip=${pair#*:}
+            python3 - "$TAG" "$VERSION_CODE" "https://github.com/$RELEASE_REPO/releases/download/$TAG/$zip" \
+              "$raw/changelog.md" "$(cut -d' ' -f1 "$zip.sha256")" "$dir/$json" <<'PY'
           import json, sys
           tag, code, zip_url, changelog, sha, out = sys.argv[1:]
           with open(out, "w") as f:
@@ -152,6 +169,7 @@ jobs:
                          "changelog": changelog, "sha256": sha}, f, indent=2)
               f.write("\n")
           PY
+          done
 
           cp EULA.md NOTICE.md "$dir/"
           cat >"$dir/README.md" <<EOF
@@ -160,7 +178,11 @@ jobs:
           Automatic thermal unlock for games, part of the Flux ecosystem. **Private software**: this
           repository is the public release channel; the source code is not published.
 
-          - **Download:** [latest release](https://github.com/$RELEASE_REPO/releases/latest)
+          - **Download:** [latest release](https://github.com/$RELEASE_REPO/releases/latest):
+            \`*-arm64.zip\` for 64-bit ROMs (including 64-bit-only AOSP ROMs), \`*-arm.zip\` for
+            32-bit ROMs, \`*-universal.zip\` works on both. Not sure? Take the universal zip; the
+            installer refuses a zip that does not match the ROM.
+          - **ROMs:** MIUI, HyperOS, LineageOS and other AOSP-based ROMs
           - **Requires:** [Flux Tweaks](https://github.com/FebriCahyaa/Flux/releases) v1.2.0 or newer,
             root (Magisk, KernelSU or APatch), Android 9+
           - **Updates:** installed modules are notified by the root manager through \`update.json\`
@@ -172,7 +194,7 @@ jobs:
           cd "$dir"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add update.json changelog.md EULA.md NOTICE.md README.md
+          git add update.json update-arm64.json update-arm.json changelog.md EULA.md NOTICE.md README.md
           git commit -m "release: HiCo Thermal $TAG" -m "versionCode $VERSION_CODE"
           git push origin "HEAD:$branch"
 

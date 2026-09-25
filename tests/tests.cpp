@@ -847,6 +847,104 @@ void test_levels_whitelist_blacklist() {
     CHECK(d.state() == State::Idle);
 }
 
+// Pixel/AOSP-style thermal HAL config, as shipped by AOSP-based ROMs.
+const std::string kHalJson = R"({
+    "Sensors":[
+        {
+            "Name":"VIRTUAL-SKIN",
+            "Type":"SKIN",
+            "HotThreshold":["NAN", 39.0, 43.0, 45.0, 47.0, 52.0, 55.0],
+            "HotHysteresis":[0.0, 1.9, 1.9, 1.9, 1.9, 1.9, 1.9],
+            "Multiplier":0.001
+        },
+        {
+            "Name":"cpu-1-0-usr",
+            "Type":"CPU",
+            "HotThreshold":["NAN", "NAN", "NAN", 95, "NAN", "NAN", 125]
+        },
+        {
+            "Name":"battery",
+            "Type":"BATTERY",
+            "HotThreshold":["NAN", 38.0, 40.0, 42.0, 44.0, 50.0, 60.0]
+        },
+        {
+            "Name":"VIRTUAL-SKIN-HIGH",
+            "Type":"SKIN",
+            "HotThreshold":["NAN", 44.0, 46.0, 47.5, 48.0, 50.0, 55.0]
+        }
+    ],
+    "CoolingDevices":[{"Name":"cpu-cluster0","Type":"CPU"}]
+}
+)";
+
+void test_hal_json_tuner() {
+    using namespace thermalcfg;
+    CHECK(detect_format(kHalJson) == Format::HalJson);
+    CHECK(detect_format(kEngineConf) == Format::Engine);
+    CHECK(detect_format("{\"Sensors\": []}") == Format::Unknown); // nothing to tune
+    CHECK(detect_format("{ broken json") == Format::Unknown);
+
+    const Policy p = policy_for(SocVendor::Qualcomm, "taro"); // +6 C
+    const auto r = tune(kHalJson, p);
+    CHECK(r.has_value());
+    if (!r) return;
+    CHECK_EQ(r->sections, 4);
+    CHECK_EQ(r->tuned_sections, 2);
+    // Skin LIGHT..CRITICAL +6, capped 10 C below EMERGENCY (52 -> 42 max): 39 -> 42, the rest stay (never lowered).
+    CHECK(r->text.find(R"("HotThreshold":["NAN", 42.0, 43.0, 45.0, 47.0, 52.0, 55.0])") != std::string::npos);
+    // CPU SEVERE 95 -> 101 (integer style kept), SHUTDOWN 125 untouched.
+    CHECK(r->text.find(R"("HotThreshold":["NAN", "NAN", "NAN", 101, "NAN", "NAN", 125])") != std::string::npos);
+    // Battery never changed.
+    CHECK(r->text.find(R"("HotThreshold":["NAN", 38.0, 40.0, 42.0, 44.0, 50.0, 60.0])") != std::string::npos);
+    // Guard leaves no room below EMERGENCY 50 for the high skin sensor: unchanged.
+    CHECK(r->text.find(R"("HotThreshold":["NAN", 44.0, 46.0, 47.5, 48.0, 50.0, 55.0])") != std::string::npos);
+    // Only those number tokens changed: same length difference as the edits.
+    CHECK(verify(kHalJson, r->text, p).empty());
+
+    auto tampered = r->text;
+    tampered.replace(tampered.find("125]"), 3, "135");
+    CHECK(!verify(kHalJson, tampered, p).empty()); // SHUTDOWN changed
+    tampered = r->text;
+    tampered.replace(tampered.find("\"Multiplier\":0.001"), 18, "\"Multiplier\":0.002");
+    CHECK(!verify(kHalJson, tampered, p).empty()); // content outside thresholds
+    tampered = r->text;
+    tampered.replace(tampered.find(", 101,"), 6, ", 104,");
+    CHECK(!verify(kHalJson, tampered, p).empty()); // beyond the margin
+}
+
+void test_rom_and_hal_overlay() {
+    build_device();
+    // ROM detection.
+    CHECK(detect_rom().first == RomFamily::Aosp);
+    put("/__props__/ro.lineage.version", "22.1");
+    CHECK(detect_rom().first == RomFamily::Lineage && detect_rom().second == "LineageOS 22.1");
+    put("/__props__/ro.modversion", "crDroidAndroid-15.0");
+    CHECK(detect_rom().second == "crDroidAndroid-15.0");
+    put("/__props__/ro.mi.os.version.name", "OS2.0");
+    CHECK(detect_rom().first == RomFamily::HyperOS);
+    put("/__props__/ro.mi.os.version.name", "");
+    put("/__props__/ro.miui.ui.version.name", "V14");
+    CHECK(detect_rom().first == RomFamily::Miui);
+
+    // AOSP ROM with a thermal HAL JSON and no thermal-engine: relaxing restarts the HAL, not the daemons.
+    put("/__props__/ro.miui.ui.version.name", "");
+    put("/vendor/etc/thermal_info_config.json", kHalJson);
+    DeviceProfile qcom;
+    qcom.soc = SocVendor::Qualcomm;
+    qcom.platform = "taro";
+    Journal journal(HICO_JOURNAL_FILE);
+    ThermalController c(journal, qcom);
+    CHECK_EQ(c.relax(Config{}), 1);
+    CHECK(get("/__mounts__").find("/vendor/etc/thermal_info_config.json <- ") != std::string::npos);
+    const std::string log = get("/__props__/__ctl_log__");
+    CHECK(log.find("ctl.restart vendor.thermal-hal-2-0") != std::string::npos);
+    CHECK(log.find("ctl.restart thermal-engine") == std::string::npos);
+    CHECK(fs::read_raw("/vendor/etc/thermal_info_config.json", 1 << 20) == kHalJson);
+    const auto r = c.restore();
+    CHECK_EQ(r.mounts, 1);
+    CHECK(get("/__mounts__").find("thermal_info_config.json") == std::string::npos);
+}
+
 } // namespace
 
 int main() {
@@ -870,6 +968,8 @@ int main() {
         {"thermal tuner", test_thermal_tuner},
         {"relaxed overlay", test_relaxed_overlay},
         {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
+        {"thermal HAL JSON tuner", test_hal_json_tuner},
+        {"ROM detection and HAL overlay", test_rom_and_hal_overlay},
     };
 
     for (const auto &[name, fn] : tests) {

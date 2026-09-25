@@ -173,6 +173,7 @@ int ThermalController::relax(const Config &cfg) {
     struct Pending {
         std::string target;
         std::string tuned;
+        bool hal = false; ///< thermal HAL JSON: the HAL must be restarted to read it
     };
     std::vector<Pending> pending;
     int relaxed = 0;
@@ -190,16 +191,20 @@ int ThermalController::relax(const Config &cfg) {
             LOGW("relax: {} rejected by verification: {}", path, errors.front());
             continue;
         }
-        pending.push_back({path, result->text});
+        pending.push_back({path, result->text, thermalcfg::detect_format(*original) == thermalcfg::Format::HalJson});
     }
     if (pending.empty()) return relaxed;
 
     if (!fs::ensure_dir(HICO_RUNTIME_DIR "/thermal", 0755)) return relaxed;
 
     // Restarts are journaled before the mounts, so a restore unmounts first and then restarts.
+    // Engine configs are read by the thermal daemons; HAL JSON by the thermal HAL (AOSP-based ROMs).
+    const bool hal_configs = std::any_of(pending.begin(), pending.end(), [](const Pending &p) { return p.hal; });
+    const bool engine_configs = std::any_of(pending.begin(), pending.end(), [](const Pending &p) { return !p.hal; });
     std::vector<std::string> daemons;
     for (const auto &svc : services::thermal_services(device_.thermal_services)) {
-        if (svc.kind == services::Kind::Daemon && (svc.state == "running" || svc.state == "restarting")) {
+        const bool wanted = svc.kind == services::Kind::Hal ? hal_configs : engine_configs;
+        if (wanted && (svc.state == "running" || svc.state == "restarting")) {
             journal_.record_restart(svc.name);
             daemons.push_back(svc.name);
         }

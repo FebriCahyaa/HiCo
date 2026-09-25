@@ -257,7 +257,9 @@ std::vector<std::string> device_config_files() {
     std::vector<std::string> seen;
     for (const auto dir : kDirs) {
         for (const auto &name : fs::list_dir(dir)) {
-            if (!name.starts_with("thermal") || !name.ends_with(".conf")) continue;
+            const bool engine = name.starts_with("thermal") && name.ends_with(".conf");
+            const bool hal = name.starts_with("thermal_info_config") && name.ends_with(".json");
+            if (!engine && !hal) continue;
             if (std::find(seen.begin(), seen.end(), name) != seen.end()) continue; // first partition wins
             seen.push_back(name);
             out.push_back(std::string(dir) + "/" + name);
@@ -266,7 +268,7 @@ std::vector<std::string> device_config_files() {
     return out;
 }
 
-bool is_tunable_text(std::string_view content) {
+static bool is_engine_text(std::string_view content) {
     if (content.empty()) return false;
     const std::string_view sample = content.substr(0, 4096);
     const auto binary = std::count_if(sample.begin(), sample.end(), [](char c) {
@@ -279,8 +281,8 @@ bool is_tunable_text(std::string_view content) {
                        [&m](const Section &s) { return find(m, s, "thresholds") || find(m, s, "set_point"); });
 }
 
-std::optional<Result> tune(std::string_view content, const Policy &policy) {
-    if (!is_tunable_text(content)) return std::nullopt;
+static std::optional<Result> tune_engine(std::string_view content, const Policy &policy) {
+    if (!is_engine_text(content)) return std::nullopt;
 
     Model m = parse(content);
     Result r;
@@ -337,7 +339,7 @@ std::optional<Result> tune(std::string_view content, const Policy &policy) {
     return r;
 }
 
-std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy) {
+static std::vector<std::string> verify_engine(std::string_view original, std::string_view tuned, const Policy &policy) {
     std::vector<std::string> errors;
     const Model a = parse(original);
     const Model b = parse(tuned);
@@ -400,6 +402,34 @@ std::vector<std::string> verify(std::string_view original, std::string_view tune
         }
     }
     return errors;
+}
+
+Format detect_format(std::string_view content) {
+    if (haljson::is_config(content)) return Format::HalJson;
+    if (is_engine_text(content)) return Format::Engine;
+    return Format::Unknown;
+}
+
+bool is_tunable_text(std::string_view content) {
+    return detect_format(content) != Format::Unknown;
+}
+
+std::optional<Result> tune(std::string_view content, const Policy &policy) {
+    switch (detect_format(content)) {
+    case Format::HalJson: return haljson::tune(content, policy);
+    case Format::Engine: return tune_engine(content, policy);
+    case Format::Unknown: break;
+    }
+    return std::nullopt;
+}
+
+std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy) {
+    switch (detect_format(original)) {
+    case Format::HalJson: return haljson::verify(original, tuned, policy);
+    case Format::Engine: return verify_engine(original, tuned, policy);
+    case Format::Unknown: break;
+    }
+    return original == tuned ? std::vector<std::string>{} : std::vector<std::string>{"unknown format must not change"};
 }
 
 } // namespace hico::thermalcfg

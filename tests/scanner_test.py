@@ -410,6 +410,8 @@ class TuneThermalTest(unittest.TestCase):
                 (data / f"{codename}.prop").write_text(f"codename={codename}\nbrand=Xiaomi\nplatform={platform}\n")
                 (data / codename / "thermal" / "thermal-engine.conf").write_text(conf)
             (data / "testqc" / "thermal" / "thermal-tgame.conf").write_bytes(b"\x00\x13\x9fencrypted")
+            (data / "testqc" / "thermal" / "thermal_info_config.json").write_text(
+                '{"Sensors":[{"Name":"cpu-1-0-usr","Type":"CPU","HotThreshold":["NAN","NAN","NAN",95.0,"NAN","NAN",125.0]}]}')
 
             report = Path(tmp, "REPORT.md")
             r = subprocess.run([sys.executable, str(ROOT / "tools" / "tune_thermal.py"), "--hicod", str(HICOD),
@@ -421,8 +423,10 @@ class TuneThermalTest(unittest.TestCase):
             self.assertIn("thresholds 45000 47000", mtk)  # MediaTek (non-Dimensity): +4 C
             self.assertIn("thresholds 70000\nactions shutdown", qc)  # shutdown untouched
             self.assertFalse((data / "testqc/tuned/thermal-tgame.conf").exists())  # encrypted: not tuned
+            hal = (data / "testqc/tuned/thermal_info_config.json").read_text()
+            self.assertIn('"NAN",101.0,"NAN","NAN",125.0', hal)  # thermal HAL JSON: SEVERE +6, SHUTDOWN kept
             text = report.read_text()
-            self.assertIn("| `testqc` | taro | qualcomm-flagship | 6 °C | 2 | 1 | 1 | 1 of 2 |", text)
+            self.assertIn("| `testqc` | taro | qualcomm-flagship | 6 °C | 3 | 2 | 2 | 2 of 3 |", text)
             self.assertIn("| `testmtk` | mt6765 | mediatek | 4 °C | 1 | 1 | 1 | 1 of 2 |", text)
 
 

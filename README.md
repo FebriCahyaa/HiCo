@@ -133,8 +133,12 @@ dumps.tadiphone.dev ─ tools/xiaomi_devices.py ─▶ devices/xiaomi/<codename>
   their kernel exposes.
 - **Actuator** — the single write path: journaled for exact restore, restricted to `/sys` and `/proc`.
 
-**Thermal tuner** (`ThermalConfig.cpp`) — reads and writes vendor thermal configs (thermal-engine
-syntax, also used by plain-text mi_thermald configs) and raises eligible trips by a **chipset
+**Thermal tuner** (`ThermalConfig.cpp`, `ThermalHalJson.cpp`) — reads and writes vendor thermal
+configs in both formats: thermal-engine syntax (also used by plain-text mi_thermald configs) and
+the AIDL/HIDL thermal HAL JSON (`thermal_info_config*.json`, used by AOSP-based ROMs and newer
+vendors). In the HAL JSON only the `HotThreshold` levels LIGHT…CRITICAL are raised; EMERGENCY and
+SHUTDOWN, battery / USB / BCL / power-amplifier sensors and number formatting are left as they are,
+and after a HAL config is tuned the thermal HAL is restarted so it reads it. The tuner raises eligible trips by a **chipset
 policy**: Qualcomm flagship +6 °C, other Qualcomm +5 °C, MediaTek Dimensity +5 °C, other
 MediaTek / Exynos / Tensor / Unisoc / unknown +4 °C (HiCo's conservative defaults, not vendor
 data; `relax_margin` overrides them). Shutdown sections, battery / charger / PMIC sensors,
@@ -167,10 +171,31 @@ and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`
 A server that ignores the filter is refused rather than downloaded in full. CI fails when the
 compiled table is out of date with `devices/` (`gen_device_db.py --check`).
 
+## ROMs: MIUI, HyperOS and AOSP
+
+`hicod` detects the ROM family (`hicod device`, WebUI, installer): **HyperOS**
+(`ro.mi.os.version.name`), **MIUI** (`ro.miui.ui.version.name`), **LineageOS**
+(`ro.lineage.version`) and any other **AOSP-based** ROM (crDroid, PixelOS, Evolution X, …).
+Everything that is not Xiaomi-specific works the same on all of them: init thermal services,
+kernel zones, cooling devices, cpufreq, Qualcomm / MediaTek backends and the thermal tuner, which
+also handles the thermal HAL JSON most AOSP ROMs ship. The Xiaomi backend (thermal scene,
+`cpu_limits`) only acts where those nodes exist, so it is inert on AOSP ROMs without them. On a
+custom ROM the database record describes the device's stock firmware; `hicod device` says so.
+
 ## Installation
 
 1. Install **[Flux Tweaks](https://github.com/FebriCahyaa/Flux/releases) v1.2.0 or newer** first.
-2. Flash `hico-*.zip` in Magisk, KernelSU or APatch and reboot.
+2. Flash the zip for your ROM in Magisk, KernelSU or APatch and reboot:
+
+   | Zip | For |
+   |---|---|
+   | `hico-*-arm64.zip` | 64-bit ROMs (arm64-v8a), including **64-bit-only** AOSP ROMs without a 32-bit userspace |
+   | `hico-*-arm.zip` | 32-bit ROMs (armeabi-v7a) |
+   | `hico-*-universal.zip` | Both; the installer picks the right binary |
+
+   The installer shows the ROM's ABIs and refuses a zip that does not match, naming the right one.
+   Each zip has its own update channel (`update-arm64.json`, `update-arm.json`, `update.json`), so
+   the root manager keeps offering the same build.
 3. Play: games from Flux's game list unlock thermal automatically. Open HiCo's WebUI for live
    temperatures, settings and your session history.
 
@@ -245,7 +270,8 @@ See [Releases and updates](#releases-and-updates) for publishing.
 The source repository is private, and root managers cannot read files from a private repository
 (no token may ever ship inside the module). Releases are therefore published to the **public**
 repository [FebriCahyaa/HiCo-Release](https://github.com/FebriCahyaa/HiCo-Release), which holds
-only what users need: the flashable zip (GitHub Release), `update.json`, `changelog.md`,
+only what users need: the flashable zips (GitHub Release: arm64, arm and universal), one
+`update*.json` per zip, `changelog.md`,
 `EULA.md` and a README. `module.prop` points `updateJson` there, so Magisk, KernelSU and APatch
 show **Update** with the changelog and download the zip directly.
 
@@ -255,8 +281,8 @@ One-time setup:
    **Contents: Read and write**, and add it to this repository as the secret `RELEASE_TOKEN`.
 
 Then run **Actions → Release** with a version (e.g. `1.0.1`). The workflow builds and tests the
-module, creates release `v1.0.1` in HiCo-Release with the zip and its SHA-256, and commits the
-new `update.json` and changelog there. Pre-releases are not offered as updates.
+module, creates release `v1.0.1` in HiCo-Release with the three zips and their SHA-256, and commits the
+new `update.json`, `update-arm64.json`, `update-arm.json` and changelog there. Pre-releases are not offered as updates.
 
 ## License
 

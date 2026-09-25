@@ -16,8 +16,10 @@
 #include <vector>
 
 /**
- * Vendor thermal configuration files (Qualcomm thermal-engine syntax, also used
- * by plain-text Xiaomi mi_thermald configs):
+ * Vendor thermal configuration files: Qualcomm thermal-engine syntax (also used
+ * by plain-text Xiaomi mi_thermald configs), and the thermal HAL's
+ * thermal_info_config.json used by AOSP-based ROMs and newer vendor stacks.
+ * Engine syntax:
  *
  *     [SKIN_MONITOR]
  *     algo_type        monitor
@@ -49,7 +51,15 @@ struct Policy {
 /// Tuning policy for a chipset. @p margin_override (1..10) replaces the chipset margin when set.
 [[nodiscard]] Policy policy_for(SocVendor soc, std::string_view platform, int margin_override = 0);
 
-/// True for a text file in thermal-engine syntax (encrypted blobs and other formats are false).
+enum class Format {
+    Unknown,   ///< encrypted blob or unrelated format: never touched
+    Engine,    ///< thermal-engine / plain-text mi_thermald syntax ([SECTION] + key values)
+    HalJson,   ///< thermal HAL thermal_info_config*.json (AOSP / Pixel-style HAL, newer vendors)
+};
+
+[[nodiscard]] Format detect_format(std::string_view content);
+
+/// True for a config HiCo can tune (Engine or HalJson with trip points).
 [[nodiscard]] bool is_tunable_text(std::string_view content);
 
 struct Result {
@@ -67,5 +77,14 @@ struct Result {
 
 /// Independent safety check of a tuned file against its original. Returns the violations (empty = safe).
 [[nodiscard]] std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy);
+
+/// Thermal HAL JSON ("Sensors": [{"Name", "Type", "HotThreshold": [7 severity levels]}, ...]).
+/// HotThreshold levels are NONE, LIGHT, MODERATE, SEVERE, CRITICAL, EMERGENCY, SHUTDOWN:
+/// LIGHT..CRITICAL are raised, EMERGENCY and SHUTDOWN are never changed.
+namespace haljson {
+[[nodiscard]] bool is_config(std::string_view content);
+[[nodiscard]] std::optional<Result> tune(std::string_view content, const Policy &policy);
+[[nodiscard]] std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy);
+} // namespace haljson
 
 } // namespace hico::thermalcfg

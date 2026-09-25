@@ -29,6 +29,11 @@
 - Relaxed level: vendor thermal daemons keep running with tuned configs (bind-mounted, journaled)
 - Whitelist (non-game apps, relaxed level only) and blacklist (never boosted, games included);
   `game_level` for games
+- AOSP-based ROMs: ROM detection (HyperOS, MIUI, LineageOS, AOSP) shown in the installer, WebUI
+  and `hicod device`; the tuner also handles the thermal HAL JSON (`thermal_info_config*.json`)
+  and restarts the thermal HAL after tuning it
+- Three builds: `arm64` (64-bit, including 64-bit-only ROMs), `arm` (32-bit) and `universal`,
+  each with its own update channel; the installer refuses a zip that does not match the ROM
 
 ### Security
 - Undo journal validated before replay; only `/sys` and `/proc` nodes are ever written

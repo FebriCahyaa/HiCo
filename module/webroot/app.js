@@ -194,6 +194,7 @@ async function refreshStatus() {
     s.device_profile === 'verified'
       ? `Device profile: ${s.device_name || s.device} (${s.device}), from its stock firmware`
       : `No device profile for ${s.device || 'this device'}: runtime detection only`
+  if (s.rom_name) $('device-line').textContent += ` · ROM: ${s.rom_name}`
   $('version').textContent = s.version || ''
 }
 

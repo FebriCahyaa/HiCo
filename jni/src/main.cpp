@@ -176,6 +176,8 @@ int cmd_status(bool json) {
     set("device_profile", device.in_database ? "verified" : "generic");
     set("device_name", device.in_database ? str::trim(device.brand + " " + device.model) : "");
     set("soc", std::string(to_string(device.soc)));
+    set("rom", std::string(to_string(device.rom)));
+    set("rom_name", device.rom_name);
 
     if (!json) {
         for (const auto &[k, v] : kv) out(std::format("{}={}\n", k, v));
@@ -276,6 +278,10 @@ void print_device(const DeviceProfile &d) {
                     d.in_database ? "yes (" + d.source + ")" : "no, runtime detection only"));
     out(std::format("name: {} {}\nplatform: {} ({})\nandroid: {}\n", d.brand, d.model, d.platform.empty() ? "-" : d.platform,
                     to_string(d.soc), d.android.empty() ? "-" : d.android));
+    out(std::format("rom: {} ({}){}\n", d.rom_name, to_string(d.rom),
+                    d.in_database && d.rom != RomFamily::HyperOS && d.rom != RomFamily::Miui
+                        ? "; database record is from the stock firmware, services are still detected live"
+                        : ""));
     out(std::format("traits: {}\nbackends: {}\n", join(traits), join(backends)));
     out(std::format("declared thermal services: {}\nthermal configs: {}\n", join(d.thermal_services),
                     d.thermal_configs.size()));
