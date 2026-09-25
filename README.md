@@ -196,8 +196,21 @@ custom ROM the database record describes the device's stock firmware; `hicod dev
    The installer shows the ROM's ABIs and refuses a zip that does not match, naming the right one.
    Each zip has its own update channel (`update-arm64.json`, `update-arm.json`, `update.json`), so
    the root manager keeps offering the same build.
-3. Play: games from Flux's game list unlock thermal automatically. Open HiCo's WebUI for live
-   temperatures, settings and your session history.
+3. Play: games from Flux's game list unlock thermal automatically.
+
+**Which games?** HiCo does not guess: it follows fluxd, which boosts the focused app only when it
+is in Flux's `gamelist.json`. Flux builds that file at install from its `gamelist.txt` database
+(about 530 known game packages, kept only if installed) and you add or remove games in the Flux
+WebUI. HiCo never edits Flux's list; its own **blacklist** can switch a Flux game off for HiCo, and
+the **whitelist** gives non-game apps the relaxed level only.
+
+**WebUI** (KernelSU, APatch, MMRL, WebUI X), in English or Bahasa Indonesia:
+- **Home** — status, CPU / GPU / battery gauges against the safety limits, one-tap mode and game
+  level, what is currently changed, device / chipset / ROM / Flux
+- **Monitor** — real-time throttling, refreshed every second (see below)
+- **Games** — Flux's game list with a per-game switch (blacklist), other apps (whitelist), history
+- **Settings** — the safety limits up front; every other option under *Advanced*
+- **More** — restart or restore stock thermal, log, about
 
 The action button (Magisk) toggles HiCo between automatic and off.
 
@@ -233,6 +246,25 @@ immediately.
 | `notify` | `1` | | Notifications |
 | `log_level` | `2` | 0–3 | error, warning, info, debug |
 
+## Throttling monitor
+
+`hicod monitor` shows what the kernel **actually allows right now**, read-only, whether HiCo is
+unlocked or not:
+
+| Signal | Source | Throttling when |
+|---|---|---|
+| CPU clusters | `cpufreq/policyN`: `scaling_cur_freq`, `scaling_max_freq`, `cpuinfo_max_freq` | the effective cap (`scaling_max_freq`, after every thermal / QoS request) is below the hardware maximum |
+| GPU | Adreno `kgsl-3d0` (`gpuclk`, power-level table, `thermal_pwrlevel`, `max_pwrlevel`) or the GPU `devfreq` device (Mali / MediaTek / Exynos) | the cap is below the fastest level, or the Adreno thermal level is above 0 |
+| Cooling devices | `cooling_deviceN/cur_state` | a CPU / GPU cooling device is above state 0 |
+| Thermal zones | `trip_point_N_type` / `_temp` | the zone is at or past its lowest passive / hot trip (battery zones are shown, never counted) |
+
+The verdict is **none** (everything at hardware maximum), **light** (every cap ≥ 80 %) or
+**heavy**. The CPU figure is weighted by core count. In the WebUI the Monitor tab refreshes every
+second while it is on screen: verdict, allowed CPU / GPU speed, a 60-second chart of allowed speed
+and temperatures, a bar per cluster and GPU showing current clock, cap and the part lost to
+throttling, active cooling devices, zones past their trip, and a log of every cap that appears,
+changes or lifts. Nothing is stored; polling stops when the tab or the WebUI is closed.
+
 ## Command line
 
 ```
@@ -242,6 +274,8 @@ hicod flux                 check the Flux dependency
 hicod config list|get|set|reset|schema
 hicod sessions [clear]     session history (JSON Lines: duration, unlocked time, peaks, trips)
 hicod zones                zones, cooling devices and thermal services on this device
+hicod monitor [--once] [--interval S]   live throttling, one line per second (Ctrl-C to stop)
+hicod monitor --json       one throttling snapshot (the WebUI Monitor tab polls it every second)
 hicod device [--list]      this device in the compiled database (SoC, traits, backends), or the whole database
 hicod thermal scan         this device's thermal configs and what the relaxed level would tune
 hicod thermal tune <file> [--platform P] [--margin N]    tuned config on stdout (repository tooling)

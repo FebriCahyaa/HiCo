@@ -15,7 +15,12 @@
 - Qualcomm (`thermal-engine`, `msm_thermal`, `msm_performance`, kgsl) and MediaTek (EARA) thermal
   handling; thermal services discovered from init instead of a fixed list
 - Game session history: play time, unlocked time, peak temperatures, safety trips
-- WebUI: live state and temperatures, every setting, session history, logs
+- Real-time throttling monitor (`hicod monitor`, WebUI Monitor tab, refreshed every second):
+  effective CPU cluster and GPU caps against the hardware maximum, Adreno thermal level, active
+  cooling devices, zones past their trip point, 60-second chart and a throttling event log
+- WebUI with Home / Monitor / Games / Settings / More tabs, English and Bahasa Indonesia: temperature gauges
+  against the safety limits, one-tap mode and game level, Flux's game list with a per-game switch,
+  whitelist / blacklist editors, session history, advanced options kept out of the way
 
 - Thermal framework: core controller plus per-vendor backends (Qualcomm, MediaTek, Xiaomi)
   selected from the device's SoC and traits, and a single journaled write path

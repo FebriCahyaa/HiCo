@@ -211,6 +211,23 @@ class ScannerTest(unittest.TestCase):
             server.shutdown()
             server.server_close()
 
+    def test_limit_applies_per_group(self):
+        # A limited run must still reach every group: Redmi / POCO devices missing from dumps/xiaomi.
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), FakeGitLab)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                base = f"http://127.0.0.1:{server.server_address[1]}"
+                r = run_tool("--gitlab", base, "--group", "dumps/xiaomi,dumps/redmi,dumps/poco", "--limit", "1",
+                             "--out", str(Path(tmp, "out")))
+                self.assertEqual(r.returncode, 0, r.stderr)
+                self.assertIn("dumps/xiaomi: 1 dumps", r.stderr)
+                self.assertIn("dumps/redmi: 1 dumps", r.stderr)
+                self.assertIn("group dumps/poco not found", r.stderr)
+        finally:
+            server.shutdown()
+            server.server_close()
+
     def test_thermal_parser(self):
         mod = load_tool()
         a = mod.analyze_thermal
@@ -454,11 +471,12 @@ class FakeGitLab(http.server.BaseHTTPRequestHandler):
         page = int(q.get("page", 1))
         parts = url.path.split("/")
 
-        if url.path == "/api/v4/groups/dumps%2Fxiaomi/projects":
+        if url.path in ("/api/v4/groups/dumps%2Fxiaomi/projects", "/api/v4/groups/dumps%2Fredmi/projects"):
+            group = parts[4].split("%2F")[1]
             name = self.projects[page - 1]
             nxt = str(page + 1) if page < len(self.projects) else ""
             base = f"http://{self.headers['Host']}"
-            item = {"id": page, "path": name, "default_branch": "main-branch", "web_url": f"{base}/dumps/xiaomi/{name}"}
+            item = {"id": page, "path": name, "default_branch": "main-branch", "web_url": f"{base}/dumps/{group}/{name}"}
             if name in self.git_urls:
                 item["http_url_to_repo"] = self.git_urls[name]
             return self.send([item], {"X-Next-Page": nxt})
