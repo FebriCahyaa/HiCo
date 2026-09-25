@@ -196,8 +196,20 @@ custom ROM the database record describes the device's stock firmware; `hicod dev
    The installer shows the ROM's ABIs and refuses a zip that does not match, naming the right one.
    Each zip has its own update channel (`update-arm64.json`, `update-arm.json`, `update.json`), so
    the root manager keeps offering the same build.
-3. Play: games from Flux's game list unlock thermal automatically. Open HiCo's WebUI for live
-   temperatures, settings and your session history.
+3. Play: games from Flux's game list unlock thermal automatically.
+
+**Which games?** HiCo does not guess: it follows fluxd, which boosts the focused app only when it
+is in Flux's `gamelist.json`. Flux builds that file at install from its `gamelist.txt` database
+(about 530 known game packages, kept only if installed) and you add or remove games in the Flux
+WebUI. HiCo never edits Flux's list; its own **blacklist** can switch a Flux game off for HiCo, and
+the **whitelist** gives non-game apps the relaxed level only.
+
+**WebUI** (KernelSU, APatch, MMRL, WebUI X), in English or Bahasa Indonesia:
+- **Home** — status, CPU / GPU / battery gauges against the safety limits, one-tap mode and game
+  level, what is currently changed, device / chipset / ROM / Flux
+- **Games** — Flux's game list with a per-game switch (blacklist), other apps (whitelist), history
+- **Settings** — the safety limits up front; every other option under *Advanced*
+- **More** — restart or restore stock thermal, log, about
 
 The action button (Magisk) toggles HiCo between automatic and off.
 

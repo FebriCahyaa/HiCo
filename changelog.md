@@ -15,7 +15,9 @@
 - Qualcomm (`thermal-engine`, `msm_thermal`, `msm_performance`, kgsl) and MediaTek (EARA) thermal
   handling; thermal services discovered from init instead of a fixed list
 - Game session history: play time, unlocked time, peak temperatures, safety trips
-- WebUI: live state and temperatures, every setting, session history, logs
+- WebUI with Home / Games / Settings / More tabs, English and Bahasa Indonesia: temperature gauges
+  against the safety limits, one-tap mode and game level, Flux's game list with a per-game switch,
+  whitelist / blacklist editors, session history, advanced options kept out of the way
 
 - Thermal framework: core controller plus per-vendor backends (Qualcomm, MediaTek, Xiaomi)
   selected from the device's SoC and traits, and a single journaled write path
