@@ -325,14 +325,20 @@ class GitLabSource:
         for group_name in [g.strip() for g in self.group.split(",") if g.strip()]:
             group = urllib.parse.quote(group_name, safe="")
             page = 1
-            while page:
+            listed = 0
+            exists = False
+            # --limit applies per group, so a short test run still covers Xiaomi, Redmi and POCO.
+            while page and not (self.limit and listed >= self.limit):
                 got = self._get(self._api(f"groups/{group}/projects", per_page=100, page=page,
                                           include_subgroups="true", archived="false", order_by="path", sort="asc"))
                 if got is None:
                     print(f"  ? group {group_name} not found on {self.base}, skipped", file=sys.stderr)
+                    if os.environ.get("GITHUB_ACTIONS"):
+                        print(f"::warning::GitLab group {group_name} not found on {self.base}, skipped")
                     break
                 if page == 1:
                     found += 1
+                    exists = True
                 body, headers = got
                 for p in json.loads(body):
                     if p.get("empty_repo") or not p.get("default_branch"):
@@ -345,9 +351,12 @@ class GitLabSource:
                         "url": f"{p['web_url']}/-/tree/{p['default_branch']}",
                         "git_url": p.get("http_url_to_repo") or f"{p['web_url']}.git",
                     })
-                    if self.limit and len(out) >= self.limit:
-                        return out
+                    listed += 1
+                    if self.limit and listed >= self.limit:
+                        break
                 page = int(headers.get("X-Next-Page") or headers.get("x-next-page") or 0)
+            if exists:
+                print(f"  {group_name}: {listed} dumps", file=sys.stderr)
         if not found:
             raise RuntimeError(f"none of the groups {self.group} exist on {self.base}")
         return out
@@ -599,7 +608,7 @@ def main() -> int:
     ap.add_argument("--group", default=DEFAULT_GROUP,
                     help="comma-separated GitLab groups holding the dumps (missing groups are skipped)")
     ap.add_argument("--out", default=str(Path(__file__).resolve().parent.parent), help="repository root")
-    ap.add_argument("--limit", type=int, help="scan at most N projects (testing)")
+    ap.add_argument("--limit", type=int, help="scan at most N dumps per group (testing)")
     ap.add_argument("--jobs", type=int, default=8)
     args = ap.parse_args()
 
