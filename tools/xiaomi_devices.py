@@ -17,8 +17,15 @@ dump; nothing is typed in by hand. For each device it records:
   - where it came from (dump URL and branch), so every line can be checked
 
 Sources:
-  --gitlab URL --group dumps/xiaomi   GitLab instance (default: dumps.tadiphone.dev)
+  --gitlab URL --group dumps/xiaomi   GitLab instance (default: dumps.tadiphone.dev);
+                                      files are read one by one through the API
+  --gitlab URL --sparse               list the dumps through the API (names only), then
+                                      partial-clone each dump checking out only the paths
+                                      in SPARSE_PATHS (build.prop + vendor thermal files)
   --local DIR                         directory of dump checkouts, one per device
+
+Every dump name ends up in docs/DEVICES.md, including dumps without usable
+vendor data; only the files needed per device are ever downloaded.
 
 Output (--out, default: repository root):
   devices/xiaomi/<codename>.prop      read by hicod (DeviceProfile)
@@ -39,6 +46,11 @@ import urllib.parse
 import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
+import shutil
+import signal
+import subprocess
+import tempfile
+import threading
 
 DEFAULT_GITLAB = "https://dumps.tadiphone.dev"
 DEFAULT_GROUP = "dumps/xiaomi"
@@ -60,6 +72,18 @@ PROP_KEYS = {
     "platform": ["ro.board.platform", "ro.vendor.qti.soc_name", "ro.hardware"],
     "android": ["ro.vendor.build.version.release", "ro.build.version.release"],
 }
+
+
+# Everything the scanner reads from a dump. --sparse checks out exactly these
+# (gitignore-style patterns for `git sparse-checkout --no-cone`); keep them in
+# sync with BUILD_PROPS and the vendor/etc lookups in scan().
+SPARSE_PATHS = [
+    *[f"/{p}" for p in BUILD_PROPS],
+    "/vendor/etc/thermal*",
+    "/vendor/etc/Thermal*",
+    "/vendor/etc/init/*thermal*",
+    "/vendor/etc/init/*Thermal*",
+]
 
 
 @dataclass
@@ -189,6 +213,7 @@ class GitLabSource:
                     "path": p["path"],
                     "branch": p["default_branch"],
                     "url": f"{p['web_url']}/-/tree/{p['default_branch']}",
+                    "git_url": p.get("http_url_to_repo") or f"{p['web_url']}.git",
                 })
                 if self.limit and len(out) >= self.limit:
                     return out
@@ -211,6 +236,67 @@ class GitLabSource:
             names += [e["name"] for e in json.loads(body) if e.get("type") == "blob"]
             page = int(headers.get("X-Next-Page") or headers.get("x-next-page") or 0)
         return sorted(names)
+
+
+class SparseGitSource(GitLabSource):
+    """Lists dumps through the API, then reads each one from a sparse partial clone.
+
+    `git clone --filter=blob:none --depth 1 --no-checkout` downloads only the
+    latest commit's trees (file names), no file contents; `sparse-checkout`
+    then fetches the blobs of SPARSE_PATHS alone. A dump of tens of GB costs a
+    few MB. If the server ignores the filter, the clone is aborted instead of
+    downloading the whole firmware.
+    """
+
+    FILTER_IGNORED = "filtering not recognized by server"
+
+    def __init__(self, base: str, group: str, limit: int | None, workdir: str | None = None, timeout: int = 600):
+        super().__init__(base, group, limit)
+        self.workdir = workdir
+        self.timeout = timeout
+
+    def _git(self, *args: str, cwd: str | None = None) -> None:
+        env = {**os.environ, "GIT_TERMINAL_PROMPT": "0", "GIT_LFS_SKIP_SMUDGE": "1"}
+        err: list[str] = []
+        # Own process group: git's helpers (git-remote-https, ...) are killed with it.
+        with subprocess.Popen(["git", *args], cwd=cwd, env=env, stdout=subprocess.DEVNULL,
+                              stderr=subprocess.PIPE, text=True, start_new_session=True) as proc:
+
+            def kill() -> None:
+                try:
+                    os.killpg(proc.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+
+            # The watchdog also fires when git hangs without printing anything.
+            watchdog = threading.Timer(self.timeout, kill)
+            watchdog.start()
+            try:
+                assert proc.stderr is not None
+                for line in proc.stderr:
+                    err.append(line)
+                    if self.FILTER_IGNORED in line:
+                        kill()
+                        raise RuntimeError("server ignores --filter=blob:none, refusing a full firmware download")
+                code = proc.wait()
+            finally:
+                watchdog.cancel()
+        if code != 0:
+            reason = "timed out" if code < 0 else f"failed: {''.join(err[-3:]).strip()}"
+            raise RuntimeError(f"git {args[0]} {reason}")
+
+    def scan_project(self, project: dict) -> Device | None:
+        tmp = tempfile.mkdtemp(prefix="hico-dump-", dir=self.workdir)
+        try:
+            repo = os.path.join(tmp, "repo")
+            self._git("clone", "--quiet", "--filter=blob:none", "--depth", "1", "--no-checkout",
+                      "--single-branch", "--branch", project["branch"], project["git_url"], repo)
+            self._git("sparse-checkout", "set", "--no-cone", *SPARSE_PATHS, cwd=repo)
+            self._git("checkout", "--quiet", project["branch"], cwd=repo)
+            local = LocalSource(tmp)
+            return scan(local, {**project, "path": "repo"})
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
 
 
 # ── Scan ─────────────────────────────────────────────────────────────────────
@@ -256,7 +342,8 @@ def scan(source, project: dict) -> Device | None:
     return dev
 
 
-def write_outputs(devices: list[Device], out: Path, source_desc: str) -> None:
+def write_outputs(devices: list[Device], out: Path, source_desc: str,
+                  unusable: list[dict] | None = None) -> None:
     ddir = out / "devices" / "xiaomi"
     ddir.mkdir(parents=True, exist_ok=True)
     for old in ddir.glob("*.prop"):
@@ -275,7 +362,8 @@ def write_outputs(devices: list[Device], out: Path, source_desc: str) -> None:
         "(thermal services from `init.svc.*`, zones and cooling devices from `/sys/class/thermal`).",
         "A profile adds the exact thermal service names the vendor declares in its init scripts.",
         "",
-        f"**{len(rows)} devices**",
+        f"**{len(rows)} devices with a profile**"
+        + (f", {len(unusable)} more dumps listed below without one" if unusable else ""),
         "",
         "| Device | Codename | Platform | Android | mi_thermald | Thermal services | Thermal configs | Source |",
         "|---|---|---|---|---|---|---|---|",
@@ -287,6 +375,19 @@ def write_outputs(devices: list[Device], out: Path, source_desc: str) -> None:
             f"{clean(d.android) or '–'} | {'yes' if d.mi_thermald else 'no'} | {services} | "
             f"{len(d.configs)} | [dump]({d.source}) |"
         )
+    if unusable:
+        lines += [
+            "",
+            "## Dumps without a profile",
+            "",
+            "Found in the dump group, but no profile could be built (no vendor `build.prop`, or the",
+            "dump could not be read). These devices use runtime detection only.",
+            "",
+            "| Dump | Reason |",
+            "|---|---|",
+        ]
+        for p in sorted(unusable, key=lambda p: p["path"]):
+            lines.append(f"| [{clean(p['path'])}]({p['url']}) | {clean(p['reason'])} |")
     (out / "docs").mkdir(exist_ok=True)
     (out / "docs" / "DEVICES.md").write_text("\n".join(lines) + "\n")
 
@@ -296,6 +397,9 @@ def main() -> int:
     src = ap.add_mutually_exclusive_group()
     src.add_argument("--gitlab", default=DEFAULT_GITLAB, help="GitLab instance URL")
     src.add_argument("--local", help="directory of dump checkouts (one per device)")
+    ap.add_argument("--sparse", action="store_true",
+                    help="with --gitlab: partial-clone each dump, checking out only the needed paths")
+    ap.add_argument("--workdir", help="where --sparse clones are made (default: system temp)")
     ap.add_argument("--group", default=DEFAULT_GROUP, help="GitLab group holding the Xiaomi dumps")
     ap.add_argument("--out", default=str(Path(__file__).resolve().parent.parent), help="repository root")
     ap.add_argument("--limit", type=int, help="scan at most N projects (testing)")
@@ -304,6 +408,9 @@ def main() -> int:
 
     if args.local:
         source, desc = LocalSource(args.local), "local dumps"
+    elif args.sparse:
+        source = SparseGitSource(args.gitlab, args.group, args.limit, args.workdir)
+        desc = f"[{args.group}]({args.gitlab.rstrip('/')}/{args.group})"
     else:
         source = GitLabSource(args.gitlab, args.group, args.limit)
         desc = f"[{args.group}]({args.gitlab.rstrip('/')}/{args.group})"
@@ -314,9 +421,11 @@ def main() -> int:
     print(f"scanning {len(projects)} dumps", file=sys.stderr)
 
     devices: dict[str, Device] = {}
+    unusable: list[dict] = []
     failures = 0
+    scan_one = source.scan_project if isinstance(source, SparseGitSource) else (lambda p: scan(source, p))
     with concurrent.futures.ThreadPoolExecutor(max_workers=max(1, args.jobs)) as pool:
-        futures = {pool.submit(scan, source, p): p for p in projects}
+        futures = {pool.submit(scan_one, p): p for p in projects}
         for fut in concurrent.futures.as_completed(futures):
             p = futures[fut]
             try:
@@ -324,16 +433,18 @@ def main() -> int:
             except Exception as e:  # keep going: one broken dump must not stop the scan
                 failures += 1
                 print(f"  ! {p['path']}: {e}", file=sys.stderr)
+                unusable.append({**p, "reason": f"not readable: {str(e)[:80]}"})
                 continue
             if dev is None:
                 print(f"  - {p['path']}: no usable vendor build.prop, skipped", file=sys.stderr)
+                unusable.append({**p, "reason": "no vendor build.prop with a device codename"})
                 continue
             # Several dumps can share a codename (regional variants): keep the richest one.
             prev = devices.get(dev.codename)
             if prev is None or (len(dev.services), len(dev.configs)) > (len(prev.services), len(prev.configs)):
                 devices[dev.codename] = dev
 
-    write_outputs(list(devices.values()), Path(args.out), desc)
+    write_outputs(list(devices.values()), Path(args.out), desc, unusable)
     print(f"{len(devices)} device profiles written, {failures} dumps failed", file=sys.stderr)
     return 1 if failures and not devices else 0
 

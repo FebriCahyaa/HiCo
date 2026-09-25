@@ -105,6 +105,11 @@ the thermal configuration files it ships.
   dump it came from. Nothing is written by hand.
 - Supported list: [`docs/DEVICES.md`](docs/DEVICES.md).
 - Refresh: **Actions → Update Xiaomi device profiles** (also monthly) opens a pull request.
+  By default it uses **sparse mode**: the GitLab API only lists the dumps (names), then each dump
+  is partial-cloned (`--filter=blob:none --depth 1`) and only `build.prop` and the vendor thermal
+  files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`) are checked out — a few MB per
+  device instead of the whole firmware. A server that ignores the filter is refused rather than
+  downloaded in full. Every dump name is listed, including those without a usable profile.
 - The installer copies only this phone's profile (checksum-verified); `hicod status` and the
   WebUI show `verified` or `generic`.
 

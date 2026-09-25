@@ -13,6 +13,8 @@ test data can never be mistaken for a real device profile.
 """
 
 import http.server
+import importlib.util
+import os
 import json
 import subprocess
 import sys
@@ -45,6 +47,49 @@ FIXTURE = {
     },
     "broken": {"README": "no partitions here"},
 }
+
+# Large files every real dump has; sparse mode must never download them.
+BULK = {
+    "system/system/app/Big/Big.apk": 2 * 1024 * 1024,
+    "vendor/firmware/modem.bin": 1024 * 1024,
+}
+
+
+def git(*args, cwd=None):
+    subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True,
+                   env={**os.environ, "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t",
+                        "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t"})
+
+
+def make_bare_repos(root: Path, allow_filter: bool = True) -> dict:
+    """One bare repository per fixture project (branch main-branch), plus bulk files."""
+    urls = {}
+    for project, files in FIXTURE.items():
+        work = root / "work" / project
+        for rel, content in files.items():
+            f = work / rel
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(content)
+        for rel, size in BULK.items():
+            f = work / rel
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_bytes(os.urandom(size))
+        git("init", "-q", "-b", "main-branch", str(work))
+        git("add", "-A", cwd=work)
+        git("commit", "-qm", "dump", cwd=work)
+        bare = root / "bare" / f"{project}.git"
+        git("clone", "-q", "--bare", str(work), str(bare))
+        git("config", "uploadpack.allowFilter", "true" if allow_filter else "false", cwd=bare)
+        urls[project] = f"file://{bare}"
+    return urls
+
+
+def load_tool():
+    spec = importlib.util.spec_from_file_location("xiaomi_devices", TOOL)
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = mod  # dataclasses look the module up while it loads
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def make_fixture(root: Path) -> None:
@@ -82,7 +127,9 @@ class ScannerTest(unittest.TestCase):
 
         self.assertFalse((out / "devices/xiaomi/broken.prop").exists())
         doc = (out / "docs/DEVICES.md").read_text()
-        self.assertIn("**2 devices**", doc)
+        self.assertIn("**2 devices with a profile**, 1 more dumps listed below without one", doc)
+        self.assertIn("## Dumps without a profile", doc)
+        self.assertRegex(doc, r"\| \[broken\]\(.*\) \| no vendor build.prop")
         self.assertIn("| Redmi Test Phone A | `testdev_a` |", doc)
 
     def test_local(self):
@@ -105,12 +152,83 @@ class ScannerTest(unittest.TestCase):
                 self.check_output(out, f"{base}/dumps/xiaomi/testdev_a/-/tree/main-branch")
         finally:
             server.shutdown()
+            server.server_close()
+
+
+    def run_sparse(self, allow_filter: bool) -> tuple[subprocess.CompletedProcess, Path]:
+        tmp = Path(tempfile.mkdtemp())
+        FakeGitLab.git_urls = make_bare_repos(tmp, allow_filter)
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), FakeGitLab)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            base = f"http://127.0.0.1:{server.server_address[1]}"
+            out = tmp / "out"
+            r = run_tool("--gitlab", base, "--sparse", "--group", "dumps/xiaomi", "--out", str(out),
+                         "--workdir", str(tmp))
+            self.base = base
+            return r, out
+        finally:
+            server.shutdown()
+            server.server_close()
+            FakeGitLab.git_urls = {}
+
+    def test_sparse_clone(self):
+        r, out = self.run_sparse(allow_filter=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.check_output(out, f"{self.base}/dumps/xiaomi/testdev_a/-/tree/main-branch")
+        leftovers = [p for p in out.parent.iterdir() if p.name.startswith("hico-dump-")]
+        self.assertEqual(leftovers, [])  # clones are removed
+
+    def test_sparse_downloads_only_needed_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            urls = make_bare_repos(tmp)
+            mod = load_tool()
+            kept = {}
+            mod.shutil.rmtree = lambda path, **kw: kept.setdefault("dir", path)  # keep the clone for inspection
+            src = mod.SparseGitSource("http://unused", "dumps/xiaomi", None, workdir=str(tmp))
+            dev = src.scan_project({"id": 1, "path": "testdev_a", "branch": "main-branch",
+                                    "url": "u", "git_url": urls["testdev_a"]})
+            self.assertEqual(dev.codename, "testdev_a")
+            repo = Path(kept["dir"]) / "repo"
+            checked_out = sorted(str(p.relative_to(repo)) for p in repo.rglob("*")
+                                 if p.is_file() and ".git" not in p.parts)
+            self.assertEqual(checked_out, [
+                "product/etc/build.prop",
+                "vendor/build.prop",
+                "vendor/etc/init/android.hardware.thermal-service.rc",
+                "vendor/etc/init/init.mi_thermald.rc",
+                "vendor/etc/thermal-normal.conf",
+                "vendor/etc/thermal-tgame.conf",
+            ])
+            # The bulk blobs were never fetched: the object store is far smaller than one of them.
+            size = sum(p.stat().st_size for p in (repo / ".git").rglob("*") if p.is_file())
+            self.assertLess(size, 512 * 1024)
+            for rel in BULK:
+                missing = subprocess.run(["git", "cat-file", "-e", f"HEAD:{rel}"], cwd=repo,
+                                         capture_output=True, env={**os.environ, "GIT_NO_LAZY_FETCH": "1"})
+                self.assertNotEqual(missing.returncode, 0, rel)
+
+    def test_git_watchdog_kills_silent_hang(self):
+        mod = load_tool()
+        src = mod.SparseGitSource("http://unused", "dumps/xiaomi", None, timeout=1)
+        with tempfile.TemporaryDirectory() as tmp:
+            # An alias that sleeps without output, like a stalled network fetch.
+            with self.assertRaisesRegex(RuntimeError, "timed out"):
+                src._git("-c", "alias.stall=!sleep 30", "stall", cwd=tmp)
+
+    def test_sparse_refuses_full_download(self):
+        r, out = self.run_sparse(allow_filter=False)
+        doc = (out / "docs/DEVICES.md").read_text()
+        self.assertIn("server ignores --filter", doc)
+        self.assertFalse((out / "devices/xiaomi/testdev_a.prop").exists())
 
 
 class FakeGitLab(http.server.BaseHTTPRequestHandler):
     """Just enough of GitLab's v4 API, with pagination (one project and one tree entry per page)."""
 
     projects = sorted(FIXTURE)
+    git_urls: dict = {}
 
     def log_message(self, *args):
         pass
@@ -134,8 +252,10 @@ class FakeGitLab(http.server.BaseHTTPRequestHandler):
             name = self.projects[page - 1]
             nxt = str(page + 1) if page < len(self.projects) else ""
             base = f"http://{self.headers['Host']}"
-            return self.send([{"id": page, "path": name, "default_branch": "main-branch",
-                               "web_url": f"{base}/dumps/xiaomi/{name}"}], {"X-Next-Page": nxt})
+            item = {"id": page, "path": name, "default_branch": "main-branch", "web_url": f"{base}/dumps/xiaomi/{name}"}
+            if name in self.git_urls:
+                item["http_url_to_repo"] = self.git_urls[name]
+            return self.send([item], {"X-Next-Page": nxt})
 
         if len(parts) > 6 and parts[3] == "projects":
             project = self.projects[int(parts[4]) - 1]

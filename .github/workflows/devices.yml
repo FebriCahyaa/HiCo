@@ -11,6 +11,11 @@ name: Update Xiaomi device profiles
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'sparse: partial-clone each dump, check out only build.prop + vendor thermal files; api: read those files one by one through the GitLab API'
+        type: choice
+        options: [sparse, api]
+        default: sparse
       limit:
         description: 'Scan at most N dumps (empty = all)'
         required: false
@@ -38,7 +43,12 @@ jobs:
       - name: Scan dumps
         env:
           LIMIT: ${{ inputs.limit }}
-        run: python3 tools/xiaomi_devices.py --gitlab https://dumps.tadiphone.dev --group dumps/xiaomi ${LIMIT:+--limit "$LIMIT"}
+          MODE: ${{ inputs.mode || 'sparse' }}
+        run: |
+          flags=()
+          [ "$MODE" = sparse ] && flags+=(--sparse --workdir "$RUNNER_TEMP")
+          [ -n "$LIMIT" ] && flags+=(--limit "$LIMIT")
+          python3 tools/xiaomi_devices.py --gitlab https://dumps.tadiphone.dev --group dumps/xiaomi --jobs 6 "${flags[@]}"
 
       - name: Open pull request
         env:
