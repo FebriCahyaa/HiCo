@@ -68,6 +68,12 @@ mkdir -p "$HICO_ROOT/dev" "$HICO_ROOT/data/adb/.config"
 [ "$("$HICOD" config get safety_cpu_temp)" = 90 ] || fail "config get"
 "$HICOD" config set exit_delay 0 || fail "config set exit_delay"
 "$HICOD" config schema | grep -q '"key":"mode"' || fail "schema"
+put /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_max_freq 2016000
+put /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 1497600
+put /sys/devices/system/cpu/cpufreq/policy0/related_cpus "0 1 2 3"
+"$HICOD" monitor --json | grep -q '"cpu_limit":74' || fail "monitor --json"
+"$HICOD" monitor --once | grep -q 'CPU  74%' || fail "monitor --once"
+"$HICOD" monitor --interval 0 2>/dev/null && fail "monitor accepted interval 0"
 
 # ── Daemon ───────────────────────────────────────────────────────────────────
 "$HICOD" run 2>"$HICO_ROOT/log" &

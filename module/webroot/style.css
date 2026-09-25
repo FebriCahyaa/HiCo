@@ -541,6 +541,350 @@ main {
   overflow-wrap: anywhere;
 }
 
+/* ── Monitor ─────────────────────────────────────────────────────────────── */
+
+.verdict {
+  --tone: var(--ok);
+  border-radius: 24px;
+  padding: 16px 18px 18px;
+  background:
+    radial-gradient(120% 140% at 100% 0%, color-mix(in srgb, var(--tone) 20%, transparent), transparent 60%),
+    var(--surface);
+  border: 1px solid color-mix(in srgb, var(--tone) 30%, var(--line));
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 4px;
+}
+
+.verdict.light {
+  --tone: var(--warn);
+}
+
+.verdict.heavy {
+  --tone: var(--bad);
+}
+
+.verdict.unknown {
+  --tone: var(--muted);
+}
+
+.verdict h2 {
+  font-size: 1.35rem;
+  color: var(--tone);
+}
+
+.verdict-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.live .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ok);
+  animation: blink 1s ease-in-out infinite;
+}
+
+.live.paused .dot {
+  background: var(--muted);
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.big-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.big-stats > div {
+  display: grid;
+  background: var(--surface-2);
+  border-radius: 14px;
+  padding: 10px 12px;
+  min-width: 0;
+}
+
+.big-stats .k {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.big-stats .v {
+  font-size: 1.3rem;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.big-stats .v.bad {
+  color: var(--bad);
+}
+
+.big-stats .v.warn {
+  color: var(--warn);
+}
+
+.legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.legend i {
+  display: inline-block;
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  margin-left: 4px;
+}
+
+.l-cpu {
+  background: var(--accent);
+}
+
+.l-gpu {
+  background: var(--cool);
+}
+
+.l-bat {
+  background: var(--ok);
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: 110px;
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+
+.chart .grid {
+  stroke: var(--line);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.chart .line {
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.chart .cpu {
+  stroke: var(--accent);
+}
+
+.chart .gpu {
+  stroke: var(--cool);
+}
+
+.chart .bat {
+  stroke: var(--ok);
+}
+
+.chart .area {
+  stroke: none;
+  fill: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.chart text {
+  fill: var(--muted);
+  stroke: none;
+  font-size: 9px;
+}
+
+.chart-gap {
+  margin-top: 14px;
+}
+
+.chart-note {
+  margin-top: 8px;
+}
+
+.clock {
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+
+.clock:first-child {
+  border-top: none;
+  padding-top: 2px;
+}
+
+.clock-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.clock-head strong {
+  font-size: 0.9rem;
+}
+
+.clock-head .nums {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.bar {
+  position: relative;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.bar .lost {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    color-mix(in srgb, var(--bad) 35%, transparent) 0 4px,
+    color-mix(in srgb, var(--bad) 12%, transparent) 4px 8px
+  );
+}
+
+.bar .cur {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  transition: width 0.4s ease;
+}
+
+.bar .cap {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+  background: var(--bad);
+}
+
+.clock-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.row-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+
+.row-item:first-child {
+  border-top: none;
+}
+
+.row-item .meta {
+  display: grid;
+  min-width: 0;
+}
+
+.row-item .meta span:first-child {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row-item .end {
+  flex: none;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+
+.row-item .end.bad {
+  color: var(--bad);
+}
+
+.mini-bar {
+  width: 64px;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-2);
+  overflow: hidden;
+  margin-top: 4px;
+  margin-left: auto;
+}
+
+.mini-bar i {
+  display: block;
+  height: 100%;
+  background: var(--bad);
+}
+
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.events li {
+  display: flex;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.84rem;
+}
+
+.events li:first-child {
+  border-top: none;
+}
+
+.events time {
+  flex: none;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.events .start {
+  color: var(--bad);
+}
+
+.events .end {
+  color: var(--ok);
+}
+
 /* ── Games ───────────────────────────────────────────────────────────────── */
 
 .search {
@@ -1012,7 +1356,7 @@ a {
   bottom: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 6px max(8px, calc((100% - 640px) / 2)) calc(6px + env(safe-area-inset-bottom, 0px));
   background: color-mix(in srgb, var(--surface) 88%, transparent);
   backdrop-filter: blur(14px);
@@ -1036,7 +1380,7 @@ a {
 .tabbar svg {
   width: 24px;
   height: 24px;
-  padding: 2px 14px;
+  padding: 2px 12px;
   box-sizing: content-box;
   border-radius: 999px;
   transition: background 0.15s;

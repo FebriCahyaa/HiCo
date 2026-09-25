@@ -89,6 +89,63 @@
         </div>
       </section>
 
+      <!-- ── Monitor ──────────────────────────────────────────────────────── -->
+      <section id="tab-monitor" class="tab" data-tab="monitor" hidden>
+        <div id="mon-verdict" class="verdict none">
+          <div class="verdict-head">
+            <span class="live"><span class="dot"></span><span id="mon-live" data-i18n="live"></span></span>
+            <button class="chip-btn" id="mon-pause" data-i18n="pause"></button>
+          </div>
+          <h2 id="mon-title">&hellip;</h2>
+          <p class="muted small" id="mon-desc"></p>
+          <div class="big-stats">
+            <div><span class="k" data-i18n="cpu_allowed"></span><span class="v" id="mon-cpu">–</span></div>
+            <div><span class="k" data-i18n="gpu_allowed"></span><span class="v" id="mon-gpu">–</span></div>
+            <div><span class="k" data-i18n="cooling_active"></span><span class="v" id="mon-cooling">–</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3 class="card-title" data-i18n="chart_speed"></h3>
+            <span class="legend"><i class="l-cpu"></i>CPU <i class="l-gpu"></i>GPU</span>
+          </div>
+          <svg class="chart" id="chart-speed" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+          <div class="card-head chart-gap">
+            <h3 class="card-title" data-i18n="chart_temp"></h3>
+            <span class="legend"><i class="l-cpu"></i>CPU <i class="l-bat"></i><span data-i18n="battery"></span></span>
+          </div>
+          <svg class="chart" id="chart-temp" viewBox="0 0 300 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+          <p class="muted small chart-note" data-i18n="chart_note"></p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title" data-i18n="clocks"></h3>
+          <div id="mon-clocks"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3 class="card-title" data-i18n="cooling_devices"></h3>
+            <span class="badge" id="mon-cooling-count">0</span>
+          </div>
+          <div id="mon-cooling-list"></div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title" data-i18n="zones_title"></h3>
+          <div id="mon-zones"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h3 class="card-title" data-i18n="events"></h3>
+            <button class="link" id="mon-clear" data-i18n="clear"></button>
+          </div>
+          <ul class="events" id="mon-events"></ul>
+        </div>
+      </section>
+
       <!-- ── Games ────────────────────────────────────────────────────────── -->
       <section id="tab-games" class="tab" data-tab="games" hidden>
         <div class="card">
@@ -193,6 +250,7 @@
 
     <nav class="tabbar" aria-label="Sections">
       <button data-tab="home" class="active"><svg aria-hidden="true"><use href="#i-home" /></svg><span data-i18n="tab_home"></span></button>
+      <button data-tab="monitor"><svg aria-hidden="true"><use href="#i-pulse" /></svg><span data-i18n="tab_monitor"></span></button>
       <button data-tab="games"><svg aria-hidden="true"><use href="#i-game" /></svg><span data-i18n="tab_games"></span></button>
       <button data-tab="settings"><svg aria-hidden="true"><use href="#i-sliders" /></svg><span data-i18n="tab_settings"></span></button>
       <button data-tab="more"><svg aria-hidden="true"><use href="#i-more" /></svg><span data-i18n="tab_more"></span></button>
@@ -209,6 +267,7 @@
         <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M12 8v4M12 16h.01" /></symbol>
         <symbol id="i-power" viewBox="0 0 24 24"><path d="M18.4 6.6a9 9 0 1 1-12.8 0M12 2v10" /></symbol>
         <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" /><path d="M12 9v4M12 17h.01" /></symbol>
+        <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M22 12h-4l-3 8L9 4l-3 8H2" /></symbol>
         <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" /></symbol>
         <symbol id="i-game" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01" /><path d="M17.3 5H6.7a4 4 0 0 0-4 3.5L2 14.6a2.5 2.5 0 0 0 4.3 2L8 15h8l1.7 1.6a2.5 2.5 0 0 0 4.3-2l-.7-6.1a4 4 0 0 0-4-3.5z" /></symbol>
         <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6" /></symbol>

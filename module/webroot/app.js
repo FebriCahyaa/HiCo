@@ -19,6 +19,40 @@ const FLUX_RELEASES = 'https://github.com/FebriCahyaa/Flux/releases'
 
 const STRINGS = {
   en: {
+    tab_monitor: 'Monitor',
+    live: 'Live · 1 s',
+    paused: 'Paused',
+    pause: 'Pause',
+    resume: 'Resume',
+    cpu_allowed: 'CPU allowed',
+    gpu_allowed: 'GPU allowed',
+    cooling_active: 'Cooling on',
+    chart_speed: 'Allowed speed · 60 s',
+    chart_temp: 'Temperature · 60 s',
+    chart_note: '100% is the hardware maximum. Any drop is the kernel throttling the chip right now.',
+    clocks: 'Clocks: current, cap and hardware maximum',
+    cooling_devices: 'Active cooling devices',
+    no_cooling: 'No cooling device is throttling.',
+    zones_title: 'Thermal zones',
+    events: 'Throttling events',
+    no_events: 'No throttling since this page was opened.',
+    verdicts: {
+      none: ['No throttling', 'Every CPU cluster and the GPU may run at full hardware speed.'],
+      light: ['Light throttling', 'Clocks are capped a little below the maximum.'],
+      heavy: ['Heavy throttling', 'The kernel is cutting clock speed hard to cool the chip.'],
+      unknown: ['No data', ''],
+    },
+    cap_of: (cap, max) => `cap ${cap} of ${max} MHz`,
+    full_speed: 'full speed',
+    lost: (n) => `−${n}%`,
+    thermal_level: (n) => `thermal level ${n}`,
+    trip_at: (v) => `trip ${v}°`,
+    throttling: 'throttling',
+    perf_cooling: 'CPU / GPU',
+    other_cooling: 'other',
+    ev_capped: (what, cap, pct) => `${what} capped to ${cap} MHz (${pct}% allowed)`,
+    ev_free: (what) => `${what} back to full speed`,
+    ev_zone: (type, temp) => `${type} passed its trip point (${temp}°)`,
     tab_home: 'Home',
     tab_games: 'Games',
     tab_settings: 'Settings',
@@ -153,6 +187,40 @@ const STRINGS = {
     },
   },
   id: {
+    tab_monitor: 'Monitor',
+    live: 'Langsung · 1 dtk',
+    paused: 'Dijeda',
+    pause: 'Jeda',
+    resume: 'Lanjut',
+    cpu_allowed: 'CPU diizinkan',
+    gpu_allowed: 'GPU diizinkan',
+    cooling_active: 'Pendingin aktif',
+    chart_speed: 'Kecepatan diizinkan · 60 dtk',
+    chart_temp: 'Suhu · 60 dtk',
+    chart_note: '100% adalah maksimum hardware. Setiap penurunan berarti kernel sedang men-throttle chip saat ini.',
+    clocks: 'Clock: saat ini, batas, dan maksimum hardware',
+    cooling_devices: 'Perangkat pendingin aktif',
+    no_cooling: 'Tidak ada perangkat pendingin yang men-throttle.',
+    zones_title: 'Zona thermal',
+    events: 'Kejadian throttling',
+    no_events: 'Belum ada throttling sejak halaman ini dibuka.',
+    verdicts: {
+      none: ['Tidak ada throttling', 'Semua cluster CPU dan GPU boleh berjalan di kecepatan maksimum hardware.'],
+      light: ['Throttling ringan', 'Clock dibatasi sedikit di bawah maksimum.'],
+      heavy: ['Throttling berat', 'Kernel memangkas clock dengan kuat untuk mendinginkan chip.'],
+      unknown: ['Tidak ada data', ''],
+    },
+    cap_of: (cap, max) => `batas ${cap} dari ${max} MHz`,
+    full_speed: 'kecepatan penuh',
+    lost: (n) => `−${n}%`,
+    thermal_level: (n) => `level thermal ${n}`,
+    trip_at: (v) => `trip ${v}°`,
+    throttling: 'throttling',
+    perf_cooling: 'CPU / GPU',
+    other_cooling: 'lainnya',
+    ev_capped: (what, cap, pct) => `${what} dibatasi ke ${cap} MHz (${pct}% diizinkan)`,
+    ev_free: (what) => `${what} kembali ke kecepatan penuh`,
+    ev_zone: (type, temp) => `${type} melewati trip point (${temp}°)`,
     tab_home: 'Beranda',
     tab_games: 'Game',
     tab_settings: 'Pengaturan',
@@ -903,6 +971,278 @@ async function loadLog() {
   log.scrollTop = log.scrollHeight
 }
 
+
+// ── Monitor ─────────────────────────────────────────────────────────────────
+// `hicod monitor --json` samples the kernel's effective limits (read-only) once a second
+// while this tab is on screen. History and events live in memory only.
+
+const HISTORY = 60
+const mon = { timer: null, paused: false, history: [], prev: null, events: [], last: null }
+
+function setVerdict(v) {
+  const [title, desc] = t('verdicts')[v] || t('verdicts').unknown
+  $('mon-verdict').className = `verdict ${v}`
+  $('mon-title').textContent = title
+  $('mon-desc').textContent = desc
+}
+
+function pctClass(p) {
+  return p === null || p === undefined ? '' : p < 80 ? 'bad' : p < 100 ? 'warn' : ''
+}
+
+function clockRow(title, cur, cap, max, min, extra) {
+  const span = Math.max(1, max - (min || 0))
+  const at = (v) => `${Math.min(100, Math.max(0, ((v - (min || 0)) / span) * 100)).toFixed(1)}%`
+  const throttled = cap > 0 && cap < max
+  const lostPct = throttled ? Math.round((1 - cap / max) * 100) : 0
+  const bar = el('div', { class: 'bar' })
+  if (throttled) bar.append(el('span', { class: 'lost', style: `left:${at(cap)}` }))
+  bar.append(el('span', { class: 'cur', style: `width:${at(cur)}` }))
+  if (throttled) bar.append(el('span', { class: 'cap', style: `left:${at(cap)}` }))
+  return el(
+    'div',
+    { class: 'clock' },
+    el(
+      'div',
+      { class: 'clock-head' },
+      el('strong', {}, title),
+      el('span', { class: 'nums' }, `${cur} MHz`),
+    ),
+    bar,
+    el(
+      'div',
+      { class: 'clock-foot' },
+      el('span', {}, [throttled ? t('cap_of')(cap, max) : `${t('full_speed')} · ${max} MHz`, extra].filter(Boolean).join(' · ')),
+      throttled ? el('span', { class: 'badge soft-bad' }, t('lost')(lostPct)) : el('span', {}, ''),
+    ),
+  )
+}
+
+function polyline(points, cls) {
+  const p = document.createElementNS(SVG_NS, 'polyline')
+  p.setAttribute('points', points.join(' '))
+  p.setAttribute('class', `line ${cls}`)
+  return p
+}
+
+function drawChart(id, series, lo, hi, unit) {
+  const node = $(id)
+  const W = 300
+  const H = 100
+  const y = (v) => (H - 6 - ((v - lo) / (hi - lo)) * (H - 12)).toFixed(1)
+  const x = (i, n) => (n <= 1 ? W : (i * W) / (HISTORY - 1) + (HISTORY - n) * (W / (HISTORY - 1))).toFixed(1)
+  const children = []
+  for (const g of [0.25, 0.5, 0.75]) {
+    const v = lo + (hi - lo) * g
+    const line = document.createElementNS(SVG_NS, 'line')
+    line.setAttribute('x1', '0')
+    line.setAttribute('x2', String(W))
+    line.setAttribute('y1', y(v))
+    line.setAttribute('y2', y(v))
+    line.setAttribute('class', 'grid')
+    children.push(line)
+    const label = document.createElementNS(SVG_NS, 'text')
+    label.setAttribute('x', '4')
+    label.setAttribute('y', String(Number(y(v)) - 2))
+    label.textContent = `${Math.round(v)}${unit}`
+    children.push(label)
+  }
+  for (const [values, cls, area] of series) {
+    const n = values.length
+    const pts = []
+    values.forEach((v, i) => {
+      if (v !== null && v !== undefined) pts.push(`${x(i, n)},${y(v)}`)
+    })
+    if (pts.length < 2) continue
+    if (area) {
+      const a = document.createElementNS(SVG_NS, 'polygon')
+      a.setAttribute('points', `${pts[0].split(',')[0]},${H} ${pts.join(' ')} ${pts[pts.length - 1].split(',')[0]},${H}`)
+      a.setAttribute('class', 'area')
+      children.push(a)
+    }
+    children.push(polyline(pts, cls))
+  }
+  node.replaceChildren(...children)
+}
+
+function renderCharts() {
+  const h = mon.history
+  // The speed scale zooms in on the drop: at least 50-100%, lower when throttling goes deeper.
+  const speeds = h.flatMap((p) => [p.cpu, p.gpu]).filter((v) => v !== null && v !== undefined)
+  const floor = speeds.length ? Math.min(50, Math.floor(Math.min(...speeds) / 10) * 10 - 10) : 50
+  drawChart(
+    'chart-speed',
+    [
+      [h.map((p) => p.gpu), 'gpu', false],
+      [h.map((p) => p.cpu), 'cpu', true],
+    ],
+    Math.max(0, floor),
+    100,
+    '%',
+  )
+  const temps = h.flatMap((p) => [p.tcpu, p.tbat]).filter((v) => v !== null && v !== undefined)
+  const lo = temps.length ? Math.min(20, Math.floor(Math.min(...temps) / 5) * 5 - 5) : 20
+  const hi = temps.length ? Math.max(50, Math.ceil(Math.max(...temps) / 5) * 5 + 5) : 50
+  drawChart(
+    'chart-temp',
+    [
+      [h.map((p) => p.tbat), 'bat', false],
+      [h.map((p) => p.tcpu), 'cpu', false],
+    ],
+    lo,
+    hi,
+    '°',
+  )
+}
+
+function addEvent(kind, text, time) {
+  mon.events.unshift({ kind, text, time })
+  mon.events.length = Math.min(mon.events.length, 50)
+}
+
+// Compares two samples and records what changed: caps appearing, moving or lifting, zones tripping.
+function detectEvents(prev, snap) {
+  const time = new Date(snap.time)
+  const units = [
+    ...snap.clusters.map((c) => [`CPU ${c.cpus}`, c]),
+    ...(snap.gpu ? [['GPU', snap.gpu]] : []),
+  ]
+  const before = new Map([
+    ...prev.clusters.map((c) => [`CPU ${c.cpus}`, c]),
+    ...(prev.gpu ? [['GPU', prev.gpu]] : []),
+  ])
+  for (const [name, u] of units) {
+    const p = before.get(name)
+    if (!p) continue
+    const was = p.cap > 0 && p.cap < p.max
+    const now = u.cap > 0 && u.cap < u.max
+    if (now && (!was || p.cap !== u.cap)) addEvent('start', t('ev_capped')(name, u.cap, u.limit), time)
+    else if (!now && was) addEvent('end', t('ev_free')(name), time)
+  }
+  const tripped = new Set(prev.zones.filter((z) => z.tripped).map((z) => z.name))
+  for (const z of snap.zones) {
+    if (z.tripped && !tripped.has(z.name)) addEvent('start', t('ev_zone')(z.type, Math.round(z.temp)), time)
+  }
+}
+
+function renderEvents() {
+  if (!mon.events.length) {
+    $('mon-events').replaceChildren(el('li', { class: 'empty' }, t('no_events')))
+    return
+  }
+  $('mon-events').replaceChildren(
+    ...mon.events.map((e) =>
+      el(
+        'li',
+        {},
+        el('time', {}, e.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })),
+        el('span', { class: e.kind }, e.text),
+      ),
+    ),
+  )
+}
+
+function renderMonitor() {
+  const snap = mon.last
+  if (!snap) return
+  setVerdict(snap.verdict)
+  const cpu = $('mon-cpu')
+  cpu.textContent = `${snap.cpu_limit}%`
+  cpu.className = `v ${pctClass(snap.cpu_limit)}`
+  const gpu = $('mon-gpu')
+  gpu.textContent = snap.gpu_limit === null ? '–' : `${snap.gpu_limit}%`
+  gpu.className = `v ${pctClass(snap.gpu_limit)}`
+  const cooling = $('mon-cooling')
+  cooling.textContent = String(snap.cooling_active)
+  cooling.className = `v ${snap.cooling_active > 0 ? 'warn' : ''}`
+
+  const clocks = snap.clusters.map((c) => clockRow(`CPU ${c.cpus}`, c.cur, c.cap, c.max, c.min, ''))
+  if (snap.gpu) {
+    const g = snap.gpu
+    clocks.push(clockRow(`GPU (${g.source})`, g.cur, g.cap, g.max, 0, g.thermal_level > 0 ? t('thermal_level')(g.thermal_level) : ''))
+  }
+  $('mon-clocks').replaceChildren(...(clocks.length ? clocks : [el('p', { class: 'empty' }, '–')]))
+
+  $('mon-cooling-count').textContent = String(snap.cooling.length)
+  $('mon-cooling-list').replaceChildren(
+    ...(snap.cooling.length
+      ? snap.cooling.map((c) =>
+          el(
+            'div',
+            { class: 'row-item' },
+            el(
+              'div',
+              { class: 'meta' },
+              el('span', {}, c.type),
+              el('span', { class: 'muted small' }, `${c.name} · ${c.perf ? t('perf_cooling') : t('other_cooling')}`),
+            ),
+            el(
+              'div',
+              { class: `end ${c.perf ? 'bad' : ''}` },
+              `${c.cur}/${c.max}`,
+              el('div', { class: 'mini-bar' }, el('i', { style: `width:${c.max > 0 ? Math.round((c.cur / c.max) * 100) : 100}%` })),
+            ),
+          ),
+        )
+      : [el('p', { class: 'empty' }, t('no_cooling'))]),
+  )
+
+  $('mon-zones').replaceChildren(
+    ...snap.zones.map((z) =>
+      el(
+        'div',
+        { class: 'row-item' },
+        el(
+          'div',
+          { class: 'meta' },
+          el('span', {}, z.type),
+          el('span', { class: 'muted small' }, [z.name, z.trip !== null ? t('trip_at')(Math.round(z.trip)) : ''].filter(Boolean).join(' · ')),
+        ),
+        el(
+          'div',
+          { class: `end ${z.tripped ? 'bad' : ''}` },
+          `${Math.round(z.temp)}°`,
+          z.tripped ? el('div', { class: 'badge soft-bad' }, t('throttling')) : null,
+        ),
+      ),
+    ),
+  )
+
+  renderCharts()
+  renderEvents()
+}
+
+async function monitorTick() {
+  mon.timer = null
+  if (state.tab !== 'monitor' || document.hidden || mon.paused) return
+  try {
+    const { stdout } = await exec(`${HICOD} monitor --json`)
+    const snap = JSON.parse(stdout)
+    if (mon.prev) detectEvents(mon.prev, snap)
+    mon.prev = snap
+    mon.last = snap
+    mon.history.push({ cpu: snap.cpu_limit, gpu: snap.gpu_limit, tcpu: snap.temps.cpu, tbat: snap.temps.battery })
+    if (mon.history.length > HISTORY) mon.history.shift()
+    renderMonitor()
+  } catch (e) {
+    setVerdict('unknown')
+    $('mon-desc').textContent = e.message
+  }
+  if (!mon.timer && state.tab === 'monitor' && !document.hidden && !mon.paused) mon.timer = setTimeout(monitorTick, 1000)
+}
+
+function startMonitor() {
+  clearTimeout(mon.timer)
+  mon.timer = null
+  monitorTick()
+}
+
+function renderPause() {
+  $('mon-pause').textContent = t(mon.paused ? 'resume' : 'pause')
+  $('mon-live').textContent = t(mon.paused ? 'paused' : 'live')
+  $('mon-live').parentElement.classList.toggle('paused', mon.paused)
+}
+
 // ── Navigation, language, wiring ────────────────────────────────────────────
 
 function showTab(tab) {
@@ -919,6 +1259,7 @@ function showTab(tab) {
     loadSessions()
   } else if (tab === 'more') loadLog()
   schedule()
+  if (tab === 'monitor') startMonitor()
 }
 
 function applyLanguage() {
@@ -931,6 +1272,12 @@ function applyLanguage() {
   renderLists()
   renderSessions()
   renderHome()
+  renderPause()
+  if (mon.last) renderMonitor()
+  else {
+    setVerdict('unknown')
+    renderEvents()
+  }
 }
 
 for (const b of document.querySelectorAll('.tabbar button')) b.addEventListener('click', () => showTab(b.dataset.tab))
@@ -981,6 +1328,17 @@ confirmTap($('restore'), async () => {
 
 $('load-log').addEventListener('click', loadLog)
 
+$('mon-pause').addEventListener('click', () => {
+  mon.paused = !mon.paused
+  renderPause()
+  if (!mon.paused) startMonitor()
+})
+
+$('mon-clear').addEventListener('click', () => {
+  mon.events = []
+  renderEvents()
+})
+
 // Live status only while Home is on screen.
 let timer = null
 function schedule() {
@@ -990,6 +1348,7 @@ function schedule() {
 document.addEventListener('visibilitychange', () => {
   schedule()
   if (!document.hidden && state.tab === 'home') refreshStatus()
+  if (!document.hidden && state.tab === 'monitor') startMonitor()
 })
 
 applyLanguage()

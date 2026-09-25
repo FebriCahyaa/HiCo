@@ -14,12 +14,14 @@
 #include "Fs.hpp"
 #include "HiCo.hpp"
 #include "Log.hpp"
+#include "Monitor.hpp"
 #include "ThermalServices.hpp"
 #include "ThermalZones.hpp"
 
 #include <chrono>
 #include <cstdio>
 #include <cstring>
+#include <ctime>
 #include <format>
 #include <string>
 #include <string_view>
@@ -56,6 +58,8 @@ int usage() {
         "  config schema          settings description (JSON)\n"
         "  sessions [clear]       gaming session history (JSON Lines)\n"
         "  zones                  thermal zones, cooling devices and services\n"
+        "  monitor [--once] [--interval S]   live throttling: CPU/GPU caps, cooling, tripped zones\n"
+        "  monitor --json         one throttling snapshot (JSON, used by the WebUI)\n"
         "  device [--list]        this device in the compiled database, or the whole database\n"
         "  thermal scan           vendor thermal configs and what the relaxed level would tune\n"
         "  thermal policy [--platform P] [--margin N]\n"
@@ -366,6 +370,44 @@ int cmd_thermal(const std::vector<std::string_view> &args) {
     return usage();
 }
 
+/// Live throttling view. Read-only: it never writes a node and works whether or not the daemon runs.
+int cmd_monitor(const std::vector<std::string_view> &args) {
+    bool json = false;
+    bool once = false;
+    long long interval = 1;
+    for (size_t i = 0; i < args.size(); ++i) {
+        if (args[i] == "--json") {
+            json = true;
+        } else if (args[i] == "--once") {
+            once = true;
+        } else if (args[i] == "--interval" && i + 1 < args.size()) {
+            const auto v = str::to_int(args[++i]);
+            if (!v || *v < 1 || *v > 60) {
+                std::fprintf(stderr, "--interval must be 1-60 seconds\n");
+                return 2;
+            }
+            interval = *v;
+        } else {
+            return usage();
+        }
+    }
+    if (json) {
+        out(monitor::to_json(monitor::sample()) + "\n");
+        return 0;
+    }
+    for (;;) {
+        const std::time_t now = std::time(nullptr);
+        std::tm tm{};
+        localtime_r(&now, &tm);
+        char clock[16];
+        std::strftime(clock, sizeof clock, "%H:%M:%S", &tm);
+        out(std::format("{}  {}\n", clock, monitor::to_line(monitor::sample())));
+        std::fflush(stdout);
+        if (once) return 0;
+        std::this_thread::sleep_for(std::chrono::seconds(interval));
+    }
+}
+
 int cmd_zones() {
     const auto kind = [](thermal::ZoneKind k) {
         switch (k) {
@@ -432,6 +474,7 @@ int main(int argc, char **argv) {
     if (cmd == "config") return cmd_config({args.begin() + 1, args.end()});
     if (cmd == "sessions") return cmd_sessions(args.size() > 1 && args[1] == "clear");
     if (cmd == "zones") return cmd_zones();
+    if (cmd == "monitor") return cmd_monitor({args.begin() + 1, args.end()});
     if (cmd == "device") return cmd_device(args.size() > 1 && args[1] == "--list");
     if (cmd == "thermal") return cmd_thermal({args.begin() + 1, args.end()});
     return usage();
