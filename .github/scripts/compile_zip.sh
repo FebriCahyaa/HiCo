@@ -25,7 +25,7 @@ for abi in arm64-v8a armeabi-v7a; do
 	mkdir -p "$stage/libs/$abi"
 	cp "libs/$abi/hicod" "$stage/libs/$abi/hicod"
 done
-cp LICENSE "$stage/"
+cp LICENSE EULA.md NOTICE.md "$stage/"
 
 # Device profiles generated from firmware dumps (tools/xiaomi_devices.py).
 mkdir -p "$stage/devices/xiaomi"

@@ -1,23 +1,24 @@
 name: Release
 
-# Publishes a HiCo Thermal release that root managers offer as an update.
+# Builds HiCo Thermal from this private repository and publishes it to the
+# PUBLIC release channel (vars.RELEASE_REPO, default FebriCahyaa/HiCo-Release):
 #
-#  - "Run workflow" with a version (e.g. 1.1.0) creates tag v1.1.0 and the release.
-#  - Publishing a release in the GitHub UI (tag vX.Y.Z) does the same for that tag.
+#   - a GitHub Release there with the flashable zip and its SHA-256
+#   - update.json, changelog.md, EULA.md and README.md on its default branch
 #
-# The flashable zip, its SHA-256 and a changelog generated from Conventional
-# Commits are attached to the release. Then update.json (read by Magisk,
-# KernelSU and APatch through `updateJson` in module.prop) and
-# update/changelog.md are committed to the default branch, so installed
-# modules show "Update" and can download it directly from the root manager.
+# Root managers read update.json through `updateJson` in module.prop and
+# download the zip from the public release, so users get update
+# notifications although the source stays private. No token is ever put
+# into the module.
+#
+# Setup: secret RELEASE_TOKEN = fine-grained PAT for the release repository
+# with "Contents: Read and write".
 
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version to release, without "v" (e.g. 1.1.0)'
+        description: 'Version to release, without "v" (e.g. 1.0.1)'
         required: true
       prerelease:
         description: 'Pre-release (not offered as an update in root managers)'
@@ -29,40 +30,50 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write # tag the released source commit in this repository
 
 jobs:
   release:
     name: Build & Publish
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # create the release, push update.json
     env:
-      TAG: ${{ github.event_name == 'release' && github.event.release.tag_name || format('v{0}', inputs.version) }}
-      PRERELEASE: ${{ github.event_name == 'release' && github.event.release.prerelease || inputs.prerelease }}
-      GH_TOKEN: ${{ github.token }}
+      TAG: v${{ inputs.version }}
+      PRERELEASE: ${{ inputs.prerelease }}
+      RELEASE_REPO: ${{ vars.RELEASE_REPO || 'FebriCahyaa/HiCo-Release' }}
+      RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
 
     steps:
-      - name: Validate tag
+      - name: Validate inputs
         run: |
           if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.]+)?$ ]]; then
-            echo "::error::Tag '$TAG' must look like v1.1.0 or v1.1.0-rc.1"
+            echo "::error::Version '$TAG' must look like 1.0.1 or 1.0.1-rc.1"
+            exit 1
+          fi
+          if [ -z "$RELEASE_TOKEN" ]; then
+            echo "::error::Secret RELEASE_TOKEN is missing (fine-grained PAT for $RELEASE_REPO, Contents: read and write)"
             exit 1
           fi
 
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          ref: ${{ github.event_name == 'release' && github.event.release.tag_name || github.sha }}
           fetch-depth: 0 # versionCode and the changelog need the full history
 
-      - name: Refuse existing tag (manual release)
-        if: github.event_name == 'workflow_dispatch'
+      - name: Refuse existing release
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
-          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
-            echo "::error::Tag $TAG already exists; publish a release for it instead"
+          if gh release view "$TAG" --repo "$RELEASE_REPO" >/dev/null 2>&1; then
+            echo "::error::$RELEASE_REPO already has release $TAG"
             exit 1
           fi
+
+      - name: Test
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j"$(nproc)"
+          ctest --test-dir build --output-on-failure
+          python3 tests/scanner_test.py
 
       - name: Set module version
         run: echo "${TAG#v}" >version
@@ -80,86 +91,92 @@ jobs:
           echo "ZIP_SHA256=$(cut -d' ' -f1 "$ZIP.sha256")" >>"$GITHUB_ENV"
           echo "VERSION_CODE=$(git rev-list --count HEAD)" >>"$GITHUB_ENV"
 
-          target="$TAG"
-          [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" ]] && target="$GITHUB_SHA"
-          previous=$(git describe --tags --abbrev=0 "${target}^" 2>/dev/null || true)
-          bash .github/scripts/changelog.sh "$target" "$previous" \
-            | sed "s|/compare/\(.*\)\.\.\.${GITHUB_SHA}|/compare/\1...${TAG}|" >"$RUNNER_TEMP/changes.md"
+          previous=$(git describe --tags --abbrev=0 HEAD 2>/dev/null || true)
+          # No repository URL: commit links would point into the private repository.
+          GITHUB_SERVER_URL='' GITHUB_REPOSITORY='' bash .github/scripts/changelog.sh HEAD "$previous" >"$RUNNER_TEMP/changes.md"
           {
-            echo "<!-- hico:auto -->"
             echo "## What's Changed"
             echo
             cat "$RUNNER_TEMP/changes.md"
             echo
             echo "## Install"
             echo
-            echo "Flash \`$ZIP\` in Magisk, KernelSU or APatch and reboot, or update from the root manager."
+            echo "Requires **Flux Tweaks v1.2.0+**. Flash \`$ZIP\` in Magisk, KernelSU or APatch and reboot,"
+            echo "or update from the root manager. By installing you accept the [EULA](EULA.md)."
             echo
             echo "| File | SHA-256 |"
             echo "|---|---|"
             echo "| \`$ZIP\` | \`$(cut -d' ' -f1 "$ZIP.sha256")\` |"
           } >"$RUNNER_TEMP/notes.md"
 
-      - name: Publish release
+      - name: Publish release (public channel)
         env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
           ZIP: ${{ steps.build.outputs.zip-name }}
         run: |
           set -euo pipefail
-          if [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" ]]; then
-            flags=()
-            [[ "$PRERELEASE" == "true" ]] && flags+=(--prerelease)
-            gh release create "$TAG" "$ZIP" "$ZIP.sha256" --target "$GITHUB_SHA" \
-              --title "HiCo Thermal $TAG" --notes-file "$RUNNER_TEMP/notes.md" "${flags[@]}"
-          else
-            gh release upload "$TAG" "$ZIP" "$ZIP.sha256" --clobber
-            gh release view "$TAG" --json body --jq .body | sed '/<!-- hico:auto -->/,$d' >"$RUNNER_TEMP/manual.md"
-            if [[ -n "$(tr -d '[:space:]' <"$RUNNER_TEMP/manual.md")" ]]; then
-              { cat "$RUNNER_TEMP/manual.md"; echo; cat "$RUNNER_TEMP/notes.md"; } >"$RUNNER_TEMP/body.md"
-            else
-              cp "$RUNNER_TEMP/notes.md" "$RUNNER_TEMP/body.md"
-            fi
-            gh release edit "$TAG" --notes-file "$RUNNER_TEMP/body.md"
-          fi
+          flags=()
+          [[ "$PRERELEASE" == "true" ]] && flags+=(--prerelease)
+          gh release create "$TAG" "$ZIP" "$ZIP.sha256" --repo "$RELEASE_REPO" \
+            --title "HiCo Thermal $TAG" --notes-file "$RUNNER_TEMP/notes.md" "${flags[@]}"
 
-      - name: Publish update.json for root managers
+      - name: Publish update.json (public channel)
         # Pre-releases are not offered as updates.
         if: env.PRERELEASE != 'true'
         env:
           ZIP: ${{ steps.build.outputs.zip-name }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           set -euo pipefail
-          raw="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$DEFAULT_BRANCH"
-          zip_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/$TAG/$ZIP"
+          dir="$RUNNER_TEMP/release-repo"
+          git clone --depth 1 "https://x-access-token:${RELEASE_TOKEN}@github.com/${RELEASE_REPO}.git" "$dir"
+          branch=$(git -C "$dir" rev-parse --abbrev-ref HEAD)
+          raw="https://raw.githubusercontent.com/$RELEASE_REPO/$branch"
+          zip_url="https://github.com/$RELEASE_REPO/releases/download/$TAG/$ZIP"
 
-          # Separate worktree: the build left modified files in the workspace.
-          git fetch --depth=1 origin "$DEFAULT_BRANCH"
-          git worktree add --detach "$RUNNER_TEMP/publish" "origin/$DEFAULT_BRANCH"
-          cd "$RUNNER_TEMP/publish"
-
-          mkdir -p update
           {
-            echo "# HiCo Thermal $TAG"
+            echo "## HiCo Thermal $TAG"
             echo
             sed 's/^### /#### /' "$RUNNER_TEMP/changes.md"
-          } >update/changelog.md
+            if [ -f "$dir/changelog.md" ]; then
+              echo
+              sed '1{/^# HiCo Thermal Changelog$/d}' "$dir/changelog.md"
+            fi
+          } >"$RUNNER_TEMP/changelog.md"
+          { echo "# HiCo Thermal Changelog"; echo; cat "$RUNNER_TEMP/changelog.md"; } >"$dir/changelog.md"
 
-          python3 - "$TAG" "$VERSION_CODE" "$zip_url" "$raw/update/changelog.md" "$ZIP_SHA256" <<'PY'
+          python3 - "$TAG" "$VERSION_CODE" "$zip_url" "$raw/changelog.md" "$ZIP_SHA256" "$dir/update.json" <<'PY'
           import json, sys
-          tag, code, zip_url, changelog, sha = sys.argv[1:]
-          json.dump({
-              "version": tag,
-              "versionCode": int(code),
-              "zipUrl": zip_url,
-              "changelog": changelog,
-              "sha256": sha,
-          }, open("update.json", "w"), indent=2)
-          open("update.json", "a").write("\n")
+          tag, code, zip_url, changelog, sha, out = sys.argv[1:]
+          with open(out, "w") as f:
+              json.dump({"version": tag, "versionCode": int(code), "zipUrl": zip_url,
+                         "changelog": changelog, "sha256": sha}, f, indent=2)
+              f.write("\n")
           PY
-          echo "${TAG#v}" >version
 
+          cp EULA.md NOTICE.md "$dir/"
+          cat >"$dir/README.md" <<EOF
+          # HiCo Thermal
+
+          Automatic thermal unlock for games, part of the Flux ecosystem. **Private software**: this
+          repository is the public release channel; the source code is not published.
+
+          - **Download:** [latest release](https://github.com/$RELEASE_REPO/releases/latest)
+          - **Requires:** [Flux Tweaks](https://github.com/FebriCahyaa/Flux/releases) v1.2.0 or newer,
+            root (Magisk, KernelSU or APatch), Android 9+
+          - **Updates:** installed modules are notified by the root manager through \`update.json\`
+          - **License:** [EULA](EULA.md) (English / Bahasa Indonesia), accepted when installing;
+            third-party notices in [NOTICE.md](NOTICE.md)
+          - **Changes:** [changelog.md](changelog.md)
+          EOF
+
+          cd "$dir"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add update.json update/changelog.md version
-          git commit -m "chore(release): publish $TAG to root managers [skip ci]" -m "versionCode $VERSION_CODE"
-          git push origin "HEAD:$DEFAULT_BRANCH"
+          git add update.json changelog.md EULA.md NOTICE.md README.md
+          git commit -m "release: HiCo Thermal $TAG" -m "versionCode $VERSION_CODE"
+          git push origin "HEAD:$branch"
+
+      - name: Tag released source
+        run: |
+          git tag "$TAG" "$GITHUB_SHA"
+          git push origin "$TAG"

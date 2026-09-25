@@ -2,7 +2,8 @@
 
 <p align="center">
   <b>Automatic thermal unlock for games, part of the Flux ecosystem</b><br/>
-  Magisk · KernelSU · APatch · arm64 / arm · requires <a href="https://github.com/FebriCahyaa/Flux">Flux Tweaks</a>
+  Magisk · KernelSU · APatch · arm64 / arm · requires <a href="https://github.com/FebriCahyaa/Flux">Flux Tweaks</a><br/>
+  Private software · <a href="EULA.md">EULA</a>
 </p>
 
 HiCo Thermal disables thermal throttling **only while you play**. As soon as Flux Tweaks puts a
@@ -19,6 +20,7 @@ thermal stack if the device gets too hot.
 - [Configuration](#configuration)
 - [Command line](#command-line)
 - [Building and testing](#building-and-testing)
+- [Releases and updates](#releases-and-updates)
 - [License](#license)
 
 ---
@@ -169,9 +171,28 @@ ctest --test-dir build --output-on-failure     # unit + end-to-end tests
 The host build redirects every device path under `$HICO_ROOT` (ignored on Android), so the tests
 run the real daemon — inotify, epoll, signals — against a simulated Snapdragon/Xiaomi device with
 Flux installed. CI runs them under AddressSanitizer and UBSan, then builds the flashable zip.
-Releases work like Flux's: **Actions → Release** publishes the zip and `update.json`, and root
-managers offer the update.
+See [Releases and updates](#releases-and-updates) for publishing.
+
+## Releases and updates
+
+The source repository is private, and root managers cannot read files from a private repository
+(no token may ever ship inside the module). Releases are therefore published to the **public**
+repository [FebriCahyaa/HiCo-Release](https://github.com/FebriCahyaa/HiCo-Release), which holds
+only what users need: the flashable zip (GitHub Release), `update.json`, `changelog.md`,
+`EULA.md` and a README. `module.prop` points `updateJson` there, so Magisk, KernelSU and APatch
+show **Update** with the changelog and download the zip directly.
+
+One-time setup:
+1. Create the public repository `FebriCahyaa/HiCo-Release` (an initial README commit is enough).
+2. Create a fine-grained personal access token limited to that repository with
+   **Contents: Read and write**, and add it to this repository as the secret `RELEASE_TOKEN`.
+
+Then run **Actions → Release** with a version (e.g. `1.0.1`). The workflow builds and tests the
+module, creates release `v1.0.1` in HiCo-Release with the zip and its SHA-256, and commits the
+new `update.json` and changelog there. Pre-releases are not offered as updates.
 
 ## License
 
-Apache License 2.0, see [LICENSE](LICENSE).
+HiCo Thermal is **private, proprietary software** — © 2026 FebriCahyaa, all rights reserved. Use
+is governed by the [EULA](EULA.md) (English and Bahasa Indonesia), accepted when installing.
+Third-party components keep their own licenses, listed in [NOTICE.md](NOTICE.md).
