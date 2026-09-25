@@ -17,6 +17,7 @@
 #pragma once
 
 #include "Config.hpp"
+#include "DeviceProfile.hpp"
 #include "Journal.hpp"
 #include "ThermalZones.hpp"
 
@@ -48,6 +49,7 @@ namespace hico {
 class ThermalController {
 public:
     explicit ThermalController(Journal &journal);
+    ThermalController(Journal &journal, std::optional<DeviceProfile> profile);
 
     struct Summary {
         int services = 0; ///< thermal daemons stopped
@@ -66,6 +68,7 @@ public:
 
     [[nodiscard]] bool unlocked() const { return !journal_.empty(); }
     [[nodiscard]] bool is_xiaomi() const { return xiaomi_; }
+    [[nodiscard]] const std::optional<DeviceProfile> &profile() const { return profile_; }
 
 private:
     void scan();
@@ -79,6 +82,7 @@ private:
     int xiaomi(const Config &cfg);
 
     Journal &journal_;
+    std::optional<DeviceProfile> profile_;
     bool xiaomi_ = false;
     bool scanned_ = false;
     std::vector<thermal::Zone> zones_;              ///< zones HiCo may switch

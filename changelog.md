@@ -17,6 +17,10 @@
 - Game session history: play time, unlocked time, peak temperatures, safety trips
 - WebUI: live state and temperatures, every setting, session history, logs
 
+- Xiaomi device profiles generated from stock firmware dumps (dumps.tadiphone.dev): vendor
+  thermal services, thermal configs, model and platform per codename; supported device list and a
+  workflow that refreshes them through a pull request
+
 ### Security
 - Undo journal validated before replay; only `/sys` and `/proc` nodes are ever written
 - No shell in the daemon: services via system properties, notifications via `exec`

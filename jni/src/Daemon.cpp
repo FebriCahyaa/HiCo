@@ -279,6 +279,8 @@ void Daemon::publish(const thermal::Temperatures &t) const {
     kv("vendor", std::to_string(summary_.vendor));
     kv("trips", std::to_string(session_ ? session_->trips : 0));
     kv("xiaomi", controller_.is_xiaomi() ? "1" : "0");
+    kv("device", device_codename());
+    kv("device_profile", controller_.profile() ? "verified" : "generic");
     kv("pid", std::to_string(getpid()));
     kv("version", HICO_VERSION);
 

@@ -99,6 +99,21 @@ for f in index.html app.js style.css; do
 	extract "$ZIPFILE" "webroot/$f" "$MODPATH"
 done
 
+# Device profile generated from this phone's stock firmware dump, when one ships.
+codename=$(getprop ro.product.vendor.device | tr '[:upper:]' '[:lower:]')
+[ -z "$codename" ] && codename=$(getprop ro.product.device | tr '[:upper:]' '[:lower:]')
+case "$codename" in
+'' | *[!a-z0-9_]*) codename="" ;;
+esac
+if [ -n "$codename" ] && unzip -l "$ZIPFILE" "devices/xiaomi/$codename.prop" >/dev/null 2>&1; then
+	mkdir -p "$MODPATH/devices/xiaomi"
+	extract "$ZIPFILE" "devices/xiaomi/$codename.prop" "$MODPATH"
+	model=$(sed -n 's/^model=//p' "$MODPATH/devices/xiaomi/$codename.prop")
+	ui_print "- Device profile: $model ($codename), from its stock firmware"
+else
+	ui_print "- No device profile for '${codename:-unknown}': runtime detection only"
+fi
+
 set_perm_recursive "$MODPATH" 0 0 0755 0644
 set_perm "$MODPATH/system/bin/hicod" 0 0 0755
 

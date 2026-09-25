@@ -14,6 +14,7 @@ thermal stack if the device gets too hot.
 - [How it works](#how-it-works)
 - [What is unlocked](#what-is-unlocked)
 - [Safety](#safety)
+- [Xiaomi device profiles](#xiaomi-device-profiles)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Command line](#command-line)
@@ -87,7 +88,24 @@ gaming).
   values are range-checked, runtime files are `0600` in `0700` directories, the installer checks
   the SHA-256 of every file.
 
-## Installation
+## Xiaomi device profiles
+
+HiCo adapts to each device at runtime (services from `init.svc.*`, zones and cooling devices
+from `/sys/class/thermal`). On top of that, Xiaomi, Redmi and POCO devices get a **profile read
+from their own stock firmware**:
+[`tools/xiaomi_devices.py`](tools/xiaomi_devices.py) scans the vendor partition of every dump on
+[dumps.tadiphone.dev/dumps/xiaomi](https://dumps.tadiphone.dev/dumps/xiaomi) and records the
+codename, model, SoC platform, the thermal services declared in the vendor's thermal init scripts
+(exact names, so a thermal daemon whose name does not contain "thermal" is still stopped) and
+the thermal configuration files it ships.
+
+- Profiles: [`devices/xiaomi/`](devices/xiaomi), one `<codename>.prop` each, with the URL of the
+  dump it came from. Nothing is written by hand.
+- Supported list: [`docs/DEVICES.md`](docs/DEVICES.md).
+- Refresh: **Actions → Update Xiaomi device profiles** (also monthly) opens a pull request.
+- The installer copies only this phone's profile (checksum-verified); `hicod status` and the
+  WebUI show `verified` or `generic`.
+
 
 1. Install **[Flux Tweaks](https://github.com/FebriCahyaa/Flux/releases) v1.2.0 or newer** first.
 2. Flash `hico-*.zip` in Magisk, KernelSU or APatch and reboot.

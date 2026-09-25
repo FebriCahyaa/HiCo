@@ -17,6 +17,7 @@
 #include "ThermalController.hpp"
 
 #include "Fs.hpp"
+#include "HiCo.hpp"
 #include "Log.hpp"
 #include "Props.hpp"
 #include "ThermalServices.hpp"
@@ -74,7 +75,19 @@ bool detect_xiaomi() {
     return false;
 }
 
-ThermalController::ThermalController(Journal &journal) : journal_(journal), xiaomi_(detect_xiaomi()) {}
+ThermalController::ThermalController(Journal &journal)
+    : ThermalController(journal, DeviceProfile::detect(HICO_XIAOMI_DEVICES_DIR)) {}
+
+ThermalController::ThermalController(Journal &journal, std::optional<DeviceProfile> profile)
+    : journal_(journal), profile_(std::move(profile)),
+      xiaomi_(detect_xiaomi() || (profile_ && profile_->has_mi_thermald)) {
+    if (profile_) {
+        LOGI("device profile: {} {} ({}, {}), {} declared thermal services, from {}", profile_->brand, profile_->model,
+             profile_->codename, profile_->platform, profile_->thermal_services.size(), profile_->source);
+    } else {
+        LOGI("no device profile for '{}': using runtime detection only", device_codename());
+    }
+}
 
 void ThermalController::scan() {
     if (scanned_) return;
@@ -123,7 +136,8 @@ int ThermalController::stop_services(const Config &cfg) {
     if (!cfg.stop_thermal_services) return 0;
 
     int stopped = 0;
-    for (const auto &svc : services::thermal_services()) {
+    static const std::vector<std::string> kNone;
+    for (const auto &svc : services::thermal_services(profile_ ? profile_->thermal_services : kNone)) {
         if (svc.kind == services::Kind::Hal && !cfg.stop_thermal_hal) continue;
 
         const bool running = svc.state == "running" || svc.state == "restarting";

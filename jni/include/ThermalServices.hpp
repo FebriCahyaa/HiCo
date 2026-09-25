@@ -46,7 +46,9 @@ struct Service {
     std::string state; ///< running, stopped, restarting, ...
 };
 
-[[nodiscard]] std::vector<Service> thermal_services();
+/// Thermal services found in init.svc.*, plus @p declared (names a device profile
+/// took from the vendor's thermal init scripts) when init knows them.
+[[nodiscard]] std::vector<Service> thermal_services(const std::vector<std::string> &declared = {});
 
 bool stop(std::string_view service);
 bool start(std::string_view service);

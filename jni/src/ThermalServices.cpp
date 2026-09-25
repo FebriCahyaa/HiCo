@@ -53,11 +53,16 @@ Kind classify(std::string_view s) {
     return Kind::Daemon;
 }
 
-std::vector<Service> thermal_services() {
+std::vector<Service> thermal_services(const std::vector<std::string> &declared) {
     std::vector<Service> out;
-    props::for_each(kSvcPrefix, [&out](std::string_view name, std::string_view value) {
+    props::for_each(kSvcPrefix, [&out, &declared](std::string_view name, std::string_view value) {
         const std::string_view svc = name.substr(kSvcPrefix.size());
-        const Kind kind = classify(svc);
+        Kind kind = classify(svc);
+        // Declared by the vendor's thermal init script even though the name does not say "thermal".
+        if (kind == Kind::None && std::find(declared.begin(), declared.end(), svc) != declared.end() &&
+            is_valid_name(svc) && std::find(kIgnored.begin(), kIgnored.end(), svc) == kIgnored.end()) {
+            kind = str::icontains(svc, "hal") || str::icontains(svc, "android.hardware") ? Kind::Hal : Kind::Daemon;
+        }
         if (kind == Kind::None) return;
         out.push_back({std::string(svc), kind, std::string(value)});
     });

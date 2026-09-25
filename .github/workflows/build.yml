@@ -13,6 +13,8 @@ on:
       - 'jni/**'
       - 'module/**'
       - 'tests/**'
+      - 'tools/**'
+      - 'devices/**'
       - 'CMakeLists.txt'
       - 'version'
 
@@ -39,6 +41,9 @@ jobs:
 
       - name: Test
         run: ctest --test-dir build --output-on-failure
+
+      - name: Device scanner tests
+        run: python3 tests/scanner_test.py
 
       - name: ShellCheck
         run: shellcheck -s sh module/*.sh tests/cli_test.sh

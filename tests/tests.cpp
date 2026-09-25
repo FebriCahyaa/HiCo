@@ -19,6 +19,7 @@
 
 #include "Config.hpp"
 #include "Daemon.hpp"
+#include "DeviceProfile.hpp"
 #include "FluxLink.hpp"
 #include "Fs.hpp"
 #include "HiCo.hpp"
@@ -516,6 +517,55 @@ void test_sessions_are_bounded() {
     CHECK(get(HICO_SESSIONS_FILE).find("com.gameinject") != std::string::npos);
 }
 
+void test_device_profile() {
+    build_device();
+    // Synthetic profile ("testdev" is not a real codename).
+    const std::string dir = HICO_XIAOMI_DEVICES_DIR;
+    put(dir + "/testdev.prop", "# generated\ncodename=testdev\nbrand=Redmi\nmodel=Test Phone\nplatform=testsoc\n"
+                               "source=https://example.invalid/dump\nmi_thermald=1\n"
+                               "thermal_services=mi_thermald,vendor.tmd_daemon,bad;name\n"
+                               "thermal_configs=thermal-normal.conf,thermal-tgame.conf\n");
+    put("/__props__/ro.product.vendor.device", "testdev");
+    put("/__props__/init.svc.vendor.tmd_daemon", "running"); // vendor thermal daemon without "thermal" in its name
+
+    CHECK_EQ(device_codename(), std::string("testdev"));
+    const auto p = DeviceProfile::detect(dir);
+    CHECK(p.has_value());
+    CHECK(p && p->model == "Test Phone" && p->has_mi_thermald);
+    CHECK(p && p->thermal_services.size() == 2); // invalid name dropped
+    CHECK(p && p->thermal_configs.size() == 2);
+
+    // A profile whose codename does not match its file name is ignored.
+    put(dir + "/other.prop", "codename=testdev\n");
+    CHECK(!DeviceProfile::load(dir + "/other.prop", "other"));
+    // Codenames are validated before building a path.
+    put("/__props__/ro.product.vendor.device", "../../etc");
+    put("/__props__/ro.product.device", "");
+    CHECK(device_codename().empty());
+    CHECK(!DeviceProfile::detect(dir));
+    put("/__props__/ro.product.vendor.device", "testdev");
+
+    Journal journal(HICO_JOURNAL_FILE);
+    ThermalController c(journal, p);
+    CHECK(c.profile().has_value());
+    const auto s = c.unlock(Config{});
+    CHECK_EQ(s.services, 3);
+    CHECK_EQ(props::get("init.svc.vendor.tmd_daemon"), std::string("stopped"));
+    c.restore();
+    CHECK_EQ(props::get("init.svc.vendor.tmd_daemon"), std::string("running"));
+
+    // Without a profile the same daemon is not recognised (name-based detection only).
+    Journal j2(HICO_JOURNAL_FILE);
+    ThermalController generic(j2, std::nullopt);
+    generic.unlock(Config{});
+    CHECK_EQ(props::get("init.svc.vendor.tmd_daemon"), std::string("running"));
+    generic.restore();
+
+    Daemon d;
+    d.tick(Daemon::Clock::time_point{} + 100s);
+    CHECK(get(HICO_STATE_FILE).find("device_profile=verified") != std::string::npos);
+}
+
 } // namespace
 
 int main() {
@@ -535,6 +585,7 @@ int main() {
         {"journal tampering", test_journal_rejects_tampering},
         {"daemon state machine", test_daemon_state_machine},
         {"session history", test_sessions_are_bounded},
+        {"device profile", test_device_profile},
     };
 
     for (const auto &[name, fn] : tests) {

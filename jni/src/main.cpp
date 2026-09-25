@@ -16,6 +16,7 @@
 
 #include "Config.hpp"
 #include "Daemon.hpp"
+#include "DeviceProfile.hpp"
 #include "FluxLink.hpp"
 #include "Fs.hpp"
 #include "HiCo.hpp"
@@ -172,6 +173,11 @@ int cmd_status(bool json) {
     set("gpu_temp", opt(temps.gpu));
     set("battery_temp", opt(temps.battery));
     set("version", HICO_VERSION);
+    const std::string codename = device_codename();
+    const auto profile = DeviceProfile::detect(HICO_XIAOMI_DEVICES_DIR);
+    set("device", codename);
+    set("device_profile", profile ? "verified" : "generic");
+    set("device_name", profile ? str::trim(profile->brand + " " + profile->model) : "");
 
     if (!json) {
         for (const auto &[k, v] : kv) out(std::format("{}={}\n", k, v));
@@ -272,8 +278,16 @@ int cmd_zones() {
                         fs::read(d.dir + "/cur_state").value_or("?"), fs::read(d.dir + "/max_state").value_or("?"),
                         thermal::is_performance_cooling(d.type) ? "" : "  (kept)"));
     }
+    const auto profile = DeviceProfile::detect(HICO_XIAOMI_DEVICES_DIR);
+    out(std::format("\n== Device\ncodename: {}\nprofile: {}\n", device_codename(),
+                    profile ? profile->brand + " " + profile->model + " (" + profile->source + ")" : "none, runtime detection"));
+    if (profile) {
+        out(std::format("declared services: {}\nthermal configs: {}\n", profile->thermal_services.size(),
+                        profile->thermal_configs.size()));
+    }
+
     out("\n== Thermal services\n");
-    for (const auto &s : services::thermal_services()) {
+    for (const auto &s : services::thermal_services(profile ? profile->thermal_services : std::vector<std::string>{})) {
         out(std::format("{:<36} {:<10} {}\n", s.name, s.state, s.kind == services::Kind::Hal ? "hal" : "daemon"));
     }
     return 0;
