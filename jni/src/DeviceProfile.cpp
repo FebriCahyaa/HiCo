@@ -14,26 +14,19 @@
 
 #include <algorithm>
 #include <cctype>
+#include <string>
 
 namespace hico {
 
 namespace {
 
-std::vector<std::string> service_list(std::string_view value) {
-    std::vector<std::string> out;
-    for (auto &name : str::split(value, ',')) {
-        if (services::is_valid_name(name)) out.push_back(std::move(name));
-    }
-    return out;
+std::vector<std::string> to_strings(std::span<const std::string_view> in) {
+    return {in.begin(), in.end()};
 }
 
-std::string clean(std::string_view v, size_t limit = 128) {
-    // Informational fields: printable ASCII only, bounded, no separators that could break the state file.
-    std::string out;
-    for (const char c : v.substr(0, limit)) {
-        if (c >= 0x20 && c < 0x7f && c != '=') out += c;
-    }
-    return out;
+std::string lower(std::string v) {
+    std::transform(v.begin(), v.end(), v.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+    return v;
 }
 
 } // namespace
@@ -45,43 +38,49 @@ bool is_valid_codename(std::string_view s) {
 
 std::string device_codename() {
     for (const char *prop : {"ro.product.vendor.device", "ro.product.device"}) {
-        std::string v = props::get(prop);
-        std::transform(v.begin(), v.end(), v.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+        const std::string v = lower(props::get(prop));
         if (is_valid_codename(v)) return v;
     }
     return {};
 }
 
-std::optional<DeviceProfile> DeviceProfile::load(std::string_view path, std::string_view codename) {
-    const auto text = fs::read(path, 32 * 1024);
-    if (!text) return std::nullopt;
-
+DeviceProfile DeviceProfile::from_record(const DeviceRecord &r) {
     DeviceProfile p;
-    for (const auto &line : str::split(*text, '\n')) {
-        if (line.empty() || line.front() == '#') continue;
-        const auto eq = line.find('=');
-        if (eq == std::string::npos) continue;
-        const std::string key = str::trim(std::string_view(line).substr(0, eq));
-        const std::string_view value = std::string_view(line).substr(eq + 1);
-
-        if (key == "codename") p.codename = str::trim(value);
-        else if (key == "brand") p.brand = clean(value);
-        else if (key == "model") p.model = clean(value);
-        else if (key == "platform") p.platform = clean(value);
-        else if (key == "android") p.android = clean(value);
-        else if (key == "source") p.source = clean(value, 512); // dump URL with the firmware branch name
-        else if (key == "thermal_services") p.thermal_services = service_list(value);
-        else if (key == "thermal_configs") p.thermal_configs = str::split(clean(value, 4096), ',');
-        else if (key == "mi_thermald") p.has_mi_thermald = str::trim(value) == "1";
+    p.codename = r.codename;
+    p.brand = r.brand;
+    p.model = r.model;
+    p.platform = r.platform;
+    p.android = r.android;
+    p.source = r.source;
+    for (const auto svc : r.services) {
+        if (services::is_valid_name(svc)) p.thermal_services.emplace_back(svc);
     }
-    if (p.codename != codename) return std::nullopt; // file renamed or corrupted
+    p.thermal_configs = to_strings(r.configs);
+    p.soc = soc_from_platform(r.platform);
+    p.traits = traits_of(r);
+    p.in_database = true;
     return p;
 }
 
-std::optional<DeviceProfile> DeviceProfile::detect(std::string_view devices_dir) {
+DeviceProfile DeviceProfile::detect(std::span<const DeviceRecord> db) {
     const std::string codename = device_codename();
-    if (codename.empty()) return std::nullopt;
-    return load(std::string(devices_dir) + "/" + codename + ".prop", codename);
+    DeviceProfile p;
+    if (const DeviceRecord *r = codename.empty() ? nullptr : device_db::find(db, codename)) {
+        p = from_record(*r);
+    } else {
+        p.codename = codename;
+        p.brand = props::get("ro.product.brand");
+        p.model = props::get("ro.product.model");
+        p.platform = props::get("ro.board.platform");
+    }
+    // A record from an older dump may lack the platform; the live device always knows it.
+    if (p.soc == SocVendor::Unknown) {
+        for (const char *prop : {"ro.board.platform", "ro.soc.model", "ro.hardware"}) {
+            p.soc = soc_from_platform(props::get(prop));
+            if (p.soc != SocVendor::Unknown) break;
+        }
+    }
+    return p;
 }
 
 } // namespace hico

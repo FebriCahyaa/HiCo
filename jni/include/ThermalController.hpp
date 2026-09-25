@@ -8,47 +8,54 @@
 
 #pragma once
 
+#include "Actuator.hpp"
 #include "Config.hpp"
 #include "DeviceProfile.hpp"
 #include "Journal.hpp"
+#include "ThermalBackend.hpp"
 #include "ThermalZones.hpp"
 
+#include <memory>
 #include <set>
 #include <string>
-#include <string_view>
 #include <vector>
 
 namespace hico {
 
 /**
- * Switches the device between the stock thermal state and the gaming state.
+ * Core of the thermal framework: switches the device between the stock
+ * thermal state and the gaming state.
  *
  * Division of labour inside the ecosystem: Flux's profiler already sets CPU
  * governors, frequencies, GPU and scheduler tunables per profile. HiCo only
- * owns the *thermal* layer on top of it:
+ * owns the *thermal* layer on top of it. The controller handles what every
+ * device has:
  *
- *   - userspace thermal daemons (stopped through init, restarted afterwards)
+ *   - userspace thermal daemons (stopped through init, restarted afterwards),
+ *     including the exact names the device database declares for this device
  *   - kernel thermal zone governors (user_space: no throttling, but the
  *     thermal core still handles critical trips, so hardware shutdown
  *     protection is never disabled)
  *   - CPU/GPU cooling devices (released, except those bound to battery zones)
- *   - frequency caps left behind by thermal drivers (CPU max freq, msm_performance,
- *     kgsl thermal power level)
- *   - vendor thermal drivers: Qualcomm msm_thermal, MediaTek EARA, Xiaomi thermal_message
+ *   - cpufreq caps left behind by thermal drivers
  *
- * Every change is journaled first, so restore() returns the exact stock values.
+ * and delegates vendor drivers to the backends that apply to this device
+ * (ThermalBackend.hpp: Qualcomm, MediaTek, Xiaomi).
+ *
+ * Every journaled change is recorded first, so restore() returns the exact stock values.
  */
 class ThermalController {
 public:
+    /// Uses the running device's profile (compiled device database + live properties).
     explicit ThermalController(Journal &journal);
-    ThermalController(Journal &journal, std::optional<DeviceProfile> profile);
+    ThermalController(Journal &journal, DeviceProfile device);
 
     struct Summary {
         int services = 0; ///< thermal daemons stopped
         int zones = 0;    ///< zones switched to user_space
         int cooling = 0;  ///< cooling devices released
         int caps = 0;     ///< frequency caps lifted
-        int vendor = 0;   ///< vendor nodes changed
+        int vendor = 0;   ///< vendor nodes in the gaming state
     };
 
     /// Enters the gaming state (idempotent). Called on entry and on every poll,
@@ -59,29 +66,27 @@ public:
     Journal::RestoreResult restore();
 
     [[nodiscard]] bool unlocked() const { return !journal_.empty(); }
+    [[nodiscard]] const DeviceProfile &device() const { return device_; }
     [[nodiscard]] bool is_xiaomi() const { return xiaomi_; }
-    [[nodiscard]] const std::optional<DeviceProfile> &profile() const { return profile_; }
+    /// Names of the backends running on this device, comma-separated.
+    [[nodiscard]] std::string backend_names() const;
 
 private:
     void scan();
-    bool set_node(std::string_view node, std::string_view value);
     int stop_services(const Config &cfg);
     int switch_zone_governors();
     int release_cooling_devices();
-    int lift_cpu_caps(const Config &cfg);
-    int lift_gpu_caps();
-    int qualcomm_mediatek();
-    int xiaomi(const Config &cfg);
+    int lift_cpufreq_caps(const Config &cfg);
 
     Journal &journal_;
-    std::optional<DeviceProfile> profile_;
+    Actuator act_;
+    DeviceProfile device_;
     bool xiaomi_ = false;
+    std::vector<std::unique_ptr<ThermalBackend>> backends_;
     bool scanned_ = false;
     std::vector<thermal::Zone> zones_;              ///< zones HiCo may switch
     std::vector<thermal::CoolingDevice> cooling_;   ///< cooling devices HiCo may release
-    std::set<std::string> warned_; ///< one-time warnings per node / service
+    std::set<std::string> warned_services_;
 };
-
-[[nodiscard]] bool detect_xiaomi();
 
 } // namespace hico

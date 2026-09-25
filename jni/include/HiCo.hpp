@@ -31,8 +31,6 @@
 
 #define HICO_MODULE_DIR "/data/adb/modules/hico"
 #define HICO_MODULE_PROP HICO_MODULE_DIR "/module.prop"
-/// Per-device profiles generated from Xiaomi firmware dumps (tools/xiaomi_devices.py).
-#define HICO_XIAOMI_DEVICES_DIR HICO_MODULE_DIR "/devices/xiaomi"
 
 // ── Flux (required) ──────────────────────────────────────────────────────────
 // HiCo does not detect games itself: fluxd already does it (game list, focus,

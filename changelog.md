@@ -17,9 +17,11 @@
 - Game session history: play time, unlocked time, peak temperatures, safety trips
 - WebUI: live state and temperatures, every setting, session history, logs
 
-- Xiaomi device profiles generated from stock firmware dumps (dumps.tadiphone.dev): vendor
-  thermal services, thermal configs, model and platform per codename; supported device list and a
-  workflow that refreshes them through a pull request
+- Thermal framework: core controller plus per-vendor backends (Qualcomm, MediaTek, Xiaomi)
+  selected from the device's SoC and traits, and a single journaled write path
+- Xiaomi device database generated from stock firmware dumps (dumps.tadiphone.dev) and compiled
+  into hicod: vendor thermal services, thermal configs, model and platform per codename; the data
+  stays in the repository and is never shipped as files; a workflow refreshes it through a pull request
 
 ### Security
 - Undo journal validated before replay; only `/sys` and `/proc` nodes are ever written

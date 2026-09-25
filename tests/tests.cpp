@@ -11,6 +11,7 @@
 
 #include "Config.hpp"
 #include "Daemon.hpp"
+#include "DeviceDatabase.hpp"
 #include "DeviceProfile.hpp"
 #include "FluxLink.hpp"
 #include "Fs.hpp"
@@ -20,10 +21,13 @@
 #include "Props.hpp"
 #include "SafetyGuard.hpp"
 #include "Sessions.hpp"
+#include "ThermalBackend.hpp"
 #include "ThermalController.hpp"
 #include "ThermalServices.hpp"
 #include "ThermalZones.hpp"
 
+#include <algorithm>
+#include <array>
 #include <cstdio>
 #include <cstdlib>
 #include <filesystem>
@@ -509,63 +513,113 @@ void test_sessions_are_bounded() {
     CHECK(get(HICO_SESSIONS_FILE).find("com.gameinject") != std::string::npos);
 }
 
-void test_device_profile() {
+// Synthetic records ("testdev*" codenames do not exist), sorted by codename like the generated table.
+constexpr std::array<std::string_view, 3> kTestServices{"mi_thermald", "vendor.thermal-hal-2-0", "vendor.tmd_daemon"};
+constexpr std::array<std::string_view, 2> kTestConfigs{"thermal-nolimits.conf", "thermal-tgame.conf"};
+constexpr std::array<std::string_view, 3> kMtkServices{"thermal", "thermal_manager", "thermalloadalgod"};
+constexpr std::array kTestDb{
+    DeviceRecord{"testdev", "Redmi", "Test Phone", "taro", "14", "https://example.invalid/dump", kTestServices, kTestConfigs},
+    DeviceRecord{"testmtk", "Xiaomi", "Test MTK", "mt6893", "14", "https://example.invalid/mtk", kMtkServices, {}},
+};
+
+std::vector<std::string> backend_names(const DeviceProfile &d) {
+    std::vector<std::string> out;
+    for (const auto &b : make_backends(d)) out.emplace_back(b->name());
+    return out;
+}
+
+void test_device_database() {
     build_device();
-    // Synthetic profile ("testdev" is not a real codename).
-    const std::string dir = HICO_XIAOMI_DEVICES_DIR;
-    put(dir + "/testdev.prop", "# generated\ncodename=testdev\nbrand=Redmi\nmodel=Test Phone\nplatform=testsoc\n"
-                               "source=https://example.invalid/dump\nmi_thermald=1\n"
-                               "thermal_services=mi_thermald,vendor.tmd_daemon,bad;name\n"
-                               "thermal_configs=thermal-normal.conf,thermal-tgame.conf\n");
-    put("/__props__/ro.product.vendor.device", "testdev");
-    put("/__props__/init.svc.vendor.tmd_daemon", "running"); // vendor thermal daemon without "thermal" in its name
 
-    CHECK_EQ(device_codename(), std::string("testdev"));
-    const auto p = DeviceProfile::detect(dir);
-    CHECK(p.has_value());
-    CHECK(p && p->model == "Test Phone" && p->has_mi_thermald);
-    CHECK(p && p->thermal_services.size() == 2); // invalid name dropped
-    CHECK(p && p->thermal_configs.size() == 2);
+    // Lookup and derived facts.
+    CHECK(device_db::find(kTestDb, "testdev") == &kTestDb[0]);
+    CHECK(device_db::find(kTestDb, "testmtk") == &kTestDb[1]);
+    CHECK(device_db::find(kTestDb, "nope") == nullptr);
+    CHECK(device_db::find({}, "testdev") == nullptr);
+    CHECK_EQ(traits_of(kTestDb[0]), static_cast<std::uint32_t>(kTraitMiThermald | kTraitThermalHal |
+                                                               kTraitSceneConfigs | kTraitNoLimitsScene));
+    CHECK(traits_of(kTestDb[1]) == kTraitMtkThermal);
 
-    // Real profiles carry long fields (22 config files, firmware branch in the URL).
-    std::string configs, url = "https://dumps.tadiphone.dev/dumps/xiaomi/testdev/-/tree/" + std::string(150, 'x');
-    for (int i = 0; i < 22; ++i) configs += std::format("{}thermal-k11r-scene{}.conf", i ? "," : "", i);
-    put(dir + "/testlong.prop", "codename=testlong\nsource=" + url + "\nthermal_configs=" + configs + "\n");
-    const auto longp = DeviceProfile::load(dir + "/testlong.prop", "testlong");
-    CHECK(longp && longp->source == url);
-    CHECK(longp && longp->thermal_configs.size() == 22);
+    CHECK(soc_from_platform("taro") == SocVendor::Qualcomm);
+    CHECK(soc_from_platform("msmnile") == SocVendor::Qualcomm);
+    CHECK(soc_from_platform("sm8650") == SocVendor::Qualcomm);
+    CHECK(soc_from_platform("MT6893") == SocVendor::MediaTek);
+    CHECK(soc_from_platform("exynos2100") == SocVendor::Exynos);
+    CHECK(soc_from_platform("gs201") == SocVendor::Tensor);
+    CHECK(soc_from_platform("ums512") == SocVendor::Unisoc);
+    CHECK(soc_from_platform("sc8280xp") == SocVendor::Unknown); // Qualcomm compute, not Unisoc
+    CHECK(soc_from_platform("") == SocVendor::Unknown);
+    CHECK(soc_from_platform("mtk") == SocVendor::Unknown);      // no model number
 
-    // A profile whose codename does not match its file name is ignored.
-    put(dir + "/other.prop", "codename=testdev\n");
-    CHECK(!DeviceProfile::load(dir + "/other.prop", "other"));
-    // Codenames are validated before building a path.
+    // The running device is found by its codename.
+    put("/__props__/ro.product.vendor.device", "TestDev");
+    const DeviceProfile p = DeviceProfile::detect(kTestDb);
+    CHECK(p.in_database && p.codename == "testdev" && p.model == "Test Phone");
+    CHECK(p.soc == SocVendor::Qualcomm && p.has(kTraitMiThermald));
+    CHECK_EQ(p.thermal_services.size(), 3u);
+
+    // Not in the database: live properties, SoC from ro.board.platform.
+    put("/__props__/ro.product.vendor.device", "unknowndev");
+    put("/__props__/ro.board.platform", "mt6789");
+    const DeviceProfile live = DeviceProfile::detect(kTestDb);
+    CHECK(!live.in_database && live.codename == "unknowndev" && live.soc == SocVendor::MediaTek);
+    put("/__props__/ro.board.platform", "");
+
+    // Codenames are validated.
     put("/__props__/ro.product.vendor.device", "../../etc");
     put("/__props__/ro.product.device", "");
     CHECK(device_codename().empty());
-    CHECK(!DeviceProfile::detect(dir));
-    put("/__props__/ro.product.vendor.device", "testdev");
+    CHECK(!DeviceProfile::detect(kTestDb).in_database);
 
-    Journal journal(HICO_JOURNAL_FILE);
-    ThermalController c(journal, p);
-    CHECK(c.profile().has_value());
-    const auto s = c.unlock(Config{});
-    CHECK_EQ(s.services, 3);
+    // Backends follow the SoC: the simulated device exposes Qualcomm AND MediaTek nodes.
+    put("/sys/kernel/eara_thermal/enable", "1\n");
+    CHECK(backend_names(DeviceProfile::from_record(kTestDb[0])) == (std::vector<std::string>{"qualcomm", "xiaomi"}));
+    CHECK(backend_names(DeviceProfile::from_record(kTestDb[1])) == (std::vector<std::string>{"mediatek", "xiaomi"}));
+
+    Journal jq(HICO_JOURNAL_FILE);
+    ThermalController qcom(jq, DeviceProfile::from_record(kTestDb[0]));
+    qcom.unlock(Config{});
+    CHECK_EQ(get("/sys/module/msm_thermal/parameters/enabled"), std::string("N"));
+    CHECK_EQ(get("/sys/kernel/eara_thermal/enable"), std::string("1")); // MediaTek node left alone
+    qcom.restore();
+
+    Journal jm(HICO_JOURNAL_FILE);
+    ThermalController mtk(jm, DeviceProfile::from_record(kTestDb[1]));
+    mtk.unlock(Config{});
+    CHECK_EQ(get("/sys/kernel/eara_thermal/enable"), std::string("0"));
+    CHECK_EQ(get("/sys/module/msm_thermal/parameters/enabled"), std::string("Y")); // Qualcomm nodes left alone
+    CHECK_EQ(get("/sys/class/kgsl/kgsl-3d0/thermal_pwrlevel"), std::string("3"));
+    mtk.restore();
+    CHECK_EQ(get("/sys/kernel/eara_thermal/enable"), std::string("1"));
+
+    // Unknown SoC (not in the database, no platform): backends chosen from what the kernel exposes.
+    DeviceProfile unknown;
+    CHECK(backend_names(unknown) == (std::vector<std::string>{"qualcomm", "mediatek", "xiaomi"}));
+
+    // A vendor-declared daemon without "thermal" in its name is stopped only with the database record.
+    put("/__props__/init.svc.vendor.tmd_daemon", "running");
+    Journal j1(HICO_JOURNAL_FILE);
+    ThermalController with_db(j1, DeviceProfile::from_record(kTestDb[0]));
+    CHECK_EQ(with_db.unlock(Config{}).services, 3);
     CHECK_EQ(props::get("init.svc.vendor.tmd_daemon"), std::string("stopped"));
-    c.restore();
+    with_db.restore();
     CHECK_EQ(props::get("init.svc.vendor.tmd_daemon"), std::string("running"));
 
-    // Without a profile the same daemon is not recognised (name-based detection only).
     Journal j2(HICO_JOURNAL_FILE);
-    ThermalController generic(j2, std::nullopt);
+    ThermalController generic(j2, DeviceProfile{});
     generic.unlock(Config{});
     CHECK_EQ(props::get("init.svc.vendor.tmd_daemon"), std::string("running"));
     generic.restore();
 
+    // The generated table is sorted (binary search relies on it).
+    const auto db = device_db::records();
+    CHECK(std::is_sorted(db.begin(), db.end(), [](const DeviceRecord &a, const DeviceRecord &b) { return a.codename < b.codename; }));
+    CHECK(device_db::generated_from().find("dumps.tadiphone.dev") != std::string_view::npos);
+
     Daemon d;
     d.tick(Daemon::Clock::time_point{} + 100s);
-    CHECK(get(HICO_STATE_FILE).find("device_profile=verified") != std::string::npos);
+    CHECK(get(HICO_STATE_FILE).find("backends=") != std::string::npos);
 }
-
 } // namespace
 
 int main() {
@@ -585,7 +639,7 @@ int main() {
         {"journal tampering", test_journal_rejects_tampering},
         {"daemon state machine", test_daemon_state_machine},
         {"session history", test_sessions_are_bounded},
-        {"device profile", test_device_profile},
+        {"device database", test_device_database},
     };
 
     for (const auto &[name, fn] : tests) {

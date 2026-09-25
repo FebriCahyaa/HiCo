@@ -6,7 +6,9 @@ vendor partitions of the Xiaomi firmware dumps on
 written by hand.
 
 **Not generated yet.** Run **Actions → Update Xiaomi device profiles** to scan the dumps; the
-workflow opens a pull request with one profile per device and this table.
+workflow opens a pull request with one record per device, this table, and the compiled C++
+device table (`jni/src/XiaomiDevices.gen.cpp`). The records are compiled into `hicod` and never
+shipped as files.
 
 Until then HiCo uses runtime detection on every device: thermal services from `init.svc.*`,
 zones and cooling devices from `/sys/class/thermal`, Xiaomi `thermal_message` when present.
