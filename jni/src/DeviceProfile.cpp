@@ -42,14 +42,104 @@ std::string_view to_string(RomFamily r) {
     return "aosp";
 }
 
-std::pair<RomFamily, std::string> detect_rom() {
-    if (const std::string v = props::get("ro.mi.os.version.name"); !v.empty()) return {RomFamily::HyperOS, "HyperOS " + v};
-    if (const std::string v = props::get("ro.miui.ui.version.name"); !v.empty()) return {RomFamily::Miui, "MIUI " + v};
-    if (const std::string v = props::get("ro.lineage.version"); !v.empty()) {
-        const std::string mod = props::get("ro.modversion");
-        return {RomFamily::Lineage, mod.empty() ? "LineageOS " + v : mod};
+namespace {
+
+// Custom ROMs record their name in a version property of their own. Unknown
+// properties simply do not exist on a device, so a wrong guess costs nothing.
+struct KnownRom {
+    const char *prop;
+    const char *name;
+};
+constexpr KnownRom kKnownRoms[] = {
+    {"ro.crdroid.build.version", "crDroid"},    {"ro.evolution.version", "Evolution X"},
+    {"org.evolution.version", "Evolution X"},   {"org.pixelos.version", "PixelOS"},
+    {"ro.pixelos.version", "PixelOS"},          {"org.pixelexperience.version", "Pixel Experience"},
+    {"ro.rising.version", "RisingOS"},          {"ro.risingos.version", "RisingOS"},
+    {"ro.derpfest.version", "DerpFest"},        {"ro.matrixx.version", "Matrixx"},
+    {"ro.infinity.version", "Infinity X"},      {"ro.afterlife.version", "AfterlifeOS"},
+    {"ro.alpha.build.version", "AlphaDroid"},   {"ro.voltage.version", "VoltageOS"},
+    {"ro.aospa.version", "Paranoid Android"},   {"ro.potato.version", "POSP"},
+    {"ro.havoc.version", "Havoc-OS"},           {"ro.arrow.version", "ArrowOS"},
+    {"ro.superior.version", "SuperiorOS"},      {"ro.yaap.version", "YAAP"},
+    {"ro.cherish.version", "CherishOS"},        {"ro.statix.version", "StatiXOS"},
+    {"ro.axion.version", "AxionOS"},            {"ro.elixir.version", "Project Elixir"},
+    {"ro.bliss.version", "BlissROM"},           {"ro.lunaris.version", "LunarisAOSP"},
+};
+
+// Namespaces of AOSP / vendor properties that are not a ROM name.
+constexpr std::string_view kNotRom[] = {
+    "build", "product", "system", "vendor", "odm", "bootimage", "boot", "system_ext", "apex", "vndk",
+    "adb", "carrier", "config", "kernel", "hardware", "oem", "com", "lineage", "miui", "mi", "sf",
+    "opengles", "gsm", "telephony", "hwui", "crypto", "treble", "virtual_ab", "surface_flinger",
+};
+
+bool contains_ci(std::string_view haystack, std::string_view needle) {
+    return str::icontains(haystack, needle);
+}
+
+/// Fallback for ROMs not in the table: a "ro.<name>.version" / "org.<name>.version" key in the
+/// system / product / system_ext build.prop. Returns {display name, version}.
+std::pair<std::string, std::string> rom_from_build_props() {
+    for (const char *file : {"/system/build.prop", "/system_ext/etc/build.prop", "/product/etc/build.prop"}) {
+        const auto text = fs::read(file, 256 * 1024);
+        if (!text) continue;
+        for (const auto &line : str::split(*text, '\n')) {
+            const auto eq = line.find('=');
+            if (eq == std::string::npos) continue;
+            const std::string key = str::trim(line.substr(0, eq));
+            const std::string value = str::trim(line.substr(eq + 1));
+            if (value.empty() || !(key.starts_with("ro.") || key.starts_with("org."))) continue;
+            const auto parts = str::split(key, '.');
+            const bool version_key = (parts.size() == 3 && parts[2] == "version") ||
+                                     (parts.size() == 4 && parts[2] == "build" && parts[3] == "version");
+            if (!version_key) continue;
+            const std::string &ns = parts[1];
+            if (ns.size() < 3 || ns.size() > 24 || !std::all_of(ns.begin(), ns.end(), [](char c) { return std::isalnum(static_cast<unsigned char>(c)); }))
+                continue;
+            if (std::find(std::begin(kNotRom), std::end(kNotRom), ns) != std::end(kNotRom)) continue;
+            std::string name = ns;
+            name[0] = static_cast<char>(std::toupper(static_cast<unsigned char>(name[0])));
+            return {name, value};
+        }
     }
-    std::string name = props::get("ro.modversion");
+    return {};
+}
+
+/// HyperOS keeps ro.miui.ui.version.name at V816 and up; MIUI never went past V140.
+bool is_hyperos_ui_code(std::string_view v) {
+    if (v.size() < 2 || (v[0] != 'V' && v[0] != 'v')) return false;
+    const auto n = str::to_int(v.substr(1));
+    return n && *n >= 816;
+}
+
+} // namespace
+
+std::pair<RomFamily, std::string> detect_rom() {
+    // Xiaomi: HyperOS first (its own props, or the MIUI UI code it still reports), then MIUI.
+    if (const std::string v = props::get("ro.mi.os.version.name"); !v.empty()) return {RomFamily::HyperOS, "HyperOS " + v};
+    const std::string miui = props::get("ro.miui.ui.version.name");
+    if (const std::string v = props::get("ro.mi.os.version.incremental"); !v.empty()) return {RomFamily::HyperOS, "HyperOS " + v};
+    if (is_hyperos_ui_code(miui)) {
+        const std::string inc = props::get("ro.build.version.incremental");
+        return {RomFamily::HyperOS, inc.starts_with("OS") ? "HyperOS " + inc : "HyperOS (" + miui + ")"};
+    }
+    if (!miui.empty()) return {RomFamily::Miui, "MIUI " + miui};
+
+    // Custom ROMs: name from the ROM's own property, version from ro.modversion when present.
+    const bool lineage_based = !props::get("ro.lineage.version").empty();
+    const RomFamily family = lineage_based ? RomFamily::Lineage : RomFamily::Aosp;
+    const std::string mod = props::get("ro.modversion");
+    const auto named = [&](const std::string &name, const std::string &version) {
+        const std::string &v = mod.empty() ? version : mod;
+        return std::pair{family, contains_ci(v, name) ? v : name + " " + v};
+    };
+    for (const auto &rom : kKnownRoms) {
+        if (const std::string v = props::get(rom.prop); !v.empty()) return named(rom.name, v);
+    }
+    if (lineage_based) return {RomFamily::Lineage, mod.empty() ? "LineageOS " + props::get("ro.lineage.version") : mod};
+    if (const auto [name, version] = rom_from_build_props(); !name.empty()) return named(name, version);
+
+    std::string name = mod;
     if (name.empty()) name = props::get("ro.build.display.id");
     return {RomFamily::Aosp, name.empty() ? "AOSP" : name};
 }

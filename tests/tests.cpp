@@ -1006,9 +1006,34 @@ void test_rom_and_hal_overlay() {
     put("/__props__/ro.mi.os.version.name", "");
     put("/__props__/ro.miui.ui.version.name", "V14");
     CHECK(detect_rom().first == RomFamily::Miui);
+    // HyperOS still reports MIUI UI code V816; without ro.mi.os.version.name it must not read as MIUI.
+    put("/__props__/ro.miui.ui.version.name", "V816");
+    put("/__props__/ro.build.version.incremental", "OS2.0.3.0.VNRMIXM");
+    CHECK(detect_rom().first == RomFamily::HyperOS && detect_rom().second == "HyperOS OS2.0.3.0.VNRMIXM");
+    put("/__props__/ro.build.version.incremental", "V14.0.1.0");
+    CHECK(detect_rom().first == RomFamily::HyperOS && detect_rom().second == "HyperOS (V816)");
+    put("/__props__/ro.mi.os.version.incremental", "OS1.0.8.0.UNOMIXM");
+    CHECK(detect_rom().second == "HyperOS OS1.0.8.0.UNOMIXM");
+    put("/__props__/ro.mi.os.version.incremental", "");
+    put("/__props__/ro.miui.ui.version.name", "V140");
+    CHECK(detect_rom().first == RomFamily::Miui);
 
     // AOSP ROM with a thermal HAL JSON and no thermal-engine: relaxing restarts the HAL, not the daemons.
     put("/__props__/ro.miui.ui.version.name", "");
+    // Custom AOSP ROM: name from its own property, version from ro.modversion.
+    put("/__props__/ro.lineage.version", "");
+    put("/__props__/ro.modversion", "12.2-Vanilla");
+    put("/__props__/ro.crdroid.build.version", "12.2");
+    CHECK(detect_rom().first == RomFamily::Aosp && detect_rom().second == "crDroid 12.2-Vanilla");
+    put("/__props__/ro.modversion", "crDroidAndroid-16.0-12.2");
+    CHECK(detect_rom().second == "crDroidAndroid-16.0-12.2"); // name already in the version
+    put("/__props__/ro.crdroid.build.version", "");
+    // Unknown ROM: found through its version key in build.prop.
+    put("/__props__/ro.modversion", "3.1-Vanilla");
+    put("/system/build.prop", "ro.build.version.sdk=36\nro.product.version=1\nro.nebula.build.version=3.1\n");
+    CHECK(detect_rom().second == "Nebula 3.1-Vanilla");
+    put("/system/build.prop", "ro.build.version.sdk=36\n");
+    put("/__props__/ro.modversion", "");
     put("/vendor/etc/thermal_info_config.json", kHalJson);
     DeviceProfile qcom;
     qcom.soc = SocVendor::Qualcomm;
