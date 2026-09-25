@@ -96,21 +96,6 @@ for f in index.html app.js style.css; do
 	extract "$ZIPFILE" "webroot/$f" "$MODPATH"
 done
 
-# Device profile generated from this phone's stock firmware dump, when one ships.
-codename=$(getprop ro.product.vendor.device | tr '[:upper:]' '[:lower:]')
-[ -z "$codename" ] && codename=$(getprop ro.product.device | tr '[:upper:]' '[:lower:]')
-case "$codename" in
-'' | *[!a-z0-9_]*) codename="" ;;
-esac
-if [ -n "$codename" ] && unzip -l "$ZIPFILE" "devices/xiaomi/$codename.prop" >/dev/null 2>&1; then
-	mkdir -p "$MODPATH/devices/xiaomi"
-	extract "$ZIPFILE" "devices/xiaomi/$codename.prop" "$MODPATH"
-	model=$(sed -n 's/^model=//p' "$MODPATH/devices/xiaomi/$codename.prop")
-	ui_print "- Device profile: $model ($codename), from its stock firmware"
-else
-	ui_print "- No device profile for '${codename:-unknown}': runtime detection only"
-fi
-
 set_perm_recursive "$MODPATH" 0 0 0755 0644
 set_perm "$MODPATH/system/bin/hicod" 0 0 0755
 
@@ -127,6 +112,15 @@ ui_print "- Preparing settings"
 mkdir -p "$HICO_CONFIG"
 chmod 0700 "$HICO_CONFIG"
 "$MODPATH/system/bin/hicod" config upgrade || abort_box "hicod does not run on this device ($ABI)."
+
+# The device database is compiled into hicod; show what it knows about this phone.
+device_info=$("$MODPATH/system/bin/hicod" device 2>/dev/null)
+if printf '%s\n' "$device_info" | grep -q '^database: yes'; then
+	ui_print "- Device: $(printf '%s\n' "$device_info" | sed -n 's/^name: //p') ($(printf '%s\n' "$device_info" | sed -n 's/^codename: //p')), tuned from its stock firmware"
+else
+	ui_print "- Device $(printf '%s\n' "$device_info" | sed -n 's/^codename: //p') is not in the device database: runtime detection"
+fi
+ui_print "  Thermal backends: $(printf '%s\n' "$device_info" | sed -n 's/^backends: //p')"
 
 ui_print "- HiCo Thermal installed. Reboot to activate."
 ui_print "  Daily use keeps stock thermal; games launched through"

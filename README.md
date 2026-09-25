@@ -15,7 +15,7 @@ thermal stack if the device gets too hot.
 - [How it works](#how-it-works)
 - [What is unlocked](#what-is-unlocked)
 - [Safety](#safety)
-- [Xiaomi device profiles](#xiaomi-device-profiles)
+- [Thermal framework and device database](#thermal-framework-and-device-database)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Command line](#command-line)
@@ -90,29 +90,47 @@ gaming).
   values are range-checked, runtime files are `0600` in `0700` directories, the installer checks
   the SHA-256 of every file.
 
-## Xiaomi device profiles
+## Thermal framework and device database
 
-HiCo adapts to each device at runtime (services from `init.svc.*`, zones and cooling devices
-from `/sys/class/thermal`). On top of that, Xiaomi, Redmi and POCO devices get a **profile read
-from their own stock firmware**:
-[`tools/xiaomi_devices.py`](tools/xiaomi_devices.py) scans the vendor partition of every dump on
-[dumps.tadiphone.dev/dumps/xiaomi](https://dumps.tadiphone.dev/dumps/xiaomi) and records the
-codename, model, SoC platform, the thermal services declared in the vendor's thermal init scripts
-(exact names, so a thermal daemon whose name does not contain "thermal" is still stopped) and
-the thermal configuration files it ships.
+`hicod` is built as a small thermal framework:
 
-- Profiles: [`devices/xiaomi/`](devices/xiaomi), one `<codename>.prop` each, with the URL of the
-  dump it came from. Nothing is written by hand.
-- Supported list: [`docs/DEVICES.md`](docs/DEVICES.md).
-- Refresh: **Actions → Update Xiaomi device profiles** (also monthly) opens a pull request.
-  By default it uses **sparse mode**: the GitLab API only lists the dumps (names), then each dump
-  is partial-cloned (`--filter=blob:none --depth 1`) and only `build.prop` and the vendor thermal
-  files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`) are checked out — a few MB per
-  device instead of the whole firmware. A server that ignores the filter is refused rather than
-  downloaded in full. Every dump name is listed, including those without a usable profile.
-- The installer copies only this phone's profile (checksum-verified); `hicod status` and the
-  WebUI show `verified` or `generic`.
+```
+dumps.tadiphone.dev ─ tools/xiaomi_devices.py ─▶ devices/xiaomi/<codename>.prop ─ tools/gen_device_db.py ─▶ jni/src/XiaomiDevices.gen.cpp
+  (stock vendor partitions)                      (repository data only)                                  (compiled into hicod)
+```
 
+- **Device database** — facts read from the stock firmware of each Xiaomi, Redmi and POCO device:
+  codename, name, SoC platform, the thermal services its vendor init scripts declare (exact
+  names, so a daemon whose name lacks "thermal" is still stopped) and its thermal configs.
+  `devices/xiaomi/*.prop` is **source data in this repository only**: `gen_device_db.py`
+  compiles it into a sorted C++ table inside `hicod`. Nothing from `devices/` ships in the
+  module, and nothing in it is written by hand.
+- **Derived facts** (`DeviceDatabase.cpp`) — the SoC vendor (`soc_from_platform`) and traits
+  (`mi_thermald`, `thermal-engine`, MediaTek thermal daemons, scene configs, …) are computed in
+  C++ from the raw record, so the rules live in one tested place.
+- **Core** (`ThermalController`) — what every device has: init thermal services, kernel zone
+  governors, cooling devices, cpufreq caps.
+- **Backends** (`ThermalBackend.hpp`, `Backend<Vendor>.cpp`) — vendor drivers: Qualcomm
+  (`msm_thermal`, `msm_performance`, Adreno power levels), MediaTek (EARA), Xiaomi (thermal
+  scene, `cpu_limits`). A backend runs only when it applies to the device's SoC and traits, so a
+  MediaTek phone never receives Qualcomm writes; devices outside the database fall back to what
+  their kernel exposes.
+- **Actuator** — the single write path: journaled for exact restore, restricted to `/sys` and `/proc`.
+
+`hicod device` shows how the running phone is handled (database record, SoC, traits, backends);
+`hicod device --list` prints the compiled database. The supported list is
+[`docs/DEVICES.md`](docs/DEVICES.md).
+
+**Refreshing the database:** **Actions → Update Xiaomi device profiles** (also monthly) scans
+the dumps, regenerates `devices/`, `docs/DEVICES.md` and the C++ table, builds and tests it, and
+opens a pull request. By default it uses **sparse mode**: the GitLab API only lists the dumps
+(names), then each dump is partial-cloned (`--filter=blob:none --depth 1`) and only `build.prop`
+and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`,
+`vendor/etc/init/hw/*.rc`) are checked out — a few MB per device instead of the whole firmware.
+A server that ignores the filter is refused rather than downloaded in full. CI fails when the
+compiled table is out of date with `devices/` (`gen_device_db.py --check`).
+
+## Installation
 
 1. Install **[Flux Tweaks](https://github.com/FebriCahyaa/Flux/releases) v1.2.0 or newer** first.
 2. Flash `hico-*.zip` in Magisk, KernelSU or APatch and reboot.
@@ -159,6 +177,7 @@ hicod flux                 check the Flux dependency
 hicod config list|get|set|reset|schema
 hicod sessions [clear]     session history (JSON Lines: duration, unlocked time, peaks, trips)
 hicod zones                zones, cooling devices and thermal services on this device
+hicod device [--list]      this device in the compiled database (SoC, traits, backends), or the whole database
 ```
 
 Files: `/data/adb/.config/hico/` (settings, `hico.log`, `sessions`), `/dev/hico/` (live state,

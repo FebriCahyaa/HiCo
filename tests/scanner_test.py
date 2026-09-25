@@ -246,6 +246,81 @@ class ScannerTest(unittest.TestCase):
         self.assertFalse((out / "devices/xiaomi/testdev_a.prop").exists())
 
 
+GEN = ROOT / "tools" / "gen_device_db.py"
+
+
+def run_gen(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run([sys.executable, str(GEN), *args], capture_output=True, text=True, timeout=60)
+
+
+class GeneratorTest(unittest.TestCase):
+    """tools/gen_device_db.py: devices/xiaomi/*.prop -> compiled C++ table."""
+
+    def write_profiles(self, root: Path) -> Path:
+        data = root / "devices"
+        data.mkdir()
+        (data / "testdev_b.prop").write_text(
+            "codename=testdev_b\nbrand=POCO\nmodel=Evil \"quoted\" \\ name\nplatform=mt6893\nandroid=14\n"
+            "source=https://example.invalid/" + "x" * 300 + "\nthermal_services=thermal_manager,bad;name,thermal\n"
+            "thermal_configs=thermal-tgame.conf,../escape.conf\n")
+        (data / "testdev_a.prop").write_text(
+            "codename=testdev_a\nbrand=Redmi\nmodel=Test A\nplatform=taro\nandroid=15\nsource=https://example.invalid/a\n"
+            "thermal_services=\nthermal_configs=\n")
+        return data
+
+    def test_generates_compilable_sorted_table(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            data = self.write_profiles(tmp)
+            out = tmp / "gen.cpp"
+            r = run_gen("--data", str(data), "--output", str(out))
+            self.assertEqual(r.returncode, 0, r.stderr)
+            text = out.read_text()
+
+            self.assertLess(text.index('"testdev_a"sv'), text.index('"testdev_b"sv'))  # sorted
+            self.assertIn(r'"Evil \"quoted\" \\ name"sv', text)                      # escaped
+            self.assertIn('"thermal"sv, "thermal_manager"sv', text)                    # sorted, valid only
+            self.assertNotIn("bad;name", text)
+            self.assertNotIn("escape.conf", text)
+            self.assertIn("x" * 300, text)                                             # long source kept
+            self.assertIn("(2 devices)", text)
+
+            # Deterministic: a second run is byte-identical and --check passes.
+            before = text
+            run_gen("--data", str(data), "--output", str(out))
+            self.assertEqual(out.read_text(), before)
+            self.assertEqual(run_gen("--data", str(data), "--output", str(out), "--check").returncode, 0)
+
+            # It is valid C++ against the real header, with a lookup that finds both records.
+            probe = tmp / "probe.cpp"
+            probe.write_text(
+                '#include "DeviceDatabase.hpp"\n#include <cstdio>\n'
+                'int main() { auto db = hico::device_db::records();\n'
+                '  return db.size() == 2 && db[0].codename == "testdev_a" && db[1].services.size() == 2 '
+                '&& db[0].services.empty() ? 0 : 1; }\n')
+            cxx = os.environ.get("CXX", "c++")
+            build = subprocess.run([cxx, "-std=c++20", "-Wall", "-Wextra", "-Werror", f"-I{ROOT / 'jni/include'}",
+                                    str(out), str(probe), "-o", str(tmp / "probe")], capture_output=True, text=True)
+            self.assertEqual(build.returncode, 0, build.stderr)
+            self.assertEqual(subprocess.run([str(tmp / "probe")]).returncode, 0)
+
+            # Stale table: --check fails.
+            (data / "testdev_a.prop").write_text((data / "testdev_a.prop").read_text().replace("Test A", "Test A2"))
+            self.assertEqual(run_gen("--data", str(data), "--output", str(out), "--check").returncode, 1)
+
+    def test_rejects_mismatched_codename(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data = Path(tmp)
+            (data / "renamed.prop").write_text("codename=other\n")
+            r = run_gen("--data", str(data), "--output", str(data / "gen.cpp"))
+            self.assertEqual(r.returncode, 1)
+            self.assertIn("does not match the file name", r.stderr)
+
+    def test_repository_table_is_current(self):
+        r = run_gen("--check")
+        self.assertEqual(r.returncode, 0, r.stderr)
+
+
 class FakeGitLab(http.server.BaseHTTPRequestHandler):
     """Just enough of GitLab's v4 API, with pagination (one project and one tree entry per page)."""
 

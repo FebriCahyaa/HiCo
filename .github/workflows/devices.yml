@@ -2,8 +2,10 @@ name: Update Xiaomi device profiles
 
 # Reads the stock vendor partition of every Xiaomi firmware dump on
 # dumps.tadiphone.dev and regenerates devices/xiaomi/*.prop and docs/DEVICES.md
-# (tools/xiaomi_devices.py). Changes are proposed as a pull request, never
-# pushed directly, so every profile is reviewed before it ships.
+# (tools/xiaomi_devices.py), then compiles them into hicod's device table
+# jni/src/XiaomiDevices.gen.cpp (tools/gen_device_db.py). Changes are proposed
+# as a pull request, never pushed directly, so every record is reviewed
+# before it is compiled into a release.
 #
 # Needs "Allow GitHub Actions to create and approve pull requests"
 # (Settings → Actions → General).
@@ -50,12 +52,20 @@ jobs:
           [ -n "$LIMIT" ] && flags+=(--limit "$LIMIT")
           python3 tools/xiaomi_devices.py --gitlab https://dumps.tadiphone.dev --group dumps/xiaomi --jobs 6 "${flags[@]}"
 
+      - name: Compile the device database
+        run: |
+          python3 tools/gen_device_db.py
+          # The generated table must build and pass the tests before it is proposed.
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j"$(nproc)"
+          ctest --test-dir build --output-on-failure
+
       - name: Open pull request
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          if [ -z "$(git status --porcelain devices docs)" ]; then
+          if [ -z "$(git status --porcelain devices docs jni/src/XiaomiDevices.gen.cpp)" ]; then
             echo "Device profiles are up to date"
             exit 0
           fi
@@ -64,7 +74,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$branch"
-          git add devices docs/DEVICES.md
+          git add devices docs/DEVICES.md jni/src/XiaomiDevices.gen.cpp
           git commit -m "feat(devices): update Xiaomi device profiles ($count devices)"
           git push -f origin "$branch"
           if [ -n "$(gh pr list --head "$branch" --state open --json number --jq '.[].number')" ]; then

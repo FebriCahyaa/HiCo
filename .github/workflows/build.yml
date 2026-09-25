@@ -45,6 +45,9 @@ jobs:
       - name: Device scanner tests
         run: python3 tests/scanner_test.py
 
+      - name: Device database is up to date
+        run: python3 tools/gen_device_db.py --check
+
       - name: ShellCheck
         run: shellcheck -s sh module/*.sh tests/cli_test.sh
 

@@ -8,45 +8,50 @@
 
 #pragma once
 
-#include <optional>
+#include <cstdint>
+#include <span>
 #include <string>
 #include <string_view>
 #include <vector>
 
+#include "DeviceDatabase.hpp"
+
 namespace hico {
 
 /**
- * What the stock firmware of one device ships for thermal, taken from its
- * vendor partition (tools/xiaomi_devices.py reads the public firmware dumps
- * and generates devices/xiaomi/<codename>.prop; nothing in it is hand-written).
+ * The thermal facts HiCo knows about the running device.
  *
- * The profile complements runtime detection, it never replaces it: services
- * are still discovered from init.svc.* on the device, and the profile adds
- * the exact service names the vendor declares in its init scripts, so a
- * thermal daemon whose name does not contain "thermal" is not missed.
+ * Built from the compiled device database (DeviceDatabase.hpp) when the
+ * device's codename is in it, otherwise from live properties only. It
+ * complements runtime detection, never replaces it: services are still
+ * discovered from init.svc.*, and the database adds the exact names the
+ * vendor declares, so a thermal daemon whose name lacks "thermal" is not missed.
  */
 struct DeviceProfile {
-    std::string codename;      ///< ro.product.vendor.device
+    std::string codename;
     std::string brand;
     std::string model;
-    std::string platform;      ///< ro.board.platform
-    std::string android;       ///< Android release of the dumped firmware
-    std::string source;        ///< dump the profile was generated from
-    std::vector<std::string> thermal_services; ///< services declared by vendor thermal init scripts
+    std::string platform;
+    std::string android;
+    std::string source;        ///< dump the record was generated from ("" when not in the database)
+    std::vector<std::string> thermal_services; ///< declared by vendor thermal init scripts
     std::vector<std::string> thermal_configs;  ///< vendor/etc thermal configuration files
-    bool has_mi_thermald = false;
+    SocVendor soc = SocVendor::Unknown;
+    std::uint32_t traits = 0;  ///< Trait bits
+    bool in_database = false;  ///< true: built from a compiled record
 
-    /// Parses a generated profile; nullopt when missing or not for @p codename.
-    static std::optional<DeviceProfile> load(std::string_view path, std::string_view codename);
+    [[nodiscard]] bool has(Trait t) const { return (traits & t) != 0; }
 
-    /// The profile of this device (ro.product.vendor.device, then ro.product.device), if one ships.
-    static std::optional<DeviceProfile> detect(std::string_view devices_dir);
+    [[nodiscard]] static DeviceProfile from_record(const DeviceRecord &r);
+
+    /// Profile of the running device: its database record, or live properties only.
+    [[nodiscard]] static DeviceProfile detect(std::span<const DeviceRecord> db = device_db::records());
 };
 
 /// Device codename as the firmware reports it ("" if unknown).
 [[nodiscard]] std::string device_codename();
 
-/// Codenames are [a-z0-9_] (validated before building a path from them).
+/// Codenames are [a-z0-9_].
 [[nodiscard]] bool is_valid_codename(std::string_view s);
 
 } // namespace hico

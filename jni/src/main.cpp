@@ -55,6 +55,7 @@ int usage() {
         "  config schema          settings description (JSON)\n"
         "  sessions [clear]       gaming session history (JSON Lines)\n"
         "  zones                  thermal zones, cooling devices and services\n"
+        "  device [--list]        this device in the compiled database, or the whole database\n"
         "  version\n");
     return 2;
 }
@@ -165,11 +166,11 @@ int cmd_status(bool json) {
     set("gpu_temp", opt(temps.gpu));
     set("battery_temp", opt(temps.battery));
     set("version", HICO_VERSION);
-    const std::string codename = device_codename();
-    const auto profile = DeviceProfile::detect(HICO_XIAOMI_DEVICES_DIR);
-    set("device", codename);
-    set("device_profile", profile ? "verified" : "generic");
-    set("device_name", profile ? str::trim(profile->brand + " " + profile->model) : "");
+    const DeviceProfile device = DeviceProfile::detect();
+    set("device", device.codename);
+    set("device_profile", device.in_database ? "verified" : "generic");
+    set("device_name", device.in_database ? str::trim(device.brand + " " + device.model) : "");
+    set("soc", std::string(to_string(device.soc)));
 
     if (!json) {
         for (const auto &[k, v] : kv) out(std::format("{}={}\n", k, v));
@@ -247,6 +248,46 @@ int cmd_sessions(bool clear) {
     return 0;
 }
 
+std::string join(const std::vector<std::string> &v) {
+    std::string out;
+    for (const auto &s : v) out += (out.empty() ? "" : ", ") + s;
+    return out.empty() ? "-" : out;
+}
+
+void print_device(const DeviceProfile &d) {
+    static constexpr std::pair<Trait, const char *> kTraitNames[] = {
+        {kTraitMiThermald, "mi_thermald"},        {kTraitThermalEngine, "thermal-engine"},
+        {kTraitMtkThermal, "mtk-thermal"},        {kTraitSceneConfigs, "scene-configs"},
+        {kTraitNoLimitsScene, "nolimits-scene"},  {kTraitThermalHal, "thermal-hal"},
+    };
+    std::vector<std::string> traits;
+    for (const auto &[bit, name] : kTraitNames) {
+        if (d.has(bit)) traits.emplace_back(name);
+    }
+    std::vector<std::string> backends;
+    for (const auto &b : make_backends(d)) backends.emplace_back(b->name());
+
+    out(std::format("== Device\ncodename: {}\ndatabase: {}\n", d.codename.empty() ? "unknown" : d.codename,
+                    d.in_database ? "yes (" + d.source + ")" : "no, runtime detection only"));
+    out(std::format("name: {} {}\nplatform: {} ({})\nandroid: {}\n", d.brand, d.model, d.platform.empty() ? "-" : d.platform,
+                    to_string(d.soc), d.android.empty() ? "-" : d.android));
+    out(std::format("traits: {}\nbackends: {}\n", join(traits), join(backends)));
+    out(std::format("declared thermal services: {}\nthermal configs: {}\n", join(d.thermal_services),
+                    d.thermal_configs.size()));
+}
+
+int cmd_device(bool list) {
+    if (!list) {
+        print_device(DeviceProfile::detect());
+        return 0;
+    }
+    out(std::format("# compiled device database: {}\n", device_db::generated_from()));
+    for (const auto &r : device_db::records()) {
+        out(std::format("{:<20} {:<10} {} {}\n", r.codename, to_string(soc_from_platform(r.platform)), r.brand, r.model));
+    }
+    return 0;
+}
+
 int cmd_zones() {
     const auto kind = [](thermal::ZoneKind k) {
         switch (k) {
@@ -270,16 +311,12 @@ int cmd_zones() {
                         fs::read(d.dir + "/cur_state").value_or("?"), fs::read(d.dir + "/max_state").value_or("?"),
                         thermal::is_performance_cooling(d.type) ? "" : "  (kept)"));
     }
-    const auto profile = DeviceProfile::detect(HICO_XIAOMI_DEVICES_DIR);
-    out(std::format("\n== Device\ncodename: {}\nprofile: {}\n", device_codename(),
-                    profile ? profile->brand + " " + profile->model + " (" + profile->source + ")" : "none, runtime detection"));
-    if (profile) {
-        out(std::format("declared services: {}\nthermal configs: {}\n", profile->thermal_services.size(),
-                        profile->thermal_configs.size()));
-    }
+    const DeviceProfile device = DeviceProfile::detect();
+    out("\n");
+    print_device(device);
 
     out("\n== Thermal services\n");
-    for (const auto &s : services::thermal_services(profile ? profile->thermal_services : std::vector<std::string>{})) {
+    for (const auto &s : services::thermal_services(device.thermal_services)) {
         out(std::format("{:<36} {:<10} {}\n", s.name, s.state, s.kind == services::Kind::Hal ? "hal" : "daemon"));
     }
     return 0;
@@ -317,5 +354,6 @@ int main(int argc, char **argv) {
     if (cmd == "config") return cmd_config({args.begin() + 1, args.end()});
     if (cmd == "sessions") return cmd_sessions(args.size() > 1 && args[1] == "clear");
     if (cmd == "zones") return cmd_zones();
+    if (cmd == "device") return cmd_device(args.size() > 1 && args[1] == "--list");
     return usage();
 }

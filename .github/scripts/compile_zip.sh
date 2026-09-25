@@ -27,9 +27,8 @@ for abi in arm64-v8a armeabi-v7a; do
 done
 cp LICENSE EULA.md NOTICE.md "$stage/"
 
-# Device profiles generated from firmware dumps (tools/xiaomi_devices.py).
-mkdir -p "$stage/devices/xiaomi"
-find devices/xiaomi -maxdepth 1 -name '*.prop' -exec cp {} "$stage/devices/xiaomi/" \;
+# devices/ is repository data only: it is compiled into hicod (tools/gen_device_db.py)
+# and never shipped as files.
 
 # Integrity: customize.sh/verify.sh check every extracted file against these.
 bash .github/scripts/gen_sha256sum.sh "$stage" >/dev/null
