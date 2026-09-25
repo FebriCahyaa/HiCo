@@ -149,12 +149,51 @@ bool is_valid_codename(std::string_view s) {
     return std::all_of(s.begin(), s.end(), [](char c) { return (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == '_'; });
 }
 
-std::string device_codename() {
-    for (const char *prop : {"ro.product.vendor.device", "ro.product.device"}) {
-        const std::string v = lower(props::get(prop));
-        if (is_valid_codename(v)) return v;
+std::vector<CodenameCandidate> codename_candidates() {
+    std::vector<CodenameCandidate> out;
+    const auto add = [&out](std::string value, std::string_view source) {
+        if (!is_valid_codename(value)) return;
+        for (const auto &c : out) {
+            if (c.codename == value) return;
+        }
+        out.push_back({std::move(value), std::string(source)});
+    };
+    // A value plus its parts: "lineage_garnet" -> garnet, "garnet_global" -> garnet.
+    const auto add_value = [&add](const std::string &raw, std::string_view source) {
+        std::string v = lower(str::trim(raw));
+        std::replace(v.begin(), v.end(), '-', '_');
+        add(v, source);
+        const auto parts = str::split(v, '_');
+        if (parts.size() > 1) {
+            add(parts.back(), source);
+            add(parts.front(), source);
+        }
+    };
+
+    // Device properties, vendor side first: the vendor and odm partitions are
+    // the device's own, the system/product ones belong to the (custom) ROM.
+    for (const char *prop : {"ro.product.vendor.device", "ro.boot.hwname", "ro.product.odm.device",
+                             "ro.product.device", "ro.product.system.device", "ro.product.product.device",
+                             "ro.build.product", "ro.product.mod_device", "ro.product.vendor.name",
+                             "ro.product.name", "ro.product.board"}) {
+        add_value(props::get(prop), prop);
     }
-    return {};
+    // Fingerprints: brand/product/device:release/...
+    for (const char *prop : {"ro.vendor.build.fingerprint", "ro.odm.build.fingerprint",
+                             "ro.bootimage.build.fingerprint", "ro.build.fingerprint"}) {
+        const std::string fp = props::get(prop);
+        const auto parts = str::split(fp.substr(0, fp.find(':')), '/');
+        if (parts.size() >= 3) {
+            add_value(parts[2], prop);
+            add_value(parts[1], prop);
+        }
+    }
+    return out;
+}
+
+std::string device_codename() {
+    const auto c = codename_candidates();
+    return c.empty() ? std::string{} : c.front().codename;
 }
 
 DeviceProfile DeviceProfile::from_record(const DeviceRecord &r) {
@@ -176,12 +215,21 @@ DeviceProfile DeviceProfile::from_record(const DeviceRecord &r) {
 }
 
 DeviceProfile DeviceProfile::detect(std::span<const DeviceRecord> db) {
-    const std::string codename = device_codename();
+    const auto candidates = codename_candidates();
     DeviceProfile p;
-    if (const DeviceRecord *r = codename.empty() ? nullptr : device_db::find(db, codename)) {
-        p = from_record(*r);
-    } else {
-        p.codename = codename;
+    const DeviceRecord *record = nullptr;
+    for (const auto &c : candidates) {
+        if ((record = device_db::find(db, c.codename))) {
+            p = from_record(*record);
+            p.codename_source = c.source;
+            break;
+        }
+    }
+    if (!record) {
+        if (!candidates.empty()) {
+            p.codename = candidates.front().codename;
+            p.codename_source = candidates.front().source;
+        }
         p.brand = props::get("ro.product.brand");
         p.model = props::get("ro.product.model");
         p.platform = props::get("ro.board.platform");

@@ -1,5 +1,34 @@
 # HiCo Thermal Changelog
 
+## Unreleased
+
+### New
+- **Extreme mode** (`mode=extreme`): Auto without the soft limits. The thermal HAL is stopped too
+  (the throttling engine on AOSP ROMs), every Flux game runs at Max, and zones whose governor
+  cannot be switched to `user_space` (common on GKI kernels) get their passive trips raised by
+  up to 15 °C, always 5 °C below the zone's critical trip, with their cooling devices released.
+  Battery, charger and BCL protection stay untouched; the safety guard stays on
+- **Thermal overclock** (`thermal_overclock`): cpufreq boost frequencies on where the kernel has
+  them (`cpufreq/boost`), and the widest trip margin for the Relaxed level. Journaled and restored
+- **Templates**: `hicod config preset cool|balanced|extreme|overclock` (and in the WebUI) set the
+  mode, level, safety limits and timing in one step for users who do not want to tune each key;
+  `hicod config presets` lists them and the one currently matched
+- **New WebUI** (Vue 3, Material 3 Expressive, same design system as Flux Tweaks): Home with the
+  state, temperatures against the safety limits, mode and template; Monitor; per-game switches for
+  Flux's games and a whitelist for other apps; Settings with templates, safety sliders, an
+  Advanced page for every key, log, language and an About page. Every risky choice asks first with
+  an explanation (info, warning or danger) and every change is confirmed with a notification
+- Flux Tweaks leaves the thermal zone governors and MediaTek EARA thermal to HiCo when HiCo is
+  installed, so the two never write the same node
+
+### Fixed
+- Devices on custom ROMs were not found in the device database (e.g. garnet on an AOSP ROM whose
+  product properties read `lineage_garnet` or a spoofed Pixel name). The codename is now looked up
+  from the bootloader (`ro.boot.hwname`), the vendor / odm / system / product device properties,
+  `ro.product.name` / `mod_device` with ROM prefixes and region suffixes stripped, and the
+  vendor / odm fingerprints; `hicod device` and `status` show which property matched
+- The installer extracts every WebUI file of the zip (each checked against its SHA-256)
+
 ## v1.0.0
 
 ### New

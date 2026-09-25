@@ -43,6 +43,7 @@ enum class RomFamily {
  */
 struct DeviceProfile {
     std::string codename;
+    std::string codename_source; ///< property the codename was read from (detect() only)
     std::string brand;
     std::string model;
     std::string platform;
@@ -66,6 +67,21 @@ struct DeviceProfile {
 
 /// Device codename as the firmware reports it ("" if unknown).
 [[nodiscard]] std::string device_codename();
+
+/// A possible codename and the property it came from.
+struct CodenameCandidate {
+    std::string codename;
+    std::string source;
+};
+
+/**
+ * Every codename the firmware hints at, most trusted first. Custom ROMs often
+ * rename the product properties ("lineage_garnet", "garnet_global", a Pixel
+ * name spoofed for Play Integrity) while the bootloader's ro.boot.hwname and
+ * the vendor/odm fingerprints keep the real device name, so detect() tries
+ * each of them against the database.
+ */
+[[nodiscard]] std::vector<CodenameCandidate> codename_candidates();
 
 /// Codenames are [a-z0-9_].
 [[nodiscard]] bool is_valid_codename(std::string_view s);

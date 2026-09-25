@@ -250,6 +250,8 @@ std::optional<Daemon::Target> Daemon::choose_target() const {
         Target t{game->package, game->pid, cfg_.game_level, game->lite() ? "performance_lite" : "performance"};
         // Flux runs Performance Lite when the device is already warm: do not go to max.
         if (game->lite() && !cfg_.unlock_on_lite) t.level = Level::Relaxed;
+        // Extreme: every game at max; the safety guard remains the only limit.
+        if (cfg_.mode == Mode::Extreme) t.level = Level::Max;
         return t;
     }
     // Apps that are not games are never pushed to the peak: the whitelist only gets the relaxed level.
@@ -273,8 +275,11 @@ void Daemon::apply(const Target &target, Clock::time_point now) {
         // Re-applied every poll: vendor daemons (PowerKeeper, Joyose, thermal HAL) push limits back.
         summary_ = controller_.unlock(cfg_);
         if (entering) {
-            LOGI("thermal unlocked for {}: {} services, {} zones, {} cooling devices, {} caps, {} vendor nodes",
-                 target.package, summary_.services, summary_.zones, summary_.cooling, summary_.caps, summary_.vendor);
+            LOGI("thermal unlocked for {}{}: {} services, {} zones, {} cooling devices, {} caps, {} vendor nodes, "
+                 "{} trips raised{}",
+                 target.package, cfg_.mode == Mode::Extreme ? " (extreme)" : "", summary_.services, summary_.zones,
+                 summary_.cooling, summary_.caps, summary_.vendor, summary_.trips,
+                 summary_.overclock ? ", cpufreq boost on" : "");
         }
         transition(State::Boost, now, target.package);
     } else {
@@ -313,6 +318,9 @@ void Daemon::publish(const thermal::Temperatures &t) const {
     kv("caps", std::to_string(summary_.caps));
     kv("vendor", std::to_string(summary_.vendor));
     kv("configs", std::to_string(summary_.configs));
+    kv("raised_trips", std::to_string(summary_.trips));
+    kv("overclock", summary_.overclock ? "1" : "0");
+    kv("mode", cfg_.mode == Mode::Extreme ? "extreme" : cfg_.mode == Mode::Off ? "off" : "auto");
     kv("level", applied_ ? to_string(*applied_) : "");
     kv("trips", std::to_string(session_ ? session_->trips : 0));
     kv("xiaomi", controller_.is_xiaomi() ? "1" : "0");

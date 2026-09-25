@@ -31,7 +31,7 @@ constexpr size_t kMaxListEntries = 64;
 
 // clang-format off
 const std::array kFields{
-    Field{{"mode", "mode", 0, 0, "auto: unlock while Flux runs a game, off: never unlock"}, &Config::mode},
+    Field{{"mode", "mode", 0, 0, "auto: unlock while Flux runs a game, extreme: auto without soft limits, off: never unlock"}, &Config::mode},
     Field{{"game_level", "level", 0, 0, "Games: max disables throttling, relaxed tunes the vendor thermal configs"}, &Config::game_level},
     Field{{"unlock_on_lite", "bool", 0, 1, "Also unlock while Flux runs Performance Lite"}, &Config::unlock_on_lite},
     Field{{"stop_thermal_services", "bool", 0, 1, "Stop userspace thermal daemons while gaming"}, &Config::stop_thermal_services},
@@ -44,6 +44,7 @@ const std::array kFields{
     Field{{"xiaomi_tweaks", "bool", 0, 1, "Xiaomi thermal scene and CPU limits"}, &Config::xiaomi_tweaks},
     Field{{"xiaomi_sconfig", "int", 0, 30, "Xiaomi thermal scene used while gaming"}, &Config::xiaomi_sconfig},
     Field{{"relax_margin", "int", 0, 10, "Relaxed level: degrees added to trip points (0 = chipset default)"}, &Config::relax_margin},
+    Field{{"thermal_overclock", "bool", 0, 1, "Thermal overclock: cpufreq boost frequencies and the widest relaxed margin"}, &Config::thermal_overclock},
     Field{{"safety_cpu_temp", "int", 70, 105, "CPU temperature (C) that restores thermal protection"}, &Config::safety_cpu_temp},
     Field{{"safety_battery_temp", "int", 38, 52, "Battery temperature (C) that restores thermal protection"}, &Config::safety_battery_temp},
     Field{{"safety_cpu_hysteresis", "int", 3, 25, "CPU must cool this much (C) below the limit to unlock again"}, &Config::safety_cpu_hysteresis},
@@ -108,8 +109,9 @@ std::optional<std::string> apply(Config &cfg, const Field &field, std::string_vi
                 }
             } else if constexpr (std::is_same_v<T, Mode>) {
                 if (value == "auto") cfg.*member = Mode::Auto;
+                else if (value == "extreme") cfg.*member = Mode::Extreme;
                 else if (value == "off") cfg.*member = Mode::Off;
-                else return std::format("{}: expected auto or off, got '{}'", field.info.key, value);
+                else return std::format("{}: expected auto, extreme or off, got '{}'", field.info.key, value);
             } else if constexpr (std::is_same_v<T, Level>) {
                 if (value == "max") cfg.*member = Level::Max;
                 else if (value == "relaxed") cfg.*member = Level::Relaxed;
@@ -139,7 +141,7 @@ std::string format_value(const Config &cfg, const Field &field) {
             } else if constexpr (std::is_same_v<T, int>) {
                 return std::to_string(cfg.*member);
             } else if constexpr (std::is_same_v<T, Mode>) {
-                return cfg.*member == Mode::Auto ? "auto" : "off";
+                return cfg.*member == Mode::Auto ? "auto" : cfg.*member == Mode::Extreme ? "extreme" : "off";
             } else if constexpr (std::is_same_v<T, Level>) {
                 return std::string(to_string(cfg.*member));
             } else {
@@ -158,6 +160,66 @@ std::string format_value(const Config &cfg, const Field &field) {
 
 std::span<const ConfigKeyInfo> config_keys() {
     return kKeyInfo;
+}
+
+namespace {
+
+using KV = std::pair<std::string_view, std::string_view>;
+
+// Presets touch the level, the safety limits and the timing only; lists stay as they are.
+// Safety limits never leave the schema ranges, so no preset can switch the guard off.
+constexpr std::array kCool{
+    KV{"mode", "auto"}, KV{"game_level", "relaxed"}, KV{"unlock_on_lite", "0"}, KV{"thermal_overclock", "0"},
+    KV{"relax_margin", "0"}, KV{"safety_cpu_temp", "88"}, KV{"safety_battery_temp", "43"},
+    KV{"safety_cooldown", "60"}, KV{"poll_interval", "2"},
+};
+constexpr std::array kBalanced{
+    KV{"mode", "auto"}, KV{"game_level", "max"}, KV{"unlock_on_lite", "1"}, KV{"thermal_overclock", "0"},
+    KV{"relax_margin", "0"}, KV{"safety_cpu_temp", "95"}, KV{"safety_battery_temp", "46"},
+    KV{"safety_cooldown", "30"}, KV{"poll_interval", "2"},
+};
+constexpr std::array kExtreme{
+    KV{"mode", "extreme"}, KV{"game_level", "max"}, KV{"unlock_on_lite", "1"}, KV{"thermal_overclock", "0"},
+    KV{"relax_margin", "0"}, KV{"safety_cpu_temp", "100"}, KV{"safety_battery_temp", "48"},
+    KV{"safety_cooldown", "30"}, KV{"poll_interval", "1"},
+};
+constexpr std::array kOverclock{
+    KV{"mode", "extreme"}, KV{"game_level", "max"}, KV{"unlock_on_lite", "1"}, KV{"thermal_overclock", "1"},
+    KV{"relax_margin", "10"}, KV{"safety_cpu_temp", "102"}, KV{"safety_battery_temp", "49"},
+    KV{"safety_cooldown", "20"}, KV{"poll_interval", "1"},
+};
+
+const std::array kPresets{
+    ConfigPreset{"cool", kCool},
+    ConfigPreset{"balanced", kBalanced},
+    ConfigPreset{"extreme", kExtreme},
+    ConfigPreset{"overclock", kOverclock},
+};
+
+} // namespace
+
+std::span<const ConfigPreset> config_presets() {
+    return kPresets;
+}
+
+std::optional<std::string> apply_preset(Config &cfg, std::string_view name) {
+    const auto it = std::find_if(kPresets.begin(), kPresets.end(), [name](const ConfigPreset &p) { return p.name == name; });
+    if (it == kPresets.end()) return std::format("unknown preset '{}' (cool, balanced, extreme, overclock)", name);
+    Config next = cfg;
+    for (const auto &[key, value] : it->values) {
+        if (auto err = next.set(key, value)) return err;
+    }
+    cfg = std::move(next);
+    return std::nullopt;
+}
+
+std::string_view matching_preset(const Config &cfg) {
+    for (const auto &p : kPresets) {
+        const bool all = std::all_of(p.values.begin(), p.values.end(),
+                                     [&cfg](const KV &kv) { return cfg.get(kv.first) == kv.second; });
+        if (all) return p.name;
+    }
+    return "custom";
 }
 
 Config Config::load(std::string_view path) {

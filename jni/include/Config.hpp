@@ -16,7 +16,10 @@
 
 namespace hico {
 
-enum class Mode { Auto, Off };
+/// auto: unlock while Flux runs a game; extreme: auto without the soft limits
+/// (thermal HAL stopped too, zones that cannot switch governor get their passive
+/// trips raised, every game at max); off: never unlock.
+enum class Mode { Auto, Extreme, Off };
 
 /// How far HiCo pushes the device for a running app.
 enum class Level {
@@ -50,6 +53,9 @@ struct Config {
     bool xiaomi_tweaks = true;         ///< Xiaomi thermal_message scene and CPU limits
     int xiaomi_sconfig = 10;           ///< thermal scene used while gaming
     int relax_margin = 0;              ///< °C added to trips at the relaxed level; 0 = chipset default
+    /// Thermal overclock: cpufreq boost frequencies on and the widest relaxed trip margin,
+    /// so the chipset holds its fastest states longer. Safety guard still on.
+    bool thermal_overclock = false;
 
     // Safety guard
     int safety_cpu_temp = 95;          ///< °C, CPU temperature that restores thermal protection
@@ -92,5 +98,19 @@ struct ConfigKeyInfo {
 };
 
 [[nodiscard]] std::span<const ConfigKeyInfo> config_keys();
+
+/// A ready-made set of values for users who do not want to tune each key.
+struct ConfigPreset {
+    std::string_view name;
+    std::span<const std::pair<std::string_view, std::string_view>> values;
+};
+
+[[nodiscard]] std::span<const ConfigPreset> config_presets();
+
+/// Applies preset @p name to @p cfg (lists are kept). Error message when unknown.
+std::optional<std::string> apply_preset(Config &cfg, std::string_view name);
+
+/// Name of the preset @p cfg currently matches, or "custom".
+[[nodiscard]] std::string_view matching_preset(const Config &cfg);
 
 } // namespace hico

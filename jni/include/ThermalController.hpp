@@ -57,6 +57,8 @@ public:
         int caps = 0;     ///< frequency caps lifted
         int vendor = 0;   ///< vendor nodes in the gaming state
         int configs = 0;  ///< vendor thermal configs relaxed (relaxed level)
+        int trips = 0;    ///< passive trips raised (extreme mode, zones without user_space)
+        bool overclock = false; ///< cpufreq boost frequencies enabled
     };
 
     /// Enters the gaming state (idempotent). Called on entry and on every poll,
@@ -88,6 +90,9 @@ private:
     int switch_zone_governors();
     int release_cooling_devices();
     int lift_cpufreq_caps(const Config &cfg);
+    int raise_passive_trips();
+    void plan_passive_trips();
+    bool enable_cpufreq_boost();
 
     Journal &journal_;
     Actuator act_;
@@ -97,6 +102,11 @@ private:
     bool scanned_ = false;
     std::vector<thermal::Zone> zones_;              ///< zones HiCo may switch
     std::vector<thermal::CoolingDevice> cooling_;   ///< cooling devices HiCo may release
+    /// Extreme mode only: CPU/GPU zones whose governor cannot be switched (no
+    /// user_space, common on GKI kernels) and the cooling devices bound to them.
+    std::vector<thermal::Zone> fixed_zones_;
+    std::vector<thermal::CoolingDevice> fixed_cooling_;
+    std::vector<std::pair<std::string, long long>> trip_targets_; ///< passive trip node -> raised temp (m°C)
     std::set<std::string> warned_services_;
 };
 

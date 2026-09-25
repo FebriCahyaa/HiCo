@@ -123,8 +123,12 @@ cp "$TMPDIR/libs/$ABI/hicod" "$MODPATH/system/bin/hicod"
 rm -rf "$TMPDIR/libs"
 
 ui_print "- Extracting WebUI"
-for f in index.html app.js style.css; do
-	extract "$ZIPFILE" "webroot/$f" "$MODPATH"
+# The Vue build names its assets by content hash: take every webroot file in the
+# zip (each still verified against its .sha256 by extract).
+webui_files=$(unzip -l "$ZIPFILE" 'webroot/*' 2>/dev/null | awk '{print $4}' | grep '^webroot/' | grep -v -e '\.sha256$' -e '/$')
+[ -n "$webui_files" ] || abort_box "The WebUI is missing from the zip, it may be corrupted."
+for f in $webui_files; do
+	extract "$ZIPFILE" "$f" "$MODPATH"
 done
 
 set_perm_recursive "$MODPATH" 0 0 0755 0644

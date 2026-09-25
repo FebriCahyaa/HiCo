@@ -54,6 +54,8 @@ int usage() {
         "  config get <key>\n"
         "  config set <key> <value>\n"
         "  config reset           restore default settings\n"
+        "  config preset <name>   apply a preset: cool, balanced, extreme, overclock\n"
+        "  config presets         presets and their values (JSON)\n"
         "  config upgrade         add new keys and normalise values (installer)\n"
         "  config schema          settings description (JSON)\n"
         "  sessions [clear]       gaming session history (JSON Lines)\n"
@@ -177,6 +179,8 @@ int cmd_status(bool json) {
     set("version", HICO_VERSION);
     const DeviceProfile device = DeviceProfile::detect();
     set("device", device.codename);
+    set("device_source", device.codename_source);
+    set("preset", std::string(matching_preset(Config::load(HICO_CONFIG_FILE))));
     set("device_profile", device.in_database ? "verified" : "generic");
     set("device_name", device.in_database ? str::trim(device.brand + " " + device.model) : "");
     set("soc", std::string(to_string(device.soc)));
@@ -232,8 +236,27 @@ int cmd_config(const std::vector<std::string_view> &args) {
         out(s + "]\n");
         return 0;
     }
+    if (sub == "presets") {
+        std::string s = std::format(R"({{"current":"{}","presets":[)", matching_preset(cfg));
+        bool first = true;
+        for (const auto &p : config_presets()) {
+            s += std::format(R"({}{{"name":"{}","values":{{)", first ? "" : ",", p.name);
+            for (size_t i = 0; i < p.values.size(); ++i) {
+                s += std::format(R"({}"{}":"{}")", i ? "," : "", p.values[i].first, p.values[i].second);
+            }
+            s += "}}";
+            first = false;
+        }
+        out(s + "]}\n");
+        return 0;
+    }
     if (!ensure_dirs()) return 1;
-    if (sub == "set" && args.size() == 3) {
+    if (sub == "preset" && args.size() == 2) {
+        if (const auto err = apply_preset(cfg, args[1])) {
+            std::fprintf(stderr, "%s\n", err->c_str());
+            return 1;
+        }
+    } else if (sub == "set" && args.size() == 3) {
         if (const auto err = cfg.set(args[1], args[2])) {
             std::fprintf(stderr, "%s\n", err->c_str());
             return 1;
@@ -278,7 +301,8 @@ void print_device(const DeviceProfile &d) {
     std::vector<std::string> backends;
     for (const auto &b : make_backends(d)) backends.emplace_back(b->name());
 
-    out(std::format("== Device\ncodename: {}\ndatabase: {}\n", d.codename.empty() ? "unknown" : d.codename,
+    out(std::format("== Device\ncodename: {}{}\ndatabase: {}\n", d.codename.empty() ? "unknown" : d.codename,
+                    d.codename_source.empty() ? "" : " (from " + d.codename_source + ")",
                     d.in_database ? "yes (" + d.source + ")" : "no, runtime detection only"));
     out(std::format("name: {} {}\nplatform: {} ({})\nandroid: {}\n", d.brand, d.model, d.platform.empty() ? "-" : d.platform,
                     to_string(d.soc), d.android.empty() ? "-" : d.android));
