@@ -1,0 +1,65 @@
+/*
+ * Copyright (C) 2026 FebriCahyaa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#pragma once
+
+#include <chrono>
+#include <optional>
+#include <string>
+
+namespace hico {
+
+/**
+ * Decides whether it is safe to keep thermal throttling disabled.
+ *
+ * Trips when the CPU or battery reaches its limit; releases only after both
+ * are below (limit - hysteresis) AND the cooldown has elapsed, so the device
+ * does not oscillate between protected and unlocked around the threshold.
+ *
+ * Pure logic (time is passed in) so it is fully unit-tested.
+ */
+class SafetyGuard {
+public:
+    using Clock = std::chrono::steady_clock;
+
+    struct Limits {
+        double cpu_limit = 95;
+        double cpu_hysteresis = 10;
+        double battery_limit = 46;
+        double battery_hysteresis = 3;
+        std::chrono::seconds cooldown{30};
+    };
+
+    void set_limits(const Limits &l) { limits_ = l; }
+
+    /// Feeds one sample. Returns true while protection must stay on.
+    bool update(std::optional<double> cpu_c, std::optional<double> battery_c, Clock::time_point now);
+
+    [[nodiscard]] bool tripped() const { return tripped_; }
+    /// Why the guard tripped last ("cpu 96.0C >= 95C").
+    [[nodiscard]] const std::string &reason() const { return reason_; }
+
+    /// Clears the trip state (new game session).
+    void reset();
+
+private:
+    Limits limits_;
+    bool tripped_ = false;
+    std::string reason_;
+    Clock::time_point tripped_at_{};
+};
+
+} // namespace hico

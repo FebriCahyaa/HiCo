@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>HiCo Thermal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>HiCo Thermal</h1>
+          <p class="sub">Thermal unlock for games &middot; part of the Flux ecosystem</p>
+        </div>
+        <span id="state-pill" class="pill">&hellip;</span>
+      </header>
+
+      <section id="flux-banner" class="banner" hidden>
+        <strong>Flux Tweaks is required</strong>
+        <p id="flux-banner-text"></p>
+        <p>HiCo keeps the stock thermal configuration until Flux is installed, enabled and running.</p>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Now</h2>
+          <span id="state-since" class="muted"></span>
+        </div>
+        <p id="state-text" class="lead"></p>
+        <div class="temps">
+          <div class="temp"><span class="label">CPU</span><span id="t-cpu" class="value">&ndash;</span></div>
+          <div class="temp"><span class="label">GPU</span><span id="t-gpu" class="value">&ndash;</span></div>
+          <div class="temp"><span class="label">Battery</span><span id="t-bat" class="value">&ndash;</span></div>
+        </div>
+        <dl id="unlock-details" class="details" hidden>
+          <div><dt>Thermal services stopped</dt><dd id="d-services"></dd></div>
+          <div><dt>Kernel zones unthrottled</dt><dd id="d-zones"></dd></div>
+          <div><dt>Cooling devices released</dt><dd id="d-cooling"></dd></div>
+          <div><dt>Clock caps lifted</dt><dd id="d-caps"></dd></div>
+          <div><dt>Vendor thermal nodes</dt><dd id="d-vendor"></dd></div>
+          <div><dt>Safety trips this session</dt><dd id="d-trips"></dd></div>
+        </dl>
+        <p class="muted small" id="flux-line"></p>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Settings</h2>
+          <button id="reset-settings" class="text">Defaults</button>
+        </div>
+        <div id="settings"></div>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Game sessions</h2>
+          <button id="clear-sessions" class="text">Clear</button>
+        </div>
+        <div id="sessions"><p class="muted">No sessions yet. Launch a game from Flux's game list.</p></div>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Service</h2>
+        </div>
+        <div class="actions">
+          <button id="restart">Restart service</button>
+          <button id="restore" class="danger">Restore stock thermal &amp; stop</button>
+        </div>
+        <details>
+          <summary>Log</summary>
+          <pre id="log"></pre>
+        </details>
+      </section>
+
+      <footer class="muted small">
+        HiCo Thermal <span id="version"></span> &middot; Apache-2.0 &middot;
+        <a href="https://github.com/FebriCahyaa/HiCo" target="_blank" rel="noopener">GitHub</a>
+      </footer>
+    </main>
+    <div id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

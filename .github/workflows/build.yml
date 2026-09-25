@@ -1,0 +1,64 @@
+name: Build HiCo Thermal
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/**'
+      - 'jni/**'
+      - 'module/**'
+      - 'tests/**'
+      - 'CMakeLists.txt'
+      - 'version'
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Unit & end-to-end tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build (host, sanitizers)
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug \
+            -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined -fno-omit-frame-pointer"
+          cmake --build build -j"$(nproc)"
+
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+
+      - name: ShellCheck
+        run: shellcheck -s sh module/*.sh tests/cli_test.sh
+
+  build:
+    name: Build Flashable Zip
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Build module
+        id: compileZip
+        uses: ./.github/actions/build-module
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: hico-build
+          path: ${{ steps.compileZip.outputs.zip-name }}
