@@ -1069,6 +1069,17 @@ void test_rom_and_hal_overlay() {
     CHECK(detect_rom().first == RomFamily::Lineage && detect_rom().second == "LineageOS 22.1");
     put("/__props__/ro.modversion", "crDroidAndroid-15.0");
     CHECK(detect_rom().second == "crDroidAndroid-15.0");
+    // Custom ROM on a HyperOS vendor (RisingOS on garnet): the vendor still reports V816, but
+    // without the MIUI framework it is the custom ROM, named from ro.lineage.version.
+    put("/__props__/ro.modversion", "");
+    put("/__props__/ro.lineage.version", "RisingOS-9-260920-0213-GAPPS-OFFICIAL-garnet");
+    put("/__props__/ro.miui.ui.version.name", "V816");
+    CHECK(detect_rom().first == RomFamily::Lineage && detect_rom().second == "RisingOS 9");
+    put("/system/framework/miui-framework.jar", "");
+    CHECK(detect_rom().first == RomFamily::HyperOS); // the framework is there: HyperOS after all
+    stdfs::remove(g_root + "/system/framework/miui-framework.jar");
+    put("/__props__/ro.lineage.version", "");
+    put("/__props__/ro.miui.ui.version.name", "");
     put("/__props__/ro.mi.os.version.name", "OS2.0");
     CHECK(detect_rom().first == RomFamily::HyperOS);
     put("/__props__/ro.mi.os.version.name", "");

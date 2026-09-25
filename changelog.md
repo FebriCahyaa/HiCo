@@ -32,6 +32,9 @@
   installed, so the two never write the same node
 
 ### Fixed
+- Custom ROMs on Xiaomi vendors (e.g. RisingOS on garnet) were shown as "HyperOS (V816)": the
+  vendor keeps the MIUI props. Without the MIUI framework a custom ROM's own props win, and
+  Lineage forks are named from `ro.lineage.version` ("RisingOS 9")
 - **HiCo stayed on stock thermal for most of a game after one safety trip**: releasing the guard
   required the CPU *and* the battery to cool by their hysteresis, and a battery at 45 °C during
   play never reached 43 °C, so a single CPU trip kept thermal locked (seen: 166 s unlocked out of

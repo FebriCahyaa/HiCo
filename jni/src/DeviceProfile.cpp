@@ -114,7 +114,28 @@ bool is_hyperos_ui_code(std::string_view v) {
 
 } // namespace
 
+std::pair<RomFamily, std::string> detect_custom_rom();
+
+/// MIUI / HyperOS framework on /system: custom ROMs built on Xiaomi vendors keep the
+/// ro.miui.* vendor props (e.g. V816) but not the framework.
+bool has_miui_framework() {
+    for (const char *jar : {"/system/framework/miui-framework.jar", "/system_ext/framework/miui-framework.jar",
+                            "/system/framework/miui-services.jar", "/system_ext/framework/miui-services.jar"}) {
+        if (fs::exists(jar)) return true;
+    }
+    return false;
+}
+
+bool has_custom_rom_props() {
+    if (!props::get("ro.lineage.version").empty() || !props::get("ro.modversion").empty()) return true;
+    return std::any_of(std::begin(kKnownRoms), std::end(kKnownRoms), [](const auto &rom) { return !props::get(rom.prop).empty(); });
+}
+
 std::pair<RomFamily, std::string> detect_rom() {
+    // A custom ROM on a Xiaomi vendor still reports ro.miui.ui.version.name (V816 on
+    // HyperOS vendors, e.g. RisingOS on garnet): trust the Xiaomi props only with the framework.
+    const bool xiaomi_rom = has_miui_framework() || !has_custom_rom_props();
+    if (!xiaomi_rom) return detect_custom_rom();
     // Xiaomi: HyperOS first (its own props, or the MIUI UI code it still reports), then MIUI.
     if (const std::string v = props::get("ro.mi.os.version.name"); !v.empty()) return {RomFamily::HyperOS, "HyperOS " + v};
     const std::string miui = props::get("ro.miui.ui.version.name");
@@ -124,7 +145,10 @@ std::pair<RomFamily, std::string> detect_rom() {
         return {RomFamily::HyperOS, inc.starts_with("OS") ? "HyperOS " + inc : "HyperOS (" + miui + ")"};
     }
     if (!miui.empty()) return {RomFamily::Miui, "MIUI " + miui};
+    return detect_custom_rom();
+}
 
+std::pair<RomFamily, std::string> detect_custom_rom() {
     // Custom ROMs: name from the ROM's own property, version from ro.modversion when present.
     const bool lineage_based = !props::get("ro.lineage.version").empty();
     const RomFamily family = lineage_based ? RomFamily::Lineage : RomFamily::Aosp;
@@ -136,7 +160,16 @@ std::pair<RomFamily, std::string> detect_rom() {
     for (const auto &rom : kKnownRoms) {
         if (const std::string v = props::get(rom.prop); !v.empty()) return named(rom.name, v);
     }
-    if (lineage_based) return {RomFamily::Lineage, mod.empty() ? "LineageOS " + props::get("ro.lineage.version") : mod};
+    if (lineage_based) {
+        // Forks put their own name in ro.lineage.version: "RisingOS-9-260920-0213-GAPPS-OFFICIAL-garnet".
+        const std::string lv = props::get("ro.lineage.version");
+        if (!mod.empty()) return {RomFamily::Lineage, mod};
+        if (!lv.empty() && std::isalpha(static_cast<unsigned char>(lv.front()))) {
+            const auto parts = str::split(lv, '-');
+            return {RomFamily::Lineage, parts.size() > 1 ? parts[0] + " " + parts[1] : parts[0]};
+        }
+        return {RomFamily::Lineage, "LineageOS " + lv};
+    }
     if (const auto [name, version] = rom_from_build_props(); !name.empty()) return named(name, version);
 
     std::string name = mod;
