@@ -11,8 +11,8 @@
 Reads   devices/xiaomi/<codename>.prop              (platform -> chipset policy)
         devices/xiaomi/<codename>/thermal/*.conf    (stock vendor configs, thermal-engine syntax)
         devices/xiaomi/<codename>/thermal/thermal_info_config*.json (thermal HAL)
-Writes  devices/xiaomi/<codename>/tuned/*.conf      (relaxed configs as plain text, for review;
-                                                     encrypted mi_thermald files are decrypted)
+Writes  devices/xiaomi/<codename>/tuned/*.conf      (relaxed plain-text configs, for review;
+                                                     encrypted ones are summarised in TEMPLATE.md)
         devices/xiaomi/<codename>/tuned/TEMPLATE.md (the device's template: stock -> tuned trips)
         docs/THERMAL_TUNING.md                      (per-device report)
 
@@ -104,11 +104,15 @@ def tune_device(hicod: str, prop: Path, margin: int) -> dict:
         # Review copies are text: decrypt what hicod re-encrypted (the device keeps it encrypted).
         stock_text = conf.read_bytes()
         dec = run(hicod, "thermal", "decrypt", str(out))
+        tuned_text = out.read_bytes()
         if dec.returncode == 0:
             result["encrypted"] += 1
-            out.write_bytes(dec.stdout)
+            tuned_text = dec.stdout
             stock_text = run(hicod, "thermal", "decrypt", str(conf)).stdout
-        result["changes"] += diff_trips(conf.name, stock_text.decode(errors="replace"), out.read_text(errors="replace"))
+            # Decrypted firmware is not kept in the repository: TEMPLATE.md lists every change,
+            # and `hicod thermal tune --plain --ceilings <dir>` rebuilds the file.
+            out.unlink()
+        result["changes"] += diff_trips(conf.name, stock_text.decode(errors="replace"), tuned_text.decode(errors="replace"))
         result["tuned"] += 1
         result["tuned_sections"] += tuned_sections
     if result["changes"]:
@@ -185,7 +189,7 @@ def write_report(results: list[dict], out: Path) -> None:
         "sections, battery / charger / PMIC sensors, descending monitors and virtual sensors are never",
         "changed; no trip is lowered; skin and board sensors stop at 55 °C, CPU/GPU sensors at 105 °C and",
         "10 °C below their own shutdown threshold; hysteresis and trip order are kept. Every tuned file",
-        "passed the independent verifier. Tuned copies are in `devices/xiaomi/<codename>/tuned/`.",
+        "passed the independent verifier. Tuned plain-text copies are in `devices/xiaomi/<codename>/tuned/`.",
         "",
         "Margins are HiCo's conservative defaults per chipset class (not vendor data) and can be changed",
         "on the device with `relax_margin`.",

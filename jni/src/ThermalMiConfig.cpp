@@ -246,7 +246,8 @@ std::vector<std::string> verify(std::string_view original, std::string_view tune
                 else if (d != shift) errors.push_back(std::format("[{}] {} not shifted evenly", sa.name, la.key));
             }
         }
-        if (!eligible || sb.trig < 0) continue;
+        // Caps and ceilings bound what HiCo raises; a section left as it is may already sit above them.
+        if (!eligible || sb.trig < 0 || shift <= 0) continue;
         const auto &trig = b.lines[static_cast<size_t>(sb.trig)].nums;
         if (!ascending(trig)) errors.push_back(std::format("[{}] thresholds no longer ascending", sa.name));
         const long long unit = unit_of(a.lines[static_cast<size_t>(sa.trig)].nums);
