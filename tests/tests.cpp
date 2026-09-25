@@ -18,6 +18,7 @@
 #include "HiCo.hpp"
 #include "Journal.hpp"
 #include "Log.hpp"
+#include "MiCrypt.hpp"
 #include "Monitor.hpp"
 #include "Props.hpp"
 #include "SafetyGuard.hpp"
@@ -1115,6 +1116,72 @@ void test_rom_and_hal_overlay() {
 
 } // namespace
 
+void test_mi_thermald() {
+    using namespace thermalcfg;
+    // AES-128 (FIPS-197 C.1): first CBC block with a zero IV is the ECB result.
+    const auto unhex = [](std::string_view h) {
+        std::string o;
+        for (size_t i = 0; i < h.size(); i += 2) o += static_cast<char>(std::stoi(std::string(h.substr(i, 2)), nullptr, 16));
+        return o;
+    };
+    const std::string ct = micrypt::cbc_encrypt(unhex("00112233445566778899aabbccddeeff"),
+                                                unhex("000102030405060708090a0b0c0d0e0f"), std::string(16, '\0'));
+    CHECK(ct.substr(0, 16) == unhex("69c4e0d86a7b0430d8cdb78070b4c55a"));
+
+    const std::string stock =
+        "[VIRTUAL-SENSOR0]\nalgo_type\tVirtual\nsensors\tcpu_therm\tbattery\n\n"
+        "[TGAME-SS-CPU4]\nalgo_type\tss\nsensor\tVIRTUAL-SENSOR0\ndevice\tcpu4\npolling\t2000\n"
+        "trig\t46000\t47000\t48000\nclr\t45000\t46000\t47000\ntarget\t1344000\t1190400\t960000\n\n"
+        "[TGAME-MONITOR-GPU]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\tgpu\ntrig\t45000\t46000\n"
+        "clr\t44000\t45000\ntarget\t4\t5\n\n"
+        "[TGAME-MONITOR-BATTERY]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\tbattery\n"
+        "trig\t40000\nclr\t38000\ntarget\t1500\n\n"
+        "[TGAME-MONITOR-TEMP_STATE]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\ttemp_state\n"
+        "trig\t46000\nclr\t44000\ntarget\t110100000\n";
+    const std::string nolimits =
+        "[NOLIMITS-SS-CPU4]\nalgo_type\tss\nsensor\tVIRTUAL-SENSOR0\ndevice\tcpu4\ntrig\t51000\nclr\t49000\ntarget\t691200\n\n"
+        "[NOLIMITS-MONITOR-GPU]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\tgpu\ntrig\t48000\nclr\t45000\ntarget\t1\n";
+
+    // Encrypted round trip, and format detection on both forms.
+    const std::string enc = micrypt::encrypt(stock);
+    CHECK(micrypt::decrypt(enc) == stock);
+    CHECK(detect_format(stock) == Format::MiThermald);
+    CHECK(detect_format(enc) == Format::MiEncrypted);
+    CHECK(!micrypt::decrypt("not encrypted at all!!").has_value());
+
+    Policy p = policy_for(SocVendor::Qualcomm, "parrot"); // +5 C
+    mithermald::collect_ceilings(stock, p.mi_ceilings);
+    mithermald::collect_ceilings(nolimits, p.mi_ceilings);
+    CHECK_EQ(p.mi_ceilings["cpu4|VIRTUAL-SENSOR0"], 51000LL);
+
+    const auto r = tune(enc, p);
+    CHECK(r && r->tuned_sections == 2);
+    CHECK(detect_format(r->text) == Format::MiEncrypted); // re-encrypted for mi_thermald
+    const std::string tuned = *micrypt::decrypt(r->text);
+    // CPU4 bounded by the device's own nolimits trip (51 C): +3 instead of +5, clr moved alike.
+    CHECK(tuned.find("trig\t49000\t50000\t51000\nclr\t48000\t49000\t50000\ntarget\t1344000") != std::string::npos);
+    CHECK(tuned.find("trig\t47000\t48000\nclr\t46000\t47000") != std::string::npos); // GPU up to 48 C
+    CHECK(tuned.find("device\tbattery\ntrig\t40000") != std::string::npos);            // battery untouched
+    CHECK(tuned.find("device\ttemp_state\ntrig\t46000") != std::string::npos);         // temp_state untouched
+    CHECK(verify(enc, r->text, p).empty());
+
+    // Without ceilings the margin applies, capped at 55 C for a skin / virtual sensor.
+    Policy wide = policy_for(SocVendor::Qualcomm, "parrot", 10);
+    const auto w = mithermald::tune(stock, wide);
+    CHECK(w && w->text.find("trig\t55000\t56000") == std::string::npos);
+    CHECK(w->text.find("trig\t53000\t54000\t55000") != std::string::npos);
+
+    // The verifier rejects anything beyond the rules.
+    const std::string bad = mithermald::tune(stock, p)->text;
+    const auto replace = [](std::string s, std::string_view a, std::string_view b) {
+        s.replace(s.find(a), a.size(), b);
+        return s;
+    };
+    CHECK(!mithermald::verify(stock, replace(bad, "trig\t49000\t50000\t51000", "trig\t52000\t53000\t54000"), p).empty());
+    CHECK(!mithermald::verify(stock, replace(stock, "trig\t40000", "trig\t45000"), p).empty()); // battery
+    CHECK(!mithermald::verify(stock, replace(stock, "target\t4\t5", "target\t1\t1"), p).empty());
+}
+
 int main() {
     char tmpl[] = "/tmp/hico-test-XXXXXX";
     if (!mkdtemp(tmpl)) return 1;
@@ -1137,6 +1204,7 @@ int main() {
         {"relaxed overlay", test_relaxed_overlay},
         {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
         {"thermal HAL JSON tuner", test_hal_json_tuner},
+        {"mi_thermald crypt and tuner", test_mi_thermald},
         {"ROM detection and HAL overlay", test_rom_and_hal_overlay},
         {"throttling monitor", test_monitor},
     };

@@ -37,6 +37,12 @@ Source: https://github.com/Rem01Gaming/encore
     See the License for the specific language governing permissions and
     limitations under the License.
 
+## mi-thermal-crypt (format reference only)
+The encrypted mi_thermald config format (AES-128-CBC, PKCS#7, key and IV "thermalopenssl.h") is
+documented by https://github.com/adithya2306/mi-thermal-crypt (Adithya R). That repository has no
+license, so none of its code is used: `jni/src/MiCrypt.cpp` is an independent implementation of
+AES (FIPS-197) that reads and writes the same format.
+
 ## Firmware dumps
 Device profiles in `devices/` are facts (names, file names, service names) read from Xiaomi
 firmware dumps published at https://dumps.tadiphone.dev/dumps/xiaomi. No firmware files are

@@ -14,6 +14,7 @@
 #include "Fs.hpp"
 #include "HiCo.hpp"
 #include "Log.hpp"
+#include "MiCrypt.hpp"
 #include "Monitor.hpp"
 #include "ThermalServices.hpp"
 #include "ThermalZones.hpp"
@@ -67,6 +68,9 @@ int usage() {
         "  thermal policy [--platform P] [--margin N]\n"
         "  thermal tune <file> [--platform P] [--margin N]   tuned config on stdout\n"
         "  thermal check <original> <tuned> [--platform P] [--margin N]\n"
+        "      tune/check also take --ceilings DIR (mi_thermald: that device's configs) and tune --plain\n"
+        "  thermal decrypt <in> [out]         encrypted mi_thermald config -> text\n"
+        "  thermal encrypt <in> <out>         text -> encrypted mi_thermald config\n"
         "  version\n");
     return 2;
 }
@@ -333,15 +337,59 @@ int cmd_thermal(const std::vector<std::string_view> &args) {
     std::string platform;
     int margin = 0;
     std::vector<std::string> files;
+    std::string ceilings_dir;
+    bool plain_out = false;
     for (size_t i = 1; i < args.size(); ++i) {
         if (args[i] == "--platform" && i + 1 < args.size()) platform = std::string(args[++i]);
+        else if (args[i] == "--ceilings" && i + 1 < args.size()) ceilings_dir = std::string(args[++i]);
+        else if (args[i] == "--plain") plain_out = true;
         else if (args[i] == "--margin" && i + 1 < args.size()) margin = static_cast<int>(str::to_int(args[++i]).value_or(0));
         else files.emplace_back(args[i]);
     }
     const DeviceProfile device = platform.empty() ? DeviceProfile::detect() : DeviceProfile{};
     const std::string plat = platform.empty() ? device.platform : platform;
     const SocVendor soc = platform.empty() ? device.soc : soc_from_platform(platform);
-    const auto policy = thermalcfg::policy_for(soc, plat, margin);
+    auto policy = thermalcfg::policy_for(soc, plat, margin);
+    // mi_thermald ceilings: from a directory of one device's configs (repository), or the device itself.
+    const auto add_ceilings = [&policy](const std::string &path) {
+        if (const auto raw = fs::read_raw(path, 512 * 1024)) {
+            const auto fmt = thermalcfg::detect_format(*raw);
+            if (fmt == thermalcfg::Format::MiThermald || fmt == thermalcfg::Format::MiEncrypted) {
+                if (const auto plain = thermalcfg::plain_text(*raw)) {
+                    thermalcfg::mithermald::collect_ceilings(*plain, policy.mi_ceilings);
+                }
+            }
+        }
+    };
+    if (!ceilings_dir.empty()) {
+        for (const auto &name : fs::list_dir(ceilings_dir)) {
+            if (name.ends_with(".conf")) add_ceilings(ceilings_dir + "/" + name);
+        }
+    }
+
+    // Encrypted mi_thermald configs: hicod thermal decrypt <in> [out], encrypt <in> <out>.
+    if ((args[0] == "decrypt" || args[0] == "encrypt") && !files.empty() && files.size() <= 2) {
+        const auto content = fs::read_raw(files[0], 512 * 1024);
+        if (!content) {
+            std::fprintf(stderr, "cannot read %s\n", files[0].c_str());
+            return 1;
+        }
+        std::string result;
+        if (args[0] == "decrypt") {
+            const auto plain = micrypt::decrypt(*content);
+            if (!plain) {
+                std::fprintf(stderr, "%s is not an encrypted mi_thermald config\n", files[0].c_str());
+                return 1;
+            }
+            result = *plain;
+        } else {
+            if (files.size() != 2) return usage(); // binary output only into a file
+            result = micrypt::encrypt(*content);
+        }
+        if (files.size() == 2) return fs::write_atomic(files[1], result, 0644) ? 0 : 1;
+        out(result);
+        return 0;
+    }
     const auto describe = [&] {
         return std::format("policy={} soc={} platform={} margin={} cap_cpu={} cap_other={} shutdown_guard={}", policy.name,
                            to_string(soc), plat.empty() ? "-" : plat, policy.margin_c, policy.cap_cpu_c, policy.cap_other_c,
@@ -363,7 +411,8 @@ int cmd_thermal(const std::vector<std::string_view> &args) {
             std::fprintf(stderr, "%s sections=0 tuned=0 tunable=0\n", describe().c_str());
             return 2;
         }
-        out(r->text);
+        // --plain: an encrypted mi_thermald result as readable text (review, repository).
+        out(plain_out ? thermalcfg::plain_text(r->text).value_or(r->text) : r->text);
         std::fprintf(stderr, "%s sections=%d tuned=%d tunable=1\n", describe().c_str(), r->sections, r->tuned_sections);
         for (const auto &n : r->notes) std::fprintf(stderr, "note: %s\n", n.c_str());
         return 0;
@@ -378,7 +427,8 @@ int cmd_thermal(const std::vector<std::string_view> &args) {
     }
     if (args[0] == "scan") {
         // What the relaxed level would do on this device, without changing anything.
-        out(describe() + "\n");
+        for (const auto &path : thermalcfg::device_config_files()) add_ceilings(path);
+        out(describe() + std::format(" mi_ceilings={}\n", policy.mi_ceilings.size()));
         for (const auto &path : thermalcfg::device_config_files()) {
             const bool mounted = fs::is_mounted(path);
             const auto content = fs::read_raw(path, 512 * 1024);
@@ -386,8 +436,11 @@ int cmd_thermal(const std::vector<std::string_view> &args) {
             out(std::format("{:<48} {}\n", path,
                             mounted ? "relaxed (mounted)"
                             : !content ? "unreadable"
-                            : !r       ? "not tunable (encrypted or other format)"
-                                       : std::format("{} of {} sections tunable", r->tuned_sections, r->sections)));
+                            : !r       ? "not tunable (unknown format)"
+                                       : std::format("{} of {} sections tunable{}", r->tuned_sections, r->sections,
+                                                     thermalcfg::detect_format(*content) == thermalcfg::Format::MiEncrypted
+                                                         ? " (encrypted mi_thermald)"
+                                                         : "")));
         }
         return 0;
     }

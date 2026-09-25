@@ -9,6 +9,7 @@
 #include "ThermalConfig.hpp"
 
 #include "Fs.hpp"
+#include "MiCrypt.hpp"
 #include "ThermalZones.hpp"
 
 #include <algorithm>
@@ -407,7 +408,17 @@ static std::vector<std::string> verify_engine(std::string_view original, std::st
 Format detect_format(std::string_view content) {
     if (haljson::is_config(content)) return Format::HalJson;
     if (is_engine_text(content)) return Format::Engine;
+    if (mithermald::is_config(content)) return Format::MiThermald;
+    if (const auto plain = micrypt::decrypt(content); plain && mithermald::is_config(*plain)) return Format::MiEncrypted;
     return Format::Unknown;
+}
+
+std::optional<std::string> plain_text(std::string_view content) {
+    switch (detect_format(content)) {
+    case Format::Unknown: return std::nullopt;
+    case Format::MiEncrypted: return micrypt::decrypt(content);
+    default: return std::string(content);
+    }
 }
 
 bool is_tunable_text(std::string_view content) {
@@ -418,6 +429,14 @@ std::optional<Result> tune(std::string_view content, const Policy &policy) {
     switch (detect_format(content)) {
     case Format::HalJson: return haljson::tune(content, policy);
     case Format::Engine: return tune_engine(content, policy);
+    case Format::MiThermald: return mithermald::tune(content, policy);
+    case Format::MiEncrypted: {
+        // mi_thermald only loads encrypted configs: tune the plain text, encrypt the result again.
+        auto r = mithermald::tune(*micrypt::decrypt(content), policy);
+        if (r && r->tuned_sections > 0) r->text = micrypt::encrypt(r->text);
+        else if (r) r->text = std::string(content);
+        return r;
+    }
     case Format::Unknown: break;
     }
     return std::nullopt;
@@ -427,6 +446,13 @@ std::vector<std::string> verify(std::string_view original, std::string_view tune
     switch (detect_format(original)) {
     case Format::HalJson: return haljson::verify(original, tuned, policy);
     case Format::Engine: return verify_engine(original, tuned, policy);
+    case Format::MiThermald: return mithermald::verify(original, tuned, policy);
+    case Format::MiEncrypted: {
+        const auto a = micrypt::decrypt(original);
+        const auto b = micrypt::decrypt(tuned);
+        if (!b) return {"tuned file is not a valid encrypted mi_thermald config"};
+        return mithermald::verify(*a, *b, policy);
+    }
     case Format::Unknown: break;
     }
     return original == tuned ? std::vector<std::string>{} : std::vector<std::string>{"unknown format must not change"};

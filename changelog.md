@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### New
+- **Encrypted Xiaomi thermal configs**: mi_thermald's AES-encrypted `thermal-*.conf` files (recent
+  Xiaomi, Redmi and POCO firmware) are now decrypted, tuned and encrypted again, so the Relaxed
+  level (Cool template, whitelisted apps) works on those phones instead of keeping stock thermal.
+  `hicod thermal decrypt` / `encrypt` convert them by hand. Independent AES-128 implementation of
+  the format documented by mi-thermal-crypt; no code taken from it
+- **Per-device thermal templates**: mi_thermald performance sections (cpu, gpu, core hotplug,
+  boost_limit) are raised by the chipset margin but never above the highest trip the phone's own
+  configs use for that limit (its nolimits / game scenes), so each device gets a template anchored
+  in Xiaomi's data for that phone. Battery, charging, brightness, modem, wifi and temp_state
+  sections are never changed. `devices/xiaomi/<codename>/tuned/TEMPLATE.md` lists every change
 - **Extreme mode** (`mode=extreme`): Auto without the soft limits. The thermal HAL is stopped too
   (the throttling engine on AOSP ROMs), every Flux game runs at Max, and zones whose governor
   cannot be switched to `user_space` (common on GKI kernels) get their passive trips raised by
