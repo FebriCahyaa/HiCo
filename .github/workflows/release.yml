@@ -11,8 +11,11 @@ name: Release
 # notifications although the source stays private. No token is ever put
 # into the module.
 #
-# Setup: secret RELEASE_TOKEN = fine-grained PAT for the release repository
-# with "Contents: Read and write".
+# Setup (once):
+#   1. Create the PUBLIC repository FebriCahyaa/HiCo-Release with a README.
+#   2. Secret RELEASE_TOKEN = fine-grained PAT, repository access limited to
+#      that repository, permission "Contents: Read and write".
+# The "Check release repository" step verifies both before anything is built.
 
 on:
   workflow_dispatch:
@@ -59,14 +62,47 @@ jobs:
         with:
           fetch-depth: 0 # versionCode and the changelog need the full history
 
-      - name: Refuse existing release
+      - name: Check release repository
+        # Fails in seconds, before the build, when the public channel cannot be written.
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
-          if gh release view "$TAG" --repo "$RELEASE_REPO" >/dev/null 2>&1; then
+          set -uo pipefail
+          setup="Create the PUBLIC repository $RELEASE_REPO with an initial commit (tick 'Add a README file'), then give RELEASE_TOKEN access: fine-grained token → Repository access → Only select repositories → $RELEASE_REPO; Permissions → Contents: Read and write. Update the secret if you created a new token."
+
+          if ! info=$(gh api "repos/$RELEASE_REPO" 2>&1); then
+            if grep -q "HTTP 404" <<<"$info"; then
+              echo "::error::$RELEASE_REPO does not exist, or RELEASE_TOKEN has no access to it. $setup"
+            elif grep -qE "HTTP 401|Bad credentials" <<<"$info"; then
+              echo "::error::RELEASE_TOKEN is invalid or expired. Create a new token and update the secret. $setup"
+            else
+              echo "::error::Cannot read $RELEASE_REPO: $info"
+            fi
+            exit 1
+          fi
+          if [ "$(jq -r .private <<<"$info")" = true ]; then
+            echo "::error::$RELEASE_REPO is private: root managers cannot download update.json or the zips from it. Make it public (Settings → General → Danger Zone → Change visibility)."
+            exit 1
+          fi
+          if [ "$(jq -r .permissions.push <<<"$info")" = false ]; then
+            echo "::error::RELEASE_TOKEN can read $RELEASE_REPO but not write to it. $setup"
+            exit 1
+          fi
+          if [ "$(gh api "repos/$RELEASE_REPO/branches" --jq length 2>/dev/null || echo 0)" = 0 ]; then
+            echo "::error::$RELEASE_REPO has no commits yet. Add a README on GitHub (Add file → Create new file), then run the release again."
+            exit 1
+          fi
+
+          # Only "release not found" means the tag is free; any other error must not be read as "free".
+          if out=$(gh release view "$TAG" --repo "$RELEASE_REPO" 2>&1); then
             echo "::error::$RELEASE_REPO already has release $TAG"
             exit 1
           fi
+          if ! grep -qi "release not found" <<<"$out"; then
+            echo "::error::Cannot check release $TAG in $RELEASE_REPO: $out"
+            exit 1
+          fi
+          echo "$RELEASE_REPO is public, writable and has no release $TAG"
 
       - name: Test
         run: |
