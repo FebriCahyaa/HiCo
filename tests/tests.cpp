@@ -527,6 +527,14 @@ void test_device_profile() {
     CHECK(p && p->thermal_services.size() == 2); // invalid name dropped
     CHECK(p && p->thermal_configs.size() == 2);
 
+    // Real profiles carry long fields (22 config files, firmware branch in the URL).
+    std::string configs, url = "https://dumps.tadiphone.dev/dumps/xiaomi/testdev/-/tree/" + std::string(150, 'x');
+    for (int i = 0; i < 22; ++i) configs += std::format("{}thermal-k11r-scene{}.conf", i ? "," : "", i);
+    put(dir + "/testlong.prop", "codename=testlong\nsource=" + url + "\nthermal_configs=" + configs + "\n");
+    const auto longp = DeviceProfile::load(dir + "/testlong.prop", "testlong");
+    CHECK(longp && longp->source == url);
+    CHECK(longp && longp->thermal_configs.size() == 22);
+
     // A profile whose codename does not match its file name is ignored.
     put(dir + "/other.prop", "codename=testdev\n");
     CHECK(!DeviceProfile::load(dir + "/other.prop", "other"));

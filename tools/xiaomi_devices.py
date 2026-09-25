@@ -63,14 +63,25 @@ THERMAL_RC_RE = re.compile(r"thermal", re.I)
 PRINTABLE_RE = re.compile(r"[^\x20-\x7e]")
 
 # build.prop files, most specific first; the first file that defines a key wins.
-BUILD_PROPS = ["vendor/build.prop", "product/etc/build.prop", "product/build.prop", "system/system/build.prop"]
+# system/build.prop is where pre-Treble dumps (no vendor partition) keep everything.
+BUILD_PROPS = [
+    "vendor/build.prop",
+    "odm/etc/build.prop",
+    "product/etc/build.prop",
+    "product/build.prop",
+    "system_ext/etc/build.prop",
+    "system/system/build.prop",
+    "system/build.prop",
+]
 PROP_KEYS = {
     "codename": ["ro.product.vendor.device", "ro.product.device", "ro.product.product.device"],
     "brand": ["ro.product.vendor.brand", "ro.product.brand", "ro.product.product.brand"],
-    "market": ["ro.product.marketname", "ro.product.product.marketname", "ro.product.vendor.marketname"],
+    "market": ["ro.product.marketname", "ro.product.product.marketname", "ro.product.odm.marketname",
+               "ro.product.vendor.marketname", "ro.product.system.marketname", "ro.product.system_ext.marketname"],
     "model": ["ro.product.vendor.model", "ro.product.model", "ro.product.product.model"],
     "platform": ["ro.board.platform", "ro.vendor.qti.soc_name", "ro.hardware"],
-    "android": ["ro.vendor.build.version.release", "ro.build.version.release"],
+    # The system release is what the user runs; with GRF the vendor partition keeps its launch release.
+    "android": ["ro.system.build.version.release", "ro.build.version.release", "ro.vendor.build.version.release"],
 }
 
 
@@ -83,6 +94,8 @@ SPARSE_PATHS = [
     "/vendor/etc/Thermal*",
     "/vendor/etc/init/*thermal*",
     "/vendor/etc/init/*Thermal*",
+    # Qualcomm declares thermal-engine in init.qcom.rc and friends; only thermal services are kept.
+    "/vendor/etc/init/hw/*.rc",
 ]
 
 
@@ -107,7 +120,7 @@ class Device:
             f"model={clean(self.model)}",
             f"platform={clean(self.platform)}",
             f"android={clean(self.android)}",
-            f"source={clean(self.source)}",
+            f"source={clean(self.source, 512)}",  # dump URLs embed the full firmware branch name
             f"mi_thermald={1 if self.mi_thermald else 0}",
             f"thermal_services={','.join(self.services)}",
             f"thermal_configs={','.join(self.configs)}",
@@ -115,8 +128,8 @@ class Device:
         return "\n".join(lines) + "\n"
 
 
-def clean(value: str) -> str:
-    return PRINTABLE_RE.sub("", value).replace("=", " ").strip()[:128]
+def clean(value: str, limit: int = 128) -> str:
+    return PRINTABLE_RE.sub("", value).replace("=", " ").strip()[:limit]
 
 
 def parse_props(text: str) -> dict[str, str]:
@@ -130,12 +143,20 @@ def parse_props(text: str) -> dict[str, str]:
     return props
 
 
-def parse_rc_services(text: str) -> list[str]:
+def parse_rc_services(text: str, thermal_only: bool = False) -> list[str]:
+    """Service names declared in an init script.
+
+    thermal_only: keep only services whose name or executable mentions thermal
+    (for general scripts such as init.qcom.rc that declare many services).
+    """
     names = []
     for line in text.splitlines():
         m = SERVICE_LINE_RE.match(line)
-        if m and SERVICE_RE.match(m.group(1)):
-            names.append(m.group(1))
+        if not m or not SERVICE_RE.match(m.group(1)):
+            continue
+        if thermal_only and not (THERMAL_RC_RE.search(m.group(1)) or THERMAL_RC_RE.search(m.group(2))):
+            continue
+        names.append(m.group(1))
     return names
 
 
@@ -337,6 +358,10 @@ def scan(source, project: dict) -> Device | None:
             continue
         text = source.read(project, f"vendor/etc/init/{rc}") or ""
         services.update(parse_rc_services(text))
+    for rc in source.listdir(project, "vendor/etc/init/hw"):
+        if rc.endswith(".rc"):
+            text = source.read(project, f"vendor/etc/init/hw/{rc}") or ""
+            services.update(parse_rc_services(text, thermal_only=True))
     dev.services = sorted(services)
     dev.mi_thermald = any("mi_thermald" in s for s in dev.services)
     return dev
