@@ -116,4 +116,21 @@ std::optional<Game> active_game() {
     return g;
 }
 
+std::optional<Foreground> foreground() {
+    const auto text = fs::read(FLUX_STATUS_FILE, 16 * 1024);
+    if (!text) return std::nullopt;
+    Foreground f;
+    for (const auto &line : str::split(*text, '\n')) {
+        const auto fields = str::split(line, ' ');
+        if (fields.size() >= 2 && fields[0] == "focused_app") {
+            f.package = fields[1];
+            if (fields.size() >= 3) f.pid = static_cast<pid_t>(str::to_int(fields[2]).value_or(0));
+        } else if (fields.size() >= 2 && fields[0] == "screen_awake") {
+            f.screen_awake = fields[1] == "1";
+        }
+    }
+    if (f.package.empty() || f.package == "NULL") return std::nullopt;
+    return f;
+}
+
 } // namespace hico::flux

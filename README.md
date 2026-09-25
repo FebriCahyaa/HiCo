@@ -39,7 +39,8 @@ thermal stack if the device gets too hot.
 | State | When | Thermal |
 |---|---|---|
 | **Idle** | No game | Stock |
-| **Boost** | Flux runs a game (Performance, and Performance Lite unless disabled) | Unlocked |
+| **Boost** | Flux runs a game with `game_level=max` (default) | Unlocked |
+| **Relaxed** | A game with `game_level=relaxed`, a Performance Lite game with `unlock_on_lite=0`, or a **whitelisted** app | Vendor thermal running with configs tuned for the chipset |
 | **Safety** | A game runs but CPU or battery reached its limit | Stock until it cools down |
 | **Suspended** | Flux is missing, disabled, outdated or not running | Stock |
 | **Disabled** | `mode=off` | Stock |
@@ -72,6 +73,21 @@ and replayed to restore the exact original values.
 
 Vendor daemons that push limits back mid-game are overridden on the next poll (every 2 s while
 gaming).
+
+## Levels, whitelist and blacklist
+
+| Level | Who | What happens |
+|---|---|---|
+| **max** | Games only (Flux game list), `game_level=max` | Thermal throttling disabled (table above), safety guard on |
+| **relaxed** | Games with `game_level=relaxed`, Performance Lite with `unlock_on_lite=0`, whitelisted apps | The vendor thermal daemons **keep running**; their plain-text configs are tuned for the chipset (trips raised, shutdown untouched), bind-mounted over the stock files and the daemons restarted to load them |
+| stock | Everything else | Nothing changed |
+
+- **Whitelist** (`whitelist`): apps that are not games but should get more headroom (camera,
+  video editor, emulator, …). They never reach the max level — only games do.
+- **Blacklist** (`blacklist`): packages that are never boosted, games included. It wins over
+  the game list and the whitelist.
+- Devices whose thermal configs are encrypted cannot be relaxed: the relaxed level then keeps
+  stock thermal and says so (`hicod thermal scan` shows what would be tuned).
 
 ## Safety
 
@@ -117,12 +133,37 @@ dumps.tadiphone.dev ─ tools/xiaomi_devices.py ─▶ devices/xiaomi/<codename>
   their kernel exposes.
 - **Actuator** — the single write path: journaled for exact restore, restricted to `/sys` and `/proc`.
 
+**Thermal tuner** (`ThermalConfig.cpp`, `ThermalHalJson.cpp`) — reads and writes vendor thermal
+configs in both formats: thermal-engine syntax (also used by plain-text mi_thermald configs) and
+the AIDL/HIDL thermal HAL JSON (`thermal_info_config*.json`, used by AOSP-based ROMs and newer
+vendors). In the HAL JSON only the `HotThreshold` levels LIGHT…CRITICAL are raised; EMERGENCY and
+SHUTDOWN, battery / USB / BCL / power-amplifier sensors and number formatting are left as they are,
+and after a HAL config is tuned the thermal HAL is restarted so it reads it. The tuner raises eligible trips by a **chipset
+policy**: Qualcomm flagship +6 °C, other Qualcomm +5 °C, MediaTek Dimensity +5 °C, other
+MediaTek / Exynos / Tensor / Unisoc / unknown +4 °C (HiCo's conservative defaults, not vendor
+data; `relax_margin` overrides them). Shutdown sections, battery / charger / PMIC sensors,
+descending monitors and virtual sensors are never changed; no trip is lowered; skin/board trips
+stop at 55 °C and CPU/GPU trips at 105 °C and 10 °C below their own shutdown threshold; trip
+order and hysteresis are kept. An independent verifier re-checks every tuned file before use.
+The same code runs on the device (relaxed level) and in the repository:
+[`tools/tune_thermal.py`](tools/tune_thermal.py) tunes every collected config with the host
+build of `hicod` into `devices/xiaomi/<codename>/tuned/` and writes
+[`docs/THERMAL_TUNING.md`](docs/THERMAL_TUNING.md); any verifier violation fails the workflow.
+
 `hicod device` shows how the running phone is handled (database record, SoC, traits, backends);
 `hicod device --list` prints the compiled database. The supported list is
 [`docs/DEVICES.md`](docs/DEVICES.md).
 
+**Thermal files:** the scanner also keeps each device's vendor thermal configuration files in
+`devices/xiaomi/<codename>/thermal/` (repository only, never shipped), with an `index.tsv`
+(SHA-256, size, format, trip points). Plain-text thermal-engine style files are parsed for their
+highest trip and their shutdown threshold (`vendor_max_trip_c`, `vendor_shutdown_c` in the
+record); encrypted files — common on recent Xiaomi firmware — are kept and counted but not
+interpreted. Pre-Treble firmware is covered too (`system/etc`, `system/vendor/etc`).
+
 **Refreshing the database:** **Actions → Update Xiaomi device profiles** (also monthly) scans
-the dumps, regenerates `devices/`, `docs/DEVICES.md` and the C++ table, builds and tests it, and
+the Xiaomi, Redmi and POCO dump groups (`dumps/xiaomi`, `dumps/redmi`, `dumps/poco`; groups that
+do not exist are skipped), regenerates `devices/`, `docs/DEVICES.md` and the C++ table, builds and tests it, and
 opens a pull request. By default it uses **sparse mode**: the GitLab API only lists the dumps
 (names), then each dump is partial-cloned (`--filter=blob:none --depth 1`) and only `build.prop`
 and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`,
@@ -130,10 +171,31 @@ and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`
 A server that ignores the filter is refused rather than downloaded in full. CI fails when the
 compiled table is out of date with `devices/` (`gen_device_db.py --check`).
 
+## ROMs: MIUI, HyperOS and AOSP
+
+`hicod` detects the ROM family (`hicod device`, WebUI, installer): **HyperOS**
+(`ro.mi.os.version.name`), **MIUI** (`ro.miui.ui.version.name`), **LineageOS**
+(`ro.lineage.version`) and any other **AOSP-based** ROM (crDroid, PixelOS, Evolution X, …).
+Everything that is not Xiaomi-specific works the same on all of them: init thermal services,
+kernel zones, cooling devices, cpufreq, Qualcomm / MediaTek backends and the thermal tuner, which
+also handles the thermal HAL JSON most AOSP ROMs ship. The Xiaomi backend (thermal scene,
+`cpu_limits`) only acts where those nodes exist, so it is inert on AOSP ROMs without them. On a
+custom ROM the database record describes the device's stock firmware; `hicod device` says so.
+
 ## Installation
 
 1. Install **[Flux Tweaks](https://github.com/FebriCahyaa/Flux/releases) v1.2.0 or newer** first.
-2. Flash `hico-*.zip` in Magisk, KernelSU or APatch and reboot.
+2. Flash the zip for your ROM in Magisk, KernelSU or APatch and reboot:
+
+   | Zip | For |
+   |---|---|
+   | `hico-*-arm64.zip` | 64-bit ROMs (arm64-v8a), including **64-bit-only** AOSP ROMs without a 32-bit userspace |
+   | `hico-*-arm.zip` | 32-bit ROMs (armeabi-v7a) |
+   | `hico-*-universal.zip` | Both; the installer picks the right binary |
+
+   The installer shows the ROM's ABIs and refuses a zip that does not match, naming the right one.
+   Each zip has its own update channel (`update-arm64.json`, `update-arm.json`, `update.json`), so
+   the root manager keeps offering the same build.
 3. Play: games from Flux's game list unlock thermal automatically. Open HiCo's WebUI for live
    temperatures, settings and your session history.
 
@@ -148,7 +210,10 @@ immediately.
 |---|---|---|---|
 | `mode` | `auto` | auto / off | `off` keeps stock thermal everywhere |
 | `unlock_on_lite` | `1` | | Also unlock in Flux's Performance Lite |
-| `excluded_games` | | packages | Games that never unlock |
+| `game_level` | `max` | max / relaxed | Level for Flux games |
+| `whitelist` | | packages | Non-game apps that get the relaxed level (never max) |
+| `blacklist` | | packages | Never boosted, games included (was `excluded_games`) |
+| `relax_margin` | `0` | 0–10 °C | Relaxed level trip raise; 0 = chipset default |
 | `stop_thermal_services` | `1` | | Stop userspace thermal daemons |
 | `stop_thermal_hal` | `0` | | Also stop the thermal HAL |
 | `zone_governor` | `1` | | Kernel zones → `user_space` |
@@ -178,6 +243,9 @@ hicod config list|get|set|reset|schema
 hicod sessions [clear]     session history (JSON Lines: duration, unlocked time, peaks, trips)
 hicod zones                zones, cooling devices and thermal services on this device
 hicod device [--list]      this device in the compiled database (SoC, traits, backends), or the whole database
+hicod thermal scan         this device's thermal configs and what the relaxed level would tune
+hicod thermal tune <file> [--platform P] [--margin N]    tuned config on stdout (repository tooling)
+hicod thermal check <original> <tuned> [--platform P]   independent safety verification
 ```
 
 Files: `/data/adb/.config/hico/` (settings, `hico.log`, `sessions`), `/dev/hico/` (live state,
@@ -202,7 +270,8 @@ See [Releases and updates](#releases-and-updates) for publishing.
 The source repository is private, and root managers cannot read files from a private repository
 (no token may ever ship inside the module). Releases are therefore published to the **public**
 repository [FebriCahyaa/HiCo-Release](https://github.com/FebriCahyaa/HiCo-Release), which holds
-only what users need: the flashable zip (GitHub Release), `update.json`, `changelog.md`,
+only what users need: the flashable zips (GitHub Release: arm64, arm and universal), one
+`update*.json` per zip, `changelog.md`,
 `EULA.md` and a README. `module.prop` points `updateJson` there, so Magisk, KernelSU and APatch
 show **Update** with the changelog and download the zip directly.
 
@@ -212,8 +281,8 @@ One-time setup:
    **Contents: Read and write**, and add it to this repository as the secret `RELEASE_TOKEN`.
 
 Then run **Actions → Release** with a version (e.g. `1.0.1`). The workflow builds and tests the
-module, creates release `v1.0.1` in HiCo-Release with the zip and its SHA-256, and commits the
-new `update.json` and changelog there. Pre-releases are not offered as updates.
+module, creates release `v1.0.1` in HiCo-Release with the three zips and their SHA-256, and commits the
+new `update.json`, `update-arm64.json`, `update-arm.json` and changelog there. Pre-releases are not offered as updates.
 
 ## License
 

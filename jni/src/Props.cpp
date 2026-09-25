@@ -72,7 +72,7 @@ std::string get(std::string_view name, std::string_view fallback) {
 bool set(std::string_view name, std::string_view value) {
     ::mkdir(fs::real("/__props__").c_str(), 0755);
     // Emulate init: ctl.stop / ctl.start change the service state property.
-    if (name == "ctl.stop" || name == "ctl.start") {
+    if (name == "ctl.stop" || name == "ctl.start" || name == "ctl.restart") {
         const std::string svc = "init.svc." + std::string(value);
         fs::append_line("/__props__/__ctl_log__", std::string(name) + " " + std::string(value));
         return fs::write_atomic(prop_path(svc), name == "ctl.stop" ? "stopped" : "running", 0644);

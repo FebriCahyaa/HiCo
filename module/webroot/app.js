@@ -17,7 +17,10 @@ const FLUX_RELEASES = 'https://github.com/FebriCahyaa/Flux/releases'
 const LABELS = {
   mode: 'Mode',
   unlock_on_lite: 'Unlock in Performance Lite',
-  excluded_games: 'Excluded games',
+  game_level: 'Game level',
+  whitelist: 'Whitelist (apps, relaxed only)',
+  blacklist: 'Blacklist (never boosted)',
+  relax_margin: 'Relaxed margin (°C, 0 = chipset default)',
   notify: 'Notifications',
   stop_thermal_services: 'Stop thermal services',
   stop_thermal_hal: 'Stop thermal HAL',
@@ -39,7 +42,8 @@ const LABELS = {
 }
 
 const GROUPS = [
-  ['General', ['mode', 'unlock_on_lite', 'excluded_games', 'notify']],
+  ['General', ['mode', 'game_level', 'unlock_on_lite', 'whitelist', 'blacklist', 'notify']],
+  ['Relaxed level', ['relax_margin']],
   [
     'While gaming',
     [
@@ -131,6 +135,10 @@ function formatDuration(seconds) {
 const STATE_TEXT = {
   idle: () => 'Daily use: stock thermal protection is active.',
   boost: (s) => `Gaming: thermal throttling is disabled for ${s.game || s.reason}.`,
+  relaxed: (s) =>
+    Number(s.configs) > 0
+      ? `Relaxed: ${s.game || s.reason} runs with ${s.configs} vendor thermal config(s) tuned for this chipset; the vendor thermal daemons keep protecting the device.`
+      : `Relaxed level for ${s.game || s.reason}, but this device has no tunable (plain-text) thermal config: stock thermal is kept.`,
   safety: (s) => `Safety guard: ${s.reason}. Thermal protection is back on until the device cools down.`,
   suspended: () => 'Waiting for Flux Tweaks. Stock thermal protection is active.',
   disabled: () => 'Off: stock thermal protection everywhere, games included.',
@@ -149,7 +157,7 @@ async function refreshStatus() {
 
   const state = s.state || 'stopped'
   const pill = $('state-pill')
-  pill.textContent = { idle: 'Daily', boost: 'Unlocked', safety: 'Protected', suspended: 'Flux required', disabled: 'Off', stopped: 'Stopped' }[state] || state
+  pill.textContent = { idle: 'Daily', boost: 'Unlocked', relaxed: 'Relaxed', safety: 'Protected', suspended: 'Flux required', disabled: 'Off', stopped: 'Stopped' }[state] || state
   pill.className = `pill ${state}`
   $('state-text').textContent = (STATE_TEXT[state] || (() => state))(s)
   $('state-since').textContent = s.since && s.since !== '0' ? `since ${new Date(s.since * 1000).toLocaleTimeString()}` : ''
@@ -165,8 +173,12 @@ async function refreshStatus() {
   }
 
   const unlocked = state === 'boost'
-  $('unlock-details').hidden = !(unlocked || state === 'safety')
-  for (const key of ['services', 'zones', 'cooling', 'caps', 'vendor', 'trips']) $(`d-${key}`).textContent = s[key] ?? '0'
+  $('unlock-details').hidden = !(unlocked || state === 'safety' || state === 'relaxed')
+  for (const key of ['services', 'zones', 'cooling', 'caps', 'vendor', 'configs', 'trips']) $(`d-${key}`).textContent = s[key] ?? '0'
+  // Each level shows what it changes: max unlocks the thermal stack, relaxed tunes its configs.
+  const relaxed = state === 'relaxed' || (state === 'safety' && s.level === 'relaxed')
+  for (const key of ['services', 'zones', 'cooling', 'caps', 'vendor']) $(`d-${key}`).parentElement.hidden = relaxed
+  $('d-configs').parentElement.hidden = !relaxed
 
   const fluxReady = s.flux === 'ready'
   $('flux-banner').hidden = fluxReady
@@ -182,6 +194,7 @@ async function refreshStatus() {
     s.device_profile === 'verified'
       ? `Device profile: ${s.device_name || s.device} (${s.device}), from its stock firmware`
       : `No device profile for ${s.device || 'this device'}: runtime detection only`
+  if (s.rom_name) $('device-line').textContent += ` · ROM: ${s.rom_name}`
   $('version').textContent = s.version || ''
 }
 
@@ -224,6 +237,13 @@ function control(item) {
     return select
   }
 
+  if (type === 'level') {
+    const select = el('select', {}, el('option', { value: 'max' }, 'Max (games)'), el('option', { value: 'relaxed' }, 'Relaxed'))
+    select.value = value
+    select.addEventListener('change', () => setConfig(key, select.value))
+    return select
+  }
+
   if (type === 'int') {
     const input = el('input', { type: 'number', min: String(min), max: String(max), step: '1', inputmode: 'numeric' })
     input.value = value
@@ -239,7 +259,8 @@ function control(item) {
     return input
   }
 
-  const input = el('input', { type: 'text', placeholder: 'com.example.game, com.other.game', autocapitalize: 'off', spellcheck: 'false' })
+  const placeholder = key === 'whitelist' ? 'com.android.camera, com.example.app' : 'com.example.game, com.other.app'
+  const input = el('input', { type: 'text', placeholder, autocapitalize: 'off', spellcheck: 'false' })
   input.value = value.split(',').join(', ')
   input.addEventListener('change', () => {
     if (!PACKAGE_LIST.test(input.value)) {

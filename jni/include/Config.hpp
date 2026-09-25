@@ -18,6 +18,14 @@ namespace hico {
 
 enum class Mode { Auto, Off };
 
+/// How far HiCo pushes the device for a running app.
+enum class Level {
+    Relaxed, ///< vendor thermal daemons keep running with configs tuned for the chipset
+    Max,     ///< thermal throttling disabled (games only)
+};
+
+[[nodiscard]] std::string_view to_string(Level l);
+
 /**
  * User settings (HICO_CONFIG_FILE, "key=value" lines).
  *
@@ -28,6 +36,7 @@ enum class Mode { Auto, Off };
  */
 struct Config {
     Mode mode = Mode::Auto;
+    Level game_level = Level::Max;     ///< level for Flux games
 
     // What is unlocked while a game runs
     bool unlock_on_lite = true;        ///< also unlock when Flux runs Performance Lite
@@ -40,6 +49,7 @@ struct Config {
     bool vendor_tweaks = true;         ///< Qualcomm / MediaTek thermal drivers
     bool xiaomi_tweaks = true;         ///< Xiaomi thermal_message scene and CPU limits
     int xiaomi_sconfig = 10;           ///< thermal scene used while gaming
+    int relax_margin = 0;              ///< °C added to trips at the relaxed level; 0 = chipset default
 
     // Safety guard
     int safety_cpu_temp = 95;          ///< °C, CPU temperature that restores thermal protection
@@ -53,7 +63,10 @@ struct Config {
     int exit_delay = 3;                ///< s, grace period after the game leaves before restoring
     bool notify = true;                ///< Android notification when the safety guard trips
     int log_level = 2;                 ///< 0 error, 1 warn, 2 info, 3 debug
-    std::vector<std::string> excluded_games;
+    /// Apps that are not games but get the relaxed level (never max) while in the foreground.
+    std::vector<std::string> whitelist;
+    /// Packages that are never boosted, games included.
+    std::vector<std::string> blacklist;
 
     /// Loads @p path; missing keys keep their defaults, invalid values are clamped or ignored.
     static Config load(std::string_view path);
@@ -63,7 +76,8 @@ struct Config {
     std::optional<std::string> set(std::string_view key, std::string_view value);
     [[nodiscard]] std::optional<std::string> get(std::string_view key) const;
 
-    [[nodiscard]] bool is_excluded(std::string_view package) const;
+    [[nodiscard]] bool is_blacklisted(std::string_view package) const;
+    [[nodiscard]] bool is_whitelisted(std::string_view package) const;
 
     /// "key=value" for every key, in schema order.
     [[nodiscard]] std::string serialize(bool with_comments) const;
@@ -71,7 +85,7 @@ struct Config {
 
 struct ConfigKeyInfo {
     std::string_view key;
-    std::string_view type;  ///< "bool", "int", "mode" or "list"
+    std::string_view type;  ///< "bool", "int", "mode", "level" or "list"
     int min;
     int max;
     std::string_view help;

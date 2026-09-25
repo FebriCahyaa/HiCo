@@ -19,6 +19,11 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+#ifdef __ANDROID__
+#include <sys/mount.h>
+#include <sys/xattr.h>
+#endif
+
 namespace hico::fs {
 
 namespace {
@@ -174,6 +179,82 @@ std::string link_target_name(std::string_view path) {
     const size_t slash = target.rfind('/');
     return std::string(slash == std::string_view::npos ? target : target.substr(slash + 1));
 }
+
+std::optional<std::string> read_raw(std::string_view path, size_t max_bytes) {
+    const int fd = ::open(real(path).c_str(), O_RDONLY | O_CLOEXEC);
+    if (fd < 0) return std::nullopt;
+    std::string out;
+    char buf[8192];
+    ssize_t n;
+    while ((n = ::read(fd, buf, sizeof(buf))) > 0) {
+        out.append(buf, static_cast<size_t>(n));
+        if (out.size() > max_bytes) {
+            ::close(fd);
+            return std::nullopt;
+        }
+    }
+    ::close(fd);
+    if (n < 0) return std::nullopt;
+    return out;
+}
+
+#ifdef __ANDROID__
+
+bool bind_mount(std::string_view source, std::string_view target) {
+    const std::string src(source), dst(target);
+    char label[256];
+    const ssize_t len = ::lgetxattr(dst.c_str(), "security.selinux", label, sizeof(label));
+    if (len <= 0 || ::lsetxattr(src.c_str(), "security.selinux", label, static_cast<size_t>(len), 0) != 0) return false;
+    return ::mount(src.c_str(), dst.c_str(), nullptr, MS_BIND, nullptr) == 0;
+}
+
+bool unmount(std::string_view target) {
+    return ::umount2(std::string(target).c_str(), MNT_DETACH) == 0 || errno == EINVAL;
+}
+
+bool is_mounted(std::string_view target) {
+    const auto info = read_raw("/proc/self/mountinfo", 4 * 1024 * 1024);
+    if (!info) return false;
+    for (const auto &line : str::split(*info, '\n')) {
+        const auto fields = str::split(line, ' ');
+        if (fields.size() > 4 && fields[4] == target) return true;
+    }
+    return false;
+}
+
+#else // Host emulation: record the mounts, never touch the real mount table.
+
+namespace {
+constexpr std::string_view kMounts = "/__mounts__";
+std::vector<std::string> mounts() {
+    return str::split(read(kMounts, 1 << 20).value_or(""), '\n');
+}
+bool save_mounts(const std::vector<std::string> &list) {
+    std::string out;
+    for (const auto &m : list) out += m + '\n';
+    return write_atomic(kMounts, out, 0644);
+}
+} // namespace
+
+bool bind_mount(std::string_view source, std::string_view target) {
+    if (!exists(source) || !exists(target)) return false;
+    auto list = mounts();
+    list.push_back(std::string(target) + " <- " + std::string(source));
+    return save_mounts(list);
+}
+
+bool unmount(std::string_view target) {
+    auto list = mounts();
+    std::erase_if(list, [target](const std::string &m) { return m.starts_with(std::string(target) + " <- "); });
+    return save_mounts(list);
+}
+
+bool is_mounted(std::string_view target) {
+    const auto list = mounts();
+    return std::any_of(list.begin(), list.end(), [target](const std::string &m) { return m.starts_with(std::string(target) + " <- "); });
+}
+
+#endif
 
 bool remove(std::string_view path) {
     return ::unlink(real(path).c_str()) == 0 || errno == ENOENT;

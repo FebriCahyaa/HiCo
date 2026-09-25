@@ -73,6 +73,7 @@ std::string_view to_string(State s) {
     switch (s) {
     case State::Idle: return "idle";
     case State::Boost: return "boost";
+    case State::Relaxed: return "relaxed";
     case State::Safety: return "safety";
     case State::Suspended: return "suspended";
     case State::Disabled: return "disabled";
@@ -120,19 +121,20 @@ void Daemon::recover() {
 }
 
 std::chrono::milliseconds Daemon::next_timeout() const {
-    if (state_ == State::Boost || state_ == State::Safety) return std::chrono::seconds(cfg_.poll_interval);
+    if (state_ == State::Boost || state_ == State::Relaxed || state_ == State::Safety) {
+        return std::chrono::seconds(cfg_.poll_interval);
+    }
     if (state_ == State::Suspended && flux_.availability == flux::Availability::NotRunning) return kFluxStartingInterval;
     return kIdleInterval;
 }
 
-void Daemon::begin_session(const flux::Game &game, Clock::time_point now) {
+void Daemon::begin_session(const Target &target, Clock::time_point now) {
     session_ = Session{};
-    session_->package = game.package;
+    session_->package = target.package;
     session_->started = std::time(nullptr);
     session_start_ = now;
     guard_.reset();
-    LOGI("game session started: {} (pid {}, flux profile {})", game.package, game.pid,
-         game.lite() ? "performance_lite" : "performance");
+    LOGI("session started: {} (pid {}, {}, level {})", target.package, target.pid, target.source, to_string(target.level));
 }
 
 void Daemon::end_session(Clock::time_point now) {
@@ -149,14 +151,15 @@ void Daemon::end_session(Clock::time_point now) {
 }
 
 void Daemon::transition(State next, Clock::time_point now, std::string reason) {
-    if (next != State::Boost && controller_.unlocked()) {
+    if (next != State::Boost && next != State::Relaxed && controller_.unlocked()) {
         const auto r = controller_.restore();
-        LOGI("thermal restored: {} nodes, {} services{}", r.nodes, r.services,
+        LOGI("thermal restored: {} nodes, {} services, {} configs{}", r.nodes, r.services, r.mounts,
              r.failed ? std::format(", {} failed", r.failed) : "");
         summary_ = {};
     }
+    if (next != State::Boost && next != State::Relaxed) applied_.reset();
 
-    if (next != State::Boost && next != State::Safety) {
+    if (next != State::Boost && next != State::Relaxed && next != State::Safety) {
         end_session(now);
         exit_deadline_.reset();
     }
@@ -199,12 +202,11 @@ void Daemon::tick(Clock::time_point now) {
         return;
     }
 
-    std::optional<flux::Game> game = flux::active_game();
-    if (game && game->lite() && !cfg_.unlock_on_lite) game.reset();
-    if (game && cfg_.is_excluded(game->package)) game.reset();
+    const std::optional<Target> target = choose_target();
+    const bool active = state_ == State::Boost || state_ == State::Relaxed || state_ == State::Safety;
 
-    if (!game) {
-        if (state_ == State::Boost || state_ == State::Safety) {
+    if (!target) {
+        if (active) {
             // Hold briefly: Flux can drop and re-apply the profile around a quick app switch.
             if (!exit_deadline_) exit_deadline_ = now + std::chrono::seconds(cfg_.exit_delay);
             if (now < *exit_deadline_) {
@@ -218,36 +220,77 @@ void Daemon::tick(Clock::time_point now) {
     }
     exit_deadline_.reset();
 
-    if (!session_ || session_->package != game->package) {
+    if (!session_ || session_->package != target->package) {
         end_session(now);
-        begin_session(*game, now);
+        begin_session(*target, now);
     }
     if (zones_.empty()) zones_ = thermal::zones();
 
     const auto temps = thermal::read_temperatures(zones_);
     session_->observe(temps.cpu, temps.battery);
-    if (state_ == State::Boost) {
+    if (state_ == State::Boost || state_ == State::Relaxed) {
         session_->boosted_s += std::chrono::duration_cast<std::chrono::seconds>(elapsed).count();
     }
 
     if (guard_.update(temps.cpu, temps.battery, now)) {
         if (state_ != State::Safety) {
             ++session_->trips;
-            LOGW("safety guard: {}, restoring thermal protection for {}", guard_.reason(), game->package);
+            LOGW("safety guard: {}, restoring thermal protection for {}", guard_.reason(), target->package);
             if (cfg_.notify) notify(std::format("Thermal protection restored: {}", guard_.reason()));
         }
         transition(State::Safety, now, guard_.reason());
     } else {
-        const bool entering = state_ != State::Boost;
+        apply(*target, now);
+    }
+    publish(temps);
+}
+
+std::optional<Daemon::Target> Daemon::choose_target() const {
+    if (const auto game = flux::active_game(); game && !cfg_.is_blacklisted(game->package)) {
+        Target t{game->package, game->pid, cfg_.game_level, game->lite() ? "performance_lite" : "performance"};
+        // Flux runs Performance Lite when the device is already warm: do not go to max.
+        if (game->lite() && !cfg_.unlock_on_lite) t.level = Level::Relaxed;
+        return t;
+    }
+    // Apps that are not games are never pushed to the peak: the whitelist only gets the relaxed level.
+    if (const auto fg = flux::foreground();
+        fg && fg->screen_awake && cfg_.is_whitelisted(fg->package) && !cfg_.is_blacklisted(fg->package)) {
+        return Target{fg->package, fg->pid, Level::Relaxed, "whitelist"};
+    }
+    return std::nullopt;
+}
+
+void Daemon::apply(const Target &target, Clock::time_point now) {
+    // Switching between levels starts from stock: each level is journaled on its own.
+    if (applied_ && *applied_ != target.level && controller_.unlocked()) {
+        controller_.restore();
+        summary_ = {};
+    }
+    const bool entering = applied_ != target.level || (state_ != State::Boost && state_ != State::Relaxed);
+    applied_ = target.level;
+
+    if (target.level == Level::Max) {
         // Re-applied every poll: vendor daemons (PowerKeeper, Joyose, thermal HAL) push limits back.
         summary_ = controller_.unlock(cfg_);
         if (entering) {
             LOGI("thermal unlocked for {}: {} services, {} zones, {} cooling devices, {} caps, {} vendor nodes",
-                 game->package, summary_.services, summary_.zones, summary_.cooling, summary_.caps, summary_.vendor);
+                 target.package, summary_.services, summary_.zones, summary_.cooling, summary_.caps, summary_.vendor);
         }
-        transition(State::Boost, now, game->package);
+        transition(State::Boost, now, target.package);
+    } else {
+        summary_ = {};
+        summary_.configs = controller_.relax(cfg_);
+        if (entering) {
+            if (summary_.configs > 0) {
+                LOGI("relaxed thermal for {} ({}): {} vendor configs tuned for {}", target.package, target.source,
+                     summary_.configs, to_string(controller_.device().soc));
+            } else {
+                LOGI("relaxed level for {}: no tunable vendor thermal config on this device, stock thermal kept",
+                     target.package);
+            }
+        }
+        transition(State::Relaxed, now, target.package);
     }
-    publish(temps);
 }
 
 void Daemon::publish(const thermal::Temperatures &t) const {
@@ -269,12 +312,16 @@ void Daemon::publish(const thermal::Temperatures &t) const {
     kv("cooling", std::to_string(summary_.cooling));
     kv("caps", std::to_string(summary_.caps));
     kv("vendor", std::to_string(summary_.vendor));
+    kv("configs", std::to_string(summary_.configs));
+    kv("level", applied_ ? to_string(*applied_) : "");
     kv("trips", std::to_string(session_ ? session_->trips : 0));
     kv("xiaomi", controller_.is_xiaomi() ? "1" : "0");
     const DeviceProfile &dev = controller_.device();
     kv("device", dev.codename);
     kv("device_profile", dev.in_database ? "verified" : "generic");
     kv("soc", to_string(dev.soc));
+    kv("rom", to_string(dev.rom));
+    kv("rom_name", dev.rom_name);
     kv("backends", controller_.backend_names());
     kv("pid", std::to_string(getpid()));
     kv("version", HICO_VERSION);
@@ -290,6 +337,7 @@ void Daemon::update_module_description() {
     switch (state_) {
     case State::Idle: status = "\xE2\x9D\x84\xEF\xB8\x8F Daily: stock thermal"; break;
     case State::Boost: status = "\xF0\x9F\x94\xA5 Gaming: thermal unlocked (" + reason_ + ")"; break;
+    case State::Relaxed: status = "\xF0\x9F\x8C\xA1\xEF\xB8\x8F Relaxed thermal (" + reason_ + ")"; break;
     case State::Safety: status = "\xE2\x9A\xA0\xEF\xB8\x8F Safety guard: " + reason_; break;
     case State::Suspended: status = "\xE2\x9D\x8C Flux Tweaks is required (" + reason_ + ")"; break;
     case State::Disabled: status = "\xE2\x8F\xB8\xEF\xB8\x8F Disabled in settings"; break;

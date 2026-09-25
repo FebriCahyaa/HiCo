@@ -44,6 +44,8 @@ struct Service {
 
 bool stop(std::string_view service);
 bool start(std::string_view service);
+/// Restarts a running service (init ctl.restart), e.g. to reload its configuration.
+bool restart(std::string_view service);
 [[nodiscard]] bool is_running(std::string_view service);
 
 } // namespace hico::services
