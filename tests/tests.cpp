@@ -485,6 +485,39 @@ void test_controller() {
     c.unlock(Config{});
     c.restore();
     CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("stopped"));
+
+    // Extreme mode: HAL stopped, the zone without user_space gets its passive trip raised
+    // (15 C, staying 5 C under its critical trip) and its cooling device released.
+    // Thermal overclock turns cpufreq boost on. Everything comes back on restore.
+    build_device();
+    put("/sys/class/thermal/thermal_zone3/trip_point_0_type", "passive\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_0_temp", "45000\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_1_type", "passive\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_1_temp", "58000\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_2_type", "critical\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_2_temp", "68000\n");
+    put("/sys/devices/system/cpu/cpufreq/boost", "0\n");
+    Journal je(HICO_JOURNAL_FILE);
+    ThermalController ex(je);
+    Config xcfg;
+    xcfg.mode = Mode::Extreme;
+    xcfg.thermal_overclock = true;
+    const auto xs = ex.unlock(xcfg);
+    CHECK_EQ(props::get("init.svc.vendor.thermal-hal-2-0"), std::string("stopped"));
+    CHECK_EQ(get("/sys/class/thermal/thermal_zone3/trip_point_0_temp"), std::string("60000"));
+    CHECK_EQ(get("/sys/class/thermal/thermal_zone3/trip_point_1_temp"), std::string("63000")); // capped: critical - 5
+    CHECK_EQ(get("/sys/class/thermal/thermal_zone3/trip_point_2_temp"), std::string("68000")); // critical untouched
+    CHECK_EQ(get("/sys/class/thermal/cooling_device4/cur_state"), std::string("0"));
+    CHECK_EQ(get("/sys/class/thermal/cooling_device2/cur_state"), std::string("1")); // battery-bound: never
+    CHECK_EQ(get("/sys/devices/system/cpu/cpufreq/boost"), std::string("1"));
+    CHECK(xs.trips == 2 && xs.overclock);
+    ex.unlock(xcfg); // polls do not raise the trips again
+    CHECK_EQ(get("/sys/class/thermal/thermal_zone3/trip_point_0_temp"), std::string("60000"));
+    ex.restore();
+    CHECK_EQ(get("/sys/class/thermal/thermal_zone3/trip_point_0_temp"), std::string("45000"));
+    CHECK_EQ(get("/sys/class/thermal/thermal_zone3/trip_point_1_temp"), std::string("58000"));
+    CHECK_EQ(get("/sys/devices/system/cpu/cpufreq/boost"), std::string("0"));
+    CHECK_EQ(props::get("init.svc.vendor.thermal-hal-2-0"), std::string("running"));
 }
 
 void test_journal_rejects_tampering() {
@@ -657,6 +690,35 @@ void test_device_database() {
     const DeviceProfile live = DeviceProfile::detect(kTestDb);
     CHECK(!live.in_database && live.codename == "unknowndev" && live.soc == SocVendor::MediaTek);
     put("/__props__/ro.board.platform", "");
+
+    // Presets set several keys at once and are recognised afterwards.
+    {
+        Config c;
+        CHECK_EQ(std::string(matching_preset(c)), std::string("balanced"));
+        CHECK(!apply_preset(c, "extreme"));
+        CHECK(c.mode == Mode::Extreme && c.safety_cpu_temp == 100 && c.poll_interval == 1);
+        CHECK_EQ(std::string(matching_preset(c)), std::string("extreme"));
+        CHECK(!apply_preset(c, "overclock") && c.thermal_overclock && c.relax_margin == 10);
+        CHECK(apply_preset(c, "nope").has_value());
+        CHECK(!c.set("mode", "extreme") && c.get("mode") == std::string("extreme"));
+        c.safety_cpu_temp = 97;
+        CHECK_EQ(std::string(matching_preset(c)), std::string("custom"));
+    }
+
+    // Custom ROMs: product props renamed or spoofed, the real codename is found elsewhere.
+    put("/__props__/ro.product.vendor.device", "");
+    put("/__props__/ro.product.device", "lineage_testdev");
+    const DeviceProfile prefixed = DeviceProfile::detect(kTestDb);
+    CHECK(prefixed.in_database && prefixed.codename == "testdev" && prefixed.codename_source == "ro.product.device");
+    put("/__props__/ro.product.device", "husky"); // Pixel name spoofed for Play Integrity
+    put("/__props__/ro.boot.hwname", "testdev");
+    CHECK(DeviceProfile::detect(kTestDb).in_database);
+    put("/__props__/ro.boot.hwname", "");
+    put("/__props__/ro.vendor.build.fingerprint", "Redmi/testdev_global/testdev:15/AP3A/1:user/release-keys");
+    const DeviceProfile fp = DeviceProfile::detect(kTestDb);
+    CHECK(fp.in_database && fp.codename_source == "ro.vendor.build.fingerprint");
+    put("/__props__/ro.vendor.build.fingerprint", "");
+    CHECK(!DeviceProfile::detect(kTestDb).in_database && DeviceProfile::detect(kTestDb).codename == "husky");
 
     // Codenames are validated.
     put("/__props__/ro.product.vendor.device", "../../etc");
@@ -1006,9 +1068,34 @@ void test_rom_and_hal_overlay() {
     put("/__props__/ro.mi.os.version.name", "");
     put("/__props__/ro.miui.ui.version.name", "V14");
     CHECK(detect_rom().first == RomFamily::Miui);
+    // HyperOS still reports MIUI UI code V816; without ro.mi.os.version.name it must not read as MIUI.
+    put("/__props__/ro.miui.ui.version.name", "V816");
+    put("/__props__/ro.build.version.incremental", "OS2.0.3.0.VNRMIXM");
+    CHECK(detect_rom().first == RomFamily::HyperOS && detect_rom().second == "HyperOS OS2.0.3.0.VNRMIXM");
+    put("/__props__/ro.build.version.incremental", "V14.0.1.0");
+    CHECK(detect_rom().first == RomFamily::HyperOS && detect_rom().second == "HyperOS (V816)");
+    put("/__props__/ro.mi.os.version.incremental", "OS1.0.8.0.UNOMIXM");
+    CHECK(detect_rom().second == "HyperOS OS1.0.8.0.UNOMIXM");
+    put("/__props__/ro.mi.os.version.incremental", "");
+    put("/__props__/ro.miui.ui.version.name", "V140");
+    CHECK(detect_rom().first == RomFamily::Miui);
 
     // AOSP ROM with a thermal HAL JSON and no thermal-engine: relaxing restarts the HAL, not the daemons.
     put("/__props__/ro.miui.ui.version.name", "");
+    // Custom AOSP ROM: name from its own property, version from ro.modversion.
+    put("/__props__/ro.lineage.version", "");
+    put("/__props__/ro.modversion", "12.2-Vanilla");
+    put("/__props__/ro.crdroid.build.version", "12.2");
+    CHECK(detect_rom().first == RomFamily::Aosp && detect_rom().second == "crDroid 12.2-Vanilla");
+    put("/__props__/ro.modversion", "crDroidAndroid-16.0-12.2");
+    CHECK(detect_rom().second == "crDroidAndroid-16.0-12.2"); // name already in the version
+    put("/__props__/ro.crdroid.build.version", "");
+    // Unknown ROM: found through its version key in build.prop.
+    put("/__props__/ro.modversion", "3.1-Vanilla");
+    put("/system/build.prop", "ro.build.version.sdk=36\nro.product.version=1\nro.nebula.build.version=3.1\n");
+    CHECK(detect_rom().second == "Nebula 3.1-Vanilla");
+    put("/system/build.prop", "ro.build.version.sdk=36\n");
+    put("/__props__/ro.modversion", "");
     put("/vendor/etc/thermal_info_config.json", kHalJson);
     DeviceProfile qcom;
     qcom.soc = SocVendor::Qualcomm;

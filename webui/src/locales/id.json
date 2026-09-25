@@ -1,0 +1,442 @@
+{
+  "common": {
+    "back": "Kembali",
+    "cancel": "Batal",
+    "ok": "Oke",
+    "enable": "Aktifkan",
+    "apply": "Terapkan",
+    "add": "Tambah",
+    "on": "Aktif",
+    "off": "Nonaktif",
+    "close": "Tutup",
+    "warning": "Peringatan"
+  },
+  "notify": {
+    "dont_ask_again": "Jangan tanya lagi",
+    "failed": "Gagal: {error}",
+    "saved": "Tersimpan — langsung berlaku"
+  },
+  "navigation": {
+    "home": "Beranda",
+    "games": "Game",
+    "monitor": "Monitor",
+    "settings": "Pengaturan"
+  },
+  "actions": {
+    "restart": "Mulai ulang",
+    "restarted": "Layanan HiCo dimulai ulang"
+  },
+  "home": {
+    "tagline": "Buka batas termal saat bermain, dengan pengaman",
+    "stopped": {
+      "title": "Layanan HiCo tidak berjalan",
+      "description": "Termal tetap bawaan sampai layanan berjalan. Mulai ulang, atau reboot jika terus terjadi."
+    },
+    "flux": {
+      "title": "Menunggu Flux Tweaks",
+      "description": "Flux {state}. HiCo mempertahankan termal bawaan sampai Flux terpasang, aktif dan berjalan."
+    },
+    "state": "Status",
+    "level": "Level: {level}",
+    "for_min": "selama {m} mnt",
+    "for_sec": "selama {s} dtk",
+    "temps": "Suhu",
+    "temps_info": "Tanda merah adalah batas aman. Saat CPU atau baterai mencapainya, HiCo langsung mengembalikan kendali ke sistem termal bawaan dan baru membuka lagi setelah perangkat dingin.",
+    "cpu": "CPU",
+    "gpu": "GPU",
+    "battery": "Baterai",
+    "mode": "Mode",
+    "preset": "Template",
+    "device": "Perangkat"
+  },
+  "state": {
+    "boost": {
+      "title": "Terbuka",
+      "description": "Game sedang berjalan: throttling termal dilepas dan pengaman memantau suhu."
+    },
+    "relaxed": {
+      "title": "Longgar",
+      "description": "Sistem termal vendor tetap berjalan dengan trip point yang disesuaikan chipset: ruang lebih besar, tetap terlindungi."
+    },
+    "safety": {
+      "title": "Pengaman aktif",
+      "description": "Perangkat mencapai batas aman. Proteksi termal bawaan kembali sampai perangkat dingin."
+    },
+    "idle": {
+      "title": "Menunggu game",
+      "description": "Termal bawaan di mana-mana. HiCo membuka otomatis saat Flux menjalankan game dari daftarnya."
+    },
+    "suspended": {
+      "title": "Ditangguhkan",
+      "description": "Flux Tweaks tidak ada, dinonaktifkan atau tidak berjalan, jadi HiCo mempertahankan termal bawaan."
+    },
+    "disabled": {
+      "title": "Mati",
+      "description": "Mode Mati: HiCo tidak pernah mengubah termal."
+    },
+    "stopped": {
+      "title": "Layanan berhenti",
+      "description": "Layanan HiCo tidak berjalan, termal bawaan."
+    }
+  },
+  "changes": {
+    "services": "{n} daemon dihentikan",
+    "zones": "{n} zona",
+    "cooling": "{n} cooling dilepas",
+    "caps": "{n} batas dilepas",
+    "vendor": "{n} node vendor",
+    "configs": "{n} config disetel",
+    "raised_trips": "{n} trip dinaikkan",
+    "overclock": "Clock boost aktif"
+  },
+  "level": {
+    "max": "Maks",
+    "relaxed": "Longgar",
+    "max_hint": "Maks: throttling dimatikan selama game berjalan; hanya pengaman yang membatasi.",
+    "relaxed_hint": "Longgar: sistem termal vendor tetap berjalan dengan trip point lebih tinggi sesuai chipset. Lebih dingin, performa puncak sedikit lebih rendah."
+  },
+  "mode": {
+    "off": {
+      "title": "Mati",
+      "description": "HiCo tidak pernah mengubah termal. Pakai untuk membandingkan dengan bawaan atau saat mencari masalah."
+    },
+    "auto": {
+      "title": "Otomatis",
+      "description": "Membuka termal saat Flux menjalankan game dan mengembalikan bawaan sesudahnya. Mode yang disarankan."
+    },
+    "extreme": {
+      "title": "Ekstrem",
+      "description": "Otomatis tanpa batas lunak: thermal HAL ikut dihentikan, zona yang tidak bisa ganti governor mendapat trip lebih tinggi, dan semua game di level Maks. Pengaman tetap aktif."
+    },
+    "saved": "Mode: {mode}",
+    "confirm": {
+      "extreme": {
+        "title": "Beralih ke Ekstrem?",
+        "message": "Ekstrem menghapus batas yang masih dipertahankan Otomatis. Pakai saat game masih throttle di Otomatis.",
+        "p1": "Thermal HAL dihentikan saat bermain; Flux tidak bisa lagi beralih ke Performance Lite saat panas",
+        "p2": "Zona tanpa governor user_space (umum di kernel GKI) trip pasifnya dinaikkan, selalu 5 °C di bawah critical",
+        "p3": "Perangkat lebih panas; pengaman tetap mengembalikan proteksi di batasnya",
+        "action": "Pakai Ekstrem"
+      },
+      "off": {
+        "title": "Matikan HiCo?",
+        "message": "Termal tetap bawaan di semua game sampai Anda kembali ke Otomatis.",
+        "action": "Matikan"
+      }
+    }
+  },
+  "device": {
+    "verified": "Ada di database",
+    "generic": "Deteksi langsung",
+    "soc": "Chipset",
+    "rom": "ROM",
+    "flux": "Flux",
+    "backends": "Backend",
+    "generic_hint": "Perangkat ini tidak ada di database Xiaomi HiCo (atau codename-nya tidak ditemukan). HiCo tetap bekerja: layanan termal, zona dan cooling device dideteksi langsung dari kernel, apa pun ROM-nya."
+  },
+  "presets": {
+    "title": "Template",
+    "brief": "Pilih pengaturan siap pakai jika Anda tidak yakin fungsi tiap opsi. Semua tetap bisa diatur ulang setelahnya.",
+    "custom": "Kustom",
+    "custom_note": "Pengaturan Anda saat ini tidak sama persis dengan template mana pun (Kustom).",
+    "note": "Template mengubah mode, level, batas aman dan waktu. Daftar game dan aplikasi Anda tidak berubah.",
+    "active": "Aktif",
+    "recommended": "Disarankan",
+    "risk_warning": "Lebih panas",
+    "risk_danger": "Lanjutan",
+    "apply": "Terapkan template",
+    "applied": "Template diterapkan: {name}",
+    "confirm_title": "Pakai “{name}”?",
+    "fact": {
+      "mode": "Mode {v}",
+      "game_level": "Level {v}",
+      "safety_cpu_temp": "CPU ≤ {v} °C",
+      "safety_battery_temp": "Baterai ≤ {v} °C",
+      "thermal_overclock": "Overclock {v}"
+    },
+    "cool": {
+      "title": "Sejuk",
+      "description": "Ruang lebih besar tanpa mematikan sistem termal vendor. Untuk main harian dan cuaca panas.",
+      "confirm": "Game memakai level Longgar dengan batas aman lebih rendah.",
+      "points": [
+        "Termal vendor tetap berjalan dengan trip point yang disetel",
+        "Proteksi kembali di CPU 88 °C / baterai 43 °C",
+        "Tidak membuka di Performance Lite"
+      ]
+    },
+    "balanced": {
+      "title": "Seimbang",
+      "description": "Bawaan: buka penuh di game dengan batas aman yang wajar.",
+      "confirm": "Kembali ke pengaturan bawaan HiCo untuk mode, level dan pengaman.",
+      "points": [
+        "Mode Otomatis, level Maks untuk game",
+        "Proteksi kembali di CPU 95 °C / baterai 46 °C"
+      ]
+    },
+    "extreme": {
+      "title": "Ekstrem",
+      "description": "Untuk game yang masih throttle di Otomatis. Menghapus batas lunak; perangkat jadi panas.",
+      "confirm": "Mode Ekstrem dengan batas aman lebih tinggi dan pemeriksaan lebih cepat.",
+      "points": [
+        "Thermal HAL dihentikan saat bermain",
+        "Trip pasif dinaikkan di zona yang tidak bisa ganti governor",
+        "Proteksi kembali di CPU 100 °C / baterai 48 °C"
+      ]
+    },
+    "overclock": {
+      "title": "Overclock",
+      "description": "Ekstrem ditambah thermal overclock: chipset menahan clock boost selama mungkin.",
+      "confirm": "Mode Ekstrem dengan thermal overclock dan batas aman tertinggi yang diizinkan HiCo.",
+      "points": [
+        "Frekuensi boost cpufreq aktif (jika kernel punya)",
+        "Margin trip terlebar untuk level Longgar",
+        "Proteksi kembali di CPU 102 °C / baterai 49 °C",
+        "Pakai dengan kipas pendingin atau sesi singkat"
+      ]
+    }
+  },
+  "monitor": {
+    "title": "Monitor",
+    "live": "langsung",
+    "paused": "dijeda",
+    "verdict": "Throttling saat ini",
+    "v": {
+      "none": {
+        "title": "Tidak ada throttling",
+        "description": "CPU dan GPU boleh berjalan di kecepatan penuh hardware."
+      },
+      "light": {
+        "title": "Throttling ringan",
+        "description": "Beberapa clock dibatasi, tapi setiap batas di atas 80 %."
+      },
+      "heavy": {
+        "title": "Throttling berat",
+        "description": "Batas termal menahan CPU atau GPU jauh di bawah kecepatan penuh."
+      }
+    },
+    "cpu_allowed": "CPU diizinkan",
+    "gpu_allowed": "GPU diizinkan",
+    "allowed_chart": "Kecepatan diizinkan, 1 menit terakhir",
+    "temp_chart": "Suhu, 1 menit terakhir",
+    "clocks": "Clock dan batas",
+    "capped": "{pct} % hilang karena batas termal",
+    "sources": "Penyebab throttling",
+    "state": "state {cur}/{max}",
+    "no_sources": "Tidak ada cooling device atau zona termal yang sedang throttle.",
+    "error": "Tidak bisa membaca monitor: {error}"
+  },
+  "games": {
+    "title": "Game",
+    "tab_games": "Game Flux",
+    "tab_apps": "Aplikasi lain",
+    "search": "Cari aplikasi",
+    "hint_games": "Game berasal dari daftar game Flux Tweaks (tambah atau hapus di Flux). Matikan sebuah game agar termalnya tetap bawaan.",
+    "hint_apps": "Aplikasi non-game bisa mendapat level Longgar (tidak pernah Maks) selama tampil di layar, mis. kamera atau editor video.",
+    "empty_games": "Daftar game Flux kosong atau Flux tidak terpasang.",
+    "empty_apps": "Tidak ada aplikasi lain.",
+    "whitelist_confirm": {
+      "title": "Termal longgar untuk {app}?",
+      "message": "Selama aplikasi ini tampil, sistem termal vendor berjalan dengan trip point lebih tinggi sesuai chipset. Tidak pernah dibuka penuh seperti game."
+    },
+    "on": "HiCo aktif untuk {app}",
+    "off": "HiCo nonaktif untuk {app}"
+  },
+  "settings": {
+    "title": "Pengaturan",
+    "preset_hint": "Ketuk untuk memilih template siap pakai",
+    "section": {
+      "games": "Game",
+      "safety": "Pengaman",
+      "more": "Lainnya"
+    },
+    "level_extreme": "Mode Ekstrem selalu memakai Maks untuk game.",
+    "safety_note": "Pengaman tidak bisa dimatikan. Ia memeriksa CPU dan baterai setiap beberapa detik selama game berjalan dan mengembalikan termal bawaan di batas ini.",
+    "limit_confirm": {
+      "title": "Batas aman tinggi",
+      "safety_cpu_temp": "{v} °C mendekati titik banyak chipset throttle di hardware atau mati. Pakai hanya dengan pendingin yang baik.",
+      "safety_battery_temp": "Baterai {v} °C lebih cepat menua dan sebagian HP berhenti mengisi daya. Pakai hanya dengan pendingin yang baik."
+    },
+    "advanced": {
+      "title": "Lanjutan",
+      "description": "Semua opsi, satu per satu"
+    },
+    "log": {
+      "title": "Log",
+      "description": "Apa yang dilakukan HiCo dan alasannya"
+    },
+    "language": {
+      "title": "Bahasa"
+    },
+    "restart": {
+      "title": "Mulai ulang layanan",
+      "description": "Kembalikan termal bawaan lalu jalankan HiCo lagi"
+    },
+    "restore": {
+      "title": "Kembalikan termal bawaan sekarang",
+      "description": "Batalkan semua perubahan seketika",
+      "confirm": "Semua perubahan termal dibatalkan sekarang. HiCo membuka lagi saat game berikutnya dimulai.",
+      "action": "Kembalikan",
+      "done": "Termal bawaan dikembalikan"
+    },
+    "reset": {
+      "title": "Atur ulang pengaturan",
+      "description": "Kembali ke bawaan, termasuk daftar",
+      "confirm": "Semua pengaturan, whitelist dan blacklist kembali ke bawaan.",
+      "action": "Atur ulang",
+      "done": "Pengaturan diatur ulang"
+    },
+    "about": {
+      "title": "Tentang",
+      "description": "Versi, fitur dan tautan"
+    }
+  },
+  "keys": {
+    "game_level": {
+      "title": "Level untuk game",
+      "info": "Maks mematikan throttling termal selama game berjalan (hanya pengaman yang membatasi). Longgar membiarkan sistem termal vendor berjalan dengan trip point dinaikkan untuk chipset ini: lebih dingin dan aman, performa puncak sedikit lebih rendah."
+    },
+    "thermal_overclock": {
+      "title": "Thermal overclock",
+      "help": "Mengaktifkan frekuensi boost cpufreq (jika kernel punya) dan memakai margin trip terlebar, sehingga chipset menahan clock boost lebih lama.",
+      "warn": "Frekuensi boost menjalankan chipset di atas clock berkelanjutannya. Perangkat terasa lebih panas; pengaman tetap melindungi. Tidak semua kernel punya frekuensi boost."
+    },
+    "unlock_on_lite": {
+      "title": "Buka di Performance Lite",
+      "help": "Flux beralih ke Lite saat perangkat hangat. Aktif: tetap dibuka; nonaktif: pakai level Longgar."
+    },
+    "notify": {
+      "title": "Notifikasi",
+      "help": "Beri tahu saat pengaman mengembalikan proteksi atau Flux tidak ada."
+    },
+    "safety_cpu_temp": {
+      "title": "Batas CPU",
+      "help": "Termal bawaan kembali saat sensor CPU terpanas mencapai nilai ini."
+    },
+    "safety_battery_temp": {
+      "title": "Batas baterai",
+      "help": "Termal bawaan kembali saat baterai mencapai nilai ini."
+    },
+    "stop_thermal_services": {
+      "title": "Hentikan daemon termal",
+      "help": "thermal-engine, mi_thermald dan daemon userspace lain dihentikan saat bermain."
+    },
+    "stop_thermal_hal": {
+      "title": "Hentikan thermal HAL",
+      "help": "Hentikan juga thermal HAL (Ekstrem selalu melakukannya).",
+      "warn": "API termal Android berhenti selama bermain, jadi Flux tidak bisa beralih ke Performance Lite saat perangkat panas."
+    },
+    "zone_governor": {
+      "title": "Governor zona kernel",
+      "help": "Zona termal diganti ke user_space saat bermain; trip critical tetap aktif."
+    },
+    "cooling_reset": {
+      "title": "Lepas cooling device",
+      "help": "Cooling device CPU/GPU kembali ke state 0 (tidak pernah yang baterai)."
+    },
+    "cpu_clock_unlock": {
+      "title": "Batas clock CPU",
+      "help": "Naikkan batas frekuensi maksimum CPU yang ditinggalkan driver termal."
+    },
+    "gpu_unlock": {
+      "title": "Batas GPU",
+      "help": "Lepas thermal power level Adreno dan batas GPU."
+    },
+    "vendor_tweaks": {
+      "title": "Driver Qualcomm / MediaTek",
+      "help": "msm_thermal, msm_performance dan EARA MediaTek."
+    },
+    "xiaomi_tweaks": {
+      "title": "Scene termal Xiaomi",
+      "help": "Scene game di thermal_message dan cpu_limits dibersihkan (MIUI / HyperOS)."
+    },
+    "xiaomi_sconfig": {
+      "title": "Nomor scene Xiaomi",
+      "help": "Nilai sconfig yang ditulis saat bermain."
+    },
+    "relax_margin": {
+      "title": "Margin trip Longgar",
+      "help": "°C yang ditambahkan ke trip di level Longgar (0 = bawaan chipset)."
+    },
+    "safety_cpu_hysteresis": {
+      "title": "Margin pendinginan CPU",
+      "help": "°C di bawah batas sebelum dibuka lagi."
+    },
+    "safety_battery_hysteresis": {
+      "title": "Margin pendinginan baterai",
+      "help": "°C di bawah batas sebelum dibuka lagi."
+    },
+    "safety_cooldown": {
+      "title": "Waktu proteksi minimum",
+      "help": "Detik proteksi tetap aktif setelah trip."
+    },
+    "poll_interval": {
+      "title": "Interval pemeriksaan",
+      "help": "Detik antar pemeriksaan saat bermain (batas diterapkan ulang tiap pemeriksaan)."
+    },
+    "exit_delay": {
+      "title": "Jeda keluar",
+      "help": "Detik menunggu setelah game ditutup sebelum dikembalikan."
+    },
+    "log_level": {
+      "title": "Level log",
+      "help": "0 error, 1 peringatan, 2 info, 3 debug."
+    }
+  },
+  "advanced": {
+    "warning": "Template sudah mencakup kebanyakan kebutuhan. Ubah opsi ini hanya jika Anda paham fungsinya; setiap perubahan langsung berlaku dan bisa dibatalkan dengan Atur ulang pengaturan.",
+    "group": {
+      "unlock": "Yang dibuka",
+      "safety": "Waktu pengaman",
+      "service": "Layanan"
+    }
+  },
+  "log": {
+    "all": "Semua",
+    "warn": "Peringatan",
+    "empty": "Log kosong."
+  },
+  "about": {
+    "title": "Tentang",
+    "tagline": "Thermal boost untuk Android root, bagian dari ekosistem Flux",
+    "by": "oleh",
+    "proprietary": "Proprietary",
+    "description": "HiCo Thermal melepas throttling termal hanya saat Anda bermain, sehingga CPU dan GPU mempertahankan clock di sesi panjang. Setiap perubahan dicatat dan dikembalikan persis saat game ditutup, dan pengaman mengembalikan kendali ke sistem termal bawaan kapan pun perangkat terlalu panas.",
+    "features_title": "Fitur",
+    "features": {
+      "auto": {
+        "title": "Otomatis",
+        "description": "Mengikuti deteksi game Flux Tweaks: tanpa polling, tanpa aplikasi latar."
+      },
+      "safety": {
+        "title": "Pengaman",
+        "description": "Batas CPU dan baterai yang selalu menang; proteksi baterai dan pengisian tidak pernah disentuh."
+      },
+      "restore": {
+        "title": "Pengembalian persis",
+        "description": "Setiap perubahan dicatat di jurnal dulu; reboot selalu mulai dari bawaan."
+      },
+      "devices": {
+        "title": "Xiaomi, Redmi, POCO dulu",
+        "description": "Database 200+ perangkat dari firmware bawaan, tetap dikenali di ROM AOSP; perangkat lain memakai deteksi langsung."
+      },
+      "kernels": {
+        "title": "GKI dan Non-GKI",
+        "description": "Bekerja di kernel vendor, OSS dan GKI; zona tanpa governor user_space ditangani di Ekstrem."
+      },
+      "extreme": {
+        "title": "Ekstrem dan overclock",
+        "description": "Untuk game yang masih throttle: menghentikan thermal HAL, menaikkan trip pasif, mengaktifkan clock boost."
+      }
+    },
+    "flux_title": "Bekerja bersama Flux Tweaks",
+    "flux_text": "HiCo adalah add-on Flux dan butuh Flux untuk tahu kapan game berjalan. Keduanya tidak pernah menyentuh pengaturan yang sama:",
+    "flux_owns": "Profil performa: governor, frekuensi, GPU, scheduler, I/O, tweak game.",
+    "hico_owns": "Lapisan termal: daemon, zona, cooling device, trip dan batas termal.",
+    "links": "Tautan",
+    "link": {
+      "hico": "Rilis HiCo Thermal",
+      "flux": "Rilis Flux Tweaks"
+    },
+    "legal": "HiCo Thermal adalah perangkat lunak proprietary © 2026 FebriCahyaa, dipakai sesuai EULA-nya. Sebagian WebUI berasal dari Flux Tweaks dan Encore Tweaks (Apache License 2.0); font Google Sans Flex di bawah SIL Open Font License."
+  }
+}

@@ -10,6 +10,10 @@ files come from other projects and remain under their original license, Apache L
 | `module/META-INF/com/google/android/update-binary`, `updater-script` | Magisk module installer template, as shipped with Flux Tweaks / Encore Tweaks |
 | `.github/scripts/changelog.sh` | Flux Tweaks release tooling |
 | `.github/scripts/gen_sha256sum.sh` | Flux Tweaks / Encore Tweaks build tooling |
+| `webui/src/assets/*.css`, `webui/src/components/**`, `webui/src/helpers/{KernelSU,WXInterfaces,WebViewCompat}.js`, `webui/src/stores/Notify.js`, `webui/src/App.vue` and their build output in `module/webroot/` | Flux Tweaks WebUI, derived from Encore Tweaks |
+
+The WebUI font, **Google Sans Flex** (`webui/src/assets/fonts/`, bundled in `module/webroot/assets/`),
+is licensed under the SIL Open Font License 1.1 (https://openfontlicense.org), © Google LLC.
 
 ## Flux Tweaks (Apache License 2.0)
 Source: https://github.com/FebriCahyaa/Flux

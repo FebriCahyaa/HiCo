@@ -1,0 +1,442 @@
+{
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "ok": "Okay",
+    "enable": "Enable",
+    "apply": "Apply",
+    "add": "Add",
+    "on": "On",
+    "off": "Off",
+    "close": "Close",
+    "warning": "Warning"
+  },
+  "notify": {
+    "dont_ask_again": "Don't ask again",
+    "failed": "Failed: {error}",
+    "saved": "Saved — applied immediately"
+  },
+  "navigation": {
+    "home": "Home",
+    "games": "Games",
+    "monitor": "Monitor",
+    "settings": "Settings"
+  },
+  "actions": {
+    "restart": "Restart",
+    "restarted": "HiCo service restarted"
+  },
+  "home": {
+    "tagline": "Thermal unlock for games, with a safety guard",
+    "stopped": {
+      "title": "HiCo service is not running",
+      "description": "Thermal stays stock until the service runs. Restart it, or reboot if this keeps happening."
+    },
+    "flux": {
+      "title": "Waiting for Flux Tweaks",
+      "description": "Flux is {state}. HiCo keeps stock thermal until Flux is installed, enabled and running."
+    },
+    "state": "Status",
+    "level": "Level: {level}",
+    "for_min": "for {m} min",
+    "for_sec": "for {s} s",
+    "temps": "Temperatures",
+    "temps_info": "The red mark is the safety limit. When the CPU or battery reaches it, HiCo gives control back to the stock thermal system immediately and unlocks again only after the device has cooled down.",
+    "cpu": "CPU",
+    "gpu": "GPU",
+    "battery": "Battery",
+    "mode": "Mode",
+    "preset": "Template",
+    "device": "Device"
+  },
+  "state": {
+    "boost": {
+      "title": "Unlocked",
+      "description": "A game is running: thermal throttling is lifted and the safety guard is watching the temperatures."
+    },
+    "relaxed": {
+      "title": "Relaxed",
+      "description": "The vendor thermal system keeps running with trip points tuned for this chipset: more headroom, still protected."
+    },
+    "safety": {
+      "title": "Safety guard",
+      "description": "The device reached a safety limit. Stock thermal protection is back until it cools down."
+    },
+    "idle": {
+      "title": "Waiting for a game",
+      "description": "Stock thermal everywhere. HiCo unlocks automatically when Flux starts a game from its game list."
+    },
+    "suspended": {
+      "title": "Suspended",
+      "description": "Flux Tweaks is missing, disabled or not running, so HiCo keeps stock thermal."
+    },
+    "disabled": {
+      "title": "Off",
+      "description": "Mode is Off: HiCo never changes thermal."
+    },
+    "stopped": {
+      "title": "Service stopped",
+      "description": "The HiCo service is not running, thermal is stock."
+    }
+  },
+  "changes": {
+    "services": "{n} daemons stopped",
+    "zones": "{n} zones",
+    "cooling": "{n} cooling released",
+    "caps": "{n} caps lifted",
+    "vendor": "{n} vendor nodes",
+    "configs": "{n} configs tuned",
+    "raised_trips": "{n} trips raised",
+    "overclock": "Boost clocks on"
+  },
+  "level": {
+    "max": "Max",
+    "relaxed": "Relaxed",
+    "max_hint": "Max: throttling is disabled while the game runs; only the safety guard limits it.",
+    "relaxed_hint": "Relaxed: the vendor thermal system keeps running with higher, chipset-tuned trip points. Cooler, but less peak performance."
+  },
+  "mode": {
+    "off": {
+      "title": "Off",
+      "description": "HiCo never changes thermal. Use this to compare with stock or when troubleshooting."
+    },
+    "auto": {
+      "title": "Auto",
+      "description": "Unlocks thermal while Flux runs a game and restores stock afterwards. The recommended mode."
+    },
+    "extreme": {
+      "title": "Extreme",
+      "description": "Auto without the soft limits: the thermal HAL is stopped too, zones that cannot switch governor get higher trips, and every game runs at Max. The safety guard stays on."
+    },
+    "saved": "Mode: {mode}",
+    "confirm": {
+      "extreme": {
+        "title": "Switch to Extreme?",
+        "message": "Extreme removes the limits Auto keeps. Use it when games still throttle in Auto.",
+        "p1": "The thermal HAL is stopped while gaming; Flux can no longer switch to Performance Lite on heat",
+        "p2": "Zones without a user_space governor (common on GKI kernels) get passive trips raised, always 5 °C below critical",
+        "p3": "The device gets hotter; the safety guard still restores protection at its limits",
+        "action": "Use Extreme"
+      },
+      "off": {
+        "title": "Turn HiCo off?",
+        "message": "Thermal stays stock in every game until you switch back to Auto.",
+        "action": "Turn off"
+      }
+    }
+  },
+  "device": {
+    "verified": "In database",
+    "generic": "Runtime detection",
+    "soc": "Chipset",
+    "rom": "ROM",
+    "flux": "Flux",
+    "backends": "Backends",
+    "generic_hint": "This device is not in HiCo's Xiaomi database (or its codename was not found). HiCo still works: thermal services, zones and cooling devices are detected live from the kernel, whatever the ROM."
+  },
+  "presets": {
+    "title": "Templates",
+    "brief": "Pick a ready-made setup if you are not sure what each option does. You can still fine-tune everything afterwards.",
+    "custom": "Custom",
+    "custom_note": "Your current settings do not match a template exactly (Custom).",
+    "note": "Templates change the mode, level, safety limits and timing. Your game and app lists stay as they are.",
+    "active": "Active",
+    "recommended": "Recommended",
+    "risk_warning": "Hotter",
+    "risk_danger": "Advanced",
+    "apply": "Apply template",
+    "applied": "Template applied: {name}",
+    "confirm_title": "Use “{name}”?",
+    "fact": {
+      "mode": "Mode {v}",
+      "game_level": "Level {v}",
+      "safety_cpu_temp": "CPU ≤ {v} °C",
+      "safety_battery_temp": "Battery ≤ {v} °C",
+      "thermal_overclock": "Overclock {v}"
+    },
+    "cool": {
+      "title": "Cool",
+      "description": "More headroom without disabling the vendor thermal system. For daily gaming and warm weather.",
+      "confirm": "Games use the Relaxed level with lower safety limits.",
+      "points": [
+        "Vendor thermal keeps running with tuned trip points",
+        "Protection returns at 88 °C CPU / 43 °C battery",
+        "No unlock in Performance Lite"
+      ]
+    },
+    "balanced": {
+      "title": "Balanced",
+      "description": "The default: full unlock in games with sensible safety limits.",
+      "confirm": "Back to HiCo's default settings for mode, level and safety.",
+      "points": [
+        "Auto mode, Max level for games",
+        "Protection returns at 95 °C CPU / 46 °C battery"
+      ]
+    },
+    "extreme": {
+      "title": "Extreme",
+      "description": "For games that still throttle in Auto. Removes the soft limits; the device gets hot.",
+      "confirm": "Extreme mode with higher safety limits and a faster check interval.",
+      "points": [
+        "Thermal HAL stopped while gaming",
+        "Passive trips raised on zones that cannot switch governor",
+        "Protection returns at 100 °C CPU / 48 °C battery"
+      ]
+    },
+    "overclock": {
+      "title": "Overclock",
+      "description": "Extreme plus thermal overclock: the chipset holds its boost clocks as long as possible.",
+      "confirm": "Extreme mode with thermal overclock and the highest safety limits HiCo allows.",
+      "points": [
+        "cpufreq boost frequencies on (where the kernel has them)",
+        "Widest trip margin for the Relaxed level",
+        "Protection returns at 102 °C CPU / 49 °C battery",
+        "Use with a cooler or in short sessions"
+      ]
+    }
+  },
+  "monitor": {
+    "title": "Monitor",
+    "live": "live",
+    "paused": "paused",
+    "verdict": "Throttling now",
+    "v": {
+      "none": {
+        "title": "No throttling",
+        "description": "CPU and GPU may run at their full hardware speed."
+      },
+      "light": {
+        "title": "Light throttling",
+        "description": "Some clocks are capped, but every cap is above 80 %."
+      },
+      "heavy": {
+        "title": "Heavy throttling",
+        "description": "Thermal caps are holding the CPU or GPU well below full speed."
+      }
+    },
+    "cpu_allowed": "CPU allowed",
+    "gpu_allowed": "GPU allowed",
+    "allowed_chart": "Allowed speed, last minute",
+    "temp_chart": "Temperature, last minute",
+    "clocks": "Clocks and caps",
+    "capped": "{pct} % lost to thermal caps",
+    "sources": "What is throttling",
+    "state": "state {cur}/{max}",
+    "no_sources": "No cooling device or thermal zone is throttling right now.",
+    "error": "Cannot read the monitor: {error}"
+  },
+  "games": {
+    "title": "Games",
+    "tab_games": "Flux games",
+    "tab_apps": "Other apps",
+    "search": "Search apps",
+    "hint_games": "Games come from Flux Tweaks' game list (add or remove them in Flux). Switch a game off to keep stock thermal for it.",
+    "hint_apps": "Apps that are not games can get the Relaxed level (never Max) while they are on screen, e.g. camera or video editors.",
+    "empty_games": "Flux's game list is empty or Flux is not installed.",
+    "empty_apps": "No other apps found.",
+    "whitelist_confirm": {
+      "title": "Relaxed thermal for {app}?",
+      "message": "While this app is on screen the vendor thermal system runs with higher, chipset-tuned trip points. It is never fully unlocked like a game."
+    },
+    "on": "HiCo on for {app}",
+    "off": "HiCo off for {app}"
+  },
+  "settings": {
+    "title": "Settings",
+    "preset_hint": "Tap to choose a ready-made template",
+    "section": {
+      "games": "Games",
+      "safety": "Safety guard",
+      "more": "More"
+    },
+    "level_extreme": "Extreme mode always uses Max for games.",
+    "safety_note": "The safety guard cannot be switched off. It checks CPU and battery every few seconds while a game runs and restores stock thermal at these limits.",
+    "limit_confirm": {
+      "title": "High safety limit",
+      "safety_cpu_temp": "{v} °C is close to where many chipsets throttle in hardware or shut down. Only use it with good cooling.",
+      "safety_battery_temp": "Battery at {v} °C ages faster and some phones stop charging. Only use it with good cooling."
+    },
+    "advanced": {
+      "title": "Advanced",
+      "description": "Every option, one by one"
+    },
+    "log": {
+      "title": "Log",
+      "description": "What HiCo did and why"
+    },
+    "language": {
+      "title": "Language"
+    },
+    "restart": {
+      "title": "Restart service",
+      "description": "Restore stock thermal and start HiCo again"
+    },
+    "restore": {
+      "title": "Restore stock thermal now",
+      "description": "Undo every change immediately",
+      "confirm": "Every thermal change is undone now. HiCo unlocks again the next time a game starts.",
+      "action": "Restore",
+      "done": "Stock thermal restored"
+    },
+    "reset": {
+      "title": "Reset settings",
+      "description": "Back to the defaults, lists included",
+      "confirm": "Every setting, the whitelist and the blacklist go back to their defaults.",
+      "action": "Reset",
+      "done": "Settings reset"
+    },
+    "about": {
+      "title": "About",
+      "description": "Version, features and links"
+    }
+  },
+  "keys": {
+    "game_level": {
+      "title": "Level for games",
+      "info": "Max disables thermal throttling while the game runs (only the safety guard limits it). Relaxed keeps the vendor thermal system running with trip points raised for this chipset: cooler and safer, a little less peak performance."
+    },
+    "thermal_overclock": {
+      "title": "Thermal overclock",
+      "help": "Turns on cpufreq boost frequencies (where the kernel has them) and uses the widest trip margin, so the chipset holds its boost clocks longer.",
+      "warn": "Boost frequencies run the chipset above its sustained clocks. The device gets noticeably hotter; the safety guard still protects it. Not every kernel has boost frequencies."
+    },
+    "unlock_on_lite": {
+      "title": "Unlock in Performance Lite",
+      "help": "Flux switches to Lite when the device is warm. On: still unlock; off: use the Relaxed level instead."
+    },
+    "notify": {
+      "title": "Notifications",
+      "help": "Tell me when the safety guard restores protection or Flux is missing."
+    },
+    "safety_cpu_temp": {
+      "title": "CPU limit",
+      "help": "Stock thermal comes back when the hottest CPU sensor reaches this."
+    },
+    "safety_battery_temp": {
+      "title": "Battery limit",
+      "help": "Stock thermal comes back when the battery reaches this."
+    },
+    "stop_thermal_services": {
+      "title": "Stop thermal daemons",
+      "help": "thermal-engine, mi_thermald and other userspace daemons are stopped while gaming."
+    },
+    "stop_thermal_hal": {
+      "title": "Stop thermal HAL",
+      "help": "Also stop the thermal HAL (Extreme does this anyway).",
+      "warn": "Android's thermal API stops working while gaming, so Flux cannot switch to Performance Lite when the device gets hot."
+    },
+    "zone_governor": {
+      "title": "Kernel zone governor",
+      "help": "Thermal zones switch to user_space while gaming; critical trips stay armed."
+    },
+    "cooling_reset": {
+      "title": "Release cooling devices",
+      "help": "CPU/GPU cooling devices go back to state 0 (never battery ones)."
+    },
+    "cpu_clock_unlock": {
+      "title": "CPU clock caps",
+      "help": "Raise CPU max frequency caps left by thermal drivers."
+    },
+    "gpu_unlock": {
+      "title": "GPU caps",
+      "help": "Lift the Adreno thermal power level and GPU caps."
+    },
+    "vendor_tweaks": {
+      "title": "Qualcomm / MediaTek drivers",
+      "help": "msm_thermal, msm_performance and MediaTek EARA."
+    },
+    "xiaomi_tweaks": {
+      "title": "Xiaomi thermal scene",
+      "help": "Game scene in thermal_message and cleared cpu_limits (MIUI / HyperOS)."
+    },
+    "xiaomi_sconfig": {
+      "title": "Xiaomi scene number",
+      "help": "sconfig value written while gaming."
+    },
+    "relax_margin": {
+      "title": "Relaxed trip margin",
+      "help": "°C added to trips at the Relaxed level (0 = chipset default)."
+    },
+    "safety_cpu_hysteresis": {
+      "title": "CPU cool-down margin",
+      "help": "°C below the limit before unlocking again."
+    },
+    "safety_battery_hysteresis": {
+      "title": "Battery cool-down margin",
+      "help": "°C below the limit before unlocking again."
+    },
+    "safety_cooldown": {
+      "title": "Minimum protection time",
+      "help": "Seconds protection stays on after a trip."
+    },
+    "poll_interval": {
+      "title": "Check interval",
+      "help": "Seconds between checks while gaming (limits are re-asserted every check)."
+    },
+    "exit_delay": {
+      "title": "Exit delay",
+      "help": "Seconds to wait after the game leaves before restoring."
+    },
+    "log_level": {
+      "title": "Log level",
+      "help": "0 errors, 1 warnings, 2 info, 3 debug."
+    }
+  },
+  "advanced": {
+    "warning": "The templates cover most needs. Change these only if you know what they do; every change applies immediately and can be undone with Reset settings.",
+    "group": {
+      "unlock": "What is unlocked",
+      "safety": "Safety guard timing",
+      "service": "Service"
+    }
+  },
+  "log": {
+    "all": "All",
+    "warn": "Warnings",
+    "empty": "The log is empty."
+  },
+  "about": {
+    "title": "About",
+    "tagline": "Thermal boost for rooted Android, part of the Flux ecosystem",
+    "by": "by",
+    "proprietary": "Proprietary",
+    "description": "HiCo Thermal lifts thermal throttling only while you play, so the CPU and GPU keep their clocks in long sessions. Every change is journaled and restored exactly when the game closes, and a safety guard hands control back to the stock thermal system whenever the device gets too hot.",
+    "features_title": "Features",
+    "features": {
+      "auto": {
+        "title": "Automatic",
+        "description": "Follows Flux Tweaks' game detection: no polling, no background app."
+      },
+      "safety": {
+        "title": "Safety guard",
+        "description": "CPU and battery limits that always win; battery and charger protection is never touched."
+      },
+      "restore": {
+        "title": "Exact restore",
+        "description": "Every change is written to an undo journal first; a reboot always starts from stock."
+      },
+      "devices": {
+        "title": "Xiaomi, Redmi, POCO first",
+        "description": "A database of 200+ devices from stock firmware, found even on AOSP ROMs; other devices use live detection."
+      },
+      "kernels": {
+        "title": "GKI and Non-GKI",
+        "description": "Works with vendor, OSS and GKI kernels; zones without a user_space governor are handled in Extreme."
+      },
+      "extreme": {
+        "title": "Extreme and overclock",
+        "description": "For games that still throttle: stops the thermal HAL, raises passive trips, turns on boost clocks."
+      }
+    },
+    "flux_title": "Works with Flux Tweaks",
+    "flux_text": "HiCo is a Flux add-on and needs Flux to know when a game runs. The two never touch the same setting:",
+    "flux_owns": "Performance profiles: governors, frequencies, GPU, scheduler, I/O, game tweaks.",
+    "hico_owns": "The thermal layer: daemons, zones, cooling devices, trips and thermal caps.",
+    "links": "Links",
+    "link": {
+      "hico": "HiCo Thermal releases",
+      "flux": "Flux Tweaks releases"
+    },
+    "legal": "HiCo Thermal is proprietary software © 2026 FebriCahyaa, used under its EULA. Parts of the WebUI come from Flux Tweaks and Encore Tweaks (Apache License 2.0); the Google Sans Flex font is under the SIL Open Font License."
+  }
+}

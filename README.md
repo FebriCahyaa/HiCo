@@ -45,6 +45,12 @@ thermal stack if the device gets too hot.
 | **Suspended** | Flux is missing, disabled, outdated or not running | Stock |
 | **Disabled** | `mode=off` | Stock |
 
+**Modes:** `auto` (default) unlocks as above; `extreme` is Auto without the soft limits — the
+thermal HAL is stopped too, every game runs at max, and zones that cannot switch to the
+`user_space` governor (common on GKI kernels) get their passive trips raised (by up to 15 °C,
+always 5 °C below the zone's critical trip) and their cooling devices released; `off` never
+unlocks. The safety guard applies in every mode.
+
 HiCo does not detect games on its own: **Flux Tweaks is required.** Flux already tracks the
 foreground app, the game list, the game's PID and the screen state; HiCo watches the two files
 fluxd writes on every profile change (`current_profile`, `gameinfo`) with `inotify`, so it costs
@@ -176,7 +182,11 @@ compiled table is out of date with `devices/` (`gen_device_db.py --check`).
 `hicod` detects the ROM family (`hicod device`, WebUI, installer): **HyperOS**
 (`ro.mi.os.version.name`), **MIUI** (`ro.miui.ui.version.name`), **LineageOS**
 (`ro.lineage.version`) and any other **AOSP-based** ROM (crDroid, PixelOS, Evolution X, …).
-Everything that is not Xiaomi-specific works the same on all of them: init thermal services,
+The device is found in the database even when a custom ROM renames the product properties
+(`lineage_garnet`, `garnet_global`, a Pixel name spoofed for Play Integrity): the codename is
+looked up from `ro.boot.hwname`, the vendor / odm / system / product device properties,
+`ro.product.name` / `mod_device` without ROM prefixes or region suffixes, and the vendor / odm
+fingerprints. Everything that is not Xiaomi-specific works the same on all of them: init thermal services,
 kernel zones, cooling devices, cpufreq, Qualcomm / MediaTek backends and the thermal tuner, which
 also handles the thermal HAL JSON most AOSP ROMs ship. The Xiaomi backend (thermal scene,
 `cpu_limits`) only acts where those nodes exist, so it is inert on AOSP ROMs without them. On a
@@ -204,13 +214,19 @@ is in Flux's `gamelist.json`. Flux builds that file at install from its `gamelis
 WebUI. HiCo never edits Flux's list; its own **blacklist** can switch a Flux game off for HiCo, and
 the **whitelist** gives non-game apps the relaxed level only.
 
-**WebUI** (KernelSU, APatch, MMRL, WebUI X), in English or Bahasa Indonesia:
-- **Home** — status, CPU / GPU / battery gauges against the safety limits, one-tap mode and game
-  level, what is currently changed, device / chipset / ROM / Flux
-- **Monitor** — real-time throttling, refreshed every second (see below)
-- **Games** — Flux's game list with a per-game switch (blacklist), other apps (whitelist), history
-- **Settings** — the safety limits up front; every other option under *Advanced*
-- **More** — restart or restore stock thermal, log, about
+**WebUI** (KernelSU, APatch, MMRL, WebUI X), in English or Bahasa Indonesia, built with Vue 3 in
+the same Material 3 Expressive design as Flux Tweaks (source in `webui/`, built into
+`module/webroot/` with `cd webui && bun install && bun run build`):
+- **Home** — state and what is changed right now, CPU / GPU / battery against the safety limits,
+  mode (Off / Auto / Extreme), current template, device (database record and the property the
+  codename came from), chipset, ROM, Flux
+- **Monitor** — real-time throttling, refreshed every second while on screen (see below)
+- **Games** — Flux's games with a per-game switch (blacklist) and other apps (whitelist)
+- **Settings** — templates, game level, thermal overclock, safety sliders, *Advanced* (every
+  key), log, language, restart / restore / reset, **About**
+
+Risky choices (Extreme, templates, overclock, high safety limits, stopping the HAL, reset) ask
+first with an explanation; every change is confirmed with a notification.
 
 The action button (Magisk) toggles HiCo between automatic and off.
 
@@ -219,9 +235,22 @@ The action button (Magisk) toggles HiCo between automatic and off.
 `/data/adb/.config/hico/hico.conf`, edited through the WebUI or `hicod config set`. Changes apply
 immediately.
 
+**Templates** set the mode, level, safety limits and timing in one step (lists are kept):
+
+| Template | Mode | Level | Overclock | CPU / battery limit | Poll |
+|---|---|---|---|---|---|
+| `cool` | auto | relaxed (no unlock in Lite) | off | 88 / 43 °C | 2 s |
+| `balanced` (defaults) | auto | max | off | 95 / 46 °C | 2 s |
+| `extreme` | extreme | max | off | 100 / 48 °C | 1 s |
+| `overclock` | extreme | max | on, relax margin 10 | 102 / 49 °C | 1 s |
+
+`hicod config preset <name>` applies one; `hicod config presets` lists them (JSON) with the one
+the current settings match.
+
 | Key | Default | Range | Description |
 |---|---|---|---|
-| `mode` | `auto` | auto / off | `off` keeps stock thermal everywhere |
+| `mode` | `auto` | auto / extreme / off | `extreme`: Auto without soft limits; `off` keeps stock thermal everywhere |
+| `thermal_overclock` | `0` | | cpufreq boost frequencies on and the widest relaxed trip margin |
 | `unlock_on_lite` | `1` | | Also unlock in Flux's Performance Lite |
 | `game_level` | `max` | max / relaxed | Level for Flux games |
 | `whitelist` | | packages | Non-game apps that get the relaxed level (never max) |
@@ -271,7 +300,7 @@ changes or lifts. Nothing is stored; polling stops when the tab or the WebUI is 
 hicod status [--json]      state, temperatures, Flux link
 hicod restore              stop the service and restore stock thermal now
 hicod flux                 check the Flux dependency
-hicod config list|get|set|reset|schema
+hicod config list|get|set|reset|schema|preset <name>|presets
 hicod sessions [clear]     session history (JSON Lines: duration, unlocked time, peaks, trips)
 hicod zones                zones, cooling devices and thermal services on this device
 hicod monitor [--once] [--interval S]   live throttling, one line per second (Ctrl-C to stop)
