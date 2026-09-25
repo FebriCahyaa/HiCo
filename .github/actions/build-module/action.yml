@@ -1,0 +1,27 @@
+name: Build HiCo module
+description: Builds hicod for Android and the flashable zip (shared by CI and releases)
+
+outputs:
+  zip-name:
+    description: File name of the flashable zip in the workspace root
+    value: ${{ steps.zip.outputs.zipName }}
+
+runs:
+  using: composite
+  steps:
+    - name: NDK Setup
+      uses: nttld/setup-ndk@v1
+      with:
+        ndk-version: r29
+
+    - name: Build hicod
+      shell: bash
+      run: |
+        # No spaces: the value becomes a -D flag on the compiler command line.
+        version="$(cat version)-$(git rev-list HEAD --count)-$(git rev-parse --short HEAD)"
+        ndk-build -j"$(nproc --all)" HICO_VERSION="$version"
+
+    - name: Compile Flashable Zip
+      id: zip
+      shell: bash
+      run: bash .github/scripts/compile_zip.sh
