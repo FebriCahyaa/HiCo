@@ -59,6 +59,19 @@ bool ensure_dir(std::string_view path, unsigned mode);
 
 bool remove(std::string_view path);
 
+/// Exact file content (no trimming); nullopt when unreadable or larger than @p max_bytes.
+[[nodiscard]] std::optional<std::string> read_raw(std::string_view path, size_t max_bytes);
+
+/**
+ * Bind-mounts file @p source over file @p target, after giving @p source the
+ * SELinux label of @p target so the service reading it is not denied.
+ * Host builds only record the mount in $HICO_ROOT/__mounts__.
+ */
+bool bind_mount(std::string_view source, std::string_view target);
+bool unmount(std::string_view target);
+/// True when @p target is a bind-mount point (Android: /proc/self/mountinfo; host: the recorded list).
+[[nodiscard]] bool is_mounted(std::string_view target);
+
 } // namespace hico::fs
 
 namespace hico::str {

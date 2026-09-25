@@ -25,7 +25,8 @@ namespace hico {
 
 enum class State {
     Idle,      ///< stock thermal (no game)
-    Boost,     ///< game running, thermal throttling disabled
+    Boost,     ///< game running, thermal throttling disabled (level max)
+    Relaxed,   ///< game or whitelisted app, vendor thermal running with relaxed configs
     Safety,    ///< game running, but the safety guard restored thermal protection
     Suspended, ///< Flux missing, disabled, outdated or not running: stock thermal
     Disabled,  ///< mode=off: stock thermal
@@ -43,6 +44,10 @@ enum class State {
  *        (after exit_delay)
  *
  *   Any state ── Flux gone / mode=off ──▶ Suspended / Disabled (stock thermal)
+ *
+ * Levels: a Flux game gets game_level (Boost at max, Relaxed otherwise; a
+ * Performance Lite game with unlock_on_lite=0 gets Relaxed); an app on the
+ * whitelist gets Relaxed at most; the blacklist is never boosted.
  *
  * tick() is the only place that decides; the event loop just calls it when
  * Flux's files, the config or a timer change. Stock thermal is the default
@@ -74,7 +79,15 @@ public:
 
 private:
     void transition(State next, Clock::time_point now, std::string reason);
-    void begin_session(const flux::Game &game, Clock::time_point now);
+    struct Target {
+        std::string package;
+        pid_t pid = 0;
+        Level level = Level::Relaxed;
+        std::string source; ///< "performance", "performance_lite" or "whitelist"
+    };
+    [[nodiscard]] std::optional<Target> choose_target() const;
+    void apply(const Target &target, Clock::time_point now);
+    void begin_session(const Target &target, Clock::time_point now);
     void end_session(Clock::time_point now);
     void publish(const thermal::Temperatures &t) const;
     void update_module_description();
@@ -96,6 +109,7 @@ private:
     bool described_ = false; ///< module.prop description written at least once
     bool flux_warned_ = false; ///< "Flux required" notification posted this boot
     ThermalController::Summary summary_;
+    std::optional<Level> applied_; ///< level currently applied to the system
 };
 
 /// Serialises the runtime state file into JSON for `hicod status --json` (WebUI).

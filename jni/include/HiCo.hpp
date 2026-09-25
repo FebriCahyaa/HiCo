@@ -42,6 +42,8 @@
 #define FLUX_LOCK_FILE FLUX_CONFIG_DIR "/.lock"
 #define FLUX_PROFILE_FILE FLUX_CONFIG_DIR "/current_profile"
 #define FLUX_GAMEINFO_FILE FLUX_CONFIG_DIR "/gameinfo"
+/// fluxd's system monitor status (focused app, screen state), rewritten atomically on every change.
+#define FLUX_STATUS_FILE FLUX_CONFIG_DIR "/synthesis_core.json"
 
 /// Oldest Flux build HiCo supports (v1.2.0, native monitor). Keep in sync with
 /// FLUX_MIN_VERSION_CODE in module/customize.sh.

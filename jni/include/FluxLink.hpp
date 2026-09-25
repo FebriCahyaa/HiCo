@@ -59,4 +59,13 @@ struct Game {
 /// The game Flux is boosting right now, if any.
 [[nodiscard]] std::optional<Game> active_game();
 
+struct Foreground {
+    std::string package;
+    pid_t pid = 0;
+    bool screen_awake = false;
+};
+
+/// The app in the foreground according to fluxd's system monitor (FLUX_STATUS_FILE).
+[[nodiscard]] std::optional<Foreground> foreground();
+
 } // namespace hico::flux

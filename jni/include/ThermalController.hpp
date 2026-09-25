@@ -56,11 +56,22 @@ public:
         int cooling = 0;  ///< cooling devices released
         int caps = 0;     ///< frequency caps lifted
         int vendor = 0;   ///< vendor nodes in the gaming state
+        int configs = 0;  ///< vendor thermal configs relaxed (relaxed level)
     };
 
     /// Enters the gaming state (idempotent). Called on entry and on every poll,
     /// which also re-asserts anything a vendor daemon changed back meanwhile.
     Summary unlock(const Config &cfg);
+
+    /**
+     * "Relaxed" level: the vendor thermal daemons keep running and protecting
+     * the device, but with their plain-text configs tuned for this chipset
+     * (ThermalConfig.hpp): each tuned copy is verified, bind-mounted over the
+     * vendor file, and the running daemons are restarted to load it.
+     * Idempotent. Returns the number of relaxed config files (0 when the
+     * device has none that can be tuned, e.g. encrypted configs).
+     */
+    int relax(const Config &cfg);
 
     /// Returns to the stock thermal state.
     Journal::RestoreResult restore();

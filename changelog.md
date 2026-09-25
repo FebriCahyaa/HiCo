@@ -23,6 +23,13 @@
   into hicod: vendor thermal services, thermal configs, model and platform per codename; the data
   stays in the repository and is never shipped as files; a workflow refreshes it through a pull request
 
+- Thermal tuner: reads and writes vendor thermal configs and raises eligible trips per chipset
+  (shutdown, battery and descending sections never changed, independent verifier); runs on the
+  device and over every collected firmware config in the repository (`tools/tune_thermal.py`)
+- Relaxed level: vendor thermal daemons keep running with tuned configs (bind-mounted, journaled)
+- Whitelist (non-game apps, relaxed level only) and blacklist (never boosted, games included);
+  `game_level` for games
+
 ### Security
 - Undo journal validated before replay; only `/sys` and `/proc` nodes are ever written
 - No shell in the daemon: services via system properties, notifications via `exec`

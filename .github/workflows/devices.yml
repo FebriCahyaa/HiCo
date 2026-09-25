@@ -60,12 +60,16 @@ jobs:
           cmake --build build -j"$(nproc)"
           ctest --test-dir build --output-on-failure
 
+      - name: Tune thermal configs per chipset
+        # Same code as the relaxed level on the device; fails on any verifier violation.
+        run: python3 tools/tune_thermal.py --hicod build/hicod
+
       - name: Open pull request
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          if [ -z "$(git status --porcelain devices docs jni/src/XiaomiDevices.gen.cpp)" ]; then
+          if [ -z "$(git status --porcelain devices docs jni/src/XiaomiDevices.gen.cpp)" ]; then  # docs/ includes THERMAL_TUNING.md
             echo "Device profiles are up to date"
             exit 0
           fi
@@ -78,7 +82,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "$branch"
-          git add devices docs/DEVICES.md jni/src/XiaomiDevices.gen.cpp
+          git add devices docs/DEVICES.md docs/THERMAL_TUNING.md jni/src/XiaomiDevices.gen.cpp
           git commit -m "feat(devices): update Xiaomi device profiles ($count devices)"
           git push origin "$branch"
 

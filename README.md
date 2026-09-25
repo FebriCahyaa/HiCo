@@ -39,7 +39,8 @@ thermal stack if the device gets too hot.
 | State | When | Thermal |
 |---|---|---|
 | **Idle** | No game | Stock |
-| **Boost** | Flux runs a game (Performance, and Performance Lite unless disabled) | Unlocked |
+| **Boost** | Flux runs a game with `game_level=max` (default) | Unlocked |
+| **Relaxed** | A game with `game_level=relaxed`, a Performance Lite game with `unlock_on_lite=0`, or a **whitelisted** app | Vendor thermal running with configs tuned for the chipset |
 | **Safety** | A game runs but CPU or battery reached its limit | Stock until it cools down |
 | **Suspended** | Flux is missing, disabled, outdated or not running | Stock |
 | **Disabled** | `mode=off` | Stock |
@@ -72,6 +73,21 @@ and replayed to restore the exact original values.
 
 Vendor daemons that push limits back mid-game are overridden on the next poll (every 2 s while
 gaming).
+
+## Levels, whitelist and blacklist
+
+| Level | Who | What happens |
+|---|---|---|
+| **max** | Games only (Flux game list), `game_level=max` | Thermal throttling disabled (table above), safety guard on |
+| **relaxed** | Games with `game_level=relaxed`, Performance Lite with `unlock_on_lite=0`, whitelisted apps | The vendor thermal daemons **keep running**; their plain-text configs are tuned for the chipset (trips raised, shutdown untouched), bind-mounted over the stock files and the daemons restarted to load them |
+| stock | Everything else | Nothing changed |
+
+- **Whitelist** (`whitelist`): apps that are not games but should get more headroom (camera,
+  video editor, emulator, …). They never reach the max level — only games do.
+- **Blacklist** (`blacklist`): packages that are never boosted, games included. It wins over
+  the game list and the whitelist.
+- Devices whose thermal configs are encrypted cannot be relaxed: the relaxed level then keeps
+  stock thermal and says so (`hicod thermal scan` shows what would be tuned).
 
 ## Safety
 
@@ -117,6 +133,19 @@ dumps.tadiphone.dev ─ tools/xiaomi_devices.py ─▶ devices/xiaomi/<codename>
   their kernel exposes.
 - **Actuator** — the single write path: journaled for exact restore, restricted to `/sys` and `/proc`.
 
+**Thermal tuner** (`ThermalConfig.cpp`) — reads and writes vendor thermal configs (thermal-engine
+syntax, also used by plain-text mi_thermald configs) and raises eligible trips by a **chipset
+policy**: Qualcomm flagship +6 °C, other Qualcomm +5 °C, MediaTek Dimensity +5 °C, other
+MediaTek / Exynos / Tensor / Unisoc / unknown +4 °C (HiCo's conservative defaults, not vendor
+data; `relax_margin` overrides them). Shutdown sections, battery / charger / PMIC sensors,
+descending monitors and virtual sensors are never changed; no trip is lowered; skin/board trips
+stop at 55 °C and CPU/GPU trips at 105 °C and 10 °C below their own shutdown threshold; trip
+order and hysteresis are kept. An independent verifier re-checks every tuned file before use.
+The same code runs on the device (relaxed level) and in the repository:
+[`tools/tune_thermal.py`](tools/tune_thermal.py) tunes every collected config with the host
+build of `hicod` into `devices/xiaomi/<codename>/tuned/` and writes
+[`docs/THERMAL_TUNING.md`](docs/THERMAL_TUNING.md); any verifier violation fails the workflow.
+
 `hicod device` shows how the running phone is handled (database record, SoC, traits, backends);
 `hicod device --list` prints the compiled database. The supported list is
 [`docs/DEVICES.md`](docs/DEVICES.md).
@@ -156,7 +185,10 @@ immediately.
 |---|---|---|---|
 | `mode` | `auto` | auto / off | `off` keeps stock thermal everywhere |
 | `unlock_on_lite` | `1` | | Also unlock in Flux's Performance Lite |
-| `excluded_games` | | packages | Games that never unlock |
+| `game_level` | `max` | max / relaxed | Level for Flux games |
+| `whitelist` | | packages | Non-game apps that get the relaxed level (never max) |
+| `blacklist` | | packages | Never boosted, games included (was `excluded_games`) |
+| `relax_margin` | `0` | 0–10 °C | Relaxed level trip raise; 0 = chipset default |
 | `stop_thermal_services` | `1` | | Stop userspace thermal daemons |
 | `stop_thermal_hal` | `0` | | Also stop the thermal HAL |
 | `zone_governor` | `1` | | Kernel zones → `user_space` |
@@ -186,6 +218,9 @@ hicod config list|get|set|reset|schema
 hicod sessions [clear]     session history (JSON Lines: duration, unlocked time, peaks, trips)
 hicod zones                zones, cooling devices and thermal services on this device
 hicod device [--list]      this device in the compiled database (SoC, traits, backends), or the whole database
+hicod thermal scan         this device's thermal configs and what the relaxed level would tune
+hicod thermal tune <file> [--platform P] [--margin N]    tuned config on stdout (repository tooling)
+hicod thermal check <original> <tuned> [--platform P]   independent safety verification
 ```
 
 Files: `/data/adb/.config/hico/` (settings, `hico.log`, `sessions`), `/dev/hico/` (live state,

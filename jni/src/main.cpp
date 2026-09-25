@@ -8,6 +8,7 @@
 
 #include "Config.hpp"
 #include "Daemon.hpp"
+#include "ThermalConfig.hpp"
 #include "DeviceProfile.hpp"
 #include "FluxLink.hpp"
 #include "Fs.hpp"
@@ -56,6 +57,10 @@ int usage() {
         "  sessions [clear]       gaming session history (JSON Lines)\n"
         "  zones                  thermal zones, cooling devices and services\n"
         "  device [--list]        this device in the compiled database, or the whole database\n"
+        "  thermal scan           vendor thermal configs and what the relaxed level would tune\n"
+        "  thermal policy [--platform P] [--margin N]\n"
+        "  thermal tune <file> [--platform P] [--margin N]   tuned config on stdout\n"
+        "  thermal check <original> <tuned> [--platform P] [--margin N]\n"
         "  version\n");
     return 2;
 }
@@ -288,6 +293,73 @@ int cmd_device(bool list) {
     return 0;
 }
 
+/// hicod thermal ...: the thermal config tuner, on the device or over firmware files in the repository.
+int cmd_thermal(const std::vector<std::string_view> &args) {
+    if (args.empty()) return usage();
+    std::string platform;
+    int margin = 0;
+    std::vector<std::string> files;
+    for (size_t i = 1; i < args.size(); ++i) {
+        if (args[i] == "--platform" && i + 1 < args.size()) platform = std::string(args[++i]);
+        else if (args[i] == "--margin" && i + 1 < args.size()) margin = static_cast<int>(str::to_int(args[++i]).value_or(0));
+        else files.emplace_back(args[i]);
+    }
+    const DeviceProfile device = platform.empty() ? DeviceProfile::detect() : DeviceProfile{};
+    const std::string plat = platform.empty() ? device.platform : platform;
+    const SocVendor soc = platform.empty() ? device.soc : soc_from_platform(platform);
+    const auto policy = thermalcfg::policy_for(soc, plat, margin);
+    const auto describe = [&] {
+        return std::format("policy={} soc={} platform={} margin={} cap_cpu={} cap_other={} shutdown_guard={}", policy.name,
+                           to_string(soc), plat.empty() ? "-" : plat, policy.margin_c, policy.cap_cpu_c, policy.cap_other_c,
+                           policy.shutdown_guard_c);
+    };
+
+    if (args[0] == "policy") {
+        out(describe() + "\n");
+        return 0;
+    }
+    if (args[0] == "tune" && files.size() == 1) {
+        const auto content = fs::read_raw(files[0], 512 * 1024);
+        if (!content) {
+            std::fprintf(stderr, "cannot read %s\n", files[0].c_str());
+            return 1;
+        }
+        const auto r = thermalcfg::tune(*content, policy);
+        if (!r) {
+            std::fprintf(stderr, "%s sections=0 tuned=0 tunable=0\n", describe().c_str());
+            return 2;
+        }
+        out(r->text);
+        std::fprintf(stderr, "%s sections=%d tuned=%d tunable=1\n", describe().c_str(), r->sections, r->tuned_sections);
+        for (const auto &n : r->notes) std::fprintf(stderr, "note: %s\n", n.c_str());
+        return 0;
+    }
+    if (args[0] == "check" && files.size() == 2) {
+        const auto a = fs::read_raw(files[0], 512 * 1024);
+        const auto b = fs::read_raw(files[1], 512 * 1024);
+        if (!a || !b) return 1;
+        const auto errors = thermalcfg::verify(*a, *b, policy);
+        for (const auto &e : errors) std::fprintf(stderr, "violation: %s\n", e.c_str());
+        return errors.empty() ? 0 : 1;
+    }
+    if (args[0] == "scan") {
+        // What the relaxed level would do on this device, without changing anything.
+        out(describe() + "\n");
+        for (const auto &path : thermalcfg::device_config_files()) {
+            const bool mounted = fs::is_mounted(path);
+            const auto content = fs::read_raw(path, 512 * 1024);
+            const auto r = content ? thermalcfg::tune(*content, policy) : std::nullopt;
+            out(std::format("{:<48} {}\n", path,
+                            mounted ? "relaxed (mounted)"
+                            : !content ? "unreadable"
+                            : !r       ? "not tunable (encrypted or other format)"
+                                       : std::format("{} of {} sections tunable", r->tuned_sections, r->sections)));
+        }
+        return 0;
+    }
+    return usage();
+}
+
 int cmd_zones() {
     const auto kind = [](thermal::ZoneKind k) {
         switch (k) {
@@ -355,5 +427,6 @@ int main(int argc, char **argv) {
     if (cmd == "sessions") return cmd_sessions(args.size() > 1 && args[1] == "clear");
     if (cmd == "zones") return cmd_zones();
     if (cmd == "device") return cmd_device(args.size() > 1 && args[1] == "--list");
+    if (cmd == "thermal") return cmd_thermal({args.begin() + 1, args.end()});
     return usage();
 }

@@ -71,6 +71,10 @@ bool stop(std::string_view service) {
     return is_valid_name(service) && props::set("ctl.stop", service);
 }
 
+bool restart(std::string_view service) {
+    return is_valid_name(service) && props::set("ctl.restart", service);
+}
+
 bool start(std::string_view service) {
     return is_valid_name(service) && props::set("ctl.start", service);
 }

@@ -42,7 +42,9 @@ jobs:
       - name: Test
         run: ctest --test-dir build --output-on-failure
 
-      - name: Device scanner tests
+      - name: Device scanner and tuning tests
+        env:
+          HICOD: build/hicod
         run: python3 tests/scanner_test.py
 
       - name: Device database is up to date

@@ -50,18 +50,48 @@ void Journal::load() {
             entries_.push_back({Entry::Type::Node, node, std::string(rest.substr(tab2 + 1))});
         } else if (kind == "S" && services::is_valid_name(rest)) {
             entries_.push_back({Entry::Type::Service, std::string(rest), {}});
+        } else if (kind == "M" && is_config_path(rest)) {
+            entries_.push_back({Entry::Type::Mount, std::string(rest), {}});
+        } else if (kind == "R" && services::is_valid_name(rest)) {
+            entries_.push_back({Entry::Type::Restart, std::string(rest), {}});
         }
     }
 }
 
-bool Journal::has_node(std::string_view node) const {
+bool Journal::is_config_path(std::string_view p) {
+    if (p.find("/../") != std::string_view::npos || p.ends_with("/..")) return false;
+    return p.starts_with("/vendor/") || p.starts_with("/odm/") || p.starts_with("/system/");
+}
+
+bool Journal::has(Entry::Type type, std::string_view target) const {
     return std::any_of(entries_.begin(), entries_.end(),
-                       [node](const Entry &e) { return e.type == Entry::Type::Node && e.target == node; });
+                       [&](const Entry &e) { return e.type == type && e.target == target; });
+}
+
+bool Journal::has_node(std::string_view node) const {
+    return has(Entry::Type::Node, node);
 }
 
 bool Journal::has_service(std::string_view service) const {
-    return std::any_of(entries_.begin(), entries_.end(),
-                       [service](const Entry &e) { return e.type == Entry::Type::Service && e.target == service; });
+    return has(Entry::Type::Service, service);
+}
+
+bool Journal::has_mount(std::string_view target) const {
+    return has(Entry::Type::Mount, target);
+}
+
+bool Journal::has_restart(std::string_view service) const {
+    return has(Entry::Type::Restart, service);
+}
+
+void Journal::record_mount(std::string_view target) {
+    if (has_mount(target) || !is_config_path(target)) return;
+    append({Entry::Type::Mount, std::string(target), {}});
+}
+
+void Journal::record_restart(std::string_view service) {
+    if (has_restart(service) || !services::is_valid_name(service)) return;
+    append({Entry::Type::Restart, std::string(service), {}});
 }
 
 bool Journal::record_node(std::string_view node) {
@@ -80,7 +110,13 @@ void Journal::record_service(std::string_view service) {
 
 void Journal::append(const Entry &e) {
     entries_.push_back(e);
-    const std::string line = e.type == Entry::Type::Node ? "N\t" + e.target + "\t" + e.value : "S\t" + e.target;
+    std::string line;
+    switch (e.type) {
+    case Entry::Type::Node: line = "N\t" + e.target + "\t" + e.value; break;
+    case Entry::Type::Service: line = "S\t" + e.target; break;
+    case Entry::Type::Mount: line = "M\t" + e.target; break;
+    case Entry::Type::Restart: line = "R\t" + e.target; break;
+    }
     if (!fs::append_line(path_, line, 0600)) LOGW("journal: cannot write {}", path_);
 }
 
@@ -94,12 +130,25 @@ Journal::RestoreResult Journal::restore() {
                 ++r.failed;
                 LOGW("restore: cannot write '{}' to {}", it->value, it->target);
             }
-        } else {
+        } else if (it->type == Entry::Type::Service) {
             if (services::start(it->target)) {
                 ++r.services;
             } else {
                 ++r.failed;
                 LOGW("restore: cannot start service {}", it->target);
+            }
+        } else if (it->type == Entry::Type::Mount) {
+            if (fs::unmount(it->target)) {
+                ++r.mounts;
+            } else {
+                ++r.failed;
+                LOGW("restore: cannot unmount {}", it->target);
+            }
+        } else if (services::is_running(it->target)) {
+            // Recorded before the mounts, so it runs after they are gone: the daemon reloads stock configs.
+            if (!services::restart(it->target)) {
+                ++r.failed;
+                LOGW("restore: cannot restart service {}", it->target);
             }
         }
     }

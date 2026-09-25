@@ -20,18 +20,19 @@ namespace hico {
 
 namespace {
 
-using Member = std::variant<bool Config::*, int Config::*, Mode Config::*, std::vector<std::string> Config::*>;
+using Member = std::variant<bool Config::*, int Config::*, Mode Config::*, Level Config::*, std::vector<std::string> Config::*>;
 
 struct Field {
     ConfigKeyInfo info;
     Member member;
 };
 
-constexpr size_t kMaxExcludedGames = 64;
+constexpr size_t kMaxListEntries = 64;
 
 // clang-format off
 const std::array kFields{
     Field{{"mode", "mode", 0, 0, "auto: unlock while Flux runs a game, off: never unlock"}, &Config::mode},
+    Field{{"game_level", "level", 0, 0, "Games: max disables throttling, relaxed tunes the vendor thermal configs"}, &Config::game_level},
     Field{{"unlock_on_lite", "bool", 0, 1, "Also unlock while Flux runs Performance Lite"}, &Config::unlock_on_lite},
     Field{{"stop_thermal_services", "bool", 0, 1, "Stop userspace thermal daemons while gaming"}, &Config::stop_thermal_services},
     Field{{"stop_thermal_hal", "bool", 0, 1, "Also stop the thermal HAL (disables Android thermal API while gaming)"}, &Config::stop_thermal_hal},
@@ -42,6 +43,7 @@ const std::array kFields{
     Field{{"vendor_tweaks", "bool", 0, 1, "Qualcomm and MediaTek thermal drivers"}, &Config::vendor_tweaks},
     Field{{"xiaomi_tweaks", "bool", 0, 1, "Xiaomi thermal scene and CPU limits"}, &Config::xiaomi_tweaks},
     Field{{"xiaomi_sconfig", "int", 0, 30, "Xiaomi thermal scene used while gaming"}, &Config::xiaomi_sconfig},
+    Field{{"relax_margin", "int", 0, 10, "Relaxed level: degrees added to trip points (0 = chipset default)"}, &Config::relax_margin},
     Field{{"safety_cpu_temp", "int", 70, 105, "CPU temperature (C) that restores thermal protection"}, &Config::safety_cpu_temp},
     Field{{"safety_battery_temp", "int", 38, 52, "Battery temperature (C) that restores thermal protection"}, &Config::safety_battery_temp},
     Field{{"safety_cpu_hysteresis", "int", 3, 25, "CPU must cool this much (C) below the limit to unlock again"}, &Config::safety_cpu_hysteresis},
@@ -51,7 +53,8 @@ const std::array kFields{
     Field{{"exit_delay", "int", 0, 30, "Seconds to wait after the game leaves before restoring"}, &Config::exit_delay},
     Field{{"notify", "bool", 0, 1, "Post a notification when the safety guard trips"}, &Config::notify},
     Field{{"log_level", "int", 0, 3, "0 error, 1 warning, 2 info, 3 debug"}, &Config::log_level},
-    Field{{"excluded_games", "list", 0, 0, "Comma-separated packages that never unlock"}, &Config::excluded_games},
+    Field{{"whitelist", "list", 0, 0, "Apps (not games) that get the relaxed level, never max"}, &Config::whitelist},
+    Field{{"blacklist", "list", 0, 0, "Packages that are never boosted, games included"}, &Config::blacklist},
 };
 // clang-format on
 
@@ -62,6 +65,7 @@ const std::array<ConfigKeyInfo, kFields.size()> kKeyInfo = [] {
 }();
 
 const Field *find_field(std::string_view key) {
+    if (key == "excluded_games") key = "blacklist"; // renamed in 1.0.0
     const auto it = std::find_if(kFields.begin(), kFields.end(), [key](const Field &f) { return f.info.key == key; });
     return it == kFields.end() ? nullptr : &*it;
 }
@@ -106,14 +110,18 @@ std::optional<std::string> apply(Config &cfg, const Field &field, std::string_vi
                 if (value == "auto") cfg.*member = Mode::Auto;
                 else if (value == "off") cfg.*member = Mode::Off;
                 else return std::format("{}: expected auto or off, got '{}'", field.info.key, value);
+            } else if constexpr (std::is_same_v<T, Level>) {
+                if (value == "max") cfg.*member = Level::Max;
+                else if (value == "relaxed") cfg.*member = Level::Relaxed;
+                else return std::format("{}: expected max or relaxed, got '{}'", field.info.key, value);
             } else {
                 std::vector<std::string> list;
                 for (auto &pkg : str::split(value, ',')) {
                     if (!is_package_name(pkg)) return std::format("{}: '{}' is not a package name", field.info.key, pkg);
                     if (std::find(list.begin(), list.end(), pkg) == list.end()) list.push_back(std::move(pkg));
                 }
-                if (list.size() > kMaxExcludedGames) {
-                    return std::format("{}: at most {} packages", field.info.key, kMaxExcludedGames);
+                if (list.size() > kMaxListEntries) {
+                    return std::format("{}: at most {} packages", field.info.key, kMaxListEntries);
                 }
                 cfg.*member = std::move(list);
             }
@@ -132,6 +140,8 @@ std::string format_value(const Config &cfg, const Field &field) {
                 return std::to_string(cfg.*member);
             } else if constexpr (std::is_same_v<T, Mode>) {
                 return cfg.*member == Mode::Auto ? "auto" : "off";
+            } else if constexpr (std::is_same_v<T, Level>) {
+                return std::string(to_string(cfg.*member));
             } else {
                 std::string out;
                 for (const auto &pkg : cfg.*member) {
@@ -194,8 +204,16 @@ std::optional<std::string> Config::get(std::string_view key) const {
     return format_value(*this, *field);
 }
 
-bool Config::is_excluded(std::string_view package) const {
-    return std::find(excluded_games.begin(), excluded_games.end(), package) != excluded_games.end();
+bool Config::is_blacklisted(std::string_view package) const {
+    return std::find(blacklist.begin(), blacklist.end(), package) != blacklist.end();
+}
+
+bool Config::is_whitelisted(std::string_view package) const {
+    return std::find(whitelist.begin(), whitelist.end(), package) != whitelist.end();
+}
+
+std::string_view to_string(Level l) {
+    return l == Level::Max ? "max" : "relaxed";
 }
 
 std::string Config::serialize(bool with_comments) const {

@@ -9,11 +9,14 @@
 #include "ThermalController.hpp"
 
 #include "Cpufreq.hpp"
+#include "HiCo.hpp"
+#include "ThermalConfig.hpp"
 #include "Fs.hpp"
 #include "Log.hpp"
 #include "ThermalServices.hpp"
 
 #include <algorithm>
+#include <array>
 #include <set>
 
 namespace hico {
@@ -162,6 +165,63 @@ ThermalController::Summary ThermalController::unlock(const Config &cfg) {
         s.vendor += r.vendor;
     }
     return s;
+}
+
+int ThermalController::relax(const Config &cfg) {
+    const auto policy = thermalcfg::policy_for(device_.soc, device_.platform, cfg.relax_margin);
+
+    struct Pending {
+        std::string target;
+        std::string tuned;
+    };
+    std::vector<Pending> pending;
+    int relaxed = 0;
+    for (const auto &path : thermalcfg::device_config_files()) {
+        // Already overlaid (this session or a crashed one): never tune a tuned file again.
+        if (journal_.has_mount(path) || fs::is_mounted(path)) {
+            ++relaxed;
+            continue;
+        }
+        const auto original = fs::read_raw(path, 512 * 1024);
+        if (!original) continue;
+        const auto result = thermalcfg::tune(*original, policy);
+        if (!result || result->tuned_sections == 0) continue;
+        if (const auto errors = thermalcfg::verify(*original, result->text, policy); !errors.empty()) {
+            LOGW("relax: {} rejected by verification: {}", path, errors.front());
+            continue;
+        }
+        pending.push_back({path, result->text});
+    }
+    if (pending.empty()) return relaxed;
+
+    if (!fs::ensure_dir(HICO_RUNTIME_DIR "/thermal", 0755)) return relaxed;
+
+    // Restarts are journaled before the mounts, so a restore unmounts first and then restarts.
+    std::vector<std::string> daemons;
+    for (const auto &svc : services::thermal_services(device_.thermal_services)) {
+        if (svc.kind == services::Kind::Daemon && (svc.state == "running" || svc.state == "restarting")) {
+            journal_.record_restart(svc.name);
+            daemons.push_back(svc.name);
+        }
+    }
+
+    for (const auto &p : pending) {
+        std::string flat = p.target.substr(1);
+        std::replace(flat.begin(), flat.end(), '/', '_');
+        const std::string source = std::string(HICO_RUNTIME_DIR "/thermal/") + flat;
+        if (!fs::write_atomic(source, p.tuned, 0644)) continue;
+        journal_.record_mount(p.target);
+        if (fs::bind_mount(source, p.target)) {
+            ++relaxed;
+            LOGI("relaxed thermal config {} ({} policy)", p.target, policy.name);
+        } else {
+            LOGW("relax: cannot bind-mount over {}", p.target);
+        }
+    }
+    for (const auto &d : daemons) {
+        if (services::restart(d)) LOGI("restarted thermal service {} to load relaxed configs", d);
+    }
+    return relaxed;
 }
 
 Journal::RestoreResult ThermalController::restore() {

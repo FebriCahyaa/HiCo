@@ -22,6 +22,7 @@
 #include "SafetyGuard.hpp"
 #include "Sessions.hpp"
 #include "ThermalBackend.hpp"
+#include "ThermalConfig.hpp"
 #include "ThermalController.hpp"
 #include "ThermalServices.hpp"
 #include "ThermalZones.hpp"
@@ -208,10 +209,18 @@ void test_config() {
     CHECK(c.set("nope", "1").has_value());
     CHECK(!c.set("mode", "off"));
     CHECK(c.mode == Mode::Off);
-    CHECK(!c.set("excluded_games", "com.a.b, com.c_d ,com.a.b"));
-    CHECK_EQ(c.excluded_games.size(), 2u);
-    CHECK(c.is_excluded("com.c_d"));
-    CHECK(c.set("excluded_games", "com.a;rm -rf /").has_value());
+    CHECK(!c.set("blacklist", "com.a.b, com.c_d ,com.a.b"));
+    CHECK_EQ(c.blacklist.size(), 2u);
+    CHECK(c.is_blacklisted("com.c_d"));
+    CHECK(c.set("blacklist", "com.a;rm -rf /").has_value());
+    CHECK(!c.set("excluded_games", "com.old.name")); // pre-1.0 key maps to blacklist
+    CHECK(c.is_blacklisted("com.old.name"));
+    CHECK(!c.set("whitelist", "com.android.camera"));
+    CHECK(c.is_whitelisted("com.android.camera"));
+    CHECK(c.game_level == Level::Max);
+    CHECK(!c.set("game_level", "relaxed") && c.game_level == Level::Relaxed);
+    CHECK(c.set("game_level", "turbo").has_value());
+    CHECK(c.set("relax_margin", "11").has_value());
 
     // Hand-edited file: out-of-range numbers are clamped, garbage is ignored.
     write_config("safety_cpu_temp=200\nsafety_battery_temp=10\npoll_interval=abc\nunknown=1\nnotify=0\n");
@@ -459,18 +468,21 @@ void test_daemon_state_machine() {
     CHECK(history.find(R"("trips":1)") != std::string::npos);
     CHECK(history.find(R"("peak_cpu":97.0)") != std::string::npos);
 
-    // Performance Lite (Flux saw thermal pressure) with unlock_on_lite=0 stays stock.
+    // Performance Lite (Flux saw thermal pressure) with unlock_on_lite=0: relaxed, never max.
     write_config("unlock_on_lite=0\n");
     d.reload_config();
     start_game("com.dts.freefireth", 2);
     d.tick(t += 1s);
-    CHECK(d.state() == State::Idle);
+    CHECK(d.state() == State::Relaxed);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));
 
-    // Excluded games stay stock.
+    // Blacklisted games stay stock (old key name still accepted).
     write_config("excluded_games=com.dts.freefireth\n");
     d.reload_config();
     start_game("com.dts.freefireth", 1);
     d.tick(t += 1s);
+    CHECK(d.state() == State::Relaxed); // leaving the previous session: exit_delay grace period
+    d.tick(t += 3s);
     CHECK(d.state() == State::Idle);
 
     // Flux disabled mid-game: stock thermal immediately, no exit delay.
@@ -620,6 +632,221 @@ void test_device_database() {
     d.tick(Daemon::Clock::time_point{} + 100s);
     CHECK(get(HICO_STATE_FILE).find("backends=") != std::string::npos);
 }
+// A Qualcomm-style thermal-engine config with every kind of section the tuner must handle.
+const std::string kEngineConf = R"(# vendor thermal config
+[VIRTUAL-CPU]
+algo_type virtual
+trip_sensor cpu-1-0-usr
+thresholds 90000
+
+[SKIN_MONITOR]
+algo_type        monitor
+sensor           quiet_therm
+thresholds       41000   43000   45000   # skin steps
+thresholds_clr   39000   41000   43000
+actions          cpu+gpu cpu+gpu cpu+gpu
+action_info      1804800+2 1497600+3 1190400+4
+
+[CPU_SS]
+algo_type ss
+sensor cpu-1-0-usr
+device cpu4
+set_point 95000
+set_point_clr 65000
+
+[CPU_SHUTDOWN]
+algo_type monitor
+sensor cpu-1-0-usr
+thresholds 115000
+thresholds_clr 110000
+actions shutdown
+action_info 5000
+
+[BATT_MONITOR]
+algo_type monitor
+sensor battery
+thresholds 45000
+thresholds_clr 43000
+actions battery
+action_info 1
+
+[LOW_TEMP]
+algo_type monitor
+sensor quiet_therm
+descending
+thresholds 5000
+thresholds_clr 7000
+actions cpu
+action_info 1
+)";
+
+void test_thermal_tuner() {
+    using namespace thermalcfg;
+    CHECK(policy_for(SocVendor::Qualcomm, "taro").margin_c == 6);
+    CHECK(policy_for(SocVendor::Qualcomm, "SM8650").margin_c == 6);
+    CHECK(policy_for(SocVendor::Qualcomm, "bengal").margin_c == 5);
+    CHECK(policy_for(SocVendor::MediaTek, "mt6893").margin_c == 5);
+    CHECK(policy_for(SocVendor::MediaTek, "mt6765").margin_c == 4);
+    CHECK(policy_for(SocVendor::Unknown, "").margin_c == 4);
+    CHECK(policy_for(SocVendor::Unknown, "", 8).margin_c == 8);
+    CHECK(policy_for(SocVendor::Unknown, "", 11).margin_c == 4); // out of range: ignored
+
+    const Policy p = policy_for(SocVendor::Qualcomm, "taro");
+    const auto r = tune(kEngineConf, p);
+    CHECK(r.has_value());
+    if (!r) return;
+    CHECK_EQ(r->sections, 6);
+    CHECK_EQ(r->tuned_sections, 2);
+    // Skin trips +6 C, hysteresis kept, layout and comment kept.
+    CHECK(r->text.find("thresholds       47000   49000   51000   # skin steps") != std::string::npos);
+    CHECK(r->text.find("thresholds_clr   45000   47000   49000") != std::string::npos);
+    // Step-wise CPU set point +6 C.
+    CHECK(r->text.find("set_point 101000\nset_point_clr 71000") != std::string::npos);
+    // Untouched: shutdown, battery, descending, virtual sensors.
+    CHECK(r->text.find("thresholds 115000\nthresholds_clr 110000\nactions shutdown") != std::string::npos);
+    CHECK(r->text.find("sensor battery\nthresholds 45000") != std::string::npos);
+    CHECK(r->text.find("descending\nthresholds 5000") != std::string::npos);
+    CHECK(r->text.find("trip_sensor cpu-1-0-usr\nthresholds 90000") != std::string::npos);
+    CHECK(verify(kEngineConf, r->text, p).empty());
+
+    // The independent check catches every unsafe edit.
+    auto tampered = r->text;
+    tampered.replace(tampered.find("thresholds 115000"), 17, "thresholds 125000");
+    CHECK(!verify(kEngineConf, tampered, p).empty()); // shutdown changed
+    tampered = r->text;
+    tampered.replace(tampered.find("set_point 101000"), 16, "set_point 104000");
+    CHECK(!verify(kEngineConf, tampered, p).empty()); // beyond the margin
+    tampered = r->text;
+    tampered.replace(tampered.find("set_point 101000"), 16, "set_point 090000");
+    CHECK(!verify(kEngineConf, tampered, p).empty()); // lowered
+    tampered = r->text;
+    tampered.replace(tampered.find("action_info 5000"), 16, "action_info 9000");
+    CHECK(!verify(kEngineConf, tampered, p).empty()); // non-trip key changed
+
+    // Caps: skin trips stop at 55 C; a collapsed ladder is left as the vendor wrote it.
+    const auto capped = tune("[S]\nalgo_type monitor\nsensor skin\nthresholds 50000 53000\nactions cpu cpu\n", p);
+    CHECK(capped && capped->text.find("thresholds 55000 55000") == std::string::npos);
+    CHECK(capped && capped->tuned_sections == 0);
+    const auto capped2 = tune("[S]\nalgo_type monitor\nsensor skin\nthresholds 48000 50000\nactions cpu cpu\n", p);
+    CHECK(capped2 && capped2->text.find("thresholds 54000 55000") != std::string::npos);
+    // Guard below the same sensor's shutdown: 100 C shutdown -> trips at most 90 C.
+    const auto guarded = tune("[C]\nalgo_type monitor\nsensor cpu-0\nthresholds 88000\nactions cpu\n"
+                              "[OFF]\nalgo_type monitor\nsensor cpu-0\nthresholds 100000\nactions shutdown\n", p);
+    CHECK(guarded && guarded->text.find("thresholds 90000\n") != std::string::npos);
+    // Old configs in degrees keep their unit.
+    const auto degrees = tune("[S]\nalgo_type monitor\nsensor skin_therm\nthresholds 45 50\nactions cpu cpu\n", p);
+    CHECK(degrees && degrees->text.find("thresholds 51 55") != std::string::npos);
+    // Encrypted blobs and unrelated text are not tunable.
+    CHECK(!tune(std::string("\x13\x9f\x01binary\x02\x00\x03", 12) + std::string(64, '\x01'), p));
+    CHECK(!tune("just words\n", p));
+}
+
+void test_relaxed_overlay() {
+    build_device();
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    put("/vendor/etc/thermal-tgame.conf", std::string("\x13\x9f\x01\x02", 4) + std::string(64, '\x01'));
+    put("/__props__/init.svc.thermal-engine", "running");
+
+    DeviceProfile qcom;
+    qcom.soc = SocVendor::Qualcomm;
+    qcom.platform = "taro";
+    Journal journal(HICO_JOURNAL_FILE);
+    ThermalController c(journal, qcom);
+
+    CHECK_EQ(c.relax(Config{}), 1); // the encrypted config is skipped
+    const std::string mounts = get("/__mounts__");
+    CHECK(mounts.find("/vendor/etc/thermal-engine.conf <- /dev/hico/thermal/vendor_etc_thermal-engine.conf") !=
+          std::string::npos);
+    CHECK(get("/dev/hico/thermal/vendor_etc_thermal-engine.conf").find("47000") != std::string::npos);
+    CHECK(fs::read_raw("/vendor/etc/thermal-engine.conf", 1 << 20) == kEngineConf); // vendor file never written
+    CHECK(get("/__props__/__ctl_log__").find("ctl.restart thermal-engine") != std::string::npos);
+    CHECK(get("/__props__/__ctl_log__").find("ctl.restart vendor.thermal-hal-2-0") == std::string::npos); // HAL not
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running")); // daemons keep protecting
+
+    // Idempotent: a tuned file is never tuned again, daemons are not restarted again.
+    const size_t restarts = get("/__props__/__ctl_log__").size();
+    CHECK_EQ(c.relax(Config{}), 1);
+    CHECK_EQ(get("/__props__/__ctl_log__").size(), restarts);
+
+    // A crashed daemon's journal restores it: unmount first, then restart.
+    Journal recovered(HICO_JOURNAL_FILE);
+    recovered.load();
+    CHECK(recovered.has_mount("/vendor/etc/thermal-engine.conf"));
+    // Journal order: restarts recorded before the mounts, so the reverse replay unmounts first.
+    const std::string jtext = get(HICO_JOURNAL_FILE);
+    CHECK(jtext.find("R\tthermal-engine") < jtext.find("M\t/vendor/etc/thermal-engine.conf"));
+    const auto r = recovered.restore();
+    CHECK_EQ(r.mounts, 1);
+    CHECK_EQ(r.failed, 0);
+    CHECK(get("/__mounts__").find("thermal-engine.conf") == std::string::npos);
+    const std::string log = get("/__props__/__ctl_log__");
+    CHECK(log.rfind("ctl.restart thermal-engine") > restarts - 1); // restarted after unmount
+
+    // The journal refuses mount targets outside the vendor/system partitions.
+    put(HICO_JOURNAL_FILE, "M\t/data/adb/modules/flux/module.prop\nM\t/vendor/../data/x\n");
+    Journal hostile(HICO_JOURNAL_FILE);
+    hostile.load();
+    CHECK(hostile.empty());
+}
+
+void test_levels_whitelist_blacklist() {
+    build_device();
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    put("/__props__/ro.board.platform", "taro");
+    const auto focus = [](const std::string &pkg, bool screen) {
+        put(FLUX_STATUS_FILE, "synthesis_version 3\nfocused_app " + pkg + " 555 10050\nscreen_awake " + (screen ? "1" : "0") + "\n");
+    };
+    auto t = Daemon::Clock::time_point{} + 20000s;
+
+    // A whitelisted app (not a game) gets the relaxed level only.
+    write_config("whitelist=com.android.camera\nexit_delay=0\n");
+    Daemon d;
+    focus("com.android.camera", true);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Relaxed);
+    CHECK(get(HICO_STATE_FILE).find("level=relaxed") != std::string::npos);
+    CHECK(get(HICO_STATE_FILE).find("configs=1") != std::string::npos);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running")); // never the max level
+    CHECK(get(HICO_MODULE_PROP).find("Relaxed thermal") != std::string::npos);
+
+    // Screen off or another app: back to stock, configs unmounted.
+    focus("com.android.camera", false);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+    CHECK(get("/__mounts__").find("thermal-engine.conf") == std::string::npos);
+    focus("com.whatsapp", true);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+
+    // A game gets max; switching the level mid-session goes through stock.
+    start_game("com.mobile.legends");
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Boost);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("stopped"));
+    write_config("game_level=relaxed\nexit_delay=0\n");
+    d.reload_config();
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Relaxed);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));
+    CHECK(get("/__mounts__").find("thermal-engine.conf") != std::string::npos);
+    write_config("exit_delay=0\n");
+    d.reload_config();
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Boost);
+    CHECK(get("/__mounts__").find("thermal-engine.conf") == std::string::npos);
+
+    // The blacklist wins over everything, games and whitelist alike.
+    write_config("blacklist=com.mobile.legends,com.android.camera\nwhitelist=com.android.camera\nexit_delay=0\n");
+    d.reload_config();
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));
+    stop_game();
+    focus("com.android.camera", true);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+}
+
 } // namespace
 
 int main() {
@@ -640,6 +867,9 @@ int main() {
         {"daemon state machine", test_daemon_state_machine},
         {"session history", test_sessions_are_bounded},
         {"device database", test_device_database},
+        {"thermal tuner", test_thermal_tuner},
+        {"relaxed overlay", test_relaxed_overlay},
+        {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
     };
 
     for (const auto &[name, fn] : tests) {

@@ -392,6 +392,40 @@ class GeneratorTest(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stderr)
 
 
+HICOD = Path(os.environ.get("HICOD", ROOT / "build" / "hicod"))
+
+
+@unittest.skipUnless(HICOD.exists(), "host hicod not built (cmake --build build)")
+class TuneThermalTest(unittest.TestCase):
+    """tools/tune_thermal.py drives the host hicod over collected firmware files."""
+
+    def test_tunes_and_verifies_per_chipset(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data = Path(tmp, "data")
+            conf = "[SKIN]\nalgo_type monitor\nsensor quiet_therm\nthresholds 41000 43000\n" \
+                   "thresholds_clr 39000 41000\nactions cpu cpu\n[OFF]\nalgo_type monitor\nsensor quiet_therm\n" \
+                   "thresholds 70000\nactions shutdown\n"
+            for codename, platform in (("testqc", "taro"), ("testmtk", "mt6765")):
+                (data / codename / "thermal").mkdir(parents=True)
+                (data / f"{codename}.prop").write_text(f"codename={codename}\nbrand=Xiaomi\nplatform={platform}\n")
+                (data / codename / "thermal" / "thermal-engine.conf").write_text(conf)
+            (data / "testqc" / "thermal" / "thermal-tgame.conf").write_bytes(b"\x00\x13\x9fencrypted")
+
+            report = Path(tmp, "REPORT.md")
+            r = subprocess.run([sys.executable, str(ROOT / "tools" / "tune_thermal.py"), "--hicod", str(HICOD),
+                                "--data", str(data), "--report", str(report)], capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            qc = (data / "testqc/tuned/thermal-engine.conf").read_text()
+            mtk = (data / "testmtk/tuned/thermal-engine.conf").read_text()
+            self.assertIn("thresholds 47000 49000", qc)   # Qualcomm flagship: +6 C
+            self.assertIn("thresholds 45000 47000", mtk)  # MediaTek (non-Dimensity): +4 C
+            self.assertIn("thresholds 70000\nactions shutdown", qc)  # shutdown untouched
+            self.assertFalse((data / "testqc/tuned/thermal-tgame.conf").exists())  # encrypted: not tuned
+            text = report.read_text()
+            self.assertIn("| `testqc` | taro | qualcomm-flagship | 6 °C | 2 | 1 | 1 | 1 of 2 |", text)
+            self.assertIn("| `testmtk` | mt6765 | mediatek | 4 °C | 1 | 1 | 1 | 1 of 2 |", text)
+
+
 class FakeGitLab(http.server.BaseHTTPRequestHandler):
     """Just enough of GitLab's v4 API, with pagination (one project and one tree entry per page)."""
 
