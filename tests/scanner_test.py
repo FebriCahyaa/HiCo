@@ -29,9 +29,14 @@ TOOL = ROOT / "tools" / "xiaomi_devices.py"
 
 FIXTURE = {
     "testdev_a": {
+        # GRF: the vendor partition keeps its launch release (12), the system runs 14.
         "vendor/build.prop": "ro.product.vendor.device=testdev_a\nro.product.vendor.brand=redmi\n"
-        "ro.product.vendor.model=TEST-A\nro.board.platform=testsoc\nro.vendor.build.version.release=14\n",
-        "product/etc/build.prop": "ro.product.product.marketname=Test Phone A\n",
+        "ro.product.vendor.model=TEST-A\nro.board.platform=testsoc\nro.vendor.build.version.release=12\n",
+        "system/system/build.prop": "ro.system.build.version.release=14\n",
+        "odm/etc/build.prop": "ro.product.odm.marketname=Test Phone A\n",
+        # Qualcomm style: thermal-engine declared in a general init script.
+        "vendor/etc/init/hw/init.qcom.rc": "service thermal-engine /vendor/bin/thermal-engine\n"
+        "service qcom-sh /vendor/bin/init.qcom.sh\n",
         "vendor/etc/thermal-normal.conf": "",
         "vendor/etc/thermal-tgame.conf": "",
         "vendor/etc/media_codecs.xml": "",
@@ -44,6 +49,11 @@ FIXTURE = {
         "vendor/build.prop": "ro.product.vendor.device=testdev_b\nro.product.vendor.brand=POCO\nro.product.vendor.model=TEST-B\n",
         "vendor/etc/init/thermal-engine.rc": "service thermal-engine /vendor/bin/thermal-engine\n"
         "service bad;name /x\n",
+    },
+    # Pre-Treble dump: no vendor partition, everything in system/build.prop.
+    "testdev_c": {
+        "system/build.prop": "ro.product.device=testdev_c\nro.product.brand=Xiaomi\nro.product.model=TEST-C\n"
+        "ro.build.version.release=7.1.1\n",
     },
     "broken": {"README": "no partitions here"},
 }
@@ -115,9 +125,10 @@ class ScannerTest(unittest.TestCase):
         self.assertEqual(a["brand"], "Redmi")
         self.assertEqual(a["model"], "Test Phone A")  # market name preferred over model number
         self.assertEqual(a["platform"], "testsoc")
-        self.assertEqual(a["android"], "14")
+        self.assertEqual(a["android"], "14")  # system release, not the vendor launch release
         self.assertEqual(a["mi_thermald"], "1")
-        self.assertEqual(a["thermal_services"], "mi_thermald,vendor.thermal-hal")  # camera rc not read
+        # camera rc not read; from init.qcom.rc only the thermal service
+        self.assertEqual(a["thermal_services"], "mi_thermald,thermal-engine,vendor.thermal-hal")
         self.assertEqual(a["thermal_configs"], "thermal-normal.conf,thermal-tgame.conf")
         self.assertIn(source_hint, a["source"])
 
@@ -125,9 +136,12 @@ class ScannerTest(unittest.TestCase):
         self.assertEqual(b["thermal_services"], "thermal-engine")  # invalid service name dropped
         self.assertEqual(b["mi_thermald"], "0")
 
+        c = read_prop(out / "devices/xiaomi/testdev_c.prop")
+        self.assertEqual((c["model"], c["android"]), ("TEST-C", "7.1.1"))
+
         self.assertFalse((out / "devices/xiaomi/broken.prop").exists())
         doc = (out / "docs/DEVICES.md").read_text()
-        self.assertIn("**2 devices with a profile**, 1 more dumps listed below without one", doc)
+        self.assertIn("**3 devices with a profile**, 1 more dumps listed below without one", doc)
         self.assertIn("## Dumps without a profile", doc)
         self.assertRegex(doc, r"\| \[broken\]\(.*\) \| no vendor build.prop")
         self.assertIn("| Redmi Test Phone A | `testdev_a` |", doc)
@@ -139,6 +153,12 @@ class ScannerTest(unittest.TestCase):
             r = run_tool("--local", str(dumps), "--out", str(out))
             self.assertEqual(r.returncode, 0, r.stderr)
             self.check_output(out, "testdev_a")
+
+    def test_long_source_url_is_kept(self):
+        mod = load_tool()
+        url = "https://dumps.tadiphone.dev/dumps/xiaomi/testdev/-/tree/" + "x" * 150 + "-release-keys"
+        prop = mod.Device(codename="testdev", source=url).to_prop()
+        self.assertIn(f"source={url}\n", prop)
 
     def test_gitlab_api(self):
         server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), FakeGitLab)
@@ -194,9 +214,11 @@ class ScannerTest(unittest.TestCase):
             checked_out = sorted(str(p.relative_to(repo)) for p in repo.rglob("*")
                                  if p.is_file() and ".git" not in p.parts)
             self.assertEqual(checked_out, [
-                "product/etc/build.prop",
+                "odm/etc/build.prop",
+                "system/system/build.prop",
                 "vendor/build.prop",
                 "vendor/etc/init/android.hardware.thermal-service.rc",
+                "vendor/etc/init/hw/init.qcom.rc",
                 "vendor/etc/init/init.mi_thermald.rc",
                 "vendor/etc/thermal-normal.conf",
                 "vendor/etc/thermal-tgame.conf",

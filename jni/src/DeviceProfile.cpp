@@ -27,10 +27,10 @@ std::vector<std::string> service_list(std::string_view value) {
     return out;
 }
 
-std::string clean(std::string_view v) {
+std::string clean(std::string_view v, size_t limit = 128) {
     // Informational fields: printable ASCII only, bounded, no separators that could break the state file.
     std::string out;
-    for (const char c : v.substr(0, 128)) {
+    for (const char c : v.substr(0, limit)) {
         if (c >= 0x20 && c < 0x7f && c != '=') out += c;
     }
     return out;
@@ -69,9 +69,9 @@ std::optional<DeviceProfile> DeviceProfile::load(std::string_view path, std::str
         else if (key == "model") p.model = clean(value);
         else if (key == "platform") p.platform = clean(value);
         else if (key == "android") p.android = clean(value);
-        else if (key == "source") p.source = clean(value);
+        else if (key == "source") p.source = clean(value, 512); // dump URL with the firmware branch name
         else if (key == "thermal_services") p.thermal_services = service_list(value);
-        else if (key == "thermal_configs") p.thermal_configs = str::split(clean(value), ',');
+        else if (key == "thermal_configs") p.thermal_configs = str::split(clean(value, 4096), ',');
         else if (key == "mi_thermald") p.has_mi_thermald = str::trim(value) == "1";
     }
     if (p.codename != codename) return std::nullopt; // file renamed or corrupted
