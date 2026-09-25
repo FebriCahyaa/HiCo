@@ -1,0 +1,282 @@
+#!/usr/bin/env python3
+#
+# Copyright (C) 2026 FebriCahyaa. All rights reserved.
+#
+# HiCo Thermal is proprietary software. Use is governed by EULA.md;
+# copying, redistribution or modification without written permission
+# from the author is prohibited.
+#
+"""Tests for tools/xiaomi_devices.py.
+
+Fixtures are synthetic and use codenames that do not exist ("testdev_*"), so
+test data can never be mistaken for a real device profile.
+"""
+
+import http.server
+import importlib.util
+import os
+import json
+import subprocess
+import sys
+import tempfile
+import threading
+import unittest
+import urllib.parse
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+TOOL = ROOT / "tools" / "xiaomi_devices.py"
+
+FIXTURE = {
+    "testdev_a": {
+        "vendor/build.prop": "ro.product.vendor.device=testdev_a\nro.product.vendor.brand=redmi\n"
+        "ro.product.vendor.model=TEST-A\nro.board.platform=testsoc\nro.vendor.build.version.release=14\n",
+        "product/etc/build.prop": "ro.product.product.marketname=Test Phone A\n",
+        "vendor/etc/thermal-normal.conf": "",
+        "vendor/etc/thermal-tgame.conf": "",
+        "vendor/etc/media_codecs.xml": "",
+        "vendor/etc/init/init.mi_thermald.rc": "service mi_thermald /vendor/bin/mi_thermald\n    class main\n",
+        "vendor/etc/init/android.hardware.thermal-service.rc":
+            "service vendor.thermal-hal /vendor/bin/hw/android.hardware.thermal-service\n",
+        "vendor/etc/init/init.camera.rc": "service camera /vendor/bin/camera\n",
+    },
+    "testdev_b": {
+        "vendor/build.prop": "ro.product.vendor.device=testdev_b\nro.product.vendor.brand=POCO\nro.product.vendor.model=TEST-B\n",
+        "vendor/etc/init/thermal-engine.rc": "service thermal-engine /vendor/bin/thermal-engine\n"
+        "service bad;name /x\n",
+    },
+    "broken": {"README": "no partitions here"},
+}
+
+# Large files every real dump has; sparse mode must never download them.
+BULK = {
+    "system/system/app/Big/Big.apk": 2 * 1024 * 1024,
+    "vendor/firmware/modem.bin": 1024 * 1024,
+}
+
+
+def git(*args, cwd=None):
+    subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True,
+                   env={**os.environ, "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t",
+                        "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t"})
+
+
+def make_bare_repos(root: Path, allow_filter: bool = True) -> dict:
+    """One bare repository per fixture project (branch main-branch), plus bulk files."""
+    urls = {}
+    for project, files in FIXTURE.items():
+        work = root / "work" / project
+        for rel, content in files.items():
+            f = work / rel
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(content)
+        for rel, size in BULK.items():
+            f = work / rel
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_bytes(os.urandom(size))
+        git("init", "-q", "-b", "main-branch", str(work))
+        git("add", "-A", cwd=work)
+        git("commit", "-qm", "dump", cwd=work)
+        bare = root / "bare" / f"{project}.git"
+        git("clone", "-q", "--bare", str(work), str(bare))
+        git("config", "uploadpack.allowFilter", "true" if allow_filter else "false", cwd=bare)
+        urls[project] = f"file://{bare}"
+    return urls
+
+
+def load_tool():
+    spec = importlib.util.spec_from_file_location("xiaomi_devices", TOOL)
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = mod  # dataclasses look the module up while it loads
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def make_fixture(root: Path) -> None:
+    for project, files in FIXTURE.items():
+        for rel, content in files.items():
+            f = root / project / rel
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(content)
+
+
+def run_tool(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run([sys.executable, str(TOOL), *args], capture_output=True, text=True, timeout=120)
+
+
+def read_prop(path: Path) -> dict:
+    return dict(line.split("=", 1) for line in path.read_text().splitlines() if line and not line.startswith("#"))
+
+
+class ScannerTest(unittest.TestCase):
+    def check_output(self, out: Path, source_hint: str) -> None:
+        a = read_prop(out / "devices/xiaomi/testdev_a.prop")
+        self.assertEqual(a["codename"], "testdev_a")
+        self.assertEqual(a["brand"], "Redmi")
+        self.assertEqual(a["model"], "Test Phone A")  # market name preferred over model number
+        self.assertEqual(a["platform"], "testsoc")
+        self.assertEqual(a["android"], "14")
+        self.assertEqual(a["mi_thermald"], "1")
+        self.assertEqual(a["thermal_services"], "mi_thermald,vendor.thermal-hal")  # camera rc not read
+        self.assertEqual(a["thermal_configs"], "thermal-normal.conf,thermal-tgame.conf")
+        self.assertIn(source_hint, a["source"])
+
+        b = read_prop(out / "devices/xiaomi/testdev_b.prop")
+        self.assertEqual(b["thermal_services"], "thermal-engine")  # invalid service name dropped
+        self.assertEqual(b["mi_thermald"], "0")
+
+        self.assertFalse((out / "devices/xiaomi/broken.prop").exists())
+        doc = (out / "docs/DEVICES.md").read_text()
+        self.assertIn("**2 devices with a profile**, 1 more dumps listed below without one", doc)
+        self.assertIn("## Dumps without a profile", doc)
+        self.assertRegex(doc, r"\| \[broken\]\(.*\) \| no vendor build.prop")
+        self.assertIn("| Redmi Test Phone A | `testdev_a` |", doc)
+
+    def test_local(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dumps, out = Path(tmp, "dumps"), Path(tmp, "out")
+            make_fixture(dumps)
+            r = run_tool("--local", str(dumps), "--out", str(out))
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.check_output(out, "testdev_a")
+
+    def test_gitlab_api(self):
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), FakeGitLab)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                out = Path(tmp, "out")
+                base = f"http://127.0.0.1:{server.server_address[1]}"
+                r = run_tool("--gitlab", base, "--group", "dumps/xiaomi", "--out", str(out))
+                self.assertEqual(r.returncode, 0, r.stderr)
+                self.check_output(out, f"{base}/dumps/xiaomi/testdev_a/-/tree/main-branch")
+        finally:
+            server.shutdown()
+            server.server_close()
+
+
+    def run_sparse(self, allow_filter: bool) -> tuple[subprocess.CompletedProcess, Path]:
+        tmp = Path(tempfile.mkdtemp())
+        FakeGitLab.git_urls = make_bare_repos(tmp, allow_filter)
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), FakeGitLab)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            base = f"http://127.0.0.1:{server.server_address[1]}"
+            out = tmp / "out"
+            r = run_tool("--gitlab", base, "--sparse", "--group", "dumps/xiaomi", "--out", str(out),
+                         "--workdir", str(tmp))
+            self.base = base
+            return r, out
+        finally:
+            server.shutdown()
+            server.server_close()
+            FakeGitLab.git_urls = {}
+
+    def test_sparse_clone(self):
+        r, out = self.run_sparse(allow_filter=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.check_output(out, f"{self.base}/dumps/xiaomi/testdev_a/-/tree/main-branch")
+        leftovers = [p for p in out.parent.iterdir() if p.name.startswith("hico-dump-")]
+        self.assertEqual(leftovers, [])  # clones are removed
+
+    def test_sparse_downloads_only_needed_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            urls = make_bare_repos(tmp)
+            mod = load_tool()
+            kept = {}
+            mod.shutil.rmtree = lambda path, **kw: kept.setdefault("dir", path)  # keep the clone for inspection
+            src = mod.SparseGitSource("http://unused", "dumps/xiaomi", None, workdir=str(tmp))
+            dev = src.scan_project({"id": 1, "path": "testdev_a", "branch": "main-branch",
+                                    "url": "u", "git_url": urls["testdev_a"]})
+            self.assertEqual(dev.codename, "testdev_a")
+            repo = Path(kept["dir"]) / "repo"
+            checked_out = sorted(str(p.relative_to(repo)) for p in repo.rglob("*")
+                                 if p.is_file() and ".git" not in p.parts)
+            self.assertEqual(checked_out, [
+                "product/etc/build.prop",
+                "vendor/build.prop",
+                "vendor/etc/init/android.hardware.thermal-service.rc",
+                "vendor/etc/init/init.mi_thermald.rc",
+                "vendor/etc/thermal-normal.conf",
+                "vendor/etc/thermal-tgame.conf",
+            ])
+            # The bulk blobs were never fetched: the object store is far smaller than one of them.
+            size = sum(p.stat().st_size for p in (repo / ".git").rglob("*") if p.is_file())
+            self.assertLess(size, 512 * 1024)
+            for rel in BULK:
+                missing = subprocess.run(["git", "cat-file", "-e", f"HEAD:{rel}"], cwd=repo,
+                                         capture_output=True, env={**os.environ, "GIT_NO_LAZY_FETCH": "1"})
+                self.assertNotEqual(missing.returncode, 0, rel)
+
+    def test_git_watchdog_kills_silent_hang(self):
+        mod = load_tool()
+        src = mod.SparseGitSource("http://unused", "dumps/xiaomi", None, timeout=1)
+        with tempfile.TemporaryDirectory() as tmp:
+            # An alias that sleeps without output, like a stalled network fetch.
+            with self.assertRaisesRegex(RuntimeError, "timed out"):
+                src._git("-c", "alias.stall=!sleep 30", "stall", cwd=tmp)
+
+    def test_sparse_refuses_full_download(self):
+        r, out = self.run_sparse(allow_filter=False)
+        doc = (out / "docs/DEVICES.md").read_text()
+        self.assertIn("server ignores --filter", doc)
+        self.assertFalse((out / "devices/xiaomi/testdev_a.prop").exists())
+
+
+class FakeGitLab(http.server.BaseHTTPRequestHandler):
+    """Just enough of GitLab's v4 API, with pagination (one project and one tree entry per page)."""
+
+    projects = sorted(FIXTURE)
+    git_urls: dict = {}
+
+    def log_message(self, *args):
+        pass
+
+    def send(self, body, headers=None, code=200):
+        data = body if isinstance(body, bytes) else json.dumps(body).encode()
+        self.send_response(code)
+        for k, v in (headers or {}).items():
+            self.send_header(k, v)
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
+    def do_GET(self):
+        url = urllib.parse.urlparse(self.path)
+        q = dict(urllib.parse.parse_qsl(url.query))
+        page = int(q.get("page", 1))
+        parts = url.path.split("/")
+
+        if url.path == "/api/v4/groups/dumps%2Fxiaomi/projects":
+            name = self.projects[page - 1]
+            nxt = str(page + 1) if page < len(self.projects) else ""
+            base = f"http://{self.headers['Host']}"
+            item = {"id": page, "path": name, "default_branch": "main-branch", "web_url": f"{base}/dumps/xiaomi/{name}"}
+            if name in self.git_urls:
+                item["http_url_to_repo"] = self.git_urls[name]
+            return self.send([item], {"X-Next-Page": nxt})
+
+        if len(parts) > 6 and parts[3] == "projects":
+            project = self.projects[int(parts[4]) - 1]
+            files = FIXTURE[project]
+            if q.get("ref") != "main-branch":
+                return self.send({"message": "ref"}, code=404)
+            if parts[5:7] == ["repository", "tree"]:
+                prefix = q["path"].rstrip("/") + "/"
+                entries = sorted(f[len(prefix):] for f in files if f.startswith(prefix) and "/" not in f[len(prefix):])
+                if not entries:
+                    return self.send({"message": "404 Tree Not Found"}, code=404)
+                entry = entries[page - 1 : page]
+                nxt = str(page + 1) if page < len(entries) else ""
+                return self.send([{"name": n, "type": "blob"} for n in entry], {"X-Next-Page": nxt})
+            if parts[5:7] == ["repository", "files"] and parts[-1] == "raw":
+                path = urllib.parse.unquote(parts[7])
+                if path in files:
+                    return self.send(files[path].encode())
+                return self.send({"message": "404 File Not Found"}, code=404)
+        self.send({"message": "not found"}, code=404)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
