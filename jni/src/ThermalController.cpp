@@ -111,6 +111,18 @@ int ThermalController::stop_services(const Config &cfg) {
             if (journal_.has_service(svc.name)) ++stopped;
             continue;
         }
+        if (respawning_.contains(svc.name)) continue;
+        // Stopped by HiCo and running again: init or servicemanager restarts it on demand (lazy
+        // AIDL thermal HALs come back as soon as the framework asks). Stopping it on every poll
+        // only makes it re-initialise and re-apply its limits each second, which stutters worse
+        // than leaving it alone: after a few returns it is left running for this session.
+        if (journal_.has_service(svc.name) && ++respawns_[svc.name] >= kMaxRespawns) {
+            respawning_.insert(svc.name);
+            LOGW("thermal service {} is restarted by the system each time it is stopped; left running "
+                 "(its cooling devices are still released every poll)",
+                 svc.name);
+            continue;
+        }
 
         // Journal first: a service stopped by HiCo is always restarted on restore.
         journal_.record_service(svc.name);
@@ -317,6 +329,8 @@ Journal::RestoreResult ThermalController::restore() {
     const auto r = journal_.restore();
     act_.reset_warnings();
     warned_services_.clear();
+    respawns_.clear();
+    respawning_.clear();
     return r;
 }
 

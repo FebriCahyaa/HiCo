@@ -50,6 +50,8 @@ public:
 private:
     Limits limits_;
     bool tripped_ = false;
+    bool cpu_tripped_ = false;     ///< the CPU limit was reached during this trip
+    bool battery_tripped_ = false; ///< the battery limit was reached during this trip
     std::string reason_;
     Clock::time_point tripped_at_{};
 };

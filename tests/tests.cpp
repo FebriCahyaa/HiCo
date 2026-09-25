@@ -369,6 +369,11 @@ void test_safety_guard() {
     CHECK(g.update(70.0, 44.0, t0 + 200s)); // needs <= 43
     CHECK(!g.update(70.0, 43.0, t0 + 200s));
 
+    // A CPU trip is released once the CPU cooled, even while the battery sits inside its own
+    // hysteresis band (below its limit): only the sensor that tripped has to cool down.
+    CHECK(g.update(96.0, 44.0, t0 + 250s));
+    CHECK(!g.update(84.0, 45.0, t0 + 281s));
+
     CHECK(g.update(std::nullopt, std::nullopt, t0 + 300s)); // blind: stay protected
     CHECK(!g.update(50.0, std::nullopt, t0 + 331s));        // one sensor is enough
 }
@@ -1182,6 +1187,59 @@ void test_mi_thermald() {
     CHECK(!mithermald::verify(stock, replace(stock, "target\t4\t5", "target\t1\t1"), p).empty());
 }
 
+void test_graduated_safety() {
+    // A device with a tunable vendor config: the safety guard first brings the vendor thermal
+    // back with the tuned template, and only restores full stock past the hard margin.
+    build_device();
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    write_config("safety_cooldown=10\npoll_interval=2\n");
+    Daemon d;
+    auto t = Daemon::Clock::time_point{} + 20000s;
+    start_game("com.mobile.legends");
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Boost);
+
+    set_cpu_temp(96000); // limit 95: soft landing
+    d.tick(t += 2s);
+    CHECK(d.state() == State::Safety);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));                  // protection back
+    CHECK(get("/__mounts__").find("/vendor/etc/thermal-engine.conf") != std::string::npos); // tuned template
+    CHECK(get(HICO_STATE_FILE).find("tuned vendor thermal") != std::string::npos);
+
+    set_cpu_temp(98500); // 95 + 3: hard margin, full stock
+    d.tick(t += 2s);
+    CHECK(d.state() == State::Safety);
+    CHECK(get("/__mounts__").find("/vendor/etc/thermal-engine.conf") == std::string::npos);
+    CHECK(get(HICO_STATE_FILE).find("stock thermal") != std::string::npos);
+
+    set_cpu_temp(80000); // cooled: back to the unlock
+    d.tick(t += 12s);
+    CHECK(d.state() == State::Boost);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("stopped"));
+    CHECK(get(HICO_STATE_FILE).find("trips=1") != std::string::npos);
+    stop_game();
+    d.tick(t += 1s); // exit grace period starts
+    d.tick(t += 5s);
+    CHECK(d.state() == State::Idle);
+
+    // A thermal HAL the system restarts every time it is stopped is left running after a few
+    // returns, instead of being stopped (and re-initialising) on every poll.
+    build_device();
+    Journal j(HICO_JOURNAL_FILE);
+    ThermalController c(j, DeviceProfile{});
+    Config x;
+    x.mode = Mode::Extreme;
+    for (int i = 0; i < 5; ++i) {
+        c.unlock(x);
+        put("/__props__/init.svc.vendor.thermal-hal-2-0", "running"); // servicemanager brings it back
+    }
+    const std::string ctl = get("/__props__/__ctl_log__");
+    size_t stops = 0;
+    for (size_t pos = 0; (pos = ctl.find("ctl.stop vendor.thermal-hal-2-0", pos)) != std::string::npos; ++pos) ++stops;
+    CHECK_EQ(stops, 3u);
+    c.restore();
+}
+
 int main() {
     char tmpl[] = "/tmp/hico-test-XXXXXX";
     if (!mkdtemp(tmpl)) return 1;
@@ -1202,6 +1260,7 @@ int main() {
         {"device database", test_device_database},
         {"thermal tuner", test_thermal_tuner},
         {"relaxed overlay", test_relaxed_overlay},
+        {"graduated safety and respawning HAL", test_graduated_safety},
         {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
         {"thermal HAL JSON tuner", test_hal_json_tuner},
         {"mi_thermald crypt and tuner", test_mi_thermald},

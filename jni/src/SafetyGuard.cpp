@@ -25,6 +25,8 @@ bool SafetyGuard::update(std::optional<double> cpu_c, std::optional<double> batt
     const bool battery_hot = battery_c && *battery_c >= limits_.battery_limit;
 
     if (cpu_hot || battery_hot) {
+        cpu_tripped_ = cpu_tripped_ || cpu_hot;
+        battery_tripped_ = battery_tripped_ || battery_hot;
         if (!tripped_) {
             reason_ = cpu_hot ? std::format("CPU {:.1f}°C ≥ {:.0f}°C", *cpu_c, limits_.cpu_limit)
                               : std::format("battery {:.1f}°C ≥ {:.0f}°C", *battery_c, limits_.battery_limit);
@@ -36,16 +38,20 @@ bool SafetyGuard::update(std::optional<double> cpu_c, std::optional<double> batt
 
     if (!tripped_) return false;
 
-    const bool cpu_cool = !cpu_c || *cpu_c <= limits_.cpu_limit - limits_.cpu_hysteresis;
-    const bool battery_cool = !battery_c || *battery_c <= limits_.battery_limit - limits_.battery_hysteresis;
+    // Only the sensor that tripped must cool by its hysteresis; the other one only has to stay
+    // below its limit (checked above). Requiring both kept a CPU trip locked for a whole game
+    // whenever the battery sat within its hysteresis band (45 C against a 46 - 3 C release).
+    const bool cpu_cool = !cpu_tripped_ || !cpu_c || *cpu_c <= limits_.cpu_limit - limits_.cpu_hysteresis;
+    const bool battery_cool =
+        !battery_tripped_ || !battery_c || *battery_c <= limits_.battery_limit - limits_.battery_hysteresis;
     if (cpu_cool && battery_cool && now - tripped_at_ >= limits_.cooldown) {
-        tripped_ = false;
+        tripped_ = cpu_tripped_ = battery_tripped_ = false;
     }
     return tripped_;
 }
 
 void SafetyGuard::reset() {
-    tripped_ = false;
+    tripped_ = cpu_tripped_ = battery_tripped_ = false;
     reason_.clear();
     tripped_at_ = {};
 }

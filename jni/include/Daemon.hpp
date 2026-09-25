@@ -108,6 +108,12 @@ private:
     std::time_t state_since_ = 0;
     bool described_ = false; ///< module.prop description written at least once
     bool flux_warned_ = false; ///< "Flux required" notification posted this boot
+    /// Safety state with the vendor thermal running on the device's tuned template
+    /// (soft landing) instead of full stock; full stock only past the hard margin.
+    bool safety_relaxed_ = false;
+    bool relax_unavailable_ = false; ///< no tunable vendor config on this device
+    bool safety_notified_ = false;   ///< soft-landing notification posted this session
+    bool stock_notified_ = false;    ///< stock-protection notification posted this session
     ThermalController::Summary summary_;
     std::optional<Level> applied_; ///< level currently applied to the system
 };

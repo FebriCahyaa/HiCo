@@ -32,6 +32,18 @@
   installed, so the two never write the same node
 
 ### Fixed
+- **HiCo stayed on stock thermal for most of a game after one safety trip**: releasing the guard
+  required the CPU *and* the battery to cool by their hysteresis, and a battery at 45 °C during
+  play never reached 43 °C, so a single CPU trip kept thermal locked (seen: 166 s unlocked out of
+  a 2-hour session). Only the sensor that tripped now has to cool down
+- **Graduated protection**: at a safety limit the vendor thermal system comes back with the
+  device's tuned template first (every protection active, trips bounded by the phone's own
+  configs); full stock thermal only 3 °C (CPU) / 1 °C (battery) past the limit, or on devices
+  without a tunable config. No more FPS cliff when a limit is touched
+- **Thermal HAL restart loop** in Extreme / `stop_thermal_hal`: a HAL that init or servicemanager
+  restarts on demand was stopped again every poll, re-initialising and re-applying its limits each
+  second (stutter). After three returns it is left running for the session
+- Safety notifications: at most one for the soft landing and one for stock protection per game
 - Devices on custom ROMs were not found in the device database (e.g. garnet on an AOSP ROM whose
   product properties read `lineage_garnet` or a spoofed Pixel name). The codename is now looked up
   from the bootloader (`ro.boot.hwname`), the vendor / odm / system / product device properties,
