@@ -35,6 +35,7 @@ Output (--out, default: repository root):
 from __future__ import annotations
 
 import argparse
+import hashlib
 import concurrent.futures
 import json
 import os
@@ -53,7 +54,8 @@ import tempfile
 import threading
 
 DEFAULT_GITLAB = "https://dumps.tadiphone.dev"
-DEFAULT_GROUP = "dumps/xiaomi"
+# Xiaomi, Redmi and POCO firmware; groups that do not exist on the instance are skipped.
+DEFAULT_GROUP = "dumps/xiaomi,dumps/redmi,dumps/poco"
 
 CODENAME_RE = re.compile(r"^[a-z0-9_]{1,64}$")
 SERVICE_RE = re.compile(r"^[A-Za-z0-9_.@-]{1,96}$")
@@ -88,15 +90,23 @@ PROP_KEYS = {
 # Everything the scanner reads from a dump. --sparse checks out exactly these
 # (gitignore-style patterns for `git sparse-checkout --no-cone`); keep them in
 # sync with BUILD_PROPS and the vendor/etc lookups in scan().
+# Where thermal configuration files live: the vendor partition on Treble
+# devices, system/vendor or system/etc on older (pre-Treble) firmware.
+CONFIG_DIRS = ["vendor/etc", "odm/etc", "system/vendor/etc", "system/etc", "system/system/etc"]
+# Init scripts: files named *thermal* are read whole; general scripts (init.qcom.rc, ...)
+# in the hw directories contribute only their thermal services.
+RC_DIRS = ["vendor/etc/init", "system/vendor/etc/init", "system/etc/init"]
+RC_HW_DIRS = ["vendor/etc/init/hw", "system/vendor/etc/init/hw", "system/etc/init/hw"]
+
 SPARSE_PATHS = [
     *[f"/{p}" for p in BUILD_PROPS],
-    "/vendor/etc/thermal*",
-    "/vendor/etc/Thermal*",
-    "/vendor/etc/init/*thermal*",
-    "/vendor/etc/init/*Thermal*",
-    # Qualcomm declares thermal-engine in init.qcom.rc and friends; only thermal services are kept.
-    "/vendor/etc/init/hw/*.rc",
+    *[f"/{d}/{pat}" for d in CONFIG_DIRS for pat in ("thermal*", "Thermal*")],
+    *[f"/{d}/{pat}" for d in RC_DIRS for pat in ("*thermal*", "*Thermal*")],
+    *[f"/{d}/*.rc" for d in RC_HW_DIRS],
 ]
+
+# Thermal files kept in the repository: bounded, so one odd dump cannot bloat it.
+MAX_THERMAL_FILE = 512 * 1024
 
 
 @dataclass
@@ -110,6 +120,9 @@ class Device:
     services: list[str] = field(default_factory=list)
     configs: list[str] = field(default_factory=list)
     mi_thermald: bool = False
+    thermal_files: dict[str, bytes] = field(default_factory=dict)  # config name -> content
+    variants: list[str] = field(default_factory=list)               # other dumps of this codename
+    dump: str = ""                                                   # markdown link to this dump
 
     def to_prop(self) -> str:
         lines = [
@@ -125,6 +138,8 @@ class Device:
             f"thermal_services={','.join(self.services)}",
             f"thermal_configs={','.join(self.configs)}",
         ]
+        stats = thermal_stats(self.thermal_files)
+        lines += [f"{k}={v}" for k, v in stats.items()]
         return "\n".join(lines) + "\n"
 
 
@@ -160,6 +175,86 @@ def parse_rc_services(text: str, thermal_only: bool = False) -> list[str]:
     return names
 
 
+# ── Thermal file analysis ─────────────────────────────────────────────────────
+
+SECTION_RE = re.compile(r"^\s*\[([^\]]+)\]\s*$")
+
+
+def to_celsius(raw: str) -> float | None:
+    try:
+        v = float(raw)
+    except ValueError:
+        return None
+    c = v / 1000 if abs(v) >= 1000 else v  # thermal-engine uses millidegrees; old configs use degrees
+    return c if -40 <= c <= 200 else None
+
+
+def analyze_thermal(name: str, data: bytes) -> dict:
+    """Format and trip points of one thermal configuration file.
+
+    Many recent Xiaomi thermal configs are encrypted blobs; only plain-text
+    thermal-engine style files ([SECTION] / algo_type / sensor / thresholds /
+    actions) are parsed. Nothing is guessed for other formats.
+    """
+    info = {"name": name, "size": len(data), "format": "empty" if not data else "text",
+            "sections": 0, "max_trip_c": None, "shutdown_c": None}
+    if not data:
+        return info
+    sample = data[:4096]
+    binary = sum(1 for b in sample if b < 9 or 13 < b < 32 or b == 127)
+    if b"\0" in sample or binary > len(sample) // 20:
+        info["format"] = "encrypted"
+        return info
+    text = data.decode("utf-8", errors="replace")
+    if name.endswith(".xml") or text.lstrip().startswith("<"):
+        info["format"] = "xml"
+        return info
+    if name.endswith(".json") or text.lstrip().startswith("{"):
+        info["format"] = "json"
+        return info
+
+    section: dict | None = None
+    sections: list[dict] = []
+    for line in text.splitlines():
+        line = line.split("#", 1)[0].strip()
+        if not line:
+            continue
+        m = SECTION_RE.match(line)
+        if m:
+            section = {"name": m.group(1), "thresholds": [], "actions": ""}
+            sections.append(section)
+            continue
+        key, _, value = line.partition(" ")
+        if key in ("thresholds", "set_point") and section is not None:
+            section["thresholds"] += [c for c in (to_celsius(v) for v in value.split()) if c is not None]
+        elif key == "actions" and section is not None:
+            section["actions"] = value
+    info["sections"] = len(sections)
+    if not sections:
+        info["format"] = "text-unknown"
+        return info
+    trips = [t for s in sections if "shutdown" not in s["actions"] for t in s["thresholds"]]
+    shutdowns = [t for s in sections if "shutdown" in s["actions"] for t in s["thresholds"]]
+    info["max_trip_c"] = max(trips) if trips else None
+    info["shutdown_c"] = min(shutdowns) if shutdowns else None
+    return info
+
+
+def thermal_stats(files: dict[str, bytes]) -> dict[str, str]:
+    infos = [analyze_thermal(n, d) for n, d in sorted(files.items())]
+    count = lambda fmt: sum(1 for i in infos if i["format"] == fmt)
+    trips = [i["max_trip_c"] for i in infos if i["max_trip_c"] is not None]
+    shutdowns = [i["shutdown_c"] for i in infos if i["shutdown_c"] is not None]
+    fmt = lambda v: f"{v:g}" if v is not None else ""
+    return {
+        "thermal_files": str(len(infos)),
+        "thermal_encrypted": str(count("encrypted")),
+        "thermal_parsed": str(count("text")),
+        "vendor_max_trip_c": fmt(max(trips) if trips else None),
+        "vendor_shutdown_c": fmt(min(shutdowns) if shutdowns else None),
+    }
+
+
 # ── Sources ───────────────────────────────────────────────────────────────────
 
 
@@ -186,6 +281,13 @@ class LocalSource:
     def listdir(self, project: dict, path: str) -> list[str]:
         d = self.root / project["path"] / path
         return sorted(p.name for p in d.iterdir() if p.is_file()) if d.is_dir() else []
+
+    def read_bytes(self, project: dict, path: str, limit: int) -> bytes | None:
+        f = self.root / project["path"] / path
+        try:
+            return f.read_bytes()[:limit] if f.is_file() and f.stat().st_size <= limit else None
+        except OSError:
+            return None
 
 
 class GitLabSource:
@@ -218,33 +320,47 @@ class GitLabSource:
         return f"{self.base}/api/v4/{endpoint}{'?' + query if query else ''}"
 
     def projects(self) -> list[dict]:
-        group = urllib.parse.quote(self.group, safe="")
-        out, page = [], 1
-        while page:
-            got = self._get(self._api(f"groups/{group}/projects", per_page=100, page=page,
-                                      include_subgroups="true", archived="false", order_by="path", sort="asc"))
-            if got is None:
-                raise RuntimeError(f"group {self.group} not found on {self.base}")
-            body, headers = got
-            for p in json.loads(body):
-                if p.get("empty_repo") or not p.get("default_branch"):
-                    continue
-                out.append({
-                    "id": p["id"],
-                    "path": p["path"],
-                    "branch": p["default_branch"],
-                    "url": f"{p['web_url']}/-/tree/{p['default_branch']}",
-                    "git_url": p.get("http_url_to_repo") or f"{p['web_url']}.git",
-                })
-                if self.limit and len(out) >= self.limit:
-                    return out
-            page = int(headers.get("X-Next-Page") or headers.get("x-next-page") or 0)
+        out: list[dict] = []
+        found = 0
+        for group_name in [g.strip() for g in self.group.split(",") if g.strip()]:
+            group = urllib.parse.quote(group_name, safe="")
+            page = 1
+            while page:
+                got = self._get(self._api(f"groups/{group}/projects", per_page=100, page=page,
+                                          include_subgroups="true", archived="false", order_by="path", sort="asc"))
+                if got is None:
+                    print(f"  ? group {group_name} not found on {self.base}, skipped", file=sys.stderr)
+                    break
+                if page == 1:
+                    found += 1
+                body, headers = got
+                for p in json.loads(body):
+                    if p.get("empty_repo") or not p.get("default_branch"):
+                        continue
+                    out.append({
+                        "id": p["id"],
+                        "path": p["path"],
+                        "name": f"{group_name.rsplit('/', 1)[-1]}/{p['path']}",
+                        "branch": p["default_branch"],
+                        "url": f"{p['web_url']}/-/tree/{p['default_branch']}",
+                        "git_url": p.get("http_url_to_repo") or f"{p['web_url']}.git",
+                    })
+                    if self.limit and len(out) >= self.limit:
+                        return out
+                page = int(headers.get("X-Next-Page") or headers.get("x-next-page") or 0)
+        if not found:
+            raise RuntimeError(f"none of the groups {self.group} exist on {self.base}")
         return out
 
     def read(self, project: dict, path: str) -> str | None:
         file = urllib.parse.quote(path, safe="")
         got = self._get(self._api(f"projects/{project['id']}/repository/files/{file}/raw", ref=project["branch"]))
         return got[0].decode(errors="replace") if got else None
+
+    def read_bytes(self, project: dict, path: str, limit: int) -> bytes | None:
+        file = urllib.parse.quote(path, safe="")
+        got = self._get(self._api(f"projects/{project['id']}/repository/files/{file}/raw", ref=project["branch"]))
+        return got[0] if got and len(got[0]) <= limit else None
 
     def listdir(self, project: dict, path: str) -> list[str]:
         names, page = [], 1
@@ -350,21 +466,43 @@ def scan(source, project: dict) -> Device | None:
         source=project["url"],
     )
 
-    dev.configs = sorted({n for n in source.listdir(project, "vendor/etc") if THERMAL_CONFIG_RE.match(n)})
+    # Thermal configs: first directory that has a given file name wins (vendor before system).
+    for d in CONFIG_DIRS:
+        for name in source.listdir(project, d):
+            if not THERMAL_CONFIG_RE.match(name) or name in dev.thermal_files:
+                continue
+            data = source.read_bytes(project, f"{d}/{name}", MAX_THERMAL_FILE)
+            if data is not None:
+                dev.thermal_files[name] = data
+    dev.configs = sorted(dev.thermal_files)
 
     services: set[str] = set()
-    for rc in source.listdir(project, "vendor/etc/init"):
-        if not rc.endswith(".rc") or not THERMAL_RC_RE.search(rc):
-            continue
-        text = source.read(project, f"vendor/etc/init/{rc}") or ""
-        services.update(parse_rc_services(text))
-    for rc in source.listdir(project, "vendor/etc/init/hw"):
-        if rc.endswith(".rc"):
-            text = source.read(project, f"vendor/etc/init/hw/{rc}") or ""
-            services.update(parse_rc_services(text, thermal_only=True))
+    for d in RC_DIRS:
+        for rc in source.listdir(project, d):
+            if rc.endswith(".rc") and THERMAL_RC_RE.search(rc):
+                services.update(parse_rc_services(source.read(project, f"{d}/{rc}") or ""))
+    for d in RC_HW_DIRS:
+        for rc in source.listdir(project, d):
+            if rc.endswith(".rc"):
+                services.update(parse_rc_services(source.read(project, f"{d}/{rc}") or "", thermal_only=True))
     dev.services = sorted(services)
     dev.mi_thermald = any("mi_thermald" in s for s in dev.services)
     return dev
+
+
+def write_thermal_files(tdir: Path, d: Device) -> None:
+    """Raw vendor thermal files plus an index (sha256, size, format, trips) for review."""
+    if not d.thermal_files:
+        return
+    tdir.mkdir(parents=True, exist_ok=True)
+    index = ["# name\tsha256\tsize\tformat\tsections\tmax_trip_c\tshutdown_c"]
+    for name, data in sorted(d.thermal_files.items()):
+        (tdir / name).write_bytes(data)
+        i = analyze_thermal(name, data)
+        index.append("\t".join([name, hashlib.sha256(data).hexdigest(), str(i["size"]), i["format"],
+                                str(i["sections"]), f"{i['max_trip_c']:g}" if i["max_trip_c"] is not None else "",
+                                f"{i['shutdown_c']:g}" if i["shutdown_c"] is not None else ""]))
+    (tdir / "index.tsv").write_text("\n".join(index) + "\n")
 
 
 def write_outputs(devices: list[Device], out: Path, source_desc: str,
@@ -373,8 +511,12 @@ def write_outputs(devices: list[Device], out: Path, source_desc: str,
     ddir.mkdir(parents=True, exist_ok=True)
     for old in ddir.glob("*.prop"):
         old.unlink()
+    for old in ddir.iterdir():
+        if old.is_dir():
+            shutil.rmtree(old)
     for d in devices:
         (ddir / f"{d.codename}.prop").write_text(d.to_prop())
+        write_thermal_files(ddir / d.codename / "thermal", d)
 
     rows = sorted(devices, key=lambda d: (d.brand.lower(), d.model.lower(), d.codename))
     lines = [
@@ -389,17 +531,27 @@ def write_outputs(devices: list[Device], out: Path, source_desc: str,
         "detection only (thermal services from `init.svc.*`, zones and cooling devices from `/sys/class/thermal`).",
         "",
         f"**{len(rows)} devices with a profile**"
-        + (f", {len(unusable)} more dumps listed below without one" if unusable else ""),
+        + (f", {len(unusable)} more dumps listed below without one" if unusable else "")
+        + (f", {sum(len(d.variants) for d in devices)} more dumps of listed devices" if any(d.variants for d in devices) else ""),
         "",
-        "| Device | Codename | Platform | Android | mi_thermald | Thermal services | Thermal configs | Source |",
-        "|---|---|---|---|---|---|---|---|",
+        "Thermal configs: files kept in `devices/xiaomi/<codename>/thermal/` (plain text / encrypted);",
+        "trips are the highest non-shutdown and the lowest shutdown threshold found in the plain-text files.",
+        "",
+        "| Device | Codename | Platform | Android | mi_thermald | Thermal services | Thermal configs | Trips (max / shutdown) | Source |",
+        "|---|---|---|---|---|---|---|---|---|",
     ]
     for d in rows:
         services = ", ".join(f"`{s}`" for s in d.services) or "–"
+        st = thermal_stats(d.thermal_files)
+        configs = f"{st['thermal_files']} ({st['thermal_parsed']} text, {st['thermal_encrypted']} encrypted)" \
+            if d.thermal_files else "0"
+        trips = f"{st['vendor_max_trip_c'] or '–'} / {st['vendor_shutdown_c'] or '–'} °C" \
+            if st["vendor_max_trip_c"] or st["vendor_shutdown_c"] else "–"
+        variants = f" (+{len(d.variants)} variants)" if d.variants else ""
         lines.append(
             f"| {clean(d.brand)} {clean(d.model)} | `{d.codename}` | {clean(d.platform) or '–'} | "
             f"{clean(d.android) or '–'} | {'yes' if d.mi_thermald else 'no'} | {services} | "
-            f"{len(d.configs)} | [dump]({d.source}) |"
+            f"{configs} | {trips} | [dump]({d.source}){variants} |"
         )
     if unusable:
         lines += [
@@ -412,10 +564,28 @@ def write_outputs(devices: list[Device], out: Path, source_desc: str,
             "| Dump | Reason |",
             "|---|---|",
         ]
-        for p in sorted(unusable, key=lambda p: p["path"]):
-            lines.append(f"| [{clean(p['path'])}]({p['url']}) | {clean(p['reason'])} |")
+        for p in sorted(unusable, key=lambda p: p.get("name", p["path"])):
+            lines.append(f"| [{clean(p.get('name', p['path']))}]({p['url']}) | {clean(p['reason'])} |")
+
+    merged = sorted((v, d.codename) for d in devices for v in d.variants)
+    if merged:
+        lines += [
+            "",
+            "## Other dumps of listed devices",
+            "",
+            "Regional variants and other firmware versions of a device already listed above; the record",
+            "uses the dump with the most thermal information.",
+            "",
+            "| Dump | Device |",
+            "|---|---|",
+        ]
+        lines += [f"| {clean(v, 512)} | `{c}` |" for v, c in merged]
     (out / "docs").mkdir(exist_ok=True)
     (out / "docs" / "DEVICES.md").write_text("\n".join(lines) + "\n")
+
+
+def group_links(base: str, groups: str) -> str:
+    return ", ".join(f"[{g.strip()}]({base.rstrip('/')}/{g.strip()})" for g in groups.split(",") if g.strip())
 
 
 def main() -> int:
@@ -426,7 +596,8 @@ def main() -> int:
     ap.add_argument("--sparse", action="store_true",
                     help="with --gitlab: partial-clone each dump, checking out only the needed paths")
     ap.add_argument("--workdir", help="where --sparse clones are made (default: system temp)")
-    ap.add_argument("--group", default=DEFAULT_GROUP, help="GitLab group holding the Xiaomi dumps")
+    ap.add_argument("--group", default=DEFAULT_GROUP,
+                    help="comma-separated GitLab groups holding the dumps (missing groups are skipped)")
     ap.add_argument("--out", default=str(Path(__file__).resolve().parent.parent), help="repository root")
     ap.add_argument("--limit", type=int, help="scan at most N projects (testing)")
     ap.add_argument("--jobs", type=int, default=8)
@@ -436,10 +607,10 @@ def main() -> int:
         source, desc = LocalSource(args.local), "local dumps"
     elif args.sparse:
         source = SparseGitSource(args.gitlab, args.group, args.limit, args.workdir)
-        desc = f"[{args.group}]({args.gitlab.rstrip('/')}/{args.group})"
+        desc = group_links(args.gitlab, args.group)
     else:
         source = GitLabSource(args.gitlab, args.group, args.limit)
-        desc = f"[{args.group}]({args.gitlab.rstrip('/')}/{args.group})"
+        desc = group_links(args.gitlab, args.group)
 
     projects = source.projects()
     if args.limit:
@@ -462,16 +633,26 @@ def main() -> int:
                 unusable.append({**p, "reason": f"not readable: {str(e)[:80]}"})
                 continue
             if dev is None:
-                print(f"  - {p['path']}: no usable vendor build.prop, skipped", file=sys.stderr)
-                unusable.append({**p, "reason": "no vendor build.prop with a device codename"})
+                print(f"  - {p['path']}: no usable build.prop with a device codename, skipped", file=sys.stderr)
+                unusable.append({**p, "reason": "no build.prop with a device codename"})
                 continue
-            # Several dumps can share a codename (regional variants): keep the richest one.
+            dev.dump = f"[{p.get('name', p['path'])}]({p['url']})"
+            # Several dumps can share a codename (regional variants): keep the richest one,
+            # and list the others under it.
             prev = devices.get(dev.codename)
-            if prev is None or (len(dev.services), len(dev.configs)) > (len(prev.services), len(prev.configs)):
+            if prev is None:
                 devices[dev.codename] = dev
+            elif (len(dev.services), len(dev.thermal_files)) > (len(prev.services), len(prev.thermal_files)):
+                dev.variants = prev.variants + [prev.dump]
+                devices[dev.codename] = dev
+            else:
+                prev.variants.append(dev.dump)
 
     write_outputs(list(devices.values()), Path(args.out), desc, unusable)
-    print(f"{len(devices)} device profiles written, {failures} dumps failed", file=sys.stderr)
+    files = sum(len(d.thermal_files) for d in devices.values())
+    print(f"{len(devices)} device profiles written ({files} thermal files), "
+          f"{sum(len(d.variants) for d in devices.values())} variant dumps merged, "
+          f"{len(unusable)} dumps without a profile, {failures} dumps failed", file=sys.stderr)
     return 1 if failures and not devices else 0
 
 

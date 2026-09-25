@@ -121,8 +121,16 @@ dumps.tadiphone.dev ─ tools/xiaomi_devices.py ─▶ devices/xiaomi/<codename>
 `hicod device --list` prints the compiled database. The supported list is
 [`docs/DEVICES.md`](docs/DEVICES.md).
 
+**Thermal files:** the scanner also keeps each device's vendor thermal configuration files in
+`devices/xiaomi/<codename>/thermal/` (repository only, never shipped), with an `index.tsv`
+(SHA-256, size, format, trip points). Plain-text thermal-engine style files are parsed for their
+highest trip and their shutdown threshold (`vendor_max_trip_c`, `vendor_shutdown_c` in the
+record); encrypted files — common on recent Xiaomi firmware — are kept and counted but not
+interpreted. Pre-Treble firmware is covered too (`system/etc`, `system/vendor/etc`).
+
 **Refreshing the database:** **Actions → Update Xiaomi device profiles** (also monthly) scans
-the dumps, regenerates `devices/`, `docs/DEVICES.md` and the C++ table, builds and tests it, and
+the Xiaomi, Redmi and POCO dump groups (`dumps/xiaomi`, `dumps/redmi`, `dumps/poco`; groups that
+do not exist are skipped), regenerates `devices/`, `docs/DEVICES.md` and the C++ table, builds and tests it, and
 opens a pull request. By default it uses **sparse mode**: the GitLab API only lists the dumps
 (names), then each dump is partial-cloned (`--filter=blob:none --depth 1`) and only `build.prop`
 and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`,

@@ -27,6 +27,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TOOL = ROOT / "tools" / "xiaomi_devices.py"
 
+NORMAL_CONF = """\
+# comment
+[SKIN_MONITOR]
+algo_type monitor
+sensor quiet_therm
+thresholds 41000 43000 45000
+thresholds_clr 39000 41000 43000
+actions cpu+gpu cpu+gpu cpu+gpu
+
+[SHUTDOWN]
+algo_type monitor
+sensor battery
+thresholds 60000
+actions shutdown
+"""
+ENCRYPTED_CONF = "\x00\x13\x9f\x82binary\x01\x02\x03" * 20
+
 FIXTURE = {
     "testdev_a": {
         # GRF: the vendor partition keeps its launch release (12), the system runs 14.
@@ -37,8 +54,9 @@ FIXTURE = {
         # Qualcomm style: thermal-engine declared in a general init script.
         "vendor/etc/init/hw/init.qcom.rc": "service thermal-engine /vendor/bin/thermal-engine\n"
         "service qcom-sh /vendor/bin/init.qcom.sh\n",
-        "vendor/etc/thermal-normal.conf": "",
-        "vendor/etc/thermal-tgame.conf": "",
+        # Plain-text thermal-engine syntax (millidegrees) and an encrypted config.
+        "vendor/etc/thermal-normal.conf": NORMAL_CONF,
+        "vendor/etc/thermal-tgame.conf": ENCRYPTED_CONF,
         "vendor/etc/media_codecs.xml": "",
         "vendor/etc/init/init.mi_thermald.rc": "service mi_thermald /vendor/bin/mi_thermald\n    class main\n",
         "vendor/etc/init/android.hardware.thermal-service.rc":
@@ -50,10 +68,16 @@ FIXTURE = {
         "vendor/etc/init/thermal-engine.rc": "service thermal-engine /vendor/bin/thermal-engine\n"
         "service bad;name /x\n",
     },
-    # Pre-Treble dump: no vendor partition, everything in system/build.prop.
+    # Pre-Treble dump: no vendor partition, everything under system/.
     "testdev_c": {
         "system/build.prop": "ro.product.device=testdev_c\nro.product.brand=Xiaomi\nro.product.model=TEST-C\n"
         "ro.build.version.release=7.1.1\n",
+        "system/etc/thermal-engine.conf": "[CPU_MONITOR]\nalgo_type monitor\nsensor tsens_tz_sensor5\n"
+        "thresholds 70 80\nactions cpu cpu\n",
+    },
+    # Regional variant of testdev_a with less thermal information: listed, not a second record.
+    "testdev_a_global": {
+        "vendor/build.prop": "ro.product.vendor.device=testdev_a\nro.product.vendor.brand=redmi\n",
     },
     "broken": {"README": "no partitions here"},
 }
@@ -130,6 +154,16 @@ class ScannerTest(unittest.TestCase):
         # camera rc not read; from init.qcom.rc only the thermal service
         self.assertEqual(a["thermal_services"], "mi_thermald,thermal-engine,vendor.thermal-hal")
         self.assertEqual(a["thermal_configs"], "thermal-normal.conf,thermal-tgame.conf")
+        self.assertEqual((a["thermal_files"], a["thermal_parsed"], a["thermal_encrypted"]), ("2", "1", "1"))
+        self.assertEqual((a["vendor_max_trip_c"], a["vendor_shutdown_c"]), ("45", "60"))
+
+        # The vendor files themselves are kept, with an index for review.
+        tdir = out / "devices/xiaomi/testdev_a/thermal"
+        self.assertEqual((tdir / "thermal-normal.conf").read_text(), NORMAL_CONF)
+        self.assertEqual((tdir / "thermal-tgame.conf").read_bytes(), ENCRYPTED_CONF.encode())  # byte-exact
+        index = (tdir / "index.tsv").read_text()
+        self.assertRegex(index, r"thermal-normal.conf\t[0-9a-f]{64}\t\d+\ttext\t2\t45\t60")
+        self.assertRegex(index, r"thermal-tgame.conf\t[0-9a-f]{64}\t\d+\tencrypted\t0\t\t")
         self.assertIn(source_hint, a["source"])
 
         b = read_prop(out / "devices/xiaomi/testdev_b.prop")
@@ -138,12 +172,19 @@ class ScannerTest(unittest.TestCase):
 
         c = read_prop(out / "devices/xiaomi/testdev_c.prop")
         self.assertEqual((c["model"], c["android"]), ("TEST-C", "7.1.1"))
+        # Pre-Treble thermal config found under system/etc, trips in plain degrees.
+        self.assertEqual((c["thermal_configs"], c["vendor_max_trip_c"]), ("thermal-engine.conf", "80"))
 
         self.assertFalse((out / "devices/xiaomi/broken.prop").exists())
         doc = (out / "docs/DEVICES.md").read_text()
-        self.assertIn("**3 devices with a profile**, 1 more dumps listed below without one", doc)
+        self.assertIn("**3 devices with a profile**, 1 more dumps listed below without one, "
+                      "1 more dumps of listed devices", doc)
         self.assertIn("## Dumps without a profile", doc)
-        self.assertRegex(doc, r"\| \[broken\]\(.*\) \| no vendor build.prop")
+        self.assertRegex(doc, r"\| \[(xiaomi/)?broken\]\(.*\) \| no build.prop with a device codename")
+        # Every dump is named: the variant is listed under its device.
+        self.assertIn("## Other dumps of listed devices", doc)
+        self.assertRegex(doc, r"\| \[(xiaomi/)?testdev_a_global\]\(.*\) \| `testdev_a` \|")
+        self.assertIn("2 (1 text, 1 encrypted) | 45 / 60 °C", doc)
         self.assertIn("| Redmi Test Phone A | `testdev_a` |", doc)
 
     def test_local(self):
@@ -153,6 +194,36 @@ class ScannerTest(unittest.TestCase):
             r = run_tool("--local", str(dumps), "--out", str(out))
             self.assertEqual(r.returncode, 0, r.stderr)
             self.check_output(out, "testdev_a")
+
+    def test_missing_group_is_skipped(self):
+        server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), FakeGitLab)
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                base = f"http://127.0.0.1:{server.server_address[1]}"
+                r = run_tool("--gitlab", base, "--group", "dumps/nope,dumps/xiaomi", "--out", str(Path(tmp, "out")))
+                self.assertEqual(r.returncode, 0, r.stderr)
+                self.assertIn("group dumps/nope not found", r.stderr)
+                self.assertTrue(Path(tmp, "out/devices/xiaomi/testdev_a.prop").exists())
+                r = run_tool("--gitlab", base, "--group", "dumps/nope", "--out", str(Path(tmp, "out2")))
+                self.assertNotEqual(r.returncode, 0)  # no group at all is an error, not an empty database
+        finally:
+            server.shutdown()
+            server.server_close()
+
+    def test_thermal_parser(self):
+        mod = load_tool()
+        a = mod.analyze_thermal
+        self.assertEqual(a("x.conf", b"")["format"], "empty")
+        self.assertEqual(a("thermal-map.xml", b"<map/>")["format"], "xml")
+        self.assertEqual(a("thermal_info_config.json", b'{"Sensors": []}')["format"], "json")
+        self.assertEqual(a("thermal.conf", b"just some words\n")["format"], "text-unknown")
+        # Threshold lines before any [section] are ignored instead of crashing.
+        r = a("t.conf", b"thresholds 50000\n[S]\nthresholds 45000 999999\nactions cpu\n")
+        self.assertEqual((r["format"], r["sections"], r["max_trip_c"]), ("text", 1, 45))  # 999 C rejected
+        # set_point (ss algorithm) counts as a trip; shutdown thresholds are reported separately.
+        r = a("t.conf", b"[SS]\nalgo_type ss\nset_point 52000\n[OFF]\nthresholds 115000\nactions shutdown\n")
+        self.assertEqual((r["max_trip_c"], r["shutdown_c"]), (52, 115))
 
     def test_long_source_url_is_kept(self):
         mod = load_tool()
