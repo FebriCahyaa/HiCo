@@ -36,8 +36,9 @@ ThermalController::ThermalController(Journal &journal, DeviceProfile device)
     : journal_(journal), act_(journal), device_(std::move(device)), xiaomi_(is_xiaomi_device(device_)),
       backends_(make_backends(device_)) {
     if (device_.in_database) {
-        LOGI("device: {} {} ({}, {} {}), {} declared thermal services, from {}", device_.brand, device_.model,
-             device_.codename, to_string(device_.soc), device_.platform, device_.thermal_services.size(), device_.source);
+        LOGI("device: {} {} ({}, {} {}), {} declared thermal services", device_.brand, device_.model,
+             device_.codename, to_string(device_.soc), device_.platform, device_.thermal_services.size());
+        LOGD("device record: {}", device_.source);
     } else {
         LOGI("device '{}' ({}) is not in the device database ({}): runtime detection only", device_.codename,
              to_string(device_.soc), device_db::generated_from());
@@ -306,6 +307,7 @@ int ThermalController::relax(const Config &cfg) {
         }
     }
 
+    std::vector<std::string> tuned_names;
     for (const auto &p : pending) {
         std::string flat = p.target.substr(1);
         std::replace(flat.begin(), flat.end(), '/', '_');
@@ -314,10 +316,17 @@ int ThermalController::relax(const Config &cfg) {
         journal_.record_mount(p.target);
         if (fs::bind_mount(source, p.target)) {
             ++relaxed;
-            LOGI("relaxed thermal config {} ({} policy)", p.target, policy.name);
+            tuned_names.push_back(p.target.substr(p.target.rfind('/') + 1));
+            LOGD("relaxed thermal config {} ({} policy)", p.target, policy.name);
         } else {
             LOGW("relax: cannot bind-mount over {}", p.target);
         }
+    }
+    if (!tuned_names.empty()) {
+        // One line instead of one per file (garnet has 17): the list is still there to check.
+        std::string list;
+        for (const auto &n : tuned_names) list += (list.empty() ? "" : ", ") + n;
+        LOGI("relaxed {} of this phone's thermal configs ({} policy): {}", tuned_names.size(), policy.name, list);
     }
     for (const auto &d : daemons) {
         if (services::restart(d)) LOGI("restarted thermal service {} to load relaxed configs", d);
