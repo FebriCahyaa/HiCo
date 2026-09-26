@@ -181,13 +181,15 @@ std::optional<std::string> cbc_decrypt(std::string_view data, std::string_view k
         prev = cipher;
     }
     // PKCS#7: 1..16 bytes, all equal to the count.
-    const auto pad = static_cast<unsigned char>(out.back());
+    const size_t pad = static_cast<unsigned char>(out.back());
     if (pad == 0 || pad > 16) return std::nullopt;
-    for (size_t i = out.size() - pad; i < out.size(); ++i) {
+    // data.size() is a non-zero multiple of 16, so len >= 0. Copying the prefix
+    // (rather than resize) keeps GCC 13 -O2 from a false -Wrestrict on the shrink.
+    const size_t len = data.size() - pad;
+    for (size_t i = len; i < data.size(); ++i) {
         if (static_cast<unsigned char>(out[i]) != pad) return std::nullopt;
     }
-    out.resize(out.size() - pad);
-    return out;
+    return std::string(out.data(), len);
 }
 
 std::optional<std::string> decrypt(std::string_view data) {
