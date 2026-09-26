@@ -197,35 +197,56 @@
     }
   },
   "monitor": {
-    "title": "Monitor",
+    "title": "Monitor Termal",
     "live": "langsung",
     "paused": "dijeda",
-    "verdict": "Throttling saat ini",
+    "verdict": "Status termal",
     "v": {
-      "none": {
-        "title": "Tidak ada throttling",
-        "description": "CPU dan GPU boleh berjalan di kecepatan penuh hardware."
+      "normal": {
+        "title": "Normal",
+        "description": "Zona termal berada di bawah ambang mitigasi yang dilaporkan."
       },
-      "light": {
-        "title": "Throttling ringan",
-        "description": "Beberapa clock dibatasi sedikit: CPU secara keseluruhan di atas 75 % dan tidak ada cluster atau GPU di bawah 60 %."
+      "elevated": {
+        "title": "Meningkat",
+        "description": "Setidaknya satu zona mendekati ambang trip termal berikutnya."
       },
-      "heavy": {
-        "title": "Throttling berat",
-        "description": "Batas termal menahan CPU atau GPU jauh di bawah kecepatan penuh."
+      "mitigating": {
+        "title": "Mitigasi aktif",
+        "description": "Ada zona termal yang mencapai ambang mitigasi atau cooling sedang aktif."
+      },
+      "critical": {
+        "title": "Kritis",
+        "description": "Ada zona termal yang mencapai atau melewati ambang kritis yang dilaporkan."
       }
     },
-    "vendor_only": "Tidak ada game yang berjalan: batas ini dari sistem termal HP sendiri (misalnya saat mengecas). HiCo hanya melepasnya saat bermain game.",
-    "cpu_allowed": "CPU diizinkan",
-    "gpu_allowed": "GPU diizinkan",
-    "allowed_chart": "Kecepatan diizinkan, 1 menit terakhir",
+    "hottest": "Zona terpanas",
+    "next_trip": "Trip terdekat",
+    "zone_count": "Zona termal",
+    "zone_count_label": "zona",
+    "at_trip": "mencapai/melewati trip",
+    "active_cooling": "Cooling aktif",
+    "protected": "terlindungi",
     "temp_chart": "Suhu, 1 menit terakhir",
-    "clocks": "Clock dan batas",
-    "capped": "{pct} % hilang karena batas termal",
-    "sources": "Penyebab throttling",
-    "state": "state {cur}/{max}",
-    "no_sources": "Tidak ada cooling device atau zona termal yang sedang throttle.",
-    "error": "Tidak bisa membaca monitor: {error}"
+    "zones": "Tabel zona termal",
+    "zones_description": "Zona thermal kernel, ambang trip, headroom, status dan policy secara langsung. Hanya baca.",
+    "zone": "Zona",
+    "type": "Tipe",
+    "temperature": "Suhu",
+    "passive": "Passive",
+    "hot": "Hot",
+    "critical": "Critical",
+    "highest": "Tertinggi",
+    "next": "Berikutnya",
+    "headroom": "Headroom",
+    "state": "Status",
+    "policy": "Policy",
+    "yes": "ya",
+    "no": "tidak",
+    "cooling": "Cooling aktif",
+    "trip_zones": "Zona yang mencapai/melewati trip",
+    "no_cooling": "Tidak ada cooling device yang sedang aktif.",
+    "no_trip_zones": "Tidak ada zona termal yang sedang mencapai atau melewati ambang trip.",
+    "error": "Tidak bisa membaca monitor termal: {error}"
   },
   "games": {
     "title": "Game",

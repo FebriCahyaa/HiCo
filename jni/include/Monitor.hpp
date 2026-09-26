@@ -12,86 +12,74 @@
 
 #include <optional>
 #include <string>
+#include <string_view>
 #include <vector>
 
 /**
- * Live throttling monitor: what the kernel is actually allowing right now.
+ * Read-only thermal monitor.
  *
- * Read-only. Every value comes from the kernel's effective limits, not from
- * HiCo's own settings: scaling_max_freq is the cpufreq policy maximum after
- * every QoS request (thermal cooling devices included), the Adreno thermal
- * power level or devfreq max_freq caps the GPU, and cooling devices report
- * their current state. A limit below the hardware maximum is throttling.
+ * The monitor intentionally reports only thermal information: zone
+ * temperatures, trip thresholds, thermal headroom, thermal states and
+ * active cooling devices. CPU/GPU clocks and scheduler/performance metrics
+ * belong to other components and are deliberately not exposed here.
  */
 namespace hico::monitor {
-
-struct Cluster {
-    std::string name;        ///< policyN
-    std::string cpus;        ///< "0-3"
-    int cores = 0;
-    long long cur_mhz = 0;   ///< scaling_cur_freq
-    long long min_mhz = 0;   ///< cpuinfo_min_freq
-    long long max_mhz = 0;   ///< cpuinfo_max_freq (hardware)
-    long long cap_mhz = 0;   ///< scaling_max_freq (effective limit)
-
-    /// Share of the hardware maximum the cluster may use, 0-100.
-    [[nodiscard]] int limit_pct() const;
-    [[nodiscard]] bool throttled() const { return cap_mhz > 0 && cap_mhz < max_mhz; }
-};
-
-struct Gpu {
-    std::string source;      ///< "kgsl" or the devfreq device name
-    long long cur_mhz = 0;
-    long long max_mhz = 0;   ///< highest available frequency
-    long long cap_mhz = 0;   ///< current effective maximum
-    int thermal_level = -1;  ///< Adreno thermal_pwrlevel (0 = no thermal cap), -1 if unknown
-
-    [[nodiscard]] int limit_pct() const;
-    [[nodiscard]] bool throttled() const { return cap_mhz > 0 && cap_mhz < max_mhz; }
-};
 
 struct Cooling {
     std::string name;        ///< cooling_deviceN
     std::string type;
     long long cur = 0;
     long long max = 0;
-    bool performance = false; ///< throttles CPU or GPU clocks
 };
 
 struct ZoneReading {
     std::string name;        ///< thermal_zoneN
     std::string type;
     double temp_c = 0;
-    std::optional<double> trip_c; ///< lowest passive / hot trip point
-    bool tripped = false;    ///< at or above that trip: the kernel is throttling for it
+    std::optional<double> passive_trip_c;   ///< lowest passive trip, if present
+    std::optional<double> hot_trip_c;       ///< lowest hot trip, if present
+    std::optional<double> critical_trip_c;  ///< lowest critical trip, if present
+    std::optional<double> highest_trip_c;   ///< highest trip of any type reported by sysfs
+    std::optional<double> next_trip_c;      ///< nearest trip strictly above the current temperature
+    std::optional<double> headroom_c;       ///< next_trip_c - temp_c
+    std::string policy;                     ///< current kernel thermal governor/policy
+    std::string state;                      ///< normal/elevated/mitigating/critical/unknown
+    bool at_or_above_trip = false;
+    bool protected_zone = false;            ///< battery/charger/PMIC protection zone
+
+    /// Highest threshold currently known for this zone.
+    [[nodiscard]] std::optional<double> highest() const { return highest_trip_c; }
 };
 
-enum class Verdict { None, Light, Heavy };
+enum class Verdict { Normal, Elevated, Mitigating, Critical };
 
 struct Snapshot {
     long long time_ms = 0;
-    std::vector<Cluster> clusters;
-    std::optional<Gpu> gpu;
-    std::vector<Cooling> cooling;   ///< active devices only (cur_state > 0)
-    std::vector<ZoneReading> zones; ///< tripped zones first, then the hottest
-    int tripped_zones = 0;
-    thermal::Temperatures temps;
+    std::vector<Cooling> cooling;   ///< currently active cooling devices (cur_state > 0)
+    std::vector<Cooling> cooling_devices; ///< all readable kernel cooling devices
+    std::vector<ZoneReading> zones; ///< all readable thermal zones, sorted by severity/temperature
+    int tripped_zones = 0;          ///< zones at or above at least one reported trip threshold
+    int protected_zones = 0;        ///< battery/charger/PMIC protection zones included in the reading
+    thermal::Temperatures temps;    ///< hottest CPU/GPU/battery values for summary consumers
 
-    [[nodiscard]] int cpu_limit_pct() const; ///< core-weighted, 0-100
-    [[nodiscard]] int active_performance_cooling() const;
+    [[nodiscard]] int active_cooling() const;
+    [[nodiscard]] int cooling_device_count() const;
+    [[nodiscard]] std::optional<double> hottest_temp_c() const;
+    [[nodiscard]] const ZoneReading *hottest_zone() const;
+    [[nodiscard]] std::optional<double> closest_headroom_c() const;
+    [[nodiscard]] const ZoneReading *closest_zone() const;
     [[nodiscard]] Verdict verdict() const;
 };
 
 [[nodiscard]] std::string_view to_string(Verdict v);
 
-/// Samples the current state. @p max_zones bounds the zone list.
-[[nodiscard]] Snapshot sample(size_t max_zones = 6);
+/// Samples all readable thermal zones by default. @p max_zones may limit the result for CLI callers.
+[[nodiscard]] Snapshot sample(size_t max_zones = 0);
 
 [[nodiscard]] std::string to_json(const Snapshot &s);
 /// One line for `hicod monitor` in a terminal.
 [[nodiscard]] std::string to_line(const Snapshot &s);
-
-/// "0 1 2 3 6" -> "0-3,6".
-[[nodiscard]] std::string cpu_ranges(const std::vector<int> &cpus);
+/// Tabular thermal view used by `hicod thermal table`.
+[[nodiscard]] std::string to_table(const Snapshot &s);
 
 } // namespace hico::monitor

@@ -71,8 +71,13 @@ mkdir -p "$HICO_ROOT/dev" "$HICO_ROOT/data/adb/.config"
 put /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_max_freq 2016000
 put /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 1497600
 put /sys/devices/system/cpu/cpufreq/policy0/related_cpus "0 1 2 3"
-"$HICOD" monitor --json | grep -q '"cpu_limit":74' || fail "monitor --json"
-"$HICOD" monitor --once | grep -q 'CPU  74%' || fail "monitor --once"
+"$HICOD" monitor --json | grep -q '"schema":"hico.monitor.v2"' || fail "monitor --json schema"
+"$HICOD" monitor --json | grep -q '"zones"' || fail "monitor --json zones"
+"$HICOD" monitor --json | grep -q '"cooling"' || fail "monitor --json cooling"
+"$HICOD" monitor --json | grep -q '"cooling_devices"' || fail "monitor --json cooling devices"
+"$HICOD" monitor --once | grep -q 'zones' || fail "monitor --once"
+"$HICOD" thermal table | grep -q '^ZONE' || fail "thermal table"
+"$HICOD" thermal table --json | grep -q '"schema":"hico.monitor.v2"' || fail "thermal table --json"
 "$HICOD" monitor --interval 0 2>/dev/null && fail "monitor accepted interval 0"
 
 # ── Daemon ───────────────────────────────────────────────────────────────────

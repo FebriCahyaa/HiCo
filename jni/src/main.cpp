@@ -44,7 +44,7 @@ void out(std::string_view s) {
 }
 
 int usage() {
-    out("HiCo Thermal " HICO_VERSION " - automatic thermal unlock for games (requires Flux Tweaks)\n\n"
+    out("HiCo Thermal " HICO_VERSION " - device-aware thermal management\n\n"
         "Usage: hicod <command>\n\n"
         "  daemon                 start the background service\n"
         "  run                    run in the foreground (debugging)\n"
@@ -61,14 +61,15 @@ int usage() {
         "  config schema          settings description (JSON)\n"
         "  sessions [clear]       gaming session history (JSON Lines)\n"
         "  zones                  thermal zones, cooling devices and services\n"
-        "  monitor [--once] [--interval S]   live throttling: CPU/GPU caps, cooling, tripped zones\n"
-        "  monitor --json         one throttling snapshot (JSON, used by the WebUI)\n"
+        "  monitor [--once] [--interval S]   live thermal state, temperatures, trips and cooling\n"
+        "  monitor --json         one thermal snapshot (JSON, used by the WebUI)\n"
         "  device [--list]        this device in the compiled database, or the whole database\n"
         "  thermal scan           vendor thermal configs and what the relaxed level would tune\n"
         "  thermal policy [--platform P] [--margin N]\n"
         "  thermal tune <file> [--platform P] [--margin N]   tuned config on stdout\n"
         "  thermal check <original> <tuned> [--platform P] [--margin N]\n"
         "      tune/check also take --ceilings DIR (mi_thermald: that device's configs) and tune --plain\n"
+        "  thermal table [--json]             current thermal zone/trip table\n"
         "  thermal decrypt <in> [out]         encrypted mi_thermald config -> text\n"
         "  thermal encrypt <in> <out>         text -> encrypted mi_thermald config\n"
         "  version\n");
@@ -332,8 +333,24 @@ int cmd_device(bool list) {
 }
 
 /// hicod thermal ...: the thermal config tuner, on the device or over firmware files in the repository.
+int cmd_thermal_table(const std::vector<std::string_view> &args) {
+    bool json = false;
+    for (const auto arg : args) {
+        if (arg == "--json") json = true;
+        else return usage();
+    }
+    const auto snapshot = monitor::sample();
+    if (json) {
+        out(monitor::to_json(snapshot) + "\n");
+        return 0;
+    }
+    out(monitor::to_table(snapshot));
+    return 0;
+}
+
 int cmd_thermal(const std::vector<std::string_view> &args) {
     if (args.empty()) return usage();
+    if (args[0] == "table") return cmd_thermal_table({args.begin() + 1, args.end()});
     std::string platform;
     int margin = 0;
     std::vector<std::string> files;

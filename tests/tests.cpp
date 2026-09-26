@@ -185,92 +185,96 @@ void write_config(const std::string &lines) {
 
 void test_monitor() {
     build_device();
-    // policy0 is capped at 1497.6 of 2016 MHz (build_device), policy4 runs free.
-    put("/sys/devices/system/cpu/cpufreq/policy0/scaling_cur_freq", "1497600\n");
-    put("/sys/devices/system/cpu/cpufreq/policy0/cpuinfo_min_freq", "300000\n");
-    put("/sys/devices/system/cpu/cpufreq/policy4/scaling_cur_freq", "2400000\n");
-    put("/sys/devices/system/cpu/cpufreq/policy4/cpuinfo_min_freq", "500000\n");
-    // Adreno: thermal_pwrlevel 3 (build_device) caps the GPU at the fourth-fastest level.
-    put("/sys/class/kgsl/kgsl-3d0/gpu_available_frequencies", "257000000 680000000 443000000 900000000 587000000\n");
-    put("/sys/class/kgsl/kgsl-3d0/gpuclk", "443000000\n");
-    // CPU zone at 45 C past its 44 C passive trip; the battery zone past its trip is never counted.
+    // Thermal-only monitor: correctness does not depend on CPU/GPU frequency nodes.
     put("/sys/class/thermal/thermal_zone0/trip_point_0_type", "passive\n");
     put("/sys/class/thermal/thermal_zone0/trip_point_0_temp", "44000\n");
-    put("/sys/class/thermal/thermal_zone0/trip_point_1_type", "critical\n");
-    put("/sys/class/thermal/thermal_zone0/trip_point_1_temp", "40000\n");
+    put("/sys/class/thermal/thermal_zone0/trip_point_1_type", "passive\n");
+    put("/sys/class/thermal/thermal_zone0/trip_point_1_temp", "55000\n");
+    put("/sys/class/thermal/thermal_zone0/trip_point_2_type", "critical\n");
+    put("/sys/class/thermal/thermal_zone0/trip_point_2_temp", "90000\n");
     put("/sys/class/thermal/thermal_zone1/trip_point_0_type", "passive\n");
-    put("/sys/class/thermal/thermal_zone1/trip_point_0_temp", "30000\n");
+    put("/sys/class/thermal/thermal_zone1/trip_point_0_temp", "40000\n");
     put("/sys/class/thermal/thermal_zone2/trip_point_0_type", "hot\n");
-    put("/sys/class/thermal/thermal_zone2/trip_point_0_temp", "95000\n");
+    put("/sys/class/thermal/thermal_zone2/trip_point_0_temp", "60000\n");
+    put("/sys/class/thermal/thermal_zone2/trip_point_1_type", "critical\n");
+    put("/sys/class/thermal/thermal_zone2/trip_point_1_temp", "95000\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_0_type", "hot\n");
+    put("/sys/class/thermal/thermal_zone3/trip_point_0_temp", "60000\n");
+    put("/sys/class/thermal/thermal_zone3/temp", "58000\n");
 
     auto s = monitor::sample();
-    CHECK_EQ(s.clusters.size(), 2u);
-    const auto &little = s.clusters[0].name == "policy0" ? s.clusters[0] : s.clusters[1];
-    const auto &big = s.clusters[0].name == "policy0" ? s.clusters[1] : s.clusters[0];
-    CHECK_EQ(little.cpus, std::string("0-3"));
-    CHECK_EQ(little.cap_mhz, 1497LL);
-    CHECK_EQ(little.max_mhz, 2016LL);
-    CHECK_EQ(little.min_mhz, 300LL);
-    CHECK(little.throttled());
-    CHECK_EQ(little.limit_pct(), 74);
-    CHECK(!big.throttled());
-    CHECK_EQ(big.limit_pct(), 100);
-    CHECK_EQ(big.cur_mhz, 2400LL);
-    CHECK_EQ(s.cpu_limit_pct(), 87); // (74*4 + 100*4) / 8
+    CHECK_EQ(s.zones.size(), 5u);
+    CHECK_EQ(s.active_cooling(), 5);
+    CHECK_EQ(s.cooling_device_count(), 5);
+    CHECK_EQ(s.cooling_devices.size(), 5u);
+    CHECK_EQ(s.tripped_zones, 1); // CPU zone only.
+    CHECK_EQ(s.protected_zones, 2); // battery + PMIC/BCL protection zones.
 
-    CHECK(s.gpu.has_value());
-    CHECK_EQ(s.gpu->source, std::string("kgsl"));
-    CHECK_EQ(s.gpu->max_mhz, 900LL);
-    CHECK_EQ(s.gpu->cap_mhz, 443LL); // levels 900, 680, 587, 443, 257: level 3
-    CHECK_EQ(s.gpu->cur_mhz, 443LL);
-    CHECK_EQ(s.gpu->thermal_level, 3);
-    CHECK_EQ(s.gpu->limit_pct(), 49);
+    const auto cpu = std::find_if(s.zones.begin(), s.zones.end(), [](const auto &z) {
+        return z.type == "cpu-1-0-usr";
+    });
+    CHECK(cpu != s.zones.end());
+    CHECK(cpu->at_or_above_trip);
+    CHECK(cpu->state == "mitigating");
+    CHECK(cpu->passive_trip_c && *cpu->passive_trip_c == 44.0);
+    CHECK(cpu->critical_trip_c && *cpu->critical_trip_c == 90.0);
+    CHECK(cpu->highest_trip_c && *cpu->highest_trip_c == 90.0);
+    CHECK(cpu->next_trip_c && *cpu->next_trip_c == 55.0);
+    CHECK(cpu->headroom_c && *cpu->headroom_c == 10.0);
 
-    // Active cooling: cpufreq-0 (3), gpu (2), cpufreq-1 (1), battery (1), cpu-isolate0 (1).
-    CHECK_EQ(s.cooling.size(), 5u);
-    CHECK(s.active_performance_cooling() >= 3);
+    const auto skin = std::find_if(s.zones.begin(), s.zones.end(), [](const auto &z) {
+        return z.type == "skin-msm-therm";
+    });
+    CHECK(skin != s.zones.end());
+    CHECK(skin->state == "elevated");
+    CHECK(skin->headroom_c && *skin->headroom_c == 2.0);
 
-    CHECK_EQ(s.tripped_zones, 1); // CPU zone only: the battery zone is protected
-    CHECK(!s.zones.empty());
-    CHECK_EQ(s.zones[0].type, std::string("cpu-1-0-usr"));
-    CHECK(s.zones[0].tripped);
-    CHECK(s.zones[0].trip_c && *s.zones[0].trip_c == 44.0); // lowest passive/hot, critical ignored
-    CHECK(s.verdict() == monitor::Verdict::Heavy);
+    CHECK(s.verdict() == monitor::Verdict::Mitigating);
+    CHECK(s.hottest_zone() != nullptr);
+    CHECK(s.closest_zone() != nullptr);
+    CHECK(s.closest_zone()->type == "skin-msm-therm");
+    CHECK(s.closest_headroom_c() && *s.closest_headroom_c() == 2.0);
 
     const std::string json = monitor::to_json(s);
-    CHECK(json.find(R"("verdict":"heavy")") != std::string::npos);
-    CHECK(json.find(R"("gpu_limit":49)") != std::string::npos);
-    CHECK(json.find(R"("cpus":"0-3")") != std::string::npos);
-    CHECK(monitor::to_line(s).find("heavy") == 0);
+    CHECK(json.find(R"("schema":"hico.monitor.v2")") != std::string::npos);
+    CHECK(json.find(R"("verdict":"mitigating")") != std::string::npos);
+    CHECK(json.find(R"("cpu_limit")") == std::string::npos);
+    CHECK(json.find(R"("gpu_limit")") == std::string::npos);
+    CHECK(json.find(R"("clusters")") == std::string::npos);
+    CHECK(json.find(R"("zones")") != std::string::npos);
+    CHECK(json.find(R"("cooling")") != std::string::npos);
+    CHECK(json.find(R"("cooling_devices")") != std::string::npos);
+    CHECK(json.find(R"("active":true)") != std::string::npos);
+    CHECK(monitor::to_line(s).find("mitigating") == 0);
 
-    // Everything released: no throttling.
-    put("/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq", "2016000\n");
-    put("/sys/class/kgsl/kgsl-3d0/thermal_pwrlevel", "0\n");
+    const std::string table = monitor::to_table(s);
+    CHECK(table.find("ZONE") != std::string::npos);
+    CHECK(table.find("TYPE") != std::string::npos);
+    CHECK(table.find("cpu-1-0-usr") != std::string::npos);
+    CHECK(table.find("HIGHEST") != std::string::npos);
+    CHECK(table.find("PROTECTED") != std::string::npos);
+    CHECK(table.find("COOLING DEVICE") != std::string::npos);
+    CHECK(table.find("active") != std::string::npos);
+
+    // Cool down to a normal state and verify active cooling disappears.
+    set_cpu_temp(38000);
+    put("/sys/class/thermal/thermal_zone1/temp", "32000\n");
+    put("/sys/class/thermal/thermal_zone3/temp", "40000\n");
     for (int i = 0; i < 5; ++i) put("/sys/class/thermal/cooling_device" + std::to_string(i) + "/cur_state", "0\n");
-    set_cpu_temp(40000);
     s = monitor::sample();
-    CHECK_EQ(s.cpu_limit_pct(), 100);
-    CHECK_EQ(s.gpu->limit_pct(), 100);
     CHECK_EQ(s.tripped_zones, 0);
-    CHECK(s.verdict() == monitor::Verdict::None);
+    CHECK(s.verdict() == monitor::Verdict::Normal);
+    CHECK_EQ(s.active_cooling(), 0);
+    CHECK_EQ(s.cooling_device_count(), 5);
+    CHECK_EQ(s.cooling_devices.size(), 5u);
+    CHECK(s.cooling_devices.front().cur == 0);
 
-    // Only a light cap.
-    put("/sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq", "2841600\n");
+    // Critical thermal state dominates other zones.
+    set_cpu_temp(91000);
     s = monitor::sample();
-    CHECK(s.verdict() == monitor::Verdict::Light);
-
-    // One cluster a step below max (79 %, CPU 90 % overall) is light, not heavy.
-    put("/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq", "1593000\n");
-    s = monitor::sample();
-    CHECK_EQ(s.clusters[0].name == "policy0" ? s.clusters[0].limit_pct() : s.clusters[1].limit_pct(), 79);
-    CHECK(s.verdict() == monitor::Verdict::Light);
-    // A cluster held to half its speed is heavy.
-    put("/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq", "1008000\n");
-    s = monitor::sample();
-    CHECK(s.verdict() == monitor::Verdict::Heavy);
-
-    CHECK_EQ(monitor::cpu_ranges({0, 1, 2, 3, 6, 7, 5}), std::string("0-3,5-7"));
-    CHECK_EQ(monitor::cpu_ranges({4}), std::string("4"));
+    CHECK(s.verdict() == monitor::Verdict::Critical);
+    CHECK(s.hottest_zone() && s.hottest_zone()->type == "cpu-1-0-usr");
+    CHECK(s.hottest_temp_c() && *s.hottest_temp_c() == 91.0);
 }
 
 void test_strings_and_paths() {

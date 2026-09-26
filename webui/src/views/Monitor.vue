@@ -1,7 +1,7 @@
 <template>
   <div class="page h-full flex flex-col overflow-hidden">
     <div class="scrollbar-hidden pb-safe-nav flex-1 min-h-0 overflow-y-scroll">
-      <div class="max-w-3xl mx-auto px-4 pt-6 pb-6 space-y-3">
+      <div class="max-w-4xl mx-auto px-4 pt-6 pb-6 space-y-3">
         <div class="flex items-end justify-between px-1 mb-2">
           <h1 class="m3-headline text-[32px] text-on-surface leading-none">
             {{ $t('monitor.title') }}
@@ -15,105 +15,130 @@
         <div v-else-if="error" class="m3-card p-5 text-sm text-on-surface-variant">{{ error }}</div>
 
         <template v-else>
-          <!-- Verdict -->
           <section class="hero" :class="verdict.card">
             <p class="text-xs font-semibold uppercase tracking-widest opacity-70">
               {{ $t('monitor.verdict') }}
             </p>
             <h2 class="m3-headline text-2xl mt-1">{{ $t(`monitor.v.${snap.verdict}.title`) }}</h2>
             <p class="text-sm mt-1 opacity-90">{{ $t(`monitor.v.${snap.verdict}.description`) }}</p>
-            <!-- Outside a game HiCo changes nothing: these caps are the ROM's own thermal -->
-            <p v-if="vendorOnly" class="text-xs mt-2 opacity-80">
-              {{ $t('monitor.vendor_only') }}
-            </p>
-            <div class="grid grid-cols-2 gap-2 mt-4">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
               <div class="stat">
-                <span class="text-xs opacity-70">{{ $t('monitor.cpu_allowed') }}</span>
-                <span class="m3-headline text-2xl tabular-nums">{{ snap.cpu_limit }}%</span>
+                <span class="text-xs opacity-70">{{ $t('monitor.hottest') }}</span>
+                <span class="m3-headline text-xl tabular-nums">{{ formatTemp(snap.hottest?.temp) }}</span>
+                <span class="text-xs text-on-surface-variant truncate">{{ snap.hottest?.type || '–' }}</span>
               </div>
               <div class="stat">
-                <span class="text-xs opacity-70">{{ $t('monitor.gpu_allowed') }}</span>
-                <span class="m3-headline text-2xl tabular-nums"
-                  >{{ snap.gpu_limit ?? '–' }}{{ snap.gpu_limit === null ? '' : '%' }}</span
+                <span class="text-xs opacity-70">{{ $t('monitor.next_trip') }}</span>
+                <span class="m3-headline text-xl tabular-nums">{{ formatTemp(snap.closest?.trip) }}</span>
+                <span class="text-xs text-on-surface-variant tabular-nums">
+                  {{ formatHeadroom(snap.closest?.headroom) }}
+                </span>
+              </div>
+              <div class="stat">
+                <span class="text-xs opacity-70">{{ $t('monitor.zone_count') }}</span>
+                <span class="m3-headline text-xl tabular-nums">{{ snap.zone_count }}</span>
+                <span class="text-xs text-on-surface-variant"
+                  >{{ snap.zones_at_or_above_trip }} {{ $t('monitor.at_trip') }}</span
+                >
+              </div>
+              <div class="stat">
+                <span class="text-xs opacity-70">{{ $t('monitor.active_cooling') }}</span>
+                <span class="m3-headline text-xl tabular-nums">{{ snap.active_cooling }}</span>
+                <span class="text-xs text-on-surface-variant"
+                  >{{ snap.protected_zones }} {{ $t('monitor.protected') }}</span
                 >
               </div>
             </div>
           </section>
 
-          <!-- Last minute -->
           <section class="m3-card p-5">
             <div class="flex items-center justify-between mb-2">
-              <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.allowed_chart') }}</h3>
-              <span class="legend"><i class="bg-primary" />CPU <i class="bg-tertiary" />GPU</span>
-            </div>
-            <LineChart
-              :series="limitSeries"
-              :height="96"
-              :min="0"
-              :max="100"
-              unit="%"
-              :label="$t('monitor.allowed_chart')"
-            />
-            <div class="flex items-center justify-between mt-4 mb-2">
               <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.temp_chart') }}</h3>
-              <span class="legend"
-                ><i class="bg-error" />CPU <i class="bg-secondary" />{{ $t('home.battery') }}</span
-              >
+              <span class="legend"><i class="bg-primary" />{{ $t('monitor.hottest') }} <i class="bg-secondary" />{{ $t('home.battery') }}</span>
             </div>
             <LineChart
               :series="tempSeries"
-              :height="96"
-              unit="°"
+              :height="110"
+              unit="°C"
               :label="$t('monitor.temp_chart')"
             />
           </section>
 
-          <!-- Clusters and GPU -->
           <section class="m3-card p-5">
-            <h3 class="text-sm font-semibold text-primary mb-3">{{ $t('monitor.clocks') }}</h3>
-            <div class="space-y-3">
-              <div v-for="c in bars" :key="c.name">
-                <div class="flex justify-between text-sm mb-1">
-                  <span class="text-on-surface"
-                    >{{ c.name }}
-                    <span class="text-on-surface-variant text-xs">{{ c.sub }}</span></span
-                  >
-                  <span class="tabular-nums text-on-surface-variant">
-                    <b class="text-on-surface">{{ c.cur }}</b> / {{ c.cap }} MHz
-                  </span>
-                </div>
-                <div class="bar">
-                  <div class="bar-cap" :style="{ width: `${c.capPct}%` }" />
-                  <div
-                    class="bar-cur"
-                    :class="c.throttled ? 'bg-error' : 'bg-primary'"
-                    :style="{ width: `${c.curPct}%` }"
-                  />
-                </div>
-                <p v-if="c.throttled" class="text-[11px] text-error mt-1">
-                  {{ $t('monitor.capped', { pct: 100 - c.limit }) }}
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.zones') }}</h3>
+                <p class="text-xs text-on-surface-variant mt-1">
+                  {{ $t('monitor.zones_description') }}
                 </p>
               </div>
+              <span class="text-xs tabular-nums text-on-surface-variant"
+                >{{ snap.zone_count }} {{ $t('monitor.zone_count_label') }}</span
+              >
+            </div>
+
+            <div class="table-wrap">
+              <table class="thermal-table">
+                <thead>
+                  <tr>
+                    <th>{{ $t('monitor.zone') }}</th>
+                    <th>{{ $t('monitor.type') }}</th>
+                    <th>{{ $t('monitor.temperature') }}</th>
+                    <th>{{ $t('monitor.passive') }}</th>
+                    <th>{{ $t('monitor.hot') }}</th>
+                    <th>{{ $t('monitor.critical') }}</th>
+                    <th>{{ $t('monitor.highest') }}</th>
+                    <th>{{ $t('monitor.next') }}</th>
+                    <th>{{ $t('monitor.headroom') }}</th>
+                    <th>{{ $t('monitor.state') }}</th>
+                    <th>{{ $t('monitor.protected') }}</th>
+                    <th>{{ $t('monitor.policy') }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="z in snap.zones" :key="z.name">
+                    <td class="font-medium">{{ z.name }}</td>
+                    <td class="muted">{{ z.type }}</td>
+                    <td class="tabular-nums">{{ formatTemp(z.temp) }}</td>
+                    <td class="tabular-nums">{{ formatTemp(z.passive) }}</td>
+                    <td class="tabular-nums">{{ formatTemp(z.hot) }}</td>
+                    <td class="tabular-nums">{{ formatTemp(z.critical) }}</td>
+                    <td class="tabular-nums">{{ formatTemp(z.highest) }}</td>
+                    <td class="tabular-nums">{{ formatTemp(z.next) }}</td>
+                    <td class="tabular-nums">{{ formatHeadroom(z.headroom) }}</td>
+                    <td><span class="state-pill" :class="stateClass(z.state)">{{ z.state }}</span></td>
+                    <td>{{ z.protected ? $t('monitor.yes') : $t('monitor.no') }}</td>
+                    <td class="muted">{{ z.policy || '–' }}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
 
-          <!-- Throttling sources -->
-          <section v-if="activeCooling.length || tripped.length" class="m3-card p-5">
-            <h3 class="text-sm font-semibold text-primary mb-3">{{ $t('monitor.sources') }}</h3>
-            <div v-for="c in activeCooling" :key="c.name" class="row">
-              <span class="text-sm text-on-surface truncate">{{ c.type }}</span>
-              <span class="text-xs text-on-surface-variant tabular-nums">{{
-                $t('monitor.state', { cur: c.cur, max: c.max })
-              }}</span>
+          <section class="grid md:grid-cols-2 gap-3">
+            <div class="m3-card p-5">
+              <h3 class="text-sm font-semibold text-primary mb-3">{{ $t('monitor.cooling') }}</h3>
+              <div v-if="snap.cooling_devices?.length" class="space-y-1">
+                <div v-for="c in snap.cooling_devices" :key="c.name" class="row">
+                  <span class="text-sm text-on-surface truncate">{{ c.type || c.name }}</span>
+                  <span class="text-xs tabular-nums" :class="c.active ? 'text-primary' : 'text-on-surface-variant'">{{ c.active ? $t('monitor.active') : $t('monitor.idle') }} · {{ c.cur }} / {{ c.max }}</span>
+                </div>
+              </div>
+              <p v-else class="text-xs text-on-surface-variant">{{ $t('monitor.no_cooling') }}</p>
             </div>
-            <div v-for="z in tripped" :key="z.name" class="row">
-              <span class="text-sm text-on-surface truncate">{{ z.type }}</span>
-              <span class="text-xs text-error tabular-nums"
-                >{{ z.temp.toFixed(1) }} °C ≥ {{ z.trip }} °C</span
-              >
+
+            <div class="m3-card p-5">
+              <h3 class="text-sm font-semibold text-primary mb-3">{{ $t('monitor.trip_zones') }}</h3>
+              <div v-if="tripped.length" class="space-y-1">
+                <div v-for="z in tripped" :key="`trip-${z.name}`" class="row">
+                  <span class="text-sm text-on-surface truncate">{{ z.type }}</span>
+                  <span class="text-xs text-error tabular-nums">{{ formatTemp(z.temp) }}</span>
+                </div>
+              </div>
+              <p v-else class="text-xs text-on-surface-variant">{{ $t('monitor.no_trip_zones') }}</p>
             </div>
           </section>
-          <p v-else class="text-xs text-on-surface-variant px-2">{{ $t('monitor.no_sources') }}</p>
         </template>
       </div>
     </div>
@@ -133,68 +158,37 @@ const hico = useHiCoStore()
 const snap = ref(null)
 const error = ref('')
 const paused = ref(false)
-const history = ref([]) // last 60 snapshots
+const history = ref([])
 const HISTORY = 60
 
-const VERDICT = {
-  none: 'bg-primary-container text-on-primary-container',
-  light: 'bg-tertiary-container text-on-tertiary-container',
-  heavy: 'bg-error-container text-on-error-container',
+const verdictClasses = {
+  normal: 'bg-primary-container text-on-primary-container',
+  elevated: 'bg-tertiary-container text-on-tertiary-container',
+  mitigating: 'bg-secondary-container text-on-secondary-container',
+  critical: 'bg-error-container text-on-error-container',
 }
-const verdict = computed(() => ({ card: VERDICT[snap.value?.verdict] || VERDICT.none }))
-// Outside a game session the caps are the ROM's own (HiCo state from its status poll)
-const vendorOnly = computed(
-  () =>
-    snap.value?.verdict !== 'none' &&
-    !['boost', 'relaxed', 'safety'].includes(hico.status?.state ?? 'boost'),
-)
+const verdict = computed(() => ({ card: verdictClasses[snap.value?.verdict] || verdictClasses.normal }))
 
 const series = (pick) => history.value.map((h) => pick(h) ?? null)
-const limitSeries = computed(() => [
-  { values: series((h) => h.cpu_limit), color: 'var(--color-primary)', area: true },
-  { values: series((h) => h.gpu_limit), color: 'var(--color-tertiary)' },
-])
 const tempSeries = computed(() => [
-  { values: series((h) => h.temps?.cpu), color: 'var(--color-error)' },
-  { values: series((h) => h.temps?.battery), color: 'var(--color-secondary)' },
+  { values: series((h) => h.hottest?.temp), color: 'var(--color-primary)', area: true },
+  { values: series((h) => h.temperatures?.battery), color: 'var(--color-secondary)' },
 ])
 
-const bars = computed(() => {
-  const s = snap.value
-  if (!s) return []
-  const out = s.clusters.map((c) => ({
-    name: c.name,
-    sub: `CPU ${c.cpus}`,
-    cur: c.cur,
-    cap: c.cap || c.max,
-    curPct: c.max ? (c.cur / c.max) * 100 : 0,
-    capPct: c.max ? ((c.cap || c.max) / c.max) * 100 : 100,
-    limit: c.limit,
-    throttled: c.limit < 100,
-  }))
-  if (s.gpu) {
-    out.push({
-      name: 'GPU',
-      sub: s.gpu.source,
-      cur: s.gpu.cur,
-      cap: s.gpu.cap || s.gpu.max,
-      curPct: s.gpu.max ? (s.gpu.cur / s.gpu.max) * 100 : 0,
-      capPct: s.gpu.max ? ((s.gpu.cap || s.gpu.max) / s.gpu.max) * 100 : 100,
-      limit: s.gpu.limit,
-      throttled: s.gpu.limit < 100,
-    })
-  }
-  return out
-})
+const tripped = computed(() => (snap.value?.zones || []).filter((z) => z.at_or_above_trip))
 
-const activeCooling = computed(() => (snap.value?.cooling || []).filter((c) => c.perf && c.cur > 0))
-const tripped = computed(() => (snap.value?.zones || []).filter((z) => z.tripped))
+const formatTemp = (value) => (value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`)
+const formatHeadroom = (value) => (value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`)
+const stateClass = (state) =>
+  ({
+    normal: 'state-normal',
+    elevated: 'state-elevated',
+    mitigating: 'state-mitigating',
+    critical: 'state-critical',
+  })[state] || 'state-unknown'
 
-let ticks = 0
 async function tick() {
   if (paused.value || document.hidden) return
-  // Session state for the "outside a game" note; every few samples is enough.
-  if (ticks++ % 5 === 0) hico.refreshStatus().catch(() => {})
   try {
     const s = await hico.monitor()
     snap.value = s
@@ -211,7 +205,12 @@ const start = () => {
   tick()
   timer = setInterval(tick, 1000)
 }
-const stop = () => timer && clearInterval(timer)
+const stop = () => {
+  if (timer) {
+    clearInterval(timer)
+    timer = null
+  }
+}
 onMounted(start)
 onActivated(start)
 onDeactivated(stop)
@@ -279,26 +278,80 @@ onUnmounted(stop)
   display: inline-block;
 }
 
-.bar {
-  position: relative;
-  height: 10px;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--color-error) 25%, var(--color-surface-container-highest));
-  overflow: hidden;
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 20px;
 }
 
-.bar-cap {
-  position: absolute;
-  inset: 0 auto 0 0;
+.thermal-table {
+  width: 100%;
+  min-width: 1120px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12px;
+}
+
+.thermal-table th,
+.thermal-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-outline-variant);
+  white-space: nowrap;
+}
+
+.thermal-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--color-surface-container-high);
+  color: var(--color-on-surface-variant);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.thermal-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.muted {
+  color: var(--color-on-surface-variant);
+}
+
+.state-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.state-normal {
+  color: var(--color-on-primary-container);
+  background: var(--color-primary-container);
+}
+
+.state-elevated {
+  color: var(--color-on-tertiary-container);
+  background: var(--color-tertiary-container);
+}
+
+.state-mitigating {
+  color: var(--color-on-secondary-container);
+  background: var(--color-secondary-container);
+}
+
+.state-critical {
+  color: var(--color-on-error-container);
+  background: var(--color-error-container);
+}
+
+.state-unknown {
+  color: var(--color-on-surface-variant);
   background: var(--color-surface-container-highest);
-  border-radius: 999px;
-}
-
-.bar-cur {
-  position: absolute;
-  inset: 0 auto 0 0;
-  border-radius: 999px;
-  transition: width 400ms ease;
 }
 
 .row {
@@ -309,7 +362,7 @@ onUnmounted(stop)
   border-top: 1px solid var(--color-outline-variant);
 }
 
-.row:first-of-type {
+.row:first-child {
   border-top: 0;
 }
 </style>

@@ -197,35 +197,56 @@
     }
   },
   "monitor": {
-    "title": "Monitor",
+    "title": "Thermal Monitor",
     "live": "live",
     "paused": "paused",
-    "verdict": "Throttling now",
+    "verdict": "Thermal state",
     "v": {
-      "none": {
-        "title": "No throttling",
-        "description": "CPU and GPU may run at their full hardware speed."
+      "normal": {
+        "title": "Normal",
+        "description": "Thermal zones are below their reported mitigation thresholds."
       },
-      "light": {
-        "title": "Light throttling",
-        "description": "Some clocks are capped a little: the CPU as a whole above 75 % and no cluster or the GPU below 60 %."
+      "elevated": {
+        "title": "Elevated",
+        "description": "At least one zone is close to its next thermal trip threshold."
       },
-      "heavy": {
-        "title": "Heavy throttling",
-        "description": "Thermal caps are holding the CPU or GPU well below full speed."
+      "mitigating": {
+        "title": "Mitigation active",
+        "description": "A thermal zone is at or above a reported mitigation threshold or cooling is active."
+      },
+      "critical": {
+        "title": "Critical",
+        "description": "A thermal zone is at or above its reported critical threshold."
       }
     },
-    "vendor_only": "No game is running: these limits come from the phone's own thermal system (for example while charging). HiCo only lifts them during games.",
-    "cpu_allowed": "CPU allowed",
-    "gpu_allowed": "GPU allowed",
-    "allowed_chart": "Allowed speed, last minute",
+    "hottest": "Hottest zone",
+    "next_trip": "Nearest trip",
+    "zone_count": "Thermal zones",
+    "zone_count_label": "zones",
+    "at_trip": "at/above trip",
+    "active_cooling": "Active cooling",
+    "protected": "protected",
     "temp_chart": "Temperature, last minute",
-    "clocks": "Clocks and caps",
-    "capped": "{pct} % lost to thermal caps",
-    "sources": "What is throttling",
-    "state": "state {cur}/{max}",
-    "no_sources": "No cooling device or thermal zone is throttling right now.",
-    "error": "Cannot read the monitor: {error}"
+    "zones": "Thermal zone table",
+    "zones_description": "Live kernel thermal zones, reported trip thresholds, headroom, state and policy. Read-only.",
+    "zone": "Zone",
+    "type": "Type",
+    "temperature": "Temperature",
+    "passive": "Passive",
+    "hot": "Hot",
+    "critical": "Critical",
+    "highest": "Highest",
+    "next": "Next",
+    "headroom": "Headroom",
+    "state": "State",
+    "policy": "Policy",
+    "yes": "yes",
+    "no": "no",
+    "cooling": "Active cooling devices",
+    "trip_zones": "Zones at or above trip",
+    "no_cooling": "No cooling device is currently active.",
+    "no_trip_zones": "No thermal zone is currently at or above a reported trip threshold.",
+    "error": "Cannot read the thermal monitor: {error}"
   },
   "games": {
     "title": "Games",

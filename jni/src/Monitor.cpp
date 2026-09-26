@@ -8,253 +8,273 @@
 
 #include "Monitor.hpp"
 
-#include "Cpufreq.hpp"
-#include "Daemon.hpp"
 #include "Fs.hpp"
 
 #include <algorithm>
+#include <array>
 #include <chrono>
 #include <format>
+#include <limits>
+#include <string_view>
 
 namespace hico::monitor {
 
 namespace {
 
-constexpr std::string_view kKgsl = "/sys/class/kgsl/kgsl-3d0";
-constexpr std::string_view kDevfreq = "/sys/class/devfreq";
 constexpr int kMaxTrips = 32;
+constexpr double kElevatedHeadroomC = 5.0;
 
 std::string base_name(std::string_view path) {
     return std::string(path.substr(path.rfind('/') + 1));
 }
 
-int pct(long long part, long long whole) {
-    if (whole <= 0 || part <= 0) return 100;
-    return static_cast<int>(std::clamp((part * 100 + whole / 2) / whole, 0LL, 100LL));
-}
-
-/// Frequency list in Hz ("257000000 342000000 ...") sorted high to low.
-std::vector<long long> frequencies(std::string_view path) {
-    std::vector<long long> out;
-    for (const auto &f : str::split(fs::read(path, 8192).value_or(""), ' ')) {
-        if (const auto v = str::to_int(f); v && *v > 0) out.push_back(*v);
+std::string json_escape(std::string_view value) {
+    std::string out;
+    out.reserve(value.size());
+    for (const char ch : value) {
+        switch (ch) {
+        case '\\': out += "\\\\"; break;
+        case '"': out += "\\\""; break;
+        case '\n': out += "\\n"; break;
+        case '\r': out += "\\r"; break;
+        case '\t': out += "\\t"; break;
+        default: out += ch; break;
+        }
     }
-    std::sort(out.rbegin(), out.rend());
     return out;
 }
 
-long long mhz_from_hz(long long hz) {
-    return hz / 1000000;
+std::string json_opt(const std::optional<double> &value) {
+    return value ? std::format("{:.1f}", *value) : "null";
 }
 
-std::optional<Gpu> read_kgsl() {
-    if (!fs::is_dir(kKgsl)) return std::nullopt;
-    const std::string d(kKgsl);
-    Gpu g;
-    g.source = "kgsl";
-    const auto levels = frequencies(d + "/gpu_available_frequencies");
-    long long cur = fs::read_int(d + "/gpuclk").value_or(0);
-    if (cur <= 0) cur = fs::read_int(d + "/devfreq/cur_freq").value_or(0);
-    g.cur_mhz = mhz_from_hz(cur);
-    g.thermal_level = static_cast<int>(fs::read_int(d + "/thermal_pwrlevel").value_or(-1));
+struct TripSet {
+    std::optional<double> passive;
+    std::optional<double> hot;
+    std::optional<double> critical;
+    std::optional<double> highest;
+    std::optional<double> next;
+    int count = 0;
+};
 
-    if (!levels.empty()) {
-        // Power level 0 is the fastest; the effective cap is the slower of the thermal and max levels.
-        g.max_mhz = mhz_from_hz(levels.front());
-        const long long thermal = std::max(0LL, fs::read_int(d + "/thermal_pwrlevel").value_or(0));
-        const long long user = std::max(0LL, fs::read_int(d + "/max_pwrlevel").value_or(0));
-        const auto level = static_cast<size_t>(std::min<long long>(std::max(thermal, user), static_cast<long long>(levels.size()) - 1));
-        g.cap_mhz = mhz_from_hz(levels[level]);
-    } else {
-        g.max_mhz = mhz_from_hz(fs::read_int(d + "/max_gpuclk").value_or(0));
-        g.cap_mhz = g.max_mhz;
-    }
-    if (g.max_mhz <= 0 && g.cur_mhz <= 0) return std::nullopt;
-    return g;
+void update_min(std::optional<double> &dst, double value) {
+    if (!dst || value < *dst) dst = value;
 }
 
-bool is_gpu_devfreq(std::string_view name) {
-    for (const auto hint : {"gpu", "mali", "kgsl", "g3d", "sgpu"}) {
-        if (str::icontains(name, hint)) return true;
-    }
-    return false;
+void update_max(std::optional<double> &dst, double value) {
+    if (!dst || value > *dst) dst = value;
 }
 
-std::optional<Gpu> read_devfreq_gpu() {
-    for (const auto &name : fs::list_dir(kDevfreq)) {
-        const std::string d = std::string(kDevfreq) + "/" + name;
-        if (!is_gpu_devfreq(name) && !is_gpu_devfreq(str::trim(fs::read(d + "/name").value_or("")))) continue;
-        Gpu g;
-        g.source = name;
-        g.cur_mhz = mhz_from_hz(fs::read_int(d + "/cur_freq").value_or(0));
-        g.cap_mhz = mhz_from_hz(fs::read_int(d + "/max_freq").value_or(0));
-        const auto levels = frequencies(d + "/available_frequencies");
-        g.max_mhz = levels.empty() ? g.cap_mhz : mhz_from_hz(levels.front());
-        if (g.max_mhz > 0) return g;
-    }
-    return std::nullopt;
-}
-
-/// Lowest passive or hot trip point of a zone (the ones that throttle; critical shuts down).
-std::optional<double> throttle_trip(const std::string &zone_dir) {
-    std::optional<double> lowest;
+TripSet read_trips(const std::string &zone_dir, double current_c) {
+    TripSet trips;
     for (int i = 0; i < kMaxTrips; ++i) {
         const std::string base = zone_dir + "/trip_point_" + std::to_string(i);
-        const auto type = fs::read(base + "_type");
-        if (!type) break;
-        const std::string t = str::trim(*type);
-        if (t != "passive" && t != "hot") continue;
-        const auto raw = fs::read_int(base + "_temp");
-        if (!raw || *raw <= 0) continue;
-        const auto c = thermal::normalize_temp(*raw);
-        if (c && (!lowest || *c < *lowest)) lowest = c;
+        const auto type_raw = fs::read(base + "_type");
+        const auto temp_raw = fs::read_int(base + "_temp");
+        if (!type_raw || !temp_raw) continue;
+
+        const auto normalized = thermal::normalize_temp(*temp_raw);
+        if (!normalized) continue;
+        const std::string type = str::trim(*type_raw);
+        const double temp = *normalized;
+        ++trips.count;
+        update_max(trips.highest, temp);
+        if (temp > current_c && (!trips.next || temp < *trips.next)) trips.next = temp;
+
+        if (str::icontains(type, "critical")) {
+            update_min(trips.critical, temp);
+        } else if (str::icontains(type, "hot")) {
+            update_min(trips.hot, temp);
+        } else if (str::icontains(type, "passive")) {
+            update_min(trips.passive, temp);
+        }
     }
-    return lowest;
+    return trips;
 }
 
-std::string json_opt(const std::optional<double> &v) {
-    return v ? std::format("{:.1f}", *v) : "null";
+std::string zone_state(const ZoneReading &zone) {
+    if (zone.critical_trip_c && zone.temp_c >= *zone.critical_trip_c) return "critical";
+    if ((zone.hot_trip_c && zone.temp_c >= *zone.hot_trip_c) ||
+        (zone.passive_trip_c && zone.temp_c >= *zone.passive_trip_c)) {
+        return "mitigating";
+    }
+    if (zone.headroom_c && *zone.headroom_c <= kElevatedHeadroomC) return "elevated";
+    return zone.highest_trip_c ? "normal" : "unknown";
+}
+
+int state_rank(std::string_view state) {
+    if (state == "critical") return 4;
+    if (state == "mitigating") return 3;
+    if (state == "elevated") return 2;
+    if (state == "normal") return 1;
+    return 0;
 }
 
 } // namespace
 
-int Cluster::limit_pct() const {
-    return pct(cap_mhz, max_mhz);
-}
-
-int Gpu::limit_pct() const {
-    return pct(cap_mhz, max_mhz);
-}
-
-int Snapshot::cpu_limit_pct() const {
-    long long weighted = 0;
-    long long cores = 0;
-    for (const auto &c : clusters) {
-        const int n = std::max(1, c.cores);
-        weighted += static_cast<long long>(c.limit_pct()) * n;
-        cores += n;
+int Snapshot::active_cooling() const {
+    int active = 0;
+    for (const auto &device : cooling_devices) {
+        if (device.cur > 0) ++active;
     }
-    return cores ? static_cast<int>((weighted + cores / 2) / cores) : 100;
+    return active;
 }
 
-int Snapshot::active_performance_cooling() const {
-    return static_cast<int>(std::count_if(cooling.begin(), cooling.end(), [](const Cooling &c) { return c.performance; }));
+int Snapshot::cooling_device_count() const {
+    return static_cast<int>(cooling_devices.size());
+}
+
+std::optional<double> Snapshot::hottest_temp_c() const {
+    if (zones.empty()) return std::nullopt;
+    return std::max_element(zones.begin(), zones.end(), [](const ZoneReading &a, const ZoneReading &b) {
+               return a.temp_c < b.temp_c;
+           })
+        ->temp_c;
+}
+
+const ZoneReading *Snapshot::hottest_zone() const {
+    if (zones.empty()) return nullptr;
+    return &*std::max_element(zones.begin(), zones.end(), [](const ZoneReading &a, const ZoneReading &b) {
+        return a.temp_c < b.temp_c;
+    });
+}
+
+std::optional<double> Snapshot::closest_headroom_c() const {
+    std::optional<double> result;
+    for (const auto &zone : zones) {
+        if (!zone.headroom_c) continue;
+        if (!result || *zone.headroom_c < *result) result = zone.headroom_c;
+    }
+    return result;
+}
+
+const ZoneReading *Snapshot::closest_zone() const {
+    const ZoneReading *result = nullptr;
+    for (const auto &zone : zones) {
+        if (!zone.headroom_c) continue;
+        if (!result || *zone.headroom_c < *result->headroom_c) result = &zone;
+    }
+    return result;
 }
 
 Verdict Snapshot::verdict() const {
-    int worst = 100;
-    for (const auto &c : clusters) worst = std::min(worst, c.limit_pct());
-    if (gpu) worst = std::min(worst, gpu->limit_pct());
-    const bool gpu_thermal = gpu && gpu->thermal_level > 0;
-    if (worst >= 100 && !gpu_thermal && active_performance_cooling() == 0 && tripped_zones == 0) return Verdict::None;
-    // Heavy: one cluster or the GPU held to 60 % or less, or the CPU as a whole below 75 %.
-    // One cluster at 79 % (the big cores capped a step below max while charging) is light.
-    return worst <= 60 || cpu_limit_pct() < 75 ? Verdict::Heavy : Verdict::Light;
+    bool elevated = false;
+    bool mitigating = false;
+    for (const auto &zone : zones) {
+        if (zone.state == "critical") return Verdict::Critical;
+        if (zone.state == "mitigating") mitigating = true;
+        if (zone.state == "elevated") elevated = true;
+    }
+    if (mitigating || !cooling.empty()) return Verdict::Mitigating;
+    if (elevated) return Verdict::Elevated;
+    return Verdict::Normal;
 }
 
 std::string_view to_string(Verdict v) {
     switch (v) {
-    case Verdict::None: return "none";
-    case Verdict::Light: return "light";
-    case Verdict::Heavy: return "heavy";
+    case Verdict::Normal: return "normal";
+    case Verdict::Elevated: return "elevated";
+    case Verdict::Mitigating: return "mitigating";
+    case Verdict::Critical: return "critical";
     }
-    return "none";
-}
-
-std::string cpu_ranges(const std::vector<int> &cpus) {
-    std::vector<int> v = cpus;
-    std::sort(v.begin(), v.end());
-    v.erase(std::unique(v.begin(), v.end()), v.end());
-    std::string out;
-    for (size_t i = 0; i < v.size();) {
-        size_t j = i;
-        while (j + 1 < v.size() && v[j + 1] == v[j] + 1) ++j;
-        if (!out.empty()) out += ',';
-        out += j > i ? std::format("{}-{}", v[i], v[j]) : std::to_string(v[i]);
-        i = j + 1;
-    }
-    return out;
+    return "normal";
 }
 
 Snapshot sample(size_t max_zones) {
     Snapshot s;
     s.time_ms = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 
-    for (const auto &p : cpufreq::policies()) {
-        Cluster c;
-        c.name = base_name(p.dir);
-        c.cpus = cpu_ranges(p.cpus);
-        c.cores = static_cast<int>(p.cpus.size());
-        c.max_mhz = p.max_freq / 1000;
-        c.min_mhz = fs::read_int(p.dir + "/cpuinfo_min_freq").value_or(0) / 1000;
-        c.cur_mhz = fs::read_int(p.dir + "/scaling_cur_freq").value_or(0) / 1000;
-        c.cap_mhz = fs::read_int(p.dir + "/scaling_max_freq").value_or(p.max_freq) / 1000;
-        s.clusters.push_back(std::move(c));
-    }
-
-    s.gpu = read_kgsl();
-    if (!s.gpu) s.gpu = read_devfreq_gpu();
-
     for (const auto &d : thermal::cooling_devices()) {
         const long long cur = fs::read_int(d.dir + "/cur_state").value_or(0);
-        if (cur <= 0) continue;
-        s.cooling.push_back({base_name(d.dir), d.type, cur, fs::read_int(d.dir + "/max_state").value_or(0),
-                             thermal::is_performance_cooling(d.type)});
+        const long long max = fs::read_int(d.dir + "/max_state").value_or(0);
+        if (cur < 0 || max < 0) continue;
+        Cooling reading{base_name(d.dir), d.type, cur, max};
+        s.cooling_devices.push_back(reading);
+        if (cur > 0) s.cooling.push_back(std::move(reading));
     }
 
     const auto zones = thermal::zones();
     for (const auto &z : zones) {
         const auto t = z.temp_c();
         if (!t) continue;
-        ZoneReading r{base_name(z.dir), z.type, *t, throttle_trip(z.dir), false};
-        // Battery / charger zones protect the cell; their trips are reported but never counted as throttling.
-        r.tripped = r.trip_c && *t >= *r.trip_c && !z.is_protected();
-        if (r.tripped) ++s.tripped_zones;
+
+        ZoneReading r;
+        r.name = base_name(z.dir);
+        r.type = z.type;
+        r.temp_c = *t;
+        r.policy = fs::read(z.dir + "/policy").value_or("");
+        r.protected_zone = z.is_protected();
+
+        const TripSet trips = read_trips(z.dir, r.temp_c);
+        r.passive_trip_c = trips.passive;
+        r.hot_trip_c = trips.hot;
+        r.critical_trip_c = trips.critical;
+        r.highest_trip_c = trips.highest;
+        r.next_trip_c = trips.next;
+        if (r.next_trip_c) r.headroom_c = std::max(0.0, *r.next_trip_c - r.temp_c);
+        r.at_or_above_trip =
+            (r.passive_trip_c && r.temp_c >= *r.passive_trip_c) ||
+            (r.hot_trip_c && r.temp_c >= *r.hot_trip_c) ||
+            (r.critical_trip_c && r.temp_c >= *r.critical_trip_c);
+        r.state = zone_state(r);
+
+        if (r.at_or_above_trip) ++s.tripped_zones;
+        if (r.protected_zone) ++s.protected_zones;
         s.zones.push_back(std::move(r));
     }
+
     std::stable_sort(s.zones.begin(), s.zones.end(), [](const ZoneReading &a, const ZoneReading &b) {
-        if (a.tripped != b.tripped) return a.tripped;
+        const int ar = state_rank(a.state);
+        const int br = state_rank(b.state);
+        if (ar != br) return ar > br;
+        if (a.at_or_above_trip != b.at_or_above_trip) return a.at_or_above_trip;
         return a.temp_c > b.temp_c;
     });
-    if (s.zones.size() > max_zones) s.zones.resize(max_zones);
+    if (max_zones > 0 && s.zones.size() > max_zones) s.zones.resize(max_zones);
 
     s.temps = thermal::read_temperatures(zones);
     return s;
 }
 
 std::string to_json(const Snapshot &s) {
+    const ZoneReading *hottest = s.hottest_zone();
+    const ZoneReading *closest = s.closest_zone();
     std::string out = std::format(
-        R"({{"time":{},"verdict":"{}","cpu_limit":{},"gpu_limit":{},"cooling_active":{},"tripped_zones":{},)"
-        R"("temps":{{"cpu":{},"gpu":{},"battery":{}}},"clusters":[)",
-        s.time_ms, to_string(s.verdict()), s.cpu_limit_pct(), s.gpu ? std::to_string(s.gpu->limit_pct()) : "null",
-        s.active_performance_cooling(), s.tripped_zones, json_opt(s.temps.cpu), json_opt(s.temps.gpu),
-        json_opt(s.temps.battery));
-    for (size_t i = 0; i < s.clusters.size(); ++i) {
-        const auto &c = s.clusters[i];
-        out += std::format(R"({}{{"name":"{}","cpus":"{}","cores":{},"cur":{},"min":{},"max":{},"cap":{},"limit":{}}})",
-                           i ? "," : "", json_escape(c.name), json_escape(c.cpus), c.cores, c.cur_mhz, c.min_mhz,
-                           c.max_mhz, c.cap_mhz, c.limit_pct());
-    }
-    out += "],\"gpu\":";
-    if (s.gpu) {
-        out += std::format(R"({{"source":"{}","cur":{},"max":{},"cap":{},"limit":{},"thermal_level":{}}})",
-                           json_escape(s.gpu->source), s.gpu->cur_mhz, s.gpu->max_mhz, s.gpu->cap_mhz,
-                           s.gpu->limit_pct(), s.gpu->thermal_level);
-    } else {
-        out += "null";
-    }
-    out += ",\"cooling\":[";
-    for (size_t i = 0; i < s.cooling.size(); ++i) {
-        const auto &c = s.cooling[i];
-        out += std::format(R"({}{{"name":"{}","type":"{}","cur":{},"max":{},"perf":{}}})", i ? "," : "",
-                           json_escape(c.name), json_escape(c.type), c.cur, c.max, c.performance ? "true" : "false");
-    }
-    out += "],\"zones\":[";
+        R"({{"schema":"hico.monitor.v2","time":{},"verdict":"{}","zone_count":{},"zones_at_or_above_trip":{},"protected_zones":{},"active_cooling":{},"cooling_device_count":{},)"
+        R"("hottest":{},"closest":{},"temperatures":{{"cpu":{},"gpu":{},"battery":{}}},"zones":[)",
+        s.time_ms, to_string(s.verdict()), s.zones.size(), s.tripped_zones, s.protected_zones,
+        s.active_cooling(), s.cooling_device_count(),
+        hottest ? std::format(R"({{"name":"{}","type":"{}","temp":{:.1f}}})", json_escape(hottest->name),
+                              json_escape(hottest->type), hottest->temp_c)
+                : "null",
+        closest ? std::format(R"({{"name":"{}","type":"{}","trip":{},"headroom":{}}})", json_escape(closest->name),
+                              json_escape(closest->type), json_opt(closest->next_trip_c), json_opt(closest->headroom_c))
+                : "null",
+        json_opt(s.temps.cpu), json_opt(s.temps.gpu), json_opt(s.temps.battery));
+
     for (size_t i = 0; i < s.zones.size(); ++i) {
         const auto &z = s.zones[i];
-        out += std::format(R"({}{{"name":"{}","type":"{}","temp":{:.1f},"trip":{},"tripped":{}}})", i ? "," : "",
-                           json_escape(z.name), json_escape(z.type), z.temp_c, json_opt(z.trip_c),
-                           z.tripped ? "true" : "false");
+        if (i) out += ',';
+        out += std::format(
+            R"({{"name":"{}","type":"{}","temp":{:.1f},"passive":{},"hot":{},"critical":{},"highest":{},"next":{},"headroom":{},"policy":"{}","state":"{}","at_or_above_trip":{},"protected":{}}})",
+            json_escape(z.name), json_escape(z.type), z.temp_c, json_opt(z.passive_trip_c),
+            json_opt(z.hot_trip_c), json_opt(z.critical_trip_c), json_opt(z.highest_trip_c), json_opt(z.next_trip_c),
+            json_opt(z.headroom_c), json_escape(z.policy), z.state, z.at_or_above_trip ? "true" : "false",
+            z.protected_zone ? "true" : "false");
+    }
+    out += "],\"cooling\":[";
+    for (size_t i = 0; i < s.cooling.size(); ++i) {
+        const auto &c = s.cooling[i];
+        if (i) out += ',';
+        out += std::format(R"({{"name":"{}","type":"{}","cur":{},"max":{}}})",
+                           json_escape(c.name), json_escape(c.type), c.cur, c.max);
+    }
+    out += "],\"cooling_devices\":[";
+    for (size_t i = 0; i < s.cooling_devices.size(); ++i) {
+        const auto &c = s.cooling_devices[i];
+        if (i) out += ',';
+        out += std::format(R"({{"name":"{}","type":"{}","cur":{},"max":{},"active":{}}})",
+                           json_escape(c.name), json_escape(c.type), c.cur, c.max, c.cur > 0 ? "true" : "false");
     }
     out += "]}";
     return out;
@@ -262,17 +282,47 @@ std::string to_json(const Snapshot &s) {
 
 std::string to_line(const Snapshot &s) {
     const auto temp = [](const std::optional<double> &v) { return v ? std::format("{:.1f}C", *v) : std::string("-"); };
-    std::string line = std::format("{:<6} CPU {:>3}%", to_string(s.verdict()), s.cpu_limit_pct());
-    for (const auto &c : s.clusters) {
-        line += std::format("  [{} {}/{}{}]", c.cpus, c.cur_mhz, c.cap_mhz, c.throttled() ? std::format(" of {}", c.max_mhz) : "");
-    }
-    if (s.gpu) {
-        line += std::format("  GPU {:>3}% {}/{}MHz", s.gpu->limit_pct(), s.gpu->cur_mhz, s.gpu->cap_mhz);
-        if (s.gpu->thermal_level > 0) line += std::format(" lvl{}", s.gpu->thermal_level);
-    }
-    line += std::format("  cooling {}  tripped {}  cpu {} gpu {} bat {}", s.active_performance_cooling(), s.tripped_zones,
+    const ZoneReading *hottest = s.hottest_zone();
+    const ZoneReading *closest = s.closest_zone();
+    std::string line = std::format("{:<10} zones {}  cooling {}/{}", to_string(s.verdict()), s.zones.size(),
+                                     s.active_cooling(), s.cooling_device_count());
+    if (hottest) line += std::format("  hottest {} {}", temp(hottest->temp_c), hottest->type);
+    if (closest) line += std::format("  next {} +{}", temp(closest->next_trip_c), temp(closest->headroom_c));
+    line += std::format("  trip {}  protected {}  sensors cpu {} gpu {} bat {}",
+                        s.tripped_zones, s.protected_zones,
                         temp(s.temps.cpu), temp(s.temps.gpu), temp(s.temps.battery));
     return line;
 }
+
+std::string to_table(const Snapshot &s) {
+    const auto value = [](const std::optional<double> &v) {
+        return v ? std::format("{:.1f}", *v) : std::string("-");
+    };
+    const auto clamp = [](const std::string &v, size_t width) {
+        return v.size() <= width ? v : v.substr(0, width);
+    };
+
+    std::string out;
+    out += "ZONE               TYPE                 TEMP  PASSIVE  HOT  CRITICAL  HIGHEST  NEXT  HEADROOM  STATE       PROTECTED  POLICY\n";
+    out += "------------------ -------------------- -----  -------  ---  --------  -------  ----  --------  ----------  ---------  ----------------\n";
+    for (const auto &z : s.zones) {
+        out += std::format("{:<18} {:<20} {:>4.1f} C  {:>7}  {:>3}  {:>8}  {:>7}  {:>4}  {:>8}  {:<10}  {:<9}  {}\n",
+                           clamp(z.name, 18), clamp(z.type, 20), z.temp_c, value(z.passive_trip_c),
+                           value(z.hot_trip_c), value(z.critical_trip_c), value(z.highest_trip_c),
+                           value(z.next_trip_c), value(z.headroom_c), z.state,
+                           z.protected_zone ? "yes" : "no", z.policy.empty() ? "-" : z.policy);
+    }
+    out += std::format("\nverdict={}  zones={}  at_or_above_trip={}  active_cooling={}  cooling_devices={}  protected_zones={}\n",
+                       to_string(s.verdict()), s.zones.size(), s.tripped_zones, s.active_cooling(),
+                       s.cooling_device_count(), s.protected_zones);
+    out += "COOLING DEVICE     TYPE                 CUR   MAX   STATE\n";
+    out += "------------------ -------------------- ----- ----- ------\n";
+    for (const auto &c : s.cooling_devices) {
+        out += std::format("{:<18} {:<20} {:>4}  {:>4}  {:<6}\n",
+                           clamp(c.name, 18), clamp(c.type, 20), c.cur, c.max, c.cur > 0 ? "active" : "idle");
+    }
+    return out;
+}
+
 
 } // namespace hico::monitor
