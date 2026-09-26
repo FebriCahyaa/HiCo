@@ -16,6 +16,7 @@ thermal stack if the device gets too hot.
 - [What is unlocked](#what-is-unlocked)
 - [Safety](#safety)
 - [Thermal framework and device database](#thermal-framework-and-device-database)
+- [Knowledge database ingestion and tools](#knowledge-database-ingestion-and-tools)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Command line](#command-line)
@@ -24,6 +25,14 @@ thermal stack if the device gets too hot.
 - [License](#license)
 
 ---
+
+## Thermal Monitor
+
+`hicod monitor` is a read-only thermal monitor. It reports all readable kernel thermal zones, temperatures, passive/hot/critical trip thresholds, the highest and next trip, headroom, current thermal state, protected zones, active cooling devices and the active thermal policy. It does not report or control CPU/GPU clocks, scheduler settings, network, memory, I/O, game tuning or other performance tweaks.
+
+`hicod thermal table` prints the same live thermal data as a terminal table; `hicod thermal table --json` emits the monitor snapshot in machine-readable form. The WebUI Monitor uses the same JSON source and presents the full thermal-zone table.
+
+The repository also contains `database/tables/thermal.json`, `thermal-artifacts.csv`, `thermal-tuning.csv` and `THERMAL_TABLE.md`. These distinguish the original highest trip value observed in source data from the HiCo candidate produced by the device-specific tuning rules. Candidate values are planning/tuning outputs, not measured or certified safety limits.
 
 ## How it works
 
@@ -128,19 +137,31 @@ phone's own files.
 
 ## Thermal framework and device database
 
-`hicod` is built as a small thermal framework:
+`hicod` is built as a small thermal framework with vendor backends. The historical Xiaomi device table remains
+part of the runtime for compatibility, while the repository now also contains a separate multi-vendor knowledge
+database used by the ingestion and analysis tools.
 
 ```
-dumps.tadiphone.dev ─ tools/xiaomi_devices.py ─▶ devices/xiaomi/<codename>.prop ─ tools/gen_device_db.py ─▶ jni/src/XiaomiDevices.gen.cpp
-  (stock vendor partitions)                      (repository data only)                                  (compiled into hicod)
+OEM dumps / ROM trees / vendor trees / kernel trees
+                  │
+                  ▼
+          multi-source ingestion
+                  │
+                  ▼
+          thermal artifact map
+                  │
+                  ▼
+          database / knowledge
+                  │
+                  ▼
+         runtime device resolver
+                  │
+                  ▼
+        hicod vendor backends
 ```
 
-- **Device database** — facts read from the stock firmware of each Xiaomi, Redmi and POCO device:
-  codename, name, SoC platform, the thermal services its vendor init scripts declare (exact
-  names, so a daemon whose name lacks "thermal" is still stopped) and its thermal configs.
-  `devices/xiaomi/*.prop` is **source data in this repository only**: `gen_device_db.py`
-  compiles it into a sorted C++ table inside `hicod`. Nothing from `devices/` ships in the
-  module, and nothing in it is written by hand.
+- **Runtime device database** — the existing `devices/xiaomi/*.prop` table remains source data for the current
+  Xiaomi runtime compatibility path and is still compiled by `gen_device_db.py`. It is not shipped as module data.
 - **Derived facts** (`DeviceDatabase.cpp`) — the SoC vendor (`soc_from_platform`) and traits
   (`mi_thermald`, `thermal-engine`, MediaTek thermal daemons, scene configs, …) are computed in
   C++ from the raw record, so the rules live in one tested place.
@@ -190,6 +211,35 @@ and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`
 `vendor/etc/init/hw/*.rc`) are checked out — a few MB per device instead of the whole firmware.
 A server that ignores the filter is refused rather than downloaded in full. CI fails when the
 compiled table is out of date with `devices/` (`gen_device_db.py --check`).
+
+## Knowledge database ingestion and tools
+
+The new repository knowledge layer is intentionally broader than Xiaomi. `sources/registry.json` describes OEM
+dump groups, custom-ROM device organizations and a generic GitHub discovery path for independent maintainer trees.
+The ingestion engine uses shallow partial Git clones so repository trees can be inspected without downloading every blob.
+Every manifest records the repository, branch, source commit, path, format and provenance.
+
+`tools/hico_thermal.py` separates four operations:
+
+- **unpack** — opens supported archives/filesystems when the required host tools are present;
+- **codec** — decodes/encodes a known artifact format; the existing Xiaomi `MiCrypt` implementation is exposed as
+  `mi_thermald_aes`;
+- **parser/mapper** — extracts normalized thermal facts without assuming a single vendor format;
+- **pack** — rebuilds supported archive/stream formats where round-tripping is defined.
+
+Unknown encrypted or opaque binary artifacts are recorded rather than passed to a guessed decryptor. This keeps the
+database complete at the metadata level without turning an unknown format into unsafe or invalid code.
+
+### Actions
+
+**Actions → HiCo Thermal Database** runs the complete pipeline in one workflow: preflight, discovery, matrix ingestion,
+known-codec analysis, thermal mapping, merge, validation and a single publish job. Matrix workers never push directly.
+
+**Actions → HiCo Thermal Tools** validates the toolchain. Its manual **full** mode maps every thermal root already present
+in the repository database and publishes the deterministic mapping under `database/mapped/`.
+
+The existing `webui/` directory is protected by a SHA-256 manifest at `docs/integrity/webui.sha256`; the tool workflow
+checks it so database/tool changes cannot silently alter the existing WebUI.
 
 ## ROMs: MIUI, HyperOS and AOSP
 

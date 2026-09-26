@@ -1,8 +1,39 @@
+# Unreleased
+
+### Thermal monitor scope guard
+- Monitor telemetry now exposes all discovered cooling devices as thermal state, with active/idle status and counts.
+- Added a regression guard that rejects Flux/Tweaks/game/performance identifiers from the thermal monitor/tooling surfaces.
+- `tools.yml` remains a thermal database/tooling workflow only; release packaging remains owned by `release.yml`.
+
+### Thermal-only monitor and tables
+- Refactored the live monitor to report thermal information only: all readable thermal zones, trip thresholds, headroom, thermal state, protected zones and active cooling devices. CPU/GPU clock caps, scheduler/performance data and game/Flux state are no longer part of the monitor contract.
+- Added `hicod thermal table` and a full WebUI thermal-zone table backed directly by `hico.monitor.v2` JSON.
+- Added repository thermal tables that keep **original maximum trip values** separate from **HiCo candidate maximum values** and calculate their delta per device/artifact/section. Candidate values are explicitly non-certified tuning candidates.
+- Kept `.github/workflows/tools.yml` scoped to thermal tooling, remapping, validation and thermal database publication. `release.yml` remains the separate release packaging/publication workflow and now rebuilds the checked-in thermal Monitor WebUI before packaging.
+
 # HiCo Thermal Changelog
 
 ## Unreleased
 
+### Fixed
+- Generic thermal tooling now supports recursive deep mapping of supported Android/archive containers with provenance for extracted artifacts.
+- Added zstd stream detection/compression/decompression and integrated it into the generic thermal pack/unpack layer.
+- Unified CI validates the topology suite and the expanded thermal tooling before publishing generated database data.
+
 ### New
+- **Multi-vendor thermal knowledge ingestion**: added a source registry and Git-based ingestion pipeline covering OEM dumps,
+  custom-ROM/device organizations and independent Android device/vendor/kernel repositories. Repository, branch and source
+  commit provenance is retained for every ingested manifest.
+- **Generic thermal artifact tooling**: added format detection, safe archive/filesystem unpacking, packing for supported
+  archive/stream formats, codec registration, deterministic thermal mapping and mapping-set aggregation.
+- **Known-codec boundary**: the existing Xiaomi `MiCrypt` implementation remains the only vendor-specific encryption codec
+  currently enabled. Unknown encrypted binaries are kept as opaque metadata instead of guessing a decryption algorithm.
+- **Deterministic knowledge database**: normalized device records, source manifests, thermal mappings and JSON schemas live
+  under `database/` so validated Actions output can be committed directly to the source repository.
+- **Unified Actions pipelines**: replaced the Xiaomi-only device workflow with one end-to-end database workflow and one
+  tools/validation workflow. Matrix jobs produce artifacts; only the final merge/publish job writes generated database data.
+- **WebUI integrity guard**: added a SHA-256 manifest covering the existing 107-file `webui/` tree; current thermal database
+  work does not modify the WebUI.
 - **Max only with headroom** (every mode, Extreme too): the max level removes every vendor limit
   and lifts the cpufreq caps, so a phone that was already hot went to the safety limit within
   seconds (a Redmi Note 13 Pro 5G started MLBB at 88.6 °C and sat at 95-96 °C). Now max needs the
