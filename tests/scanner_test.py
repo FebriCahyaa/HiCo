@@ -443,8 +443,8 @@ class TuneThermalTest(unittest.TestCase):
             hal = (data / "testqc/tuned/thermal_info_config.json").read_text()
             self.assertIn('"NAN",101.0,"NAN","NAN",125.0', hal)  # thermal HAL JSON: SEVERE +6, SHUTDOWN kept
             text = report.read_text()
-            self.assertIn("| `testqc` | taro | qualcomm-flagship | 6 °C | 3 | 2 | 2 | 2 of 3 |", text)
-            self.assertIn("| `testmtk` | mt6765 | mediatek | 4 °C | 1 | 1 | 1 | 1 of 2 |", text)
+            self.assertIn("| Xiaomi | `testqc` | taro | qualcomm-flagship | 6 °C | 3 | 2 | 0 | 2 | 2 of 3 |", text)
+            self.assertIn("| Xiaomi | `testmtk` | mt6765 | mediatek | 4 °C | 1 | 1 | 0 | 1 | 1 of 2 |", text)
 
 
 class FakeGitLab(http.server.BaseHTTPRequestHandler):
