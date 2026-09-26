@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "android": "13",
+    "brand": "Xiaomi",
+    "codename": "axolotl",
+    "model": "Xiaomi Watch 2 Pro",
+    "platform": "monaco"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/axolotl.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/axolotl/-/tree/axolotl-user-13-TWR7.231031.001.XM055S-TWR7.231031.001.XM055S-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 85.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/axolotl/thermal/thermal-engine.conf",
+        "sections": 7,
+        "sha256": "5679025c5183b8af15737a3f35d9ed0258cca4697d749eb2a5d725d0a9a0ec07",
+        "shutdown_c": null,
+        "size": 1179,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "android.thermal-hal",
+      "thermal-engine"
+    ]
+  }
+}

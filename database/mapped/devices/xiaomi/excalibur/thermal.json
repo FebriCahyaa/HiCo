@@ -1,0 +1,154 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/excalibur/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "7ea7b99a57efc09e8a5e4a8f5f109ccd253444ebcb3abc567ff16b9c8ec8c431",
+      "shutdown_c": null,
+      "size": 481,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 61.0,
+      "name": "thermal-engine-camera.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/excalibur/thermal/thermal-engine-camera.conf",
+      "sections": 7,
+      "sha256": "07cac4c0ff74cd7aba8c5eff236adfb7ae7023aa92aa994602fb1e8cbf499f33",
+      "shutdown_c": null,
+      "size": 1340,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermal-engine-map.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/excalibur/thermal/thermal-engine-map.conf",
+      "sections": 12,
+      "sha256": "2510a6f562e9633614bf04e35d3b5a52aecd652cb7664ad2b7f2d911af13645b",
+      "shutdown_c": null,
+      "size": 378,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 61.0,
+      "name": "thermal-engine-normal.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/excalibur/thermal/thermal-engine-normal.conf",
+      "sections": 7,
+      "sha256": "24eba0156d866d47ca89e4a6c7f10860b62ea88d2d1d67005b00ce70cc18cafe",
+      "shutdown_c": null,
+      "size": 1363,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/excalibur/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/excalibur/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 5,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 5,
+    "thermal": 5
+  },
+  "topology": {
+    "artifact_count": 5,
+    "category_counts": {
+      "thermal": 5
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-camera.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/excalibur/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

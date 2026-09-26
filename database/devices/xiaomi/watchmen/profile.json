@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Xiaomi",
+    "codename": "watchmen",
+    "model": "MiTV-AXFR2",
+    "platform": "t5d"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/watchmen.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/watchmen/-/tree/watchmen-user-11-RTT0.210630.002-742-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "json",
+        "max_trip_c": null,
+        "name": "thermal_info_config.json",
+        "parser": "thermal-hal-json-v2",
+        "path": "devices/xiaomi/watchmen/thermal/thermal_info_config.json",
+        "sections": 1,
+        "sha256": "47a1834870f1c298aeb7c56ad0893f65f2abe2cd56c41099f5d232eec3691fcd",
+        "shutdown_c": null,
+        "size": 567,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal_info_config.json"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal-hal-2-0"
+    ]
+  }
+}

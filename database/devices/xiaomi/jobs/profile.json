@@ -1,0 +1,26 @@
+{
+  "identity": {
+    "android": "9",
+    "brand": "Xiaomi",
+    "codename": "jobs",
+    "model": "MiTV-ANSP0",
+    "platform": "tl1"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/jobs.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/jobs/-/tree/jobs-userdebug-9-PPR1.180610.011-911-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "identity": {
+    "android": "9",
+    "brand": "Xiaomi",
+    "codename": "lavender",
+    "model": "lavender",
+    "platform": "sdm660"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/lavender.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/lavender/-/tree/lavender-userdebug-9-PKQ1.180904.001-241-test-keys"
+  },
+  "thermal": {
+    "artifact_count": 3,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/lavender/thermal/thermal-engine-map.conf",
+        "sections": 3,
+        "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+        "shutdown_c": null,
+        "size": 94,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 95.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/lavender/thermal/thermal-engine-normal.conf",
+        "sections": 30,
+        "sha256": "02c7e7742923f37d4ff1de8869fed633eddbc93ea97d54ed1ad0ee3f146d6d26",
+        "shutdown_c": null,
+        "size": 5303,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/lavender/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

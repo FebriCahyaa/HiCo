@@ -1,0 +1,100 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "clover",
+    "model": "MI PAD 4",
+    "platform": "sdm660"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/clover.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/clover/-/tree/clover-user-8.1.0-OPM1.171019.019-9.7.4-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 5,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 47.0,
+        "name": "thermal-engine-high.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/clover/thermal/thermal-engine-high.conf",
+        "sections": 2,
+        "sha256": "6ba88b10a61d7b1ab7a9f886bc2c8e33635f14c2f95a1c3e1038a3379f6700c6",
+        "shutdown_c": null,
+        "size": 327,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/clover/thermal/thermal-engine-map.conf",
+        "sections": 3,
+        "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+        "shutdown_c": null,
+        "size": 94,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/clover/thermal/thermal-engine-nolimits.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 55.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/clover/thermal/thermal-engine-normal.conf",
+        "sections": 9,
+        "sha256": "ae938f2995c83be0abb61c5e002e4972bcebeefac68fd1aad9bb997218ba621e",
+        "shutdown_c": null,
+        "size": 1447,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/clover/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-high.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-nolimits.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}

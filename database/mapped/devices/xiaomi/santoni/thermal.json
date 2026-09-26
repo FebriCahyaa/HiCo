@@ -1,0 +1,91 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/santoni/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "a0c52a8a2ebd1ec4d607be4d43ecac2ebfff14fe8eb0bb46e1cb7d7a735461a6",
+      "shutdown_c": null,
+      "size": 159,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 95.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/santoni/thermal/thermal-engine.conf",
+      "sections": 23,
+      "sha256": "9d03ab9f8e8379f79908e5e048841f3cbae93a79ec3402401ff5030eb0c98672",
+      "shutdown_c": null,
+      "size": 4142,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/santoni/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 2,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 2
+  },
+  "topology": {
+    "artifact_count": 2,
+    "category_counts": {
+      "thermal": 2
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/santoni/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

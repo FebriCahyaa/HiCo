@@ -1,0 +1,133 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/tiare/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "d75a21702ce49246ce9200b6329e34dcad0ff986bb603128eb5c3524d1ce000e",
+      "shutdown_c": null,
+      "size": 372,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermal-engine-map.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tiare/thermal/thermal-engine-map.conf",
+      "sections": 3,
+      "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+      "shutdown_c": null,
+      "size": 94,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 95.0,
+      "name": "thermal-engine-normal.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tiare/thermal/thermal-engine-normal.conf",
+      "sections": 18,
+      "sha256": "1bc3a6d6f3f7331abf3763f025b6155ef91beb7dc552dc023c4ec5925b764077",
+      "shutdown_c": null,
+      "size": 3219,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/tiare/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/tiare/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 4,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 4,
+    "thermal": 4
+  },
+  "topology": {
+    "artifact_count": 4,
+    "category_counts": {
+      "thermal": 4
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/tiare/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

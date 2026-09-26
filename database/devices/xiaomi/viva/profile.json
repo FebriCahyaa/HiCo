@@ -1,0 +1,242 @@
+{
+  "identity": {
+    "android": "13",
+    "brand": "Redmi",
+    "codename": "viva",
+    "model": "Redmi Note 11 Pro",
+    "platform": "mt6781"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/viva.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/viva/-/tree/missi_phoneext4_eea-user-13-TP1A.220624.014-V14.0.1.0.TGDEUXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 15,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "b633948346f70e865198c0e21c31e45b82fcfc821c306922311d6d7676bb06c9",
+        "shutdown_c": null,
+        "size": 2848,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "99ec190e9b39bd37cc5dbe25f7581b7bf339c919cc83345e49f62b0b9380c229",
+        "shutdown_c": null,
+        "size": 2736,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "22b800c3a1fb4483f97e21c6e34cd4995a2d7244370142d4789e9ed2fe6ab94d",
+        "shutdown_c": null,
+        "size": 1200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "57a5455ddbb1c45e4b26139b2670afc785771c4de8408e6a86d4cfaaec301280",
+        "shutdown_c": null,
+        "size": 2624,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "4ba3cb793a680527040bf8785eebe356dcf6bf5882afae2124f8980183927d86",
+        "shutdown_c": null,
+        "size": 400,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "d720462e092e33bf48f363f763bcc379ee1163f2a69da09e09d20efa44eb3bb3",
+        "shutdown_c": null,
+        "size": 2608,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-navigation.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-navigation.conf",
+        "sections": 0,
+        "sha256": "b8c2091310e99182d8f48a4f9255867ec49d137d3e264cb3b5cd1cecf4f6b85f",
+        "shutdown_c": null,
+        "size": 2704,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "7fd991557b280334ed39428c949bb20d670d51f045bb3173e0d328e9318d7b9b",
+        "shutdown_c": null,
+        "size": 2512,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "da2db0fea72daab48590d31626cf27d395050f0ff577c16dd24ecafb37556ce0",
+        "shutdown_c": null,
+        "size": 2768,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "d3017b9f83a40b05b6a7be6767e6c3a6e5c61f38cdbe3ec7f883950ef82d6824",
+        "shutdown_c": null,
+        "size": 2624,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "bebec95ba10bddf47ef381fd5faa344442a1a93ba95a2974f041ad7c3b575ecb",
+        "shutdown_c": null,
+        "size": 2608,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "a338d7c3a6e3e8571edb09d363952f3beeb4441b01ffa6dba559469268881211",
+        "shutdown_c": null,
+        "size": 2544,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-videochat.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-videochat.conf",
+        "sections": 0,
+        "sha256": "e1ae7ccdb423588ddd7d1b89e78cd732d76d2e27f36530544f29a554fe379234",
+        "shutdown_c": null,
+        "size": 2832,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/viva/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "149fde2ecd493607f4b3c8db361d1c4f1b38484f93264e1424b68219a1d138bf",
+        "shutdown_c": null,
+        "size": 2688,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/viva/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "607e1f3d4217cacd5201345716d8d38fcc050d889f2f58190e7a78a212a70a89",
+        "shutdown_c": null,
+        "size": 386,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-navigation.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermal-videochat.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "identity": {
+    "android": "12",
+    "brand": "Redmi",
+    "codename": "mojito",
+    "model": "mojito",
+    "platform": "sm6150"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/mojito.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/mojito/-/tree/qssi-user-12-SKQ1.210908.001-V14.0.9.0.SKGMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 13,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-4k.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-4k.conf",
+        "sections": 0,
+        "sha256": "1e6f2e2079e60231a009658840c84f43cc35e543e2f10942a05e8e839b8b0344",
+        "shutdown_c": null,
+        "size": 1168,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "e4b6bba1a7a62e57a5339e43e66090ad27ccabab16e462efc7f471664a1b47a0",
+        "shutdown_c": null,
+        "size": 1952,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "4acfaa1f8e47b857ba132af7476c329702b8c719d46cdfe6a2cdc3101556ffdd",
+        "shutdown_c": null,
+        "size": 2064,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera2.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-camera2.conf",
+        "sections": 0,
+        "sha256": "c827c23aa16f4013a374f7ca947514651c6bd2e7b07576c236cf0f151606f16a",
+        "shutdown_c": null,
+        "size": 1920,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/mojito/thermal/thermal-chg-only.conf",
+        "sections": 3,
+        "sha256": "aeeeb87fad0dd4dbdd9d2e4a2c49cc0334b28a9a1b3aac2af82f060f0767536e",
+        "shutdown_c": null,
+        "size": 363,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "f5edf3cb84428ab9b13b59c1ba3ebdafdfd537b41564da2d064254ca3b99195f",
+        "shutdown_c": null,
+        "size": 352,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "5601d96f58107914be1b6bc8492d34570e602766b2f1c2b6b1bab80c1572abe1",
+        "shutdown_c": null,
+        "size": 1344,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "de6cc2a21f1a96b9c6056701865480d2529bd9f40f31816dbb0ca4f3de4952ca",
+        "shutdown_c": null,
+        "size": 784,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "4dd434d55fddd4bf2832edfef6570c2c71f1980f634f11d5d1f39620d040b7a9",
+        "shutdown_c": null,
+        "size": 800,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "a14891fbc6a92a9fe6e3effc4b766d19f7f21638a109109bd57395f40d94b56e",
+        "shutdown_c": null,
+        "size": 720,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/mojito/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "0e5b039842c80805726669bf44e0776f59401fd57644fd053e3b57ef9949720d",
+        "shutdown_c": null,
+        "size": 2048,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/mojito/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "d1cc3e0bc9ddcc0e1bd2f4978a67cd6438cb8fb9fbf025447ec7e5461e0a78f5",
+        "shutdown_c": null,
+        "size": 384,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-4k.conf",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-camera2.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald"
+    ]
+  }
+}

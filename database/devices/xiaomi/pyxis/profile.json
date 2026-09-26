@@ -1,0 +1,169 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "pyxis",
+    "model": "Mi 9 Lite",
+    "platform": "sdm710"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/pyxis.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/pyxis/-/tree/pyxis-user-10-QKQ1.190828.002-V12.0.6.0.QFCMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-camera.conf",
+        "sections": 0,
+        "sha256": "87187fa7e1ea652f0ed3d492d1ea3173f5d536f12edb9e322a3b2abe7eef9cc6",
+        "shutdown_c": null,
+        "size": 2320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-high.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-high.conf",
+        "sections": 0,
+        "sha256": "e269253cd7bbd3a063eb636eb087bf66052c89d1ad3c36cf5b9c67b712a93d70",
+        "shutdown_c": null,
+        "size": 1808,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-map.conf",
+        "sections": 0,
+        "sha256": "8bed1e58fa98f6154d380c6c9753fe06a856aca29f7148aaf245ef90407f77e3",
+        "shutdown_c": null,
+        "size": 384,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-nolimits.conf",
+        "sections": 0,
+        "sha256": "bdb49555d632cdc588262d594f53bc8901f726f429d11276940fbc270befec6c",
+        "shutdown_c": null,
+        "size": 1184,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-phone.conf",
+        "sections": 0,
+        "sha256": "325900334970e8e54cf103bb2e4a088a90db466d8def72a2c2a57333967638ba",
+        "shutdown_c": null,
+        "size": 1104,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-pubgmhd.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-pubgmhd.conf",
+        "sections": 0,
+        "sha256": "172b7cd91d76bd54482b9b736e8fab44251e4239d2a8acf1ce74f7f0d5b7eea7",
+        "shutdown_c": null,
+        "size": 1184,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-sgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-sgame.conf",
+        "sections": 0,
+        "sha256": "9de519c0d67d44649dc5e460795e2ac45104971817395d912b1459ee8d30ee14",
+        "shutdown_c": null,
+        "size": 1200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710-tgame.conf",
+        "sections": 0,
+        "sha256": "461f63b81fc05143b5ae570f88b034eccb9264b031dce5de83fef1682fdd919d",
+        "shutdown_c": null,
+        "size": 1200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm710.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine-sdm710.conf",
+        "sections": 0,
+        "sha256": "0758b0d1c0248c71081b84174b0b453614906de7f069369fbc7c62ad9c2ee8bb",
+        "shutdown_c": null,
+        "size": 2096,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/pyxis/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-sdm710-camera.conf",
+      "thermal-engine-sdm710-high.conf",
+      "thermal-engine-sdm710-map.conf",
+      "thermal-engine-sdm710-nolimits.conf",
+      "thermal-engine-sdm710-phone.conf",
+      "thermal-engine-sdm710-pubgmhd.conf",
+      "thermal-engine-sdm710-sgame.conf",
+      "thermal-engine-sdm710-tgame.conf",
+      "thermal-engine-sdm710.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

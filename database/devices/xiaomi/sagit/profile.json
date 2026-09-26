@@ -1,0 +1,99 @@
+{
+  "identity": {
+    "android": "8.0.0",
+    "brand": "Xiaomi",
+    "codename": "sagit",
+    "model": "MI 6",
+    "platform": "msm8998"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/sagit.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/sagit/-/tree/sagit-user-8.0.0-OPR1.170623.027-8.3.22-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 5,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8998-high.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998-high.conf",
+        "sections": 0,
+        "sha256": "f1f31462eafd65127c9364ca6edb7756ac3890cf1fbe220cef5e946c80529177",
+        "shutdown_c": null,
+        "size": 3344,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8998-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998-map.conf",
+        "sections": 0,
+        "sha256": "fd1293f76b069363f05ad85cfe72235940f2efb3bd3233c372e8a1b001e62ebb",
+        "shutdown_c": null,
+        "size": 176,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8998-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998-nolimits.conf",
+        "sections": 0,
+        "sha256": "a17a5c3d0d6ba54da53aaf5e501778f331e1398530d43fe9409b414a75b264ef",
+        "shutdown_c": null,
+        "size": 464,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8998.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998.conf",
+        "sections": 0,
+        "sha256": "b5f343c99749b5f4814f167703360e00d58db901b3ffd1de21b33e3b29edac00",
+        "shutdown_c": null,
+        "size": 3296,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sagit/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-8998-high.conf",
+      "thermal-engine-8998-map.conf",
+      "thermal-engine-8998-nolimits.conf",
+      "thermal-engine-8998.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0"
+    ]
+  }
+}

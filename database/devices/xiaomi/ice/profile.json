@@ -1,0 +1,28 @@
+{
+  "identity": {
+    "android": "12",
+    "brand": "Redmi",
+    "codename": "ice",
+    "model": "ice",
+    "platform": "mt6761"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/ice.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/snow/-/tree/missi-user-12-SP1A.210812.016-V13.0.15.0.SGMMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod"
+    ]
+  }
+}

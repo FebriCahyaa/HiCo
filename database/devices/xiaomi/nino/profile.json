@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "android": "9",
+    "brand": "Xiaomi",
+    "codename": "nino",
+    "model": "MiTV-MSSP1",
+    "platform": ""
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/nino.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/nino/-/tree/nino-user-9-PI-5925-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": []
+  }
+}

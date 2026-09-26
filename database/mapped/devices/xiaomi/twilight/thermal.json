@@ -1,0 +1,89 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/twilight/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "dc52112e16fd67b1df5200c06b08a76a7a64ce0152e676e20a6daa9f25c5b2c2",
+      "shutdown_c": null,
+      "size": 160,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "json",
+      "max_trip_c": null,
+      "name": "thermal_info_config.json",
+      "parser": "thermal-hal-json-v2",
+      "path": "devices/xiaomi/twilight/thermal/thermal_info_config.json",
+      "sections": 1,
+      "sha256": "4e5709fe75062de0f0a2254a5be7942e2dc162245a484bc5602415b09230cf7b",
+      "shutdown_c": null,
+      "size": 562,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/twilight/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 2,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 2
+  },
+  "topology": {
+    "artifact_count": 2,
+    "category_counts": {
+      "thermal": 2
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal_info_config.json"
+    ],
+    "root": "devices/xiaomi/twilight/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

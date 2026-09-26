@@ -1,0 +1,197 @@
+{
+  "identity": {
+    "android": "",
+    "brand": "Xiaomi",
+    "codename": "ursa",
+    "model": "MI 8 Explorer Edition",
+    "platform": "sdm845"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/ursa.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ursa/-/tree/ursa-user-9-PKQ1.180729.001-V10.2.1.0.PEHCNXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 12,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-arvr.conf",
+        "sections": 0,
+        "sha256": "e0f80a2f6a02a763c2e16ecef5ba8a466b874b5809ca0ec5e059a415b901453a",
+        "shutdown_c": null,
+        "size": 1168,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-camera.conf",
+        "sections": 0,
+        "sha256": "a8cb44b9b662d8d8933c9404f8f7762916d6ba70457b684999817a4db60b8629",
+        "shutdown_c": null,
+        "size": 2752,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-class0.conf",
+        "sections": 0,
+        "sha256": "01c9846499a993e65aaf54d0d2ec53291daed338e7daa082c20e06d9bcf09a3e",
+        "shutdown_c": null,
+        "size": 2224,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-extreme.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-extreme.conf",
+        "sections": 0,
+        "sha256": "a2426ec8e5fe3a7a5cbe083eb42899ddf1007d0bbb7818ab820ed7a56bc2a395",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-high.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-high.conf",
+        "sections": 0,
+        "sha256": "66834a6d1ade959cbede70c7dc7f4341940820a945750fc337f41fad3521b8d6",
+        "shutdown_c": null,
+        "size": 2640,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-map.conf",
+        "sections": 0,
+        "sha256": "81d993707020fd04a8cf8751813ecf4e14d8d780776f23a6f2e9f8b699fc79b0",
+        "shutdown_c": null,
+        "size": 384,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-nolimits.conf",
+        "sections": 0,
+        "sha256": "f6d3f2a58fb98cd14b759deec2998af298a0de96c26df728ea20cac6a270a280",
+        "shutdown_c": null,
+        "size": 992,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-phone.conf",
+        "sections": 0,
+        "sha256": "5d082d96c4cc0c97fde1e7144419eb0b7d1e64d0cbf5a961b2bdf48ac7a0b41e",
+        "shutdown_c": null,
+        "size": 1424,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-pubgmhd.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-pubgmhd.conf",
+        "sections": 0,
+        "sha256": "d322afec084a4fbb1fa55efaa852d268c1216c509b4923f1768080f9b4ea8fc1",
+        "shutdown_c": null,
+        "size": 1520,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845-sgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845-sgame.conf",
+        "sections": 0,
+        "sha256": "3804110afcc545d80e8e9d29061209f99c096f72928ed6e51a556cb9ca0f2e49",
+        "shutdown_c": null,
+        "size": 1536,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm845.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine-sdm845.conf",
+        "sections": 0,
+        "sha256": "66521e634c7356b7f72e5a48a2ed1f343735480e82cc3d35f601598c6a403201",
+        "shutdown_c": null,
+        "size": 2736,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/ursa/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-sdm845-arvr.conf",
+      "thermal-engine-sdm845-camera.conf",
+      "thermal-engine-sdm845-class0.conf",
+      "thermal-engine-sdm845-extreme.conf",
+      "thermal-engine-sdm845-high.conf",
+      "thermal-engine-sdm845-map.conf",
+      "thermal-engine-sdm845-nolimits.conf",
+      "thermal-engine-sdm845-phone.conf",
+      "thermal-engine-sdm845-pubgmhd.conf",
+      "thermal-engine-sdm845-sgame.conf",
+      "thermal-engine-sdm845.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

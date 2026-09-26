@@ -1,0 +1,170 @@
+{
+  "identity": {
+    "android": "13",
+    "brand": "Xiaomi",
+    "codename": "vayu",
+    "model": "POCO X3 Pro",
+    "platform": "msmnile"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/vayu.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/vayu/-/tree/missi_phonenonab_global-user-13-TKQ1.221013.002-V14.0.1.0.TJUMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "d6b53879042664437b854abc540f2ef23b3413ab0871a3af88e28e7fe2060d6e",
+        "shutdown_c": null,
+        "size": 1488,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "db7e7657d8522fa463ddd875d51375144570f1079ac2664334b70baf2fea6cfa",
+        "shutdown_c": null,
+        "size": 2064,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/vayu/thermal/thermal-chg-only.conf",
+        "sections": 2,
+        "sha256": "20c0fad8dfd53b88f79b0935290bea06949dcd6e4dc009af73fa1041ad7a085b",
+        "shutdown_c": null,
+        "size": 486,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "2f62ef51589d2403646f8ca74f2f5faef0c0757ab07bdc21acf851e41cb2abb5",
+        "shutdown_c": null,
+        "size": 416,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "22969a8f5db46aed1ebc3e0a5a2568fdc6c839bbce307f53298f7508c07b5f34",
+        "shutdown_c": null,
+        "size": 848,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "d3895e188e5680539a13b5d4ebb4e65fb7e0732e9b2cb25fff8053163ee7deae",
+        "shutdown_c": null,
+        "size": 2096,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "1e90f7289aa140f933f2449bd772a5f24c922b896d0c44da66b6f221b612dc80",
+        "shutdown_c": null,
+        "size": 1568,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/vayu/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "3dd952304a245e32937a9c2d846a6dc180557e82e054bb844fc1554a84ed5fcd",
+        "shutdown_c": null,
+        "size": 1952,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/vayu/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "a15ddd34f340e11b8d45608cf1f64f26f167dc0511606445db0b1e81971d0c8a",
+        "shutdown_c": null,
+        "size": 985,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal-engine",
+      "vendor.thermal-engine"
+    ]
+  }
+}

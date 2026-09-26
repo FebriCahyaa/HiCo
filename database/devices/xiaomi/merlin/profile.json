@@ -1,0 +1,172 @@
+{
+  "identity": {
+    "android": "12",
+    "brand": "Redmi",
+    "codename": "merlin",
+    "model": "merlin",
+    "platform": "mt6768"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/merlin.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/merlinnfc/-/tree/merlin-user-12-SP1A.210812.016-V13.0.5.0.SJOINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "6bf35751fd3380c45014581d202b7fde19a6c7b36720d12a84934348956b6931",
+        "shutdown_c": null,
+        "size": 2896,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "0b9fd475cdd450b14d08121dba08cd889fed373a84d1623344468fa88fdfe02f",
+        "shutdown_c": null,
+        "size": 3056,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "d4c1838831029192c21434c649ce524f24fe985e3f6881bbeb15380cd7919dfe",
+        "shutdown_c": null,
+        "size": 560,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "964316626f65eaed63d9968dd07125cbf62ff08c235ec5f3c503244d63a5f28f",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "6350b368cb4689da6b129710e2adbb00809985bd8f6cfd5b01d8ad8f553dc4a3",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "20f0835da288cd21ead377fe9ce8da17e16f9df1f0a172b3da4e505eaef87291",
+        "shutdown_c": null,
+        "size": 2992,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "ffae86d9d0fcabab49b0f1c56a1bd37e321aeaae28481810be6c3b9aae7f8769",
+        "shutdown_c": null,
+        "size": 3456,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "e118416a4df8545f63956e06a3677b8538b92875c31b0f98e47ac776acd4c264",
+        "shutdown_c": null,
+        "size": 2256,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/merlin/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "7ba247603a87618d03410fa543871e971c93d509c5e18d047fe3a44253b32ee1",
+        "shutdown_c": null,
+        "size": 1664,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/merlin/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "93ccbf63475ce98d7093d9ef6140e31515c787e55149a352638efce4c3dd3a99",
+        "shutdown_c": null,
+        "size": 498,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

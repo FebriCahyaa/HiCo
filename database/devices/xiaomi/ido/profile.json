@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "android": "5.1.1",
+    "brand": "Xiaomi",
+    "codename": "ido",
+    "model": "Redmi 3",
+    "platform": "msm8916"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/ido.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ido/-/tree/ido-user-5.1.1-LMY47V-V7.5.2.0.LAIMIDE-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 80.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/ido/thermal/thermal-engine.conf",
+        "sections": 18,
+        "sha256": "d1f9430f5717a259d85cfcc0e9cd6f483a7eb74a3578c16176574c2109b392be",
+        "shutdown_c": null,
+        "size": 3473,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

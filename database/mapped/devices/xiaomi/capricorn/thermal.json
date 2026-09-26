@@ -1,0 +1,178 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/capricorn/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "4e3d7503a67ea8caaf381a7d72df1b249690ece815139080fa1c0df72fd186e8",
+      "shutdown_c": null,
+      "size": 506,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 15,
+      "decoded_sha256": "47884c41df801ec6d3291a92869a344e7a4d9d08a3e00900081896a54fe80a06",
+      "decoded_size": 3361,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-game.conf",
+      "parser": null,
+      "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996-game.conf",
+      "sections": 0,
+      "sha256": "a88c6eec14ff1e5bddfd2b841cf37237dcaf3900a29009499da595f80cb33713",
+      "shutdown_c": null,
+      "size": 3376,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 13,
+      "decoded_sha256": "6e1a3b64c790fbd22bf68d61f5c6244b5e80195dd743e6c1fb13f2f4bb4854f4",
+      "decoded_size": 3192,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-high.conf",
+      "parser": null,
+      "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996-high.conf",
+      "sections": 0,
+      "sha256": "6e11917ef8e7f346a521370b03ade1d959d027532a28c124be99c3530cc0c764",
+      "shutdown_c": null,
+      "size": 3200,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 5,
+      "decoded_sha256": "28d09c86e1bdc1258342e65a00d808b1d4e1de8e383d2b88eb86d5a0a8314416",
+      "decoded_size": 167,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996-map.conf",
+      "sections": 0,
+      "sha256": "988e371f493bccc79c6479715044456f0e4632beea4a58c75f7c524239f6917c",
+      "shutdown_c": null,
+      "size": 176,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 16,
+      "decoded_sha256": "6a6615badcda83b09cf90f42363a46ae813b43f465920252cd3f30ca6d4c27ee",
+      "decoded_size": 3735,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996.conf",
+      "parser": null,
+      "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996.conf",
+      "sections": 0,
+      "sha256": "f301eb62b84796f31b8ffcbfb269c95885a0736e3e8b25dbc8ca54310e376222",
+      "shutdown_c": null,
+      "size": 3744,
+      "tunable_status": "parser-supported"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/capricorn/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 5,
+    "decode_failures": 0,
+    "decoded": 4,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 1,
+    "thermal": 5
+  },
+  "topology": {
+    "artifact_count": 5,
+    "category_counts": {
+      "thermal": 5
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-8996-game.conf",
+      "thermal-engine-8996-high.conf",
+      "thermal-engine-8996-map.conf",
+      "thermal-engine-8996.conf"
+    ],
+    "root": "devices/xiaomi/capricorn/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

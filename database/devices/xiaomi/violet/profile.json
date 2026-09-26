@@ -1,0 +1,113 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "violet",
+    "model": "Redmi Note 7 Pro",
+    "platform": "sm6150"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/violet.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/violet/-/tree/violet-user-10-QKQ1.190915.002-V12.5.1.0.QFHINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 6,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 54.0,
+        "name": "thermal-engine-camera.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/violet/thermal/thermal-engine-camera.conf",
+        "sections": 13,
+        "sha256": "3d75fd6f768d01a3cc553ece1ca0b7351985e5650603ac91a851a70054f77d9d",
+        "shutdown_c": null,
+        "size": 2178,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/violet/thermal/thermal-engine-map.conf",
+        "sections": 13,
+        "sha256": "e73b96c6240b8ec794f1e5b0885d567e07b1f39bc834169b49af12006ed0a59f",
+        "shutdown_c": null,
+        "size": 409,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 54.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/violet/thermal/thermal-engine-normal.conf",
+        "sections": 14,
+        "sha256": "048ef8cf6a08a41b7c9314034cfb547e79a8b5f7d8b5f336fe8ec570eb33b372",
+        "shutdown_c": null,
+        "size": 2332,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 54.0,
+        "name": "thermal-engine-studio.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/violet/thermal/thermal-engine-studio.conf",
+        "sections": 13,
+        "sha256": "f270f4c588db9d41e1e7081b6dfa53aef047451e481b8dca84828aaa710c0a31",
+        "shutdown_c": null,
+        "size": 2180,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 54.0,
+        "name": "thermal-engine-tgame.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/violet/thermal/thermal-engine-tgame.conf",
+        "sections": 14,
+        "sha256": "70d66172d3ca1c2c9525e759363d1b40e4333f3e471f845fccfe81640d3fb69b",
+        "shutdown_c": null,
+        "size": 2392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/violet/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-camera.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine-studio.conf",
+      "thermal-engine-tgame.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

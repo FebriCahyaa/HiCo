@@ -1,0 +1,32 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "cactus",
+    "model": "Redmi 6A",
+    "platform": "mt6765"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/cactus.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cactus/-/tree/cactus-user-8.1.0-O11019-V10.3.3.0.OCBMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "ThermalIndicator",
+      "thermal",
+      "thermal-hal-1-0",
+      "thermal_manager",
+      "thermald",
+      "thermalloadalgod",
+      "thermalservice"
+    ]
+  }
+}

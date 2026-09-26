@@ -1,0 +1,212 @@
+{
+  "identity": {
+    "android": "13",
+    "brand": "Xiaomi",
+    "codename": "nabu",
+    "model": "Xiaomi Pad 5",
+    "platform": "msmnile"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/nabu.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/nabu/-/tree/missi_padext4_global-user-13-TKQ1.221114.001-V816.0.16.0.TKXINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 13,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-4k.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-4k.conf",
+        "sections": 0,
+        "sha256": "6a4d696c29e53d80bb02c500390d0e1101b3895c0f3b585832f39df189ac622a",
+        "shutdown_c": null,
+        "size": 1840,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "343f1fd068cb2d70fdcb24c21610da080080074b2d93d108755822fff52f1327",
+        "shutdown_c": null,
+        "size": 1888,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 51.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/nabu/thermal/thermal-chg-only.conf",
+        "sections": 4,
+        "sha256": "4fb51b83aac0d6aa0df5470e626f171523c6bb2bd92a497f764647261d0ad847",
+        "shutdown_c": null,
+        "size": 965,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "42f00c5edf1c5135e84e5521d154e89eab94bed823b3efd278a747b100ab6525",
+        "shutdown_c": null,
+        "size": 1888,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "2f62ef51589d2403646f8ca74f2f5faef0c0757ab07bdc21acf851e41cb2abb5",
+        "shutdown_c": null,
+        "size": 416,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "d7ee99d484c14107413c0977b5506bcd48c83fe180aa3ee2f9da9079b0e1fdf2",
+        "shutdown_c": null,
+        "size": 1296,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-navigation.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-navigation.conf",
+        "sections": 0,
+        "sha256": "1a03d4556ffbd012ea0fb483f454a1245831ee54d60cff65e9d180f128eb2807",
+        "shutdown_c": null,
+        "size": 1856,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "a5ade5ae2def7e5bb2310d388fdfdb0bc125908e5a4f961cbfb872f4f3c2745c",
+        "shutdown_c": null,
+        "size": 848,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "043325fb1cafd02b8ee8d819c51a844e853bd5195ecc5c8c46cf4da1cd58f02b",
+        "shutdown_c": null,
+        "size": 2368,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "bcd77468eb3336b3b1f2cc90c7365883b750c72a69e8125edfbf8608e4d02e83",
+        "shutdown_c": null,
+        "size": 1248,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/nabu/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "22bc741a1436c2352b815296fd90764acb47f196f33326b9ec0c2dc5d3a92c3d",
+        "shutdown_c": null,
+        "size": 1872,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/nabu/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "a15ddd34f340e11b8d45608cf1f64f26f167dc0511606445db0b1e81971d0c8a",
+        "shutdown_c": null,
+        "size": 985,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-4k.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-navigation.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal-engine",
+      "vendor.thermal-engine"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "platina",
+    "model": "MI 8 Lite",
+    "platform": "sdm660"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/platina.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/platina/-/tree/platina-user-10-QKQ1.190910.002-V12.0.3.0.QDTMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 8,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-camera.conf",
+        "sections": 0,
+        "sha256": "6f7ba28e43e318c0a000ae3e0590c7fa8994667234ee75a608cf2ef31ee944a4",
+        "shutdown_c": null,
+        "size": 2768,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660-high.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-high.conf",
+        "sections": 0,
+        "sha256": "7f477d7ef91efdd81679c3c497d9f1b5e3cea7c7c6d44d5adf9a31bf4624319f",
+        "shutdown_c": null,
+        "size": 3184,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-map.conf",
+        "sections": 0,
+        "sha256": "8e5ff632d41c3b4fc491f5fb288c119bc90c8858cd1bcbcadb96a6863cc83995",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-nolimits.conf",
+        "sections": 0,
+        "sha256": "730d0314c4c537362a45adbc60a6ba0393ec767ebab091654b170956358e165f",
+        "shutdown_c": null,
+        "size": 624,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660-pubgmhd.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-pubgmhd.conf",
+        "sections": 0,
+        "sha256": "eff338c8a93572a3082eef6468099aaf207a77e81a7918a424f25f3d2d0a3b58",
+        "shutdown_c": null,
+        "size": 1088,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660-sgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-sgame.conf",
+        "sections": 0,
+        "sha256": "f46d935462907af9fce7a6a102055032ccfc1690500a11f8aa700ccc9fc3a6dc",
+        "shutdown_c": null,
+        "size": 1136,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-sdm660.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660.conf",
+        "sections": 0,
+        "sha256": "e0b560bc86ca3db96d6f9f9c4fd491761f6f36d92a6c44fe9a1813b49c1899da",
+        "shutdown_c": null,
+        "size": 3168,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/platina/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-sdm660-camera.conf",
+      "thermal-engine-sdm660-high.conf",
+      "thermal-engine-sdm660-map.conf",
+      "thermal-engine-sdm660-nolimits.conf",
+      "thermal-engine-sdm660-pubgmhd.conf",
+      "thermal-engine-sdm660-sgame.conf",
+      "thermal-engine-sdm660.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

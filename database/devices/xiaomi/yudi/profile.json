@@ -1,0 +1,239 @@
+{
+  "identity": {
+    "android": "15",
+    "brand": "Xiaomi",
+    "codename": "yudi",
+    "model": "Xiaomi Pad 6 Max 14",
+    "platform": "taro"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/yudi.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/yudi/-/tree/missi-user-15-AQ3A.241006.001-OS2.0.4.0.VMHCNXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 15,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-4k.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-4k.conf",
+        "sections": 0,
+        "sha256": "b6e706878b7fe6187045b1f2dbd3e04111505f1230b4b679be7b343c7332cb6f",
+        "shutdown_c": null,
+        "size": 2144,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "f1f7fcf81e45ec21794542f3d984db15c43daa1990f7de67c5605aa313611a31",
+        "shutdown_c": null,
+        "size": 2224,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 48.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/yudi/thermal/thermal-chg-only.conf",
+        "sections": 5,
+        "sha256": "63db112bace8f68904be36864cdbe81f10e76057e11dbc5a286e4cec80df76c2",
+        "shutdown_c": null,
+        "size": 1009,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "e9ecceee4c040cfa2fb919c3e1deb9a7d342ece297dafdfba55d718cfae505fd",
+        "shutdown_c": null,
+        "size": 2320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-huanji.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-huanji.conf",
+        "sections": 0,
+        "sha256": "5609223e16abecd7ddc8ba32758b3fb19fbbb2e5e367104a028b0e4a3a7630bd",
+        "shutdown_c": null,
+        "size": 2192,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "50e9f3f17f23b0b50db8c4012451ad157d7b97e7bfebb70d88b9033140b79f18",
+        "shutdown_c": null,
+        "size": 7504,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "300f05b954b9fe210a51ff764ceeff7c8c74cc4be4b3cf66453a4d66e72f3c83",
+        "shutdown_c": null,
+        "size": 2064,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "ab93066115cb0019cc978957829e236ce1f0bb883da8e8a7e0af6e25d55346be",
+        "shutdown_c": null,
+        "size": 1168,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "94c76e74b5354465fdd89cf116bb6b5f97bca14d07896fdf1292b3fbc94b05a6",
+        "shutdown_c": null,
+        "size": 2672,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "b684bffb8326c4149bda8542c48eaa378b1a6b731c9f27932ccbc7aa7046089b",
+        "shutdown_c": null,
+        "size": 2032,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "72f1148c5274e7b148d8b90b38db6476d196c078c1ffed2de47bde5c30c9febb",
+        "shutdown_c": null,
+        "size": 2288,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-videochat.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-videochat.conf",
+        "sections": 0,
+        "sha256": "d07d383086f5bf2c0cc06a489ddc82bb571d602a9ddb5d7161b3d528f19443c6",
+        "shutdown_c": null,
+        "size": 2304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-yuanshen.conf",
+        "parser": null,
+        "path": "devices/xiaomi/yudi/thermal/thermal-yuanshen.conf",
+        "sections": 0,
+        "sha256": "f90a3d2e77309bae37c8fa34c59956a55ef8287ee9d2c2f95d5f36524c092946",
+        "shutdown_c": null,
+        "size": 2080,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/yudi/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "d1b129f1ef37ac4efc584ee14cdff1e56c14a17e1cf70fbf04523407ad63df92",
+        "shutdown_c": null,
+        "size": 2266,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-4k.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-engine.conf",
+      "thermal-huanji.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermal-videochat.conf",
+      "thermal-yuanshen.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "android.thermal-hal",
+      "mi_thermald"
+    ]
+  }
+}

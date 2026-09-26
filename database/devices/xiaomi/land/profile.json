@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "android": "6.0.1",
+    "brand": "Xiaomi",
+    "codename": "land",
+    "model": "Redmi 3S",
+    "platform": "msm8937"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/land.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/land/-/tree/land-user-6.0.1-MMB29M-V10.2.2.0.MALMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 430.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/land/thermal/thermal-engine.conf",
+        "sections": 22,
+        "sha256": "0afeb4af692fe47548c78a5fa54eb3b7ee6292d092b5f7c974d50ecc0fa26cb6",
+        "shutdown_c": null,
+        "size": 3955,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "laurus",
+    "model": "MI CC 9e",
+    "platform": "trinket"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/laurus.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/laurus/-/tree/laurus-user-10-QKQ1.190910.002-20.6.10-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 5,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 120.0,
+        "name": "thermal-engine-high.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/laurus/thermal/thermal-engine-high.conf",
+        "sections": 2,
+        "sha256": "7a85c0c0b2f89eb09d355c6a608fe40c24b0b58986e414822c39818fbb84a74f",
+        "shutdown_c": null,
+        "size": 402,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/laurus/thermal/thermal-engine-map.conf",
+        "sections": 3,
+        "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+        "shutdown_c": null,
+        "size": 94,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 120.0,
+        "name": "thermal-engine-nolimits.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/laurus/thermal/thermal-engine-nolimits.conf",
+        "sections": 2,
+        "sha256": "04d1600825dda36912a53718b73ec185d9c7178d74f4b1614840f19a84f9a005",
+        "shutdown_c": null,
+        "size": 406,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 120.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/laurus/thermal/thermal-engine-normal.conf",
+        "sections": 2,
+        "sha256": "5ccf7a53242bbdaf65d1350f6449785ab462ab908992fb86aaeb871e254406b4",
+        "shutdown_c": null,
+        "size": 404,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 120.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/laurus/thermal/thermal-engine.conf",
+        "sections": 56,
+        "sha256": "9e33e3559c1dff1b174615bc6a1543c764ff550224359ee02b5aa98c654e6ee4",
+        "shutdown_c": null,
+        "size": 13346,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-high.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-nolimits.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

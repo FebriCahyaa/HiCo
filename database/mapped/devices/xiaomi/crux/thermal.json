@@ -1,0 +1,323 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "b57a6406dba8ad86971d1d5caa5b949e21e852d5ce93a88c1cf7849d8be8e0d2",
+      "shutdown_c": null,
+      "size": 1092,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 11,
+      "decoded_sha256": "db76e1da479f8fcf8c91ad5a6611b152ab016a2ac34394d4fef5040703a94d9f",
+      "decoded_size": 1758,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-arvr.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-arvr.conf",
+      "sections": 0,
+      "sha256": "f236179fbe68c506a006322329fdf1e9fdb0ea28675f66b9a2c7f4137b8d388d",
+      "shutdown_c": null,
+      "size": 1760,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 12,
+      "decoded_sha256": "b5e03ef0b4f3dcf251bc0f4599b094e2b466faaf3cbb614ab7fede9d2d7ed089",
+      "decoded_size": 2004,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-camera.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-camera.conf",
+      "sections": 0,
+      "sha256": "9a718f0c38ac05175061753ff5949b2aca027d41ea3207a2f69ef24de502ad3d",
+      "shutdown_c": null,
+      "size": 2016,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 60.0,
+      "name": "thermal-chg-only.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/crux/thermal/thermal-chg-only.conf",
+      "sections": 3,
+      "sha256": "8c8add458205403a09b442086de7dbf9c730f823656995f4ace05be4885992eb",
+      "shutdown_c": null,
+      "size": 595,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 12,
+      "decoded_sha256": "db3e352494e8e515a5e6d8a07c41eb7fe842e56b1e151f10dd9ab6dbd3e9ca9a",
+      "decoded_size": 291,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-map.conf",
+      "sections": 0,
+      "sha256": "671c872b6952eb048c3d8715185a2a20fca41e8e1c2610216c045c9dad48a308",
+      "shutdown_c": null,
+      "size": 304,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "1d8dda1961d049c3f683008de0155029c6327251d30760a4e1ccd9b05a297620",
+      "decoded_size": 1377,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-nolimits.conf",
+      "sections": 0,
+      "sha256": "2d4410f7eafe0cc0dd04fce189dce144d5d500546f9b96d33f4971531c1c3aae",
+      "shutdown_c": null,
+      "size": 1392,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 12,
+      "decoded_sha256": "aa65793966fb1913f0492c1ceb40c937b6d945ceb28be128ea89f52413e6285f",
+      "decoded_size": 1935,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-normal.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-normal.conf",
+      "sections": 0,
+      "sha256": "5b75555de83413bfa0bc7f669475b6d61c603898bbaab39f4ce436b4c37f0053",
+      "shutdown_c": null,
+      "size": 1936,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 9,
+      "decoded_sha256": "4345d6496484fa254b3779742300da909c169b39afd94de3c7017c4f7e700372",
+      "decoded_size": 1425,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-phone.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-phone.conf",
+      "sections": 0,
+      "sha256": "191c74fc31455fd568072c842eb7635dff01ba2d842d0e2786271b020e4d1451",
+      "shutdown_c": null,
+      "size": 1440,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 11,
+      "decoded_sha256": "5f16253718756533ac3cf060a6662420b40946877d3aeb194f5523e682261ecb",
+      "decoded_size": 1765,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-tgame.conf",
+      "parser": null,
+      "path": "devices/xiaomi/crux/thermal/thermal-tgame.conf",
+      "sections": 0,
+      "sha256": "8b2bfdd40ed78ae2afb012c962e55dd39e3e31d531b887d64f501ffe0601433c",
+      "shutdown_c": null,
+      "size": 1776,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermald-devices.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/crux/thermal/thermald-devices.conf",
+      "sections": 0,
+      "sha256": "4fcd0f5b5b05d8d508300f978ae34c551c24da4b93a16a73c0c5a513a3e51816",
+      "shutdown_c": null,
+      "size": 867,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/crux/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 11,
+    "decode_failures": 0,
+    "decoded": 7,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 4,
+    "thermal": 11
+  },
+  "topology": {
+    "artifact_count": 11,
+    "category_counts": {
+      "thermal": 11
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "root": "devices/xiaomi/crux/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine",
+      "thermald"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

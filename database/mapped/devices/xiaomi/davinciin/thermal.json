@@ -1,0 +1,350 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "12fbf78a45ca1850288c5eb0531a10ae922556a72e3123ba73077f9536af32ae",
+      "shutdown_c": null,
+      "size": 1197,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "9c920237cc8a95b649b1ce0832bc002a07946ca311a296d228594e7718f369a3",
+      "decoded_size": 1049,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-arvr.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-arvr.conf",
+      "sections": 0,
+      "sha256": "05ba5f97decf895da296c3dbfc484d50c93107a5f52912926baa7d4db0d49904",
+      "shutdown_c": null,
+      "size": 1056,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "286659e04b9928abd61f2ac2900aa2aaebfd9679ef4658cb35ee0edf60ac80d5",
+      "decoded_size": 1333,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-camera.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-camera.conf",
+      "sections": 0,
+      "sha256": "006938d8d3d3bc075c03ae7a853bb6e120fd65549b6a967fa0d75a4db1b2d121",
+      "shutdown_c": null,
+      "size": 1344,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 60.0,
+      "name": "thermal-chg-only.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/davinciin/thermal/thermal-chg-only.conf",
+      "sections": 3,
+      "sha256": "24f0850dafd80b159d6eb302603ce1a1abcf22c051e7881fd8a48bc87e2153f9",
+      "shutdown_c": null,
+      "size": 484,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 13,
+      "decoded_sha256": "d8cab0b4c2b71fe23a6f601b9e2441c113073ae848c78131b86bede5951d7790",
+      "decoded_size": 313,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-map.conf",
+      "sections": 0,
+      "sha256": "a17255df5e7fe1721c580dbaa76aa18cc6ead10c534b09eecaea5152984cc906",
+      "shutdown_c": null,
+      "size": 320,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "44ace5bd0698babdbf85b2a38c697ddacc5f79d8ec4ad6fa23eb589743b1ff7c",
+      "decoded_size": 1036,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-nolimits.conf",
+      "sections": 0,
+      "sha256": "57bfded9884a7fdb513a57e029f72d5da81ed19dd82cf73efaf0208b6b6ea334",
+      "shutdown_c": null,
+      "size": 1040,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 10,
+      "decoded_sha256": "aeeb50a06cad1460739573c4fff4d03a7b103251673bccbd214e25e29f5e06e8",
+      "decoded_size": 1616,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-normal.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-normal.conf",
+      "sections": 0,
+      "sha256": "deb268d99c6c5b82ebb87d57b1545183bc7390cb04d65ece6b05f53901b425da",
+      "shutdown_c": null,
+      "size": 1632,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "6967088ce10a4bb3cfa59f8bcd5831bd91f7c35bb1749b722619e40ff95fd59c",
+      "decoded_size": 1122,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-phone.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-phone.conf",
+      "sections": 0,
+      "sha256": "605b4d680ef016bf3ae024690077caf2c57c253cab6a7f4d420b312ce4fbb8a7",
+      "shutdown_c": null,
+      "size": 1136,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 62.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "7adc6968c425bc09623718546b3c464f05620245dd7c8f516eacbe46f8701dca",
+      "decoded_size": 1146,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-tgame.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-tgame.conf",
+      "sections": 0,
+      "sha256": "156dadd9bef5f03b59a2547c7fe39e01261562b8eb1ab5d3894dd5d78b8a47ba",
+      "shutdown_c": null,
+      "size": 1152,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "f3186f254dce0f7de8ff002583febfcca797b9dd408f912f41a8f9fe237f2f1b",
+      "decoded_size": 1400,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-youtube.conf",
+      "parser": null,
+      "path": "devices/xiaomi/davinciin/thermal/thermal-youtube.conf",
+      "sections": 0,
+      "sha256": "b66c6dde9d8b2c1c8f0007305ebe15d514a3221502548974e428e534cfec1ce9",
+      "shutdown_c": null,
+      "size": 1408,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermald-devices.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/davinciin/thermal/thermald-devices.conf",
+      "sections": 0,
+      "sha256": "8cf1b9c56e49854f9d713748df9cf999cef20ee8979b33a721b2e65c7fae3cff",
+      "shutdown_c": null,
+      "size": 560,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/davinciin/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 12,
+    "decode_failures": 0,
+    "decoded": 8,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 4,
+    "thermal": 12
+  },
+  "topology": {
+    "artifact_count": 12,
+    "category_counts": {
+      "thermal": 12
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "root": "devices/xiaomi/davinciin/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine",
+      "thermald"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

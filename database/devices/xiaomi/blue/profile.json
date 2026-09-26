@@ -1,0 +1,30 @@
+{
+  "identity": {
+    "android": "14",
+    "brand": "Redmi",
+    "codename": "blue",
+    "model": "blue",
+    "platform": "mt6765"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/blue.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/poco/blue/-/tree/missi-user-14-UP1A.231005.007-V816.0.5.0.UGRMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "thermal",
+      "thermal_manager",
+      "thermal_phone",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

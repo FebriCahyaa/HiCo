@@ -1,0 +1,197 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Redmi",
+    "codename": "picasso",
+    "model": "Redmi K30 5G",
+    "platform": "lito"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/picasso.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/picasso/-/tree/qssi-user-11-RKQ1.200826.002-V12.5.2.0.RGICNXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 12,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-4k.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-4k.conf",
+        "sections": 0,
+        "sha256": "b7f796465cd5a3838039a3022cb4e96e83b30b768b3f1283f89e49d3f7f242a9",
+        "shutdown_c": null,
+        "size": 1376,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "34f85913bf447c902d97c47baa3c06aaa600b8eae85194a715036e9c14e03bc3",
+        "shutdown_c": null,
+        "size": 976,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "25d5800841d4b935cc83e4c049fb50588b819863b71fb538f5c5a72cf29e45c0",
+        "shutdown_c": null,
+        "size": 1408,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/picasso/thermal/thermal-chg-only.conf",
+        "sections": 4,
+        "sha256": "b3b21c80278fa3f28d3ba007f53f4c8cd06cc74e5f81ad38cff99fa75f0807d8",
+        "shutdown_c": null,
+        "size": 571,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "a17255df5e7fe1721c580dbaa76aa18cc6ead10c534b09eecaea5152984cc906",
+        "shutdown_c": null,
+        "size": 320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "f250c844f6ea4ab54194add56cfbc9f22ae7457cf07ee28f2775ec84288f052f",
+        "shutdown_c": null,
+        "size": 960,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "0a4d9b4ab82e708563fbffbfad9a2be19c0286df66a9e457ae831dc38c691624",
+        "shutdown_c": null,
+        "size": 1920,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "1c6cce8a445c7c0f43f4eaf89b1cc3b7ac7a736aae234f748a4e4255e24586a6",
+        "shutdown_c": null,
+        "size": 1536,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "f2811ac920b5f445c1948b880b3029901e4f73eb0a6d4e849b3b1b9c081bdeb2",
+        "shutdown_c": null,
+        "size": 1360,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/picasso/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "7ea070f1b1b6ddff8b8b35bdf38a4f492c668dc3720fe8051df770e502e2443c",
+        "shutdown_c": null,
+        "size": 1392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/picasso/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "7099a0a23c055c18df1162c88b9c9756177afdb733b71511e499abe691e28a61",
+        "shutdown_c": null,
+        "size": 554,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-4k.conf",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal-engine"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "android": "6.0.1",
+    "brand": "Xiaomi",
+    "codename": "lithium",
+    "model": "MIX",
+    "platform": "msm8996"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/lithium.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/lithium/-/tree/lithium-user-6.0.1-MXB48T-7.1.5-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996.conf",
+        "parser": null,
+        "path": "devices/xiaomi/lithium/thermal/thermal-engine-8996.conf",
+        "sections": 0,
+        "sha256": "bc952abf8ed91bb067c929df09ed302f6a24edc6b27dadeaebf4441478382ed2",
+        "shutdown_c": null,
+        "size": 1632,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-8996.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

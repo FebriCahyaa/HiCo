@@ -1,0 +1,85 @@
+{
+  "identity": {
+    "android": "8.0.0",
+    "brand": "Xiaomi",
+    "codename": "capricorn",
+    "model": "MI 5s",
+    "platform": "msm8996"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/capricorn.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/capricorn/-/tree/capricorn-user-8.0.0-OPR1.170623.032-V10.2.2.0.OAGCNXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 4,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996-game.conf",
+        "parser": null,
+        "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996-game.conf",
+        "sections": 0,
+        "sha256": "a88c6eec14ff1e5bddfd2b841cf37237dcaf3900a29009499da595f80cb33713",
+        "shutdown_c": null,
+        "size": 3376,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996-high.conf",
+        "parser": null,
+        "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996-high.conf",
+        "sections": 0,
+        "sha256": "6e11917ef8e7f346a521370b03ade1d959d027532a28c124be99c3530cc0c764",
+        "shutdown_c": null,
+        "size": 3200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996-map.conf",
+        "sections": 0,
+        "sha256": "988e371f493bccc79c6479715044456f0e4632beea4a58c75f7c524239f6917c",
+        "shutdown_c": null,
+        "size": 176,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996.conf",
+        "parser": null,
+        "path": "devices/xiaomi/capricorn/thermal/thermal-engine-8996.conf",
+        "sections": 0,
+        "sha256": "f301eb62b84796f31b8ffcbfb269c95885a0736e3e8b25dbc8ca54310e376222",
+        "shutdown_c": null,
+        "size": 3744,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-8996-game.conf",
+      "thermal-engine-8996-high.conf",
+      "thermal-engine-8996-map.conf",
+      "thermal-engine-8996.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0"
+    ]
+  }
+}

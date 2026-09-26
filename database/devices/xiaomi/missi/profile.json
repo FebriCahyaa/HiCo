@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "android": "14",
+    "brand": "UNISOC",
+    "codename": "missi",
+    "model": "missi",
+    "platform": "sp9863a"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/missi.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/klein/-/tree/missi_global-user-14-UP1A.231005.007-V816.0.3.0.UGSMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/missi/thermal/thermal.conf",
+        "sections": 0,
+        "sha256": "118adfaf5d603956ba2d47528d2972e410e88ff762a7688faa2fb00d83d29857",
+        "shutdown_c": null,
+        "size": 52496,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal-hal-2-0",
+      "vendor.thermald"
+    ]
+  }
+}

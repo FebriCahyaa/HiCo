@@ -1,0 +1,183 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "POCO",
+    "codename": "phoenixin",
+    "model": "POCO X2",
+    "platform": "sm6150"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/phoenixin.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/poco/phoenixin/-/tree/phoenixin-user-10-QKQ1.190825.002-V11.0.10.0.QGHINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 11,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-4k.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-4k.conf",
+        "sections": 0,
+        "sha256": "799cb8dc67828253e67ae9032010cda8f731178d8468afb2689e716762bdc096",
+        "shutdown_c": null,
+        "size": 1216,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "5324229f075b308ec8de48050e6cbb070e524b4e9f2f104e3d6be13d5d7db2f5",
+        "shutdown_c": null,
+        "size": 992,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "44ae1c1f0b7a1e513639e1423e3a0c5fb6976bbf71be54af79f1431f0eab5526",
+        "shutdown_c": null,
+        "size": 1392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-chg-only.conf",
+        "sections": 3,
+        "sha256": "c9b5778feea57cd4f495464922a85a332f5b26b96f6ea2bf1c0e1d4c3bc23d4c",
+        "shutdown_c": null,
+        "size": 419,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "a17255df5e7fe1721c580dbaa76aa18cc6ead10c534b09eecaea5152984cc906",
+        "shutdown_c": null,
+        "size": 320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "8299e0fbbbba8d902cd1c6fe997f2af128062056499e572b401a7d0fb053431c",
+        "shutdown_c": null,
+        "size": 976,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "6c52a88a85c06fc0be48dae9ead264af8de9a4b124fcc1a6940aa9fd9309f3e5",
+        "shutdown_c": null,
+        "size": 1344,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "52f0a00dfa26a26c7b23fd81a90f3f09bc2160b12f8777a3ee04a69101c8a4d2",
+        "shutdown_c": null,
+        "size": 1280,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/phoenixin/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "8c70b624d726788c009d3787d75c41f7c0878fe32e8edfc383030ce3f21d57fb",
+        "shutdown_c": null,
+        "size": 1024,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/phoenixin/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "59c5a14c597419b3809890c5404ef743d50f47554a83d73398e4518e83dcb336",
+        "shutdown_c": null,
+        "size": 385,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-4k.conf",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

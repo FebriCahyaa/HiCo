@@ -1,0 +1,200 @@
+{
+  "identity": {
+    "android": "13",
+    "brand": "Redmi",
+    "codename": "selene",
+    "model": "21061119AG",
+    "platform": "mt6768"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/selene.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/poco/eos/-/tree/missi_phoneext4_global-user-13-TP1A.220624.014-V14.0.6.0.TKUMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 12,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "5413a7e1dcbc3a0ea2e8d6f108b79f403ae941e4cec1c2067ad0064a7f7f8f5e",
+        "shutdown_c": null,
+        "size": 2000,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "c33c271ec9462a380854de1a4e76d1ef60370154aca14dc1468226de09ce595a",
+        "shutdown_c": null,
+        "size": 2176,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "16713f9a4cda9444aa9ecdc49da7406d3aa0154aef8eaa63b42e4e8c5d0be61c",
+        "shutdown_c": null,
+        "size": 624,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "369a94220409f3bd0841413728b7cab467114db2a943ca27f52ff2177dd657c4",
+        "shutdown_c": null,
+        "size": 352,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "84d2268f0f52c43eb899f0e5061c57ece8ee37e0420327105f1d2143d8236d4a",
+        "shutdown_c": null,
+        "size": 1344,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "84de6ad1edcdc5f1736eaab63a1e4f9023f4811410e8d8cac2c5b91dae450556",
+        "shutdown_c": null,
+        "size": 1504,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "0baebefa9ab720673a570aa39e80e375d509d859efe1495be6a74db247e98ee3",
+        "shutdown_c": null,
+        "size": 2128,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "d0378152e1bd7a39173309e4b228ef7dfb1e28d25a49198d78595fc1d955f592",
+        "shutdown_c": null,
+        "size": 1968,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "97e6436cb196af580ca521bf6ea80a21c449565c1c13107be1187b979ccedb74",
+        "shutdown_c": null,
+        "size": 1568,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "bfe0e8b2c80a4d901d50eb03bead75ec6d398978cb6a18490c0d49da4beeea6a",
+        "shutdown_c": null,
+        "size": 1200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/selene/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "858e482f4408c650db4addc2e5f70ddcd15515d208ac8b5116644f71bad68d1d",
+        "shutdown_c": null,
+        "size": 1312,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/selene/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "f4206c08bdbdd7c6fe73bffaf959d134a800e1832fba95b8e16669c24bfde0a0",
+        "shutdown_c": null,
+        "size": 631,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

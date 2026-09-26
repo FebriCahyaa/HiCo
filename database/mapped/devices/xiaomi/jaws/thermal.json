@@ -1,0 +1,89 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/jaws/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "f67c5154c564b2181dddb08a6bd755335926a4a1e7557e718d72d3a3592745f9",
+      "shutdown_c": null,
+      "size": 160,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "json",
+      "max_trip_c": null,
+      "name": "thermal_info_config.json",
+      "parser": "thermal-hal-json-v2",
+      "path": "devices/xiaomi/jaws/thermal/thermal_info_config.json",
+      "sections": 1,
+      "sha256": "47a1834870f1c298aeb7c56ad0893f65f2abe2cd56c41099f5d232eec3691fcd",
+      "shutdown_c": null,
+      "size": 567,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/jaws/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 2,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 2
+  },
+  "topology": {
+    "artifact_count": 2,
+    "category_counts": {
+      "thermal": 2
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal_info_config.json"
+    ],
+    "root": "devices/xiaomi/jaws/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

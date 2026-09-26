@@ -1,0 +1,54 @@
+{
+  "identity": {
+    "android": "7.1.2",
+    "brand": "Xiaomi",
+    "codename": "rosy",
+    "model": "Redmi 5",
+    "platform": "msm8953"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/rosy.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/rosy/-/tree/rosy-user-7.1.2-N2G47H-V9.2.3.0.NDAMIEK-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 2,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 95.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/rosy/thermal/thermal-engine.conf",
+        "sections": 23,
+        "sha256": "26fc39770a29c314f5a41b1ac57f9c4ddcee23b91366bb0937cc5144d3689659",
+        "shutdown_c": null,
+        "size": 4368,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 95.0,
+        "name": "thermal-engine_india.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/rosy/thermal/thermal-engine_india.conf",
+        "sections": 24,
+        "sha256": "1fb43528efc3549905d36d07e37ac9c873c999168cc42492eaa3f1301dad0b15",
+        "shutdown_c": null,
+        "size": 4511,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf",
+      "thermal-engine_india.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

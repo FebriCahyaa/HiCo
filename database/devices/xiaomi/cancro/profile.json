@@ -1,0 +1,54 @@
+{
+  "identity": {
+    "android": "6.0.1",
+    "brand": "Xiaomi",
+    "codename": "cancro",
+    "model": "MI 3W",
+    "platform": "msm8974"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/cancro.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cancro/-/tree/cancro-user-6.0.1-MMB29M-V10.1.1.0.MXDCNFI-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 2,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 550.0,
+        "name": "thermal-engine-8974.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/cancro/thermal/thermal-engine-8974.conf",
+        "sections": 5,
+        "sha256": "2899f5cbe69a631a1d577b226ec6addea8f06618defb4fd5e8d596155045db8a",
+        "shutdown_c": null,
+        "size": 1149,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 115.0,
+        "name": "thermal-engine-perf.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/cancro/thermal/thermal-engine-perf.conf",
+        "sections": 4,
+        "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+        "shutdown_c": null,
+        "size": 727,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-8974.conf",
+      "thermal-engine-perf.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "dangalfhd",
+    "model": "MiTV-AXSO1",
+    "platform": "txlx"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/dangalfhd.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/dangalfhd/-/tree/dangalFHD-user-8.1.0-OPM1.171019.011-1637-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}

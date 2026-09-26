@@ -1,0 +1,175 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/sakura_india/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "5e41cb663c55a672aef6f4b9afb77e5a40f6d6bd08f987f137f6119b5110fc79",
+      "shutdown_c": null,
+      "size": 580,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 70.0,
+      "name": "thermal-engine-high.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/sakura_india/thermal/thermal-engine-high.conf",
+      "sections": 5,
+      "sha256": "76cc4ad7853679e3a565e6e2545cbba4a2090ce75a0dc6be9aa8c41c269c6f05",
+      "shutdown_c": null,
+      "size": 895,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermal-engine-map.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/sakura_india/thermal/thermal-engine-map.conf",
+      "sections": 3,
+      "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+      "shutdown_c": null,
+      "size": 94,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 70.0,
+      "name": "thermal-engine-nolimits.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/sakura_india/thermal/thermal-engine-nolimits.conf",
+      "sections": 3,
+      "sha256": "46b9125d69bd7111fc26889f7bc64be53600b713def6a6e01e37a6742684afc7",
+      "shutdown_c": null,
+      "size": 579,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 70.0,
+      "name": "thermal-engine-normal.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/sakura_india/thermal/thermal-engine-normal.conf",
+      "sections": 6,
+      "sha256": "47d49d0fb9434fdce4cce98a94c301861c18f1e5609e365b84488d8091128630",
+      "shutdown_c": null,
+      "size": 1060,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 70.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/sakura_india/thermal/thermal-engine.conf",
+      "sections": 4,
+      "sha256": "3991eb247848431f0c84235cfa06d70c85843d6da916c9d207286309d4d72964",
+      "shutdown_c": null,
+      "size": 736,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/sakura_india/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 6,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 6,
+    "thermal": 6
+  },
+  "topology": {
+    "artifact_count": 6,
+    "category_counts": {
+      "thermal": 6
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-high.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-nolimits.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/sakura_india/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

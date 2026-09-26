@@ -1,0 +1,127 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "olive",
+    "model": "Redmi 8",
+    "platform": "msm8937"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/olive.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/olive/-/tree/olive-user-10-QKQ1.191014.001-V12.5.3.0.QCNIDXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 7,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 57.0,
+        "name": "thermal-engine-camera.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/olive/thermal/thermal-engine-camera.conf",
+        "sections": 5,
+        "sha256": "8861565cdd94f25eeddb6a2c23b8beaeed60f5c2de617945d16330663d94aebe",
+        "shutdown_c": null,
+        "size": 1008,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-high.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/olive/thermal/thermal-engine-high.conf",
+        "sections": 7,
+        "sha256": "fa65f36b3e9d52876d4c46bdf7d3d8ca36a1a7d96ff90e6c49583264e919143f",
+        "shutdown_c": null,
+        "size": 1442,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/olive/thermal/thermal-engine-map.conf",
+        "sections": 6,
+        "sha256": "b7d90c98f24b6a50db0683d716546ca2fb89052bc51c8497971a3f48995b15db",
+        "shutdown_c": null,
+        "size": 186,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-nolimits.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/olive/thermal/thermal-engine-nolimits.conf",
+        "sections": 4,
+        "sha256": "7a889c7d49a3663b6124af481d38abe84f844e7dde6e800871270fa4082ec544",
+        "shutdown_c": null,
+        "size": 879,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/olive/thermal/thermal-engine-normal.conf",
+        "sections": 7,
+        "sha256": "6dcf0b582166e598974ef0e9b8d653b8ccbb367fc287b59d0ec0cb49d94f5cd3",
+        "shutdown_c": null,
+        "size": 1442,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-sgame.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/olive/thermal/thermal-engine-sgame.conf",
+        "sections": 7,
+        "sha256": "840d4e7bfaaefe9d8f6a933f5a7a9e79edc8319f5daab3dadfcf579bc78d367f",
+        "shutdown_c": null,
+        "size": 1448,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/olive/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-camera.conf",
+      "thermal-engine-high.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-nolimits.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine-sgame.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

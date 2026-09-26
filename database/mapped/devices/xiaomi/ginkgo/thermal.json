@@ -1,0 +1,154 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/ginkgo/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "0241d42677309efbc2a094b6cee111623707f863ffeaf8b8878473ec920a6b43",
+      "shutdown_c": null,
+      "size": 482,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 61.0,
+      "name": "thermal-engine-camera.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/ginkgo/thermal/thermal-engine-camera.conf",
+      "sections": 10,
+      "sha256": "10fcb36cb34cfc5bbdf813f372fc0a215222750641162743a77b5dc6107b31f3",
+      "shutdown_c": null,
+      "size": 1807,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermal-engine-map.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/ginkgo/thermal/thermal-engine-map.conf",
+      "sections": 12,
+      "sha256": "2510a6f562e9633614bf04e35d3b5a52aecd652cb7664ad2b7f2d911af13645b",
+      "shutdown_c": null,
+      "size": 378,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 61.0,
+      "name": "thermal-engine-normal.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/ginkgo/thermal/thermal-engine-normal.conf",
+      "sections": 9,
+      "sha256": "9264913cdb971831a1fcd72f76e2507abbff1fea0796962bf872d551252e2a27",
+      "shutdown_c": null,
+      "size": 1798,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/ginkgo/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/ginkgo/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 5,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 5,
+    "thermal": 5
+  },
+  "topology": {
+    "artifact_count": 5,
+    "category_counts": {
+      "thermal": 5
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-camera.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/ginkgo/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

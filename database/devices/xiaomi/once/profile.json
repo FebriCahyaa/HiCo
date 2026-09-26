@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "android": "8.0.0",
+    "brand": "Xiaomi",
+    "codename": "once",
+    "model": "MIBOX3",
+    "platform": "gxl"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/once.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/once/-/tree/once-user-8.0.0-OPR6.170623.013-2303-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": []
+  }
+}

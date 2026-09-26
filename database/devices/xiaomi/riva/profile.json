@@ -1,0 +1,86 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "riva",
+    "model": "Redmi 5A",
+    "platform": "msm8937"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/riva.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/riva/-/tree/riva-user-8.1.0-OPM1.171019.026-9.7.4-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 4,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/riva/thermal/thermal-engine-map.conf",
+        "sections": 3,
+        "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+        "shutdown_c": null,
+        "size": 94,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 85.0,
+        "name": "thermal-engine-normal-india.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/riva/thermal/thermal-engine-normal-india.conf",
+        "sections": 18,
+        "sha256": "9dd0b11823fd7b71a5c3cf2c738904b86732fb77064843e9f7e00ed292531d27",
+        "shutdown_c": null,
+        "size": 3235,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 95.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/riva/thermal/thermal-engine-normal.conf",
+        "sections": 19,
+        "sha256": "836c43dbce3386fe7f1ef825fb0a96678995c73be839b73e15be5d13c3859a2f",
+        "shutdown_c": null,
+        "size": 3406,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/riva/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-map.conf",
+      "thermal-engine-normal-india.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}

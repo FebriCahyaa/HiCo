@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/taurus/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "5d3073f834cf7207af327dfe76cc2d28134a9c1e12b7e95406af645ba15adec7",
+      "shutdown_c": null,
+      "size": 255,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 105.0,
+      "name": "thermald_h.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/taurus/thermal/thermald_h.conf",
+      "sections": 6,
+      "sha256": "399b64ba7c62f81b795ef6d07f414432adf1a859560ff6c21b09e1fbec4004df",
+      "shutdown_c": null,
+      "size": 1332,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 105.0,
+      "name": "thermald_l.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/taurus/thermal/thermald_l.conf",
+      "sections": 6,
+      "sha256": "51bb15b15593b9a2efbfd7c918a5098b4c7f21fd6a291a6d8f46cb06b70f16af",
+      "shutdown_c": null,
+      "size": 1332,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/taurus/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 3,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 3,
+    "thermal": 3
+  },
+  "topology": {
+    "artifact_count": 3,
+    "category_counts": {
+      "thermal": 3
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermald_h.conf",
+      "thermald_l.conf"
+    ],
+    "root": "devices/xiaomi/taurus/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

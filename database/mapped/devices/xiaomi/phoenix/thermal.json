@@ -1,0 +1,350 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "7f45f103c8bf560987893378626979435a121b0d8d9a2dc243f5f106e8a80a81",
+      "shutdown_c": null,
+      "size": 1189,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "f62e67167ccfecc2441dec38402e2821ff469978af1fda5109693f2a73b8acc0",
+      "decoded_size": 1052,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-4k.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-4k.conf",
+      "sections": 0,
+      "sha256": "1f4b4c9f1a0a35e2e5155d13d07ddee41e38d45d268c54885e0546eace018db5",
+      "shutdown_c": null,
+      "size": 1056,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "243100685c32e02a117706246ed4c673adf81fd7815b327bcc142acbddba7c34",
+      "decoded_size": 841,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-arvr.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-arvr.conf",
+      "sections": 0,
+      "sha256": "ed9eacd8d4cfd460c5c08167e74f7df10871724a4737e6d39573e315891ea345",
+      "shutdown_c": null,
+      "size": 848,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "8771194f5889af81e17b510df9d59d1bb3a7fbbb2856ffcf00e8311bb8816218",
+      "decoded_size": 1257,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-camera.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-camera.conf",
+      "sections": 0,
+      "sha256": "209fd404ec31e9778f81d3fac497b0ed639684f45851ab38f83ab07bfdcd1d3d",
+      "shutdown_c": null,
+      "size": 1264,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 60.0,
+      "name": "thermal-chg-only.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/phoenix/thermal/thermal-chg-only.conf",
+      "sections": 3,
+      "sha256": "10c0fef69d457f8effe7f048a96eb4953107d34861ab0c81ff46d957b6d9fa63",
+      "shutdown_c": null,
+      "size": 462,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 17,
+      "decoded_sha256": "ea5b1eacf3ab12525724519a79d073faa9f0d668c765894cb38c14a805c9dc32",
+      "decoded_size": 410,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-map.conf",
+      "sections": 0,
+      "sha256": "08240bd58e4d0917b5a326ad2bb5ebf541a81aaf74a646a7edd0b8137358c471",
+      "shutdown_c": null,
+      "size": 416,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "9753082e7e0b49437f6230c972a9ba658fdcbb9a553995a5b693ffc46f63a9c3",
+      "decoded_size": 829,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-nolimits.conf",
+      "sections": 0,
+      "sha256": "e3cb8c479944753bbd71bced12a93d46e5a94ca2b9d37a214303958cce3edfbe",
+      "shutdown_c": null,
+      "size": 832,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "3c06322d5e5ef79a5884dd88116dbf07f2c819eb0dfbd7e030b97c05f62ceb0c",
+      "decoded_size": 1354,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-normal.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-normal.conf",
+      "sections": 0,
+      "sha256": "62853e2540c6f93fd5a475b76dd4ac70619682fd10e42893091716f2f926bcc4",
+      "shutdown_c": null,
+      "size": 1360,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "3f2b7b542ee2f57006ae7fc251993de95816345637cefcc5f3b33e2c77543b71",
+      "decoded_size": 1110,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-phone.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-phone.conf",
+      "sections": 0,
+      "sha256": "c450cbd435cc246ac3da2c2c79a19add19c6dfdb4ca1e616392e1ffb3f1afd42",
+      "shutdown_c": null,
+      "size": 1120,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 62.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "8bb7107d905700eb4687ea9cb07baa443c603bc6dc2d859314d33fa9c2c18d1a",
+      "decoded_size": 868,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-tgame.conf",
+      "parser": null,
+      "path": "devices/xiaomi/phoenix/thermal/thermal-tgame.conf",
+      "sections": 0,
+      "sha256": "0ef2acf45e64c398bec635e7280c5631f9009c335053067de5c841b28e2750d5",
+      "shutdown_c": null,
+      "size": 880,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermald-devices.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/phoenix/thermal/thermald-devices.conf",
+      "sections": 0,
+      "sha256": "a22002b25ebbdaf7b8fd2e5b1162db0ff24859795b16761de649f938f5c32bef",
+      "shutdown_c": null,
+      "size": 678,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/phoenix/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 12,
+    "decode_failures": 0,
+    "decoded": 8,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 4,
+    "thermal": 12
+  },
+  "topology": {
+    "artifact_count": 12,
+    "category_counts": {
+      "thermal": 12
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-4k.conf",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "root": "devices/xiaomi/phoenix/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine",
+      "thermald"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

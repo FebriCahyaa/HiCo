@@ -1,0 +1,32 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "cereus",
+    "model": "Redmi 6",
+    "platform": "mt6765"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/cereus.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cereus/-/tree/cereus-user-8.1.0-O11019-V10.3.3.0.OCGMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "ThermalIndicator",
+      "thermal",
+      "thermal-hal-1-0",
+      "thermal_manager",
+      "thermald",
+      "thermalloadalgod",
+      "thermalservice"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/lithium/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "29b29abf36c8c387e14df9cb25976200678e50a41c9e08363a1922f6736aaa8b",
+      "shutdown_c": null,
+      "size": 166,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "0e739701d20e43e8a6ceb7a70e5f82b6a2235e337d470a34362ad2cb1896a66b",
+      "decoded_size": 1623,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996.conf",
+      "parser": null,
+      "path": "devices/xiaomi/lithium/thermal/thermal-engine-8996.conf",
+      "sections": 0,
+      "sha256": "bc952abf8ed91bb067c929df09ed302f6a24edc6b27dadeaebf4441478382ed2",
+      "shutdown_c": null,
+      "size": 1632,
+      "tunable_status": "parser-supported"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/lithium/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 2,
+    "decode_failures": 0,
+    "decoded": 1,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 1,
+    "thermal": 2
+  },
+  "topology": {
+    "artifact_count": 2,
+    "category_counts": {
+      "thermal": 2
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-8996.conf"
+    ],
+    "root": "devices/xiaomi/lithium/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

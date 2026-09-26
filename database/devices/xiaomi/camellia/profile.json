@@ -1,0 +1,186 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Redmi",
+    "codename": "camellia",
+    "model": "Redmi Note 10",
+    "platform": "mt6833"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/camellia.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/camellia/-/tree/camellia-user-11-RP1A.200720.011-21.6.28-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 11,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "887f5210216e225323f0d5e542a91751c0e3398b84763c72b408803e7c33e624",
+        "shutdown_c": null,
+        "size": 3360,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "5164b76c002f0c85dd142fbd1d6fcca9d8054f1b48bd63a212d325f65fa6586b",
+        "shutdown_c": null,
+        "size": 3360,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "39539f06acf89107e7375e0867ea0f941b070b23b37f1f087cb0ae73f69bf1a4",
+        "shutdown_c": null,
+        "size": 816,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "35028a65331cf6c9276d02abc3647894fa1de118b55b700993292f75e6d19fe0",
+        "shutdown_c": null,
+        "size": 320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "3b09b676efe47636d9a9da278d04abf49e7798abb4124b3b030eba32f5429494",
+        "shutdown_c": null,
+        "size": 1904,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "3b35ec8bdc6848b375608161a66e2eebecf298a9e7b49797b659fb91cbf05d87",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "600743e6f9b78172a6fec0dd5c5a668b523429ba358d4da015d002a9fb745155",
+        "shutdown_c": null,
+        "size": 1824,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "1892c85b6aab92eea4af96bfba18f1f5a1244355c23ce45a315020dae3c7be1b",
+        "shutdown_c": null,
+        "size": 3376,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "cf8f1fcc14d1e8eb63bad37c7473386824b54e8f5c40f74b56742d33917175d2",
+        "shutdown_c": null,
+        "size": 1984,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/camellia/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "e4d7166dda750cc0207b2b94463640418ec805e8f6b97dba333b6a627145e24b",
+        "shutdown_c": null,
+        "size": 1968,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/camellia/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "2f0e127eb40bdd945481a8402e15a631115058090447e5e2d406fba04ecb3831",
+        "shutdown_c": null,
+        "size": 387,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/rolex/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "18e3e8d42affe78bb94891df98454ba74164a720b5b20280e084d8cf25a88257",
+      "shutdown_c": null,
+      "size": 159,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 85.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/rolex/thermal/thermal-engine.conf",
+      "sections": 16,
+      "sha256": "8116711aefc6918fac90a960ea0cc712827817d32faefd2e1a42d0cc069fde7a",
+      "shutdown_c": null,
+      "size": 2980,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/rolex/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 2,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 2
+  },
+  "topology": {
+    "artifact_count": 2,
+    "category_counts": {
+      "thermal": 2
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/rolex/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

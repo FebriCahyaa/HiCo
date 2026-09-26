@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "XiaoMi",
+    "codename": "mi_lx04",
+    "model": "LX04",
+    "platform": "mt8167"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/mi_lx04.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/mi_lx04/-/tree/mi_lx04-userdebug-8.1.0-O11019-1588591077-test-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "thermal",
+      "thermal_manager"
+    ]
+  }
+}

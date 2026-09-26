@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "android": "14",
+    "brand": "Xiaomi",
+    "codename": "twilight",
+    "model": "MiTV-AFMU0",
+    "platform": "s7d"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/twilight.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/twilight/-/tree/twilight-user-14-UKG3.250107.001-V816.0.25.6.13.1.UZFAABX-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "json",
+        "max_trip_c": null,
+        "name": "thermal_info_config.json",
+        "parser": "thermal-hal-json-v2",
+        "path": "devices/xiaomi/twilight/thermal/thermal_info_config.json",
+        "sections": 1,
+        "sha256": "4e5709fe75062de0f0a2254a5be7942e2dc162245a484bc5602415b09230cf7b",
+        "shutdown_c": null,
+        "size": 562,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal_info_config.json"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal"
+    ]
+  }
+}

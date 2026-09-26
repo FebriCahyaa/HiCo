@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "android": "7.1.2",
+    "brand": "Xiaomi",
+    "codename": "rolex",
+    "model": "Redmi 4A",
+    "platform": "msm8937"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/rolex.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/rolex/-/tree/rolex-user-7.1.2-N2G47H-V10.2.3.0.NCCMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 85.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/rolex/thermal/thermal-engine.conf",
+        "sections": 16,
+        "sha256": "8116711aefc6918fac90a960ea0cc712827817d32faefd2e1a42d0cc069fde7a",
+        "shutdown_c": null,
+        "size": 2980,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

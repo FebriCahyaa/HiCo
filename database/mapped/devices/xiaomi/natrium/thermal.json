@@ -1,0 +1,178 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/natrium/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "0f0604966baad634be1171f4403f064e2c9cf6ffbf3d075ca60339b9bf5e3e83",
+      "shutdown_c": null,
+      "size": 506,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 14,
+      "decoded_sha256": "f7ec687515f071ede4733b0a76d0aed6b711935386da8efa16ed17e4c19191fb",
+      "decoded_size": 3204,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-game.conf",
+      "parser": null,
+      "path": "devices/xiaomi/natrium/thermal/thermal-engine-8996-game.conf",
+      "sections": 0,
+      "sha256": "87e09773e290e4905933638f53197f3ff5125b5d5b9bbef7142baaaeef1ed975",
+      "shutdown_c": null,
+      "size": 3216,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 14,
+      "decoded_sha256": "f7ec687515f071ede4733b0a76d0aed6b711935386da8efa16ed17e4c19191fb",
+      "decoded_size": 3204,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-high.conf",
+      "parser": null,
+      "path": "devices/xiaomi/natrium/thermal/thermal-engine-8996-high.conf",
+      "sections": 0,
+      "sha256": "87e09773e290e4905933638f53197f3ff5125b5d5b9bbef7142baaaeef1ed975",
+      "shutdown_c": null,
+      "size": 3216,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 5,
+      "decoded_sha256": "28d09c86e1bdc1258342e65a00d808b1d4e1de8e383d2b88eb86d5a0a8314416",
+      "decoded_size": 167,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/natrium/thermal/thermal-engine-8996-map.conf",
+      "sections": 0,
+      "sha256": "988e371f493bccc79c6479715044456f0e4632beea4a58c75f7c524239f6917c",
+      "shutdown_c": null,
+      "size": 176,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 13,
+      "decoded_sha256": "8656992d85d7c4a221c05c80fcc0daaaf580dd98e25476f81ee4eeb0392adbea",
+      "decoded_size": 3061,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996.conf",
+      "parser": null,
+      "path": "devices/xiaomi/natrium/thermal/thermal-engine-8996.conf",
+      "sections": 0,
+      "sha256": "f6c0fdd622ae289ac6f44fa44fe5ec6ecda02cdecbff1ca0317a9b126e97b745",
+      "shutdown_c": null,
+      "size": 3072,
+      "tunable_status": "parser-supported"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/natrium/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 5,
+    "decode_failures": 0,
+    "decoded": 4,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 1,
+    "thermal": 5
+  },
+  "topology": {
+    "artifact_count": 5,
+    "category_counts": {
+      "thermal": 5
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-8996-game.conf",
+      "thermal-engine-8996-high.conf",
+      "thermal-engine-8996-map.conf",
+      "thermal-engine-8996.conf"
+    ],
+    "root": "devices/xiaomi/natrium/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

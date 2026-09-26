@@ -1,0 +1,196 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/tulip/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "404cfa5879f1b9218bffb9bbe34ed260bf2f46643d0968f45823f5ea2891c094",
+      "shutdown_c": null,
+      "size": 708,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 95.0,
+      "name": "thermal-engine-Youtube.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tulip/thermal/thermal-engine-Youtube.conf",
+      "sections": 34,
+      "sha256": "08b988893b15af399d1033aa1fb8ce9c1ea128ea0733afdb332249bd517252bb",
+      "shutdown_c": null,
+      "size": 6292,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 95.0,
+      "name": "thermal-engine-camera.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tulip/thermal/thermal-engine-camera.conf",
+      "sections": 33,
+      "sha256": "ccc97d0ca3c7a43da3886a854219448912a17cbabd713fcc65f0404724cae373",
+      "shutdown_c": null,
+      "size": 6049,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermal-engine-map.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tulip/thermal/thermal-engine-map.conf",
+      "sections": 8,
+      "sha256": "f7d8fbaae912fd98a0614fa7bc9c5bf24d653fc898ecdbe3042825977954958d",
+      "shutdown_c": null,
+      "size": 249,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 95.0,
+      "name": "thermal-engine-normal.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tulip/thermal/thermal-engine-normal.conf",
+      "sections": 33,
+      "sha256": "0caf7a1d512c3935b0271baa5b906123f0ee1f69c40343c06bbc5e5dfb9350c2",
+      "shutdown_c": null,
+      "size": 6049,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 95.0,
+      "name": "thermal-engine-sgame.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/tulip/thermal/thermal-engine-sgame.conf",
+      "sections": 33,
+      "sha256": "b4c3c46749401746cb7c93ad736f1e27079ff5aec3735ced35bbf79f8c85de59",
+      "shutdown_c": null,
+      "size": 6089,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/tulip/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/tulip/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 7,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 7,
+    "thermal": 7
+  },
+  "topology": {
+    "artifact_count": 7,
+    "category_counts": {
+      "thermal": 7
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-Youtube.conf",
+      "thermal-engine-camera.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine-sgame.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/tulip/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

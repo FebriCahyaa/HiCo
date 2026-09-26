@@ -1,0 +1,226 @@
+{
+  "identity": {
+    "android": "13",
+    "brand": "Redmi",
+    "codename": "sweetin",
+    "model": "M2101K6I",
+    "platform": "sm6150"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/sweetin.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/sweetin/-/tree/missi_phonenonab_global-user-13-TKQ1.221013.002-V14.0.1.0.TKFINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 14,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "5efa5ccd8de3ef9fc654894a5461d1015007acfb1e4a8f3f9679a247cd39f1b4",
+        "shutdown_c": null,
+        "size": 1648,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sweetin/thermal/thermal-chg-only.conf",
+        "sections": 2,
+        "sha256": "f295be849ab2d8fb05793515bd104a2a129bc43dd510a4af66632464ec8b8fa6",
+        "shutdown_c": null,
+        "size": 510,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "8ceec24c8622786ef8d770a50e4b39ac1a736a0423e2841f4043d952d0ed7186",
+        "shutdown_c": null,
+        "size": 1680,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "08240bd58e4d0917b5a326ad2bb5ebf541a81aaf74a646a7edd0b8137358c471",
+        "shutdown_c": null,
+        "size": 416,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "90c44184d5048089200d29104c6ec0fbe974d9db50bd3f3e7c5604ea5f945530",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-navigation.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-navigation.conf",
+        "sections": 0,
+        "sha256": "f9bb56c282cfc943274c290fab745fc90a7777e61c94c3c02f165fd1bc49898c",
+        "shutdown_c": null,
+        "size": 1584,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "ab6e9441a17b651efae2c73b3587ce5c1342bbcbd8f07130f15a327278943161",
+        "shutdown_c": null,
+        "size": 1584,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "d98047232b9b1d99e5b4f438579591ef973272c3e6b7eb73bf94c5dde407ceb4",
+        "shutdown_c": null,
+        "size": 2192,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "5f733c6cdcd0b47e48b693333a0b019b74ad8207d69f6a71a8e5e25077c7f614",
+        "shutdown_c": null,
+        "size": 1376,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "83f18651bd5f5ddcf6078d3b15a07d0a39f3b1d814a3b07c9499aa802a9c3ab4",
+        "shutdown_c": null,
+        "size": 1216,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "914387e0cac9a34bab5ffb99f23fb5872d4da759c2b183cb772154f7e97d6dc8",
+        "shutdown_c": null,
+        "size": 1632,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/sweetin/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "22c43a7241aa87606b43acea7686e2b73f9c3d66c9bfee97e4d7c48d5818edc4",
+        "shutdown_c": null,
+        "size": 1616,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sweetin/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "a22002b25ebbdaf7b8fd2e5b1162db0ff24859795b16761de649f938f5c32bef",
+        "shutdown_c": null,
+        "size": 678,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-navigation.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "android.thermal-hal",
+      "mi_thermald",
+      "thermal-engine"
+    ]
+  }
+}

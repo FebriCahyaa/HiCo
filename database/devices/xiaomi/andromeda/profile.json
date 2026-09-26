@@ -1,0 +1,168 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "andromeda",
+    "model": "Mi MIX 3 5G",
+    "platform": "msmnile"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/andromeda.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/andromeda/-/tree/andromeda-user-10-QKQ1.190406.002-9.04.30.2.native.google.user-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "6a5a3681abf4e23ca1d86d6e7d4c88caa3a7b5c5f26b5f1bb96a45033e2088c7",
+        "shutdown_c": null,
+        "size": 944,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "75e8e60e76485c861d1942c46afd4b4c07f1e0052e8cda9b7ef325d21abb5859",
+        "shutdown_c": null,
+        "size": 2400,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/andromeda/thermal/thermal-chg-only.conf",
+        "sections": 2,
+        "sha256": "d1e2cfb17ff57f4aff1781da5275597ff2a24f88706b09315ad435ed3d35387e",
+        "shutdown_c": null,
+        "size": 542,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "671c872b6952eb048c3d8715185a2a20fca41e8e1c2610216c045c9dad48a308",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "3e2f9ea2873654842fda5fcc7e310a49dfa2e6754ddccd84c6da310c27c878f7",
+        "shutdown_c": null,
+        "size": 656,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "5d4eb3409f1cb08a1953c58752f67b470e8b24217378e3a527d90c64b37235a3",
+        "shutdown_c": null,
+        "size": 2224,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "d0c2c143037c67652201590510ada4662e88761b1413f04f5980b773de18528f",
+        "shutdown_c": null,
+        "size": 976,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/andromeda/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "cdf87938c6a74033ea14c176a8a88887861f335dcf85b9db5d61f93e99e9eff2",
+        "shutdown_c": null,
+        "size": 1072,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/andromeda/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "1c2fbd0c7ec48e143f5e4793e12066200ba6b217e50456522e3fb1f066d2c9dd",
+        "shutdown_c": null,
+        "size": 511,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal-engine"
+    ]
+  }
+}

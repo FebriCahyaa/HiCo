@@ -1,0 +1,171 @@
+{
+  "identity": {
+    "android": "12",
+    "brand": "Redmi",
+    "codename": "bomb",
+    "model": "Redmi 10X Pro",
+    "platform": "mt6873"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/bomb.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/bomb/-/tree/bomb-user-12-SP1A.210812.016-22.3.29-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "3c95ed8933f4b2679ff1682cd809af8f8b32e17da05ed0ac79296bd5fd663f54",
+        "shutdown_c": null,
+        "size": 1360,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/bomb/thermal/thermal-chg-only.conf",
+        "sections": 3,
+        "sha256": "932d9b7755702e2461a68eb4b35380b54c16fba0d38d8c50b9527c5031986226",
+        "shutdown_c": null,
+        "size": 602,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "67a40b7965669814685887a7f15801f5964119b4851a1e6118a23721b0461c44",
+        "shutdown_c": null,
+        "size": 1360,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "964316626f65eaed63d9968dd07125cbf62ff08c235ec5f3c503244d63a5f28f",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "b1fa544dc11ffb5979b5d0c4e562497365caacef1ec7b96367fb5f8babde01bf",
+        "shutdown_c": null,
+        "size": 1136,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "12aabe034458c42def69d75a540828e5236fe390a119c87e1213c9661a0b3c1f",
+        "shutdown_c": null,
+        "size": 1488,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "765a745d3c944a6f2348a616da718f5ad5987fbb3109416e3f8892e53459a59a",
+        "shutdown_c": null,
+        "size": 1296,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "9e9a159d50a70dcc267b99d55e33f0d1260b51f90562f74b4fa23d80cf077f04",
+        "shutdown_c": null,
+        "size": 1056,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/bomb/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "502b9bcc6f912af6f592ea91c30fae0cf504307728e85dc9b292d0756bbef304",
+        "shutdown_c": null,
+        "size": 1296,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/bomb/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "b45d5c6725416f536f188518aad46cc9d6675b8cf07130b8d06273f6e6f7cc83",
+        "shutdown_c": null,
+        "size": 388,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

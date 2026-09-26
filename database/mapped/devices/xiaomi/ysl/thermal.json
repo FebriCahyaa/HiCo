@@ -1,0 +1,154 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/ysl/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "2746143c71652464db3a6be8b22df92ba10c02b55ef251c0cb304a9d2121485a",
+      "shutdown_c": null,
+      "size": 487,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermal-engine-map.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/ysl/thermal/thermal-engine-map.conf",
+      "sections": 4,
+      "sha256": "151a92e7104842bdd37bb5bd9065f4321f80e70cd1118347b5eef1b812335df5",
+      "shutdown_c": null,
+      "size": 125,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine-normal.conf",
+      "parser": null,
+      "path": "devices/xiaomi/ysl/thermal/thermal-engine-normal.conf",
+      "sections": 0,
+      "sha256": "b8152b64bfb31e85dabec969e9d1cc066696e031f44ae7bd289da64e30f1a1d5",
+      "shutdown_c": null,
+      "size": 62,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine-video.conf",
+      "parser": null,
+      "path": "devices/xiaomi/ysl/thermal/thermal-engine-video.conf",
+      "sections": 0,
+      "sha256": "fcfa85d67c76de2f2aaff96b2cfd130b332f1fb7804dc00fe22d70cba97f53c0",
+      "shutdown_c": null,
+      "size": 63,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/ysl/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/ysl/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 5,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 5,
+    "thermal": 5
+  },
+  "topology": {
+    "artifact_count": 5,
+    "category_counts": {
+      "thermal": 5
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine-video.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/ysl/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

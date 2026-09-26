@@ -1,0 +1,171 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Redmi",
+    "codename": "begoniain",
+    "model": "Redmi Note 8 Pro",
+    "platform": "mt6785"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/begoniain.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/begoniain/-/tree/begoniain-user-10-QP1A.190711.020-V11.0.2.0.QGGINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "8f01d01f401c7bde60b8806b4cfbeacb8670b45f92ed57f4281cb00ea89d49af",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "9a12536ae7e381394e39d18d1a281629b9d3f8a63845990f85ad7c69e8d71ed8",
+        "shutdown_c": null,
+        "size": 1472,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/begoniain/thermal/thermal-chg-only.conf",
+        "sections": 3,
+        "sha256": "77f45a1e072ec364e477620948142c0b17467f7f9cf5bdc3c6a3df029bbd9130",
+        "shutdown_c": null,
+        "size": 610,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "964316626f65eaed63d9968dd07125cbf62ff08c235ec5f3c503244d63a5f28f",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "30dc2e39e846786929ab14812f134a9da6593d8fbcd31d9db9c3fc3c82878d9b",
+        "shutdown_c": null,
+        "size": 1152,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "7f30aee7bef8665f44fc417c963dd358a3db630cb04c5279711b422958baeb22",
+        "shutdown_c": null,
+        "size": 1424,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "6b58fe203ebda1c8f8eb2785af3555212d7a9cd28c6081c66b02b7ee237b4ebc",
+        "shutdown_c": null,
+        "size": 1296,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "0e21128ebe42d34495d18ee18587ae88f6429dc918900898a4463a3fbbee0848",
+        "shutdown_c": null,
+        "size": 1456,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/begoniain/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "7df5a49e3d1c34e3cd28ce03b6beec4483b07be7b3ea075b8878ab236010df7a",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/begoniain/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "b45d5c6725416f536f188518aad46cc9d6675b8cf07130b8d06273f6e6f7cc83",
+        "shutdown_c": null,
+        "size": 388,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

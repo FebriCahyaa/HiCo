@@ -1,0 +1,26 @@
+{
+  "identity": {
+    "android": "9",
+    "brand": "Xiaomi",
+    "codename": "mulan",
+    "model": "MiTV-ASTP0",
+    "platform": "mulan"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/mulan.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/mulan/-/tree/mulan-user-9-PPR1.180610.011-3521-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

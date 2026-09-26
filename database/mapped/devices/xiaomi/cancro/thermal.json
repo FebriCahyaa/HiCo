@@ -1,0 +1,112 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/cancro/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "82a76ca13983fe180c02d390f201abfb682b62a9821f6a6779366117bd80b196",
+      "shutdown_c": null,
+      "size": 269,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 550.0,
+      "name": "thermal-engine-8974.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/cancro/thermal/thermal-engine-8974.conf",
+      "sections": 5,
+      "sha256": "2899f5cbe69a631a1d577b226ec6addea8f06618defb4fd5e8d596155045db8a",
+      "shutdown_c": null,
+      "size": 1149,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 115.0,
+      "name": "thermal-engine-perf.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/cancro/thermal/thermal-engine-perf.conf",
+      "sections": 4,
+      "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "shutdown_c": null,
+      "size": 727,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/cancro/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 3,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 3,
+    "thermal": 3
+  },
+  "topology": {
+    "artifact_count": 3,
+    "category_counts": {
+      "thermal": 3
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-8974.conf",
+      "thermal-engine-perf.conf"
+    ],
+    "root": "devices/xiaomi/cancro/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

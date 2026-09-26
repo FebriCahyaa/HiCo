@@ -1,0 +1,185 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Redmi",
+    "codename": "cezanne",
+    "model": "Redmi K30 Ultra",
+    "platform": "mt6885"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/cezanne.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/cezanne/-/tree/cezanne-user-11-RP1A.200720.011-21.3.24-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 11,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "c99af591059d266846ac09dcad967b072afbdfe9dba819b6459fbf0c8dd67ada",
+        "shutdown_c": null,
+        "size": 1728,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "06da87c8605b4a4595567832ed6c5b875c3e5407f174bf94d5f80ad6000c920c",
+        "shutdown_c": null,
+        "size": 1744,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/cezanne/thermal/thermal-chg-only.conf",
+        "sections": 3,
+        "sha256": "5e6fc47d316bedc092118afde3098e06131e1d17537e35b8d4847f17cc86de16",
+        "shutdown_c": null,
+        "size": 527,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "e501f6e155d98376555b2ea84131cd383f4eaa62126f45b10c1aedb4ba4dda1d",
+        "shutdown_c": null,
+        "size": 1456,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "35028a65331cf6c9276d02abc3647894fa1de118b55b700993292f75e6d19fe0",
+        "shutdown_c": null,
+        "size": 320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "76ddc5080cc7c126bf33707242f2cdf4949d0db7623d2c9d679b350205c95019",
+        "shutdown_c": null,
+        "size": 1280,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "03ed8d8fbc180516ba3612587000bdc4f92271a39f12dee1f92222026d5822c9",
+        "shutdown_c": null,
+        "size": 1232,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "4564527b89276c65cbfc0894d125922187ba1ca7899d6377d40fab351705b917",
+        "shutdown_c": null,
+        "size": 1760,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "be06c84ebdec0a22153becf52ef7d6ecf28630ee37b3cb25e2c0094b0eabb008",
+        "shutdown_c": null,
+        "size": 1184,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/cezanne/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "8041bd303f53b4aa847bb7019c8bcae06a41d0e85fbd826d912a31ff87da7dd4",
+        "shutdown_c": null,
+        "size": 1280,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/cezanne/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "41bd039a31e9977080bdd4df63ccc8d48564bbc2fc8620a4cb4d872af00277be",
+        "shutdown_c": null,
+        "size": 537,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

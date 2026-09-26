@@ -1,0 +1,72 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "tiare",
+    "model": "Redmi Go",
+    "platform": "msm8937"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/tiare.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/tiare/-/tree/tiare-user-8.1.0-OPM1.171019.026-V10.2.12.0.OCLMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 3,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/tiare/thermal/thermal-engine-map.conf",
+        "sections": 3,
+        "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+        "shutdown_c": null,
+        "size": 94,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 95.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/tiare/thermal/thermal-engine-normal.conf",
+        "sections": 18,
+        "sha256": "1bc3a6d6f3f7331abf3763f025b6155ef91beb7dc552dc023c4ec5925b764077",
+        "shutdown_c": null,
+        "size": 3219,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/tiare/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}

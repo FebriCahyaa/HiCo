@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "android": "6.0.1",
+    "brand": "Xiaomi",
+    "codename": "markw",
+    "model": "Redmi 4",
+    "platform": "msm8953"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/markw.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/markw/-/tree/markw-user-6.0.1-MMB29M-V10.2.2.0.MBEMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 95.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/markw/thermal/thermal-engine.conf",
+        "sections": 23,
+        "sha256": "05c8ea2b406747005a4092d143004b653a213bdf018b47a49e45e0810e303bd8",
+        "shutdown_c": null,
+        "size": 4194,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": []
+  }
+}

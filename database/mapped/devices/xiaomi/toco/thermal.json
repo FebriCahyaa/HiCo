@@ -1,0 +1,323 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "5cbf9da3612515d80eecc3f7739d86c70c01daa86aebab203b141ca2fb77e959",
+      "shutdown_c": null,
+      "size": 1089,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "395c6b46c5545a9d35aa3744599fe652b52269f3455e616f5929aa42b6c5a260",
+      "decoded_size": 907,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-arvr.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-arvr.conf",
+      "sections": 0,
+      "sha256": "f6821d5840fef35072f9f82caaf0c7cc64cae7ec9cab302527b4abfbcdef7be1",
+      "shutdown_c": null,
+      "size": 912,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "083e157a56600805f90676b5f9d0d4a40d5a079375c38847829fc0dca8a1751f",
+      "decoded_size": 1335,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-camera.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-camera.conf",
+      "sections": 0,
+      "sha256": "77c2dbab36909d8d2beca43860c22c34966f8ffa462073c3c60fe8a82313e156",
+      "shutdown_c": null,
+      "size": 1344,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": 60.0,
+      "name": "thermal-chg-only.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/toco/thermal/thermal-chg-only.conf",
+      "sections": 3,
+      "sha256": "56b54fa417ddbe6e212886b84029b5b86d2fa3ea80b8ca6ef7533517e513f267",
+      "shutdown_c": null,
+      "size": 524,
+      "tunable_status": "parser-dependent"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 13,
+      "decoded_sha256": "d8cab0b4c2b71fe23a6f601b9e2441c113073ae848c78131b86bede5951d7790",
+      "decoded_size": 313,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-map.conf",
+      "sections": 0,
+      "sha256": "a17255df5e7fe1721c580dbaa76aa18cc6ead10c534b09eecaea5152984cc906",
+      "shutdown_c": null,
+      "size": 320,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "d001818b718254c61883d306aaf09b904d9094702b1490bcafc5f67befc97ddf",
+      "decoded_size": 895,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-nolimits.conf",
+      "sections": 0,
+      "sha256": "98f6538658c371d2d62957ba25d8b1b703b8b6370ed70e0d7873770c2ce0b95d",
+      "shutdown_c": null,
+      "size": 896,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 9,
+      "decoded_sha256": "4aefefb29adb5556507cbb8157ca7af27a1d9705a89a6fb466d9a200b2d7da78",
+      "decoded_size": 1477,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-normal.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-normal.conf",
+      "sections": 0,
+      "sha256": "1e123e041385b8c7654aea19aaaa99d5a8b36a6c052ff8d013812121165b8449",
+      "shutdown_c": null,
+      "size": 1488,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "70df0c9255f635d34d0dc33bdce5b23dcdcfabc901e5882946b244a405ed4f4e",
+      "decoded_size": 1116,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-phone.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-phone.conf",
+      "sections": 0,
+      "sha256": "f3132a3dad7f76a542603dfd7d40cec64b829252c5c8c2e5b8ae280c7d036829",
+      "shutdown_c": null,
+      "size": 1120,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "88a17aaab87b81f90fc8de1d924d2844f074b9addd8d5a7023d65ea443bc9597",
+      "decoded_size": 865,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-tgame.conf",
+      "parser": null,
+      "path": "devices/xiaomi/toco/thermal/thermal-tgame.conf",
+      "sections": 0,
+      "sha256": "4fbc240d8d21c0055081e23b817bf3993064e1797e969306f0258a522998ac31",
+      "shutdown_c": null,
+      "size": 880,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "thermal-engine-text",
+      "max_trip_c": null,
+      "name": "thermald-devices.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "devices/xiaomi/toco/thermal/thermald-devices.conf",
+      "sections": 0,
+      "sha256": "8cf1b9c56e49854f9d713748df9cf999cef20ee8979b33a721b2e65c7fae3cff",
+      "shutdown_c": null,
+      "size": 560,
+      "tunable_status": "parser-dependent"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/toco/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 11,
+    "decode_failures": 0,
+    "decoded": 7,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 4,
+    "thermal": 11
+  },
+  "topology": {
+    "artifact_count": 11,
+    "category_counts": {
+      "thermal": 11
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "root": "devices/xiaomi/toco/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine",
+      "thermald"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

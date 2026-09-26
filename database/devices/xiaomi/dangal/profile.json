@@ -1,0 +1,26 @@
+{
+  "identity": {
+    "android": "9",
+    "brand": "Xiaomi",
+    "codename": "dangal",
+    "model": "MiTV-AXSO0",
+    "platform": "txlx"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/dangal.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/dangal/-/tree/dangal-user-9-PI-6036-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

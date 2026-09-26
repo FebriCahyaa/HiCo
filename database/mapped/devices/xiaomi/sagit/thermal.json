@@ -1,0 +1,199 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/sagit/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "1611b9fe01a87a02cdbcd76092ebacb5e60bec3975b746315d5af3fa205f0948",
+      "shutdown_c": null,
+      "size": 614,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 24,
+      "decoded_sha256": "3844d1af6b09bef9ac9e746e5fa3677703f193619e45456c8402ad96d51d9714",
+      "decoded_size": 3328,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8998-high.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998-high.conf",
+      "sections": 0,
+      "sha256": "f1f31462eafd65127c9364ca6edb7756ac3890cf1fbe220cef5e946c80529177",
+      "shutdown_c": null,
+      "size": 3344,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 5,
+      "decoded_sha256": "5e2064b0ee84eb8c1e03eab4e190f50c41310e2a140164acb9d9ac16d026ff4d",
+      "decoded_size": 172,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8998-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998-map.conf",
+      "sections": 0,
+      "sha256": "fd1293f76b069363f05ad85cfe72235940f2efb3bd3233c372e8a1b001e62ebb",
+      "shutdown_c": null,
+      "size": 176,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 2,
+      "decoded_sha256": "88ecb2b859b78f817d47fea5dbe0fa5ee120adf2a54149ce95446d42c6ed7e56",
+      "decoded_size": 452,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8998-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998-nolimits.conf",
+      "sections": 0,
+      "sha256": "a17a5c3d0d6ba54da53aaf5e501778f331e1398530d43fe9409b414a75b264ef",
+      "shutdown_c": null,
+      "size": 464,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 24,
+      "decoded_sha256": "d8e0f0ee7ee5d5bec1631a20ef8c9fd6a42d283fd3c864ec2f1c5e6ba8dda013",
+      "decoded_size": 3293,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8998.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sagit/thermal/thermal-engine-8998.conf",
+      "sections": 0,
+      "sha256": "b5f343c99749b5f4814f167703360e00d58db901b3ffd1de21b33e3b29edac00",
+      "shutdown_c": null,
+      "size": 3296,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sagit/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/sagit/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 6,
+    "decode_failures": 0,
+    "decoded": 4,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 6
+  },
+  "topology": {
+    "artifact_count": 6,
+    "category_counts": {
+      "thermal": 6
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-8998-high.conf",
+      "thermal-engine-8998-map.conf",
+      "thermal-engine-8998-nolimits.conf",
+      "thermal-engine-8998.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/sagit/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

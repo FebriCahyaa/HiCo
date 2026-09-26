@@ -1,0 +1,90 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/missi/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "ec500a057f3af2ed6e7a226af875400d35d461c343309adac8f7edf1fb177df3",
+      "shutdown_c": null,
+      "size": 155,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "unknown",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_error": "hicod thermal decrypt failed for devices/xiaomi/missi/thermal/thermal.conf: /tmp/hico-codec-c9snv2v9/thermal.conf is not an encrypted mi_thermald config",
+      "decode_status": "opaque",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal.conf",
+      "parser": null,
+      "path": "devices/xiaomi/missi/thermal/thermal.conf",
+      "sections": 0,
+      "sha256": "118adfaf5d603956ba2d47528d2972e410e88ff762a7688faa2fb00d83d29857",
+      "shutdown_c": null,
+      "size": 52496,
+      "tunable_status": "unknown"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/missi/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 2,
+    "decode_failures": 0,
+    "decoded": 0,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 1,
+    "plain": 1,
+    "thermal": 2
+  },
+  "topology": {
+    "artifact_count": 2,
+    "category_counts": {
+      "thermal": 2
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal.conf"
+    ],
+    "root": "devices/xiaomi/missi/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

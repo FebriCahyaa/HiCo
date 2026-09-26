@@ -1,0 +1,85 @@
+{
+  "identity": {
+    "android": "8.0.0",
+    "brand": "Xiaomi",
+    "codename": "gemini",
+    "model": "MI 5",
+    "platform": "msm8996"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/gemini.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/gemini/-/tree/CORRUPTED---gemini-user-8.0.0-OPR1.170623.032-8.6.21-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 4,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996-a1.conf",
+        "parser": null,
+        "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996-a1.conf",
+        "sections": 0,
+        "sha256": "72c9639421b421b2d5c1579c5d89fdf9c69b3916555f848466537a09677e8dd5",
+        "shutdown_c": null,
+        "size": 3520,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996-high.conf",
+        "parser": null,
+        "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996-high.conf",
+        "sections": 0,
+        "sha256": "87e09773e290e4905933638f53197f3ff5125b5d5b9bbef7142baaaeef1ed975",
+        "shutdown_c": null,
+        "size": 3216,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996-map.conf",
+        "sections": 0,
+        "sha256": "9272f5f7c91ad0dd03f3e6630993ac55c88a66122869758ee4b1ad84a96fb164",
+        "shutdown_c": null,
+        "size": 144,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-engine-8996.conf",
+        "parser": null,
+        "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996.conf",
+        "sections": 0,
+        "sha256": "811eb2bce8357a8f4399a368af61ae7a3a53b57bb9d124f5e71d5f142ec8d217",
+        "shutdown_c": null,
+        "size": 3520,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-8996-a1.conf",
+      "thermal-engine-8996-high.conf",
+      "thermal-engine-8996-map.conf",
+      "thermal-engine-8996.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0"
+    ]
+  }
+}

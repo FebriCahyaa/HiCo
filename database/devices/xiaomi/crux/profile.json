@@ -1,0 +1,170 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "crux",
+    "model": "Mi9 Pro 5G",
+    "platform": "msmnile"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/crux.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/crux/-/tree/crux-user-10-QKQ1.190825.002-20.1.7-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "f236179fbe68c506a006322329fdf1e9fdb0ea28675f66b9a2c7f4137b8d388d",
+        "shutdown_c": null,
+        "size": 1760,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "9a718f0c38ac05175061753ff5949b2aca027d41ea3207a2f69ef24de502ad3d",
+        "shutdown_c": null,
+        "size": 2016,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/crux/thermal/thermal-chg-only.conf",
+        "sections": 3,
+        "sha256": "8c8add458205403a09b442086de7dbf9c730f823656995f4ace05be4885992eb",
+        "shutdown_c": null,
+        "size": 595,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "671c872b6952eb048c3d8715185a2a20fca41e8e1c2610216c045c9dad48a308",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "2d4410f7eafe0cc0dd04fce189dce144d5d500546f9b96d33f4971531c1c3aae",
+        "shutdown_c": null,
+        "size": 1392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "5b75555de83413bfa0bc7f669475b6d61c603898bbaab39f4ce436b4c37f0053",
+        "shutdown_c": null,
+        "size": 1936,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "191c74fc31455fd568072c842eb7635dff01ba2d842d0e2786271b020e4d1451",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/crux/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "8b2bfdd40ed78ae2afb012c962e55dd39e3e31d531b887d64f501ffe0601433c",
+        "shutdown_c": null,
+        "size": 1776,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/crux/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "4fcd0f5b5b05d8d508300f978ae34c551c24da4b93a16a73c0c5a513a3e51816",
+        "shutdown_c": null,
+        "size": 867,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "vendor.thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

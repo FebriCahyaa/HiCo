@@ -1,0 +1,100 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "sakura",
+    "model": "Redmi 6 Pro",
+    "platform": "msm8953"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/sakura.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/sakura/-/tree/sakura-user-8.1.0-OPM1.171019.019-8.9.6-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 5,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-high.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sakura/thermal/thermal-engine-high.conf",
+        "sections": 5,
+        "sha256": "76cc4ad7853679e3a565e6e2545cbba4a2090ce75a0dc6be9aa8c41c269c6f05",
+        "shutdown_c": null,
+        "size": 895,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sakura/thermal/thermal-engine-map.conf",
+        "sections": 3,
+        "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+        "shutdown_c": null,
+        "size": 94,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-nolimits.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sakura/thermal/thermal-engine-nolimits.conf",
+        "sections": 3,
+        "sha256": "46b9125d69bd7111fc26889f7bc64be53600b713def6a6e01e37a6742684afc7",
+        "shutdown_c": null,
+        "size": 579,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sakura/thermal/thermal-engine-normal.conf",
+        "sections": 5,
+        "sha256": "771343ca9f13cd80039f27e444e50d87eaa73a7afe3b6f2b88aeead2036db555",
+        "shutdown_c": null,
+        "size": 894,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/sakura/thermal/thermal-engine.conf",
+        "sections": 4,
+        "sha256": "3991eb247848431f0c84235cfa06d70c85843d6da916c9d207286309d4d72964",
+        "shutdown_c": null,
+        "size": 736,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-high.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-nolimits.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}

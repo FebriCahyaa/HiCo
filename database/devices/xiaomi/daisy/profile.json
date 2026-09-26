@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "daisy",
+    "model": "Mi A2 Lite",
+    "platform": "msm8953"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/daisy.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/daisy/-/tree/daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/daisy/thermal/thermal-engine.conf",
+        "sections": 4,
+        "sha256": "cd9a0e02d794e5a2be0b743a59c76b209eebc7b7df5c005b9439137c2aef1867",
+        "shutdown_c": null,
+        "size": 736,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

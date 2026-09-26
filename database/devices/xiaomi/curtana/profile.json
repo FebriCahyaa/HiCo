@@ -1,0 +1,84 @@
+{
+  "identity": {
+    "android": "12",
+    "brand": "Redmi",
+    "codename": "curtana",
+    "model": "Redmi Note 10 Lite",
+    "platform": "atoll"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/curtana.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/curtana/-/tree/qssi-user-12-SKQ1.211019.001-V14.0.6.0.SJWINRF-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 4,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 61.0,
+        "name": "thermal-engine-camera.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/curtana/thermal/thermal-engine-camera.conf",
+        "sections": 7,
+        "sha256": "e425f8c5d33a7d61b099e8cbc7382967510bd0c7788afbeb4177818fda71caa1",
+        "shutdown_c": null,
+        "size": 1359,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermal-engine-map.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/curtana/thermal/thermal-engine-map.conf",
+        "sections": 12,
+        "sha256": "2510a6f562e9633614bf04e35d3b5a52aecd652cb7664ad2b7f2d911af13645b",
+        "shutdown_c": null,
+        "size": 378,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 61.0,
+        "name": "thermal-engine-normal.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/curtana/thermal/thermal-engine-normal.conf",
+        "sections": 7,
+        "sha256": "6a28e91c6cbebd05ddce4475fab7176c6cf4a0d6e736c1ae494634cf68746710",
+        "shutdown_c": null,
+        "size": 1359,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/curtana/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine-camera.conf",
+      "thermal-engine-map.conf",
+      "thermal-engine-normal.conf",
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine"
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "e3f7832335c63dc6902d3646ecbe63ffe00420d45eca7bfdd460166e917fabfb",
+      "shutdown_c": null,
+      "size": 974,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 61.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 10,
+      "decoded_sha256": "3696cee460770bf1a577e6e0db56f0c1a0fdba17b9850161c3c97dc167f6069f",
+      "decoded_size": 2000,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710-high.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710-high.conf",
+      "sections": 0,
+      "sha256": "8ceaf0efc5f3428fedcea0e5d36f2fbb388e32d752b3846883a1cb9d785a2f39",
+      "shutdown_c": null,
+      "size": 2016,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 10,
+      "decoded_sha256": "5d3f684f095ed86b1141259289b021c2c66ade6ed517d115ffee0c1beed3942f",
+      "decoded_size": 377,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710-map.conf",
+      "sections": 0,
+      "sha256": "8bed1e58fa98f6154d380c6c9753fe06a856aca29f7148aaf245ef90407f77e3",
+      "shutdown_c": null,
+      "size": 384,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 3,
+      "decoded_sha256": "9e71c933cabb3e7e4fd1bed65b313c2fbc9169a9a6988723ff85dfe8aeb8f07e",
+      "decoded_size": 782,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710-nolimits.conf",
+      "sections": 0,
+      "sha256": "97d17af51d13ca002a286a036afeea62623b3e9ff1e9128d2eebe1796c071587",
+      "shutdown_c": null,
+      "size": 784,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 6,
+      "decoded_sha256": "2af493b5bc5a1d10c9b47e9e69f5f6b6417df613bc0ac7d3219b2445f3646d36",
+      "decoded_size": 975,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710-phone.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710-phone.conf",
+      "sections": 0,
+      "sha256": "bbb952cf59aa31d833447206cd7c94bfd71a4fd0e99e1ddb518a9d9fc896fd0c",
+      "shutdown_c": null,
+      "size": 976,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "0ea6b9fac9ccad6d94300dac33a23ada51f7d086fee60f67a683c821800e425a",
+      "decoded_size": 1415,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710-pubgmhd.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710-pubgmhd.conf",
+      "sections": 0,
+      "sha256": "3cab20c56906d7d680ca13958ed66f0fa2d0701e68153240ec5cdda72fd572e8",
+      "shutdown_c": null,
+      "size": 1424,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 7,
+      "decoded_sha256": "42af13da6585315f65dc36c130189625637b165de29812f1bfe4630b64d11ec7",
+      "decoded_size": 1429,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710-sgame.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710-sgame.conf",
+      "sections": 0,
+      "sha256": "291fbd0757b4978b18b44125f19fada6808dd8809211059e8f4ba47784b041c1",
+      "shutdown_c": null,
+      "size": 1440,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 61.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 11,
+      "decoded_sha256": "669d4171b9401ed04f8c6a3421661447e1599fb2bfb9509da355b65f985cd11c",
+      "decoded_size": 2103,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm710.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine-sdm710.conf",
+      "sections": 0,
+      "sha256": "d7744af1ec3717e1b8651076883c158e222bfdf15d7788c2fdaa141d950a242d",
+      "shutdown_c": null,
+      "size": 2112,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/sirius/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/sirius/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 9,
+    "decode_failures": 0,
+    "decoded": 7,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 9
+  },
+  "topology": {
+    "artifact_count": 9,
+    "category_counts": {
+      "thermal": 9
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-sdm710-high.conf",
+      "thermal-engine-sdm710-map.conf",
+      "thermal-engine-sdm710-nolimits.conf",
+      "thermal-engine-sdm710-phone.conf",
+      "thermal-engine-sdm710-pubgmhd.conf",
+      "thermal-engine-sdm710-sgame.conf",
+      "thermal-engine-sdm710.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/sirius/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

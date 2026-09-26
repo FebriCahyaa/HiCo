@@ -1,0 +1,280 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "d581b1ece23856b4d484edc828024f68087efa7b4fc70c5f953452a52660a599",
+      "shutdown_c": null,
+      "size": 976,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 15,
+      "decoded_sha256": "94925b67c3fdc4eac1bba7c9c73d54ea007934fdc66b7db7b4f90b511addb6df",
+      "decoded_size": 2760,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660-camera.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-camera.conf",
+      "sections": 0,
+      "sha256": "6f7ba28e43e318c0a000ae3e0590c7fa8994667234ee75a608cf2ef31ee944a4",
+      "shutdown_c": null,
+      "size": 2768,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 61.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 23,
+      "decoded_sha256": "78b8acf378c299d33c0bb75d796695fa75cdf31d2969ad0b82af1de41d258f0a",
+      "decoded_size": 3175,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660-high.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-high.conf",
+      "sections": 0,
+      "sha256": "7f477d7ef91efdd81679c3c497d9f1b5e3cea7c7c6d44d5adf9a31bf4624319f",
+      "shutdown_c": null,
+      "size": 3184,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 8,
+      "decoded_sha256": "8bc35aee6a52ca0d1b98d6c26fa6ab733a097031afd0f45a53e16cea0c05611f",
+      "decoded_size": 300,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-map.conf",
+      "sections": 0,
+      "sha256": "8e5ff632d41c3b4fc491f5fb288c119bc90c8858cd1bcbcadb96a6863cc83995",
+      "shutdown_c": null,
+      "size": 304,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 2,
+      "decoded_sha256": "37a984efacb3716dee8bccf7b45ab189e1b3513dbedb56794c07067f78d1921e",
+      "decoded_size": 610,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660-nolimits.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-nolimits.conf",
+      "sections": 0,
+      "sha256": "730d0314c4c537362a45adbc60a6ba0393ec767ebab091654b170956358e165f",
+      "shutdown_c": null,
+      "size": 624,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 5,
+      "decoded_sha256": "04e21139e35e3ac6f28d2ba8dad3e10e5a221201fbfaff1cd9c6f4beba17d150",
+      "decoded_size": 1083,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660-pubgmhd.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-pubgmhd.conf",
+      "sections": 0,
+      "sha256": "eff338c8a93572a3082eef6468099aaf207a77e81a7918a424f25f3d2d0a3b58",
+      "shutdown_c": null,
+      "size": 1088,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 60.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 5,
+      "decoded_sha256": "721472757fd86e922adce212e44c99a58e8a8cd61c815680f6cac5ada9faa26c",
+      "decoded_size": 1122,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660-sgame.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660-sgame.conf",
+      "sections": 0,
+      "sha256": "f46d935462907af9fce7a6a102055032ccfc1690500a11f8aa700ccc9fc3a6dc",
+      "shutdown_c": null,
+      "size": 1136,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 61.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 23,
+      "decoded_sha256": "23122db2fa654350b5bd21b24d056399ba18f21b54cf028511a62ddee5460faf",
+      "decoded_size": 3162,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-sdm660.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine-sdm660.conf",
+      "sections": 0,
+      "sha256": "e0b560bc86ca3db96d6f9f9c4fd491761f6f36d92a6c44fe9a1813b49c1899da",
+      "shutdown_c": null,
+      "size": 3168,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "devices/xiaomi/platina/thermal/thermal-engine.conf",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "tunable_status": "not-parsed"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/platina/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 9,
+    "decode_failures": 0,
+    "decoded": 7,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 2,
+    "thermal": 9
+  },
+  "topology": {
+    "artifact_count": 9,
+    "category_counts": {
+      "thermal": 9
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-sdm660-camera.conf",
+      "thermal-engine-sdm660-high.conf",
+      "thermal-engine-sdm660-map.conf",
+      "thermal-engine-sdm660-nolimits.conf",
+      "thermal-engine-sdm660-pubgmhd.conf",
+      "thermal-engine-sdm660-sgame.conf",
+      "thermal-engine-sdm660.conf",
+      "thermal-engine.conf"
+    ],
+    "root": "devices/xiaomi/platina/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

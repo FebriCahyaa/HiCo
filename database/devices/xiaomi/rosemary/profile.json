@@ -1,0 +1,186 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Redmi",
+    "codename": "rosemary",
+    "model": "rosemary",
+    "platform": "mt6785"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/rosemary.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/maltose/-/tree/rosemary-user-11-RP1A.200720.011-V12.5.14.0.RKLMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 11,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "d86ce8db52079569743441e34296badb3e63af0367c8c950553768f17f285495",
+        "shutdown_c": null,
+        "size": 2816,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "12b86cdedd579c6653cb6be9b87cddd2d0c80599210abf5ca62f5baf6a03f145",
+        "shutdown_c": null,
+        "size": 2096,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera2.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-camera2.conf",
+        "sections": 0,
+        "sha256": "7a7fae8f0c7e8614c5c1db0515d078f52c3e3852753c1d7685fc1925ca9f832c",
+        "shutdown_c": null,
+        "size": 2096,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "35d2e8c15980bce3a9356183982287473dbcaf660c9df5ee88b46763148591ac",
+        "shutdown_c": null,
+        "size": 768,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "0137bc3c8f60c24f309daa87ccdd61c12046007f8acc79034cf471c88371d691",
+        "shutdown_c": null,
+        "size": 320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "11a1e3bfb52ce7ba50301e990356121844f4fa7ab142984ec38619904126f7e8",
+        "shutdown_c": null,
+        "size": 784,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "e011e079198d7bf373549beb8e5dc7afd62c1595de253a0981fe676ddd8f6a88",
+        "shutdown_c": null,
+        "size": 784,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "abd8cbcd39881958537182a0d64ce380ff3ea2e00ac00859b344647caa714665",
+        "shutdown_c": null,
+        "size": 736,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "5f2f376fc3af8ecc5904acab7038cfeb7bc1e714d63e2249b6a07ce931767d19",
+        "shutdown_c": null,
+        "size": 2112,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/rosemary/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "f6702b74f7dc586e733c412161e05d24e3be2fac3d376907bc404a666a5d2688",
+        "shutdown_c": null,
+        "size": 720,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/rosemary/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "b45d5c6725416f536f188518aad46cc9d6675b8cf07130b8d06273f6e6f7cc83",
+        "shutdown_c": null,
+        "size": 388,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-camera2.conf",
+      "thermal-chg-only.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

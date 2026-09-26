@@ -1,0 +1,178 @@
+{
+  "artifacts": [
+    {
+      "category": "thermal",
+      "codec": "plain",
+      "codec_candidates": [
+        "plain"
+      ],
+      "decode_status": "plain",
+      "decode_supported": true,
+      "encode_supported": true,
+      "format": "text",
+      "max_trip_c": null,
+      "name": "index.tsv",
+      "parser": null,
+      "path": "devices/xiaomi/gemini/thermal/index.tsv",
+      "sections": 0,
+      "sha256": "8c701bde16b20b42b89dd6ad3c80d9a98a202946fac9565215a4924f024ad7c7",
+      "shutdown_c": null,
+      "size": 504,
+      "tunable_status": "not-parsed"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 16,
+      "decoded_sha256": "c8cc7e135d07df7a63af14485a50a360215268f7b895b56c3470590ded0c7d6a",
+      "decoded_size": 3519,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-a1.conf",
+      "parser": null,
+      "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996-a1.conf",
+      "sections": 0,
+      "sha256": "72c9639421b421b2d5c1579c5d89fdf9c69b3916555f848466537a09677e8dd5",
+      "shutdown_c": null,
+      "size": 3520,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 14,
+      "decoded_sha256": "f7ec687515f071ede4733b0a76d0aed6b711935386da8efa16ed17e4c19191fb",
+      "decoded_size": 3204,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-high.conf",
+      "parser": null,
+      "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996-high.conf",
+      "sections": 0,
+      "sha256": "87e09773e290e4905933638f53197f3ff5125b5d5b9bbef7142baaaeef1ed975",
+      "shutdown_c": null,
+      "size": 3216,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": null,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 4,
+      "decoded_sha256": "0453d68ffe53f7ca9b996b79ce794ad6a544fe65b51c53907363ce8973f5a63a",
+      "decoded_size": 133,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996-map.conf",
+      "parser": null,
+      "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996-map.conf",
+      "sections": 0,
+      "sha256": "9272f5f7c91ad0dd03f3e6630993ac55c88a66122869758ee4b1ad84a96fb164",
+      "shutdown_c": null,
+      "size": 144,
+      "tunable_status": "parser-supported"
+    },
+    {
+      "category": "thermal",
+      "codec": "mi_thermald_aes",
+      "codec_candidates": [
+        "mi_thermald_aes"
+      ],
+      "decode_status": "decoded",
+      "decode_supported": true,
+      "decoded_format": "thermal-engine-text",
+      "decoded_max_trip_c": 91.0,
+      "decoded_parser": "thermal-engine-text-v2",
+      "decoded_sections": 16,
+      "decoded_sha256": "47cc113ef5faf2439b1ef7a2dcf3472fff86dd009f87a29b7082d1fd07d6401e",
+      "decoded_size": 3518,
+      "encode_supported": true,
+      "format": "opaque-binary",
+      "max_trip_c": null,
+      "name": "thermal-engine-8996.conf",
+      "parser": null,
+      "path": "devices/xiaomi/gemini/thermal/thermal-engine-8996.conf",
+      "sections": 0,
+      "sha256": "811eb2bce8357a8f4399a368af61ae7a3a53b57bb9d124f5e71d5f142ec8d217",
+      "shutdown_c": null,
+      "size": 3520,
+      "tunable_status": "parser-supported"
+    }
+  ],
+  "codecs": [
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "plain"
+    },
+    {
+      "can_decode": true,
+      "can_encode": true,
+      "name": "mi_thermald_aes"
+    }
+  ],
+  "expanded": [],
+  "expansion_failures": [],
+  "failures": [],
+  "root": "devices/xiaomi/gemini/thermal",
+  "schema": "hico.artifact-map.v3",
+  "summary": {
+    "artifacts": 5,
+    "decode_failures": 0,
+    "decoded": 4,
+    "expanded_containers": 0,
+    "expansion_failures": 0,
+    "opaque": 0,
+    "plain": 1,
+    "thermal": 5
+  },
+  "topology": {
+    "artifact_count": 5,
+    "category_counts": {
+      "thermal": 5
+    },
+    "cooling_references": [],
+    "files": [
+      "index.tsv",
+      "thermal-engine-8996-a1.conf",
+      "thermal-engine-8996-high.conf",
+      "thermal-engine-8996-map.conf",
+      "thermal-engine-8996.conf"
+    ],
+    "root": "devices/xiaomi/gemini/thermal",
+    "schema": "hico.thermal-topology.v1",
+    "services": [],
+    "status": "static-scan",
+    "thermal_daemons": [
+      "thermal-engine"
+    ],
+    "thermal_hal_references": [],
+    "thermal_zone_references": []
+  }
+}

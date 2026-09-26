@@ -1,0 +1,228 @@
+{
+  "identity": {
+    "android": "14",
+    "brand": "Redmi",
+    "codename": "flare",
+    "model": "Redmi Pad SE 8.7",
+    "platform": "mt6768"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/flare.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/flare/-/tree/missi_pad_eea-user-14-UP1A.231005.007-V816.0.3.0.UHXEUXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 14,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "74e3f60be8cb6b2bd5f726145e735dedec3dd079b192ff87080b5a6c474450ff",
+        "shutdown_c": null,
+        "size": 1808,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 49.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/flare/thermal/thermal-chg-only.conf",
+        "sections": 8,
+        "sha256": "ab2376c39f6847afe892e62812e166b1c0b28582da44b25e7dc315a768c4afa9",
+        "shutdown_c": null,
+        "size": 1444,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "858d84444ec67a0cf0b60921a71334c38389163bfbccdfee424ba611fe46b9d5",
+        "shutdown_c": null,
+        "size": 1872,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "a7210694f77f1eff9a970b86571fa0d7cc66a047d014fbe5052ccaef67ff5a75",
+        "shutdown_c": null,
+        "size": 416,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "9b45168df638c2c0ffd0c6197ade4efc3525b8bc0513af54b05360ccb0a1dffe",
+        "shutdown_c": null,
+        "size": 1840,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-navigation.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-navigation.conf",
+        "sections": 0,
+        "sha256": "6b92014fd99920c1d5a3656d24561718762fbeb640ab4795e7d6742e25da9d68",
+        "shutdown_c": null,
+        "size": 1776,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "64f8a232321331a5f5bd9c9dfb5b47ddc1cda0c80f90bfc50e290c29f3b1dd5c",
+        "shutdown_c": null,
+        "size": 1152,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "a8d90bc86885b7c894927e6c8c38ed211a9dd935a2f38e2c6985bcad6ed28056",
+        "shutdown_c": null,
+        "size": 2000,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "d14e3d744cdbc82023dc08ae1d5ddf8f08512f257b1d84f7393d4b91b88960a2",
+        "shutdown_c": null,
+        "size": 1744,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "ec39cc07de7dde81e87ec108e527ff26c89df8e5d8df537e77876108206ec9f2",
+        "shutdown_c": null,
+        "size": 1840,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "1ea1d1136c0c9c8246626d30e9a7990a1e83a7e65ad555704b5b92a25796d402",
+        "shutdown_c": null,
+        "size": 1808,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-videochat.conf",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermal-videochat.conf",
+        "sections": 0,
+        "sha256": "8c46a98a8d1dcad998959e030ff4195cca1a6964fddb0a28c8b3f859d1fd84c7",
+        "shutdown_c": null,
+        "size": 1840,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "xml",
+        "max_trip_c": null,
+        "name": "thermalbreakboostconfig.xml",
+        "parser": null,
+        "path": "devices/xiaomi/flare/thermal/thermalbreakboostconfig.xml",
+        "sections": 0,
+        "sha256": "1b2cf287bb5a26267b12ed5a08853af951d7cf54154eb400c4c26e99dd69477d",
+        "shutdown_c": null,
+        "size": 3902,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/flare/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "808fea48b5d03498f3023c3ad5191d283d01d489c4c6f889674ef6c7f3c4a94d",
+        "shutdown_c": null,
+        "size": 864,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-navigation.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermal-videochat.conf",
+      "thermalbreakboostconfig.xml",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

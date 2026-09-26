@@ -1,0 +1,212 @@
+{
+  "identity": {
+    "android": "10",
+    "brand": "Xiaomi",
+    "codename": "raphaelin",
+    "model": "Redmi K20 Pro",
+    "platform": "msmnile"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/raphaelin.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/raphaelin/-/tree/raphaelin-user-10-QKQ1.190825.002-V12.0.4.0.QFKINXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 13,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "ce4436fc2b3d5c259f0f8b0b73e9523e737db82bd7d135b2f03b5ebbbf38df85",
+        "shutdown_c": null,
+        "size": 1200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "af571e90616c951c40b2f400a9ae8c3f159d3fe48e7feb5406d5a77817cf7fcd",
+        "shutdown_c": null,
+        "size": 1584,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-chg-only.conf",
+        "sections": 5,
+        "sha256": "503489fcd372ccb47c3660b78f11c8a0cdd22c490688704ecec7161fc41725e4",
+        "shutdown_c": null,
+        "size": 705,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "5a94c625379216d994a3284468e10fc146df84e26f0213271f8b712458a7f539",
+        "shutdown_c": null,
+        "size": 1856,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-extreme.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-extreme.conf",
+        "sections": 0,
+        "sha256": "7b39484f36d0d46140d18b3a36d95c089e2e4cad871c2309b7655590ab1f1f74",
+        "shutdown_c": null,
+        "size": 1392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "671c872b6952eb048c3d8715185a2a20fca41e8e1c2610216c045c9dad48a308",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "567857e21d14bb0b50cec31182179dce83c49d45ca2e9d23a603e8410152f455",
+        "shutdown_c": null,
+        "size": 1184,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "4631d99bac207683039ab73bc1189356b85688794edeece4c9f360e117c048e4",
+        "shutdown_c": null,
+        "size": 1760,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "6833eec66613ca544ef7f703857018da1c76ec6ed788f0dab5ab80616f265964",
+        "shutdown_c": null,
+        "size": 1184,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "067081b687fd5b58d33ade1911b52c1fa67530a1ae7d1cd73acf22d44921f7b5",
+        "shutdown_c": null,
+        "size": 1328,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtobe.conf",
+        "parser": null,
+        "path": "devices/xiaomi/raphaelin/thermal/thermal-youtobe.conf",
+        "sections": 0,
+        "sha256": "55bf0961418a2cc93f53aa896a6190471f9c74fa78163a097e3eeed9837f9827",
+        "shutdown_c": null,
+        "size": 1504,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/raphaelin/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "d7ee20b8abde4aa12030a042d6b6857940cccec2e978059af4762fde5d42ff9d",
+        "shutdown_c": null,
+        "size": 689,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-engine.conf",
+      "thermal-extreme.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtobe.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "vendor.thermal-engine",
+      "vendor.thermal-hal-1-0"
+    ]
+  }
+}

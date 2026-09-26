@@ -1,0 +1,228 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "POCO",
+    "codename": "evergreen",
+    "model": "POCO M4 Pro 5G",
+    "platform": "mt6833"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/evergreen.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/poco/evergreen/-/tree/evergreen-user-11-RP1A.200720.011-V12.5.2.0.RGBMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 14,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "fc11b87ccb7a0f40e62f9c7dd579a71a28574fba3b47b77090e22c377d58e2c5",
+        "shutdown_c": null,
+        "size": 2848,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "9da945a995fb23499e294e77067d9a0187bde361b7ab94674331804b9f26ad2e",
+        "shutdown_c": null,
+        "size": 2560,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "12f25cda2a3ec01b22dc510253da9977d8c733f7e5ef9f747ea372e9362d4e02",
+        "shutdown_c": null,
+        "size": 1200,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-class0.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-class0.conf",
+        "sections": 0,
+        "sha256": "2607168169ac4bb2b72ef6732468e160fce95638a675601667f0def7071b44b8",
+        "shutdown_c": null,
+        "size": 2576,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "c12e50805169734a1672af9d902d68422a4cbfb1329be39025fdc03dfe27d6e4",
+        "shutdown_c": null,
+        "size": 384,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-mgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-mgame.conf",
+        "sections": 0,
+        "sha256": "9f94aaddcace1b2152d30032daed140f0415675afd7b21fb03332db2a219ffb0",
+        "shutdown_c": null,
+        "size": 2512,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-navigation.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-navigation.conf",
+        "sections": 0,
+        "sha256": "03ce1880e71c492891b0071af22af205dd416b553561e192cda78f3266e2ee56",
+        "shutdown_c": null,
+        "size": 2560,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "37e940b23fb2b9e570f6794625240a77d144f84b105a35762e2cf2cbde7e74ff",
+        "shutdown_c": null,
+        "size": 2176,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "7659ab5c4014a75d6b56a6953c074ba8b8f655f6c50d9e3edc41033c40ed802c",
+        "shutdown_c": null,
+        "size": 2800,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "94459b07948b80700be442c63a6a0b92a5e915772729507537a6f10b99fe938a",
+        "shutdown_c": null,
+        "size": 2448,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "3f111a10524c7544c1383507294d229ff00e367fb043985787fe7bb4d2e08128",
+        "shutdown_c": null,
+        "size": 2240,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-video.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-video.conf",
+        "sections": 0,
+        "sha256": "daa51c50bc78cc05ac3b87ace817402550d71f2a4ce938fa3d8911fe13c99b41",
+        "shutdown_c": null,
+        "size": 2512,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/evergreen/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "9f07faeaaec1928dc1eee93ffa1a0f3ea6fc30a3f2dd83829530548524486319",
+        "shutdown_c": null,
+        "size": 2560,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/evergreen/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "607e1f3d4217cacd5201345716d8d38fcc050d889f2f58190e7a78a212a70a89",
+        "shutdown_c": null,
+        "size": 386,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-class0.conf",
+      "thermal-map.conf",
+      "thermal-mgame.conf",
+      "thermal-navigation.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-video.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

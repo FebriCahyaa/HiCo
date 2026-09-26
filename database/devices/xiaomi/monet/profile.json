@@ -1,0 +1,183 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Xiaomi",
+    "codename": "monet",
+    "model": "Mi 10 Lite 5G",
+    "platform": "lito"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/monet.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/monet/-/tree/qssi-user-11-RKQ1.200826.002-V12.1.1.0.RJIMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 11,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-4k.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-4k.conf",
+        "sections": 0,
+        "sha256": "f292d910f1645c74c6e5486103e3752d89cc6ffa10a39d1e1e5fab972b3f165d",
+        "shutdown_c": null,
+        "size": 1760,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "92cd4ac0cf5ba2d465b1e5d5e8b0a9399e415e28632d3d54527a030909e955bf",
+        "shutdown_c": null,
+        "size": 1392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "e6834d339fd16a249c143055264a8b2ef07cafb15bc994f5c520570f38d48900",
+        "shutdown_c": null,
+        "size": 1792,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 60.0,
+        "name": "thermal-chg-only.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/monet/thermal/thermal-chg-only.conf",
+        "sections": 4,
+        "sha256": "2493063267a6199792eb777b24e6430d577a31aef44979df1ae928e06fbd4667",
+        "shutdown_c": null,
+        "size": 874,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "text",
+        "max_trip_c": null,
+        "name": "thermal-engine.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-engine.conf",
+        "sections": 0,
+        "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+        "shutdown_c": null,
+        "size": 84,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "a17255df5e7fe1721c580dbaa76aa18cc6ead10c534b09eecaea5152984cc906",
+        "shutdown_c": null,
+        "size": 320,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "800b11369b72cc6f826554bf6bac8435a066ace0218eeebafff93f8d13b86be8",
+        "shutdown_c": null,
+        "size": 1376,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "e37b4c469dbd6ed7a7e4c6d14564af92a11d236db37596dc9d02de07f27900bd",
+        "shutdown_c": null,
+        "size": 1856,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "66147e1eebbfd36080580d70fe3a7c48bc4d5814d8ad1315758b2cf863d663bf",
+        "shutdown_c": null,
+        "size": 1232,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/monet/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "8bfd8fb26e3b2991b2a4e47bf310368cd69555d14b79537cae4e345354a4c4cf",
+        "shutdown_c": null,
+        "size": 1536,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/monet/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "7099a0a23c055c18df1162c88b9c9756177afdb733b71511e499abe691e28a61",
+        "shutdown_c": null,
+        "size": 554,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-4k.conf",
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-engine.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal-engine"
+    ]
+  }
+}

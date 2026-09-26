@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "tiffany",
+    "model": "MI 5X",
+    "platform": "msm8953"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/tiffany.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/tiffany/-/tree/tiffany-user-8.1.0-OPM1.171019.019-9.6.27-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 1,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": 70.0,
+        "name": "thermal-engine.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/tiffany/thermal/thermal-engine.conf",
+        "sections": 4,
+        "sha256": "3991eb247848431f0c84235cfa06d70c85843d6da916c9d207286309d4d72964",
+        "shutdown_c": null,
+        "size": 736,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-engine.conf"
+    ],
+    "mi_thermald": false,
+    "services": [
+      "thermal-engine",
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}

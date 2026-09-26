@@ -1,0 +1,172 @@
+{
+  "identity": {
+    "android": "11",
+    "brand": "Redmi",
+    "codename": "dandelion",
+    "model": "Redmi 10A",
+    "platform": "mt6765"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/dandelion.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/dandelion/-/tree/dandelion-user-11-RP1A.200720.011-V12.5.16.0.RCZMIXM-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 10,
+    "artifacts": [
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-arvr.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-arvr.conf",
+        "sections": 0,
+        "sha256": "d86ce8db52079569743441e34296badb3e63af0367c8c950553768f17f285495",
+        "shutdown_c": null,
+        "size": 2816,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-camera.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-camera.conf",
+        "sections": 0,
+        "sha256": "1aca75958202f396e333a4ce746cbcef76d6ffeaf0536aa82c0ca1b4079272da",
+        "shutdown_c": null,
+        "size": 2832,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-chg-only.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-chg-only.conf",
+        "sections": 0,
+        "sha256": "b3aec77d30932c703202ffbb7a9c043b3bdaae9cd07563e3310abd0e338f1037",
+        "shutdown_c": null,
+        "size": 560,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-map.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-map.conf",
+        "sections": 0,
+        "sha256": "964316626f65eaed63d9968dd07125cbf62ff08c235ec5f3c503244d63a5f28f",
+        "shutdown_c": null,
+        "size": 304,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-nolimits.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-nolimits.conf",
+        "sections": 0,
+        "sha256": "90153ee3a2e3d8fe697da6fe62ce26768a0fc5058ee6dd3d4e6e71900c9ea00a",
+        "shutdown_c": null,
+        "size": 1424,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-normal.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-normal.conf",
+        "sections": 0,
+        "sha256": "8e0ec112ff90c3af7ed765459d140b435c8aba8c2082fc86e405c956db303ce9",
+        "shutdown_c": null,
+        "size": 1392,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-phone.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-phone.conf",
+        "sections": 0,
+        "sha256": "0e0c7dd3378d4676a27aa5ecc99cfd11ec5bdc96d549097135a330d1e076524d",
+        "shutdown_c": null,
+        "size": 1536,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-tgame.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-tgame.conf",
+        "sections": 0,
+        "sha256": "e887c62c16298201a4e045ce3aea193edc68419d51973024218483582da4132c",
+        "shutdown_c": null,
+        "size": 1440,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "opaque-binary",
+        "max_trip_c": null,
+        "name": "thermal-youtube.conf",
+        "parser": null,
+        "path": "devices/xiaomi/dandelion/thermal/thermal-youtube.conf",
+        "sections": 0,
+        "sha256": "399762b5befc60d6a71b26bb2762603743e507db7c4e923cf77df0ad46c71aa6",
+        "shutdown_c": null,
+        "size": 1632,
+        "storage": "repository-artifact"
+      },
+      {
+        "category": "thermal",
+        "format": "thermal-engine-text",
+        "max_trip_c": null,
+        "name": "thermald-devices.conf",
+        "parser": "thermal-engine-text-v2",
+        "path": "devices/xiaomi/dandelion/thermal/thermald-devices.conf",
+        "sections": 0,
+        "sha256": "b45d5c6725416f536f188518aad46cc9d6675b8cf07130b8d06273f6e6f7cc83",
+        "shutdown_c": null,
+        "size": 388,
+        "storage": "repository-artifact"
+      }
+    ],
+    "config_names": [
+      "thermal-arvr.conf",
+      "thermal-camera.conf",
+      "thermal-chg-only.conf",
+      "thermal-map.conf",
+      "thermal-nolimits.conf",
+      "thermal-normal.conf",
+      "thermal-phone.conf",
+      "thermal-tgame.conf",
+      "thermal-youtube.conf",
+      "thermald-devices.conf"
+    ],
+    "mi_thermald": true,
+    "services": [
+      "mi_thermald",
+      "thermal",
+      "thermal_manager",
+      "thermalloadalgod",
+      "vendor.thermal-hal-2-0.mtk"
+    ]
+  }
+}

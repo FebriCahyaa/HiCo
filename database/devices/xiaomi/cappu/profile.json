@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "android": "7.0",
+    "brand": "Xiaomi",
+    "codename": "cappu",
+    "model": "MI PAD 3",
+    "platform": "mt8173"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/cappu.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cappu/-/tree/cappu-user-7.0-NRD90M-9.7.18-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": []
+  }
+}

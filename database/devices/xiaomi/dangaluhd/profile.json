@@ -1,0 +1,27 @@
+{
+  "identity": {
+    "android": "8.1.0",
+    "brand": "Xiaomi",
+    "codename": "dangaluhd",
+    "model": "MiTV-AXSO2",
+    "platform": "txlx"
+  },
+  "provenance": {
+    "source_file": "devices/xiaomi/dangaluhd.prop"
+  },
+  "schema": "hico.device.v1",
+  "source": {
+    "kind": "oem-firmware-dump",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/dangaluhd/-/tree/dangalUHD-user-8.1.0-OPM1.171019.011-1808-release-keys"
+  },
+  "thermal": {
+    "artifact_count": 0,
+    "artifacts": [],
+    "config_names": [],
+    "mi_thermald": false,
+    "services": [
+      "thermal-hal-1-0",
+      "thermalservice"
+    ]
+  }
+}
