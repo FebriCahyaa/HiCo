@@ -147,7 +147,9 @@ Verdict Snapshot::verdict() const {
     if (gpu) worst = std::min(worst, gpu->limit_pct());
     const bool gpu_thermal = gpu && gpu->thermal_level > 0;
     if (worst >= 100 && !gpu_thermal && active_performance_cooling() == 0 && tripped_zones == 0) return Verdict::None;
-    return worst >= 80 ? Verdict::Light : Verdict::Heavy;
+    // Heavy: one cluster or the GPU held to 60 % or less, or the CPU as a whole below 75 %.
+    // One cluster at 79 % (the big cores capped a step below max while charging) is light.
+    return worst <= 60 || cpu_limit_pct() < 75 ? Verdict::Heavy : Verdict::Light;
 }
 
 std::string_view to_string(Verdict v) {
