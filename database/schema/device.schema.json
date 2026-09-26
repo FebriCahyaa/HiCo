@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hico-thermal.invalid/schema/device.schema.json",
+  "title": "HiCo Thermal Device",
+  "type": "object",
+  "required": ["schema", "identity", "source", "thermal", "provenance"],
+  "properties": {
+    "schema": {"const": "hico.device.v1"},
+    "identity": {"type": "object", "required": ["codename"], "additionalProperties": true},
+    "source": {"type": "object", "additionalProperties": true},
+    "thermal": {"type": "object", "additionalProperties": true},
+    "provenance": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": true
+}

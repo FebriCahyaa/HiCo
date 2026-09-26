@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hico-thermal.invalid/schema/baseline.schema.json",
+  "title": "HiCo Thermal Baseline",
+  "type": "object",
+  "required": ["schema", "identity", "source", "artifacts"],
+  "properties": {
+    "schema": {"const": "hico.baseline.v1"},
+    "identity": {"type": "object", "additionalProperties": true},
+    "source": {"type": "object", "additionalProperties": true},
+    "artifacts": {"type": "array", "items": {"type": "object", "additionalProperties": true}}
+  },
+  "additionalProperties": true
+}

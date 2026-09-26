@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hico-thermal.invalid/schema/mapping.schema.json",
+  "title": "HiCo Thermal Artifact Mapping",
+  "type": "object",
+  "required": ["schema", "summary", "artifacts", "failures"],
+  "properties": {
+    "schema": {"enum": ["hico.artifact-map.v2", "hico.artifact-map-set.v2", "hico.artifact-map.v3", "hico.artifact-map-set.v3"]},
+    "artifacts": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+    "failures": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+    "summary": {"type": "object", "additionalProperties": true}
+  },
+  "additionalProperties": true
+}

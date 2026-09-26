@@ -1,0 +1,233 @@
+{
+  "schema": "hico.sources.v2",
+  "description": "Declarative source registry for OEM dumps, ROM device trees, vendor trees, kernel trees and independent Android maintainers.",
+  "sources": [
+    {
+      "id": "tadiphone-xiaomi",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/xiaomi"
+    },
+    {
+      "id": "tadiphone-redmi",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/redmi"
+    },
+    {
+      "id": "tadiphone-poco",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/poco"
+    },
+    {
+      "id": "tadiphone-samsung",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/samsung"
+    },
+    {
+      "id": "tadiphone-oneplus",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/oneplus"
+    },
+    {
+      "id": "tadiphone-oppo",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/oppo"
+    },
+    {
+      "id": "tadiphone-realme",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/realme"
+    },
+    {
+      "id": "tadiphone-vivo",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/vivo"
+    },
+    {
+      "id": "tadiphone-motorola",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/motorola"
+    },
+    {
+      "id": "tadiphone-google",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/google"
+    },
+    {
+      "id": "tadiphone-sony",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/sony"
+    },
+    {
+      "id": "tadiphone-asus",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/asus"
+    },
+    {
+      "id": "tadiphone-nothing",
+      "type": "gitlab_group",
+      "family": "oem",
+      "base": "https://dumps.tadiphone.dev",
+      "group": "dumps/nothing"
+    },
+    {
+      "id": "lineageos",
+      "type": "github_org",
+      "family": "lineageos",
+      "organization": "LineageOS"
+    },
+    {
+      "id": "pixelos-devices",
+      "type": "github_org",
+      "family": "pixelos",
+      "organization": "PixelOS-Devices"
+    },
+    {
+      "id": "evolution-x",
+      "type": "github_org",
+      "family": "evolution-x",
+      "organization": "Evolution-X-Devices"
+    },
+    {
+      "id": "crdroid",
+      "type": "github_org",
+      "family": "crdroid",
+      "organization": "crdroidandroid",
+      "optional": true
+    },
+    {
+      "id": "aospa",
+      "type": "github_org",
+      "family": "aospa",
+      "organization": "AOSPA",
+      "optional": true
+    },
+    {
+      "id": "arrowos",
+      "type": "github_org",
+      "family": "arrowos",
+      "organization": "ArrowOS",
+      "optional": true
+    },
+    {
+      "id": "derpfest",
+      "type": "github_org",
+      "family": "derpfest",
+      "organization": "DerpFest-AOSP",
+      "optional": true
+    },
+    {
+      "id": "voltageos",
+      "type": "github_org",
+      "family": "voltageos",
+      "organization": "VoltageOS-Devices",
+      "optional": true
+    },
+    {
+      "id": "superioros",
+      "type": "github_org",
+      "family": "superioros",
+      "organization": "SuperiorOS-Devices",
+      "optional": true
+    },
+    {
+      "id": "project-elixir",
+      "type": "github_org",
+      "family": "project-elixir",
+      "organization": "ProjectElixir-Devices",
+      "optional": true
+    },
+    {
+      "id": "nusantara",
+      "type": "github_org",
+      "family": "nusantara",
+      "organization": "NusantaraProject-ROM",
+      "optional": true
+    },
+    {
+      "id": "infinity-x",
+      "type": "github_org",
+      "family": "infinity-x",
+      "organization": "InFInity-X-Devices",
+      "optional": true
+    },
+    {
+      "id": "axion",
+      "type": "github_org",
+      "family": "axion",
+      "organization": "AxionAOSP",
+      "optional": true
+    },
+    {
+      "id": "cherish",
+      "type": "github_org",
+      "family": "cherish",
+      "organization": "CherishOS-Devices",
+      "optional": true
+    },
+    {
+      "id": "risingos",
+      "type": "github_org",
+      "family": "risingos",
+      "organization": "RisingOS-Devices",
+      "optional": true
+    },
+    {
+      "id": "grapheneos",
+      "type": "github_org",
+      "family": "grapheneos",
+      "organization": "GrapheneOS",
+      "optional": true
+    },
+    {
+      "id": "calyxos",
+      "type": "github_org",
+      "family": "calyxos",
+      "organization": "CalyxOS",
+      "optional": true
+    },
+    {
+      "id": "generic-github-android-device-trees",
+      "type": "github_search",
+      "family": "independent",
+      "queries": [
+        "android_device_",
+        "device_ android device tree",
+        "android_vendor_",
+        "android_kernel_",
+        "lineage.dependencies android",
+        "evolution.dependencies android",
+        "custom.dependencies android",
+        "proprietary-files.txt android device",
+        "thermal-engine android",
+        "thermal_info_config android",
+        "mi_thermald android",
+        "thermal_manager android",
+        "cooling-device android"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hico-thermal.invalid/schema/repository.schema.json",
+  "title": "HiCo Thermal Repository Manifest",
+  "type": "object",
+  "required": ["schema", "source", "files"],
+  "properties": {
+    "schema": {"enum": ["hico.repository.v1", "hico.repository.v2"]},
+    "source": {"type": "object", "additionalProperties": true},
+    "repository": {"type": "object", "additionalProperties": true},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "files": {"type": "array", "items": {"type": "object", "additionalProperties": true}}
+  },
+  "additionalProperties": true
+}
