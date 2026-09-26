@@ -114,6 +114,17 @@ jobs:
       - name: Set module version
         run: echo "${TAG#v}" >version
 
+      - name: Setup Bun for thermal Monitor WebUI
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.2"
+
+      - name: Compile thermal Monitor WebUI
+        working-directory: webui
+        run: |
+          bun install --frozen-lockfile
+          bun run build
+
       - name: Build module
         id: build
         uses: ./.github/actions/build-module
