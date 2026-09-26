@@ -110,13 +110,15 @@ Daemon::Daemon() : journal_(HICO_JOURNAL_FILE), controller_(journal_) {
 void Daemon::reload_config() {
     cfg_ = Config::load(HICO_CONFIG_FILE);
     log::set_level(to_level(cfg_.log_level));
-    guard_.set_limits({
+    const SafetyGuard::Limits limits{
         .cpu_limit = static_cast<double>(cfg_.safety_cpu_temp),
         .cpu_hysteresis = static_cast<double>(cfg_.safety_cpu_hysteresis),
         .battery_limit = static_cast<double>(cfg_.safety_battery_temp),
         .battery_hysteresis = static_cast<double>(cfg_.safety_battery_hysteresis),
         .cooldown = std::chrono::seconds(cfg_.safety_cooldown),
-    });
+    };
+    guard_.set_limits(limits);
+    headroom_.set_limits(limits);
 }
 
 void Daemon::recover() {
@@ -283,7 +285,18 @@ void Daemon::tick(Clock::time_point now) {
         transition(State::Safety, now, guard_.reason() + ", stock thermal");
     } else {
         safety_relaxed_ = false;
-        apply(*target, now);
+        Target t = *target;
+        // Max only with headroom below the safety limit (every mode, extreme too): a phone that
+        // starts or gets hot plays at the relaxed level instead of running into the guard.
+        const bool was_warm = headroom_.warm();
+        if (headroom_.update(temps.cpu, temps.battery, now) && t.level == Level::Max) {
+            t.level = Level::Relaxed;
+            t.source = "warm";
+            if (!was_warm) LOGI("max held back ({}): relaxed level for {}", headroom_.reason(), t.package);
+        } else if (was_warm && !headroom_.warm() && t.level == Level::Max) {
+            LOGI("cooled down: max level for {}", t.package);
+        }
+        apply(t, now);
     }
     publish(temps);
 }
@@ -337,7 +350,8 @@ void Daemon::apply(const Target &target, Clock::time_point now) {
                      target.package);
             }
         }
-        transition(State::Relaxed, now, target.package);
+        transition(State::Relaxed, now,
+                   target.source == "warm" ? std::format("{}, {}", target.package, headroom_.reason()) : target.package);
     }
 }
 

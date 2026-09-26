@@ -61,6 +61,10 @@
           <p class="text-sm mt-3 opacity-90 leading-relaxed">
             {{ $t(`state.${stateKey}.description`) }}
           </p>
+          <!-- Max held back: the phone was too warm (HeadroomGuard in hicod) -->
+          <p v-if="warmReason" class="text-sm mt-2 font-semibold leading-relaxed">
+            {{ $t('state.relaxed.warm', { reason: warmReason }) }}
+          </p>
 
           <div v-if="s.game" class="game-row mt-4">
             <img :src="apps.icon(s.game)" class="w-10 h-10 rounded-xl" alt="" @error="iconError" />
@@ -267,6 +271,12 @@ const STATES = {
   },
 }
 const stateKey = computed(() => (s.value.state in STATES ? s.value.state : 'idle'))
+// hicod reports "<package>, CPU 88.6°C, max below 87°C" when max waits for the phone to cool
+const warmReason = computed(() => {
+  const r = s.value.state === 'relaxed' ? s.value.reason || '' : ''
+  const i = r.indexOf(', ')
+  return i > 0 && r.includes('max below') ? r.slice(i + 2) : ''
+})
 const stateInfo = computed(() => STATES[stateKey.value] || STATES.idle)
 
 const changes = computed(() => {

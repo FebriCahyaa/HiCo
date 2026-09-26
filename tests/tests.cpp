@@ -378,6 +378,25 @@ void test_safety_guard() {
     CHECK(!g.update(50.0, std::nullopt, t0 + 331s));        // one sensor is enough
 }
 
+void test_headroom_guard() {
+    HeadroomGuard h;
+    h.set_limits({.cpu_limit = 95, .cpu_hysteresis = 10, .battery_limit = 46, .battery_hysteresis = 3, .cooldown = 30s});
+    const auto t0 = HeadroomGuard::Clock::time_point{} + 1000s;
+
+    CHECK(!h.update(80.0, 40.0, t0));       // headroom: max
+    CHECK(h.update(88.6, 41.0, t0 + 1s));  // garnet: a game started at 88.6 C (max below 87 C)
+    CHECK(h.reason().find("CPU 88.6") != std::string::npos);
+    CHECK(h.update(84.0, 41.0, t0 + 60s)); // below 87 but not by the release margin (82)
+    CHECK(h.update(81.0, 41.0, t0 + 20s)); // cool, cooldown since the last warm sample not over
+    CHECK(!h.update(81.0, 41.0, t0 + 61s)); // cool for the cooldown: max again
+
+    CHECK(h.update(70.0, 44.0, t0 + 100s)); // battery 44 = 46 - 2
+    CHECK(h.reason().find("battery") != std::string::npos);
+    CHECK(h.update(70.0, 43.0, t0 + 200s)); // needs <= 42.5
+    CHECK(!h.update(70.0, 42.5, t0 + 200s));
+    CHECK(!h.update(std::nullopt, std::nullopt, t0 + 300s)); // blind is the safety guard's job
+}
+
 void test_flux_link() {
     build_device();
     CHECK(flux::probe().availability == flux::Availability::Ready);
@@ -1263,6 +1282,7 @@ int main() {
         {"config", test_config},
         {"classification", test_classification},
         {"safety guard", test_safety_guard},
+        {"headroom guard", test_headroom_guard},
         {"flux link", test_flux_link},
         {"thermal controller", test_controller},
         {"journal tampering", test_journal_rejects_tampering},

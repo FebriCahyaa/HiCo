@@ -83,7 +83,7 @@ private:
         std::string package;
         pid_t pid = 0;
         Level level = Level::Relaxed;
-        std::string source; ///< "performance", "performance_lite" or "whitelist"
+        std::string source; ///< "performance", "performance_lite", "whitelist" or "warm" (max held back)
     };
     [[nodiscard]] std::optional<Target> choose_target() const;
     void apply(const Target &target, Clock::time_point now);
@@ -96,6 +96,7 @@ private:
     Journal journal_;
     ThermalController controller_;
     SafetyGuard guard_;
+    HeadroomGuard headroom_; ///< max level only with headroom below the safety limits
     State state_ = State::Idle;
     std::string reason_;
     flux::Status flux_;

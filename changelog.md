@@ -3,6 +3,13 @@
 ## Unreleased
 
 ### New
+- **Max only with headroom** (every mode, Extreme too): the max level removes every vendor limit
+  and lifts the cpufreq caps, so a phone that was already hot went to the safety limit within
+  seconds (a Redmi Note 13 Pro 5G started MLBB at 88.6 °C and sat at 95-96 °C). Now max needs the
+  CPU 8 °C and the battery 2 °C below their safety limits; closer to them the game plays at the
+  Relaxed level (vendor thermal with this phone's tuned template) and gets max back once the phone
+  has cooled 5 °C (battery 1.5 °C) further for the safety cooldown. Home shows why max waits
+- **Save log**: the Log page writes status, device, settings and the whole log to Download
 - **Encrypted Xiaomi thermal configs**: mi_thermald's AES-encrypted `thermal-*.conf` files (recent
   Xiaomi, Redmi and POCO firmware) are now decrypted, tuned and encrypted again, so the Relaxed
   level (Cool template, whitelisted apps) works on those phones instead of keeping stock thermal.

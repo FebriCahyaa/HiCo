@@ -50,6 +50,30 @@ bool SafetyGuard::update(std::optional<double> cpu_c, std::optional<double> batt
     return tripped_;
 }
 
+bool HeadroomGuard::update(std::optional<double> cpu_c, std::optional<double> battery_c, Clock::time_point now) {
+    const double cpu_enter = limits_.cpu_limit - kCpuMargin;
+    const double battery_enter = limits_.battery_limit - kBatteryMargin;
+    const bool cpu_warm = cpu_c && *cpu_c >= cpu_enter;
+    const bool battery_warm = battery_c && *battery_c >= battery_enter;
+
+    if (cpu_warm || battery_warm) {
+        reason_ = cpu_warm ? std::format("CPU {:.1f}°C, max below {:.0f}°C", *cpu_c, cpu_enter)
+                           : std::format("battery {:.1f}°C, max below {:.0f}°C", *battery_c, battery_enter);
+        warm_ = true;
+        warm_at_ = now;
+        return true;
+    }
+    if (!warm_) return false;
+
+    const bool cpu_cool = !cpu_c || *cpu_c <= cpu_enter - kCpuRelease;
+    const bool battery_cool = !battery_c || *battery_c <= battery_enter - kBatteryRelease;
+    if (cpu_cool && battery_cool && now - warm_at_ >= limits_.cooldown) {
+        warm_ = false;
+        reason_.clear();
+    }
+    return warm_;
+}
+
 void SafetyGuard::reset() {
     tripped_ = cpu_tripped_ = battery_tripped_ = false;
     reason_.clear();
