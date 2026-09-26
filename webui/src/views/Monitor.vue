@@ -22,6 +22,10 @@
             </p>
             <h2 class="m3-headline text-2xl mt-1">{{ $t(`monitor.v.${snap.verdict}.title`) }}</h2>
             <p class="text-sm mt-1 opacity-90">{{ $t(`monitor.v.${snap.verdict}.description`) }}</p>
+            <!-- Outside a game HiCo changes nothing: these caps are the ROM's own thermal -->
+            <p v-if="vendorOnly" class="text-xs mt-2 opacity-80">
+              {{ $t('monitor.vendor_only') }}
+            </p>
             <div class="grid grid-cols-2 gap-2 mt-4">
               <div class="stat">
                 <span class="text-xs opacity-70">{{ $t('monitor.cpu_allowed') }}</span>
@@ -138,6 +142,12 @@ const VERDICT = {
   heavy: 'bg-error-container text-on-error-container',
 }
 const verdict = computed(() => ({ card: VERDICT[snap.value?.verdict] || VERDICT.none }))
+// Outside a game session the caps are the ROM's own (HiCo state from its status poll)
+const vendorOnly = computed(
+  () =>
+    snap.value?.verdict !== 'none' &&
+    !['boost', 'relaxed', 'safety'].includes(hico.status?.state ?? 'boost'),
+)
 
 const series = (pick) => history.value.map((h) => pick(h) ?? null)
 const limitSeries = computed(() => [
@@ -180,8 +190,11 @@ const bars = computed(() => {
 const activeCooling = computed(() => (snap.value?.cooling || []).filter((c) => c.perf && c.cur > 0))
 const tripped = computed(() => (snap.value?.zones || []).filter((z) => z.tripped))
 
+let ticks = 0
 async function tick() {
   if (paused.value || document.hidden) return
+  // Session state for the "outside a game" note; every few samples is enough.
+  if (ticks++ % 5 === 0) hico.refreshStatus().catch(() => {})
   try {
     const s = await hico.monitor()
     snap.value = s

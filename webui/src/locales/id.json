@@ -208,13 +208,14 @@
       },
       "light": {
         "title": "Throttling ringan",
-        "description": "Beberapa clock dibatasi, tapi setiap batas di atas 80 %."
+        "description": "Beberapa clock dibatasi sedikit: CPU secara keseluruhan di atas 75 % dan tidak ada cluster atau GPU di bawah 60 %."
       },
       "heavy": {
         "title": "Throttling berat",
         "description": "Batas termal menahan CPU atau GPU jauh di bawah kecepatan penuh."
       }
     },
+    "vendor_only": "Tidak ada game yang berjalan: batas ini dari sistem termal HP sendiri (misalnya saat mengecas). HiCo hanya melepasnya saat bermain game.",
     "cpu_allowed": "CPU diizinkan",
     "gpu_allowed": "GPU diizinkan",
     "allowed_chart": "Kecepatan diizinkan, 1 menit terakhir",

@@ -208,13 +208,14 @@
       },
       "light": {
         "title": "Light throttling",
-        "description": "Some clocks are capped, but every cap is above 80 %."
+        "description": "Some clocks are capped a little: the CPU as a whole above 75 % and no cluster or the GPU below 60 %."
       },
       "heavy": {
         "title": "Heavy throttling",
         "description": "Thermal caps are holding the CPU or GPU well below full speed."
       }
     },
+    "vendor_only": "No game is running: these limits come from the phone's own thermal system (for example while charging). HiCo only lifts them during games.",
     "cpu_allowed": "CPU allowed",
     "gpu_allowed": "GPU allowed",
     "allowed_chart": "Allowed speed, last minute",

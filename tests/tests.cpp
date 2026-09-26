@@ -259,6 +259,16 @@ void test_monitor() {
     s = monitor::sample();
     CHECK(s.verdict() == monitor::Verdict::Light);
 
+    // One cluster a step below max (79 %, CPU 90 % overall) is light, not heavy.
+    put("/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq", "1593000\n");
+    s = monitor::sample();
+    CHECK_EQ(s.clusters[0].name == "policy0" ? s.clusters[0].limit_pct() : s.clusters[1].limit_pct(), 79);
+    CHECK(s.verdict() == monitor::Verdict::Light);
+    // A cluster held to half its speed is heavy.
+    put("/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq", "1008000\n");
+    s = monitor::sample();
+    CHECK(s.verdict() == monitor::Verdict::Heavy);
+
     CHECK_EQ(monitor::cpu_ranges({0, 1, 2, 3, 6, 7, 5}), std::string("0-3,5-7"));
     CHECK_EQ(monitor::cpu_ranges({4}), std::string("4"));
 }
