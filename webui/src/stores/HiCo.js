@@ -105,6 +105,17 @@ export const useHiCoStore = defineStore('hico', () => {
 
   const monitor = () => run(`${HICOD} monitor --json`).then((s) => JSON.parse(s))
   const log = (lines = 200) => run(`tail -n ${lines} ${LOG_FILE} 2>/dev/null`)
+  // One text file in Download for bug reports: state, device, settings and the whole
+  // log (with the part rotated to .old). Prints the path.
+  const saveLog = () =>
+    run(
+      'd=/sdcard/Download; mkdir -p "$d"; ' +
+        'dev=$(getprop ro.product.vendor.device); [ -n "$dev" ] || dev=$(getprop ro.product.device); ' +
+        'f="$d/hico_log_${dev:-device}_$(date +%Y-%m-%d_%H-%M-%S).txt"; ' +
+        `{ echo "== status"; ${HICOD} status 2>&1; echo; echo "== device"; ${HICOD} device 2>&1; ` +
+        `echo; echo "== config"; ${HICOD} config list 2>&1; echo; echo "== log"; ` +
+        `cat ${LOG_FILE}.old ${LOG_FILE} 2>/dev/null; } >"$f" && echo "$f"`,
+    ).then((s) => s.trim())
   const restart = () => run(`${HICOD} restore >/dev/null 2>&1; ${HICOD} daemon`)
   const restore = () => run(`${HICOD} restore`)
   const reset = () => run(`${HICOD} config reset`).then(loadConfig)
@@ -123,6 +134,7 @@ export const useHiCoStore = defineStore('hico', () => {
     blacklist,
     whitelist,
     refreshStatus,
+    saveLog,
     loadConfig,
     set,
     applyPreset,
