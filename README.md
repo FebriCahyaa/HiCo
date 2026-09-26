@@ -92,8 +92,22 @@ gaming).
   video editor, emulator, …). They never reach the max level — only games do.
 - **Blacklist** (`blacklist`): packages that are never boosted, games included. It wins over
   the game list and the whitelist.
-- Devices whose thermal configs are encrypted cannot be relaxed: the relaxed level then keeps
-  stock thermal and says so (`hicod thermal scan` shows what would be tuned).
+- Encrypted mi_thermald configs (recent Xiaomi firmware) are decrypted, tuned and encrypted again
+  (mi_thermald only loads encrypted files). `hicod thermal scan` shows what would be tuned.
+
+**mi_thermald templates.** mi_thermald configs describe each limit as a section with rising
+`trig` and release `clr` thresholds and a `target` per step (a CPU frequency, a GPU level, ...),
+one file per scene (normal, tgame, mgame, nolimits, camera, ...). HiCo tunes only the sections
+that cost performance (`cpuN`, `gpu`, `hotplug_cpuN`, `boost_limit`): trig and clr move up
+together by the chipset margin, **never above the highest trip the phone's own configs use for
+that limit and sensor** (normally its nolimits or game scene) nor the 55 °C skin / 105 °C CPU
+caps; targets are never changed. Battery / charging, brightness, torch, modem, wifi, temp_state
+and download-limit sections, battery sensors and descending thresholds stay stock. Example,
+garnet `thermal-tgame.conf` at the Relaxed level: CPU4 46/47/48 °C → 49/50/51 °C (Xiaomi's own
+nolimits trip is 51 °C), GPU 45/46 °C → 47/48 °C, boost_limit unchanged (already at its ceiling).
+Every device's template is generated in the repository (`devices/xiaomi/<codename>/tuned/TEMPLATE.md`,
+[docs/THERMAL_TUNING.md](docs/THERMAL_TUNING.md)); on the phone the same code builds it from the
+phone's own files.
 
 ## Safety
 
@@ -309,6 +323,8 @@ hicod device [--list]      this device in the compiled database (SoC, traits, ba
 hicod thermal scan         this device's thermal configs and what the relaxed level would tune
 hicod thermal tune <file> [--platform P] [--margin N]    tuned config on stdout (repository tooling)
 hicod thermal check <original> <tuned> [--platform P]   independent safety verification
+hicod thermal decrypt <in> [out]     encrypted mi_thermald config -> text
+hicod thermal encrypt <in> <out>     text -> encrypted mi_thermald config
 ```
 
 Files: `/data/adb/.config/hico/` (settings, `hico.log`, `sessions`), `/dev/hico/` (live state,

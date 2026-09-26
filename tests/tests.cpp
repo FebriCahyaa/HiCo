@@ -18,6 +18,7 @@
 #include "HiCo.hpp"
 #include "Journal.hpp"
 #include "Log.hpp"
+#include "MiCrypt.hpp"
 #include "Monitor.hpp"
 #include "Props.hpp"
 #include "SafetyGuard.hpp"
@@ -367,6 +368,11 @@ void test_safety_guard() {
     CHECK(g.reason().find("battery") != std::string::npos);
     CHECK(g.update(70.0, 44.0, t0 + 200s)); // needs <= 43
     CHECK(!g.update(70.0, 43.0, t0 + 200s));
+
+    // A CPU trip is released once the CPU cooled, even while the battery sits inside its own
+    // hysteresis band (below its limit): only the sensor that tripped has to cool down.
+    CHECK(g.update(96.0, 44.0, t0 + 250s));
+    CHECK(!g.update(84.0, 45.0, t0 + 281s));
 
     CHECK(g.update(std::nullopt, std::nullopt, t0 + 300s)); // blind: stay protected
     CHECK(!g.update(50.0, std::nullopt, t0 + 331s));        // one sensor is enough
@@ -1063,6 +1069,17 @@ void test_rom_and_hal_overlay() {
     CHECK(detect_rom().first == RomFamily::Lineage && detect_rom().second == "LineageOS 22.1");
     put("/__props__/ro.modversion", "crDroidAndroid-15.0");
     CHECK(detect_rom().second == "crDroidAndroid-15.0");
+    // Custom ROM on a HyperOS vendor (RisingOS on garnet): the vendor still reports V816, but
+    // without the MIUI framework it is the custom ROM, named from ro.lineage.version.
+    put("/__props__/ro.modversion", "");
+    put("/__props__/ro.lineage.version", "RisingOS-9-260920-0213-GAPPS-OFFICIAL-garnet");
+    put("/__props__/ro.miui.ui.version.name", "V816");
+    CHECK(detect_rom().first == RomFamily::Lineage && detect_rom().second == "RisingOS 9");
+    put("/system/framework/miui-framework.jar", "");
+    CHECK(detect_rom().first == RomFamily::HyperOS); // the framework is there: HyperOS after all
+    stdfs::remove(g_root + "/system/framework/miui-framework.jar");
+    put("/__props__/ro.lineage.version", "");
+    put("/__props__/ro.miui.ui.version.name", "");
     put("/__props__/ro.mi.os.version.name", "OS2.0");
     CHECK(detect_rom().first == RomFamily::HyperOS);
     put("/__props__/ro.mi.os.version.name", "");
@@ -1115,6 +1132,125 @@ void test_rom_and_hal_overlay() {
 
 } // namespace
 
+void test_mi_thermald() {
+    using namespace thermalcfg;
+    // AES-128 (FIPS-197 C.1): first CBC block with a zero IV is the ECB result.
+    const auto unhex = [](std::string_view h) {
+        std::string o;
+        for (size_t i = 0; i < h.size(); i += 2) o += static_cast<char>(std::stoi(std::string(h.substr(i, 2)), nullptr, 16));
+        return o;
+    };
+    const std::string ct = micrypt::cbc_encrypt(unhex("00112233445566778899aabbccddeeff"),
+                                                unhex("000102030405060708090a0b0c0d0e0f"), std::string(16, '\0'));
+    CHECK(ct.substr(0, 16) == unhex("69c4e0d86a7b0430d8cdb78070b4c55a"));
+
+    const std::string stock =
+        "[VIRTUAL-SENSOR0]\nalgo_type\tVirtual\nsensors\tcpu_therm\tbattery\n\n"
+        "[TGAME-SS-CPU4]\nalgo_type\tss\nsensor\tVIRTUAL-SENSOR0\ndevice\tcpu4\npolling\t2000\n"
+        "trig\t46000\t47000\t48000\nclr\t45000\t46000\t47000\ntarget\t1344000\t1190400\t960000\n\n"
+        "[TGAME-MONITOR-GPU]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\tgpu\ntrig\t45000\t46000\n"
+        "clr\t44000\t45000\ntarget\t4\t5\n\n"
+        "[TGAME-MONITOR-BATTERY]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\tbattery\n"
+        "trig\t40000\nclr\t38000\ntarget\t1500\n\n"
+        "[TGAME-MONITOR-TEMP_STATE]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\ttemp_state\n"
+        "trig\t46000\nclr\t44000\ntarget\t110100000\n";
+    const std::string nolimits =
+        "[NOLIMITS-SS-CPU4]\nalgo_type\tss\nsensor\tVIRTUAL-SENSOR0\ndevice\tcpu4\ntrig\t51000\nclr\t49000\ntarget\t691200\n\n"
+        "[NOLIMITS-MONITOR-GPU]\nalgo_type\tmonitor\nsensor\tVIRTUAL-SENSOR0\ndevice\tgpu\ntrig\t48000\nclr\t45000\ntarget\t1\n";
+
+    // Encrypted round trip, and format detection on both forms.
+    const std::string enc = micrypt::encrypt(stock);
+    CHECK(micrypt::decrypt(enc) == stock);
+    CHECK(detect_format(stock) == Format::MiThermald);
+    CHECK(detect_format(enc) == Format::MiEncrypted);
+    CHECK(!micrypt::decrypt("not encrypted at all!!").has_value());
+
+    Policy p = policy_for(SocVendor::Qualcomm, "parrot"); // +5 C
+    mithermald::collect_ceilings(stock, p.mi_ceilings);
+    mithermald::collect_ceilings(nolimits, p.mi_ceilings);
+    CHECK_EQ(p.mi_ceilings["cpu4|VIRTUAL-SENSOR0"], 51000LL);
+
+    const auto r = tune(enc, p);
+    CHECK(r && r->tuned_sections == 2);
+    CHECK(detect_format(r->text) == Format::MiEncrypted); // re-encrypted for mi_thermald
+    const std::string tuned = *micrypt::decrypt(r->text);
+    // CPU4 bounded by the device's own nolimits trip (51 C): +3 instead of +5, clr moved alike.
+    CHECK(tuned.find("trig\t49000\t50000\t51000\nclr\t48000\t49000\t50000\ntarget\t1344000") != std::string::npos);
+    CHECK(tuned.find("trig\t47000\t48000\nclr\t46000\t47000") != std::string::npos); // GPU up to 48 C
+    CHECK(tuned.find("device\tbattery\ntrig\t40000") != std::string::npos);            // battery untouched
+    CHECK(tuned.find("device\ttemp_state\ntrig\t46000") != std::string::npos);         // temp_state untouched
+    CHECK(verify(enc, r->text, p).empty());
+
+    // Without ceilings the margin applies, capped at 55 C for a skin / virtual sensor.
+    Policy wide = policy_for(SocVendor::Qualcomm, "parrot", 10);
+    const auto w = mithermald::tune(stock, wide);
+    CHECK(w && w->text.find("trig\t55000\t56000") == std::string::npos);
+    CHECK(w->text.find("trig\t53000\t54000\t55000") != std::string::npos);
+
+    // The verifier rejects anything beyond the rules.
+    const std::string bad = mithermald::tune(stock, p)->text;
+    const auto replace = [](std::string s, std::string_view a, std::string_view b) {
+        s.replace(s.find(a), a.size(), b);
+        return s;
+    };
+    CHECK(!mithermald::verify(stock, replace(bad, "trig\t49000\t50000\t51000", "trig\t52000\t53000\t54000"), p).empty());
+    CHECK(!mithermald::verify(stock, replace(stock, "trig\t40000", "trig\t45000"), p).empty()); // battery
+    CHECK(!mithermald::verify(stock, replace(stock, "target\t4\t5", "target\t1\t1"), p).empty());
+}
+
+void test_graduated_safety() {
+    // A device with a tunable vendor config: the safety guard first brings the vendor thermal
+    // back with the tuned template, and only restores full stock past the hard margin.
+    build_device();
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    write_config("safety_cooldown=10\npoll_interval=2\n");
+    Daemon d;
+    auto t = Daemon::Clock::time_point{} + 20000s;
+    start_game("com.mobile.legends");
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Boost);
+
+    set_cpu_temp(96000); // limit 95: soft landing
+    d.tick(t += 2s);
+    CHECK(d.state() == State::Safety);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));                  // protection back
+    CHECK(get("/__mounts__").find("/vendor/etc/thermal-engine.conf") != std::string::npos); // tuned template
+    CHECK(get(HICO_STATE_FILE).find("tuned vendor thermal") != std::string::npos);
+
+    set_cpu_temp(98500); // 95 + 3: hard margin, full stock
+    d.tick(t += 2s);
+    CHECK(d.state() == State::Safety);
+    CHECK(get("/__mounts__").find("/vendor/etc/thermal-engine.conf") == std::string::npos);
+    CHECK(get(HICO_STATE_FILE).find("stock thermal") != std::string::npos);
+
+    set_cpu_temp(80000); // cooled: back to the unlock
+    d.tick(t += 12s);
+    CHECK(d.state() == State::Boost);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("stopped"));
+    CHECK(get(HICO_STATE_FILE).find("trips=1") != std::string::npos);
+    stop_game();
+    d.tick(t += 1s); // exit grace period starts
+    d.tick(t += 5s);
+    CHECK(d.state() == State::Idle);
+
+    // A thermal HAL the system restarts every time it is stopped is left running after a few
+    // returns, instead of being stopped (and re-initialising) on every poll.
+    build_device();
+    Journal j(HICO_JOURNAL_FILE);
+    ThermalController c(j, DeviceProfile{});
+    Config x;
+    x.mode = Mode::Extreme;
+    for (int i = 0; i < 5; ++i) {
+        c.unlock(x);
+        put("/__props__/init.svc.vendor.thermal-hal-2-0", "running"); // servicemanager brings it back
+    }
+    const std::string ctl = get("/__props__/__ctl_log__");
+    size_t stops = 0;
+    for (size_t pos = 0; (pos = ctl.find("ctl.stop vendor.thermal-hal-2-0", pos)) != std::string::npos; ++pos) ++stops;
+    CHECK_EQ(stops, 3u);
+    c.restore();
+}
+
 int main() {
     char tmpl[] = "/tmp/hico-test-XXXXXX";
     if (!mkdtemp(tmpl)) return 1;
@@ -1135,8 +1271,10 @@ int main() {
         {"device database", test_device_database},
         {"thermal tuner", test_thermal_tuner},
         {"relaxed overlay", test_relaxed_overlay},
+        {"graduated safety and respawning HAL", test_graduated_safety},
         {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
         {"thermal HAL JSON tuner", test_hal_json_tuner},
+        {"mi_thermald crypt and tuner", test_mi_thermald},
         {"ROM detection and HAL overlay", test_rom_and_hal_overlay},
         {"throttling monitor", test_monitor},
     };

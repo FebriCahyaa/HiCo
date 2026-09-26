@@ -10,6 +10,7 @@
 
 #include "DeviceDatabase.hpp"
 
+#include <map>
 #include <optional>
 #include <string>
 #include <string_view>
@@ -46,6 +47,10 @@ struct Policy {
     int cap_other_c = 55;        ///< never raise a skin / board sensor trip above this
     int shutdown_guard_c = 10;   ///< keep every trip this far below the lowest shutdown threshold
     std::string_view name = "generic";
+    /// mi_thermald only: highest trip (m°C) the device's own configs use per
+    /// "device|sensor" (usually its nolimits / game scene). A tuned section never
+    /// goes above it, so each device gets a template anchored in Xiaomi's data.
+    std::map<std::string, long long> mi_ceilings;
 };
 
 /// Tuning policy for a chipset. @p margin_override (1..10) replaces the chipset margin when set.
@@ -55,6 +60,8 @@ enum class Format {
     Unknown,   ///< encrypted blob or unrelated format: never touched
     Engine,    ///< thermal-engine / plain-text mi_thermald syntax ([SECTION] + key values)
     HalJson,   ///< thermal HAL thermal_info_config*.json (AOSP / Pixel-style HAL, newer vendors)
+    MiThermald,  ///< plain-text mi_thermald config (algo_type ss / monitor, trig / clr / target)
+    MiEncrypted, ///< the same, AES-encrypted as recent Xiaomi firmware ships it (MiCrypt.hpp)
 };
 
 [[nodiscard]] Format detect_format(std::string_view content);
@@ -86,5 +93,31 @@ namespace haljson {
 [[nodiscard]] std::optional<Result> tune(std::string_view content, const Policy &policy);
 [[nodiscard]] std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy);
 } // namespace haljson
+
+/**
+ * Xiaomi mi_thermald configs (thermal-normal.conf, thermal-tgame.conf, ...).
+ *
+ * Sections use `trig` (rising thresholds), `clr` (release thresholds) and
+ * `target` (the limit applied at each step) against a `sensor`, for a
+ * `device`. Only sections that throttle performance are tuned: devices cpuN,
+ * gpu, hotplug_cpuN and boost_limit. Battery / charging, brightness, torch,
+ * modem, wifi, temp_state and download limits are never changed, nor are
+ * sections with a battery-type sensor or descending (`reverse`) thresholds.
+ *
+ * A tuned section moves trig and clr up by the same amount (hysteresis and
+ * order kept, targets untouched): the chipset margin, but never above the
+ * highest trip the device's own configs use for that device and sensor
+ * (Policy::mi_ceilings) nor the policy caps.
+ */
+namespace mithermald {
+[[nodiscard]] bool is_config(std::string_view content);
+/// "device|sensor" -> highest trig (m°C) in @p content, merged into @p into.
+void collect_ceilings(std::string_view content, std::map<std::string, long long> &into);
+[[nodiscard]] std::optional<Result> tune(std::string_view content, const Policy &policy);
+[[nodiscard]] std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy);
+} // namespace mithermald
+
+/// Plain text of any tunable config: decrypted when it is an encrypted mi_thermald file.
+[[nodiscard]] std::optional<std::string> plain_text(std::string_view content);
 
 } // namespace hico::thermalcfg

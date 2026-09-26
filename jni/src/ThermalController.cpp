@@ -111,6 +111,18 @@ int ThermalController::stop_services(const Config &cfg) {
             if (journal_.has_service(svc.name)) ++stopped;
             continue;
         }
+        if (respawning_.contains(svc.name)) continue;
+        // Stopped by HiCo and running again: init or servicemanager restarts it on demand (lazy
+        // AIDL thermal HALs come back as soon as the framework asks). Stopping it on every poll
+        // only makes it re-initialise and re-apply its limits each second, which stutters worse
+        // than leaving it alone: after a few returns it is left running for this session.
+        if (journal_.has_service(svc.name) && ++respawns_[svc.name] >= kMaxRespawns) {
+            respawning_.insert(svc.name);
+            LOGW("thermal service {} is restarted by the system each time it is stopped; left running "
+                 "(its cooling devices are still released every poll)",
+                 svc.name);
+            continue;
+        }
 
         // Journal first: a service stopped by HiCo is always restarted on restore.
         journal_.record_service(svc.name);
@@ -241,7 +253,18 @@ ThermalController::Summary ThermalController::unlock(const Config &cfg) {
 
 int ThermalController::relax(const Config &cfg) {
     // Thermal overclock uses the widest margin; the tuner's hard caps still apply.
-    const auto policy = thermalcfg::policy_for(device_.soc, device_.platform, cfg.thermal_overclock ? 10 : cfg.relax_margin);
+    auto policy = thermalcfg::policy_for(device_.soc, device_.platform, cfg.thermal_overclock ? 10 : cfg.relax_margin);
+    const auto files = thermalcfg::device_config_files();
+    // mi_thermald: this device's own highest trip per device/sensor (nolimits, game scenes)
+    // bounds every tuned section, so the template follows Xiaomi's data for this phone.
+    for (const auto &path : files) {
+        if (journal_.has_mount(path) || fs::is_mounted(path)) continue;
+        const auto raw = fs::read_raw(path, 512 * 1024);
+        if (!raw) continue;
+        const auto fmt = thermalcfg::detect_format(*raw);
+        if (fmt != thermalcfg::Format::MiThermald && fmt != thermalcfg::Format::MiEncrypted) continue;
+        if (const auto plain = thermalcfg::plain_text(*raw)) thermalcfg::mithermald::collect_ceilings(*plain, policy.mi_ceilings);
+    }
 
     struct Pending {
         std::string target;
@@ -250,7 +273,7 @@ int ThermalController::relax(const Config &cfg) {
     };
     std::vector<Pending> pending;
     int relaxed = 0;
-    for (const auto &path : thermalcfg::device_config_files()) {
+    for (const auto &path : files) {
         // Already overlaid (this session or a crashed one): never tune a tuned file again.
         if (journal_.has_mount(path) || fs::is_mounted(path)) {
             ++relaxed;
@@ -306,6 +329,8 @@ Journal::RestoreResult ThermalController::restore() {
     const auto r = journal_.restore();
     act_.reset_warnings();
     warned_services_.clear();
+    respawns_.clear();
+    respawning_.clear();
     return r;
 }
 

@@ -29,6 +29,13 @@
 namespace hico {
 
 namespace {
+/// Past these margins above the user's safety limits the soft landing (tuned vendor
+/// thermal) is not enough: full stock thermal protection comes back.
+constexpr double kHardMarginCpu = 3.0;
+constexpr double kHardMarginBattery = 1.0;
+} // namespace
+
+namespace {
 
 /// Flux liveness / game re-check period outside games (inotify covers the fast path).
 constexpr std::chrono::seconds kIdleInterval{30};
@@ -134,6 +141,7 @@ void Daemon::begin_session(const Target &target, Clock::time_point now) {
     session_->started = std::time(nullptr);
     session_start_ = now;
     guard_.reset();
+    safety_relaxed_ = safety_notified_ = stock_notified_ = false;
     LOGI("session started: {} (pid {}, {}, level {})", target.package, target.pid, target.source, to_string(target.level));
 }
 
@@ -151,13 +159,14 @@ void Daemon::end_session(Clock::time_point now) {
 }
 
 void Daemon::transition(State next, Clock::time_point now, std::string reason) {
-    if (next != State::Boost && next != State::Relaxed && controller_.unlocked()) {
+    const bool keeps_overlay = next == State::Boost || next == State::Relaxed || (next == State::Safety && safety_relaxed_);
+    if (!keeps_overlay && controller_.unlocked()) {
         const auto r = controller_.restore();
         LOGI("thermal restored: {} nodes, {} services, {} configs{}", r.nodes, r.services, r.mounts,
              r.failed ? std::format(", {} failed", r.failed) : "");
         summary_ = {};
     }
-    if (next != State::Boost && next != State::Relaxed) applied_.reset();
+    if (!keeps_overlay) applied_.reset();
 
     if (next != State::Boost && next != State::Relaxed && next != State::Safety) {
         end_session(now);
@@ -233,13 +242,47 @@ void Daemon::tick(Clock::time_point now) {
     }
 
     if (guard_.update(temps.cpu, temps.battery, now)) {
-        if (state_ != State::Safety) {
+        // Graduated protection: first the vendor thermal comes back with this device's tuned
+        // template (the Relaxed level: every protection active, trips bounded by the phone's own
+        // configs); full stock thermal only past a hard margin above the limit, or on devices
+        // without a tunable vendor config. Avoids the FPS cliff of dropping straight to stock.
+        const bool hard = (temps.cpu && *temps.cpu >= cfg_.safety_cpu_temp + kHardMarginCpu) ||
+                          (temps.battery && *temps.battery >= cfg_.safety_battery_temp + kHardMarginBattery);
+        const bool entering = state_ != State::Safety;
+        if (entering) {
             ++session_->trips;
-            LOGW("safety guard: {}, restoring thermal protection for {}", guard_.reason(), target->package);
-            if (cfg_.notify) notify(std::format("Thermal protection restored: {}", guard_.reason()));
+            LOGW("safety guard: {}, {} for {}", guard_.reason(),
+                 hard || relax_unavailable_ ? "restoring stock thermal" : "vendor thermal back on (tuned template)",
+                 target->package);
         }
-        transition(State::Safety, now, guard_.reason());
+        if (!hard && !relax_unavailable_) {
+            if (applied_ != Level::Relaxed && controller_.unlocked()) controller_.restore();
+            summary_ = {};
+            summary_.configs = controller_.relax(cfg_);
+            if (summary_.configs > 0) {
+                applied_ = Level::Relaxed;
+                safety_relaxed_ = true;
+                if (entering && cfg_.notify && !safety_notified_) {
+                    notify(std::format("Hot ({}): vendor thermal is back with this phone's tuned limits until it cools down.",
+                                       guard_.reason()));
+                    safety_notified_ = true;
+                }
+                transition(State::Safety, now, guard_.reason() + ", tuned vendor thermal");
+                publish(temps);
+                return;
+            }
+            relax_unavailable_ = true; // nothing to tune here: stock is the only protection
+        }
+        if (safety_relaxed_) LOGW("safety guard: past the hard margin, restoring stock thermal");
+        safety_relaxed_ = false;
+        // One notice per session for stock protection (plus the soft-landing one above).
+        if (cfg_.notify && !stock_notified_) {
+            notify(std::format("Thermal protection restored: {}", guard_.reason()));
+            stock_notified_ = true;
+        }
+        transition(State::Safety, now, guard_.reason() + ", stock thermal");
     } else {
+        safety_relaxed_ = false;
         apply(*target, now);
     }
     publish(temps);

@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### New
+- **Encrypted Xiaomi thermal configs**: mi_thermald's AES-encrypted `thermal-*.conf` files (recent
+  Xiaomi, Redmi and POCO firmware) are now decrypted, tuned and encrypted again, so the Relaxed
+  level (Cool template, whitelisted apps) works on those phones instead of keeping stock thermal.
+  `hicod thermal decrypt` / `encrypt` convert them by hand. Independent AES-128 implementation of
+  the format documented by mi-thermal-crypt; no code taken from it
+- **Per-device thermal templates**: mi_thermald performance sections (cpu, gpu, core hotplug,
+  boost_limit) are raised by the chipset margin but never above the highest trip the phone's own
+  configs use for that limit (its nolimits / game scenes), so each device gets a template anchored
+  in Xiaomi's data for that phone. Battery, charging, brightness, modem, wifi and temp_state
+  sections are never changed. `devices/xiaomi/<codename>/tuned/TEMPLATE.md` lists every change
 - **Extreme mode** (`mode=extreme`): Auto without the soft limits. The thermal HAL is stopped too
   (the throttling engine on AOSP ROMs), every Flux game runs at Max, and zones whose governor
   cannot be switched to `user_space` (common on GKI kernels) get their passive trips raised by
@@ -22,6 +32,21 @@
   installed, so the two never write the same node
 
 ### Fixed
+- Custom ROMs on Xiaomi vendors (e.g. RisingOS on garnet) were shown as "HyperOS (V816)": the
+  vendor keeps the MIUI props. Without the MIUI framework a custom ROM's own props win, and
+  Lineage forks are named from `ro.lineage.version` ("RisingOS 9")
+- **HiCo stayed on stock thermal for most of a game after one safety trip**: releasing the guard
+  required the CPU *and* the battery to cool by their hysteresis, and a battery at 45 °C during
+  play never reached 43 °C, so a single CPU trip kept thermal locked (seen: 166 s unlocked out of
+  a 2-hour session). Only the sensor that tripped now has to cool down
+- **Graduated protection**: at a safety limit the vendor thermal system comes back with the
+  device's tuned template first (every protection active, trips bounded by the phone's own
+  configs); full stock thermal only 3 °C (CPU) / 1 °C (battery) past the limit, or on devices
+  without a tunable config. No more FPS cliff when a limit is touched
+- **Thermal HAL restart loop** in Extreme / `stop_thermal_hal`: a HAL that init or servicemanager
+  restarts on demand was stopped again every poll, re-initialising and re-applying its limits each
+  second (stutter). After three returns it is left running for the session
+- Safety notifications: at most one for the soft landing and one for stock protection per game
 - Devices on custom ROMs were not found in the device database (e.g. garnet on an AOSP ROM whose
   product properties read `lineage_garnet` or a spoofed Pixel name). The codename is now looked up
   from the bootloader (`ro.boot.hwname`), the vendor / odm / system / product device properties,
