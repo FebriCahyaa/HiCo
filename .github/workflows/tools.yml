@@ -1,0 +1,291 @@
+# Thermal-only automation: no release creation or release repository writes are performed here.
+name: HiCo Thermal Tools
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - "tests/**"
+      - "jni/**"
+      - "database/**"
+      - "sources/**"
+      - "webui/src/views/Monitor.vue"
+      - "webui/src/locales/**"
+      - ".github/workflows/tools.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - "tests/**"
+      - "jni/**"
+      - "sources/**"
+      - "webui/src/views/Monitor.vue"
+      - "webui/src/locales/**"
+      - ".github/workflows/tools.yml"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "verify runs tests only; full remaps every thermal root in the repository and publishes the mapping"
+        type: choice
+        options: [full, verify]
+        default: full
+        required: true
+      max_parallel:
+        description: "Maximum mapping jobs running at once in full mode"
+        type: number
+        default: 8
+        required: true
+
+concurrency:
+  group: hico-tools-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build tools and host binary
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.ready.outputs.value }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build host HiCo
+        run: |
+          set -euo pipefail
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+          cmake --build build -j"$(nproc)"
+          ctest --test-dir build --output-on-failure
+
+      - name: Python compile
+        run: python3 -m py_compile tools/*.py tools/hico_thermal/*.py tests/*.py
+
+      - name: WebUI integrity
+        run: python3 tools/verify_webui.py
+
+      - name: Tool test suite
+        env:
+          HICOD: build/hicod
+        run: |
+          python3 tests/hico_tools_test.py
+          python3 tests/thermal_scope_test.py
+          python3 tests/topology_test.py
+          python3 tests/database_test.py
+          python3 tests/scanner_test.py
+          python3 tools/hico_database.py validate database
+          python3 tools/gen_device_db.py --check
+
+      - name: Upload host binary
+        uses: actions/upload-artifact@v6
+        with:
+          name: hico-host-tools
+          path: build/hicod
+
+      - name: Mark ready
+        id: ready
+        run: echo "value=true" >> "$GITHUB_OUTPUT"
+
+  matrix-tests:
+    name: Tool suite ${{ matrix.suite }}
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        suite:
+          - codec
+          - unpack
+          - mapping
+          - topology
+          - database
+          - webui
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download host HiCo
+        uses: actions/download-artifact@v6
+        with:
+          name: hico-host-tools
+          path: build
+
+      - name: Run selected suite
+        env:
+          HICOD: build/hicod
+        run: |
+          set -euo pipefail
+          case "${{ matrix.suite }}" in
+            codec)
+              python3 tests/hico_tools_test.py
+              ;;
+            unpack)
+              python3 tests/hico_tools_test.py
+              ;;
+            mapping)
+              python3 - <<'PY'
+          from pathlib import Path
+          roots = sorted(Path("devices").glob("*/*/thermal"))
+          if not roots:
+              raise SystemExit("no device thermal roots are present in the repository")
+          print(roots[0])
+          PY
+              root=$(find devices -mindepth 3 -maxdepth 3 -type d -name thermal | sort | head -n 1)
+              test -n "$root"
+              python3 tools/hico_thermal.py --hicod "$HICOD" map "$root" build/mapping.json --decode
+              python3 - <<'PY'
+          import json
+          d=json.load(open('build/mapping.json'))
+          assert d['summary']['decoded'] > 0
+          assert not d['failures']
+          print(d['summary'])
+          PY
+              ;;
+            topology)
+              python3 tests/topology_test.py
+              ;;
+            database)
+              python3 tools/hico_database.py build --root . --output build/database
+              python3 tools/hico_database.py thermal-table --root . --output build/thermal-table
+              python3 tools/hico_database.py validate build/database
+              python3 tools/hico_database.py validate build/thermal-table
+              ;;
+            webui)
+              python3 tools/verify_webui.py
+              ;;
+          esac
+
+  full-matrix:
+    name: Full database remap matrix
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'full'
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.value }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Generate mapping roots
+        id: matrix
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          roots = []
+          for path in Path('devices').glob('*/*/thermal'):
+              if path.is_dir():
+                  roots.append(path.as_posix())
+          raw = Path('database/sources/ingested/raw')
+          if raw.is_dir():
+              for source in sorted(raw.iterdir()):
+                  if not source.is_dir():
+                      continue
+                  for repo in sorted(source.iterdir()):
+                      if repo.is_dir():
+                          roots.append(repo.as_posix())
+          roots = sorted(set(roots))
+          shard_size = 25
+          shards = []
+          for offset in range(0, len(roots), shard_size):
+              items = roots[offset:offset + shard_size]
+              shards.append({"id": f"map-{offset // shard_size:04d}", "roots": items})
+          if len(shards) > 250:
+              raise SystemExit(f"mapping matrix would require {len(shards)} jobs; reduce shard fan-out before running full mode")
+          Path('build/map-matrix.json').write_text(json.dumps(shards, separators=(',', ':')) + '\n')
+          print(f"roots={len(roots)} shards={len(shards)}")
+          PY
+          value=$(cat build/map-matrix.json)
+          echo "value=$value" >> "$GITHUB_OUTPUT"
+
+  full-map:
+    name: Map thermal roots ${{ matrix.id }}
+    needs: [build, full-matrix]
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ inputs.max_parallel || 8 }}
+      matrix:
+        include: ${{ fromJSON(needs.full-matrix.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download host HiCo
+        uses: actions/download-artifact@v6
+        with:
+          name: hico-host-tools
+          path: build
+
+      - name: Write shard roots
+        env:
+          ROOTS_JSON: ${{ toJSON(matrix.roots) }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os
+          roots=json.loads(os.environ['ROOTS_JSON'])
+          with open('build/roots.txt','w') as f:
+              f.write('\n'.join(roots))
+              f.write('\n')
+          PY
+
+      - name: Map shard
+        run: |
+          set -euo pipefail
+          mkdir -p "build/mapping/${{ matrix.id }}"
+          python3 tools/hico_thermal.py --hicod build/hicod \
+            deep-map-set build/roots.txt "build/mapping/${{ matrix.id }}/mapping.json" --decode --max-depth 1
+
+      - name: Upload mapping shard
+        uses: actions/upload-artifact@v6
+        with:
+          name: full-mapping-${{ matrix.id }}
+          path: build/mapping/${{ matrix.id }}/mapping.json
+
+  full-merge:
+    name: Merge, validate and publish full mapping
+    needs: full-map
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Download mapping shards
+        uses: actions/download-artifact@v6
+        with:
+          pattern: full-mapping-*
+          path: build/full-mapping
+          merge-multiple: true
+
+      - name: Merge mapping database
+        run: |
+          set -euo pipefail
+          # This workflow only remaps/validates thermal data. Release packaging and publishing remain in release.yml.
+          python3 tools/hico_database.py merge-mappings build/full-mapping --output database
+          python3 tools/hico_database.py thermal-table --root .
+          python3 tools/hico_database.py validate database
+          python3 tools/verify_webui.py
+
+      - name: Publish mapping database
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/mapped/ database/tables/
+          if git diff --cached --quiet; then
+            echo "Thermal mapping database is already up to date."
+            exit 0
+          fi
+          git commit -m "data: remap HiCo thermal database" \
+            -m "Re-run every repository thermal root through the thermal codec registry, unpack-aware scanners, topology mapping and original-versus-candidate thermal table generator." \
+            -m "Generated by the manual full Tools workflow after complete thermal validation; release packaging remains owned by release.yml."
+          git push origin "HEAD:${GITHUB_REF_NAME}"

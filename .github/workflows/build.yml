@@ -17,6 +17,10 @@ on:
       - 'devices/**'
       - 'CMakeLists.txt'
       - 'version'
+      - 'database/**'
+      - 'sources/**'
+      - 'webui/**'
+      - 'docs/integrity/webui.sha256'
 
 concurrency:
   group: build-${{ github.ref }}
@@ -45,10 +49,23 @@ jobs:
       - name: Device scanner and tuning tests
         env:
           HICOD: build/hicod
-        run: python3 tests/scanner_test.py
+        run: |
+          python3 tests/scanner_test.py
+          python3 tests/thermal_scope_test.py
 
       - name: Device database is up to date
         run: python3 tools/gen_device_db.py --check
+
+      - name: Thermal tool suite
+        env:
+          HICOD: build/hicod
+        run: |
+          python3 tests/hico_tools_test.py
+          python3 tests/thermal_scope_test.py
+          python3 tests/topology_test.py
+          python3 tests/database_test.py
+          python3 tools/hico_database.py validate database
+          python3 tools/verify_webui.py
 
       - name: ShellCheck
         run: shellcheck -s sh module/*.sh tests/cli_test.sh
@@ -62,6 +79,18 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+
+      - name: Setup Bun for thermal Monitor WebUI
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.2"
+
+      - name: Compile thermal Monitor WebUI
+        working-directory: webui
+        run: |
+          bun install --frozen-lockfile
+          bun run build
+          test -f ../module/webroot/index.html
 
       - name: Build module
         id: compileZip

@@ -1,0 +1,294 @@
+name: HiCo Thermal Database
+
+on:
+  workflow_dispatch:
+    inputs:
+      shard_size:
+        description: "Repositories handled by each ingestion matrix job"
+        type: number
+        default: 50
+        required: true
+      max_parallel:
+        description: "Maximum ingestion/map jobs running at once"
+        type: number
+        default: 8
+        required: true
+  schedule:
+    - cron: "17 3 * * 0"
+
+concurrency:
+  group: hico-database
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  preflight:
+    name: Preflight and host build
+    runs-on: ubuntu-latest
+    outputs:
+      hico_ready: ${{ steps.build.outputs.ready }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Build host HiCo
+        id: build
+        run: |
+          set -euo pipefail
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j"$(nproc)"
+          ctest --test-dir build --output-on-failure
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Validate Python tools
+        env:
+          HICOD: build/hicod
+        run: |
+          python3 -m py_compile tools/*.py tools/hico_thermal/*.py tests/hico_tools_test.py
+          python3 tests/hico_tools_test.py
+          python3 tests/thermal_scope_test.py
+          python3 tests/topology_test.py
+          python3 tests/database_test.py
+          python3 tests/scanner_test.py
+          python3 tools/hico_database.py validate database
+          python3 tools/hico_database.py validate database/tables
+          python3 tools/verify_webui.py
+
+      - name: Upload host binary
+        uses: actions/upload-artifact@v6
+        with:
+          name: hico-host
+          path: build/hicod
+          if-no-files-found: error
+
+  discover:
+    name: Discover all registered sources
+    needs: preflight
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.value }}
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Discover repositories
+        run: |
+          set -euo pipefail
+          mkdir -p build/discovery
+          python3 tools/hico_ingest.py discover \
+            --registry sources/registry.json \
+            --output build/discovery/discovery.json \
+            --shard-size "${{ inputs.shard_size || 50 }}"
+
+      - name: Generate matrix
+        id: matrix
+        run: |
+          set -euo pipefail
+          python3 tools/hico_ingest.py matrix \
+            --discovery build/discovery/discovery.json \
+            --output build/discovery/matrix.json \
+            --max-jobs 250
+          value=$(cat build/discovery/matrix.json)
+          echo "value=$value" >> "$GITHUB_OUTPUT"
+
+      - name: Upload discovery metadata
+        uses: actions/upload-artifact@v6
+        with:
+          name: discovery
+          path: build/discovery/
+
+  ingest:
+    name: Ingest repository shard ${{ matrix.id }}
+    needs: discover
+    if: needs.discover.outputs.matrix != '[]'
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ inputs.max_parallel || 8 }}
+      matrix:
+        include: ${{ fromJSON(needs.discover.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download host HiCo
+        uses: actions/download-artifact@v6
+        with:
+          name: hico-host
+          path: build/bin
+
+      - name: Ingest shard
+        env:
+          JOB_ID: ${{ matrix.id }}
+        run: |
+          set -euo pipefail
+          chmod +x build/bin/hicod
+          job_file="$RUNNER_TEMP/job.json"
+          jq --arg id "$JOB_ID" '.jobs[] | select(.id == $id)' build/discovery/discovery.json > "$job_file"
+          test -s "$job_file"
+          mkdir -p "build/ingest/$JOB_ID"
+          python3 tools/hico_ingest.py ingest \
+            --job "$job_file" \
+            --output "build/ingest/$JOB_ID" \
+            --hicod build/bin/hicod \
+            --decode-known
+
+      - name: Upload ingest result
+        uses: actions/upload-artifact@v6
+        with:
+          name: ingest-${{ matrix.id }}
+          path: build/ingest/${{ matrix.id }}/
+          if-no-files-found: error
+
+  map:
+    name: Map ingested thermal shard ${{ matrix.id }}
+    needs: [discover, ingest]
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ inputs.max_parallel || 8 }}
+      matrix:
+        include: ${{ fromJSON(needs.discover.outputs.matrix) }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download host HiCo
+        uses: actions/download-artifact@v6
+        with:
+          name: hico-host
+          path: build/bin
+
+      - name: Download ingest shard
+        uses: actions/download-artifact@v6
+        with:
+          name: ingest-${{ matrix.id }}
+          path: build/ingest/${{ matrix.id }}
+
+      - name: Map thermal artifacts
+        env:
+          JOB_ID: ${{ matrix.id }}
+        run: |
+          set -euo pipefail
+          chmod +x build/bin/hicod
+          roots="$RUNNER_TEMP/roots.txt"
+          find "build/ingest/$JOB_ID/raw" -mindepth 2 -maxdepth 2 -type d -print | sort > "$roots"
+          if [ -s "$roots" ]; then
+            mkdir -p "build/mapping/$JOB_ID"
+            python3 tools/hico_thermal.py \
+              --hicod build/bin/hicod \
+              map-set "$roots" "build/mapping/$JOB_ID/mapping.json" \
+              --decode
+          else
+            mkdir -p "build/mapping/$JOB_ID"
+            printf '{"schema":"hico.artifact-map-set.v2","roots":[],"maps":[],"artifacts":[],"failures":[],"summary":{"roots":0,"artifacts":0,"plain":0,"decoded":0,"opaque":0,"decode_failures":0}}\n' > "build/mapping/$JOB_ID/mapping.json"
+          fi
+
+      - name: Upload mapping result
+        uses: actions/upload-artifact@v6
+        with:
+          name: mapping-${{ matrix.id }}
+          path: build/mapping/${{ matrix.id }}/mapping.json
+          if-no-files-found: error
+
+  merge:
+    name: Merge and validate generated database
+    needs: [discover, ingest, map]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Download all ingest results
+        uses: actions/download-artifact@v6
+        with:
+          pattern: ingest-*
+          path: build/all-ingest
+          merge-multiple: true
+
+      - name: Download all mapping results
+        uses: actions/download-artifact@v6
+        with:
+          pattern: mapping-*
+          path: build/all-mapping
+          merge-multiple: true
+
+      - name: Merge generated data
+        run: |
+          set -euo pipefail
+          python3 tools/hico_database.py merge-ingest build/all-ingest --output database
+          python3 tools/hico_database.py merge-mappings build/all-mapping --output database
+          python3 tools/hico_database.py build --root . --output database
+          python3 tools/hico_database.py thermal-table --root . --output database/tables
+
+      - name: Validate database and source invariants
+        env:
+          HICOD: build/hicod
+        run: |
+          set -euo pipefail
+          python3 tools/hico_database.py validate database
+          python3 tools/hico_database.py validate database/tables
+          python3 tools/verify_webui.py
+          python3 tests/hico_tools_test.py
+          python3 tests/thermal_scope_test.py
+          python3 tests/topology_test.py
+          python3 tests/database_test.py
+          python3 tests/scanner_test.py
+          python3 tools/gen_device_db.py --check
+
+      - name: Upload merged database for inspection
+        uses: actions/upload-artifact@v6
+        with:
+          name: hico-database-merged
+          path: database/
+          if-no-files-found: error
+
+  publish:
+    name: Publish validated database
+    needs: merge
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Download merged database
+        uses: actions/download-artifact@v6
+        with:
+          name: hico-database-merged
+          path: database
+
+      - name: Verify before publish
+        run: |
+          set -euo pipefail
+          python3 tools/hico_database.py validate database
+          python3 tools/hico_database.py validate database/tables
+          python3 tools/verify_webui.py
+
+      - name: Commit and push database
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/
+          if git diff --cached --quiet; then
+            echo "Database is already up to date."
+            exit 0
+          fi
+          git commit -m "data: refresh multi-vendor thermal knowledge database" \
+            -m "Ingest registered OEM dumps, Android ROM device trees, vendor trees and kernel/device sources; regenerate artifact mappings and validated repository indexes." \
+            -m "Generated by HiCo Thermal Database workflow after shard ingestion, codec analysis, merge validation and WebUI integrity checks."
+          git push origin "HEAD:${GITHUB_REF_NAME}"
