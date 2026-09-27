@@ -91,6 +91,48 @@ def main() -> int:
         assert second.returncode == 0, second.stderr
         assert "UNCHANGED" in second.stdout
 
+    # Candidate-gate resolution defaults to thermal-candidates.json, while an explicit
+    # repository index remains supported for backwards-compatible/manual runs.
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("hico_collector", TOOL)
+    assert spec and spec.loader
+    collector = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = collector
+    spec.loader.exec_module(collector)
+
+    from argparse import Namespace
+
+    candidate = tmp / "thermal-candidates.json"
+    args = Namespace(
+        all_repositories=False,
+        repo_index="",
+        candidate_index=str(candidate),
+    )
+    resolved, mode = collector.resolve_sync_index(args)
+    assert resolved == candidate
+    assert mode == "thermal-candidates"
+
+    explicit = tmp / "repositories.json"
+    args.repo_index = str(explicit)
+    resolved, mode = collector.resolve_sync_index(args)
+    assert resolved == explicit
+    assert mode == "explicit"
+
+    args.repo_index = ""
+    args.all_repositories = True
+    resolved, mode = collector.resolve_sync_index(args)
+    assert resolved == collector.ROOT / "sources" / "repositories.json"
+    assert mode == "all"
+
+    args.repo_index = str(explicit)
+    try:
+        collector.resolve_sync_index(args)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("--all-repositories must reject --repo-index")
+
     print("HiCo local collector test: PASS")
     return 0
 

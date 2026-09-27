@@ -536,8 +536,25 @@ def bootstrap_from_database(database_index: Path, output: Path) -> dict:
     return payload
 
 
+def resolve_sync_index(args: argparse.Namespace) -> tuple[Path, str]:
+    """Resolve the repository index used by sync without silently bypassing the candidate gate."""
+    if args.all_repositories:
+        if args.repo_index:
+            raise ValueError("--all-repositories cannot be combined with --repo-index")
+        return ROOT / "sources" / "repositories.json", "all"
+    if args.repo_index:
+        return Path(args.repo_index), "explicit"
+    return Path(args.candidate_index), "thermal-candidates"
+
+
 def sync(args: argparse.Namespace) -> int:
-    repos = load_index(Path(args.repo_index))
+    repo_index, index_mode = resolve_sync_index(args)
+    if not repo_index.is_file():
+        raise FileNotFoundError(
+            f"repository index not found: {repo_index}. "
+            "Run tools/hico_thermal_filter.py first or pass --repo-index explicitly."
+        )
+    repos = load_index(repo_index)
     if args.limit:
         repos = repos[: args.limit]
     state_path = Path(args.state)
@@ -551,7 +568,10 @@ def sync(args: argparse.Namespace) -> int:
         if args.family and clean(repo.family) != clean(args.family):
             continue
         selected.append(repo)
-    log(f"[collector] repositories={len(selected)} workers={args.workers} changed_only={args.changed_only}")
+    log(
+        f"[collector] index={repo_index} mode={index_mode} repositories={len(selected)} "
+        f"workers={args.workers} changed_only={args.changed_only}"
+    )
     cache_root = Path(args.cache).expanduser()
     cache_root.mkdir(parents=True, exist_ok=True)
     results: list[dict] = []
@@ -575,6 +595,8 @@ def sync(args: argparse.Namespace) -> int:
     save_json(state_path, state)
     summary = {
         "schema": "hico.collector-run.v1",
+        "index": path_ref(repo_index),
+        "index_mode": index_mode,
         "repository_count": len(selected),
         "updated": sum(1 for x in results if x["status"] == "updated"),
         "unchanged": sum(1 for x in results if x["status"] == "unchanged"),
@@ -700,8 +722,10 @@ def main() -> int:
     p.add_argument("--data", default=str(ROOT / "thermal-data"))
     p.add_argument("--state", default=str(ROOT / "sources" / "collector-state.json"))
 
-    p = sub.add_parser("sync", help="fetch known public repositories and collect thermal-relevant files")
-    p.add_argument("--repo-index", default=str(ROOT / "sources" / "repositories.json"))
+    p = sub.add_parser("sync", help="fetch known thermal candidate repositories and collect thermal-relevant files")
+    p.add_argument("--repo-index", default="", help="Explicit repository index; overrides the thermal candidate index")
+    p.add_argument("--candidate-index", default=str(ROOT / "sources" / "thermal-candidates.json"), help="Metadata-filtered thermal candidate index used by default")
+    p.add_argument("--all-repositories", action="store_true", help="Explicitly bypass the candidate gate and use sources/repositories.json")
     p.add_argument("--cache", default=str(Path.home() / ".cache" / "hico" / "repos"))
     p.add_argument("--data", default=str(ROOT / "thermal-data"))
     p.add_argument("--state", default=str(ROOT / "sources" / "collector-state.json"))
