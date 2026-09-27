@@ -132,7 +132,7 @@ jobs:
               python3 tests/hico_tools_test.py
               ;;
             unpack)
-              python3 tests/hico_tools_test.py
+              python3 tests/unpack_test.py
               ;;
             mapping)
               python3 - <<'PY'
@@ -225,7 +225,7 @@ jobs:
     needs: [build, full-matrix]
     strategy:
       fail-fast: false
-      max-parallel: ${{ inputs.max_parallel || 8 }}
+      max-parallel: 8
       matrix:
         id: ${{ fromJSON(needs.full-matrix.outputs.matrix_ids) }}
     runs-on: ubuntu-latest

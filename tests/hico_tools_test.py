@@ -21,41 +21,48 @@ from hico_thermal.unpack import UnpackError, unpack
 
 
 def main() -> int:
-    garnet = ROOT / "devices/xiaomi/garnet/thermal/thermal-normal.conf"
     hicod = os.environ.get("HICOD", str(ROOT / "build/hicod"))
-    if not garnet.is_file():
-        raise SystemExit(f"MiCrypt fixture not available: {garnet}")
     if not Path(hicod).is_file():
         raise SystemExit(f"hicod binary not available: {hicod}")
     if not os.access(hicod, os.X_OK):
         raise SystemExit(f"hicod binary is not executable: {hicod}")
 
-    assert detect_format(garnet) == "opaque-binary"
     registry = CodecRegistry(hicod)
     assert {entry["name"] for entry in registry.list()} == {"plain", "mi_thermald_aes"}
 
     with tempfile.TemporaryDirectory(prefix="hico-tools-test-") as td:
         root = Path(td)
-        plain = root / "thermal-normal.conf"
-        decoded = root / "decoded.conf"
-        encrypted = root / "encrypted.conf"
+        thermal_root = root / "device" / "thermal"
+        thermal_root.mkdir(parents=True)
+        source = thermal_root / "thermal-normal.txt"
+        source.write_text(
+            "[CPU]\nsensor soc\nthresholds 80000 90000\n"
+            "[GPU]\nsensor gpu\nthresholds 82000 92000\n"
+        )
+        encrypted_fixture = thermal_root / "thermal-normal.conf"
+        subprocess.run(
+            [hicod, "thermal", "encrypt", str(source), str(encrypted_fixture)],
+            check=True,
+        )
+        assert detect_format(encrypted_fixture) == "opaque-binary"
+
+        plain = root / "decoded.conf"
         data = subprocess.run(
-            [hicod, "thermal", "decrypt", str(garnet)],
+            [hicod, "thermal", "decrypt", str(encrypted_fixture)],
             check=True,
             stdout=subprocess.PIPE,
         ).stdout
         plain.write_bytes(data)
+        assert data == source.read_bytes()
 
         codec = registry.get("mi_thermald_aes")
-        assert codec.matches(garnet, garnet.read_bytes())
+        assert codec.matches(encrypted_fixture, encrypted_fixture.read_bytes())
         encoded = codec.encode(data, plain)
-        encrypted.write_bytes(encoded)
-        assert encrypted.read_bytes() == garnet.read_bytes()
+        assert encoded == encrypted_fixture.read_bytes()
 
-        codec_name, decoded_data = registry.decode(garnet)
+        codec_name, decoded_data = registry.decode(encrypted_fixture)
         assert codec_name == "mi_thermald_aes"
-        decoded.write_bytes(decoded_data)
-        assert decoded.read_bytes() == plain.read_bytes()
+        assert decoded_data == source.read_bytes()
 
         plain_source = root / "plain.conf"
         plain_source.write_text("[CPU]\nsensor soc\nthresholds 80000 90000\n")
@@ -82,7 +89,6 @@ def main() -> int:
 
         zstd_path = root / "plain.conf.zst"
         if shutil.which("zstd"):
-            from hico_thermal.pack import pack_stream
             pack_stream(plain_source, zstd_path, "zstd")
             assert unpack(zstd_path, root / "zstd-out")["format"] == "zstd"
 
@@ -100,13 +106,15 @@ def main() -> int:
         else:
             raise AssertionError("path traversal archive was accepted")
 
-        map_result = map_roots([ROOT / "devices/xiaomi/garnet/thermal"], hicod=hicod, decode=True)
+        map_result = map_roots([thermal_root], hicod=hicod, decode=True)
         assert map_result["summary"]["decoded"] > 0
         assert not map_result["failures"]
 
         nested = root / "nested"
         (nested / "payload" / "thermal").mkdir(parents=True)
-        (nested / "payload" / "thermal" / "nested.conf").write_text("[CPU]\nsensor soc\nthresholds 80000 90000\n")
+        (nested / "payload" / "thermal" / "nested.conf").write_text(
+            "[CPU]\nsensor soc\nthresholds 80000 90000\n"
+        )
         nested_zip = root / "nested.zip"
         pack_directory(nested, nested_zip, "zip")
         deep = map_tree_deep(root, hicod=hicod, decode=True, max_depth=1)
@@ -115,7 +123,7 @@ def main() -> int:
         assert not deep["failures"]
 
         assert detect_format(plain_source) == "thermal-engine-text"
-        assert detect_format(garnet) == "opaque-binary"
+        assert detect_format(encrypted_fixture) == "opaque-binary"
         assert CodecError and PackError
 
     print("HiCo thermal tools tests: PASS")
