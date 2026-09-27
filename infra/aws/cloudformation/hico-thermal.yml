@@ -1,0 +1,211 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: HiCo Thermal CodeBuild batch offload infrastructure.
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: hico-thermal-codebuild
+    AllowedPattern: '[A-Za-z0-9][A-Za-z0-9-_.]*'
+  ComputeType:
+    Type: String
+    Default: BUILD_GENERAL1_MEDIUM
+    AllowedValues:
+      - BUILD_GENERAL1_SMALL
+      - BUILD_GENERAL1_MEDIUM
+      - BUILD_GENERAL1_LARGE
+      - BUILD_GENERAL1_XLARGE
+  ConcurrentBuildLimit:
+    Type: Number
+    Default: 1
+    MinValue: 1
+    MaxValue: 50
+  BatchMaximumBuilds:
+    Type: Number
+    Default: 250
+    MinValue: 1
+    MaxValue: 250
+  GitHubOidcSubject:
+    Type: String
+    Default: repo:FebriCahyaa/HiCo:ref:refs/heads/main
+    Description: Exact GitHub OIDC subject claim allowed to assume the controller role.
+  GitHubOidcProviderArn:
+    Type: String
+    Description: Existing IAM OIDC provider ARN for https://token.actions.githubusercontent.com.
+
+Resources:
+  ArtifactBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: ExpireHiCoRuns
+            Status: Enabled
+            Prefix: runs/
+            ExpirationInDays: 14
+            NoncurrentVersionExpiration:
+              NoncurrentDays: 7
+          - Id: AbortIncompleteUploads
+            Status: Enabled
+            Prefix: runs/
+            AbortIncompleteMultipartUpload:
+              DaysAfterInitiation: 1
+
+  CodeBuildLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/codebuild/${ProjectName}
+      RetentionInDays: 14
+
+  CodeBuildServiceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: codebuild.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: HiCoThermalWorker
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:AbortMultipartUpload
+                Resource: !Sub ${ArtifactBucket.Arn}/runs/*
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt ArtifactBucket.Arn
+                Condition:
+                  StringLike:
+                    s3:prefix:
+                      - runs/*
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !Sub ${CodeBuildLogGroup.Arn}:*
+
+  CodeBuildBatchRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: codebuild.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: HiCoThermalBatchControl
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - codebuild:StartBuild
+                  - codebuild:StopBuild
+                  - codebuild:RetryBuild
+                Resource: !Sub arn:${AWS::Partition}:codebuild:${AWS::Region}:${AWS::AccountId}:project/${ProjectName}
+
+  GitHubActionsRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub ${ProjectName}-github-actions
+      MaxSessionDuration: 3600
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !Ref GitHubOidcProviderArn
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+                token.actions.githubusercontent.com:sub: !Ref GitHubOidcSubject
+      Policies:
+        - PolicyName: HiCoThermalGitHubController
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - codebuild:StartBuildBatch
+                  - codebuild:BatchGetBuildBatches
+                  - codebuild:StopBuildBatch
+                Resource: !Sub arn:${AWS::Partition}:codebuild:${AWS::Region}:${AWS::AccountId}:project/${ProjectName}
+              - Effect: Allow
+                Action:
+                  - s3:PutObject
+                  - s3:GetObject
+                Resource: !Sub ${ArtifactBucket.Arn}/runs/*
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt ArtifactBucket.Arn
+                Condition:
+                  StringLike:
+                    s3:prefix:
+                      - runs/*
+
+  CodeBuildProject:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      Name: !Ref ProjectName
+      ServiceRole: !GetAtt CodeBuildServiceRole.Arn
+      Source:
+        Type: NO_SOURCE
+        BuildSpec: 'version: 0.2'
+      Artifacts:
+        Type: NO_ARTIFACTS
+      TimeoutInMinutes: 360
+      QueuedTimeoutInMinutes: 60
+      ConcurrentBuildLimit: !Ref ConcurrentBuildLimit
+      Environment:
+        ComputeType: !Ref ComputeType
+        Image: aws/codebuild/standard:8.0
+        Type: LINUX_CONTAINER
+        ImagePullCredentialsType: CODEBUILD
+        PrivilegedMode: false
+      LogsConfig:
+        CloudWatchLogs:
+          GroupName: !Ref CodeBuildLogGroup
+          Status: ENABLED
+      BuildBatchConfig:
+        ServiceRole: !GetAtt CodeBuildBatchRole.Arn
+        TimeoutInMins: 360
+        Restrictions:
+          MaximumBuildsAllowed: !Ref BatchMaximumBuilds
+          ComputeTypesAllowed:
+            - !Ref ComputeType
+        CombineArtifacts: false
+        BatchReportMode: REPORT_AGGREGATED_BATCH
+
+Outputs:
+  ArtifactBucketName:
+    Value: !Ref ArtifactBucket
+  CodeBuildProjectName:
+    Value: !Ref CodeBuildProject
+  GitHubActionsRoleArn:
+    Value: !GetAtt GitHubActionsRole.Arn
+  CodeBuildServiceRoleArn:
+    Value: !GetAtt CodeBuildServiceRole.Arn
+  CodeBuildBatchRoleArn:
+    Value: !GetAtt CodeBuildBatchRole.Arn

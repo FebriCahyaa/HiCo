@@ -9,10 +9,21 @@ on:
         default: 50
         required: true
       max_parallel:
-        description: "Maximum ingestion/map jobs running at once"
+        description: "Maximum GitHub ingestion/map jobs running at once"
         type: number
         default: 8
         required: true
+      compute_backend:
+        description: "Compute backend for ingestion and mapping"
+        type: choice
+        options: [github, aws]
+        default: github
+        required: true
+      aws_region:
+        description: "AWS region used by the CodeBuild offload"
+        type: string
+        default: us-east-1
+        required: false
   schedule:
     - cron: "17 3 * * 0"
 
@@ -21,7 +32,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   preflight:
@@ -55,6 +66,8 @@ jobs:
           python3 tests/database_test.py
           python3 tests/scanner_test.py
           python3 tests/workflow_regression_test.py
+          python3 tests/aws_batch_test.py
+          python3 tests/aws_infra_test.py
           python3 tools/hico_database.py validate database
           python3 tools/hico_database.py validate database/tables
           python3 tools/verify_webui.py
@@ -107,7 +120,7 @@ jobs:
   ingest:
     name: Ingest repository shard ${{ matrix.id }}
     needs: discover
-    if: needs.discover.outputs.matrix_ids != '[]'
+    if: inputs.compute_backend != 'aws' && needs.discover.outputs.matrix_ids != '[]'
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -158,6 +171,7 @@ jobs:
   map:
     name: Map ingested thermal shard ${{ matrix.id }}
     needs: [discover, ingest]
+    if: inputs.compute_backend != 'aws'
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -206,9 +220,129 @@ jobs:
           path: build/mapping/${{ matrix.id }}/mapping.json
           if-no-files-found: error
 
+  aws-submit:
+    name: Submit AWS CodeBuild thermal batch
+    needs: [preflight, discover]
+    if: inputs.compute_backend == 'aws'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    outputs:
+      batch_id: ${{ steps.start.outputs.batch_id }}
+      results_uri: ${{ steps.start.outputs.results_uri }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN }}
+          aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
+
+      - name: Validate AWS configuration
+        env:
+          HICO_AWS_ROLE_ARN: ${{ vars.HICO_AWS_ROLE_ARN }}
+          HICO_AWS_CODEBUILD_PROJECT: ${{ vars.HICO_AWS_CODEBUILD_PROJECT }}
+          HICO_AWS_S3_BUCKET: ${{ vars.HICO_AWS_S3_BUCKET }}
+        run: |
+          set -euo pipefail
+          test -n "$HICO_AWS_ROLE_ARN"
+          test -n "$HICO_AWS_CODEBUILD_PROJECT"
+          test -n "$HICO_AWS_S3_BUCKET"
+          aws sts get-caller-identity --query 'Arn' --output text
+
+      - name: Download discovery metadata
+        uses: actions/download-artifact@v6
+        with:
+          name: discovery
+          path: build/discovery
+
+      - name: Download host HiCo
+        uses: actions/download-artifact@v6
+        with:
+          name: hico-host
+          path: build
+
+      - name: Create source snapshot
+        run: |
+          set -euo pipefail
+          git archive --format=zip --output=build/hico-worker-source.zip HEAD -- tools sources
+          test -s build/hico-worker-source.zip
+          test -s build/hicod
+
+      - name: Start AWS CodeBuild batch
+        id: start
+        env:
+          HICO_AWS_CODEBUILD_PROJECT: ${{ vars.HICO_AWS_CODEBUILD_PROJECT }}
+          HICO_AWS_S3_BUCKET: ${{ vars.HICO_AWS_S3_BUCKET }}
+          HICO_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          python3 tools/hico_aws_batch.py start \
+            --project "$HICO_AWS_CODEBUILD_PROJECT" \
+            --bucket "$HICO_AWS_S3_BUCKET" \
+            --run-id "$HICO_RUN_ID" \
+            --discovery build/discovery/discovery.json \
+            --matrix build/discovery/matrix.json \
+            --source build/hico-worker-source.zip \
+            --hicod build/hicod \
+            --output build/aws-batch.json
+          jq -r '.batch_id' build/aws-batch.json | sed 's/^/batch_id=/' >> "$GITHUB_OUTPUT"
+          jq -r '.results_uri' build/aws-batch.json | sed 's/^/results_uri=/' >> "$GITHUB_OUTPUT"
+
+      - name: Upload AWS batch metadata
+        uses: actions/upload-artifact@v6
+        with:
+          name: aws-batch-${{ github.run_id }}
+          path: build/aws-batch.json
+          if-no-files-found: error
+
+  aws-wait:
+    name: Wait for AWS thermal batch
+    needs: aws-submit
+    if: inputs.compute_backend == 'aws'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN }}
+          aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
+
+      - name: Download AWS batch metadata
+        uses: actions/download-artifact@v6
+        with:
+          name: aws-batch-${{ github.run_id }}
+          path: build
+
+      - name: Wait for CodeBuild batch
+        run: |
+          set -euo pipefail
+          batch_id=$(jq -r '.batch_id' build/aws-batch.json)
+          python3 tools/hico_aws_batch.py wait --batch-id "$batch_id" --timeout-minutes 420 --poll-seconds 30
+
   merge:
     name: Merge and validate generated database
-    needs: [discover, ingest, map]
+    permissions:
+      contents: read
+      id-token: write
+    needs: [discover, ingest, map, aws-submit, aws-wait]
+    if: >-
+      always() && needs.discover.result == 'success' &&
+      ((inputs.compute_backend != 'aws' && needs.map.result == 'success') ||
+       (inputs.compute_backend == 'aws' && needs.aws-wait.result == 'success'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -230,25 +364,48 @@ jobs:
           chmod +x build/bin/hicod
           test -x build/bin/hicod
 
-      - name: Download all ingest results
+      - name: Download all ingest results (GitHub backend)
+        if: inputs.compute_backend != 'aws'
         uses: actions/download-artifact@v6
         with:
           pattern: ingest-*
           path: build/all-ingest
           merge-multiple: true
 
-      - name: Download all mapping results
+      - name: Download all mapping results (GitHub backend)
+        if: inputs.compute_backend != 'aws'
         uses: actions/download-artifact@v6
         with:
           pattern: mapping-*
           path: build/all-mapping
           merge-multiple: true
 
+      - name: Configure AWS credentials for result download
+        if: inputs.compute_backend == 'aws'
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN }}
+          aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
+
+      - name: Download AWS results
+        if: inputs.compute_backend == 'aws'
+        env:
+          RESULTS_URI: ${{ needs.aws-submit.outputs.results_uri }}
+        run: |
+          set -euo pipefail
+          python3 tools/hico_aws_batch.py fetch --results-uri "$RESULTS_URI" --output build/aws-results
+          test -d build/aws-results
+
       - name: Merge generated data
         run: |
           set -euo pipefail
-          python3 tools/hico_database.py merge-ingest build/all-ingest --output database
-          python3 tools/hico_database.py merge-mappings build/all-mapping --output database
+          if [ "${{ inputs.compute_backend }}" = "aws" ]; then
+            python3 tools/hico_database.py merge-ingest build/aws-results/ingest --output database
+            python3 tools/hico_database.py merge-mappings build/aws-results/mapping --output database
+          else
+            python3 tools/hico_database.py merge-ingest build/all-ingest --output database
+            python3 tools/hico_database.py merge-mappings build/all-mapping --output database
+          fi
           python3 tools/hico_database.py build --root . --output database
           python3 tools/hico_database.py thermal-table --root . --output database/tables
 
