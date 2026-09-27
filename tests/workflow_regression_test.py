@@ -32,7 +32,7 @@ def main() -> int:
     require(database, "name: Download discovery metadata", "discovery artifact download")
     require(database, "matrix:\n        id: ${{ fromJSON(needs.discover.outputs.matrix_ids) }}", "database map matrix ids")
     require(database, "chmod +x build/bin/hicod", "database merge executable guard")
-    require(database, "HICOD: build/bin/hicod", "database merge test binary path")
+    require(database, "HICOD: build/hicod", "database preflight test binary path")
 
     print("Workflow regression checks: PASS")
     return 0

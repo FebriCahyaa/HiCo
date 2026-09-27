@@ -46,7 +46,7 @@ jobs:
 
       - name: Validate Python tools
         env:
-          HICOD: build/bin/hicod
+          HICOD: build/hicod
         run: |
           python3 -m py_compile tools/*.py tools/hico_thermal/*.py tests/hico_tools_test.py
           python3 tests/hico_tools_test.py

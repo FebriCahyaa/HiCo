@@ -23,8 +23,12 @@ from hico_thermal.unpack import UnpackError, unpack
 def main() -> int:
     garnet = ROOT / "devices/xiaomi/garnet/thermal/thermal-normal.conf"
     hicod = os.environ.get("HICOD", str(ROOT / "build/hicod"))
-    if not garnet.is_file() or not Path(hicod).is_file():
-        raise SystemExit("MiCrypt fixture or hicod not available")
+    if not garnet.is_file():
+        raise SystemExit(f"MiCrypt fixture not available: {garnet}")
+    if not Path(hicod).is_file():
+        raise SystemExit(f"hicod binary not available: {hicod}")
+    if not os.access(hicod, os.X_OK):
+        raise SystemExit(f"hicod binary is not executable: {hicod}")
 
     assert detect_format(garnet) == "opaque-binary"
     registry = CodecRegistry(hicod)
