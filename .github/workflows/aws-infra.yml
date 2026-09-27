@@ -32,7 +32,7 @@ on:
       batch_maximum_builds:
         description: 'Maximum builds allowed in one CodeBuild batch'
         type: number
-        default: 250
+        default: 100
         required: true
       aws_region:
         description: 'AWS region'
@@ -54,7 +54,7 @@ env:
   HICO_AWS_STACK_NAME: ${{ inputs.stack_name || 'hico-thermal-offload' }}
   HICO_CODEBUILD_COMPUTE_TYPE: ${{ inputs.compute_type || 'BUILD_GENERAL1_MEDIUM' }}
   HICO_CODEBUILD_CONCURRENT_LIMIT: ${{ inputs.concurrent_build_limit || 1 }}
-  HICO_CODEBUILD_BATCH_MAX: ${{ inputs.batch_maximum_builds || 250 }}
+  HICO_CODEBUILD_BATCH_MAX: ${{ inputs.batch_maximum_builds || 100 }}
 
 jobs:
   deploy:

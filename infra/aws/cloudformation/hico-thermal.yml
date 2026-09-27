@@ -21,9 +21,9 @@ Parameters:
     MaxValue: 50
   BatchMaximumBuilds:
     Type: Number
-    Default: 250
+    Default: 100
     MinValue: 1
-    MaxValue: 250
+    MaxValue: 100
   GitHubOidcSubject:
     Type: String
     Default: repo:FebriCahyaa/HiCo:ref:refs/heads/main
