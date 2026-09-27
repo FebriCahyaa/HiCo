@@ -1,0 +1,411 @@
+{
+  "elapsed_s": 0.31,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-4k.conf",
+      "candidate_sha256": "ae8668553c340ba95366e293d4d3cafe50ac7d40c4d011ffe39c4fa27e02d0b3",
+      "margin": "6",
+      "original_sha256": "87e446dd2689097238bb65ad6c2d0cfd7a47c5b9e9d5d08ba0188680cdc1775a",
+      "path": "thermal-4k.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-4k.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-8k.conf",
+      "candidate_sha256": "720fe28e4db9bd22f7cf1e42d521c62f730324ad8fadf96273cddf809ef5a217",
+      "margin": "6",
+      "original_sha256": "3ededfecb4da2713857d67549ba7aa70af874397b1842f9c949c03a0ab74d854",
+      "path": "thermal-8k.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-8k.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-arvr.conf",
+      "candidate_sha256": "8765a2525c4a519990e20736029f6024efbb1291bc4ef2aad439c27f38bb93f2",
+      "margin": "6",
+      "original_sha256": "5f91b00d9e67becaeda437352144e0e78f963bce2872769004e19a740ad49f98",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-arvr.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-camera.conf",
+      "candidate_sha256": "aa429bb76e2d661c51863749e89c9af30df240cd60cfc959b3fc65ef29595f03",
+      "margin": "6",
+      "original_sha256": "525ed11dc3776205a84b39c015f0efd9858b9d6e258bb476646dd40f30591860",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-camera.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-cclassvideo.conf",
+      "candidate_sha256": "fec0d1a110577dd1b6da91ff9056de25238818b16974b3f846824ee5c43befc7",
+      "margin": "6",
+      "original_sha256": "2390855851b6608aec214e98d1232ea5f611f8e35b44f07f07eefebbaea8ff34",
+      "path": "thermal-cclassvideo.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-cclassvideo.conf",
+      "sections": 20,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-cgame.conf",
+      "candidate_sha256": "f9e34b268234ebb1a0b16cf0c44bba1131de2859800e57575e24e636c36d91d6",
+      "margin": "6",
+      "original_sha256": "228fc46c6ca1f13e5550e09a66fb1c55f6956c547208028bf657b036c0025e3e",
+      "path": "thermal-cgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-cgame.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "379f310f5d785c809318bbb965b32bb96a0d96f5dd847ccd0156bc460b39ad00",
+      "margin": "6",
+      "original_sha256": "204fdd2d0cd03a88702af1d6e2004228ab0909d1aaa9dfead388995cc7fcda75",
+      "path": "thermal-chg-only.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-chg-only.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-class0.conf",
+      "candidate_sha256": "db48367d7705ec54850cc2612d5e0199c97246b244fd64f5a077cedfbb308755",
+      "margin": "6",
+      "original_sha256": "0cd666120b7ec1fe1abba1290dea6a2026686364260a4fe7c79b8aa65b421270",
+      "path": "thermal-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-class0.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-cmgame.conf",
+      "candidate_sha256": "7fe4135389d91a95df567481aa1f0f5c1621d87059372854ff180e9ea4b6890d",
+      "margin": "6",
+      "original_sha256": "255eb40c86c0079da08a5232c46da345737bdc1c8db17861a456b4ce16535528",
+      "path": "thermal-cmgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-cmgame.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-cyuanshen.conf",
+      "candidate_sha256": "524181cf389881b9291f49d41a0b9b088e42954d0f373819674fe05ff349e93e",
+      "margin": "6",
+      "original_sha256": "71732a77735810da728b059864245a8edcc7d2c4c8591974cdbc7f137c979936",
+      "path": "thermal-cyuanshen.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-cyuanshen.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-dolbyvision.conf",
+      "candidate_sha256": "563235ac94be8acee908e365f17389dbb6bc96eb527c862b5211f3c7d0052551",
+      "margin": "6",
+      "original_sha256": "26968b67d2f27788c8fcab7828a3cfd37cb5500719e5dfc0a62aa25881697ab8",
+      "path": "thermal-dolbyvision.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-dolbyvision.conf",
+      "sections": 20,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-hp-mgame.conf",
+      "candidate_sha256": "11eb3e16f4f9a7661bb38485f3a61f49d260d62294948b2f4ad74bb33640cc62",
+      "margin": "6",
+      "original_sha256": "5c9263613f20cad60a546f86686bf57c69b9418984b0f76789b70a2cced22d1e",
+      "path": "thermal-hp-mgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-hp-mgame.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-hp-normal.conf",
+      "candidate_sha256": "79f870dc512a2448d4e677b6df0a815e348ebf5adda9020b6f2f459c93b33a00",
+      "margin": "6",
+      "original_sha256": "50fa92a1569e57f11fd96ffc6f5c72f7e263df860ff4d14ec95d54a548fa6f3b",
+      "path": "thermal-hp-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-hp-normal.conf",
+      "sections": 26,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-huanji.conf",
+      "candidate_sha256": "12281764de47a22a635aae8e83ac32a1882581e3351972c26663024760b390e1",
+      "margin": "6",
+      "original_sha256": "9f4bd01dbc11e70fdd3fe4fca1c3461c55f20218ba479d566fb3c35797d85c1d",
+      "path": "thermal-huanji.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-huanji.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-l18a-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map-india.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-mgame.conf",
+      "candidate_sha256": "ae42826b47aa4ebf1c60a09fff1a8e800110378e46f163bea6edf7112234ca2a",
+      "margin": "6",
+      "original_sha256": "f9e79023ba914bc27637fa0cc5171e544e5be95b9c089d36a0eba8c50aaef6cd",
+      "path": "thermal-mgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-mgame.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-navigation.conf",
+      "candidate_sha256": "c5efc6f181b405721a98060557f65f6a0c48004a388d2170733170f2145e303b",
+      "margin": "6",
+      "original_sha256": "eccde663afae6c0e8a149ba03141a146fb0ad25176abdd88561ff7e37aa91a4c",
+      "path": "thermal-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-navigation.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "9a7ecd80d4eb3b888ad9cb89b81a9f9591f9b7341c65cc41f695476f41663997",
+      "margin": "6",
+      "original_sha256": "e6082e29c6b10183f5d9c9e1a202943bd9fc7dd688e946c73d796daebdbee730",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-nolimits.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-normal.conf",
+      "candidate_sha256": "d3c13da155f70bd08f7b63e4678148955b9ba28c1a49eccab568e9d7e57718ea",
+      "margin": "6",
+      "original_sha256": "53f2c12294cb5a36fa26d8dc46aa743ec30d7a3584e73f79394b7d4efa417860",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-normal.conf",
+      "sections": 26,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-per-cclassvideo.conf",
+      "candidate_sha256": "386942daa4598a98ca61dc114178beccba03a9b925217037a815d42c235c8f99",
+      "margin": "6",
+      "original_sha256": "1f290eee26cd2ff019d0c6355cc5b4cf7c71449542920ac4244f232f8808e3e3",
+      "path": "thermal-per-cclassvideo.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-per-cclassvideo.conf",
+      "sections": 20,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-per-cgame.conf",
+      "candidate_sha256": "5e23b1f507134c38087fa0394a330b4c45ea54a64422ca58ed7c2480036f7943",
+      "margin": "6",
+      "original_sha256": "3dd36c4bcccb39927f498da359f0746d4d8211b381600f9661d8fedddbca6607",
+      "path": "thermal-per-cgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-per-cgame.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-per-class0.conf",
+      "candidate_sha256": "a085571c8bdf89b78de660cfc8bcf5528f9b2cf9b112774fe1af1004e7124f2b",
+      "margin": "6",
+      "original_sha256": "146de6f1895f71b49f138ffb2ad74efd875b9e73a2673fba946115e3135d36b3",
+      "path": "thermal-per-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-per-class0.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-per-navigation.conf",
+      "candidate_sha256": "ec78c828895d632471be6f4a6eb7e1b365ada84915f078aad135036edad16f3a",
+      "margin": "6",
+      "original_sha256": "6f1564e97a6dcaf2ff949ebb86b201cfb14707e65d8f6e1d19a925a9726ac282",
+      "path": "thermal-per-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-per-navigation.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-per-normal.conf",
+      "candidate_sha256": "28454d3a2eee5775d94f9ff3ffe4e9aa9faf576bae770e31ecb2958c434d31e3",
+      "margin": "6",
+      "original_sha256": "08fc55f42eaf73e29ba12aa58fd108f568f846a0d292ace67e64798ee33f53c3",
+      "path": "thermal-per-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-per-normal.conf",
+      "sections": 20,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-per-video.conf",
+      "candidate_sha256": "433b0763e7c73a72d76bf59d770c4f92013f14ee251f72715f3b5f4e781aea39",
+      "margin": "6",
+      "original_sha256": "1314c01383e95af81640a71b3822eb1a4ed42a97f0ce2f88434994f8cd07bab8",
+      "path": "thermal-per-video.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-per-video.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-phone.conf",
+      "candidate_sha256": "a1c09833f47ef4e83b84f3da88c350d9049c2911008d95fb52eac80092d42381",
+      "margin": "6",
+      "original_sha256": "26ed2f352ed3dd4d47ef18f6fed34601fe170cf5012ff969abb7282ac388ad15",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-phone.conf",
+      "sections": 15,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-region-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-tgame.conf",
+      "candidate_sha256": "7fdd0fc729e7abdd512c52095538d8e5ef8b771a9891e03bb4b58cea27b63ae9",
+      "margin": "6",
+      "original_sha256": "e32cf5d793f6b4fa63a71ad7e335f1daf5e233be8736c68a677f8e0510f11f90",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-tgame.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-video.conf",
+      "candidate_sha256": "14b804b3689b4e86cbb3c8526415c1ea9f83a5d22ec4fe2f269cb9d0fa75e8f3",
+      "margin": "6",
+      "original_sha256": "42df9cc5ad6f45bf22c66a675bbd9b9a769863c0e9a604e46ccfa9ff85735fe9",
+      "path": "thermal-video.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-video.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-videochat.conf",
+      "candidate_sha256": "f86dc22c19c00e0019f3c15a372b720b7792c9434d84a2c3f2317f999d90c4e7",
+      "margin": "6",
+      "original_sha256": "55124707232c4d567effce868a3a3ad89d12f7019d08cf2869632e4433bd3e1e",
+      "path": "thermal-videochat.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-videochat.conf",
+      "sections": 20,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/candidate/thermal-yuanshen.conf",
+      "candidate_sha256": "978159ad67a0d354727a26c1fdf8f1d6da6342ad3d97a1ec16a213826c0e362e",
+      "margin": "6",
+      "original_sha256": "d418d0dbce5cf450148105162d8f503c24030cc1266d2d4b7ce6b0cfaa642241",
+      "path": "thermal-yuanshen.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/mondrian/15/firmware/tadiphone-redmi-mondrian/review/thermal-yuanshen.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:18Z",
+  "identity": {
+    "android": "15",
+    "device": "mondrian",
+    "ecosystem": "oem",
+    "platform": "taro",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "hyperos",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi-user-15-AQ3A.240912.001-OS2.0.3.0.VMNCNXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/mondrian",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/mondrian/-/tree/missi-user-15-AQ3A.240912.001-OS2.0.3.0.VMNCNXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 29,
+    "not_tunable": 6,
+    "thermal_files": 35,
+    "unchanged": 0
+  }
+}

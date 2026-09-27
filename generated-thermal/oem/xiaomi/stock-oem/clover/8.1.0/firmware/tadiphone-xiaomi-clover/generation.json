@@ -1,0 +1,68 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_sha256": "6ba88b10a61d7b1ab7a9f886bc2c8e33635f14c2f95a1c3e1038a3379f6700c6",
+      "original_sha256": "6ba88b10a61d7b1ab7a9f886bc2c8e33635f14c2f95a1c3e1038a3379f6700c6",
+      "path": "thermal-engine-high.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine-nolimits.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/clover/8.1.0/firmware/tadiphone-xiaomi-clover/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "ed8680f30ece092ab8d224a49d3f306ed35000453fa5d4fa115337b98136fe61",
+      "margin": "5",
+      "original_sha256": "ae938f2995c83be0abb61c5e002e4972bcebeefac68fd1aad9bb997218ba621e",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/clover/8.1.0/firmware/tadiphone-xiaomi-clover/review/thermal-engine-normal.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 8
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "8.1.0",
+    "device": "clover",
+    "ecosystem": "oem",
+    "platform": "sdm660",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "clover-user-8.1.0-OPM1.171019.019-9.7.4-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/clover",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/clover/-/tree/clover-user-8.1.0-OPM1.171019.019-9.7.4-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 3,
+    "thermal_files": 5,
+    "unchanged": 1
+  }
+}

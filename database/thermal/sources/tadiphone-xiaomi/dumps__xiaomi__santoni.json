@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "branch": "santoni-user-7.1.2-N2G47H-9.6.20-release-keys",
+      "category": "thermal",
+      "format": "thermal-engine-text",
+      "legacy_import": true,
+      "max_trip_c": 95.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "thermal-engine.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/santoni/7.1.2/firmware/tadiphone-xiaomi-santoni/raw/thermal-engine.conf",
+      "repository": "dumps/xiaomi/santoni",
+      "sections": 23,
+      "sha256": "9d03ab9f8e8379f79908e5e048841f3cbae93a79ec3402401ff5030eb0c98672",
+      "shutdown_c": null,
+      "size": 4142,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/santoni/-/tree/santoni-user-7.1.2-N2G47H-9.6.20-release-keys",
+      "storage": "raw",
+      "tree_path": "thermal-engine.conf"
+    }
+  ],
+  "identity": {
+    "android": "7.1.2",
+    "device": "santoni",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "repository": {
+    "legacy_import": true,
+    "metadata_only_count": 0,
+    "relevant_file_count": 1,
+    "stored_file_count": 1,
+    "tree_complete": false
+  },
+  "schema": "hico.thermal-source.v1",
+  "source": {
+    "branch": "santoni-user-7.1.2-N2G47H-9.6.20-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/santoni",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/santoni/-/tree/santoni-user-7.1.2-N2G47H-9.6.20-release-keys"
+  }
+}

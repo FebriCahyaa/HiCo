@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/excalibur/12/firmware/tadiphone-redmi-excalibur/candidate/thermal-engine-camera.conf",
+      "candidate_sha256": "e1833c4f52cabd54bc4a7fbca22d63fd4285666a054efa07ba277b3410dd87ba",
+      "margin": "5",
+      "original_sha256": "07cac4c0ff74cd7aba8c5eff236adfb7ae7023aa92aa994602fb1e8cbf499f33",
+      "path": "thermal-engine-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/excalibur/12/firmware/tadiphone-redmi-excalibur/review/thermal-engine-camera.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/excalibur/12/firmware/tadiphone-redmi-excalibur/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "df2c1fbf6e372b83844a91bcfeebaba4dc93a8951be0353f92a9dfa1071fddd6",
+      "margin": "5",
+      "original_sha256": "24eba0156d866d47ca89e4a6c7f10860b62ea88d2d1d67005b00ce70cc18cafe",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/excalibur/12/firmware/tadiphone-redmi-excalibur/review/thermal-engine-normal.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "12",
+    "device": "excalibur",
+    "ecosystem": "oem",
+    "platform": "atoll",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "qssi-user-12-SKQ1.211019.001-V14.0.2.0.SJXINXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/excalibur",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/excalibur/-/tree/qssi-user-12-SKQ1.211019.001-V14.0.2.0.SJXINXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

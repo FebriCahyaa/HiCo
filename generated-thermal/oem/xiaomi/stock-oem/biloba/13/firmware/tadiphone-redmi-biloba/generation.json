@@ -1,0 +1,139 @@
+{
+  "elapsed_s": 0.08,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-arvr.conf",
+      "candidate_sha256": "11f2d500428658a080e2e8e32f68791a05bf722903cc857da1e4270898ec4d5d",
+      "margin": "4",
+      "original_sha256": "d86ce8db52079569743441e34296badb3e63af0367c8c950553768f17f285495",
+      "path": "thermal-arvr.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-arvr.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 10
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-camera.conf",
+      "candidate_sha256": "fbca5068c30ccb0dc8a695a8f44df3146017007f3437ac379284cc8f5c18af77",
+      "margin": "4",
+      "original_sha256": "d193cf2d615fd10e43d67aa53a52114656dfc35f3e243506c83fa542f0bab62a",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-camera.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "58a83aad0529e5497aa957257a50820b20ea9b4977ef85188d6517bc83581c9d",
+      "margin": "4",
+      "original_sha256": "35d2e8c15980bce3a9356183982287473dbcaf660c9df5ee88b46763148591ac",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-chg-only.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "79ec51211b0cd18dd345ceb1320bb83f402b33be7201930c87cdcf7759d4a484",
+      "margin": "4",
+      "original_sha256": "90153ee3a2e3d8fe697da6fe62ce26768a0fc5058ee6dd3d4e6e71900c9ea00a",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-nolimits.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-normal.conf",
+      "candidate_sha256": "ad9108eee0d2b0e31987656284dd540ba6e431e7f55de552e2c61514bb805d72",
+      "margin": "4",
+      "original_sha256": "6ced352b228f3993df0f92a37fc56a8d8928d8a1b1bcbeca8aeea0dbfd2e33ce",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-normal.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-phone.conf",
+      "candidate_sha256": "be8aa8ee80464ac6f15fea716fb8c3f509dfa5a651635df10070593294e8f47a",
+      "margin": "4",
+      "original_sha256": "fa9984fbd842e08f4652b3d46bc015a7782d1bbb86747ff6a1be8d334ad3b9c3",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-phone.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-tgame.conf",
+      "candidate_sha256": "1a6fb949bc2c98bcd69348018d5f28c65cb278d59ddf162e13f6cbfd78be6481",
+      "margin": "4",
+      "original_sha256": "dd7dbdade7feb5ea94a7002c1dc9d11d7929459a0926edca4eed0bcb5b3a23aa",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-tgame.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/candidate/thermal-youtube.conf",
+      "candidate_sha256": "5c8c40a31680b6a2725dc2612ceb5a25a49d32050cc498dfd679c5ba97ca456b",
+      "margin": "4",
+      "original_sha256": "e74c8227f242e500eb3942ecc7e6d73f6f4007c3c2fd615c34d6b28c3f55e140",
+      "path": "thermal-youtube.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/biloba/13/firmware/tadiphone-redmi-biloba/review/thermal-youtube.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "13",
+    "device": "biloba",
+    "ecosystem": "oem",
+    "platform": "mt6768",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_phoneext4_global-user-13-TP1A.220624.014-V14.0.6.0.TCUMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/biloba",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/biloba/-/tree/missi_phoneext4_global-user-13-TP1A.220624.014-V14.0.6.0.TCUMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 2,
+    "thermal_files": 10,
+    "unchanged": 0
+  }
+}

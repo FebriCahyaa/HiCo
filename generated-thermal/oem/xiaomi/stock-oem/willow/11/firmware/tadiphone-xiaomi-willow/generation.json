@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/willow/11/firmware/tadiphone-xiaomi-willow/candidate/thermal-engine-camera.conf",
+      "candidate_sha256": "4330b9e730c30a03d256d4258d93aa2218fedab28083d3136e96fdafc4047420",
+      "margin": "5",
+      "original_sha256": "09058750993bf1e4411137bb20c8d6197864d694aa69b6d000d83d931a58b520",
+      "path": "thermal-engine-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/willow/11/firmware/tadiphone-xiaomi-willow/review/thermal-engine-camera.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/willow/11/firmware/tadiphone-xiaomi-willow/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "fc2b4c4c3c805a952cd6a6c545d223a59cb2f92affa8164399c6b8a45fd2fe6e",
+      "margin": "5",
+      "original_sha256": "11aec985e90f0242a5e7f9a203af55397f637075ddfbd4d67f667ddaa825fa63",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/willow/11/firmware/tadiphone-xiaomi-willow/review/thermal-engine-normal.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:23Z",
+  "identity": {
+    "android": "11",
+    "device": "willow",
+    "ecosystem": "oem",
+    "platform": "trinket",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "willow-user-11-RKQ1.201004.002-V12.5.5.0.RCXEUXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/willow",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/willow/-/tree/willow-user-11-RKQ1.201004.002-V12.5.5.0.RCXEUXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

@@ -1699,6 +1699,10 @@
       "vendor": "xiaomi"
     }
   ],
-  "generated_from": "repository devices/*/*.prop",
-  "schema": "hico.database.v1"
+  "generated_from": "repository devices/*/*.prop + thermal-data/**/manifest.json",
+  "schema": "hico.database.v1",
+  "thermal_artifact_count": 3047,
+  "thermal_generated_file_count": 2369,
+  "thermal_raw_artifact_count": 3047,
+  "thermal_source_count": 190
 }

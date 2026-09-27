@@ -1,0 +1,199 @@
+{
+  "elapsed_s": 0.17,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-arvr.conf",
+      "candidate_sha256": "af4d285d7224968f12aebbb118da86a00a3a57b02aa22debdf6a8d96190027c1",
+      "margin": "4",
+      "original_sha256": "b633948346f70e865198c0e21c31e45b82fcfc821c306922311d6d7676bb06c9",
+      "path": "thermal-arvr.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-arvr.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-camera.conf",
+      "candidate_sha256": "ee746c523a887b26fbdb1f5fe944c3f9b6287fbac79cebc64114851e622e01fc",
+      "margin": "4",
+      "original_sha256": "99ec190e9b39bd37cc5dbe25f7581b7bf339c919cc83345e49f62b0b9380c229",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-camera.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "550f5264ae1413d20a9a263a73c637250835cf0e5504937bec3dc9c7ff31e6d9",
+      "margin": "4",
+      "original_sha256": "22b800c3a1fb4483f97e21c6e34cd4995a2d7244370142d4789e9ed2fe6ab94d",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-chg-only.conf",
+      "sections": 4,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-class0.conf",
+      "candidate_sha256": "0ff6f0d771a06c9cfb0380c3fefd763b335e80b54fa459e9ab6c2331e080dda0",
+      "margin": "4",
+      "original_sha256": "57a5455ddbb1c45e4b26139b2670afc785771c4de8408e6a86d4cfaaec301280",
+      "path": "thermal-class0.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-class0.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-mgame.conf",
+      "candidate_sha256": "7ff6653891d60a003950cb5122d972edfd40b5f741a13a10bca55b317a5b5a40",
+      "margin": "4",
+      "original_sha256": "d720462e092e33bf48f363f763bcc379ee1163f2a69da09e09d20efa44eb3bb3",
+      "path": "thermal-mgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-mgame.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-navigation.conf",
+      "candidate_sha256": "75e9ec48d6a7b5d718bbee19b938f2b33052ef1fca7c28d5bc58738608bd6449",
+      "margin": "4",
+      "original_sha256": "b8c2091310e99182d8f48a4f9255867ec49d137d3e264cb3b5cd1cecf4f6b85f",
+      "path": "thermal-navigation.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-navigation.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "6dd9c79ee57efa690ba54eb263abfb1fd16e298fec810c0be48dbcba3ea9de99",
+      "margin": "4",
+      "original_sha256": "7fd991557b280334ed39428c949bb20d670d51f045bb3173e0d328e9318d7b9b",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-nolimits.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-normal.conf",
+      "candidate_sha256": "5252c552f2802bb793a8c7d092db348401515b2ad5bf24d9cc5deabaf62e6523",
+      "margin": "4",
+      "original_sha256": "da2db0fea72daab48590d31626cf27d395050f0ff577c16dd24ecafb37556ce0",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-normal.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-phone.conf",
+      "candidate_sha256": "31eedd2f020c8e015e95e17f5eb14faf8f406ea78f96886d1703422fcb04273a",
+      "margin": "4",
+      "original_sha256": "d3017b9f83a40b05b6a7be6767e6c3a6e5c61f38cdbe3ec7f883950ef82d6824",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-phone.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-tgame.conf",
+      "candidate_sha256": "3537d80307bbf6a63ba1db0a435eabddf39a08cc4a5918069f902789fa9e13af",
+      "margin": "4",
+      "original_sha256": "bebec95ba10bddf47ef381fd5faa344442a1a93ba95a2974f041ad7c3b575ecb",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-tgame.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-video.conf",
+      "candidate_sha256": "4747bb3e3c6f1bd25ee8b1e076f741bdb36fab9587eec3d60329ac17e21e1d26",
+      "margin": "4",
+      "original_sha256": "a338d7c3a6e3e8571edb09d363952f3beeb4441b01ffa6dba559469268881211",
+      "path": "thermal-video.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-video.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-videochat.conf",
+      "candidate_sha256": "6c5f3da85a0d36e59631df64f1fd51aa33ef96de58b7442ba0713b992fcaedb7",
+      "margin": "4",
+      "original_sha256": "e1ae7ccdb423588ddd7d1b89e78cd732d76d2e27f36530544f29a554fe379234",
+      "path": "thermal-videochat.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-videochat.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/candidate/thermal-youtube.conf",
+      "candidate_sha256": "398343f86f31ec89cb90648c667c893c7186e209d6f9a71af7835e212e2e0d0f",
+      "margin": "4",
+      "original_sha256": "149fde2ecd493607f4b3c8db361d1c4f1b38484f93264e1424b68219a1d138bf",
+      "path": "thermal-youtube.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/viva/13/firmware/tadiphone-redmi-viva/review/thermal-youtube.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:23Z",
+  "identity": {
+    "android": "13",
+    "device": "viva",
+    "ecosystem": "oem",
+    "platform": "mt6781",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_phoneext4_eea-user-13-TP1A.220624.014-V14.0.1.0.TGDEUXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/viva",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/viva/-/tree/missi_phoneext4_eea-user-13-TP1A.220624.014-V14.0.1.0.TGDEUXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 13,
+    "not_tunable": 2,
+    "thermal_files": 15,
+    "unchanged": 0
+  }
+}

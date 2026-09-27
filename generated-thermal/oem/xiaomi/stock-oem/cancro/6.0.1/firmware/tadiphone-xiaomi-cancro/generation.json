@@ -1,0 +1,49 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_sha256": "2899f5cbe69a631a1d577b226ec6addea8f06618defb4fd5e8d596155045db8a",
+      "original_sha256": "2899f5cbe69a631a1d577b226ec6addea8f06618defb4fd5e8d596155045db8a",
+      "path": "thermal-engine-8974.conf",
+      "sections": 5,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "original_sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "path": "thermal-engine-perf.conf",
+      "sections": 4,
+      "status": "unchanged",
+      "tuned_sections": 0
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "6.0.1",
+    "device": "cancro",
+    "ecosystem": "oem",
+    "platform": "msm8974",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "cancro-user-6.0.1-MMB29M-V10.1.1.0.MXDCNFI-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/cancro",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cancro/-/tree/cancro-user-6.0.1-MMB29M-V10.1.1.0.MXDCNFI-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 0,
+    "thermal_files": 2,
+    "unchanged": 2
+  }
+}

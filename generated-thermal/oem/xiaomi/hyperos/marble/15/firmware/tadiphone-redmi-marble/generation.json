@@ -1,0 +1,358 @@
+{
+  "elapsed_s": 0.29,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-4k.conf",
+      "candidate_sha256": "e3783c1b93f662b2a4a0e147ea4acc7b161a634b5b14c6e0e529f7deb17b4e69",
+      "margin": "6",
+      "original_sha256": "289fceb771f1cdd3c5d0982213980647291b51ff4bddcf803121c4bf95c9f059",
+      "path": "thermal-4k.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-4k.conf",
+      "sections": 15,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-camera.conf",
+      "candidate_sha256": "7e1a2760d5e74503d914e4f24e57e9a3613478596306afbc0badca7d6a775361",
+      "margin": "6",
+      "original_sha256": "ff43d5234457da1923da8ce2c1100245a32435b62ee9026a9336bb034120286b",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-camera.conf",
+      "sections": 15,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-cclassvideo.conf",
+      "candidate_sha256": "40828c1b12c98c4ac631f931561f0718b07a36c706c951347487af3f02b034f9",
+      "margin": "6",
+      "original_sha256": "6414dfc1c635faa8a56f645b24c46f6eb4bd5cd98fd6e308f6ad3ce2fab024f4",
+      "path": "thermal-cclassvideo.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-cclassvideo.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-cgame.conf",
+      "candidate_sha256": "7c3d2f660f2d92f8d81500c46c94b2bfcd1fe3efd9a6e48133ed9ee4e1754453",
+      "margin": "6",
+      "original_sha256": "eabdca42adb0a65029e8ffcaadf9ed39e7fabf960901d90a776a1cac93a7511c",
+      "path": "thermal-cgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-cgame.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "8d5ef012fbbd42d52d0c44c2884c1a105c67144ec657f23a71452fcd1aa4fb3f",
+      "margin": "6",
+      "original_sha256": "e9c165df217b9719d148e11ac2670eeb022e90636ee5e205fa4540c361b560b6",
+      "path": "thermal-chg-only.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-chg-only.conf",
+      "sections": 5,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-class0.conf",
+      "candidate_sha256": "c343d3cea5ac11ce4337914dd8ca255ec4d6ec2647e1995d10e79e1a96cf56cf",
+      "margin": "6",
+      "original_sha256": "bc30e5bfea2c69bf5606d6cd3666d513144a984342ad014abb533893984264ad",
+      "path": "thermal-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-class0.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-dolbyvision.conf",
+      "candidate_sha256": "f83b637713388f23f7daf72a7b345bd9f6d120b1233bc6f20ce9120c72530200",
+      "margin": "6",
+      "original_sha256": "8198db6e1eae0d97a753a65359a86fe5dfeb0aef05199852027d7f9809dab3b3",
+      "path": "thermal-dolbyvision.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-dolbyvision.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-hp-mgame.conf",
+      "candidate_sha256": "80c5da0676e38bedfe4952358b09bf87dc14ed463431c49889cbf04b0fc70a11",
+      "margin": "6",
+      "original_sha256": "ad1f930e2f942d8b15087f60a1115fc1d66c25ab6e4d7c1a72a96af4440e47ce",
+      "path": "thermal-hp-mgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-hp-mgame.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-hp-normal.conf",
+      "candidate_sha256": "222f4643958b3d18b564cfd0a2f66dcbf581e33d84f1e8b3c4d669b002441762",
+      "margin": "6",
+      "original_sha256": "dd43c6fd10ae21842304098c1d1182d61ceab2bf7143b067bf6600c2e7f2d167",
+      "path": "thermal-hp-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-hp-normal.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-huanji.conf",
+      "candidate_sha256": "fb224b9e7dd40d3854a8214acc6aaf2581391881ae76aa90564b3ac4c3abfc0b",
+      "margin": "6",
+      "original_sha256": "712a8102d4096d282f7146fa391bad1952864de14502eab9e1f63ed13fb4a855",
+      "path": "thermal-huanji.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-huanji.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-l18a-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-mgame.conf",
+      "candidate_sha256": "7fad105e8c4ce45dfecd9ec18ba372fbee2d84e39dad426dc0581aca00c4b20a",
+      "margin": "6",
+      "original_sha256": "d48752987172c7417bfef40e7a60e2b5dac2ed2d8e4991b023420af7dbe3938e",
+      "path": "thermal-mgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-mgame.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-navigation.conf",
+      "candidate_sha256": "97e48e726de7c249b0405e173a8c46e4b03856f40ca46f369c488641d7817027",
+      "margin": "6",
+      "original_sha256": "f70338a6b7c3053d693f4d5ce22a6d2ce2e842b343e2e2d17bc45500af884288",
+      "path": "thermal-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-navigation.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "1494c84d9d9925f241f659d11f4841fab0947d2c1fbd79ec3606e3a426728058",
+      "margin": "6",
+      "original_sha256": "97186f9cce7f67cad4ba4876915307f90d6c76d25317c239340144c7fccc195c",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-nolimits.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-normal.conf",
+      "candidate_sha256": "8701d829e782a3332f62af06ce059aebf20127528e7604eefaba1c77a418ea46",
+      "margin": "6",
+      "original_sha256": "5af0e0397f15d30981f51435fcacf34710544aecf6728f22fa4ea2cb3e765ac8",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-normal.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-per-cclassvideo.conf",
+      "candidate_sha256": "4ae2b1214b6514e9bf2a4795311ebe53b532267931b3936774e9293c79f601f2",
+      "margin": "6",
+      "original_sha256": "d3f1149758a865be3b45f61a27fa12ce462fe7dbe73d1b71693021349186811b",
+      "path": "thermal-per-cclassvideo.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-per-cclassvideo.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-per-cgame.conf",
+      "candidate_sha256": "d66add9c1e215d986f077981028f106f0fbe7d33a1ce5b022b8b8860d36e33b7",
+      "margin": "6",
+      "original_sha256": "687fa3c1e0cf8aefadd49d16c6e64745ca7744ad2c4ea1e145ccf8e9f27656b4",
+      "path": "thermal-per-cgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-per-cgame.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-per-class0.conf",
+      "candidate_sha256": "39fb182c0c2eb1ce25278877085da1c19bedf55268e4eec0b977062301888783",
+      "margin": "6",
+      "original_sha256": "090efcd03d3ce9997ba809e1aabedcaf50341943337859a6e36f9f07912bd647",
+      "path": "thermal-per-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-per-class0.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-per-navigation.conf",
+      "candidate_sha256": "3679c42d0faab568c552b7cf3ea61acae4b3319222a0881e7247c5fd44b72178",
+      "margin": "6",
+      "original_sha256": "56296652ef468b20c7c3513a5f652e3ccd6890178f97c8bc2336dc0073bc1506",
+      "path": "thermal-per-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-per-navigation.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-per-normal.conf",
+      "candidate_sha256": "12735b2e2d35d33bb2ad275903362bc4744e0d481965bf51fe14da42ceae237f",
+      "margin": "6",
+      "original_sha256": "7be231089dfe15a17cca3920a8f395e261f5eb0cd2814cd0f91bd8adac1cb297",
+      "path": "thermal-per-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-per-normal.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-per-video.conf",
+      "candidate_sha256": "f693e6678184f734a9f47f925dd25859cb2ae2535f8780badaf7b0fef0adc8ff",
+      "margin": "6",
+      "original_sha256": "53b6d9d8b90c4a3d35569d374bced2d290f3a493c70758bf9b1c123c0049342f",
+      "path": "thermal-per-video.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-per-video.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-phone.conf",
+      "candidate_sha256": "db6d4b80c4fd6c0ee2b7ea1af5ca8d628193fb131a7f9b3eae0f499e50be0981",
+      "margin": "6",
+      "original_sha256": "feba42ce5d349164da3319484ae93e2a62908e66f69c09bda6b8f17379559f33",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-phone.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-region-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-tgame.conf",
+      "candidate_sha256": "5fb6c6e19bd3a945500c1b3022a86c8a9b950471f548019c3f5a43bad947dfd4",
+      "margin": "6",
+      "original_sha256": "fb3d64f7ede4b6a64ad371a911acc6d78d17706390a63372ebc750bc68e26ef7",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-tgame.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-video.conf",
+      "candidate_sha256": "f575c9004de52ea9e13fa0766814b0ea106c671910c41938e9cfec75dede604e",
+      "margin": "6",
+      "original_sha256": "d31a6371d11cc4d2d212d422d8b1da08aff38f3e326d5587795096b7bdb5db3b",
+      "path": "thermal-video.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-video.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-videochat.conf",
+      "candidate_sha256": "bae272198c3ec735f853164f6fbdf39d610b4ab6649b10b7b7bbf77622a9954e",
+      "margin": "6",
+      "original_sha256": "b7a2c4a48459c7d33ee19428974a2d0041f1879dfab375f201fdb599e17e828d",
+      "path": "thermal-videochat.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-videochat.conf",
+      "sections": 15,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/candidate/thermal-yuanshen.conf",
+      "candidate_sha256": "11f9dcb6863218168970a1144989589d0997a2d5df652093e0e28e1603f5487a",
+      "margin": "6",
+      "original_sha256": "27630859c909c4c9a26fb9a129481283493d6d8909780cc455d2fb4a38ff89f8",
+      "path": "thermal-yuanshen.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/marble/15/firmware/tadiphone-redmi-marble/review/thermal-yuanshen.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:17Z",
+  "identity": {
+    "android": "15",
+    "device": "marble",
+    "ecosystem": "oem",
+    "platform": "taro",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "hyperos",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi-user-15-AQ3A.250226.002-OS3.0.4.0.VMRCNXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/marble",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/marble/-/tree/missi-user-15-AQ3A.250226.002-OS3.0.4.0.VMRCNXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 25,
+    "not_tunable": 5,
+    "thermal_files": 30,
+    "unchanged": 0
+  }
+}

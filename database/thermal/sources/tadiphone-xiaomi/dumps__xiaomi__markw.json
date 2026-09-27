@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "branch": "markw-user-6.0.1-MMB29M-V10.2.2.0.MBEMIXM-release-keys",
+      "category": "thermal",
+      "format": "thermal-engine-text",
+      "legacy_import": true,
+      "max_trip_c": 95.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "thermal-engine.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/markw/6.0.1/firmware/tadiphone-xiaomi-markw/raw/thermal-engine.conf",
+      "repository": "dumps/xiaomi/markw",
+      "sections": 23,
+      "sha256": "05c8ea2b406747005a4092d143004b653a213bdf018b47a49e45e0810e303bd8",
+      "shutdown_c": null,
+      "size": 4194,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/markw/-/tree/markw-user-6.0.1-MMB29M-V10.2.2.0.MBEMIXM-release-keys",
+      "storage": "raw",
+      "tree_path": "thermal-engine.conf"
+    }
+  ],
+  "identity": {
+    "android": "6.0.1",
+    "device": "markw",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "repository": {
+    "legacy_import": true,
+    "metadata_only_count": 0,
+    "relevant_file_count": 1,
+    "stored_file_count": 1,
+    "tree_complete": false
+  },
+  "schema": "hico.thermal-source.v1",
+  "source": {
+    "branch": "markw-user-6.0.1-MMB29M-V10.2.2.0.MBEMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/markw",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/markw/-/tree/markw-user-6.0.1-MMB29M-V10.2.2.0.MBEMIXM-release-keys"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/daisy/10/firmware/tadiphone-xiaomi-daisy/candidate/thermal-engine.conf",
+      "candidate_sha256": "d688f710fddb44838668f4b060f7ebd1ac9a9a01ed82740939b445a30a770d12",
+      "margin": "5",
+      "original_sha256": "cd9a0e02d794e5a2be0b743a59c76b209eebc7b7df5c005b9439137c2aef1867",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/daisy/10/firmware/tadiphone-xiaomi-daisy/review/thermal-engine.conf",
+      "sections": 4,
+      "status": "generated",
+      "tuned_sections": 2
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "10",
+    "device": "daisy",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/daisy",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/daisy/-/tree/daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

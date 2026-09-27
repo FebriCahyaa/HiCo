@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/twilight/14/firmware/tadiphone-xiaomi-twilight/candidate/thermal_info_config.json",
+      "candidate_sha256": "9248a9d8695b9449917819576916af61f8e018f70b721177b6e04a9692954f05",
+      "margin": "4",
+      "original_sha256": "4e5709fe75062de0f0a2254a5be7942e2dc162245a484bc5602415b09230cf7b",
+      "path": "thermal_info_config.json",
+      "policy": "generic",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/twilight/14/firmware/tadiphone-xiaomi-twilight/review/thermal_info_config.json",
+      "sections": 1,
+      "status": "generated",
+      "tuned_sections": 1
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "14",
+    "device": "twilight",
+    "ecosystem": "oem",
+    "platform": "s7d",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "twilight-user-14-UKG3.250107.001-V816.0.25.6.13.1.UZFAABX-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/twilight",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/twilight/-/tree/twilight-user-14-UKG3.250107.001-V816.0.25.6.13.1.UZFAABX-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

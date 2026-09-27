@@ -1,0 +1,212 @@
+{
+  "elapsed_s": 0.14,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-4k.conf",
+      "candidate_sha256": "857280475031850d545c6b8cd68078353c475126a0c09b3a277346f1a7ebf6d4",
+      "margin": "6",
+      "original_sha256": "461427a9dc1bc53db698a06b18639b174e491ab235d243cf7a306ae1b8a84c10",
+      "path": "thermal-4k.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-4k.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-8k.conf",
+      "candidate_sha256": "2e594d43e5acc13f05fb39ea4d9721c7dc77382ac2b3e7326e8f009562c35eae",
+      "margin": "6",
+      "original_sha256": "a741602fa07533a207364ad7a68cfa0c2c23dea99241fe6e8071163fad3ed441",
+      "path": "thermal-8k.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-8k.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-camera.conf",
+      "candidate_sha256": "9972987f7c35001680bf6e4cb408c4468a7cb05bd0754325b361bf8063c8a927",
+      "margin": "6",
+      "original_sha256": "477a1d04c2bb15cfd4d13df5231fb1a68f396db516cc0554650914b532c13d59",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-camera.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_sha256": "9748cf01b75ebcd0269cad85bf38c05fd2eea2514ec67b88375edbfd616cf0e8",
+      "original_sha256": "9748cf01b75ebcd0269cad85bf38c05fd2eea2514ec67b88375edbfd616cf0e8",
+      "path": "thermal-chg-only.conf",
+      "sections": 3,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-class0.conf",
+      "candidate_sha256": "64e8dacf0bb099d2b781cfc24b34cba2b003ed7396e498f82611e592d325da98",
+      "margin": "6",
+      "original_sha256": "210d7013c5fdd4ca07d907b75e1628ef81954053ef5829f9610b360ed8969249",
+      "path": "thermal-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-class0.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-navigation.conf",
+      "candidate_sha256": "85f6f86f82cfcadf74306892b958ce30e157f13686fccf76cb0ddeef2262bf0a",
+      "margin": "6",
+      "original_sha256": "45fd379f2464c29125420741df4a98a9195216ba07931863ed096eedd46d98de",
+      "path": "thermal-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-navigation.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "0b38a0c886115af63930e61e71e0c7b49dbe867ffc89d824c7f7f2264f70bc9a",
+      "margin": "6",
+      "original_sha256": "56f8c9923a0b10ea9462cd1ceae4d90842f4197dd8fd4c3636b340ac5d1f940c",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-nolimits.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-normal.conf",
+      "candidate_sha256": "0ad0d66b595775ab5aa78b6fd0c622dd1b40b3e1491cbe68f8cbf0cc2a2d86d1",
+      "margin": "6",
+      "original_sha256": "40a3da05d7d901ddf502190ec1a09843e4b305464f58dc9f86e9c476cbf1817d",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-normal.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-per-camera.conf",
+      "candidate_sha256": "9972987f7c35001680bf6e4cb408c4468a7cb05bd0754325b361bf8063c8a927",
+      "margin": "6",
+      "original_sha256": "477a1d04c2bb15cfd4d13df5231fb1a68f396db516cc0554650914b532c13d59",
+      "path": "thermal-per-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-per-camera.conf",
+      "sections": 14,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-per-class0.conf",
+      "candidate_sha256": "3c41d3bcdb9ea3055c3712fcf496e1d8190e94994b65f4920cbe478dfe0156f4",
+      "margin": "6",
+      "original_sha256": "599d7e672dc21ea0276158dfedbb15a1d059aeff8fe46370a9a7a6c24f67f929",
+      "path": "thermal-per-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-per-class0.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-per-navigation.conf",
+      "candidate_sha256": "56d118703c6ecaf5036c8bfa1a67d6f9c6ab8262337b984445e2723be241252d",
+      "margin": "6",
+      "original_sha256": "21bae6319c93dd22015c492f19e7e9be42ff782c365e2438f5e8dad8ecf81394",
+      "path": "thermal-per-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-per-navigation.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-per-normal.conf",
+      "candidate_sha256": "cf41bad6a9f809548a7dd2536b30ca1a595305d9d06bd8858e201f0c5d37942e",
+      "margin": "6",
+      "original_sha256": "f84e8ef6402f29315db87e43fa3a999d9ba9f8c9ece4dd2d094e98955b16c8ad",
+      "path": "thermal-per-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-per-normal.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-phone.conf",
+      "candidate_sha256": "54e582affcda3612dcf567b9f92cba658c14cb6b17582b44f95b5623b5ce0d78",
+      "margin": "6",
+      "original_sha256": "3982caab2ba6eb15ba015a3a99f2ced47fed504f6950f85bfc4abf0e40cefcdd",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-phone.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/candidate/thermal-tgame.conf",
+      "candidate_sha256": "1b267d6128c8a98859d17a369d9f9949eb72599687012c73bbf834cdc68d15bc",
+      "margin": "6",
+      "original_sha256": "833f7d303ee48f7b2827e83872467fb84631c314cf1fb55cb76a867670a2a727",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cmi/13/firmware/tadiphone-xiaomi-cmi/review/thermal-tgame.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "13",
+    "device": "cmi",
+    "ecosystem": "oem",
+    "platform": "kona",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_phonenonab_cn-user-13-TKQ1.221114.001-V816.0.5.0.TJACNXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/cmi",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cmi/-/tree/missi_phonenonab_cn-user-13-TKQ1.221114.001-V816.0.5.0.TJACNXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 13,
+    "not_tunable": 3,
+    "thermal_files": 17,
+    "unchanged": 1
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-camera.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-high.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-nolimits.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-phone.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-pubgmhd.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-sgame.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710-tgame.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm710.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "10",
+    "device": "pyxis",
+    "ecosystem": "oem",
+    "platform": "sdm710",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "pyxis-user-10-QKQ1.190828.002-V12.0.6.0.QFCMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/pyxis",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/pyxis/-/tree/pyxis-user-10-QKQ1.190828.002-V12.0.6.0.QFCMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 10,
+    "thermal_files": 10,
+    "unchanged": 0
+  }
+}

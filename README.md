@@ -137,109 +137,133 @@ phone's own files.
 
 ## Thermal framework and device database
 
-`hicod` is built as a small thermal framework with vendor backends. The historical Xiaomi device table remains
-part of the runtime for compatibility, while the repository now also contains a separate multi-vendor knowledge
-database used by the ingestion and analysis tools.
+`hicod` is the runtime thermal framework. The repository-side dataset is kept separate from the
+runtime device table so the same hardware can have multiple stock and custom-ROM thermal sources
+without collapsing their provenance.
 
+```text
+Public OEM / ROM / vendor / kernel repositories
+                      │
+                      ▼
+               local collector
+                      │
+          clone / fetch without API tokens
+                      │
+                      ▼
+                thermal-data/
+                      │
+             ┌────────┴────────┐
+             ▼                 ▼
+          raw files         manifests
+             │                 │
+             └────────┬────────┘
+                      ▼
+              HiCo Thermal parser
+                      │
+             detect / decode / map
+                      │
+                      ▼
+              HiCo Thermal generator
+                      │
+                      ▼
+               generated-thermal/
+                      │
+                 independent check
+                      │
+                      ▼
+                  database/
 ```
-OEM dumps / ROM trees / vendor trees / kernel trees
-                  │
-                  ▼
-          multi-source ingestion
-                  │
-                  ▼
-          thermal artifact map
-                  │
-                  ▼
-          database / knowledge
-                  │
-                  ▼
-         runtime device resolver
-                  │
-                  ▼
-        hicod vendor backends
+
+- **Runtime device database** — `devices/xiaomi/*.prop` remains the compatibility table compiled by `gen_device_db.py`.
+- **Canonical thermal source dataset** — `thermal-data/` stores original thermal-relevant files plus provenance. The collector records repository, branch, exact commit, OEM, ROM family, device, Android release and repository role.
+- **Generated HiCo Thermal** — `generated-thermal/` contains candidates produced by the same host `hicod thermal tune` implementation used by the runtime. Original files are never modified.
+- **Knowledge database** — `database/` indexes normalized device facts, source provenance, mappings and generated thermal candidates.
+
+**Thermal tuner** (`ThermalConfig.cpp`, `ThermalHalJson.cpp`) supports the vendor formats implemented by
+HiCo: thermal-engine text, `mi_thermald`, Xiaomi encrypted `MiCrypt` configs and AIDL/HIDL thermal HAL JSON.
+The safety verifier checks the original-versus-candidate transformation before a generated file can be
+marked valid. Shutdown/critical protection, battery/charger/PMIC scopes and other protected sections remain
+subject to the engine's explicit policy.
+
+`tools/hico_thermal.py` provides detect/decode/unpack/pack/map operations. `tools/hico_collector.py`
+provides the token-free local collection path, while `tools/hico_generator.py` builds and verifies HiCo
+thermal candidates from the collected source files.
+
+**Thermal files:** the legacy Xiaomi device data under `devices/xiaomi/<codename>/thermal/` is retained for
+runtime compatibility. The canonical multi-source dataset is `thermal-data/`, where paths are organized as
+`ecosystem/vendor/rom/device/android/role/repository/raw/` and each repository has a `manifest.json`.
+
+## Local thermal collection and generation
+
+Normal synchronization deliberately does **not** call the GitHub or GitLab REST APIs. It uses a local
+repository index and public Git remotes, so public sources can be cloned/fetched without API tokens.
+The cache is outside the repository by default (`~/.cache/hico/repos`); only the thermal-relevant files
+and their manifests are committed to HiCo.
+
+First bootstrap the known public repositories already represented by the seeded device database:
+
+```shell
+python3 tools/hico_collector.py bootstrap
+python3 tools/hico_collector.py import-legacy
 ```
 
-- **Runtime device database** — the existing `devices/xiaomi/*.prop` table remains source data for the current
-  Xiaomi runtime compatibility path and is still compiled by `gen_device_db.py`. It is not shipped as module data.
-- **Derived facts** (`DeviceDatabase.cpp`) — the SoC vendor (`soc_from_platform`) and traits
-  (`mi_thermald`, `thermal-engine`, MediaTek thermal daemons, scene configs, …) are computed in
-  C++ from the raw record, so the rules live in one tested place.
-- **Core** (`ThermalController`) — what every device has: init thermal services, kernel zone
-  governors, cooling devices, cpufreq caps.
-- **Backends** (`ThermalBackend.hpp`, `Backend<Vendor>.cpp`) — vendor drivers: Qualcomm
-  (`msm_thermal`, `msm_performance`, Adreno power levels), MediaTek (EARA), Xiaomi (thermal
-  scene, `cpu_limits`). A backend runs only when it applies to the device's SoC and traits, so a
-  MediaTek phone never receives Qualcomm writes; devices outside the database fall back to what
-  their kernel exposes.
-- **Actuator** — the single write path: journaled for exact restore, restricted to `/sys` and `/proc`.
+Synchronize the source dataset:
 
-**Thermal tuner** (`ThermalConfig.cpp`, `ThermalHalJson.cpp`) — reads and writes vendor thermal
-configs in both formats: thermal-engine syntax (also used by plain-text mi_thermald configs) and
-the AIDL/HIDL thermal HAL JSON (`thermal_info_config*.json`, used by AOSP-based ROMs and newer
-vendors). In the HAL JSON only the `HotThreshold` levels LIGHT…CRITICAL are raised; EMERGENCY and
-SHUTDOWN, battery / USB / BCL / power-amplifier sensors and number formatting are left as they are,
-and after a HAL config is tuned the thermal HAL is restarted so it reads it. The tuner raises eligible trips by a **chipset
-policy**: Qualcomm flagship +6 °C, other Qualcomm +5 °C, MediaTek Dimensity +5 °C, other
-MediaTek / Exynos / Tensor / Unisoc / unknown +4 °C (HiCo's conservative defaults, not vendor
-data; `relax_margin` overrides them). Shutdown sections, battery / charger / PMIC sensors,
-descending monitors and virtual sensors are never changed; no trip is lowered; skin/board trips
-stop at 55 °C and CPU/GPU trips at 105 °C and 10 °C below their own shutdown threshold; trip
-order and hysteresis are kept. An independent verifier re-checks every tuned file before use.
-The same code runs on the device (relaxed level) and in the repository:
-[`tools/tune_thermal.py`](tools/tune_thermal.py) tunes every collected config with the host
-build of `hicod` into `devices/xiaomi/<codename>/tuned/` and writes
-[`docs/THERMAL_TUNING.md`](docs/THERMAL_TUNING.md); any verifier violation fails the workflow.
+```shell
+python3 tools/hico_collector.py sync --changed-only --workers 4
+```
 
-`hicod device` shows how the running phone is handled (database record, SoC, traits, backends);
-`hicod device --list` prints the compiled database. The supported list is
-[`docs/DEVICES.md`](docs/DEVICES.md).
+Then build the host engine and generate candidates:
 
-**Thermal files:** the scanner also keeps each device's vendor thermal configuration files in
-`devices/xiaomi/<codename>/thermal/` (repository only, never shipped), with an `index.tsv`
-(SHA-256, size, format, trip points). Plain-text thermal-engine style files are parsed for their
-highest trip and their shutdown threshold (`vendor_max_trip_c`, `vendor_shutdown_c` in the
-record); encrypted files — common on recent Xiaomi firmware — are kept and counted but not
-interpreted. Pre-Treble firmware is covered too (`system/etc`, `system/vendor/etc`).
+```shell
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j"$(nproc)"
+python3 tools/hico_generator.py generate --hicod build/hicod --workers 4
+```
 
-**Refreshing the database:** **Actions → Update Xiaomi device profiles** (also monthly) scans
-the Xiaomi, Redmi and POCO dump groups (`dumps/xiaomi`, `dumps/redmi`, `dumps/poco`; groups that
-do not exist are skipped), regenerates `devices/`, `docs/DEVICES.md` and the C++ table, builds and tests it, and
-opens a pull request. By default it uses **sparse mode**: the GitLab API only lists the dumps
-(names), then each dump is partial-cloned (`--filter=blob:none --depth 1`) and only `build.prop`
-and the vendor thermal files (`vendor/etc/thermal*`, `vendor/etc/init/*thermal*`,
-`vendor/etc/init/hw/*.rc`) are checked out — a few MB per device instead of the whole firmware.
-A server that ignores the filter is refused rather than downloaded in full. CI fails when the
-compiled table is out of date with `devices/` (`gen_device_db.py --check`).
+The complete local pipeline is wrapped by:
+
+```shell
+./tools/update-thermal.sh
+```
+
+Use `./tools/update-thermal.sh --push` to commit and push the collected thermal dataset, generated
+candidates and regenerated database after all validation steps pass. The default commit message is
+`data(thermal): refresh collected sources and generate HiCo thermal`.
 
 ## Knowledge database ingestion and tools
 
-The new repository knowledge layer is intentionally broader than Xiaomi. `sources/registry.json` describes OEM
-dump groups, custom-ROM device organizations and a generic GitHub discovery path for independent maintainer trees.
-The ingestion engine uses shallow partial Git clones so repository trees can be inspected without downloading every blob.
-Every manifest records the repository, branch, source commit, path, format and provenance.
+The collection layer is intentionally broader than Xiaomi. `sources/registry.json` describes OEM dump
+groups, custom-ROM device organizations and generic independent sources. `sources/repositories.json` is
+the concrete repository index used by the local collector. It is seeded from the currently known Xiaomi
+source records and can later be extended from additional discovery snapshots.
 
-`tools/hico_thermal.py` separates four operations:
+The data layers are deliberately explicit:
 
-- **unpack** — opens supported archives/filesystems when the required host tools are present;
-- **codec** — decodes/encodes a known artifact format; the existing Xiaomi `MiCrypt` implementation is exposed as
-  `mi_thermald_aes`;
-- **parser/mapper** — extracts normalized thermal facts without assuming a single vendor format;
-- **pack** — rebuilds supported archive/stream formats where round-tripping is defined.
+```text
+sources/                 repository definitions and collector state
+thermal-data/            original thermal source files + manifests
+generated-thermal/       HiCo-generated candidates + verification reports
+database/                normalized indexes, mappings and tables
+devices/                 legacy/runtime Xiaomi compatibility data
+```
 
-Unknown encrypted or opaque binary artifacts are recorded rather than passed to a guessed decryptor. This keeps the
-database complete at the metadata level without turning an unknown format into unsafe or invalid code.
+Unknown encrypted or opaque artifacts remain available as raw source material when their size is compatible
+with repository storage, while their parser/codec status is recorded. HiCo never guesses an encryption
+algorithm. Large firmware-style blobs can use Git LFS when the clone is configured for it.
 
 ### Actions
 
-**Actions → HiCo Thermal Database** runs the complete pipeline in one workflow: preflight, discovery, matrix ingestion,
-known-codec analysis, thermal mapping, merge, validation and a single publish job. Matrix workers never push directly.
+**Actions → HiCo Thermal Database** is now a verification/build workflow only. It reads the committed
+`thermal-data/` and `generated-thermal/` dataset, builds the host engine, runs the test suite, rebuilds the
+database deterministically and uploads the verification artifact. It does not discover or clone upstream
+repositories and does not write cloud infrastructure.
 
-**Actions → HiCo Thermal Tools** validates the toolchain. Its manual **full** mode maps every thermal root already present
-in the repository database and publishes the deterministic mapping under `database/mapped/`.
+**Actions → HiCo Thermal Tools** validates the parser/codec/unpack/map toolchain and can perform a full mapping
+of the thermal roots already committed to the repository.
 
-The existing `webui/` directory is protected by a SHA-256 manifest at `docs/integrity/webui.sha256`; the tool workflow
-checks it so database/tool changes cannot silently alter the existing WebUI.
+The existing `webui/` directory remains protected by its SHA-256 integrity manifest and is validated as part
+of the normal tool/build workflows.
 
 ## ROMs: MIUI, HyperOS and AOSP
 

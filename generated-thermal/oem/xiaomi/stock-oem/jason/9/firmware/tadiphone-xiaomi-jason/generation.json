@@ -1,0 +1,63 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm660-camera.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm660-high.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm660-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm660-nolimits.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm660.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "9",
+    "device": "jason",
+    "ecosystem": "oem",
+    "platform": "",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "jason-user-9-PKQ1.181007.001-20.6.18-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/jason",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/jason/-/tree/jason-user-9-PKQ1.181007.001-20.6.18-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 6,
+    "thermal_files": 6,
+    "unchanged": 0
+  }
+}

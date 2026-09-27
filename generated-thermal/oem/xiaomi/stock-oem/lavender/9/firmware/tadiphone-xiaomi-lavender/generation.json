@@ -1,0 +1,55 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/lavender/9/firmware/tadiphone-xiaomi-lavender/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "753441e2791db86398c829b17615aa6956a07c98970bcdaacc9cd8c8f9fcb356",
+      "margin": "5",
+      "original_sha256": "02c7e7742923f37d4ff1de8869fed633eddbc93ea97d54ed1ad0ee3f146d6d26",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/lavender/9/firmware/tadiphone-xiaomi-lavender/review/thermal-engine-normal.conf",
+      "sections": 30,
+      "status": "generated",
+      "tuned_sections": 13
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "9",
+    "device": "lavender",
+    "ecosystem": "oem",
+    "platform": "sdm660",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "lavender-userdebug-9-PKQ1.180904.001-241-test-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/lavender",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/lavender/-/tree/lavender-userdebug-9-PKQ1.180904.001-241-test-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 2,
+    "thermal_files": 3,
+    "unchanged": 0
+  }
+}

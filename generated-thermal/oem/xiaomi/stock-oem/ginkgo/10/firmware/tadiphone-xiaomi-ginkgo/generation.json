@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/ginkgo/10/firmware/tadiphone-xiaomi-ginkgo/candidate/thermal-engine-camera.conf",
+      "candidate_sha256": "7e3067525cc44f07a05c7735de6d08ea3e19089a4d0beb4285fd1d662d9031d2",
+      "margin": "5",
+      "original_sha256": "10fcb36cb34cfc5bbdf813f372fc0a215222750641162743a77b5dc6107b31f3",
+      "path": "thermal-engine-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/ginkgo/10/firmware/tadiphone-xiaomi-ginkgo/review/thermal-engine-camera.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 7
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/ginkgo/10/firmware/tadiphone-xiaomi-ginkgo/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "71f87dabb764107a56066bc4ce600c157a0e83349f46df07197aabd543248636",
+      "margin": "5",
+      "original_sha256": "9264913cdb971831a1fcd72f76e2507abbff1fea0796962bf872d551252e2a27",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/ginkgo/10/firmware/tadiphone-xiaomi-ginkgo/review/thermal-engine-normal.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "10",
+    "device": "ginkgo",
+    "ecosystem": "oem",
+    "platform": "trinket",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "ginkgo-user-10-QKQ1.200114.002-V12.0.2.0.QCOIDXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/ginkgo",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ginkgo/-/tree/ginkgo-user-10-QKQ1.200114.002-V12.0.2.0.QCOIDXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

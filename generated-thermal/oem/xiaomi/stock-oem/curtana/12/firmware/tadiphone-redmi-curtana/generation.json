@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/curtana/12/firmware/tadiphone-redmi-curtana/candidate/thermal-engine-camera.conf",
+      "candidate_sha256": "4353514915cf16e125f809193f87d205a029d9254e7697aa7d4bbd6325563c1d",
+      "margin": "5",
+      "original_sha256": "e425f8c5d33a7d61b099e8cbc7382967510bd0c7788afbeb4177818fda71caa1",
+      "path": "thermal-engine-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/curtana/12/firmware/tadiphone-redmi-curtana/review/thermal-engine-camera.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/curtana/12/firmware/tadiphone-redmi-curtana/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "e9508a59f0c3f4fb91adfb6ddfa45f1999732f145dc31128eaeac66a89646293",
+      "margin": "5",
+      "original_sha256": "6a28e91c6cbebd05ddce4475fab7176c6cf4a0d6e736c1ae494634cf68746710",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/curtana/12/firmware/tadiphone-redmi-curtana/review/thermal-engine-normal.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "12",
+    "device": "curtana",
+    "ecosystem": "oem",
+    "platform": "atoll",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "qssi-user-12-SKQ1.211019.001-V14.0.6.0.SJWINRF-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/curtana",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/curtana/-/tree/qssi-user-12-SKQ1.211019.001-V14.0.6.0.SJWINRF-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

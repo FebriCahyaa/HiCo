@@ -1,0 +1,98 @@
+{
+  "elapsed_s": 0.03,
+  "failures": [],
+  "files": [
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-arvr.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-camera.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-class0.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-extreme.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-high.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-nolimits.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-phone.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-pubgmhd.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-sgame.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845-tgame.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm845.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "10",
+    "device": "polaris",
+    "ecosystem": "oem",
+    "platform": "sdm845",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "polaris-user-10-QKQ1.190828.002-V12.0.3.0.QDGMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/polaris",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/polaris/-/tree/polaris-user-10-QKQ1.190828.002-V12.0.3.0.QDGMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 13,
+    "thermal_files": 13,
+    "unchanged": 0
+  }
+}

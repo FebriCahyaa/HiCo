@@ -1,0 +1,139 @@
+{
+  "elapsed_s": 0.07,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-arvr.conf",
+      "candidate_sha256": "2ea8cc7dd094975c648ccaf44c58d9e7904c05ae90c127852f7051aa5740e2ea",
+      "margin": "4",
+      "original_sha256": "3cc70e25a93bcaaddc0e983e29f79f928dac648fc326823e04528b08b27d1e3a",
+      "path": "thermal-arvr.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-arvr.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-camera.conf",
+      "candidate_sha256": "f15a744626da6c70ec730e1d3fb1236726bd84a0024b005420fbd3deea52e4a4",
+      "margin": "4",
+      "original_sha256": "08d664123bc4a14df504e33c3ad9bcc67bfd5ceffd36748b901deb8ec3652ada",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-camera.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "22e1f653c2ce6b43af90da58b5154cc6b4c483e2ed2ce702703c674d0a4e45a2",
+      "margin": "4",
+      "original_sha256": "14763436b1220f4990f32b3eba1f411617a2129618bb0efee77400ab50357220",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "0e1696e0080db5a3e104141af81586036e1ddeffab18072ae9caa662c21f7b79",
+      "margin": "4",
+      "original_sha256": "da57c4e4a06010dfac370984e42c0b3e35e8d51770f6d59a1b6af2b39fd04e4e",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-nolimits.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-normal.conf",
+      "candidate_sha256": "f3aec0b06f62900214546ef1a35c268a28cf3e7c464355fd2d18e1008865e46c",
+      "margin": "4",
+      "original_sha256": "7d24189f7cffc262a45fd8ed525b152d57f7070dfc5a384bac02b4938b1d2788",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-normal.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-phone.conf",
+      "candidate_sha256": "8cc74ebf1c6107670e1cc327471c286f1299de4f70984fbb677d7e5fbb2c871c",
+      "margin": "4",
+      "original_sha256": "1afd59d0f0170bd1d481e0f46b4ffb7752ef60e8ac1677b19369b16bc8378ce6",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-phone.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-tgame.conf",
+      "candidate_sha256": "65c046035261056fae49f79419650e2f03bde9e6da5bae4cb4c1ba59f5c6e63a",
+      "margin": "4",
+      "original_sha256": "7f8a1fffa947f07348acc667c76623dd1c7babe03a24492266ab24803def6ad7",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-tgame.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/candidate/thermal-youtube.conf",
+      "candidate_sha256": "0cc10a48142a0c729722620b66aa37761ab216bf540bcea3222967716a008c1a",
+      "margin": "4",
+      "original_sha256": "eb564844402f8bbafb5da2286c644897da8059adfc5dac128ceda18d8b2c753c",
+      "path": "thermal-youtube.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/begonia/9/firmware/tadiphone-redmi-begonia/review/thermal-youtube.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "9",
+    "device": "begonia",
+    "ecosystem": "oem",
+    "platform": "mt6785",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "begonia-user-9-PPR1.180610.011-V10.4.1.0.PGGMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/begonia",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/begonia/-/tree/begonia-user-9-PPR1.180610.011-V10.4.1.0.PGGMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 2,
+    "thermal_files": 10,
+    "unchanged": 0
+  }
+}

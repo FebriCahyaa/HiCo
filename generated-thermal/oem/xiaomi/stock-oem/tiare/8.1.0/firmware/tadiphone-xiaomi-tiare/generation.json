@@ -1,0 +1,55 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/tiare/8.1.0/firmware/tadiphone-xiaomi-tiare/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "df7bcdd82bcf6de807e28cc679c692909bcea4ececb9e861b094342885823f7f",
+      "margin": "5",
+      "original_sha256": "1bc3a6d6f3f7331abf3763f025b6155ef91beb7dc552dc023c4ec5925b764077",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/tiare/8.1.0/firmware/tadiphone-xiaomi-tiare/review/thermal-engine-normal.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "8.1.0",
+    "device": "tiare",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "tiare-user-8.1.0-OPM1.171019.026-V10.2.12.0.OCLMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/tiare",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/tiare/-/tree/tiare-user-8.1.0-OPM1.171019.026-V10.2.12.0.OCLMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 2,
+    "thermal_files": 3,
+    "unchanged": 0
+  }
+}

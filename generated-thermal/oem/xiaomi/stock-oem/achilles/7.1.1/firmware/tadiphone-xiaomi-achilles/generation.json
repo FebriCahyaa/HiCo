@@ -1,0 +1,43 @@
+{
+  "elapsed_s": 0.0,
+  "failures": [],
+  "files": [
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-sdm660.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "7.1.1",
+    "device": "achilles",
+    "ecosystem": "oem",
+    "platform": "sdm660",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "achilles-user-7.1.1-NMF26X-7.6.14-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/achilles",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/achilles/-/tree/achilles-user-7.1.1-NMF26X-7.6.14-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 2,
+    "thermal_files": 2,
+    "unchanged": 0
+  }
+}

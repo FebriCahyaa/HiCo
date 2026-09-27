@@ -1,0 +1,55 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/whyred/9/firmware/tadiphone-xiaomi-whyred/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "b4eec847b95e1adbf93ee931c9e06bc2612ab43d3fe26a058f213db8a2d96d54",
+      "margin": "5",
+      "original_sha256": "ee71d0930ed3c0622a517ce988aaee5025da50b3b272835e5f49f8f4a6758e3d",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/whyred/9/firmware/tadiphone-xiaomi-whyred/review/thermal-engine-normal.conf",
+      "sections": 28,
+      "status": "generated",
+      "tuned_sections": 8
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:23Z",
+  "identity": {
+    "android": "9",
+    "device": "whyred",
+    "ecosystem": "oem",
+    "platform": "sdm660",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "whyred-user-9-PKQ1.180904.001-V12.0.2.0.PEIMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/whyred",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/whyred/-/tree/whyred-user-9-PKQ1.180904.001-V12.0.2.0.PEIMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 2,
+    "thermal_files": 3,
+    "unchanged": 0
+  }
+}

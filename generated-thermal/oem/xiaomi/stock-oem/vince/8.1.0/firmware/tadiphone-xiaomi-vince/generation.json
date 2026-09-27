@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/vince/8.1.0/firmware/tadiphone-xiaomi-vince/candidate/thermal-engine.conf",
+      "candidate_sha256": "2f80551f4a1416d895f6ee0d148e5d18d0846eb9e01df0f51e2e6893f0511fc4",
+      "margin": "5",
+      "original_sha256": "3991eb247848431f0c84235cfa06d70c85843d6da916c9d207286309d4d72964",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/vince/8.1.0/firmware/tadiphone-xiaomi-vince/review/thermal-engine.conf",
+      "sections": 4,
+      "status": "generated",
+      "tuned_sections": 2
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "8.1.0",
+    "device": "vince",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "vince-user-8.1.0-OPM1.171019.019-V11.0.2.0.OEGMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/vince",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/vince_global/-/tree/vince-user-8.1.0-OPM1.171019.019-V11.0.2.0.OEGMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

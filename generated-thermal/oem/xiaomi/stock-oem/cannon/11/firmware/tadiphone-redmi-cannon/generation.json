@@ -1,0 +1,175 @@
+{
+  "elapsed_s": 0.09,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-camera.conf",
+      "candidate_sha256": "7872d73eda5887d88d336058c7bfe00a4580510454afc3dee92c3ee0768fbe64",
+      "margin": "5",
+      "original_sha256": "8e7f806cd7361c19536fcfba895fd514cfe96df14643ef6b24b5c188b1308136",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-camera.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "48bd54a0a870e473813f19f0847e762282f520aa68393b17f54737928cbab592",
+      "margin": "5",
+      "original_sha256": "c0478e88bdaaec8411616071eee9e7fd79179d73cf1fbb3b2be9d059bcbfb033",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-class0.conf",
+      "candidate_sha256": "77ddb89888309a4d8ad93774bfaca9d372fb974e6fb9bf6a1ef924460dd4d54c",
+      "margin": "5",
+      "original_sha256": "e0b25709669161643abb35751680d74ef1a542cc893e81c9a5938f910f837196",
+      "path": "thermal-class0.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-class0.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "f49fa1e9554b26b03cc604af62cd45d85b09c2c754f325428f3092b1b3961b4e",
+      "margin": "5",
+      "original_sha256": "120eaccdda3b677f776adc0d1a74a8bb38711283385bd38ec23fa7edfc7c77ba",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-nolimits.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-normal.conf",
+      "candidate_sha256": "b9ea66d58ca05c3d23516f187c73eced806ed5e1fa8559ebcf7d44974fba02ab",
+      "margin": "5",
+      "original_sha256": "908dc9635be262ecc310e62f3d666b046301453c8da91b4a5b922d320f54f57d",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-normal.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-per-camera.conf",
+      "candidate_sha256": "7872d73eda5887d88d336058c7bfe00a4580510454afc3dee92c3ee0768fbe64",
+      "margin": "5",
+      "original_sha256": "8e7f806cd7361c19536fcfba895fd514cfe96df14643ef6b24b5c188b1308136",
+      "path": "thermal-per-camera.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-per-camera.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-per-class0.conf",
+      "candidate_sha256": "77ddb89888309a4d8ad93774bfaca9d372fb974e6fb9bf6a1ef924460dd4d54c",
+      "margin": "5",
+      "original_sha256": "e0b25709669161643abb35751680d74ef1a542cc893e81c9a5938f910f837196",
+      "path": "thermal-per-class0.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-per-class0.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-per-normal.conf",
+      "candidate_sha256": "b9ea66d58ca05c3d23516f187c73eced806ed5e1fa8559ebcf7d44974fba02ab",
+      "margin": "5",
+      "original_sha256": "908dc9635be262ecc310e62f3d666b046301453c8da91b4a5b922d320f54f57d",
+      "path": "thermal-per-normal.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-per-normal.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-phone.conf",
+      "candidate_sha256": "df9c4509ab74d683d29171ba73f032972b7146a3abcb7a68bdba4b18adffe112",
+      "margin": "5",
+      "original_sha256": "dbe11a3bb65863e51efd0b476090b58b75056c1a7ce361eb56aae031ed8b97bd",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-phone.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-tgame.conf",
+      "candidate_sha256": "a4511f4f850a100d618b03d0fbf0116b4211468f359f500d1df8fb136855f733",
+      "margin": "5",
+      "original_sha256": "2f5fa710f87750af42ea20015f3025ae057b2f1fcfb24c20ebbcba310ed70b88",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-tgame.conf",
+      "sections": 5,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/candidate/thermal-youtube.conf",
+      "candidate_sha256": "9ffa3c47af7ff99469626045b751bf0f0302cbc30ef5e0806f4c150189926d29",
+      "margin": "5",
+      "original_sha256": "a40b02693f5c64e885ca0744b86ddcec8018487f8d386c54f54607a26e0fd14e",
+      "path": "thermal-youtube.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannon/11/firmware/tadiphone-redmi-cannon/review/thermal-youtube.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "11",
+    "device": "cannon",
+    "ecosystem": "oem",
+    "platform": "mt6853",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "cannon-user-11-RP1A.200720.011-21.10.20-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/cannon",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/cannon/-/tree/cannon-user-11-RP1A.200720.011-21.10.20-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 11,
+    "not_tunable": 2,
+    "thermal_files": 13,
+    "unchanged": 0
+  }
+}

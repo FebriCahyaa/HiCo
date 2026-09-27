@@ -1,0 +1,49 @@
+{
+  "elapsed_s": 0.0,
+  "failures": [],
+  "files": [
+    {
+      "candidate_sha256": "399b64ba7c62f81b795ef6d07f414432adf1a859560ff6c21b09e1fbec4004df",
+      "original_sha256": "399b64ba7c62f81b795ef6d07f414432adf1a859560ff6c21b09e1fbec4004df",
+      "path": "thermald_h.conf",
+      "sections": 6,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_sha256": "51bb15b15593b9a2efbfd7c918a5098b4c7f21fd6a291a6d8f46cb06b70f16af",
+      "original_sha256": "51bb15b15593b9a2efbfd7c918a5098b4c7f21fd6a291a6d8f46cb06b70f16af",
+      "path": "thermald_l.conf",
+      "sections": 6,
+      "status": "unchanged",
+      "tuned_sections": 0
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "4.1.1",
+    "device": "taurus",
+    "ecosystem": "oem",
+    "platform": "msm8960",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "taurus-user-4.1.1-JRO03L-JLB54.0-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/taurus",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/taurus/-/tree/taurus-user-4.1.1-JRO03L-JLB54.0-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 0,
+    "thermal_files": 2,
+    "unchanged": 2
+  }
+}

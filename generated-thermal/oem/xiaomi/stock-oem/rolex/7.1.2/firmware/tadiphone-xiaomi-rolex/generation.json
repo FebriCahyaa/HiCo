@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rolex/7.1.2/firmware/tadiphone-xiaomi-rolex/candidate/thermal-engine.conf",
+      "candidate_sha256": "50df35c5322044d713c1dac64b1e489ae2ec4d544bcb95c031dbfceb8388c80e",
+      "margin": "5",
+      "original_sha256": "8116711aefc6918fac90a960ea0cc712827817d32faefd2e1a42d0cc069fde7a",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rolex/7.1.2/firmware/tadiphone-xiaomi-rolex/review/thermal-engine.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 2
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "7.1.2",
+    "device": "rolex",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "rolex-user-7.1.2-N2G47H-V10.2.3.0.NCCMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/rolex",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/rolex/-/tree/rolex-user-7.1.2-N2G47H-V10.2.3.0.NCCMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

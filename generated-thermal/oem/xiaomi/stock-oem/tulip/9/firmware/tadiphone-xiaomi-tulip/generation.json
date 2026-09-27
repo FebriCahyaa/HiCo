@@ -1,0 +1,91 @@
+{
+  "elapsed_s": 0.03,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/candidate/thermal-engine-Youtube.conf",
+      "candidate_sha256": "bf0a0b8236f916bf3572793b1c0b6038e311b4d462fb5d037e9367e517d220e0",
+      "margin": "5",
+      "original_sha256": "08b988893b15af399d1033aa1fb8ce9c1ea128ea0733afdb332249bd517252bb",
+      "path": "thermal-engine-Youtube.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/review/thermal-engine-Youtube.conf",
+      "sections": 34,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/candidate/thermal-engine-camera.conf",
+      "candidate_sha256": "f0be90c520a5b0f25f896dba614c644fd2e64a1e2ade3ae4994d8e5f141229d1",
+      "margin": "5",
+      "original_sha256": "ccc97d0ca3c7a43da3886a854219448912a17cbabd713fcc65f0404724cae373",
+      "path": "thermal-engine-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/review/thermal-engine-camera.conf",
+      "sections": 33,
+      "status": "generated",
+      "tuned_sections": 8
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "7c24964b496b61da51629a8853dabb6199b4a049c7d46a39dac068e4e3df0d50",
+      "margin": "5",
+      "original_sha256": "0caf7a1d512c3935b0271baa5b906123f0ee1f69c40343c06bbc5e5dfb9350c2",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/review/thermal-engine-normal.conf",
+      "sections": 33,
+      "status": "generated",
+      "tuned_sections": 11
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/candidate/thermal-engine-sgame.conf",
+      "candidate_sha256": "262b8c95ae4b0f7a3fd111f6e66d78a46674d52a02275809c4177968ed50aa7d",
+      "margin": "5",
+      "original_sha256": "b4c3c46749401746cb7c93ad736f1e27079ff5aec3735ced35bbf79f8c85de59",
+      "path": "thermal-engine-sgame.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/tulip/9/firmware/tadiphone-xiaomi-tulip/review/thermal-engine-sgame.conf",
+      "sections": 33,
+      "status": "generated",
+      "tuned_sections": 11
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "9",
+    "device": "tulip",
+    "ecosystem": "oem",
+    "platform": "sdm660",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "tulip-user-9-PKQ1.180904.001-V12.0.1.0.PEKMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/tulip",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/tulip/-/tree/tulip-user-9-PKQ1.180904.001-V12.0.1.0.PEKMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 4,
+    "not_tunable": 2,
+    "thermal_files": 6,
+    "unchanged": 0
+  }
+}

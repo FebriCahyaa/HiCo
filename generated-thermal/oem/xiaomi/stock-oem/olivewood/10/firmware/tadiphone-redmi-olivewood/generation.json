@@ -1,0 +1,103 @@
+{
+  "elapsed_s": 0.04,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/candidate/thermal-engine-camera.conf",
+      "candidate_sha256": "17d16e9934eecfca88ee2c822a2fc95cf43d354f8714e58bbc70ae8e350129d9",
+      "margin": "5",
+      "original_sha256": "8861565cdd94f25eeddb6a2c23b8beaeed60f5c2de617945d16330663d94aebe",
+      "path": "thermal-engine-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/review/thermal-engine-camera.conf",
+      "sections": 5,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/candidate/thermal-engine-high.conf",
+      "candidate_sha256": "b70b44d2d824acf77575d3d758949b7504e315732dff6a80b5bb8d2041a453ce",
+      "margin": "5",
+      "original_sha256": "fa65f36b3e9d52876d4c46bdf7d3d8ca36a1a7d96ff90e6c49583264e919143f",
+      "path": "thermal-engine-high.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/review/thermal-engine-high.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/candidate/thermal-engine-nolimits.conf",
+      "candidate_sha256": "cb7967993568e03cf4985c1be7a671e05411c1b35fd3a250577ecdf4f7d5b982",
+      "margin": "5",
+      "original_sha256": "7a889c7d49a3663b6124af481d38abe84f844e7dde6e800871270fa4082ec544",
+      "path": "thermal-engine-nolimits.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/review/thermal-engine-nolimits.conf",
+      "sections": 4,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "3f22bceea83a35a66042fd1f9fcd46a5614b4550a0c645165365b2368a356764",
+      "margin": "5",
+      "original_sha256": "6dcf0b582166e598974ef0e9b8d653b8ccbb367fc287b59d0ec0cb49d94f5cd3",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/review/thermal-engine-normal.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/candidate/thermal-engine-sgame.conf",
+      "candidate_sha256": "840c9a83cf1e515af44fab0195ef42ba2525b76c56ac5627a74fb9d31ce55555",
+      "margin": "5",
+      "original_sha256": "840d4e7bfaaefe9d8f6a933f5a7a9e79edc8319f5daab3dadfcf579bc78d367f",
+      "path": "thermal-engine-sgame.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/olivewood/10/firmware/tadiphone-redmi-olivewood/review/thermal-engine-sgame.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "10",
+    "device": "olivewood",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "olivewood-user-10-QKQ1.191014.001-V12.5.6.0.QCQINXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/olivewood",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/olivewood/-/tree/olivewood-user-10-QKQ1.191014.001-V12.5.6.0.QCQINXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 5,
+    "not_tunable": 2,
+    "thermal_files": 7,
+    "unchanged": 0
+  }
+}

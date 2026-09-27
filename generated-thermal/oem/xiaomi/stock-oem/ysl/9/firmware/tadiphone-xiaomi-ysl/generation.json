@@ -1,0 +1,53 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine-normal.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine-video.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:23Z",
+  "identity": {
+    "android": "9",
+    "device": "ysl",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "ysl-user-9-PKQ1.181203.001-V12.0.2.0.PEFMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/ysl",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ysl/-/tree/ysl-user-9-PKQ1.181203.001-V12.0.2.0.PEFMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 4,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

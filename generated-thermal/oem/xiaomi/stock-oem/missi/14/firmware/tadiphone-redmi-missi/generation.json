@@ -1,0 +1,38 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "opaque-binary",
+      "path": "thermal.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "14",
+    "device": "missi",
+    "ecosystem": "oem",
+    "platform": "sp9863a",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_global-user-14-UP1A.231005.007-V816.0.3.0.UGSMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/missi",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/klein/-/tree/missi_global-user-14-UP1A.231005.007-V816.0.3.0.UGSMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 1,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

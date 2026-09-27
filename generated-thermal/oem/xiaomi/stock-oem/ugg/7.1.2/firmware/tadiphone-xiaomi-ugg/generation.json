@@ -1,0 +1,38 @@
+{
+  "elapsed_s": 0.0,
+  "failures": [],
+  "files": [
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "7.1.2",
+    "device": "ugg",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "ugg-user-7.1.2-N2G47H-V10.2.1.0.NDKCNXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/ugg",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ugg/-/tree/ugg-user-7.1.2-N2G47H-V10.2.1.0.NDKCNXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 1,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

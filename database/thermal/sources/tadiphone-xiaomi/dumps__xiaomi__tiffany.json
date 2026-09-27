@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "branch": "tiffany-user-8.1.0-OPM1.171019.019-9.6.27-release-keys",
+      "category": "thermal",
+      "format": "thermal-engine-text",
+      "legacy_import": true,
+      "max_trip_c": 70.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "thermal-engine.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/tiffany/8.1.0/firmware/tadiphone-xiaomi-tiffany/raw/thermal-engine.conf",
+      "repository": "dumps/xiaomi/tiffany",
+      "sections": 4,
+      "sha256": "3991eb247848431f0c84235cfa06d70c85843d6da916c9d207286309d4d72964",
+      "shutdown_c": null,
+      "size": 736,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/tiffany/-/tree/tiffany-user-8.1.0-OPM1.171019.019-9.6.27-release-keys",
+      "storage": "raw",
+      "tree_path": "thermal-engine.conf"
+    }
+  ],
+  "identity": {
+    "android": "8.1.0",
+    "device": "tiffany",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "repository": {
+    "legacy_import": true,
+    "metadata_only_count": 0,
+    "relevant_file_count": 1,
+    "stored_file_count": 1,
+    "tree_complete": false
+  },
+  "schema": "hico.thermal-source.v1",
+  "source": {
+    "branch": "tiffany-user-8.1.0-OPM1.171019.019-9.6.27-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/tiffany",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/tiffany/-/tree/tiffany-user-8.1.0-OPM1.171019.019-9.6.27-release-keys"
+  }
+}

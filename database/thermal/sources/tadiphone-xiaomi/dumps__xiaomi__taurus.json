@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "branch": "taurus-user-4.1.1-JRO03L-JLB54.0-release-keys",
+      "category": "thermal",
+      "format": "thermal-engine-text",
+      "legacy_import": true,
+      "max_trip_c": 105.0,
+      "name": "thermald_h.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "thermald_h.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/taurus/4.1.1/firmware/tadiphone-xiaomi-taurus/raw/thermald_h.conf",
+      "repository": "dumps/xiaomi/taurus",
+      "sections": 6,
+      "sha256": "399b64ba7c62f81b795ef6d07f414432adf1a859560ff6c21b09e1fbec4004df",
+      "shutdown_c": null,
+      "size": 1332,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/taurus/-/tree/taurus-user-4.1.1-JRO03L-JLB54.0-release-keys",
+      "storage": "raw",
+      "tree_path": "thermald_h.conf"
+    },
+    {
+      "branch": "taurus-user-4.1.1-JRO03L-JLB54.0-release-keys",
+      "category": "thermal",
+      "format": "thermal-engine-text",
+      "legacy_import": true,
+      "max_trip_c": 105.0,
+      "name": "thermald_l.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "thermald_l.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/taurus/4.1.1/firmware/tadiphone-xiaomi-taurus/raw/thermald_l.conf",
+      "repository": "dumps/xiaomi/taurus",
+      "sections": 6,
+      "sha256": "51bb15b15593b9a2efbfd7c918a5098b4c7f21fd6a291a6d8f46cb06b70f16af",
+      "shutdown_c": null,
+      "size": 1332,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/taurus/-/tree/taurus-user-4.1.1-JRO03L-JLB54.0-release-keys",
+      "storage": "raw",
+      "tree_path": "thermald_l.conf"
+    }
+  ],
+  "identity": {
+    "android": "4.1.1",
+    "device": "taurus",
+    "ecosystem": "oem",
+    "platform": "msm8960",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "repository": {
+    "legacy_import": true,
+    "metadata_only_count": 0,
+    "relevant_file_count": 2,
+    "stored_file_count": 2,
+    "tree_complete": false
+  },
+  "schema": "hico.thermal-source.v1",
+  "source": {
+    "branch": "taurus-user-4.1.1-JRO03L-JLB54.0-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/taurus",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/taurus/-/tree/taurus-user-4.1.1-JRO03L-JLB54.0-release-keys"
+  }
+}

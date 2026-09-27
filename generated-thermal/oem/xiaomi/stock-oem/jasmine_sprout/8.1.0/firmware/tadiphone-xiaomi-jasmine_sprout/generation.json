@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/jasmine_sprout/8.1.0/firmware/tadiphone-xiaomi-jasmine_sprout/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "3777a3491124565331b7f3ff7d60ecbf63e8533b878fd4cd5708cfbc48cd5fe9",
+      "margin": "5",
+      "original_sha256": "99f37759a8dc93db3b0e9cef2a3a44e3086cdb36da11585b611fb834bf49c00b",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/jasmine_sprout/8.1.0/firmware/tadiphone-xiaomi-jasmine_sprout/review/thermal-engine-normal.conf",
+      "sections": 30,
+      "status": "generated",
+      "tuned_sections": 13
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/jasmine_sprout/8.1.0/firmware/tadiphone-xiaomi-jasmine_sprout/candidate/thermal-engine-video.conf",
+      "candidate_sha256": "03fd368326c56ac80ae97cf7a3f635f3771c99f25854f35e09e991c6a25d71c6",
+      "margin": "5",
+      "original_sha256": "88fd2ccb7aca35cd71b6907c616c1ee4cb56af0865e6fa858ec7f0d77ec0ee07",
+      "path": "thermal-engine-video.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/jasmine_sprout/8.1.0/firmware/tadiphone-xiaomi-jasmine_sprout/review/thermal-engine-video.conf",
+      "sections": 31,
+      "status": "generated",
+      "tuned_sections": 14
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "8.1.0",
+    "device": "jasmine_sprout",
+    "ecosystem": "oem",
+    "platform": "sdm660",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "jasmine-user-8.1.0-OPM1.171019.011-8.9.20-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/jasmine_sprout",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/jasmine/-/tree/jasmine-user-8.1.0-OPM1.171019.011-8.9.20-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "elapsed_s": 0.16,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-4k.conf",
+      "candidate_sha256": "e34c209e62f4abc080b63378332ee7576d2215c78a65ded5b5712af6728be98c",
+      "margin": "5",
+      "original_sha256": "5f13b60056834618239f0912eb4fb3e594d2705c57070e0ae2049269970eae16",
+      "path": "thermal-4k.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-4k.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-camera.conf",
+      "candidate_sha256": "564a4614545bf8f99f8dbbecdfa99a2a5d34bafbb972b45220e8e4759aa62ec6",
+      "margin": "5",
+      "original_sha256": "fddf1c5675f791520f75363fabf52c76386ff3b1869bd54d018809ca07d8b57a",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-camera.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "0c2fc03a95a07e414143fe1d33ee62db9e5a153e26338d711211fe7a949e53d2",
+      "margin": "5",
+      "original_sha256": "5ba0074f16f76efb2e44cfa055f089aabc9a89f717f6890449f9396834da4afc",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-class0.conf",
+      "candidate_sha256": "9ed8ba5bee86418f4d30c1b5552e27eb7d6f931778763a440fd9af8c9b02a4ca",
+      "margin": "5",
+      "original_sha256": "20febbfcb82dee1fe18f3a76879985ae02239ae256abb6fda930de12970924f5",
+      "path": "thermal-class0.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-class0.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-mgame.conf",
+      "candidate_sha256": "b7d2050b735889da3b8f63c26a92ed856132979a4c22722f66c1f3b09141ba4b",
+      "margin": "5",
+      "original_sha256": "d17198aade14e0589b4b9bcd27325015eac415bda101de5bc981e68485bbc626",
+      "path": "thermal-mgame.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-mgame.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-navigation.conf",
+      "candidate_sha256": "62a4ddc16267f56c2ca11b314a70dbf6841ce0e7998b2f2981d87f63c7a1e087",
+      "margin": "5",
+      "original_sha256": "49b9ff5d7b25b712d12f904d4960f7e05879e14be133b31a6f8a3a480a2d83c8",
+      "path": "thermal-navigation.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-navigation.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "df57f9e0699655b67b95bf0e8295986e0d8634fab31dcad589f1eec5c270e70a",
+      "margin": "5",
+      "original_sha256": "cd5568aaba2569b170d485574b0fab62b192bb6fe142da37b02756459d41a640",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-nolimits.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-normal.conf",
+      "candidate_sha256": "38330a38e78fb18096864bc2201d5849c6af12029416166992c9e107248c0e8a",
+      "margin": "5",
+      "original_sha256": "72dce4a7295df053687698f24a25723aa3f42ed12d615956e2f9c4486734b68d",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-normal.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-per-camera.conf",
+      "candidate_sha256": "a998226ab6cec388cfa7bf7e6dad1687a2f6236733ecfe0835c56e1e4b510de6",
+      "margin": "5",
+      "original_sha256": "190d0ec2bbb0b769c76653fa28cfcd820c0750a28efb8e3f648193347cd6ec98",
+      "path": "thermal-per-camera.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-per-camera.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-per-class0.conf",
+      "candidate_sha256": "749bc7fbcd7eac00f7cbd0508b57351d2a6da5a78b6e391e4ddeda5b0e081fad",
+      "margin": "5",
+      "original_sha256": "f6421b79f4bc87f8bc390c61eccce4dc288f40d2e17915ef9a971d3ede892912",
+      "path": "thermal-per-class0.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-per-class0.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-per-navigation.conf",
+      "candidate_sha256": "e91aec1e6cc814b3bcd854678449b0fdbd446804c13175ab2ef1bb400b03dccc",
+      "margin": "5",
+      "original_sha256": "019c6477bdad77a85f1e40eee4bdb83e14ecff379d89b2cd97f6e89d38ed1c53",
+      "path": "thermal-per-navigation.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-per-navigation.conf",
+      "sections": 13,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-per-normal.conf",
+      "candidate_sha256": "014924fe7782489ebd70e8771398099f8f93623eeb217b049c3a08ee758a2e33",
+      "margin": "5",
+      "original_sha256": "cc2e040be32478b6ff05374c67ab01a32a126e751dd785f30ed110751599aa8a",
+      "path": "thermal-per-normal.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-per-normal.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-per-video.conf",
+      "candidate_sha256": "bafa37221e818c74be810794d315ee11ca728c4d1cbc061c34d7ece6542d42c3",
+      "margin": "5",
+      "original_sha256": "c1423a04f2cf3e1308ed52ed484fac3592921cca7e51a5750494874b0a348a3b",
+      "path": "thermal-per-video.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-per-video.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-phone.conf",
+      "candidate_sha256": "2a9a343192a4ae8aed45b1dffb8a7b627ef14c993cc72f2317f0331eaee324a1",
+      "margin": "5",
+      "original_sha256": "ca3c079f833b330cc3485ea8df7c8dfa21317fc50d3f4dad8e5fe36a51210d18",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-phone.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-tgame.conf",
+      "candidate_sha256": "d3abad873a4ad4f7fde9f507002d872df358876ef62d68bbc9635afd56746ee3",
+      "margin": "5",
+      "original_sha256": "d9b2c11c335c28d24c8d1674f445e8fbc61de265f2f245cced9e55c4764aebd6",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-tgame.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/candidate/thermal-video.conf",
+      "candidate_sha256": "39e5c522df06963e0faacc06588111dcddc836c74ab8f21cbab6eb3aca2e1eef",
+      "margin": "5",
+      "original_sha256": "716e3b5efbae204254715238db0a1842dd5813aff54d4ce37894779d3343b6f8",
+      "path": "thermal-video.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/chopin/13/firmware/tadiphone-redmi-chopin/review/thermal-video.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "13",
+    "device": "chopin",
+    "ecosystem": "oem",
+    "platform": "mt6893",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_phoneext4_global-user-13-TP1A.220624.014-V14.0.6.0.TKPMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/chopin",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/chopin/-/tree/missi_phoneext4_global-user-13-TP1A.220624.014-V14.0.6.0.TKPMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 16,
+    "not_tunable": 2,
+    "thermal_files": 18,
+    "unchanged": 0
+  }
+}

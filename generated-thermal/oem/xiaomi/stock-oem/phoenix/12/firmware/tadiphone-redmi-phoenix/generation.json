@@ -1,0 +1,144 @@
+{
+  "elapsed_s": 0.07,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-4k.conf",
+      "candidate_sha256": "19b8b0e969e9c7b7e763ca6ab1aed084d0f0f389a9ebb64c4bb43bd7315b18e9",
+      "margin": "5",
+      "original_sha256": "1f4b4c9f1a0a35e2e5155d13d07ddee41e38d45d268c54885e0546eace018db5",
+      "path": "thermal-4k.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-4k.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-arvr.conf",
+      "candidate_sha256": "21fed62043f4b92540f29c996bc992b5c73e461f5476a166760e0478f46d3e5e",
+      "margin": "5",
+      "original_sha256": "ed9eacd8d4cfd460c5c08167e74f7df10871724a4737e6d39573e315891ea345",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-arvr.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-camera.conf",
+      "candidate_sha256": "6dda8ed996abdac4e77d20b88ae3e45e1f7409ae612c5dd16530bb7946988568",
+      "margin": "5",
+      "original_sha256": "209fd404ec31e9778f81d3fac497b0ed639684f45851ab38f83ab07bfdcd1d3d",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-camera.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "14cc7d7762562e32f934d64e5b9f5556f5f5df5178d5ecf573e2f17ea6139fce",
+      "margin": "5",
+      "original_sha256": "10c0fef69d457f8effe7f048a96eb4953107d34861ab0c81ff46d957b6d9fa63",
+      "path": "thermal-chg-only.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "feea8f89fba8c094ca23eeabe2ee36d9efaf26404aff665bb5ddbbdaac4cfeac",
+      "margin": "5",
+      "original_sha256": "e3cb8c479944753bbd71bced12a93d46e5a94ca2b9d37a214303958cce3edfbe",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-nolimits.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-normal.conf",
+      "candidate_sha256": "28feca7f102fa0b3228b4625af2a6116b4e99b544531e303bb69ea5f1b2bdac7",
+      "margin": "5",
+      "original_sha256": "62853e2540c6f93fd5a475b76dd4ac70619682fd10e42893091716f2f926bcc4",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-normal.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-phone.conf",
+      "candidate_sha256": "e7d8966595d303d8bfd73531c62360d5295bfc25913ea3494bb656c5a5522639",
+      "margin": "5",
+      "original_sha256": "c450cbd435cc246ac3da2c2c79a19add19c6dfdb4ca1e616392e1ffb3f1afd42",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-phone.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/candidate/thermal-tgame.conf",
+      "candidate_sha256": "c09fc204824c8785cf120f773844aed619b25830ddb9859183cd5a597f1cd1f4",
+      "margin": "5",
+      "original_sha256": "0ef2acf45e64c398bec635e7280c5631f9009c335053067de5c841b28e2750d5",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/phoenix/12/firmware/tadiphone-redmi-phoenix/review/thermal-tgame.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "12",
+    "device": "phoenix",
+    "ecosystem": "oem",
+    "platform": "sm6150",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "qssi-user-12-SKQ1.210908.001-V13.0.2.1.37.DEV-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/phoenix",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/phoenix/-/tree/qssi-user-12-SKQ1.210908.001-V13.0.2.1.37.DEV-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 3,
+    "thermal_files": 11,
+    "unchanged": 0
+  }
+}

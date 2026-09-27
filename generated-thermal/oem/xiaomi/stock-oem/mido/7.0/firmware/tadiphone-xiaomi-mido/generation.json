@@ -1,0 +1,41 @@
+{
+  "elapsed_s": 0.0,
+  "failures": [],
+  "files": [
+    {
+      "candidate_sha256": "7c5d542d7cb47468b313a34e2e059f78f2298287ca2f40f5b6485dd24b3fd0e6",
+      "original_sha256": "7c5d542d7cb47468b313a34e2e059f78f2298287ca2f40f5b6485dd24b3fd0e6",
+      "path": "thermal-engine.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "7.0",
+    "device": "mido",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "mido-user-7.0-NRD90M-9.7.4-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/mido",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/mido/-/tree/mido-user-7.0-NRD90M-9.7.4-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 1
+  }
+}

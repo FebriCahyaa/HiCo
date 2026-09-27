@@ -1,0 +1,139 @@
+{
+  "elapsed_s": 0.06,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-camera.conf",
+      "candidate_sha256": "af05d2ff02a9db125084b906eaea5da49dd613ed6ef6f5ebd63375b8629b25bf",
+      "margin": "5",
+      "original_sha256": "4e9f758548fcd7d4e729c3aebbe980e484b86874f4d9e55e39868d932a4ada88",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-camera.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "48bd54a0a870e473813f19f0847e762282f520aa68393b17f54737928cbab592",
+      "margin": "5",
+      "original_sha256": "c0478e88bdaaec8411616071eee9e7fd79179d73cf1fbb3b2be9d059bcbfb033",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-class0.conf",
+      "candidate_sha256": "92fb6c3509e7b846919bfb56750cbeefb7d8431816e3fb1494d31d362e39da5f",
+      "margin": "5",
+      "original_sha256": "c845424b1897283e8f3c4ed4bd721eb5c280c4a572ddf4336339499b89d61770",
+      "path": "thermal-class0.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-class0.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "f49fa1e9554b26b03cc604af62cd45d85b09c2c754f325428f3092b1b3961b4e",
+      "margin": "5",
+      "original_sha256": "120eaccdda3b677f776adc0d1a74a8bb38711283385bd38ec23fa7edfc7c77ba",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-nolimits.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-normal.conf",
+      "candidate_sha256": "52481516000f62ed365117168022f4a5e648eb5b2d07bd3290b231d223aeda42",
+      "margin": "5",
+      "original_sha256": "c9351a68de5c3af1f0d2e771d47caa05b1d549c778a9aeb5ccaabd9f46feb612",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-normal.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-phone.conf",
+      "candidate_sha256": "df9c4509ab74d683d29171ba73f032972b7146a3abcb7a68bdba4b18adffe112",
+      "margin": "5",
+      "original_sha256": "dbe11a3bb65863e51efd0b476090b58b75056c1a7ce361eb56aae031ed8b97bd",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-phone.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-tgame.conf",
+      "candidate_sha256": "7bfbd250bf1b5c98b8a5532b5379e561f083d2e6095d49bd8fd64eb85690dce2",
+      "margin": "5",
+      "original_sha256": "b2a318b97d79d3f358bcd2e4e878ccb85ea7db44e976f99392a319eb31ab8a08",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-tgame.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/candidate/thermal-youtube.conf",
+      "candidate_sha256": "9ffa3c47af7ff99469626045b751bf0f0302cbc30ef5e0806f4c150189926d29",
+      "margin": "5",
+      "original_sha256": "a40b02693f5c64e885ca0744b86ddcec8018487f8d386c54f54607a26e0fd14e",
+      "path": "thermal-youtube.conf",
+      "policy": "mediatek-dimensity",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cannong/12/firmware/tadiphone-redmi-cannong/review/thermal-youtube.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "12",
+    "device": "cannong",
+    "ecosystem": "oem",
+    "platform": "mt6853",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "cannong-user-12-SP1A.210812.016-V14.0.3.0.SJEMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/cannong",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/cannong/-/tree/cannong-user-12-SP1A.210812.016-V14.0.3.0.SJEMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 2,
+    "thermal_files": 10,
+    "unchanged": 0
+  }
+}

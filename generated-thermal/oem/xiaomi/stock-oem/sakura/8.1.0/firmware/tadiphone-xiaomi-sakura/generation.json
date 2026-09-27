@@ -1,0 +1,82 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/sakura/8.1.0/firmware/tadiphone-xiaomi-sakura/candidate/thermal-engine-high.conf",
+      "candidate_sha256": "3c88701629dcdc8f0bc2c944cdd62a3579c4d78ff7a721e3c67a3471b34bf6a2",
+      "margin": "5",
+      "original_sha256": "76cc4ad7853679e3a565e6e2545cbba4a2090ce75a0dc6be9aa8c41c269c6f05",
+      "path": "thermal-engine-high.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/sakura/8.1.0/firmware/tadiphone-xiaomi-sakura/review/thermal-engine-high.conf",
+      "sections": 5,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_sha256": "46b9125d69bd7111fc26889f7bc64be53600b713def6a6e01e37a6742684afc7",
+      "original_sha256": "46b9125d69bd7111fc26889f7bc64be53600b713def6a6e01e37a6742684afc7",
+      "path": "thermal-engine-nolimits.conf",
+      "sections": 3,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/sakura/8.1.0/firmware/tadiphone-xiaomi-sakura/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "9f0069556d77d88f446a05eb99ba6c9ef42752a4e071af46528e0014bf4af88e",
+      "margin": "5",
+      "original_sha256": "771343ca9f13cd80039f27e444e50d87eaa73a7afe3b6f2b88aeead2036db555",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/sakura/8.1.0/firmware/tadiphone-xiaomi-sakura/review/thermal-engine-normal.conf",
+      "sections": 5,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/sakura/8.1.0/firmware/tadiphone-xiaomi-sakura/candidate/thermal-engine.conf",
+      "candidate_sha256": "2f80551f4a1416d895f6ee0d148e5d18d0846eb9e01df0f51e2e6893f0511fc4",
+      "margin": "5",
+      "original_sha256": "3991eb247848431f0c84235cfa06d70c85843d6da916c9d207286309d4d72964",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/sakura/8.1.0/firmware/tadiphone-xiaomi-sakura/review/thermal-engine.conf",
+      "sections": 4,
+      "status": "generated",
+      "tuned_sections": 2
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "8.1.0",
+    "device": "sakura",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "sakura-user-8.1.0-OPM1.171019.019-8.9.6-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/sakura",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/sakura/-/tree/sakura-user-8.1.0-OPM1.171019.019-8.9.6-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 3,
+    "not_tunable": 1,
+    "thermal_files": 5,
+    "unchanged": 1
+  }
+}

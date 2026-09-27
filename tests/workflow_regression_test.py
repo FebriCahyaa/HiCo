@@ -27,13 +27,24 @@ def main() -> int:
     require(tools, "download-artifact@v6", "artifact transfer")
     require(tools, "name: Download mapping matrix definition", "full-map matrix download")
     require(tools, "jq -r --arg id \"$JOB_ID\" '.[] | select(.id == $id) | .roots[]'", "local shard resolution")
+    require(tools, "thermal-data", "canonical thermal dataset")
+    require(tools, "generated-thermal", "generated thermal candidates")
 
-    require(database, "matrix_ids: ${{ steps.matrix.outputs.ids }}", "compact database matrix output")
-    require(database, "HICO_DATABASE_BACKEND: ${{ inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws' }}", "database backend default")
-    require(database, "name: Download discovery metadata", "discovery artifact download")
-    require(database, "matrix:\n        id: ${{ fromJSON(needs.discover.outputs.matrix_ids) }}", "database map matrix ids")
-    require(database, "chmod +x build/bin/hicod", "database merge executable guard")
-    require(database, "HICOD: build/hicod", "database preflight test binary path")
+    require(database, "name: Verify collected thermal dataset", "database verification workflow")
+    require(database, "python3 tools/hico_collector.py verify", "collector dataset verification")
+    require(database, "python3 tools/hico_generator.py verify", "generated thermal verification")
+    require(database, "python3 tools/hico_database.py build --root . --output build/database", "deterministic database rebuild")
+    require(database, "name: Rebuild deterministic database in a clean directory", "clean database rebuild")
+    if any(token in database.lower() for token in ("aws", "codebuild", "cloudformation", "hico_aws")):
+        raise AssertionError("database workflow must not contain AWS infrastructure/offload logic")
+
+    for path in (
+        ROOT / ".github/workflows/aws-infra.yml",
+        ROOT / "tools/hico_aws_batch.py",
+        ROOT / "infra/aws",
+    ):
+        if path.exists():
+            raise AssertionError(f"AWS component still exists: {path}")
 
     print("Workflow regression checks: PASS")
     return 0

@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/jaws/11/firmware/tadiphone-xiaomi-jaws/candidate/thermal_info_config.json",
+      "candidate_sha256": "76a2f635daa824ce41d3e6d839a519f8f237afead628b218d9ef2cd8bba6a90f",
+      "margin": "4",
+      "original_sha256": "47a1834870f1c298aeb7c56ad0893f65f2abe2cd56c41099f5d232eec3691fcd",
+      "path": "thermal_info_config.json",
+      "policy": "generic",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/jaws/11/firmware/tadiphone-xiaomi-jaws/review/thermal_info_config.json",
+      "sections": 1,
+      "status": "generated",
+      "tuned_sections": 1
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "11",
+    "device": "jaws",
+    "ecosystem": "oem",
+    "platform": "sc2",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "jaws-user-11-RTT0.211222.001-774-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/jaws",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/jaws/-/tree/jaws-user-11-RTT0.211222.001-774-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

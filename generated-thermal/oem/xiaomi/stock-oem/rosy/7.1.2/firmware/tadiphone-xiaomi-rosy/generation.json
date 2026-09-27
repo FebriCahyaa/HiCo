@@ -1,0 +1,57 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosy/7.1.2/firmware/tadiphone-xiaomi-rosy/candidate/thermal-engine.conf",
+      "candidate_sha256": "affe39621a2b5facb9ba395fe99b1a93c852a7fd3fbe5babf814bff4d603d2bc",
+      "margin": "5",
+      "original_sha256": "26fc39770a29c314f5a41b1ac57f9c4ddcee23b91366bb0937cc5144d3689659",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosy/7.1.2/firmware/tadiphone-xiaomi-rosy/review/thermal-engine.conf",
+      "sections": 23,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosy/7.1.2/firmware/tadiphone-xiaomi-rosy/candidate/thermal-engine_india.conf",
+      "candidate_sha256": "23facabd3b8f98db81e19b3347cb977a32141205910ba4ac5d9223217f5899ea",
+      "margin": "5",
+      "original_sha256": "1fb43528efc3549905d36d07e37ac9c873c999168cc42492eaa3f1301dad0b15",
+      "path": "thermal-engine_india.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosy/7.1.2/firmware/tadiphone-xiaomi-rosy/review/thermal-engine_india.conf",
+      "sections": 24,
+      "status": "generated",
+      "tuned_sections": 3
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "7.1.2",
+    "device": "rosy",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "rosy-user-7.1.2-N2G47H-V9.2.3.0.NDAMIEK-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/rosy",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/rosy/-/tree/rosy-user-7.1.2-N2G47H-V9.2.3.0.NDAMIEK-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 0,
+    "thermal_files": 2,
+    "unchanged": 0
+  }
+}

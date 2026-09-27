@@ -1,0 +1,144 @@
+{
+  "elapsed_s": 0.07,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-arvr.conf",
+      "candidate_sha256": "643182e16f6a9ab21c2514a1d41c056dcc3b1bfda3c8bcb942d9c105103976c6",
+      "margin": "5",
+      "original_sha256": "ca47b89922ef9bf5bd040c1d13e9d668e4c415c1c3c54a6bb0b491d53e31cd75",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-arvr.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-camera.conf",
+      "candidate_sha256": "43127b40eae3864f4605db1c52ed7964ce829b475afaff271e1cf4841c8bd277",
+      "margin": "5",
+      "original_sha256": "87aa4d12893fb41e0c06aedf829898f09371436c78f6f3378c1fa32a2d1cbae7",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-camera.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "91ab210212a2258fa7b4bb2a0efc89a57ef09eddf5c7bfa3aceb9ce82e9919af",
+      "margin": "5",
+      "original_sha256": "6dfaf930d44a94e18320b63fd5388f2dbd4eb8ee847b1f09d73c15d176f04300",
+      "path": "thermal-chg-only.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "ada6761bb7f56d874e616e7531099f3c3809074a934d65b6590712e8e6707b5e",
+      "margin": "5",
+      "original_sha256": "a57f4bcaea77c1f354a90d04df3c632cffbd1c71a1c111a365b2452824de85eb",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-nolimits.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-normal.conf",
+      "candidate_sha256": "714e9386e8eba4631b28bbf1f278030c11952fbca5633e8abc1bf5ec2b6ef532",
+      "margin": "5",
+      "original_sha256": "f810502c9cf66c8ebdfb1839a7f3b32fcd19bc731f04d1df4a4619b175b1840a",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-normal.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-phone.conf",
+      "candidate_sha256": "4410ddffa2075f47f9a7c1a94a1f30a4632982ffc5088ac52fced4743e7b0492",
+      "margin": "5",
+      "original_sha256": "8c2f55e445518a0c56214ec449426311f23dd4c5352d2740955b8173052c152b",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-phone.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-tgame.conf",
+      "candidate_sha256": "ff8263e5f527f87c492229e9bf7d650f9d8b83156cd4f9668d24b0241bc82fdb",
+      "margin": "5",
+      "original_sha256": "d502266cd0b1e36cf8c2660f626f446c4851d256670ef626dc402b25d83d42c7",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-tgame.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/candidate/thermal-youtube.conf",
+      "candidate_sha256": "23ea5f72e4bbb7dcc61463c0a58ba22aef98bbd48e771b8b7f404e69f7f7e83f",
+      "margin": "5",
+      "original_sha256": "5bf992212e45685789b2dc1db9ff844598723d41b9fa76db37e5ea9e9be915ed",
+      "path": "thermal-youtube.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/davinci/11/firmware/tadiphone-xiaomi-davinci/review/thermal-youtube.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "11",
+    "device": "davinci",
+    "ecosystem": "oem",
+    "platform": "sm6150",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "davinci-user-11-RKQ1.200826.002-21.10.27-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/davinci",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/davinci/-/tree/davinci-user-11-RKQ1.200826.002-21.10.27-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 3,
+    "thermal_files": 11,
+    "unchanged": 0
+  }
+}

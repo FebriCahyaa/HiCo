@@ -1,0 +1,53 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "format": "text",
+      "path": "thermal-engine-8998-high.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-engine-8998-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine-8998.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "7.1.1",
+    "device": "centaur",
+    "ecosystem": "oem",
+    "platform": "msm8998",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "centaur-user-7.1.1-NMF26X-7.7.15-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/centaur",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/centaur/-/tree/centaur-user-7.1.1-NMF26X-7.7.15-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 4,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "elapsed_s": 0.06,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/candidate/thermal-arvr.conf",
+      "candidate_sha256": "286eabdea9a43f97f7f0672d6c7038eba624728971eb78fa0ea1c075038be39f",
+      "margin": "6",
+      "original_sha256": "889b01af4f550bc2eb23f7cfe44d4d804200d97f159549699fc25440a31aacb7",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/review/thermal-arvr.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/candidate/thermal-camera.conf",
+      "candidate_sha256": "3f78c080964d48153a6174f418d33614861290a18abec707c570d5c794aef0e5",
+      "margin": "6",
+      "original_sha256": "f0c94fd3d4df3f548c233b3956cb2a8d29ad1636cab3cbce7149a75dea0735ea",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/review/thermal-camera.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 13
+    },
+    {
+      "candidate_sha256": "20c0fad8dfd53b88f79b0935290bea06949dcd6e4dc009af73fa1041ad7a085b",
+      "original_sha256": "20c0fad8dfd53b88f79b0935290bea06949dcd6e4dc009af73fa1041ad7a085b",
+      "path": "thermal-chg-only.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "9646d9bc65fd0903935df9ad86d2b0ebdacb05f7e8402469a1d5f0e9a3ac686c",
+      "margin": "6",
+      "original_sha256": "22969a8f5db46aed1ebc3e0a5a2568fdc6c839bbce307f53298f7508c07b5f34",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/review/thermal-nolimits.conf",
+      "sections": 5,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/candidate/thermal-normal.conf",
+      "candidate_sha256": "7bd9d685fef9edfbcaeaf0153736c072cc0c8a02fd5bf83df5a9797cb2135993",
+      "margin": "6",
+      "original_sha256": "cff8ede5c0fe6e33fa6d940d6dd65158ccc8e4d408f9e66971326823ee86837f",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/review/thermal-normal.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 13
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/candidate/thermal-phone.conf",
+      "candidate_sha256": "32fd1e8dd5383a5fb1c866f3947e68b3048689a3dc957ca1d25bc286f32737f1",
+      "margin": "6",
+      "original_sha256": "c54df6512860921a600bf66d1a68c1b64d675e5b777b6c7a94e1e181822fd6e4",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/review/thermal-phone.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/candidate/thermal-tgame.conf",
+      "candidate_sha256": "6dfa19db0c13dca23390d9de8cef13748e206b647780be06ed09d5b55fdc1e91",
+      "margin": "6",
+      "original_sha256": "99bcca32cdd9b446b0728077c12adf1e813013dd990b22cf60eff578ff27bcc1",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/cepheus/11/firmware/tadiphone-xiaomi-cepheus/review/thermal-tgame.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "11",
+    "device": "cepheus",
+    "ecosystem": "oem",
+    "platform": "msmnile",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "cepheus-user-11-RKQ1.200826.002-V12.5.1.0.RFAMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/cepheus",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/cepheus/-/tree/cepheus-user-11-RKQ1.200826.002-V12.5.1.0.RFAMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 6,
+    "not_tunable": 3,
+    "thermal_files": 10,
+    "unchanged": 1
+  }
+}

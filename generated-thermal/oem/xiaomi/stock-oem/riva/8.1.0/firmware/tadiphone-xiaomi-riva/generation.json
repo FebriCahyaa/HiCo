@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/riva/8.1.0/firmware/tadiphone-xiaomi-riva/candidate/thermal-engine-normal-india.conf",
+      "candidate_sha256": "476b6babfa94471e20a1271d06b73d6076dc388d6a41107adafeebb18bcff8bb",
+      "margin": "5",
+      "original_sha256": "9dd0b11823fd7b71a5c3cf2c738904b86732fb77064843e9f7e00ed292531d27",
+      "path": "thermal-engine-normal-india.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/riva/8.1.0/firmware/tadiphone-xiaomi-riva/review/thermal-engine-normal-india.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/riva/8.1.0/firmware/tadiphone-xiaomi-riva/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "c16b47a8e1efc5337e618e15b860c4a353d294e9711bd16f5588c89574bb0bc9",
+      "margin": "5",
+      "original_sha256": "836c43dbce3386fe7f1ef825fb0a96678995c73be839b73e15be5d13c3859a2f",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/riva/8.1.0/firmware/tadiphone-xiaomi-riva/review/thermal-engine-normal.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "8.1.0",
+    "device": "riva",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "riva-user-8.1.0-OPM1.171019.026-9.7.4-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/riva",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/riva/-/tree/riva-user-8.1.0-OPM1.171019.026-9.7.4-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "branch": "ugg-user-7.1.2-N2G47H-V10.2.1.0.NDKCNXM-release-keys",
+      "category": "thermal",
+      "format": "text",
+      "legacy_import": true,
+      "max_trip_c": null,
+      "name": "thermal-engine.conf",
+      "parser": null,
+      "path": "thermal-engine.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/ugg/7.1.2/firmware/tadiphone-xiaomi-ugg/raw/thermal-engine.conf",
+      "repository": "dumps/xiaomi/ugg",
+      "sections": 0,
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "shutdown_c": null,
+      "size": 84,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/ugg/-/tree/ugg-user-7.1.2-N2G47H-V10.2.1.0.NDKCNXM-release-keys",
+      "storage": "raw",
+      "tree_path": "thermal-engine.conf"
+    }
+  ],
+  "identity": {
+    "android": "7.1.2",
+    "device": "ugg",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "repository": {
+    "legacy_import": true,
+    "metadata_only_count": 0,
+    "relevant_file_count": 1,
+    "stored_file_count": 1,
+    "tree_complete": false
+  },
+  "schema": "hico.thermal-source.v1",
+  "source": {
+    "branch": "ugg-user-7.1.2-N2G47H-V10.2.1.0.NDKCNXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/ugg",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ugg/-/tree/ugg-user-7.1.2-N2G47H-V10.2.1.0.NDKCNXM-release-keys"
+  }
+}

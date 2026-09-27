@@ -1,0 +1,310 @@
+{
+  "elapsed_s": 0.24,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-4k.conf",
+      "candidate_sha256": "8ec807751fcd702693f839b968880056d88665021b33554beb541b14209b750f",
+      "margin": "6",
+      "original_sha256": "7d3e2e5ea306d94ad35236db38e63d2cb6a77d3373f46b4d550dfa6653ee5f86",
+      "path": "thermal-4k.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-4k.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-abnormal.conf",
+      "candidate_sha256": "c17c507455e12d459257dc8ab289031fee7871a7478b9cc02cc771f74f2e98e0",
+      "margin": "6",
+      "original_sha256": "88f2eb59b331affd3a548b6360ce9315ddd3b99403aa809ac5e85641697ebacc",
+      "path": "thermal-abnormal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-abnormal.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-arvr.conf",
+      "candidate_sha256": "f5699bd5967a0cc1314e3bd505bf4a91bada29562524bfd18a2ecbb497eac543",
+      "margin": "6",
+      "original_sha256": "6d1860b73efe7ff01f02da1d26aa33784e7bbc22e15a4a79bb5d1c4394deb970",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-arvr.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-camera.conf",
+      "candidate_sha256": "d8e094551120576e314e81852d86b804152ce6fa62baea88bf570b500ce724d3",
+      "margin": "6",
+      "original_sha256": "ef797c4e8cdef3c5537adef1b77e1525f650d4c0b4b336274026163c29363090",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-camera.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "8ae32a6364a540c20b7d52b478ab32de82ceb45c89eaf195556d01afd90461ee",
+      "margin": "6",
+      "original_sha256": "86eff02dfa6efc90d274a89dd8424745568a7e03d9be22a81340ddd8e87d0e32",
+      "path": "thermal-chg-only.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-chg-only.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-class0.conf",
+      "candidate_sha256": "698233ed0ffe3ca714e7c05edfd82618f6b7e20b79600667ede360d484d55d86",
+      "margin": "6",
+      "original_sha256": "5625e54a02d6876e13f3a1e3618bae3d14731707e36c75c584ea499c65150622",
+      "path": "thermal-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-class0.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-dolbyvision.conf",
+      "candidate_sha256": "2d39ded5a44df0b2f9adec1f9e1d5c54ecc2fec7ad5ea7351fc491f01f9aa511",
+      "margin": "6",
+      "original_sha256": "4f6977053d481340f3b292a5029f2d3db12a43bcc50898a12370cb77b65b7074",
+      "path": "thermal-dolbyvision.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-dolbyvision.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-huanji.conf",
+      "candidate_sha256": "4f57087db65e19aebdcbe8c3f56d58e8117af3ce3aba177019c1b2ba6a772575",
+      "margin": "6",
+      "original_sha256": "319d3cf5c4c5dd11ad6262dfa528cf109d4631434008d0322e810f24ac2a22b9",
+      "path": "thermal-huanji.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-huanji.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-l18a-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-mgame.conf",
+      "candidate_sha256": "e96adf46c00cc421a046ccee67332dac3db524b885c363f35fba4b189287d26d",
+      "margin": "6",
+      "original_sha256": "346c0e3ace18be382b8aa7c06fd8b550a86716f65d26ebfdc9a5ea54c3bc3780",
+      "path": "thermal-mgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-mgame.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-navigation.conf",
+      "candidate_sha256": "83b667f5651574549000f7a7b83e59ae3661361b5abb4c68fe912c8654deaf04",
+      "margin": "6",
+      "original_sha256": "8fe34f286468abae7b039f6fbf9d80790e39962d5837267462abcb8084621e86",
+      "path": "thermal-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-navigation.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "7c9ef98893ed53b8efdcaa29754429492e06dc8a6828c5b8dc58d4f30d49cd11",
+      "margin": "6",
+      "original_sha256": "a4608a6e06a106959e9bb9945394554560e34c7ddeda4f294eb4de27c30a1ec6",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-nolimits.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-normal.conf",
+      "candidate_sha256": "143997b2be657fb19e2d6c1544c4cf158f680356091db6d146c894301eb9707d",
+      "margin": "6",
+      "original_sha256": "dea9ef53cb162088c8eeb872523450279bcfddd7bdb86603f8c29d83203e4475",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-normal.conf",
+      "sections": 21,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-per-class0.conf",
+      "candidate_sha256": "55ec5ac7b20da8fd2f6e9ab8fed9e37038b444528fe745c7305facf3af86fbaa",
+      "margin": "6",
+      "original_sha256": "4f32efb80234f7075e237f672a3e8d1a1551b3ada8219f79d5346552dfecabec",
+      "path": "thermal-per-class0.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-per-class0.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-per-navigation.conf",
+      "candidate_sha256": "19df9f8ed5947dade2fe4e19e2e57b03b83bc5672065db752518c4705fbe4f73",
+      "margin": "6",
+      "original_sha256": "b52d132723f7e48575ca7b3f25f6d632f59edb2d36607be95ea2cbfa7752f093",
+      "path": "thermal-per-navigation.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-per-navigation.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-per-normal.conf",
+      "candidate_sha256": "95d6a7c89d03c6630fbd0452f51480b156aed90f0a7e6b3287f05b3088c0ddf8",
+      "margin": "6",
+      "original_sha256": "445b50e577f2061f0962d433f2b9a7c6635484dbb098572059bc97627798cce8",
+      "path": "thermal-per-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-per-normal.conf",
+      "sections": 20,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-per-video.conf",
+      "candidate_sha256": "d8b55ead3ba65eb03bb6f0e56a9bda0153e92f49fd03140bc3a9a02b26392853",
+      "margin": "6",
+      "original_sha256": "8c49b700b13bcde12d1fec3e7122f3a5f9f88747b1018f8746995fade244d246",
+      "path": "thermal-per-video.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-per-video.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-phone.conf",
+      "candidate_sha256": "c40bc0c5694ad8ce697fc0e389530d31a53a59fede49a0eb4bb177007ae4f1ba",
+      "margin": "6",
+      "original_sha256": "e6300d453fbe6d14a315109632ee65c825f8f299a0dca12b2740b734baadacfe",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-phone.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-region-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-sptm.conf",
+      "candidate_sha256": "14d809e32a04714fb0b857809b9d212ba86b83944ebc988dcdc1b1dd02c2e3df",
+      "margin": "6",
+      "original_sha256": "d49ffe65c0f7291b57f6b541a2dd3ca0d49c3ee1785cd14c0569cd6045b93c08",
+      "path": "thermal-sptm.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-sptm.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-tgame.conf",
+      "candidate_sha256": "f213b8e0437516fff25186a039643804ee98a959d23a9046d06fccf4d7d7fe8f",
+      "margin": "6",
+      "original_sha256": "106f105f7a40b728286b27a66f0cfbd46b38d5d4cff010fb8f6eb1c9bb724e8e",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-tgame.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-video.conf",
+      "candidate_sha256": "ffc30d561efc1c3e5566688c9dcbecb039ec9d9ec4b5fb3c74232909bf3802bf",
+      "margin": "6",
+      "original_sha256": "ddcc708cf6bb85786944dbf7ce2e27bd74d0546d88134a91c421775141853a68",
+      "path": "thermal-video.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-video.conf",
+      "sections": 18,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/candidate/thermal-videochat.conf",
+      "candidate_sha256": "becd9eadd78531bbc721268eff97aa05354f066726b94514db0ef72898cfc7a7",
+      "margin": "6",
+      "original_sha256": "0e46dc116c1d0c7e19c1006fb9ec4be98d322f68d00da7925bd5531e80d6b6a9",
+      "path": "thermal-videochat.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/mayfly/14/firmware/tadiphone-xiaomi-mayfly/review/thermal-videochat.conf",
+      "sections": 19,
+      "status": "generated",
+      "tuned_sections": 6
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "14",
+    "device": "mayfly",
+    "ecosystem": "oem",
+    "platform": "taro",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_phone_cn-user-14-UKQ1.231003.002-V816.0.10.0.ULTCNXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/mayfly",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/mayfly/-/tree/missi_phone_cn-user-14-UKQ1.231003.002-V816.0.10.0.ULTCNXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 21,
+    "not_tunable": 5,
+    "thermal_files": 26,
+    "unchanged": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "branch": "ido-user-5.1.1-LMY47V-V7.5.2.0.LAIMIDE-release-keys",
+      "category": "thermal",
+      "format": "thermal-engine-text",
+      "legacy_import": true,
+      "max_trip_c": 80.0,
+      "name": "thermal-engine.conf",
+      "parser": "thermal-engine-text-v2",
+      "path": "thermal-engine.conf",
+      "provider": "gitlab",
+      "raw_path": "thermal-data/oem/xiaomi/stock-oem/ido/5.1.1/firmware/tadiphone-xiaomi-ido/raw/thermal-engine.conf",
+      "repository": "dumps/xiaomi/ido",
+      "sections": 18,
+      "sha256": "d1f9430f5717a259d85cfcc0e9cd6f483a7eb74a3578c16176574c2109b392be",
+      "shutdown_c": null,
+      "size": 3473,
+      "source_commit": "legacy-import",
+      "source_id": "tadiphone-xiaomi",
+      "source_url": "https://dumps.tadiphone.dev/dumps/xiaomi/ido/-/tree/ido-user-5.1.1-LMY47V-V7.5.2.0.LAIMIDE-release-keys",
+      "storage": "raw",
+      "tree_path": "thermal-engine.conf"
+    }
+  ],
+  "identity": {
+    "android": "5.1.1",
+    "device": "ido",
+    "ecosystem": "oem",
+    "platform": "msm8916",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "repository": {
+    "legacy_import": true,
+    "metadata_only_count": 0,
+    "relevant_file_count": 1,
+    "stored_file_count": 1,
+    "tree_complete": false
+  },
+  "schema": "hico.thermal-source.v1",
+  "source": {
+    "branch": "ido-user-5.1.1-LMY47V-V7.5.2.0.LAIMIDE-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/ido",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/ido/-/tree/ido-user-5.1.1-LMY47V-V7.5.2.0.LAIMIDE-release-keys"
+  }
+}

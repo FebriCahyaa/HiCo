@@ -1,0 +1,143 @@
+{
+  "elapsed_s": 0.08,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-arvr.conf",
+      "candidate_sha256": "11f2d500428658a080e2e8e32f68791a05bf722903cc857da1e4270898ec4d5d",
+      "margin": "4",
+      "original_sha256": "d86ce8db52079569743441e34296badb3e63af0367c8c950553768f17f285495",
+      "path": "thermal-arvr.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-arvr.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 10
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-camera.conf",
+      "candidate_sha256": "584f0460130870aedce7571371ff91ef45c2de362e917f00898af3d7e0a54dcf",
+      "margin": "4",
+      "original_sha256": "12b86cdedd579c6653cb6be9b87cddd2d0c80599210abf5ca62f5baf6a03f145",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-camera.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 12
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-camera2.conf",
+      "candidate_sha256": "3db532a66e30c8359b817e047ad7fc62edd88140188587752695dab6cb1b2037",
+      "margin": "4",
+      "original_sha256": "7a7fae8f0c7e8614c5c1db0515d078f52c3e3852753c1d7685fc1925ca9f832c",
+      "path": "thermal-camera2.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-camera2.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 12
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "58a83aad0529e5497aa957257a50820b20ea9b4977ef85188d6517bc83581c9d",
+      "margin": "4",
+      "original_sha256": "35d2e8c15980bce3a9356183982287473dbcaf660c9df5ee88b46763148591ac",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-chg-only.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_sha256": "11a1e3bfb52ce7ba50301e990356121844f4fa7ab142984ec38619904126f7e8",
+      "original_sha256": "11a1e3bfb52ce7ba50301e990356121844f4fa7ab142984ec38619904126f7e8",
+      "path": "thermal-nolimits.conf",
+      "sections": 6,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-normal.conf",
+      "candidate_sha256": "c6fb9c2b922659f2558a3b096a251ed3c880c6fb3ea829a07530c4f63d3a89fa",
+      "margin": "4",
+      "original_sha256": "e011e079198d7bf373549beb8e5dc7afd62c1595de253a0981fe676ddd8f6a88",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-normal.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-phone.conf",
+      "candidate_sha256": "df0ffdaf8af4406099452cd68fb1cd3bd3f222b0c5b52d5592fdaa1f006ca490",
+      "margin": "4",
+      "original_sha256": "abd8cbcd39881958537182a0d64ce380ff3ea2e00ac00859b344647caa714665",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-phone.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/candidate/thermal-tgame.conf",
+      "candidate_sha256": "0224d7efd8d3147ec50d0cc0a61be0ee51e61a895f684465ff1d86c5fa2d8696",
+      "margin": "4",
+      "original_sha256": "5f2f376fc3af8ecc5904acab7038cfeb7bc1e714d63e2249b6a07ce931767d19",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/rosemary/11/firmware/tadiphone-redmi-rosemary/review/thermal-tgame.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 12
+    },
+    {
+      "candidate_sha256": "f6702b74f7dc586e733c412161e05d24e3be2fac3d376907bc404a666a5d2688",
+      "original_sha256": "f6702b74f7dc586e733c412161e05d24e3be2fac3d376907bc404a666a5d2688",
+      "path": "thermal-youtube.conf",
+      "sections": 6,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "11",
+    "device": "rosemary",
+    "ecosystem": "oem",
+    "platform": "mt6785",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "rosemary-user-11-RP1A.200720.011-V12.5.14.0.RKLMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/rosemary",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/maltose/-/tree/rosemary-user-11-RP1A.200720.011-V12.5.14.0.RKLMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 7,
+    "not_tunable": 2,
+    "thermal_files": 11,
+    "unchanged": 2
+  }
+}

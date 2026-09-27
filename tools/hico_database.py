@@ -77,6 +77,80 @@ def device_record(prop: Path, device_root: Path, root: Path) -> dict:
     }
 
 
+
+def build_thermal_knowledge(root: Path, out: Path) -> dict:
+    """Index canonical collected thermal sources and validated HiCo candidates."""
+    target = out / "thermal"
+    if target.exists():
+        shutil.rmtree(target)
+    source_out = target / "sources"
+    source_out.mkdir(parents=True, exist_ok=True)
+
+    manifests = sorted((root / "thermal-data").rglob("manifest.json")) if (root / "thermal-data").is_dir() else []
+    source_rows = []
+    artifact_count = 0
+    raw_count = 0
+    for manifest_path in manifests:
+        try:
+            manifest = json.loads(manifest_path.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        if manifest.get("schema") != "hico.thermal-source.v1":
+            continue
+        source = manifest.get("source", {})
+        identity = manifest.get("identity", {})
+        files = manifest.get("files", [])
+        repo_key = clean_component(str(source.get("repository", manifest_path.parent.name)).replace("/", "__"))
+        sid = clean_component(str(source.get("id", "unknown")))
+        destination = source_out / sid / f"{repo_key}.json"
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+        source_rows.append({
+            "source_id": source.get("id", ""),
+            "provider": source.get("provider", ""),
+            "repository": source.get("repository", ""),
+            "branch": source.get("branch", ""),
+            "commit": source.get("commit", ""),
+            "ecosystem": identity.get("ecosystem", ""),
+            "vendor": identity.get("vendor", ""),
+            "rom_family": identity.get("rom_family", ""),
+            "device": identity.get("device", ""),
+            "android": identity.get("android", ""),
+            "repository_role": identity.get("repository_role", ""),
+            "artifact_count": len(files),
+            "raw_count": sum(1 for item in files if item.get("storage") == "raw"),
+            "manifest": str(manifest_path.relative_to(root)).replace("\\", "/"),
+        })
+        artifact_count += len(files)
+        raw_count += sum(1 for item in files if item.get("storage") == "raw")
+
+    generated = root / "generated-thermal"
+    generation_files = sorted(generated.rglob("generation.json")) if generated.is_dir() else []
+    generation_count = len(generation_files)
+    generated_count = 0
+    generation_failures = 0
+    for path in generation_files:
+        try:
+            data = json.loads(path.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        generated_count += int(data.get("summary", {}).get("generated", 0))
+        generation_failures += len(data.get("failures", []))
+
+    index = {
+        "schema": "hico.thermal-knowledge.v1",
+        "source_count": len(source_rows),
+        "artifact_count": artifact_count,
+        "raw_artifact_count": raw_count,
+        "generation_manifest_count": generation_count,
+        "generated_file_count": generated_count,
+        "generation_failure_count": generation_failures,
+        "sources": sorted(source_rows, key=lambda r: (r["vendor"], r["rom_family"], r["device"], r["repository"])),
+    }
+    (target / "index.json").write_text(json.dumps(index, indent=2, sort_keys=True) + "\n")
+    return index
+
+
 def build_database(root: Path, out: Path) -> dict:
     out.mkdir(parents=True, exist_ok=True)
     devices_out = out / "devices"
@@ -101,11 +175,16 @@ def build_database(root: Path, out: Path) -> dict:
         })
 
     records.sort(key=lambda r: (r["vendor"], r["codename"]))
+    thermal = build_thermal_knowledge(root, out)
     index = {
         "schema": "hico.database.v1",
-        "generated_from": "repository devices/*/*.prop",
+        "generated_from": "repository devices/*/*.prop + thermal-data/**/manifest.json",
         "device_count": len(records),
         "artifact_count": sum(r["thermal_artifacts"] for r in records),
+        "thermal_source_count": thermal["source_count"],
+        "thermal_artifact_count": thermal["artifact_count"],
+        "thermal_raw_artifact_count": thermal["raw_artifact_count"],
+        "thermal_generated_file_count": thermal["generated_file_count"],
         "devices": records,
     }
     (out / "index.json").write_text(json.dumps(index, indent=2, sort_keys=True) + "\n")
@@ -283,6 +362,13 @@ def validate_database(root: Path) -> list[str]:
                     errors.append(f"{path}: thermal table is missing value semantics for {key}")
             if not isinstance(data.get("artifacts"), list) or not isinstance(data.get("tuning"), list):
                 errors.append(f"{path}: thermal table artifacts/tuning must be arrays")
+        if schema == "hico.thermal-source.v1":
+            for key in ("source", "identity", "files"):
+                if key not in data:
+                    errors.append(f"{path}: thermal source is missing {key}")
+        if schema == "hico.thermal-generation.v1":
+            if data.get("failures"):
+                errors.append(f"{path}: thermal generation contains failures")
         for item in data.get("files", []) if isinstance(data, dict) else []:
             sha = item.get("sha256")
             if sha and not SHA_RE.fullmatch(str(sha)):
@@ -318,7 +404,7 @@ def main() -> int:
 
     if args.cmd == "build":
         result = build_database(Path(args.root), Path(args.output))
-        print(json.dumps({k: result[k] for k in ("device_count", "artifact_count")}, indent=2))
+        print(json.dumps({k: result[k] for k in ("device_count", "artifact_count", "thermal_source_count", "thermal_artifact_count", "thermal_generated_file_count")}, indent=2))
         return 0
     if args.cmd == "map-tree":
         result = map_external_tree(Path(args.root), Path(args.output))

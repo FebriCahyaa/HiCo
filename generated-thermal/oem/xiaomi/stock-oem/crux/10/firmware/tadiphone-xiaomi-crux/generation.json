@@ -1,0 +1,128 @@
+{
+  "elapsed_s": 0.06,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/candidate/thermal-arvr.conf",
+      "candidate_sha256": "d16b22d6a42f3c3af07e6fb46ea2ebc879b76c75501ace71010af75d33012f13",
+      "margin": "6",
+      "original_sha256": "f236179fbe68c506a006322329fdf1e9fdb0ea28675f66b9a2c7f4137b8d388d",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/review/thermal-arvr.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/candidate/thermal-camera.conf",
+      "candidate_sha256": "49cd9fb3d50aea26bc98546b9754ed95ad4595d6989ead41d89e7effe88f5883",
+      "margin": "6",
+      "original_sha256": "9a718f0c38ac05175061753ff5949b2aca027d41ea3207a2f69ef24de502ad3d",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/review/thermal-camera.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_sha256": "8c8add458205403a09b442086de7dbf9c730f823656995f4ace05be4885992eb",
+      "original_sha256": "8c8add458205403a09b442086de7dbf9c730f823656995f4ace05be4885992eb",
+      "path": "thermal-chg-only.conf",
+      "sections": 3,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "0bb548e2bb1d97b66b29a9e05016e692bda8c8770cca7d4e5f435aa35a2111c8",
+      "margin": "6",
+      "original_sha256": "2d4410f7eafe0cc0dd04fce189dce144d5d500546f9b96d33f4971531c1c3aae",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/review/thermal-nolimits.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/candidate/thermal-normal.conf",
+      "candidate_sha256": "312ed183228cb0f99d94c74031e580b6ac021b763e260bb1c3f280c003f84615",
+      "margin": "6",
+      "original_sha256": "5b75555de83413bfa0bc7f669475b6d61c603898bbaab39f4ce436b4c37f0053",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/review/thermal-normal.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/candidate/thermal-phone.conf",
+      "candidate_sha256": "656b62e066e1b488492e4ea935ced7a63bcdda7509b9d049530dd1d41af14066",
+      "margin": "6",
+      "original_sha256": "191c74fc31455fd568072c842eb7635dff01ba2d842d0e2786271b020e4d1451",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/review/thermal-phone.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/candidate/thermal-tgame.conf",
+      "candidate_sha256": "7049a16c108f08c3bcc9f8e16a720705addda2ec887abd3ac651d6bf5db0955c",
+      "margin": "6",
+      "original_sha256": "8b2bfdd40ed78ae2afb012c962e55dd39e3e31d531b887d64f501ffe0601433c",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm-flagship",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/crux/10/firmware/tadiphone-xiaomi-crux/review/thermal-tgame.conf",
+      "sections": 11,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "10",
+    "device": "crux",
+    "ecosystem": "oem",
+    "platform": "msmnile",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "crux-user-10-QKQ1.190825.002-20.1.7-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/crux",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/crux/-/tree/crux-user-10-QKQ1.190825.002-20.1.7-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 6,
+    "not_tunable": 3,
+    "thermal_files": 10,
+    "unchanged": 1
+  }
+}

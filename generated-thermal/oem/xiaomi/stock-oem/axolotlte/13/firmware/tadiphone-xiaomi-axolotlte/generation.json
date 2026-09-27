@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/axolotlte/13/firmware/tadiphone-xiaomi-axolotlte/candidate/thermal-engine.conf",
+      "candidate_sha256": "e2a081de41349e8362140c222f220f378d71aab51f411dbf7fb58fc96837a092",
+      "margin": "5",
+      "original_sha256": "5679025c5183b8af15737a3f35d9ed0258cca4697d749eb2a5d725d0a9a0ec07",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/axolotlte/13/firmware/tadiphone-xiaomi-axolotlte/review/thermal-engine.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 5
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:19Z",
+  "identity": {
+    "android": "13",
+    "device": "axolotlte",
+    "ecosystem": "oem",
+    "platform": "monaco",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "axolotlte-user-13-TWR7.231031.001.XM055S-TWR7.231031.001.XM055S-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/axolotlte",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/axolotlte/-/tree/axolotlte-user-13-TWR7.231031.001.XM055S-TWR7.231031.001.XM055S-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

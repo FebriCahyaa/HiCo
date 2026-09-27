@@ -10,6 +10,8 @@ on:
       - "jni/**"
       - "database/**"
       - "sources/**"
+      - "thermal-data/**"
+      - "generated-thermal/**"
       - "webui/src/views/Monitor.vue"
       - "webui/src/locales/**"
       - ".github/workflows/tools.yml"
@@ -20,6 +22,8 @@ on:
       - "tests/**"
       - "jni/**"
       - "sources/**"
+      - "thermal-data/**"
+      - "generated-thermal/**"
       - "webui/src/views/Monitor.vue"
       - "webui/src/locales/**"
       - ".github/workflows/tools.yml"
@@ -191,14 +195,12 @@ jobs:
           for path in Path('devices').glob('*/*/thermal'):
               if path.is_dir():
                   roots.append(path.as_posix())
-          raw = Path('database/sources/ingested/raw')
+          raw = Path('thermal-data')
           if raw.is_dir():
-              for source in sorted(raw.iterdir()):
-                  if not source.is_dir():
-                      continue
-                  for repo in sorted(source.iterdir()):
-                      if repo.is_dir():
-                          roots.append(repo.as_posix())
+              for path in sorted(raw.rglob('manifest.json')):
+                  root = path.parent / 'raw'
+                  if root.is_dir():
+                      roots.append(root.as_posix())
           roots = sorted(set(roots))
           shard_size = 25
           shards = []

@@ -1,0 +1,200 @@
+{
+  "elapsed_s": 0.13,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-camera.conf",
+      "candidate_sha256": "056ea1afab353f18d329bcde47a49d1284832e7bd4c18b9576ecb7e72e22dcbb",
+      "margin": "4",
+      "original_sha256": "296e74c57b4d833b5681faaaf8764d206004438c1436a9032e413a4adbf564c0",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-camera.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_sha256": "be59d0fab01e46299706909a92a27738fbffb9bdaac860678c618669ab9a8750",
+      "original_sha256": "be59d0fab01e46299706909a92a27738fbffb9bdaac860678c618669ab9a8750",
+      "path": "thermal-chg-only.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-class0.conf",
+      "candidate_sha256": "85b94e32c5d0b234b8084ef903bc52e32a4a732aa512f65ce01798eadf46d757",
+      "margin": "4",
+      "original_sha256": "1daa2e60840d66ea6cbeba32cce2a4b4577b656a4f9a60a9b310172c70d96747",
+      "path": "thermal-class0.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-class0.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-hp-mgame.conf",
+      "candidate_sha256": "c25e173ce3ff34cb4045908001d912abdc197207db642633941fcde177eaa8c8",
+      "margin": "4",
+      "original_sha256": "0156652571d7c89388d02b086cb1a3c04710fa6342ca12afb813cadbc617e61b",
+      "path": "thermal-hp-mgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-hp-mgame.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-hp-normal.conf",
+      "candidate_sha256": "c910cfe4968905c2fed7b0d5d1ed19e1744c5091a11ea27dc168ccd3c8f1331f",
+      "margin": "4",
+      "original_sha256": "2fe9f44b688b4e9c8d3e60d2ee8f87d6af6f40627449880099733011205d2876",
+      "path": "thermal-hp-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-hp-normal.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-mgame.conf",
+      "candidate_sha256": "4845a6d6f634445a2d1922ce8e1fdf481880b85a83c668a7c4bc1e092d57ec83",
+      "margin": "4",
+      "original_sha256": "2d8dbca2c9ad184c8c8e9a5fcc73361fda15354fb08a844538d49767cb2a0199",
+      "path": "thermal-mgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-mgame.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-navigation.conf",
+      "candidate_sha256": "e8bcf5e7c5e09efb2409e6768cf0ba7e8992a73fe5808ce40e2db4eec744d5e4",
+      "margin": "4",
+      "original_sha256": "af8bd475d7cda9394b5185fe9dd6f311b65e4bdc8f4ef2f17edd4e2ef613c012",
+      "path": "thermal-navigation.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-navigation.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "eaf12d2d595066f3fe8b0156278d7e648e447fc990a3d224ce33f5f98966dee7",
+      "margin": "4",
+      "original_sha256": "6fefed0af50d38ea1fd7700a132a0c83cab70f2f6208cd3ce77f4937266c9749",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-nolimits.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-normal.conf",
+      "candidate_sha256": "26309a7eb278ba4c3046b46c6654203f97e3f9f25512a3e1aab12cd94ae472cb",
+      "margin": "4",
+      "original_sha256": "d2420ec2228dffd119ff280ede434efe2e3ae828f4915750794eb83838aac6f6",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-normal.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-phone.conf",
+      "candidate_sha256": "ca858228bda6a2b60299d0dacc234f481bb22db8f212a328538615b9213e0db0",
+      "margin": "4",
+      "original_sha256": "a4b82588eeab398ca0939bb950f294a2eab292391e2e98ce6524c2e82e7ced53",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-phone.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-tgame.conf",
+      "candidate_sha256": "5f52df2f62d215eccdc5b22fc0927aa2a8377ca32dd454a7595bc7aeae7247cc",
+      "margin": "4",
+      "original_sha256": "5a0d66b909db992e8b2eee84910b2df77b6326f09893386dce7797ce58bb8fcf",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-tgame.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-video.conf",
+      "candidate_sha256": "eb7e35f71658c7aebc0ab5f8184a2830e04f59235fd59b33b7e148b4f95d397d",
+      "margin": "4",
+      "original_sha256": "39501e29f6447ce7222b467217aadd6938aacbd1cf1a24f2b371d8c7ac1847f0",
+      "path": "thermal-video.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-video.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/candidate/thermal-videochat.conf",
+      "candidate_sha256": "1eff006ccbe35a902929dd5a2da932d1039085d680e244f02455cdff1cee7d36",
+      "margin": "4",
+      "original_sha256": "7b2c63d3584ad99a783fca52480aeb1100d64f8a3452c727cd0d90726e230d46",
+      "path": "thermal-videochat.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/hyperos/fire/15/firmware/tadiphone-redmi-fire/review/thermal-videochat.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 5
+    },
+    {
+      "format": "xml",
+      "path": "thermalbreakboostconfig.xml",
+      "status": "not-tunable"
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:16Z",
+  "identity": {
+    "android": "15",
+    "device": "fire",
+    "ecosystem": "oem",
+    "platform": "mt6768",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "hyperos",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi-user-15-AP3A.240905.015.A2-OS2.0.3.0.VMXMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/fire",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/fire/-/tree/missi-user-15-AP3A.240905.015.A2-OS2.0.3.0.VMXMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 12,
+    "not_tunable": 3,
+    "thermal_files": 16,
+    "unchanged": 1
+  }
+}

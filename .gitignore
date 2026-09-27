@@ -6,3 +6,7 @@ libs/
 .vscode/
 __pycache__/
 *.pyc
+
+# HiCo local collector cache/transient state
+.hico-cache/
+sources/collector-last-run.json

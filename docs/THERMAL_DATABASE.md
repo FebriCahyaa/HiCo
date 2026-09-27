@@ -1,97 +1,90 @@
 # HiCo Thermal Database and Processing Pipeline
 
-HiCo Thermal uses a device-aware knowledge database instead of assuming that every Android device has the same thermal implementation. The hardware, vendor stack, ROM integration and repository provenance are kept as separate facts and joined during profile resolution.
+HiCo Thermal uses a device-aware knowledge database and a local source collector. The collector downloads public
+Git repositories without GitHub/GitLab API calls during normal synchronization, extracts thermal-relevant files,
+preserves provenance, generates HiCo candidates and validates the result before the data is committed.
 
 ## Processing layers
 
 ```text
-OEM dumps / ROM trees / vendor trees / kernel trees
-                     │
-                     ▼
-              source discovery
-                     │
-                     ▼
-              partial Git clone
-                     │
-                     ▼
-             thermal-relevant scan
-                     │
-          ┌──────────┴──────────┐
-          ▼                     ▼
-      known codec           unknown data
-          │                     │
-     decode in memory      metadata + hash
-          │                     │
-          └──────────┬──────────┘
-                     ▼
-              parser / mapper
-                     │
-                     ▼
-             normalized database
-                     │
-                     ▼
-                validation
-                     │
-                     ▼
-                  publish
+public Git repositories
+        │
+        ▼
+local collector (clone/fetch)
+        │
+        ▼
+thermal-data/ + manifest.json
+        │
+        ├── original file
+        ├── repository / branch / commit
+        ├── OEM / ROM / device / Android
+        └── repository role
+        │
+        ▼
+HiCo parser / codec / mapper
+        │
+        ▼
+HiCo Thermal generator
+        │
+        ▼
+generated-thermal/
+        │
+        ▼
+hicod thermal check
+        │
+        ▼
+database/ + thermal tables
 ```
+
+## Source storage
+
+The canonical source path is:
+
+```text
+thermal-data/<ecosystem>/<vendor>/<rom>/<device>/<android>/<role>/<repository>/
+    raw/<original repository path>
+    manifest.json
+```
+
+`thermal-data/` stores the original bytes for thermal-relevant files that can be represented in the Git
+repository. Every stored file receives a SHA-256 through the manifest. Large firmware-style blobs can use Git LFS
+when the clone is configured for it.
 
 ## Unpack vs codec vs parser
 
-- **Unpackers** open containers or filesystems such as ZIP, TAR, gzip, XZ, bzip2, Android sparse images, Android `super.img`, EROFS and ext4 when the required host tools are installed.
-- **Codecs** convert the contents of a thermal artifact between encoded and decoded representations. The current Xiaomi `mi_thermald_aes` codec is an adapter around the existing native `MiCrypt` implementation in HiCo.
-- **Parsers** understand the decoded content and expose sensors, sections, thresholds and other normalized facts.
-
-These responsibilities are deliberately separate. A new vendor therefore does not require a fake "vendor crypt" implementation when its thermal files are actually plaintext or exposed through a HAL/runtime interface.
+- **Unpackers** open supported containers or filesystems such as ZIP, TAR, gzip, XZ, bzip2, Android sparse images,
+  `super.img`, EROFS and ext4 when the required host tools are installed.
+- **Codecs** convert known encoded thermal formats. The Xiaomi `mi_thermald_aes` adapter uses HiCo's existing
+  native MiCrypt implementation.
+- **Parsers** expose sensors, sections, thresholds, shutdown limits and other normalized facts.
+- **Generator** invokes the host `hicod thermal tune` implementation and verifies its candidate with
+  `hicod thermal check`.
 
 ## Unknown encrypted data
 
-HiCo never guesses an encryption algorithm or attempts to bypass a protection mechanism. Unknown encrypted/opaque data is recorded with provenance and hash information and remains non-tunable until a legitimate, verified codec is available.
-
-## Source provenance
-
-Every external repository manifest records provider, repository, branch, source commit, URL and relevant file paths. Dependency files such as `lineage.dependencies`, `evolution.dependencies` and `.gitmodules` are also inspected so the database can preserve relationships between device trees and common/vendor/kernel repositories.
-
-## Repository storage policy
-
-Small text/JSON/XML artifacts may be copied into the generated database when they meet the ingestion policy. Large or binary proprietary material is not blindly redistributed. The normalized mapping can still describe the artifact, its parser/codec status and SHA-256 information without copying the blob.
+HiCo does not guess an encryption algorithm or bypass an unknown protection mechanism. An unknown encrypted or
+opaque thermal artifact is retained when possible and recorded with provenance and hash information, but it is not
+generated or tuned until a legitimate, verified codec is available.
 
 ## Workflows
 
-### Database workflow
+`.github/workflows/database.yml` is intentionally read-only with respect to upstream sources. It verifies the
+committed `thermal-data/` and `generated-thermal/` dataset, rebuilds the database deterministically and uploads
+verification artifacts. `.github/workflows/build.yml` performs the normal C++/Python build and dataset checks.
+`.github/workflows/tools.yml` provides the manual full mapping path for thermal roots already present in the
+repository.
 
-`.github/workflows/database.yml` performs one complete run:
+## Local update command
 
-```text
-audit/build → discover → ingestion matrix → mapping matrix → merge → validation → publish
+```shell
+./tools/update-thermal.sh
 ```
 
-Matrix workers never push to Git. The final publish job is the only writer after validation succeeds.
-
-### Tools workflow
-
-`.github/workflows/tools.yml` validates tool changes. A manual run in `full` mode maps every repository thermal root currently in `devices/` and every permitted raw source root under `database/sources/ingested/raw/`, then publishes the deterministic mapping under `database/mapped/`.
+This performs local repository synchronization, HiCo candidate generation, database rebuild and verification. Use
+`./tools/update-thermal.sh --push` to commit and push the validated result.
 
 ## Current seeded database
 
-The uploaded repository already contained 212 device records. The generated seed database is intentionally preserved in the source tree. Its external-source expansion is performed by the Actions workflow, not assumed to have run locally.
-
-## Deep mapping and generic unpack
-
-`hico-thermal deep-map` and `deep-map-set` recursively inspect supported Android/archive containers and map thermal-relevant files discovered inside them. The expansion layer is independent from the codec layer: a container can be unpacked even when an enclosed encrypted file remains opaque. Filesystem extraction is opt-in with `--filesystem-extract`; unknown encryption is never guessed.
-
-Supported optional external tools include `simg2img`, `lpunpack`, `fsck.erofs`, `debugfs`, and `zstd`. Their absence is reported explicitly instead of silently substituting an unsafe implementation.
-
-
-## Thermal value table
-
-HiCo maintains two distinct thermal tables. The live table (`hicod thermal table`) is read directly
-from the running kernel thermal framework and contains actual zone temperatures, trip thresholds,
-headroom, thermal state and cooling-device state at sample time. The repository table under
-`database/tables/` is static source analysis: it records the highest original trip value found in the
-source artifact and the highest HiCo candidate value generated for that same scope. The candidate
-column is never presented as a measured safety limit.
-
-
-The Tools workflow does not watch its own generated `database/**` push output, preventing a publish/
-remap loop. Pull requests still include database changes in the validation path.
+The repository is seeded with the existing 212 Xiaomi device records. `sources/repositories.json` is generated
+from those records so the local collector can refresh their public Git remotes without API discovery. Additional
+OEM and custom-ROM repositories can be added to that index without changing the runtime engine.

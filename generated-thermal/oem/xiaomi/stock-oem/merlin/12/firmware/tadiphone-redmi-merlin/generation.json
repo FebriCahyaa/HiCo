@@ -1,0 +1,139 @@
+{
+  "elapsed_s": 0.07,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-arvr.conf",
+      "candidate_sha256": "879225abba75edd89c6a4952b4b2c79986f665210ae649c30b80c34c3f51618c",
+      "margin": "4",
+      "original_sha256": "6bf35751fd3380c45014581d202b7fde19a6c7b36720d12a84934348956b6931",
+      "path": "thermal-arvr.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-arvr.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 10
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-camera.conf",
+      "candidate_sha256": "ffbfb1af5414cc2727a76f601f41e1a92595f27d63e4396e6d9c66fbbf4262ed",
+      "margin": "4",
+      "original_sha256": "0b9fd475cdd450b14d08121dba08cd889fed373a84d1623344468fa88fdfe02f",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-camera.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 10
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "78481b7798684480b91c4c581d9c49b1f35d56f2b452a42b0553549de19e1263",
+      "margin": "4",
+      "original_sha256": "d4c1838831029192c21434c649ce524f24fe985e3f6881bbeb15380cd7919dfe",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "8e92652cffd7da2db16b62ac334768013c59357c386cb2437d957fe911b553e5",
+      "margin": "4",
+      "original_sha256": "6350b368cb4689da6b129710e2adbb00809985bd8f6cfd5b01d8ad8f553dc4a3",
+      "path": "thermal-nolimits.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-nolimits.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-normal.conf",
+      "candidate_sha256": "bd35fabe3004f24dc3cf03233f2b9822345c43a3779a8a5de27b693e7df82460",
+      "margin": "4",
+      "original_sha256": "20f0835da288cd21ead377fe9ce8da17e16f9df1f0a172b3da4e505eaef87291",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-normal.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 10
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-phone.conf",
+      "candidate_sha256": "5738bfffb47f4493bf524f150d2bb58a807a422464e000827da8f66cf7ef8f53",
+      "margin": "4",
+      "original_sha256": "ffae86d9d0fcabab49b0f1c56a1bd37e321aeaae28481810be6c3b9aae7f8769",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-phone.conf",
+      "sections": 17,
+      "status": "generated",
+      "tuned_sections": 10
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-tgame.conf",
+      "candidate_sha256": "df45b085b26a48cf611ea036e2c9d93d4f53435a32f0148cada9c10677ea5088",
+      "margin": "4",
+      "original_sha256": "e118416a4df8545f63956e06a3677b8538b92875c31b0f98e47ac776acd4c264",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-tgame.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/candidate/thermal-youtube.conf",
+      "candidate_sha256": "aaafbc4085173286802a83809e6d45350df226451dbd19f735bb6996cc17832c",
+      "margin": "4",
+      "original_sha256": "7ba247603a87618d03410fa543871e971c93d509c5e18d047fe3a44253b32ee1",
+      "path": "thermal-youtube.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/merlin/12/firmware/tadiphone-redmi-merlin/review/thermal-youtube.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "12",
+    "device": "merlin",
+    "ecosystem": "oem",
+    "platform": "mt6768",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "merlin-user-12-SP1A.210812.016-V13.0.5.0.SJOINXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-redmi",
+    "provider": "gitlab",
+    "repository": "dumps/redmi/merlin",
+    "url": "https://dumps.tadiphone.dev/dumps/redmi/merlinnfc/-/tree/merlin-user-12-SP1A.210812.016-V13.0.5.0.SJOINXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 2,
+    "thermal_files": 10,
+    "unchanged": 0
+  }
+}

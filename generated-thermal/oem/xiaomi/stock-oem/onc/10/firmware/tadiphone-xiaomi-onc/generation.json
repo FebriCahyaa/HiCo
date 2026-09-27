@@ -1,0 +1,67 @@
+{
+  "elapsed_s": 0.02,
+  "failures": [],
+  "files": [
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/onc/10/firmware/tadiphone-xiaomi-onc/candidate/thermal-engine-normal.conf",
+      "candidate_sha256": "f9b8bca07e8f4546a074d62c99d7b740554c555c8b66f7f34eddadc957598854",
+      "margin": "5",
+      "original_sha256": "899e330a0967cd9a43f0dba397cef1dd96fb4780f65b014803b044e2fcb58b8d",
+      "path": "thermal-engine-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/onc/10/firmware/tadiphone-xiaomi-onc/review/thermal-engine-normal.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 7
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/onc/10/firmware/tadiphone-xiaomi-onc/candidate/thermal-engine-video.conf",
+      "candidate_sha256": "f9b8bca07e8f4546a074d62c99d7b740554c555c8b66f7f34eddadc957598854",
+      "margin": "5",
+      "original_sha256": "899e330a0967cd9a43f0dba397cef1dd96fb4780f65b014803b044e2fcb58b8d",
+      "path": "thermal-engine-video.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/onc/10/firmware/tadiphone-xiaomi-onc/review/thermal-engine-video.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 7
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:21Z",
+  "identity": {
+    "android": "10",
+    "device": "onc",
+    "ecosystem": "oem",
+    "platform": "msm8953",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "onc-user-10-QKQ1.191008.001-V11.0.2.0.QFLMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/onc",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/onc/-/tree/onc-user-10-QKQ1.191008.001-V11.0.2.0.QFLMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 2,
+    "not_tunable": 2,
+    "thermal_files": 4,
+    "unchanged": 0
+  }
+}

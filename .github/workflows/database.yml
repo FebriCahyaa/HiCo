@@ -2,23 +2,15 @@ name: HiCo Thermal Database
 
 on:
   workflow_dispatch:
-    inputs:
-      shard_size:
-        description: "Repositories handled by each ingestion matrix job"
-        type: number
-        default: 50
-        required: true
-      compute_backend:
-        description: "Compute backend for ingestion and mapping"
-        type: choice
-        options: [github, aws]
-        default: aws
-        required: true
-      aws_region:
-        description: "AWS region used by the CodeBuild offload"
-        type: string
-        default: us-east-1
-        required: false
+  push:
+    branches: [main]
+    paths:
+      - "thermal-data/**"
+      - "generated-thermal/**"
+      - "database/**"
+      - "sources/**"
+      - "tools/**"
+      - ".github/workflows/database.yml"
   schedule:
     - cron: "17 3 * * 0"
 
@@ -26,19 +18,13 @@ concurrency:
   group: hico-database
   cancel-in-progress: false
 
-env:
-  # Workflow dispatch can override this; scheduled runs use the repository variable.
-  HICO_DATABASE_BACKEND: ${{ inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws' }}
-
 permissions:
   contents: read
 
 jobs:
-  preflight:
-    name: Preflight and host build
+  verify-and-build:
+    name: Verify collected thermal dataset
     runs-on: ubuntu-latest
-    outputs:
-      hico_ready: ${{ steps.build.outputs.ready }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -46,494 +32,48 @@ jobs:
           fetch-depth: 1
 
       - name: Build host HiCo
-        id: build
         run: |
           set -euo pipefail
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
           cmake --build build -j"$(nproc)"
           ctest --test-dir build --output-on-failure
-          echo "ready=true" >> "$GITHUB_OUTPUT"
 
-      - name: Validate Python tools
+      - name: Validate tools and dataset
         env:
           HICOD: build/hicod
         run: |
-          python3 -m py_compile tools/*.py tools/hico_thermal/*.py tests/hico_tools_test.py
+          set -euo pipefail
+          python3 -m py_compile tools/*.py tools/hico_thermal/*.py tests/*.py
           python3 tests/hico_tools_test.py
           python3 tests/thermal_scope_test.py
           python3 tests/topology_test.py
           python3 tests/database_test.py
           python3 tests/scanner_test.py
+          python3 tests/thermal_table_test.py
+          python3 tests/unpack_test.py
           python3 tests/workflow_regression_test.py
-          python3 tests/aws_batch_test.py
-          python3 tests/aws_infra_test.py
+          python3 tests/hico_collector_test.py
+          python3 tools/hico_collector.py verify
+          python3 tools/hico_generator.py verify
           python3 tools/hico_database.py validate database
           python3 tools/hico_database.py validate database/tables
-          python3 tools/verify_webui.py
-
-      - name: Upload host binary
-        uses: actions/upload-artifact@v6
-        with:
-          name: hico-host
-          path: build/hicod
-          if-no-files-found: error
-
-  discover:
-    name: Discover all registered sources
-    needs: preflight
-    runs-on: ubuntu-latest
-    outputs:
-      matrix_ids: ${{ steps.matrix.outputs.ids }}
-    env:
-      GITHUB_TOKEN: ${{ github.token }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Discover repositories
-        run: |
-          set -euo pipefail
-          mkdir -p build/discovery
-          python3 tools/hico_ingest.py discover \
-            --registry sources/registry.json \
-            --output build/discovery/discovery.json \
-            --shard-size "${{ inputs.shard_size || 50 }}"
-
-      - name: Generate matrix
-        id: matrix
-        run: |
-          set -euo pipefail
-          python3 tools/hico_ingest.py matrix \
-            --discovery build/discovery/discovery.json \
-            --output build/discovery/matrix.json \
-            --max-jobs 250
-          ids=$(jq -c '[.[].id]' build/discovery/matrix.json)
-          echo "ids=$ids" >> "$GITHUB_OUTPUT"
-
-      - name: Upload discovery metadata
-        uses: actions/upload-artifact@v6
-        with:
-          name: discovery
-          path: build/discovery/
-
-  ingest:
-    name: Ingest repository shard ${{ matrix.id }}
-    needs: discover
-    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' && needs.discover.outputs.matrix_ids != '[]' }}
-    strategy:
-      fail-fast: false
-      max-parallel: 8
-      matrix:
-        id: ${{ fromJSON(needs.discover.outputs.matrix_ids) }}
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ github.token }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Download host HiCo
-        uses: actions/download-artifact@v6
-        with:
-          name: hico-host
-          path: build/bin
-
-      - name: Download discovery metadata
-        uses: actions/download-artifact@v6
-        with:
-          name: discovery
-          path: build/discovery
-
-      - name: Ingest shard
-        env:
-          JOB_ID: ${{ matrix.id }}
-        run: |
-          set -euo pipefail
-          chmod +x build/bin/hicod
-          job_file="$RUNNER_TEMP/job.json"
-          jq --arg id "$JOB_ID" '.jobs[] | select(.id == $id)' build/discovery/discovery.json > "$job_file"
-          test -s "$job_file"
-          mkdir -p "build/ingest/$JOB_ID"
-          python3 tools/hico_ingest.py ingest \
-            --job "$job_file" \
-            --output "build/ingest/$JOB_ID" \
-            --hicod build/bin/hicod \
-            --decode-known
-
-      - name: Archive ingest result
-        env:
-          JOB_ID: ${{ matrix.id }}
-        run: |
-          set -euo pipefail
-          mkdir -p build/ingest-archives
-          archive="build/ingest-archives/ingest-${JOB_ID}.tar"
-          # Keep the original repository filenames intact. GitHub artifact uploads
-          # reject filenames containing characters such as `?`, while tar can
-          # faithfully carry those names for later extraction. Include the shard
-          # directory itself so merged downloads cannot collide across shards.
-          tar -C build/ingest -cf "$archive" "$JOB_ID"
-          test -s "$archive"
-
-      - name: Upload ingest result
-        uses: actions/upload-artifact@v6
-        with:
-          name: ingest-${{ matrix.id }}
-          path: build/ingest-archives/ingest-${{ matrix.id }}.tar
-          if-no-files-found: error
-
-  map:
-    name: Map ingested thermal shard ${{ matrix.id }}
-    needs: [discover, ingest]
-    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
-    strategy:
-      fail-fast: false
-      max-parallel: 8
-      matrix:
-        id: ${{ fromJSON(needs.discover.outputs.matrix_ids) }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Download host HiCo
-        uses: actions/download-artifact@v6
-        with:
-          name: hico-host
-          path: build/bin
-
-      - name: Download ingest shard
-        uses: actions/download-artifact@v6
-        with:
-          name: ingest-${{ matrix.id }}
-          path: build/ingest-archives
-
-      - name: Extract ingest shard
-        env:
-          JOB_ID: ${{ matrix.id }}
-        run: |
-          set -euo pipefail
-          archive="build/ingest-archives/ingest-${JOB_ID}.tar"
-          test -s "$archive"
-          mkdir -p build/ingest
-          tar -xf "$archive" -C build/ingest
-          test -d "build/ingest/$JOB_ID"
-
-      - name: Map thermal artifacts
-        env:
-          JOB_ID: ${{ matrix.id }}
-        run: |
-          set -euo pipefail
-          chmod +x build/bin/hicod
-          roots="$RUNNER_TEMP/roots.txt"
-          find "build/ingest/$JOB_ID/raw" -mindepth 2 -maxdepth 2 -type d -print | sort > "$roots"
-          if [ -s "$roots" ]; then
-            mkdir -p "build/mapping/$JOB_ID"
-            python3 tools/hico_thermal.py \
-              --hicod build/bin/hicod \
-              map-set "$roots" "build/mapping/$JOB_ID/mapping.json" \
-              --decode
-          else
-            mkdir -p "build/mapping/$JOB_ID"
-            printf '{"schema":"hico.artifact-map-set.v2","roots":[],"maps":[],"artifacts":[],"failures":[],"summary":{"roots":0,"artifacts":0,"plain":0,"decoded":0,"opaque":0,"decode_failures":0}}\n' > "build/mapping/$JOB_ID/mapping.json"
-          fi
-
-      - name: Upload mapping result
-        uses: actions/upload-artifact@v6
-        with:
-          name: mapping-${{ matrix.id }}
-          path: build/mapping/${{ matrix.id }}/mapping.json
-          if-no-files-found: error
-
-  aws-submit:
-    name: Submit AWS CodeBuild thermal batch
-    needs: [preflight, discover]
-    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
-    outputs:
-      batch_id: ${{ steps.start.outputs.batch_id }}
-      results_uri: ${{ steps.start.outputs.results_uri }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 1
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v6.3.0
-        with:
-          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
-          aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
-
-      - name: Validate AWS configuration
-        env:
-          HICO_AWS_ROLE_ARN: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
-        run: |
-          set -euo pipefail
-          test -n "$HICO_AWS_ROLE_ARN" || {
-            echo 'Missing repository variable: HICO_AWS_ROLE_ARN or HICO_AWS_BOOTSTRAP_ROLE_ARN' >&2
-            exit 1
-          }
-          aws sts get-caller-identity --query 'Arn' --output text
-
-      - name: Resolve CodeBuild project and S3 bucket
-        id: resolve
-        env:
-          HICO_AWS_CODEBUILD_PROJECT: ${{ vars.HICO_AWS_CODEBUILD_PROJECT }}
-          HICO_AWS_S3_BUCKET: ${{ vars.HICO_AWS_S3_BUCKET }}
-          HICO_AWS_STACK_NAME: ${{ vars.HICO_AWS_STACK_NAME || 'hico-thermal-offload' }}
-        run: |
-          set -euo pipefail
-          outputs="$RUNNER_TEMP/hico-stack-outputs.json"
-          aws cloudformation describe-stacks \
-            --stack-name "$HICO_AWS_STACK_NAME" \
-            --query 'Stacks[0].Outputs' \
-            --output json > "$outputs"
-
-          project="${HICO_AWS_CODEBUILD_PROJECT:-}"
-          bucket="${HICO_AWS_S3_BUCKET:-}"
-          if [ -z "$project" ]; then
-            project=$(jq -r '.[] | select(.OutputKey == "CodeBuildProjectName") | .OutputValue' "$outputs")
-          fi
-          if [ -z "$bucket" ]; then
-            bucket=$(jq -r '.[] | select(.OutputKey == "ArtifactBucketName") | .OutputValue' "$outputs")
-          fi
-          test -n "$project" || { echo 'Unable to resolve CodeBuild project.' >&2; exit 1; }
-          test -n "$bucket" || { echo 'Unable to resolve S3 bucket.' >&2; exit 1; }
-          echo "project=$project" >> "$GITHUB_OUTPUT"
-          echo "bucket=$bucket" >> "$GITHUB_OUTPUT"
-
-      - name: Download discovery metadata
-        uses: actions/download-artifact@v6
-        with:
-          name: discovery
-          path: build/discovery
-
-      - name: Download host HiCo
-        uses: actions/download-artifact@v6
-        with:
-          name: hico-host
-          path: build
-
-      - name: Create source snapshot
-        run: |
-          set -euo pipefail
-          git archive --format=zip --output=build/hico-worker-source.zip HEAD -- tools sources
-          test -s build/hico-worker-source.zip
-          test -s build/hicod
-
-      - name: Start AWS CodeBuild batch
-        id: start
-        env:
-          HICO_AWS_CODEBUILD_PROJECT: ${{ steps.resolve.outputs.project }}
-          HICO_AWS_S3_BUCKET: ${{ steps.resolve.outputs.bucket }}
-          HICO_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}
-        run: |
-          set -euo pipefail
-          python3 tools/hico_aws_batch.py start \
-            --project "$HICO_AWS_CODEBUILD_PROJECT" \
-            --bucket "$HICO_AWS_S3_BUCKET" \
-            --run-id "$HICO_RUN_ID" \
-            --discovery build/discovery/discovery.json \
-            --matrix build/discovery/matrix.json \
-            --source build/hico-worker-source.zip \
-            --hicod build/hicod \
-            --output build/aws-batch.json
-          jq -r '.batch_id' build/aws-batch.json | sed 's/^/batch_id=/' >> "$GITHUB_OUTPUT"
-          jq -r '.results_uri' build/aws-batch.json | sed 's/^/results_uri=/' >> "$GITHUB_OUTPUT"
-
-      - name: Upload AWS batch metadata
-        uses: actions/upload-artifact@v6
-        with:
-          name: aws-batch-${{ github.run_id }}
-          path: build/aws-batch.json
-          if-no-files-found: error
-
-  aws-wait:
-    name: Wait for AWS thermal batch
-    needs: aws-submit
-    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 1
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v6.3.0
-        with:
-          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
-          aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
-
-      - name: Download AWS batch metadata
-        uses: actions/download-artifact@v6
-        with:
-          name: aws-batch-${{ github.run_id }}
-          path: build
-
-      - name: Wait for CodeBuild batch
-        run: |
-          set -euo pipefail
-          batch_id=$(jq -r '.batch_id' build/aws-batch.json)
-          python3 tools/hico_aws_batch.py wait --batch-id "$batch_id" --timeout-minutes 420 --poll-seconds 30
-
-  merge:
-    name: Merge and validate generated database
-    permissions:
-      contents: read
-      id-token: write
-    needs: [discover, ingest, map, aws-submit, aws-wait]
-    if: >-
-      always() && needs.discover.result == 'success' &&
-      ((inputs.compute_backend != 'aws' && needs.map.result == 'success') ||
-       (inputs.compute_backend == 'aws' && needs.aws-wait.result == 'success'))
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 1
-
-      - name: Download host HiCo
-        uses: actions/download-artifact@v6
-        with:
-          name: hico-host
-          path: build/bin
-
-      - name: Verify host HiCo executable
-        shell: bash
-        run: |
-          set -euo pipefail
-          test -f build/bin/hicod
-          chmod +x build/bin/hicod
-          test -x build/bin/hicod
-
-      - name: Download all ingest archives (GitHub backend)
-        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
-        uses: actions/download-artifact@v6
-        with:
-          pattern: ingest-*
-          path: build/all-ingest-archives
-          merge-multiple: true
-
-      - name: Extract all ingest archives (GitHub backend)
-        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p build/all-ingest
-          shopt -s nullglob
-          archives=(build/all-ingest-archives/ingest-*.tar)
-          ((${#archives[@]} > 0)) || {
-            echo 'No ingest archives were downloaded.' >&2
-            exit 1
-          }
-          for archive in "${archives[@]}"; do
-            tar -xf "$archive" -C build/all-ingest
-          done
-          find build/all-ingest -mindepth 1 -maxdepth 1 -type d -print -quit | grep -q .
-
-      - name: Download all mapping results (GitHub backend)
-        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
-        uses: actions/download-artifact@v6
-        with:
-          pattern: mapping-*
-          path: build/all-mapping
-          merge-multiple: true
-
-      - name: Configure AWS credentials for result download
-        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
-        uses: aws-actions/configure-aws-credentials@v6.3.0
-        with:
-          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
-          aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
-
-      - name: Download AWS results
-        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
-        env:
-          RESULTS_URI: ${{ needs.aws-submit.outputs.results_uri }}
-        run: |
-          set -euo pipefail
-          python3 tools/hico_aws_batch.py fetch --results-uri "$RESULTS_URI" --output build/aws-results
-          test -d build/aws-results
-
-      - name: Merge generated data
-        run: |
-          set -euo pipefail
-          if [ "$HICO_DATABASE_BACKEND" = "aws" ]; then
-            python3 tools/hico_database.py merge-ingest build/aws-results/ingest --output database
-            python3 tools/hico_database.py merge-mappings build/aws-results/mapping --output database
-          else
-            python3 tools/hico_database.py merge-ingest build/all-ingest --output database
-            python3 tools/hico_database.py merge-mappings build/all-mapping --output database
-          fi
-          python3 tools/hico_database.py build --root . --output database
-          python3 tools/hico_database.py thermal-table --root . --output database/tables
-
-      - name: Validate database and source invariants
-        env:
-          HICOD: build/bin/hicod
-        run: |
-          set -euo pipefail
-          python3 tools/hico_database.py validate database
-          python3 tools/hico_database.py validate database/tables
-          python3 tools/verify_webui.py
-          python3 tests/hico_tools_test.py
-          python3 tests/thermal_scope_test.py
-          python3 tests/topology_test.py
-          python3 tests/database_test.py
-          python3 tests/scanner_test.py
           python3 tools/gen_device_db.py --check
-
-      - name: Upload merged database for inspection
-        uses: actions/upload-artifact@v6
-        with:
-          name: hico-database-merged
-          path: database/
-          if-no-files-found: error
-
-  publish:
-    name: Publish validated database
-    needs: merge
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 1
-
-      - name: Download merged database
-        uses: actions/download-artifact@v6
-        with:
-          name: hico-database-merged
-          path: database
-
-      - name: Verify before publish
-        run: |
-          set -euo pipefail
-          python3 tools/hico_database.py validate database
-          python3 tools/hico_database.py validate database/tables
           python3 tools/verify_webui.py
 
-      - name: Commit and push database
+      - name: Rebuild deterministic database in a clean directory
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database/
-          if git diff --cached --quiet; then
-            echo "Database is already up to date."
-            exit 0
-          fi
-          git commit -m "data: refresh multi-vendor thermal knowledge database" \
-            -m "Ingest registered OEM dumps, Android ROM device trees, vendor trees and kernel/device sources; regenerate artifact mappings and validated repository indexes." \
-            -m "Generated by HiCo Thermal Database workflow after shard ingestion, codec analysis, merge validation and WebUI integrity checks."
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          rm -rf build/database build/thermal-table
+          python3 tools/hico_database.py build --root . --output build/database
+          python3 tools/hico_database.py thermal-table --root . --output build/thermal-table
+          python3 tools/hico_database.py validate build/database
+          python3 tools/hico_database.py validate build/thermal-table
+
+      - name: Upload database verification artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: hico-thermal-database
+          path: |
+            build/database/
+            build/thermal-table/
+          if-no-files-found: error

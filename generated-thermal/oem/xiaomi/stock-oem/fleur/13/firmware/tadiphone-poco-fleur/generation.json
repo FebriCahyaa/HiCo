@@ -1,0 +1,203 @@
+{
+  "elapsed_s": 0.13,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-4k.conf",
+      "candidate_sha256": "a877d86303ff87ea764619eb29e2fbd2a29a05e07804f7fef83b3dcb631142bb",
+      "margin": "4",
+      "original_sha256": "36bb3cc83d197f2c05a79c7446f97e9392da9acc66f417f66160a9d67009e919",
+      "path": "thermal-4k.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-4k.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-arvr.conf",
+      "candidate_sha256": "ac76d1aee64facf8fd28552f1a84a45a179ce2a14600091c325f89786b81d2d5",
+      "margin": "4",
+      "original_sha256": "edff64614a1544a35bca91f501d02d71d317f64eb513a709743ea201b1cd373e",
+      "path": "thermal-arvr.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-arvr.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-camera.conf",
+      "candidate_sha256": "0177b73239302952025c761d6ab4bc5a47bc9c3563576a404ff3cfe20c080bc0",
+      "margin": "4",
+      "original_sha256": "c51fad5b594fc162eaa18e18183b5e107cdfcc659920bc9af003d15a8fc9533d",
+      "path": "thermal-camera.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-camera.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-camera2.conf",
+      "candidate_sha256": "fa56064ee54c9c445ca11f27954525827f80097595da9fd8c43cffd8da009b39",
+      "margin": "4",
+      "original_sha256": "377be327a312b3453ce5d6c6f2c58652cd890fd576e4b6dc04d8d0f6ee6160a7",
+      "path": "thermal-camera2.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-camera2.conf",
+      "sections": 16,
+      "status": "generated",
+      "tuned_sections": 12
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "58a83aad0529e5497aa957257a50820b20ea9b4977ef85188d6517bc83581c9d",
+      "margin": "4",
+      "original_sha256": "35d2e8c15980bce3a9356183982287473dbcaf660c9df5ee88b46763148591ac",
+      "path": "thermal-chg-only.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-chg-only.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-class0.conf",
+      "candidate_sha256": "33bbed0dfa842c25abcc2eb4a6acc42250fc4ff963961cdae2097d17598380cd",
+      "margin": "4",
+      "original_sha256": "ff6402f9a9d30a0972835a91072404aaa5b8cb8fb100597d8252c3197af806c7",
+      "path": "thermal-class0.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-class0.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-navigation.conf",
+      "candidate_sha256": "bcdae84799aa5463ce3f46632a5602620a80faa200a9a2624c0f9b22172ca9c7",
+      "margin": "4",
+      "original_sha256": "16ea5109c86373f44ad856440d64a9ea9a567440ba2ed6b7ab565b265c3e8bd7",
+      "path": "thermal-navigation.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-navigation.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_sha256": "11a1e3bfb52ce7ba50301e990356121844f4fa7ab142984ec38619904126f7e8",
+      "original_sha256": "11a1e3bfb52ce7ba50301e990356121844f4fa7ab142984ec38619904126f7e8",
+      "path": "thermal-nolimits.conf",
+      "sections": 6,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-normal.conf",
+      "candidate_sha256": "a6719cce442ab846fde9ded1e279f1a4a7ddcd762c88fd377022fd52c5c0f0ae",
+      "margin": "4",
+      "original_sha256": "bfd1b7e3b6af9544849d394e62b7adb5c56c5f9140f8366820555ea7223c6853",
+      "path": "thermal-normal.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-normal.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-phone.conf",
+      "candidate_sha256": "7c26a0a7cb978e0b227d9cb8f25a9bed446ab217403d42450fd4538f78918993",
+      "margin": "4",
+      "original_sha256": "bcbffff13819d94c30ebffaedc2f46dcef1ca0a96a3f71cb81fe0f598e739fde",
+      "path": "thermal-phone.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-phone.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-tgame.conf",
+      "candidate_sha256": "f152191368d843b2250855df8095285d3bf2e1f85bc4f3442c592c97f8a80aed",
+      "margin": "4",
+      "original_sha256": "de854ebaedc6bce7e63b72ecad463cde3f803c5f921f6b5fd987ce9d8abe66ab",
+      "path": "thermal-tgame.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-tgame.conf",
+      "sections": 6,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-video.conf",
+      "candidate_sha256": "55cd4614cc39394862932d5c8e8d7683be0f629dda7315260df5b56ac6c458e7",
+      "margin": "4",
+      "original_sha256": "f1909e9bc955516a382caf15251453a118bd7854f157481ae5d1da75c0c639f1",
+      "path": "thermal-video.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-video.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/candidate/thermal-videochat.conf",
+      "candidate_sha256": "32949fc6290a16edcdc3aa8fbd031a4db682ff5fc65fc39446244435e8d9c6d2",
+      "margin": "4",
+      "original_sha256": "21027f1df1ce6021920b1c91be83a991568ae54597d03928c7466900922445d8",
+      "path": "thermal-videochat.conf",
+      "policy": "mediatek",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/fleur/13/firmware/tadiphone-poco-fleur/review/thermal-videochat.conf",
+      "sections": 12,
+      "status": "generated",
+      "tuned_sections": 8
+    },
+    {
+      "candidate_sha256": "f6702b74f7dc586e733c412161e05d24e3be2fac3d376907bc404a666a5d2688",
+      "original_sha256": "f6702b74f7dc586e733c412161e05d24e3be2fac3d376907bc404a666a5d2688",
+      "path": "thermal-youtube.conf",
+      "sections": 6,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "13",
+    "device": "fleur",
+    "ecosystem": "oem",
+    "platform": "mt6781",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "missi_phoneext4_global-user-13-TP1A.220624.014-V816.0.4.0.TKEMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-poco",
+    "provider": "gitlab",
+    "repository": "dumps/poco/fleur",
+    "url": "https://dumps.tadiphone.dev/dumps/poco/fleur/-/tree/missi_phoneext4_global-user-13-TP1A.220624.014-V816.0.4.0.TKEMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 12,
+    "not_tunable": 2,
+    "thermal_files": 16,
+    "unchanged": 2
+  }
+}

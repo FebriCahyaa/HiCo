@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/land/6.0.1/firmware/tadiphone-xiaomi-land/candidate/thermal-engine.conf",
+      "candidate_sha256": "c45e19b8cf97253da6a2cc4e418b9d2368750b4fafa5dd0d9580ad9912c6d251",
+      "margin": "5",
+      "original_sha256": "0afeb4af692fe47548c78a5fa54eb3b7ee6292d092b5f7c974d50ecc0fa26cb6",
+      "path": "thermal-engine.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/land/6.0.1/firmware/tadiphone-xiaomi-land/review/thermal-engine.conf",
+      "sections": 22,
+      "status": "generated",
+      "tuned_sections": 6
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "6.0.1",
+    "device": "land",
+    "ecosystem": "oem",
+    "platform": "msm8937",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "land-user-6.0.1-MMB29M-V10.2.2.0.MALMIXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/land",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/land/-/tree/land-user-6.0.1-MMB29M-V10.2.2.0.MALMIXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 1,
+    "not_tunable": 0,
+    "thermal_files": 1,
+    "unchanged": 0
+  }
+}

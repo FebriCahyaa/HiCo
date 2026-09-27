@@ -1,0 +1,144 @@
+{
+  "elapsed_s": 0.09,
+  "failures": [],
+  "files": [
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-4k.conf",
+      "candidate_sha256": "e17da8f6de2dcb8062c3bd342e2aadcd7c79d92b983fbbfeb7eb44ae6ec769df",
+      "margin": "5",
+      "original_sha256": "fc2c8f90aafec0440c80fb7bbe95c2ae4909646faa1f592e075ede89585b3869",
+      "path": "thermal-4k.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-4k.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-arvr.conf",
+      "candidate_sha256": "ca2f10a3b11b27047651db4a1a7d8faf67d28798fa83864de5c47145db27a683",
+      "margin": "5",
+      "original_sha256": "edff64614a1544a35bca91f501d02d71d317f64eb513a709743ea201b1cd373e",
+      "path": "thermal-arvr.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-arvr.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-camera.conf",
+      "candidate_sha256": "d397fc3c8728cbd8394d2da5edee09b9570e03231bf67ca58766ba2195647ebf",
+      "margin": "5",
+      "original_sha256": "2af44fc8a4a94fbc1e80a1ebf203d872634354f004a311a8643690cf265abb94",
+      "path": "thermal-camera.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-camera.conf",
+      "sections": 10,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-chg-only.conf",
+      "candidate_sha256": "2695a12ac1dfdb3b728722aedf026636304f1cce764a4b21e760d998f2a88bf1",
+      "margin": "5",
+      "original_sha256": "e3cdf0ecdaef6aa5b1d66d45e7b7be559f8d6eff07bb53a29a10c1d3c1496b4b",
+      "path": "thermal-chg-only.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-chg-only.conf",
+      "sections": 3,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "format": "text",
+      "path": "thermal-engine.conf",
+      "status": "not-tunable"
+    },
+    {
+      "format": "opaque-binary",
+      "path": "thermal-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-nolimits.conf",
+      "candidate_sha256": "6bc935d3498c22161264e54ab3f9efa15ef72c70c6d694245734b4cfba2cc3a7",
+      "margin": "5",
+      "original_sha256": "376a69aab2020509e8a9fe2c0d2baa89c1f9511b92e673de01234c57039498ee",
+      "path": "thermal-nolimits.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-nolimits.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 3
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-normal.conf",
+      "candidate_sha256": "f638841a94afe39a1da3cb97b3333b748d3a383ce8f94694f24c755d2cffb8f8",
+      "margin": "5",
+      "original_sha256": "e2ffded71eb23b2ac4780ffbd9d5203c3c99f2dac05e2e3dbfcd7ba4b38594a9",
+      "path": "thermal-normal.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-normal.conf",
+      "sections": 7,
+      "status": "generated",
+      "tuned_sections": 1
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-phone.conf",
+      "candidate_sha256": "5a500dd9dfdf106075a30fc36397e5ef6402f19e1333f3faa26616a3e9b57de3",
+      "margin": "5",
+      "original_sha256": "f91c5ad31553857c5626ce68f732046aac2a5abf406d7e91ee4859618b586d3c",
+      "path": "thermal-phone.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-phone.conf",
+      "sections": 9,
+      "status": "generated",
+      "tuned_sections": 4
+    },
+    {
+      "candidate_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/candidate/thermal-tgame.conf",
+      "candidate_sha256": "03fa055f5fc78030610d3d63a11a5ee3d02695a4fefb6864819ab0b2c7256fa9",
+      "margin": "5",
+      "original_sha256": "488748e25b3e8fae108129f9df934c67511bd2a124ca25248716a85fcc9112bf",
+      "path": "thermal-tgame.conf",
+      "policy": "qualcomm",
+      "review_path": "generated-thermal/oem/xiaomi/stock-oem/surya/12/firmware/tadiphone-poco-surya/review/thermal-tgame.conf",
+      "sections": 8,
+      "status": "generated",
+      "tuned_sections": 2
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermald-devices.conf",
+      "status": "not-tunable"
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:22Z",
+  "identity": {
+    "android": "12",
+    "device": "surya",
+    "ecosystem": "oem",
+    "platform": "sm6150",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "qssi-user-12-SKQ1.211019.001-V13.0.1.0.SJGINXM-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-poco",
+    "provider": "gitlab",
+    "repository": "dumps/poco/surya",
+    "url": "https://dumps.tadiphone.dev/dumps/poco/karna/-/tree/qssi-user-12-SKQ1.211019.001-V13.0.1.0.SJGINXM-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 8,
+    "not_tunable": 3,
+    "thermal_files": 11,
+    "unchanged": 0
+  }
+}

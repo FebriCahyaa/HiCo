@@ -1,0 +1,70 @@
+{
+  "elapsed_s": 0.01,
+  "failures": [],
+  "files": [
+    {
+      "candidate_sha256": "7a85c0c0b2f89eb09d355c6a608fe40c24b0b58986e414822c39818fbb84a74f",
+      "original_sha256": "7a85c0c0b2f89eb09d355c6a608fe40c24b0b58986e414822c39818fbb84a74f",
+      "path": "thermal-engine-high.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "format": "thermal-engine-text",
+      "path": "thermal-engine-map.conf",
+      "status": "not-tunable"
+    },
+    {
+      "candidate_sha256": "04d1600825dda36912a53718b73ec185d9c7178d74f4b1614840f19a84f9a005",
+      "original_sha256": "04d1600825dda36912a53718b73ec185d9c7178d74f4b1614840f19a84f9a005",
+      "path": "thermal-engine-nolimits.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_sha256": "5ccf7a53242bbdaf65d1350f6449785ab462ab908992fb86aaeb871e254406b4",
+      "original_sha256": "5ccf7a53242bbdaf65d1350f6449785ab462ab908992fb86aaeb871e254406b4",
+      "path": "thermal-engine-normal.conf",
+      "sections": 2,
+      "status": "unchanged",
+      "tuned_sections": 0
+    },
+    {
+      "candidate_sha256": "9e33e3559c1dff1b174615bc6a1543c764ff550224359ee02b5aa98c654e6ee4",
+      "original_sha256": "9e33e3559c1dff1b174615bc6a1543c764ff550224359ee02b5aa98c654e6ee4",
+      "path": "thermal-engine.conf",
+      "sections": 56,
+      "status": "unchanged",
+      "tuned_sections": 0
+    }
+  ],
+  "generated_at": "2026-09-27T09:52:20Z",
+  "identity": {
+    "android": "10",
+    "device": "laurus",
+    "ecosystem": "oem",
+    "platform": "trinket",
+    "properties": {},
+    "repository_role": "firmware",
+    "rom_family": "stock-oem",
+    "vendor": "xiaomi"
+  },
+  "schema": "hico.thermal-generation.v1",
+  "source": {
+    "branch": "laurus-user-10-QKQ1.190910.002-20.6.10-release-keys",
+    "commit": "legacy-import",
+    "id": "tadiphone-xiaomi",
+    "provider": "gitlab",
+    "repository": "dumps/xiaomi/laurus",
+    "url": "https://dumps.tadiphone.dev/dumps/xiaomi/laurus/-/tree/laurus-user-10-QKQ1.190910.002-20.6.10-release-keys"
+  },
+  "summary": {
+    "failures": 0,
+    "generated": 0,
+    "not_tunable": 1,
+    "thermal_files": 5,
+    "unchanged": 4
+  }
+}
