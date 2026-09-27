@@ -1,0 +1,154 @@
+name: HiCo Thermal Ingest (delta only)
+
+# This workflow does NOT bulk-download data. The initial dataset was seeded
+# from localhost with:
+#     python3 tools/ingest/list_device_repos.py
+#     python3 tools/ingest/sparse_fetch.py --all --jobs 8
+# and committed to stock/manifest/ and stock/rom/. From then on, this
+# workflow only fetches deltas: it walks the manifests, checks upstream
+# `pushed_at` against the sha we already stored, and re-fetches ONLY the
+# devices that moved.
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "comma-separated source ids (blank = all)"
+        required: false
+        default: ""
+      force:
+        description: "refetch every device even if unchanged"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "0 3 * * 0"   # weekly, Sunday 03:00 UTC
+
+concurrency:
+  group: ingest-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    name: Discover changed devices
+    runs-on: ubuntu-latest
+    outputs:
+      changed_json: ${{ steps.diff.outputs.changed_json }}
+      device_count: ${{ steps.diff.outputs.device_count }}
+    steps:
+      - uses: actions/checkout@v6
+        with: { fetch-depth: 1 }
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with: { python-version: "3.11" }
+
+      - name: Verify sources.yaml
+        run: python3 tools/verify/rom_sources.py --sources stock/sources.yaml
+        env: { GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+
+      - name: Re-enumerate metadata (fast, API-only)
+        run: python3 tools/ingest/list_device_repos.py
+        env: { GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+
+      - name: Diff against committed manifests
+        id: diff
+        run: |
+          python3 tools/ingest/diff_manifests.py \
+            --only "${{ inputs.only }}" \
+            --force "${{ inputs.force }}" \
+            --out "$RUNNER_TEMP/changed.json"
+          echo "changed_json=$RUNNER_TEMP/changed.json" >> "$GITHUB_OUTPUT"
+          echo "device_count=$(jq '.device_count' "$RUNNER_TEMP/changed.json")" >> "$GITHUB_OUTPUT"
+
+      - name: Upload change set
+        uses: actions/upload-artifact@v6
+        with:
+          name: changed-devices
+          path: ${{ steps.diff.outputs.changed_json }}
+
+  fetch:
+    name: Sparse-fetch delta
+    needs: discover
+    if: fromJson(needs.discover.outputs.device_count) > 0
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        source: [lineageos, pixelos, crdroid, derpfest, evolutionx, arrowos, aospa, dotos, voltageos, lmodroid, awakenos, alphadroid, spark, protonaosp]
+    steps:
+      - uses: actions/checkout@v6
+        with: { fetch-depth: 1 }
+
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.11" }
+
+      - uses: actions/download-artifact@v6
+        with:
+          name: changed-devices
+          path: ${{ runner.temp }}
+
+      - name: Fetch only changed devices for this source
+        run: |
+          python3 tools/ingest/sparse_fetch.py \
+            --source ${{ matrix.source }} \
+            --only-changed "$RUNNER_TEMP/changed.json" \
+            --jobs 4
+
+      - name: Upload per-source artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: fetched-${{ matrix.source }}
+          path: stock/rom/${{ matrix.source }}/
+          if-no-files-found: ignore
+
+  commit:
+    name: Commit delta and open PR
+    needs: fetch
+    if: always() && needs.discover.outputs.device_count != '0'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with: { fetch-depth: 0 }
+
+      - uses: actions/download-artifact@v6
+        with:
+          path: ${{ runner.temp }}/artifacts
+
+      - name: Copy artifacts into stock/rom/
+        run: |
+          for d in "$RUNNER_TEMP"/artifacts/fetched-*/; do
+            slug=$(basename "$d" | sed 's/^fetched-//')
+            mkdir -p "stock/rom/$slug"
+            rsync -a "$d/" "stock/rom/$slug/"
+          done
+
+      - name: Verify determinism (parsers, evidence audit)
+        run: |
+          python3 tests/hico_evidence_parsers_test.py
+          python3 tests/hico_evidence_audit_test.py
+          python3 tests/hico_dependency_resolver_test.py
+
+      - name: Open PR with delta
+        run: |
+          date_tag=$(date -u +%Y-%m-%d)
+          branch="stock/ingest-$date_tag"
+          git config user.name  "hico-ingest-bot"
+          git config user.email "hico-ingest-bot@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add stock/manifest stock/rom
+          if git diff --cached --quiet; then
+            echo "no delta to commit"
+            exit 0
+          fi
+          git commit -m "ingest($date_tag): fetch delta from upstream device trees"
+          git push -u origin "$branch" --force-with-lease
+          gh pr create --title "Stock ingest delta — $date_tag" \
+            --body "Automated delta from ingest.yml. Only changed devices refetched." \
+            --base main --head "$branch" --label zone:stock || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
