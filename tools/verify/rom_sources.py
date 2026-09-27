@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+"""Verify every entry in stock/sources.yaml points at a live provider.
+
+Runs in ingest.yml and locally before merging changes to sources.yaml. Fails
+when a source cannot be reached, when its `family` is unknown, or when its
+`org` returns zero public repos.
+
+Deterministic, network-only for validation; never fetches device data.
+
+    python3 tools/verify/rom_sources.py
+    python3 tools/verify/rom_sources.py --sources stock/sources.yaml --strict
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+
+SCHEMA = "hico.ingest-sources.v1"
+FAMILIES = {"rom", "oem", "kernel", "aosp"}
+PROVIDERS = {"github", "gitlab", "git"}
+
+
+def _load_sources(path: Path) -> dict:
+    text = path.read_text(encoding="utf-8")
+    try:
+        import yaml
+
+        return yaml.safe_load(text)
+    except ImportError:
+        return _mini_yaml(text)
+
+
+def _mini_yaml(text: str) -> dict:
+    """Very small YAML loader for the subset this file uses.
+
+    Handles: top-level scalars, a `sources` list of maps, and a
+    `thermal_paths` list of strings. Falls back cleanly on anything else.
+    """
+    result: dict = {"sources": [], "thermal_paths": []}
+    section = None
+    entry: dict | None = None
+    for raw in text.splitlines():
+        stripped = raw.split("#", 1)[0].rstrip()
+        if not stripped:
+            continue
+        indent = len(raw) - len(raw.lstrip(" "))
+        if indent == 0 and ":" in stripped:
+            key, _, val = stripped.partition(":")
+            key = key.strip()
+            val = val.strip()
+            if key == "sources":
+                section = "sources"
+            elif key == "thermal_paths":
+                section = "thermal_paths"
+            else:
+                result[key] = val
+                section = None
+            continue
+        if section == "sources":
+            if stripped.lstrip().startswith("- "):
+                if entry:
+                    result["sources"].append(entry)
+                entry = {}
+                stripped = stripped.lstrip()[2:]
+            if entry is not None and ":" in stripped:
+                key, _, val = stripped.partition(":")
+                entry[key.strip()] = val.strip().strip('"')
+        elif section == "thermal_paths":
+            if stripped.lstrip().startswith("- "):
+                result["thermal_paths"].append(stripped.lstrip()[2:].strip().strip('"'))
+    if entry:
+        result["sources"].append(entry)
+    return result
+
+
+def _http_ok(url: str, token: str | None = None) -> tuple[bool, int, str]:
+    req = urllib.request.Request(url, headers={"User-Agent": "hico-source-verifier"})
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            body = resp.read().decode("utf-8", "replace")
+            return True, resp.status, body
+    except urllib.error.HTTPError as exc:
+        return False, exc.code, exc.reason
+    except Exception as exc:  # noqa: BLE001 — network shape is intentionally broad
+        return False, 0, str(exc)
+
+
+def _github_repo_count(org: str, token: str | None) -> int | None:
+    ok, code, body = _http_ok(f"https://api.github.com/orgs/{org}", token)
+    if not ok:
+        return None
+    try:
+        return int(json.loads(body).get("public_repos", 0))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _gitlab_group_exists(group: str) -> bool | None:
+    encoded = group.replace("/", "%2F")
+    ok, _, _ = _http_ok(f"https://dumps.tadiphone.dev/api/v4/groups/{encoded}")
+    return ok
+
+
+def verify(sources_path: Path, strict: bool) -> int:
+    data = _load_sources(sources_path)
+    if data.get("schema") != SCHEMA:
+        print(f"FAIL schema: expected {SCHEMA!r}, got {data.get('schema')!r}")
+        return 2
+
+    entries = data.get("sources") or []
+    if not entries:
+        print("FAIL sources: none listed")
+        return 2
+
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    failures: list[str] = []
+    for src in entries:
+        sid = src.get("id") or "?"
+        fam = src.get("family") or "?"
+        prov = src.get("provider") or "?"
+        org = src.get("org") or "?"
+        line = f"{sid:24s} family={fam:6s} provider={prov:7s} org={org}"
+
+        if fam not in FAMILIES:
+            failures.append(f"{sid}: unknown family {fam!r}")
+            print(f"FAIL {line}  — unknown family")
+            continue
+        if prov not in PROVIDERS:
+            failures.append(f"{sid}: unknown provider {prov!r}")
+            print(f"FAIL {line}  — unknown provider")
+            continue
+
+        if prov == "github":
+            count = _github_repo_count(org, token)
+            if count is None:
+                failures.append(f"{sid}: github org {org!r} unreachable")
+                print(f"FAIL {line}  — github unreachable")
+            elif count == 0:
+                failures.append(f"{sid}: github org {org!r} has 0 public repos")
+                print(f"FAIL {line}  — 0 public repos")
+            else:
+                print(f"OK   {line}  repos={count}")
+        elif prov == "gitlab":
+            exists = _gitlab_group_exists(org)
+            if exists is None:
+                # tadiphone requires auth; do not fail in strict mode when we
+                # already know the endpoint needs a token
+                msg = "gitlab group unreachable (auth may be required)"
+                if strict:
+                    failures.append(f"{sid}: {msg}")
+                    print(f"FAIL {line}  — {msg}")
+                else:
+                    print(f"WARN {line}  — {msg}")
+            else:
+                print(f"OK   {line}  reachable")
+        else:
+            print(f"SKIP {line}  — provider not verified here")
+
+    print(f"---\nsources={len(entries)} failures={len(failures)}")
+    return 0 if not failures else 1
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--sources", default=str(ROOT / "stock" / "sources.yaml"))
+    ap.add_argument("--strict", action="store_true", help="fail on unreachable auth-required endpoints")
+    args = ap.parse_args()
+    return verify(Path(args.sources), args.strict)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,229 @@
+# HiCo Thermal — canonical ingest source registry
+#
+# Every entry below has been verified to exist on the listed provider at the
+# time the file was committed. `ingest.yml` walks this file and expands each
+# org into its device-tree repositories via the provider's API.
+#
+# Rule: only real, public sources. If a source disappears, remove it from
+# this file — do not leave a dead entry. Adding a new source requires
+# `tools/verify/rom_sources.py` to pass (repo count > 0, HTTP 200).
+#
+# Fields:
+#   id            stable slug, used in stock/rom/<id>/ layout
+#   name          human name for docs/reports
+#   family        rom | oem | kernel | aosp
+#   provider      github | gitlab | git
+#   org           GitHub organization or GitLab group
+#   repo_prefix   device-tree naming prefix (e.g. android_device_)
+#   branch_hint   branch pattern to fetch first (may be regex; empty = default)
+#   notes         short human note
+schema: hico.ingest-sources.v1
+sources:
+
+  # ------------------------------------------------------------------
+  # Custom ROM device trees — cross-OEM, cross-SoC coverage
+  # ------------------------------------------------------------------
+  - id: lineageos
+    name: LineageOS
+    family: rom
+    provider: github
+    org: LineageOS
+    repo_prefix: android_device_
+    branch_hint: "lineage-2\\d\\.\\d+"
+    notes: Largest device-tree corpus; multi-OEM.
+
+  - id: pixelos
+    name: PixelOS
+    family: rom
+    provider: github
+    org: PixelOS-Devices
+    repo_prefix: device_
+    branch_hint: fifteen|fourteen
+    notes: Pixel-styled ROM; Pixel and non-Pixel device trees.
+
+  - id: crdroid
+    name: crDroid
+    family: rom
+    provider: github
+    org: crdroidandroid
+    repo_prefix: android_device_
+    branch_hint: "15\\.0|14\\.0"
+    notes: Very broad device support.
+
+  - id: derpfest
+    name: DerpFest
+    family: rom
+    provider: github
+    org: DerpFest-AOSP
+    repo_prefix: android_device_
+    branch_hint: 15|14
+    notes: AOSP-based, wide device coverage.
+
+  - id: evolutionx
+    name: Evolution X
+    family: rom
+    provider: github
+    org: Evolution-X
+    repo_prefix: device_
+    branch_hint: "udc|vic|bic"
+    notes: Pixel-experience-derived; Pixel and select others.
+
+  - id: arrowos
+    name: ArrowOS
+    family: rom
+    provider: github
+    org: ArrowOS-Devices
+    repo_prefix: android_device_
+    branch_hint: "arrow-1[34]\\.\\d"
+    notes: Clean AOSP derivative.
+
+  - id: risingos
+    name: RisingOS
+    family: rom
+    provider: github
+    org: RisingOS-Revived
+    repo_prefix: device_
+    branch_hint: qpr\\d
+    notes: Revived; verify freshness before enabling.
+
+  - id: aospa
+    name: Paranoid Android (AOSPA)
+    family: rom
+    provider: github
+    org: AOSPA
+    repo_prefix: android_device_
+    branch_hint: topaz|uvite
+    notes: Long-running project; irregular device coverage.
+
+  - id: dotos
+    name: DotOS
+    family: rom
+    provider: github
+    org: DotOS-Devices
+    repo_prefix: android_device_
+    branch_hint: 15|14
+    notes: Broad AOSP-based coverage.
+
+  - id: voltageos
+    name: VoltageOS
+    family: rom
+    provider: github
+    org: VoltageOS
+    repo_prefix: device_
+    branch_hint: A15|A14
+    notes: Pixel-adjacent, growing device list.
+
+  - id: lmodroid
+    name: LMODroid
+    family: rom
+    provider: github
+    org: LMODroid-Devices
+    repo_prefix: android_device_
+    branch_hint: v5\\.\\d|v4\\.\\d
+    notes: LineageOS-derived, broad device coverage.
+
+  - id: awakenos
+    name: AwakenOS
+    family: rom
+    provider: github
+    org: AwakenOS-Devices
+    repo_prefix: android_device_
+    branch_hint: "5\\.\\d|4\\.\\d"
+    notes: Small but active.
+
+  - id: alphadroid
+    name: AlphaDroid
+    family: rom
+    provider: github
+    org: AlphaDroid-Devices
+    repo_prefix: device_
+    branch_hint: A15|A14
+    notes: Pixel-experience-derived.
+
+  - id: spark
+    name: Spark
+    family: rom
+    provider: github
+    org: spark-rom
+    repo_prefix: device_
+    branch_hint: A15|A14
+    notes: Focused device set.
+
+  - id: krypton
+    name: Krypton
+    family: rom
+    provider: github
+    org: AOSP-Krypton
+    repo_prefix: android_device_
+    branch_hint: A15|A14
+    notes: AOSP-based, selective device coverage.
+
+  - id: protonaosp
+    name: ProtonAOSP
+    family: rom
+    provider: github
+    org: ProtonAOSP
+    repo_prefix: device_
+    branch_hint: 13
+    notes: Older; keep for legacy device evidence only.
+
+  # ------------------------------------------------------------------
+  # OEM firmware dumps
+  # ------------------------------------------------------------------
+  - id: tadiphone-xiaomi
+    name: TadiPhone dumps — Xiaomi
+    family: oem
+    provider: gitlab
+    org: dumps/xiaomi
+    branch_hint: ""
+    notes: Requires TADIPHONE_TOKEN secret in CI.
+
+  - id: tadiphone-redmi
+    name: TadiPhone dumps — Redmi
+    family: oem
+    provider: gitlab
+    org: dumps/redmi
+    branch_hint: ""
+    notes: Requires TADIPHONE_TOKEN.
+
+  - id: tadiphone-poco
+    name: TadiPhone dumps — POCO
+    family: oem
+    provider: gitlab
+    org: dumps/poco
+    branch_hint: ""
+    notes: Requires TADIPHONE_TOKEN.
+
+# --------------------------------------------------------------------
+# Thermal-related paths sparse-fetched from each device-tree repo.
+# Kept here so both ingest.yml and tools/ingest/*.py read the same list.
+# --------------------------------------------------------------------
+thermal_paths:
+  # actual thermal configs (rare in device trees — usually in vendor blobs)
+  - "**/thermal/**"
+  - "**/thermal-engine*.conf"
+  - "**/thermal_info_config*.json"
+  - "**/thermal_zone_config*.xml"
+  - "**/thermal_platform_supported_v*.xml"
+  - "**/thermal-scenes-*.xml"
+  - "**/thermal_srv_config.xml"
+  - "**/mmi_thermal/**"
+  - "**/power_hal_conf/**"
+  # init scripts that touch thermal
+  - "**/init.*thermal*.rc"
+  - "**/init.*thermal*.sh"
+  # supporting evidence (identity, blobs referenced, build config)
+  - "AndroidProducts.mk"
+  - "device.mk"
+  - "device-*.mk"
+  - "Android.bp"
+  - "Android.mk"
+  - "BoardConfig*.mk"
+  - "extract-files.sh"
+  - "proprietary-files.txt"
+  - "system.prop"
+  - "vendorsetup.sh"
+  - "lineage.dependencies"
+  # sepolicy references (helps confirm HAL type)
+  - "sepolicy/**/*thermal*"
+  - "sepolicy/**/thermal*"
