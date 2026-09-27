@@ -83,6 +83,7 @@ class RepoSpec:
     vendor: str = ""
     device: str = ""
     android: str = ""
+    repository_role: str = ""
 
     @property
     def key(self) -> str:
@@ -144,6 +145,7 @@ def load_index(path: Path) -> list[RepoSpec]:
             vendor=str(raw.get("vendor", "")),
             device=str(raw.get("device", "")),
             android=str(raw.get("android", "")),
+            repository_role=str(raw.get("repository_role", raw.get("role", ""))),
         ))
     return [r for r in repos if r.provider and r.full_name and r.branch and r.clone_url]
 
@@ -195,10 +197,14 @@ def infer_device(spec: RepoSpec, props: dict[str, str]) -> str:
         value = props.get(key, "").strip()
         if value and not value.lower().startswith(("unknown", "generic")):
             return clean(value)
+    if spec.device:
+        return clean(spec.device)
+    if infer_role(spec) in {"rom", "hal", "init", "hardware", "source", "independent"}:
+        return "unknown"
     name = spec.full_name.rstrip("/").split("/")[-1]
     name = re.sub(r"^android_(?:device|vendor|kernel|hardware)_", "", name, flags=re.I)
     name = re.sub(r"^(?:device|vendor|kernel)_", "", name, flags=re.I)
-    return clean(spec.device or name)
+    return clean(name)
 
 
 def infer_android(spec: RepoSpec, props: dict[str, str]) -> str:
@@ -216,10 +222,18 @@ def infer_rom(spec: RepoSpec, props: dict[str, str]) -> str:
 
 
 def infer_ecosystem(spec: RepoSpec) -> str:
-    return "oem" if spec.ecosystem == "oem" or spec.family == "oem" else "custom-rom"
+    if spec.ecosystem in {"oem", "custom-rom", "independent"}:
+        return spec.ecosystem
+    if spec.family == "oem":
+        return "oem"
+    if spec.family == "independent":
+        return "independent"
+    return "custom-rom"
 
 
 def infer_role(spec: RepoSpec) -> str:
+    if spec.repository_role:
+        return spec.repository_role
     for role, pattern in ROLE_PATTERNS:
         if pattern.search(spec.full_name):
             return role
