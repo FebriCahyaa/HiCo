@@ -57,6 +57,14 @@ embedded in the manifest, so regenerating the same evidence does not create nois
 
 The relationship resolver uses `sources/evidence` as its canonical evidence root by default. An explicit
 `--evidence-root` still overrides that default for isolated diagnostics.
+## CI verification
+
+Phase 2.5a verifies the committed canonical evidence and universal relationship graph in both the Build and
+Database workflows. CI runs the evidence and relationship regression tests, verifies `sources/evidence` file
+hashes and sizes, regenerates `sources/relationships.json` deterministically, and requires a clean diff.
+
+This verification reads only the committed repository index and canonical evidence. It does not collect or clone
+the retained thermal candidates.
 
 ```bash
 python3 tools/hico_relationships.py

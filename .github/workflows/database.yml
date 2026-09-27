@@ -52,6 +52,11 @@ jobs:
           python3 tests/thermal_table_test.py
           python3 tests/unpack_test.py
           python3 tests/workflow_regression_test.py
+          python3 tests/hico_evidence_test.py
+          python3 tests/hico_relationships_test.py
+          python3 tools/hico_evidence.py verify --root sources/evidence
+          python3 tools/hico_relationships.py
+          git diff --exit-code -- sources/relationships.json
           python3 tests/hico_collector_test.py
           python3 tools/hico_collector.py verify
           python3 tools/hico_generator.py verify

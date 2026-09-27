@@ -54,6 +54,13 @@ def load_universal_devices(path: Path | None) -> dict[str, dict]:
     return {str(x["id"]): x for x in data.get("devices", []) if isinstance(x, dict) and x.get("id")}
 
 
+def display_path(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT.resolve())).replace("\\", "/")
+    except ValueError:
+        return str(path).replace("\\", "/")
+
+
 def repository_role(repo: dict) -> str:
     role = str(repo.get("repository_role", "")).strip().lower()
     if role in ROLES:
@@ -365,8 +372,8 @@ def main() -> int:
     payload = {
         "schema": "hico.source-relationships.v1",
         "version": 1,
-        "generated_from": str(repo_path),
-        "universal_index": str(args.universal_index),
+        "generated_from": display_path(repo_path),
+        "universal_index": display_path(Path(args.universal_index)),
         "normalization": {"oem_role_changes_available": role_changes, "applied": bool(args.normalize_index)},
         "summary": summary,
         "relationships": rels,

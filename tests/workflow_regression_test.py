@@ -4,6 +4,7 @@ from __future__ import annotations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+BUILD = ROOT / ".github/workflows/build.yml"
 TOOLS = ROOT / ".github/workflows/tools.yml"
 DATABASE = ROOT / ".github/workflows/database.yml"
 
@@ -14,8 +15,21 @@ def require(text: str, needle: str, label: str) -> None:
 
 
 def main() -> int:
+    build = BUILD.read_text()
     tools = TOOLS.read_text()
     database = DATABASE.read_text()
+
+    require(build, "python3 tests/hico_evidence_test.py", "build canonical evidence regression test")
+    require(build, "python3 tests/hico_relationships_test.py", "build relationship regression test")
+    require(build, "python3 tools/hico_evidence.py verify --root sources/evidence", "build canonical evidence verifier")
+    require(build, "python3 tools/hico_relationships.py", "build relationship resolver")
+    require(build, "git diff --exit-code -- sources/relationships.json", "build deterministic relationship graph gate")
+
+    require(database, "python3 tests/hico_evidence_test.py", "database canonical evidence regression test")
+    require(database, "python3 tests/hico_relationships_test.py", "database relationship regression test")
+    require(database, "python3 tools/hico_evidence.py verify --root sources/evidence", "database canonical evidence verifier")
+    require(database, "python3 tools/hico_relationships.py", "database relationship resolver")
+    require(database, "git diff --exit-code -- sources/relationships.json", "database deterministic relationship graph gate")
 
     require(tools, "chmod +x build/hicod", "tools matrix executable guard")
     require(tools, "chmod +x build/hicod\n          test -x build/hicod", "tools full-map executable guard")
