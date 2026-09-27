@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hico-thermal.invalid/schema/universal.v1.schema.json",
+  "title": "HiCo Universal Device + ROM + Thermal Source",
+  "type": "object",
+  "required": [
+    "schema",
+    "version",
+    "devices",
+    "roms",
+    "thermal_sources"
+  ],
+  "properties": {
+    "schema": {
+      "const": "hico.universal.v1"
+    },
+    "version": {
+      "const": 1
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/device"
+      }
+    },
+    "roms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rom"
+      }
+    },
+    "thermal_sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/thermalSource"
+      }
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "device": {
+      "type": "object",
+      "required": [
+        "id",
+        "oem",
+        "codename",
+        "brand",
+        "model",
+        "platform",
+        "soc_vendor",
+        "aliases",
+        "thermal_source_ids",
+        "rom_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+/[a-z0-9._-]+$"
+        },
+        "oem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "codename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "brand": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "soc_vendor": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "qualcomm",
+            "mediatek",
+            "exynos",
+            "tensor",
+            "unisoc"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "thermal_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rom_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "rom": {
+      "type": "object",
+      "required": [
+        "id",
+        "family",
+        "name",
+        "android",
+        "ecosystem",
+        "oem",
+        "device_ids",
+        "thermal_source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9._-]+/[a-z0-9._-]+$"
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string"
+        },
+        "android": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ecosystem": {
+          "type": "string",
+          "enum": [
+            "oem",
+            "custom-rom",
+            "independent"
+          ]
+        },
+        "oem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "device_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "thermal_source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "repository": {
+      "type": "object",
+      "required": [
+        "provider",
+        "repository",
+        "branch",
+        "commit",
+        "url"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{7,64}$"
+        },
+        "url": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "thermalSource": {
+      "type": "object",
+      "required": [
+        "id",
+        "device_id",
+        "rom_id",
+        "ecosystem",
+        "oem",
+        "repository_role",
+        "source_layer",
+        "formats",
+        "repository",
+        "artifact_count",
+        "raw_artifact_count",
+        "manifest"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "device_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rom_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ecosystem": {
+          "type": "string",
+          "enum": [
+            "oem",
+            "custom-rom",
+            "independent"
+          ]
+        },
+        "oem": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository_role": {
+          "type": "string",
+          "enum": [
+            "firmware",
+            "vendor",
+            "device",
+            "kernel",
+            "hardware",
+            "rom",
+            "hal",
+            "init",
+            "mod",
+            "independent",
+            "source",
+            "unknown"
+          ]
+        },
+        "source_layer": {
+          "type": "string",
+          "enum": [
+            "firmware",
+            "vendor",
+            "odm",
+            "system",
+            "system_ext",
+            "product",
+            "kernel",
+            "device-tree",
+            "hal",
+            "init",
+            "unknown"
+          ]
+        },
+        "formats": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "repository": {
+          "$ref": "#/$defs/repository"
+        },
+        "artifact_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "raw_artifact_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "manifest": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
