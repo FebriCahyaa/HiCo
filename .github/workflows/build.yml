@@ -64,6 +64,7 @@ jobs:
           python3 tests/hico_evidence_test.py
           python3 tests/hico_relationships_test.py
           python3 tests/hico_multi_oem_evidence_test.py
+          python3 tests/hico_dependency_resolver_test.py
           python3 tests/hico_evidence_audit_test.py
           python3 tools/hico_evidence_audit.py --strict --min-sources 4 --min-oems 4
           python3 tools/hico_evidence.py verify --root sources/evidence

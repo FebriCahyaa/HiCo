@@ -2,6 +2,15 @@
   "evidence": {
     "items": [
       {
+        "kind": "extract-files",
+        "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/extract-files.sh",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/extract-files.sh",
+        "sha256": "be2d85c16ee207b2d1b1195a924f25ece653679d8a7a4e411393140fd3385861",
+        "size": 2015,
+        "source_commit": "40fab2b17d5f141bf5c52105d6f916aecf1bc167",
+        "tree_path": "extract-files.sh"
+      },
+      {
         "kind": "lineage-dependencies",
         "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/lineage.dependencies",
         "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/lineage.dependencies",
@@ -9,15 +18,39 @@
         "size": 104,
         "source_commit": "40fab2b17d5f141bf5c52105d6f916aecf1bc167",
         "tree_path": "lineage.dependencies"
+      },
+      {
+        "kind": "proprietary-files",
+        "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/proprietary-files.txt",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/proprietary-files.txt",
+        "sha256": "d9a3fbbacbb9e3cf46d09d043d4ec340eefa10043e78000ac3b0a9f40b74176d",
+        "size": 2425,
+        "source_commit": "40fab2b17d5f141bf5c52105d6f916aecf1bc167",
+        "tree_path": "proprietary-files.txt"
       }
     ],
     "purpose": "relationship-resolution",
     "supported_files": [
+      "Android.bp",
+      "Android.mk",
+      "AndroidProducts.mk",
       "BoardConfig.mk",
-      "lineage.dependencies"
+      "device.mk",
+      "extract-files.sh",
+      "lineage.dependencies",
+      "proprietary-files.txt"
     ]
   },
   "files": [
+    {
+      "kind": "extract-files",
+      "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/extract-files.sh",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/extract-files.sh",
+      "sha256": "be2d85c16ee207b2d1b1195a924f25ece653679d8a7a4e411393140fd3385861",
+      "size": 2015,
+      "source_commit": "40fab2b17d5f141bf5c52105d6f916aecf1bc167",
+      "tree_path": "extract-files.sh"
+    },
     {
       "kind": "lineage-dependencies",
       "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/lineage.dependencies",
@@ -26,10 +59,19 @@
       "size": 104,
       "source_commit": "40fab2b17d5f141bf5c52105d6f916aecf1bc167",
       "tree_path": "lineage.dependencies"
+    },
+    {
+      "kind": "proprietary-files",
+      "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/proprietary-files.txt",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi8917/40fab2b17d5f141bf5c52105d6f916aecf1bc167/proprietary-files.txt",
+      "sha256": "d9a3fbbacbb9e3cf46d09d043d4ec340eefa10043e78000ac3b0a9f40b74176d",
+      "size": 2425,
+      "source_commit": "40fab2b17d5f141bf5c52105d6f916aecf1bc167",
+      "tree_path": "proprietary-files.txt"
     }
   ],
   "repository": {
-    "file_count": 1,
+    "file_count": 3,
     "max_file_size": 524288
   },
   "schema": "hico.source-evidence.v1",

@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Extract small, deterministic relationship evidence from collected HiCo datasets.
 
-The canonical evidence layer stores only source files needed to establish source
-relationships (currently lineage.dependencies and root BoardConfig.mk). It keeps
-repository/branch/commit provenance and SHA-256 checksums, while deliberately
-avoiding a copy of the whole collected source tree.
+The canonical evidence layer stores only small source files useful for establishing
+source relationships. It keeps repository/branch/commit provenance and SHA-256
+checksums, while deliberately avoiding a copy of the whole collected source tree.
 """
 from __future__ import annotations
 
@@ -17,9 +16,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA = "hico.source-evidence.v1"
+# Root-level files only. Restricting evidence to root paths prevents basename
+# collisions (for example, many Android.bp files in one device tree) and keeps
+# the canonical evidence layer intentionally small.
 EVIDENCE_FILES = {
     "lineage.dependencies": "lineage-dependencies",
     "BoardConfig.mk": "boardconfig",
+    "AndroidProducts.mk": "android-products",
+    "device.mk": "device-mk",
+    "Android.bp": "android-bp",
+    "Android.mk": "android-mk",
+    "extract-files.sh": "extract-files",
+    "proprietary-files.txt": "proprietary-files",
 }
 MAX_EVIDENCE_FILE = 512 * 1024
 
@@ -98,7 +106,7 @@ def select_evidence(manifest_path: Path, manifest: dict) -> list[tuple[dict, Pat
     selected: list[tuple[dict, Path, str]] = []
     for item in manifest.get("files", []):
         tree_path = str(item.get("tree_path") or item.get("path") or "").strip("/")
-        if tree_path not in EVIDENCE_FILES:
+        if tree_path not in EVIDENCE_FILES or "/" in tree_path:
             continue
         raw_path = str(item.get("raw_path") or "")
         raw = resolve_raw_path(raw_path, manifest_path)
@@ -312,7 +320,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
 
-    p = sub.add_parser("extract", help="copy relationship evidence from collector manifests into sources/evidence")
+    p = sub.add_parser("extract", help="copy small relationship evidence from collector manifests into sources/evidence")
     p.add_argument("--data", default=str(ROOT / "thermal-data"))
     p.add_argument("--output", default=str(ROOT / "sources" / "evidence"))
     p.add_argument("--source", action="append", default=[], help="provider/repository or repository; may be repeated")
