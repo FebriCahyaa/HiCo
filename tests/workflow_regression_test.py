@@ -29,6 +29,7 @@ def main() -> int:
     require(tools, "jq -r --arg id \"$JOB_ID\" '.[] | select(.id == $id) | .roots[]'", "local shard resolution")
 
     require(database, "matrix_ids: ${{ steps.matrix.outputs.ids }}", "compact database matrix output")
+    require(database, "HICO_DATABASE_BACKEND: ${{ inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws' }}", "database backend default")
     require(database, "name: Download discovery metadata", "discovery artifact download")
     require(database, "matrix:\n        id: ${{ fromJSON(needs.discover.outputs.matrix_ids) }}", "database map matrix ids")
     require(database, "chmod +x build/bin/hicod", "database merge executable guard")

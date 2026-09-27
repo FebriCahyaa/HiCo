@@ -35,6 +35,10 @@ def main() -> int:
     assert data['Resources']['CodeBuildProject']['Properties']['BuildBatchConfig']['Restrictions']['MaximumBuildsAllowed'] == 'BatchMaximumBuilds'
     proc = subprocess.run(['bash', '-n', str(ROOT / 'infra/aws/deploy.sh')], check=False)
     assert proc.returncode == 0
+    assert (ROOT / 'infra/aws/bootstrap-policy.json').is_file()
+    assert (ROOT / 'infra/aws/bootstrap-trust-policy.json').is_file()
+    assert 'no-fail-on-empty-changeset' in (ROOT / 'infra/aws/deploy.sh').read_text(encoding='utf-8')
+    assert 'describe-stack-events' in (ROOT / 'infra/aws/deploy.sh').read_text(encoding='utf-8')
     print('AWS infrastructure template and deploy script checks: PASS')
     return 0
 

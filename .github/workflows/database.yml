@@ -8,16 +8,11 @@ on:
         type: number
         default: 50
         required: true
-      max_parallel:
-        description: "Maximum GitHub ingestion/map jobs running at once"
-        type: number
-        default: 8
-        required: true
       compute_backend:
         description: "Compute backend for ingestion and mapping"
         type: choice
         options: [github, aws]
-        default: github
+        default: aws
         required: true
       aws_region:
         description: "AWS region used by the CodeBuild offload"
@@ -30,6 +25,10 @@ on:
 concurrency:
   group: hico-database
   cancel-in-progress: false
+
+env:
+  # Workflow dispatch can override this; scheduled runs use the repository variable.
+  HICO_DATABASE_BACKEND: ${{ inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws' }}
 
 permissions:
   contents: read
@@ -120,7 +119,7 @@ jobs:
   ingest:
     name: Ingest repository shard ${{ matrix.id }}
     needs: discover
-    if: inputs.compute_backend != 'aws' && needs.discover.outputs.matrix_ids != '[]'
+    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' && needs.discover.outputs.matrix_ids != '[]' }}
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -171,7 +170,7 @@ jobs:
   map:
     name: Map ingested thermal shard ${{ matrix.id }}
     needs: [discover, ingest]
-    if: inputs.compute_backend != 'aws'
+    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
     strategy:
       fail-fast: false
       max-parallel: 8
@@ -223,7 +222,7 @@ jobs:
   aws-submit:
     name: Submit AWS CodeBuild thermal batch
     needs: [preflight, discover]
-    if: inputs.compute_backend == 'aws'
+    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -240,20 +239,46 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v6.3.0
         with:
-          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN }}
+          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
           aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
 
       - name: Validate AWS configuration
         env:
-          HICO_AWS_ROLE_ARN: ${{ vars.HICO_AWS_ROLE_ARN }}
-          HICO_AWS_CODEBUILD_PROJECT: ${{ vars.HICO_AWS_CODEBUILD_PROJECT }}
-          HICO_AWS_S3_BUCKET: ${{ vars.HICO_AWS_S3_BUCKET }}
+          HICO_AWS_ROLE_ARN: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
         run: |
           set -euo pipefail
-          test -n "$HICO_AWS_ROLE_ARN"
-          test -n "$HICO_AWS_CODEBUILD_PROJECT"
-          test -n "$HICO_AWS_S3_BUCKET"
+          test -n "$HICO_AWS_ROLE_ARN" || {
+            echo 'Missing repository variable: HICO_AWS_ROLE_ARN or HICO_AWS_BOOTSTRAP_ROLE_ARN' >&2
+            exit 1
+          }
           aws sts get-caller-identity --query 'Arn' --output text
+
+      - name: Resolve CodeBuild project and S3 bucket
+        id: resolve
+        env:
+          HICO_AWS_CODEBUILD_PROJECT: ${{ vars.HICO_AWS_CODEBUILD_PROJECT }}
+          HICO_AWS_S3_BUCKET: ${{ vars.HICO_AWS_S3_BUCKET }}
+          HICO_AWS_STACK_NAME: ${{ vars.HICO_AWS_STACK_NAME || 'hico-thermal-offload' }}
+        run: |
+          set -euo pipefail
+          outputs="$RUNNER_TEMP/hico-stack-outputs.json"
+          aws cloudformation describe-stacks \
+            --stack-name "$HICO_AWS_STACK_NAME" \
+            --query 'Stacks[0].Outputs' \
+            --output json > "$outputs"
+
+          project="${HICO_AWS_CODEBUILD_PROJECT:-}"
+          bucket="${HICO_AWS_S3_BUCKET:-}"
+          if [ -z "$project" ]; then
+            project=$(jq -r '.[] | select(.OutputKey == "CodeBuildProjectName") | .OutputValue' "$outputs")
+          fi
+          if [ -z "$bucket" ]; then
+            bucket=$(jq -r '.[] | select(.OutputKey == "ArtifactBucketName") | .OutputValue' "$outputs")
+          fi
+          test -n "$project" || { echo 'Unable to resolve CodeBuild project.' >&2; exit 1; }
+          test -n "$bucket" || { echo 'Unable to resolve S3 bucket.' >&2; exit 1; }
+          echo "project=$project" >> "$GITHUB_OUTPUT"
+          echo "bucket=$bucket" >> "$GITHUB_OUTPUT"
 
       - name: Download discovery metadata
         uses: actions/download-artifact@v6
@@ -277,8 +302,8 @@ jobs:
       - name: Start AWS CodeBuild batch
         id: start
         env:
-          HICO_AWS_CODEBUILD_PROJECT: ${{ vars.HICO_AWS_CODEBUILD_PROJECT }}
-          HICO_AWS_S3_BUCKET: ${{ vars.HICO_AWS_S3_BUCKET }}
+          HICO_AWS_CODEBUILD_PROJECT: ${{ steps.resolve.outputs.project }}
+          HICO_AWS_S3_BUCKET: ${{ steps.resolve.outputs.bucket }}
           HICO_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}
         run: |
           set -euo pipefail
@@ -304,7 +329,7 @@ jobs:
   aws-wait:
     name: Wait for AWS thermal batch
     needs: aws-submit
-    if: inputs.compute_backend == 'aws'
+    if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -318,7 +343,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v6.3.0
         with:
-          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN }}
+          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
           aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
 
       - name: Download AWS batch metadata
@@ -365,7 +390,7 @@ jobs:
           test -x build/bin/hicod
 
       - name: Download all ingest results (GitHub backend)
-        if: inputs.compute_backend != 'aws'
+        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
         uses: actions/download-artifact@v6
         with:
           pattern: ingest-*
@@ -373,7 +398,7 @@ jobs:
           merge-multiple: true
 
       - name: Download all mapping results (GitHub backend)
-        if: inputs.compute_backend != 'aws'
+        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
         uses: actions/download-artifact@v6
         with:
           pattern: mapping-*
@@ -381,14 +406,14 @@ jobs:
           merge-multiple: true
 
       - name: Configure AWS credentials for result download
-        if: inputs.compute_backend == 'aws'
+        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
         uses: aws-actions/configure-aws-credentials@v6.3.0
         with:
-          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN }}
+          role-to-assume: ${{ vars.HICO_AWS_ROLE_ARN || vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
           aws-region: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
 
       - name: Download AWS results
-        if: inputs.compute_backend == 'aws'
+        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') == 'aws' }}
         env:
           RESULTS_URI: ${{ needs.aws-submit.outputs.results_uri }}
         run: |
@@ -399,7 +424,7 @@ jobs:
       - name: Merge generated data
         run: |
           set -euo pipefail
-          if [ "${{ inputs.compute_backend }}" = "aws" ]; then
+          if [ "$HICO_DATABASE_BACKEND" = "aws" ]; then
             python3 tools/hico_database.py merge-ingest build/aws-results/ingest --output database
             python3 tools/hico_database.py merge-mappings build/aws-results/mapping --output database
           else

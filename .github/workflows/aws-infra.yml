@@ -1,0 +1,148 @@
+name: HiCo Thermal AWS Infrastructure
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'infra/aws/**'
+      - '.github/workflows/aws-infra.yml'
+  workflow_dispatch:
+    inputs:
+      stack_name:
+        description: 'CloudFormation stack name'
+        type: string
+        default: hico-thermal-offload
+        required: true
+      compute_type:
+        description: 'AWS CodeBuild compute type'
+        type: choice
+        options:
+          - BUILD_GENERAL1_MEDIUM
+          - BUILD_GENERAL1_SMALL
+          - BUILD_GENERAL1_LARGE
+          - BUILD_GENERAL1_XLARGE
+        default: BUILD_GENERAL1_MEDIUM
+        required: true
+      concurrent_build_limit:
+        description: 'Maximum concurrent CodeBuild builds for the project'
+        type: number
+        default: 1
+        required: true
+      batch_maximum_builds:
+        description: 'Maximum builds allowed in one CodeBuild batch'
+        type: number
+        default: 250
+        required: true
+      aws_region:
+        description: 'AWS region'
+        type: string
+        default: us-east-1
+        required: true
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: hico-aws-infrastructure
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: ${{ inputs.aws_region || vars.HICO_AWS_REGION || 'us-east-1' }}
+  AWS_PAGER: ''
+  HICO_AWS_STACK_NAME: ${{ inputs.stack_name || 'hico-thermal-offload' }}
+  HICO_CODEBUILD_COMPUTE_TYPE: ${{ inputs.compute_type || 'BUILD_GENERAL1_MEDIUM' }}
+  HICO_CODEBUILD_CONCURRENT_LIMIT: ${{ inputs.concurrent_build_limit || 1 }}
+  HICO_CODEBUILD_BATCH_MAX: ${{ inputs.batch_maximum_builds || 250 }}
+
+jobs:
+  deploy:
+    name: Deploy HiCo Thermal AWS infrastructure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Validate bootstrap role configuration
+        env:
+          HICO_AWS_BOOTSTRAP_ROLE_ARN: ${{ vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
+        run: |
+          set -euo pipefail
+          test -n "$HICO_AWS_BOOTSTRAP_ROLE_ARN" || {
+            echo 'Missing repository variable: HICO_AWS_BOOTSTRAP_ROLE_ARN' >&2
+            echo 'Create the one-time GitHub OIDC bootstrap role in AWS, then store only its ARN as a repository variable.' >&2
+            exit 1
+          }
+
+      - name: Configure AWS credentials via GitHub OIDC
+        uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: ${{ vars.HICO_AWS_BOOTSTRAP_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-session-name: hico-thermal-infra-${{ github.run_id }}
+
+      - name: Verify AWS identity
+        run: |
+          set -euo pipefail
+          aws sts get-caller-identity --query '{Arn:Arn,Account:Account}' --output json
+
+      - name: Deploy CloudFormation stack
+        env:
+          HICO_AWS_OIDC_PROVIDER_ARN: ${{ vars.HICO_AWS_OIDC_PROVIDER_ARN }}
+          HICO_AWS_OIDC_SUBJECT: ${{ vars.HICO_AWS_OIDC_SUBJECT }}
+        run: |
+          set -euo pipefail
+          chmod +x infra/aws/deploy.sh
+          if [ -n "${HICO_AWS_OIDC_PROVIDER_ARN:-}" ]; then
+            ./infra/aws/deploy.sh "$HICO_AWS_STACK_NAME" "$HICO_AWS_OIDC_PROVIDER_ARN"
+          else
+            ./infra/aws/deploy.sh "$HICO_AWS_STACK_NAME"
+          fi
+
+      - name: Read stack outputs
+        id: outputs
+        run: |
+          set -euo pipefail
+          aws cloudformation describe-stacks \
+            --stack-name "$HICO_AWS_STACK_NAME" \
+            --query 'Stacks[0].Outputs' \
+            --output json > "$RUNNER_TEMP/hico-stack-outputs.json"
+
+          cat "$RUNNER_TEMP/hico-stack-outputs.json"
+
+          role_arn=$(jq -r '.[] | select(.OutputKey == "GitHubActionsRoleArn") | .OutputValue' "$RUNNER_TEMP/hico-stack-outputs.json")
+          project=$(jq -r '.[] | select(.OutputKey == "CodeBuildProjectName") | .OutputValue' "$RUNNER_TEMP/hico-stack-outputs.json")
+          bucket=$(jq -r '.[] | select(.OutputKey == "ArtifactBucketName") | .OutputValue' "$RUNNER_TEMP/hico-stack-outputs.json")
+
+          test -n "$role_arn"
+          test -n "$project"
+          test -n "$bucket"
+
+          {
+            echo "role_arn=$role_arn"
+            echo "project=$project"
+            echo "bucket=$bucket"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Write deployment summary
+        env:
+          ROLE_ARN: ${{ steps.outputs.outputs.role_arn }}
+          PROJECT: ${{ steps.outputs.outputs.project }}
+          BUCKET: ${{ steps.outputs.outputs.bucket }}
+        run: |
+          set -euo pipefail
+          {
+            echo '## HiCo Thermal AWS Infrastructure'
+            echo
+            echo "- Stack: \
+              \`$HICO_AWS_STACK_NAME\`"
+            echo "- Region: \`$AWS_REGION\`"
+            echo "- CodeBuild project: \`$PROJECT\`"
+            echo "- S3 run bucket: \`$BUCKET\`"
+            echo "- GitHub Actions controller role: \`$ROLE_ARN\`"
+            echo
+            echo 'The deployment used GitHub OIDC; no AWS access key or secret key is required.'
+          } >> "$GITHUB_STEP_SUMMARY"
