@@ -1,8 +1,8 @@
 {
   "generated_from": "/root/workspace/HiCo/sources/repositories.json",
   "normalization": {
-    "applied": true,
-    "oem_role_changes_available": 212
+    "applied": false,
+    "oem_role_changes_available": 0
   },
   "relationships": [
     {
@@ -5380,6 +5380,97 @@
       "source_role": "device",
       "target": "xiaomi/fuxi",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "BoardConfig.mk",
+        "kernel-source"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "build-path/kernel/xiaomi/sm7435",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "BoardConfig.mk",
+        "kernel-modules-root"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "build-path/kernel/xiaomi/sm7435-modules",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "build-path/vendor/xiaomi/garnet/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_xiaomi",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_xiaomi",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_kernel_xiaomi_sm7435",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "github/LineageOS/android_kernel_xiaomi_sm7435",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_kernel_xiaomi_sm7435-devicetrees",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "github/LineageOS/android_kernel_xiaomi_sm7435-devicetrees",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_kernel_xiaomi_sm7435-modules",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_garnet",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_garnet",
+      "source_role": "device",
+      "target": "github/LineageOS/android_kernel_xiaomi_sm7435-modules",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -14566,8 +14657,10 @@
   "summary": {
     "device_count": 779,
     "platform_count": 130,
-    "relationship_count": 1213,
+    "relationship_count": 1220,
     "relationship_types": {
+      "build-path-reference": 3,
+      "dependency-source": 4,
       "device-source": 460,
       "firmware-device": 212,
       "platform-source": 541

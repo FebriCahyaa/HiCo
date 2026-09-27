@@ -348,7 +348,7 @@ def main() -> int:
     ap.add_argument("--repositories", default=str(ROOT / "sources/repositories.json"))
     ap.add_argument("--universal-index", default=str(ROOT / "database/universal/index.json"))
     ap.add_argument("--output", default=str(ROOT / "sources/relationships.json"))
-    ap.add_argument("--evidence-root", action="append", default=[], help="Collector evidence root; may be repeated. Used for lineage.dependencies and BoardConfig.mk relationship enrichment.")
+    ap.add_argument("--evidence-root", action="append", default=None, help="Evidence root; may be repeated. Explicit values override the canonical sources/evidence root.")
     ap.add_argument("--normalize-index", action="store_true", help="Backfill missing OEM repository_role=firmware")
     args = ap.parse_args()
     repo_path = Path(args.repositories)
@@ -358,7 +358,8 @@ def main() -> int:
     if args.normalize_index:
         save_index(repo_path, normalized)
         repos = normalized
-    rels, summary = build_relationships(repos, universal, [Path(p) for p in args.evidence_root])
+    evidence_roots = [Path(p) for p in args.evidence_root] if args.evidence_root else [ROOT / "sources" / "evidence"]
+    rels, summary = build_relationships(repos, universal, evidence_roots)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     payload = {

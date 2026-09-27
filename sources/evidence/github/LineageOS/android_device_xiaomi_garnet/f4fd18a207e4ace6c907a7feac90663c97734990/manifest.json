@@ -1,0 +1,64 @@
+{
+  "evidence": {
+    "items": [
+      {
+        "kind": "boardconfig",
+        "path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/BoardConfig.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/BoardConfig.mk",
+        "sha256": "62a9292025e08bca559ea5af3877493871432797546a7e6e5f6c79f20032a362",
+        "size": 8231,
+        "source_commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
+        "tree_path": "BoardConfig.mk"
+      },
+      {
+        "kind": "lineage-dependencies",
+        "path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/lineage.dependencies",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/lineage.dependencies",
+        "sha256": "a395a7304335a263932a2419b8b6541a47e91aee0f06ff0638556ae8567de474",
+        "size": 437,
+        "source_commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
+        "tree_path": "lineage.dependencies"
+      }
+    ],
+    "purpose": "relationship-resolution",
+    "supported_files": [
+      "BoardConfig.mk",
+      "lineage.dependencies"
+    ]
+  },
+  "files": [
+    {
+      "kind": "boardconfig",
+      "path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/BoardConfig.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/BoardConfig.mk",
+      "sha256": "62a9292025e08bca559ea5af3877493871432797546a7e6e5f6c79f20032a362",
+      "size": 8231,
+      "source_commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
+      "tree_path": "BoardConfig.mk"
+    },
+    {
+      "kind": "lineage-dependencies",
+      "path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/lineage.dependencies",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_garnet/f4fd18a207e4ace6c907a7feac90663c97734990/lineage.dependencies",
+      "sha256": "a395a7304335a263932a2419b8b6541a47e91aee0f06ff0638556ae8567de474",
+      "size": 437,
+      "source_commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
+      "tree_path": "lineage.dependencies"
+    }
+  ],
+  "repository": {
+    "file_count": 2,
+    "max_file_size": 524288
+  },
+  "schema": "hico.source-evidence.v1",
+  "source": {
+    "branch": "lineage-23.2",
+    "commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
+    "id": "lineageos",
+    "provider": "github",
+    "repository": "LineageOS/android_device_xiaomi_garnet",
+    "url": "https://github.com/LineageOS/android_device_xiaomi_garnet"
+  },
+  "source_manifest": "custom-rom/xiaomi/lineageos/garnet/unknown/device/lineageos__android_device_xiaomi_garnet/manifest.json",
+  "version": 1
+}

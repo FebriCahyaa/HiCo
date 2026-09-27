@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hico-thermal.invalid/schema/evidence.v1.schema.json",
+  "title": "HiCo Canonical Source Evidence Manifest",
+  "type": "object",
+  "required": [
+    "schema",
+    "version",
+    "source",
+    "evidence",
+    "files",
+    "repository"
+  ],
+  "properties": {
+    "schema": {
+      "const": "hico.source-evidence.v1"
+    },
+    "version": {
+      "const": 1
+    },
+    "source_manifest": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "provider",
+        "repository",
+        "branch",
+        "commit"
+      ],
+      "properties": {
+        "id": {"type": "string"},
+        "provider": {"type": "string", "minLength": 1},
+        "repository": {"type": "string", "minLength": 1},
+        "branch": {"type": "string", "minLength": 1},
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{7,64}$"
+        },
+        "url": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["purpose", "supported_files", "items"],
+      "properties": {
+        "purpose": {"const": "relationship-resolution"},
+        "supported_files": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "items": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/evidenceFile"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidenceFile"}
+    },
+    "repository": {
+      "type": "object",
+      "required": ["file_count", "max_file_size"],
+      "properties": {
+        "file_count": {"type": "integer", "minimum": 0},
+        "max_file_size": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "evidenceFile": {
+      "type": "object",
+      "required": [
+        "kind",
+        "tree_path",
+        "path",
+        "raw_path",
+        "source_commit",
+        "sha256",
+        "size"
+      ],
+      "properties": {
+        "kind": {"type": "string", "minLength": 1},
+        "tree_path": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "raw_path": {"type": "string", "minLength": 1},
+        "source_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{7,64}$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{64}$"
+        },
+        "size": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
