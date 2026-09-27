@@ -540,6 +540,7 @@ def main() -> int:
     p.add_argument("--discovery", required=True)
     p.add_argument("--output", required=True)
     p.add_argument("--max-jobs", type=int, default=250)
+    p.add_argument("--ids-only", action="store_true", help="write only shard IDs instead of full shard objects")
     p = sub.add_parser("ingest")
     p.add_argument("--job", required=True)
     p.add_argument("--output", required=True)
@@ -559,8 +560,9 @@ def main() -> int:
         jobs = matrix_from_discovery(discovery, args.max_jobs)
         output = Path(args.output)
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(json.dumps(jobs, separators=(",", ":")) + "\n")
-        print(json.dumps({"jobs": len(jobs)}, indent=2))
+        value = [job["id"] for job in jobs] if args.ids_only else jobs
+        output.write_text(json.dumps(value, separators=(",", ":")) + "\n")
+        print(json.dumps({"jobs": len(jobs), "ids_only": args.ids_only, "output_bytes": output.stat().st_size}, indent=2))
         return 0
 
     job = json.loads(Path(args.job).read_text())

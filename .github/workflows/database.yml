@@ -54,6 +54,7 @@ jobs:
           python3 tests/topology_test.py
           python3 tests/database_test.py
           python3 tests/scanner_test.py
+          python3 tests/hico_ingest_matrix_test.py
           python3 tools/hico_database.py validate database
           python3 tools/hico_database.py validate database/tables
           python3 tools/verify_webui.py
@@ -70,7 +71,7 @@ jobs:
     needs: preflight
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.matrix.outputs.value }}
+      shard_ids: ${{ steps.matrix.outputs.value }}
     env:
       GITHUB_TOKEN: ${{ github.token }}
     steps:
@@ -86,14 +87,15 @@ jobs:
             --output build/discovery/discovery.json \
             --shard-size "${{ inputs.shard_size || 50 }}"
 
-      - name: Generate matrix
+      - name: Generate shard ID matrix
         id: matrix
         run: |
           set -euo pipefail
           python3 tools/hico_ingest.py matrix \
             --discovery build/discovery/discovery.json \
             --output build/discovery/matrix.json \
-            --max-jobs 250
+            --max-jobs 250 \
+            --ids-only
           value=$(cat build/discovery/matrix.json)
           echo "value=$value" >> "$GITHUB_OUTPUT"
 
@@ -106,12 +108,12 @@ jobs:
   ingest:
     name: Ingest repository shard ${{ matrix.id }}
     needs: discover
-    if: needs.discover.outputs.matrix != '[]'
+    if: needs.discover.outputs.shard_ids != '[]'
     strategy:
       fail-fast: false
       max-parallel: ${{ inputs.max_parallel || 8 }}
       matrix:
-        include: ${{ fromJSON(needs.discover.outputs.matrix) }}
+        id: ${{ fromJSON(needs.discover.outputs.shard_ids) }}
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ github.token }}
@@ -124,6 +126,12 @@ jobs:
         with:
           name: hico-host
           path: build/bin
+
+      - name: Download discovery metadata
+        uses: actions/download-artifact@v6
+        with:
+          name: discovery
+          path: build/discovery
 
       - name: Ingest shard
         env:
@@ -155,7 +163,7 @@ jobs:
       fail-fast: false
       max-parallel: ${{ inputs.max_parallel || 8 }}
       matrix:
-        include: ${{ fromJSON(needs.discover.outputs.matrix) }}
+        id: ${{ fromJSON(needs.discover.outputs.shard_ids) }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
