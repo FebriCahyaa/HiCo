@@ -1,0 +1,64 @@
+{
+  "evidence": {
+    "items": [
+      {
+        "kind": "boardconfig",
+        "path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/BoardConfig.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/BoardConfig.mk",
+        "sha256": "4d9926ccebb49421bcc3862448a31c61c060e8e41b7016f2d9870f6f9a751dc1",
+        "size": 466,
+        "source_commit": "f9f7523997fbe0b22cdc2092da44b25b15612472",
+        "tree_path": "BoardConfig.mk"
+      },
+      {
+        "kind": "lineage-dependencies",
+        "path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/lineage.dependencies",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/lineage.dependencies",
+        "sha256": "abcc2f3a1a7ecee5e3ecd7cf9c598782f9880c7907a4aa1526251afce7064f8c",
+        "size": 118,
+        "source_commit": "f9f7523997fbe0b22cdc2092da44b25b15612472",
+        "tree_path": "lineage.dependencies"
+      }
+    ],
+    "purpose": "relationship-resolution",
+    "supported_files": [
+      "BoardConfig.mk",
+      "lineage.dependencies"
+    ]
+  },
+  "files": [
+    {
+      "kind": "boardconfig",
+      "path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/BoardConfig.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/BoardConfig.mk",
+      "sha256": "4d9926ccebb49421bcc3862448a31c61c060e8e41b7016f2d9870f6f9a751dc1",
+      "size": 466,
+      "source_commit": "f9f7523997fbe0b22cdc2092da44b25b15612472",
+      "tree_path": "BoardConfig.mk"
+    },
+    {
+      "kind": "lineage-dependencies",
+      "path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/lineage.dependencies",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_realme_luigi/f9f7523997fbe0b22cdc2092da44b25b15612472/lineage.dependencies",
+      "sha256": "abcc2f3a1a7ecee5e3ecd7cf9c598782f9880c7907a4aa1526251afce7064f8c",
+      "size": 118,
+      "source_commit": "f9f7523997fbe0b22cdc2092da44b25b15612472",
+      "tree_path": "lineage.dependencies"
+    }
+  ],
+  "repository": {
+    "file_count": 2,
+    "max_file_size": 524288
+  },
+  "schema": "hico.source-evidence.v1",
+  "source": {
+    "branch": "lineage-23.2",
+    "commit": "f9f7523997fbe0b22cdc2092da44b25b15612472",
+    "id": "lineageos",
+    "provider": "github",
+    "repository": "LineageOS/android_device_realme_luigi",
+    "url": "https://github.com/LineageOS/android_device_realme_luigi"
+  },
+  "source_manifest": "custom-rom/realme/lineageos/luigi/unknown/device/lineageos__android_device_realme_luigi/manifest.json",
+  "version": 1
+}

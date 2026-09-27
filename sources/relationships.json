@@ -1268,6 +1268,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_motorola_avatrn",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_avatrn",
+      "source_role": "device",
+      "target": "build-path/vendor/motorola/avatrn/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_motorola_sm7435-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_motorola_avatrn",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_avatrn",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_motorola_sm7435-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_motorola_avatrn",
@@ -1276,6 +1302,45 @@
       "source_role": "device",
       "target": "motorola/avatrn",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_motorola_bangkk",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_bangkk",
+      "source_role": "device",
+      "target": "build-path/vendor/motorola/bangkk/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_motorola_sm6375-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_motorola_bangkk",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_bangkk",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_motorola_sm6375-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi_nfc",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_motorola_bangkk",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_bangkk",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi_nfc",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -2578,6 +2643,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_oneplus_aston",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_oneplus_aston",
+      "source_role": "device",
+      "target": "build-path/vendor/oneplus/aston/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_oneplus_sm8550-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_oneplus_aston",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_oneplus_aston",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_oneplus_sm8550-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_oneplus_aston",
@@ -2586,6 +2677,32 @@
       "source_role": "device",
       "target": "oneplus/aston",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_oneplus_astonc",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_oneplus_astonc",
+      "source_role": "device",
+      "target": "build-path/vendor/oneplus/astonc/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_oneplus_sm8550-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_oneplus_astonc",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_oneplus_astonc",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_oneplus_sm8550-common",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -3396,6 +3513,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_realme_bale",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_realme_bale",
+      "source_role": "device",
+      "target": "build-path/vendor/realme/bale/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_oneplus_sm8650-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_realme_bale",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_realme_bale",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_oneplus_sm8650-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_realme_bale",
@@ -3404,6 +3547,19 @@
       "source_role": "device",
       "target": "realme/bale",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_realme_sm6375-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_realme_luigi",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_realme_luigi",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_realme_sm6375-common",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -3504,6 +3660,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s",
+      "source_role": "device",
+      "target": "build-path/vendor/samsung/a21s/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_samsung_a21s-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_samsung_a21s-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_samsung_a21s",
@@ -3512,6 +3694,175 @@
       "source_role": "device",
       "target": "samsung/a21s",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_samsung_slsi_sepolicy",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_samsung_slsi_sepolicy",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi-linaro_config",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi-linaro_config",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi-linaro_exynos",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi-linaro_exynos",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi-linaro_exynos5",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi-linaro_exynos5",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi-linaro_graphics",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi-linaro_graphics",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi-linaro_interfaces",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi-linaro_interfaces",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi-linaro_openmax",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi-linaro_openmax",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi_libbt",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi_libbt",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi_nfc",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi_nfc",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi_scsc_wifibt_wifi_hal",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wifi_hal",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_kernel_samsung_exynos850",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a21s-common",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a21s-common",
+      "source_role": "device",
+      "target": "github/LineageOS/android_kernel_samsung_exynos850",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -5113,6 +5464,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_Mi439",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_Mi439",
+      "source_role": "device",
+      "target": "build-path/vendor/xiaomi/Mi439/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_xiaomi_mithorium-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_Mi439",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_Mi439",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_xiaomi_mithorium-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_xiaomi_Mi439",
@@ -5121,6 +5498,19 @@
       "source_role": "device",
       "target": "xiaomi/mi439",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_xiaomi_Mi8937",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_xiaomi_Mi8917",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_xiaomi_Mi8917",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_xiaomi_Mi8937",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -14722,10 +15112,10 @@
   "summary": {
     "device_count": 779,
     "platform_count": 130,
-    "relationship_count": 1225,
+    "relationship_count": 1255,
     "relationship_types": {
-      "build-path-reference": 5,
-      "dependency-source": 7,
+      "build-path-reference": 12,
+      "dependency-source": 30,
       "device-source": 460,
       "firmware-device": 212,
       "platform-source": 541

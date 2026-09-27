@@ -1,0 +1,64 @@
+{
+  "evidence": {
+    "items": [
+      {
+        "kind": "boardconfig",
+        "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/BoardConfig.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/BoardConfig.mk",
+        "sha256": "902208ff0d2a082f4cde0d1f8c8aeebbaba15db139d30705620ee7508e8cb59d",
+        "size": 3742,
+        "source_commit": "b0ed59c717d5ae43003e04c9ac6653fefe7754b7",
+        "tree_path": "BoardConfig.mk"
+      },
+      {
+        "kind": "lineage-dependencies",
+        "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/lineage.dependencies",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/lineage.dependencies",
+        "sha256": "835b5aaae06fbf0560eaf52750d499ae351784358accef847b4a80e56e2338ce",
+        "size": 124,
+        "source_commit": "b0ed59c717d5ae43003e04c9ac6653fefe7754b7",
+        "tree_path": "lineage.dependencies"
+      }
+    ],
+    "purpose": "relationship-resolution",
+    "supported_files": [
+      "BoardConfig.mk",
+      "lineage.dependencies"
+    ]
+  },
+  "files": [
+    {
+      "kind": "boardconfig",
+      "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/BoardConfig.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/BoardConfig.mk",
+      "sha256": "902208ff0d2a082f4cde0d1f8c8aeebbaba15db139d30705620ee7508e8cb59d",
+      "size": 3742,
+      "source_commit": "b0ed59c717d5ae43003e04c9ac6653fefe7754b7",
+      "tree_path": "BoardConfig.mk"
+    },
+    {
+      "kind": "lineage-dependencies",
+      "path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/lineage.dependencies",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_xiaomi_Mi439/b0ed59c717d5ae43003e04c9ac6653fefe7754b7/lineage.dependencies",
+      "sha256": "835b5aaae06fbf0560eaf52750d499ae351784358accef847b4a80e56e2338ce",
+      "size": 124,
+      "source_commit": "b0ed59c717d5ae43003e04c9ac6653fefe7754b7",
+      "tree_path": "lineage.dependencies"
+    }
+  ],
+  "repository": {
+    "file_count": 2,
+    "max_file_size": 524288
+  },
+  "schema": "hico.source-evidence.v1",
+  "source": {
+    "branch": "lineage-23.2",
+    "commit": "b0ed59c717d5ae43003e04c9ac6653fefe7754b7",
+    "id": "lineageos",
+    "provider": "github",
+    "repository": "LineageOS/android_device_xiaomi_Mi439",
+    "url": "https://github.com/LineageOS/android_device_xiaomi_Mi439"
+  },
+  "source_manifest": "custom-rom/xiaomi/lineageos/mi439/unknown/device/lineageos__android_device_xiaomi_mi439/manifest.json",
+  "version": 1
+}

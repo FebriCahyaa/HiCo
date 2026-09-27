@@ -1,0 +1,64 @@
+{
+  "evidence": {
+    "items": [
+      {
+        "kind": "boardconfig",
+        "path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/BoardConfig.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/BoardConfig.mk",
+        "sha256": "3065a61237be184be828c968220ee5846649cb1b6af9f08d0538b0c685c6d407",
+        "size": 746,
+        "source_commit": "98de9ecc13df25168006fd8b70cf664088672a4e",
+        "tree_path": "BoardConfig.mk"
+      },
+      {
+        "kind": "lineage-dependencies",
+        "path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/lineage.dependencies",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/lineage.dependencies",
+        "sha256": "5576039657f165366aa01fa4beb88e1d65afe5f3b9763d0e8ec1993dca2b8638",
+        "size": 120,
+        "source_commit": "98de9ecc13df25168006fd8b70cf664088672a4e",
+        "tree_path": "lineage.dependencies"
+      }
+    ],
+    "purpose": "relationship-resolution",
+    "supported_files": [
+      "BoardConfig.mk",
+      "lineage.dependencies"
+    ]
+  },
+  "files": [
+    {
+      "kind": "boardconfig",
+      "path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/BoardConfig.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/BoardConfig.mk",
+      "sha256": "3065a61237be184be828c968220ee5846649cb1b6af9f08d0538b0c685c6d407",
+      "size": 746,
+      "source_commit": "98de9ecc13df25168006fd8b70cf664088672a4e",
+      "tree_path": "BoardConfig.mk"
+    },
+    {
+      "kind": "lineage-dependencies",
+      "path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/lineage.dependencies",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_realme_bale/98de9ecc13df25168006fd8b70cf664088672a4e/lineage.dependencies",
+      "sha256": "5576039657f165366aa01fa4beb88e1d65afe5f3b9763d0e8ec1993dca2b8638",
+      "size": 120,
+      "source_commit": "98de9ecc13df25168006fd8b70cf664088672a4e",
+      "tree_path": "lineage.dependencies"
+    }
+  ],
+  "repository": {
+    "file_count": 2,
+    "max_file_size": 524288
+  },
+  "schema": "hico.source-evidence.v1",
+  "source": {
+    "branch": "lineage-23.2",
+    "commit": "98de9ecc13df25168006fd8b70cf664088672a4e",
+    "id": "lineageos",
+    "provider": "github",
+    "repository": "LineageOS/android_device_realme_bale",
+    "url": "https://github.com/LineageOS/android_device_realme_bale"
+  },
+  "source_manifest": "custom-rom/realme/lineageos/bale/unknown/device/lineageos__android_device_realme_bale/manifest.json",
+  "version": 1
+}

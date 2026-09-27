@@ -200,15 +200,53 @@ def extract(data_root: Path, output_root: Path, source_filters: list[str]) -> di
             "file_count": len(evidence_entries),
         })
 
+    # Rebuild the index from all canonical manifests currently present in the
+    # evidence store, not only from the current extraction input. This preserves
+    # previously canonicalized evidence when a bounded pilot/subset is extracted.
+    indexed = []
+    for canonical_manifest_path in sorted(
+        path for path in output_root.rglob("manifest.json")
+        if path.is_file()
+    ):
+        try:
+            canonical = load_json(canonical_manifest_path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        if canonical.get("schema") != SCHEMA:
+            continue
+
+        source = canonical.get("source", {})
+        provider = str(source.get("provider", "")).strip()
+        repository = str(source.get("repository", "")).strip()
+        commit = str(source.get("commit", "")).strip()
+        if not provider or not repository or not commit:
+            continue
+
+        items = canonical.get("files") or canonical.get("evidence", {}).get("items") or []
+        indexed.append({
+            "source": f"{provider}/{repository}",
+            "commit": commit,
+            "manifest": root_relative(canonical_manifest_path),
+            "file_count": len(items),
+        })
+
+    indexed_by_key = {}
+    for item in indexed:
+        indexed_by_key[(item["source"], item["commit"])] = item
+
+    index_sources = sorted(
+        indexed_by_key.values(),
+        key=lambda item: (item["source"], item["commit"]),
+    )
     index = {
         "schema": "hico.source-evidence-index.v1",
         "version": 1,
-        "description": "Deterministic index of canonical relationship evidence exported from collector manifests.",
-        "generated_from": "collector-manifests",
+        "description": "Deterministic index of canonical relationship evidence stored in the evidence tree.",
+        "generated_from": "canonical-evidence-tree",
         "input_root_kind": "repository" if data_root.resolve().is_relative_to(ROOT.resolve()) else "external",
-        "repository_count": len(exported),
-        "file_count": total_files,
-        "sources": sorted(exported, key=lambda item: (item["source"], item["commit"])),
+        "repository_count": len(index_sources),
+        "file_count": sum(item["file_count"] for item in index_sources),
+        "sources": index_sources,
     }
     (output_root / "index.json").write_text(
         json.dumps(index, indent=2, sort_keys=True) + "\n", encoding="utf-8"

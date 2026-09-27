@@ -1,0 +1,64 @@
+{
+  "evidence": {
+    "items": [
+      {
+        "kind": "boardconfig",
+        "path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/BoardConfig.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/BoardConfig.mk",
+        "sha256": "501f7bce03b171896338e6d35cced97cf6cea024017f442e3a1a0486013b0d93",
+        "size": 751,
+        "source_commit": "12b7479df888c4dc0bb82a2e6bb3463f49d0307e",
+        "tree_path": "BoardConfig.mk"
+      },
+      {
+        "kind": "lineage-dependencies",
+        "path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/lineage.dependencies",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/lineage.dependencies",
+        "sha256": "47437989fb20f115ce7fea28f714c1ab69169ddd04234a0b497db0cc2ad18d25",
+        "size": 120,
+        "source_commit": "12b7479df888c4dc0bb82a2e6bb3463f49d0307e",
+        "tree_path": "lineage.dependencies"
+      }
+    ],
+    "purpose": "relationship-resolution",
+    "supported_files": [
+      "BoardConfig.mk",
+      "lineage.dependencies"
+    ]
+  },
+  "files": [
+    {
+      "kind": "boardconfig",
+      "path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/BoardConfig.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/BoardConfig.mk",
+      "sha256": "501f7bce03b171896338e6d35cced97cf6cea024017f442e3a1a0486013b0d93",
+      "size": 751,
+      "source_commit": "12b7479df888c4dc0bb82a2e6bb3463f49d0307e",
+      "tree_path": "BoardConfig.mk"
+    },
+    {
+      "kind": "lineage-dependencies",
+      "path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/lineage.dependencies",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_oneplus_astonc/12b7479df888c4dc0bb82a2e6bb3463f49d0307e/lineage.dependencies",
+      "sha256": "47437989fb20f115ce7fea28f714c1ab69169ddd04234a0b497db0cc2ad18d25",
+      "size": 120,
+      "source_commit": "12b7479df888c4dc0bb82a2e6bb3463f49d0307e",
+      "tree_path": "lineage.dependencies"
+    }
+  ],
+  "repository": {
+    "file_count": 2,
+    "max_file_size": 524288
+  },
+  "schema": "hico.source-evidence.v1",
+  "source": {
+    "branch": "lineage-23.2",
+    "commit": "12b7479df888c4dc0bb82a2e6bb3463f49d0307e",
+    "id": "lineageos",
+    "provider": "github",
+    "repository": "LineageOS/android_device_oneplus_astonc",
+    "url": "https://github.com/LineageOS/android_device_oneplus_astonc"
+  },
+  "source_manifest": "custom-rom/oneplus/lineageos/op5cf9l1/unknown/device/lineageos__android_device_oneplus_astonc/manifest.json",
+  "version": 1
+}
