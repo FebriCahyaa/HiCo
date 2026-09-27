@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hico-thermal.invalid/schema/relationships.v1.schema.json",
+  "title":"HiCo Universal Source Relationships",
+  "type":"object",
+  "required":["schema","version","generated_from","summary","relationships"],
+  "properties":{
+    "schema":{"const":"hico.source-relationships.v1"},
+    "version":{"const":1},
+    "generated_from":{"type":"string","minLength":1},
+    "universal_index":{"type":"string"},
+    "normalization":{"type":"object","additionalProperties":true},
+    "summary":{"type":"object","additionalProperties":true},
+    "relationships":{"type":"array","items":{"type":"object","required":["source","source_repository","source_provider","source_role","target","type","confidence","evidence"],"properties":{"source":{"type":"string","minLength":1},"source_repository":{"type":"string","minLength":1},"source_provider":{"type":"string","minLength":1},"source_role":{"type":"string","minLength":1},"target":{"type":"string","minLength":1},"type":{"type":"string","minLength":1},"confidence":{"enum":["high","medium","low"]},"evidence":{"type":"array","items":{"type":"string"}}},"additionalProperties":false}}
+  },
+  "additionalProperties":false
+}
