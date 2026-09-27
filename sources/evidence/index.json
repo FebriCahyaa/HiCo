@@ -1,11 +1,29 @@
 {
   "description": "Deterministic index of canonical relationship evidence exported from collector manifests.",
-  "file_count": 2,
+  "file_count": 8,
   "generated_from": "collector-manifests",
   "input_root_kind": "external",
-  "repository_count": 1,
+  "repository_count": 4,
   "schema": "hico.source-evidence-index.v1",
   "sources": [
+    {
+      "commit": "a379a28705592bcf184cc68acecf3ed62d4d70a2",
+      "file_count": 2,
+      "manifest": "sources/evidence/github/LineageOS/android_device_motorola_berlin/a379a28705592bcf184cc68acecf3ed62d4d70a2/manifest.json",
+      "source": "github/LineageOS/android_device_motorola_berlin"
+    },
+    {
+      "commit": "2d6bf3bfae392f5c7e66f12681121badb2d2be2d",
+      "file_count": 2,
+      "manifest": "sources/evidence/github/LineageOS/android_device_oneplus_avalon/2d6bf3bfae392f5c7e66f12681121badb2d2be2d/manifest.json",
+      "source": "github/LineageOS/android_device_oneplus_avalon"
+    },
+    {
+      "commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+      "file_count": 2,
+      "manifest": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/manifest.json",
+      "source": "github/LineageOS/android_device_samsung_a52q"
+    },
     {
       "commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
       "file_count": 2,

@@ -1316,6 +1316,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_motorola_berlin",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_berlin",
+      "source_role": "device",
+      "target": "build-path/vendor/motorola/berlin/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_motorola_sm7325-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_motorola_berlin",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_motorola_berlin",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_motorola_sm7325-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_motorola_berlin",
@@ -2588,6 +2614,32 @@
     {
       "confidence": "high",
       "evidence": [
+        "BoardConfig.mk",
+        "vendor-include"
+      ],
+      "source": "github/LineageOS/android_device_oneplus_avalon",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_oneplus_avalon",
+      "source_role": "device",
+      "target": "build-path/vendor/oneplus/avalon/BoardConfigVendor.mk",
+      "type": "build-path-reference"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_oneplus_sm8650-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_oneplus_avalon",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_oneplus_avalon",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_oneplus_sm8650-common",
+      "type": "dependency-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
         "repository-device-identity"
       ],
       "source": "github/LineageOS/android_device_oneplus_avalon",
@@ -3496,6 +3548,19 @@
       "source_role": "device",
       "target": "samsung/a51",
       "type": "device-source"
+    },
+    {
+      "confidence": "high",
+      "evidence": [
+        "dependency:android_device_samsung_sm7125-common",
+        "lineage.dependencies"
+      ],
+      "source": "github/LineageOS/android_device_samsung_a52q",
+      "source_provider": "github",
+      "source_repository": "LineageOS/android_device_samsung_a52q",
+      "source_role": "device",
+      "target": "github/LineageOS/android_device_samsung_sm7125-common",
+      "type": "dependency-source"
     },
     {
       "confidence": "high",
@@ -14657,10 +14722,10 @@
   "summary": {
     "device_count": 779,
     "platform_count": 130,
-    "relationship_count": 1220,
+    "relationship_count": 1225,
     "relationship_types": {
-      "build-path-reference": 3,
-      "dependency-source": 4,
+      "build-path-reference": 5,
+      "dependency-source": 7,
       "device-source": 460,
       "firmware-device": 212,
       "platform-source": 541

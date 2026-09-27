@@ -54,6 +54,7 @@ jobs:
           python3 tests/workflow_regression_test.py
           python3 tests/hico_evidence_test.py
           python3 tests/hico_relationships_test.py
+          python3 tests/hico_multi_oem_evidence_test.py
           python3 tools/hico_evidence.py verify --root sources/evidence
           python3 tools/hico_relationships.py
           git diff --exit-code -- sources/relationships.json

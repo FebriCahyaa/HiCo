@@ -1,0 +1,64 @@
+{
+  "evidence": {
+    "items": [
+      {
+        "kind": "boardconfig",
+        "path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/BoardConfig.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/BoardConfig.mk",
+        "sha256": "dbde753df419fd529ad929f2b2514e9d2cfe67daf7115f845b2d37b532ee5c67",
+        "size": 953,
+        "source_commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+        "tree_path": "BoardConfig.mk"
+      },
+      {
+        "kind": "lineage-dependencies",
+        "path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/lineage.dependencies",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/lineage.dependencies",
+        "sha256": "b4fa7053498b708af63867363f568c8f508d8cece8b3204c4a4e362448e26494",
+        "size": 132,
+        "source_commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+        "tree_path": "lineage.dependencies"
+      }
+    ],
+    "purpose": "relationship-resolution",
+    "supported_files": [
+      "BoardConfig.mk",
+      "lineage.dependencies"
+    ]
+  },
+  "files": [
+    {
+      "kind": "boardconfig",
+      "path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/BoardConfig.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/BoardConfig.mk",
+      "sha256": "dbde753df419fd529ad929f2b2514e9d2cfe67daf7115f845b2d37b532ee5c67",
+      "size": 953,
+      "source_commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+      "tree_path": "BoardConfig.mk"
+    },
+    {
+      "kind": "lineage-dependencies",
+      "path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/lineage.dependencies",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a52q/f328f13fd1af99b3c37c572ba3ed78c14fb03dc5/lineage.dependencies",
+      "sha256": "b4fa7053498b708af63867363f568c8f508d8cece8b3204c4a4e362448e26494",
+      "size": 132,
+      "source_commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+      "tree_path": "lineage.dependencies"
+    }
+  ],
+  "repository": {
+    "file_count": 2,
+    "max_file_size": 524288
+  },
+  "schema": "hico.source-evidence.v1",
+  "source": {
+    "branch": "lineage-23.2",
+    "commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+    "id": "lineageos",
+    "provider": "github",
+    "repository": "LineageOS/android_device_samsung_a52q",
+    "url": "https://github.com/LineageOS/android_device_samsung_a52q"
+  },
+  "source_manifest": "custom-rom/samsung/lineageos/a52q/unknown/device/lineageos__android_device_samsung_a52q/manifest.json",
+  "version": 1
+}
