@@ -76,6 +76,7 @@ jobs:
           python3 tests/topology_test.py
           python3 tests/database_test.py
           python3 tests/scanner_test.py
+          python3 tests/workflow_regression_test.py
           python3 tools/hico_database.py validate database
           python3 tools/gen_device_db.py --check
 
@@ -113,6 +114,14 @@ jobs:
           name: hico-host-tools
           path: build
 
+      - name: Verify host HiCo executable
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f build/hicod
+          chmod +x build/hicod
+          test -x build/hicod
+
       - name: Run selected suite
         env:
           HICOD: build/hicod
@@ -133,7 +142,7 @@ jobs:
               raise SystemExit("no device thermal roots are present in the repository")
           print(roots[0])
           PY
-              root=$(find devices -mindepth 3 -maxdepth 3 -type d -name thermal | sort | head -n 1)
+              root=$(find devices -mindepth 3 -maxdepth 3 -type d -name thermal -print | sort | sed -n '1p')
               test -n "$root"
               python3 tools/hico_thermal.py --hicod "$HICOD" map "$root" build/mapping.json --decode
               python3 - <<'PY'
@@ -164,7 +173,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' && inputs.mode == 'full'
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.matrix.outputs.value }}
+      matrix_ids: ${{ steps.matrix.outputs.ids }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -201,8 +210,15 @@ jobs:
           Path('build/map-matrix.json').write_text(json.dumps(shards, separators=(',', ':')) + '\n')
           print(f"roots={len(roots)} shards={len(shards)}")
           PY
-          value=$(cat build/map-matrix.json)
-          echo "value=$value" >> "$GITHUB_OUTPUT"
+          ids=$(jq -c '[.[].id]' build/map-matrix.json)
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+
+      - name: Upload mapping matrix definition
+        uses: actions/upload-artifact@v6
+        with:
+          name: full-mapping-matrix
+          path: build/map-matrix.json
+          if-no-files-found: error
 
   full-map:
     name: Map thermal roots ${{ matrix.id }}
@@ -211,7 +227,7 @@ jobs:
       fail-fast: false
       max-parallel: ${{ inputs.max_parallel || 8 }}
       matrix:
-        include: ${{ fromJSON(needs.full-matrix.outputs.matrix) }}
+        id: ${{ fromJSON(needs.full-matrix.outputs.matrix_ids) }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -223,18 +239,28 @@ jobs:
           name: hico-host-tools
           path: build
 
-      - name: Write shard roots
-        env:
-          ROOTS_JSON: ${{ toJSON(matrix.roots) }}
+      - name: Verify host HiCo executable
+        shell: bash
         run: |
           set -euo pipefail
-          python3 - <<'PY'
-          import json, os
-          roots=json.loads(os.environ['ROOTS_JSON'])
-          with open('build/roots.txt','w') as f:
-              f.write('\n'.join(roots))
-              f.write('\n')
-          PY
+          test -f build/hicod
+          chmod +x build/hicod
+          test -x build/hicod
+
+      - name: Download mapping matrix definition
+        uses: actions/download-artifact@v6
+        with:
+          name: full-mapping-matrix
+          path: build/matrix
+
+      - name: Write shard roots
+        env:
+          JOB_ID: ${{ matrix.id }}
+        run: |
+          set -euo pipefail
+          jq -r --arg id "$JOB_ID" '.[] | select(.id == $id) | .roots[]' \
+            build/matrix/map-matrix.json > build/roots.txt
+          test -s build/roots.txt
 
       - name: Map shard
         run: |
