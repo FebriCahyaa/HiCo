@@ -2,6 +2,15 @@
   "evidence": {
     "items": [
       {
+        "kind": "android-products",
+        "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/AndroidProducts.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/AndroidProducts.mk",
+        "sha256": "c90a0b7a284fd8dd604720ed2fa9e02cabdac8be38e74565f29c7c789d47c151",
+        "size": 656,
+        "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
+        "tree_path": "AndroidProducts.mk"
+      },
+      {
         "kind": "boardconfig",
         "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/BoardConfig.mk",
         "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/BoardConfig.mk",
@@ -11,6 +20,15 @@
         "tree_path": "BoardConfig.mk"
       },
       {
+        "kind": "device-mk",
+        "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/device.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/device.mk",
+        "sha256": "bb687f826177eadcc60ff7f9563d647b95f8e76c4eea8ab45b7a5e631fb4cf55",
+        "size": 1041,
+        "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
+        "tree_path": "device.mk"
+      },
+      {
         "kind": "lineage-dependencies",
         "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/lineage.dependencies",
         "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/lineage.dependencies",
@@ -18,15 +36,39 @@
         "size": 128,
         "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
         "tree_path": "lineage.dependencies"
+      },
+      {
+        "kind": "proprietary-files",
+        "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/proprietary-files.txt",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/proprietary-files.txt",
+        "sha256": "02d66ae1cfb37e2543f8db0741aaa841a5f7418c6bb6441ffc3a9b3636616133",
+        "size": 206,
+        "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
+        "tree_path": "proprietary-files.txt"
       }
     ],
     "purpose": "relationship-resolution",
     "supported_files": [
+      "Android.bp",
+      "Android.mk",
+      "AndroidProducts.mk",
       "BoardConfig.mk",
-      "lineage.dependencies"
+      "device.mk",
+      "extract-files.sh",
+      "lineage.dependencies",
+      "proprietary-files.txt"
     ]
   },
   "files": [
+    {
+      "kind": "android-products",
+      "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/AndroidProducts.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/AndroidProducts.mk",
+      "sha256": "c90a0b7a284fd8dd604720ed2fa9e02cabdac8be38e74565f29c7c789d47c151",
+      "size": 656,
+      "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
+      "tree_path": "AndroidProducts.mk"
+    },
     {
       "kind": "boardconfig",
       "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/BoardConfig.mk",
@@ -37,6 +79,15 @@
       "tree_path": "BoardConfig.mk"
     },
     {
+      "kind": "device-mk",
+      "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/device.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/device.mk",
+      "sha256": "bb687f826177eadcc60ff7f9563d647b95f8e76c4eea8ab45b7a5e631fb4cf55",
+      "size": 1041,
+      "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
+      "tree_path": "device.mk"
+    },
+    {
       "kind": "lineage-dependencies",
       "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/lineage.dependencies",
       "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/lineage.dependencies",
@@ -44,10 +95,19 @@
       "size": 128,
       "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
       "tree_path": "lineage.dependencies"
+    },
+    {
+      "kind": "proprietary-files",
+      "path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/proprietary-files.txt",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_samsung_a21s/d1df7743efe85a8d1b68bb9fced066d1086c0502/proprietary-files.txt",
+      "sha256": "02d66ae1cfb37e2543f8db0741aaa841a5f7418c6bb6441ffc3a9b3636616133",
+      "size": 206,
+      "source_commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
+      "tree_path": "proprietary-files.txt"
     }
   ],
   "repository": {
-    "file_count": 2,
+    "file_count": 5,
     "max_file_size": 524288
   },
   "schema": "hico.source-evidence.v1",

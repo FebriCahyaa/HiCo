@@ -76,6 +76,7 @@ jobs:
           HICOD: build/hicod
         run: |
           python3 tests/hico_tools_test.py
+          python3 tests/hico_dependency_resolver_test.py
           python3 tests/thermal_scope_test.py
           python3 tests/topology_test.py
           python3 tests/database_test.py

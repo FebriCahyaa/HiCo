@@ -2,6 +2,15 @@
   "evidence": {
     "items": [
       {
+        "kind": "android-products",
+        "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/AndroidProducts.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/AndroidProducts.mk",
+        "sha256": "8ca88f4a1afca6286cfe57d9566d012ddda711f1df4305815a787f6af9b394af",
+        "size": 149,
+        "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
+        "tree_path": "AndroidProducts.mk"
+      },
+      {
         "kind": "boardconfig",
         "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/BoardConfig.mk",
         "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/BoardConfig.mk",
@@ -11,6 +20,15 @@
         "tree_path": "BoardConfig.mk"
       },
       {
+        "kind": "device-mk",
+        "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/device.mk",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/device.mk",
+        "sha256": "51ed86f322aa7bfa1f36da1f891e299ad70ff79b5d56386f6896b64e035efe09",
+        "size": 4204,
+        "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
+        "tree_path": "device.mk"
+      },
+      {
         "kind": "lineage-dependencies",
         "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/lineage.dependencies",
         "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/lineage.dependencies",
@@ -18,15 +36,39 @@
         "size": 233,
         "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
         "tree_path": "lineage.dependencies"
+      },
+      {
+        "kind": "proprietary-files",
+        "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/proprietary-files.txt",
+        "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/proprietary-files.txt",
+        "sha256": "bd5c609ee31e4143f9fce5be7bb09b6e05b14318d274f4dca97f9b3dfbf58d79",
+        "size": 13417,
+        "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
+        "tree_path": "proprietary-files.txt"
       }
     ],
     "purpose": "relationship-resolution",
     "supported_files": [
+      "Android.bp",
+      "Android.mk",
+      "AndroidProducts.mk",
       "BoardConfig.mk",
-      "lineage.dependencies"
+      "device.mk",
+      "extract-files.sh",
+      "lineage.dependencies",
+      "proprietary-files.txt"
     ]
   },
   "files": [
+    {
+      "kind": "android-products",
+      "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/AndroidProducts.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/AndroidProducts.mk",
+      "sha256": "8ca88f4a1afca6286cfe57d9566d012ddda711f1df4305815a787f6af9b394af",
+      "size": 149,
+      "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
+      "tree_path": "AndroidProducts.mk"
+    },
     {
       "kind": "boardconfig",
       "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/BoardConfig.mk",
@@ -37,6 +79,15 @@
       "tree_path": "BoardConfig.mk"
     },
     {
+      "kind": "device-mk",
+      "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/device.mk",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/device.mk",
+      "sha256": "51ed86f322aa7bfa1f36da1f891e299ad70ff79b5d56386f6896b64e035efe09",
+      "size": 4204,
+      "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
+      "tree_path": "device.mk"
+    },
+    {
       "kind": "lineage-dependencies",
       "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/lineage.dependencies",
       "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/lineage.dependencies",
@@ -44,10 +95,19 @@
       "size": 233,
       "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
       "tree_path": "lineage.dependencies"
+    },
+    {
+      "kind": "proprietary-files",
+      "path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/proprietary-files.txt",
+      "raw_path": "sources/evidence/github/LineageOS/android_device_motorola_bangkk/f760e91a4630ab5796c96403d011a8f4e7e6d27b/proprietary-files.txt",
+      "sha256": "bd5c609ee31e4143f9fce5be7bb09b6e05b14318d274f4dca97f9b3dfbf58d79",
+      "size": 13417,
+      "source_commit": "f760e91a4630ab5796c96403d011a8f4e7e6d27b",
+      "tree_path": "proprietary-files.txt"
     }
   ],
   "repository": {
-    "file_count": 2,
+    "file_count": 5,
     "max_file_size": 524288
   },
   "schema": "hico.source-evidence.v1",

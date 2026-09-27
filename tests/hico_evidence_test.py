@@ -35,6 +35,15 @@ def main() -> int:
             "include vendor/xiaomi/garnet/BoardConfigVendor.mk\n",
             encoding="utf-8",
         )
+        for name, content in {
+            "AndroidProducts.mk": "PRODUCT_MAKEFILES := $(LOCAL_DIR)/garnet.mk\n",
+            "device.mk": "PRODUCT_PACKAGES += hico-test\n",
+            "Android.bp": "package { default_applicable_licenses: [\"Android-Apache-2.0\"] }\n",
+            "Android.mk": "LOCAL_PATH := $(call my-dir)\n",
+            "extract-files.sh": "#!/bin/sh\n",
+            "proprietary-files.txt": "vendor/lib64/libgarnet.so\n",
+        }.items():
+            (raw / name).write_text(content, encoding="utf-8")
         (dataset / "manifest.json").write_text(json.dumps({
             "schema": "hico.thermal-source.v1",
             "source": {
@@ -48,20 +57,35 @@ def main() -> int:
             "files": [
                 {"tree_path": "lineage.dependencies", "raw_path": str(raw / "lineage.dependencies")},
                 {"tree_path": "BoardConfig.mk", "raw_path": str(raw / "BoardConfig.mk")},
+                {"tree_path": "AndroidProducts.mk", "raw_path": str(raw / "AndroidProducts.mk")},
+                {"tree_path": "device.mk", "raw_path": str(raw / "device.mk")},
+                {"tree_path": "Android.bp", "raw_path": str(raw / "Android.bp")},
+                {"tree_path": "Android.mk", "raw_path": str(raw / "Android.mk")},
+                {"tree_path": "extract-files.sh", "raw_path": str(raw / "extract-files.sh")},
+                {"tree_path": "proprietary-files.txt", "raw_path": str(raw / "proprietary-files.txt")},
             ],
         }, indent=2) + "\n", encoding="utf-8")
 
         result = h.extract(data, out, [])
         assert result["failures"] == []
         assert result["sources_exported"] == 1
-        assert result["files_exported"] == 2
+        assert result["files_exported"] == 8
 
         manifests = sorted(p for p in out.rglob("manifest.json") if p.is_file())
         assert len(manifests) == 1
         manifest = json.loads(manifests[0].read_text(encoding="utf-8"))
         assert manifest["schema"] == "hico.source-evidence.v1"
         assert manifest["source"]["commit"] == "abcdef1234567890abcdef1234567890abcdef12"
-        assert {x["tree_path"] for x in manifest["files"]} == {"lineage.dependencies", "BoardConfig.mk"}
+        assert {x["tree_path"] for x in manifest["files"]} == {
+            "lineage.dependencies",
+            "BoardConfig.mk",
+            "AndroidProducts.mk",
+            "device.mk",
+            "Android.bp",
+            "Android.mk",
+            "extract-files.sh",
+            "proprietary-files.txt",
+        }
         assert all(x["sha256"] and len(x["sha256"]) == 64 for x in manifest["files"])
         assert (out / "index.json").is_file()
 
@@ -76,7 +100,16 @@ def main() -> int:
         loaded = rel.load_evidence_files([out])
         key = "github/LineageOS/android_device_xiaomi_garnet"
         assert key in loaded
-        assert set(loaded[key]) == {"lineage.dependencies", "BoardConfig.mk"}
+        assert set(loaded[key]) == {
+            "lineage.dependencies",
+            "BoardConfig.mk",
+            "AndroidProducts.mk",
+            "device.mk",
+            "Android.bp",
+            "Android.mk",
+            "extract-files.sh",
+            "proprietary-files.txt",
+        }
         fixture_repos = [
             {"provider":"github","full_name":"LineageOS/android_device_xiaomi_garnet","vendor":"xiaomi","device":"garnet","ecosystem":"custom-rom","rom_family":"lineageos","repository_role":"device"},
             {"provider":"github","full_name":"LineageOS/android_kernel_xiaomi_sm7435","vendor":"xiaomi","device":"sm7435","ecosystem":"custom-rom","rom_family":"lineageos","repository_role":"kernel"},

@@ -10,10 +10,13 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+from hico_dependency_resolver import resolve_dependency
 DEVICE_RE = re.compile(r"(?:^|/)android_device_([^/]+)$", re.I)
 VENDOR_RE = re.compile(r"(?:^|/)android_vendor_([^/]+)$", re.I)
 KERNEL_RE = re.compile(r"(?:^|/)android_kernel_([^/]+)$", re.I)
@@ -201,20 +204,31 @@ def load_evidence_files(evidence_roots: list[Path]) -> dict[str, dict[str, str]]
     return evidence
 
 
-def parse_lineage_dependencies(path: Path) -> list[str]:
+def parse_lineage_dependencies(path: Path) -> list[dict[str, str]]:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return []
     if not isinstance(data, list):
         return []
-    out = []
+    out: list[dict[str, str]] = []
+    seen = set()
     for item in data:
-        if isinstance(item, dict):
-            repo = str(item.get("repository", "")).strip()
-            if repo:
-                out.append(repo)
-    return sorted(set(out))
+        if not isinstance(item, dict):
+            continue
+        repository = str(item.get("repository", "")).strip()
+        if not repository:
+            continue
+        record = {
+            "repository": repository,
+            "target_path": str(item.get("target_path", "")).strip("/"),
+        }
+        key = (record["repository"], record["target_path"])
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(record)
+    return sorted(out, key=lambda item: (item["repository"], item["target_path"]))
 
 
 def parse_boardconfig_references(path: Path) -> list[tuple[str, str]]:
@@ -283,11 +297,15 @@ def build_relationships(
 
         deps_path = next((Path(v) for k, v in files.items() if k == "lineage.dependencies"), None)
         if deps_path:
-            for dep_name in parse_lineage_dependencies(deps_path):
-                matches = by_basename.get(dep_name, [])
-                if len(matches) == 1:
-                    target_repo = matches[0]
-                    target = repository_source_key(target_repo.get("provider", "unknown"), target_repo.get("full_name", ""))
+            for dependency in parse_lineage_dependencies(deps_path):
+                dep_name = dependency["repository"]
+                resolution = resolve_dependency(dep_name, repos)
+                if resolution["status"] == "resolved":
+                    target_repo = resolution["repository"]
+                    target = repository_source_key(
+                        target_repo.get("provider", "unknown"),
+                        target_repo.get("full_name", ""),
+                    )
                     rel = make_relationship(
                         repo,
                         target,
