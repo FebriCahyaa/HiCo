@@ -160,11 +160,25 @@ jobs:
             --hicod build/bin/hicod \
             --decode-known
 
+      - name: Archive ingest result
+        env:
+          JOB_ID: ${{ matrix.id }}
+        run: |
+          set -euo pipefail
+          mkdir -p build/ingest-archives
+          archive="build/ingest-archives/ingest-${JOB_ID}.tar"
+          # Keep the original repository filenames intact. GitHub artifact uploads
+          # reject filenames containing characters such as `?`, while tar can
+          # faithfully carry those names for later extraction. Include the shard
+          # directory itself so merged downloads cannot collide across shards.
+          tar -C build/ingest -cf "$archive" "$JOB_ID"
+          test -s "$archive"
+
       - name: Upload ingest result
         uses: actions/upload-artifact@v6
         with:
           name: ingest-${{ matrix.id }}
-          path: build/ingest/${{ matrix.id }}/
+          path: build/ingest-archives/ingest-${{ matrix.id }}.tar
           if-no-files-found: error
 
   map:
@@ -191,7 +205,18 @@ jobs:
         uses: actions/download-artifact@v6
         with:
           name: ingest-${{ matrix.id }}
-          path: build/ingest/${{ matrix.id }}
+          path: build/ingest-archives
+
+      - name: Extract ingest shard
+        env:
+          JOB_ID: ${{ matrix.id }}
+        run: |
+          set -euo pipefail
+          archive="build/ingest-archives/ingest-${JOB_ID}.tar"
+          test -s "$archive"
+          mkdir -p build/ingest
+          tar -xf "$archive" -C build/ingest
+          test -d "build/ingest/$JOB_ID"
 
       - name: Map thermal artifacts
         env:
@@ -389,13 +414,30 @@ jobs:
           chmod +x build/bin/hicod
           test -x build/bin/hicod
 
-      - name: Download all ingest results (GitHub backend)
+      - name: Download all ingest archives (GitHub backend)
         if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
         uses: actions/download-artifact@v6
         with:
           pattern: ingest-*
-          path: build/all-ingest
+          path: build/all-ingest-archives
           merge-multiple: true
+
+      - name: Extract all ingest archives (GitHub backend)
+        if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/all-ingest
+          shopt -s nullglob
+          archives=(build/all-ingest-archives/ingest-*.tar)
+          ((${#archives[@]} > 0)) || {
+            echo 'No ingest archives were downloaded.' >&2
+            exit 1
+          }
+          for archive in "${archives[@]}"; do
+            tar -xf "$archive" -C build/all-ingest
+          done
+          find build/all-ingest -mindepth 1 -maxdepth 1 -type d -print -quit | grep -q .
 
       - name: Download all mapping results (GitHub backend)
         if: ${{ (inputs.compute_backend || vars.HICO_DATABASE_BACKEND || 'aws') != 'aws' }}
