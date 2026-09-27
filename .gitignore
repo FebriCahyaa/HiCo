@@ -10,3 +10,6 @@ __pycache__/
 # HiCo local collector cache/transient state
 .hico-cache/
 sources/collector-last-run.json
+
+# Reproducible native build outputs — always regenerate from tools + stock/
+generated/artifacts/
