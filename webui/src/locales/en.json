@@ -548,9 +548,60 @@
     "links": "Links",
     "link": {
       "hico": "HiCo Thermal releases",
-      "flux": "Flux Tweaks releases"
+      "flux": "Flux Tweaks releases",
+      "issues": "Report a problem"
     },
-    "legal": "HiCo Thermal is proprietary software © 2026 FebriCahyaa, used under its EULA. Parts of the WebUI come from Flux Tweaks and Encore Tweaks (Apache License 2.0); the Google Sans Flex font is under the SIL Open Font License."
+    "legal": {
+      "license": "License",
+      "notice": "Third-party notices",
+      "unavailable": "Could not read this file right now."
+    },
+    "unavailable": "Unavailable",
+    "system_title": "System",
+    "system": {
+      "device": "Device",
+      "android": "Android",
+      "kernel": "Kernel",
+      "arch": "Architecture",
+      "root": "Root manager"
+    },
+    "engine_title": "Thermal engine",
+    "engine": {
+      "preset": "Current template",
+      "flux": "Flux Tweaks"
+    },
+    "flux_status": {
+      "ready": "Ready",
+      "not_installed": "Not installed",
+      "disabled": "Disabled",
+      "outdated": "Outdated",
+      "not_running": "Not running"
+    },
+    "integrity_title": "Integrity",
+    "integrity": {
+      "unavailable": "Could not check integrity right now.",
+      "status": {
+        "ok": "Verified",
+        "missing": "Not signed",
+        "bad-format": "Invalid manifest",
+        "bad-signature": "Invalid signature",
+        "file-mismatch": "File changed",
+        "file-missing": "File missing",
+        "revoked": "Revoked"
+      },
+      "manifest": "Manifest version",
+      "files": "Signed files",
+      "files_n": "{n} verified",
+      "runtime_flagged": "A debugger or {n} hook library is present. Informational only — not itself treated as a failure.",
+      "runtime_clear": "No debugger or hook library detected."
+    },
+    "section": {
+      "resources": "Resources",
+      "legal": "Legal"
+    },
+    "footer": "Open-source-friendly thermal control for rooted Android.",
+    "built_for": "Built for Android",
+    "legal_summary": "HiCo Thermal is proprietary software © 2026 FebriCahyaa, used under its EULA. Parts of the WebUI come from Flux Tweaks and Encore Tweaks (Apache License 2.0); the Google Sans Flex font is under the SIL Open Font License."
   },
   "scenarios": {
     "title": "Scenarios",

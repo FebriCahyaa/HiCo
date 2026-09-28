@@ -548,9 +548,60 @@
     "links": "Tautan",
     "link": {
       "hico": "Rilis HiCo Thermal",
-      "flux": "Rilis Flux Tweaks"
+      "flux": "Rilis Flux Tweaks",
+      "issues": "Laporkan masalah"
     },
-    "legal": "HiCo Thermal adalah perangkat lunak proprietary © 2026 FebriCahyaa, dipakai sesuai EULA-nya. Sebagian WebUI berasal dari Flux Tweaks dan Encore Tweaks (Apache License 2.0); font Google Sans Flex di bawah SIL Open Font License."
+    "legal": {
+      "license": "Lisensi",
+      "notice": "Notis pihak ketiga",
+      "unavailable": "Berkas ini tidak dapat dibaca saat ini."
+    },
+    "unavailable": "Tidak tersedia",
+    "system_title": "Sistem",
+    "system": {
+      "device": "Perangkat",
+      "android": "Android",
+      "kernel": "Kernel",
+      "arch": "Arsitektur",
+      "root": "Root manager"
+    },
+    "engine_title": "Mesin termal",
+    "engine": {
+      "preset": "Template saat ini",
+      "flux": "Flux Tweaks"
+    },
+    "flux_status": {
+      "ready": "Siap",
+      "not_installed": "Belum terpasang",
+      "disabled": "Dinonaktifkan",
+      "outdated": "Versi lama",
+      "not_running": "Tidak berjalan"
+    },
+    "integrity_title": "Integritas",
+    "integrity": {
+      "unavailable": "Integritas tidak dapat diperiksa saat ini.",
+      "status": {
+        "ok": "Terverifikasi",
+        "missing": "Tidak ditandatangani",
+        "bad-format": "Manifest tidak valid",
+        "bad-signature": "Tanda tangan tidak valid",
+        "file-mismatch": "Berkas berubah",
+        "file-missing": "Berkas hilang",
+        "revoked": "Dicabut"
+      },
+      "manifest": "Versi manifest",
+      "files": "Berkas bertanda tangan",
+      "files_n": "{n} terverifikasi",
+      "runtime_flagged": "Debugger atau {n} hook library terdeteksi. Hanya informatif — tidak dianggap sebagai kegagalan.",
+      "runtime_clear": "Tidak ada debugger atau hook library yang terdeteksi."
+    },
+    "section": {
+      "resources": "Sumber daya",
+      "legal": "Legal"
+    },
+    "footer": "Kontrol termal ramah open-source untuk Android root.",
+    "built_for": "Dibuat untuk Android",
+    "legal_summary": "HiCo Thermal adalah perangkat lunak proprietary © 2026 FebriCahyaa, digunakan berdasarkan EULA-nya. Sebagian WebUI berasal dari Flux Tweaks dan Encore Tweaks (Apache License 2.0); font Google Sans Flex berada di bawah SIL Open Font License."
   },
   "scenarios": {
     "title": "Skenario",
