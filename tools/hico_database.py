@@ -306,6 +306,9 @@ def merge_mappings(input_root: Path, out: Path) -> dict:
         except (OSError, json.JSONDecodeError) as exc:
             errors.append({"file": str(path), "error": str(exc)})
             continue
+        if not isinstance(data, dict):
+            errors.append({"file": str(path), "error": f"expected a JSON object, got {type(data).__name__}"})
+            continue
         schema = data.get("schema")
         if schema not in {"hico.artifact-map.v2", "hico.artifact-map-set.v2", "hico.artifact-map.v3", "hico.artifact-map-set.v3"}:
             continue
