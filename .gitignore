@@ -13,3 +13,8 @@ sources/collector-last-run.json
 
 # Reproducible native build outputs — always regenerate from tools + stock/
 generated/artifacts/
+
+# HiCo release signing keys
+priv.hex
+*_priv.hex
+*.private.hex

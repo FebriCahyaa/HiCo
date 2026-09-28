@@ -8,25 +8,14 @@
 
 #pragma once
 
-// ─────────────────────────────────────────────────────────────────────────────
-// PLACEHOLDER DEV/TEST KEY — regenerate before the first real release.
+// Production release public key.
 //
-//   1. Build the host tools:  cmake -B build && cmake --build build --target hico_sign
-//   2. Generate a real keypair, offline, once:  build/hico_sign genkey priv.hex pub.hex
-//   3. Paste priv.hex's contents into pub.hex below (HICO_INTEGRITY_PUBLIC_KEY_HEX)... no —
-//      paste PUB.hex here, and keep priv.hex OUT of this repository. Store it as a GitHub
-//      Actions encrypted secret (or an offline password manager) and pass it to
-//      tools/sign_release.py only at release time. If the private key is ever committed or
-//      leaked, every signature it ever made must be treated as compromised: generate a new
-//      pair, update this file, and every future release re-signs with the new key (older
-//      releases stay verifiable only against the old one, which is now untrusted).
+// The matching private key is NEVER stored in this repository. Signed releases use
+// the GitHub Actions secret HICO_INTEGRITY_PRIVATE_KEY.
 //
-// This key is PUBLIC by design (that is the point of asymmetric signing): shipping it in the
-// binary is safe. What must never ship, and never be committed, is the matching private key.
-//
-// This placeholder's seed is the fixed, non-secret byte sequence {7, 8, 9, ..., 38} — reproduced
-// in tests/integrity_test.cpp so the test suite can sign manifests the way a real release would,
-// without a real private key ever existing in this repository. A real release key must come from
-// hico_sign genkey (OS randomness), never a fixed seed like this one.
-// ─────────────────────────────────────────────────────────────────────────────
-#define HICO_INTEGRITY_PUBLIC_KEY_HEX "00d05a1d1ea251396d557afbd4588b3c6d99dbeb972fed10a32562ea26dcdcfa"
+// Host-side CMake tests override this macro with their deterministic test key so the
+// production key is never needed by the test suite.
+
+#ifndef HICO_INTEGRITY_PUBLIC_KEY_HEX
+#define HICO_INTEGRITY_PUBLIC_KEY_HEX "99b33175e39f03bff7eed24b22af43372cb248bf97f62244ab37a1c7744bed77"
+#endif
