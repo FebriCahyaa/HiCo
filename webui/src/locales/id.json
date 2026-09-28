@@ -477,7 +477,36 @@
     "empty": "Log kosong.",
     "save": "Simpan",
     "saved": "Log disimpan ke {path}",
-    "save_failed": "Log gagal disimpan"
+    "save_failed": "Log gagal disimpan",
+    "engine": "Mesin termal",
+    "engine_unknown": "Status tidak diketahui",
+    "sessions_title": "Aktivitas terbaru",
+    "sessions_empty": "Belum ada sesi yang tercatat.",
+    "actions_title": "Tindakan",
+    "save_hint": "Mengekspor status HiCo dan log untuk laporan bug.",
+    "clear": "Hapus riwayat sesi",
+    "clear_hint": "Menghapus daftar aktivitas terbaru. Log itu sendiri tetap disimpan.",
+    "clear_confirm": {
+      "title": "Hapus riwayat sesi",
+      "message": "Daftar aktivitas terbaru akan dikosongkan. Tindakan ini tidak bisa dibatalkan."
+    },
+    "clear_done": "Riwayat sesi dihapus",
+    "unavailable": "Log tidak dapat dibaca saat ini.",
+    "level": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "info": "INFO",
+      "debug": "DEBUG"
+    },
+    "session": {
+      "scenario": "Skenario",
+      "started": "Dimulai",
+      "duration": "Durasi",
+      "boosted": "Terbuka selama",
+      "peak_cpu": "CPU tertinggi",
+      "peak_battery": "Baterai tertinggi",
+      "trips": "Aktivasi penjaga keamanan"
+    }
   },
   "about": {
     "title": "Tentang",

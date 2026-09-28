@@ -477,7 +477,36 @@
     "empty": "The log is empty.",
     "save": "Save",
     "saved": "Log saved to {path}",
-    "save_failed": "Could not save the log"
+    "save_failed": "Could not save the log",
+    "engine": "Thermal engine",
+    "engine_unknown": "State unknown",
+    "sessions_title": "Recent activity",
+    "sessions_empty": "No sessions recorded yet.",
+    "actions_title": "Actions",
+    "save_hint": "Exports HiCo state and the log for a bug report.",
+    "clear": "Clear sessions",
+    "clear_hint": "Removes the recent activity list. The log itself is kept.",
+    "clear_confirm": {
+      "title": "Clear session history",
+      "message": "The recent activity list is emptied. This cannot be undone."
+    },
+    "clear_done": "Session history cleared",
+    "unavailable": "The log could not be read right now.",
+    "level": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "info": "INFO",
+      "debug": "DEBUG"
+    },
+    "session": {
+      "scenario": "Scenario",
+      "started": "Started",
+      "duration": "Duration",
+      "boosted": "Unlocked for",
+      "peak_cpu": "Peak CPU",
+      "peak_battery": "Peak battery",
+      "trips": "Safety guard activations"
+    }
   },
   "about": {
     "title": "About",
