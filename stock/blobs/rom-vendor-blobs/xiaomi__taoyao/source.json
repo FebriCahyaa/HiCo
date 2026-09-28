@@ -1,0 +1,97 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_xiaomi_taoyao.git",
+  "codename": "taoyao",
+  "commit": "1bd905e6270e4da7b798c047d6688da0cc943515",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "87ab900b0215e56564865f5f8d316a375ab465d8a384ccc230c35b1cee1a1977",
+      "size": 279
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "7cd14681714e46d3da84146c5d1fa5958683dc37db980a704f13fd7ff12b19d2",
+      "size": 2208
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "3f86ef2579f02697767d4d439dff0a80095a4454b03dc17ba0b173720d786d1c",
+      "size": 2256
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "a9325f3ed79f401054cd88bba2e1b9f8ab408861d424db2fcc3304f773952fdb",
+      "size": 2528
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-huanji.conf",
+      "sha256": "380e3f7f10453ff7356509bf878de9aab21bdc7bc8dfa306dd3a1359f8a36dbb",
+      "size": 2448
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "46a538c600ead0fba4ca2e5a2075c474c059179cee06867dc5d5a6b6386f8baa",
+      "size": 2144
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "041a19f8201acc26eac0588e0bc79721f1a9ebaf577e9a6aeaf4f62101c7a670",
+      "size": 2176
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "73f368a6226748088d7813e85c89f2249f611e37cd01dfd09bdbcbcc626ecd20",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "53764d1c1303ceffae842d4afbf394cd138efb642a949b128ddd23803359388a",
+      "size": 688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "7eb53a6fbce7d6ab3fe9a7bffdd9a77671ab3d304357984e207871b3fe366920",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "efef55905b3393d7a756dfa5f765fb71a29259e715fdba1889efdafc4e12e544",
+      "size": 1984
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "f91edfb5685a420e5228e87513bcdb6b253d03b721a01ac645e3d29a54cf4166",
+      "size": 2176
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "29bd91ff6e8de33153edb3910eeca97448ebc628715f9b5ab74cae419abe970e",
+      "size": 2544
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-videochat.conf",
+      "sha256": "a7ae0cdb620b6a399ad4c451de3d6829c23a6b34f84c319708494107ca2f62b6",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "f70b103c581b216fa333e06a8671ee924de4918390d4502050c307547a424b43",
+      "size": 1549
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_taoyao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

@@ -1,37 +1,57 @@
 {
   "branch": "cm-10.1-staging",
-  "clone_url": "https://github.com/LineageOS/android_device_amazon_otter-common.git",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_otter.git",
   "codename": "otter",
-  "commit": "ec647920d6165d425409f49aabf0877fba18f81f",
-  "file_count": 4,
+  "commit": "e178e84c071defd94a9a8d60e5bd72c8be3aa841",
+  "file_count": 8,
   "files": [
     {
       "path": "Android.mk",
-      "sha256": "b6f11180c8f19f7c95311b2f1cf8db73f1a71e63fb250b227ca451d3c89a1c19",
-      "size": 793
+      "sha256": "aafda8b50b78f1e11904aa32e19b39ee8827be3587c06e4b1c4a5abb5593b28b",
+      "size": 757
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "ecf806aba5c1616531c3d1dbf623ab59cf33f327a0ba93740c2ed91329266fc8",
-      "size": 4560
+      "path": "AndroidProducts.mk",
+      "sha256": "94eac79965c28669f42bc242630d1d8f12514e05cd6e5bdddecd53333ba8387b",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a528edc58fa35b7e1a22904bc0887406116b99bab548eefdd7f80cfc425e4812",
+      "size": 1648
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c73e5a5bf5152d88e4d79dfb579a482764196e810b76eb2557baf1edcab68f8d",
+      "size": 1559
     },
     {
       "path": "extract-files.sh",
-      "sha256": "bd66c156e2c6d8147b9ddd97aa6ab337e15e914644ccb0794fb3ce3fac5cd54f",
-      "size": 405
+      "sha256": "6152b6b0e7c7e2adc8063e207aa204605dea3c0b1e34d6de04e3c74524966224",
+      "size": 398
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "e47687cb4237e92b28aa0f49f0d020d6e916659f776e2021d552e2cec9e3c82b",
-      "size": 1322
+      "sha256": "c1e21704e37496cb6471d656cb8f5e573c9a633bf03c04a401c8348ca3863cd7",
+      "size": 1019
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c571da929a11d4663cc997416f5ff29545d399bb3ab6ce96cf7244b678ba22f3",
+      "size": 235
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "72bb96878cae9e5dbf5fd31835a90cea03a72b02836b3198b34acc9c7b73de8b",
+      "size": 714
     }
   ],
   "kind": "device",
-  "repo": "android_device_amazon_otter-common",
+  "repo": "android_device_amazon_otter",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2018-04-07T20:49:56Z",
+  "upstream_pushed_at": "2018-04-07T20:49:53Z",
   "vendor": "amazon"
 }

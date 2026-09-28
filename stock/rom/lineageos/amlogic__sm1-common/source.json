@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_amlogic_sm1-common.git",
+  "codename": "sm1-common",
+  "commit": "a9c893510eae6a107724d8f6bc7eb361cd3a09d8",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2a5caa3892a762fbd3ad5ddbeea1132696a5a2301533cbc14d5aa82e0f37d7f6",
+      "size": 112
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f80ba93a5460dfbff9a273e4d21e683bcbdd343849bafe56504687e7db8a6e0f",
+      "size": 2148
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3d0441e56902e7e09daa4ea9563aa592aeab0ab98022e7f84595420ce40ffc78",
+      "size": 1584
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ae8c9e65cf17df1e705bf55dca45c865754deb7c0c5c0766e6cccac515fdd808",
+      "size": 630
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7263c70f44238d55ed04f0ccbcf4dec2b6a5321fcb6392429bb3c2fcbdb8dce3",
+      "size": 7208
+    },
+    {
+      "path": "system.prop",
+      "sha256": "65ddaa6258d37de120b95c723b1b2bddb711b475fcfb6a0fe466a354e8b7b9b9",
+      "size": 65
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3d98c8bff6f5b7ddec2cacb1e6e692eb1d8bc19b695658745f7b3c5171069d84",
+      "size": 1299
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_amlogic_sm1-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-07-23T22:02:00Z",
+  "vendor": "amlogic"
+}

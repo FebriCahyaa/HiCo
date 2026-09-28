@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nokia_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "6021c4799f9df86d27809787e0e7758a09520907",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6c1051d2ad23e0c23ec1de73ae408d51f18ecf1bbd1293cf16c684fb6380d2d9",
+      "size": 771
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a9976f7de3f78c827a02b1064e990bf93c192003e1c9ddfc5920cb15b67dfd20",
+      "size": 3680
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7c78415f0b89961ab56bbafc27dcae3e693e500c86412fda15a2b1e2c89f0cba",
+      "size": 2093
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e7924ca1133139485f36eb3115236ef7242482bbc7870ae5e48abf7f6dd6326c",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "54dec714a036ceb01a47b077cb4f8251885fa2c0e379c1736bda1d1ffb52c670",
+      "size": 26692
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "7ca3d47233cc993bb590f81d9fb87c7a096ad383086d76be22d7a8869a8fa1b6",
+      "size": 127
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d03d6bd5d624450a499e1e92883b36da45eb817046cbbaaf5c15c7f187b42e00",
+      "size": 2144
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "955022cc171ea9c24501c74728169bcf76f9f4f1da47f02639b62425b135be3a",
+      "size": 6166
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nokia_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-02T02:45:17Z",
+  "vendor": "nokia"
+}

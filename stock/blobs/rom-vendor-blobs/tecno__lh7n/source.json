@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_tecno_LH7n.git",
+  "codename": "lh7n",
+  "commit": "c1d1bb138c6bacfcde654a3cfa8fba0316ecf591",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_core.rc",
+      "sha256": "187ce29ae0b922ee4466b6fa8d3f51714ce0ff4550991dac6702088484559706",
+      "size": 223
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/disable_skin_control.conf",
+      "sha256": "b2f761ae87aff5bc4d8e33a7a60be3f170237901f46ba1c691fbc05f01f6df65",
+      "size": 415
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/disable_thermal.conf",
+      "sha256": "6dc4e191cc0eb33672071956282c38d15a3d5f53688ef5a21c84361c4626337c",
+      "size": 499
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/disable_thermal_temp.conf",
+      "sha256": "c7d50639eab0716c85d5e8ae9165d85fc09447f35cf965dfa5421779c0d7ad21",
+      "size": 497
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/disable_throttling.conf",
+      "sha256": "fe7c69422e2230426014591b3468df0e70b8b1e8737fd95acb1e782c79b290cd",
+      "size": 492
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal.conf",
+      "sha256": "de84d0eac198df48de23a16262a119a506cbd358b87d858ba338b84e43c7759e",
+      "size": 536
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_mtbf.conf",
+      "sha256": "f29642f24403edaefcb46f8923a4794b28063a8aca78b25aced8a6087183a16d",
+      "size": 536
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_policy_00.conf",
+      "sha256": "f0b0109974f58fe19c7dc08dbf883948822f821d1a3cdbf6c9e2dcea1f9a5089",
+      "size": 535
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_policy_02.conf",
+      "sha256": "6fbe17400a3cbe68acc8712a79bc03dffb6dddb8e4b253248f2d467b0ff90d9f",
+      "size": 535
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_policy_08.conf",
+      "sha256": "bd1c02a105aff1f6c8390f9f5f92532e90474583c6f878d7f20d999649abd6d9",
+      "size": 535
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_tecno_LH7n",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "tecno"
+}

@@ -1,0 +1,77 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_topaz.git",
+  "codename": "topaz",
+  "commit": "2dfe46e8bc5926c887b7a0322ff739d660b09a7f",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a402a66538654d23d42ddb9cc061247d5f30f3cc200d5ac1874c012f80bfde15",
+      "size": 522
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6cd4003d6ae109b7b9cd1a9368e96c0d3f41717680af7d3f69834fe3d0231c6d",
+      "size": 1029
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "aafaf5bbbd3d4fa531971d7c15b10025e9fa324c5a50340f004c6d2efaad50f9",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f18276a029321b3ea8f5b18b6c743af8668c37f173970b5f50e9507ea01ca7f1",
+      "size": 9551
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a9eb873aaf5ca36abea5fc8052088f10f0e8548617dc3b9e2608b554244cedd",
+      "size": 27168
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "72382ea93f201eaf2fa5f7f7fbe85f3b83c66bc745067c57e7f22d66da4056f9",
+      "size": 3228
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "ed1da71b46a16d99a0c04d800e1b1b8a4f975cfa4ff7aca90062d7458b4a7fc6",
+      "size": 1544
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "72cfff0df8991110ec5c424e53916428ccc9d4cb0785f18382666f0b945ac894",
+      "size": 4011
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "f733f178e154d2b86e03b9b64adf52b5d3ad9f2ef2e3377501018442e7044857",
+      "size": 14292
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "3d9678f3988b3ab36d808b627f5da0ab5ee4433a01a562a05f5047ec0a530ab5",
+      "size": 6147
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "57bc7e20561af2dfaa68dd4e0b27a2898393c0bd8e358e25f35176a82cecbe3c",
+      "size": 63655
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "6b51d4b378fb73dc46aa80386fcb0afb13ffb4cf02e161d1ab63a1d406a4e25e",
+      "size": 232
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_topaz",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:08:03Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_t210-common.git",
+  "codename": "t210-common",
+  "commit": "c2c9cd3f3c3971af110a2a4d2cd7878b74fdec6d",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3d14b830884f3beb132a9ad10cb246617a70567c4e3adf2b9b16836aa5657777",
+      "size": 630
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "3a03b054a58ee130a17058745b17f6858d81772c29bfc7258c25a5236cdd7203",
+      "size": 1440
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7f1b44976caad1ac59a86fff17e3c960c443365846f570965a01670516ea8dee",
+      "size": 112
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "d789df16d065f4683db44c4e646c516d153b292331c9250ab4e0ed5aeeee44ae",
+      "size": 191
+    },
+    {
+      "path": "thermal/thermal-t210.json",
+      "sha256": "bec6d2ec0f88294065c535aa22b20e227a4334dba44f3db02998583334825588",
+      "size": 883
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nvidia_t210-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T07:41:01Z",
+  "vendor": "nvidia"
+}

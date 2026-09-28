@@ -1,0 +1,72 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_santoni.git",
+  "codename": "santoni",
+  "commit": "57a52955b09ddcfccc17ea7654bdf5d98b7d4d44",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c3f410ad6b57bb3d725e05fa8596aa8811f4bb638ed203275759f2aab50e7326",
+      "size": 5192
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f960daf8e380a895d41f4fe75f1baa20ba34be7afa87a4e5ea2ef0b63477d479",
+      "size": 110
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "747d2ddaae617eaf3211fc78555aacf54ab6390771732a7841222f57afeb19d2",
+      "size": 8145
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "4776a0020cc5a17169bcc41397f309898cdf9ee6464c754d4e5739d37ad141a3",
+      "size": 9843
+    },
+    {
+      "path": "device.mk",
+      "sha256": "62540cc564b822ac12fb814ea06f97c048fe2a9665c2deeb4aaa162036d5db2b",
+      "size": 22000
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "07a9d6c3be9cd49f0e2d9573c9007596ed1ce11153d7b3871b9ec7c7ab222ca3",
+      "size": 2557
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "acb3278731a545406d551b55ac7f6dbbea13d9df952dcef62e7e48d0cf9f01f7",
+      "size": 80218
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "4963cfb0510b6a9f84eb99166c1b06d602ea0c1f52fabfcc4f3f82714d3754f3",
+      "size": 255
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7fe5d90261d31c5e1f74271c37e2fd27565d7482409ef54f596a545e770af211",
+      "size": 912
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2ebf3d7b7ecd45f4163f57400f4f01edd83b2abaf7eced6c10735e472b57978e",
+      "size": 6707
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_santoni",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-08-24T15:21:29Z",
+  "vendor": "xiaomi"
+}

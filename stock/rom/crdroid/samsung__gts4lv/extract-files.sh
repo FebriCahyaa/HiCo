@@ -6,79 +6,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# If we're being sourced by the common script that we called,
+# stop right here. No need to go down the rabbit hole.
+if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
+    return
+fi
+
 set -e
 
-# Load extract_utils and do some sanity checks
-MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
+export DEVICE=gts4lv
+export DEVICE_COMMON=gts4lv-common
+export VENDOR=samsung
 
-ANDROID_ROOT="${MY_DIR}/../../.."
-
-HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
-if [ ! -f "${HELPER}" ]; then
-    echo "Unable to find helper script at ${HELPER}"
-    exit 1
-fi
-source "${HELPER}"
-
-function blob_fixup() {
-    case "${1}" in
-        vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
-            ;;
-    esac
-}
-
-# Default to sanitizing the vendor folder before extraction
-CLEAN_VENDOR=true
-
-ONLY_COMMON=
-ONLY_TARGET=
-KANG=
-SECTION=
-
-while [ "${#}" -gt 0 ]; do
-    case "${1}" in
-        --only-common )
-                ONLY_COMMON=true
-                ;;
-        --only-target )
-                ONLY_TARGET=true
-                ;;
-        -n | --no-cleanup )
-                CLEAN_VENDOR=false
-                ;;
-        -k | --kang )
-                KANG="--kang"
-                ;;
-        -s | --section )
-                SECTION="${2}"; shift
-                CLEAN_VENDOR=false
-                ;;
-        * )
-                SRC="${1}"
-                ;;
-    esac
-    shift
-done
-
-if [ -z "${SRC}" ]; then
-    SRC="adb"
-fi
-
-if [ -z "${ONLY_TARGET}" ]; then
-    # Initialize the helper for common device
-    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
-
-    extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-fi
-
-if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
-    # Reinitialize the helper for device
-    source "${MY_DIR}/../${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-
-    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-fi
-
-"${MY_DIR}/setup-makefiles.sh"
+"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

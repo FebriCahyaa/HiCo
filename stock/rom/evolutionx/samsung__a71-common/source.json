@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_samsung_a71-common.git",
+  "codename": "a71-common",
+  "commit": "56e87a3ac67762cfe296ce67f8e0fcd981755bf1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "32e7d450d0b7426245543dd23ba292976c45317fce3ae268dda6e03cb3f05c27",
+      "size": 411
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "36eb472d98906380cce11fa220828a9eb2c1ea35382ea7453f0ebf55971e8cf7",
+      "size": 7432
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f6602f039c08d464fdbf614e32eabe61bf1f0b4821a4206e043684b06e3abe43",
+      "size": 2286
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b79fa6c7cfeba58b39a90efbd4c291400738c5e31f7c3b745c33ed5aff701d49",
+      "size": 27651
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "67f0b9b1775ab02d92a9623850941ec8d855bef38152dae214157ed34070fee9",
+      "size": 354
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "f95448ff317871e57615c872c4b73d86fa228f25fc2b6b6d676d455faa9b3123",
+      "size": 110
+    },
+    {
+      "path": "system.prop",
+      "sha256": "44ab9732e007c46d097a4ae46232429d285fd735fb2e04396a5e3dbf2fd88c68",
+      "size": 208
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "205d81c1f3bae26f72049758e5a5407cd591c3ce886db12c8ef22660a36f11b1",
+      "size": 8670
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_a71-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:45Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_fleur.git",
+  "codename": "fleur",
+  "commit": "08935c7fb9e47714f791c1b6088dc183401da5cf",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d300952b779c234cbfe98b13b7392b8d5acbce6d6aecd339ec61b9ede5540ce4",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "06884017ca664cb2a68e0f8108b88ecaed2caedb8186281568f174d56330c8ee",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bbcb417c98983b75f8e35ba59bf92ae586feb21ccc8fec77812ae5538a4fa7cf",
+      "size": 5392
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "d6caf603b974d2db980042812721154f10461451e56e4a4a3f79c6c10688bff8",
+      "size": 6962
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7be7c1f0512e3ef205200df3bfa5012fc244631932574e917a0ff74e9f21d3b5",
+      "size": 15793
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7a81b18a705e4849eb6d50debeec1d714475d01e4dab6d0004f8c2e577e72bda",
+      "size": 4624
+    },
+    {
+      "path": "init/init.mt6781.thermal.rc",
+      "sha256": "3fd31f920851f62914f72950fd8c2bbf281731672e8772ea135814c9c9eb2e96",
+      "size": 589
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9eafcc50578a9cb7f848ea79c6ef97ae61cdf723225c24f0676c5a0e5032cc7d",
+      "size": 100832
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "f860a539c090637643963128ffa70a89cf1adff1a67e5fc84946e8997872189a",
+      "size": 995
+    },
+    {
+      "path": "system.prop",
+      "sha256": "32494760bf712b65890d936a4e3c4631487c11931e13c08ed3d9ab3d9a8c4d58",
+      "size": 108
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "57434cc462e214d9d420d1b2b76bbcac937a4233a42c0b7c84713414f70e4deb",
+      "size": 8874
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_fleur",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:06:33Z",
+  "vendor": "xiaomi"
+}

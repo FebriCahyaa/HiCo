@@ -1,0 +1,62 @@
+{
+  "branch": "12",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_daisy.git",
+  "codename": "daisy",
+  "commit": "191b1bf5b3c28b6618937ba9241ce07ce7f5f0fd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7273540d6629d04cc38c403ea9f99054075b34bf8da6c4197c0270bec92dbe87",
+      "size": 4861
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "da1b536b49917ac14e789fab58135af6f03d8a1c477d831ec9793430d5dec7f3",
+      "size": 243
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5528aa29e766718d3cab99b8402a6bb884c8b1f0e839f1fc578bcdf01aa1cf38",
+      "size": 6892
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "4eabf7602b9c0edfa7c63039ca4c3171dfffdb8a074fdc5011d3ca2e32b4a635",
+      "size": 8273
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d277a6f919c536f02b3bd235cb4fc1b20cdbfa89130de4ae329db2bedce5c63b",
+      "size": 25632
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e2a6b5ca1e14f9dde354fc69ea5b11ebe92e528b2af8fb83fef48bed65078d35",
+      "size": 1811
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e264b99a761446a3d6947d3761e0230e895fa40754ef28a737a97f75e89f86d9",
+      "size": 104275
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "09c33d9099962591255a9d621013284f712173f5302c830eaca703053e9c9e85",
+      "size": 142
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_daisy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-11-16T04:09:02Z",
+  "vendor": "xiaomi"
+}

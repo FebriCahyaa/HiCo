@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_tama-common.git",
+  "codename": "tama-common",
+  "commit": "3ae76a38854125de69d67eb48ead0b1c99ab5cf9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fc2bea5d1d242ed19b3853c679b8e4203ddbccc5f5d4396d97eb1dd14e535a7f",
+      "size": 238
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cc8510f2175589cb9b513bcae4cfc87872be257b3fcc25725941c23b8cff6ba6",
+      "size": 8365
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9509461543043603605c6b8877a4ec508d32d86e750294a52bd167bbb83aeb1f",
+      "size": 5535
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "079ea10ca5d721bad948eef1776c4d6f55f5530abca4a04bf3d126b9293940d3",
+      "size": 4196
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "03e65e3d56367e58664c2e03da3a5e29a8637129066fc6c27f4e3d99c5ce7cba",
+      "size": 64709
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "86fef730341caeb2d4d926e088ec98588cd7fca4caca678e0133091f45639aaa",
+      "size": 181
+    },
+    {
+      "path": "system.prop",
+      "sha256": "546e187a4060a6ded799451838ebdfd896126192313180e6fe2af0753b055ae2",
+      "size": 741
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "092837befa11146b64192db21367c9cd648ab00c76ff9484335848b12c905ac1",
+      "size": 6952
+    }
+  ],
+  "kind": "common",
+  "repo": "device_sony_tama-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:39:17Z",
+  "vendor": "sony"
+}

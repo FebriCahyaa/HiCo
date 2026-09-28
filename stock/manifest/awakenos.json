@@ -1,4 +1,5 @@
 {
+  "common_count": 2,
   "device_count": 13,
   "devices": [
     {
@@ -7,8 +8,8 @@
       "codename": "kuntao",
       "default_branch": "11",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_lenovo_kuntao",
-      "size_kb": 9284,
       "updated_at": "2022-11-22T13:36:14Z",
       "vendor": "lenovo"
     },
@@ -18,8 +19,8 @@
       "codename": "tundra",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_tundra",
-      "size_kb": 1078,
       "updated_at": "2023-09-19T08:06:55Z",
       "vendor": "motorola"
     },
@@ -29,8 +30,8 @@
       "codename": "drg",
       "default_branch": "12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_nokia_drg",
-      "size_kb": 1517,
       "updated_at": "2022-11-22T13:35:13Z",
       "vendor": "nokia"
     },
@@ -40,8 +41,8 @@
       "codename": "lemonades",
       "default_branch": "main",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_lemonades",
-      "size_kb": 0,
       "updated_at": "2022-11-22T14:38:44Z",
       "vendor": "oneplus"
     },
@@ -51,8 +52,8 @@
       "codename": "r2p",
       "default_branch": "12",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_r2p",
-      "size_kb": 2810,
       "updated_at": "2022-11-22T13:35:31Z",
       "vendor": "realme"
     },
@@ -62,8 +63,8 @@
       "codename": "beryllium",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_beryllium",
-      "size_kb": 2667,
       "updated_at": "2023-01-28T13:21:36Z",
       "vendor": "xiaomi"
     },
@@ -73,8 +74,8 @@
       "codename": "davinci",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_davinci",
-      "size_kb": 2640,
       "updated_at": "2023-05-25T19:17:31Z",
       "vendor": "xiaomi"
     },
@@ -84,8 +85,8 @@
       "codename": "lisa",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_lisa",
-      "size_kb": 74,
       "updated_at": "2023-04-15T12:14:39Z",
       "vendor": "xiaomi"
     },
@@ -95,8 +96,8 @@
       "codename": "miatoll",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miatoll",
-      "size_kb": 736,
       "updated_at": "2023-02-19T07:03:07Z",
       "vendor": "xiaomi"
     },
@@ -106,9 +107,31 @@
       "codename": "nabu",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_nabu",
-      "size_kb": 32151,
       "updated_at": "2023-10-04T15:32:42Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_sdm845-common.git",
+      "codename": "sdm845-common",
+      "default_branch": "12",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sdm845-common",
+      "updated_at": "2022-12-08T17:00:07Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "triton",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm8350-common",
+      "updated_at": "2023-05-13T13:40:35Z",
       "vendor": "xiaomi"
     },
     {
@@ -117,8 +140,8 @@
       "codename": "sweet",
       "default_branch": "ursa",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sweet",
-      "size_kb": 1125,
       "updated_at": "2023-12-15T08:34:35Z",
       "vendor": "xiaomi"
     },
@@ -128,8 +151,8 @@
       "codename": "vayu",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_vayu",
-      "size_kb": 1410,
       "updated_at": "2023-05-16T13:49:22Z",
       "vendor": "xiaomi"
     },
@@ -139,16 +162,17 @@
       "codename": "violet",
       "default_branch": "triton",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_violet",
-      "size_kb": 1943,
       "updated_at": "2022-11-22T13:24:53Z",
       "vendor": "xiaomi"
     }
   ],
+  "family": "rom",
   "org": "AwakenOS-Devices",
   "provider": "github",
   "repo_prefix": "android_device_",
-  "schema": "hico.ingest-manifest.v1",
+  "schema": "hico.ingest-manifest.v2",
   "source_id": "awakenos",
   "source_name": "AwakenOS"
 }

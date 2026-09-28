@@ -1,0 +1,52 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_zuk_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "c4ede24109ec24a67228eeced2d1d688dfac4394",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "de2616b3ef05cbcfd7d69fa5df363e07a93eb545f73be673f44280f29406e1a4",
+      "size": 4794
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "40cde8fd6015457b64ab84c0578afa96d92afd5b3aad03376f94765b1d923efb",
+      "size": 6419
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0fa3594fb0226f4b67a296de1cabf8e64dd96c07cb368d8035074e11c9fc8484",
+      "size": 739
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "451f764376c9d5577be08fcb55c6dc9d8728bc771811d992fb1194ee876bcaa1",
+      "size": 4392
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "853f7c2b7f27cde6a118e5d9e6825bbe7ef796b4b70680f139ba1aeee4c21106",
+      "size": 41444
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4eacb682521fcbb5fd1bfe91f51bff3555da26440a5ce1fa4a25f763382795f1",
+      "size": 202
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_zuk_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-09-28T01:09:51Z",
+  "vendor": "zuk"
+}

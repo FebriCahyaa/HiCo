@@ -1,0 +1,157 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_msm8953-vince.git",
+  "codename": "msm8953-vince",
+  "commit": "03a47a77aca5a0b0c526cc3c52be91c0c4730aa7",
+  "file_count": 28,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3bbfcf30fc9c4f472d4661c32eeee961120024fd635c2b4ddae2817d873ecc3e",
+      "size": 4098
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "926aa5921cdce56777e4fb4afa9b8c7a8f0e09c93f2b7acf1d743c668e49216c",
+      "size": 4876
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "6dc6ea10857a1f578ed13594ac73136d480afa23ad243460df4e916a8f10be12",
+      "size": 1181
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4a5a5b3474af80e473fa3604b6d386b0fb9b81b604a2760d1848fe7d50f1ae43",
+      "size": 3262
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7678660bac243132d4e476e1e431d09d35594dc32f4482321d5d1589fad96169",
+      "size": 21124
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2bef1f2846b88a9ecad455e8dbf32404df80e737202c88e0f29d1534a29fe131",
+      "size": 111
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "fadb71e6f1c846537254df22a2529e8e9e4caf4976da69f34c33381eba7b024e",
+      "size": 1570
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti-msm8953.rc",
+      "sha256": "7f4320d810d091911de990c44d88d705cf2b1b5cfd5b50c0fd76b8854e455b54",
+      "size": 1769
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti-msm8953.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti-msm8953v2.rc",
+      "sha256": "d167d6903be7a7768b06062d8ff4b277bd6cd49a62c343913cc5a3de8b9ec2fb",
+      "size": 1923
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "e4e93f7246868c4a3b69eb83bef4a3ad25108a7365c8d24ae596f13e45f56f5b",
+      "size": 10459
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "8d84fd2275a4161eb2af2398459c6e1cf3f224044d002b7ef4a793ad13433470",
+      "size": 3855
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "28d7a5cfbcf803c669d97e96d7ec4a48b835d29e01c761e6029c49bebd2f57a8",
+      "size": 20612
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "86de61b04456b615606083f0885c23c75ef7783acc6d6097b7e2374adfec0ac5",
+      "size": 2872
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "ea6fb066496d39fc648a826b8e5130d1d9356bcee3b363932e3aa8afe5ebfc62",
+      "size": 32683
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "e09e541def4f55cd5b042763180087ae886097eb515e31f898efeb174692e70a",
+      "size": 4099
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "41c018f676a0796b5e3bae8158b1218a8bee67f8fb90c6abc324320ad8c41eac",
+      "size": 5276
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "thermal/thermalMonitorNetlink.cpp",
+      "sha256": "7e9f92addae23169391fa2b633f3d87d9fde1fb32be9bab782232e2bf27b45cb",
+      "size": 8643
+    },
+    {
+      "path": "thermal/thermalMonitorNetlink.h",
+      "sha256": "28a1218a30700ec44e8db1d806032afb777d4cce42191ad854b73ddbb0dcfaf8",
+      "size": 3091
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "bf2e97f1c7c3cd86c6b3a6b404d6b6af5a4180938f21f5bc349ecf8e994d9887",
+      "size": 8397
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "thermal/thermalUtilsNetlink.cpp",
+      "sha256": "2b13f878cb3b53ee90a2ae35b839a6df685ce2ce70cc1bea590839fed09d5eda",
+      "size": 9952
+    },
+    {
+      "path": "thermal/thermalUtilsNetlink.h",
+      "sha256": "550bb949785aa2dd1ac11573b0e53c460b02e2b91e9400286e9dc7e5600ce8df",
+      "size": 3453
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d82c3947503904a031d7488ca0b543fb5bb20aa8d01e99a41944558444a3b9e2",
+      "size": 7011
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_msm8953-vince",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:20Z",
+  "vendor": "xiaomi"
+}

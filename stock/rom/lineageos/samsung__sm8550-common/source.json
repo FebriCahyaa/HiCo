@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "d6c569cb766c5ba75e9a412c9ae5851e3ca2b317",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b45fcaaf28914e7cea37f443dd2bf738d77b35a874acadaa969d560d2f8f20f0",
+      "size": 362
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "acb58ea2d4d6a4388679ea3e4a238bc43dd7eb850f439fd8b18cc4a2ded8449a",
+      "size": 6880
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1f6011ede0b6ddfffb8e6ab33da60e0b3bad9070a25d2c19c848d037858f8fb8",
+      "size": 3727
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6bd86534380536fb9d800f0d655a7678d2056eba9081c82e2353d3222678abe3",
+      "size": 622
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4aa20d29991a2359740cb31784d4e1c3a2b68faa5ab6f80f00fd0e60d803809d",
+      "size": 41329
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "e2da3bea529b4fd6cd95061831b1b91e460d4f0385d8697cab7f8764d1f793c0",
+      "size": 797
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5ac31d7ab3b603fa569cbcfe0ffd575d222484c9e1d09350b7380db910329834",
+      "size": 108
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "16f037e7ec9b54b4e470d95d6caa25793c2b25164048194d3d0bdc48893f3d8c",
+      "size": 7057
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T10:44:33Z",
+  "vendor": "samsung"
+}

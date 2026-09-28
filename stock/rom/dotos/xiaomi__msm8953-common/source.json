@@ -1,0 +1,42 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "c254116a93b0c27d7bdd382bbeea6b74b3db492a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "84715f8199efb89548426e3c38fc31914555b3e89e90ce2f2b262b3b4585b726",
+      "size": 4013
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "acfb9039e553a7f63d1263f3e53eca65669a523ffb1a755f88517b9743a4e177",
+      "size": 5979
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "37e85c196235794ba5780398080c21f40115e9c744b7ee2666458b49392c92bb",
+      "size": 3087
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1eec1309251e6a3179b7495411ad11c87337e4c63c91c9e8dff59762a0666d98",
+      "size": 225
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-11-08T13:16:58Z",
+  "vendor": "xiaomi"
+}

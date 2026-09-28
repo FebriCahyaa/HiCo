@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_msm8976-common.git",
+  "codename": "msm8976-common",
+  "commit": "2d9dd6b391716bdd82bbf1954a31e31cad1775de",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ac7af2e12e363bdb05c2da7f779bd7240f892d9caa1c69923ad8e0787649c293",
+      "size": 2179
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "58e48ec90b74e78b8a18edf5260e51d598309ba0b517b0dd327ea45fa4a2b384",
+      "size": 6983
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1c9c8f8eca96a27e7515cdea64de68539260931c1012ddaadf09de862fcc4bc6",
+      "size": 2193
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e19b71fdf41a464d99d6750509a03e61e1c2f6024b383ffa5cd975663cece9aa",
+      "size": 306
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "52764af688defca8dbb529caad0d8e51cefc44ef6c9e1fba1d69776601a13f70",
+      "size": 17361
+    },
+    {
+      "path": "system.prop",
+      "sha256": "55d5e20a270880843d34263e9c874078ca1e79aa301072430c48c913ff05b301",
+      "size": 1960
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_msm8976-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:28Z",
+  "vendor": "samsung"
+}

@@ -1,14 +1,26 @@
 {
-  "device_count": 56,
+  "common_count": 17,
+  "device_count": 55,
   "devices": [
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_asus_sdm660-common.git",
+      "codename": "sdm660-common",
+      "default_branch": "sixteen-qpr2",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_asus_sdm660-common",
+      "updated_at": "2026-08-05T18:17:21Z",
+      "vendor": "asus"
+    },
     {
       "archived": false,
       "clone_url": "https://github.com/PixelOS-Devices/android_device_asus_X00TD.git",
       "codename": "x00td",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_X00TD",
-      "size_kb": 115,
       "updated_at": "2026-04-16T13:15:28Z",
       "vendor": "asus"
     },
@@ -18,8 +30,8 @@
       "codename": "x01bd",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_X01BD",
-      "size_kb": 150,
       "updated_at": "2026-04-16T13:15:39Z",
       "vendor": "asus"
     },
@@ -29,8 +41,8 @@
       "codename": "cancunf",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_cancunf",
-      "size_kb": 4767,
       "updated_at": "2026-08-01T20:03:22Z",
       "vendor": "motorola"
     },
@@ -40,8 +52,8 @@
       "codename": "cancunf-kernel",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_cancunf-kernel",
-      "size_kb": 458945,
       "updated_at": "2026-08-01T20:03:38Z",
       "vendor": "motorola"
     },
@@ -51,8 +63,8 @@
       "codename": "dubai",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_dubai",
-      "size_kb": 506,
       "updated_at": "2026-08-20T13:46:15Z",
       "vendor": "motorola"
     },
@@ -62,9 +74,31 @@
       "codename": "kiev",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_kiev",
-      "size_kb": 15588,
       "updated_at": "2026-06-01T19:42:32Z",
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_motorola_sm7250-common.git",
+      "codename": "sm7250-common",
+      "default_branch": "sixteen-qpr2",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_motorola_sm7250-common",
+      "updated_at": "2026-06-01T20:52:55Z",
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_motorola_sm7325-common.git",
+      "codename": "sm7325-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_motorola_sm7325-common",
+      "updated_at": "2026-08-20T13:46:31Z",
       "vendor": "motorola"
     },
     {
@@ -73,8 +107,8 @@
       "codename": "spacewar",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_nothing_Spacewar",
-      "size_kb": 753,
       "updated_at": "2026-09-21T10:50:21Z",
       "vendor": "nothing"
     },
@@ -84,8 +118,8 @@
       "codename": "aston",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_aston",
-      "size_kb": 458,
       "updated_at": "2026-09-27T11:25:57Z",
       "vendor": "oneplus"
     },
@@ -95,8 +129,8 @@
       "codename": "aston-kernel",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_aston-kernel",
-      "size_kb": 128485,
       "updated_at": "2025-12-06T19:15:37Z",
       "vendor": "oneplus"
     },
@@ -106,8 +140,8 @@
       "codename": "astonc",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_astonc",
-      "size_kb": 312,
       "updated_at": "2026-09-26T10:33:43Z",
       "vendor": "oneplus"
     },
@@ -117,8 +151,8 @@
       "codename": "benz",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_benz",
-      "size_kb": 20081,
       "updated_at": "2026-09-26T10:20:34Z",
       "vendor": "oneplus"
     },
@@ -128,8 +162,8 @@
       "codename": "benz-kernel",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_benz-kernel",
-      "size_kb": 47089,
       "updated_at": "2025-12-06T19:13:00Z",
       "vendor": "oneplus"
     },
@@ -139,8 +173,8 @@
       "codename": "caihong",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_caihong",
-      "size_kb": 365,
       "updated_at": "2026-09-26T10:19:19Z",
       "vendor": "oneplus"
     },
@@ -150,8 +184,8 @@
       "codename": "martini",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_martini",
-      "size_kb": 360,
       "updated_at": "2026-08-31T09:08:07Z",
       "vendor": "oneplus"
     },
@@ -161,9 +195,53 @@
       "codename": "oscar",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_oscar",
-      "size_kb": 315,
       "updated_at": "2026-08-30T19:21:51Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_sm6375-common.git",
+      "codename": "sm6375-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm6375-common",
+      "updated_at": "2026-08-31T17:45:29Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_sm7550-common.git",
+      "codename": "sm7550-common",
+      "default_branch": "sixteen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm7550-common",
+      "updated_at": "2025-11-26T15:11:09Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm8350-common",
+      "updated_at": "2026-08-31T17:13:56Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_sm8550-common.git",
+      "codename": "sm8550-common",
+      "default_branch": "sixteen-qpr1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm8550-common",
+      "updated_at": "2026-09-27T11:05:00Z",
       "vendor": "oneplus"
     },
     {
@@ -172,9 +250,20 @@
       "codename": "sm8550-kernel",
       "default_branch": "sixteen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_sm8550-kernel",
-      "size_kb": 4574,
       "updated_at": "2025-07-29T16:55:56Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_sm8650-common.git",
+      "codename": "sm8650-common",
+      "default_branch": "sixteen-qpr2",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm8650-common",
+      "updated_at": "2026-09-26T10:18:24Z",
       "vendor": "oneplus"
     },
     {
@@ -183,8 +272,8 @@
       "codename": "waffle",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_waffle",
-      "size_kb": 397,
       "updated_at": "2026-05-04T09:24:05Z",
       "vendor": "oneplus"
     },
@@ -194,8 +283,8 @@
       "codename": "lunaa",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_lunaa",
-      "size_kb": 302,
       "updated_at": "2026-03-30T08:32:30Z",
       "vendor": "realme"
     },
@@ -205,8 +294,8 @@
       "codename": "nemo",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_nemo",
-      "size_kb": 11519,
       "updated_at": "2026-04-22T17:28:02Z",
       "vendor": "realme"
     },
@@ -216,19 +305,19 @@
       "codename": "porsche",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_porsche",
-      "size_kb": 439,
       "updated_at": "2026-08-30T18:56:52Z",
       "vendor": "realme"
     },
     {
       "archived": false,
       "clone_url": "https://github.com/PixelOS-Devices/android_device_realme_RM6785-common.git",
-      "codename": "rm6785",
+      "codename": "rm6785-common",
       "default_branch": "sixteen",
       "fork": false,
+      "kind": "common",
       "repo": "android_device_realme_RM6785-common",
-      "size_kb": 11259,
       "updated_at": "2025-07-29T16:56:00Z",
       "vendor": "realme"
     },
@@ -238,8 +327,8 @@
       "codename": "rmx2001l1",
       "default_branch": "sixteen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_RMX2001L1",
-      "size_kb": 2,
       "updated_at": "2025-07-29T22:19:33Z",
       "vendor": "realme"
     },
@@ -249,9 +338,9 @@
       "codename": "rmx2020",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_RMX2020",
-      "size_kb": 79981,
-      "updated_at": "2026-09-27T19:26:06Z",
+      "updated_at": "2026-09-28T06:59:44Z",
       "vendor": "realme"
     },
     {
@@ -260,8 +349,8 @@
       "codename": "salaa",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_salaa",
-      "size_kb": 803,
       "updated_at": "2026-04-08T14:28:19Z",
       "vendor": "realme"
     },
@@ -271,8 +360,8 @@
       "codename": "pdx223",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_sony_pdx223",
-      "size_kb": 89,
       "updated_at": "2026-08-01T11:05:15Z",
       "vendor": "sony"
     },
@@ -282,8 +371,8 @@
       "codename": "pdx224",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_sony_pdx224",
-      "size_kb": 80,
       "updated_at": "2026-08-01T11:05:42Z",
       "vendor": "sony"
     },
@@ -293,9 +382,31 @@
       "codename": "pdx237",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_sony_pdx237",
-      "size_kb": 17368,
       "updated_at": "2026-09-26T10:39:17Z",
+      "vendor": "sony"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_sony_sm8450-common.git",
+      "codename": "sm8450-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_sony_sm8450-common",
+      "updated_at": "2026-09-13T16:50:48Z",
+      "vendor": "sony"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_sony_sm8550-common.git",
+      "codename": "sm8550-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_sony_sm8550-common",
+      "updated_at": "2026-09-26T10:39:12Z",
       "vendor": "sony"
     },
     {
@@ -304,8 +415,8 @@
       "codename": "alioth",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_alioth",
-      "size_kb": 284,
       "updated_at": "2026-09-22T11:19:22Z",
       "vendor": "xiaomi"
     },
@@ -315,8 +426,8 @@
       "codename": "apollo",
       "default_branch": "sixteen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_apollo",
-      "size_kb": 1758,
       "updated_at": "2025-07-29T16:59:43Z",
       "vendor": "xiaomi"
     },
@@ -326,8 +437,8 @@
       "codename": "cepheus",
       "default_branch": "sixteen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_cepheus",
-      "size_kb": 27255,
       "updated_at": "2026-05-29T07:39:32Z",
       "vendor": "xiaomi"
     },
@@ -337,8 +448,8 @@
       "codename": "davinci",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_davinci",
-      "size_kb": 1587,
       "updated_at": "2026-09-19T15:44:18Z",
       "vendor": "xiaomi"
     },
@@ -348,8 +459,8 @@
       "codename": "garnet",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_garnet",
-      "size_kb": 994,
       "updated_at": "2026-08-21T21:29:04Z",
       "vendor": "xiaomi"
     },
@@ -359,8 +470,8 @@
       "codename": "garnet-miuicamera",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_garnet-miuicamera",
-      "size_kb": 1024,
       "updated_at": "2026-08-19T12:54:47Z",
       "vendor": "xiaomi"
     },
@@ -370,8 +481,8 @@
       "codename": "gauguin",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_gauguin",
-      "size_kb": 3132,
       "updated_at": "2026-09-21T20:53:49Z",
       "vendor": "xiaomi"
     },
@@ -381,8 +492,8 @@
       "codename": "ginkgo",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_ginkgo",
-      "size_kb": 121,
       "updated_at": "2026-09-18T09:35:25Z",
       "vendor": "xiaomi"
     },
@@ -392,8 +503,8 @@
       "codename": "lisa",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_lisa",
-      "size_kb": 212,
       "updated_at": "2026-03-27T18:55:15Z",
       "vendor": "xiaomi"
     },
@@ -403,8 +514,8 @@
       "codename": "miatoll",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miatoll",
-      "size_kb": 1836,
       "updated_at": "2026-08-07T12:54:52Z",
       "vendor": "xiaomi"
     },
@@ -414,8 +525,8 @@
       "codename": "miuicamera-miatoll",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miuicamera-miatoll",
-      "size_kb": 431,
       "updated_at": "2026-07-27T17:29:32Z",
       "vendor": "xiaomi"
     },
@@ -425,8 +536,8 @@
       "codename": "miuicamera-surya",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miuicamera-surya",
-      "size_kb": 431,
       "updated_at": "2026-02-19T15:05:10Z",
       "vendor": "xiaomi"
     },
@@ -436,8 +547,8 @@
       "codename": "miuicamera-sweet",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miuicamera-sweet",
-      "size_kb": 426,
       "updated_at": "2026-02-24T08:54:58Z",
       "vendor": "xiaomi"
     },
@@ -447,8 +558,8 @@
       "codename": "miuicamera-toco",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miuicamera-toco",
-      "size_kb": 430,
       "updated_at": "2026-09-22T21:17:55Z",
       "vendor": "xiaomi"
     },
@@ -458,8 +569,8 @@
       "codename": "miuicamera-zeus",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miuicamera-zeus",
-      "size_kb": 422,
       "updated_at": "2026-02-19T15:02:47Z",
       "vendor": "xiaomi"
     },
@@ -469,8 +580,8 @@
       "codename": "onyx",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_onyx",
-      "size_kb": 899,
       "updated_at": "2026-09-13T06:24:04Z",
       "vendor": "xiaomi"
     },
@@ -480,8 +591,8 @@
       "codename": "onyx-kernel",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_onyx-kernel",
-      "size_kb": 123649,
       "updated_at": "2026-06-29T10:50:21Z",
       "vendor": "xiaomi"
     },
@@ -491,8 +602,8 @@
       "codename": "onyx-miuicamera",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_onyx-miuicamera",
-      "size_kb": 1458,
       "updated_at": "2026-09-12T16:43:02Z",
       "vendor": "xiaomi"
     },
@@ -502,8 +613,8 @@
       "codename": "peridot",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_peridot",
-      "size_kb": 975,
       "updated_at": "2026-09-13T06:33:58Z",
       "vendor": "xiaomi"
     },
@@ -513,8 +624,8 @@
       "codename": "peridot-miuicamera",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_peridot-miuicamera",
-      "size_kb": 1456,
       "updated_at": "2026-08-22T05:50:59Z",
       "vendor": "xiaomi"
     },
@@ -524,8 +635,8 @@
       "codename": "pipa",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_pipa",
-      "size_kb": 317,
       "updated_at": "2026-01-07T20:07:01Z",
       "vendor": "xiaomi"
     },
@@ -535,8 +646,8 @@
       "codename": "sky",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sky",
-      "size_kb": 50945,
       "updated_at": "2025-12-30T14:03:07Z",
       "vendor": "xiaomi"
     },
@@ -546,9 +657,75 @@
       "codename": "sky-kernel",
       "default_branch": "sixteen-qpr1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sky-kernel",
-      "size_kb": 139558,
       "updated_at": "2025-12-30T09:29:51Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm6125-common.git",
+      "codename": "sm6125-common",
+      "default_branch": "sixteen-qpr2",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm6125-common",
+      "updated_at": "2026-09-17T20:43:58Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm6150-common.git",
+      "codename": "sm6150-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm6150-common",
+      "updated_at": "2026-09-23T11:51:44Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm6250-common.git",
+      "codename": "sm6250-common",
+      "default_branch": "sixteen-qpr1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm6250-common",
+      "updated_at": "2026-02-22T09:47:43Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm8250-common.git",
+      "codename": "sm8250-common",
+      "default_branch": "seventeen",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm8250-common",
+      "updated_at": "2026-09-22T12:02:35Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "sixteen-qpr2",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm8350-common",
+      "updated_at": "2026-03-19T12:14:19Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm8450-common.git",
+      "codename": "sm8450-common",
+      "default_branch": "sixteen-qpr2",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm8450-common",
+      "updated_at": "2026-06-26T22:37:32Z",
       "vendor": "xiaomi"
     },
     {
@@ -557,9 +734,9 @@
       "codename": "sunny",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sunny",
-      "size_kb": 3000,
-      "updated_at": "2026-09-14T09:42:48Z",
+      "updated_at": "2026-09-27T19:42:38Z",
       "vendor": "xiaomi"
     },
     {
@@ -568,8 +745,8 @@
       "codename": "sunny-kernel",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sunny-kernel",
-      "size_kb": 109905,
       "updated_at": "2026-08-27T11:35:20Z",
       "vendor": "xiaomi"
     },
@@ -579,8 +756,8 @@
       "codename": "surya",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_surya",
-      "size_kb": 4401,
       "updated_at": "2026-05-13T15:41:41Z",
       "vendor": "xiaomi"
     },
@@ -590,8 +767,8 @@
       "codename": "sweet",
       "default_branch": "seventeen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sweet",
-      "size_kb": 1403,
       "updated_at": "2026-09-18T12:58:27Z",
       "vendor": "xiaomi"
     },
@@ -601,8 +778,8 @@
       "codename": "toco",
       "default_branch": "sixteen",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_toco",
-      "size_kb": 1328,
       "updated_at": "2026-09-22T21:17:55Z",
       "vendor": "xiaomi"
     },
@@ -612,16 +789,17 @@
       "codename": "zeus",
       "default_branch": "sixteen-qpr2",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_zeus",
-      "size_kb": 298,
       "updated_at": "2026-06-19T11:13:46Z",
       "vendor": "xiaomi"
     }
   ],
+  "family": "rom",
   "org": "PixelOS-Devices",
   "provider": "github",
   "repo_prefix": "android_device_",
-  "schema": "hico.ingest-manifest.v1",
+  "schema": "hico.ingest-manifest.v2",
   "source_id": "pixelos",
   "source_name": "PixelOS"
 }

@@ -1,77 +1,57 @@
 {
-  "branch": "14.0",
-  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_dipper-common.git",
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_dipper.git",
   "codename": "dipper",
-  "commit": "f473e49c2c720363e25a67d319c28a31445793c1",
-  "file_count": 12,
+  "commit": "c3aaa8264afe8e9feebde82536bfb43c90c67c56",
+  "file_count": 8,
   "files": [
     {
       "path": "Android.bp",
-      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
-      "size": 140
+      "sha256": "0e54847c35c5223764290ba943a304c63f646cce603ed58c239853d256868b0f",
+      "size": 155
     },
     {
-      "path": "Android.mk",
-      "sha256": "8c3b1d53bde1071374ef1be487e47b7b0914c92095d3d077cfab56f12ffb8af0",
-      "size": 4445
+      "path": "AndroidProducts.mk",
+      "sha256": "bbb0b05cf19800f786bb0e760a3c11ffcdb54173cda72d0ed08a04654d4335a3",
+      "size": 656
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "3d5669bcf9f0e411d336b13a16cb0917d65695cda8c2d22a6cb0e7f01b1339d5",
-      "size": 4410
+      "path": "BoardConfig.mk",
+      "sha256": "e17d61cc8a7944d4445d18c6f8832782a1df1242105000a8de1a349309568d9d",
+      "size": 786
     },
     {
-      "path": "extract-files.sh",
-      "sha256": "f81f11a97103d0b78e768cc55f166e771cc4de821bde5d182aae6d8d7b6242d1",
-      "size": 2740
+      "path": "device.mk",
+      "sha256": "779f8ab13713ef625220990d47d91b8d356b44a85c92f435665b0d82afb87699",
+      "size": 4209
     },
     {
-      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
-      "sha256": "26c5bdb710d189688b7c4455a5db202cf7a00f248f0a251c7a7e35ad491841ff",
-      "size": 1451
-    },
-    {
-      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
-      "sha256": "b2011f4ce443b45b9768f79dbc26370ba4b50de52e53f8ba97cbfde3c871d4b4",
-      "size": 3266
-    },
-    {
-      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
-      "sha256": "71a959eaafb6561be20ecdec6b4b0dacb258fd6d9ecc318c5778fcfffb91daee",
-      "size": 14259
-    },
-    {
-      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
-      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
-      "size": 6504
+      "path": "extract-files.py",
+      "sha256": "ee09114d4798ca04799015b3d6540194bc7fa76835290ab8b281bbe6d2334ad3",
+      "size": 1610
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "b6344c0b806a2399a6c6d23dc57afd4f25ca8d6dcfcb2148b1a8001dca9507eb",
-      "size": 40532
-    },
-    {
-      "path": "sepolicy/vendor/thermal-engine.te",
-      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
-      "size": 372
+      "sha256": "90871299560a51695178cffb2fb3c709d1d84b82f9b1983bcc374916209da9ac",
+      "size": 11239
     },
     {
       "path": "system.prop",
-      "sha256": "c7483ac0238bf1ba9425091442d059e74be12ad136c0d330ccf03b812ee8e0bb",
-      "size": 2097
+      "sha256": "1a903db1b1153d3aa0a7f25a1a61629131bde001fee761b2e1ac7243e80162e7",
+      "size": 252
     },
     {
       "path": "vendor.prop",
-      "sha256": "b0eeed336e0d73a15c6c72657f48fe0cc1169fb48756818b45568aebbb9b5a53",
-      "size": 6396
+      "sha256": "12e94ffc1540ee5a81184eaae941a280f2c581bf67769ca27ac3477d14f0ce9c",
+      "size": 369
     }
   ],
   "kind": "device",
-  "repo": "android_device_xiaomi_dipper-common",
+  "repo": "android_device_xiaomi_dipper",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "crdroid",
-  "upstream_pushed_at": "2024-02-05T15:15:50Z",
+  "upstream_pushed_at": "2025-12-14T16:15:21Z",
   "vendor": "xiaomi"
 }

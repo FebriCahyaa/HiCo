@@ -1,0 +1,47 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "e1452269c756fe894bf19928b60f13bbf63b166e",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "96bde015bcf7e812426b97ddd57146b6b2b544ff66681385605f450629f5a63a",
+      "size": 101
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1c7fbdedc06e5b49ea04df0a3221edada586835b2f0b909e41ba22ac86c5d4fb",
+      "size": 3857
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "53f57a271b1d53e5e10f019f6e4e9426b479e122e311704bb65f19f8c7bfead7",
+      "size": 5227
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2a26a92a5deae25150fcb70cc82a8f5ca8f502684dcdb811545fcb7fab8f20a1",
+      "size": 1602
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4560dcf00cb19ee362b0f10ee0e1964d815d4a4105323d2a02c987e1e39c6600",
+      "size": 36398
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cc132d42e645791ea146734c78ec6619a66c0bca47e153fc6df4b37306d54203",
+      "size": 1182
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-02-08T14:03:26Z",
+  "vendor": "xiaomi"
+}

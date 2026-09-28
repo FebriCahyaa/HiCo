@@ -1,0 +1,39 @@
+# Audio
+audio.offload.min.duration.secs=30
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
+
+# DRM
+drm.service.enabled=true
+
+# Enable CSC for vendor image
+ro.vendor.cscsupported=1
+
+# Fastbootd
+ro.fastbootd.available=true
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
+# LKMD
+ro.lmk.filecache_min_kb=153600
+ro.lmk.kill_timeout_ms=50
+ro.lmk.psi_partial_stall_ms=70
+ro.lmk.psi_complete_stall_ms=700
+ro.lmk.thrashing_limit=100
+ro.lmk.thrashing_limit_decay=10
+ro.lmk.stall_limit_critical=40
+ro.lmk.swap_free_low_percentage=100
+
+# RIL
+ro.debug_level=0x494d
+
+# Samsung
+ro.product_ship=true

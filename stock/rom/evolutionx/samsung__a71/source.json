@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_samsung_a71.git",
+  "codename": "a71",
+  "commit": "e3aa7f5de0ca0ae9eae15bc93a5d17562548e8cb",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d300952b779c234cbfe98b13b7392b8d5acbce6d6aecd339ec61b9ede5540ce4",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0f311d317180ee3bc76880dd8ffe1310b19dae2767fc3630e1d872d450254412",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6368f901a3a308911b9551e776d533842532744dcfef577add575292081f7b5c",
+      "size": 750
+    },
+    {
+      "path": "device.mk",
+      "sha256": "37a6b3d4ef6931fc72348fd374e0daf0da976bb1b9530449ea8b9ef006c70ad0",
+      "size": 1079
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "88af2c66b97b2dff21a75381ea21d5e3afa7e0f606bca98b5f4c357eb69cb668",
+      "size": 914
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "de9f05610448b16ee173fc4b02eb868fa7202b9a151f3f149172d58e0feb59ad",
+      "size": 3879
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a30c3bf4c28c64e87e5912a9e711f6c20a814de12466e41f1296c3727706371f",
+      "size": 19977
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c97405a1c2e30176fabb2b3e49f93f9a2f437801e1b61885740c5ca26bc1c02a",
+      "size": 159
+    }
+  ],
+  "kind": "device",
+  "repo": "device_samsung_a71",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:43Z",
+  "vendor": "samsung"
+}

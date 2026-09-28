@@ -1,0 +1,52 @@
+{
+  "branch": "sixteen-qpr2",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm6125-common.git",
+  "codename": "sm6125-common",
+  "commit": "c5b85f6df893855159d6ecaebb72a0f3c0fc8d65",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bed27239a71858d5f16024ed189152ff82344e8d9ecd0bfe6a504d7becaa3aa0",
+      "size": 648
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f10e886953c5758cc3e67c2e0a776b4ab32688c0fc3d85c0a3228db874fb6d4d",
+      "size": 4181
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c00a5ede48da5d0800c38a134b3c0592a252c8763f23e93ff0c5a90424f85465",
+      "size": 1554
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "784bc3b8064c375edd10da94f0dbf0970a332312b7ba9988f0c40e6ae58ff90a",
+      "size": 25302
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3280c6df3d890e078526c6f8080e15b0ad7fee17dd443d40cb0dfa2111e5a97e",
+      "size": 223
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d1776b10a3d4bbe4025ea1f5494fe55ea8527e8e1ef585394ee9c03a3008895a",
+      "size": 1427
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "465342390b266489f21336c26f54c92228d8043d8af13e662bacbf0ceab22c7d",
+      "size": 7764
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6125-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-17T20:43:58Z",
+  "vendor": "xiaomi"
+}

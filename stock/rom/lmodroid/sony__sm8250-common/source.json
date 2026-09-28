@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "8dec5eea32e79b3d263b7c42cc5e5b3e35be3645",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4e52ad4d8f7e6584ac01bbcac3e519769f0044613f6fcd5a0f2647343e587ff3",
+      "size": 874
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1f25924054b74f8d9e7af9b06d6ec8004e3f4348ba4952a645e85e412554252e",
+      "size": 7086
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "646acf46078c751d8827f9930d9f09d599cc6faa8737d939166c344dcde6b119",
+      "size": 4586
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fc815a206f999c0dcba60404be5f211b31db462cd3850f34dca656ff7538cafd",
+      "size": 67858
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b4a63d625d4d4de8fc7ddda181a97b8b5fa8f49ba60175beed7881582cea3fb",
+      "size": 1537
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f741e683c1107496e26fad4eec4bafe6285c3e2be265e2892856f6adfbfc58dc",
+      "size": 9097
+    }
+  ],
+  "kind": "common",
+  "repo": "device_sony_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:06:55Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_redwood.git",
+  "codename": "redwood",
+  "commit": "d1be85f370c1c915669949e21d87ff56adf27418",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "29bd6e16c9576a0a268447fb319037c02f59bd0c46096fbbce1a580af8fdf4d0",
+      "size": 506
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cd945b3b6c672b46d2d3448dde3075e02cdc1518f52a804f0f7998bb83fe442c",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "771274078ea186202148429702c146ce71299a7f225f54060195b0b69f238d79",
+      "size": 7597
+    },
+    {
+      "path": "device.mk",
+      "sha256": "10d1a318932d71296b78eee6a9168235840c29863bea8c135fbbcc8c6ff488c6",
+      "size": 21617
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b157dc88f976ed58dc2b2375d49e9c7a5e4ce3b433af30e624a717741daa3a98",
+      "size": 4673
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d91a1c0035cd772baf7110429f252c999c4a523e09c6c74ca38f0df57a4019c9",
+      "size": 53023
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "d94017fd91f6cd71812a71799c55dffa2d10dc91ca9d49e79201a1dc550a0138",
+      "size": 291
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "61518515ae59cee8114620850bc01f5c5bfa53d87bbcca6bae15c2e28da9f467",
+      "size": 1362
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3fcd6f62996b30e0c502ca3a69381883b3d78b0f33e4a0807e673ce407eb9bf0",
+      "size": 11400
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_redwood",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-06T04:42:31Z",
+  "vendor": "xiaomi"
+}

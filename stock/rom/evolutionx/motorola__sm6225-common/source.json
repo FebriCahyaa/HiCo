@@ -1,0 +1,42 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_sm6225-common.git",
+  "codename": "sm6225-common",
+  "commit": "2adbf79710ee5fec6f564bd152fa277f207a6464",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cc7bc4f83033f31d58af7a1b0e1c14325c98dd3b1caa1a30c0b13845f6b8dcaf",
+      "size": 728
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7bc2103803b5fd620b1e6e4cc2d24506e9e76a2620162f4c125d5db027daec9b",
+      "size": 5913
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c87a1aa62ef3f2b1d35a9b80ff3bac6aaa6b5d54de4618693fb3fee3063c8fc0",
+      "size": 1929
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3cdbc1b0eaa14524531bb2b520b80523f0f9f71389aed916b0a46b03e03ce72",
+      "size": 26329
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4daacaa2e37d020f0daf07bb31246808d05bb0c91159f72ac5311512de4abc95",
+      "size": 8209
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sm6225-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-23T00:07:27Z",
+  "vendor": "motorola"
+}

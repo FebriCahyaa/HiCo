@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_exynos5420-common.git",
+  "codename": "exynos5420-common",
+  "commit": "8a13ded2d6b4ff97d91d0110bdb8ce04f36e5d88",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fdbcd613866de50b7a182893f202f02c8828402a56f24861a4ecdbfc2a959f45",
+      "size": 760
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "df0d5c9ead525df7c289b36bf6600069c4f15e9f097b77604bcb4dcc3fbec405",
+      "size": 4431
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d75ba71938b50a6c297e5120eadf9261a0b68582302115146c15bbfa3d12b354",
+      "size": 756
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "121424ba331d8730ccf2022ac747d57bc7bea2febafdfd8ed53c88fea1985c76",
+      "size": 1027
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "02681600fa04f963c4d334babce8041ba5a22c65ecf8b225bf43f1497e3b5b5e",
+      "size": 2220
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_exynos5420-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:04:49Z",
+  "vendor": "samsung"
+}

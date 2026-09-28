@@ -1,0 +1,42 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_wayne-common.git",
+  "codename": "wayne-common",
+  "commit": "627468ce320ad3bf3bff2b628f4d4d1e13acc3cd",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7886055650d91d2b897db5ec50ba2eec55f3405c117483f16a0344c6efa23d37",
+      "size": 233
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5be010b25cc0a158c41628067d03fc773ab78af3ee558ab10668e37230105956",
+      "size": 624
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "147bab7c21962262792d8bf026778a36368222289c88452dc0eb19c18484ac32",
+      "size": 675
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c696a377a3ead4fda7c1828e921423ff424205e597a5022dc80cd9141f26841f",
+      "size": 48446
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb7a06663a67180b4aa69924f6e5a63c198c261c39f433a36574058b6fade725",
+      "size": 582
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_wayne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-01-09T02:57:38Z",
+  "vendor": "xiaomi"
+}

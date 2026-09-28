@@ -1,0 +1,82 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_duchamp.git",
+  "codename": "duchamp",
+  "commit": "2796786ad711ed5423b85a89b891f0f493a5d66a",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b657d691deae7c7045c3a3f540813f657f3cbefa9e9efa0d561c8c7683e01565",
+      "size": 164
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "aea2ecc7a09993edcf6aca5f617e9ea8cb119535e242f58523aee69087e1f27f",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8c7d702c17a23c30e1b7d721c250a279765a5125f8aa85950e8cb0f3a59cab3b",
+      "size": 8277
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "cfba281e7cc1a2b5b8f62ac2a614bc1b5f926a7675cdd564e8e029742c1b6b58",
+      "size": 6432
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2a3fbe2e39b256a7aeee4b4026b5ade0b133767a7ba7cf684274c06d6133b3f6",
+      "size": 17479
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "45bbba150acbb774c5c6d1c9aaec5ba900d7f1b4ce8f11302c12882ec1897e52",
+      "size": 10953
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalProfileTileService.kt",
+      "sha256": "c6699aa91527fa013672f330ed950c7bd53a8b2c36b73f6f01614b0b56dec9b2",
+      "size": 2171
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4c3fca87ccc12436bb84afb370cf7cf09053a438a06499518592dfd04c470029",
+      "size": 111832
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "7378737e785bc39cfa92ab336f5a93e2b0e36b9a3fec29dd385c3fb96792dc05",
+      "size": 238
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "4517f37cecfee50b24352a90717a8203e016e71f5c0d489a4e27a1425eefd338",
+      "size": 1111
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a0cc33b8d20ed62c88d2107041c0a822f04abc51978d69e4506cb8177bdb6daa",
+      "size": 126
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "386e82982a70605b6b93f9f540986c6dbdad9a4019c82e75c771cb93979210cc",
+      "size": 12800
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "2aa93f24c6085bc293c226122fd5fed7eb4f4148be1aa80f2d3d4f53167c9f02",
+      "size": 1257
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_duchamp",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:06:25Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_trlte-common.git",
+  "codename": "trlte-common",
+  "commit": "e0575ba5afc11d4fc7ef1910403251b3faeb22f3",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c259504414d4ee0771a81aadaa50efcd58bb71002fef169fde4bb61c545bf12b",
+      "size": 6429
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a38c55503e16577da81852bdb4e36a1d0b54e8f57b166d10e30a9d0d80783712",
+      "size": 4851
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a56f85d32d823d2728eadf8f7bedecba175561eb6ec22d36ca2b70b3bc620d85",
+      "size": 1520
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5c07aaaf522f09902080d927bcc7c6545e45b2cb8f9713e5e4a0e64fd5040fde",
+      "size": 13497
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_trlte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-10-25T13:59:15Z",
+  "vendor": "samsung"
+}

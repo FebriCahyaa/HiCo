@@ -1,0 +1,42 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_zara-common.git",
+  "codename": "zara-common",
+  "commit": "9db86a48b8a963c73032ca360073953516ffb9fb",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "11c959f3b387a2689aeac9be3bd41300cfafbb2188cfd3b9e0e27e8288787f58",
+      "size": 2012
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "642fc2fdd894c7910e7f0a783480d404c6d185eeddf26080b18cdc94846f8680",
+      "size": 3953
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8b640880e207fb8ebd703be5be86a7f6f57d1baff76441157ccf9184b6668b78",
+      "size": 274
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9f640e91c0b381634703bca155df843631bd322f750eb3d0565f596943422a36",
+      "size": 4613
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "3455eaf1efead7d6c641cc1248ab4b441779100c2ee601fc35424a6cf5bb59df",
+      "size": 694
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_htc_zara-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:56Z",
+  "vendor": "htc"
+}

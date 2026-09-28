@@ -1,0 +1,26 @@
+[
+  {
+    "repository": "android_device_amlogic_common",
+    "target_path": "device/amlogic/common"
+  },
+  {
+    "type": "kernel",
+    "version": "5.15"
+  },
+  {
+    "repository": "android_kernel_amlogic_kernel-5.15",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/kernel"
+  },
+  {
+    "repository": "android_kernel_amlogic_common_drivers",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/common_drivers"
+  },
+  {
+    "repository": "android_kernel_amlogic_gpu-modules",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/gpu-modules"
+  },
+  {
+    "repository": "android_kernel_amlogic_media-modules",
+    "target_path": "kernel/platform/kernel-5.15/vendor/amlogic/media-modules"
+  }
+]

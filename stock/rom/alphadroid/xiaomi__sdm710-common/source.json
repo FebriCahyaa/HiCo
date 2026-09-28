@@ -1,0 +1,57 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sdm710-common.git",
+  "codename": "sdm710-common",
+  "commit": "8481355495a5c0afb1abd941233d549fe46a6b37",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b61b6367605369ca2c639fb56f05113dc9d7ce1e79f793dd89c582251dc9d7ad",
+      "size": 802
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3e9b8ebfc46d749462ea37d95f13b74d7848065d7e145fae76a8a7b501cdc3f1",
+      "size": 747
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8fc8f9b9696da4db81fd8a3f65579b30f2115a763f15309eaafaac1768c3c830",
+      "size": 6643
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "10ae8f461551666a72818227857f9b12b2068391855dd1c271bc382ee3247fc7",
+      "size": 3097
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6d02fd3c8112eae8619b4aeb921969ccbfcd4a126238932453a09c9233529ad0",
+      "size": 24275
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "baf2991984fb143606e56c6ab2077826b85bcc031e84d9aaa0cf5efa961e0206",
+      "size": 480
+    },
+    {
+      "path": "system.prop",
+      "sha256": "be6672969134eb7ad7e458b89fc79db55b3d3b142d4ba271c91bbc579fc59268",
+      "size": 420
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f36e012406b9129c705ac18c8ee630517ca938a5868da923a9744e14c98ca57f",
+      "size": 7742
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sdm710-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-13T20:16:50Z",
+  "vendor": "xiaomi"
+}

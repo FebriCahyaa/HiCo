@@ -1,0 +1,57 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_land.git",
+  "codename": "land",
+  "commit": "8ae0d106227a268979aa12bff41a4cf3cd479613",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e3ffb550b967b690c47a5c1265f78fb258cf321d26297855a3106fe0cbfdf7c9",
+      "size": 5200
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9c6d95ef28a39dd1d3d37ef7d26aee5c96c1df7e3b4ad7c8eefdecf86c63d58e",
+      "size": 738
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7a5d4c1c7318fff72668e109fc0bcd026ca18e33b1a3ccaab1fa69844defee39",
+      "size": 8239
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "8f32323e6e6524eabcec2b1a3b3117b314bbdd66dca55ddcd475f537ecad1a24",
+      "size": 3802
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b1206d98536235d1085a9526209e0cf4e10479f7cfc237312d7c5015dc8f3ac1",
+      "size": 20321
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "db01ca39dffdde4e784b761e8298e90334fc33bd6e3be00d7c3ea1787f99c4c7",
+      "size": 2343
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b87cd5e21776c88ae68568563403a040b8f90e0475ef623d5e6638ea3406b4a9",
+      "size": 50367
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "84473e9dd354eb5eaebe77a4c76f23ef5f30f35ba5d5e0c30b37a9e6afb4982d",
+      "size": 279
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_land",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-06-25T07:19:30Z",
+  "vendor": "xiaomi"
+}

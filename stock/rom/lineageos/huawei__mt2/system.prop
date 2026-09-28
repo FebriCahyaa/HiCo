@@ -1,0 +1,83 @@
+#
+# system.prop for mt2
+#
+
+# Audio
+audio.offload.24bit.enable=false
+audio.offload.buffer.size.kb=32
+audio.offload.disable=1
+audio.offload.gapless.enabled=false
+audio.offload.multiple.enabled=false
+audio.offload.pcm.enable=false
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.qc.sdk.audio.fluencetype=none
+ro.qc.sdk.audio.ssr=false
+
+# Bluetooth
+qcom.bluetooth.soc=smd
+
+# Camera
+camera2.portability.force_api=1
+ro.config.camera_target_track=true
+ro.config.hw_camera_davinci=true
+ro.config.hw_camera_hdr=true
+ro.config.hw_camera_mfd=true
+ro.config.hw_camera_omron=true
+ro.config.hw_camera_zsl=true
+ro.config.hw_camera_zsl_default=true
+persist.camera.fv.comp=0.96
+ro.config.hw_burst_snapshot=true
+ro.config.hw_manual_focus=true
+ro.config.hw_auto_scene=true
+ro.config.hw_video_beauty=true
+ro.config.hw_photo_beauty=true
+ro.config.hw_camera_bestShot=true
+ro.config.hw_camera_refocus=true
+ro.config.hw_camera_nicefood=true
+
+# GPS
+ro.qc.sdk.izat.premium_enabled=1
+ro.qc.sdk.izat.service_mask=0x0
+
+# Graphics
+debug.sf.hw=1
+persist.hwc.mdpcomp.enable=true
+ro.opengles.version=196608
+ro.qualcomm.cabl=0
+ro.qualcomm.svi=1
+ro.sf.lcd_density=320
+
+# Media
+av.offload.enable=true
+av.streaming.offload.enable=false
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+
+# Performance
+ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+
+# Radio
+persist.data.netmgrd.qos.enable=true
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.force_nw_search=1
+persist.radio.msgtunnel.start=false
+ril.subscription.types=NV,RUIM
+rild.libargs=-d /dev/smd0
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+ro.hwpp.cust_ons_bin=true
+ro.telephony.call_ring.multiple=false
+ro.telephony.default_network=9
+ro.use_data_netmgrd=true
+telephony.lteOnGsmDevice=1
+
+# Sensors
+ro.qualcomm.sensors.smd=true
+ro.qc.sensors.step_detector=true
+ro.qc.sensors.step_counter=true
+
+# Wifi
+wifi.interface=wlan0

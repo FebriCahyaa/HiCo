@@ -1,0 +1,52 @@
+{
+  "branch": "cm-13.0",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_a5-common.git",
+  "codename": "a5-common",
+  "commit": "107e92df1f067917f5102f7490c7ab361b30d0f4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3bb0a5de975a0f4b5abd6e8dd43054e5831e8c8c8178c3a48256d10c19bd2355",
+      "size": 2881
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b9b11e54f7122e23e127e5cb1d26d8f9d2d2f3006154b18b0dd861705c203843",
+      "size": 4720
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "55c534597036d5f9828cf8213af89008524cbfeb61c2afff2527de3310b7d8de",
+      "size": 393
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "9466a952e1ef09af54942fb5e18a4c9c84dd0abf0aa6c328ef084cbcfa4db63e",
+      "size": 928
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bbfa53c3dd7871baf65991bc605cafe411f2bf4bb5ea6a59aae153705f8e3303",
+      "size": 1588
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5412bc18774597c7a375183ecb614533649c31df36049aa08d1adf71b8b44eb5",
+      "size": 58
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "d3b14b7f9ce897982c4d34f3d0037c87fadf4bda984f57829acb1778840fc491",
+      "size": 300
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_htc_a5-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:14Z",
+  "vendor": "htc"
+}

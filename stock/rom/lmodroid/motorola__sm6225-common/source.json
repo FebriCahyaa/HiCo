@@ -1,0 +1,42 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_sm6225-common.git",
+  "codename": "sm6225-common",
+  "commit": "99e4507c87d07706736b1ce01f0bf060d5c9f0ab",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "af5c05eec77939b415f2391dd57dc5897bc497997698e52edda1762eec133139",
+      "size": 738
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "df0b7d5db3c8f799c21aaf155aa8e362d270f7e5d4cb986feeaa03e7ce173548",
+      "size": 5782
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f378658c0868aee7d83791aff3a376472f8ed553933678c2e24acbf58f1abaa3",
+      "size": 1825
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "286016f2da3f09a0700eb89f724388248729677a67206fe5267aabfcaf8e70ef",
+      "size": 27072
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "008d4ffc8454956eb519ab11f44c1c9cc276a113bb7c68e0e646fb73d2ce7a4c",
+      "size": 8163
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sm6225-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:06Z",
+  "vendor": "motorola"
+}

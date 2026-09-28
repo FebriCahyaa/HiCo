@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "49f6801466c1d911435b669001d72051a08ee74a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a4b07c5a51ff6aaf99c39b7d5f08b0b6cf8fd0aa3d54776e612441a2c19eb630",
+      "size": 443
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "003aed54327432c69096f9e201e788187299d1c78e0f771114e2c6963b48f9db",
+      "size": 261
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b3089cb6bce8df370684e4daffa64ce28342675e2cdb2a6517ddc8a91b6ba5e3",
+      "size": 6439
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f31f2ad71de1348f89bf92320f05ee99b06c72ce57636adc5dfb7a5f00cea4fc",
+      "size": 1734
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7d4fb6b3dde374f6f447b31fc19fe8580281eced4923bd41b5e95bb7929358f6",
+      "size": 183
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5fff68dffc6f40d03db25f03d0bb8c27cf37de39b2673fd1493625cf0fb4bce6",
+      "size": 40484
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "687fbf003052eee895c1fe8c59c64aae3bc6286f16b6396ca4e9ba49384dc798",
+      "size": 224
+    },
+    {
+      "path": "system.prop",
+      "sha256": "99415d49c730fa5868410e445e33ee014426137f13074c498745770a2b161ae8",
+      "size": 2363
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1a32c68bb25270b1e07e700765b5f73f272a45d0a868f0a1c6a6b6c8985af932",
+      "size": 6516
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-11-25T16:08:37Z",
+  "vendor": "lge"
+}

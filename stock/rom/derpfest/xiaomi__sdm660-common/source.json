@@ -1,0 +1,77 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "9f625c6b5bf494d601f4a0bce4a4979f123aadeb",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2cfff7162e82101fe38bdcd2ac0f6e77b00a32076341b1316fe5a70fac2af045",
+      "size": 4384
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "50212c18f3c197e8fae3bc8ce06d8a9d5f65200ee5df576ed297b19c22438600",
+      "size": 4450
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f08adabe82a287c6c28cf766494a2c0ead5abdeec84b9e7e6ef246f7b45b588f",
+      "size": 3974
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "d1212fda9423794365664c86a1503e380f1a2d3d9916ac1022fa7c4384d78137",
+      "size": 1447
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "f26ad719f686d184a5fd2618a61c0e630761aa4f1814a28883a175edc2798e14",
+      "size": 2743
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4e6fab15f435bb141ac06ed8e616c5af03c0a197b560c288c802179b169f4ee6",
+      "size": 14171
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "826f639fa01602fe32c2b67ee0546df66eb6c0129c40b773f189bf09028f4131",
+      "size": 6023
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2405b7f69593bdf8de30e3f9627fab60b494e130879f91b0c89f8b5563831016",
+      "size": 38054
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8a356fb28cfc4a1e2e0eaee22fbbf6419ddc8674f7c0aa56981afaba15fc3c9f",
+      "size": 316
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e4a2c6f43278d9b5db60bc0b2b9adf38fd9431e3f93577326059b664534d43d9",
+      "size": 5311
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-10-12T19:21:53Z",
+  "vendor": "xiaomi"
+}

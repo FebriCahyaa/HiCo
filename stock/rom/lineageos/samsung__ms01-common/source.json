@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_ms01-common.git",
+  "codename": "ms01-common",
+  "commit": "7141aad061c551a4f5b294f40718b34adf5d9211",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "51fcfb62318364f13b1204e4b5e791bf2f0f5e873743104570ff564da945958a",
+      "size": 740
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d62d01d3555489c892fcd1e90103df5e031662888e2068e0a544aefdf8916509",
+      "size": 3184
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "4a8c09fc74c44f16f4b719952654a6afb8febb91887142fa50d9dbf59595a497",
+      "size": 823
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e6f1d49a8baa9ee0b926c8dc83aba421b0b00c4206bef0420f98b6bed029238e",
+      "size": 1905
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "00e3154999749290b63b733a1f939dae05c49882673efc01ff42ed40ea5e9478",
+      "size": 332
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d0f99bebf5fa9c01a202ddc99a37637c91665a4665aff44a6529d1b011cbef35",
+      "size": 3346
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_ms01-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2020-05-29T08:15:08Z",
+  "vendor": "samsung"
+}

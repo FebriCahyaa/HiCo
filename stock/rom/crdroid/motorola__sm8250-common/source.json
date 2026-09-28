@@ -1,0 +1,42 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "c59dd0632d3421875ef11f550440088c703b9d49",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d2610318a085eaf0afc47744df976aacfdfbf5bf90cb302ef9737b71f79dbd49",
+      "size": 1248
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0b749b7f0f5b8c856300b39514399f73167aa8ffc3c39facd9f9a60706fbab2d",
+      "size": 7186
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "aeee45f4d9afb5bc61bc5b2c0a81d8fa1831da079307efe6a032d4233af32da5",
+      "size": 2999
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9b940bf534eddbabb41c22a4d568813b84e77f3832e089051de9fe0c9ada6471",
+      "size": 36120
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "2b53c3a406264ba02f85fcf70909884d575800d0b99df570af6b8f9daa018d42",
+      "size": 148
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-07-04T16:52:30Z",
+  "vendor": "motorola"
+}

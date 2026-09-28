@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nubia_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "6340b52b091cf78e1ec303559eaa37482c938577",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fd701daf1394c678cd0fa8afe5cf1c0e71e4b01c43a6d478a0542caa0a3d8a94",
+      "size": 617
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4548bccff7081795aab1256c291b6aaacc250928c19a60879ebbc0e148785a93",
+      "size": 5027
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1f6b30763869ab5c5ef962ad3217c28b1fd5d990a9610ef77e35cecea2463509",
+      "size": 3134
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5b4382a6f9cd0dd1f9e4d7933ed904cdcfde28c2db95fc204db61453ba4d41ad",
+      "size": 51299
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2e0194fe06049a95a896c27ebbcea388169a410a25d0d27a272ef9a5326ab751",
+      "size": 2180
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7a868d1a5c38149dcffa0f37e66e4661071e3b7de9f1a57f6bae95ad52b30136",
+      "size": 6414
+    }
+  ],
+  "kind": "common",
+  "repo": "device_nubia_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-08-14T03:09:13Z",
+  "vendor": "nubia"
+}

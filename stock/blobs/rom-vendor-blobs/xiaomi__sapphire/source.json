@@ -1,0 +1,112 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_xiaomi_sapphire.git",
+  "codename": "sapphire",
+  "commit": "089f0b9fc605aefb5357b1ebe422032ef2bd0206",
+  "file_count": 19,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "af096da59536a68cea52119c01d2e1abff45ab7b2cc2738ad60aba4c31f4500b",
+      "size": 577
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "12d47370fc02e9be9f911c757518d37fa18d66474f251ed02f09c5c288403a4e",
+      "size": 530
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "45f420f3fb375b3dfdcc622d85d565841281eb678b144b4f815c8b7ed7db4bec",
+      "size": 1872
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "5cfcc17e23c8b15e4057d38099bc40c0bd25f0cc11ed775d0065691083a3e7ba",
+      "size": 1390
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "00b4f2c0de6bf8e9d8ad909abd4c6e9cc8214cab5f208f617b932922aca4e00f",
+      "size": 1808
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-hp-mgame.conf",
+      "sha256": "058bef46678c2348a77d3c41074fb62a9699622840e375f69dc7bd24fc6836a3",
+      "size": 1696
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-hp-normal.conf",
+      "sha256": "80b4d1a977d2faaf4862b43fc3a9217ca8fd7af699cd0336047164fb9bad6b47",
+      "size": 1712
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "2504c73736cb5e8b4c647304f24dfd93294cbf0a5a3bda5e41b31cb0d3c28e62",
+      "size": 512
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "5e25bd1c189831ed4aab56918a3a63ad26eae97323843433943a26cd15f86017",
+      "size": 1616
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "492cb4387033ca7cb429ae2bad27cb53fefba57ff08ff0c11e00e5818cda4834",
+      "size": 1744
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "8fb6bef85668da116ad6f31ad46e785fa4e3c68a958646fa5c5046017a5d6003",
+      "size": 1008
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "e005e5e6c8a7a31a91f5f6a16577ed8b0469a38b2e2579839aadaabc3ecb4b8b",
+      "size": 2080
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "832957dcbfbffa1301dd5ac6946145b307a3b273955f56b462624f8d8c73928a",
+      "size": 1552
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "3a9a5a7ded60224309fc743b605f3a72f4cfaa4d6d854a630eb2774b5ee595cc",
+      "size": 1616
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "c38f4588f6c42e4e79f7aae8c2442eb18886bd46c952fa6ecb72cbba4efb1273",
+      "size": 1776
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-videochat.conf",
+      "sha256": "fab2acf1a47bc232e7864c154195fd857b22cafabc766adddda5b4a7e687d73e",
+      "size": 1776
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-yuanshen.conf",
+      "sha256": "31c1869f76e6454b0c4d735b87fe1b6b3d481c9fc782fd9efc6e2719b745c60e",
+      "size": 1728
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "5e50eaeb931a4cf30d3489aa880030da7d069f9452946c0b551977492c24aa6f",
+      "size": 689
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_sapphire",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

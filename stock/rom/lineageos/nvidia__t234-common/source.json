@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_t234-common.git",
+  "codename": "t234-common",
+  "commit": "f93af25beffa2e7e4f948dd161f2844fc5f6d404",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3d14b830884f3beb132a9ad10cb246617a70567c4e3adf2b9b16836aa5657777",
+      "size": 630
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0fe837995633e959d9c4a0c89527c6ea483c907705c68cc8c86ef71ada2003e3",
+      "size": 1458
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7f1b44976caad1ac59a86fff17e3c960c443365846f570965a01670516ea8dee",
+      "size": 112
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "e740c71b8c61ba06508bf55196e1c604a05b11f79415fafdc4d1e7cebdf19be7",
+      "size": 191
+    },
+    {
+      "path": "thermal/thermal-t234.json",
+      "sha256": "b85619cc5e86c45d54857f76e569030d0d49328d55714d7c05e5b3214e12e004",
+      "size": 649
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nvidia_t234-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-14T22:12:31Z",
+  "vendor": "nvidia"
+}

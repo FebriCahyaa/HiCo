@@ -1,0 +1,32 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_realme_sm7125-common.git",
+  "codename": "sm7125-common",
+  "commit": "5f8a5a95091e7183c5f42762027a010a5042c161",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "eef1e4f3d90983ec244041ccc6aca2ed5c5606f02eb14536a7ee741f1eb8abef",
+      "size": 532
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "944477ff0c227f79e80ad88e9fc5ca7e3231bb4a27b1abb0f878bfb9b695c09d",
+      "size": 13787
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "vendor_realme_sm7125-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "realme"
+}

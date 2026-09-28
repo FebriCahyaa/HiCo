@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_a21s-common.git",
+  "codename": "a21s-common",
+  "commit": "335a7fc2fe22cb11f571f524ac05cd735f84aea2",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2bcbefe4419472c1323ed217edc378ea99438698877e6f2beb23e82c3348e696",
+      "size": 178
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fe94fd5f1fc582ef31a139d930f891b2ed090aa1f88bb734c8f476eb04d9d294",
+      "size": 7434
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "eb23e93da59b81850de96d6752c32126b7d3059a607b9f39db746467d8e4c3e8",
+      "size": 2288
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "967e722593091bfd4d12a4ca1c619424cd7cf5c763c5e2d9b08751add141246f",
+      "size": 2708
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0abe7623c1ace6197d819e9a935cd1006d543b3148dd94188f2bb9d1d74bffb3",
+      "size": 10146
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "93156eed63d7fa9e35d30ac671fcab28ce7249ea9fa04c9f9ab1a7dfd5e09e0d",
+      "size": 1645
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_a21s-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:37:21Z",
+  "vendor": "samsung"
+}

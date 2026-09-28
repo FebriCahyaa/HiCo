@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_s4-common.git",
+  "codename": "s4-common",
+  "commit": "630a97ee53f1b6a43f02f9fb3841db026967f5ed",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d587f9629594e8087a67e1a5103503b51bf3c28128f6801430d5e64ca7bb43f8",
+      "size": 2195
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ba2e79e6d60b6b34796f375022c93ec318e1b981d71196303646e104128a6382",
+      "size": 2992
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ce786757b4b9fcf6eaa6dbc97bb877527cd5fa2c568302590fb23e3f2001fe9",
+      "size": 1672
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "15ff7465ad6b000a4ea9f9e88320c079e024d882f69a863956ceb2ac0542f84e",
+      "size": 304
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3ab059eb7606c3cecd0a932136035ab220cde1f3b30893f1c26f8399d8a0c127",
+      "size": 409
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "fd355fe99521ea6d9e8d12a80d1dfca29cbc30f4586696cbc99bcf296bc0d6c1",
+      "size": 112
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_htc_s4-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:45:14Z",
+  "vendor": "htc"
+}

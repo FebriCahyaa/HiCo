@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_realme_nemo.git",
+  "codename": "nemo",
+  "commit": "279e54d59f9ddf9ffa589d71a07937d02b4a25ff",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "9858666f0c57a8c0791da12188b67e41e5cd51c29de3df79c0ba994bc4daf0c1",
+      "size": 3833
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_08",
+      "sha256": "7679013319d44a30606a43e1da42bce0739ebd30ab676adc7971d1ff6825006c",
+      "size": 3761
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "64f31e33759ab8bc3317830d0e752b8e40a69619461fb695357dadb97708b063",
+      "size": 3763
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "65b52515c5cbce73d84e21fa881c091f05ecf27f18f47a5c1998e9dac6f84dc5",
+      "size": 3507
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_realme_nemo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "realme"
+}

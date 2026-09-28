@@ -1,0 +1,35 @@
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+	"vendor/nokia/msm8998-common"
+    ],
+}
+
+install_symlink {
+    name: "rfs_msm_mpss_fih_rfs_data_vendor_fih_atl_symlink",
+    vendor: true,
+    installed_location: "rfs/msm/mpss/fih_rfs/data/vendor/fih_atl",
+    symlink_target: "/data/vendor/fih_atl",
+}
+
+install_symlink {
+    name: "rfs_msm_mpss_fih_rfs_data_vendor_fih_mcfg_symlink",
+    vendor: true,
+    installed_location: "rfs/msm/mpss/fih_rfs/data/vendor/fih_mcfg",
+    symlink_target: "/data/vendor/fih_mcfg",
+}
+
+install_symlink {
+    name: "firmware_wlan_mac.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_mt6768-common.git",
+  "codename": "mt6768-common",
+  "commit": "9646fa5027ce562f91119a4f6d374499be804fed",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4218edd549385c0e779540cbc0d1c34821fed2e67f06315b691f3beb720989ef",
+      "size": 114
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b7f1e36f774c53bd7f4f19d43babadde7c2f9c9f5628433ac88455a01884e312",
+      "size": 7127
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "e8cd95decbbcad447902baf962fea9b702a09564594ec0183d2b2d4dba4fc197",
+      "size": 2737
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "339321f9c0d6d9e0eefe0d5d531b4ec42eeb75dd081c2bcb2af38098e534abf6",
+      "size": 3772
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b952f3a8ed36260c056e4271443a026d326c4077b6acddd401f871fe40015b94",
+      "size": 217
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "962c78e9f0ae04d0a1aa3bcb11e922e4fdeaedad445bf3cae94268e9accc78c3",
+      "size": 23535
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f95fe57b6951bc47572b31f68734369f3dbf16c30e14e838901890c20b9e7503",
+      "size": 9719
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_mt6768-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T15:54:46Z",
+  "vendor": "motorola"
+}

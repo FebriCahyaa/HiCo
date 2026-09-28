@@ -1,0 +1,62 @@
+{
+  "branch": "16",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_lynx.git",
+  "codename": "lynx",
+  "commit": "90df1199bc4585e1c03c2558a925ae39360d8097",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c88f4590b083b23ed13648ec84db7323f02b057c19ba12656182562d6e565849",
+      "size": 989
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "560ac214c5fe0b6e986d9c85fe6b55ea485497eaf64a9a73b84e812a0025ee7a",
+      "size": 693
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "995b3b6d0276fb4bb5b3e750849731db2d233bda9a19220cb0f6b21f7a3c4458",
+      "size": 1287
+    },
+    {
+      "path": "device-lynx.mk",
+      "sha256": "d0bb4b9650470c57301b597c58580bfbbc130b9aa7de3d824ba78a8c7d8774b8",
+      "size": 10979
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6b9acdca47ae2bb27d18143cac5013500dd8081db6be518b1ec1da68bf2bfdb6",
+      "size": 210
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "bda5fd77492538507395ca534bbbbc5930a2e4fdf2bcc633a0c68f7e6a326bd4",
+      "size": 242
+    },
+    {
+      "path": "thermal_info_config_charge_lynx.json",
+      "sha256": "03b24e340bab303f06a384b584ba2dd20385736312877adb92387014101e557f",
+      "size": 10180
+    },
+    {
+      "path": "thermal_info_config_lynx.json",
+      "sha256": "3414ac0cf86cb649b9432e894c967ccaec7c00de01dea900d4c5ecd523fccfbc",
+      "size": 21902
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_lynx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-07-26T16:27:24Z",
+  "vendor": "google"
+}

@@ -1,0 +1,48 @@
+# Device proprietary files - from karna MIUI V12.0.8.0.QJGINXM, unless pinned
+
+# Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+
+# ANT+
+-lib/libantradio.so
+-lib64/libantradio.so
+product/lib/com.qualcomm.qti.ant@1.0.so
+product/lib64/com.qualcomm.qti.ant@1.0.so
+
+# Camera
+lib64/libCameraEffectJNI.so
+lib64/libarcsoft_deflicker.so
+lib64/libarcsoft_single_chart_calibration.so
+lib64/libarcsoft_wideselfie.so
+lib64/libcamera_960_mpbase.so
+lib64/libcamera_arcsoft_beautyshot.so
+lib64/libcamera_arcsoft_handgesture.so
+lib64/libcamera_beauty_mpbase.so
+lib64/libcamera_handgesture_mpbase.so
+lib64/libcamera_wideselfie_mpbase.so
+lib64/libcit_mpbase.so
+lib64/libdeflicker_jni.so
+lib64/libgallery_mpbase.so
+lib64/libcom.xiaomi.camera.algojni.so
+lib64/libcom.xiaomi.camera.mianodejni.so
+lib64/libhandengine.arcsoft.so
+lib64/libgallery_arcsoft_dualcam_refocus.so
+lib64/libjni_wideselfie.so
+lib64/librefocus.so
+lib64/libqvrcamera_client.qti.so
+
+# FM
+lib64/fm_helium.so
+lib64/libfm-hci.so
+lib/fm_helium.so
+lib/libfm-hci.so
+product/lib64/vendor.qti.hardware.fm@1.0.so
+product/lib/vendor.qti.hardware.fm@1.0.so
+
+# Input
+etc/excluded-input-devices.xml
+
+# Soundfx - from guacamole QKQ1.190716.003
+product/vendor_overlay/29/lib/soundfx/libvolumelistener.so|e6c1f1bfb7bd5cfb36131aaff0d4e8c74833865d
+product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so|1b16cd00fd2144e860f99c0869c2db1489c789a2

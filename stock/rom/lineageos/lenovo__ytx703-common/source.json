@@ -1,0 +1,87 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_YTX703-common.git",
+  "codename": "ytx703-common",
+  "commit": "4515eb727ca984a14d53ddc6c05a22b55c5b98ab",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e95878c04b178bb829553c5dd5144e8afb91090072a6b1d8d24cbc8e54671af7",
+      "size": 2309
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0aa159defebad848a521acc0112708a751fbcdd7dba29400b77ac013af699ce1",
+      "size": 759
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a525678b7806147bc699e23369463906253a6e0cf78034e420e06890c8ae1570",
+      "size": 7738
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "adddc7b8249762c77c2d3a0ae5dfc30e15fb66d01c93717f8d85e40e32889cbc",
+      "size": 3644
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "a4d1810aedd3d256be5f64ad14466e15b065cd83203b9da97cf16e1ee658aa99",
+      "size": 19451
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a9e1d37f6f7a5f90de0d4317efff15f44e4700208f30d69bbbac882e31eba040",
+      "size": 6964
+    },
+    {
+      "path": "hardware/thermal/Android.mk",
+      "sha256": "752a078dc563c5b6642f7d945347726aefb44a5d73b62eaa3e4166875e1066a0",
+      "size": 1026
+    },
+    {
+      "path": "hardware/thermal/thermal-8952.c",
+      "sha256": "aa06c98c97a1a7be488f0cbde3029223a4faf43055180cb406d5361f1a965a2f",
+      "size": 6055
+    },
+    {
+      "path": "hardware/thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "06889ab2db023d9c74a873d0c0eaad40ad2ced65936bdab6b2ba1715f82a13ca",
+      "size": 211
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d51246219e70cfacde29e6524d98696db25bbaf9a9991033edbf88c2e4fb3fa4",
+      "size": 63995
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "24857914dbda7dd7fad9559f5e360b0e1c625d3a05c2b7c3e26406dbd2f8c1c7",
+      "size": 117
+    },
+    {
+      "path": "system.prop",
+      "sha256": "84866da2e843c95042fd7341c62e0818255af2f544565d296da88943415b8630",
+      "size": 4459
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lenovo_YTX703-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-08-03T20:00:18Z",
+  "vendor": "lenovo"
+}

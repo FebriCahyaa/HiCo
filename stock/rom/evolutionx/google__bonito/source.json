@@ -1,0 +1,102 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_bonito.git",
+  "codename": "bonito",
+  "commit": "ad31775718e2553c2b183a740e1818d637b68a9a",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b248c13244bff56cf472db6f758aff469959404a5e2a600a30dd8c2a15a0e2b0",
+      "size": 1340
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "766a98f0b6ec5972e84a918ef5ba6da740694b2505b979c9d443f218f2bb1fc4",
+      "size": 984
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "9bb22976a1b98896856592878d73de486f53fb04d59dee1f8acdfab32665032b",
+      "size": 6634
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "a08f3f6fc9601120dacb170fde0383de076cfb857f9f7442b9df3836908a7544",
+      "size": 1086
+    },
+    {
+      "path": "device-audio-mfg.mk",
+      "sha256": "955e019ebdd6df29aaf1e4832fed46919ff4a3615b8573c24a50c07c6aede9e4",
+      "size": 728
+    },
+    {
+      "path": "device-bonito.mk",
+      "sha256": "95c38b001550da91d47ccc5d09b9f8a3a02b045d83aa4892149147ea9c5831d6",
+      "size": 2491
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "87e39293ec53580efadaa2ee4300e6b0419a57474d580184643cfc3d44f569d1",
+      "size": 5108
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "461d22a34cad8fe895489bae3c6ffb432b0aab97e6b89639474482e823c0cd13",
+      "size": 2321
+    },
+    {
+      "path": "device-sargo.mk",
+      "sha256": "fec7c8c8b5d72cbf9c614970e65d6066b74d5f9e6904c20e075e18bc97b5d2dd",
+      "size": 2668
+    },
+    {
+      "path": "device.mk",
+      "sha256": "687b7ecf331267d32da57918cef821925ffdf2c2e106eb8bfb63ebd025f26437",
+      "size": 37607
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e2b4e8f7ef235c0fc3e35c217b8d7ffc0ba943e106a5304f9da0a2e26036d905",
+      "size": 212
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "33eb528873db3898d5f0a585edbc7a9340510919e6add8333e3c26396c6f5122",
+      "size": 1293
+    },
+    {
+      "path": "thermal-engine-bonito.conf",
+      "sha256": "fd317e36c3b329c73d72c9aafaf89525a121e2f78c009542f51faf2d50f65a82",
+      "size": 1277
+    },
+    {
+      "path": "thermal-engine-sargo.conf",
+      "sha256": "06ed59e49c02f3cbd45b6cfa081c598e14bf11c119a8bad68d63fb2685e10fae",
+      "size": 1277
+    },
+    {
+      "path": "thermal_info_config_bonito.json",
+      "sha256": "e9c2ad2913dbbbffc52e6fc801d51bbc26c2e751d4f522145e2ece198c5d84a8",
+      "size": 5390
+    },
+    {
+      "path": "thermal_info_config_sargo.json",
+      "sha256": "7e06f26bc5a2eaf6270e54f06cc10d847975617e23816a23f89c77dddb6731cc",
+      "size": 5390
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "925604af22f613b8968caece50211de8aae0af3bc29a1e337e29222f3f51f383",
+      "size": 227
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bonito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:03:23Z",
+  "vendor": "google"
+}

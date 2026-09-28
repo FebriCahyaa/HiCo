@@ -1,0 +1,37 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_lynx.git",
+  "codename": "lynx",
+  "commit": "ae31eff889cc331eee2f96025318d0c3bd5b4984",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cbbbdb53bece9c9ac401d41ede57b3b1f1999a19559dd7a5d7193b2bbb095c59",
+      "size": 503
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0961f523d676713992a65dad0003ff45a1c7bc6466d25539a9029c9753b7affe",
+      "size": 194
+    },
+    {
+      "path": "device-lynx.mk",
+      "sha256": "74f8e563a5f6ad1786cbea4262511d196cd56c0be754556f22d45e6e765fa247",
+      "size": 1753
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6b9acdca47ae2bb27d18143cac5013500dd8081db6be518b1ec1da68bf2bfdb6",
+      "size": 210
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_lynx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-08-24T10:08:34Z",
+  "vendor": "google"
+}

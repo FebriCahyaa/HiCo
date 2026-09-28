@@ -1,0 +1,42 @@
+{
+  "branch": "6.0.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_htc_hima-common.git",
+  "codename": "hima-common",
+  "commit": "7c20b3fcf27107040a18733b52c2d2b805a53e5f",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f047e692d4d885aadf0d6b577ce08f0adc1e9f30ea64729174bf2634d9439401",
+      "size": 2866
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e158f75796f2a763effb4d54fb5b4e09ec9def911636308f80f332f2cccc7538",
+      "size": 4936
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "3682021576b233fd705c326025acf5b97de42f163fdbbe45fa36a1beaeae759f",
+      "size": 8261
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e5964070f5829c425cceccecd70917f4fba8c4bd610a8f22736159a6232b384a",
+      "size": 1622
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0f0dd1877cc56815ed202e7c54895d4a85391c54f8ef13d583ffad6594048506",
+      "size": 30427
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_htc_hima-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-08-25T09:52:01Z",
+  "vendor": "htc"
+}

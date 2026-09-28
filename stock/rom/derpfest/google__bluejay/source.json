@@ -1,0 +1,57 @@
+{
+  "branch": "16",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "b1eb948aa27bb9554b9ea31e3ae1bf971cd940be",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "effc7867e8eecbc5e9be902a3f22e355d82ed3c4a76886c3a54b80ee9fa7ffa6",
+      "size": 1206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1113f84f34f16f344f29401aafa827720be9b133139f6e4a00b834faa9d63863",
+      "size": 699
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "f30f52efdf1d937a99eb4649a87b09891bb8251df6bafd16239c0bdfadb28059",
+      "size": 608
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "286eacdd5188628aedec1f9285cf9adf4f9f18fad19064ef6296fa012ecb1378",
+      "size": 10740
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "e533ec049e4b2802676092074141f5311b1377c3b64c62c56f72cafad551afe9",
+      "size": 1200
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6a019f7d592a22a3540a77a31c0345ab31440f038be960839bdf65f549e6b7f3",
+      "size": 213
+    },
+    {
+      "path": "thermal_info_config_bluejay.json",
+      "sha256": "fbbf34730fb031a7d2c3c883b76f511954ae1bee2c4ec56c9212c2cf32969716",
+      "size": 20850
+    },
+    {
+      "path": "thermal_info_config_charge_bluejay.json",
+      "sha256": "d8305a717d3f7171b81461f7e2afcca9e10ec885e83f940d265de6527bcf4313",
+      "size": 10196
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-02-04T19:45:52Z",
+  "vendor": "google"
+}

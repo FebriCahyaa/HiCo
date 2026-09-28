@@ -1,57 +1,57 @@
 {
   "branch": "lineage-22.2",
-  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts4lv-common.git",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts4lv.git",
   "codename": "gts4lv",
-  "commit": "d1b339be7abea07f62fef2bee3b7a2006694df67",
+  "commit": "3260fd2c4f1abcf0303485afa9fa4a7b3faec98b",
   "file_count": 8,
   "files": [
     {
       "path": "Android.bp",
-      "sha256": "44880bba7b7bc45efe668e38caf2cb28b447530ec3ccbe90047c8237d81a207a",
-      "size": 330
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "e4e24b0fbafab7be694fc1eaffed072bef5f165f7b2e271ec0db8afca639eb7a",
-      "size": 5898
+      "path": "AndroidProducts.mk",
+      "sha256": "ba4d02e55e26b7c652b0553add7a6f0578f928aa383ee51bcbd163414daeaeb4",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d2267f3e262fa159936e2b185df51030dfe0cba9549b90d8961dcd6c4397c7fa",
+      "size": 1274
+    },
+    {
+      "path": "device.mk",
+      "sha256": "54e35fe46e4705bedf676b2f79b0182fdb9afe363bcf67cdb5423c7fe9ca1516",
+      "size": 1642
     },
     {
       "path": "extract-files.py",
-      "sha256": "a2ca4ae7ffc76d88281ca920d67cceb18b0a84de468f40355e7579fe21bd9615",
-      "size": 2268
+      "sha256": "7533d022c334ee88ffe71baff97de3a98360ef74afe04493834adfa32eee5289",
+      "size": 745
     },
     {
       "path": "lineage.dependencies",
-      "sha256": "0feff8f705ff4bf5851a07992bcff0280dddca52809ae0acf7f14ff11fd222c2",
-      "size": 199
+      "sha256": "f8887f4b143518c8da940ff045162af839e4a07f90a586665ea9c41af8f5fb88",
+      "size": 120
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "60d8594b05e1fd8a82351d717310b46d5022584fa4d8cd315604ccc9d104fa36",
-      "size": 29359
-    },
-    {
-      "path": "sepolicy/vendor/thermal-engine.te",
-      "sha256": "230fab339fd9138af5d7fb4bd9d9428d0c0c07997ea1547ea83f3695d1497ed8",
-      "size": 87
-    },
-    {
-      "path": "system.prop",
-      "sha256": "8fab53cba3892b85077647ad25736509847fd10c79de3afa2681ece801317cc8",
-      "size": 148
+      "sha256": "92fbe7fe546414759b9760963ca98169f98aea1cbf56f2ced1e7ebfa80ebd2c8",
+      "size": 3791
     },
     {
       "path": "vendor.prop",
-      "sha256": "5a281040b43b36187804a5816960e2047c32b8eaa49a56178c43edd348724c6a",
-      "size": 5158
+      "sha256": "dc7bd1a9d565c11aae355b6fc3608ca08369b0c3a5a5474671f25e74e361711a",
+      "size": 354
     }
   ],
   "kind": "device",
-  "repo": "android_device_samsung_gts4lv-common",
+  "repo": "android_device_samsung_gts4lv",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2025-10-06T09:50:03Z",
+  "upstream_pushed_at": "2025-06-16T22:41:19Z",
   "vendor": "samsung"
 }

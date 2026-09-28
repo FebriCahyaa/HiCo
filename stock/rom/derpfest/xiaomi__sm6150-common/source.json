@@ -1,0 +1,62 @@
+{
+  "branch": "17",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sm6150-common.git",
+  "codename": "sm6150-common",
+  "commit": "7e84835e6bb7ab539f548bb72575df1d622ecceb",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "12b881d9cf1e2811b9cb11a7b860db40dc26e8afb27bc481afc9708563625741",
+      "size": 821
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9f5973c7decaafc6d10adf71ea982759bf08fe63191501bb5c9e37056eddf27f",
+      "size": 5798
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d14037f562f2567bb56a5394bacf89c09dc1dda29e04492745dec1971ed89d1d",
+      "size": 1882
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d61a1c3ea7026bfea5fc5dc969892ba323db98fc422393c68cb838910ae2f9ef",
+      "size": 195
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "eaebf6d129b3fff734c73d10a134d05eaeb70556b7a6a6767707e1851266a9e0",
+      "size": 40346
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "a601456095351888252cfaf3eb5244d16704c39fe9e10f27c9b889be3357c0a4",
+      "size": 113
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e52c2f6122cf1b79845c25d45e4964b48671ed9fd7bae372d2756d4653b6fa63",
+      "size": 702
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "daa3b2408679ebb7c7c2c1215b4704b71d731246cd964debdd7939ec161d7445",
+      "size": 8249
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-09-15T17:36:32Z",
+  "vendor": "xiaomi"
+}

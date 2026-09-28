@@ -1,0 +1,42 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "dc434dcb0462309e3d089e9ebb621dd97481c10a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7e58aa590e6bce2a79494d02a28e72ea9f705d8ad80042670fb7f60a30c62e2f",
+      "size": 718
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ae772450bac638785c76161eb1ae8774776f5113adcb1480d872eb9dc294c29a",
+      "size": 5749
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b49e0d55d78d4eaa7cba56893fd375da51d1656b2769db7a566d439e0263c537",
+      "size": 2516
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ff9247920a147ca49d5b2f5e3a56a54aec2cd5e82b3e98d743e6c442812ac3f0",
+      "size": 38321
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "27eb75978110efd8bcd80136720a704eed37b64690e1405fc950896090ba30d5",
+      "size": 7634
+    }
+  ],
+  "kind": "common",
+  "repo": "device_sony_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-23T17:52:34Z",
+  "vendor": "sony"
+}

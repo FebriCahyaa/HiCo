@@ -1,0 +1,32 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_t114-common.git",
+  "codename": "t114-common",
+  "commit": "a36ce69f65af635c42dda9b2e871503d82e9efbf",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5db5387c3f755ebd894a6305c3e287d1e87ab06bd1ff5f4cc866c3a4edfa91e9",
+      "size": 755
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2370d76b1b6d2118407437d60df17a1b06c7fdc5ddec6668f708ea69d46a2d71",
+      "size": 851
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7f1b44976caad1ac59a86fff17e3c960c443365846f570965a01670516ea8dee",
+      "size": 112
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nvidia_t114-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-15T16:55:31Z",
+  "vendor": "nvidia"
+}

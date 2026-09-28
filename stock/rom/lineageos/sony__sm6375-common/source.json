@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "af6d25a714d6868cb4ddd7d0f373aefc5c31c5b6",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7e58aa590e6bce2a79494d02a28e72ea9f705d8ad80042670fb7f60a30c62e2f",
+      "size": 718
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "043c1985da8b61ef13a96f29527b262e127feb8b1dd66c9dc1ef53e177424e50",
+      "size": 5947
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "82f25fa98e7182ccd654c28d6b543ca4f0d444c3be083dcf6abe66f303bbf473",
+      "size": 2399
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "faf3cb7b1bb025e18f8415a434a8193825aae43c2dc46bcefdd5c5fe74caeddb",
+      "size": 187
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d38eae3f9ac8b48d5d5da97a45fee53ce19e436d070a481c2c54ba1fb50e3a9d",
+      "size": 38293
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "47aed1ec6a0caf485a71f778ee6cf19e98662ab8e402557eefe184d1e39a262b",
+      "size": 7680
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T07:14:35Z",
+  "vendor": "sony"
+}

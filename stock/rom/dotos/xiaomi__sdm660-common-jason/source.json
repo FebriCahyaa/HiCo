@@ -1,0 +1,67 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_sdm660-common-jason.git",
+  "codename": "sdm660-common-jason",
+  "commit": "96bdba80b36335379fe2026dbb812576951126a3",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8c5afc0177150654e16da629460e8d74698a39491c0b7bb5b1d8a1d7ba315467",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a2926fa71e037535a844ddd3c33548d4d240b1bc39731eed59e6f54d7b2991d3",
+      "size": 5738
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8ace8b625cc00b6790c176b25610f4e931be08f8eb0f7810ffa224fc5ed9e78f",
+      "size": 7125
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "45d7dd1c5c39886345b75e76b1352dbb10964464e7fb9b4099c3cc40abb7019d",
+      "size": 129
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "ac8d6bce5537258b741776ed8a1533096eada2af0b5c29dd0c4c8488c0d750cf",
+      "size": 5587
+    },
+    {
+      "path": "configs/thermal/thermal-engine-video.conf",
+      "sha256": "fa55af7a1ed9c047e9d5843938cde90740359524e97e54bb6c37369f1538839b",
+      "size": 5809
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fc5e41829954e8570b613fff09cab89bb4903a9de52621905537ae753cdf6281",
+      "size": 6188
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0d86920fc50f018ddc4e6442207a8bb1d553da96a5a56136a430d34cca58e4c8",
+      "size": 67282
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "968e46c46e79e7add4a672d9550b65d9da6b7297edcd405af2ce4b1f1662674f",
+      "size": 364
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm660-common-jason",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-07-20T13:11:21Z",
+  "vendor": "xiaomi"
+}

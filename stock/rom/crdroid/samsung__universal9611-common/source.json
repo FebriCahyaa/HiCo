@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_universal9611-common.git",
+  "codename": "universal9611-common",
+  "commit": "85f4c8564bd0af659556e565c56869746d5aa90e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "adbbf38744703a4cafc506483bdc0381040ea3e86046683f9be8d5440a9038ea",
+      "size": 187
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fab26a7bedb55fc4b48b764f16504ec33b326f4e3b42393fbccb772ca73c5c7c",
+      "size": 5238
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "48a86a0582a757ad59d1c9c0273d1695daf56555325a6c356a08a68c0467f205",
+      "size": 2779
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d4697a24824f27d1b5dc74d68cf5a627b16430e76f53176166d585854adab79c",
+      "size": 1701
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c7664c193545a42ae4f533c2413d0ffcb8dc6098efdac332ae52bf371ec8cdc5",
+      "size": 6248
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "29724ba85068fe4435aea5b247aa90ef0a0f1cf7da72155244bba1f157cbbacd",
+      "size": 3068
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal9611-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-22T10:13:34Z",
+  "vendor": "samsung"
+}

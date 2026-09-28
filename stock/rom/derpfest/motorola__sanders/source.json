@@ -1,0 +1,67 @@
+{
+  "branch": "11",
+  "clone_url": "https://github.com/DerpFest-Devices/device_motorola_sanders.git",
+  "codename": "sanders",
+  "commit": "1ccba8660ff22fa0b87a77e747f975f3bac48108",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3262c79c73d5020da8d402a5cff63904140f2d0e0476f5a09abc271f4f1267cc",
+      "size": 25
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "65b6b6f4d3e70eab3ec9827a2561127214a40a3e1a5fc40c869a4d53cecaef0f",
+      "size": 6456
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3984ab49d62f174ae1f748c18b455a9e3ecd3a1d12734974b545a113a8c6a2cd",
+      "size": 702
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b475566716083bcf230d504000fc493768494023a59df7b997f5dc52d6cf77e6",
+      "size": 9360
+    },
+    {
+      "path": "configs/thermal-engine-sanders-INDIA.conf",
+      "sha256": "72ee960b54ba90e48b50274d1de111d860a7c1f71ad1765be056db69b2b8ddac",
+      "size": 3806
+    },
+    {
+      "path": "configs/thermal-engine-sanders.conf",
+      "sha256": "b2e150c93406717221bd601bb12d89e3247b6e57abe91537709341feaf384858",
+      "size": 3395
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a8c24ef823d52bfdeb26994ec74fc17fb44ea465bc26ab0ff8eb1020bcd531a0",
+      "size": 23397
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "68b0dc022d8562f5b88ef8ef684f97b420e28672af97a5511dcc52a6a1ca5899",
+      "size": 1768
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "27c49ce47f97f7cbcdb09503384619e1388be7b4aef9dd7612ba5c62cdff9702",
+      "size": 34511
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "9e38dc183051bc9ecd7205b0958e6546e42cf94ef2fbb6d69ad1739f8cbe04de",
+      "size": 640
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_sanders",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-05-07T15:58:38Z",
+  "vendor": "motorola"
+}

@@ -1,22 +1,47 @@
 {
   "branch": "cm-10.1",
-  "clone_url": "https://github.com/LineageOS/android_device_samsung_p4-common.git",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_p4.git",
   "codename": "p4",
-  "commit": "997a9e479036e5c6cf547b0c409f6d19e128be70",
-  "file_count": 1,
+  "commit": "1d76a400da31c0f0bdf7031aa850574143c2aa72",
+  "file_count": 6,
   "files": [
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "7702c6777414626244586c8b21ef7b4e91aab877c8c0310ca2718258ee35bcf9",
-      "size": 3937
+      "path": "Android.mk",
+      "sha256": "37f47fa2aad4a5fee19e0e256f10d7aa4a9c391bc7ec100d28bea529d3859df0",
+      "size": 1063
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "03ff49cb46ec686a756ef888584cc4957e3754e0871b710cfb639753cf33c844",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d943c305041acba05d6e450868c79c6bd1692c51779025aef48d028fb3e8123a",
+      "size": 1135
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c2c10958f73ee4ea65ea675c88e7665be3efc067f4c487caab7213cc692169d7",
+      "size": 273
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "19551b1830c9228bcf46008c7958949588d5aed3c3e33833d44f015c4d70dec9",
+      "size": 3258
+    },
+    {
+      "path": "system.prop",
+      "sha256": "db54ebb1a66dc2372bc5578e85c9f9e13d5ea655174bbdca98811a020ef19fb4",
+      "size": 285
     }
   ],
   "kind": "device",
-  "repo": "android_device_samsung_p4-common",
+  "repo": "android_device_samsung_p4",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2018-04-07T21:16:42Z",
+  "upstream_pushed_at": "2018-04-07T21:16:43Z",
   "vendor": "samsung"
 }

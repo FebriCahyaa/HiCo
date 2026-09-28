@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_nubia_sm8650-common.git",
+  "codename": "sm8650-common",
+  "commit": "345ea9c8937aa5812fdf5795590b80fa974de036",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "727de0689214e02f7d79b06eae769548c11642679d1f2ce4107d663ac53e90b8",
+      "size": 803
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f464464454584fd2a71c45b20ba5ac5ae7acdf550a93cbd8946c1949d3b1fda0",
+      "size": 8607
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "965f424ab4264365d1bb6fc146a08ec0e85e8a5697035126a85bd2f5ab63092b",
+      "size": 6328
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d350c6bd8e9bb089b64e38f73f862abe11ca77b362d07506f0cda682f9c00b64",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e51ba6ca1aaa3f450984d8cad3248ed51db393189b0daef325cdf33d17e07511",
+      "size": 73017
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "549ef869669a7464e53c3fc5a574bfce2c4e8296bb9a87e8d1a207adc6efecf1",
+      "size": 53
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dbc98e50ee6c01d68408e8aaf38b911dc8738928eea9c7d85490f9aa907ba661",
+      "size": 9935
+    }
+  ],
+  "kind": "common",
+  "repo": "device_nubia_sm8650-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:08Z",
+  "vendor": "nubia"
+}

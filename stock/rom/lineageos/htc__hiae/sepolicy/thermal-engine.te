@@ -12,8 +12,6 @@ allow thermal-engine sysfs_devices_system_cpu:file rw_file_perms;
 allow thermal-engine { thermal_device smem_log_device }:chr_file rw_file_perms;
 
 allow thermal-engine self:capability {
-    dac_read_search
-    dac_override
     fsetid
     sys_boot
 };
@@ -53,8 +51,6 @@ userdebug_or_eng(`
 allow thermal-engine sysfs_kgsl:dir r_dir_perms;
 allow thermal-engine sysfs_kgsl:file rw_file_perms;
 allow thermal-engine sysfs_kgsl:lnk_file r_file_perms;
-
-allow thermal-engine sysfs_data:file r_file_perms;
 
 # netlink access
 allow thermal-engine self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;

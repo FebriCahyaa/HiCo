@@ -1,0 +1,57 @@
+{
+  "branch": "twelve",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "35aec2724fd34868777d9f6d53d20f77d48a6ce1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8d6ad4a4c67b32680d5d9ca396bc02a7a8679cde3d4bfb622be480afd2fd7112",
+      "size": 4001
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4bc6c27699d0a9458ab57cb3ffdfc2084cb50d295edc421290e4a41b320e6d9d",
+      "size": 4333
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f08adabe82a287c6c28cf766494a2c0ead5abdeec84b9e7e6ef246f7b45b588f",
+      "size": 3974
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4eac5fe0eca91c1eb0d4f9337bdbee05e231503b12ebe95aa775b415c81fe72d",
+      "size": 39586
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4f778bf6f85fc04ae108bba48b548821b451b7df6ccb8527556c3988e28f502b",
+      "size": 630
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "75a9e36dc2ec96547a36a0f02b2e1f3787d396e5e5077d592b921aa68cefac36",
+      "size": 5337
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2022-08-23T10:26:01Z",
+  "vendor": "xiaomi"
+}

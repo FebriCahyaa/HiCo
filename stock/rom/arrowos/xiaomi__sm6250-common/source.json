@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "c132aeb3dec803db22537ae75dcff451498403d7",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "956c32e5b2fe4929b97ba818be7cd24be9494c49ed035ae14fde3b5a43ec387b",
+      "size": 4249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7f646559f00bbe5030acc1775baecbb4311eee9c104b4ba14682c66feb25086f",
+      "size": 7424
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalActivity.java",
+      "sha256": "09f216233614aba9cc4b7c92d29f7d1fff2bc44194655af3f625452e75abd62e",
+      "size": 1650
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalService.java",
+      "sha256": "f19b88cd59ced0bbc282c2e167d2f55015acf32d2f3de462bc1f9f8c5b83e444",
+      "size": 4690
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalSettingsFragment.java",
+      "sha256": "25c48d5931aa733eb13d02f870b895defdf3f7e8a81472a367e55e2ef98a58d2",
+      "size": 15622
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalUtils.java",
+      "sha256": "c364d600da709e724f036942f6a24aa55f08f2e124272dfa219c8a7e3eca19ac",
+      "size": 7987
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "43bd820d31ec5aa167e7fabbe1386277e3c697b65f0663740b5cfc608153db89",
+      "size": 2385
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8dc8b80c28e3352182963a72829170875c170fe7bafd5f8c8bae2a6d49289687",
+      "size": 65744
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e8238de60b63d7c6dbe3d6d132f661c375b950694c03e7cd8834b28adae7cf59",
+      "size": 278
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-01-15T16:39:42Z",
+  "vendor": "xiaomi"
+}

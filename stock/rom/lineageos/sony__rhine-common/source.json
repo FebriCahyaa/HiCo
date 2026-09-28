@@ -1,0 +1,37 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_rhine-common.git",
+  "codename": "rhine-common",
+  "commit": "d7de2213b99678815793d3d60fc52aef2359146a",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a1f0523528fbfac7ce8c54942b8949250723bba749f66008b4d4bd05e089b870",
+      "size": 529
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "196d9ce6f05e849876110464ea90c74ee90dc77f5a0f32eb862bef869b6546dd",
+      "size": 5373
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3644cc59c7e963e34e2fd69eee740ba13a7ed4b530fd2e3f7b60657f83f1d76c",
+      "size": 130
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "afb612ddbba2c81e4b3d02c7cb6350484dbc3ef9058302b9e34fd2d947f230e6",
+      "size": 550
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_rhine-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:49Z",
+  "vendor": "sony"
+}

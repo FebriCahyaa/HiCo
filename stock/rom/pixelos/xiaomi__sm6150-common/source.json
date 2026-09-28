@@ -1,0 +1,77 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm6150-common.git",
+  "codename": "sm6150-common",
+  "commit": "de7ecac72f12177f653cf50145c54d8951cd3254",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "12b881d9cf1e2811b9cb11a7b860db40dc26e8afb27bc481afc9708563625741",
+      "size": 821
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "458c04e9ad6155b688f6f20f4167e0d20626f456146e3f325e5d49a50fb733bd",
+      "size": 5636
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "340c0408d5be8bc5e124c38ca09768dd6b0ad7e1740a06cde7055605996f75d9",
+      "size": 1989
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "d0d5ac9071ada12fd5ee3b0dbef9db8dd215531e7a401f83eede37fa13b51da8",
+      "size": 3766
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "5da9aae1295849f91a5d30e92502bcd592bcbe54bcb813c6f97d1b154f992595",
+      "size": 1524
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "5cf881038c4d647d79cc378752e12d19e99946febeff4cd66648d8f900fc4e87",
+      "size": 14708
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "186e3ef595d5add063570656930e935bce9822042d96b88cd19b7720510bbc0b",
+      "size": 7473
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1a699ac17a45e13ef2b2e5d82a442a7b6b5754abc27f5e5ad4e2a0cdd65232a6",
+      "size": 27397
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "a601456095351888252cfaf3eb5244d16704c39fe9e10f27c9b889be3357c0a4",
+      "size": 113
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e52c2f6122cf1b79845c25d45e4964b48671ed9fd7bae372d2756d4653b6fa63",
+      "size": 702
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2ca0484a3534ae164c02d46c4b4b9beaf8ccc66b323c1a1b98ad90416cc57b7b",
+      "size": 8298
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-23T11:51:44Z",
+  "vendor": "xiaomi"
+}

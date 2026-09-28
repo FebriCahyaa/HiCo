@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_X00TD-common.git",
+  "codename": "x00td-common",
+  "commit": "dce793c75ee6a31bc3906bf118f1087f594421ab",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e8b0daf21977dcf6a132d185037280a1839486a628a496e3063c636178cb2933",
+      "size": 46
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1442c35e254cfe359db2bea33dfd6bc224928fb3a33df65a8352f8472699cd48",
+      "size": 4747
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "933e64e720f0920171c7bc01af2ca3d429672f602c50b091a4cd25f68ead6d8c",
+      "size": 4867
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0e21f16be941d43d5e7e521fe095242ec8ca15393028485174e041f792d73e88",
+      "size": 2403
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "89b2adeac98741910eaf6baeba44b0f1175287f13da52b0296173d6a01aa7a8e",
+      "size": 47952
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a77043e029e8a3cc42db5fb1f22aa8a17b4da3f798a738d85290c57ffeb24da0",
+      "size": 2007
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5fa420952d64f727afc597cff5f3c6df69bf4fb579c5dd2cf22d0fd235041930",
+      "size": 6519
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "67ec9074aeb053882d3081514221a91b65fe2017de6ad99232c99b647863f0b6",
+      "size": 126
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_X00TD-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-07-06T07:20:51Z",
+  "vendor": "asus"
+}

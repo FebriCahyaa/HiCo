@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_zumapro.git",
+  "codename": "zumapro",
+  "commit": "bdd7ad42749e0ff4271aaf45358f71d7f6f39cab",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c92ec89eeabb3d4ad0bbe2db9ee1ba734de0f1533bff936b351ce192bd865e00",
+      "size": 1349
+    },
+    {
+      "path": "BoardConfig-16k-common.mk",
+      "sha256": "b3dac8d07ea40f37c489536e5f0fc1c53167bf55fcc38f32e264aba6d3717b7a",
+      "size": 2742
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "d6c8817f70c8326719bda96d310a5a8d004f3ce6374f8fdc754a4475d8f8dc34",
+      "size": 15751
+    },
+    {
+      "path": "BoardConfigEvolution.mk",
+      "sha256": "056bb2c154e63f49e08f7f66d45fe9c5699099a64b4d257673d96018f69c671f",
+      "size": 207
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "195b070f51681076929cab8473b54279082778f8cf13c646abec01797ff6833d",
+      "size": 1328
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "c7ee54a07d4cd30dee2df5df0bf600d22571413933d7557cb4164abb3cb63421",
+      "size": 1816
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "860499a926028b5fc93923b70cc19094fa23f39a2550939abb8d4c492b3be4c5",
+      "size": 650
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a0736faa113dc2d27586d57c8b4f92b5881d00b76d0f9bf5950c5be77cf62a5e",
+      "size": 40714
+    },
+    {
+      "path": "sepolicy/legacy/zuma/vendor/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "67529879f9ff8d9ed58403ef4c38cfe6a9cb3cf380d1b6f11b52ec65648cbc30",
+      "size": 23
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_zumapro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:03Z",
+  "vendor": "google"
+}

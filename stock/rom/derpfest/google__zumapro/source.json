@@ -1,0 +1,62 @@
+{
+  "branch": "15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_zumapro.git",
+  "codename": "zumapro",
+  "commit": "7119cbf3fcf4d4aad79e11dd64cc9f6d2a670e81",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c92ec89eeabb3d4ad0bbe2db9ee1ba734de0f1533bff936b351ce192bd865e00",
+      "size": 1349
+    },
+    {
+      "path": "BoardConfig-16k-common.mk",
+      "sha256": "7ed94f5f641172b7baa7a35b5411e4dfb2208e8962b170fbc0b11692d82dcc02",
+      "size": 673
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "fa76ee1c73a58fae053a04480eca3abbdfdf8b10b4f043828dfeccec07916355",
+      "size": 15057
+    },
+    {
+      "path": "BoardConfigDerpFest.mk",
+      "sha256": "b708df72b36b9f1eca69e0f9b4d08d100e0fac9b8ba9a011e0b67ca04e2dcae8",
+      "size": 1404
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "13375e5c64da1491982052d493c5c268767ac3f0092a2dc6db8f2f7027eea253",
+      "size": 2533
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "860499a926028b5fc93923b70cc19094fa23f39a2550939abb8d4c492b3be4c5",
+      "size": 650
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0b836fc9bb465dadef069f345306062ecb3f0e10c532e8a821d46c3f1910d243",
+      "size": 45243
+    },
+    {
+      "path": "sepolicy/legacy/zuma/vendor/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "67529879f9ff8d9ed58403ef4c38cfe6a9cb3cf380d1b6f11b52ec65648cbc30",
+      "size": 23
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_zumapro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-02-17T17:22:55Z",
+  "vendor": "google"
+}

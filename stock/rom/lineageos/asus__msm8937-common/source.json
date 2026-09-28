@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_msm8937-common.git",
+  "codename": "msm8937-common",
+  "commit": "7f9108303268277796427a845458a0f59ed1b39f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c9f897b1d4153e87760783bf71af35aa9b017e0bf8947e69e3fa79fd700675a9",
+      "size": 3867
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "17051df0b2721c2e1a925fcc72bf626ac39d76abd75822b51446e6dd44009653",
+      "size": 5418
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "922a8c045542055a9b28dc579727b4c91336f23e867a84da31c68cd83f590a68",
+      "size": 3031
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "fd1cf78cec50f6b8ebc43f4d0f9f5f96a9ad6b89b7b649148345aeef800e5033",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e0437895d87386d8ce44a72098d82a745f9da9475d55fa861aff227d7fd58a2d",
+      "size": 25359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4bc08c02eabfb605c71b8fb6a271e2a007655e82b012cd615869990f543bee72",
+      "size": 45
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "10d8b7ef4e30f8a69b17b7747a1e009abaaf746503de56e137cfd97e619db2d0",
+      "size": 4623
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_msm8937-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-03-06T18:37:46Z",
+  "vendor": "asus"
+}

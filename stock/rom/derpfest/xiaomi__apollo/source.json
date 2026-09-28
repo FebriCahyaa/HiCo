@@ -1,0 +1,52 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_apollo.git",
+  "codename": "apollo",
+  "commit": "9ed6f5fdba65ff9156d3ac5259b4fe18dd25680a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4a926f3b9f79b4e487f8c1076d3b07bcefd252a15f25dd9b94d3c547eddda21c",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fbc1dfa2f4031d198307c1acecf1088a1d1da1ceb2eb474171154446e1d08474",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7d1820bc6a430b4024171566334a8dcbaeef3c252184e948175e9bb351e58a19",
+      "size": 863
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cea573206b624523488f9dc51230a90f80991a6d38ec5b1f36a7f97700e5341f",
+      "size": 909
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7742b203a0fa6e57e6bf551572d73b1fc15c62f4a6f62c263331863f7e66c708",
+      "size": 2290
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7c2fc87ba19881ce522b9b191b20671ab73f504083d72d6956e41f7a7974d844",
+      "size": 21639
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a566fb1a1b2294b27437fc53a9489bdc26e9363a5898a611c2a83b200a2c98b8",
+      "size": 412
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_apollo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-11-05T03:07:05Z",
+  "vendor": "xiaomi"
+}

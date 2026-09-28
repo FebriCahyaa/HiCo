@@ -1,0 +1,52 @@
+{
+  "branch": "15.2",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_gs101.git",
+  "codename": "gs101",
+  "commit": "97b842e4026f10970341e2bed63e65aec60cb6e1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "91ff79f0c35bb0b1396246781e5f6be640581554c898230dd9f27dc676a3ff51",
+      "size": 1434
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "3868b02627b821f7d090ca24ed4f5eef8129a47e239ad307e8c9d86bd18ef95a",
+      "size": 13530
+    },
+    {
+      "path": "BoardConfigDerpFest.mk",
+      "sha256": "128a73fe6abf9b0dbf14dba57e80af72e4f8fdd2a89547b90ae49cd74e98c322",
+      "size": 1097
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "72b9a7da3f098bde37bf8a8ab74cde483fbf6392f8961f5ffea023ed3935f8fa",
+      "size": 1934
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "35402fc936329949fc54dddc023a9c749c4369219bcda8b7100fc719ddc9fd67",
+      "size": 850
+    },
+    {
+      "path": "device.mk",
+      "sha256": "90debe1c0d0058511f54a26a7248511c263bb86708b65bf0e8b6de68bd68e2c6",
+      "size": 44099
+    },
+    {
+      "path": "sepolicy/whitechapel/vendor/google/hal_thermal_default.te",
+      "sha256": "d85ca3945b1bd5e52f144dbfab5b3f0d03a5947a04fd3237935e05b207b9b747",
+      "size": 117
+    }
+  ],
+  "kind": "common",
+  "repo": "device_google_gs101",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-03-29T22:28:46Z",
+  "vendor": "google"
+}

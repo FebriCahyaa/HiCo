@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_lge_timelm.git",
+  "codename": "timelm",
+  "commit": "add9cd31ad6eccb44f5e6efdda7489915a754870",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cb9afcf0db950076e06125428b926f6b9a604f8cbf485e379c4783a723bc0511",
+      "size": 614
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "21c14fd2275b7ccbe189ca14cd03a7faf1dfa5238a653f45cf926a7814813590",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "419ac3ca6bf4d037147717712e0097ba5b6a88beeb25620dd0c5ce3a91f7a62d",
+      "size": 7532
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d485ecf138e713697d5103696f7c27b21457e91047f78ea9eeb87dc72b540c09",
+      "size": 16551
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "bd7a1c941cbf9974c7ad285188b02de5efc1ebe79dfbbb73a5fab9dd8b5255bb",
+      "size": 2387
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7146a6dda260b6fe3b3e2f71714d590d25407f0e1884b886041e4dde00c8bffe",
+      "size": 44116
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "687fbf003052eee895c1fe8c59c64aae3bc6286f16b6396ca4e9ba49384dc798",
+      "size": 224
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4048e3b93a96025aa231e3e7040529a60ce1f925d848078e9da396c2d0e9af6b",
+      "size": 8737
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lge_timelm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-13T11:14:28Z",
+  "vendor": "lge"
+}

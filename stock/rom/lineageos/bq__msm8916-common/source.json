@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_msm8916-common.git",
+  "codename": "msm8916-common",
+  "commit": "c3cfa0e503ceb84eb8b738074bfaa043620e9e8a",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ab10103238971ebb476fdd4133483f0c3202f605039895b98516f2e259bd532f",
+      "size": 4466
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "21bd099b9717b65a05d95cfb9d1d6d41f5d498becc1fa87503ee7e795e06e131",
+      "size": 5042
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f875b7a2ef382ba0aeaccb3915bbc52872b406bc6321ff2d51f19fe091e1de6c",
+      "size": 195
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "e46d776c854a82a98d5c7d97b5f40b63f520c5eb8fcef2b2316fd3dd59815478",
+      "size": 113
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d146e1a901c7862ae44317071f46c137c1a4b0fc84b5e80eb9afeb874adee7ea",
+      "size": 3291
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_bq_msm8916-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:57Z",
+  "vendor": "bq"
+}

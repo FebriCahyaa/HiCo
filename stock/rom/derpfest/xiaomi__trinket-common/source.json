@@ -1,0 +1,52 @@
+{
+  "branch": "11",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_trinket-common.git",
+  "codename": "trinket-common",
+  "commit": "68a2ea1fc7d90d469e3bc146f49d76d6594f54b5",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4a7a5ffb477bcfd5fc02d363bf3a9cb393992cad9f758406ffa128f30329a1ce",
+      "size": 4787
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "670fabc99d710280be3355c0aa83febae70f699847d4f3b1295d7ced4b16d140",
+      "size": 6242
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ad56121dcb6f7c9d526c067e9a8aee1912a29eda2f93e984d4120d240b590298",
+      "size": 2618
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9c2d80377e7a4672d9acb9cc8ba429761305840a26c1c504723b09dfe9f20911",
+      "size": 42167
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "05a95a220d20957afadd0817f95c7e35586e54888ad65f02a2c261b653a0047b",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e36bb4ed95e01f2b8911531dd7beb39d6e91903c96c258d21a01cf19b8a678bc",
+      "size": 1851
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "38b697a343a8368100bb755a7eba814bb3433d33fefa9d547cb6534b38f10525",
+      "size": 3731
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_trinket-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-01-20T21:22:50Z",
+  "vendor": "xiaomi"
+}

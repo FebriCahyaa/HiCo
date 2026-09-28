@@ -1,0 +1,42 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_taoyao-camera.git",
+  "codename": "taoyao-camera",
+  "commit": "bf0a260d3ef0ebb7603b2ce8e50625cc8547dc5e",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9892cc03770d064e2bbbb8e8966d24ebccdc5961678ac5f570ca43008bd1a4ec",
+      "size": 320
+    },
+    {
+      "path": "device.mk",
+      "sha256": "76e4eb9b2f962c4513faddf81ae9346f60ceef5fc768dde9f52e7e81a343b693",
+      "size": 685
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4a2e9f4b790e4531d523079d4a8439f18f4c1c99c9a0c9c0304abd9c7717b467",
+      "size": 1330
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "800d4efab30916f635b35d765bf5e868c8c77f9be2b5f2da2f4dbee878399fa1",
+      "size": 495
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c01bb5d25051b5017a22dda842338222cd7bba4d2da9096cfd8177320d227db5",
+      "size": 175
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_taoyao-camera",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:59Z",
+  "vendor": "xiaomi"
+}

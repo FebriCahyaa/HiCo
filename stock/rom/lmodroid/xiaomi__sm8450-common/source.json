@@ -1,0 +1,42 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_sm8450-common.git",
+  "codename": "sm8450-common",
+  "commit": "8696bea96043d9913a357f7a40dd451e907b9815",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "490c94a80ef8c34577b7ccbfc9904c4ea6653162780b83f09e87e8a50c6720fc",
+      "size": 1360
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7a59a38eb93ca5757ac2203b17fd5cd4e78f6571f68e4f6cad4c62be4428004b",
+      "size": 8598
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a2ff0399b9665235a9903fadafece01ed76b4630ae01e5d3d71f0bdf2e317447",
+      "size": 3813
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "15dd5112dca6dcd55a129b3b95b2c24c2071582b605405e866b4908cb9050395",
+      "size": 45225
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "86a822dfdaefdd9b9ccd34409ec88ecff6cbaeaf21e0f4e04d71aa50b1162c6b",
+      "size": 1770
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8450-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-03T03:08:17Z",
+  "vendor": "xiaomi"
+}

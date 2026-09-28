@@ -1,0 +1,17 @@
+# Bluetooth
+bluetooth.device.default_name=realme GT Master
+
+# Fingerprint
+persist.vendor.fp.template_updateflag=V1
+
+# Graphics
+debug.sf.frame_rate_multiple_threshold=60
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.set_display_power_timer_ms=1000
+
+# Radio
+persist.radio.multisim.config=dsds
+
+# USB
+vendor.usb.product_string=realme GT Master

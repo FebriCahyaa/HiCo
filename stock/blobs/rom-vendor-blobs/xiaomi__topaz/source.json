@@ -1,0 +1,92 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_xiaomi_topaz.git",
+  "codename": "topaz",
+  "commit": "beabf345239b5992e54acce87fec6669e0d04ec9",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "41e457d96768b5f8bd14c14d7cb119e5f8fdc047905911799b90c716b0982a4a",
+      "size": 610
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "12d47370fc02e9be9f911c757518d37fa18d66474f251ed02f09c5c288403a4e",
+      "size": 530
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "16290622dd40da9a2d11b149bbdb549d0ef1ae3e8ef962ff10f290e05da5579b",
+      "size": 1488
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "950ee3ed908d056b26ee6f49e0bdcf316f603f7eadd9065a5551eff5420a2be7",
+      "size": 336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "4b14004e513c6df9ab4273762a2e3ba411cd97ff0704dbae64b28b5ede3be1e4",
+      "size": 1568
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "da1a34037d35ee43dce0b1b5951c991db4bfde1311f185fac7921fc136610f25",
+      "size": 448
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "12a2e0d7148c61e8475c3959807c7eac6acbb102390c92980376301d61d612f3",
+      "size": 1552
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "2e8ee0cd957ce0b02439f17262c7107ab6acac3090695533b59e169e6e2a4c89",
+      "size": 1168
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "b8b17653cdc2ac554c22fd0f8d80a1f639a226026304fa38bd3a5b42bf711487",
+      "size": 1856
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "fceab79cabd924ebc8436de0ba8a54ac814053950e973ef376fee7fdf9e78739",
+      "size": 1088
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "5ac42f0a34719c4381c62248296dac97b30acb2b12f38d3b46e25f7bc05c1287",
+      "size": 1760
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "81643e038b0acb41733e3617d13387ad43aa416da67163c84fe6f178e1046077",
+      "size": 1568
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-videochat.conf",
+      "sha256": "da365afdfd883c77d7afa093110da60b0c75acd39b410ec0ccff1d8553d7222c",
+      "size": 1520
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "d1cc3e0bc9ddcc0e1bd2f4978a67cd6438cb8fb9fbf025447ec7e5461e0a78f5",
+      "size": 384
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_topaz",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

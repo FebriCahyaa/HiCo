@@ -1,0 +1,46 @@
+# Audio
+af.fast_track_multiplier=1
+audio_hal.force_voice_config=wide
+
+# Display
+ro.opengles.version=196610
+
+# HWC
+debug.hwc.force_gpu=1
+ro.sf.disable_triple_buffer=0
+
+# Wifi
+wifi.interface=wlan0
+net.tethering.noprovisioning=true
+
+# Camera
+camera2.portability.force_api=1
+
+# misc
+ro.chipname=exynos7580
+ro.arch=exynos7580
+
+# Strict Mode
+persist.sys.strictmode.disable=true
+
+# USB
+persist.sys.usb.config=mtp
+
+# Bluetooth
+qcom.bluetooth.soc=rome
+
+# sdcardfs
+ro.sys.sdcardfs=true
+
+# Allows healthd to boot directly from charger mode rather than initiating a reboot.
+ro.enable_boot_charger_mode=1
+
+# Default OMX service to non-Treble
+persist.media.treble_omx=false
+
+# Factory Reset Protection
+ro.frp.pst=/dev/block/platform/13540000.dwmmc0/by-name/PERSISTENT
+
+# Network
+# Define default initial receive window size in segments.
+net.tcp.default_init_rwnd=60

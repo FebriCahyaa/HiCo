@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "1bb6c96b14848701bbcda5f70e1309369ab3f7b4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e50540b9728e281f82c94712231b7080143e72bbf0538bf7f7de0b541e5bc12b",
+      "size": 622
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bd7b1d580d7ecef4c35c05915d769769a8c7e30da5a16c50e94c19cc0df6cd51",
+      "size": 3929
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b4ab85ba818207b8059aa1b35974b5fc70c6c321ed865a21617771bb943bb0f8",
+      "size": 2937
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7fc9111e8827437ed29d3e54ded7200bccd1ff9a872dd393d15dd44faecce8de",
+      "size": 42442
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a00442376d44285f95989b86e67e7ae9a364313e4ea3adf75d9c49765b2088c",
+      "size": 81
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b66aee84b56e7182b5f11b6e30eda6a1c7ba13f8e5167e73f905ea3970dc253d",
+      "size": 1487
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3bcfe6c2f8919f980037731302b34a143a26d4ab277492d57dfdd2e871dc453e",
+      "size": 5156
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-26T03:09:53Z",
+  "vendor": "oneplus"
+}

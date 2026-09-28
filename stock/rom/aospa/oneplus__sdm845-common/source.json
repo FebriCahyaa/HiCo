@@ -1,0 +1,42 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_oneplus_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "8954b09025c57d5a63411ac317e52b6120945756",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bf904dbddde98118836bf21a69537272a43f5024d8960abc9c5aa96d109fa9e6",
+      "size": 743
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "851b86fc45e2ec11ddeab41f80ae18af6cbf84f799b6f8360e67ee9b9685ac21",
+      "size": 4837
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "61aedba19bc729d527c4d39e6bdc044157f43a5a8048fc9d9fc28b96a23b0266",
+      "size": 2128
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "610dfe90785ad3db74a3806bf8693b9689e8c12ecae8f68d3ee877f35bc99692",
+      "size": 17007
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e9af3275221a38e3d680efe8f5cb04dc7d0913d12a877dbc2139b34ed4c646b2",
+      "size": 9102
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T19:52:01Z",
+  "vendor": "oneplus"
+}

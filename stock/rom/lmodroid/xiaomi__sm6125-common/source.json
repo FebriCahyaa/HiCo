@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_sm6125-common.git",
+  "codename": "sm6125-common",
+  "commit": "d65dad475601f1e0845cfdf7a06809f928cfb439",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bed27239a71858d5f16024ed189152ff82344e8d9ecd0bfe6a504d7becaa3aa0",
+      "size": 648
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9c8fe8dc5f43d378c1aedf2193801dad01ee08b0800894a2bcf31026a800ccd9",
+      "size": 4271
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c00a5ede48da5d0800c38a134b3c0592a252c8763f23e93ff0c5a90424f85465",
+      "size": 1554
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "784bc3b8064c375edd10da94f0dbf0970a332312b7ba9988f0c40e6ae58ff90a",
+      "size": 25302
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3280c6df3d890e078526c6f8080e15b0ad7fee17dd443d40cb0dfa2111e5a97e",
+      "size": 223
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d1776b10a3d4bbe4025ea1f5494fe55ea8527e8e1ef585394ee9c03a3008895a",
+      "size": 1427
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "465342390b266489f21336c26f54c92228d8043d8af13e662bacbf0ceab22c7d",
+      "size": 7764
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6125-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:27:24Z",
+  "vendor": "xiaomi"
+}

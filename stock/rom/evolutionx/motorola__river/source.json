@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_river.git",
+  "codename": "river",
+  "commit": "ea67c5ffd9998e633b67bf979870a5eb883d34be",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d3fb769f6b9fd0b2ac4fec67d7ad784753d5dbb08d8c7b7ea86b255677eeaeb5",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "11e9fbcb34ff000d1368309abc7594f5ab27920f143686d3a9d851ae95ca59e5",
+      "size": 1080
+    },
+    {
+      "path": "device.mk",
+      "sha256": "55377af2e539569894aa78d8f2ba4dff6e8cdf428a28ae410cafd4d1f464f65a",
+      "size": 2551
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2f133196a7e66ef90c2d9b0072ce5cb4aa9aa834e811c2e728f3eda8cfbb2697",
+      "size": 2506
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0593a44cabafb40e2b129ac4fe6082d6f49c674ae1b01e5e5e89fd7e9e641df7",
+      "size": 16624
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "541b833ca2f930b0359114ca5233404e1e73b102f349bfc92c6639d9b8454338",
+      "size": 1049
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_river",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:47Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_oppo_msm8974-common.git",
+  "codename": "msm8974-common",
+  "commit": "06cfb4bc7c7a4a437e321efdfc2f8520fec9a718",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "196a92c086d8c27d9ddea65241a9697b2e4a857d55626cefc0b49acec92e9cc4",
+      "size": 816
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c7f185c33ab5c367010b48516e32459840e840e991ab99120af82d0efd5b2ac8",
+      "size": 4431
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "02772b8ef03a59fe5a54b457069aadf0d0143f1e09fe7399d7aa068450ccf389",
+      "size": 1946
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9a6efe00eef7bdb4ebc637b2a569b36c2e20f281d44c4447a3ac5685a5a146b7",
+      "size": 2171
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "922f7198cb756581e1b9eb0acdd79ced54a4d067ea7bbf5a967d1ee09b8161e3",
+      "size": 205
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4a5291659e7c28ebb11e2e7f26c374493dac5b6273d164d30a2dd38822ed1745",
+      "size": 4998
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cdd47664147db2e8cf4b85801dd86d70968f5f39bbc55a396b9acf81eecada90",
+      "size": 1710
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oppo_msm8974-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-01-31T21:07:57Z",
+  "vendor": "oppo"
+}

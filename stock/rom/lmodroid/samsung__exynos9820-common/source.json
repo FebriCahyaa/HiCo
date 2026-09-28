@@ -1,0 +1,67 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_exynos9820-common.git",
+  "codename": "exynos9820-common",
+  "commit": "90a0743cb6b9dcbfa5aa68d06fb30d01aa58b4ea",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f44dd8b028ba1ad6c5e78fcf2acc48d715e42793f960217ca860be1f1b9187f3",
+      "size": 184
+    },
+    {
+      "path": "BoardConfig9820.mk",
+      "sha256": "659e5ae4bd77a61963dfcaf92d23454479ccea2628f3d1d3188dab46e7c5faaa",
+      "size": 1226
+    },
+    {
+      "path": "BoardConfig9825-r.mk",
+      "sha256": "5c24fa87638c122a08fae071d5e788c6a1b0410d3fbd13c1dbebec0ff5d249dd",
+      "size": 1710
+    },
+    {
+      "path": "BoardConfig9825.mk",
+      "sha256": "a89f74267d64a5ea907341d7d02ae2f49b00a975fa66849c00fd618672b94355",
+      "size": 1432
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5561ef7f497219cd66968cc49a866f19a3f31eea96710854f8f4761c22f5a65a",
+      "size": 6112
+    },
+    {
+      "path": "BoardConfigPieLaunched.mk",
+      "sha256": "1da46c166b10b93763ed85670787f932bdd1020b136702abc96bedb4197dadd3",
+      "size": 1466
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "5b0a68356a09e40a103cca1c2b9dde14f8df4be2863b230c1f366938e7e6d0bf",
+      "size": 3151
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ca3837c973ac382752ddc78e1d9f0768dbc5d65e66880b792ffb0145ad2dc4c8",
+      "size": 2573
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "60741a4315bd332a710a54be51e3d5a537bc7152937ca012f38646d5b81e9ac4",
+      "size": 7484
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e94f0f510493e424ccde5e832ecb519ddf04225378eb3389c412bf090e5706be",
+      "size": 2397
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_exynos9820-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:07:34Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_star-common.git",
+  "codename": "star-common",
+  "commit": "1b0d73e3688f7fc7bea8145ab29f8628e2277b44",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "dbec13c19bd3eba0a41611323cb2816682b65a6fe2440c69f8baf085c6583d7d",
+      "size": 224
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2ec64f8c85859e5410ab05dfd7a7dceae2711a3a1873b936a8472efba458c253",
+      "size": 3542
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2dcc96b7278a8330e89a732d637e0a69fa80357b19067a82172d39d2fd5dd83e",
+      "size": 1229
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "adcc859cc108cbd7d74150f9115f52e60184a89454a3ad1ea2bd337fb0a8a9a5",
+      "size": 237
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "338feaaa6fbe4b5624ee1956ffdbd5ec2cd20c1180ee3448f77400c8b37a08c3",
+      "size": 94
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8726932c1e580860ba82d73a099308922dcb2f88ddadbab546fde563c9e04f6a",
+      "size": 246
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_star-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:47Z",
+  "vendor": "samsung"
+}

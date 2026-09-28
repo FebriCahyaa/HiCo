@@ -1,0 +1,62 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_walleye.git",
+  "codename": "walleye",
+  "commit": "e7e5892ae8bf3f6d4e6bd7293b27a47333cd7dff",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5dbc7316daab96d7a38451b1472eadf6c920993686e33a862bf922438b76e971",
+      "size": 109
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0795da1439b3461c62e654fe97c509790749bd4da864781c14f503f1a7758936",
+      "size": 854
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2bcda207474095dacdb75e7afa24fcf6db0103e5900dc821ae2032c1e57b8f76",
+      "size": 1772
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ee77408ee0fa93eee60ebde851594799e87a3080169cb88e94ea5200ef486879",
+      "size": 6248
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6c3b28f0fd076fcec0d4644534c56ec196d88891db3807f6998b06fa60a00463",
+      "size": 3065
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6475cde3e08e5450d3addc4277ca68395ef8dd85cee11fdbfa406fb564749ba0",
+      "size": 11068
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_walleye",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-07-20T15:49:26Z",
+  "vendor": "google"
+}
