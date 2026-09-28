@@ -16,7 +16,7 @@ LOCAL_SRC_FILES := $(LOCAL_SRC_FILES:$(LOCAL_PATH)/%=%)
 
 # Architecture-tuned flags
 ifeq ($(TARGET_ARCH_ABI),arm64-v8a)
-  HICO_ARCH_FLAGS := -march=armv8.2-a+crypto+dotprod+fp16 -mtune=cortex-a55 -mfpu=neon-fp-armv8
+  HICO_ARCH_FLAGS := -march=armv8.2-a+crypto+dotprod+fp16 -mtune=cortex-a55
 else ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
   HICO_ARCH_FLAGS := -march=armv7-a -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a53
 else
