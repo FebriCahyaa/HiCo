@@ -77,6 +77,11 @@ struct Config {
     int poll_interval = 2;             ///< s, temperature check period while a game runs
     int exit_delay = 3;                ///< s, grace period after the game leaves before restoring
     bool notify = true;                ///< Android notification when the safety guard trips
+    /// Periodically fetches docs/integrity/revoked.txt from this project's own GitHub repository
+    /// (plain HTTPS, no device data sent — see docs/INTEGRITY.md) to check whether this exact,
+    /// validly-signed build was later published as compromised. Best-effort: never blocks
+    /// startup, and a device without curl/wget or without network simply never gets this check.
+    bool check_revocation = true;
     int log_level = 2;                 ///< 0 error, 1 warn, 2 info, 3 debug
     /// Social media apps (social_level); starts with the common ones.
     std::vector<std::string> social_apps = default_social_apps();

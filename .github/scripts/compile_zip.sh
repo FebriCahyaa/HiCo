@@ -44,8 +44,22 @@ build_flavor() { # <flavor> <update json> <abi>...
 	# devices/ is repository data only: it is compiled into hicod (tools/gen_device_db.py)
 	# and never shipped as files.
 
-	# Integrity: customize.sh/verify.sh check every extracted file against these.
+	# Integrity: customize.sh/verify.sh check every extracted file against these (corruption only —
+	# no private key, so this alone cannot prove authenticity, see docs/INTEGRITY.md).
 	bash .github/scripts/gen_sha256sum.sh "$stage" >/dev/null
+
+	# Signed release manifest (docs/INTEGRITY.md): hicod itself checks this at every start and
+	# periodically while it runs, with the public key already compiled into it. Only real releases
+	# carry HICO_SIGN_PRIVATE_KEY (release.yml); an ordinary CI build ships without one, and hicod
+	# treats that the same as an older build that predates this feature — never a failure on its own.
+	# Redirected to stderr: this function's stdout is captured whole as its return value (the zip
+	# name, at the very end) by build_flavor()'s callers, exactly like gen_sha256sum.sh above.
+	if [ -n "${HICO_SIGN_PRIVATE_KEY:-}" ]; then
+		python3 tools/sign_release.py --stage "$stage" --version "$version ($release_code)" \
+			--hico-sign "${HICO_SIGN_BIN:-build/hico_sign}" --priv "$HICO_SIGN_PRIVATE_KEY" >&2
+	else
+		echo "::warning::HICO_SIGN_PRIVATE_KEY not set — $flavor ships without integrity.manifest (docs/INTEGRITY.md)." >&2
+	fi
 
 	zip="hico-$version-$release_code-$flavor.zip"
 	rm -f "$GITHUB_WORKSPACE/$zip"

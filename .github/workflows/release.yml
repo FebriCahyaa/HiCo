@@ -125,6 +125,26 @@ jobs:
           bun install --frozen-lockfile
           bun run build
 
+      - name: Prepare release signing key
+        # Optional (docs/INTEGRITY.md): without this secret, compile_zip.sh ships the zip without
+        # an integrity.manifest, exactly like every release before this feature existed — it is
+        # never a reason to fail the release. Written under RUNNER_TEMP, which the runner discards
+        # at the end of the job; never written into the workspace or logged.
+        run: |
+          if [ -n "${HICO_INTEGRITY_PRIVATE_KEY:-}" ]; then
+            key_file="$RUNNER_TEMP/hico_sign_priv.hex"
+            umask 077
+            printf '%s\n' "$HICO_INTEGRITY_PRIVATE_KEY" >"$key_file"
+            {
+              echo "HICO_SIGN_PRIVATE_KEY=$key_file"
+              echo "HICO_SIGN_BIN=$GITHUB_WORKSPACE/build/hico_sign"
+            } >>"$GITHUB_ENV"
+          else
+            echo "::warning::Secret HICO_INTEGRITY_PRIVATE_KEY is not set — this release ships without integrity.manifest. See docs/INTEGRITY.md to set it up."
+          fi
+        env:
+          HICO_INTEGRITY_PRIVATE_KEY: ${{ secrets.HICO_INTEGRITY_PRIVATE_KEY }}
+
       - name: Build module
         id: build
         uses: ./.github/actions/build-module

@@ -55,6 +55,7 @@ const std::array kFields{
     Field{{"poll_interval", "int", 1, 10, "Seconds between temperature checks while gaming"}, &Config::poll_interval},
     Field{{"exit_delay", "int", 0, 30, "Seconds to wait after the game leaves before restoring"}, &Config::exit_delay},
     Field{{"notify", "bool", 0, 1, "Post a notification when the safety guard trips"}, &Config::notify},
+    Field{{"check_revocation", "bool", 0, 1, "Check this project's own GitHub repo for a published compromise of this exact build"}, &Config::check_revocation},
     Field{{"log_level", "int", 0, 3, "0 error, 1 warning, 2 info, 3 debug"}, &Config::log_level},
     Field{{"social_apps", "list", 0, 0, "Social media apps (social_level)"}, &Config::social_apps},
     Field{{"media_apps", "list", 0, 0, "Streaming, video and music apps (media_level)"}, &Config::media_apps},

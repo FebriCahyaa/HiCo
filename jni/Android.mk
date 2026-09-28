@@ -9,6 +9,9 @@ LOCAL_MODULE := hicod
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 
 LOCAL_SRC_FILES := $(wildcard $(LOCAL_PATH)/src/*.cpp)
+# Vendored Ed25519 + SHA-256 (jni/src/vendor/*/NOTICE.md): verify release signatures on device.
+LOCAL_SRC_FILES += $(wildcard $(LOCAL_PATH)/src/vendor/ed25519/*.c)
+LOCAL_SRC_FILES += $(wildcard $(LOCAL_PATH)/src/vendor/sha256/*.c)
 LOCAL_SRC_FILES := $(LOCAL_SRC_FILES:$(LOCAL_PATH)/%=%)
 
 LOCAL_CPPFLAGS += -std=c++20 -fexceptions -O2 -flto -DHICO_VERSION=\"$(HICO_VERSION)\"

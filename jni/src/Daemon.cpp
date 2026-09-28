@@ -11,6 +11,7 @@
 #include "Fs.hpp"
 #include "HiCo.hpp"
 #include "Log.hpp"
+#include "Sha256.hpp"
 
 #include <algorithm>
 #include <array>
@@ -50,6 +51,13 @@ namespace {
 constexpr std::chrono::seconds kIdleInterval{30};
 /// Re-check period while fluxd is installed but not running yet (boot order between modules is not fixed).
 constexpr std::chrono::seconds kFluxStartingInterval{5};
+/// How often the signed release manifest is re-verified while the daemon runs (docs/INTEGRITY.md);
+/// always additionally checked once on the first tick after (re)start.
+constexpr std::chrono::minutes kIntegrityInterval{30};
+/// How often the revocation list (docs/INTEGRITY.md, "Lapis 4") is fetched — much less often
+/// than the local manifest check: it only ever matters after the author publishes something new
+/// to it, and every fetch is a real network request.
+constexpr std::chrono::hours kRevocationInterval{24};
 
 /// Posts an Android notification as the shell user, like fluxd does.
 void notify(const std::string &message) {
@@ -138,6 +146,73 @@ void Daemon::recover() {
          r.failed);
 }
 
+void Daemon::check_integrity(Clock::time_point now) {
+    if (next_integrity_check_ && now < *next_integrity_check_) return;
+    next_integrity_check_ = now + kIntegrityInterval;
+
+    integrity_ = integrity::verify_manifest(HICO_MODULE_DIR);
+    integrity_signals_ = integrity::runtime_signals();
+    if (integrity_revoked_) {
+        // Sticky: re-applied every time, so this 30-minute refresh (which knows nothing about
+        // revocation) can never make a revoked build quietly look fine again in between the much
+        // less frequent revocation re-checks below.
+        integrity_.status = integrity::Status::Revoked;
+        integrity_.reason = revocation_reason_;
+    }
+    if (integrity_.status == integrity::Status::Ok) {
+        integrity_notified_ = false; // a fresh reinstall clears a previous failure
+    }
+    if (integrity_failed()) {
+        LOGE("integrity: {} (manifest {})", integrity_.reason,
+            integrity_.manifest_version.empty() ? "?" : integrity_.manifest_version);
+    } else {
+        // Ok or Missing (an older build, or the manifest was stripped) — neither is a failure.
+        LOGD("integrity: {}", integrity_.reason);
+    }
+    if (integrity_signals_.debugger_attached || !integrity_signals_.hook_libraries.empty()) {
+        // Informational only (see Integrity.hpp): logged and shown in status, never itself a
+        // reason to fail-safe — both signals have too many legitimate explanations to act on
+        // alone (see docs/INTEGRITY.md).
+        LOGW("integrity: runtime signal(s) present (debugger_attached={}, hooks={})",
+            integrity_signals_.debugger_attached, integrity_signals_.hook_libraries.size());
+    }
+
+    check_revocation(now);
+}
+
+void Daemon::check_revocation(Clock::time_point now) {
+    if (!cfg_.check_revocation) return;
+    if (integrity_.status != integrity::Status::Ok) return; // nothing to add to an already-known verdict
+    if (next_revocation_check_ && now < *next_revocation_check_) return;
+    next_revocation_check_ = now + kRevocationInterval;
+
+    const auto own_hash = sha256::hash_file(fs::real(std::string(HICO_MODULE_DIR) + "/system/bin/hicod"));
+    if (!own_hash) return; // could not hash ourselves: leave the local manifest's verdict alone
+
+    const auto fetched = revocation_fetcher_ ? revocation_fetcher_() : std::nullopt;
+    if (!fetched) {
+        LOGD("revocation: could not fetch (no HTTPS tool, no network, or it timed out) — trying again later");
+        return;
+    }
+    const auto list = integrity::parse_revocation_list(*fetched);
+    if (!list) {
+        LOGW("revocation: fetched list did not parse as one, ignoring it");
+        return;
+    }
+    if (integrity::is_revoked(*list, sha256::to_hex(*own_hash))) {
+        revocation_reason_ =
+            std::format("this build was published as compromised (revocation list updated {})", list->updated_at);
+        integrity_revoked_ = true;
+        integrity_.status = integrity::Status::Revoked; // this tick's value; check_integrity() keeps it sticky after
+        integrity_.reason = revocation_reason_;
+        LOGE("revocation: {}", integrity_.reason);
+    }
+}
+
+bool Daemon::integrity_failed() const {
+    return integrity_.status != integrity::Status::Ok && integrity_.status != integrity::Status::Missing;
+}
+
 std::chrono::milliseconds Daemon::next_timeout() const {
     if (state_ == State::Boost || state_ == State::Relaxed || state_ == State::Safety) {
         return std::chrono::seconds(cfg_.poll_interval);
@@ -205,6 +280,21 @@ void Daemon::tick(Clock::time_point now) {
     last_tick_ = now;
 
     flux_ = flux::probe();
+
+    check_integrity(now);
+    if (integrity_failed()) {
+        // Ahead of mode=off and the Flux check on purpose: this must hold regardless of
+        // anything else, and it must never unlock even once before the check runs.
+        if (cfg_.notify && !integrity_notified_) {
+            notify(std::format("HiCo Thermal integrity check failed ({}). Thermal stays at stock "
+                               "until this is fixed (reinstall from the official release).",
+                               integrity_.reason));
+            integrity_notified_ = true;
+        }
+        transition(State::Disabled, now, "integrity: " + integrity_.reason);
+        publish({});
+        return;
+    }
 
     if (cfg_.mode == Mode::Off) {
         transition(State::Disabled, now, "mode=off");
@@ -418,6 +508,10 @@ void Daemon::publish(const thermal::Temperatures &t) const {
     kv("backends", controller_.backend_names());
     kv("pid", std::to_string(getpid()));
     kv("version", HICO_VERSION);
+    kv("integrity", std::string(integrity::to_string(integrity_.status)));
+    kv("integrity_reason", integrity_.reason);
+    kv("integrity_debugger", integrity_signals_.debugger_attached ? "1" : "0");
+    kv("integrity_hooks", std::to_string(integrity_signals_.hook_libraries.size()));
 
     fs::write_atomic(HICO_STATE_FILE, out, 0600);
 }
@@ -433,7 +527,10 @@ void Daemon::update_module_description() {
     case State::Relaxed: status = "\xF0\x9F\x8C\xA1\xEF\xB8\x8F Relaxed thermal (" + reason_ + ")"; break;
     case State::Safety: status = "\xE2\x9A\xA0\xEF\xB8\x8F Safety guard: " + reason_; break;
     case State::Suspended: status = "\xE2\x9D\x8C Flux Tweaks is required (" + reason_ + ")"; break;
-    case State::Disabled: status = "\xE2\x8F\xB8\xEF\xB8\x8F Disabled in settings"; break;
+    case State::Disabled:
+        status = integrity_failed() ? "\xF0\x9F\x9B\x91 Integrity check failed — thermal stays at stock"
+                                    : "\xE2\x8F\xB8\xEF\xB8\x8F Disabled in settings";
+        break;
     }
 
     std::string out;

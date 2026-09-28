@@ -94,6 +94,14 @@ put /vendor/etc/.tp/.thermal_policy_00 'x'
 	fail "thermal sources MediaTek policy"
 "$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/.tp/.thermal_policy_00"' || fail "thermal sources MediaTek policy file"
 
+# ── Integrity (docs/INTEGRITY.md) ───────────────────────────────────────────
+# No integrity.manifest shipped: reported distinctly from a real failure, and exits nonzero
+# (this command is a plain yes/no check; the daemon's own fail-open policy for this same case
+# is tested separately in tests/tests.cpp, not here).
+"$HICOD" integrity 2>/dev/null && fail "integrity exited 0 with no manifest"
+"$HICOD" integrity | grep -q '^status: missing$' || fail "integrity status (missing)"
+"$HICOD" integrity --json | grep -q '"status":"missing"' || fail "integrity --json status (missing)"
+
 # ── Daemon ───────────────────────────────────────────────────────────────────
 "$HICOD" run 2>"$HICO_ROOT/log" &
 PID=$!

@@ -13,9 +13,12 @@
 #include "Daemon.hpp"
 #include "DeviceDatabase.hpp"
 #include "DeviceProfile.hpp"
+#include "Ed25519.hpp"
 #include "FluxLink.hpp"
 #include "Fs.hpp"
 #include "HiCo.hpp"
+#include "Integrity.hpp"
+#include "IntegrityKey.hpp"
 #include "Journal.hpp"
 #include "Log.hpp"
 #include "MiCrypt.hpp"
@@ -23,6 +26,7 @@
 #include "Props.hpp"
 #include "SafetyGuard.hpp"
 #include "Sessions.hpp"
+#include "Sha256.hpp"
 #include "ThermalBackend.hpp"
 #include "ThermalConfig.hpp"
 #include "ThermalController.hpp"
@@ -127,6 +131,30 @@ void start_game(const std::string &pkg, int profile = 1) {
 void stop_game() {
     put("/data/adb/.config/flux/gameinfo", "NULL 0 0\n");
     put("/data/adb/.config/flux/current_profile", "3\n");
+}
+
+// The seed behind IntegrityKey.hpp's checked-in placeholder public key (see that file's own
+// comment) — reproduced here so tests can sign manifests the exact way a real release does,
+// without a real private key ever existing in this repository.
+ed25519::Seed integrity_dev_seed() {
+    ed25519::Seed s{};
+    for (size_t i = 0; i < s.size(); ++i) s[i] = static_cast<unsigned char>(i + 7);
+    return s;
+}
+
+/// Writes @p files (path -> content, relative to the module dir) under HICO_MODULE_DIR and a
+/// validly-signed integrity.manifest covering exactly those paths.
+void sign_test_manifest(const std::vector<std::pair<std::string, std::string>> &files,
+                        const std::string &version = "1.0.0-test") {
+    const auto kp = ed25519::keypair_from_seed(integrity_dev_seed());
+    std::string unsigned_text =
+        "schema=hico.integrity-manifest.v1\nversion=" + version + "\nbuilt_at=2026-01-01T00:00:00Z\n";
+    for (const auto &[path, content] : files) {
+        put(std::string(HICO_MODULE_DIR) + "/" + path, content);
+        unsigned_text += "file " + sha256::to_hex(sha256::hash(content)) + " " + path + "\n";
+    }
+    const auto sig = ed25519::sign(unsigned_text, kp.public_key, kp.private_key);
+    put(std::string(HICO_MODULE_DIR) + "/integrity.manifest", unsigned_text + "signature=" + ed25519::to_hex(sig) + "\n");
 }
 
 /// A Snapdragon Xiaomi phone with the usual thermal stack.
@@ -1370,6 +1398,204 @@ void test_graduated_safety() {
     c.restore();
 }
 
+void test_integrity_manifest() {
+    // parse_manifest: format edge cases, independent of any Daemon or embedded key.
+    const std::string good = "schema=hico.integrity-manifest.v1\nversion=1.0.0\nbuilt_at=2026-01-01T00:00:00Z\n"
+                             "file " +
+                             std::string(64, 'a') + " system/bin/hicod\n" + "signature=" + std::string(128, 'b') + "\n";
+    const auto parsed = integrity::parse_manifest(good);
+    CHECK(parsed.has_value());
+    CHECK_EQ(parsed->schema, std::string("hico.integrity-manifest.v1"));
+    CHECK_EQ(parsed->version, std::string("1.0.0"));
+    CHECK_EQ(parsed->files.size(), 1u);
+    CHECK_EQ(parsed->files[0].first, std::string("system/bin/hicod"));
+    CHECK_EQ(parsed->signature_hex, std::string(128, 'b'));
+    // Everything up to (not including) the signature line, unchanged.
+    CHECK(parsed->signed_message.find("signature=") == std::string::npos);
+    CHECK(parsed->signed_message.ends_with("system/bin/hicod\n"));
+
+    CHECK(!integrity::parse_manifest("")); // empty
+    CHECK(!integrity::parse_manifest("schema=hico.integrity-manifest.v1\n")); // no signature line at all
+    CHECK(!integrity::parse_manifest("schema=something-else\nsignature=" + std::string(128, 'b') + "\n"));
+    CHECK(!integrity::parse_manifest("schema=hico.integrity-manifest.v1\nsignature=short\n")); // bad sig length
+    CHECK(!integrity::parse_manifest(good + "extra unrecognised line\n" + "signature=" + std::string(128, 'c') +
+                                     "\n")); // unknown line: refused, not silently skipped
+    CHECK(!integrity::parse_manifest("schema=hico.integrity-manifest.v1\n"
+                                     "file badlength system/bin/hicod\n"
+                                     "signature=" +
+                                     std::string(128, 'b') + "\n"));
+
+    // verify_manifest against the real embedded key (IntegrityKey.hpp), signed the way a real
+    // release is signed — this exercises the actual on-device verification path end to end.
+    sign_test_manifest({{"system/bin/hicod", "FAKE_HICOD_BYTES"}, {"service.sh", "#!/system/bin/sh\necho hi\n"}});
+    auto ok = integrity::verify_manifest(HICO_MODULE_DIR);
+    CHECK(ok.ok());
+    CHECK_EQ(ok.files.size(), 2u);
+    CHECK_EQ(ok.manifest_version, std::string("1.0.0-test"));
+
+    // The attack this whole thing exists to catch: edit a covered file after it was signed.
+    put(std::string(HICO_MODULE_DIR) + "/system/bin/hicod", "PATCHED_BYTES");
+    auto tampered = integrity::verify_manifest(HICO_MODULE_DIR);
+    CHECK(!tampered.ok());
+    CHECK(tampered.status == integrity::Status::FileMismatch);
+
+    // A listed file simply deleted.
+    stdfs::remove(g_root + HICO_MODULE_DIR + "/service.sh");
+    put(std::string(HICO_MODULE_DIR) + "/system/bin/hicod", "FAKE_HICOD_BYTES"); // put the binary back first
+    auto missing_file = integrity::verify_manifest(HICO_MODULE_DIR);
+    CHECK(!missing_file.ok());
+    CHECK(missing_file.status == integrity::Status::FileMissing);
+
+    // No manifest at all: reported distinctly from an actual failure (this is the "older build,
+    // or never shipped one" case, and must never be treated the same as tampering).
+    stdfs::remove(g_root + HICO_MODULE_DIR + "/integrity.manifest");
+    auto missing = integrity::verify_manifest(HICO_MODULE_DIR);
+    CHECK_EQ(missing.status, integrity::Status::Missing);
+
+    // A structurally broken manifest.
+    put(std::string(HICO_MODULE_DIR) + "/integrity.manifest", "not a manifest\n");
+    auto bad = integrity::verify_manifest(HICO_MODULE_DIR);
+    CHECK_EQ(bad.status, integrity::Status::BadFormat);
+
+    // A well-formed manifest signed with a DIFFERENT key than the one compiled into this binary:
+    // exactly what forging a manifest without the real private key would produce.
+    ed25519::Seed other_seed{};
+    for (size_t i = 0; i < other_seed.size(); ++i) other_seed[i] = static_cast<unsigned char>(i + 99);
+    const auto other_kp = ed25519::keypair_from_seed(other_seed);
+    CHECK(ed25519::to_hex(other_kp.public_key) != std::string(HICO_INTEGRITY_PUBLIC_KEY_HEX));
+    put(std::string(HICO_MODULE_DIR) + "/system/bin/hicod", "FAKE_HICOD_BYTES");
+    const std::string forged_body = "schema=hico.integrity-manifest.v1\nversion=evil\nbuilt_at=2026-01-01T00:00:00Z\n"
+                                    "file " +
+                                    sha256::to_hex(sha256::hash("FAKE_HICOD_BYTES")) + " system/bin/hicod\n";
+    const auto forged_sig = ed25519::sign(forged_body, other_kp.public_key, other_kp.private_key);
+    put(std::string(HICO_MODULE_DIR) + "/integrity.manifest",
+        forged_body + "signature=" + ed25519::to_hex(forged_sig) + "\n");
+    auto forged = integrity::verify_manifest(HICO_MODULE_DIR);
+    CHECK_EQ(forged.status, integrity::Status::BadSignature);
+}
+
+void test_integrity_daemon_gate() {
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    put("/__props__/ro.board.platform", "taro");
+    write_config("exit_delay=0\n");
+    auto t = Daemon::Clock::time_point{} + 40000s;
+
+    // No manifest shipped (an older build): must not block normal operation.
+    Daemon plain;
+    start_game("com.mobile.legends");
+    plain.tick(t += 1s);
+    CHECK(plain.state() == State::Boost);
+    CHECK_EQ(plain.integrity_report().status, integrity::Status::Missing);
+    stop_game();
+    plain.tick(t += 1s);
+
+    // A validly-signed manifest matching what is actually on disk: normal operation too.
+    sign_test_manifest({{"system/bin/hicod", "FAKE_HICOD_BYTES"}, {"service.sh", "#!/system/bin/sh\n"}});
+    Daemon good;
+    start_game("com.mobile.legends");
+    good.tick(t += 1s);
+    CHECK(good.state() == State::Boost);
+    CHECK(good.integrity_report().ok());
+    CHECK(get(HICO_STATE_FILE).find("integrity=ok") != std::string::npos);
+    good.shutdown();
+    stop_game();
+
+    // Tamper with a covered file: every future tick refuses to unlock, regardless of the game
+    // session, mode, or anything else — and it never even reaches the stock-thermal restore path
+    // with anything having been unlocked first.
+    put(std::string(HICO_MODULE_DIR) + "/system/bin/hicod", "PATCHED");
+    Daemon tampered;
+    start_game("com.mobile.legends");
+    tampered.tick(t += 1s);
+    CHECK(tampered.state() == State::Disabled);
+    CHECK(!tampered.integrity_report().ok());
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running")); // never touched
+    CHECK(get(HICO_MODULE_PROP).find("Integrity check failed") != std::string::npos);
+    // Extreme mode does not override this either.
+    write_config("mode=extreme\nexit_delay=0\n");
+    tampered.reload_config();
+    tampered.tick(t += 1s);
+    CHECK(tampered.state() == State::Disabled);
+    stop_game();
+}
+
+void test_revocation() {
+    // parse_revocation_list / is_revoked: pure, no I/O.
+    const std::string good = "schema=hico.revocation.v1\nupdated_at=2026-02-01T00:00:00Z\n"
+                             "revoked " +
+                             std::string(64, 'a') + "\n" + "revoked " + std::string(64, 'b') + "\n";
+    const auto list = integrity::parse_revocation_list(good);
+    CHECK(list.has_value());
+    CHECK_EQ(list->revoked_hashes.size(), 2u);
+    CHECK(integrity::is_revoked(*list, std::string(64, 'a')));
+    CHECK(!integrity::is_revoked(*list, std::string(64, 'c')));
+
+    CHECK(!integrity::parse_revocation_list("")); // no schema at all
+    CHECK(!integrity::parse_revocation_list("schema=something-else\n"));
+    CHECK(!integrity::parse_revocation_list("schema=hico.revocation.v1\nrevoked short\n")); // bad hash length
+    CHECK(!integrity::parse_revocation_list("schema=hico.revocation.v1\nunexpected line\n"));
+
+    // Daemon: a validly-signed, otherwise-fine build whose own hash is on a fetched list.
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    put("/__props__/ro.board.platform", "taro");
+    write_config("exit_delay=0\n");
+    sign_test_manifest({{"system/bin/hicod", "FAKE_HICOD_BYTES"}, {"service.sh", "#!/system/bin/sh\n"}});
+    const std::string own_hash = sha256::to_hex(sha256::hash("FAKE_HICOD_BYTES"));
+
+    Daemon d;
+    d.set_revocation_fetcher_for_testing([own_hash] {
+        return "schema=hico.revocation.v1\nupdated_at=2026-02-01T00:00:00Z\nrevoked " + own_hash + "\n";
+    });
+    auto t = Daemon::Clock::time_point{} + 50000s;
+    start_game("com.mobile.legends");
+    d.tick(t += 1s); // integrity check always runs on the first tick, revocation runs right after it
+    CHECK(d.state() == State::Disabled);
+    CHECK_EQ(d.integrity_report().status, integrity::Status::Revoked);
+    CHECK(get(HICO_MODULE_PROP).find("Integrity check failed") != std::string::npos);
+
+    // Sticky: 40 minutes later the 30-minute local-manifest recheck runs again on its own (the
+    // manifest itself still verifies fine — nothing local changed) and must not quietly clear it,
+    // even though the once-a-day revocation re-check has not fired again yet.
+    d.tick(t += 2400s);
+    CHECK_EQ(d.integrity_report().status, integrity::Status::Revoked);
+    CHECK(d.state() == State::Disabled);
+    stop_game();
+
+    // A build whose hash is not on the list: unaffected.
+    Daemon clean;
+    clean.set_revocation_fetcher_for_testing(
+        [] { return "schema=hico.revocation.v1\nupdated_at=2026-02-01T00:00:00Z\nrevoked " + std::string(64, 'f') + "\n"; });
+    start_game("com.mobile.legends");
+    clean.tick(t += 1s);
+    CHECK(clean.state() == State::Boost);
+    CHECK_EQ(clean.integrity_report().status, integrity::Status::Ok);
+    stop_game();
+    clean.shutdown();
+
+    // A fetch that fails (no tool, no network, timeout, ...) is fail-open: normal operation.
+    Daemon offline;
+    offline.set_revocation_fetcher_for_testing([] { return std::nullopt; });
+    start_game("com.mobile.legends");
+    offline.tick(t += 1s);
+    CHECK(offline.state() == State::Boost);
+    CHECK_EQ(offline.integrity_report().status, integrity::Status::Ok);
+    stop_game();
+    offline.shutdown();
+
+    // check_revocation=0: never even asked, no matter what the list says.
+    write_config("check_revocation=0\nexit_delay=0\n");
+    Daemon disabled_check;
+    disabled_check.set_revocation_fetcher_for_testing([own_hash] {
+        return "schema=hico.revocation.v1\nupdated_at=2026-02-01T00:00:00Z\nrevoked " + own_hash + "\n";
+    });
+    start_game("com.mobile.legends");
+    disabled_check.tick(t += 1s);
+    CHECK(disabled_check.state() == State::Boost);
+    CHECK_EQ(disabled_check.integrity_report().status, integrity::Status::Ok);
+    stop_game();
+    disabled_check.shutdown();
+}
+
 int main() {
     char tmpl[] = "/tmp/hico-test-XXXXXX";
     if (!mkdtemp(tmpl)) return 1;
@@ -1398,6 +1624,9 @@ int main() {
         {"mi_thermald crypt and tuner", test_mi_thermald},
         {"ROM detection and HAL overlay", test_rom_and_hal_overlay},
         {"throttling monitor", test_monitor},
+        {"integrity manifest", test_integrity_manifest},
+        {"integrity daemon gate", test_integrity_daemon_gate},
+        {"revocation", test_revocation},
     };
 
     for (const auto &[name, fn] : tests) {

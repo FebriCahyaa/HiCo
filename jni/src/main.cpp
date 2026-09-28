@@ -13,6 +13,7 @@
 #include "FluxLink.hpp"
 #include "Fs.hpp"
 #include "HiCo.hpp"
+#include "Integrity.hpp"
 #include "Journal.hpp"
 #include "Log.hpp"
 #include "MiCrypt.hpp"
@@ -74,6 +75,7 @@ int usage() {
         "  thermal sources [--json]           who controls thermal here: configs, daemons, HiCo overlays\n"
         "  thermal decrypt <in> [out]         encrypted mi_thermald config -> text\n"
         "  thermal encrypt <in> <out>         text -> encrypted mi_thermald config\n"
+        "  integrity [--json]                 verify this install against its signed release manifest\n"
         "  version\n");
     return 2;
 }
@@ -204,6 +206,36 @@ int cmd_status(bool json) {
     }
     out(s + "}\n");
     return 0;
+}
+
+/// hicod integrity: verifies this install against its signed release manifest, independent of
+/// whether the daemon is running (docs/INTEGRITY.md). Exit 0 only on Status::Ok; Missing (no
+/// manifest — an older build) still exits nonzero here, since this command's whole point is a
+/// yes/no answer, unlike the daemon's own fail-open policy for that same case.
+int cmd_integrity(bool json) {
+    const auto report = integrity::verify_manifest(HICO_MODULE_DIR);
+    const auto signals = integrity::runtime_signals();
+    if (!json) {
+        out(std::format("status: {}\nreason: {}\n", integrity::to_string(report.status), report.reason));
+        if (!report.manifest_version.empty()) out(std::format("manifest version: {}\n", report.manifest_version));
+        for (const auto &f : report.files) {
+            out(std::format("  {} {}\n", integrity::to_string(f.status) == "ok" ? "ok  " : "FAIL", f.path));
+        }
+        out(std::format("debugger attached: {}\nhook libraries seen: {}\n", signals.debugger_attached ? "yes" : "no",
+                        signals.hook_libraries.size()));
+    } else {
+        std::string s = std::format(R"({{"status":"{}","reason":"{}","manifest_version":"{}","files":[)",
+                                    integrity::to_string(report.status), json_escape(report.reason),
+                                    json_escape(report.manifest_version));
+        for (size_t i = 0; i < report.files.size(); ++i) {
+            s += std::format(R"({}{{"path":"{}","status":"{}"}})", i ? "," : "", json_escape(report.files[i].path),
+                             integrity::to_string(report.files[i].status));
+        }
+        s += std::format(R"(],"debugger_attached":{},"hook_libraries":{}}})", signals.debugger_attached ? "true" : "false",
+                         signals.hook_libraries.size());
+        out(s + "\n");
+    }
+    return report.status == integrity::Status::Ok ? 0 : 1;
 }
 
 int cmd_flux() {
@@ -657,5 +689,6 @@ int main(int argc, char **argv) {
     if (cmd == "monitor") return cmd_monitor({args.begin() + 1, args.end()});
     if (cmd == "device") return cmd_device(args.size() > 1 && args[1] == "--list");
     if (cmd == "thermal") return cmd_thermal({args.begin() + 1, args.end()});
+    if (cmd == "integrity") return cmd_integrity(args.size() > 1 && args[1] == "--json");
     return usage();
 }

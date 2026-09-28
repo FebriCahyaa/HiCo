@@ -63,7 +63,11 @@ logs, game session history (package name, duration, temperatures) — stays on y
 `/data/adb/.config/hico/` and is deleted when you uninstall. Update checks are made by your root
 manager, which downloads `update.json` from the Author's public release repository on GitHub
 under GitHub's own privacy terms. Device profiles are generated from public firmware dumps, not
-from your device.
+from your device. To detect a compromised release after the fact (see `docs/INTEGRITY.md`), the
+Module itself periodically fetches a small public list from the Author's GitHub repository over
+HTTPS — a plain, anonymous request carrying no device identifier and no personal data, no
+different in kind from the update check above. Turn it off with
+`hicod config set check_revocation 0`.
 
 ### 8. Updates and support
 The Author may release updates, change features or stop development at any time. Support, if
@@ -158,7 +162,11 @@ log, riwayat sesi game (nama paket, durasi, suhu) — tetap berada di perangkat 
 `/data/adb/.config/hico/` dan dihapus saat Modul dicopot. Pemeriksaan pembaruan dilakukan oleh
 aplikasi root manager Anda, yang mengunduh `update.json` dari repositori rilis publik Pembuat di
 GitHub sesuai ketentuan privasi GitHub. Profil perangkat dibuat dari dump firmware publik, bukan
-dari perangkat Anda.
+dari perangkat Anda. Untuk mendeteksi rilis yang ternyata bermasalah setelah beredar (lihat
+`docs/INTEGRITY.md`), Modul sendiri sesekali mengambil daftar kecil yang bersifat publik dari
+repositori GitHub Pembuat lewat HTTPS — permintaan polos dan anonim, tanpa identitas perangkat
+maupun data pribadi, tidak berbeda jenisnya dengan pemeriksaan pembaruan di atas. Matikan dengan
+`hicod config set check_revocation 0`.
 
 ### 8. Pembaruan dan dukungan
 Pembuat dapat merilis pembaruan, mengubah fitur, atau menghentikan pengembangan kapan saja.
