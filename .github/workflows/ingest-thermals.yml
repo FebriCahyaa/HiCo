@@ -1,0 +1,163 @@
+name: Ingest thermal database (all vendors)
+
+# One workflow, many jobs: each vendor family scans its own dump source in
+# parallel, then one collect job compiles the results and opens a single PR.
+#
+# Cells marked "not implemented yet" print a clear notice and exit 0 so the
+# matrix run does not block on them. Their scanners will be added one by one
+# (docs/THERMAL-COVERAGE.md). Xiaomi is the reference cell that already works.
+#
+# Needs "Allow GitHub Actions to create and approve pull requests"
+# (Settings → Actions → General).
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendors:
+        description: 'Vendors to scan (comma-separated). Use "all" to run every cell.'
+        required: false
+        default: 'all'
+      limit:
+        description: 'Scan at most N dumps per group (empty = all)'
+        required: false
+  schedule:
+    - cron: '17 3 1 * *' # monthly
+
+concurrency:
+  group: ingest-thermals
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scan:
+    strategy:
+      fail-fast: false
+      matrix:
+        vendor:
+          - id: xiaomi
+            groups: 'dumps/xiaomi,dumps/redmi,dumps/poco'
+            scanner: 'tools/xiaomi_devices.py'
+            status: 'ready'
+          - id: oplus
+            groups: 'dumps/oneplus,dumps/oppo,dumps/realme'
+            scanner: 'tools/oplus_devices.py'
+            status: 'planned'
+          - id: aosp
+            # Pixel, Nothing, later Motorola: all use the AOSP HAL 2.0 JSON.
+            groups: 'dumps/google,dumps/nothing,dumps/motorola'
+            scanner: 'tools/aosp_devices.py'
+            status: 'planned'
+          - id: mediatek
+            # MediaTek stock: `thermal.conf` + HAL JSON. Cross-brand scan.
+            groups: 'dumps/vivo,dumps/tecno,dumps/infinix'
+            scanner: 'tools/mtk_devices.py'
+            status: 'planned'
+          - id: samsung
+            # Exynos: DT-baked; Snapdragon Samsung: HAL JSON. Read-only for now.
+            groups: 'dumps/samsung'
+            scanner: 'tools/samsung_devices.py'
+            status: 'planned'
+    name: Scan ${{ matrix.vendor.id }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Guard on vendor selector
+        id: guard
+        env:
+          VENDORS: ${{ inputs.vendors || 'all' }}
+          THIS: ${{ matrix.vendor.id }}
+        run: |
+          case ",$VENDORS," in
+            *,all,* | *,$THIS,*) echo "skip=false" >>"$GITHUB_OUTPUT" ;;
+            *) echo "skip=true" >>"$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Not implemented yet
+        if: matrix.vendor.status == 'planned' && steps.guard.outputs.skip == 'false'
+        env:
+          SCANNER: ${{ matrix.vendor.scanner }}
+        run: |
+          echo "::notice title=Scanner not implemented::${SCANNER} is planned but not written yet. See docs/THERMAL-COVERAGE.md for status."
+
+      - name: Run scanner
+        if: matrix.vendor.status == 'ready' && steps.guard.outputs.skip == 'false'
+        env:
+          GROUPS: ${{ matrix.vendor.groups }}
+          LIMIT: ${{ inputs.limit }}
+          SCANNER: ${{ matrix.vendor.scanner }}
+        run: |
+          set -euo pipefail
+          python3 tests/scanner_test.py
+          flags=(--sparse --workdir "$RUNNER_TEMP")
+          [ -n "$LIMIT" ] && flags+=(--limit "$LIMIT")
+          python3 "$SCANNER" --gitlab https://dumps.tadiphone.dev --group "$GROUPS" --jobs 6 "${flags[@]}"
+
+      - name: Upload results
+        if: matrix.vendor.status == 'ready' && steps.guard.outputs.skip == 'false'
+        uses: actions/upload-artifact@v6
+        with:
+          name: devices-${{ matrix.vendor.id }}
+          path: devices/${{ matrix.vendor.id }}
+
+  compile:
+    name: Compile device database and open PR
+    needs: scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Download every vendor's results
+        uses: actions/download-artifact@v6
+        with:
+          path: /tmp/vendors
+
+      - name: Merge results into devices/
+        run: |
+          set -euo pipefail
+          for dir in /tmp/vendors/devices-*; do
+            [ -d "$dir" ] || continue
+            vendor="${dir##*devices-}"
+            mkdir -p "devices/$vendor"
+            cp -r "$dir"/. "devices/$vendor/"
+          done
+
+      - name: Compile device table
+        run: |
+          python3 tools/gen_device_db.py
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j"$(nproc)"
+          ctest --test-dir build --output-on-failure
+
+      - name: Tune configs (verifier catches regressions here, not on-device)
+        run: python3 tools/tune_thermal.py --hicod build/hicod
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain devices docs jni/src/XiaomiDevices.gen.cpp)" ]; then
+            echo "Device profiles are up to date"
+            exit 0
+          fi
+          branch="devices/ingest-$(date +%Y%m%d)-run${GITHUB_RUN_NUMBER}"
+          base="${{ github.event.repository.default_branch }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add devices docs jni/src/XiaomiDevices.gen.cpp
+          count=$(find devices -name '*.prop' | wc -l)
+          git commit -m "feat(devices): ingest thermal profiles ($count devices)"
+          git push origin "$branch"
+          gh pr create --head "$branch" --base "$base" \
+            --title "Ingest thermal profiles ($count devices)" \
+            --body "Generated by \`.github/workflows/ingest-thermals.yml\`. See \`docs/THERMAL-COVERAGE.md\` for vendor status." || {
+            echo "::error::Could not open the pull request. Enable Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests'."
+            exit 0
+          }

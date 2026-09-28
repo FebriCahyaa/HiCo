@@ -1,3 +1,4 @@
+import LeafIcon from '@/components/icons/Leaf.vue'
 import SnowflakeIcon from '@/components/icons/Snowflake.vue'
 import ThermostatIcon from '@/components/icons/Thermostat.vue'
 import FlameIcon from '@/components/icons/Flame.vue'
@@ -5,6 +6,12 @@ import RocketIcon from '@/components/icons/Rocket.vue'
 
 // Presets are defined in hicod (Config.cpp, `hicod config presets`); this adds how they look.
 export const PRESET_STYLE = {
+  daily: {
+    icon: LeafIcon,
+    shape: 'shape-flower',
+    tone: 'bg-secondary-container text-on-secondary-container',
+    risk: null,
+  },
   cool: {
     icon: SnowflakeIcon,
     shape: 'shape-cookie9',

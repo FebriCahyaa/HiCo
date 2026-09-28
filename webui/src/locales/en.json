@@ -155,6 +155,16 @@
       "safety_battery_temp": "Battery ≤ {v} °C",
       "thermal_overclock": "Overclock {v}"
     },
+    "daily": {
+      "title": "Daily",
+      "description": "Social media, streaming, browsing. HiCo does not touch the peak; the vendor thermal system stays in charge.",
+      "confirm": "Peak stays with the vendor; games only get the Relaxed level.",
+      "points": [
+        "Vendor thermal always in charge",
+        "Games get the Relaxed level, never full unlock",
+        "Lowest safety limits: 85 °C CPU, 42 °C battery"
+      ]
+    },
     "cool": {
       "title": "Cool",
       "description": "More headroom without disabling the vendor thermal system. For daily gaming and warm weather.",

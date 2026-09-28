@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### New
+- **Daily preset**: for social media, streaming and general use. HiCo does not touch the peak
+  and games in the foreground get only the Relaxed level, never full unlock (mode=auto,
+  game_level=relaxed, safety CPU 85 °C / battery 42 °C)
+- **Coverage roadmap**: `docs/THERMAL-COVERAGE.md` documents which OEMs / ROMs work today (Xiaomi
+  encrypted and plain, AOSP HAL 2.0 JSON on Pixel / Nothing / OPlus, Qualcomm thermal-engine.conf)
+  and what is planned per vendor. Not-yet-implemented cells are honest, not fake
+- **Ingest workflow scaffolding**: `.github/workflows/ingest-thermals.yml` is one workflow with a
+  parallel matrix of Xiaomi (ready today), OPlus / AOSP / MediaTek / Samsung (planned). Ready cells
+  scan dumps and upload results; planned cells log a clear "not implemented" notice. A collect job
+  compiles the merged database and opens one PR
 - **Max only with headroom** (every mode, Extreme too): the max level removes every vendor limit
   and lifts the cpufreq caps, so a phone that was already hot went to the safety limit within
   seconds (a Redmi Note 13 Pro 5G started MLBB at 88.6 °C and sat at 95-96 °C). Now max needs the
