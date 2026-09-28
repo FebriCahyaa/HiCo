@@ -206,7 +206,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/xiaomi
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN secret in CI. Only devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only devices with custom ROM support.
 
   - id: tadiphone-redmi
     name: TadiPhone dumps — Redmi
@@ -215,7 +215,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/redmi
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only devices with custom ROM support.
 
   - id: tadiphone-poco
     name: TadiPhone dumps — POCO
@@ -224,7 +224,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/poco
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only devices with custom ROM support.
 
   - id: tadiphone-samsung
     name: TadiPhone dumps — Samsung
@@ -233,7 +233,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/samsung
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only Samsung devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only Samsung devices with custom ROM support.
 
   - id: tadiphone-oneplus
     name: TadiPhone dumps — OnePlus
@@ -242,7 +242,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/oneplus
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only OnePlus devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only OnePlus devices with custom ROM support.
 
   - id: tadiphone-oppo
     name: TadiPhone dumps — OPPO
@@ -251,7 +251,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/oppo
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only OPPO devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only OPPO devices with custom ROM support.
 
   - id: tadiphone-realme
     name: TadiPhone dumps — Realme
@@ -260,7 +260,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/realme
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only Realme devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only Realme devices with custom ROM support.
 
   - id: tadiphone-motorola
     name: TadiPhone dumps — Motorola
@@ -269,7 +269,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/motorola
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only Motorola devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only Motorola devices with custom ROM support.
 
   - id: tadiphone-google
     name: TadiPhone dumps — Google
@@ -278,7 +278,7 @@ sources:
     base_url: https://dumps.tadiphone.dev
     org: dumps/google
     filter_requires_rom: true
-    notes: Requires TADIPHONE_TOKEN. Only Google Pixel devices with custom ROM support.
+    notes: Public GitLab instance; no token required. Only Google Pixel devices with custom ROM support.
 
 # --------------------------------------------------------------------
 # Thermal-related paths sparse-fetched from each device-tree repo.

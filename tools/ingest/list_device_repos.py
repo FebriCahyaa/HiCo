@@ -416,7 +416,9 @@ def main() -> int:
             if src["provider"] == "github":
                 devices = list_github(src, token)
             elif src["provider"] == "gitlab":
-                gl_token = os.environ.get("TADIPHONE_TOKEN") or token
+                # dumps.tadiphone.dev is a public GitLab instance — no token needed.
+                # TADIPHONE_TOKEN is optional; omit it to use anonymous access.
+                gl_token = os.environ.get("TADIPHONE_TOKEN") or None
                 devices = list_gitlab(src, gl_token)
             elif src["provider"] == "vendor-probe":
                 devices = list_vendor_probe(src, manifest_dir)

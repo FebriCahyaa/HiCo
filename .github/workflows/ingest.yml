@@ -55,7 +55,6 @@ jobs:
       - name: Re-list repositories (metadata only)
         env:
           GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          TADIPHONE_TOKEN: "${{ secrets.TADIPHONE_TOKEN }}"
           ONLY: "${{ inputs.only }}"
         run: python3 tools/ingest/list_device_repos.py --only "$ONLY"
 
@@ -103,9 +102,7 @@ jobs:
           path: stock/manifest/
 
       - name: Fetch changed repositories
-        env:
-          SOURCE: "${{ matrix.source }}"
-          TADIPHONE_TOKEN: "${{ secrets.TADIPHONE_TOKEN }}"
+        env: { SOURCE: "${{ matrix.source }}" }
         run: |
           # Exit 2 means some repositories failed; they are recorded in the state
           # and retried next run. The successful ones must still be committed.
