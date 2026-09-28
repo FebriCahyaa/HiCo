@@ -342,16 +342,17 @@ def run_gen(*args: str) -> subprocess.CompletedProcess:
 
 
 class GeneratorTest(unittest.TestCase):
-    """tools/gen_device_db.py: devices/xiaomi/*.prop -> compiled C++ table."""
+    """tools/gen_device_db.py: devices/*/*.prop -> compiled C++ table."""
 
     def write_profiles(self, root: Path) -> Path:
         data = root / "devices"
-        data.mkdir()
-        (data / "testdev_b.prop").write_text(
+        vendor = data / "test"
+        vendor.mkdir(parents=True)
+        (vendor / "testdev_b.prop").write_text(
             "codename=testdev_b\nbrand=POCO\nmodel=Evil \"quoted\" \\ name\nplatform=mt6893\nandroid=14\n"
             "source=https://example.invalid/" + "x" * 300 + "\nthermal_services=thermal_manager,bad;name,thermal\n"
             "thermal_configs=thermal-tgame.conf,../escape.conf\n")
-        (data / "testdev_a.prop").write_text(
+        (vendor / "testdev_a.prop").write_text(
             "codename=testdev_a\nbrand=Redmi\nmodel=Test A\nplatform=taro\nandroid=15\nsource=https://example.invalid/a\n"
             "thermal_services=\nthermal_configs=\n")
         return data
@@ -398,8 +399,10 @@ class GeneratorTest(unittest.TestCase):
 
     def test_rejects_mismatched_codename(self):
         with tempfile.TemporaryDirectory() as tmp:
-            data = Path(tmp)
-            (data / "renamed.prop").write_text("codename=other\n")
+            data = Path(tmp) / "devices"
+            vendor = data / "test"
+            vendor.mkdir(parents=True)
+            (vendor / "renamed.prop").write_text("codename=other\n")
             r = run_gen("--data", str(data), "--output", str(data / "gen.cpp"))
             self.assertEqual(r.returncode, 1)
             self.assertIn("does not match the file name", r.stderr)
