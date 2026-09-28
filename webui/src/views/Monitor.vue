@@ -626,6 +626,12 @@ onUnmounted(stop)
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .live .dot {
+    animation: none;
+  }
+}
+
 .legend {
   display: inline-flex;
   align-items: center;

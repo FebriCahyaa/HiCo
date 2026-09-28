@@ -361,7 +361,7 @@ async function openLegal(kind) {
   font-size: 14px;
   font-weight: 600;
   color: var(--color-primary);
-  padding: 8px 16px 8px 4px;
+  padding: 8px 4px;
 }
 
 .badge {

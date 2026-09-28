@@ -26,7 +26,7 @@
       <div v-for="s in sessions.slice(0, 8)" :key="s._key" class="md3-list">
         <RippleComponent class="md3-list-item" tabindex="0" @click="openSession(s)">
           <div class="flex items-center gap-4 px-5 py-3">
-            <span class="badge" :class="scenarioTone(s.scenario)"
+            <span class="badge" :class="[scenarioShape(s.scenario), scenarioTone(s.scenario)]"
               ><component :is="scenarioIcon(s.scenario)" :size="18"
             /></span>
             <span class="flex-1 min-w-0">
@@ -86,7 +86,7 @@
     <div class="space-y-2 mb-8">
       <RippleComponent class="action-row glass-surface block" tabindex="0" @click="save">
         <div class="flex items-center gap-4">
-          <span class="badge bg-primary-container text-on-primary-container"
+          <span class="badge shape-cookie4 bg-primary-container text-on-primary-container"
             ><ContentSaveIcon :size="18"
           /></span>
           <span class="flex-1 min-w-0">
@@ -99,17 +99,25 @@
 
       <RippleComponent
         class="action-row glass-surface block"
-        tabindex="0"
+        :class="{ 'action-row-disabled': !sessions.length }"
+        :tabindex="sessions.length ? 0 : -1"
+        role="button"
         :aria-disabled="!sessions.length"
         @click="sessions.length && clearSessions()"
       >
         <div class="flex items-center gap-4">
-          <span class="badge bg-error-container text-on-error-container"
+          <span class="badge shape-cookie6 bg-error-container text-on-error-container"
             ><NoEntryIcon :size="18"
           /></span>
           <span class="flex-1 min-w-0">
-            <span class="block text-sm font-semibold text-error">{{ $t('log.clear') }}</span>
-            <span class="block text-xs text-on-surface-variant">{{ $t('log.clear_hint') }}</span>
+            <span
+              class="block text-sm font-semibold"
+              :class="sessions.length ? 'text-error' : 'text-on-surface-variant'"
+              >{{ $t('log.clear') }}</span
+            >
+            <span class="block text-xs text-on-surface-variant">{{
+              sessions.length ? $t('log.clear_hint') : $t('log.clear_none')
+            }}</span>
           </span>
           <LoadingSpinner v-if="clearing" :size="18" />
         </div>
@@ -280,11 +288,19 @@ async function loadOnce() {
   if (pkgs.length) apps.resolve(pkgs)
 }
 
+// Same icon/shape/tone triples Scenarios.vue uses for these scenario types,
+// so a session here reads as the same "thing" as its card there.
 const SCENARIO_ICON = {
   game: GamesIcon,
   social: PersonIcon,
   media: VolumeUpIcon,
   other: AppWindowIcon,
+}
+const SCENARIO_SHAPE = {
+  game: 'shape-cookie9',
+  social: 'shape-flower',
+  media: 'shape-clover4',
+  other: 'shape-circle',
 }
 const SCENARIO_TONE = {
   game: 'bg-primary-container text-on-primary-container',
@@ -299,6 +315,7 @@ const SCENARIO_LABEL_KEY = {
   other: 'scenarios.tab.other',
 }
 const scenarioIcon = (k) => SCENARIO_ICON[k] || SCENARIO_ICON.other
+const scenarioShape = (k) => SCENARIO_SHAPE[k] || SCENARIO_SHAPE.other
 const scenarioTone = (k) => SCENARIO_TONE[k] || SCENARIO_TONE.other
 const scenarioLabelKey = (k) => SCENARIO_LABEL_KEY[k] || SCENARIO_LABEL_KEY.other
 
@@ -342,7 +359,7 @@ onUnmounted(stop)
   font-size: 14px;
   font-weight: 600;
   color: var(--color-primary);
-  padding: 8px 16px 8px 4px;
+  padding: 8px 4px;
 }
 
 .status-row {
@@ -370,9 +387,8 @@ onUnmounted(stop)
 }
 
 .badge {
-  width: 36px;
-  height: 36px;
-  border-radius: 14px;
+  width: 40px;
+  height: 40px;
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -447,6 +463,11 @@ onUnmounted(stop)
 .action-row {
   padding: 14px 16px;
   border-radius: 20px;
+}
+
+.action-row-disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .detail-row {

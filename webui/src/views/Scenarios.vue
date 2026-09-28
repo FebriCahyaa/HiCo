@@ -282,7 +282,7 @@ const iconError = (e) => (e.target.src = './app_icon_fallback.avif')
   font-size: 14px;
   font-weight: 600;
   color: var(--color-primary);
-  padding: 16px 4px 8px;
+  padding: 8px 4px;
 }
 
 .badge {

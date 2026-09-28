@@ -112,7 +112,7 @@ function step(k, d) {
   font-size: 14px;
   font-weight: 600;
   color: var(--color-primary);
-  padding: 8px 16px;
+  padding: 8px 4px;
 }
 
 .warn {
