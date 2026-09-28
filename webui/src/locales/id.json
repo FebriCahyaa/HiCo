@@ -18,9 +18,9 @@
   },
   "navigation": {
     "home": "Beranda",
-    "games": "Game",
     "monitor": "Monitor",
-    "settings": "Pengaturan"
+    "settings": "Pengaturan",
+    "scenarios": "Skenario"
   },
   "actions": {
     "restart": "Mulai ulang",
@@ -94,7 +94,8 @@
     "max": "Maks",
     "relaxed": "Longgar",
     "max_hint": "Maks: throttling dimatikan selama game berjalan; hanya pengaman yang membatasi.",
-    "relaxed_hint": "Longgar: sistem termal vendor tetap berjalan dengan trip point lebih tinggi sesuai chipset. Lebih dingin, performa puncak sedikit lebih rendah."
+    "relaxed_hint": "Longgar: sistem termal vendor tetap berjalan dengan trip point lebih tinggi sesuai chipset. Lebih dingin, performa puncak sedikit lebih rendah.",
+    "stock": "Bawaan"
   },
   "mode": {
     "off": {
@@ -256,21 +257,49 @@
     "trip_zones": "Zona yang mencapai/melewati trip",
     "no_cooling": "Tidak ada cooling device yang sedang aktif.",
     "no_trip_zones": "Tidak ada zona termal yang sedang mencapai atau melewati ambang trip.",
-    "error": "Tidak bisa membaca monitor termal: {error}"
+    "error": "Tidak bisa membaca monitor termal: {error}",
+    "sources": {
+      "title": "Sumber thermal",
+      "description": "Config dan daemon thermal mana yang melindungi HP ini, dan mana yang sedang diambil alih HiCo. HiCo tidak pernah mengedit file ROM: salinan yang disetel dipasang di atasnya selama skenario membutuhkannya.",
+      "hico_active": "HiCo aktif",
+      "stock_active": "Thermal bawaan",
+      "device": "Perangkat",
+      "chipset": "Chipset",
+      "rom": "ROM",
+      "database": "Database",
+      "verified": "profil terverifikasi",
+      "generic": "deteksi langsung",
+      "configs": "Config thermal ({n})",
+      "services": "Daemon thermal ({n})",
+      "tuned": "Salinan HiCo",
+      "vendor": "Vendor",
+      "vendor_locked": "Vendor (hanya baca)",
+      "no_configs": "Tidak ada file config thermal di /vendor, /odm atau /system.",
+      "no_services": "Tidak ada daemon thermal yang terdaftar di init.",
+      "format": {
+        "thermal-engine": "thermal-engine",
+        "thermal-hal-json": "thermal HAL JSON",
+        "mi_thermald": "mi_thermald",
+        "mi_thermald-encrypted": "mi_thermald (terenkripsi)",
+        "unknown": "format tidak dikenal"
+      },
+      "kind": {
+        "daemon": "daemon thermal",
+        "hal": "thermal HAL",
+        "other": "service"
+      },
+      "by_hico": {
+        "stopped": "Dihentikan HiCo",
+        "restarted": "Dimuat ulang HiCo"
+      }
+    },
+    "active": "aktif",
+    "idle": "diam"
   },
   "games": {
-    "title": "Game",
-    "tab_games": "Game Flux",
-    "tab_apps": "Aplikasi lain",
     "search": "Cari aplikasi",
-    "hint_games": "Game berasal dari daftar game Flux Tweaks (tambah atau hapus di Flux). Matikan sebuah game agar termalnya tetap bawaan.",
-    "hint_apps": "Aplikasi non-game bisa mendapat level Longgar (tidak pernah Maks) selama tampil di layar, mis. kamera atau editor video.",
     "empty_games": "Daftar game Flux kosong atau Flux tidak terpasang.",
     "empty_apps": "Tidak ada aplikasi lain.",
-    "whitelist_confirm": {
-      "title": "Termal longgar untuk {app}?",
-      "message": "Selama aplikasi ini tampil, sistem termal vendor berjalan dengan trip point lebih tinggi sesuai chipset. Tidak pernah dibuka penuh seperti game."
-    },
     "on": "HiCo aktif untuk {app}",
     "off": "HiCo nonaktif untuk {app}"
   },
@@ -474,5 +503,48 @@
       "flux": "Rilis Flux Tweaks"
     },
     "legal": "HiCo Thermal adalah perangkat lunak proprietary © 2026 FebriCahyaa, dipakai sesuai EULA-nya. Sebagian WebUI berasal dari Flux Tweaks dan Encore Tweaks (Apache License 2.0); font Google Sans Flex di bawah SIL Open Font License."
+  },
+  "scenarios": {
+    "title": "Skenario",
+    "intro": "HiCo tidak mengubah file thermal bawaan ROM-mu, hanya cara pemakaiannya per skenario. OEM: thermal ROM apa adanya. HiCo Balanced: thermal vendor tetap melindungi HP dengan trip point yang disetel untuk chipset ini. HiCo Agresif: throttling mati selama game berjalan, pengaman tetap aktif (khusus game).",
+    "game": {
+      "title": "Game",
+      "short": "Game",
+      "description": "Game dari daftar game Flux Tweaks"
+    },
+    "social": {
+      "title": "Media sosial",
+      "short": "Sosial",
+      "description": "Chat, feed dan video pendek: WhatsApp, Instagram, TikTok, Telegram, …"
+    },
+    "media": {
+      "title": "Multimedia",
+      "short": "Media",
+      "description": "Streaming, video dan musik: YouTube, Netflix, Spotify, VLC, …"
+    },
+    "level": {
+      "stock": "OEM",
+      "relaxed": "HiCo Balanced",
+      "max": "HiCo Agresif"
+    },
+    "hint": {
+      "stock": "Thermal bawaan ROM, persis seperti aslinya. HiCo tidak mengubah apa pun di sini.",
+      "relaxed": "Thermal vendor tetap berjalan dengan trip point yang disetel untuk chipset: lebih jarang melambat terlalu dini, semua perlindungan aktif. Kembali ke bawaan 20 detik setelah kamu keluar dari aplikasi.",
+      "max": "Throttling thermal mati selama game berjalan; hanya pengaman yang membatasi. HP yang sudah hangat memakai Balanced dulu sampai dingin."
+    },
+    "apps_title": "Aplikasi per skenario",
+    "tab": {
+      "social": "Sosial",
+      "media": "Media",
+      "other": "Lainnya",
+      "games": "Game"
+    },
+    "tab_hint": {
+      "social": "Aplikasi di daftar ini memakai level Media sosial. Aplikasi populer sudah ada di daftar.",
+      "media": "Aplikasi di daftar ini memakai level Multimedia. Aplikasi populer sudah ada di daftar.",
+      "other": "Aplikasi lain (kamera, editor video, …) yang mendapat HiCo Balanced selama tampil, tidak pernah Agresif.",
+      "games": "Game berasal dari daftar game Flux Tweaks (tambah atau hapus di Flux). Matikan sebuah game agar termalnya tetap bawaan."
+    },
+    "saved": "{scenario}: {level}"
   }
 }

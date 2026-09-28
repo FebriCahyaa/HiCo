@@ -16,11 +16,12 @@
 namespace hico {
 
 /**
- * One gaming session, as shown in the WebUI history: how long the game ran
+ * One session (a game, or a social / streaming app at the relaxed level), as shown in the WebUI history: how long the game ran
  * unlocked, how hot it got and how often the safety guard stepped in.
  */
 struct Session {
     std::string package;
+    std::string scenario = "game"; ///< game, social, media or other
     std::time_t started = 0;   ///< wall clock, seconds
     long long duration_s = 0;  ///< whole session
     long long boosted_s = 0;   ///< time spent with thermal throttling disabled

@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import { WXEventHandler } from 'webuix'
 
 import Home from '@/views/Home.vue'
-import Games from '@/views/Games.vue'
+import Scenarios from '@/views/Scenarios.vue'
 import Monitor from '@/views/Monitor.vue'
 import Settings from '@/views/Settings.vue'
 import Presets from '@/views/Presets.vue'
@@ -18,7 +18,8 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'Home', component: Home },
-    { path: '/games', name: 'Games', component: Games },
+    { path: '/scenarios', name: 'Scenarios', component: Scenarios },
+    { path: '/games', redirect: '/scenarios' },
     { path: '/monitor', name: 'Monitor', component: Monitor },
     { path: '/settings', name: 'Settings', component: Settings },
     { path: '/settings/presets', name: 'Presets', component: Presets },

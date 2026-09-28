@@ -1,5 +1,17 @@
 # Unreleased
 
+### Thermal per scenario
+- **Scenarios** page (replaces Games): pick the thermal per scenario. **Games**: OEM / HiCo
+  Balanced / HiCo Aggressive; **Social media** and **Multimedia**: OEM / HiCo Balanced (never
+  Aggressive). OEM keeps the ROM's thermal untouched; Balanced mounts the chipset-tuned copy of the
+  vendor's own configs while the app is on screen and puts the stock files back 20 s after leaving
+  it (at once when the screen turns off). New config keys `social_level`, `media_level`,
+  `social_apps`, `media_apps` (common apps pre-listed), `game_level=stock`. Sessions record the scenario.
+- **Monitor → Thermal sources** (`hicod thermal sources [--json]`): the phone's thermal configs
+  (format, size, vendor or HiCo tuned copy), thermal daemons / HAL (stopped or reloaded by HiCo),
+  device, chipset, ROM and whether the device database has a verified profile.
+- Daily preset now also sets Social media and Multimedia to HiCo Balanced.
+
 ### Stock thermal dataset and delta-only ingest
 - `stock/` now holds the thermal-relevant files of 2,400+ custom-ROM device trees (LineageOS,
   crDroid, LMODroid, AOSPA, ArrowOS, DotOS, AlphaDroid, PixelOS, ProtonAOSP, AwakenOS) and the

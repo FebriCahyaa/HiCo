@@ -79,6 +79,15 @@ put /sys/devices/system/cpu/cpufreq/policy0/related_cpus "0 1 2 3"
 "$HICOD" thermal table | grep -q '^ZONE' || fail "thermal table"
 "$HICOD" thermal table --json | grep -q '"schema":"hico.monitor.v2"' || fail "thermal table --json"
 "$HICOD" monitor --interval 0 2>/dev/null && fail "monitor accepted interval 0"
+put /vendor/etc/thermal-engine.conf '[CPU0_MONITOR]
+algo_type monitor
+sensor cpu-0-0
+thresholds 95000
+thresholds_clr 90000'
+"$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/thermal-engine.conf","format":"thermal-engine"' ||
+	fail "thermal sources --json config"
+"$HICOD" thermal sources --json | grep -q '"controller":"vendor"' || fail "thermal sources --json controller"
+"$HICOD" thermal sources | grep -q '^== thermal configs' || fail "thermal sources"
 
 # ── Daemon ───────────────────────────────────────────────────────────────────
 "$HICOD" run 2>"$HICO_ROOT/log" &

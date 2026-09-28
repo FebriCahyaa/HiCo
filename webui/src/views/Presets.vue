@@ -102,7 +102,7 @@ const highlights = [
 ]
 function valueLabel(key, v) {
   if (key === 'mode') return t(`mode.${v}.title`)
-  if (key === 'game_level') return t(`level.${v}`)
+  if (key === 'game_level') return t(`scenarios.level.${v}`)
   if (key === 'thermal_overclock') return v === '1' ? t('common.on') : t('common.off')
   return v
 }

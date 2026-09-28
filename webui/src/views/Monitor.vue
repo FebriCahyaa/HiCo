@@ -25,12 +25,18 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
               <div class="stat">
                 <span class="text-xs opacity-70">{{ $t('monitor.hottest') }}</span>
-                <span class="m3-headline text-xl tabular-nums">{{ formatTemp(snap.hottest?.temp) }}</span>
-                <span class="text-xs text-on-surface-variant truncate">{{ snap.hottest?.type || '–' }}</span>
+                <span class="m3-headline text-xl tabular-nums">{{
+                  formatTemp(snap.hottest?.temp)
+                }}</span>
+                <span class="text-xs text-on-surface-variant truncate">{{
+                  snap.hottest?.type || '–'
+                }}</span>
               </div>
               <div class="stat">
                 <span class="text-xs opacity-70">{{ $t('monitor.next_trip') }}</span>
-                <span class="m3-headline text-xl tabular-nums">{{ formatTemp(snap.closest?.trip) }}</span>
+                <span class="m3-headline text-xl tabular-nums">{{
+                  formatTemp(snap.closest?.trip)
+                }}</span>
                 <span class="text-xs text-on-surface-variant tabular-nums">
                   {{ formatHeadroom(snap.closest?.headroom) }}
                 </span>
@@ -52,10 +58,124 @@
             </div>
           </section>
 
+          <section v-if="sources" class="m3-card p-5">
+            <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="min-w-0">
+                <h3 class="text-sm font-semibold text-primary">
+                  {{ $t('monitor.sources.title') }}
+                </h3>
+                <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                  {{ $t('monitor.sources.description') }}
+                </p>
+              </div>
+              <span
+                class="owner-pill shrink-0"
+                :class="sources.hico_active ? 'owner-hico' : 'owner-vendor'"
+              >
+                {{
+                  sources.hico_active
+                    ? $t('monitor.sources.hico_active')
+                    : $t('monitor.sources.stock_active')
+                }}
+              </span>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+              <div class="ident">
+                <span class="text-xs text-on-surface-variant">{{
+                  $t('monitor.sources.device')
+                }}</span>
+                <span class="text-sm font-semibold truncate">{{ deviceName }}</span>
+              </div>
+              <div class="ident">
+                <span class="text-xs text-on-surface-variant">{{
+                  $t('monitor.sources.chipset')
+                }}</span>
+                <span class="text-sm font-semibold truncate"
+                  >{{ sources.device.soc }} {{ sources.device.platform }}</span
+                >
+              </div>
+              <div class="ident">
+                <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.rom') }}</span>
+                <span class="text-sm font-semibold truncate">{{
+                  sources.device.rom_name || '–'
+                }}</span>
+              </div>
+              <div class="ident">
+                <span class="text-xs text-on-surface-variant">{{
+                  $t('monitor.sources.database')
+                }}</span>
+                <span class="text-sm font-semibold truncate">{{
+                  sources.device.in_database
+                    ? $t('monitor.sources.verified')
+                    : $t('monitor.sources.generic')
+                }}</span>
+              </div>
+            </div>
+
+            <h4 class="sub">{{ $t('monitor.sources.configs', { n: sources.configs.length }) }}</h4>
+            <div v-if="sources.configs.length" class="space-y-1 mb-4">
+              <div v-for="c in sources.configs" :key="c.path" class="row items-center">
+                <span class="min-w-0">
+                  <span class="block text-sm text-on-surface truncate">{{
+                    c.path.split('/').pop()
+                  }}</span>
+                  <span class="block text-xs text-on-surface-variant truncate"
+                    >{{ c.path }} · {{ $t(`monitor.sources.format.${c.format}`) }} ·
+                    {{ formatSize(c.size) }}</span
+                  >
+                </span>
+                <span
+                  class="owner-pill shrink-0"
+                  :class="c.controller === 'hico' ? 'owner-hico' : 'owner-vendor'"
+                >
+                  {{
+                    c.controller === 'hico'
+                      ? $t('monitor.sources.tuned')
+                      : c.tunable
+                        ? $t('monitor.sources.vendor')
+                        : $t('monitor.sources.vendor_locked')
+                  }}
+                </span>
+              </div>
+            </div>
+            <p v-else class="text-xs text-on-surface-variant mb-4">
+              {{ $t('monitor.sources.no_configs') }}
+            </p>
+
+            <h4 class="sub">
+              {{ $t('monitor.sources.services', { n: sources.services.length }) }}
+            </h4>
+            <div v-if="sources.services.length" class="space-y-1">
+              <div v-for="sv in sources.services" :key="sv.name" class="row items-center">
+                <span class="min-w-0">
+                  <span class="block text-sm text-on-surface truncate">{{ sv.name }}</span>
+                  <span class="block text-xs text-on-surface-variant"
+                    >{{ $t(`monitor.sources.kind.${sv.kind}`) }} · {{ sv.state }}</span
+                  >
+                </span>
+                <span class="owner-pill shrink-0" :class="sv.hico ? 'owner-hico' : 'owner-vendor'">
+                  {{
+                    sv.hico
+                      ? $t(`monitor.sources.by_hico.${sv.hico}`)
+                      : $t('monitor.sources.vendor')
+                  }}
+                </span>
+              </div>
+            </div>
+            <p v-else class="text-xs text-on-surface-variant">
+              {{ $t('monitor.sources.no_services') }}
+            </p>
+          </section>
+
           <section class="m3-card p-5">
             <div class="flex items-center justify-between mb-2">
               <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.temp_chart') }}</h3>
-              <span class="legend"><i class="bg-primary" />{{ $t('monitor.hottest') }} <i class="bg-secondary" />{{ $t('home.battery') }}</span>
+              <span class="legend"
+                ><i class="bg-primary" />{{ $t('monitor.hottest') }} <i class="bg-secondary" />{{
+                  $t('home.battery')
+                }}</span
+              >
             </div>
             <LineChart
               :series="tempSeries"
@@ -107,7 +227,9 @@
                     <td class="tabular-nums">{{ formatTemp(z.highest) }}</td>
                     <td class="tabular-nums">{{ formatTemp(z.next) }}</td>
                     <td class="tabular-nums">{{ formatHeadroom(z.headroom) }}</td>
-                    <td><span class="state-pill" :class="stateClass(z.state)">{{ z.state }}</span></td>
+                    <td>
+                      <span class="state-pill" :class="stateClass(z.state)">{{ z.state }}</span>
+                    </td>
                     <td>{{ z.protected ? $t('monitor.yes') : $t('monitor.no') }}</td>
                     <td class="muted">{{ z.policy || '–' }}</td>
                   </tr>
@@ -122,21 +244,30 @@
               <div v-if="snap.cooling_devices?.length" class="space-y-1">
                 <div v-for="c in snap.cooling_devices" :key="c.name" class="row">
                   <span class="text-sm text-on-surface truncate">{{ c.type || c.name }}</span>
-                  <span class="text-xs tabular-nums" :class="c.active ? 'text-primary' : 'text-on-surface-variant'">{{ c.active ? $t('monitor.active') : $t('monitor.idle') }} · {{ c.cur }} / {{ c.max }}</span>
+                  <span
+                    class="text-xs tabular-nums"
+                    :class="c.active ? 'text-primary' : 'text-on-surface-variant'"
+                    >{{ c.active ? $t('monitor.active') : $t('monitor.idle') }} · {{ c.cur }} /
+                    {{ c.max }}</span
+                  >
                 </div>
               </div>
               <p v-else class="text-xs text-on-surface-variant">{{ $t('monitor.no_cooling') }}</p>
             </div>
 
             <div class="m3-card p-5">
-              <h3 class="text-sm font-semibold text-primary mb-3">{{ $t('monitor.trip_zones') }}</h3>
+              <h3 class="text-sm font-semibold text-primary mb-3">
+                {{ $t('monitor.trip_zones') }}
+              </h3>
               <div v-if="tripped.length" class="space-y-1">
                 <div v-for="z in tripped" :key="`trip-${z.name}`" class="row">
                   <span class="text-sm text-on-surface truncate">{{ z.type }}</span>
                   <span class="text-xs text-error tabular-nums">{{ formatTemp(z.temp) }}</span>
                 </div>
               </div>
-              <p v-else class="text-xs text-on-surface-variant">{{ $t('monitor.no_trip_zones') }}</p>
+              <p v-else class="text-xs text-on-surface-variant">
+                {{ $t('monitor.no_trip_zones') }}
+              </p>
             </div>
           </section>
         </template>
@@ -156,6 +287,7 @@ const { t } = useI18n()
 const hico = useHiCoStore()
 
 const snap = ref(null)
+const sources = ref(null)
 const error = ref('')
 const paused = ref(false)
 const history = ref([])
@@ -167,7 +299,9 @@ const verdictClasses = {
   mitigating: 'bg-secondary-container text-on-secondary-container',
   critical: 'bg-error-container text-on-error-container',
 }
-const verdict = computed(() => ({ card: verdictClasses[snap.value?.verdict] || verdictClasses.normal }))
+const verdict = computed(() => ({
+  card: verdictClasses[snap.value?.verdict] || verdictClasses.normal,
+}))
 
 const series = (pick) => history.value.map((h) => pick(h) ?? null)
 const tempSeries = computed(() => [
@@ -175,10 +309,28 @@ const tempSeries = computed(() => [
   { values: series((h) => h.temperatures?.battery), color: 'var(--color-secondary)' },
 ])
 
+const deviceName = computed(() => {
+  const d = sources.value?.device || {}
+  const name = [d.brand, d.model].filter(Boolean).join(' ')
+  return d.codename ? `${name || d.codename} (${d.codename})` : name || '–'
+})
+const formatSize = (b) => (b >= 1024 ? `${(b / 1024).toFixed(1)} KB` : `${b} B`)
+
+// Who controls thermal changes only when HiCo switches level: refreshed on open and every 10 s.
+async function loadSources() {
+  try {
+    sources.value = await hico.thermalSources()
+  } catch {
+    sources.value = null
+  }
+}
+
 const tripped = computed(() => (snap.value?.zones || []).filter((z) => z.at_or_above_trip))
 
-const formatTemp = (value) => (value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`)
-const formatHeadroom = (value) => (value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`)
+const formatTemp = (value) =>
+  value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`
+const formatHeadroom = (value) =>
+  value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`
 const stateClass = (state) =>
   ({
     normal: 'state-normal',
@@ -200,15 +352,22 @@ async function tick() {
 }
 
 let timer = null
+let sourcesTimer = null
 const start = () => {
   stop()
   tick()
+  loadSources()
   timer = setInterval(tick, 1000)
+  sourcesTimer = setInterval(() => !paused.value && !document.hidden && loadSources(), 10000)
 }
 const stop = () => {
   if (timer) {
     clearInterval(timer)
     timer = null
+  }
+  if (sourcesTimer) {
+    clearInterval(sourcesTimer)
+    sourcesTimer = null
   }
 }
 onMounted(start)
@@ -364,5 +523,44 @@ onUnmounted(stop)
 
 .row:first-child {
   border-top: 0;
+}
+
+.ident {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: var(--color-surface-container-high);
+}
+
+.sub {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.owner-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.owner-vendor {
+  color: var(--color-on-surface-variant);
+  background: var(--color-surface-container-highest);
+}
+
+.owner-hico {
+  color: var(--color-on-tertiary-container);
+  background: var(--color-tertiary-container);
 }
 </style>

@@ -35,8 +35,10 @@ std::string Session::to_json() const {
     for (char c : package) {
         if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '.' || c == '_') pkg += c;
     }
-    return std::format(R"({{"game":"{}","start":{},"duration":{},"boosted":{},"peak_cpu":{},"peak_battery":{},"trips":{}}})",
-                       pkg, static_cast<long long>(started), duration_s, boosted_s, json_number(peak_cpu),
+    const std::string kind = scenario == "social" || scenario == "media" || scenario == "other" ? scenario : "game";
+    return std::format(
+        R"({{"game":"{}","scenario":"{}","start":{},"duration":{},"boosted":{},"peak_cpu":{},"peak_battery":{},"trips":{}}})",
+        pkg, kind, static_cast<long long>(started), duration_s, boosted_s, json_number(peak_cpu),
                        json_number(peak_battery), trips);
 }
 
