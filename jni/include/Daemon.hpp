@@ -10,6 +10,7 @@
 
 #include "Config.hpp"
 #include "FluxLink.hpp"
+#include "Integrity.hpp"
 #include "Journal.hpp"
 #include "SafetyGuard.hpp"
 #include "Sessions.hpp"
@@ -17,6 +18,7 @@
 #include "ThermalZones.hpp"
 
 #include <chrono>
+#include <functional>
 #include <optional>
 #include <string>
 #include <string_view>
@@ -78,9 +80,30 @@ public:
     [[nodiscard]] State state() const { return state_; }
     [[nodiscard]] const Config &config() const { return cfg_; }
     [[nodiscard]] std::chrono::milliseconds next_timeout() const;
+    /// Result of the last integrity check (docs/INTEGRITY.md). For `hicod status`/the WebUI.
+    [[nodiscard]] const integrity::Report &integrity_report() const { return integrity_; }
+    [[nodiscard]] const integrity::RuntimeSignals &integrity_signals() const { return integrity_signals_; }
 
 private:
     void transition(State next, Clock::time_point now, std::string reason);
+    /// Re-verifies the signed release manifest at most once per kIntegrityInterval (always once
+    /// on the first tick). A manifest that fails to verify blocks every unlock, fail-safe, until
+    /// the module is reinstalled with one that does; a manifest that is simply absent (an older
+    /// build, before this existed) does not — see docs/INTEGRITY.md for why.
+    void check_integrity(Clock::time_point now);
+    [[nodiscard]] bool integrity_failed() const;
+    /// Lapis 4: at most once per kRevocationInterval, and only when the local manifest already
+    /// verified ok this round (no point spending a network call on a build already known bad).
+    void check_revocation(Clock::time_point now);
+
+public:
+    /// Replaces how the revocation list (docs/INTEGRITY.md, "Lapis 4") is fetched; production
+    /// code never calls this (the default is integrity::fetch_revocation_list), tests inject a
+    /// fake so the decision logic runs without any real network access.
+    using RevocationFetcher = std::function<std::optional<std::string>()>;
+    void set_revocation_fetcher_for_testing(RevocationFetcher f) { revocation_fetcher_ = std::move(f); }
+
+private:
     struct Target {
         std::string package;
         pid_t pid = 0;
@@ -119,6 +142,20 @@ private:
     bool stock_notified_ = false;    ///< stock-protection notification posted this session
     ThermalController::Summary summary_;
     std::optional<Level> applied_; ///< level currently applied to the system
+
+    integrity::Report integrity_;
+    integrity::RuntimeSignals integrity_signals_;
+    std::optional<Clock::time_point> next_integrity_check_;
+    bool integrity_notified_ = false; ///< one notification per failure, not one per tick
+
+    RevocationFetcher revocation_fetcher_ = [] { return integrity::fetch_revocation_list(); };
+    std::optional<Clock::time_point> next_revocation_check_;
+    /// Sticky once set (docs/INTEGRITY.md): the 30-minute manifest re-check would otherwise
+    /// overwrite integrity_ with a fresh "Ok" every time it runs, since it knows nothing about
+    /// revocation and revocation is only re-checked every 24h — check_integrity() re-applies
+    /// this onto integrity_ every time, so a revoked build never silently looks fine again.
+    bool integrity_revoked_ = false;
+    std::string revocation_reason_;
 };
 
 /// Serialises the runtime state file into JSON for `hicod status --json` (WebUI).

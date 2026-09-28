@@ -1,5 +1,25 @@
 # Unreleased
 
+### Tamper detection: signed releases, runtime self-check, revocation list
+- **Signed release manifest** (`docs/INTEGRITY.md`): releases are now Ed25519-signed, not just
+  SHA-256-checksummed. `tools/sign_release.py` + `hico_sign` (offline, `HICO_INTEGRITY_PRIVATE_KEY`
+  in `release.yml`) sign `system/bin/hicod`, every install/service script, the untouched
+  `module.prop.orig` and the WebUI's aggregate hash; `hicod` verifies the signature against the
+  public key compiled into it (`jni/include/IntegrityKey.hpp`) at every start and every 30 minutes
+  while it runs. A mismatch blocks every thermal unlock, fail-safe to stock — never destructively.
+  A build shipped without a manifest (an older release, or CI without the signing secret) is
+  treated as unsigned, not as tampered. New `hicod integrity [--json]` command; the WebUI shows
+  the same via `hicod thermal sources`.
+- **Runtime signals**: `TracerPid` and known hook/injection library names in `/proc/self/maps` are
+  logged and shown in status, informational only (too many legitimate explanations to act on alone).
+- **Revocation list** (`docs/integrity/revoked.txt`): a small public file this project's own
+  GitHub repository hosts; `hicod` fetches it at most once a day (best-effort, hard-bounded
+  timeout, a plain anonymous request — see `EULA.md` §7) to check whether this exact, validly-signed
+  build was later published as compromised (a leaked key, a build published by mistake, a
+  redistributed cracked copy). New config key `check_revocation` (default on).
+- Vendored: `jni/src/vendor/ed25519/` (Ed25519, Orson Peters, zlib) and `jni/src/vendor/sha256/`
+  (SHA-256, Brad Conte, public domain, verified against the FIPS 180-2 test vectors).
+
 ### Thermal per scenario
 - **Scenarios** page (replaces Games): pick the thermal per scenario. **Games**: OEM / HiCo
   Balanced / HiCo Aggressive; **Social media** and **Multimedia**: OEM / HiCo Balanced (never

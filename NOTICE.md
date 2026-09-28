@@ -1,8 +1,9 @@
 # Third-party notices
 
 HiCo Thermal is proprietary (see [LICENSE](LICENSE) and [EULA.md](EULA.md)). The following
-files come from other projects and remain under their original license, Apache License 2.0
-(http://www.apache.org/licenses/LICENSE-2.0). Their license terms, not HiCo's EULA, apply to them.
+files come from other projects and remain under their original license — Apache License 2.0
+(http://www.apache.org/licenses/LICENSE-2.0) unless noted otherwise below. Their license terms,
+not HiCo's EULA, apply to them.
 
 | File | Origin |
 |---|---|
@@ -11,6 +12,8 @@ files come from other projects and remain under their original license, Apache L
 | `.github/scripts/changelog.sh` | Flux Tweaks release tooling |
 | `.github/scripts/gen_sha256sum.sh` | Flux Tweaks / Encore Tweaks build tooling |
 | `webui/src/assets/*.css`, `webui/src/components/**`, `webui/src/helpers/{KernelSU,WXInterfaces,WebViewCompat}.js`, `webui/src/stores/Notify.js`, `webui/src/App.vue` and their build output in `module/webroot/` | Flux Tweaks WebUI, derived from Encore Tweaks |
+| `jni/src/vendor/ed25519/` | Ed25519 (zlib License — see below) |
+| `jni/src/vendor/sha256/` | SHA-256 (public domain — see below) |
 
 The WebUI font, **Google Sans Flex** (`webui/src/assets/fonts/`, bundled in `module/webroot/assets/`),
 is licensed under the SIL Open Font License 1.1 (https://openfontlicense.org), © Google LLC.
@@ -42,6 +45,29 @@ The encrypted mi_thermald config format (AES-128-CBC, PKCS#7, key and IV "therma
 documented by https://github.com/adithya2306/mi-thermal-crypt (Adithya R). That repository has no
 license, so none of its code is used: `jni/src/MiCrypt.cpp` is an independent implementation of
 AES (FIPS-197) that reads and writes the same format.
+
+## Ed25519 (zlib License)
+Source: https://github.com/orlp/ed25519 (commit b1f19fab4aebe607805620d25a5e42566ce46a0e), unmodified.
+
+    Copyright (c) 2015 Orson Peters <orsonpeters@gmail.com>
+
+    This software is provided 'as-is', without any express or implied warranty. In no event will the
+    authors be held liable for any damages arising from the use of this software.
+
+    Permission is granted to anyone to use this software for any purpose, including commercial
+    applications, and to alter it and redistribute it freely, subject to the following restrictions:
+
+    1. The origin of this software must not be misrepresented; you must not claim that you wrote the
+       original software. If you use this software in a product, an acknowledgment in the product
+       documentation would be appreciated but is not required.
+    2. Altered source versions must be plainly marked as such, and must not be misrepresented as
+       being the original software.
+    3. This notice may not be removed or altered from any source distribution.
+
+## SHA-256 (public domain)
+Source: https://github.com/B-Con/crypto-algorithms, by Brad Conte, unmodified. Released by its
+author into the public domain, free of restrictions; see `jni/src/vendor/sha256/NOTICE.md` for
+how HiCo verified it against the FIPS 180-2 test vectors before use.
 
 ## Firmware dumps
 Device profiles in `devices/` are facts (names, file names, service names) read from Xiaomi
