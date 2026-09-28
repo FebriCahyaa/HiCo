@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_d2lte.git",
+  "codename": "d2lte",
+  "commit": "7f306fdcb806010c487298c4f96d2d63bc286e2d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "43052229921db07756934cc479b8f239148f892c08b769375339a4db71e4ac26",
+      "size": 3145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "00082ddae87389710e8806a0eca4d39705519e9a8e213ad13d37985197164e69",
+      "size": 2691
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4c47707fb47c2fecad1799620b51c43bc85e2d4dab683e2c1b7c6266dc5f1968",
+      "size": 2797
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2e4533bfba41855b184567f1106e17325550db86bf870a1d23a72f91d851eebe",
+      "size": 153
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cb0c2b0dbd0bc67131ee37686a4a5ecbda1b1d871a8ac15b26e18d5ddb871da0",
+      "size": 2755
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5fdf2afd94ccccfbc151d655b23599bea45966e2d2ea02cd71a16fba2e631374",
+      "size": 401
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7569a764ff9223887a30d8c07a3d4de96f189411512d857e7d94b6a7af6814a1",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2lte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:20Z",
+  "vendor": "samsung"
+}

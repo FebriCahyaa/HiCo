@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_gs101.git",
+  "codename": "gs101",
+  "commit": "3032fe4220ab3180aee3365666c93d46191c8ad2",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "88af858cd8a85a3b68f4600ee80f1c193b16fd0dd1de3afa9aa0e41046fca58c",
+      "size": 1202
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c8e97628ba8a955cd7881dd0467ee94cd5f276b266204153e63d3a6fbea657e4",
+      "size": 1210
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "8339de2f4f2a6439c619f25a87eca4c347ccb2f08aca5d3c7aaa2959770c2f4d",
+      "size": 13162
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "b3bf2a139a40ce6f21304c20ccf0a300aac23af5255063090d88ba0b99544656",
+      "size": 1702
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "9597af24476a20eac39b40017244e6122cb29465a10be14c6e5bb529a89205cb",
+      "size": 1156
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a784d7746b1bec12dce53ccb94b34a13210e63b8e47d44ba1d35e630f1b1cf3",
+      "size": 40507
+    },
+    {
+      "path": "sepolicy/whitechapel/vendor/google/hal_thermal_default.te",
+      "sha256": "d85ca3945b1bd5e52f144dbfab5b3f0d03a5947a04fd3237935e05b207b9b747",
+      "size": 117
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_gs101",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-10-16T18:49:01Z",
+  "vendor": "google"
+}

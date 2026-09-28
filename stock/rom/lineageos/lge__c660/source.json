@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_c660.git",
+  "codename": "c660",
+  "commit": "92dd77c20b65cd7a979aa33764cdf2e0894170e6",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bbabe24f079a105a383337e865ef6d8aff058cdc0007ae848e47b8b09964a370",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b95c896dd03c6c40a7dc4caddab6e8be84722b1e78aaace8c9463a4520090b6d",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a2fc61756eb38ee943f70a576166c24d486ae2ee2ff5bf9102a950e02fed1c30",
+      "size": 2418
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b2f797c7c4ca24d51c1fccb64df18a015f945fc53518f26c42888781f0573152",
+      "size": 7760
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9ca74f9219ad7f6bd401e153c02c728956881d5e1b10f7b27917d3337b35d78b",
+      "size": 532
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_c660",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:57:24Z",
+  "vendor": "lge"
+}

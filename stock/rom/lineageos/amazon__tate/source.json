@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_tate.git",
+  "codename": "tate",
+  "commit": "81fa0347bdd42afb41785412434c5d1ca2a46f32",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b76cb70380c06e15ef60a1ce3bb6dfa6a5a6a32f943a3eee94fc758a4788384d",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "47c9e0b9dadfc745893f1251be88e2d9f59ddd15b7912c46489f44b43a762a76",
+      "size": 647
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "69df4893e06b3c806e98d42e2acdaf1d34dc9e1b1179701bd934bbdd2fed0f77",
+      "size": 2417
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f3bf56cdb4de97dd7473482dd691a436daefb4ce989e91d71b6fed8da7a82527",
+      "size": 2776
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7e1017e466e1448680a1d91140a5e283ca7ac9a329eec7d4054404e451a50515",
+      "size": 460
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4f43c8fd6ac5ff93a20daf712a444224382496f7e49f6181b1470f8b5ef8eba8",
+      "size": 6639
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b904a3c8034065b09fb6101fb047e482687de6daec9dd2957f34a288b297cc81",
+      "size": 669
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_tate",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:00Z",
+  "vendor": "amazon"
+}

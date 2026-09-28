@@ -1,0 +1,89 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_mustang.git",
+  "codename": "mustang",
+  "commit": "e9f33bb55ce5d9ed2329bc56c14412c0c1641c5a",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "22e35ac7c21965ac4b2793caf1b88ca7ea87a6f5a2126db74d57fb20e6c9245c",
+      "size": 117069
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "9976306c6421447426f17464a12a3d058eee6e4c936e6a1db7dceb9280c0286d",
+      "size": 4113
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_aa_throttling.json",
+      "sha256": "d047aedaebec064f801564cff02e317d24925f9e2d5d5c009df72fefdf77ed63",
+      "size": 1277
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_bg_tasks_throttling.json",
+      "sha256": "57f3463d1bdfa3b971e8b7ca2a7ab97c299d8581cdd679f6f121718c2f93dee2",
+      "size": 3310
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "2d5d10a5ab2eae1443ea6200569c316cbf0109c407a16672386c0e0095bf8532",
+      "size": 14757
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_earlywarnings.json",
+      "sha256": "b3bdaca7abe12e278cb90a71b804dfc726057bf6c8db5a8810b303c2a818835b",
+      "size": 1902
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_lpm.json",
+      "sha256": "6c56126c13992eb4dd2e94353eacac736c6f73c42d35f39ee9f7d073336808f8",
+      "size": 7641
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_stats.json",
+      "sha256": "eec77bbfb5f4767f261aabb0837e328126842054290ca05eeb695a00095b5890",
+      "size": 9971
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_throttling.json",
+      "sha256": "8660dbc231f6b821c989e18dd73b942de636ae4e2edc9734cf560eb0d05a02ec",
+      "size": 32528
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_vt.json",
+      "sha256": "dcb48a251d2718243d70c407e3f564100d29a9ded407455062e89436599a701a",
+      "size": 2989
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_wingboard.json",
+      "sha256": "34a63a2e41692b2268900e028391fa692f86ea8109bc65aa67891d1223d7afb0",
+      "size": 390
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_mustang",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "mustang"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

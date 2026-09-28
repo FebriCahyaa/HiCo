@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_dubai.git",
+  "codename": "dubai",
+  "commit": "f90e56da4b98f7fefda96a9a97691ed989f0f433",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ab0aa6315769a3087683bd6507d75ea498015543a808a665a99dedfca7c3da6b",
+      "size": 711
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "727ce266d5233b5285b24b5984ba4a0091729df0b0da0b3a53bb06d1aebd9bfd",
+      "size": 748
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e9acc6c4c037f5074581b934ccda7655baf6726dc8030bf6909bcffd5c6eb2d9",
+      "size": 2042
+    },
+    {
+      "path": "configs/thermal-engine-dubai.conf",
+      "sha256": "ed5a0878891126dc21684ae788ca1ce79e9b7cfb5fab14779b554b159dae8903",
+      "size": 3131
+    },
+    {
+      "path": "device.mk",
+      "sha256": "13b6af96ca2e349dd5afe6e2e9c66f5b7c22dfccba419ce5bb0961e1141749c4",
+      "size": 4504
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "eeee5b978e4b14c2ae328722aa97175061300a58750ea3841722de33a336be2d",
+      "size": 843
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1cede274dae5285af8a1a6e5ca63d17a1a9aed0f3c4f95802eab466609e4ebb",
+      "size": 20785
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a6ff430df1abdb94d688316a0793008fd3a6e2fffeec099218c3fe8903b5f93e",
+      "size": 75
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3e47a0deeca9b0e1b207324248dd0929f8d6bd9e42d0255404cc813b4be07939",
+      "size": 268
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_dubai",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-12-24T14:11:59Z",
+  "vendor": "motorola"
+}

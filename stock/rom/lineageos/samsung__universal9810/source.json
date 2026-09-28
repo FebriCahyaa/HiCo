@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_universal9810-common.git",
+  "codename": "universal9810",
+  "commit": "bf1b3259981a1fcd1119fe9bd9e2006476a28877",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "df30f506e2f373c73905d95273f2434922ff732086275cbb5978dfc7a012203f",
+      "size": 746
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c637b7006bd2baa5e903e68a4c24b1ffe836fee4eb1cae0e72fa6c98724f19f3",
+      "size": 3238
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c9fa8f26c94ccee4e696415aebe650d19578c5e471cc82da2aa8c16b161b9c2f",
+      "size": 2430
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "adcc859cc108cbd7d74150f9115f52e60184a89454a3ad1ea2bd337fb0a8a9a5",
+      "size": 237
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "557f91f39f28cdd1f124b0f4983a96606dce60ac1c810b29360deb973804690c",
+      "size": 875
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_universal9810-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:57Z",
+  "vendor": "samsung"
+}

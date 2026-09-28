@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_TB8704.git",
+  "codename": "tb8704",
+  "commit": "9254b8bd48361dedf226568a9c8d95e86728e4a9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6ae38c49e537c2f36ac41a2ce9444b41cd8a6845ff856d2d00a35e3eb7fd4e33",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "31604250a5fded10ed5d34c2b50c6ba0b9883d2c0b130f4e8b5ea82240516927",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a8c191c0b9cc9b5d3a8dec1ea843b6411955c972476ae1338a23c535284f9012",
+      "size": 1721
+    },
+    {
+      "path": "device.mk",
+      "sha256": "154d9d9ac0028724d6a2eecee7ad2bf3b215d224c833fd4d595a13c1dee7d6a0",
+      "size": 2044
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4285bee2b8fd17835bf450730a6ba23436cfdd31cb6f3f2c9e863c3f0495aa6c",
+      "size": 785
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "71d7d57e220f2800d7a3de6f6b173f5a39f8937f1b7f4aa55ad824129583e14e",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "85a2f5577154559771fac2b931fb08bf2daa0affa0584a544072e9b9a023f475",
+      "size": 14188
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_TB8704",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:08:21Z",
+  "vendor": "lenovo"
+}

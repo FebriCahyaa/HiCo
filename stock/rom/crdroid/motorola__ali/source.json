@@ -1,0 +1,62 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_ali.git",
+  "codename": "ali",
+  "commit": "17e8a04d6575f9bb686bec8806c263e78a9cf523",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6b95924f23eaa9da081a32b62b7f2e5a09461389ac500e34845a52a649a4dc74",
+      "size": 19
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7677565afb3ed3fad59ea17649d3524fbf79b487385c1a855c0f2edbba8a2627",
+      "size": 882
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "50c1377238e7a841f5495d1280e0d961225759e6a02d7563126bee350a5a7890",
+      "size": 820
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "194a3925626ca85afea25dd997d5b43327f7397650f4216cf6ca5691acfc7402",
+      "size": 1734
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "666de7ba0a7b01b552ed86eef70b2c64adbc694ee944d9843a47cbcc538c9c75",
+      "size": 3108
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f812dfc1b2838fda314f105b81ed259f5284e1cefbd8a092c69da2b239d97ecf",
+      "size": 3842
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9d8b16c42096290394e3511fa06260dba4fd1143c37ad2d3dc3b38d762e48409",
+      "size": 1200
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "94798db945336db071fa85ecca07d97833999b98d4cc70d56ab2c66c110b46d6",
+      "size": 603
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "123b55e944fdfcabbc3a869c21a52b9d31207c6350d820ef652cfa12e5a71f93",
+      "size": 35582
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_ali",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-02-04T20:53:19Z",
+  "vendor": "motorola"
+}

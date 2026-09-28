@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_berlna.git",
+  "codename": "berlna",
+  "commit": "4b98675ea205a7c605909ae0c48440c77ad513a6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7671113c442f8c14a4002d240e3712c7ccd8e3098e705cbea583c9802e87df18",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5fa5e336ec459b9dd9138f13896f5c2ff52198d220f761a781443cb969c02edb",
+      "size": 1448
+    },
+    {
+      "path": "device.mk",
+      "sha256": "637e1194bac2659fdbadac383e846d8125842195b2abc115ecc141d946e4f73e",
+      "size": 2999
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f2fcfe5fbc698f37ebfb7171aa75d3092fc8ee89294dcf31486b9aa679399baa",
+      "size": 2112
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0e1d47b997238bf23e9612b5c500b3277bc2b2e418bf009a6428b604da91424a",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b3c00831b2017b77c8be047f14fedd2c662ee3cfa2f5782b602095e0e50d8d90",
+      "size": 18664
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fcb52f63e2d848fb82851f308bf76e0395fea67cd980bbefcff549f00372d6c6",
+      "size": 541
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_berlna",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-09T04:03:28Z",
+  "vendor": "motorola"
+}

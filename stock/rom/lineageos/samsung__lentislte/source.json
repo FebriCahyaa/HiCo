@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_lentislte.git",
+  "codename": "lentislte",
+  "commit": "ba73e67e2a56ceabf318d575d855db95619bf71c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7b84b9105c73a53bca19d1e14880b421a82e5bfbd84a892cb2bdeaebe9b9c1bf",
+      "size": 728
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "604dc91618188f4575a9ebb39a850064c4ab56bfef4c284f4cba2ed3b7f0efb6",
+      "size": 766
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c49094fd4368b6262cd80feb899dcca8b4edc23691160519ea70ccfe13eff370",
+      "size": 1766
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b5a36ac9f751bd2d70cb2a46f3471f06a149399b85212f90761857cb71ef7e65",
+      "size": 1306
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5434d70b57c1cd2ef203d74d4cb6a75d7d80957214634d50c4980fb65546bd89",
+      "size": 740
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8fad370b8e6f182b0f7ac690ee47839b92ba7d795fe401e3634951e2e37476eb",
+      "size": 122
+    },
+    {
+      "path": "system.prop",
+      "sha256": "46ef7693780bbcc970d45f7efb826db7cee2b34f1f3265e645998634d712830a",
+      "size": 32
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f9be4789cf1729b6298f655296ae2fd2e3eaf91dc962139a57428262b2b5ecbf",
+      "size": 639
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_lentislte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-04-06T07:08:03Z",
+  "vendor": "samsung"
+}

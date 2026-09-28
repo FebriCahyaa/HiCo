@@ -1,0 +1,68 @@
+# Audio
+ro.audio.silent=0
+ro.config.vc_call_vol_steps=7
+ro.config.media_vol_steps=15
+
+# Blur
+persist.sys.sf.disable_blurs=1
+
+# Brand
+Build.BRAND=MTK
+
+# Camera
+ro.camera.sound.forced=0
+
+# Charger
+ro.charger.enable_suspend=true
+persist.vendor.quick.charge=1
+
+# Graphics
+ro.opengles.version=196610
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# Netflix
+ro.netflix.bsp_rev=MTK6785-18758-1
+
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Power off
+sys.ipo.pwrdncap=2
+
+# Properties
+ro.product.property_source_order=odm,vendor,product,system
+persist.sys.mdlog_dumpback=2
+
+# Radio
+persist.sys.radio.force_lte_ca=false
+persist.sys.fflag.override.settings_provider_model=false
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+# Sensors
+persist.radio.sar_sar_sensor=true
+
+# System
+persist.sys.binary_xml=false
+
+# Usb
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+
+# Wifi
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+ro.vendor.net.enable_dual_wifi=1
+mediatek.wlan.ctia=0
+wifi.interface=wlan0
+wifi.direct.interface=p2p0
+wifi.tethering.interface=ap0
+
+# Zygote
+ro.zygote.preload.enable=0

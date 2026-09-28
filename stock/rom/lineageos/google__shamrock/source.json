@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_google_shamrock.git",
+  "codename": "shamrock",
+  "commit": "a0085639f6e2f892d89940772d0bf75b80ed0300",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "343001c1060ad864e105e1181ad8bce6c35e27aa0e61a2c286d3051366b8982e",
+      "size": 7317
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3b00fc20233441106891bbe94195b2456c5816997c20cbaeeccd52a7af215962",
+      "size": 5122
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e3278dde89777e6f5c4763bdae7fb33ac54921f4f13e261f6a9057d19c68b0b5",
+      "size": 4496
+    },
+    {
+      "path": "device.mk",
+      "sha256": "81f6aa04dd0dd864477192edb4be669fa7dd38a2c66b7416abd70b8df6c1433c",
+      "size": 11292
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d21d619044e156f09ed0261c5b14517c24746af698b93fa3cc2e2a59abe429b4",
+      "size": 1428
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "91d5247efa204a5f31eda48eadd148475510f239ade070d29417a6cef15f4d48",
+      "size": 197
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0dfa2a80f464646b8a259dea92b6204b0cd1b803707036688d0709354455211a",
+      "size": 34928
+    },
+    {
+      "path": "system.prop",
+      "sha256": "39025bbf9272e9683ad16355cdba061dc0b4952dfed3794c688f4dc1b8579813",
+      "size": 3441
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_shamrock",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:52:52Z",
+  "vendor": "google"
+}

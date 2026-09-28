@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_opkona.git",
+  "codename": "opkona",
+  "commit": "317f465c02f7f3a5a126920f700e6494fd97c44f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "19dd4085b0be95a5281bf9f9765c941d77d945b10f9a5e742f8f36bbc149c321",
+      "size": 4680
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d50d1ebc9b344db5c50f37ca16343bddcff6270499c400a73620f78ab4b39b10",
+      "size": 250
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0a0a2eb82dee35b0aa34012c8c6030beb634b9331fed265c4d08a8f16747ba4d",
+      "size": 7074
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c68dd6b808de4ffdb2013bda07da90c7a102ba393cfce5d2f101aa3cfa622c06",
+      "size": 21786
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f1918ab911299adb0a8ed8b9e09b42882414a98435843391142c7051018eb361",
+      "size": 3229
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3f22838280ad775e399ad386bd22eedd657e34b4ddf660ca322699c778ffa73a",
+      "size": 131956
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "7a20ab50d76b9464cf2ddf36643f86205edffb5a1f82d1e8745a13016787c7d7",
+      "size": 59
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d39cc85a44a77ac0df7ce38f1a09512647bcfd9adda646b58acd5c5c3a9bc8be",
+      "size": 8516
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_opkona",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-06-30T15:37:18Z",
+  "vendor": "oneplus"
+}

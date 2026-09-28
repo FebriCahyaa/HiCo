@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_phoenix.git",
+  "codename": "phoenix",
+  "commit": "d543f7edfaa45649ba25d6ccd7db9f2ab93f5922",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2971ac0f0299f1f5d295a0a493ae38c6315e9653107977464883b858b0072d21",
+      "size": 621
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a585f57d8f0b2913d5d4e29855c8b067b98f259aef60de9af71eb2f6213b3c9a",
+      "size": 230
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "815ef3c89d1d1f4fd96a936bcc54f35a3752480497790edec35cc1a99cab9761",
+      "size": 602
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2c8132cbd9978462e99271678f4d40fd89ad53c700cc4c98f6f1713a2b143dad",
+      "size": 362
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "08c8d05bc9f261e2cf47cb3df723e2a59ac3e805650c870b5e2b50bd60c2b616",
+      "size": 271
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8407d0232c285b3405b981d4d4c896942a822e18017327a40384685fe0907576",
+      "size": 118
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_phoenix",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:11:28Z",
+  "vendor": "xiaomi"
+}

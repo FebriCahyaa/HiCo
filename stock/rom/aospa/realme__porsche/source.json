@@ -1,0 +1,67 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_realme_porsche.git",
+  "codename": "porsche",
+  "commit": "93aca6f949e2352216e3875f899b8e1b84446008",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9ab7e776fbb611bdc8460e57e604f46514908af942b47b0ec69077748f4aeecc",
+      "size": 3621
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dac872ce8494e3617b22567b1da0c98bc74082a3a924d61c0aa67914d2dd771c",
+      "size": 5247
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "db73b0de49585601056d95846b31ce47932266d8ba07b255db3b9d0c97cd14bb",
+      "size": 17887
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f5df0faff28af21efce5b62ed5520977301be560fd2c00085a85b75736f629f1",
+      "size": 9711
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "47e82cccca9ee7a10407e34741e24f3bea39c99be5c2d42208ede55bea09e806",
+      "size": 2499
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8b8d30b2fd8fdd9ed9d163428b01d8b7bfa4e209f11f897bc881726ef10d988d",
+      "size": 122395
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "7a20ab50d76b9464cf2ddf36643f86205edffb5a1f82d1e8745a13016787c7d7",
+      "size": 59
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f97eb2a5cc95d7755da30f843c0b790fade747b32e486b079e0020f2dea27578",
+      "size": 44
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "45a520267dbf065930ed440e13f55c0c531b4a45787972d93d4416d37be5a140",
+      "size": 2120
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_porsche",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-03-02T06:00:26Z",
+  "vendor": "realme"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_flashlmdd.git",
+  "codename": "flashlmdd",
+  "commit": "fcd37bed461417717ad492afabd2288764b983ce",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "903a837bc138cf8ab86f8b274bf17a793f87a99695747290c95190b06ecd5d1d",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c59c5b4a4522a00f506049475d61c2ec167341be8baa713c12acbf9b8f8453b6",
+      "size": 693
+    },
+    {
+      "path": "device.mk",
+      "sha256": "df6b8ecce93849c4162aa41376678872ac82514c4546d70ef32a3c999e5eebfd",
+      "size": 2779
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1ca75e0fb81662547a02606fb6026f3aad9c5b72a7eaa16b5e73428f265cabfd",
+      "size": 1029
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5bd717ceb3d319173bf1ef241b5424871f8d84bbbc4a959ffc64935b63ad97a5",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f9bb3939fae4d9f12f985c9beb84c3eaeae94256cee6c79d4a65a662a600ec08",
+      "size": 36260
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b21bb6b9d6beaad09a5231e4acc6ee60ac2ce0ee8312af16510d2f681601547a",
+      "size": 75
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e4af0d94094645b1e2d541b1c67a89bea3ccd033bbd80ea447bd565c43c169ea",
+      "size": 393
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_flashlmdd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-11-25T16:11:11Z",
+  "vendor": "lge"
+}

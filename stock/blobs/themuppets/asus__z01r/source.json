@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_asus_Z01R.git",
+  "codename": "z01r",
+  "commit": "7c0a81de359181884b40268622980fd502bf99a6",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "7ccade05dcd90f1184ac142e6c9196e3dc811b1a07d2a301aa3fbdc9bf53e882",
+      "size": 2080
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_asus_Z01R",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "z01r"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "asus"
+}

@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_rhode.git",
+  "codename": "rhode",
+  "commit": "ecdfedec553b634a0df84ad31b34eee77093bdea",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "4a054a2a53b98d4ede385e0390f39e3dcef00d638d14cc569f4d766568b9c3c3",
+      "size": 611
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-rhode.conf",
+      "sha256": "94f47d74de45c317140ba115532abca121d478ea6c3d2b1069cc2d76f7e34d71",
+      "size": 2087
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_rhode",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "rhode"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

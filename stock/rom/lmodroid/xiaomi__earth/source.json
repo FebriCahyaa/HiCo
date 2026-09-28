@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_earth.git",
+  "codename": "earth",
+  "commit": "1cab2a76e09573003b641a47f0c857d30f4c52a0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7e9f7255d5aaf0c007db4aa3bda77c76b7d8e51fae9a8021511bf9d4bcdd0097",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ba9e9278a8a966179b5bdf9cef9d852c22b356b3e0058ea343e27ce62dd2be6a",
+      "size": 5680
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5c2976f74c1518e0b869129cff55b7b57a7eeeb17f66b94bf5c893051d90da31",
+      "size": 12663
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b0951a0c210cca68e06174c1c3d724374f17a693663fa059d9029f65e33105ce",
+      "size": 3596
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1327a5f27eb7d7ef18c0dc8e771f0b805d2d0e57de1d01cad09d68448e18657c",
+      "size": 42532
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "90294ccaa03ea35165aca7a104b86f3487614bca57870b752ae11112436cd545",
+      "size": 1095
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d71b9a5d02dc45009ade5b36fef76be4a65128bf349aaab908e66edc2742e453",
+      "size": 219
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "be81a2cdc8668cded654be1caea7fa6a7defb6f25b44f3a0391e0b2318de9061",
+      "size": 7323
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_earth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:08:11Z",
+  "vendor": "xiaomi"
+}

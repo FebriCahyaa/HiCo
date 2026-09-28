@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_lancelot.git",
+  "codename": "lancelot",
+  "commit": "27dca181fb3f80c0f1eac0745d9d9bb393aaa3fa",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "12387ae1e567d14524a62e58d8b83b4598cfa41952b1c53f478661ebf4539141",
+      "size": 220
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1d572fb3781a0607f1ed61a275e2c4d325cf3a8ed2b0735659a5a68f776e3480",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7823bd9aa685660e51d553b8b412b4692033e48e877e57a8ee038655cb4c932a",
+      "size": 633
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "3a09e5c656ff91c4069e2eed123ee7bee899814d38bb9befe2b38952acc90ee6",
+      "size": 7996
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9654e7e0da550aa87e5e5728acb469d9f94cdbe7d9a70a579cf95e00ce165279",
+      "size": 2761
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "48aef7c175dd0f5ca992953aa62d90ed6acac45fc87c9436c4358576e126180b",
+      "size": 2176
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "88341905143be3cec90c536a4640fc94c9dd076fd40ce1a66205b71153a0097f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dc434cd7f877b081fbb2193d68b18c1fceeae09d30a6bd73d0f38b15a8e1e6e1",
+      "size": 17069
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lancelot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T16:43:18Z",
+  "vendor": "xiaomi"
+}

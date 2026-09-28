@@ -1,0 +1,179 @@
+#
+# Copyright (C) 2018-2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+COMMON_PATH := device/lge/joan-common
+
+# inherit from the proprietary version
+include vendor/lge/joan-common/BoardConfigVendor.mk
+
+# Platform
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := cortex-a73
+TARGET_CPU_SMP := true
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a73
+
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOOTLOADER_BOARD_NAME := MSM8998
+TARGET_BOARD_PLATFORM := msm8998
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno540
+TARGET_HAS_NO_SELECT_BUTTON := true
+
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
+# Android Verified Boot
+BOARD_AVB_ENABLE := false
+
+# Audio
+BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
+BOARD_USES_ALSA_AUDIO := true
+AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
+AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
+
+# Audio - LGE
+TARGET_DAC_PLUGIN_INCLUDE_DIR := $(COMMON_PATH)/include
+BOARD_LGE_HAS_EXT_AMPLIFIER := true
+BOARD_LGE_HAS_HIFI_QUAD_DAC := true
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_QCOM := true
+
+# Build
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Camera
+MALLOC_SVELTE_FOR_LIBC32 := true
+
+# Display
+MAX_EGL_CACHE_KEY_SIZE := 12*1024
+MAX_EGL_CACHE_SIZE := 2048*1024
+MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
+TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
+TARGET_SCREEN_DENSITY := 540
+
+# FM Radio
+BOARD_HAVE_QCOM_FM := true
+
+# GPS
+USE_DEVICE_SPECIFIC_GPS := true
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
+LOC_HIDL_VERSION := 4.0
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(COMMON_PATH)/framework_compatibility_matrix.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+DEVICE_MATRIX_FILE += \
+    hardware/qcom-caf/common/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+
+# Kernel
+BOARD_KERNEL_CMDLINE := androidboot.hardware=joan user_debug=31 msm_rtb.filter=0x37
+BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
+BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.configfs=true
+BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
+BOARD_KERNEL_CMDLINE += loop.max_part=7 androidboot.fstab_suffix=qcom
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1da4000.ufshc
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/lge/msm8998
+TARGET_KERNEL_VERSION := 4.4
+TARGET_KERNEL_LLVM_BINUTILS := false
+
+# Media
+TARGET_USES_ION := true
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
+BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 41943040
+BOARD_FLASH_BLOCK_SIZE := 0x40000
+BOARD_HAS_LARGE_FILESYSTEM := true
+
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware
+
+BOARD_SUPER_PARTITION_METADATA_DEVICE := system
+BOARD_SUPER_PARTITION_SIZE := 5863636992 # Super partition size measured from l01k stock firmware
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 5859442688 # (BOARD_SUPER_PARTITION_SIZE - 4194304) 4MiB overhead
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+
+# Power
+TARGET_RPM_MASTER_STAT := "/sys/kernel/debug/rpm_master_stats"
+TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
+
+# Properties
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
+# Recovery
+TARGET_RECOVERY_DENSITY := xxxhdpi
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/vendor/etc/fstab.joan
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
+# SELinux
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include hardware/lge/sepolicy/SEPolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
+
+# Timeservice
+BOARD_USES_QC_TIME_SERVICES := true
+
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+# Vendor Security Patch level
+VENDOR_SECURITY_PATCH := 2019-11-01
+
+# Wifi
+BOARD_WLAN_DEVICE := qcwcn
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
+WIFI_DRIVER_STATE_OFF := "OFF"
+WIFI_DRIVER_STATE_ON := "ON"
+PRODUCT_VENDOR_MOVE_ENABLED := true

@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_river.git",
+  "codename": "river",
+  "commit": "58937fa7386be798afca84c7ace842df08028cf1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "34de827c17c7c4f7c6fb439905069e21b1350c44c2f9c870d53ad0386355c3ff",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cdcf52635463f3df6c6453f372df280c4f18d31c90b728decb2501ac4559ec7a",
+      "size": 1436
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "11bd8ef33f187a79c150020140931cfbe23b59f742558dfd0d9c2738c5881f3c",
+      "size": 5238
+    },
+    {
+      "path": "device.mk",
+      "sha256": "36bb128bb7c41dd8de5295447e9f98e45479e9c896033cb6ea70e76e9260a7fb",
+      "size": 4340
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f129258adec3d0ccff5ed8426314dddf96ab3613a880873a01ec7bf4ef5075c0",
+      "size": 2235
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "19b119f66f325f615ad143e4ea098713e6d82346db26cba6179172547ae0242b",
+      "size": 17165
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "541b833ca2f930b0359114ca5233404e1e73b102f349bfc92c6639d9b8454338",
+      "size": 1049
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_river",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:11:08Z",
+  "vendor": "motorola"
+}

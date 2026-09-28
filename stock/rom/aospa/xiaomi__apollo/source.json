@@ -1,0 +1,92 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_apollo.git",
+  "codename": "apollo",
+  "commit": "a941341e5b84cad8c432038e5cff3f267f3d85d7",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cbfb7debee5617587a29d538e0ac474ec484b7f90f0f064cdb812d879baf1491",
+      "size": 643
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "22fd20cfda1427776187ccf5f9552484b3d8883ffe3f70f38aa96adfa311918c",
+      "size": 3679
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ffc5d37cc27842427d2f47c5737baf012164be8ca5d4656d6a32947c0f510a64",
+      "size": 5125
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f3c5bf3587034a487d77440d6b33a7d1a1318cbc9740fe42dac947cc156f45d0",
+      "size": 11888
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ce451b1cc59b6f8a55118b99437d19a9b7a843eb0d95e520d34092653113f463",
+      "size": 1330
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "566063e6ee35d0b67f0bdb008487be8dbce8401114d8fe9a2adce40d957e6591",
+      "size": 1692
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "51fd1fe03bd9226b43e12ebcd6cbab1657f9b20aced71353b573c3cd952e8930",
+      "size": 3317
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c961f3da8842a016adacfaca3c5f9ec66eee83e826573f6d2c4103345c100176",
+      "size": 1454
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "d932c72d847c6a04dca2643a07ee056e7e31eece46654d8f5f62588bb012cb82",
+      "size": 15207
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "65f5ce6d48754503582521ee13624e4b0685075ef698f6baf81f3354d00026b3",
+      "size": 9217
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsActivity.java",
+      "sha256": "d10ee32993b980cc3e9e16a1d45309571aeea93ce1d5baa2099ca3fe06ab8c86",
+      "size": 1590
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "de9dd45d1c839687d5af03a764969babb9cdcba5bb70a812bf37b16d8a6f6723",
+      "size": 5067
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2a8b28ac466a3e513d1f7fc0e14bf6260e126890434ed2d26cf8fbb030984d84",
+      "size": 88323
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "9b2042fbb0a57ce82738d4a84586db3657d356a5c6798d7a1ca8b8f304d4a821",
+      "size": 1638
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "1670387a394ba7762244646279d2df469fc847baec53c6ae251ff7c5c49dfa8f",
+      "size": 366
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_apollo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-11-08T06:00:33Z",
+  "vendor": "xiaomi"
+}

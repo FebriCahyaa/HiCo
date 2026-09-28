@@ -1,0 +1,52 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_lisa.git",
+  "codename": "lisa",
+  "commit": "88b1f11bc5bc6eb5871dfcf083538b15517baf69",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "614c49b2600eb35ae0931698c305d154ebd352c7dd42c00874e9afdab9d56eaf",
+      "size": 81
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8bcec435fed429bc8d2e133a4dea8ea0f5bb67c3f06e19f4b60950b576a31589",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "64ec8a2338be683b7988dbef41f5ed27cafdc29a2208abcccb6775ba2513fee1",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c7ea5c66ebbc92c8c2875e8e8f8ce012f2ed91e97e0bf27aab7a83f13e3e51a2",
+      "size": 687
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dde61d8d2b05591f9f02726aae04f13728ab95019de375c0ad60f9b45312c8b2",
+      "size": 1712
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6de8e3dce7c672357e2d927c3f1d3591d745b22acd35d6caa979fc2a72239426",
+      "size": 982
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aca88f0ae4b1e4c78430ea7baa0c7bcc584687c3eca8384955233627eeb8d388",
+      "size": 25605
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lisa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-04-15T12:14:39Z",
+  "vendor": "xiaomi"
+}

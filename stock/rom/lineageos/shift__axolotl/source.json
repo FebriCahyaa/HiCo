@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_shift_axolotl.git",
+  "codename": "axolotl",
+  "commit": "880920a3237d3922d67881bc5a430cdbf9193ca9",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e2fba91449442f70d6b02ff9d131513773be89cc703b8e5d40deecac40dcae71",
+      "size": 566
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4a38be8363c090d73ed730da184738e58f3445d27f0b5cb608c785cd15af27c7",
+      "size": 181
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4b3f7a89f73a9a292207946059954149341a9329213cde465cc4de9746d3cbd2",
+      "size": 7312
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31979d3416a8c788922f2d1fc38a36c5f3e55397e6c38165b19324095936be08",
+      "size": 19621
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4f9f34154f7a546acab53aae1fb82d80ce175d5811d9c7f072659869ff3e466d",
+      "size": 2285
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "45ae6ead56b1bc6a664d91955c4edae22227f4c89f20e50149066b4158b11c70",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f6ae8301eb4f4ca155495b226541b4b5637cd1b6e0d6e4ac5ed8a8a6432bcd31",
+      "size": 42336
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a2e2cdad89494d7965b8e261387479b97e5b0886e876fe67cabc8edb81ac672",
+      "size": 459
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f406b339d9b7d65ea34294bb142ec4b3ad5197cb46974a05a22a9191bef30848",
+      "size": 6885
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_shift_axolotl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-09-10T11:00:53Z",
+  "vendor": "shift"
+}

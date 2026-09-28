@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_pdx206.git",
+  "codename": "pdx206",
+  "commit": "d797d79314d8ce05585ab7fc9c506f6b3e70c84a",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c24e423fe5ccf2d2d7afa0d7e8fec7d8eae08f2eeb1c023558fa4bdcd784f420",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2952c0da6ca6b42af17ec4f84eb7e378372f2214786e3522fed2dc4d165bed97",
+      "size": 1592
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d646ae111c05cbf832f344ac545b6717c7d0545d64c363b46c4c17be44e0b591",
+      "size": 1758
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9345248e44d3f208771d5a4f7961497070fa423540fae945ad149cf07f9aa639",
+      "size": 803
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1cf58237cf0d790459c1c2a42ec6f5c1ed16a7cce44ec1320b73ac780f369552",
+      "size": 31403
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dc1d42e8d9109e3e0f57c8f22aa9a637d0fb452299421481ddb795a111fcfd38",
+      "size": 102
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_pdx206",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:07:02Z",
+  "vendor": "sony"
+}

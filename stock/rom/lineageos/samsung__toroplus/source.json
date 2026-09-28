@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_toroplus.git",
+  "codename": "toroplus",
+  "commit": "e5f8eac4956a2ab7afad88c58da56fc00c372a05",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "648b1cfa02763e3e6bdfa4e3f78f8aebcc16a9f40a8d9e26697bd1cf59e167dd",
+      "size": 1158
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cedd70ebff4169a3681a88940774d383e7a2a9ce88353538e547f46cdcabbec8",
+      "size": 662
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ae0f49bddb613d69f9b3c62a22ac0e03aec81a26416ea976baf599856d706a93",
+      "size": 1388
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fb1c45ee838eddcbde2f8c65e4206549d667c704ddf92d0ac7777a7473336203",
+      "size": 1276
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5dde5b167eec35c5aef97263d7ff7892328950d2571cb58d6fcca9753185efb3",
+      "size": 10830
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6370301ebdbc586121fd5e2ab29bc5e924def0cc64fce75506a96b4bddf2e64c",
+      "size": 434
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "44d04f3354e07f09b12e6812cabfa6d41878e100063a25e154347c03ace65ea1",
+      "size": 645
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_toroplus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:18:47Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_google_beast.git",
+  "codename": "beast",
+  "commit": "91c796eb41e464f980dccc56c1d3c6cc61dce30b",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "70c197e515c91f69023e73755b393059d9c61298a25a81055e523369b880726f",
+      "size": 206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d3407e663866aff8d59af1ebb9951f36e55ed30d5d541cdd7bf3f254f60a1fc1",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "936322ee7447d1023a637829d9cdd9b0cea440ee0de07725685cb9ea86d8c18a",
+      "size": 992
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b87b0917a7da6cacd12ce188c7c01ed0b9bf718e5409b48d840c61f27abf9ada",
+      "size": 1313
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8ab78b032daf8d66bc5913413839b91d02e7dffeda063e30812d87be57b8e9ef",
+      "size": 576
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a0b1d3650c70c1b0bab54a2247e593d213ed585f4cfe9e3af22520e4b397f608",
+      "size": 348
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dfe9ed5b80743e80fd5a498429eb29cc29f0cdb5e07f3a0702bbcbdf27401d7b",
+      "size": 457
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5846a0e614fd24e82181a3f8efcb6db780986ad16ab4563d8c3561df1a9b6e1b",
+      "size": 847
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_beast",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T01:19:09Z",
+  "vendor": "google"
+}

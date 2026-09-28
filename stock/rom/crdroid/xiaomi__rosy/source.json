@@ -1,0 +1,92 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_rosy.git",
+  "codename": "rosy",
+  "commit": "ffd8fceb85ff783399fa9ff216fb1f100a7b8952",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8c5afc0177150654e16da629460e8d74698a39491c0b7bb5b1d8a1d7ba315467",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cff1b8ba2a6bb0aac51c145c962bc0a3ec8bdf8fb62418c6a387d025d6b99a91",
+      "size": 5307
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "64a84318fd9d4c441fc1f345e11003e8fa4e29c368b86813c8b3c3012b84c023",
+      "size": 240
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "60c812cac71a7b6d7966ee5a31fc975ffc580f9e6f19a075cebb935ecf413fed",
+      "size": 5945
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c91bc9776b1c6d83458a5fcc3e7ba7c50ba06e9032f30a09e67a0793ae4a7158",
+      "size": 3200
+    },
+    {
+      "path": "device.mk",
+      "sha256": "af0645ae2b68fa481cf5686f9bedbb19cacb0ec74f8ce76bdea2c3f59eb29304",
+      "size": 18820
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8dbe8509469b52c6dc893859455d43f73ef09102a202548d0eff4892ce8dc702",
+      "size": 1471
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5614d36b58685bb40b69d27fb701f4eb8ee98195eedb6471b8b123f433a00633",
+      "size": 544
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bde250e158877a45f514f772d24dfe444ce7c388729bf16bdab6713cfa916389",
+      "size": 98811
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "660c56c68d2a323fd01c39014bb0e664bd3330185f554887f79aab405afebb95",
+      "size": 78
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "9ce585d062336d302c3ce7ed249af0e4702ebee12c2e77af9f0db264e546d629",
+      "size": 984
+    },
+    {
+      "path": "thermal/thermal-8953.c",
+      "sha256": "4b690085f4838a12c660fa82a43561f43c0ac377f06a505094dede9513a8d4f1",
+      "size": 2643
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "thermal/thermal_common.c",
+      "sha256": "3f4537489e41d9197fbf0e04201586ad02d932c60146168cc4d94ddbec460a10",
+      "size": 10914
+    },
+    {
+      "path": "thermal/thermal_common.h",
+      "sha256": "17ce697b798703977ccc16ea9cf08e9079cc71e18be667c94dbce72b2df7f567",
+      "size": 2599
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rosy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-04-27T04:15:29Z",
+  "vendor": "xiaomi"
+}

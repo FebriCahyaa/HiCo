@@ -1,0 +1,92 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_nabu.git",
+  "codename": "nabu",
+  "commit": "19dd5323e91c805db770540b84f82c2e1392e57d",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e6039ca44ff0773178e773839eeb2373eeaea4b7d947a0add99c66a9c733bf8a",
+      "size": 158
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e3963ca2d6852067ae5cc2576803901d2d588a509d6c5b1b11e369f443159901",
+      "size": 9239
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9399c6e0ccc6a56f54a7582dab9e0cd6b9405ee8741b6754df7f3827df0813a0",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a4ced8f9479ef2d295598d35a25fe91afccf153fc58ff0d33e9c17de36aa9479",
+      "size": 7686
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d8ceaa7a34d31d5f53ecfc681716623a7ce7fd0287acfecb2ebaff156e84436c",
+      "size": 17342
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "344a7c0339c9dce9c022d96609ef77b42d7d398f5a5dc9edd49dcf9f4a80a317",
+      "size": 1283
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "db5ed0bf3d69ff2e5c6e07f1966f2c18de4f038d970c7960aec2e1d3c91335a8",
+      "size": 1451
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "197103c2fce4d7f2e35304e1a0d58274200d0a9558cbbc5a1fe52b48e6f54d34",
+      "size": 3317
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "2204e3921ccae006cd6a81acd69bd7ab13127e6a7f9ed444f554342d1fcfdbb7",
+      "size": 14251
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "ca27cde814c0417c76b9b13c7acaaf3ec460fc740c07d7cb843cbcf995425f6a",
+      "size": 6503
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "71e722fee4e0751fa60cd7c78c2e680da1bdc6425dc2a9b6ca366ab7137035e6",
+      "size": 45928
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "c0709815de3e9737d8754a6ac1cd3880bc8e63685fc29d8bded64a3224f19314",
+      "size": 1251
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "067a3d61d0f98a264a7a6c75ff0976b88b153fff8465b6a7acbae2a8adf55be5",
+      "size": 1030
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6ddeda98ca919e441f4d9a6e248fec277650b9093c26cb171ad22ea950a8dfa6",
+      "size": 13326
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_nabu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-10-04T15:32:42Z",
+  "vendor": "xiaomi"
+}

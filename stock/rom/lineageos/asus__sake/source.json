@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_sake.git",
+  "codename": "sake",
+  "commit": "c86e4cdaa2b5a7d184c90982b01473a7475fa7d0",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dc1a28c6caf15a7391a1847320796f99580980417ed6ce54af27781e8dd2dd9f",
+      "size": 773
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "65dcb375c8e422fd66426334a787ec4e6218783a91b127f2689effc5e9053db9",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b6e013e0b07901735cacff427d75cf63a106ec004be223824b3e9068a544e845",
+      "size": 6558
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "f440a1bc6e973543498cd645c62f2ab2aa5690711c3db4d9d6099c9efd62d72b",
+      "size": 11791
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8b6ff21ace36414aef8f0df2afb8910fdb97d9b10b458624c52096b12a21b118",
+      "size": 21186
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c3942d471c3989f828a001c44903860f9efd0ce7a23cd08d01bd1f2bdc849b00",
+      "size": 1842
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "39fcf70d962303cebb709fcbe0dbd0665452c26948c2fd50444c318f833bcb1a",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ca1377efc3de25e0f6a096eda8d97b2ae11e1523a00e87cbfd3766ee0f8c2ed7",
+      "size": 54093
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "fd23309d6d9f20686123333f4e5d085f3395992610dc70f75772d658ed473503",
+      "size": 174
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fd1ae165c512379fc66fbbdfb9d14187eb56515d48469822ee55a11a2c742a1e",
+      "size": 6220
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_sake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-22T02:24:57Z",
+  "vendor": "asus"
+}

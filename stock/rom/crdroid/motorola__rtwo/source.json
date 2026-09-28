@@ -1,0 +1,57 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_rtwo.git",
+  "codename": "rtwo",
+  "commit": "2395f45db4c1aec3878435b185d394e728ffb1f4",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b5ba0688532b13d8185fc4e66be7a9793896a03c53ea79717eebf78ae17a53e8",
+      "size": 207
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6e5a907f6b7ef4f3626adae675b7b66fe9747ebe70776cae83f8f5ad38961a62",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f2c49ebf2c2fe23b5c2a147fe7c27e0eae5c6bb6190b5f6f9dc84c5a8874fb72",
+      "size": 1196
+    },
+    {
+      "path": "configs/thermal-engine-rtwo-game-perf.conf",
+      "sha256": "cd557a7933eb1504f055bf0844fe7e4eabf4e5b181b9fbe97b2570e7ae090ad7",
+      "size": 3424
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f816a249494ff9b803bb7205152290cee139d001466b43add9af81058f4dda31",
+      "size": 4534
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d03cba0c655c5f3bbe5383a353d23bef09cc90344d48bdaa47cfa73da724e61c",
+      "size": 1989
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "972c766ba6637b8ecf3634bc2fdcd9c58c3bd68eef0d7a4438faf9ac75b5d01c",
+      "size": 20670
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "980fd5e3164a06ff582391782ab06d1937c4ded5f9268e1ce361ad07b96fe511",
+      "size": 310
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_rtwo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-06-04T13:04:29Z",
+  "vendor": "motorola"
+}

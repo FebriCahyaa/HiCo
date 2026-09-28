@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_amlogic_gx-common.git",
+  "codename": "gx-common",
+  "commit": "2c703062682b17bcb6014254a4b0357332fabcca",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.droidlogic.rc",
+      "sha256": "0b2905988ecb796625370903cd8878afe2a3e678eff2ff70f0abd0991281146d",
+      "size": 263
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "47a1834870f1c298aeb7c56ad0893f65f2abe2cd56c41099f5d232eec3691fcd",
+      "size": 567
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.droidlogic.xml",
+      "sha256": "e232ddad5a10b5524e16356d8f786154b7e6fbbbd85b603cf8763f2d6d288a44",
+      "size": 350
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_amlogic_gx-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "beast"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "amlogic"
+}

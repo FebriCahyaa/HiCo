@@ -1,0 +1,100 @@
+# AD
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
+ro.vendor.display.sensortype=2
+
+# Audio
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+ro.af.client_heap_size_kbyte=7168
+
+# Bluetooth
+bt.max.hfpclient.connections=1
+persist.bt.a2dp.aac_disable=true
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+vendor.bluetooth.soc=cherokee
+
+# Camera
+persist.camera.aifb=1
+persist.camera.filter.version=1
+persist.dualcam.lpm.enable=1
+persist.vendor.camera.preview.ubwc=0
+ro.camera.dualcam.type=2
+ro.camera.hfr.enable=1
+ro.camera.sensor.aux2m=1
+ro.camera.temperature.limit=450
+
+# Data modules
+persist.data.df.dev_name=rmnet_usb0
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+
+# IMS
+persist.radio.VT_CAM_INTERFACE=1
+persist.vendor.qti.telephony.vt_cam_interface=1
+
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=true
+
+# Media
+audio.offload.video=true
+media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+vendor.mm.enable.qcom_parser=13631487
+
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Netflix custom property
+ro.netflix.bsp_rev=Q660-13149-1
+
+# QC framework value-adds
+ro.vendor.qti.va_odm.support=1
+
+# RIL
+DEVICE_PROVISIONED=1
+gsm.lte.ca.support=0
+persist.radio.custom_exp_ecc=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fflag.override.settings_provider_model=false
+ril.subscription.types=NV,RUIM
+rild.libpath=/system/vendor/lib64/libril-qc-hal-qmi.so
+ro.telephony.default_network=22,22
+telephony.lteOnCdmaDevice=1
+
+# Sensors
+ro.vendor.sensors.dev_ori=true
+ro.vendor.sensors.mot_detect=true
+ro.vendor.sensors.pmd=true
+ro.vendor.sensors.sta_detect=true
+
+# SkiaGL
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+
+# SSR
+persist.vendor.ssr.enable_ramdumps=0
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Zram-writeback
+ro.zram.mark_idle_delay_mins=60 
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+
+#Zygote
+persist.device_config.runtime_native.usap_pool_enabled=true
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true

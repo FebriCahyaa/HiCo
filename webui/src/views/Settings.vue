@@ -27,34 +27,25 @@
           </div>
         </RippleComponent>
 
-        <!-- Game level -->
+        <!-- Levels per scenario live on the Scenarios page -->
         <h2 class="section">{{ $t('settings.section.games') }}</h2>
-        <div class="m3-card p-5 mb-4">
-          <div class="flex items-center justify-between mb-3">
-            <p class="text-sm font-semibold text-on-surface">{{ $t('keys.game_level.title') }}</p>
-            <button class="text-on-surface-variant" @click="info('game_level')">
-              <InformationOutlineIcon :size="20" />
-            </button>
-          </div>
-          <div class="segmented">
-            <button
-              v-for="lv in ['relaxed', 'max']"
-              :key="lv"
-              class="seg m3-press"
-              :class="{ on: cfg.game_level === lv }"
-              :disabled="cfg.mode === 'extreme'"
-              @click="actions.setKey('game_level', lv)"
-            >
-              {{ $t(`level.${lv}`) }}
-            </button>
-          </div>
-          <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
-            {{
-              cfg.mode === 'extreme'
-                ? $t('settings.level_extreme')
-                : $t(`level.${cfg.game_level || 'max'}_hint`)
-            }}
-          </p>
+        <div class="md3-list mb-2">
+          <RippleComponent class="md3-list-item" tabindex="0" @click="router.push('/scenarios')">
+            <div class="flex items-center gap-4 px-5 py-4">
+              <span class="badge shape-cookie9 bg-primary-container text-on-primary-container"
+                ><TuneIcon :size="20"
+              /></span>
+              <span class="flex-1 min-w-0">
+                <span class="block text-sm font-semibold text-on-surface">{{
+                  $t('scenarios.title')
+                }}</span>
+                <span class="block text-xs text-on-surface-variant mt-1">{{
+                  scenarioSummary
+                }}</span>
+              </span>
+              <ChevronRightIcon class="text-on-surface-variant rtl:rotate-180" :size="20" />
+            </div>
+          </RippleComponent>
         </div>
 
         <div class="mb-4">
@@ -178,6 +169,15 @@ const presetTitle = computed(() =>
     : t('presets.custom'),
 )
 
+const scenarioSummary = computed(() =>
+  ['game', 'social', 'media']
+    .map((k) => {
+      const lv = cfg.value[`${k}_level`] || (k === 'game' ? 'max' : 'stock')
+      return `${t(`scenarios.${k}.short`)}: ${t(`scenarios.level.${lv}`)}`
+    })
+    .join(' · '),
+)
+
 const toggles = [
   {
     key: 'thermal_overclock',
@@ -223,15 +223,6 @@ async function saveLimit(l, value) {
   }
   await actions.setKey(l.key, String(value))
   delete draft[l.key]
-}
-
-function info(key) {
-  notify.confirm({
-    tone: 'info',
-    title: t(`keys.${key}.title`),
-    message: t(`keys.${key}.info`),
-    cancelText: null,
-  })
 }
 
 async function restart() {

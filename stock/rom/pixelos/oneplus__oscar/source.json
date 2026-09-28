@@ -1,0 +1,62 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_oscar.git",
+  "codename": "oscar",
+  "commit": "f3f1c9e88c4eb203c2aad481e63fbb88291a4cfd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "311bc584ffdc6a37c358e51635680a1a5c369678b0bd4b4ec3136aba9775d8b5",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9d6da139e545af823cac4695d9b972c9a879bbc28f49d24a39a6aab943460754",
+      "size": 485
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dfeaca1cfc2bd6ddc460e6a8a7127d37621bf69435c6b2bda2b0c77758787ac8",
+      "size": 3080
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0ec73891e19dbbf7daab7be375f9edc2378355a9c882b9f597b91f0d27d68800",
+      "size": 3535
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0c047803ca81d24c354df28e8237542ff5a365f9f0fa05b2dabb7c867c76de99",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d614935490d74457d6d269887a2f33d1c4901ef8277aaffe880453fa54de8909",
+      "size": 50665
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e1124c006be15c34faf06f1a050dbb05a858d315c5216788e542cff3f0e10325",
+      "size": 55
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "49c79d0da9a89d29149f21ac19dcf0ed2444b19fcac8b9ab46c8b56087de4b9d",
+      "size": 215
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oscar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-08-30T19:21:51Z",
+  "vendor": "oneplus"
+}

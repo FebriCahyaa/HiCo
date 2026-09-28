@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_zeppelin.git",
+  "codename": "zeppelin",
+  "commit": "6cd7c7b5e152f491599013f493716622c6bb5b6c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c51af7f4d6cf4f46fd086ab16a3880c24ffacb1ea1a0a2dddec13f0650b93076",
+      "size": 784
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ac4c038e848886c1837b8a4c55919e28c6b3bc4e9630cf5fc15180c18b2fcf0",
+      "size": 3766
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0b4806a888edd0f3609ff5a297db414fade0500385994070e7cfb2482c644977",
+      "size": 23393
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b0fa441db4f0c65f3795c467a51e8eee207e197238601f0e3eb6fc27dca40fe3",
+      "size": 1285
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "8d33bd65a2f63003eeaada075d8e1c25bf3c0e628b38926301ae808d90a205cf",
+      "size": 852
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_zeppelin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:04:27Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,97 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_xiaomi_camellia.git",
+  "codename": "camellia",
+  "commit": "dedc84d872e633d883a290aebafe910881c33256",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "1ad1da69a2170fd102449ec5f6d58fbaaff08d6dacea437a6aed4f1c2b73fd4c",
+      "size": 4194
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "ba8d29005976232fc92a893f58768e21c62a647c8f1aa5c6cf1a6e3336434279",
+      "size": 3292
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "887f5210216e225323f0d5e542a91751c0e3398b84763c72b408803e7c33e624",
+      "size": 3360
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "5164b76c002f0c85dd142fbd1d6fcca9d8054f1b48bd63a212d325f65fa6586b",
+      "size": 3360
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "39539f06acf89107e7375e0867ea0f941b070b23b37f1f087cb0ae73f69bf1a4",
+      "size": 816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "35028a65331cf6c9276d02abc3647894fa1de118b55b700993292f75e6d19fe0",
+      "size": 320
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "3b09b676efe47636d9a9da278d04abf49e7798abb4124b3b030eba32f5429494",
+      "size": 1904
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "3b35ec8bdc6848b375608161a66e2eebecf298a9e7b49797b659fb91cbf05d87",
+      "size": 1440
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "600743e6f9b78172a6fec0dd5c5a668b523429ba358d4da015d002a9fb745155",
+      "size": 1824
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "1892c85b6aab92eea4af96bfba18f1f5a1244355c23ce45a315020dae3c7be1b",
+      "size": 3376
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "cf8f1fcc14d1e8eb63bad37c7473386824b54e8f5c40f74b56742d33917175d2",
+      "size": 1984
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtube.conf",
+      "sha256": "e4d7166dda750cc0207b2b94463640418ec805e8f6b97dba333b6a627145e24b",
+      "size": 1968
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "2f0e127eb40bdd945481a8402e15a631115058090447e5e2d406fba04ecb3831",
+      "size": 387
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_camellia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

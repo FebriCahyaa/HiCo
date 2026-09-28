@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gprimelte.git",
+  "codename": "gprimelte",
+  "commit": "41296cadff1faa82b2cb0c5b5830affd5801562f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4721f97300a8ceabf7e5e425781ef34e87abf12b18b43445f628d09123dd108b",
+      "size": 193
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a155d61c8f48be09aa90e529786dd6f9996c0c837b8a8099ee8aa654e10cdf25",
+      "size": 491
+    },
+    {
+      "path": "device.mk",
+      "sha256": "67526f9fa875754feddf89a9e1a70f30bead3ce298e863728854c1ad25d9d131",
+      "size": 580
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "385c55366955517c11e12715ecb3707bc3a0b200de4aae87329f462f5e30c423",
+      "size": 900
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a06d9160d68776beac9f27920c8385e1efae8f63d8add86666377a0bee6e9f69",
+      "size": 126
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "71fac5116d989d3d503d556a53efd378896e4c06f27010a0b6c6e3b3d9489b41",
+      "size": 3462
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f3906f226606f36aca59f44dadc6a473e71fec2959f0d3451592b3e35fdf892c",
+      "size": 144
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gprimelte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:09:32Z",
+  "vendor": "samsung"
+}

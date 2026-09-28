@@ -1,0 +1,112 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_moto_shamu.git",
+  "codename": "shamu",
+  "commit": "80fa688a3b208992b698a2d59a9a1fec85b1400f",
+  "file_count": 19,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9d34e57f305a359125f49088c1dc95ecff000d1ec097be5eb1f8db20609ac125",
+      "size": 1531
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2a6bb0c1cc260dedac7f881f9af740a522a6fd9e973161857d3c4ec2336116b3",
+      "size": 806
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8203f4bf235a8e1c4ac94fdbda38b208ba4464a94b89892856af8ba500e7db1b",
+      "size": 4725
+    },
+    {
+      "path": "configs/thermal-engine-shamu.conf",
+      "sha256": "885317f0d5519bd4215400794516b4ae0757595ab346a57e6562175d81c5618f",
+      "size": 3871
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0ee313a0befa2b72688723718b500a3a9ac42bf6a35b8d2909d173d6036c3c45",
+      "size": 12060
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c4ae27453ab947ca2bc4738837d6f32af7d590dcd819d4bd9178c49d8c3e2729",
+      "size": 1504
+    },
+    {
+      "path": "hidl/thermal/Android.bp",
+      "sha256": "733f0688df14a70d21304ae6788f975d9fd123412da3068f03219e14f1cfa036",
+      "size": 1212
+    },
+    {
+      "path": "hidl/thermal/Thermal.cpp",
+      "sha256": "6a86002cfe8bfe90c445cf820ee3f56d1be3b81828c47ab6fe24e88838ffe759",
+      "size": 4149
+    },
+    {
+      "path": "hidl/thermal/Thermal.h",
+      "sha256": "62b78d156bd3327cc950bc6d17cd303d3b583ca00215a22abe05b934fb7c13ef",
+      "size": 1714
+    },
+    {
+      "path": "hidl/thermal/android.hardware.thermal@1.1-service.shamu.rc",
+      "sha256": "f39e45487a85abd4b525a2bbc0337db372ac0903546f1350b144551f27a248b7",
+      "size": 258
+    },
+    {
+      "path": "hidl/thermal/android.hardware.thermal@1.1-service.shamu.xml",
+      "sha256": "427f4c63fd2e248cb5b11844e5b69d5a214d83eaf86b5081838222dda3d15c27",
+      "size": 319
+    },
+    {
+      "path": "hidl/thermal/service.cpp",
+      "sha256": "1f2370735afacfb74b440432855f1b3070ee9532c2bd7ad996773aa89491839d",
+      "size": 1893
+    },
+    {
+      "path": "hidl/thermal/thermal-helper.cpp",
+      "sha256": "978924497a891145bcf51bf3cad434c325ba3f666b148c031deb110a160ce6d2",
+      "size": 8237
+    },
+    {
+      "path": "hidl/thermal/thermal-helper.h",
+      "sha256": "db6f45cec3f50937d00fc6d5919a63d439c3fe71c90a09bb38dc53c531c196f5",
+      "size": 1539
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c5748edceebce9db629d5eb4864bddf9a2f76cad76c5ef3d47e188393f6d2be3",
+      "size": 203
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "582531f06b7c6ed33b51430650f6841f999cc726a872f447b1c54348df3b4d9c",
+      "size": 10307
+    },
+    {
+      "path": "sepolicy/hal_thermal_default.te",
+      "sha256": "7d0d0516fc18f2c39c17e8857a83063515d27ae8380f7780e65f3e7d35cb922c",
+      "size": 47
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "0e39fb02a118d6b5f99779585b6a307cb7b802c4e8d396209844f67226b6fe8a",
+      "size": 1269
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_moto_shamu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:20Z",
+  "vendor": "moto"
+}

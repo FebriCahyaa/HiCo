@@ -1,0 +1,42 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_google_sprout.git",
+  "codename": "sprout",
+  "commit": "3c2bee59924103df3aa56bcfcae512dcc52eb5c0",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3610e07fee79b8624388d66a9e06ee9b97cac57d954f98647c689d81b32ed982",
+      "size": 54
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5ce13458cb4136ff04e906e028e3cee73d3b48d671a325f876097fd046c094a8",
+      "size": 2454
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3efcf06f0172cb8e49ee6f193c99de23bd8869cdc7d6aafd506dc6525b516345",
+      "size": 2376
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1bbecff7be1b2a267fd2a4b4d298a6fae9c90db755c792b4d0a942362fa25ab4",
+      "size": 1485
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7ad5b1ba4276caac70a2b1ffa2cd75d0df31c57d7f549f026f5e8011d3cdbb70",
+      "size": 35
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:52:50Z",
+  "vendor": "google"
+}

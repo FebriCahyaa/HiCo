@@ -1,0 +1,62 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_huawei_angler.git",
+  "codename": "angler",
+  "commit": "6f413e062b885c84b4f868878293cef7c9fdd1fc",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "32d99b21a467ed7bb2cc4a3ca2bbf4ed92e825c7477e7907b29645bfa5b3424c",
+      "size": 1148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "864fc4a68e559d96b064a521ed47ed20892f235bd8318177ce586c3540c3e6e7",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c5e19b1b958868c77d39cbad6142dea9e6ff774d2e03f7ca1fee0b5c8462598d",
+      "size": 6143
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c575a9bf2433ab846a3f084f2ff9d0cae5f1b3c190b2bbae18255ada4743cd8e",
+      "size": 23908
+    },
+    {
+      "path": "sepolicy/vendor/thermald.te",
+      "sha256": "9a919e2cf5b8942d5aa8c08adb73227c5ac4c104417f874ce2c03e988bf84182",
+      "size": 1031
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "622a227b212007e6cb85a05ee788f7cfd044746131e21a30e856015d8ce48183",
+      "size": 858
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "20e61dec8273267f6285db9110f75e82a4518860a94d7c2633433c81b8c2f127",
+      "size": 8808
+    },
+    {
+      "path": "thermal-engine-angler.conf",
+      "sha256": "d64367fc80ab0d49711529297c3c2789ef8fb8a0a0daf8323a2046b9ac709c61",
+      "size": 6929
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_angler",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T21:46:28Z",
+  "vendor": "huawei"
+}

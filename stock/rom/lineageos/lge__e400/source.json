@@ -1,0 +1,47 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_e400.git",
+  "codename": "e400",
+  "commit": "b338d040936ece024787e6fde6e9cafb08c14f75",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "73646bd1ebe41b6464d1cc94e97173d567e1b07401e5a6f4dc7d0bbd999a9a13",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a91e92e679cb1b0c91fbae05fb3b05ee1d21da42479ab5239d3f2d04387215ef",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8301843ba8c18e4306f9ea7d1a3803c28934df52125f797039472c113a50e727",
+      "size": 2424
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a502b3876adbddda42cf34f1643b16b9977064fbb19024239b587dadfbe0cacb",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "25ccb52ea033f4f996d076ad352d55a9cc2e57d5c81b310d213699de46137f54",
+      "size": 1601
+    },
+    {
+      "path": "system.prop",
+      "sha256": "be261935ff3846a6473c3a11e44e63c77108432a18ca36e428e4cec245e90831",
+      "size": 593
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_e400",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:41:12Z",
+  "vendor": "lge"
+}

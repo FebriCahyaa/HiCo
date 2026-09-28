@@ -1,0 +1,42 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_s5670.git",
+  "codename": "s5670",
+  "commit": "94e7eb1ea92d894f9ac4ce89beba14b341d38325",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ccc6f02aa222aa731a2d5fd5efe1ab2cfd3b2932a7267a324da92fcb94a48eea",
+      "size": 130
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b8ca016c247384efce6541aec62a5d5976ae4e7b38e0d1dba74acba0964f0544",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6da8d4567c5ed501fbc22640d62de25ba49e9ac51c640a2e2bdecf00ff913256",
+      "size": 3214
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c4e1d0a6c898145df1a6423e195bd9ecbb0862c083524ff71cce37aedfb13ddd",
+      "size": 627
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "35d400e3bad22a8ff049725a52e428979bd01063de60e58509b0c185512c837b",
+      "size": 867
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_s5670",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:47:12Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,133 @@
+## All proprietary files from this list, unless pinned and noted otherwise, are
+## from realme X50 Pro 5G (RMX2076_11_F.17).
+
+# ACDB
+odm/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb
+
+# Audio firmware
+odm/firmware/tfa98xx.cnt
+
+# Audio libraries
+vendor/lib/hw/audio.primary.kona.so
+
+# Camera
+odm/etc/camera/config/camera_unit_config
+odm/etc/camera/config/gc8054
+odm/etc/camera/config/hi846
+odm/etc/camera/config/imx616
+odm/etc/camera/config/oplus_camera_aps_config
+odm/etc/camera/config/oplus_camera_config
+odm/etc/camera/config/s5k3m5sx
+odm/etc/camera/config/s5kgw1
+odm/etc/camera/CameraHWConfiguration.config
+odm/etc/camera/camera_engmode.xml
+odm/etc/camera/settings_fdc.txt
+odm/lib64/camera/com.qti.sensor.gc8054.so
+odm/lib64/camera/com.qti.sensor.hi846.so
+odm/lib64/camera/com.qti.sensor.imx616.so
+odm/lib64/camera/com.qti.sensor.ov02a1b.so
+odm/lib64/camera/com.qti.sensor.s5k3m5sx.so
+odm/lib64/camera/com.qti.sensor.s5kgw1.so
+odm/lib64/camera/com.qti.sensormodule.ofilm_gc8054.bin
+odm/lib64/camera/com.qti.sensormodule.qtech_imx616.bin
+odm/lib64/camera/com.qti.sensormodule.qtech_s5k3m5sx.bin
+odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
+odm/lib64/camera/com.qti.sensormodule.shine_ov02a1b.bin
+odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
+odm/lib64/camera/com.qti.tuned.sm8250_ofilm_gc8054.bin
+odm/lib64/camera/com.qti.tuned.sm8250_qtech_imx616_19795.bin
+odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5k3m5sx.bin
+odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
+odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02a1b.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846_19795.bin
+
+# Charger firmware
+odm/firmware/fastchg/19705/oplus_vooc_fw.bin
+odm/firmware/fastchg/19706/oplus_vooc_fw.bin
+odm/firmware/fastchg/19795/oplus_vooc_fw.bin
+
+# Display calibration data
+vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
+
+# Fingerprint firmware
+odm/vendor/firmware/goodixfp.b00
+odm/vendor/firmware/goodixfp.b01
+odm/vendor/firmware/goodixfp.b02
+odm/vendor/firmware/goodixfp.b03
+odm/vendor/firmware/goodixfp.b04
+odm/vendor/firmware/goodixfp.b05
+odm/vendor/firmware/goodixfp.b06
+odm/vendor/firmware/goodixfp.b07
+odm/vendor/firmware/goodixfp.mdt
+vendor/firmware/image/opluseid.b00
+vendor/firmware/image/opluseid.b01
+vendor/firmware/image/opluseid.b02
+vendor/firmware/image/opluseid.b03
+vendor/firmware/image/opluseid.b04
+vendor/firmware/image/opluseid.b05
+vendor/firmware/image/opluseid.b06
+vendor/firmware/image/opluseid.b07
+vendor/firmware/image/opluseid.mdt
+
+# Graphics (Adreno firmware)
+vendor/firmware/a650_gmu.bin
+vendor/firmware/a650_sqe.fw
+vendor/firmware/a650_zap.b00
+vendor/firmware/a650_zap.b01
+vendor/firmware/a650_zap.b02
+vendor/firmware/a650_zap.elf
+vendor/firmware/a650_zap.mdt
+
+# IPA firmware
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+vendor/firmware/ipa_uc.b00
+vendor/firmware/ipa_uc.b01
+vendor/firmware/ipa_uc.b02
+vendor/firmware/ipa_uc.elf
+vendor/firmware/ipa_uc.mdt
+
+# Listen
+vendor/lib/hw/sound_trigger.primary.kona.so
+
+# Perf
+vendor/lib/vendor.oplus.hardware.performance@1.0.so
+
+# Sensors
+odm/etc/sensor/config/kona_qrd_bmi26x_0.json
+odm/etc/sensor/config/kona_qrd_cct.json
+odm/etc/sensor/config/kona_qrd_cct_rear.json
+odm/etc/sensor/config/kona_qrd_icm4x6xx.json
+odm/etc/sensor/config/kona_qrd_lsm6dso.json
+odm/etc/sensor/config/kona_qrd_sx933x_0.json
+odm/etc/sensor/sensor_config.json
+
+# Touchscreen firmware
+odm/firmware/tp/19795/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/19795/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/19795/LIMIT_GT9886_SAMSUNG.img
+
+# Widevine firmware
+odm/vendor/firmware/widevine.b00
+odm/vendor/firmware/widevine.b01
+odm/vendor/firmware/widevine.b02
+odm/vendor/firmware/widevine.b03
+odm/vendor/firmware/widevine.b04
+odm/vendor/firmware/widevine.b05
+odm/vendor/firmware/widevine.b06
+odm/vendor/firmware/widevine.b07
+odm/vendor/firmware/widevine.mdt
+
+# Wifi
+odm/etc/wifi/bdwlan.elf

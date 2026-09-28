@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sagit.git",
+  "codename": "sagit",
+  "commit": "f73f45fdeaf787a17aede8f77f2608c6dacdb786",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-8998-high.conf",
+      "sha256": "52963e16edab97cb303178f4be0c9d1ce5b04f059a9a7f00ed72f0c9649a91f4",
+      "size": 3488
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-8998.conf",
+      "sha256": "6719bbfe5e1f3e18f93252febfb6e824934b845abf6a555445b3256decf5c0e2",
+      "size": 3456
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_sagit",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "sagit"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_davinci.git",
+  "codename": "davinci",
+  "commit": "d084f23650a26a281f536682b0e7894183178893",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a973c211dfd805bdbef1f4acdf9eb81e8ec3f3f69e99c23fd3ab767f47facf7f",
+      "size": 5743
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1280a6c7c1f03df6b5f084d835144abf67988269213bdee115de988175ba8b06",
+      "size": 253
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a86b7fa0a681b84ce0e95acdf1fe85a853c3f1b4f7563e42cba3ec109623f44c",
+      "size": 7332
+    },
+    {
+      "path": "device.mk",
+      "sha256": "673470e4c6ccd8157ddee9cbf5636b5f120b88625b413c6c9b572984e5724c6f",
+      "size": 19153
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6d260cf1d2bc19f8fc486eb3873b68f940d0961b0dcc3208c3a0486f9c965515",
+      "size": 1868
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7ac99dbcad8d13e06a876cf115362a1041ab58bcdd9e47d62e4f7db10baaabce",
+      "size": 45403
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7631defc021d8c8ec380b654a52eeaa88a2268824fd50d0f6da72b9a61e74dac",
+      "size": 988
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "08820349c954a744f62f78e5b95978ab344e84854d68edf5f8089e79bbfc7d52",
+      "size": 7509
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-05-25T19:17:31Z",
+  "vendor": "xiaomi"
+}

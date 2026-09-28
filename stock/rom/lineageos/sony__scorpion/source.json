@@ -1,0 +1,52 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_scorpion.git",
+  "codename": "scorpion",
+  "commit": "37634d913b463f72579ddc598b14f4e768f53677",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "13b0330490cce8219a31f61daeaad5111927ead6c0c70cffe7f3b67f9a97d137",
+      "size": 125
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a3015e504ffb3df263fe3ab80549424c11ce5b80356158d73f71c802b2b57126",
+      "size": 57
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9f006dc4924ab2f3106c68735b7adca72b8c6462303ce08bd251823d0359ce7d",
+      "size": 899
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8dfc01ddecbd10e209aab6207d9f3f739b71b96a6c31ef53b980c8f560dcd6b1",
+      "size": 240
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "18c702cf28fb50b80e95249077f73d7faeb244c34bba193cc451b43ff20bfbbe",
+      "size": 4458
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1560e4dc8c9d8f78b862260ab537943757e992ece89dae1a5c811f5f738173ff",
+      "size": 120
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "abffdbe8ee57d2dded814e51d0dc933ddf3af685a9acf9ec4f73fe5a6aeb027f",
+      "size": 32
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_scorpion",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:48Z",
+  "vendor": "sony"
+}

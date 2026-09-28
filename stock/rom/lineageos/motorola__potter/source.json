@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_potter.git",
+  "codename": "potter",
+  "commit": "ad60ebfd1f623cc55b962b98d5b57758124edb74",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3b73a1a4d2bda127a02298980735a06d2574b1e9f040e1812de9fde64bcffc13",
+      "size": 3810
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "12cbe67c7b8e6ff89d7143860a783f40cfad14cd0bc83dde7c0c9f66c5b45a81",
+      "size": 5902
+    },
+    {
+      "path": "configs/thermal-engine-potter.conf",
+      "sha256": "e0336f7590ae2037815980ff0380de8a8ff31edff95da1589e462122c6b13274",
+      "size": 2579
+    },
+    {
+      "path": "device.mk",
+      "sha256": "095ccd7b9e906fcfb51ce9edd6aef014ffaec6a8b9b1b3ed6ccf01177b93eddb",
+      "size": 11849
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7aa0c7576590a1e5e2ab70bd9aa288f7f897c44b96a19d05fa8d744b0b699c6e",
+      "size": 1427
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2ba33ca0557f1bb5b7ba88d67f9d0093c7185a36ec51fe2b7bd9372d3e001d6d",
+      "size": 5
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6fc5846494c039112649ef0675ad83bdc0e48ba988f2d59d34bc48a5edbb6c92",
+      "size": 28679
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3bf27297e8f7e070865979a348447a51e0ccc1012ef9097abb5e26484a59c176",
+      "size": 5966
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_potter",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:00Z",
+  "vendor": "motorola"
+}

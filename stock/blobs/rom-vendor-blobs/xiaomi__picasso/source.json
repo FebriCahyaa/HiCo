@@ -1,0 +1,82 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_xiaomi_picasso.git",
+  "codename": "picasso",
+  "commit": "0cf5c9f352ac94dd67302ff78394ab5e195621c6",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "971ea7419a5c2d2495b94671caec8ee6c3950f2086b4c0237a237f4a48f5c2c3",
+      "size": 540
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "aaa3b4a0a97da9b718a22147a408baffd474f0e523f8adec5a803248917ac122",
+      "size": 27279
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "34f85913bf447c902d97c47baa3c06aaa600b8eae85194a715036e9c14e03bc3",
+      "size": 976
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "25d5800841d4b935cc83e4c049fb50588b819863b71fb538f5c5a72cf29e45c0",
+      "size": 1408
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "b3b21c80278fa3f28d3ba007f53f4c8cd06cc74e5f81ad38cff99fa75f0807d8",
+      "size": 571
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "1c0c02fb5e91063c75b7cce358b6ebacf416396a21029e4d834030e7e100c97f",
+      "size": 656
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "f250c844f6ea4ab54194add56cfbc9f22ae7457cf07ee28f2775ec84288f052f",
+      "size": 960
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "b97229d43c4ae70dfac7d66e078d8c0f8d32617710e48be297e925d1f603763f",
+      "size": 1920
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "1c6cce8a445c7c0f43f4eaf89b1cc3b7ac7a736aae234f748a4e4255e24586a6",
+      "size": 1536
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "f2811ac920b5f445c1948b880b3029901e4f73eb0a6d4e849b3b1b9c081bdeb2",
+      "size": 1360
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "7099a0a23c055c18df1162c88b9c9756177afdb733b71511e499abe691e28a61",
+      "size": 554
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_picasso",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

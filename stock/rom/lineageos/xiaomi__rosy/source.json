@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_rosy.git",
+  "codename": "rosy",
+  "commit": "d2752438c5295df9f30936a857f81eb68df203fd",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3dcf10acf28b1103bda4cf4a86183cc054935b2d399bfc51c3326cbbb26fa602",
+      "size": 622
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b53350d0b7817e89614fa28addb8429470102bbf72e73c1346b8f6ca9996856b",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a89ec5aca863b6800a6cf46cd954c2f8494b62251247d2010aa0844e296f353e",
+      "size": 1894
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d92d9ba21acefcc86d7410161c36483c244381ed9526bcff71ba4dc414156ed0",
+      "size": 2371
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4801e84fd7eda8b9eccd68ffba7f1168aeef98c74cc13dee4d0fb110bb55fed8",
+      "size": 2068
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2e7180b68c7c1c6a7e097fa91e8013eb095f465e8847186391bcedc15ccba411",
+      "size": 220
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fd0b311041a80f13e0d6395cd04ab7ec179b1c508e122116464367adf45a2b8c",
+      "size": 48937
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rosy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:05:58Z",
+  "vendor": "xiaomi"
+}

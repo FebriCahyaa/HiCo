@@ -1,0 +1,77 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_realme_RMX1801.git",
+  "codename": "rmx1801",
+  "commit": "bbfae3d38811d61f975456434324bfea1b151077",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6cca3e25851ee35934a7547188f32c7f0f7adede4e45bf070547e87c841298cd",
+      "size": 5181
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3bc09e5cc9f49fceb07cc0318608352e22e9013abcb64d2f4cbd40c0992f29db",
+      "size": 756
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7ff3e42d00123bd39afd9a39f65cebbbf4fdb7f7316eec8aa03188aae010ba10",
+      "size": 6547
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "fb9595edfd661bd718988efc871fa402fc6cd5491954c3ef0124d0c58d36ac68",
+      "size": 3687
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d4c26791bc5e9b5922229bed2c29cf4c87db4115db97bbd02cc419c358bfcce6",
+      "size": 21268
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a6f3c083a947150c2aacbedccbdd11a35b3d3506ca8b21b76cc9b2799bcb245f",
+      "size": 2441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fa5e3dd3682dfedde9cbb3fab710bdaded677d331f1c79cff874f074fd6e8bbd",
+      "size": 161752
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "3cf50e6b8d7759eec42e6d99f434e41f46dd919026e69fc92884eefef054d987",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "96621c315fe69500bc7e99e487cd6ba585cb2f72d8e3cc84e7831d9b3475c0f7",
+      "size": 359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "74d4799cc27ff3cf9bf7a5c13d09d1f2d10bfccbb9185adceeedb50a19282374",
+      "size": 2523
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4cb1ee688a5c0e38481eea8d5d403933ccfc8d6237dffafeb35ef4afef558de8",
+      "size": 4708
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX1801",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-05-20T18:24:10Z",
+  "vendor": "realme"
+}

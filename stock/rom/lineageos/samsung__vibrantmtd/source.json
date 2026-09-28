@@ -1,0 +1,57 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_vibrantmtd.git",
+  "codename": "vibrantmtd",
+  "commit": "bc5a2bc1406aa4d3e6fa16e056516ac58a8cb70e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a6d8dd487b8318e31020d77de354a8b1330627c1ba644ad2a695fef98d76b459",
+      "size": 1015
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "95b379da0e4606772be9e2f59d26eb47a9b08e862105c1f3de08ea81e5b13dd8",
+      "size": 664
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ff4519e60ab9ed36ca3a59d7719dc4bf6545227dd7d1b19add9f13ab9e6599d5",
+      "size": 1152
+    },
+    {
+      "path": "device.mk",
+      "sha256": "837052d3c5af92794b27ffa280dd3e662ab4f256b255adbf71d79aa884d14d76",
+      "size": 1460
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bff7b101328bc8b71b8189278dbe0120978628baa0445fa30202dfdd33d295b5",
+      "size": 507
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ed18f4409a81a9f28c4eed73962b363561718a16092eb6f11c6865e6e41db231",
+      "size": 256
+    },
+    {
+      "path": "system.prop",
+      "sha256": "34553b6a3b23e9922769468a9f65b7e509abd35f0fe26077ef337aaaba27e9e1",
+      "size": 209
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0798f8c45cac2ad835bdfcb7285fc6af07f7c99881a424dacb6ee10c3a75e36a",
+      "size": 845
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_vibrantmtd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:19:50Z",
+  "vendor": "samsung"
+}

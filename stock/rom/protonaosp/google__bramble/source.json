@@ -1,0 +1,47 @@
+{
+  "branch": "sc-qpr3",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_bramble.git",
+  "codename": "bramble",
+  "commit": "f0f26e574608a3a8d751892c3c5c04762d975f1c",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bb5890803dc21536d82a5834f58dac125faa4820f3ec4950b4b540fa318f4ae6",
+      "size": 1263
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5194909a41805c70fa1b5fcd6ae66ac4de1d8dbc3aaec69454d1a2cf0855376d",
+      "size": 827
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "65e8d4e97740e6ba39e71a5b57dc9d26bb4d1da9144ce00023f17f61052b2625",
+      "size": 795
+    },
+    {
+      "path": "device-bramble.mk",
+      "sha256": "fab90a8e79e936dc2588218d30e0750a91237dc7a4b0e2a0aeee0ffe3fbd8c1d",
+      "size": 10939
+    },
+    {
+      "path": "thermal-engine-bramble.conf",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "thermal_info_config_bramble.json",
+      "sha256": "b6bbde6cb49a849e24e48f96a5fa65dc8f0e7f3fb98227e42b33ae18bebd85c2",
+      "size": 6771
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_bramble",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2022-08-08T12:58:49Z",
+  "vendor": "google"
+}

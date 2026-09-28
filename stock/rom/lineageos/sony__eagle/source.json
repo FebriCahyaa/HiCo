@@ -1,0 +1,47 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_eagle.git",
+  "codename": "eagle",
+  "commit": "420250c738e5dc497f54193e49522d5120f1e1c4",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f4e7531e67c2aa647e81ac29f014f536f17e3ae50f01bf28778e2013d1cb0290",
+      "size": 1832
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1781d28aa7d9c45a0cd4d13820ab1ce0725cc037389733722ffe2d058ec8fd0a",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ad2f968c658e577ec0f63deef941b3c101a3e79535d32ab69e180550b6e053d4",
+      "size": 1051
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8dfc01ddecbd10e209aab6207d9f3f739b71b96a6c31ef53b980c8f560dcd6b1",
+      "size": 240
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1c3ed985651f3deb28ee851838450265568ee6c3e44cd1dacf53999f35387d8f",
+      "size": 1009
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b2efec06d511c2a5256f16f455f3eddb26fdb256c78d676ee2a9f240e14094f3",
+      "size": 636
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_eagle",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-12-29T17:02:47Z",
+  "vendor": "sony"
+}

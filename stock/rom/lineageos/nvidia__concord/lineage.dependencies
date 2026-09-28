@@ -1,0 +1,35 @@
+[
+ {
+   "type": "kernel",
+   "version": "6.12"
+ },
+ {
+   "repository": "android_bootable_tianocore_edk2-nvidia-lineage",
+   "target_path": "bootable/tianocore/edk2-nvidia-lineage"
+ },
+ {
+   "repository": "android_device_nvidia_shield-common",
+   "target_path": "device/nvidia/shield-common"
+ },
+ {
+   "repository": "android_device_nvidia_t234-common",
+   "target_path": "device/nvidia/t234-common"
+ },
+ {
+   "repository": "android_hardware_nvidia_arm-trusted-firmware",
+   "target_path": "hardware/nvidia/t23x/arm-trusted-firmware",
+   "branch": "lineage-23.2-t234"
+ },
+ {
+   "repository": "android_hardware_nvidia_boot_control",
+   "target_path": "hardware/nvidia/boot_control"
+ },
+ {
+   "repository": "android_hardware_nvidia_light",
+   "target_path": "hardware/nvidia/light"
+ },
+ {
+   "repository": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
+   "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-9.3"
+ }
+]

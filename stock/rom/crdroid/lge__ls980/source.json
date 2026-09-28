@@ -1,0 +1,52 @@
+{
+  "branch": "7.1-old",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_ls980.git",
+  "codename": "ls980",
+  "commit": "2ea6a4f8e546a2ece33979bda25c5e381f453cdc",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ad210b8bab991eb0bb0691e6a8b65fb06067a3923b9a27bbe5543e8754cc8f62",
+      "size": 130
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "45aed9d47bf8baced25023c5ad0cf154e4c9d10f15eae03585149bf7f29720ca",
+      "size": 773
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a13d42b61eb9982f029f8209185e6da9ba1b4396d56e4d856601cc8bab0f853f",
+      "size": 1000
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "775ac602419ca08093705d4cdc5111ca67c4e8c3dd0e033bbac39eb986d18c32",
+      "size": 103
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ebfa82338e23b5edd066167b8a2323ac2e2337597dee8db3390c0f3535cc5929",
+      "size": 143
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9db9f1f5a41cca281c4d742d579f72dd493bfed6dc7b2e0bea51b378270a3b24",
+      "size": 392
+    },
+    {
+      "path": "system.prop",
+      "sha256": "231786d91cf05f43a82b40ea6a00add7bb5d2c7469e3395c28721a92147e6001",
+      "size": 426
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_ls980",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2017-03-08T18:17:43Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_d2x.git",
+  "codename": "d2x",
+  "commit": "959f3df886aaa5032b245a237f7d455a76ce83a3",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b0eb0f4d84fc1e87d13afc743490018619424c1aa275e4023cf5d28d5724bac8",
+      "size": 723
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "705214ac39adb5ffa6030c28adb5e5c7d04dd3ddf65a03b6e93495b7868d421f",
+      "size": 748
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3f1b861dd60ed78ee48d1271d0c137c338ab01d23e948b0112356f118bb8d49e",
+      "size": 1047
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f00644b635f703a17cf6500b7d5d678ea770378795c8f71a645fd4c5860052f1",
+      "size": 1143
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "42b2d557480607992adf879fbdb5209f3743ce510e1b49c2252553d5619ee15b",
+      "size": 1499
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e045d6c6ee1f69abb0cb21a5993541f332b3c6d37824792a9a1ea637c7ff75bd",
+      "size": 140
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "599c87ef840eb2b5d6187bcc672cef1500b5308ce3363f8a9aa3d45413817de4",
+      "size": 4465
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "24c578a8d2cf6e865eea33739df96772fe40e35b3978cc162c7249ae52533446",
+      "size": 412
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "38a3884331d3767acea4ce233291ac0d83851e5c5b1e75f082ce8571783bd2e1",
+      "size": 2682
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-09-02T16:46:00Z",
+  "vendor": "samsung"
+}

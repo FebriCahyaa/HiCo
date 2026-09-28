@@ -1,0 +1,71 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/init/init.batterysecret.rc': blob_fixup()
+        .regex_replace('.*seclabel u:r:batterysecret:s0\n', ''),
+    'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
+        .add_needed('libpiex_shim.so'),
+    (
+        'vendor/lib64/libMIAIHDRhvx_interface.so',
+        'vendor/lib64/libarcsoft_hdrplus_hvx_stub.so',
+        'vendor/lib64/libarcsoft_super_night_raw.so',
+        'vendor/lib64/libmialgo_rfs.so',
+    ): blob_fixup()
+        .clear_symbol_version('remote_handle_close')
+        .clear_symbol_version('remote_handle_invoke')
+        .clear_symbol_version('remote_handle_open')
+        .clear_symbol_version('remote_register_buf')
+        .clear_symbol_version('remote_register_buf_attr'),
+    'vendor/lib64/libarcsoft_super_night_raw.so' : blob_fixup()
+        .clear_symbol_version('rpcmem_alloc')
+        .clear_symbol_version('rpcmem_free')
+        .clear_symbol_version('rpcmem_to_fd'),
+    'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
+        .binary_regex_replace(b'\x9A\x0A\x00\x94', b'\x1F\x20\x03\xD5'),
+    'vendor/lib/libaudioroute_ext.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib/hw/audio.primary.kona.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib/libaudiocloudctrl.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    (
+        'vendor/lib64/camera/components/com.vidhance.node.eis.so',
+        'vendor/lib64/camera/components/com.xiaomi.node.tracker.so',
+    ): blob_fixup().replace_needed('libui.so', 'libui-v34.so'),
+}  # fmt: skip
+
+namespace_imports = [
+    'hardware/qcom-caf/common/libqti-perfd-client',
+    'hardware/qcom-caf/sm8250/display',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/display',
+    'vendor/xiaomi/sm8250-common',
+]
+
+module = ExtractUtilsModule(
+    'psyche',
+    'xiaomi',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device_with_common(module, 'sm8250-common', module.vendor)
+    utils.run()

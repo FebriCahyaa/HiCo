@@ -1,0 +1,12 @@
+#
+# system.prop for gts210wifi
+#
+
+# Rotation
+ro.sf.hwrotation=270
+
+# Disable ril
+ro.radio.noril=yes
+
+# WIFI model
+ro.carrier=wifi-only

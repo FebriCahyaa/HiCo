@@ -1,0 +1,72 @@
+{
+  "branch": "crdroid",
+  "clone_url": "https://github.com/crdroidandroid/android_device_leeco_x3.git",
+  "codename": "x3",
+  "commit": "f691a315086b3ea107c47d55387445059f76358c",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "af3175f7da79d0ab16be46e9aa3ad5026ef492b76f6231ac70076b2087d2333a",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "25d07b7a2d60372f68697ef8e1474bab5f744d3203d4277c82ccaf8793511efe",
+      "size": 51
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5621b5725f2dcec5ff742bb4a77789cc93ac71b2fddd825010022a460763d20a",
+      "size": 5320
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a8d4e61bf6538d43001ebf4daa5ada012cb9c2b7dfe201c5b6a666b7fa039ae3",
+      "size": 13759
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "72cf9af0cca55df39439bcb8273e40dddb9de664679290e75d62bbc0e338fe57",
+      "size": 329
+    },
+    {
+      "path": "sepolicy/thermal.te",
+      "sha256": "86fdc9905f014a074d487eb69a74cebdbd02c17455d6b538cb79f508a70f0f3e",
+      "size": 1227
+    },
+    {
+      "path": "sepolicy/thermal_manager.te",
+      "sha256": "01c462078541de8d6a09a665451d149e1e4e9d34216461c40f46e0121b6537d9",
+      "size": 663
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "658febe4bd9ca54ac18b30bf382acd4b4cc871d6c0b9c8be19955dda4e710e09",
+      "size": 1058
+    },
+    {
+      "path": "sepolicy/thermalloadalgod.te",
+      "sha256": "07232beebab7c9f6e23e4a4bfd1ccb3fa173751d5d8bffcf449daa64f515081b",
+      "size": 1665
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4a9841e57d8753d96de95be95677f394da3b6316ec998756be2e75057fbc3781",
+      "size": 5075
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b79081688f305bf412ee801e4ce09ccc7cfcf2485b5ae6aee6aba130c39f7969",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_x3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2017-11-09T15:37:20Z",
+  "vendor": "leeco"
+}

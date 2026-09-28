@@ -1,0 +1,25 @@
+# Huaqin modify for block camera id 2/3 when testing vts by lizihao at 2018/06/26 start
+persist.camera.expose.aux=1
+# Huaqin modify for block camera id 2/3 when testing vts by lizihao at 2018/06/26 end
+
+# System property for cabl
+ro.qualcomm.cabl=2
+
+#Huaqin add for hwdiag tool by miaozhenxing at 20180608 for rom start
+ro.diag.ramsize.gb=1
+ro.diag.support.colortype=1
+ro.diag.mzsimtray.detect=1
+ro.diag.support.psncopy=1
+#Huaqin add for hwdiag tool by miaozhenxing at 20180608 for rom end
+
+#Huaqin add for camera config by longteng at 20180613 for camera start
+persist.camera.privapp.list=org.codeaurora.snapcam
+#Huaqin add for camera config by longteng at 20180613 for camera end
+
+#Huaqin add for M1852-470 by miaozhenxing at 20180727 start
+ro.diag.enc_wechat_key=1
+#Huaqin add for M1852-470 by miaozhenxing at 20180727 end
+
+#Huaqin add for 819778 by chenqiang at 20180831 start
+vendor.audio.adm.buffering.ms=3
+#Huaqin add for 819778 by chenqiang at 20180831 end

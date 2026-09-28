@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_osprey.git",
+  "codename": "osprey",
+  "commit": "75348a52d95b30373830f838a9c978c06efc6052",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4ecd5ed547fcc8b46ee068f10ff3c366a0dd966f712de70f62e7da33a25b1c02",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6953f0f2881eb6c09c425b0b9eaf3cfbba16cda9534457f77f480d0b8a003ffa",
+      "size": 707
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ac59acf6a5c41e5417bb883bb300bf4381238bfab6b250b3ff513d8699cff825",
+      "size": 1731
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ac5fa264fbfa933a1066632c6f505a34034357a63a8ca68c10a12ecf160e4cf0",
+      "size": 2210
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dda6871e214a15727a2b261b3230897aa83915a53ab122ec3281eaebef86f100",
+      "size": 310
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5e3da7d4ae41dfc98132fa052e891e13981278b0046b6a05c0ecf38228e2c903",
+      "size": 126
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "052e2bc4a83ab106c90ddea7fc6b8ab5d8bad5ff96ec529ce885c5e0ea2fb481",
+      "size": 4991
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_osprey",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-04-13T05:38:42Z",
+  "vendor": "motorola"
+}

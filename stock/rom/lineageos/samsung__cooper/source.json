@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_cooper.git",
+  "codename": "cooper",
+  "commit": "8e91f78ab783e6eeb8c62e4fb83750a5032134b7",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5eb8a20b85290e84c284e1f3887b618531ab71f0437493569fc71e8971c64c05",
+      "size": 133
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "04fc15c1ea9a6f28685bae2feee63f13f17ad671db5c27c5e5313064ee3d2ccd",
+      "size": 58
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cbcba1757b6f1d5ef3d8deecf2703d69c4b8d8b75a876d5ebdedee1b874fc8f2",
+      "size": 3818
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "55255d6bf9ee17164e641e54ae1aa2bcef3d27df0a032a8437a3298b5e26320d",
+      "size": 18783
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b88e94778420f476dd7bd993fe6126690ea93e6226f915191f48117b8279a8b6",
+      "size": 1268
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d3050630f6a15366a5214450007e6f06b4863ee39d03575145b2022f7665d361",
+      "size": 869
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_cooper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:07:48Z",
+  "vendor": "samsung"
+}

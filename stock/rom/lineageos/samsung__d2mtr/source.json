@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_d2mtr.git",
+  "codename": "d2mtr",
+  "commit": "2afc57d192500afb7bda97c2fa5ec5c41a1bc018",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e65450fb32b86098adaf5afd69cfbba4ae31198894ed246b8a04910439d7c3e8",
+      "size": 1154
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a97abef9f697109034a75277c141d4ef699d13dde61ff5cca6e32656a308c3bc",
+      "size": 974
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "86f92f09ff519ebbc2e33db21e511adfa91d03226ed5e25349118bdf941fd516",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b9304f8d85715e67e3ab0d6a12e0125555da6345ad843fabd44d961c182d2086",
+      "size": 553
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a3740145fdad0684040d406b7727246f61c1c832081453789cf2c087c4b8c71a",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2mtr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:16Z",
+  "vendor": "samsung"
+}

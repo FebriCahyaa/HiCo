@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_yu_tomato.git",
+  "codename": "tomato",
+  "commit": "5237b8df1952f382422b6c9472f1bf259a5227ec",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6fd1fcaae724cdc51e72a76efb8ea7a2db38c71deea3dd63a36b991b83e45ab7",
+      "size": 707
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9092d5d160859da0421e472d57967099cbc006eddc8d5fed67606796f73445fa",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f4e10a105fee1d4af52aaeec1561209f4529b4885805babf2b854cf445d7dc5b",
+      "size": 2435
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "d0b4d96f47f60a0a9c5977978081adb986c900d51f33eb2d106ed3a3b6a05c6b",
+      "size": 3451
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8beed404f0c8088cbab90641787256858ccff97a6bee7752ae86b166a2913da6",
+      "size": 6010
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2ef7d14b6d032282bbebe40a34578188e1ccfb9bf41db581637e077f1924991e",
+      "size": 1954
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6aa70d8cd67c072946f6c9c72d0092845dc7d1feb1f6c4d7ae471c182fee5222",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4ff561f6279af19a75bf4d3d18f9e2e20fcf4efae0947ce7cacfd2f5887affed",
+      "size": 12371
+    },
+    {
+      "path": "system.prop",
+      "sha256": "abfb9ddd08847aace5cac90fd89c8e87aee449e24a95842921df3e9147e0421d",
+      "size": 575
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_tomato",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:07:11Z",
+  "vendor": "yu"
+}

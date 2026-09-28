@@ -1,0 +1,47 @@
+{
+  "branch": "sc-qpr3",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_redfin.git",
+  "codename": "redfin",
+  "commit": "81c6ded496d2e6076304654de418ec181c450fcf",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c7cbe8336ae31a70b99b9f42f774e5ced91beee8eabac7baee6082daf7d1a36a",
+      "size": 1485
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e2621b8ee5aacefbae5d44c02eb04643fda2e8d4a978a8d8c5612dbb51dc8481",
+      "size": 826
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "77cd0468b863ee0c58055c561827f096a7b643d02a915b65da404ec248a69f9a",
+      "size": 862
+    },
+    {
+      "path": "device-redfin.mk",
+      "sha256": "050e51749a1772eb95a13aedd7e10878ac84ee5264b25c2514cc7d3fa15044cd",
+      "size": 12028
+    },
+    {
+      "path": "thermal-engine-redfin.conf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal_info_config_redfin.json",
+      "sha256": "c075d7f566ea6d3a1a03392729dccc94bf571fe037d43695a78c0319ad7071a8",
+      "size": 7891
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_redfin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2022-08-08T12:58:41Z",
+  "vendor": "google"
+}

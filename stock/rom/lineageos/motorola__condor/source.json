@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_condor.git",
+  "codename": "condor",
+  "commit": "64bdbfa2877ae7600d79269fbeee293e1738e971",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "81f49ec573eaf527d0f010f9ed6493cbdc49340eac9888da2f0f2b61e72738b1",
+      "size": 1161
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f8290fac07adc6f8691eb61a690b635ff12d0f9fba87dcd6c987cb15cb102ea7",
+      "size": 670
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dabf777d6c97ac690192ed09d9ca2ee0ae9b9720f52f1ba0961bddc4d7b369d2",
+      "size": 1493
+    },
+    {
+      "path": "device.mk",
+      "sha256": "47cdc6a59e72fe1223a98f14b7b79d4da07b8f162c4baba7ef443febf40aa04c",
+      "size": 1321
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "902fc856b29c020d82a8c5dee759c0dddca1a18b2ff8abd2f116979c2463c21c",
+      "size": 787
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2bdf26374b76008de899d03cb8ff483fd8f6a538788542382b8b65d7bb73d99b",
+      "size": 252
+    },
+    {
+      "path": "prebuilt/system/etc/thermal-engine-8610.conf",
+      "sha256": "636cf656d36396335ea83d08265ee231644e042ae5b408c2a11c62dc1242e925",
+      "size": 554
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f36f10743ec18867b35880edaa9143ba5ad31297b892f786614d322344b0279e",
+      "size": 1204
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_condor",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:47:36Z",
+  "vendor": "motorola"
+}

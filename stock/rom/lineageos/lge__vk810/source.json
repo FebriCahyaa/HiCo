@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_vk810.git",
+  "codename": "vk810",
+  "commit": "16ae60ea36deb05f03366190ef7c58023e5b05b7",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5b2c0ae7bd018225580083d6e2675a75f2ba10cb35fdf1ee401b6f8abfe59179",
+      "size": 1283
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1fe36212cfce8105113e65cbc5366f318c1b6b9088eec65f620ce83c676e211b",
+      "size": 1242
+    },
+    {
+      "path": "device.mk",
+      "sha256": "48848a83c7cec3dc5ed28f5e5c81f9be8ac030263534ffe5fb3460dd33063485",
+      "size": 1292
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2315fe9713049e23600f9a19b15305b89b84f82247c180eededea55a5fcb51ab",
+      "size": 112
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6a1f9400d25864578cf0c60b36da825764ec5ad9dfd0f1ad19ba63ffbe693c06",
+      "size": 918
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_vk810",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-02-28T16:07:48Z",
+  "vendor": "lge"
+}

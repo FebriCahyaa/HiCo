@@ -1,0 +1,37 @@
+{
+  "branch": "lollipop-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_sirius.git",
+  "codename": "sirius",
+  "commit": "03e642dcdc2b96a5f303c6e279d9b2b9b88eed6e",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c3c3216e723b43df1d2aa94f5c3a850898fafb47379350cf2a7a134890c86619",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ecdd4f4976157988b7092f713379dd191bd5cda659ef819e41ce61ab86d80b6e",
+      "size": 905
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e848b46c3781eea108108781154372c817abf87ccbec375fbf56da2fd2d24578",
+      "size": 638
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_sirius",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-01-06T17:45:24Z",
+  "vendor": "sony"
+}

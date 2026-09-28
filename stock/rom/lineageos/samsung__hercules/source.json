@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_hercules.git",
+  "codename": "hercules",
+  "commit": "a807eda8a9c86969df0b9618c7686eebb1e398c2",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "35681c8827794d409e5e587c2534538bac049270129e80b1523726c129047ca2",
+      "size": 2086
+    },
+    {
+      "path": "device.mk",
+      "sha256": "488a322c43d8efdd0a91bf8f2f9d6ff31f46b0dbcac42ea4d458a562cb7b5b43",
+      "size": 1222
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f32cd7c3e1ff402c84e01c14fe3642cb9a22f5c298c4abf604c5bf42e1d18a30",
+      "size": 1773
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3aef6f31674805e6088073b5b44cbbc93896522f79ec597766f914a225273db2",
+      "size": 32
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_hercules",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:10:34Z",
+  "vendor": "samsung"
+}

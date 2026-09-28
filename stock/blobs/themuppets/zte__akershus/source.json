@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_zte_akershus.git",
+  "codename": "akershus",
+  "commit": "8130b6544cf0695e3e59571d45079ca6d636f824",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "85c7ac06ae187182acd559996f3a064ddbcad3f20850e410435f6fa089629d4f",
+      "size": 828
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_zte_akershus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "akershus"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "zte"
+}

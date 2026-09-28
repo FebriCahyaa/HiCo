@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_evert.git",
+  "codename": "evert",
+  "commit": "7ff54a88ddb4cb507a59d3397f6cc82fe5c978b1",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "939ef2dc824bdbdfd18ce2e7dd079305a1151c561f9919dbdca8d5555ee4eb32",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "658c9e08d1e54cfea497ee3d24a7eeaa55eba6276de06414b2c9f546611dc081",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "20f353502b4d2c9956852571196289814187e9070202f784dacfd67329826c63",
+      "size": 1730
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "de30b724eb70329345a46c9e8c34c37e8b032feaf3acf1c06e31502d008d4ebf",
+      "size": 2393
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2a75e66fc7df405b3431ff4835241005b28d22be8eea2e34b55775a83b956f00",
+      "size": 4219
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d736ed90c759df943ff1212dab54386dcfca788d516dc5b1ee0ec48fa27d1b24",
+      "size": 2385
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f62da33a4842580e968a42fca6cd97466e11c6d4bd9663f16460df627508091",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1d2d29fe56c63d88fe55652b8d130f33e2e16fd114371d1b33428f3f7e5d62d",
+      "size": 21720
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e1a16f647ad3250446905a77d6c2953e26a1c9089ada90a56734f7a53e159940",
+      "size": 1553
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_evert",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-08-28T17:22:17Z",
+  "vendor": "motorola"
+}

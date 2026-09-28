@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_radxa_radxa02.git",
+  "codename": "radxa02",
+  "commit": "5f127d989b88d41182976979e791284ca3e045ab",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d2106d8025cd3b54eade00b3bb1c726bff0c81441e0fe982de4edc172fbeab02",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "05e57670b34232b8775f79521d7f033e71d103ccad54840945cdaccb7969e18c",
+      "size": 1029
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ecc12a1cca550aaed66cb72f6fad7f36d58575496cc85d6b921df001a5a4d656",
+      "size": 1062
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "978f2e28e65e146a0fda46345e9c24dcd699c3e4270fcac0178cede7d79a783c",
+      "size": 936
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "423539009c619d72bde0711373adb6ae41d45e2e3649f36a542f00f9e45ef6a3",
+      "size": 214
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0adf2130c642bb7c2666112292b870e7d10600d38c09c2a6eec5220ff0fcdc67",
+      "size": 330
+    }
+  ],
+  "kind": "device",
+  "repo": "device_radxa_radxa02",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:18:08Z",
+  "vendor": "radxa"
+}

@@ -1,0 +1,33 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_sm8750-common.git",
+  "codename": "sm8750-common",
+  "commit": "07339eaccfea1af1017629a1348501cdaab114da",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "26c067796a0d14481850317d1702c2406fd10d5d0ea642f10fbf8cf641d247af",
+      "size": 563
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_oneplus_sm8750-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "dodge",
+    "erhai",
+    "hummer",
+    "piloti",
+    "pista"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "oneplus"
+}

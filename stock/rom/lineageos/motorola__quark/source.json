@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_quark.git",
+  "codename": "quark",
+  "commit": "24f3fb192884aa83fb0b63ce718a5d23a484e4b3",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ab1259b81c2825081a919f8ea4462de28a872c6631cd5db78a1325961bc159a5",
+      "size": 5192
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a356d0b6fa78a2d5d0e449773dc29434b3c0484dbb95e4572526b0cbb614d868",
+      "size": 644
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ecfda2e755f9a7abaf7bb4f88c6c1ad815c2e676bef16880318f191ebef9f403",
+      "size": 5191
+    },
+    {
+      "path": "configs/thermal-engine-quark.conf",
+      "sha256": "3950155cf904bce51994d68d5789c82587a7b6d67233dd71ccd85d7c050f1553",
+      "size": 3785
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c2e7dcf7bf6d77c7f0753b8fb020f89ccff255217041b95ee7f9c44e9b0e647c",
+      "size": 10603
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3df156d27c587c7e1930998a1b577a88d0fee1e535b69da238cf038fa1cb4d9b",
+      "size": 1427
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "794bd68ef85e83b0c657e508ae9007eee76c433b79783c014833a53c0ad5f7a9",
+      "size": 334
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9007db2260d20d3b74b82f8a0ac1187457ae562df32ca40aecb90c554d250712",
+      "size": 11363
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "dfa8f6bb7ceb3bf1b5f5c9befc3c51bf9afe8034a8712318ad901a6dbbe9ba29",
+      "size": 348
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8c52297db59c5af97e05eebb48db7b2402ef98c30e68edc13a46539abd1f255c",
+      "size": 3253
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_quark",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:44Z",
+  "vendor": "motorola"
+}

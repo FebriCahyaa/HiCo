@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_zippo.git",
+  "codename": "zippo",
+  "commit": "e641870ae711cc18fbaac7403a55ebfb47b777a9",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dd512aa03f420cef9f95ea05e6825c4e533665f9c3556ed65ef74d52933997ea",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b815c730a448dbe0f5dd4a788e72c7d5dcece933fcf5ca51f38d69c020812112",
+      "size": 839
+    },
+    {
+      "path": "device.mk",
+      "sha256": "21102e790fa61d973122f7e00d7662324ed77f2406c73afef4a6bc2f0fd819fe",
+      "size": 898
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f08c11c170d1b97a37a0e04e9734a38e98d1a38bd989e885c567c6700edcea10",
+      "size": 2409
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1d2210882d025a6b3638353f8a6a84d20367d1c65f1ff462290723a958ba96fd",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f7f43a8f8ca7fbffc203a481b41c4683f7f0254a46cda839236fcba3cfddd54",
+      "size": 15140
+    },
+    {
+      "path": "system.prop",
+      "sha256": "68a94e23aaec68b2570d19562319a714430dc95fb5fffd1c2b68af652ba299ea",
+      "size": 60
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a426325056039e26c518521208d1986d5f00b06090247915a2b35760bcaf521e",
+      "size": 103
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_zippo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-16T06:39:20Z",
+  "vendor": "lenovo"
+}

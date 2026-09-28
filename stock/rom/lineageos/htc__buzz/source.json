@@ -1,0 +1,37 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_buzz.git",
+  "codename": "buzz",
+  "commit": "da224aaa3078c9eade74f6ea7be40bc276df5bd0",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7d7c16c71c93065c7d81bbac73a7d07aeff779bc557c40c9a5e21cd3461e5068",
+      "size": 780
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "500b9d033283ace3d78ca19a18393aa590b0f597697656295ff3da4aa3e4a110",
+      "size": 2873
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "565cd9b8c74054cbe650e72064c51e18900101f2de61bfeffd37d91f67839add",
+      "size": 7768
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1f957d575dcdb65e6b2b8800d6fbd83cdf53652bd89ebe91ac406a9d5f51ebb3",
+      "size": 842
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_buzz",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:24Z",
+  "vendor": "htc"
+}

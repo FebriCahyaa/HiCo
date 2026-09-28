@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_salami.git",
+  "codename": "salami",
+  "commit": "3d021da75e6e27d2f7ab9b0430fc1b86ef9587a8",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4156990644c62c06ccaab7e52c1a1b0461b09960beedfa168fc12550e17b71c6",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7cba4dee2182fa071cb1cb6d9832849c0982042099b8d721cbad9f2fd1194883",
+      "size": 253
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0e20fd90b50db86dd2b1a1f384387c58ed78dd5c1e6013da8d10640e5503ed15",
+      "size": 803
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5dcf5929ee1690a305e78d6ed41335745017bb8b3745cd985761886f9314e14f",
+      "size": 1367
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6b2900b6a7b7f143ef30a0f4909ce3248e7db37120201da0e2798f56c223ccc8",
+      "size": 471
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "47437989fb20f115ce7fea28f714c1ab69169ddd04234a0b497db0cc2ad18d25",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1c7bdb5fefb281c7b582ac2755e893acae19d40cc8a411792313c4aafa458889",
+      "size": 12165
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e8ad4eeefae25d0264f477c0a09cf1eef457d0085365cf5c543c4558d28b6a9e",
+      "size": 492
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_salami",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-10-08T18:12:04Z",
+  "vendor": "oneplus"
+}

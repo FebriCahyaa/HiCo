@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_victara.git",
+  "codename": "victara",
+  "commit": "83ac9229460343760ca08e77fd55bbd2a0b54b9b",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b1032383f0cc08dd19588b47842ab3ed1980c86b70b81d2e99885ba3522ae92f",
+      "size": 2333
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "23001a6720deb26feef918c7582de90bcbd9c1fc1f7656e793e6cf080119ea7c",
+      "size": 775
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "57ebf7ba5dd86b68319455b535f33a8820fe7ace199eab0e16d92ae62c861c9f",
+      "size": 5083
+    },
+    {
+      "path": "configs/thermal-engine-victara.conf",
+      "sha256": "a7a51bcab2ed25dafea7d45f65f0d8ca857a82508dacf9b77fb760e82856af83",
+      "size": 2709
+    },
+    {
+      "path": "device.mk",
+      "sha256": "82ab121ac6afcfa5427444e81e324e027dd3280ec226a51e8c0638dd4ca54086",
+      "size": 15874
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "564f78a83137cc036da1e336ebafce9d22815028f6a142bfb44c8585ce2ab015",
+      "size": 1506
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a12e7770db17115ced3c0183c6a5677e6c8bc7c544d7a0a9ec99398497e7c4e3",
+      "size": 388
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e344e875fd9b75f269ceac6bd39e5ef7b3c8f7835675c1c44e2a95f26b58c9dc",
+      "size": 10062
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "6a80dd6bdb1f39b891368b74237e663fe3615a1cb67a8549ef2d3db320e0d86e",
+      "size": 280
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a1cc8056dbc17a8e1f36aa81cf29506eb35bebb6993438d41236244edbb5ca85",
+      "size": 2557
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_victara",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:52Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_zte_nx510j.git",
+  "codename": "nx510j",
+  "commit": "f8a763d0c96b63e99d58ed129f4716b82098d9a8",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fa6f11cf17084a9c47f4a2ab8b7a22d5173ef367a000eb541b6ecb24e4fd92f3",
+      "size": 1141
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cd134cae39a08a1373a23ae2c57f4255f79747748a958c2f7b7276e7f97fae58",
+      "size": 8124
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6f4481d05a981329045ccb610d9d5e1d672dca983bb86a1b6e4adf7b3d8dc18f",
+      "size": 1561
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ec4dd9b25dd6584eec3d4820a30e0d1b3f528c4733a70d7aeee0f81ed8c70732",
+      "size": 24448
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "65cfa6d75ff1d920219f75dc60d23839f8b9555d366bd58ff8bc502c54b95572",
+      "size": 158
+    },
+    {
+      "path": "system.prop",
+      "sha256": "86e2f33b6511c65a955454f311fd928d069e7bef7851cdd352dca79e5a4a95c1",
+      "size": 5073
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zte_nx510j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:46:25Z",
+  "vendor": "zte"
+}

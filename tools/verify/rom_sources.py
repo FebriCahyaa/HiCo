@@ -23,8 +23,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 SCHEMA = "hico.ingest-sources.v1"
-FAMILIES = {"rom", "oem", "kernel", "aosp"}
-PROVIDERS = {"github", "gitlab", "git"}
+FAMILIES = {"rom", "oem", "kernel", "aosp", "blobs"}
+PROVIDERS = {"github", "gitlab", "git", "repo-manifest", "vendor-probe"}
 
 
 def _load_sources(path: Path) -> dict:
@@ -37,46 +37,89 @@ def _load_sources(path: Path) -> dict:
         return _mini_yaml(text)
 
 
-def _mini_yaml(text: str) -> dict:
-    """Very small YAML loader for the subset this file uses.
+def _scalar(val: str):
+    """One YAML scalar or inline flow list (`[a, "b"]`) from this file's subset."""
+    val = val.strip()
+    if val.startswith("[") and val.endswith("]"):
+        inner = val[1:-1].strip()
+        return [_scalar(v) for v in inner.split(",")] if inner else []
+    if len(val) >= 2 and val[0] == val[-1] == '"':
+        # YAML double-quoted escapes (\\, \") match JSON's for this file's content.
+        try:
+            return json.loads(val)
+        except ValueError:
+            return val[1:-1]
+    if len(val) >= 2 and val[0] == val[-1] == "'":
+        return val[1:-1].replace("''", "'")
+    return val
 
-    Handles: top-level scalars, a `sources` list of maps, and a
-    `thermal_paths` list of strings. Falls back cleanly on anything else.
+
+def _strip_comment(line: str) -> str:
+    """Drop a trailing `# comment` that is not inside quotes."""
+    quote = None
+    for i, ch in enumerate(line):
+        if quote:
+            if ch == quote:
+                quote = None
+        elif ch in "\"'":
+            quote = ch
+        elif ch == "#" and (i == 0 or line[i - 1] in " \t"):
+            return line[:i]
+    return line
+
+
+def _mini_yaml(text: str) -> dict:
+    """Small YAML loader for the subset stock/sources.yaml uses.
+
+    GitHub runners set up by actions/setup-python have no PyYAML, so this
+    must read everything the file holds, not only the keys known today:
+    top-level scalars, top-level lists of strings (thermal_paths,
+    blob_paths, ...), and the `sources` list of flat maps whose values may be
+    scalars or inline lists (`branches: [a, b]`). tests/ingest_test.py checks
+    that it returns exactly what PyYAML returns for the real file.
     """
-    result: dict = {"sources": [], "thermal_paths": []}
-    section = None
+    result: dict = {}
+    section: str | None = None
     entry: dict | None = None
     for raw in text.splitlines():
-        stripped = raw.split("#", 1)[0].rstrip()
-        if not stripped:
+        stripped = _strip_comment(raw).rstrip()
+        if not stripped.strip():
             continue
-        indent = len(raw) - len(raw.lstrip(" "))
-        if indent == 0 and ":" in stripped:
-            key, _, val = stripped.partition(":")
+        indent = len(stripped) - len(stripped.lstrip(" "))
+        body = stripped.strip()
+        if indent == 0:
+            if entry is not None and section is not None:
+                result[section].append(entry)
+            entry = None
+            key, _, val = body.partition(":")
             key = key.strip()
-            val = val.strip()
-            if key == "sources":
-                section = "sources"
-            elif key == "thermal_paths":
-                section = "thermal_paths"
-            else:
-                result[key] = val
+            if val.strip():
+                result[key] = _scalar(val)
                 section = None
+            else:
+                result[key] = []
+                section = key
             continue
-        if section == "sources":
-            if stripped.lstrip().startswith("- "):
-                if entry:
-                    result["sources"].append(entry)
-                entry = {}
-                stripped = stripped.lstrip()[2:]
-            if entry is not None and ":" in stripped:
-                key, _, val = stripped.partition(":")
-                entry[key.strip()] = val.strip().strip('"')
-        elif section == "thermal_paths":
-            if stripped.lstrip().startswith("- "):
-                result["thermal_paths"].append(stripped.lstrip()[2:].strip().strip('"'))
-    if entry:
-        result["sources"].append(entry)
+        if section is None:
+            continue
+        if body.startswith("- "):
+            item = body[2:].strip()
+            key, sep, val = item.partition(":")
+            is_map_item = sep and not item.startswith(("\"", "'")) and " " not in key.strip()
+            if is_map_item:
+                if entry is not None:
+                    result[section].append(entry)
+                entry = {key.strip(): _scalar(val)}
+            else:
+                if entry is not None:
+                    result[section].append(entry)
+                    entry = None
+                result[section].append(_scalar(item))
+        elif entry is not None and ":" in body:
+            key, _, val = body.partition(":")
+            entry[key.strip()] = _scalar(val)
+    if entry is not None and section is not None:
+        result[section].append(entry)
     return result
 
 
@@ -149,9 +192,38 @@ def verify(sources_path: Path, strict: bool) -> int:
                 print(f"FAIL {line}  — 0 public repos")
             else:
                 print(f"OK   {line}  repos={count}")
+        elif prov == "repo-manifest":
+            # A repo-tool manifest (e.g. TheMuppets/manifests muppets.xml) lists every
+            # repository of the org per branch: readable without the GitHub API.
+            repo = src.get("manifest_repo") or ""
+            fname = src.get("manifest_file") or ""
+            branches = src.get("branches") or []
+            if isinstance(branches, str):
+                branches = [branches]
+            counts = []
+            for br in branches:
+                ok, code, body = _http_ok(f"https://raw.githubusercontent.com/{repo}/{br}/{fname}")
+                counts.append(body.count("<project") if ok else 0)
+            total = sum(counts)
+            if not branches or total == 0:
+                failures.append(f"{sid}: manifest {repo}/{fname} has no projects on {branches}")
+                print(f"FAIL {line}  — manifest unreadable or empty")
+            else:
+                print(f"OK   {line}  projects per branch={dict(zip(branches, counts))}")
+        elif prov == "vendor-probe":
+            # Derived from other sources' manifests: those must exist in this file, listed before it.
+            known = [x.get("id") for x in (data.get("sources") or [])]
+            here = known.index(sid)
+            missing = [f for f in (src.get("from_sources") or []) + (src.get("skip_covered_by") or [])
+                       if f not in known[:here]]
+            if missing or not src.get("from_sources"):
+                failures.append(f"{sid}: from_sources / skip_covered_by must name sources listed before it: {missing}")
+                print(f"FAIL {line}  — unknown or later sources {missing}")
+            else:
+                print(f"OK   {line}  probes {len(src['from_sources'])} sources")
         elif prov == "gitlab":
             exists = _gitlab_group_exists(org)
-            if exists is None:
+            if not exists:
                 # tadiphone requires auth; do not fail in strict mode when we
                 # already know the endpoint needs a token
                 msg = "gitlab group unreachable (auth may be required)"

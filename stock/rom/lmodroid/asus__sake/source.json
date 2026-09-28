@@ -1,0 +1,67 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_asus_sake.git",
+  "codename": "sake",
+  "commit": "fefafb4d7a00b0f018aca236be745692d6d5133b",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "de66c5c5dc251aff212aa64c18e4ae8d2e0b5d973b8d71a94ae5334170952200",
+      "size": 1828
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "56cfb81b3c86d05b3670c833bed7379508b442d126ad47249a95f718f1fc89de",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3b50a5bfb4285ff15964a6ed23b4add6c357191e88051cf400103aebc6aef24b",
+      "size": 8252
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "f440a1bc6e973543498cd645c62f2ab2aa5690711c3db4d9d6099c9efd62d72b",
+      "size": 11791
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e84c8f7913e36de76c1fb2eead1cd60ba30a630105094120e2f742f8362b0c23",
+      "size": 20788
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0d22d3c00d14b4d5b96424e1415799c3dedb706cdd5a68ae28db7016ad3bda48",
+      "size": 1662
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ca1377efc3de25e0f6a096eda8d97b2ae11e1523a00e87cbfd3766ee0f8c2ed7",
+      "size": 54093
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "fd23309d6d9f20686123333f4e5d085f3395992610dc70f75772d658ed473503",
+      "size": 174
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fd1ae165c512379fc66fbbdfb9d14187eb56515d48469822ee55a11a2c742a1e",
+      "size": 6220
+    }
+  ],
+  "kind": "device",
+  "repo": "device_asus_sake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:10:30Z",
+  "vendor": "asus"
+}

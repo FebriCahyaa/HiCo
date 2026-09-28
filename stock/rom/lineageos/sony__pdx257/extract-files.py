@@ -1,0 +1,111 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'device/sony/pdx257',
+    'hardware/qcom-caf/sm8450-6.6',
+    'hardware/qcom-caf/wlan',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/dataservices',
+]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'vendor.qti.ImsRtpService-V1-ndk',
+        'vendor.qti.diaghal-V1-ndk',
+        'vendor.qti.hardware.dpmaidlservice-V1-ndk',
+        'vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk',
+        'vendor.qti.qccsyshal_aidl-V1-ndk',
+        'vendor.qti.qccvndhal_aidl-V1-ndk',
+    ): lib_fixup_vendor_suffix,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    ('odm/etc/customization/XQ-FE44/config.prop', 'odm/etc/customization/XQ-FE54_EEA/config.prop', 'odm/etc/customization/XQ-FE72/config.prop'): blob_fixup()
+        .regex_replace('vendor', 'odm'),
+    'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .add_needed('libinput_shim.so'),
+    ('vendor/bin/poweropt-service', 'vendor/lib64/hw/libaudioeffecthal.qti.so', 'vendor/lib64/libdpps.so','vendor/lib64/libsnapdragoncolor-manager.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/init/fingerprint-rbs.rc': blob_fixup()
+        .regex_replace(r'\s+disabled\n', ''),
+    'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
+        .add_line_if_missing('sched_get_priority_min: 1')
+        .add_line_if_missing('sched_get_priority_max: 1'),
+    'vendor/etc/wifi/qca6750/WCNSS_qcom_cfg.ini': blob_fixup()
+        .regex_replace('gindoor_channel_support=0', 'gindoor_channel_support=1'),
+    'vendor/etc/wfdconfig.xml': blob_fixup()
+        .regex_replace('<M4Enable>0</M4Enable>', '<M4Enable>1</M4Enable>')
+        .regex_replace('<UIBCValid>0</UIBCValid>', '<UIBCValid>1</UIBCValid>')
+        .regex_replace('<USB>1</USB>', '<USB>3</USB>'),
+    'vendor/lib64/camera/components/com.arcsoft.node.dual_smooth_transition.so': blob_fixup()
+        .add_needed('liblog.so'),
+    ('vendor/lib64/hw/com.qti.chi.override.so', 'vendor/lib64/camera/components/com.qti.node.dewarp.so', 'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so'): blob_fixup()
+        .replace_needed('android.hardware.camera.common-V2-ndk.so', 'android.hardware.camera.common-V1-ndk.so')
+        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+    'vendor/lib64/hw/libaudiocorehal.qti.so': blob_fixup()
+        .replace_needed('android.hardware.audio.core.sounddose-V1-ndk.so', 'android.hardware.audio.core.sounddose-V2-ndk.so')
+        .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V3-ndk.so')
+        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
+    'vendor/lib64/android.hardware.bluetooth.audio-impl_prebuilt.so': blob_fixup()
+        .replace_needed('libbluetooth_audio_session_aidl.so', 'libbluetooth_audio_session_aidl_prebuilt.so'),
+    ('vendor/lib64/libapengine.so', 'vendor/lib64/libqti-perfd.so'): blob_fixup()
+        .replace_needed('vendor.qti.hardware.display.config-V5-ndk.so', 'vendor.qti.hardware.display.config-V12-ndk.so'),
+    'vendor/lib64/libarcsoft_high_dynamic_range_v5.so': blob_fixup()
+        .clear_symbol_version('remote_register_buf')
+        .clear_symbol_version('rpcmem_alloc')
+        .clear_symbol_version('rpcmem_free')
+        .clear_symbol_version('rpcmem_to_fd'),
+    'vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
+    'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
+        .add_needed('libaudioutils_shim.so')
+        .replace_needed('android.media.audio.common.types-V4-ndk.so', 'android.media.audio.common.types-V3-ndk.so')
+        .replace_needed('android.hardware.bluetooth.audio-impl.so', 'android.hardware.bluetooth.audio-impl_prebuilt.so')
+        .replace_needed('libbluetooth_audio_session_aidl.so', 'libbluetooth_audio_session_aidl_prebuilt.so')
+        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
+    'vendor/lib64/libcamximageformatutils.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
+    ('vendor/lib64/libcwb_qcom_aidl.so', 'vendor/lib64/libsdmclient.so'): blob_fixup()
+        .replace_needed('vendor.qti.hardware.display.config-V11-ndk.so', 'vendor.qti.hardware.display.config-V12-ndk.so'),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/lib64/libwfdmmsrc_proprietary.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V2-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
+    'vendor/lib64/vendor.somc.hardware.aidlradio-V1-ndk.so': blob_fixup()
+        .replace_needed('android.hardware.radio-V1-ndk.so', 'android.hardware.radio-V3-ndk.so'),
+}  # fmt: skip
+
+
+module = ExtractUtilsModule(
+    'pdx257',
+    'sony',
+    namespace_imports=namespace_imports,
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()

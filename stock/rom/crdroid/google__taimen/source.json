@@ -1,0 +1,67 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_taimen.git",
+  "codename": "taimen",
+  "commit": "01947d517fdf08eccb0d6dc412505caafef4dad3",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "03fb277ba4c5ce9d8c4ad2737b3f77c273a8a6bd5336480adb3cd8640466ce14",
+      "size": 304
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9b2978d53f5782891d21451c49bbab28baaaec453b087961a61a754c879e4156",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5234083511dc3b3cddb22a3c292f8bbc0a8beacb78309d70d3613811febd894c",
+      "size": 2212
+    },
+    {
+      "path": "device.mk",
+      "sha256": "774c69c033119464d56610a356638fe2794da7a1db9ddfa7f43f6ec1357c9638",
+      "size": 5668
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fed0f5051786be3bf09ee33baa4ff4313d13acc763832ee9d6faafd8d63d512a",
+      "size": 3717
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9a829059aa58aecaa0abb962321c4799e2d60531a689771c8baff59fd7dcbc27",
+      "size": 9285
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "6f2b0e2c225b7a70917103f1d0dd59850555accf2823a43f6d79d72409fc3a1d",
+      "size": 661
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "b7197816ed1dbaa176c77d280ee22b7f544f10f6ed78b71730ff98b60b898a79",
+      "size": 3338
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "719487f2635373895508e76dd3ce59b8411b335ba01438a71a7d3941215ff3e5",
+      "size": 4895
+    },
+    {
+      "path": "thermal_info_config_evt.json",
+      "sha256": "c23c9b5f839e377aab2fca446ed4e04a24b45941749f1e8ee990a5ebf2c16622",
+      "size": 4894
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_taimen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-05-19T17:16:55Z",
+  "vendor": "google"
+}

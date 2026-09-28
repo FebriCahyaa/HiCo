@@ -1,0 +1,67 @@
+{
+  "branch": "wip",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_veux.git",
+  "codename": "veux",
+  "commit": "ddea75ce5080a584ab41da9bf95bd1328f259ff1",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "647cae79e982523a3ffe8def087257f3ab76bfc4c899d8e42f89ee52f677eea8",
+      "size": 157
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b67ff51abe73f06e5f15045ec1056992ca10ca5b9a66e7ac2c4394ce43d86211",
+      "size": 5684
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "91c762eecff35fca2bd2470a471e870ae34b21ea1557467867b76be1c2cf74b5",
+      "size": 262
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "70774e4323cbaf3ec7856b986c3f1ab248ebb2c4ef4e9d46318a841d7d13ec69",
+      "size": 6417
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d57ed91b3e0d4b5bff74cdaedd190b2268572adbb8a831f091c5d4f9a9924de9",
+      "size": 22002
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a09b101db99a913ab4c651e2c402989508796f9b95a9ee38e243284cb6d9e0b1",
+      "size": 1660
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c48cbcf2b156797fd4feee1ce5a773421cb8301587072df74a4cef563ec6bd05",
+      "size": 74494
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "916ec4363dc01cdece0ef76b2a9fa14607d6aa389837be8965d030883ecb4ce2",
+      "size": 1198
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "dc9bba1f1e2f7e62977c3241caf8ef6d6d181933bbf3d00fa2aa4010fb466083",
+      "size": 339
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "113e23b8714a314896624cfb12b0a3a07cd3b13bbbc5a38cf1a43dfd875d4fc9",
+      "size": 433
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_veux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-01-15T20:47:02Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mayfly.git",
+  "codename": "mayfly",
+  "commit": "e81658987f30806be79d0e3620197acee96a963e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "20e4dfd99caebd6e1e771e8ddfef6b94b3481add442dd63fb4a017df1a74e03a",
+      "size": 303
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d96d7d80c07d1b8a6b3b35a02214216523ab477c4e29f0ef6dc6811070d7da38",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "16c86e01d7a71149d37efe55fed780c362c028b13b526debda3d3749a0ca52be",
+      "size": 636
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0e2ce5c6dd2823cd793d512a5364e47df592a7b8775eee0cee9eff34c10e9099",
+      "size": 1375
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2f6d5f55901e585666e2a675795b0fbbf9bba16c65c10ebf125606b7913f5aad",
+      "size": 2902
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cf8445b3ac5ec1956cb3903c137f7aa459629ab4ffd1fdb85690d1cf796aa420",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e534e42476afc949e2402ffb6bc42bf29b5af0ff6b32b40081648ee2ddd6e594",
+      "size": 62176
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_mayfly",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-21T00:35:20Z",
+  "vendor": "xiaomi"
+}

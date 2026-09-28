@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_hikari.git",
+  "codename": "hikari",
+  "commit": "0e6622c08d9e92af9da5ae08acac919390311b27",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "23f2d14f2cea00482da5b960ac41d22b55c088a8e06c1a689af7f6b791ccff98",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a7b3aba8f040c136ec53f875daf48ae90370eb25689b26da31446d78cd7a161f",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "91c4d1b859043b5b85c258d35b8abe3db4bc6a02d668a9dd0048e38396f8d3ce",
+      "size": 875
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ca544862572178a937c4bce4489fac7546167f5ac29831d9403aea4999131e4",
+      "size": 751
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f9d6a7eed91e17a9afbe8c05296e936ef9dbf2d194443fa0e4f17c0cab1b3247",
+      "size": 3370
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c886c042261e09ba7c58a56804f86df321b9b3c467544ce025e4ca624800dd37",
+      "size": 70
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f8c43b3b014cc8f1a37843f5a541a7a2a2789c7a0e767c4f00244884e7e59b30",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_hikari",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:41:32Z",
+  "vendor": "sony"
+}

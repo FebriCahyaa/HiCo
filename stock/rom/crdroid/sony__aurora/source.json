@@ -1,0 +1,67 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_sony_aurora.git",
+  "codename": "aurora",
+  "commit": "5e804d172020a9ec6f9e6d5ae775532f75e51b7d",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9a9be47d330d252813e61044b85c3c86100a2df4fb8cd50af0d6d48d1f64d835",
+      "size": 718
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d92ef6681c09fb7ae84e549608a9e8511ba13582b16570fe898b4e0be6187783",
+      "size": 763
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8f2c5d7bd53b4560cca4b65b26099e323968adc42b730eb4bdb53f3a58a1552a",
+      "size": 686
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "2992778317bc1f1c739b648efc5e0a77b1c8ba2ec6b3496de5ae3fa67b563ac5",
+      "size": 19939
+    },
+    {
+      "path": "device.mk",
+      "sha256": "82a33bf88da71557d8a317eaa9cae776ee18164c9700b89f8b6a58a90e6cf62d",
+      "size": 2294
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fd62899114341ba8c396ba101a0a5fed38d3ef7ea11834b225d175cec6233461",
+      "size": 466
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "906bc0642b5129edad333dc0abb388955088a62ffc417ed7bd4a629f8e333b20",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "31a2a8419be55b7af99aa76bbf038cfe2eecd0bb72e938cf8a47968295d3d669",
+      "size": 28265
+    },
+    {
+      "path": "system.prop",
+      "sha256": "48357b34dd7863cff30db805a3490691d3cdf02e89ad2eafce17bf4d8d8b4288",
+      "size": 370
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "29bbb685fac905859a740110e7da69bb24d9b478dad7bbe764cad199151cd1e0",
+      "size": 167
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_aurora",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-02-19T00:05:19Z",
+  "vendor": "sony"
+}

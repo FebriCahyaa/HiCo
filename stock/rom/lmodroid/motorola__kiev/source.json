@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_kiev.git",
+  "codename": "kiev",
+  "commit": "fdeb2f9a839deca85ff278aefabe2ca0adf1c922",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1a8e99e76d51ea82e0c75406e7267a85ef8a263a00bc9dd45b6287351623688f",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "928eb59777b337b56e062b8635dfac5fcd4517e99ca0a6ab1bcc016783b972f1",
+      "size": 1497
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e0f88157cf83a55cf0fb6c592370b0ab114269bf54b894081dedf7a46ed643bf",
+      "size": 3408
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9b1af136a2d2e90d99a0975e63637377b787abfd5f5dc70a3d8cfd14b8a1cb4a",
+      "size": 2036
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b4af09378d65d78c39d46240c43acd8c19fa816f4fbe22436efd53b66c69d2fd",
+      "size": 13133
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "cc718179ca6f5bf3594e3ef2cedb549dd84c97685cbf86bda6c9ed9f5f304b21",
+      "size": 1484
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_kiev",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:59:02Z",
+  "vendor": "motorola"
+}

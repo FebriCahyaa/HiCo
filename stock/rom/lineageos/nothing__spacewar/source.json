@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nothing_Spacewar.git",
+  "codename": "spacewar",
+  "commit": "12105288a84b60468577c6e8ccaf410324d8033b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "227a6b6636798612c169a8264e02c34efbf2e7e4de18fa226940fe4ead884de5",
+      "size": 497
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9d0cdc0a6595d594c12b13497afa08c2cd5980273c9b7b73c7b90eb773293548",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e068045e0612820c7b0ee3895ef95ff4d1f5d930891f9d0c89fd79496d08a183",
+      "size": 5950
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9b7e0c227fff2b948b2f822d84c6aff391946fffaf04b4ac3d93fa5f4a26fda3",
+      "size": 17621
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "dcb760de85ef6596042552dc62ef0f8ffd1c1a4fd65e3d3e81dbef4ea04dce57",
+      "size": 2221
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0970fba23990d3b1c266b99904753a89aeeb58489646bd11ba55393b10514129",
+      "size": 199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "35f465bfeecdfa916110bad2fae48f6ba3212b1539904736e71cb888a03ea535",
+      "size": 62399
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nothing_Spacewar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T08:46:00Z",
+  "vendor": "nothing"
+}

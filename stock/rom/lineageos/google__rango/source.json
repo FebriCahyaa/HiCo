@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_rango.git",
+  "codename": "rango",
+  "commit": "cbbacda3915e416d795519d96de0af292d8fbcd7",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "750e0a8f31bdc4292c9fd9d1327477a1897c58c193714605331ce1a967611fb1",
+      "size": 505
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b90b405662e8d6111e5bd657ea01b2ed87e23d003a4c6f9d8676308097c22f49",
+      "size": 196
+    },
+    {
+      "path": "device-rango.mk",
+      "sha256": "bb359e32ef54f57f08d2433f3bc9f91c63327c289bf739deb85a74cc1bd50611",
+      "size": 2770
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4ee504ecc59eb775eb65c618866869986e58c9b34ce6148dd7b56137e498f10a",
+      "size": 211
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "78f1a481f5075394831a9e49b90a30be188b87e3212ca74641b551474a06a142",
+      "size": 219
+    },
+    {
+      "path": "sepolicy/vendor/init_thermal_config.te",
+      "sha256": "74afd8cd2e35db173fbb3bf1213733092540d0191d031cafdaf77d97f6360529",
+      "size": 258
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_rango",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-21T15:39:46Z",
+  "vendor": "google"
+}

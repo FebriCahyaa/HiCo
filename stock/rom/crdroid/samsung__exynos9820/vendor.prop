@@ -1,0 +1,88 @@
+## Adoptable Storage
+ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
+
+## APK Verity
+ro.apk_verity.mode=2
+
+## Audio
+audio.offload.min.duration.secs=30
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+af.fast_track_multiplier=1
+ro.hardware.audio.primary=exynos9820
+
+## Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.bas.client.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+bluetooth.profile.sap.server.enabled=true
+
+## Dalvik
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.lockprof.threshold=500
+
+## Eden
+log.tag.EDEN=INFO
+ro.vendor.eden.devices=CPU1_GPU1_NPU1
+ro.vendor.eden.npu.version.path=/sys/devices/platform/npu@17800000/version
+
+## FRP
+ro.frp.pst=/dev/block/persistent
+
+## FUSE
+persist.sys.fuse.passthrough.enable=true
+
+## Graphics
+debug.sf.auto_latch_unsignaled=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_transaction_tracing=false
+debug.sf.latch_unsignaled=1
+debug.sf.predict_hwc_composition_strategy=0
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
+ro.hardware.egl=mali
+ro.hardware.gralloc=exynos9820
+ro.hardware.vulkan=mali
+ro.opengles.version=196610
+ro.surface_flinger.enable_frame_rate_override=false
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.use_color_management=true
+ro.vendor.ddk.set.afbc=1
+
+## Incremental FS
+ro.incremental.enable=true
+
+## Metadata Encryption
+ro.crypto.dm_default_key.options_format.version=2
+# Call deleteAllKeys if vold detects a factory reset
+ro.crypto.metadata_init_delete_all_keys.enabled=true
+ro.crypto.volume.metadata.method=dm-default-key
+
+## Power HAL
+vendor.powerhal.disp.idle_support=false
+
+## RIL
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
+
+## Samsung specific
+ro.product_ship=true
+# Set csc support in OMX
+# If not set or set to 0, OMX will only use BT.601 colorspace.
+ro.vendor.cscsupported=1
+
+## Wi-Fi Direct
+wifi.direct.interface=p2p-dev-wlan0

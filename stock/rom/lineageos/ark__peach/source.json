@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_ark_peach.git",
+  "codename": "peach",
+  "commit": "99d624930de3c6b23562e9334865f93641d3b8f8",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "291d10f0f9e65b682b99b7e74c3a172ea1caaeab31ec36fd91414697cb1d5589",
+      "size": 1295
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "87f5c4e95983741935ce6795cb597837ffad1e86bf6c8649b55588b0dc38e002",
+      "size": 851
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b39d15f093a030d983fa893493c41a31280e150189f8511d1185d935642550a4",
+      "size": 884
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5f448d6419f8300ee590dc382db0b74e06881379cd814abbe013c7d3889c783f",
+      "size": 1487
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c63f3a24a0e695821007bb732af79a0003852ed182a92a8d0aee37d32e602dde",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "99bf4510f4ba067da7b6a4d21ca80ff93584a60c603a03871e9c241e4aed0ad4",
+      "size": 193
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ec8bfb10b54ec4202acf1947d43a6509b5f5f983f4b46805e306cb87abda2322",
+      "size": 65
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_ark_peach",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:12Z",
+  "vendor": "ark"
+}

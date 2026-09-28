@@ -1,0 +1,42 @@
+{
+  "branch": "pie",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_kugo.git",
+  "codename": "kugo",
+  "commit": "e777a07f919438d8f305ac7a6c39826a6d395a31",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3f0be5c8b2e57748cb256b28173d3b97d2f3d2c8c8a3487d84ded4c1e80306b1",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2dad86cddd4d437f3e885a36eea55b555205049918bb644b93faee033084c5b2",
+      "size": 1432
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eebbf0dce67f2b10ee3275c9b85d01eb890ffa14829e53b3e93c8fa61587ce78",
+      "size": 4460
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b4ae214b8fd2a817117771031b9775736f9f514d341577264e6b046334efab35",
+      "size": 863
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_kugo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-09-05T06:58:45Z",
+  "vendor": "sony"
+}

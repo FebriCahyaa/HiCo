@@ -1,0 +1,97 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_munch.git",
+  "codename": "munch",
+  "commit": "8261edd27aab2e1f0441fed3d49a3d49743915b2",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5af1e15681f613064596d6f8e67d433b46517a25441434922bd9c5620f0c5f69",
+      "size": 1261
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e0a2ee1a2b44efa1316ab8b2c73c8b8ea5381449143aa22198561ca12ad40b21",
+      "size": 209
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ea62a2566452f82669196921c8b3b27da0d370c33374e464521331bbea0012cc",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "37a65d8995b30e5a576b3d0ed88edbef59a98c57192d458c45dbbd9ab97f5e4d",
+      "size": 7016
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9863b314c9aecc112988def62748d46a4b03aa3c665e690d7e7e3f8ee5bb3c51",
+      "size": 18434
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a59fdc7c3d787e1df9a6bdc1bc9c3ea5c05d016d7ca393cd4b2f3a7806ab8ca5",
+      "size": 4055
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "be63313b8d219c68d09c385a9b02be945da1c1fe7d180516d181967ee7c1933c",
+      "size": 1503
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "3246520851f6b5d3bfde2c172a68afc1e554956eb8c01f09918a86b745906ae9",
+      "size": 1572
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "63f57e7b7042906a686e652d2813ffe98d9abfa81932c042c3608b36149ba388",
+      "size": 4208
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "70b766e221291ddba178e648d858f17fcb7c38fa5b7ec9c42af7de099165d9a6",
+      "size": 16101
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "93534cb41151685c6a6ef7d18b5aafe7058dc70133f24b3e42f9b3815bed3b65",
+      "size": 10038
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "97776fd5d616fcf3e75c959b74ed4b3b1a4fa511f1b63d7447820477f9d8af0b",
+      "size": 5726
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "46371410e8e5d134fc1009a9c184125f0a824341d895148066e46307884dd495",
+      "size": 53518
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "2a95c266fbf240675f283145b71f2f39ac1f3492582fb796c051d0687b649690",
+      "size": 57
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "503b533f82c4f7c3fdfed515c3731cfe490babb1f2b81f9735cdd2a1ec39628f",
+      "size": 1626
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5b612b7ca2c9aced4245e40b61fba453d2b8ce2b81297a988e81114c9d256253",
+      "size": 490
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_munch",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-07-14T06:23:08Z",
+  "vendor": "xiaomi"
+}

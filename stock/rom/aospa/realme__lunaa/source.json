@@ -1,0 +1,57 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_realme_lunaa.git",
+  "codename": "lunaa",
+  "commit": "8b8e6ffbe1b87a157321ae589c75724669b15dbd",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c5fffb21921e7afe7b2b1a5e0d5122052c284328d7dee8c4f4366779fb221fd8",
+      "size": 958
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3affe7e7fdb6b447b093aae83dfe14f7d3a686c8ad0c439395e90abdf797ca32",
+      "size": 4296
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0b735c7874328bb6ed4cb0aefd1e3c19ca9178fef096c29503a666abc477c204",
+      "size": 6174
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "e930245ff47947e55170fcc8a7394f0be47187c360a62556d79ad4dc68b75973",
+      "size": 16035
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3405ea941428b19393358c6326ce73a069ff919e70bd56f29049b574fa8fcbd7",
+      "size": 13315
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fa534167f527f1a882216d51f9c7eba83a7f574dda53c4218a0e73192fd6f0ee",
+      "size": 1894
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8cb042cec94487d61b93ad70a1917d5f444861ce46be40c7e7e5b2810cd93455",
+      "size": 149162
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "7a20ab50d76b9464cf2ddf36643f86205edffb5a1f82d1e8745a13016787c7d7",
+      "size": 59
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_lunaa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-05-12T09:58:39Z",
+  "vendor": "realme"
+}

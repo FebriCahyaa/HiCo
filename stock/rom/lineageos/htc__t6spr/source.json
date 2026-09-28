@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_t6spr.git",
+  "codename": "t6spr",
+  "commit": "d5d4c01980bd0d3521c2faf48b1c041e4d64c550",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3e1deec734205f208c73f41b08d4a031ac2d8fd54820e1dbfd476d8e06bb3110",
+      "size": 1334
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b8eca2c689658aeddac579446bc1d885384b46e90258b22f244d671a77218a81",
+      "size": 927
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e5567a7d9fc33f3b13cec4d740a3bd217ebc1956dc8037b9dfe5c6e5ebd12562",
+      "size": 719
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cddc3d73d96119a8d2735b499b361fe4456ee54014ea32171978a9230f452aca",
+      "size": 104
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b8d689e27b428cf08419479c27f9c59c77196b50fda09b537668e2f3effd8600",
+      "size": 382
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0295abd166a50efdcbc8feafdfad6ce4e0e631c729ce51dbb86bc1286adfa2ab",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_t6spr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:01Z",
+  "vendor": "htc"
+}

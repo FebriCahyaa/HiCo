@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_vivow.git",
+  "codename": "vivow",
+  "commit": "5469605fd57a45096ce372e0aec70e7aecb90520",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d861aed127b2aae86016c19121135361236438c6644e62d0d4df9f196db12d0b",
+      "size": 781
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ae2bdb15f40151322546351261e7e8c702bcffbad5c81d981118778b67605562",
+      "size": 2487
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dff92e5ffa49dce70d1f73e1f4c0a9484955cb0fd35f5aca238d01b7f03f13a3",
+      "size": 7100
+    },
+    {
+      "path": "system.prop",
+      "sha256": "03f34925db324de1e13e3d4dbcd85ec5e5dc12fe4896d1a103f9e933312470d0",
+      "size": 1765
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9889ccbaddf275dd1159c9d1242c98583eb99167b733470adf1304b37c07f7a8",
+      "size": 875
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_vivow",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:25Z",
+  "vendor": "htc"
+}

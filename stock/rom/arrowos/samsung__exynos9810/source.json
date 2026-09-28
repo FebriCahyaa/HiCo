@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_samsung_exynos9810-common.git",
+  "codename": "exynos9810",
+  "commit": "ee369dbe46d4b910e92b1b3da5f260e9ab8cbd70",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "99313e10a61bff773f9dddbc18ab2a2592b331a8834fd480adadbfb30103f867",
+      "size": 1477
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4cfb418e3b7b57ddb41a019b54dd886c93fa1aa6efdbeb26661a49f510c6d1d9",
+      "size": 4297
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "02d463279358cd70cdbd7fa90d634f6b177c70ff86db8acb97adc5acbf6d63b7",
+      "size": 2064
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c82c8f2bbaa59c54a75848521a1a394878e1482e0249efdb44496a3a9e58b1fa",
+      "size": 13591
+    },
+    {
+      "path": "system.prop",
+      "sha256": "80b47f8ac2c20f1d8ddaee76499f93a1516440dfa1922c346ebd225754defe6d",
+      "size": 417
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0d5c7b2314ad2d0793d02722253dde02d8a0e00cc5f2e6ed19e12781bec4f1ef",
+      "size": 1149
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_exynos9810-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-31T12:27:28Z",
+  "vendor": "samsung"
+}

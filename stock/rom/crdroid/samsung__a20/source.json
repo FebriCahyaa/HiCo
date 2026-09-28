@@ -1,0 +1,42 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_a20.git",
+  "codename": "a20",
+  "commit": "14fad0f49cbbe6f411239e7d9518b7f943866ccc",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e25fe3ca7cd0423fdea5cdf90314441c7de8d6e7c4eecc55b69c163045fbde7a",
+      "size": 586
+    },
+    {
+      "path": "device.mk",
+      "sha256": "977462a3e0f60d335a80f583420d993900689db1dbe6f89cc3ce387096400089",
+      "size": 1178
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f1e6174e447323c5a7361a27b2f7b74552a34256b8637c2f3dde090b052254f4",
+      "size": 475
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "949b00e1ad2647a7576fdc5392d76153c5363fe162f95a9bc78f514b5b50098e",
+      "size": 5708
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "367a93a61f799b5827dbaecb695e47fb275a8bc77165ede920fd17bf4068142c",
+      "size": 54
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_a20",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-04-04T05:55:24Z",
+  "vendor": "samsung"
+}

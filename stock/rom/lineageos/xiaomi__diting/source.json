@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_diting.git",
+  "codename": "diting",
+  "commit": "2eb240c467044ae2eced770903a311dd1011883a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d300952b779c234cbfe98b13b7392b8d5acbce6d6aecd339ec61b9ede5540ce4",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a563f707bb775be511e4a624b72f768ab73e3ad001bc429e3b077a50219272d4",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2585af0f7dffc801f6bd38f265814f3c731d0e4573f90e0137b5c23ee794c4be",
+      "size": 672
+    },
+    {
+      "path": "device.mk",
+      "sha256": "646f4040af615bdee940117b409f339596b710748e85b13dcebd776fccc9b97f",
+      "size": 1633
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b291dbd500a8aae72a278201cb73803be7047ddad7e5076a945a5ca70f47087b",
+      "size": 2955
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cf8445b3ac5ec1956cb3903c137f7aa459629ab4ffd1fdb85690d1cf796aa420",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "77ea9258a5afd409fb2a22fbeb37e179d41ebb8d21e98e7e2c62d34a1c29b9f8",
+      "size": 62513
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_diting",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T11:08:58Z",
+  "vendor": "xiaomi"
+}

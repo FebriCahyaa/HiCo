@@ -1,0 +1,44 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_bangkk.git",
+  "codename": "bangkk",
+  "commit": "844a7e935cb70042ce09fe16b15160ddd3c842e5",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-bangkk-camera.conf",
+      "sha256": "7402ebb42b7a9a65386fb6e34165ac23325255eb92a070af0170cbdf410a7718",
+      "size": 4948
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-bangkk-game-normal.conf",
+      "sha256": "bba15f0601927641d8f6912a0d05f885361c19a3ba7dbbdd5c453b7c65c80bd1",
+      "size": 4950
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-bangkk-game-perf.conf",
+      "sha256": "7488bbe1ed35c9e481b806e0ac9d68d3cf5a43c44150e10183b214f8ef6aa273",
+      "size": 4951
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-bangkk.conf",
+      "sha256": "44d595eaac725646b1aa03a1d1c4045397e71b4b50d607cd76081976af380e31",
+      "size": 4875
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_bangkk",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bangkk"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

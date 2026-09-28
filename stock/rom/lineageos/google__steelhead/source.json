@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_google_steelhead.git",
+  "codename": "steelhead",
+  "commit": "72aaf7fd1cfd226bb97abc1547159e1cbd07e1b8",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c1af86690439f70bd0a793611b5f37eb055489a078922f4da65047e3fc46f861",
+      "size": 1829
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7d6cd3cb2fdf63ff5ce8bb8795034b52cb4a730010284b95a5a78e49ec4d8ccb",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8e01bc9b19e7cf8670c4198f0ab234c6715da763b171bf522e89367c1fc71271",
+      "size": 3229
+    },
+    {
+      "path": "device.mk",
+      "sha256": "aede0e99a815710845d46971433a2b93e53b7e20ad9807e11b100ad060c08abb",
+      "size": 3761
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "54ce7cfe84ac2615fb0925490e92f12a65839739c189cb19c3d073c14e3e6143",
+      "size": 362
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e87653152825599d58271b8dccec026cc05706f24a13ee59dc56e0c598256424",
+      "size": 187
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9a23c050203a1c365b00ce09b1d722580efcbce800a6f0fc953b3fc4e99c0b2f",
+      "size": 646
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_steelhead",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:01Z",
+  "vendor": "google"
+}

@@ -1,0 +1,84 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_apollon.git",
+  "codename": "apollon",
+  "commit": "0f1038ffa11d56c84e65477742df35473e191432",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "16d0b04e2dc7c63e5206d52ebbe960ae999c26f0f9fefe5b0e13b226068c7c8a",
+      "size": 2544
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "abc823f8b23c9becac686d547552b3d64db12bf0a390309e2e76c54b6ed0e028",
+      "size": 743
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "0b87fefaab9c4823140ea897fce5e9fb3616d9297cd24f924a3f1cd29c4cbf2c",
+      "size": 2448
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "0e0744e6bcbf80291957681de68f0deb0089361f8f19d66ca958c0dce6573c1a",
+      "size": 960
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "6f699e716e1f9519301cf48e41cb6f4d89e843e10e44385dd75f93f12d2212d0",
+      "size": 768
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "2f72fbb55129a8d35efd2e4c1ccc970f557db0ec426e6866dbcc53fa77bcc3e6",
+      "size": 3088
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-camera.conf",
+      "sha256": "16d0b04e2dc7c63e5206d52ebbe960ae999c26f0f9fefe5b0e13b226068c7c8a",
+      "size": 2544
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-class0.conf",
+      "sha256": "815d645f66dfd3cc522f27cad55a04d821cc24705f479e79891be272f52c235f",
+      "size": 2400
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-normal.conf",
+      "sha256": "2dc431cd9915fd0b5cf3b11fae60928858346d9eb79c136cea315aa09540f2a0",
+      "size": 3040
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "7a92b135caaaa6b4143f6edfa8cc6699aed22e275175bade44d1627a2da39dd3",
+      "size": 1920
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "37aab88b1b3a67da02f9160214f09e200d7ee8ca6fe7ed6b65c437afe7529556",
+      "size": 1696
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "e6e3777a45e586770f3d2966da207f64180e5b3aad36b97e8beacbf47353473f",
+      "size": 1049
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_apollon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "apollon"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

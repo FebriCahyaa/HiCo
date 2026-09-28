@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-14.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_Z01R.git",
+  "codename": "z01r",
+  "commit": "8f26698021e41a6fce31526ba16f8c09521c7151",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a0a9df360fe6ee4c0bec3ff85b0cde5b9a575ba8008019d9188a36c4a1cb811b",
+      "size": 9241
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7a5ac5ccf70395c01a21028d73f9c0fff1f1330e9a536e4b61469d83f8de44c9",
+      "size": 744
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bd8c86a38368172bbd505b8a015fffa90092ed5a458e42f3eabeda7519ee1310",
+      "size": 6240
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fc217c07ec61f14d82ec401214c139bf71fd5f6bbb175c68c9dde680b990feda",
+      "size": 22638
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5aeb584f732f630a9767e8cec22c5db0cd325011e8b9531332346a717e3c49c5",
+      "size": 1904
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dd7d7b4baa92db3eaf1f0e9be96894f29a1ce837a28b3e863716ef816cff73e5",
+      "size": 65883
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "88ca25b5b7ca5bf325eb67fd0d63f2f9563e8c2643747a6543e0ce467b2d3cd8",
+      "size": 404
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dba1af4fbb8f7ec4e1ba796395e30bad9b48c18cc44ecab2fb426f1e1bca08db",
+      "size": 2961
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e082cd274367b0241eb86afc557b186ee73560b40b24715fe89c1f8729bce91e",
+      "size": 5423
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_Z01R",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-10-24T05:41:24Z",
+  "vendor": "asus"
+}

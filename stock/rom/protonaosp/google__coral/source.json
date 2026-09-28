@@ -1,0 +1,97 @@
+{
+  "branch": "sc-qpr3",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_coral.git",
+  "codename": "coral",
+  "commit": "581efbd9c72318df2a5fec53b9e9fd5b7b97a2d1",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2cc6524add5c5adfa148ee81b2d41ebb8454499406bb8c0c939c2b5624453907",
+      "size": 1366
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cf3183e2786b4a1e310ed6098c22338b2575b4ae913d8de59980c7e6f77f4593",
+      "size": 825
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bf815dff7e682b51c1a34dc7cfb78e38945eeae2c4b92f26c5ade3688b182fa3",
+      "size": 1056
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "3717a1ceca102ffb921ca01f945d78f0825f670dc07f47f9c36992988bb4b6ac",
+      "size": 10145
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "9638adc5c9b1de1ead8c1d1ee4b1960fe9fce100fee28053ec21d37b6cc45794",
+      "size": 5081
+    },
+    {
+      "path": "device-coral.mk",
+      "sha256": "368542a5a3635cfd8ecfa12b683f20f69c539afa38cd42467478805ea7326a56",
+      "size": 1509
+    },
+    {
+      "path": "device-flame.mk",
+      "sha256": "ca3d365f1c260d3e94493ec35620c9a3f2e3b33e8f307569351349868ac32d30",
+      "size": 1605
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7bc1672d3428a65f3c96859c67d9aab2fe85535963cdcaf6734561d86a4fac2b",
+      "size": 49594
+    },
+    {
+      "path": "thermal-engine-coral-normal_mode.conf",
+      "sha256": "15bc31b5bbe28904210df3da30ee8368782d81a3a9b397a055b73de255151a69",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-coral-retail_mode.conf",
+      "sha256": "5d10587b932142c0f9c0550c89cd6301a5a767820241f513555f39dce9217640",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-normal_mode.conf",
+      "sha256": "d95d1b5b04f59bc84aae53910b51ee8a6018d9ba455967033ac4ea1e1106735e",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-retail_mode.conf",
+      "sha256": "db400b4087619e02688af013fbb2ad9b68d65321ab28d844842e872f7001b6e7",
+      "size": 2276
+    },
+    {
+      "path": "thermal_info_config_coral.json",
+      "sha256": "09618c1d3c1091adcf4b260c4706dc47e233360a3c710659932e0370a2a406b9",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_coral_jaws.json",
+      "sha256": "9ebf27b33fff124b891ef7a7290656a1ab84956de1ccda9e014d3b5aa71d384e",
+      "size": 5602
+    },
+    {
+      "path": "thermal_info_config_flame.json",
+      "sha256": "ed691982acb0d58742677d26c4d064f7603a583530f4a4049adf47f6b0c10078",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_flame_jaws.json",
+      "sha256": "ef10ff9bd887be55a82ddd6bf6e4d2e40c680991e40ad4006bde99e23994f7f7",
+      "size": 5602
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_coral",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2022-08-08T12:58:39Z",
+  "vendor": "google"
+}

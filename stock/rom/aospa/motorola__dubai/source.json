@@ -1,0 +1,62 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_motorola_dubai.git",
+  "codename": "dubai",
+  "commit": "d312f7c87d86bdcf4a783d842587a6051b7bed18",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1fccc0a4636931f037a3f5cf7b2bb10bf1ec95ed373d78fcf552634a6eea4703",
+      "size": 498
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "581f4b2a785ad6a4b22cf6a5e7a0499d18454593713ee9b8f46264557382bd6d",
+      "size": 3957
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aa7789a30c199936c6f1f7cda2b33e972db84c797c93647f2f11efaab7c1599e",
+      "size": 4200
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b3cc1c4ab330a11bce94b4f67d06cc9b9e7282426421d15a9b2691b77c35d9ea",
+      "size": 11148
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "aaa66d9d7549efb6b0a6be9b205e69fb85f3c6b8c73b994bc0f1d11401e689da",
+      "size": 1926
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8c847bffdca5ecc6e26fdbe0769e66cbf6a2e745ce3e072229a5102540a45f05",
+      "size": 68774
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "0c882c16ab1676c715e66b0a426c75d4b748e3ea55bcf79f8b5830eb7a047ad1",
+      "size": 270
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0fbb8e719e21835ef8dbe83a0450d1cd433233febcd75c6a81297f7143c16038",
+      "size": 982
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "235c60fec49fe2e7fad362c6ed4300e9227a4ce55748c28c412af41f87ecedf7",
+      "size": 1645
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_dubai",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-07-08T06:01:00Z",
+  "vendor": "motorola"
+}

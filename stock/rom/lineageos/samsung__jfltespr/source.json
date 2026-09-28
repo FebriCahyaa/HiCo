@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jfltespr.git",
+  "codename": "jfltespr",
+  "commit": "9c846cfd32cbc6aa1bdb87f9e17cf119138b9962",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dfaa9b6e3a5f25b69158c0cb78b087844eb25ce0c77f4f74febcf84d5f668061",
+      "size": 741
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2e0808636a4ecebbe909e308aaa44975d05c0ef07a88abacebd6737a3a230c7a",
+      "size": 947
+    },
+    {
+      "path": "device.mk",
+      "sha256": "07485068728fae476f9bc4c2ad7ba7e80cedc593ff4ce8bfaeda4f04fd720e65",
+      "size": 1189
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1697e59be82f9d8e61e4318b6e10493ed880e7a27a53359c827caf8df497dade",
+      "size": 469
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6650941328f7e58fbbcd46aff1ae44cb29f32a78fa9b765f8976057bf2c9a57a",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4cda3a85b965174fd70c85be2c1a1180f2b9579b0369a5d795e2b00eb1f9d341",
+      "size": 2473
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jfltespr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:11Z",
+  "vendor": "samsung"
+}

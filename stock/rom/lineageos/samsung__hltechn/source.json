@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_hltechn.git",
+  "codename": "hltechn",
+  "commit": "65a6284f27045ee4f5be930cb6b4e94f1d3ca916",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d2c7771c15a3bd54c6043ad00b1128a6840c95f964cec1419b93c674bbf077c2",
+      "size": 767
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "07121fb83dd42cedcebc2c1b974f3058b5f1e34b157c7d0ec8f658d34597bcf9",
+      "size": 652
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c576a8073d6f94c195862b248acfb22df0c3bb3edcb20ca56448ef34a70d6353",
+      "size": 1205
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d81c7e8c1f962741785c0c951134220e3605af5a06c62300aa31725702bb8f0a",
+      "size": 1049
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5ed75ce0848d3e33d0161faad7c1a262a1b997a9f33f0055067b84fea85a8117",
+      "size": 1395
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d60baab97fe5bf044a50d89c3979b8f296e061dacef91e07a6042be894e7a22",
+      "size": 116
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ef8127686689212ee517f03ef6907517100319057cd9ff34677b484d17402dab",
+      "size": 66
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_hltechn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-09T18:38:15Z",
+  "vendor": "samsung"
+}

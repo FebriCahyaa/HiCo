@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_akatsuki.git",
+  "codename": "akatsuki",
+  "commit": "9b5294ff11b10cf46d4922d15934f89f62cc4ad0",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "462cdb1d53faf7f725fea823d856a6ada965d8ec5db3f7c0dd199055c7b7e7c9",
+      "size": 720
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bb67bfb97485ef9958fe202a0d3cfa9a21e7510194b8f3c4f432cb3f390cf3e9",
+      "size": 771
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5f3d82ccd6ca4c0bc33a11a04bc23d1dd97ca64707aea395bd3c8cf54cb1c646",
+      "size": 692
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0631e9318d019ce9280d1a67a2b97676efa840fe72a927c9dab64dfa14a5da97",
+      "size": 20315
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ef4f3ef95d8510586731bfd1462230c58064a009ebdd08910d109fd5f525e35f",
+      "size": 2197
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "92eeb41b244f30828656c3ad38ce0c7ff1f02d14fb0818ff9c10d39da15d5bfc",
+      "size": 594
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "906bc0642b5129edad333dc0abb388955088a62ffc417ed7bd4a629f8e333b20",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fc095bd6f93b9eaf48d987cd0facb8552fdd2cbc62cead757008af74878f11aa",
+      "size": 17105
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b53f5b5530bdca739961dd4e5e81d936bec9a8cbd944a54f4ca4da73dcfc641",
+      "size": 361
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0c1b0eb2946d448fd51930f2a25f14ea23e0ee5ec7899d7ad4c8e684bc029589",
+      "size": 159
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_akatsuki",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-07-02T13:00:16Z",
+  "vendor": "sony"
+}

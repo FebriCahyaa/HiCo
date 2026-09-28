@@ -1,0 +1,42 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_kltekor.git",
+  "codename": "kltekor",
+  "commit": "a8c88b2a897de127955e169be8f614366aa85e4a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b9199234b66cfabfd8ff24f278ab721b0162ae07dc50d36d9e01465c048026e9",
+      "size": 716
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9c7acd29ccca052a8944815ac8ff23d7e08e6ac562cf289eebb636375bdf25e4",
+      "size": 1240
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3fd22d6f3aeb74cdee2df26bc0a4681e0f62d6ef8c0674c1e895db6ad8e92383",
+      "size": 1136
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "69d592795cbe9afdd3b5f30acf9e011d1d58735ea134fee359257db3cf6900cd",
+      "size": 735
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b2a0178be73d5600a0e98a5196b4a4af161cacba159ab638b80c3ceb6f325fe",
+      "size": 75
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_kltekor",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-05-05T07:17:54Z",
+  "vendor": "samsung"
+}

@@ -32,7 +32,9 @@ constexpr size_t kMaxListEntries = 64;
 // clang-format off
 const std::array kFields{
     Field{{"mode", "mode", 0, 0, "auto: unlock while Flux runs a game, extreme: auto without soft limits, off: never unlock"}, &Config::mode},
-    Field{{"game_level", "level", 0, 0, "Games: max disables throttling, relaxed tunes the vendor thermal configs"}, &Config::game_level},
+    Field{{"game_level", "level", 0, 2, "Games: max disables throttling, relaxed tunes the vendor thermal configs, stock keeps the ROM's thermal"}, &Config::game_level},
+    Field{{"social_level", "level", 0, 1, "Social media apps: relaxed tunes the vendor thermal configs, stock keeps the ROM's thermal"}, &Config::social_level},
+    Field{{"media_level", "level", 0, 1, "Streaming, video and music apps: relaxed or stock"}, &Config::media_level},
     Field{{"unlock_on_lite", "bool", 0, 1, "Also unlock while Flux runs Performance Lite"}, &Config::unlock_on_lite},
     Field{{"stop_thermal_services", "bool", 0, 1, "Stop userspace thermal daemons while gaming"}, &Config::stop_thermal_services},
     Field{{"stop_thermal_hal", "bool", 0, 1, "Also stop the thermal HAL (disables Android thermal API while gaming)"}, &Config::stop_thermal_hal},
@@ -54,7 +56,9 @@ const std::array kFields{
     Field{{"exit_delay", "int", 0, 30, "Seconds to wait after the game leaves before restoring"}, &Config::exit_delay},
     Field{{"notify", "bool", 0, 1, "Post a notification when the safety guard trips"}, &Config::notify},
     Field{{"log_level", "int", 0, 3, "0 error, 1 warning, 2 info, 3 debug"}, &Config::log_level},
-    Field{{"whitelist", "list", 0, 0, "Apps (not games) that get the relaxed level, never max"}, &Config::whitelist},
+    Field{{"social_apps", "list", 0, 0, "Social media apps (social_level)"}, &Config::social_apps},
+    Field{{"media_apps", "list", 0, 0, "Streaming, video and music apps (media_level)"}, &Config::media_apps},
+    Field{{"whitelist", "list", 0, 0, "Other apps (not games) that get the relaxed level, never max"}, &Config::whitelist},
     Field{{"blacklist", "list", 0, 0, "Packages that are never boosted, games included"}, &Config::blacklist},
 };
 // clang-format on
@@ -113,9 +117,18 @@ std::optional<std::string> apply(Config &cfg, const Field &field, std::string_vi
                 else if (value == "off") cfg.*member = Mode::Off;
                 else return std::format("{}: expected auto, extreme or off, got '{}'", field.info.key, value);
             } else if constexpr (std::is_same_v<T, Level>) {
-                if (value == "max") cfg.*member = Level::Max;
-                else if (value == "relaxed") cfg.*member = Level::Relaxed;
-                else return std::format("{}: expected max or relaxed, got '{}'", field.info.key, value);
+                Level l;
+                if (value == "max") l = Level::Max;
+                else if (value == "relaxed") l = Level::Relaxed;
+                else if (value == "stock") l = Level::Stock;
+                else return std::format("{}: expected {}, got '{}'", field.info.key,
+                                        field.info.max >= 2 ? "stock, relaxed or max" : "stock or relaxed", value);
+                if (static_cast<int>(l) > field.info.max) {
+                    // Only games may run with throttling off.
+                    if (!clamp) return std::format("{}: max is for games only (stock or relaxed)", field.info.key);
+                    l = static_cast<Level>(field.info.max);
+                }
+                cfg.*member = l;
             } else {
                 std::vector<std::string> list;
                 for (auto &pkg : str::split(value, ',')) {
@@ -168,6 +181,15 @@ using KV = std::pair<std::string_view, std::string_view>;
 
 // Presets touch the level, the safety limits and the timing only; lists stay as they are.
 // Safety limits never leave the schema ranges, so no preset can switch the guard off.
+// Daily: for social media, streaming and general use. HiCo never touches the peak here; the
+// vendor thermal system stays in charge with configs tuned for the chipset (Relaxed) for games,
+// social media and streaming apps alike, so they do not stutter. No vendor limit is removed and
+// clocks are never pinned. The other presets leave the social / media levels as the user set them.
+constexpr std::array kDaily{
+    KV{"mode", "auto"}, KV{"game_level", "relaxed"}, KV{"social_level", "relaxed"}, KV{"media_level", "relaxed"},
+    KV{"unlock_on_lite", "0"}, KV{"thermal_overclock", "0"}, KV{"relax_margin", "2"}, KV{"safety_cpu_temp", "85"}, KV{"safety_battery_temp", "42"},
+    KV{"safety_cooldown", "45"}, KV{"poll_interval", "3"},
+};
 constexpr std::array kCool{
     KV{"mode", "auto"}, KV{"game_level", "relaxed"}, KV{"unlock_on_lite", "0"}, KV{"thermal_overclock", "0"},
     KV{"relax_margin", "0"}, KV{"safety_cpu_temp", "88"}, KV{"safety_battery_temp", "43"},
@@ -190,6 +212,7 @@ constexpr std::array kOverclock{
 };
 
 const std::array kPresets{
+    ConfigPreset{"daily", kDaily},
     ConfigPreset{"cool", kCool},
     ConfigPreset{"balanced", kBalanced},
     ConfigPreset{"extreme", kExtreme},
@@ -204,7 +227,7 @@ std::span<const ConfigPreset> config_presets() {
 
 std::optional<std::string> apply_preset(Config &cfg, std::string_view name) {
     const auto it = std::find_if(kPresets.begin(), kPresets.end(), [name](const ConfigPreset &p) { return p.name == name; });
-    if (it == kPresets.end()) return std::format("unknown preset '{}' (cool, balanced, extreme, overclock)", name);
+    if (it == kPresets.end()) return std::format("unknown preset '{}' (daily, cool, balanced, extreme, overclock)", name);
     Config next = cfg;
     for (const auto &[key, value] : it->values) {
         if (auto err = next.set(key, value)) return err;
@@ -275,7 +298,63 @@ bool Config::is_whitelisted(std::string_view package) const {
 }
 
 std::string_view to_string(Level l) {
-    return l == Level::Max ? "max" : "relaxed";
+    switch (l) {
+    case Level::Stock: return "stock";
+    case Level::Relaxed: return "relaxed";
+    case Level::Max: return "max";
+    }
+    return "stock";
+}
+
+std::string_view to_string(Scenario s) {
+    switch (s) {
+    case Scenario::Game: return "game";
+    case Scenario::Social: return "social";
+    case Scenario::Media: return "media";
+    case Scenario::Other: return "other";
+    }
+    return "other";
+}
+
+std::vector<std::string> Config::default_social_apps() {
+    return {
+        "com.whatsapp", "com.whatsapp.w4b", "org.telegram.messenger", "org.thunderdog.challegram",
+        "com.instagram.android", "com.instagram.barcelona", "com.facebook.katana", "com.facebook.lite",
+        "com.facebook.orca", "com.zhiliaoapp.musically", "com.ss.android.ugc.trill", "com.twitter.android",
+        "com.snapchat.android", "com.discord", "jp.naver.line.android", "com.reddit.frontpage",
+        "com.pinterest", "com.linkedin.android", "com.tencent.mm", "com.viber.voip",
+    };
+}
+
+std::vector<std::string> Config::default_media_apps() {
+    return {
+        "com.google.android.youtube", "app.revanced.android.youtube", "com.google.android.apps.youtube.music",
+        "com.netflix.mediaclient", "com.spotify.music", "com.amazon.avod.thirdpartyclient",
+        "com.disney.disneyplus", "in.startv.hotstar", "com.vidio.android", "tv.twitch.android.app",
+        "com.vuclip.viu", "com.iqiyi.i18n", "com.tencent.qqlivei18n", "com.hbo.hbonow",
+        "org.videolan.vlc", "com.mxtech.videoplayer.ad", "com.mxtech.videoplayer.pro", "is.xyz.mpv",
+        "com.apple.android.music", "deezer.android.app",
+    };
+}
+
+std::optional<Scenario> Config::app_scenario(std::string_view package) const {
+    const auto in = [package](const std::vector<std::string> &l) {
+        return std::find(l.begin(), l.end(), package) != l.end();
+    };
+    if (in(social_apps)) return Scenario::Social;
+    if (in(media_apps)) return Scenario::Media;
+    if (in(whitelist)) return Scenario::Other;
+    return std::nullopt;
+}
+
+Level Config::level_for(Scenario s) const {
+    switch (s) {
+    case Scenario::Game: return game_level;
+    case Scenario::Social: return social_level;
+    case Scenario::Media: return media_level;
+    case Scenario::Other: return Level::Relaxed;
+    }
+    return Level::Stock;
 }
 
 std::string Config::serialize(bool with_comments) const {

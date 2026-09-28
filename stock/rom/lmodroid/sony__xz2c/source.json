@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_xz2c.git",
+  "codename": "xz2c",
+  "commit": "faff0330d7b15f5e8a25a3390cab67b03dfa1aed",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7b96c0e950959d3c9087c5bb2a620b2a13207a1e72e753d6f01290e6fa0b0174",
+      "size": 716
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8c84cc2ff85e0ccddec096c7dd29e212daadb0acfa5702ee0c084d834c99582a",
+      "size": 759
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8a82dbc819c2399cacade40547765618d9aaf6aba9e7c566fb7091725870231d",
+      "size": 626
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "7e05afe03bcb33b125ad0ffdc1d3054c4c2371688ab3f52bcdb71d40f493491e",
+      "size": 20058
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5ab0c4fa2d68a4970fe49dcaf504cb5e4240d274534465ea15071933728d3abb",
+      "size": 2099
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "66937bb7d640657346af19940cb88a49f7f6e6abac0ad98db5a79ad857b704c5",
+      "size": 590
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1364dccfa3d6622e544adf171eb93c41852c6d98b2337c75816a33a69f642b56",
+      "size": 17755
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a4e378cc0b2e8fb8c3e41517d6294c5022fc76af42b85fc1e5a231edf6ffa09a",
+      "size": 370
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e0430532d7f4c046334589e991e05d77a453f115f2b4a13808d97f966ce7e2b1",
+      "size": 205
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_xz2c",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:17:12Z",
+  "vendor": "sony"
+}

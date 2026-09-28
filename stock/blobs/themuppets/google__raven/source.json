@@ -1,0 +1,64 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_raven.git",
+  "codename": "raven",
+  "commit": "b6b0082f4c0d308a5ce82110b9e4116fc702217b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint-mainline.json",
+      "sha256": "47560e9be9adaf3b7a54b8c2fce5a5b980e0223bb8b6a10b672b0340e7d84121",
+      "size": 31701
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "ff7c5b0b4f46710ec8d3602d9cc15b9483547d74b89033859cea49c12e34fcdb",
+      "size": 44476
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint_a0.json",
+      "sha256": "5863859bea7da942b9d915de150d1ee2a1d5d88574d582491c1b3e9e0fae8ab7",
+      "size": 7347
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint_a1.json",
+      "sha256": "873a26d8b253099a4b79861fc259716a3309235997ff83ae93413ab7a1209cde",
+      "size": 8289
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "c1447b888c3a132026f0abfa39480fd42d260c198f5525d406930d0ec4c3721c",
+      "size": 19823
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "bc80942883a4bd32b6a471fee268ee0e9114127096493c31a68c338f8f3b76ba",
+      "size": 12702
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_raven",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "raven"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

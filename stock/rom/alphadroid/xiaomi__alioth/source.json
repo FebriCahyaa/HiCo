@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-15.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_alioth.git",
+  "codename": "alioth",
+  "commit": "a17f0c3a3c02893d4e1a381c0adc24886c362376",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "37b5984f9f018d528ca051519259b015a39005241e30036ef833849fd5319681",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "89eb36238318ec29c1b869380f3d443f562187bd8b2cedbfc41c23ea0b557ffa",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "51046e05e06aa1a4d44cb82811eb2062aa47dca87ca688e17cf35a972956dbc7",
+      "size": 911
+    },
+    {
+      "path": "device.mk",
+      "sha256": "65473a80037386b3aeadd44d8fd7618534891a36d3d8ff44009e6d06444cf147",
+      "size": 1685
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b533840fd6f01900f8e603c2b3d664ae49afaecdad8f60d874d7c3b90a0159a0",
+      "size": 1637
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dd0b2da2e1b7806c4acd488831f33a44bbc5a569adf5a6704cff8b46e878ed14",
+      "size": 20787
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6843fd21e31ea49f1865e8bed13f4c86e61ea9efc691dc7c2e372d29f9960fec",
+      "size": 1485
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "5cb0d1c50b8315cb7bb1d6880bc76ce41e71b6fd40cf4d51b484f01e5ea074a4",
+      "size": 759
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_alioth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-05-21T16:22:34Z",
+  "vendor": "xiaomi"
+}

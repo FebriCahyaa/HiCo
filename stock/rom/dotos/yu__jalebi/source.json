@@ -1,0 +1,62 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_yu_jalebi.git",
+  "codename": "jalebi",
+  "commit": "c500b1a990533eb6c334be80af003935d9e3faf0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7f2ef9fa1586e5380d18e22a6ebda97543fa7796555924a30cf9574612a29dff",
+      "size": 39
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e0a1a6c90ebd5ab983cb528b0edf1e598ec4394da92fcb090d6e1653e7570bfa",
+      "size": 3610
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6541666c8f0f5c2644ef2d4774eceac293229d0ee80104fdd67efb5069116ceb",
+      "size": 687
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f1799e0a6b89f7fc8897bc49d708222fd13e5113c3f2f09186762d33b1d88589",
+      "size": 5504
+    },
+    {
+      "path": "device.mk",
+      "sha256": "090b8fb8c8b049bceb130de021e54fb894d95d96a7ec4248fb1efa91a3f06c1b",
+      "size": 10754
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ba0ef2849bd0c4071bab0093747d2083c03a8b8c4334bc33c80584d0745ffda",
+      "size": 1950
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "68177ca4ab3f11892d953f03c39d0aa8ad17b76dd567fcf11fbc94b790cf01ad",
+      "size": 8698
+    },
+    {
+      "path": "system.prop",
+      "sha256": "472ef95ea4d6b0b4e5011e4badd801494c10b994812868c6565a91c3487250cc",
+      "size": 2141
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7470722a691357cf6fca206c2c8b33951ce2080d00d295024325a2c9dbc6232d",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_jalebi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-07-08T09:44:12Z",
+  "vendor": "yu"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_ace.git",
+  "codename": "ace",
+  "commit": "1278300589b0047bdf13ad473b311dc4ae98dfcb",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1edac933ebea0a43b2cb6bc7782d9b04be4ddb9cf48639b7fc09e6f8f05add79",
+      "size": 779
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "973592ab1ac79dc8e57c425e8f42c870f56404bb1d2a70e3cad3bca7122962f0",
+      "size": 3663
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2461fb07c4b7270e099dd196d42676a915e834d6183a66df22fe13005accdb81",
+      "size": 8963
+    },
+    {
+      "path": "system.prop",
+      "sha256": "75ae61b64633b2257f7417df0fefb4f01e6acf1190af7b62e96861a84c19958e",
+      "size": 1198
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1aca251408dfec6beb173bedeb5c683dc34693a1b226ea22de3ff94de201cd17",
+      "size": 847
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_ace",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:19Z",
+  "vendor": "htc"
+}

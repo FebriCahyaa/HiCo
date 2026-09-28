@@ -1,0 +1,47 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_aries.git",
+  "codename": "aries",
+  "commit": "1e8355cf60291b0b67b540ca430d3ec1e15e2d58",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "de13bf3d36b6d31c00f8cdc61c0122a78633c7ad07057ccc355a197884f43f50",
+      "size": 2568
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "472fb05f03f173873a63fc25df0afa7a0fa349430489251277bf55f58616baef",
+      "size": 688
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4149dcb5d048da58400ce52dcf0fca4f64b92e281c5f3c22128ebe26254d0adf",
+      "size": 5423
+    },
+    {
+      "path": "device.mk",
+      "sha256": "91702f05a93e3cc3e51e928f45e92e554b0d4ffcce86ada1e7680a1fc0c16293",
+      "size": 9723
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "61a32dcc0633a69fda5fd3c9713616591eafe240cae1e9ae16e44cbaa3e3af36",
+      "size": 888
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "053424b2d4d2d2bff46c86fd67805d6d93f4ac1aab7a992e24c0644e3e911b42",
+      "size": 638
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_aries",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:44:38Z",
+  "vendor": "xiaomi"
+}

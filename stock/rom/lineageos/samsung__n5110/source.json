@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_n5110.git",
+  "codename": "n5110",
+  "commit": "87c0767e506d88769308a6a89b2fcf38f2efae63",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d5f91756bf83b7e706e1cb6807147686ba1f123242aa1ce5d131f6978d473e45",
+      "size": 715
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0689b571894916033e1407e4ca346bf318eb03d498ef41e7a8d5a1988445e3b4",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "971426c63a29f1968e09074aceef2aefa20c7e61e3acbd5f294678e6cd2cb7a4",
+      "size": 1121
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "76c2157305b5b5e117d402b15d945f395942a0a29d8ec419514fd494c9216b3c",
+      "size": 690
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4cee4a0289ce4e3d7dbb1c92a1b85f575be2878be2a528d993131d426e52c0d9",
+      "size": 622
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2ffd68aa12039313dbac49597a5ccbe65cf3e4b1385cf1ed9c3646b356aa022a",
+      "size": 122
+    },
+    {
+      "path": "system.prop",
+      "sha256": "70828ff8142638e23c50afa7b5cf4e55ddeb1e1219b5c3db8aa475dfc38a1838",
+      "size": 184
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_n5110",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:15:32Z",
+  "vendor": "samsung"
+}

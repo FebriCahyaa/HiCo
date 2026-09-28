@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_dm1q.git",
+  "codename": "dm1q",
+  "commit": "2071863a160fb8020911899860b6cea97ea9fb48",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "95e8064a9bded391cd8891cf136322bb02030dd81def312e30cf05f127ddb639",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1238c4a7605a183a0d745dc8afeaffa21c07b37d6011cafcb3425643e221f4a4",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e016db7f85db786bd27489f5218f7286b85e3b04ab16524154efd03aadcf1342",
+      "size": 2618
+    },
+    {
+      "path": "device.mk",
+      "sha256": "420bbf3600951af25669b40a48d07b8b97ec706f9e7953d20948a5605f822cbe",
+      "size": 1696
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "195117b1dea80525a77a117efd64f50c5d3b296f98bb1c361c2e6ab39a1a1679",
+      "size": 1063
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "52d0ab453439b8010c1a5e953c8d8c82fbeb2e768bbd11a558a6dc3a493d808b",
+      "size": 132
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "41642dd11c272ad3daee606967ede9cb635dc4121e21e19818300258ee6d8012",
+      "size": 16444
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3c8977306430e1d8f637f7fae00ccfe80821edea04e07c64a2e2d1cefe2e1a2b",
+      "size": 168
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_dm1q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T11:41:37Z",
+  "vendor": "samsung"
+}

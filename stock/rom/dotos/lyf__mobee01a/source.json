@@ -1,0 +1,62 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_LYF_mobee01a.git",
+  "codename": "mobee01a",
+  "commit": "10331ae1e541b24a77e48627d5902d194c911bc4",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c78e22eb83de857e32a20d9e7bc0fd7cfbc9dde063610df8323f6c16d1c9cc3",
+      "size": 42
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1cba8e5a3e88c47afe0ec1bfb4c4e3c16151f5e22f2ece7b9b795fdbdc87e7ad",
+      "size": 709
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4c080340f4059bd0cd4be5ccd513b8eb96106f9ad375d08442780f1369434fde",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0baee5d8400591e25eff0cef43985214904f99d32c2f4711a2aecb5b43be7603",
+      "size": 2619
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "d0b4d96f47f60a0a9c5977978081adb986c900d51f33eb2d106ed3a3b6a05c6b",
+      "size": 3451
+    },
+    {
+      "path": "device.mk",
+      "sha256": "674cfb1d44a393287140b0ad5d8e1751c1b40c950ba32fda2b3c6282d332c7d0",
+      "size": 5042
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "278730fc9be2241e8159331bd21d3d470dcf30c600ddcb08472f32ba72ea9353",
+      "size": 753
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fdb45ad7739923ff5c4accf8ba7fd56bbf37036038e2cdfa5fa87d028bf289ca",
+      "size": 23328
+    },
+    {
+      "path": "system.prop",
+      "sha256": "84392f53a1f01c77ef50b011821c7c0280d923b283ea734906920c6d535c5803",
+      "size": 1073
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_LYF_mobee01a",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-09-12T16:42:32Z",
+  "vendor": "lyf"
+}

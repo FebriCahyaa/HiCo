@@ -1,0 +1,37 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_stallion.git",
+  "codename": "stallion",
+  "commit": "278a13101943cfd3c4d732cde2f89b7463ea03e7",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8721b63633748696bd9a79003cac81122fa5c869be211a7bf590700c1ce5c664",
+      "size": 511
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "080905c17a7a77c27834cd11b9312d729bba732502f42e63f5b4b32580d768e9",
+      "size": 202
+    },
+    {
+      "path": "device-stallion.mk",
+      "sha256": "7bb9175d979222fa43b8c0ad33f666ec58693d6387eb67a2bac185b0302f1445",
+      "size": 2130
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e643ee5186c33c6cc52ba209342702fd26e4b53eac8db325e5323ca19bb79cbf",
+      "size": 214
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_stallion",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-20T04:34:58Z",
+  "vendor": "google"
+}

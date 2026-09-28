@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_martini.git",
+  "codename": "martini",
+  "commit": "295c48ba8f9c0f6157371fda71c623eb56cbc16d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ac808a9ebec0fa39fbbf9d6738a542748ab2e70f9b7c99bd903d42a6b73da997",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4164329a7a15193cbbcefdd54040b7e384353270ee3ac61e4929cc58b79be74c",
+      "size": 686
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e4227067a1e6caff0df77cb01c47a8975f24885a3d10062c34e0cc8f856d162c",
+      "size": 3364
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a26e31489483ba42a8e02cbcf6f5ee9a86bd05bd27053ecd4fcd96960952f663",
+      "size": 3912
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4f5ca6b7518f0a654d12e57304d11839026debd839215fdf5bbbb8ac2750a2b8",
+      "size": 42339
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4db813290680de53923b24313db6d49dc401b9d21ecd6c5610b954dc07a8463f",
+      "size": 196
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_martini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:10:06Z",
+  "vendor": "oneplus"
+}

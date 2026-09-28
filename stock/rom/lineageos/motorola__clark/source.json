@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_clark.git",
+  "codename": "clark",
+  "commit": "8077a2b69203b567a0bf8577610ed75036223d12",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3b7ed3c53af285fb13c6dc2137f3761261d238cbd2044a8d3e42f875b40c7d52",
+      "size": 5160
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a5dc86a5c5139bdef7e6e5713fb5c456bf5ede750c41d14e55d288a1b3b40418",
+      "size": 780
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8d40895d229b239fb6ffdf55d32fa19a36f3d30da8bfda6d9aae6fddfc41b1ae",
+      "size": 5322
+    },
+    {
+      "path": "device.mk",
+      "sha256": "30c0fc94e3de3c8c41b11a3f66660cc6bda8dba579ac39bd83246a49283c8abb",
+      "size": 11964
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fc33e60c27e77411a63c60b97438e9e3403c33503d47248844b96b90003beb5e",
+      "size": 1536
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3c7935db1174238f4703214efcf5d58d986d17b699512bf72951a207c998f2f9",
+      "size": 280
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f366b2d5dc8f43b7059d20c8bb1dc9e5c108778efc027954c542445feec55d3f",
+      "size": 24793
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cead76baf6fe42f7c0ecd10edbcd58003884546605b0962b0c4cbdba46e5d76e",
+      "size": 5224
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_clark",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:24Z",
+  "vendor": "motorola"
+}

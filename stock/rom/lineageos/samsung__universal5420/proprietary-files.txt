@@ -1,0 +1,47 @@
+# All unpinned blobs are from T700XXU1CTK1
+# Vendor security patch level 2017-08-01
+
+# aptX - from marlin - OPM1.171019.011
+lib/libaptX_encoder.so:vendor/lib/libaptX_encoder.so|984739a0bc968e18f75ced205733fe3f51c2d4f0
+
+# Audio
+lib/libaudioroute.so|46fcafe8de5c4fe078ad9e9e613bc260fd137106
+
+# Bluetooth firmware - pinned to T705XXU1CPK2
+vendor/firmware/bcm4350_V0301.0609.hcd|e6850eace7336e7390d53e7d9f47cc008f3c18f6
+
+# Camera
+lib/libexynoscamera.so:vendor/lib/libexynoscamera.so
+lib/libvdis.so:vendor/lib/libvdis.so
+
+# Graphics
+vendor/lib/egl/libGLES_mali.so
+lib/libGLES_trace.so:vendor/lib/libGLES_trace.so
+# libw is a local libm compile of LineageOS/android_bionic@40e6fdba0 with 269025 applied on top
+vendor/lib/libw.so|14b82a29223980532b54739c2b94c318e2675515
+
+# Mobicore
+bin/mcDriverDaemon:vendor/bin/mcDriverDaemon
+lib/libMcClient.so:vendor/lib/libMcClient.so
+lib/libMcRegistry.so:vendor/lib/libMcRegistry.so
+
+# NXP Noise Cancelling
+vendor/lib/liblvverx_3.25.00.so:vendor/lib/soundfx/liblvverx.so|575865ce767dd1ab576118ba47254799757a2a1b
+vendor/lib/liblvvetx_3.25.00.so:vendor/lib/soundfx/liblvvetx.so|a99afe8a6c44a9434284f9836976ab3ad2acbe91
+
+# Samsung S5P Multi Format Codec V5/V6 firmware (Used by Widevine)
+vendor/firmware/mfc_fw.bin
+
+# SRP Audio driver for Samsung Exynos firmware
+vendor/firmware/srp_cga.bin
+vendor/firmware/srp_data.bin
+vendor/firmware/srp_vliw.bin
+
+# STLport (Camera/RIL) - local compile LineageOS/external/stlport@984b8432
+vendor/lib/libstlport.so|0be0a0d13e12fbf95d97d309dcbc25d3f969a469
+
+# Widevine - from N935FXXS7CTJ2
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine|2721d7cbd6730d76d08cfd6d32c1bbaca715fb93
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|6d73a2063f155dcbd5ba95ca2d85e184cda61127
+vendor/lib/libwvhidl.so|fe6c10197d4b947bbb5431700bc79e937234f5e6
+vendor/lib/mediadrm/libwvdrmengine.so|ea269c91c0089c4f9a53a248eacf3adbd5717dfd

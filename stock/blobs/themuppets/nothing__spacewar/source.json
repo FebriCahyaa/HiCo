@@ -1,0 +1,114 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_nothing_Spacewar.git",
+  "codename": "spacewar",
+  "commit": "dfb1065b3bb43b9c9b00a7efde5e50b12a59ad24",
+  "file_count": 19,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "edec7d930bb695dc154139a54432b71ae1f40918363f05800f49cac3c61ce085",
+      "size": 963
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.benchmark.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.conf",
+      "sha256": "2fbf2d3a10f4323cdbc188b8a76c9dc48fffd3ec8d60b65b48b40f6460a11f2c",
+      "size": 564
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.level1.conf",
+      "sha256": "506ad3e024eb03da4bf015dfa6ccf27ec8c0013cafa48ada4b4f338292fbba43",
+      "size": 538
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.level2.conf",
+      "sha256": "506ad3e024eb03da4bf015dfa6ccf27ec8c0013cafa48ada4b4f338292fbba43",
+      "size": 538
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.level3.conf",
+      "sha256": "506ad3e024eb03da4bf015dfa6ccf27ec8c0013cafa48ada4b4f338292fbba43",
+      "size": 538
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.level4.conf",
+      "sha256": "506ad3e024eb03da4bf015dfa6ccf27ec8c0013cafa48ada4b4f338292fbba43",
+      "size": 538
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.perf.conf",
+      "sha256": "c5aeba9bff66bee21f1495a78fab0aab33cf245ef8f146bab7d837ccb531669e",
+      "size": 564
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.low.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.low.level1.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.low.level2.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.mid.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.mid.level1.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.mid.level2.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.mid.level3.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.mid.level4.conf",
+      "sha256": "29b8c32ed02c7ad58327e2994794def1baf08f10bfc11347900893f6a47f9180",
+      "size": 636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.sgame.conf",
+      "sha256": "72e57f44892b8c77339a02112043063d08673103fb680a9a593ef8af1d45da4d",
+      "size": 558
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.super.conf",
+      "sha256": "2fbf2d3a10f4323cdbc188b8a76c9dc48fffd3ec8d60b65b48b40f6460a11f2c",
+      "size": 564
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_nothing_Spacewar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "spacewar"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "nothing"
+}

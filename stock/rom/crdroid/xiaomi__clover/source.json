@@ -1,0 +1,62 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_clover.git",
+  "codename": "clover",
+  "commit": "b0e4238b268e617be5217a606ffc58c793cc027b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "19b30a5938e57326f023b2a672f4de85b7a95630f41541ac4348408c487a2da3",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "764c111e9b0a479cf83c4dc7341ffae17080471c1385108898bdfd979c8d97d9",
+      "size": 1189
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9307f2edd3705072c5eca555932a26791454e5f5c47d4047fdc5008330e50eb4",
+      "size": 2349
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "91e92a4bdaeb5cccd2a66edeef5f32b5dc1b4be72ac1150454ebe0952e90a10c",
+      "size": 2598
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c45b2997d1d2c26b6f6a8e4be10eb6de2855c519c480722ac9e40d18bcbc0e01",
+      "size": 26934
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "28ddc0b5129d21bf8ea1bc33edadfc326848dfbf69303029864eb89b2503be80",
+      "size": 89
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1562308736d1f7ca4333bb2e35f1cfbd23002eeb66ce90705db835c196103575",
+      "size": 533
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fc7c4506d007c47695cabd7d790b3d92c152e8aa781b8649b7e720737b3f20b3",
+      "size": 1036
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_clover",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-05-06T15:09:55Z",
+  "vendor": "xiaomi"
+}

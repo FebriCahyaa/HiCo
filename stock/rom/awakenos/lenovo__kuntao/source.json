@@ -1,0 +1,62 @@
+{
+  "branch": "11",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_lenovo_kuntao.git",
+  "codename": "kuntao",
+  "commit": "855ac19e7e54e1809f53f2bce28a534714cfcb9e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d64eaaf22a3714a8b62323d29e5a267d0e6572de2cbf3878b0e2ff2da17f90f7",
+      "size": 3830
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5efde7efc6e534cf7f3c113cd9f9bb1e874495dbc969793b1e5acf333930c79b",
+      "size": 756
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8af03fbdebd669e48ce08fdfcc458de9d6fb080d66ef19d207a8300e18e26fe8",
+      "size": 5664
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c2d1f7754f5dad4df82273e1eef9a7f0c46c1c071cb0dae08ddfa21b308c4171",
+      "size": 17069
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "723d984a01161c51a8a93a09bdd548123c9a741733691467575099f34db8c8c6",
+      "size": 4234
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0f487772b7e4870b897e8ec5337e9bda61753a0077c58aa6c85bb560d9341f96",
+      "size": 106
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f1e4fc597ad0903302bc7c822a46ecfdd6cbf5b7e840d2e6445602024558fa22",
+      "size": 44785
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5064367e246e279fb66a8bf5aa7a3556f9f8080c8bee664c8dc86caaa675b2ad",
+      "size": 95
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_kuntao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2022-11-22T13:36:14Z",
+  "vendor": "lenovo"
+}

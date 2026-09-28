@@ -1,0 +1,57 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_scorpion_windy.git",
+  "codename": "scorpion_windy",
+  "commit": "b68e4b055aabd94c1a7d1ee002bec1b5d93e9948",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a9e9a0c3b7c298393b464fb329f4e1329015361d9d68ea4c4162c9c23946294b",
+      "size": 131
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "67381688fe1331a3d0d2541b218df00b4e6de85ef2e4eab4078ae8d1c4ebef5d",
+      "size": 63
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "92c7420ccd611b83a881ac2a7a0c4343cb1a2b038fb65bbf47645803c7c6955b",
+      "size": 844
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "3b2bd5154b12027e42f7b67a41ec3c24bcbebbf764b71ddf5334df3fcbccc2b5",
+      "size": 1118
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8dfc01ddecbd10e209aab6207d9f3f739b71b96a6c31ef53b980c8f560dcd6b1",
+      "size": 240
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "18c702cf28fb50b80e95249077f73d7faeb244c34bba193cc451b43ff20bfbbe",
+      "size": 4458
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7207a223af43aa6c11bad148d3b7acd4593ecc074c6ff52ec21d046b3f54fc2f",
+      "size": 154
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f3f6e515443487efe71ba08428f324119470833542609497cd4a1436062035a0",
+      "size": 38
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_scorpion_windy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:47Z",
+  "vendor": "sony"
+}

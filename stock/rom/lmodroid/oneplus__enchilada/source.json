@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_enchilada.git",
+  "codename": "enchilada",
+  "commit": "1594e019cf1a91e041dc3ec54a95a64474430b54",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3d8f820e3f443700ab74b009c3330c1f398fecaeba1bff23695e0d397d609d89",
+      "size": 662
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3c3de796b9d73f67465830ea1f3c130f638426910e113baf0b100cb38e327ec9",
+      "size": 948
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3c79714c1e737d7eb944429292128e7a22c4dc43fcce9bbb013c4f0bd5403fdc",
+      "size": 2363
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "32c4c944b4337056ff566773dddf14e32c41d70bdd43b24fed08f14bbc26f892",
+      "size": 947
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ba0084680622fee2ba205c5049e0b17d21bf71c28a0d29f710bf3c2085aef529",
+      "size": 2198
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "683b7d9d0db89c99bb9d7183800bcb896690cd1762a0e4be74aa7c6894a7d140",
+      "size": 95
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_enchilada",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:50:46Z",
+  "vendor": "oneplus"
+}

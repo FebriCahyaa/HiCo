@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_msm8953-daisy.git",
+  "codename": "msm8953-daisy",
+  "commit": "b47fcd139228599099deb05514dcbca6ae852c52",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3e45de1d231dba8d8204994ee041a9ef49c91bb2fa6447dc5dc34b184c8de550",
+      "size": 3829
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "da234af63f64ae8234aab5018c796ab5f56852743d076a1b5e8dcbb34455e0ea",
+      "size": 4358
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ad431864edc2ababd384c1c381c5a801637b1a7ac70c91547c66c11484c96f3e",
+      "size": 4631
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3dd3c0b36a787448afb4425485d84e7e2e0fc7444e29d7f13b7066444f11cd91",
+      "size": 27334
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b69c895a02f7aff9cf569823296f2be19e65d8e61fa1600a6a68d18782ec58a1",
+      "size": 991
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "87b82752a34a744bc2c5022ef1ffa1ff238f9ab4e280d637fe27a198dd1e6bce",
+      "size": 4716
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_msm8953-daisy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-11-18T05:25:01Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "6.0.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_bacon.git",
+  "codename": "bacon",
+  "commit": "a953f91ffcb6c075ba2f6d127a2350b482697dae",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "36dd19b8bbf8272b1c758cb44b1060b9b6073adeeca91487a86317b954902939",
+      "size": 5473
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2ac443c06d21cc56e9d23101e6cf64085c0131f6bc22d1080594bee263e0aebe",
+      "size": 5575
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "02772b8ef03a59fe5a54b457069aadf0d0143f1e09fe7399d7aa068450ccf389",
+      "size": 1946
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3a25d5dc7707a93bba4360c843eb1e36921ac5b824f1731dde8f5be3a19e5c98",
+      "size": 1476
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ce7a88f9d25c87caa1521872b283c8dd31934d1f4734fc9879b67f3ea768ca28",
+      "size": 2327
+    },
+    {
+      "path": "system.prop",
+      "sha256": "399a75428621765eb5b04f96cb8d77aab9f189286ef479ac86f558d4b8a086e0",
+      "size": 1563
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "5036718cd24855506035b55ca82b099fb2910a04a38649f9182522319a4c81bf",
+      "size": 94
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_bacon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-08-27T09:06:01Z",
+  "vendor": "oneplus"
+}

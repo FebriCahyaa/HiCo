@@ -1,0 +1,52 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_h901.git",
+  "codename": "h901",
+  "commit": "b61867e44d51095eb727900bca86fbe9248a7b09",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e16d211dc0c769257f0214ce31f861b4839b9ddba73df9a93c6c0f3e20519d17",
+      "size": 1135
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ada2d17f675164dd9d8b88602517e334e18a0b9ecceffbea7ffbad1fc77b383d",
+      "size": 866
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1bb46a8a2d40a11197a6158ba98594fc08b05fa7bee1ffb9abf01b525debf95d",
+      "size": 1018
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ce910949fefae42f7b07cad5825365c7848498716a035c2ba1803de959c0a971",
+      "size": 103
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f372f29344445638bcaf89e2f9fa043f3474a94acfd4e0bc2524855c110f08ff",
+      "size": 305
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a89477e3037043bb97b25c9647222d8428c8ba6e4d6c4df6207e2748f976156b",
+      "size": 218
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7fb0503ec9d8360191e36ed5f3f390f14c35dcc3db649e4965891dae799f2edd",
+      "size": 34
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_h901",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:46:31Z",
+  "vendor": "lge"
+}

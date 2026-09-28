@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_s3ve3gds.git",
+  "codename": "s3ve3gds",
+  "commit": "3697b74dd6b6943cfd6166cf1774c9757ad756da",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1a90a26d4b6b58b70d573c8022cc352ba6c496849e45e19d12a64559738ab06c",
+      "size": 68
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "067ae29df60fd823956efb5c404d6abb6b9116467ff7019ccf8bc978c23a1428",
+      "size": 717
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "787f864f2422e25c529eb1e9b688d3c8e388897c91f0ba61d5dcfa7af7c16632",
+      "size": 766
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "980f5074c9f6db5f5666f2bd67af1e49e03b701979462525c21de85bc1826687",
+      "size": 1201
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ebaaf84268d320d37291f24721d5498716984876770241708460aad7eff7468b",
+      "size": 1256
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ef7ba5e41b1f7b4dd7d54edabfc940d612319634202683f1140c8f40ea1f5f9c",
+      "size": 1214
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "942c32fea0de06b12d5def86267f0cde6f72c466b69d4fc382da79a1df1ad1aa",
+      "size": 120
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_s3ve3gds",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-10-13T19:58:25Z",
+  "vendor": "samsung"
+}

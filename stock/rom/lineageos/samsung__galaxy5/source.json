@@ -1,0 +1,47 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_galaxy5.git",
+  "codename": "galaxy5",
+  "commit": "0fb5a39d5d1eebfc4b61f31269a62b0920bfdb68",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "37a08e9a84a1cf127f106135e8c2dde601a2855f51fadf3a3b3dc087b721bd61",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b694cedcdd18944cfbd41c199e2276b566bf47511455569a84aee8b246c7399c",
+      "size": 663
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1453fb40532e69a7ceada40b5ef54d9f897b97cad1a2c0721284b847411391bb",
+      "size": 4501
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bc14556ff31e1e2389c6ad601fad872c6d367682bb538fb2e8cd975d0ab1f9e0",
+      "size": 1004
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3067bbb41d22f46649c0c1f52726f654c49d2bff10b5a950de8cf8e5d50aa47b",
+      "size": 1408
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "27c815c4d686999250f827be4fc9bf908a08fdf9eefb0bc94babf13d8624b922",
+      "size": 846
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_galaxy5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:09:11Z",
+  "vendor": "samsung"
+}

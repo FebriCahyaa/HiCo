@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_discovery.git",
+  "codename": "discovery",
+  "commit": "884aa8eef036ac6bbed31429e02f38b36124ee36",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "056918b382eec8fa314e61a22eddb26c334b39a0b40f0bf09011881e57037249",
+      "size": 181
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_sony_discovery",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "discovery"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

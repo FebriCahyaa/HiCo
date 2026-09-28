@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_shift_axolotl.git",
+  "codename": "axolotl",
+  "commit": "3beb8f780bccab71866a6af42f5b688ca9df97ce",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "99599e0e929d23322d65a1052c325d53f8eb68f6c5623d0f4ce4c44b93199359",
+      "size": 9816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_shift_axolotl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "axolotl"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "shift"
+}

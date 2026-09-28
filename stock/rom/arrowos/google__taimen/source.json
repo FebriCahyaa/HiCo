@@ -1,0 +1,72 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_google_taimen.git",
+  "codename": "taimen",
+  "commit": "ae723ad21f25e5a54adadd995c00e5fad9c83b77",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4af56d3c89ebf0da23d7c553b8480397b294bfc316f6f9298cd930dcd556ca30",
+      "size": 1553
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4e8a387aa57d2ae23552c3e6dddc041bbd9fa5d246be7b8eff71d3cddca9fd05",
+      "size": 861
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "132f4cfd7ce6b349a573e6badaf0fa39f71db72b739640961a7b78fd2321336d",
+      "size": 1684
+    },
+    {
+      "path": "device.mk",
+      "sha256": "69bffa294a71a60b66ffd8556d2cb887a9f4438bf1ba2a2c0e5cdec5672f9358",
+      "size": 6209
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c55d862b2d3e8a25249ae897fb316127fc6f6815230350e938cfd1656d4b6b6",
+      "size": 1788
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "def5c43a7f5fbafe61e1e60584bcebb1b0342dac014b0b152f103fe8d1ff834f",
+      "size": 9191
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "6f2b0e2c225b7a70917103f1d0dd59850555accf2823a43f6d79d72409fc3a1d",
+      "size": 661
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "b7197816ed1dbaa176c77d280ee22b7f544f10f6ed78b71730ff98b60b898a79",
+      "size": 3338
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "719487f2635373895508e76dd3ce59b8411b335ba01438a71a7d3941215ff3e5",
+      "size": 4895
+    },
+    {
+      "path": "thermal_info_config_evt.json",
+      "sha256": "c23c9b5f839e377aab2fca446ed4e04a24b45941749f1e8ee990a5ebf2c16622",
+      "size": 4894
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_taimen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-04-22T11:46:55Z",
+  "vendor": "google"
+}

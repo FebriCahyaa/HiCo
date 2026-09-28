@@ -1,0 +1,72 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_vendor_xiaomi_veux.git",
+  "codename": "veux",
+  "commit": "d8cf41d2183ee6914c66255fbd58b63ba9387715",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "62a021fe579ee7fe2198dea8387b5ff3e95f7c23d827c7a0d4224441876d45f1",
+      "size": 2256
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "daf34df5ac8f5af2d01294da4c8b32299d0f7ddf6544963bdb5693afb5230a81",
+      "size": 1920
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "fb7002c1ea924b1faf536f8bf165020836fe9fd9fbc7765cfb7ee4d087fcadd5",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "b6d3057ef65199598bfadeb74dde680421e5e52cc999e4262b376fcbdd9829f7",
+      "size": 1712
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "7031045003d7ff6710c9cdd86fd03a183b80ee0cfc836a7ca4ffc15e1a6d1f3b",
+      "size": 4016
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "4f9974a9e598db458cf936fb19913517cde42a71d7739644edb3d52480b3168c",
+      "size": 2032
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "a91605ad69f587d45151c5a3d5eca294de2109f36f0fd7b05d1168723a8e85dd",
+      "size": 1872
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "dfd6e094fedd770645c85722203d0b908161ba4924eaaebd66c3245842d04994",
+      "size": 1920
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "a9c63d41e28dce604c6cb3b153e17e02b9f03e33df5bd38a3ebf47f5070b8c85",
+      "size": 1888
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "d1cc3e0bc9ddcc0e1bd2f4978a67cd6438cb8fb9fbf025447ec7e5461e0a78f5",
+      "size": 384
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_veux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

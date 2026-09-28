@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_galaxysmtd.git",
+  "codename": "galaxysmtd",
+  "commit": "fdf862589330129144f1510f80f1e0d53f5a401d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "055d59279a0d6366d09ccad194fd7efcb09ed6a2e23e718fdef6eb670afbdee0",
+      "size": 1005
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "874b951e759e77bcf944ef6c9ccfdd6ce81cd9f9bc326cd79f96c57ee1711067",
+      "size": 1063
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "26f4ad5de052bdcdcfd9bf40f8a6f5dfa5fd1e713220510dd27db6af2c09e56e",
+      "size": 1287
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4bafdfff1e7ebfa960032b5548fde1d254dc2cdde472966fb30d61efd9e6cc9f",
+      "size": 2798
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "24e5d512819bca2846126985266bb8fd1d270dc023259656aa55dff20b600e2e",
+      "size": 507
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "030b5dbd9c0767622a041833e6e3e4e8d4aa78c9e0ec462930afec47358709b6",
+      "size": 223
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cdd46638a162449f28cca9e68964da6da710d5d9833685bea64ca1e54075be65",
+      "size": 121
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_galaxysmtd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:49Z",
+  "vendor": "samsung"
+}

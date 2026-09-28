@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_mdarcy.git",
+  "codename": "mdarcy",
+  "commit": "735047ded253704ab0e1f0cba6ddad4ae54940fa",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a9efe7caade3338975f37516dd5263a67043431c3b059c9b22a475f2369ffd8e",
+      "size": 721
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f6630d094beed0174f0158b2e7de1d9db8f07b74b48aff7abdf4702116373083",
+      "size": 1155
+    },
+    {
+      "path": "device.mk",
+      "sha256": "60a7d63dcd28238b71c02f9fe4951465ba06ce7ca991e43d0c7a9ef32067efb7",
+      "size": 749
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee65dd1db7068bcf64e49f874c6f38d1014be86ef6ac52a624f8769813e10432",
+      "size": 100
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_mdarcy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-03-02T21:59:12Z",
+  "vendor": "nvidia"
+}

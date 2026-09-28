@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_sabrina.git",
+  "codename": "sabrina",
+  "commit": "d1a88cf7e84636f38a83a38d61e064476c7d788f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "03fce948473836cbf07298610b63ba24951d8f6b7e659ea61fac08b92d41ac4b",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0dc6111366093092b094c2c763b9381a347a45bf3700588755b45b78cc0dffae",
+      "size": 1251
+    },
+    {
+      "path": "device.mk",
+      "sha256": "bcd02800b192d19a80c5509c9052e4d82e4a9c0e42fc2618f025e31cc156bc41",
+      "size": 1310
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c7ed3200747045ef52c6f44aeee03d359ee86befb12b40f3ebadff74706e693f",
+      "size": 1701
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "aa59558daa754bd338fb6b2a6c8c5bb72a12c8867bbe05adb767f1277a660210",
+      "size": 259
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "40b0ec39ed10054e799238e81c477d44f40edc244fcff97e1b3e3aad8233900c",
+      "size": 3874
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "df205aa24005a487e9b71aaf0fb7001f1870b5f0a2903500fd37d4c225afb035",
+      "size": 555
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_sabrina",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-16T20:55:01Z",
+  "vendor": "google"
+}

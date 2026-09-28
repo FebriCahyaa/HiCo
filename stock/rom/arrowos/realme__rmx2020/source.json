@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-14.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_realme_RMX2020.git",
+  "codename": "rmx2020",
+  "commit": "c43b941c362e18064c51f618c9f7431fb9525d11",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e8b0daf21977dcf6a132d185037280a1839486a628a496e3063c636178cb2933",
+      "size": 46
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ae91c31bfce54dbcabe3cb3aac27dc2fb62103447b7ec3720c99a359ef248910",
+      "size": 1601
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7c8cdadd115f91b467eede73161ea771a0871d2e3d0c4d429a4f03be8fcb6f29",
+      "size": 239
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cd5b8352602ec032e59eb31716245d1ded9004589eb95be0661aad26263677bf",
+      "size": 5848
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31f477ea10603da64cf87c1f4884782a586ec2f7d15be5330da84aae954e6d26",
+      "size": 17848
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9895190bec388be0b21123de6a6ad9c15a87b2716453dfa8b85647aefc1c07a4",
+      "size": 3988
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "12673ea6d98d6454723d7ac301b403e46813eec29a394216a114d4db046b4ab8",
+      "size": 76469
+    },
+    {
+      "path": "sepolicy/vendor/thermal.te",
+      "sha256": "5974045ea3be624eeb55b0a07eef68531c5061d27a0ba9eba9ac28b3ad2b741a",
+      "size": 46
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX2020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-11-18T15:33:51Z",
+  "vendor": "realme"
+}

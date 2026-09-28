@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_maguro.git",
+  "codename": "maguro",
+  "commit": "90fafc213e7b50fe6a985635a33813d695d19383",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "138bfdfc61bed093b77bd0fbd1ab0d180b9e8cbe3dd3b3525caf4fda540c1f3a",
+      "size": 1197
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c94708f4d039c454415e70957e8e57a095ec999dadcbb4e684ea2ab402831374",
+      "size": 694
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "07c95d00462f362d685b860e41d35889b26e19a24c0e7b0a358e6945f6541cee",
+      "size": 789
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6548b6df0465f9d374d73ac5556d88b04cb21911ac96f4151582031df7ea1d7a",
+      "size": 1183
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6a94cbf0c773fe3fd2425481b7919f29ff37f0a14a35c3c0c71d9ad2ab4ca8b1",
+      "size": 85
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e15215700f3dc24e931332b90f1618f8f59b884d80db18d72e8318ec9c5e2f6d",
+      "size": 194
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dde3242e523974f6f6bf0f273cb9ff1374d4e8d43e93a90336d82f6c518f791f",
+      "size": 242
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e9066233300182447232b7ac665e5fc5b378dbd82855e27a8bee086437a948eb",
+      "size": 643
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_maguro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:16:47Z",
+  "vendor": "samsung"
+}

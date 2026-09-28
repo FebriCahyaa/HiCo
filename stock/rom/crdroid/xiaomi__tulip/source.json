@@ -1,0 +1,52 @@
+{
+  "branch": "crDroid",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_tulip.git",
+  "codename": "tulip",
+  "commit": "c795cd7ae8fe1c204342e70b89f881d9b9a64dab",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "39322fd9e53a363150657e99a3410ff753f7d342b00868dd0e3db6c509d6bb43",
+      "size": 814
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e614ecd096fd6c58ae4ab4047aae1aa6e0380141e726bf75d67f3bd3238d212f",
+      "size": 759
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "626bef9f6386375141d618d8da96a5a0d64e8145a63287d81b92f3f1b552aa5b",
+      "size": 1299
+    },
+    {
+      "path": "device.mk",
+      "sha256": "16e3c2ef439565ce8930ad0b16a57b214670dc94dd237f7faffabde062c0143f",
+      "size": 2270
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7ae93714b6ba8ec5f7e0a75d48a44245b699b055c421c07c83ba63d6a6fc0300",
+      "size": 750
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2d8b79ccadf0a40344dd9f6a5153c80c467d9dea0fcd3c3280f55faa40f18e3c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8a2903c215014b8c2703371830a9116a8aba7ed3aecabe21441be7e4a27a2a71",
+      "size": 35151
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_tulip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-04-02T06:48:46Z",
+  "vendor": "xiaomi"
+}

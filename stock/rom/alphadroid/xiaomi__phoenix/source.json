@@ -1,0 +1,67 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_phoenix.git",
+  "codename": "phoenix",
+  "commit": "6bfa75fe39666acd9c0f06d654451638acf1a5d0",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4171be910352523c53d6857f5f841b821763efa1c5bd103ec1022fb263e3ccf1",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3c1541bae68af897d52dd024bcf442d258f469868101e1b7f7aa243af6db2a26",
+      "size": 4904
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "20450c28abdf5f7f20da71756f3ca0d4e70dace125347bbae149a109f3b57196",
+      "size": 257
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6aed4091e69dd90479229a901d8dc48394ca2f29757266f731ec9f0bb0251260",
+      "size": 8415
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2f5689695a25039a207d285083b0748d56a68d9f5a98500ee9f7ab8bfbbaa4dd",
+      "size": 26879
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "80436bd1e7e18dc7b7385c90c74e8f6bc386e89c3019311ad07ed2f86f5a9b11",
+      "size": 1806
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ea8571652e7993be32a4d7329b55a49ff05b23dcb8413e8517da1dd634ed3811",
+      "size": 77783
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e5b84195f088c5f8aec405d46c4bf799dc5aab386cfb22574627773f58e2baac",
+      "size": 1391
+    },
+    {
+      "path": "thermal/thermal_info_config.json",
+      "sha256": "2ed470d4fbf56052264996ebe5d11cce274398c5d41e795f4ea79f004bff9016",
+      "size": 4217
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9f0e693f9731a80bd149aa19854f048417af91792a52ef452298194304dd067d",
+      "size": 8411
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_phoenix",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-01-16T18:57:17Z",
+  "vendor": "xiaomi"
+}

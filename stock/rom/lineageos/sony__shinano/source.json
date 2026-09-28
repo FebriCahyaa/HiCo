@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_shinano-common.git",
+  "codename": "shinano",
+  "commit": "afc4485ed91543e38ecf66a814cbb037d7247dc0",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1a267f63b6cfe53e626998cc13c006c69b77dbeb6fb6184a3d6386c6a9f9edea",
+      "size": 1117
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0d0a51a8eef193ac8d02af36b7875a59d4e7d43947bdf1cb47979fdd426e02ab",
+      "size": 2457
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a040fb92b903a5f996471c138d855cbcef4d1b3a23b83007d5a4f01d9bd78b2e",
+      "size": 1810
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "59334a4f89e288d2af9f59fe120500e362fd9977fc69446e1007cec0ccfb72a6",
+      "size": 217
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "50a03144a8a71259e89b4c084681a252e273e610144a2a8075ea39b7e97bef12",
+      "size": 14378
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_shinano-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-01-18T22:32:48Z",
+  "vendor": "sony"
+}

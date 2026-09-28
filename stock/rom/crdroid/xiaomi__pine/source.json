@@ -1,0 +1,57 @@
+{
+  "branch": "11.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_pine.git",
+  "codename": "pine",
+  "commit": "ece3c7587ec8838b39d8f151fbb1049017984a4a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2b400588e4d3b5036dbe31eeda16586752bfd5def66e22d621d167967cc8b420",
+      "size": 204
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0c470fb146e3ace1a8308c817a767227007ce952f788791cca2629221e5ecf8b",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "52d07764cb6276bfc6d3da71fa65a9fb9ff5418a2b9d80c5c520367963229a7f",
+      "size": 635
+    },
+    {
+      "path": "device.mk",
+      "sha256": "441af18e6f8e7f139b952bda24a3ff4e3a1be4cfea3117bab2b692516a8162c3",
+      "size": 1179
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "639749cd77e3c82f0b5b763d397548b8108cdfa4bd3b38aadac8724362b71972",
+      "size": 468
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0a707493c7ed15aabcf94041394575642d826d8c6d69ee0cebf371103077b030",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "700e88951b021c27fa3948e17774f927fb8110237c04c320fe6cd09b2550b7a9",
+      "size": 48078
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_pine",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-01-28T20:41:11Z",
+  "vendor": "xiaomi"
+}

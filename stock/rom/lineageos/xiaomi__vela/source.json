@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_vela.git",
+  "codename": "vela",
+  "commit": "a121818b2fa576ee532ad29b002fd000d76673ff",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1723f4b0f3d78ec0e1cd770bafd06deabe92b14836bedef7f857c3d211659703",
+      "size": 208
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7cf04d0fb4369c6458af588d2575d6abc1ac4f32453a2bb782869feef6fd133a",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7f9ed5d588ab57c6c4d2a0685fd5c680d3aee9777b3035576af6b5d0b6e9c916",
+      "size": 827
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8b25f1443b46ee080b4c1fad6c0d9db1a2018385a232378f08aa22b83c21503e",
+      "size": 1376
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "464c3aab2fd6f7a2c91834e80889a750601f8530c737a0432fbeede00c506004",
+      "size": 2335
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b447683e753ebef82a338d6e58bbd540228e567321a6855aa6140c99eb623db6",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dd9dbed98ec3dfe17c1e19ec3d291e7c2193a72d1eb4dfac5f6f3d82270bed4a",
+      "size": 135917
+    },
+    {
+      "path": "system.prop",
+      "sha256": "bed4065925b49aea796d6039b185fa3c50e91c4c42ecefa323f05fc74de3dd73",
+      "size": 33
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0feb3a17b1b16aa9fcd2072367f15b117f8941abf2704b84caf35248b159de5c",
+      "size": 322
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vela",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-02T17:28:02Z",
+  "vendor": "xiaomi"
+}

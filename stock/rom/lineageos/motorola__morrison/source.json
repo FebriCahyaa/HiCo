@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_morrison.git",
+  "codename": "morrison",
+  "commit": "3ec1668fd79cd896041ce3c52ec20776f2700ecf",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "45e2ae5b36c029c6d614dc1dd31018ebe6e112089981e07409a5561baef26aee",
+      "size": 784
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f43ec72110d2ffc2132c2d9ab874dccf8a2e85c6f7ca603fe0a695f21f0c518e",
+      "size": 3850
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9f558cf2451b70f900cb9e017282ea9a405752c156744fc36aee849fa66d4063",
+      "size": 10119
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1a201834dc7bf44d155f3f17f685d79026616c2f7d960ab0342fae1e80439a31",
+      "size": 1400
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d40843ecbdd96a8ee276a1d76afc98042a3a3496381cb39b23a193b2600d0597",
+      "size": 852
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_morrison",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:01:56Z",
+  "vendor": "motorola"
+}

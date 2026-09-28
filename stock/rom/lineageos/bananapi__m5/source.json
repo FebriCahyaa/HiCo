@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_bananapi_m5.git",
+  "codename": "m5",
+  "commit": "c989e9eced6e6f182c2f9c108f8b3489d7fdd80e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "383ab46eca7b73697995b23f5485ddb6674446bda9f7087a9eff04e0e199c7b1",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c48fa51c07709c918245182e3bd021cacac755b98878b69930d9ef3b6cc7133a",
+      "size": 1045
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8ba303d3062274a99636ddf299f8aab17f5407627924ceaf24f790094370c35c",
+      "size": 807
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "db2a69f6d85d116d6cb669b456f4f68f6e3f71986f3779efb2e3327bce10d916",
+      "size": 908
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a4966ce3603c6697a6cf9d5f82a7f7441fc40e7b875433fea3e176d52a3b7ddd",
+      "size": 715
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "423539009c619d72bde0711373adb6ae41d45e2e3649f36a542f00f9e45ef6a3",
+      "size": 214
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9168fde5476b6d82f022b2a404a1a168ca92ffd02820912d70b9d887f0951201",
+      "size": 154
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bananapi_m5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-13T12:30:37Z",
+  "vendor": "bananapi"
+}

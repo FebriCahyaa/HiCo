@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_epicmtd.git",
+  "codename": "epicmtd",
+  "commit": "cf5e49cd0b168c223ffd6aa8be6ec16984d8fe30",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c30115c8215bdc814a01d864040babf7dcf4ed0c2ea97152e0dd288ba756786c",
+      "size": 683
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "39be4a132928737d40b1e0922e8334886c5c8090d6a06c00ebf65b43035ab22e",
+      "size": 788
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9852f39644c24b209587db7cf62b65f97afc8c234b529a197202b359aca8cef0",
+      "size": 3838
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dea73a94697f2756584607a5dfabfc1ad7ace050d234bcb5fdbcae661992bf55",
+      "size": 12771
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5a59c0773ec8dec77c83f136293fa6040da50578b91e0ca4d8016d7ab47a5398",
+      "size": 178
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3a9f1d4604c79b9bc0200702102b0b11fb396257a2284868f982677c13b38e74",
+      "size": 910
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_epicmtd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:47Z",
+  "vendor": "samsung"
+}

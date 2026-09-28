@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_gemini.git",
+  "codename": "gemini",
+  "commit": "2e226089e3f8b5c32075fe39d0958c4e8a91ca92",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9b59a4049dc5bd32c1a45893d3ff27c288d7b37f734071011de70b1958ccbf01",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b3b362c7eef08823d9d8bba42b40aeaa1599175e70a4d3bfb9869fd424aa9abe",
+      "size": 1119
+    },
+    {
+      "path": "configs/thermal-engine-8996-lite.conf",
+      "sha256": "47cc113ef5faf2439b1ef7a2dcf3472fff86dd009f87a29b7082d1fd07d6401e",
+      "size": 3518
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "c8cc7e135d07df7a63af14485a50a360215268f7b895b56c3470590ded0c7d6a",
+      "size": 3519
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9daa44a742aec969779fa5beb0440d441ff96acec77c4d003a9b43f54cbac386",
+      "size": 3059
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "aefbccda4098d8004d86dc1281483f768c4c12a8b48527910a85e94a4d49bcf4",
+      "size": 471
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7389ef18a73f01ecfb6cc89c8956053f647c90f584b117652f6d39bf66262b4e",
+      "size": 9398
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7bffbddf1a2cc2f9190eb46c44184027cc582d11b61294d8e4ab5325ae247f8b",
+      "size": 182
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_gemini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:53:47Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,32 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "0c9140245d91660b96dfd80667e7b018d73c2850",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "a838a18e4ca36e62450be764947636cb68ccfad916f3bcdf8a087b61d626bbed",
+      "size": 531
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_xiaomi_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "fuxi",
+    "nuwa",
+    "socrates",
+    "vermeer"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

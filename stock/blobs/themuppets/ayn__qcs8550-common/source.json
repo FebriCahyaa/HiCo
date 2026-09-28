@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_ayn_qcs8550-common.git",
+  "codename": "qcs8550-common",
+  "commit": "1854d511cbd22323b3ca7d01b81f19ca646d8cc2",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "245c7a6a0379279659b25cd29d71e7b376a7afdbf769730aa7535222e0f69ada",
+      "size": 531
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_ayn_qcs8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "odin2",
+    "odin2mini",
+    "odin2portal",
+    "odin2thor",
+    "rp6",
+    "rpn"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "ayn"
+}

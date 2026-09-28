@@ -1,0 +1,62 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_walleye.git",
+  "codename": "walleye",
+  "commit": "f8f67571b752242d47db92157113d687a6862c2b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4943960cb64bbfd0e8fbb844d17abefc5f696071d87e46328d50c5a1a6b01694",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "db744b4e0461431d2312c423015d5aa0dd675b88bb847469f32e799b3cd3884a",
+      "size": 660
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "69437d3a9ea403a195814adc4acd1d9c8d8d0be3e1adef3a5ff9e9610584ba3e",
+      "size": 1754
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0f07872cde2f61402681995f57e932c002e2fc167c66c9363008cb0c464aed4c",
+      "size": 5103
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f80dfebb660649b65015168e184cb7e13879bf9864b8d7ae8a2a22657022efa8",
+      "size": 3718
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9a829059aa58aecaa0abb962321c4799e2d60531a689771c8baff59fd7dcbc27",
+      "size": 9285
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_walleye",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-05-19T17:17:17Z",
+  "vendor": "google"
+}

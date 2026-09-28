@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_espresso3g.git",
+  "codename": "espresso3g",
+  "commit": "8f821ec65e689e53b5f5d2925d184fa357d4ca02",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d8b73c677d1c4286675a94cd8387a0a187dc63033666d8ba47b3fe3ee1401c54",
+      "size": 1075
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "339181d45f5f1e4a682f9e7a38b70616f40a5338609189ed90052d372710cf46",
+      "size": 686
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "628da06405a25ede9751fbdfb343640885a348dcc6c5a86c2640ee36f1d2a854",
+      "size": 914
+    },
+    {
+      "path": "device.mk",
+      "sha256": "720ef263dbf729761d2ed9a445a41f0d7b8a508832b66adbe7f121da9604fc0b",
+      "size": 1831
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9c6ceda6cea4fa6e3066fdc632ad0159d90efa49cfcc1e3cbba21f5ac943a9a8",
+      "size": 3886
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7919dbb5e6f52cbd86fbed056c499921bbe512e694c2a82a3787e68a7b29a127",
+      "size": 130
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5ec0763b9530c4e79b9b2d1f15d060f89626d36931fcadf9d7e7e64f3270dcd4",
+      "size": 34
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5f0f8a23b62dc1210fe3817ce8e1a8b72bb94c5fcfdfe577bbd1db615ab4159d",
+      "size": 170
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "851230ec283b6fddee6fb1ea4fce4f45a65c451feecaccdc68ffeea7596dd661",
+      "size": 45
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_espresso3g",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-30T05:20:14Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_google_yellowstone.git",
+  "codename": "yellowstone",
+  "commit": "a1e603d9cdf73f74b42656a1cc0e6aa724246cfa",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4eceeaf884311026c3aa2478e1b0d1fae95c9c967bf96fbdd3d30fb2b9f8cade",
+      "size": 42
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "efd27b01707a7f599d164e0de7c10505bb593487fff4b0274286b3aa33cc1e90",
+      "size": 751
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "941d83d59eb0887e9ddc3b6c8204ef2c20e985e45da7da3330cc714a1a05e61f",
+      "size": 783
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "24c0577742a4b6d6b7417c321c051e04d9f8f0f8aaf202a9a3d8047d264355f1",
+      "size": 3596
+    },
+    {
+      "path": "device.mk",
+      "sha256": "edd02459362f6578463c52b725b2a66ee4b51f12c4de78760b6cb803885d8650",
+      "size": 10662
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f229dc342b6695a4f249d215dd37f51eb6ff44fce401800a299479f302a45a60",
+      "size": 1727
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9c2a35f37140f15cfe557edac4dc5c3ed2e93413faa1e75d5a79b7a3db66c60b",
+      "size": 4396
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_yellowstone",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-01-07T23:50:22Z",
+  "vendor": "google"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_rosemary.git",
+  "codename": "rosemary",
+  "commit": "6f09880a274dc3c515afa397b53909513d7a4fff",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fe5e9ab0d6283997ef2bc59a89a04368a0d9abd0d1abea6402846b2b8a621af5",
+      "size": 2044
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d3f20061d414c52d25958267addfad57269d70e6f569daebe95731131e9c7fa9",
+      "size": 261
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "78da3b5e117083050192d0058715f1fd5fed10ba8c5ee9347b0824c58239a81e",
+      "size": 6693
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c4c961f6b9c4ae8500f9fee5ef84caac58c8febcf1158d1036489f19348ca4d9",
+      "size": 22188
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6e739b2069d52a4b044d4d31c43f692fed56031d3524a93ea606d88e673bc5bb",
+      "size": 3376
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "71fbd7d876b8aebb3cc562025ef0ef935b343a5bc7d1fe8dc8eef945a6f26eba",
+      "size": 124251
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "aae768d3286383a9ea4b5ae1750a11afabd623c19622ecec16f60cabfaab2bcb",
+      "size": 1269
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cc37206768d30f62859d697bd796f6a4af82bd742d3a95b1e3ab37f3c901cea4",
+      "size": 1678
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8426137ab54241530d976f0dd372027fc0796f9c5085c941cc1c76f63c1eebc4",
+      "size": 10639
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rosemary",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-02-20T06:54:30Z",
+  "vendor": "xiaomi"
+}

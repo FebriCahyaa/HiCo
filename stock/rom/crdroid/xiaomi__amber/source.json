@@ -1,0 +1,72 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_amber.git",
+  "codename": "amber",
+  "commit": "7b0adc330d7c0002927a01e787843d967fedc99e",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "30e60455f8451eb0d3c958f9e3e5c2894074c9dec05b1681cebeb548c5ad9d3f",
+      "size": 4252
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0d217829872a99607279a84cb2be3bbb1ce1c845ed6be1004e6a59c9a30ae69d",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "750fddf1b359bbb8c08297f3730a7fc784b121fc6027d70899d0de36027ba866",
+      "size": 5647
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "01dbfe0b25481428dff3b7e6605b3bd2c29b1ce6e175386632aa5b9d83cf2617",
+      "size": 6924
+    },
+    {
+      "path": "device.mk",
+      "sha256": "998cece69ee78228acb377e8436b3499b1c4b2ab78cf88410f5e94400bfc99b9",
+      "size": 17910
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "36c24b49e40b14acdf2bf44e3ec5e736d2df4e7f72b1dabddd851b0e2ece8347",
+      "size": 4064
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "41459c421864417c7592223dbe2630f8d1c04c2db229244da53fdd1eae3a5753",
+      "size": 62996
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "90294ccaa03ea35165aca7a104b86f3487614bca57870b752ae11112436cd545",
+      "size": 1095
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ef916511e7e5f832d29de2b2497175004af233ff76a7698a07ab2cf78ee4a732",
+      "size": 177
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb00ab700097f675ecbecdce2639a899b9abccb4337474167ec6bb32464c429f",
+      "size": 8635
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_amber",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-01-26T21:30:15Z",
+  "vendor": "xiaomi"
+}

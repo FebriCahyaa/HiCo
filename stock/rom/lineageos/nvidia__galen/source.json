@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_galen.git",
+  "codename": "galen",
+  "commit": "c40070db6e3a9f189081863e28db231983a3b512",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66a2a6310d79338d6c88256a6bdab68cbde9413b2a4f937d5b4af5f7731b5fec",
+      "size": 700
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4a8b93d758fec91f78ad4bb6099876fb2a6ffde0db34581c07c9ca66a82ed125",
+      "size": 859
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "62b3289ce69d3f7d94982ffe74322bf400d3bd7ebaa093530313dda46e96c7b7",
+      "size": 4126
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5b07fe6f5156ebdc7955419116074211b4c8c1cd87a257061a705aa6d7761a58",
+      "size": 4588
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a94284c465698a59c09f884820fcd52d5c699a8a8a0d8c10d181bfe5600b74fa",
+      "size": 994
+    },
+    {
+      "path": "thermal/thermalhal.galen.xml",
+      "sha256": "2c119de8a1e7b2feccaaca3fb288d691afa541fb3153b1536dd929fc99e5f56a",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.rey.xml",
+      "sha256": "7d043db1b787290f5554ad57e9364e7ad276f9a9203d503ac939fb4022de84b0",
+      "size": 1234
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_galen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T05:51:13Z",
+  "vendor": "nvidia"
+}

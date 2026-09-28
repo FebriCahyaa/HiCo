@@ -1,0 +1,52 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_oneplus_oneplus2.git",
+  "codename": "oneplus2",
+  "commit": "39a71aadd9ff6f06b765703162f1ddae92d802d7",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7c357e1c85519964c13bae41dfea49988ca42d34e43e61fb95f023abe832c382",
+      "size": 2871
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b2adbb36810f2846c3f128162c2ddc94e7980bd35a79c95046da589b9856937d",
+      "size": 6329
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fbda23173b5261c0e9c2947793b4f8e39a50e2daf5a1c1ec02e4eac2221d90f7",
+      "size": 12099
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6269418fafd66b09be215eb8569f1f27b983182c80f94ca69345e269e8baca37",
+      "size": 1449
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ecf9261513698ee461f5415a6f5d1b83f27c244150232cf0f299a84c2b6dde37",
+      "size": 16859
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "31a60bc633cfa00ffee8730a4c38c9124616d4646d5500bbbdfcc0cf386ec80a",
+      "size": 165
+    },
+    {
+      "path": "system.prop",
+      "sha256": "955a614ee226f134887b25542eb26bd95d71c0e82bc2f2a80e76651c493e1a89",
+      "size": 4213
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-19T21:35:29Z",
+  "vendor": "oneplus"
+}

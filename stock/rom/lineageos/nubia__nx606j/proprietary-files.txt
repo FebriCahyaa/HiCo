@@ -1,0 +1,216 @@
+# Unpinned blobs from NX606-user 8.1.0 OPM1.171019.026 eng.nubia.20200617.000901 release-keys
+# com.nubia.node.realtimeaicamera has Unresolved symbols: sync_wait
+
+# Audio
+vendor/lib/hw/audio.primary.sdm845.so|1fae45991f885ee26a94ecce5222e9c40ca66f84
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libqtigef.so
+vendor/lib/libtinycompress_vendor.so
+
+# Audio FX modules
+system/etc/permissions/audiosphere.xml
+system/framework/audiosphere.jar
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/soundfx/libshoebox.so
+vendor/lib/libwebrtc_audio_preprocessing.so
+
+# ACDB
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+
+# Charger
+vendor/bin/hvdcp_opti
+
+# Camera configs
+vendor/etc/camera/camxoverridesettings.txt
+vendor/etc/camera/SceneParamFile
+
+# Camera lib
+vendor/lib/camera/com.qti.sensor.imx000.so
+vendor/lib/camera/com.qti.sensor.imx318.so
+vendor/lib/camera/com.qti.sensor.imx362.so
+vendor/lib/camera/com.qti.sensor.imx499.so
+vendor/lib/camera/com.qti.sensor.imx519.so
+vendor/lib/camera/com.qti.sensor.nx619_imx519.so
+vendor/lib/camera/com.qti.sensor.nx619_ov8856.so
+vendor/lib/camera/com.qti.sensor.ov12a10.so
+vendor/lib/camera/com.qti.sensor.ov8856.so
+vendor/lib/camera/com.qti.sensor.ov13855.so
+vendor/lib/camera/com.qti.sensor.ov13880.so
+vendor/lib/camera/com.qti.sensor.s5k2x7.so
+vendor/lib/camera/com.qti.sensormodule.nubia_imx499.bin
+vendor/lib/camera/com.qti.sensormodule.nubia_imx519.bin
+vendor/lib/camera/com.qti.sensormodule.nubia_ov8856.bin
+vendor/lib/camera/com.qti.sensormodule.nubia_s5k2x7.bin
+vendor/lib/camera/com.qti.sensormodule.sony_imx000.bin
+vendor/lib/camera/com.qti.tuned.default.bin
+vendor/lib/camera/com.qti.tuned.nubia_imx499.bin
+vendor/lib/camera/com.qti.tuned.nubia_imx519.bin
+vendor/lib/camera/com.qti.tuned.nubia_ov8856.bin
+vendor/lib/camera/com.qti.tuned.nubia_s5k2x7.bin
+vendor/lib/camera/fdconfigpreview.bin
+vendor/lib/camera/fdconfigpreviewlite.bin
+vendor/lib/camera/fdconfigvideo.bin
+vendor/lib/camera/fdconfigvideolite.bin
+vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
+vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so
+vendor/lib/camera/components/com.nubia.node.nubiaalgorithm.so
+vendor/lib/camera/components/com.nubia.node.nubiahdr.so
+vendor/lib/camera/components/com.nubia.node.realtimeaicamera.so;DISABLE_CHECKELF|d9fe53af59aca902fdf1b1e09088c8859f035ee4
+vendor/lib/camera/components/com.nubia.node.realtimealgorithm.so
+vendor/lib/camera/components/com.qti.eisv2.so
+vendor/lib/camera/components/com.qti.eisv3.so
+vendor/lib/camera/components/com.qti.hvx.addconstant.so
+vendor/lib/camera/components/com.qti.hvx.binning.so
+vendor/lib/camera/components/com.qti.node.dummyrtb.so
+vendor/lib/camera/components/com.qti.node.dummysat.so
+vendor/lib/camera/components/com.qti.node.eisv2.so
+vendor/lib/camera/components/com.qti.node.eisv3.so
+vendor/lib/camera/components/com.qti.node.gpu.so
+vendor/lib/camera/components/com.qti.node.memcpy.so
+vendor/lib/camera/components/com.qti.node.remosaic.so
+vendor/lib/camera/components/com.qti.node.stich.so
+vendor/lib/camera/components/com.qti.node.swregistration.so
+vendor/lib/camera/components/com.qti.stats.aec.so
+vendor/lib/camera/components/com.qti.stats.af.so
+vendor/lib/camera/components/com.qti.stats.afd.so
+vendor/lib/camera/components/com.qti.stats.asd.so
+vendor/lib/camera/components/com.qti.stats.awb.so
+vendor/lib/camera/components/com.qti.stats.awbwrapper.so
+vendor/lib/camera/components/com.qti.stats.pdlib.so
+vendor/lib/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
+vendor/lib/camera/components/com.qtistatic.stats.aec.so
+vendor/lib/camera/components/com.qtistatic.stats.af.so
+vendor/lib/camera/components/com.qtistatic.stats.awb.so
+vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
+
+# Camera hal
+vendor/lib/hw/camera.qcom.so|321844df77edbf3df863259ad787a7d5f107d6bb
+vendor/lib/hw/com.qti.chi.override.so
+
+# Camera firmware
+vendor/firmware/CAMERA_ICP.elf
+
+# Camera core
+vendor/lib/libcamxfdalgov7.so
+vendor/lib/libcamxfdengine.so
+vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxtintlessalgo.so
+vendor/lib/libcom.nubia.chinodenubiautils.so
+vendor/lib/libcom.qti.chinodeutils.so
+
+# Fingerprint
+vendor/lib64/libteeclientjni.so
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.sdm845.so;FIX_SONAME
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_ftm.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixfingerprintd_binder.so|958d37e43a6123131df1a69f64ad62a6c352d3ec
+vendor/lib64/libgoodixhwfingerprint.so
+
+# Fingerprint - from NX616J PKQ1.180929.001
+vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so|473596e83a04632c02a568cee79808c444befade
+
+# Firmware - others
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+etc/firmware/tas2555_uCDSP.bin:vendor/firmware/tas2555_uCDSP.bin
+etc/firmware/nubia_tp_jdi_fw.img:vendor/firmware/nubia_tp_jdi_fw.img
+
+# Graphics
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/a630_zap.b00
+vendor/firmware/a630_zap.b01
+vendor/firmware/a630_zap.b02
+vendor/firmware/a630_zap.elf
+vendor/firmware/a630_zap.mdt
+
+# Gatekeeper - from NX616J PKQ1.180929.001
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|df090c81900daa0365bc3648e18aaa5dfbc22556
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|fb518f91375caed8605cfafd555b72d4460c138a
+
+# Keymaster - from NX616J PKQ1.180929.001
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|e9f24057e575a4fff2d3b35b032519673e5ee60a
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|d925ac739bd441dc091d2e20945f2c1306b0fc2e
+vendor/lib64/libkeymasterdeviceutils.so|3d896095a70affedc9d7b8efc8a4e8c98da7f080
+vendor/lib64/libkeymasterprovision.so|95c94bf286b56b9ae5667fa51955fba8e3545c63
+vendor/lib64/libkeymasterutils.so|9908272105cd45e8964f0191c849de4e6973f994
+
+# NFC - from NX651J RKQ1.200826.002
+vendor/firmware/sec_s3nrn81_rfreg.bin|6906b7a36fdbbcb1235d1048e847f653115a2250
+vendor/firmware/sec_s3nrn81_firmware.bin|5d52977fb8a81dc0de8fc6d7687959cf3b06a5d1
+
+# QDCM calibration data
+vendor/etc/qdcm_calib_data_s6d1ha2a01_cmd_mode_dsi_jdi_panel.xml
+
+# Sensors - light & promixity
+vendor/lib64/sensors.oem.so|1f8417fb89bb9db1f5334dcd120368cc017fce33
+vendor/lib64/sensors.ssc.so|36a863766af7c2b046e59c8b1a8d9f92746b1146
+
+# Sensors configs
+vendor/etc/sensors/config/ak991x_dri_0.json
+vendor/etc/sensors/config/bmi160_0.json
+vendor/etc/sensors/config/config_list.txt
+vendor/etc/sensors/config/sdm845_ak991x_0.json
+vendor/etc/sensors/config/sdm845_power_0.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_facing.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/sns_geomag_rv.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/hals.conf
+
+# Sensors - ultrasound
+vendor/bin/ultrasonicd|2d4bb1add1479e99b06cea72405f9a342dbffa9c
+vendor/etc/init/ultrasonicd.rc
+vendor/ultrasonic/mnist.dlc
+vendor/lib64/libultra-snpe.so
+vendor/lib64/libSNPE.so|e519e632a7b0fab85b93f651d040766ed0fb3b05
+vendor/lib64/libsymphony-cpu.so
+vendor/lib64/libsymphonypower.so
+vendor/lib64/libgnustl_shared.so
+
+# Thermal engine
+vendor/bin/thermal-engine
+vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+
+# Thermal configs
+vendor/etc/thermal-engine.conf

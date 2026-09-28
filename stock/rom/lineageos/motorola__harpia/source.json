@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_harpia.git",
+  "codename": "harpia",
+  "commit": "efffec240052296ec2a67bb96926e0dbd83bb4bb",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5e822f0e79babe328065f6889ac8266c2d549961cf24e76bfa678ae2538f432a",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a85754d4375091f1ddf4ecbddb02af3a2043840d3dc10a7c93a557831b786aae",
+      "size": 707
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8144caef7c631ef8b2bdcfdd0a1b846aaca73eba2241b04465b0750d67200304",
+      "size": 1678
+    },
+    {
+      "path": "device.mk",
+      "sha256": "16732c43b50f4380cda285fe6c7624e936b7ffd4cc3469fdd0445a2ea55be995",
+      "size": 2289
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "28c6e4d9ea967282daa5fc20d0c0cc0e4e5a67592cbbe8551cd8274568860115",
+      "size": 310
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5e3da7d4ae41dfc98132fa052e891e13981278b0046b6a05c0ecf38228e2c903",
+      "size": 126
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2e6571dfa8cbc641dccf7191e764c14d80b2b70f883c58b34abf18b4f6b21354",
+      "size": 4267
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_harpia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:30Z",
+  "vendor": "motorola"
+}

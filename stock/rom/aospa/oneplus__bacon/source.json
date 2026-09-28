@@ -1,0 +1,42 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_oneplus_bacon.git",
+  "codename": "bacon",
+  "commit": "6ba6c9d8cee365897a60ebcb6f6d7ac786885646",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "29b9d2f24f9a1179d422f68674b7873e9d5bd67d34ef51d1892db6edff443262",
+      "size": 5154
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "112ddb55f4734e204b00fc1ebbf73d6fd31532a6e38320687699baacabd073d2",
+      "size": 3428
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "754df978ee637277254b6ff99c08ecfcd50625300aa2ac1f43840048cb30ee4d",
+      "size": 54
+    },
+    {
+      "path": "system.prop",
+      "sha256": "534e40dd18fde583728cdaed8e3d203d052fdeb9ae24ca45e437eca14f6c07f3",
+      "size": 3613
+    },
+    {
+      "path": "thermal/thermal-engine-8974.conf",
+      "sha256": "d74aa18c9e51c446c50b59c7b9563118024969e7cb10b01f529e8ebf725de300",
+      "size": 1945
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_bacon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T21:22:01Z",
+  "vendor": "oneplus"
+}

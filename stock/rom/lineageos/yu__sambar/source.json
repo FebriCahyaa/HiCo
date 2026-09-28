@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_yu_sambar.git",
+  "codename": "sambar",
+  "commit": "1256af0a7ed57249149490e11797b09722c9e457",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2ab0144dca86639332236822b05f743d902ed0e2bfc99c8046c7a5ecbe88afb3",
+      "size": 4464
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "762f92f4ead0c6d1e75fcead0d037e935fd8490c03bc77eb646c781e47e2dbec",
+      "size": 639
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ee40f33f0cc20d9e5ef8ee03439888ae0e4355c1bafabc0c60e9081d8530ec93",
+      "size": 6676
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "fc3f222cb60cfa5a27dfcaf93cd03f68f81d3ceec259e1b56064a15c6dba4cb6",
+      "size": 3250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1821294760b8c26be59514f2dd6415b79e6d76442e1b8dd8d2cc015fb3a4ed1e",
+      "size": 12262
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f491626d5ae9b3ca603b255d1d922cc0b236c104f69841d17bd0da8e633f4238",
+      "size": 1472
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "37da372839936f74384480c02ad403c3af3b0e332c037c52244e99a23bfaf986",
+      "size": 207
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2e0313ddd18a5652d28ad913c3c0a596d74e54e26b2027706aa135ae0937118b",
+      "size": 780
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9ed713e496cb09c0e7f5145318118716c55480370fef8ec56a2a89c070141ae6",
+      "size": 2756
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "58975056e1403ccd0c99a1b90faa9d32e27eeecb607f7fbf08148fecc9eb6363",
+      "size": 637
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_sambar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:36Z",
+  "vendor": "yu"
+}

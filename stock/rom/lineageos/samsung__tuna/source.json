@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_tuna.git",
+  "codename": "tuna",
+  "commit": "332e0914522d5f4b2b4d931558191a2241ceaa96",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0c854a7519aa671ed600fda1e342adcf8e64dae941e53b22e7aa6ff66e538b67",
+      "size": 1784
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "914667e25bcb192cf012b4e5b465bbd25a5fb6c1572266ba2420c6228b8560f8",
+      "size": 3494
+    },
+    {
+      "path": "device.mk",
+      "sha256": "126d5927dbcde87be01c30f4f4cb68fec1b56a99320a30ed1e81c17337c01fba",
+      "size": 7761
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "31c65e3e9d67d01b7dc45769627c1e6b9aef82beff8c789e86c82528d55c3370",
+      "size": 2903
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9e5183edfe21ada325dc0b008568c9990f0ca24eea95d70669ed824f62dae3a2",
+      "size": 162
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_tuna",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:13:47Z",
+  "vendor": "samsung"
+}

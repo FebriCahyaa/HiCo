@@ -1,0 +1,77 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_lisa.git",
+  "codename": "lisa",
+  "commit": "b6b6defc2afbe0104278207a45a560b888b6cd91",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "bf3daff554c52407e2f64421cda533ff44829ff108d386daceb8b77cd2038e1a",
+      "size": 3739
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0d0c02a825a987c12eb92374fffd87c17d1e232c823f9d975dd47d9cca63b7c9",
+      "size": 7424
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2d2140e7ec94677e167431ba5c1dae5791a2b1c2af70aa5f87033149d8fbb9bc",
+      "size": 12592
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "617a0aa26dbc0af7ddef7f43fc183e81282da5c02ea45a8e03cfaccd483380fc",
+      "size": 2588
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "cc6805ae3cd16909e9322e6ce07fb1e3700eb833769a4dc1737a6e3513bf77cd",
+      "size": 3272
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c961f3da8842a016adacfaca3c5f9ec66eee83e826573f6d2c4103345c100176",
+      "size": 1454
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "01f1c720e777fa39f79a36e887964124b582a9f3aeb809f7220db9b8af4d3b33",
+      "size": 14214
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "5826767f23abf5d6844dfe6f858ddd02c7d353d7a7a03971f976f0419794453b",
+      "size": 6486
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b21c61e193105c68e7203b60776e9f3ca7d87e85eeedf73da94c7732bee3d7f8",
+      "size": 53602
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "b2bfa7157dc75f20435f28a324c2251a8960d75127f0c75c54a11c68f93b603f",
+      "size": 1284
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f4fddc0e038acf28ccde5ed593640d52f1d50861dfacf3868c9ae0f9d9a84bcb",
+      "size": 115
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lisa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-10-09T06:50:33Z",
+  "vendor": "xiaomi"
+}

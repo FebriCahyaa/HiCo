@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nintendo_icosa.git",
+  "codename": "icosa",
+  "commit": "6830cca08bcf298433872eae39f50b0efde61d70",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3dc901aac5ee0fabd0e000a71a5ccc05982ee39658ebfaefdf6302685dfbc7ca",
+      "size": 685
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b0495f6a9f5cb580728e90dd1fc2a938a2913ac1d797c951239b2c0c8a3e2896",
+      "size": 643
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a1ceb4dfb45143636f4866142941ccbe19e7d69baa77ea54c703349971e9f4f",
+      "size": 60
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e3898d47658474ccfe5dcbe230dbc928d2b278a30eb8b873b78d6b8265500f3c",
+      "size": 108
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nintendo_icosa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-10-04T01:44:00Z",
+  "vendor": "nintendo"
+}

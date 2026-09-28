@@ -1,0 +1,67 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_veux.git",
+  "codename": "veux",
+  "commit": "5a7e2bfa681023445989bad8f3e4173c12075ec2",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "518013926cd23231b1b5f3116f93d847a12c5db391e1514940a4ce5f40d2b3bc",
+      "size": 205
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "39acb1fd0d019f58dbb22e4be456fdfa584bc7ed613230e922222750e5f93004",
+      "size": 3812
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5bb21031419399a1568de477b19fc95e2cfe938c31bdd7b3462dd3cb6009651c",
+      "size": 291
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "db368a3e0f0531ac380a66f8881b9cd378be3e1f68865e5d3dc9bc35a484ae7a",
+      "size": 6746
+    },
+    {
+      "path": "device.mk",
+      "sha256": "096474e21bd6faae9f48ddbbf1ba1f2016c660f91d37547c3777abed89824e6a",
+      "size": 18967
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3efe315d08e66202a5fd2506564f2865ab19cb9f50907c17967cd2191fb194e3",
+      "size": 2549
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4fffe7380021145d2f9c90654a605ed4910290e92219781e704f8f0e16744958",
+      "size": 60838
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2c9506284052cbc184690bc3c8287bfffbeed325c1a3ccbba19f2a025e99e74a",
+      "size": 133
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "eb334005570b7f014f6ee1b96f36a850a771087c159fd52d928d1aa0c1c3b28f",
+      "size": 8948
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_veux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-05-13T23:53:07Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_chiron.git",
+  "codename": "chiron",
+  "commit": "dbcd0ff125c4e6897fd5848d446a02af1ae5f7f4",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-8998-high.conf",
+      "sha256": "410df866ee1c5f02e68442252353483e6e49b4265f332ddaa991ea7eee670a8d",
+      "size": 3792
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-8998.conf",
+      "sha256": "8594d1204d08e26a39b844604ca825c72958801289dbb02f0cb4982e7fae9460",
+      "size": 3728
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_chiron",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "chiron"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

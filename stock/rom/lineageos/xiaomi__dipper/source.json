@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_dipper.git",
+  "codename": "dipper",
+  "commit": "77d5976a9185d86dbabc2a52513998a1624cf03c",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e54847c35c5223764290ba943a304c63f646cce603ed58c239853d256868b0f",
+      "size": 155
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bbb0b05cf19800f786bb0e760a3c11ffcdb54173cda72d0ed08a04654d4335a3",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a986643275a539824d4c711f59efe44064149a9b2c9600373fd25b967947794",
+      "size": 786
+    },
+    {
+      "path": "device.mk",
+      "sha256": "abebd106f41c5a54899d58a02982f3a13e87163aea6bdff25bb22f3b2a41ccb5",
+      "size": 4187
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ee09114d4798ca04799015b3d6540194bc7fa76835290ab8b281bbe6d2334ad3",
+      "size": 1610
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "53c8da3b7a3a61d8ab8d20197438103dc6c3625a675ebbbc1f0a1996fb2bcd6d",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1ef655d085629c2c53f0489c9259aacff297c044dc32a31e782ac6170a6d038a",
+      "size": 10846
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aa1b9667650857afa78808e17c45c0aa8a43ad35421061611b71a0c388f6fb7a",
+      "size": 218
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "12e94ffc1540ee5a81184eaae941a280f2c581bf67769ca27ac3477d14f0ce9c",
+      "size": 369
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_dipper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-07T23:46:20Z",
+  "vendor": "xiaomi"
+}

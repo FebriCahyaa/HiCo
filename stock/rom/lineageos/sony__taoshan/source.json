@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_taoshan.git",
+  "codename": "taoshan",
+  "commit": "7d67051b566bccec49e16b4f8825d7e32752a025",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6ccc2056065f6b2c7ca7ea68dba060a513e3c4c64a5d3e935d0a0c41ab503c39",
+      "size": 986
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ae518d23cb445d3ddc6c45920807f82ad67110efca87731854d46b5e561065e9",
+      "size": 908
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e9ad0731863c3a2a3a6421210e3a26b457c3a748f2da794610eb418344f6bead",
+      "size": 1195
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ea8b9e191975813a6ee107d546a9d393430f070526ffa4da0fa8d79f3076a6c1",
+      "size": 1762
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "56f2fdf7b8399a6ab7ef9e3656c6444a5e13a2b836e19d823a7f94c7427239dd",
+      "size": 389
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5d0f4de39d55779e488184dda0f291416ab7b016c22ef2925f72c574548a9478",
+      "size": 4063
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "60188735eefb3e5fda21a3b0fda4e6c25d60262825409db33721872b0b8f04ef",
+      "size": 115
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_taoshan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:43:48Z",
+  "vendor": "sony"
+}

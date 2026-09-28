@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_zangyapro.git",
+  "codename": "zangyapro",
+  "commit": "04d77de6d3d15d606f16369d43659889d4dc2b6c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a43c8f77af52b03f7ba2bce523abe0c0c41cf84f7e866285fc9c779252cd5f19",
+      "size": 1153
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5edb857aea458fd15700802eaacf875947a263d655b46cd8dc592e010db075ad",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "22e38b834ad9c093d0e01061cbf34caee695b31bca005033f9152e89a95912c4",
+      "size": 793
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f8de17bba3f2f270ec1bd98ca4b6d4e714141306d21a367d216636aa92606fb6",
+      "size": 831
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e54066af79d6210bd72eb958938db8d3f3aa4248e2ea09f7c3d1bbb94873fea8",
+      "size": 469
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "87e72850600acbc95b494d4d5007dbbc6b860450670b681d01990c01ea5e6efd",
+      "size": 110
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "645013edb59387ba9d992618b738f023f251fd1040bea60b8ed57ab4f0a5142c",
+      "size": 48
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_zangyapro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-02-27T16:13:06Z",
+  "vendor": "bq"
+}

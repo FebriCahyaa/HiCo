@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_pc_basic_x86_64_pc.git",
+  "codename": "basic_x86_64_pc",
+  "commit": "fdb337cc840ca6332f53ec36a70a44a37cc782c9",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "57fa00a37638083a4384b61d28731f8b96720fa127dd5f7e25ef9c4ecf9992ac",
+      "size": 394
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "23fc809ec5d75bdbf1294afa4c4b676fc40b271d559f4a051a4871d763fb5a99",
+      "size": 2544
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0dcdb8010d53e851b530fe9c97da3f4657ed13645b33b60ca83141ccac9c9209",
+      "size": 1802
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a6a7ca808d30a1bcd85cfe617fca3491b447ef7c8a3d87f6334f898770be420c",
+      "size": 312
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_pc_basic_x86_64_pc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T16:00:46Z",
+  "vendor": "pc"
+}

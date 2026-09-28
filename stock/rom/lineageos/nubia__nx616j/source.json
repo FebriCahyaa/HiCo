@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nubia_nx616j.git",
+  "codename": "nx616j",
+  "commit": "1e21f382b8be82463b911ad921f05d77d5d810f0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f6288fa583d4a95be7d89e2616ea7d9732dac9ccf0b717981b03363f038ad119",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a4c1604d7f00aca9f1860953903e7121b39ca35061689250def0d479c0f975ca",
+      "size": 1059
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cc657e0bfdb48062b0b171101fdcb066e10b533f6a6db7903f2012342c748588",
+      "size": 1817
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9114da959873eae099621d29dd33a758ab1b5771a766f8599ea39ac3db3f095c",
+      "size": 1579
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c9fa25ad9b2273aea2724a8c225b351cbf4e3e37dd62eb883f735ef7653a4046",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1e7e4a4d8c1ea61ba8de99f444eab8d92e5f3a5eeb6ac592563410aec3a9d2f",
+      "size": 9575
+    },
+    {
+      "path": "system.prop",
+      "sha256": "33d849c18e9a5b7805d7ab925eb81db9b58f4946e86cd94eace7c3dcef108688",
+      "size": 57
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "52d6baa3c25cd185d3f71250e6e970284a2bc2d2f8139227f3fd4b238a5191f2",
+      "size": 149
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nubia_nx616j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-07T08:46:36Z",
+  "vendor": "nubia"
+}

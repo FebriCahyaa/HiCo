@@ -1,0 +1,57 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_a5.git",
+  "codename": "a5",
+  "commit": "64aa75eae1147d6f6fcaa6bfb2293d12bcb7323e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "647285c87fdd8ec72b6d69b4396eec199c1afd885327860c881f0ebd181e983f",
+      "size": 2862
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1eb91f100e7e8297493a9c9e9afcec6e0454825e5c11d0bd85f3dfc440c74d26",
+      "size": 5019
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "9466a952e1ef09af54942fb5e18a4c9c84dd0abf0aa6c328ef084cbcfa4db63e",
+      "size": 928
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c2f8b0c028ab7145c0889a3498f92cc9ac888f9b701c9dac6c4748425c9c36c7",
+      "size": 8707
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dc2cfcaa1263a542fe60ec73fc1a9c76b78bf579240763cea99281fd02ea2fc3",
+      "size": 914
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "17a2731196d9457e724f737d31cca80aa0cd42c11ffdd8ce978fb2e520e3161b",
+      "size": 11623
+    },
+    {
+      "path": "system.prop",
+      "sha256": "db14cf3c81554f3e7e19bc851eda3776b7455d0394cdd3f243e00e4816ee9a09",
+      "size": 1783
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1a0b9240955401dc265c217587135ee0574cc865c5c8991271345c59b43a0e19",
+      "size": 58
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_a5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:17Z",
+  "vendor": "htc"
+}

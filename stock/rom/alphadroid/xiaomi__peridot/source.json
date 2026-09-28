@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_peridot.git",
+  "codename": "peridot",
+  "commit": "3f88220d6e67ae6d2f9248272d8e8f9e3be06d0d",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cf747b715fbf337f7cb086417138397f11acf7b5158818d5786403e7eb4609de",
+      "size": 1206
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7b0b2deb5b6a40d6a346d9cde52bcfa22cb98c3514db16ab835e183be703c860",
+      "size": 1268
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ae181b990aa21a8f5311a8903a236f419ccb1acd477a1e341f38d69db24229b3",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dca8a5c4467866c76fcffc577131ffa566fa4a8d2e8128374fc7c2ae03aad82e",
+      "size": 8492
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b478db15afbe5a465c02f5b9e2a3ed30c2a8bac33a9931bad8da112b1bd9e25e",
+      "size": 24189
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3ea2426461970999174f14c609decc1721c7957234be60a1d013be09ef6079f4",
+      "size": 1912
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8248c411e3476f0a9d8bbbdd71b5ea406036b836ec5506d7c5199f89d65e8aae",
+      "size": 124309
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1ffe96ed1452c31fa72bfb0f20b50b06592bbc465497311df8e12b0258a7eb63",
+      "size": 1815
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "31e353be24820302d2251f9453d935a4aa1a5ed5466aa633b63bd16f62f5dfb2",
+      "size": 1020
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_peridot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-08-18T19:18:11Z",
+  "vendor": "xiaomi"
+}

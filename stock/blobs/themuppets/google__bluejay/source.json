@@ -1,0 +1,59 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "cef6a9b42aec93ba32cae4598a1e40af48e0e925",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "24a60f9bd917c30aabc1006b3d5b42a25a3d11a5e1f71953d3f241ee243e3c01",
+      "size": 44781
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint_a0.json",
+      "sha256": "5863859bea7da942b9d915de150d1ee2a1d5d88574d582491c1b3e9e0fae8ab7",
+      "size": 7347
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint_a1.json",
+      "sha256": "873a26d8b253099a4b79861fc259716a3309235997ff83ae93413ab7a1209cde",
+      "size": 8289
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "fbbf34730fb031a7d2c3c883b76f511954ae1bee2c4ec56c9212c2cf32969716",
+      "size": 20850
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "d8305a717d3f7171b81461f7e2afcca9e10ec885e83f940d265de6527bcf4313",
+      "size": 10196
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bluejay"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

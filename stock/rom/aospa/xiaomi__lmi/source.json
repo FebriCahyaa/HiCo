@@ -1,0 +1,52 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_lmi.git",
+  "codename": "lmi",
+  "commit": "06770d3a5fd4eb10bacb4cd26cdd12d1ecf9ed4e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8d380796df23ce69943bfeb9d87b213a17a48159446ad177858cfade35a59d33",
+      "size": 567
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "35e0a0ad44cb4197cc134f6eb3035a0fcd28810a0f2a38f4623821cf4ecee250",
+      "size": 3665
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a3e537ca6327e785cb81356c50d1f1f42d135168b0e34a5f1671d90f9ecfff00",
+      "size": 4711
+    },
+    {
+      "path": "device.mk",
+      "sha256": "406d1ec29b332db360bede6c99e1bad2265fb4bc583ec4793873b3096daf981e",
+      "size": 10730
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "acf90788d3b8a2fabf0524a3879e603e9e26935ecb90a855437333b6bac1683d",
+      "size": 1326
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "501b5a7fe8984726473ec64e08723863675c9b5b72477b22ba348bf88586a85e",
+      "size": 87000
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file_contexts",
+      "sha256": "68bbf63f82b93779693d2c3a6bdc2e9da00e88a36da25c77fd4e63e8aec21af8",
+      "size": 178
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lmi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-10-18T06:01:04Z",
+  "vendor": "xiaomi"
+}

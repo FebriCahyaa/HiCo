@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_nokia_NLA.git",
+  "codename": "nla",
+  "commit": "0e30f89c174399ea723d6f9199b390da4a10fafc",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6c9ebe38fe4649e3c0755642a5b0dab430d7bdd44d2b3c99dbae5d7952cb7f69",
+      "size": 146
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b6bc73a210e6ae6dfc40368422c0dd50fd6743e906697dcdb6a653db3e73bc01",
+      "size": 4301
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a7c8b083963668a973d2aec3c9d95a41ea879691294a3ab35ac47f9174f4836e",
+      "size": 246
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "560463ed0d5609b48a2c802246d3e42a4afdcd6ca07f3028bbf2f60d6a2568cb",
+      "size": 5430
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1507d93f546b0f33751601f91edd1c0f33350b38257c64dddeac9011b654bd14",
+      "size": 23224
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5aa283cbbcc71beaa2447dfda0fdc421b50dcd35c941107eb2e80bcefb7e93c5",
+      "size": 2600
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5f50678a86056e6bd5e097809b7850334163017f56aa32a29edce458ef5f5fb2",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4fdce7a33491a942a242ffdb6f83b6148ce33d8106067fce1769216620438a7a",
+      "size": 47056
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "90f4771c166304630424f98e8c2f067b37b3018a7e816c7a46082ed2dd101e05",
+      "size": 85
+    },
+    {
+      "path": "system.prop",
+      "sha256": "77ae0478ae7120c87e0f0147f4075bb58c51ea4f8a95338bce147d0a144d8d5d",
+      "size": 3244
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b77fed6ca42edfe0ab67a8a69b89d6df7a4c422a7a0ffb335c12448dd6608f30",
+      "size": 9090
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nokia_NLA",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-08-19T00:57:21Z",
+  "vendor": "nokia"
+}

@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_bathena.git",
+  "codename": "bathena",
+  "commit": "466b81dcf1382c5e503ccc84837f5c0932494f52",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "85f2f6380eaa12f11495cb421e33232ad395cba4b29e3db4eb506286d6ea801a",
+      "size": 548
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-bathena.conf",
+      "sha256": "b7dd5551bf0917c2098737f66cce654bdf553ca0acbbcdb019baf7c69110b422",
+      "size": 2105
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_bathena",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bathena"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

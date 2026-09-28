@@ -1,0 +1,42 @@
+{
+  "branch": "bliss",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_yu_lettuce.git",
+  "codename": "lettuce",
+  "commit": "5b40a86291591968c93965a902a1d510310f2d95",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "58c58ab9f2fb3782ec78cfaccefeb895c9f7a0c3960ab241b1afe6bbef9e1d53",
+      "size": 708
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d6c994bb12e69f62efc6b61f475010c26bc8d9b3ed60024fbd88abc8be97807a",
+      "size": 1012
+    },
+    {
+      "path": "device.mk",
+      "sha256": "97b41597903dbe294c7522de8d6360b25ee901773fb870de840c41ab42ce47ad",
+      "size": 1089
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a380f842a02cb65235a7e72572200392c7a439ba1d4dc002fe5e02d745c0cefe",
+      "size": 1513
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5b1bcc139f9db96b18b8eb8ba538da08fa2b62eef9d535646c8c8c576a53a7ed",
+      "size": 237
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_lettuce",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-13T13:18:36Z",
+  "vendor": "yu"
+}

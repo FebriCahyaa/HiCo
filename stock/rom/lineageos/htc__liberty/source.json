@@ -1,0 +1,37 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_liberty.git",
+  "codename": "liberty",
+  "commit": "18e1738726941f363fa233398039fd711986ccb1",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4058b81499e47e3b00347cf02c24dc613119d6f1af461bf59457b7802f6c266f",
+      "size": 783
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "29c844c8b404ed28c4a9ec7597b6327c21bcf807ce8540be4056073ec99df6d0",
+      "size": 3099
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5cf5eb9e72578866f2474b1a59f85fd3a2d96e5c34f0aa1b8e5a48ecc11d3199",
+      "size": 6515
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "2cf28356a537dd765a6955fd8845b2e37790e83e01bc50f167cf08cec3222211",
+      "size": 845
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_liberty",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:40Z",
+  "vendor": "htc"
+}

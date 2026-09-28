@@ -1,0 +1,107 @@
+{
+  "branch": "Alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_sunfish.git",
+  "codename": "sunfish",
+  "commit": "8a25f3afaa713d6bab0a9816405d0602f4e01047",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5dbb0d96d0309bd7218f21d77df6c0b32f231d03664e7720f153e4835e953e2b",
+      "size": 1370
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7df615adb1a91706f9930ea34a62df1b870b07a3bf462dc46e8c9a639f2773d4",
+      "size": 7338
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "094b02cefe70796de28f8e3195057cbc29e00fd2ddb15e47606fcdf1b2954e00",
+      "size": 823
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "fafbf0870167f4d7ee0d7b0f036456242f8345b429657fc6675b63a4aeb564a0",
+      "size": 7638
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "2de14338eace554ca0f1fe3a67869c8b3e69b2cd636b9f741b533689e0b0c0c4",
+      "size": 1727
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "497a8a995e63a8d9c7c4ddc8d7427316be63228f159d37688d718891f4f7f4a2",
+      "size": 5121
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "1cf82a3b39f13203ef05cd723d93428872b5c76f6004b170dfee3f8b8f67f153",
+      "size": 5801
+    },
+    {
+      "path": "device-sunfish.mk",
+      "sha256": "761d9e87d5dbcb919479d47ec09e52dad6d3e9c265fe4415f8be83cbb52e1241",
+      "size": 8390
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9cbb4c33b651814faa44a9cbe1178fd54e5d51eb686d0d1f7235d71418e6babb",
+      "size": 36520
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2a6cb3a49ddc1cbd71557d182dd4d6961eeb1f973f946c4649618fed8f35b882",
+      "size": 1668
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e966fba1a9a3bae294f9db6ef2372eb934db79fb3b3a8f03799967b687f8b596",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "569ab185e7ab0a34766feac49d3c7c7f573345091269476c28f5a1ace0146d98",
+      "size": 22353
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "516d4d443f6e51084ec846cfc0745d1f7c978156020432cc25d0e017704b442c",
+      "size": 106
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal-engine.te",
+      "sha256": "a0709d76ee7355fedbd11b49aba74834f6122aa515268ba38746017288126b1b",
+      "size": 720
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "531af437b8981b9927fec3f696348e9e5778f70de9fbe0606019223b3f665c5b",
+      "size": 464
+    },
+    {
+      "path": "thermal-engine-sunfish.conf",
+      "sha256": "4ff506ca1cbe240c36e713330d721e2fabd8a1646d09f544e5be646bf60315e0",
+      "size": 1518
+    },
+    {
+      "path": "thermal_info_config_sunfish.json",
+      "sha256": "ae751e70d5b28a82c5a63438fa4d2945f871c18a10db0892736535536c2e3495",
+      "size": 6056
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_sunfish",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-09-25T18:13:33Z",
+  "vendor": "google"
+}

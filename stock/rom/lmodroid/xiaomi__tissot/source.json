@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_tissot.git",
+  "codename": "tissot",
+  "commit": "86c5355a04634a4c9b192b9cb18cc64c322a6545",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "75161f7411f791371d0e9af3e8e42b2220ae01113662fab6e3f43737f82b9504",
+      "size": 212
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "01e2fa9ac724a0d6a4922b28093a9f6e9943ad4511aa1082332e9e4394a39d64",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c2a52c24fcd23bb4f1ebee0f0fbbdbddbdab88ba0395283234dc1cefea411b97",
+      "size": 897
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d3dfa8152d9747cdc66c7c0637b969b3cf591bcb1559df19e6b3d53bafbd2eab",
+      "size": 2899
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "acfeba93cf6110001e21c366ae6e6bc5c956adb4098a91253e412410a87c794d",
+      "size": 943
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aed4363dcfabbf033e6829e8ca80337bd5812b11350c1a413b2d880b7121131d",
+      "size": 17960
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_tissot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-10-13T04:13:45Z",
+  "vendor": "xiaomi"
+}

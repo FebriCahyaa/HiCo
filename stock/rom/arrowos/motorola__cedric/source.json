@@ -1,0 +1,87 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_cedric.git",
+  "codename": "cedric",
+  "commit": "ff1ab53610edeb020c6bfe161a0f9f82b5096ba2",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1921b7a604a36abb7e906b2d85532e974366f30e769eb3a6d6e34f834e797b2f",
+      "size": 57
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ae6c83239dcd964bf854e66dff66c500bc5abf03fc6f87117c1b272e187f5cd4",
+      "size": 11446
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "66e7fa4a4b739e941533d48461441c72881b587ba74684248c7dbfbbcb4f9a07",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "546be6ed4f622ca1b373bb2f947d948c6dbdf61424f8b784dfd6c681efa67030",
+      "size": 8361
+    },
+    {
+      "path": "configs/thermal-engine-cedric.conf",
+      "sha256": "d327f6315758d8746cc4aea851dc4802daf5a6a3dc299bfb80359b5c21c6bd41",
+      "size": 2845
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5aa4ce796766339cb1b461213b389ed77d83b20a117826413637484c72b8fc20",
+      "size": 16679
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c71467614ca037bbd43d7942c604270a18da56e324598e63c20b2a3ba788257",
+      "size": 2150
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9f0b2c7b3cf4a5da8996e53109a20b21e6a830e41b916da2669538acc0dc9df0",
+      "size": 37494
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "03bc9925675ad99e99720c6d14de8925bc36c44bed680ab746f4eb1e2fbc5b48",
+      "size": 480
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3aaf8dc65db6f604309e23246c54d68f7ba53a1f4ca971cdd592cec539a2e59c",
+      "size": 8639
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "a5306370858b0a53587d9dc960c1b8a342f5dfae66f0a1e963d6fc0eec4e96b5",
+      "size": 978
+    },
+    {
+      "path": "thermal/thermal-8937.c",
+      "sha256": "be08438eb3ae4abd7cb8549317a4488b55e08c9cca2906e37c452e2446ceac70",
+      "size": 6054
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "276b1d94700547e9dd6e326f3f461d2bdce509d629237a40dcdea15d2a3ff7a3",
+      "size": 40
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_cedric",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-04-18T17:23:01Z",
+  "vendor": "motorola"
+}

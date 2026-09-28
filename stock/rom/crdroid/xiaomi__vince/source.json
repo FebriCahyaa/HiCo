@@ -1,0 +1,72 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_vince.git",
+  "codename": "vince",
+  "commit": "5351382e99d8886e7228d3d20a057989294ba78d",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8c5afc0177150654e16da629460e8d74698a39491c0b7bb5b1d8a1d7ba315467",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "38b99415768a39233103abea0bfc3cce9d3ace591f1ee4d92a0e345b1102c443",
+      "size": 5440
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "84bce8e0e7a27da087c35594eb73ec05157319c9f8bed2297f4c8ec90934af97",
+      "size": 759
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d71e3473e14d539936266bed10c8bb546229d01e98edd0d4562262c52b585f2c",
+      "size": 7065
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "118818a7567aacb1e2c29a3bceb8e79e3797c232fe8e1bffa9216f37ab2d330f",
+      "size": 3132
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ea11574af064e74e1e195cd37e526fb7a59a864f2318f39fce3394d19f4c0159",
+      "size": 22792
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5088fa78e6273fc1b1090f521b4ed514f84816a58f115c52a4fb214dd27b273c",
+      "size": 4085
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4aab7b3dbd47acceb22cbd670f8b551190fb042dcfd0cac43b07829a59874a1a",
+      "size": 489
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7d84e7762062b7e2335c99746e7aa4f4d38ff2dae80f5843f1377ef3fb884d0b",
+      "size": 101478
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f5c511b6689e5400c33bf60a06f34bed7c464371d301674feb12c1fe3be5662c",
+      "size": 321
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vince",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-05-12T19:08:46Z",
+  "vendor": "xiaomi"
+}

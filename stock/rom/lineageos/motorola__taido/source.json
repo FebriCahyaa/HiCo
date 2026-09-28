@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_taido.git",
+  "codename": "taido",
+  "commit": "20dcd1bd88a08002192414f12105ec815ecab0e6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "caf122607a31ef7b61bc99eb9b66e8e66ca2dd00fecef6040b5bf13dcd8159dc",
+      "size": 718
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "95606b2930daffd637f0b60819b1f79e3620c1429523da84a461f6c407a30e74",
+      "size": 4345
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e6db457bcbfb139f0652e8b9823c547529243d55d05b14bb40b532b7910a903e",
+      "size": 7163
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d2c083658478ac95172580b62fe89b95a7ab68c003a6429b724e74475a5b7e4e",
+      "size": 1693
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "757e44bb0396dfc1c4d2a25eef1c908810591019ff0b29aa7fc8f9ae16829898",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3143fc0c3e3675758e6c521f772e238ce8021b9c0c00e7944c0a5357fc591020",
+      "size": 5211
+    },
+    {
+      "path": "sepolicy/thermal_manager.te",
+      "sha256": "37319eb4c6cf901990eb0cd2c02c63cf00c57d230b6cd1ea6c30e1b216d5e30c",
+      "size": 762
+    },
+    {
+      "path": "system.prop",
+      "sha256": "79ca9d2a9aacc859a61c543f9a17efe600bb1b85a1794e4721758ce6ba8ae11c",
+      "size": 831
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "bdd3f6f2d806c390db33d1beff230c0e08a1d8566195b455d9028b583a3f32e2",
+      "size": 109
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_taido",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:43Z",
+  "vendor": "motorola"
+}

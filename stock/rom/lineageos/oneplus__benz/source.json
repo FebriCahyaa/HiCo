@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_benz.git",
+  "codename": "benz",
+  "commit": "84c4e9fd1864d191a5743e035b84c0293964b864",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9639eeddbe987b0a4891621f468ccaad9cb745acdf257ad84857cc4decfeb218",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "82371cdc5e9c3ce80731cf2bf679e132b561a2305c90c53c20afaab8540629f8",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "315d98b56c94d8c3e7f473a1d73be99c709b2ecfd54951c3cbf3df9f43c62d7e",
+      "size": 9020
+    },
+    {
+      "path": "device.mk",
+      "sha256": "95338cfad1b6e25201ae70dbbe2ede87b51ed5501b06f06e617801497631d91d",
+      "size": 18990
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4fd11eb392ac9986e98517d594e49e660506c2cd5d581b0c87ceb3c826a21189",
+      "size": 5582
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3d77f33c1794b6ca7fe61c940298227bd2b37a1f49c9b792f9a4fa4011b3a34",
+      "size": 562
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "92c64d8203954c4263472ead30bc3e649218b1f0ef43b813432d55171f665fa3",
+      "size": 111188
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4f571d2973c48e77d6fd6eaeefc534b6cd3d725025a58bb2a95042a1361ce180",
+      "size": 6302
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_benz",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-21T17:38:58Z",
+  "vendor": "oneplus"
+}

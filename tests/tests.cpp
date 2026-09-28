@@ -1029,6 +1029,92 @@ void test_levels_whitelist_blacklist() {
     CHECK(d.state() == State::Idle);
 }
 
+void test_scenarios() {
+    // Config: stock / relaxed / max per scenario; max only for games.
+    Config cfg;
+    CHECK(cfg.game_level == Level::Max);
+    CHECK(cfg.social_level == Level::Stock);
+    CHECK(cfg.media_level == Level::Stock);
+    CHECK(cfg.app_scenario("com.whatsapp") == Scenario::Social);
+    CHECK(cfg.app_scenario("com.google.android.youtube") == Scenario::Media);
+    CHECK(!cfg.app_scenario("com.example.unknown"));
+    CHECK(!cfg.set("game_level", "stock"));
+    CHECK(cfg.game_level == Level::Stock);
+    CHECK(!cfg.set("social_level", "relaxed"));
+    CHECK(cfg.set("social_level", "max").has_value()); // never max outside games
+    CHECK(cfg.social_level == Level::Relaxed);
+    CHECK(cfg.set("media_level", "boost").has_value());
+    // A hand-edited file with max for an app scenario is clamped to relaxed.
+    write_config("media_level=max\nsocial_apps=com.example.chat\n");
+    const Config loaded = Config::load(HICO_CONFIG_FILE);
+    CHECK(loaded.media_level == Level::Relaxed);
+    CHECK(loaded.app_scenario("com.example.chat") == Scenario::Social);
+    CHECK(!loaded.app_scenario("com.whatsapp")); // the user's list replaces the default one
+    // Daily sets both app scenarios to relaxed and is recognised again.
+    Config daily;
+    CHECK(!apply_preset(daily, "daily"));
+    CHECK(daily.social_level == Level::Relaxed && daily.media_level == Level::Relaxed);
+    CHECK_EQ(std::string(matching_preset(daily)), std::string("daily"));
+
+    build_device();
+    put("/vendor/etc/thermal-engine.conf", kEngineConf);
+    put("/__props__/ro.board.platform", "taro");
+    const auto focus = [](const std::string &pkg, bool screen) {
+        put(FLUX_STATUS_FILE, "synthesis_version 3\nfocused_app " + pkg + " 555 10050\nscreen_awake " + (screen ? "1" : "0") + "\n");
+    };
+    auto t = Daemon::Clock::time_point{} + 30000s;
+
+    // Social app, social_level=stock (default): the ROM's thermal stays.
+    write_config("exit_delay=0\n");
+    Daemon d;
+    focus("com.instagram.android", true);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+
+    // social_level=relaxed: tuned vendor configs, daemons keep running.
+    write_config("social_level=relaxed\nmedia_level=relaxed\nexit_delay=0\n");
+    d.reload_config();
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Relaxed);
+    CHECK(get(HICO_STATE_FILE).find("scenario=social") != std::string::npos);
+    CHECK(get("/__mounts__").find("thermal-engine.conf") != std::string::npos);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));
+
+    // Social -> streaming: same level, nothing restarted, new session.
+    const size_t restarts = get("/__props__/__ctl_log__").size();
+    focus("com.google.android.youtube", true);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Relaxed);
+    CHECK(get(HICO_STATE_FILE).find("scenario=media") != std::string::npos);
+    CHECK_EQ(get("/__props__/__ctl_log__").size(), restarts);
+
+    // Leaving to the launcher: held for a while (no daemon restart per app switch), then stock.
+    focus("com.miui.home", true);
+    d.tick(t += 5s);
+    CHECK(d.state() == State::Relaxed);
+    d.tick(t += 30s);
+    CHECK(d.state() == State::Idle);
+    CHECK(get("/__mounts__").find("thermal-engine.conf") == std::string::npos);
+    CHECK(get(HICO_SESSIONS_FILE).find("\"scenario\":\"media\"") != std::string::npos);
+
+    // Screen off releases at once.
+    focus("com.spotify.music", true);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Relaxed);
+    focus("com.spotify.music", false);
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+
+    // game_level=stock: a Flux game keeps the ROM's thermal, extreme mode included.
+    write_config("game_level=stock\nmode=extreme\nexit_delay=0\n");
+    d.reload_config();
+    start_game("com.mobile.legends");
+    d.tick(t += 1s);
+    CHECK(d.state() == State::Idle);
+    CHECK_EQ(props::get("init.svc.thermal-engine"), std::string("running"));
+    stop_game();
+}
+
 // Pixel/AOSP-style thermal HAL config, as shipped by AOSP-based ROMs.
 const std::string kHalJson = R"({
     "Sensors":[
@@ -1307,6 +1393,7 @@ int main() {
         {"relaxed overlay", test_relaxed_overlay},
         {"graduated safety and respawning HAL", test_graduated_safety},
         {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
+        {"scenarios", test_scenarios},
         {"thermal HAL JSON tuner", test_hal_json_tuner},
         {"mi_thermald crypt and tuner", test_mi_thermald},
         {"ROM detection and HAL overlay", test_rom_and_hal_overlay},

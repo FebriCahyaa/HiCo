@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_speedy.git",
+  "codename": "speedy",
+  "commit": "c23243a0290cf2d4712dc824c1ee63f9646325d4",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "86ab84d4f8d80f46d3532abbdfab9490013875d4295f65ba8232549c379d7183",
+      "size": 73
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5ce08a2b1ac5a46f906b1e3d655efd5e740b9062765d6635f51f8051aa6ce1bc",
+      "size": 782
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8b180c15e1920d436c042985e4c82df81227f02fb52af32c9b3755cba35cedd3",
+      "size": 2550
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "50ecfc1fa1faafcebc250e82eb5ad130b052eb3e8a5cdf175de1a85fef9e9c98",
+      "size": 8837
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a968c5d321fa133bfe398ee9bc07e4ba4491ad0963540f3a985e39fd8f10e382",
+      "size": 1213
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "274ea70f82acf163dc2f7065c48903adfdf05607df7c6ab24f37612f6b5d2d13",
+      "size": 877
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_speedy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:49Z",
+  "vendor": "htc"
+}

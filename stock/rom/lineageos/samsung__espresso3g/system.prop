@@ -1,0 +1,8 @@
+#
+# system.prop for espresso3g
+#
+rild.libpath=/system/lib/libsecril-shim.so
+rild.libargs=-d /dev/ttyGS0 --
+telephony.lteOnCdmaDevice=0
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10

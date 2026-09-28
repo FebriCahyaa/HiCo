@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_martini.git",
+  "codename": "martini",
+  "commit": "3c226659a17d07f17a661e2571370af88cc16fb6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "21cc5c689222a4c5607e2f7569219303cf09c6b7b5fbc014ff7408cc1c8798c5",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4164329a7a15193cbbcefdd54040b7e384353270ee3ac61e4929cc58b79be74c",
+      "size": 686
+    },
+    {
+      "path": "device.mk",
+      "sha256": "44ef22b8b607bf11cd3b8c9cd46995e491cbd8b1ba143bf0d2b0aca8c4c467e8",
+      "size": 3394
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2c8e999154e658ebbf5476811e437b7df9373935e1c6d0bd8d7eb8ad5c30224a",
+      "size": 4032
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "05e07ea2a81658784ebc9e102fa87e2933b1c7bd217d43a1be64f142306f8b0a",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2e41b58d7df4f0c62c8503f60d998e4a8d9ccd49a6eed4bef3b32c75519bd135",
+      "size": 41838
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4db813290680de53923b24313db6d49dc401b9d21ecd6c5610b954dc07a8463f",
+      "size": 196
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_martini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-02T22:00:18Z",
+  "vendor": "oneplus"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gtowifi.git",
+  "codename": "gtowifi",
+  "commit": "51da5aa1c0c343f955b85f778f1993c17729f89d",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "da84dcf1a7833b86d7eaa1c5e12a80ad31d1d395410157c6bcf97a5020366ccb",
+      "size": 896
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b8d07f1c52527ff1c0e8d1fc90b42893388047225b14d910adca411765a550e8",
+      "size": 327
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7e8bdd35d4dea4c3e3343469c039a886f8b231a684fcd9a3255d8deaa4042cb0",
+      "size": 218
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3de00b0dcdf14011be98e9488b57b15f0b35c784e3b3408e34c6cefeb4adf3f0",
+      "size": 6376
+    },
+    {
+      "path": "device.mk",
+      "sha256": "455810aeabad271600e4980055ab25aa13c43bdad35a1c13cf64a1aeabfb4528",
+      "size": 14022
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ac3c801e47784e4f08894c911268fc591dacf4608612cf763313f438e4fd6c42",
+      "size": 1320
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3812ca42933c6ccd2f1902ad96f3d1893cb73aa45295a0de9408e34c7f80bdee",
+      "size": 199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d75106570e6c513f4c804bb26bf3ce9cd5b0432ace2808890abd7947c866b4b6",
+      "size": 60717
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d8959d1eceda7e890a17fa4064c635c543e117483bc78d61658e57bdb75ae2dc",
+      "size": 131
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ec803ea097e92a4c324f4b8ed41d3989531714b71231719313b665c33b10f5c1",
+      "size": 5431
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gtowifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-09-02T06:07:07Z",
+  "vendor": "samsung"
+}

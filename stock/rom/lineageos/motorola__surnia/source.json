@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_surnia.git",
+  "codename": "surnia",
+  "commit": "fd2ff107a0e9ed083055fad31611d5a445e55809",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "11b0fd18b95725abcbad14970e6ce172f2e185bcf5bf86ce7d896b88a3aec298",
+      "size": 1739
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2bc234402ff42284bdc2542b1c0927a7229aa66fbe19d4871aab97dbe7dec07",
+      "size": 762
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a4225a6b6ed15c333b56bb30afaddd994942819ad66fff5d1243f1eb06a4c9ec",
+      "size": 1873
+    },
+    {
+      "path": "device.mk",
+      "sha256": "40f17684795e5cd618994748ca352120602efce1039fdb15f9dc167a164f2da1",
+      "size": 2201
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "77442191c64d9cf7f84aa21d45395e698b8996ee1dab72ba6014f95746147602",
+      "size": 310
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "34dcf64dbef457854fc872d817f674370750f7db89be1f71f37aa90da8c02dc0",
+      "size": 125
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "934a1127737b59740fb2e6675f1e017aaa2cdf43d076d43ab1731b24df9fc703",
+      "size": 2251
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e27ba262d50cf10ea5ee1be2b327669e9c1f649aa4a70d97c7a94bf49bec6393",
+      "size": 174
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_surnia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:50Z",
+  "vendor": "motorola"
+}

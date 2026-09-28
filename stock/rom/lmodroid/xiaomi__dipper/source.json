@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_dipper.git",
+  "codename": "dipper",
+  "commit": "1b52bb10f761af834ea4028c6c6195906b36715a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e54847c35c5223764290ba943a304c63f646cce603ed58c239853d256868b0f",
+      "size": 155
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5519df20fc59d8c07d7e676e8d535bbb4c18f0c5a798263b9dc81c82f90c0a3e",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a986643275a539824d4c711f59efe44064149a9b2c9600373fd25b967947794",
+      "size": 786
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8778467c8e5260ce96cb67bd99443e6125aa7a35d6909138bcf8456bf35d881a",
+      "size": 4188
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ee09114d4798ca04799015b3d6540194bc7fa76835290ab8b281bbe6d2334ad3",
+      "size": 1610
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1ef655d085629c2c53f0489c9259aacff297c044dc32a31e782ac6170a6d038a",
+      "size": 10846
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aa1b9667650857afa78808e17c45c0aa8a43ad35421061611b71a0c388f6fb7a",
+      "size": 218
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "12e94ffc1540ee5a81184eaae941a280f2c581bf67769ca27ac3477d14f0ce9c",
+      "size": 369
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_dipper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:11:28Z",
+  "vendor": "xiaomi"
+}

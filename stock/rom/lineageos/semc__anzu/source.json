@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_anzu.git",
+  "codename": "anzu",
+  "commit": "7bf883b47155bb417862c464c52551ed93dc63e8",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "582201108d9b7b3a9ef9e7f4883751aac0e2ff8a7e15fa94a88e8510d065ff06",
+      "size": 119
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0823c8d3af0c641593b40eb362566b29b7b8e0938a98fd0326a7a5b4baa7ee8c",
+      "size": 1059
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7dd74e42b12e7001d14aafea4e576903723cea70de8f5ae962da2a87f3aa2382",
+      "size": 388
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "71b02c0eac0ac18d6fc464f063f01d089ca8acaa5d96e7ff9feb804371186f6b",
+      "size": 329
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bee5db01ce46361bd955d250b6d636ddf861250b6117a254ac265ff38b9f6e38",
+      "size": 3270
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_anzu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:19Z",
+  "vendor": "semc"
+}

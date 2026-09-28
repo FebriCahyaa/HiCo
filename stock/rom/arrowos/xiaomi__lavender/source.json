@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_lavender.git",
+  "codename": "lavender",
+  "commit": "58f8b700a8e89dbeeb13fc2a684b495c0514e7be",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "dc0dcc23bf1e61081bebe61f18330573e3514d9371a50876ee381b8f6e58e0d7",
+      "size": 310
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ff431d06524f033582c9b665603fe31624f03dcf6ae90680b86fa67bae4e5a6c",
+      "size": 258
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "df9e76ffafab75fcaf30c7219030f524a9a929b72a81449dcec9b883f6091099",
+      "size": 1414
+    },
+    {
+      "path": "device.mk",
+      "sha256": "08bb760f2927896c7319461fc4dc3bc88173eb8d46efa1b1a05d911b02044a92",
+      "size": 1407
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c1bfa3bc50979d7c8ae45adecd03a51e857e911fd19abab483ef83f88567b0c6",
+      "size": 472
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fc220b99353b3daf96b28542eca5e79e02a5972ee354c14163d9afa211372b26",
+      "size": 100762
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d8dd3421b6b092e6975194f10cdaa2a3a8012e9594aa57d7ea1138741137e7d1",
+      "size": 595
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lavender",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-07-28T02:34:23Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mars.git",
+  "codename": "mars",
+  "commit": "0fbf3ca76034063605a341a77b5ef7913116f308",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "614c49b2600eb35ae0931698c305d154ebd352c7dd42c00874e9afdab9d56eaf",
+      "size": 81
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fc90210c52884d125b9ca9d816906afedcaa314c638037be88928780589a3281",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4a1efa77625613eedc0bad35f8a7fcc7ac8ff1c4eaad482f2e4497d478e11b31",
+      "size": 976
+    },
+    {
+      "path": "device.mk",
+      "sha256": "54d25c9bcf5eec4fb5be1fa999e0524fed8d98835725774597570376c8f6d64c",
+      "size": 682
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2b7d98689383c29775ac173f0d1c32199ab3224f1bec8e58b1a4d47a72d3c059",
+      "size": 4204
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a8d046a5623065bcd2f19bbd09459c6010f15d9694e8eebc7805a02ca4e1366f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "26843e3e0972e070f23b18f04f2d811b6d39ded8e18f8340ae0adac269c3e97d",
+      "size": 36722
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e99a25a60152700285597864df2580c9417d2ea31b005955d40b857034f4bb08",
+      "size": 261
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_mars",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-20T13:04:37Z",
+  "vendor": "xiaomi"
+}

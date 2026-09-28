@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_cebu.git",
+  "codename": "cebu",
+  "commit": "bf7ff86c73ddd9d2c82845ae4cf83feae2da9d9b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "289a01ea3bc1fffdabcc28640bc8469c78b7d1984e42d332341add7948af30ac",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a46b3cd10d9296910c214b4bc99c05f88a1ef77b5fcdc8900279b8734bab2440",
+      "size": 1671
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0008f5e51f04ca86600ff8e2f86426204fe6929a8822c425c0924d1622037074",
+      "size": 3394
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7535db1926e5d7c13032d5c27f4717f4cbccfc22498e5df52b77d9b983a73d8e",
+      "size": 1782
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8eef3678a5623bcb51fb2f7960b699ff91d964b186e85c2d358a35da20e3f9af",
+      "size": 11101
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "49fd68deac11bc931a0535498242c8f2e08306339e9e72ff24fb1c771cdeb739",
+      "size": 575
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_cebu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:21Z",
+  "vendor": "motorola"
+}

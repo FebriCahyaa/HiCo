@@ -1,0 +1,62 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_hanoip.git",
+  "codename": "hanoip",
+  "commit": "52d3351584f107afac4a16498854bbdfbcacc3ce",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8c5afc0177150654e16da629460e8d74698a39491c0b7bb5b1d8a1d7ba315467",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c30ca98612dfee00df3ca40b6809d53581cc428a5aa1dcbfef7f44f4fb949acc",
+      "size": 5554
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "96e03fff2e76f3da2143b42701ebc1f8f107f4101fd7a421b58be77f573468ff",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "55c787ede4f0d6bbdf4a27685dd81ca42dac622907a417a3e0b000ca1fa10315",
+      "size": 8319
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3d5698dbaa6f232d57f4cdc702d4f02917349379fbfa52edf7af37cf8844e0d1",
+      "size": 23917
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7eaed5a50342c342a080ce5c04872b152ac77fa98cf1aaaad6385f1b26f5fdd6",
+      "size": 1719
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d2cb5714c94d76b145e9129565303a7802d8f31d5db4bd3d6d40d174aee9a5fe",
+      "size": 50065
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "35d04b1c5267bc99f647ef722ff089cdfdf41bbeaf221307e004bdfedc019681",
+      "size": 437
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5e2735fa79055d202906dd68742dd319dd4736c369859f304eeb329a2154e072",
+      "size": 1052
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_hanoip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-08-08T18:09:11Z",
+  "vendor": "motorola"
+}

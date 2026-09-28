@@ -1,0 +1,87 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_daisy.git",
+  "codename": "daisy",
+  "commit": "49b9aef8e22c2f3b864701f905f3d3cee0841764",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ecaf3a6bfb43ea8afcf3f70abd6b64e5d2cac98ce1792dd71b86f2315f3d232a",
+      "size": 84
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e71381525be8f8194d8f2a0b7da10f25cd04c156cbec24f057f7f19ec447c3fa",
+      "size": 5890
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "968f5ad86541fd0481f245bc8278af725690da7505d5a58c36d6013c9cce9a43",
+      "size": 751
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4bc59eeb81f25a1f9e560ecf7e5de0de971f20a212e899be4714696902da7aa5",
+      "size": 8476
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "2234967a20a317b171e6d9490b7ebd8808b32d9c2608147679d815242865f3a5",
+      "size": 2945
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2aa40196407dbcdc611da278c73702ddf3192ccbf7fabe401ccfce219eee586a",
+      "size": 23316
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f9029863e7da2410ffde31f80d7a2b460853944f29f630f75f4e99d441add135",
+      "size": 2908
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "9ce585d062336d302c3ce7ed249af0e4702ebee12c2e77af9f0db264e546d629",
+      "size": 984
+    },
+    {
+      "path": "thermal/thermal-8953.c",
+      "sha256": "4b690085f4838a12c660fa82a43561f43c0ac377f06a505094dede9513a8d4f1",
+      "size": 2643
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "thermal/thermal_common.c",
+      "sha256": "3f4537489e41d9197fbf0e04201586ad02d932c60146168cc4d94ddbec460a10",
+      "size": 10914
+    },
+    {
+      "path": "thermal/thermal_common.h",
+      "sha256": "6aee2168ab1a998b63355e54b693bd646967ea3a6baae4ccc196f646f6a3e103",
+      "size": 2216
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d47a59af089ffc3a74f7ff78656b7e21263eca336ea050a89a42a58b6453149b",
+      "size": 6097
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_daisy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-11-18T05:21:23Z",
+  "vendor": "xiaomi"
+}

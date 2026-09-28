@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_sumire.git",
+  "codename": "sumire",
+  "commit": "de4268ddb92b56c4c36a32485ca77e7aa26a4d4a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a842bd2febf2813772e636805607e4ec4bdb50a5fc376ee4a5d40f9e11d1b4e7",
+      "size": 1131
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bf441b0c52b85a6b3663d1016fe2152e98dc72b95e977116960867fa62d93a98",
+      "size": 1782
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "16858553b93ca22cd315a7f26740dcf9710d92f6158037e5634852410449bcba",
+      "size": 11940
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6323e5079743d2e250bfba0a0281fff298bd4a4de3817a2e670e4fd08c499493",
+      "size": 2513
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d0866e4c4d13261b3e6a1bc67601a24c5388a9a3ea19a9d08473b413a9dd099d",
+      "size": 830
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee16a908b910f0bcc295311c18a9da939b499b3233ebe33021dd478af855ad2c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "59aa39dce044590db1958e67b5f86a20850651952af215c711a772c2aab2b93c",
+      "size": 22546
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7fd4a7a730f63e8f1a04aea1f742c401a7f32876c9a1ae7a5a41e279d7417a1e",
+      "size": 138
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "eeec6bb03af09717c7a70a9bec7a13347237075881286f3bd3c18f70e8093110",
+      "size": 642
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_sumire",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:27Z",
+  "vendor": "sony"
+}

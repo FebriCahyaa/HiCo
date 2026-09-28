@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_socrates.git",
+  "codename": "socrates",
+  "commit": "5590164ae8d1cc8b7977bc31f42820ddc29eb613",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "acfb18c824e13a70fc2e471e30fc1c99683def7790f38365a1f6bdb00a6b0d10",
+      "size": 208
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "66bb246334f2261b6ba444f59d53b76694f703f2fac8bd19ffcff92c1cd24826",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8d6c41bf32801b2ed7227b9b896f774395366fb2dd3468c52e4a52fda335d39e",
+      "size": 873
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1bb188ae2ed1ab53f12ba877826bb3474e09c11f5776b542e81bc1cc649faae2",
+      "size": 927
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "85ba29993a0ac8b5a26305a1713efef4d344bef3be830929514e6987c2251106",
+      "size": 2942
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "276dbb124ef45fcbcaf116c61604257f2695c3f56bb8e9bb0ba0c69aa3a69690",
+      "size": 31354
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dcd3b1643f6221c222b7dad354c49436861c390060451d83450ef1ce1ca4defd",
+      "size": 69
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_socrates",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:11:04Z",
+  "vendor": "xiaomi"
+}

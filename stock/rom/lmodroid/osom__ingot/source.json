@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_osom_ingot.git",
+  "codename": "ingot",
+  "commit": "7eda67c25e4e5a99daccf739abc8a6a2ec388aad",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4e94d50ad2b274f73bb8911cb27256a551ecd74fd49c89b40c47b8caf8010d0f",
+      "size": 557
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8fb15650a26359bc5d74fcca7abdd68d1f942c4f35a0442c6c50515a65f035d2",
+      "size": 159
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "337c600b15294f8204b4c7b5cf7f89720551987de0488b106a04a4e081aec2cb",
+      "size": 7084
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d46be63669f1d2a71051ac037e5289622dc16d657810f04a9d17f58c70e7565e",
+      "size": 17934
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7428617ba27c06c168034596d2e82ccd6d46d4dbc5483f69b23a0a3b1e73a6a8",
+      "size": 3336
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c9635cf24bf734ef0398b9697b16c8265ff0861917ecc4327fa1998a4b80e25f",
+      "size": 59677
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "23cb1df93ec06d667f698c71075d1949f80b5bf964377c167d3af5847c57cd69",
+      "size": 5316
+    }
+  ],
+  "kind": "device",
+  "repo": "device_osom_ingot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-12T03:11:00Z",
+  "vendor": "osom"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_corvette.git",
+  "codename": "corvette",
+  "commit": "95c0c20f713ef33ce6edc00e35e2f5644edb5eef",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "be2865c93fc68f8b0289be9bf6f46de1ca312ddea6992441a676b8d44ae42a53",
+      "size": 463
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "77926dc23e00d695db2f1bf62b0523496f92926f46d2315710269ef1de81d66e",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9960208e896de540bd0366f34c9b4c785f135a6f8ba18606b0f6587a8f94b5b1",
+      "size": 760
+    },
+    {
+      "path": "device.mk",
+      "sha256": "27d1d1d6f8d5707b369553a8e5d239cabc056e90c893514793287b91c599f82f",
+      "size": 1989
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f33d28816b5fe66d4a76051d9200e8b2222216d5055244b6ce36ded6650bf871",
+      "size": 4526
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5576039657f165366aa01fa4beb88e1d65afe5f3b9763d0e8ec1993dca2b8638",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8c31df9f6717bea1a4b7053a7532512dfb2e72736a3412db73f840c7875ccb75",
+      "size": 78215
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3aa0a071d82a88bbe52252c72fc92f1ef1992d43479080512418c13669d5faa0",
+      "size": 289
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_corvette",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-19T11:28:25Z",
+  "vendor": "oneplus"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_chef.git",
+  "codename": "chef",
+  "commit": "862c538d708168183bb2cdf292d41e90df3bd8a7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "365d3b1da87d23c2ce672850f79e4695b166946acddf5285ac6f1d348b7f18f9",
+      "size": 1242
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9f1e4556ed529ea7e8bf87126ae16be6c36e9e17a788b9e31dc60dfc7aceb2ca",
+      "size": 749
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f86a708889263e08ed57a3f638bd2b5df339cf3e41f544ad960154c31fd00765",
+      "size": 1277
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "132d1d52b0cae05ab097ce0062096e9b186fabf07d864fb946dc4d47d32c0d60",
+      "size": 3187
+    },
+    {
+      "path": "device.mk",
+      "sha256": "baab7edd35500cb4a5f2a5dd834c20eec0e22a515bb5580234f81b263d78d399",
+      "size": 2801
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8187502baef199f262cb4acd010b9bdd36f705311462e099e307651751eb0ae4",
+      "size": 1342
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "01ccdfcd350ad4237220e6affa84dff1ab3e1bd092a4126a453d6da059d81bf8",
+      "size": 12280
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_chef",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-11-29T05:23:17Z",
+  "vendor": "motorola"
+}

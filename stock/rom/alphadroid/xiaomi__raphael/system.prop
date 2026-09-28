@@ -1,0 +1,136 @@
+# Camera
+persist.sys.cam.skip_detach_image=true
+persist.vendor.camera.privapp.list=com.android.camera
+log.tag.CHIUSECASE=ERROR
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1
+
+# DPM
+persist.vendor.dpm.feature=1
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpm.nsrm.bkg.evt=3955
+
+# GPS
+persist.vendor.overlay.izat.optin=rro
+
+# Graphics
+debug.force_no_blanking=true
+ro.opengles.version=196610
+debug.cpurend.vsync=false
+
+# HWUI
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableQXDMLogs=1
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=15
+
+# Logd buffer size
+ro.logd.size=2M
+
+# Fastbootd
+ro.fastbootd.available=true
+
+# Media
+av.offload.enable=true
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+media.aac_51_output_enabled=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+mm.enable.smoothstreaming=true
+ro.media.recorder-max-base-layer-fps=60
+
+# Netflix custom property
+ro.netflix.bsp_rev=Q855-16947-1
+
+# NFC
+ro.nfc.port=I2C
+
+# One handed mode
+ro.support_one_handed_mode=true
+
+# RCS
+persist.rcs.supported=1
+
+# Radio
+DEVICE_PROVISIONED=1
+persist.radio.dynamic_sar=false
+persist.radio.multisim.config=dsds
+persist.radio.NO_STAPA=1
+persist.radio.VT_HYBRID_ENABLE=1
+ril.subscription.types=NV,RUIM
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=22,22
+telephony.lteOnCdmaDevice=1
+
+# RmNet Data
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# SurfaceFlinger
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.late.sf.duration=10500000
+debug.sf.late.app.duration=16600000
+debug.sf.early.sf.duration=16600000
+debug.sf.early.app.duration=16600000
+debug.sf.earlyGl.sf.duration=16600000
+debug.sf.earlyGl.app.duration=16600000
+
+# Vendor
+ro.vendor.qti.va_aosp.support=1
+
+# Time Services
+persist.timed.enable=true
+
+# WiFi
+config.disable_rtt=true
+
+# Transcoding related property.
+debug.media.transcoding.codec_max_operating_rate_720P=240
+debug.media.transcoding.codec_max_operating_rate_1080P=120

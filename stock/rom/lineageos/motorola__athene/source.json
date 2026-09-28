@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_athene.git",
+  "codename": "athene",
+  "commit": "3c548381c79c17469f52350fd4d90e71b2c2d88f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "21e06b43739ef5b4fa29be7d79875ca37a2caf44244652a677f0a403f0e739d8",
+      "size": 6172
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "01c52db6f1b608da8324960eb3791b7ac9301bf433ca7679d116caaac4545479",
+      "size": 5445
+    },
+    {
+      "path": "configs/thermal-engine-athene.conf",
+      "sha256": "40edf3d4c99ca84b842ea603febe806580e58c978c39b6b1349870b083a4bb57",
+      "size": 6692
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f15cf04eca5377b70c40fb8a87ffe3765bd413f6fd13ab6cb5b9613c217579af",
+      "size": 11263
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a39a78134adc5bfd556ac95984afd75f2290a9d40c8fe240ea17bab237e91568",
+      "size": 1702
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee1df45c71f530aee3e5549c23d1140f4ec071f977cdf4643bf64d83dc3dee07",
+      "size": 515
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e97c49c30e7735ba7d5e2226a4d87f3b11ac91186594227d33bd093c61ed0f7e",
+      "size": 38518
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "fbcd97782fa46b4996399339f4f2234c66fbe217e30d696f6a6bb267b65daaa1",
+      "size": 157
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1c8f82bf7747d4e92a6c0e2e90fa7ff29b862046b254d054443bbd7c0ff3f74d",
+      "size": 6626
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_athene",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:21Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "6.0.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_peregrine.git",
+  "codename": "peregrine",
+  "commit": "3c58f3c34fb023a32fbf4bd62be7a4e58835e161",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f6779b6fb36928a32c8359a5c8c075d84052e98d1243901068e798b4d8c4ed13",
+      "size": 1065
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f49f32274aa03ca2096c5b39d6af1e39c11ef7e315368b4538f25b13d594fa1c",
+      "size": 648
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a9053763fd54356ad75581406c29bb3c2ff19356c1376d5f1b00f60395a952ce",
+      "size": 1361
+    },
+    {
+      "path": "device.mk",
+      "sha256": "bd914915e285a3bd83fad0b2a38dccb90f8cd0adc47486bc1e3def46053cd6f0",
+      "size": 1282
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3f7d8231eb6ea166b7cf6a594a3f029a4f81577912ed076ccc004732741cb94b",
+      "size": 117
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "07b859270608753e9889eb946c790292520ad56c43661d9db8ba4b13c958b79c",
+      "size": 938
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_peregrine",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-06-02T18:41:54Z",
+  "vendor": "motorola"
+}

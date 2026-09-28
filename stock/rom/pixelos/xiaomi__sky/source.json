@@ -1,0 +1,72 @@
+{
+  "branch": "sixteen-qpr1",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sky.git",
+  "codename": "sky",
+  "commit": "a4e0462b61d9668544d65e04a8ca3d0f781e7942",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d2b6a969279ad078bf607c19b09481c8d9ccd54ddae8fe65843a526a8dc1e339",
+      "size": 833
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "65b8c8d52dfd0d5ca67668746a457238350271ce7ef7f4f6e8dc767e01230492",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f773c57e45ebbe3af736bfe1f54f3ea303815131b374f08dfe1344ce17d6cff9",
+      "size": 9166
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9d232d9080d8a68de5b5d97605477199eac6e78153ae9d4e42b888618b3d0100",
+      "size": 24409
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6c9a420dec964d2c85e650c3eeb16edeaabee5682f6e7bef07117580da3ee69c",
+      "size": 5521
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "96a11837a2c15956be78f880c486617151ea2e744517e754ebe211007a24e3a6",
+      "size": 3772
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c14e342f9d5c51f53f587efa07ce1e5cea99a6e53e53a931575da4b535b0c14e",
+      "size": 1460
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "5a4735a7dc89af1697755d3222821c2f4814c9e0e35cb065cda9e5b50d7c1b60",
+      "size": 14499
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "0a215e1bfa7efd9cc15e6504d3292460240e8b2fb3b4e2b80608371d381dae6c",
+      "size": 7575
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7ead81456bd3209a1995c72acd12b86e2437d95f86e2df594023df2ae40d4332",
+      "size": 72042
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "4c924208f6e4825b39aff103166ce4b7dc97f85fc4609ea4bc1cf89a968c4fc8",
+      "size": 1669
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2025-12-30T14:03:07Z",
+  "vendor": "xiaomi"
+}

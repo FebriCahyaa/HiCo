@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_dalmore.git",
+  "codename": "dalmore",
+  "commit": "ba4a186d0b87f538b79f210d6c831ad755457310",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "12f0aa53e4d377e43ced8a04e0d610473d5a4c71dc582d8b7e0fafd48925691f",
+      "size": 689
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e6d9f5b0ec9507b8f3b2afa4d74587814ee419326090251821224d2ebc352eea",
+      "size": 637
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f0466c90647711c6327b7ef5edfa346f2bfb94b4fbf199af61aaa6bc19b30051",
+      "size": 54
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0245e482b689fbd4e1fec2a5d01f04034f4c63c9c54905c5b9288dccf18ac60d",
+      "size": 96
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_dalmore",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-15T16:38:45Z",
+  "vendor": "nvidia"
+}

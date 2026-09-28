@@ -1,0 +1,12 @@
+dontaudit thermal-engine self:capability dac_override;
+
+# /sys/class/kgsl
+allow thermal-engine sysfs:dir r_dir_perms;
+
+allow thermal-engine sysfs_devfreq:dir r_dir_perms;
+allow thermal-engine sysfs_devfreq:file rw_file_perms;
+allow thermal-engine sysfs_devfreq:lnk_file r_file_perms;
+
+allow thermal-engine sysfs_msm_subsys:dir r_dir_perms;
+allow thermal-engine sysfs_msm_subsys:file rw_file_perms;
+allow thermal-engine sysfs_msm_subsys:lnk_file r_file_perms;

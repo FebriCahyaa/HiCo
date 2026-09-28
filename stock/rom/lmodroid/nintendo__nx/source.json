@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nintendo_nx.git",
+  "codename": "nx",
+  "commit": "46c69b40493c4a4a88ba368747ec04fb9d07e630",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66a2a6310d79338d6c88256a6bdab68cbde9413b2a4f937d5b4af5f7731b5fec",
+      "size": 700
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "14dd940557d74e23689b1b5e2675e87508e70cb7e36fe3aeab7691be59cd55e7",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b7560684078cc2e01184a3e9d8cd082c529c0d302a50b4fcefee35d58f653faa",
+      "size": 3891
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d33868c54a2053192e5b8f4bcb9f6b31e3bebb11cc84202a7fad5ba7481acddd",
+      "size": 5809
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "29814164bdcc11be50ad9ba252ba951709464741cdd5fc38fafbb0bcff7a297f",
+      "size": 732
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "6bd44095ce84a2bb6740685063b5b1bf068aa46e8415226b8b20c1438334a2eb",
+      "size": 707
+    },
+    {
+      "path": "thermal/thermalhal.nx.xml",
+      "sha256": "00a5ba108f26f09feba3cfe7c997167d083e636828e26a510f637e424900e52c",
+      "size": 1388
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nintendo_nx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:17:54Z",
+  "vendor": "nintendo"
+}

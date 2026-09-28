@@ -1,0 +1,57 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_osprey.git",
+  "codename": "osprey",
+  "commit": "1c14f2defbe725b10a3053d43b3c7746b815b135",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4ecd5ed547fcc8b46ee068f10ff3c366a0dd966f712de70f62e7da33a25b1c02",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c83b5c10441439a43a8494e1443662cbd5fd9d00440f2716e1876e0081350305",
+      "size": 648
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8e8274929c98e8a341ed1406ec360e0961dc59b4f83f543f7bea10ec44972739",
+      "size": 1985
+    },
+    {
+      "path": "device.mk",
+      "sha256": "afda7bf537b9aa880dc8923519d130e786009ada16aff5b7e4b2930aef9b7c65",
+      "size": 1916
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a957ecb0b855204c6f0b74b3e2df2296f6de130fb39ea345230d7f71d1063c7f",
+      "size": 756
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "89cf154d1ae3895b309bcad53e09bcdf19ad91adc26129a2ff82919cf6539e26",
+      "size": 5169
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9b9ae89c9860a1570f741c7df601344cffef1e5c2b40754921d3bc6f7b95516b",
+      "size": 271
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "78deb32fc93b9df498ab0ee2d58d2d83d05a24834031b9cb52fee7baa1625353",
+      "size": 100
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_osprey",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-09-15T08:59:47Z",
+  "vendor": "motorola"
+}

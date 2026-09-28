@@ -1,0 +1,67 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_lavender.git",
+  "codename": "lavender",
+  "commit": "fd2a90e734a101fad046736970fa4dfb492d7d78",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "44cff361479bd8c374058c5b3c3db2d5b838ff8c8fdf5c6ae9029fe2c8beef09",
+      "size": 2573
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "432d248d228a4f0cbc69f5a5ddefb06bc4c2670edf606185e423af328967e6dc",
+      "size": 266
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "07a7663162894814dabf23603d7882ff44bc79b704171fed339c19b3348e6b31",
+      "size": 7141
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f11d627d22f70858a7cdc182faf413c134ea63629e5c5d878c4f35301622df37",
+      "size": 19353
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a4ddf69d0512145f20e240e6ae19c2081102b16e1ed9e7a470f2db8efaf2262d",
+      "size": 2214
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7c8b60a0e0be8b44182c596e650618296fe77303c3f1613f57b32e0189b88efe",
+      "size": 140082
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f8ad6af07e104e0e92c88d3e75efaf7f6f01101bfaa02cb75bab6f1d32b24104",
+      "size": 1001
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6d7410a02344e4b6cfc232eed7f4c62614244cd8e981850e81b5ef8ca13d07f9",
+      "size": 7852
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lavender",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-07-06T15:26:06Z",
+  "vendor": "xiaomi"
+}

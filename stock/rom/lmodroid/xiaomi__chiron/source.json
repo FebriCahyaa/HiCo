@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_chiron.git",
+  "codename": "chiron",
+  "commit": "edbc32007994673e3f11cb1c7ca692e310f4b181",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "846823b1f947ab45b0bb4246ef5aa492971ea0b94024acc6d01dd5fa1741cfdd",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7d56a8a0d7faff3000443dfddfed830da0ccacc51a3257134ef02ef9ef0da87e",
+      "size": 1181
+    },
+    {
+      "path": "device.mk",
+      "sha256": "155a25ebf6ca107e2bb0a0a7e447c8dc2c01d34cc28ce6ed006e85e5ee3182d7",
+      "size": 1610
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "dfb91b4030f4cd2b4b2cdef64cb036830e3207ce404dfe1f0f85939fc824bc87",
+      "size": 1289
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "560bf45a7cbc2d2c11576217f56c40d47b8321751346d7c5d6f91a9a93d525df",
+      "size": 7449
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f88e9c27f5c452f892c5710655b91476ba3cc373c23374d0ca2b4715bed7ada1",
+      "size": 76
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_chiron",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:46:51Z",
+  "vendor": "xiaomi"
+}

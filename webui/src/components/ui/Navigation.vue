@@ -57,9 +57,9 @@ const navItems = computed(() => [
     icon: HomeIcon,
   },
   {
-    name: 'Games',
-    path: '/games',
-    label: t('navigation.games'),
+    name: 'Scenarios',
+    path: '/scenarios',
+    label: t('navigation.scenarios'),
     icon: GamesIcon,
   },
   {

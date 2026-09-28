@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_i577.git",
+  "codename": "i577",
+  "commit": "f25bae8ce0700e5fd65da52bc3de2967aedd4226",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "728704cb2653a1bfdd381e30e81aa1019ddb4c9871748156916e2b0327b01055",
+      "size": 2099
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e4e1d78322c34da1fbc56d98cd4a66583942123c4e5385168d851305962456f1",
+      "size": 1199
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "936c6f0b3fd4e23378b39fab07fe22a6b4c8886f9a1a134b234a0ff5a8157c23",
+      "size": 1695
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "18892798f9d784d07ab1d330c13e9e3658fafeb87f16fc079ee51c1621f496b9",
+      "size": 28
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_i577",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:11:31Z",
+  "vendor": "samsung"
+}

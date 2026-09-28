@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts28velte.git",
+  "codename": "gts28velte",
+  "commit": "c9a6913067a05f0c2e9748a78154c9064540edbb",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6a381ff46f5112b11332c7275a346bd368cf2129d80a2cf87a015fd3f7351d13",
+      "size": 1066
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6401b453b61e1ac061c7aeaff80f7922d3fd445d466f1c489a50a74a35c96e8b",
+      "size": 652
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f69bb2790c3806ac459aec50b88f71a2af2923556760f4ed8c08cc806ad04059",
+      "size": 1052
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a1ffe3cf76cfad6787ce502afa2ea03e85f586cb5d2b1d8115e805196617a51",
+      "size": 1806
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9f268c7d5e6376cdb25bc80f7cde768fc5677065d0227b8fdbb5e46c6ef0f8fc",
+      "size": 759
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ea5eb05caaf59f8223395b3acdca6ee1dd2eefb2e36d677588faeb0dabe8d02f",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8a9d84802aaca96ef3640b8cd79abf228fbd2d9ce59a74a5ec6c6c54dfabde49",
+      "size": 921
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c77290d513f3d6f984a47b4dfce9a3b086e1606d18cff7565e5e23e9183cdb9d",
+      "size": 603
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gts28velte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-11-06T04:57:58Z",
+  "vendor": "samsung"
+}

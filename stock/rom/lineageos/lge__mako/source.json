@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_mako.git",
+  "codename": "mako",
+  "commit": "5b211791f83b63a22c0d6055d256de71b484345b",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8b4801968a9af1d6758442e3170e9ae3e438bc5ccd9f8b32ee0258915cfc4b39",
+      "size": 1153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "652f9f16a639657bb0628474c8798097e889e389db95097979a3d4dd05327862",
+      "size": 4514
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fac19952a67dde2658940f12e3307f8664e0b714e0bad42443d315b3102df81f",
+      "size": 10826
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "060d77a6c2cf6358746b35d60a6f267aa8f7d87321affa3b6c403d8b5567b0c6",
+      "size": 1750
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d7b33638419ccaf17cdcee355e3aad994bb001b489101a5d9eae8ddd4489e7a3",
+      "size": 90
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f1e77776ad42943fa6d9bb4c2c37e3a93ff0e5e8a9a8f65a32548f5451e8a9da",
+      "size": 804
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_mako",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:57Z",
+  "vendor": "lge"
+}

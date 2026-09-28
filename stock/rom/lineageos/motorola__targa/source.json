@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_targa.git",
+  "codename": "targa",
+  "commit": "c069a60ec5791f3f0f1a013377190571bab0cf20",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d270c02faf685b342eaf935f6daf2ee4a02c180c4a884f2072fb4947b252fbcc",
+      "size": 979
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "84880506a4bad05f556e5536f72a749dafb1fb7e44ef0d9587e149ce44edb97b",
+      "size": 641
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7b3a5e7ad6653054b3790ff717524a5dfacfd32757b2d7c0c3491dbbce839725",
+      "size": 1853
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4556dc914b27562c8ee48f8faa764a32c660a4e1ac2d8484aa1974aec6ec3f45",
+      "size": 1751
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "adce7e0eca7da39855e796a2355a283c4f58f83cd3be30ad487ca89a3c85caf9",
+      "size": 92
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "338cc3b60552ad121f65802444139c6149fc7175cf1d79a8bd7eaaef8a56030c",
+      "size": 238
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b72738dd9b0b796dae107997bd9ef0be66328727aec3ea97c3d1682edf903359",
+      "size": 6345
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_targa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:41Z",
+  "vendor": "motorola"
+}

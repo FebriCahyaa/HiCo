@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_mimmi.git",
+  "codename": "mimmi",
+  "commit": "7888d2ee93be43d42128717b76397d45736f605a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "28c976c6ffa0e0e832e99c7c165b8d121a5cd4e1922ff34cdddad71324f2ec11",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ba9c225b40055a5b31f8fd27dd08650d4cd179c9bb5b44813abc7a9abced228d",
+      "size": 1060
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "01fef6ccc835e3077b81d754d168c464fc0cbb58ffd0ec73a49afba8776fc454",
+      "size": 237
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ab94aa42e25eb689c31acf5a94197bc53dbe5c1bed57e351adf775f65b574034",
+      "size": 330
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "091f5a1b086385e6ae37e5475f8f4a9a30b35ccba17c386ade8444f6d392a331",
+      "size": 2121
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_mimmi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:30Z",
+  "vendor": "semc"
+}

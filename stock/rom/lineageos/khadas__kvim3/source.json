@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_khadas_kvim3.git",
+  "codename": "kvim3",
+  "commit": "fcb464f3abf4f023d901483dbb3a03ea106d38ed",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3e2d7756b7779469301877e7c145d91f92e93b5b53fd1491dc59b8ee33f342a1",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "19ab02a4dc622515bfa3d3b4e5f2643530a0cfdb4d42961dcd708782721636a3",
+      "size": 1026
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1f842fd36b49efcd19abe49b61c241f6b3936f6f259c6430f05d644c18dcba98",
+      "size": 1020
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "076aab2ac4e70bd81dd775d2c70574ccaefe75a2131e79395bfd52741e42e258",
+      "size": 931
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "42d79c9ac4c99e28e023f33ee1977b13979e120413b5e42d09cad784fd12bc1d",
+      "size": 483
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "423539009c619d72bde0711373adb6ae41d45e2e3649f36a542f00f9e45ef6a3",
+      "size": 214
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e13a4d9127042c451143819d643a6e7a38c1e69829d567e4f4634e5a87f76193",
+      "size": 328
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_khadas_kvim3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-21T21:39:40Z",
+  "vendor": "khadas"
+}

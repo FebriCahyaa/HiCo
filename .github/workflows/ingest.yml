@@ -1,13 +1,12 @@
 name: HiCo Thermal Ingest (delta only)
 
-# This workflow does NOT bulk-download data. The initial dataset was seeded
-# from localhost with:
+# The dataset in stock/ is seeded once from a developer machine:
 #     python3 tools/ingest/list_device_repos.py
-#     python3 tools/ingest/sparse_fetch.py --all --jobs 8
-# and committed to stock/manifest/ and stock/rom/. From then on, this
-# workflow only fetches deltas: it walks the manifests, checks upstream
-# `pushed_at` against the sha we already stored, and re-fetches ONLY the
-# devices that moved.
+#     python3 tools/ingest/sparse_fetch.py --all --jobs 24
+# and committed. This workflow never bulk-downloads: it re-lists the sources
+# (metadata only), asks upstream which repositories actually moved
+# (tools/ingest/diff_manifests.py: pushed_at first, then one `git ls-remote`
+# per candidate, no clone), fetches only those, and opens one pull request.
 
 on:
   workflow_dispatch:
@@ -17,138 +16,166 @@ on:
         required: false
         default: ""
       force:
-        description: "refetch every device even if unchanged"
+        description: "refetch every repository even if unchanged"
         type: boolean
         default: false
   schedule:
-    - cron: "0 3 * * 0"   # weekly, Sunday 03:00 UTC
+    - cron: "17 3 * * 0" # weekly, Sunday 03:17 UTC
 
 concurrency:
-  group: ingest-${{ github.ref }}
+  group: ingest
   cancel-in-progress: false
 
 permissions:
   contents: write
   pull-requests: write
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 jobs:
   discover:
-    name: Discover changed devices
+    name: Discover changed repositories
     runs-on: ubuntu-latest
     outputs:
-      changed_json: ${{ steps.diff.outputs.changed_json }}
+      sources: ${{ steps.diff.outputs.sources }}
       device_count: ${{ steps.diff.outputs.device_count }}
     steps:
       - uses: actions/checkout@v6
-        with: { fetch-depth: 1 }
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with: { python-version: "3.11" }
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
 
-      - name: Verify sources.yaml
-        run: python3 tools/verify/rom_sources.py --sources stock/sources.yaml
-        env: { GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
-
-      - name: Re-enumerate metadata (fast, API-only)
-        run: python3 tools/ingest/list_device_repos.py
-        env: { GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
-
-      - name: Diff against committed manifests
-        id: diff
+      - name: Verify sources.yaml (informational)
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
-          python3 tools/ingest/diff_manifests.py \
-            --only "${{ inputs.only }}" \
-            --force "${{ inputs.force }}" \
-            --out "$RUNNER_TEMP/changed.json"
-          echo "changed_json=$RUNNER_TEMP/changed.json" >> "$GITHUB_OUTPUT"
-          echo "device_count=$(jq '.device_count' "$RUNNER_TEMP/changed.json")" >> "$GITHUB_OUTPUT"
+          python3 tools/verify/rom_sources.py --sources stock/sources.yaml \
+            || echo "::warning::A source failed verification; its committed manifest is kept (see log)."
 
-      - name: Upload change set
+      - name: Re-list repositories (metadata only)
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", ONLY: "${{ inputs.only }}" }
+        run: python3 tools/ingest/list_device_repos.py --only "$ONLY"
+
+      - name: Ask upstream what moved
+        id: diff
+        env: { ONLY: "${{ inputs.only }}", FORCE: "${{ inputs.force }}" }
+        run: |
+          python3 tools/ingest/diff_manifests.py --only "$ONLY" --force "${FORCE:-false}" \
+            --out stock/manifest/changed.json
+          echo "sources=$(jq -c '.sources' stock/manifest/changed.json)" >> "$GITHUB_OUTPUT"
+          echo "device_count=$(jq '.device_count' stock/manifest/changed.json)" >> "$GITHUB_OUTPUT"
+          jq -r '"\(.device_count) repositories to fetch from \(.sources | join(", "))"' \
+            stock/manifest/changed.json >> "$GITHUB_STEP_SUMMARY"
+
+      # The refreshed manifests and the change set travel to the other jobs:
+      # a job that re-read the committed manifests would fetch stale branches.
+      - name: Upload manifests and change set
         uses: actions/upload-artifact@v6
         with:
-          name: changed-devices
-          path: ${{ steps.diff.outputs.changed_json }}
+          name: ingest-manifests
+          path: stock/manifest/
+          retention-days: 7
 
   fetch:
-    name: Sparse-fetch delta
+    name: Fetch ${{ matrix.source }}
     needs: discover
-    if: fromJson(needs.discover.outputs.device_count) > 0
+    if: needs.discover.outputs.device_count != '0' && needs.discover.outputs.device_count != ''
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       max-parallel: 8
       matrix:
-        source: [lineageos, pixelos, crdroid, derpfest, evolutionx, arrowos, aospa, dotos, voltageos, lmodroid, awakenos, alphadroid, spark, protonaosp]
+        # Only the sources that have work, straight from the change set:
+        # a source added to sources.yaml needs no workflow edit.
+        source: ${{ fromJson(needs.discover.outputs.sources) }}
     steps:
       - uses: actions/checkout@v6
-        with: { fetch-depth: 1 }
 
       - uses: actions/setup-python@v6
-        with: { python-version: "3.11" }
+        with: { python-version: "3.12" }
 
       - uses: actions/download-artifact@v6
         with:
-          name: changed-devices
-          path: ${{ runner.temp }}
+          name: ingest-manifests
+          path: stock/manifest/
 
-      - name: Fetch only changed devices for this source
+      - name: Fetch changed repositories
+        env: { SOURCE: "${{ matrix.source }}" }
         run: |
-          python3 tools/ingest/sparse_fetch.py \
-            --source ${{ matrix.source }} \
-            --only-changed "$RUNNER_TEMP/changed.json" \
-            --jobs 4
+          # Exit 2 means some repositories failed; they are recorded in the state
+          # and retried next run. The successful ones must still be committed.
+          python3 tools/ingest/sparse_fetch.py --source "$SOURCE" \
+            --only-changed stock/manifest/changed.json --jobs 12 --stage "$RUNNER_TEMP/fetched" \
+            || echo "::warning::Some $SOURCE repositories could not be fetched (retried next run)."
 
-      - name: Upload per-source artifact
+      # Fixed layout (<rom|blobs>/<source>/<device>/, manifest/<source>.state.json),
+      # only this run's repositories: tools/ingest/merge_fetch.py reads it back.
+      - name: Upload fetched data
         uses: actions/upload-artifact@v6
         with:
           name: fetched-${{ matrix.source }}
-          path: stock/rom/${{ matrix.source }}/
-          if-no-files-found: ignore
+          path: ${{ runner.temp }}/fetched/
+          if-no-files-found: error
+          retention-days: 7
 
   commit:
     name: Commit delta and open PR
-    needs: fetch
-    if: always() && needs.discover.outputs.device_count != '0'
+    needs: [discover, fetch]
+    if: >-
+      always() && needs.discover.result == 'success' &&
+      needs.discover.outputs.device_count != '0' && needs.fetch.result != 'cancelled'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-        with: { fetch-depth: 0 }
+
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
 
       - uses: actions/download-artifact@v6
         with:
+          name: ingest-manifests
+          path: stock/manifest/
+
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: fetched-*
           path: ${{ runner.temp }}/artifacts
 
-      - name: Copy artifacts into stock/rom/
+      - name: Merge fetched repositories into stock/
         run: |
-          for d in "$RUNNER_TEMP"/artifacts/fetched-*/; do
-            slug=$(basename "$d" | sed 's/^fetched-//')
-            mkdir -p "stock/rom/$slug"
-            rsync -a "$d/" "stock/rom/$slug/"
-          done
+          python3 tools/ingest/merge_fetch.py --changed stock/manifest/changed.json \
+            --artifacts "$RUNNER_TEMP/artifacts"
+          rm stock/manifest/changed.json
 
-      - name: Verify determinism (parsers, evidence audit)
+      - name: Tests
         run: |
+          python3 tests/ingest_test.py
           python3 tests/hico_evidence_parsers_test.py
           python3 tests/hico_evidence_audit_test.py
           python3 tests/hico_dependency_resolver_test.py
 
-      - name: Open PR with delta
+      - name: Open pull request
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
-          date_tag=$(date -u +%Y-%m-%d)
-          branch="stock/ingest-$date_tag"
-          git config user.name  "hico-ingest-bot"
-          git config user.email "hico-ingest-bot@users.noreply.github.com"
-          git checkout -B "$branch"
-          git add stock/manifest stock/rom
+          set -euo pipefail
+          git add stock/manifest stock/rom stock/blobs
           if git diff --cached --quiet; then
-            echo "no delta to commit"
+            echo "Nothing moved upstream." >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          git commit -m "ingest($date_tag): fetch delta from upstream device trees"
-          git push -u origin "$branch" --force-with-lease
-          gh pr create --title "Stock ingest delta — $date_tag" \
-            --body "Automated delta from ingest.yml. Only changed devices refetched." \
-            --base main --head "$branch" --label zone:stock || true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          stamp="$(date -u +%Y-%m-%d)-run${GITHUB_RUN_NUMBER}"
+          branch="stock/ingest-$stamp"
+          git config user.name "hico-ingest-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          summary="$(git diff --cached --stat | tail -n 1)"
+          git commit -q -m "ingest($stamp): fetch delta from upstream" -m "$summary"
+          git push -u origin "$branch"
+          gh label create "zone:stock" --color 5319e7 --description "stock/ ingest" --force >/dev/null 2>&1 || true
+          if ! gh pr create --base "${{ github.event.repository.default_branch }}" --head "$branch" \
+              --title "Stock ingest delta — $stamp" --label "zone:stock" \
+              --body "Automated delta from \`ingest.yml\`: only repositories whose upstream branch moved were refetched. $summary"; then
+            compare="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/${{ github.event.repository.default_branch }}...$branch?expand=1"
+            echo "::warning::Could not open the pull request (Settings → Actions → General → allow GitHub Actions to create pull requests). Open it here: $compare"
+            echo "Delta pushed to \`$branch\`: [open the pull request]($compare)" >> "$GITHUB_STEP_SUMMARY"
+          fi

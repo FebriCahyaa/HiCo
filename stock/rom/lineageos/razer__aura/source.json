@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_razer_aura.git",
+  "codename": "aura",
+  "commit": "bd1a3270ba491fcdaad48134406fd855dba57692",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6854b4a6d5aae4c6c40f72b679abd38cce20a3886ae748ac3969431e44bba460",
+      "size": 947
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e56dda6a4bda51f3f1e9bf941c47be4b64c66f35dce3b914e9d5e30b2607eba6",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0452c8c5b3f528bb8f0829cf126c4755739466395aaf5b26f3bb8292a98e7a99",
+      "size": 4269
+    },
+    {
+      "path": "device.mk",
+      "sha256": "96a9ce75ae6cd52332f50e3569474a94fe121fc47239e5de5e62898ac1a557a7",
+      "size": 16627
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ae73d3409dc6da0c0bf21df57ecd59e0b2e80209c23f1c3887d7991b594397f0",
+      "size": 5808
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "26e205f73e8c64c0df5006934fb67959da8d3efbc75fd45f59b5688fc678f732",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6aca0267e85621caae5ef1b477e2d4700300a7e7bc80c8655030e58cac4ce833",
+      "size": 56843
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "bca99730676f2d4d947ff89b0c26ff5d54f9a3265a2a0210e218f121fd8a496b",
+      "size": 91
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1c3348a87591005a0bf1b751af993f11b366bbd6ed275e1a47095a4ed9d0f7af",
+      "size": 4717
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_razer_aura",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-03T05:19:46Z",
+  "vendor": "razer"
+}

@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_redfin.git",
+  "codename": "redfin",
+  "commit": "30c82c83bc03b0dfc83dd6d6a041f51fc35ebfab",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal.mps",
+      "sha256": "23e395dbba785d7f1e9455ef5c4c5ecfbe964b4a3f9552f257b358d2bb4f6100",
+      "size": 8424
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_redfin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "redfin"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

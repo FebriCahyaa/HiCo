@@ -1,0 +1,112 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_shusky.git",
+  "codename": "shusky",
+  "commit": "63742efe9ed163dbace7bbf3a5bec6aacee23bab",
+  "file_count": 19,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "25e20dcd0fe50312532c669c96d39cbde78db0d41c95d52a05249542e7646344",
+      "size": 993
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0d82415398ad85b6ae052b2277d87abb3732245d1fb3b142a256019832d063ac",
+      "size": 1227
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "07a0a49f4f2280f4d11da9331542a48b1899c283329ad799d8635add7e84cfc5",
+      "size": 1378
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "84690bac86b18370aecf2f758896dd27ee6020ba5f9146a85fbb84bd2e5910e8",
+      "size": 132
+    },
+    {
+      "path": "device-husky.mk",
+      "sha256": "2cf4ddfab58c51e8198361dd62f10939e42295ee8e31716b996b1ebc16deb49f",
+      "size": 18322
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "c0b1a0d0b5e32f13de0f7526d2ce576589b51c07227593a6f52bc2a3fff3017e",
+      "size": 6026
+    },
+    {
+      "path": "device-ripcurrent.mk",
+      "sha256": "aba16548458796c6dd08d0d28d0a682f62e2706cca16110143d6139180d8a6ce",
+      "size": 10640
+    },
+    {
+      "path": "device-shiba.mk",
+      "sha256": "bb88cd20bafaedb5aac9734f1b7e853af98c1ed95b79ab140777571d8083605a",
+      "size": 17539
+    },
+    {
+      "path": "device-shusky-common.mk",
+      "sha256": "0604c6a42fd92152c33efc6412d42f86d6cef6d534885e9c7c9dfc12687f7d37",
+      "size": 1316
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c95437aa9dbf57d204a68f9468a7f6d84cd617732269eb67e1aaabd3aa6ecdbe",
+      "size": 236
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "040fc468f1458f62071b504df411a24d3f5c24ed84d76207b526f395e7f28a2f",
+      "size": 1513
+    },
+    {
+      "path": "thermal/thermal_config_test.cpp",
+      "sha256": "83a42b63ddf70f75bc6777feb86fe6b88ef4ab2f9be256ecece5fd2e2726bb14",
+      "size": 1943
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_husky.json",
+      "sha256": "770f5a9ccaafd50acfb1d8aa6cfc800d10c59a04071722ea02a9723b594f5405",
+      "size": 13676
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_ripcurrent.json",
+      "sha256": "f9458d2ce994489d519310614da6b5d39b6a9de6594a3f48f3db60b6f945909f",
+      "size": 375
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_shiba.json",
+      "sha256": "72c8a2863c90afcecafa06f1666a6e92f315666bf6c7c030a2c44af9c1d76535",
+      "size": 15262
+    },
+    {
+      "path": "thermal/thermal_info_config_husky.json",
+      "sha256": "3b7e4ec1001daa538a00ac32c008d0db6b715af2c6fc08f4deb19ee8e6dc51df",
+      "size": 53580
+    },
+    {
+      "path": "thermal/thermal_info_config_ripcurrent.json",
+      "sha256": "ce4f36d7ae70aff596fe0d0d8fbe0d9b4e1962096c5e34304d0863116f449f4f",
+      "size": 8273
+    },
+    {
+      "path": "thermal/thermal_info_config_shiba.json",
+      "sha256": "2d78fb602808068809c778575202f517be079c75e2a2b67b66052bf1ebbbb4ea",
+      "size": 54752
+    },
+    {
+      "path": "thermal/thermal_info_config_test.h",
+      "sha256": "33cc1a77138d075ce65169ff99d8567df984027de5b128ec7ea9ba939bdf1ac2",
+      "size": 1844
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_shusky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-08-01T18:07:35Z",
+  "vendor": "google"
+}

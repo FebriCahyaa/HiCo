@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_mb886.git",
+  "codename": "mb886",
+  "commit": "5dba71e7d907b47027e2f03ec508c64ae4efba07",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "81ac9ad9f67def5fa65218710c2e859c6123eccda7f036c4ceb1952bb17025cb",
+      "size": 644
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "89167a9e7b5da28fcadaf10039a8d9b922a1800f263b798c75800f77f8637c3b",
+      "size": 1307
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "48c1df1598d2f67a3697a39ce2d2d84a319967293b090da12f71f16db15a6919",
+      "size": 94
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cdda784aaebf42e7ebeb54d9e539d77e2b9c9925c0c3f03d04b51812c120dcf7",
+      "size": 325
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "44ae0a1bcfc527e471eb5c6c0001ea4ffa3d492b1f5d619e8a9ae661bc66c25a",
+      "size": 35
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_mb886",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:01:46Z",
+  "vendor": "motorola"
+}

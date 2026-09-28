@@ -1,0 +1,52 @@
+{
+  "branch": "alpha-16.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_waffle.git",
+  "codename": "waffle",
+  "commit": "8205199b26769c04801fcf9b2deffde2bae87653",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "be2865c93fc68f8b0289be9bf6f46de1ca312ddea6992441a676b8d44ae42a53",
+      "size": 463
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e0d6fbac59cab81c851da90ab891af133d2a354a53acc53858be90a019a0fbd1",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4c531c73ff5d90c55274d6592675211473c1332bfec9c6a228bb128821a20e65",
+      "size": 836
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ecfdd843b178656d534a258fcdf792513f908bf316c96f2889d1f1d815bbceac",
+      "size": 2756
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2785b7a5375de2900fae718d307671d2b5ab36bd5d9c705c15c28a0a9c8174c1",
+      "size": 4323
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f3a0c0bcecfe54a60c90e42dad7793771f77143775c677760de70ef0542cd04",
+      "size": 106315
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ac4be00409e7a7df90a3e2ca4a3c2da2037090938c7caac7f0bbd565522d396c",
+      "size": 242
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_waffle",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-10-26T16:56:53Z",
+  "vendor": "oneplus"
+}

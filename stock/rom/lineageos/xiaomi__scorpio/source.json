@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_scorpio.git",
+  "codename": "scorpio",
+  "commit": "59b81014705fb52c352d61678301e30b84b18861",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cd6783f9952ddfbb6b29aac1c6dc4f5fb0967b1acb19cb02df7f6eb91f097d1b",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "caf9b6aaf8902d0bc7d4babc8966ca9d046a515371dc1b6493a352eb63a5f445",
+      "size": 1071
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "2137c7bc6f6cea2d708406163f4063788c63f5997b8b0a7bc9be47317c3d3db1",
+      "size": 3061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "064b444c0098a43888fd413335d5668ceb917476986580dadab49739690dd620",
+      "size": 2763
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "588ebe73c881c07d217c2e619faebe6ae7214e0bcae0aac1141e9a641aed1f8b",
+      "size": 472
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d776a65da30b8b62693a2d536cbd71bce2b3da6e8a2f50ef279f769b8a4b5424",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5cf4d97bbc99c94cc212411580b14d4f6db0f2bde1fa4e60cbbb3b7cc8711714",
+      "size": 10697
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a4ab14208bd5e5c6dc7c9d13d6ee1a81789c719a0a89aad2dad6d96071c92d4c",
+      "size": 236
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_scorpio",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-01-12T20:54:14Z",
+  "vendor": "xiaomi"
+}

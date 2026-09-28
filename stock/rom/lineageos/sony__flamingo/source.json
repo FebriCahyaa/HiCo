@@ -1,0 +1,57 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_flamingo.git",
+  "codename": "flamingo",
+  "commit": "7b2a8c645e637d09bba6f1f197615f733d96cc40",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "84da2936667ba83509f79ef3adaf691783b6415826ecb7193f067700660c7774",
+      "size": 401
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "94b47e636a3ff010dca6b5069e362c95143b3725cd5055f0b0409ab262815807",
+      "size": 57
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "424ef0c4106cf01c742adebff353e7a16d522c265c6268fc59e51469e5f6b6f6",
+      "size": 1362
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d56ef5dd39340407fecd781a4822c6278148ebc142815b7a7ec04ab4d6879be6",
+      "size": 129
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "88c5ed4a2e30443972d4d0e9d783e58ceda33ca83a0e67ef37e7db44fbedfa5c",
+      "size": 14192
+    },
+    {
+      "path": "rootdir/system/etc/thermal-engine-8226.conf",
+      "sha256": "55c534597036d5f9828cf8213af89008524cbfeb61c2afff2527de3310b7d8de",
+      "size": 393
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dc5a1f8dde2c887341d3cb44cff6d0e26a09f5559a7b941598999e530882e8bf",
+      "size": 3150
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "825fa03ff1bd91b254f61305d418b405570bff0f1d616a9936e0aba2a898d5f4",
+      "size": 32
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_flamingo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:52:58Z",
+  "vendor": "sony"
+}

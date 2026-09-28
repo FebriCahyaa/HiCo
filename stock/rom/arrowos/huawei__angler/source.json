@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_huawei_angler.git",
+  "codename": "angler",
+  "commit": "252e6eafe5792563c322092a4cdae5bf05b1bbd4",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "32d99b21a467ed7bb2cc4a3ca2bbf4ed92e825c7477e7907b29645bfa5b3424c",
+      "size": 1148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5d67eb73965ac563122d61562605957fba602bc8a4ccda049263cfce6a679c1a",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e4e762e9ec98583ab5f9781893c3087f7545737a97c8664c669452bb99a17d2e",
+      "size": 6412
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b4412134643858a5ad06bf90698e918b0cf7ed11d44f79489f55ba9f8a3fc3ce",
+      "size": 24423
+    },
+    {
+      "path": "sepolicy/vendor/thermald.te",
+      "sha256": "9a919e2cf5b8942d5aa8c08adb73227c5ac4c104417f874ce2c03e988bf84182",
+      "size": 1031
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "622a227b212007e6cb85a05ee788f7cfd044746131e21a30e856015d8ce48183",
+      "size": 858
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "20e61dec8273267f6285db9110f75e82a4518860a94d7c2633433c81b8c2f127",
+      "size": 8808
+    },
+    {
+      "path": "thermal-engine-angler.conf",
+      "sha256": "d64367fc80ab0d49711529297c3c2789ef8fb8a0a0daf8323a2046b9ac709c61",
+      "size": 6929
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_angler",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-08-07T15:12:14Z",
+  "vendor": "huawei"
+}

@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_merlinx.git",
+  "codename": "merlinx",
+  "commit": "fcb73d17c2f18e2c86a6dcb8a85d9836dad43841",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "0b9fd475cdd450b14d08121dba08cd889fed373a84d1623344468fa88fdfe02f",
+      "size": 3056
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "20f0835da288cd21ead377fe9ce8da17e16f9df1f0a172b3da4e505eaef87291",
+      "size": 2992
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "75bf38052d43ebd536362dfa71aa24f44725040c7f08a4b7e64093a22876cebc",
+      "size": 2256
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_merlinx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "merlinx"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

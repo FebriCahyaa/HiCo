@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_advent_vega.git",
+  "codename": "vega",
+  "commit": "77deae38535bf1789fafd021a2a93f43ee403a87",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c67252e28f6230b8a57b65faba151d949a2c98cd14a14c23edbe86547dea0264",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a9142e2f1dac7c5e78cf7c15b1cdade53df2a0beeec61ec4470f08af7718aa7",
+      "size": 2622
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "96c84e37d154c6177ea022a0f0d448926dcdf40c5ff171c570a93b840212eace",
+      "size": 11719
+    },
+    {
+      "path": "system.prop",
+      "sha256": "245e6bc730b9f166aa3db11169ca355ec19e23397c4dec9d134b97400c0669db",
+      "size": 49
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "33b197a8cc607f62371484e8a3009934fb8b4fa30a495e61339ba7f311e3c9a7",
+      "size": 36
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_advent_vega",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:41Z",
+  "vendor": "advent"
+}

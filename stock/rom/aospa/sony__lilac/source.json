@@ -1,0 +1,42 @@
+{
+  "branch": "oreo-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_lilac.git",
+  "codename": "lilac",
+  "commit": "0da81a0a88f370b242f59ae2e3b550881bd456e0",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2d9289d859435f8767be32d4a8804bab3a9e9da5fe2c380000aaa5b10db8d9e0",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3849ebb9aa94073692f39e5c982f66022132c74e2fcefea5227b62305b98bc62",
+      "size": 1709
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a72bcd85f966372b209de9c6fbec76be31919640f3c084d142161a9b2ce832d7",
+      "size": 4188
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1da13f86ed0535e8f793d6b7579a878a581eb36922a5a5daab0583cc2781b016",
+      "size": 669
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_lilac",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-01-06T17:42:38Z",
+  "vendor": "sony"
+}

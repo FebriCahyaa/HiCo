@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_bathena.git",
+  "codename": "bathena",
+  "commit": "bafc54ff1d1eadcd78c746622fdcd359597ac78d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8fd3c80403614e756fc1c77a1b64398ef1a0a2f2fd8fefe4146879bc71f1ccf1",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d8ff15634ede40ffaf2b82c8fa62feb74633e999a4d58bac2c9c18c182bb650a",
+      "size": 2442
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c1b356fd034e125073ea96f7728d8e16a05a4cb38c3a1f78c61b3be69e763955",
+      "size": 3486
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "292259cf18bd030ecc8724184a533d3933608b53f55961e0eb752905feb6fa5c",
+      "size": 1832
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "580910fe4d01f21a43a85a94acfef9f34d6755cfd53e9668cd7a8199457ab13a",
+      "size": 11394
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3520b95ef2711e4111a20fb0cb1e06cdf7d14b2450c3d36fb99c1520b1c4dab2",
+      "size": 511
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_bathena",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:04Z",
+  "vendor": "motorola"
+}

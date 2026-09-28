@@ -1,0 +1,52 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_asus_X00TD.git",
+  "codename": "x00td",
+  "commit": "b5b8a0789c29aa82a76a047c4d213dbf73b4081a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a8703032437404c33eed6da752a109191e7f2310af0d49397e5eea2cc2dba46a",
+      "size": 304
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bcfaa65b4a9f3b666b86dab695ed2bba981b2847e1a63f699cccfad9f46ef03e",
+      "size": 224
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d365b792bce13c64365eeff9eeb5332a2e5fc40e7f7bcf0f04b7a0093f49beb2",
+      "size": 565
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "915bf84345fca8aa8316ebaf084b06988afa4663e043b7cbb8f162c04216d820",
+      "size": 5260
+    },
+    {
+      "path": "device.mk",
+      "sha256": "482dc50fe57b1d53c9b215b0afdf997ba9f88434dfa2d722d80c5c17da59c656",
+      "size": 654
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0b64ace90b7a3d3a32241822dbb2739388558c02425d9d07abe907885b3eaf6d",
+      "size": 1123
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4336e75864485ba527f32125733e5c7059799444b03313025c78145b103f8b3f",
+      "size": 34362
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_X00TD",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-04-16T20:16:29Z",
+  "vendor": "asus"
+}

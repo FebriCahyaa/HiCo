@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_nokia_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "766b7f76aa51949fed143f6a7ae6a37b231f449a",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
+      "size": 595
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "edcd27d053357bee1dc47ac13b9732978c1d7a0e6dc3764f7709db55d9399abd",
+      "size": 4394
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_nokia_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "nb1"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "nokia"
+}

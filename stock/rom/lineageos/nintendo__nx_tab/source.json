@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_nintendo_nx_tab.git",
+  "codename": "nx_tab",
+  "commit": "cdf202c74108a8f91020770e8a6cb11ccd55fbca",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f21b6f5936a708088c4c018bbabce3378e02ccd2553979a13f914f05c52dac62",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8436cc28a08e543d43869c249b1c520a3063faea8bfa85b85096ae5cf9e83356",
+      "size": 130
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b51940330aae286f3d8eea6799fac3d64cb99e9af6e779d153dd8d3ae0ecba80",
+      "size": 142
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bc6439eb522db6119354284133b8dea194d0807c584801d15438093937f8fdb9",
+      "size": 242
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4d99db077422c024e58cd745ae30b5c6abbb0ae96af73644b6f0d4f9adbca4ad",
+      "size": 100
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nintendo_nx_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-09-18T20:54:47Z",
+  "vendor": "nintendo"
+}

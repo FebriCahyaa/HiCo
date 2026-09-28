@@ -1,0 +1,92 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_vendor_xiaomi_mojito.git",
+  "codename": "mojito",
+  "commit": "288a4d74a618567b18e549c3eed4edfe5133aa1b",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "9599696a73eb23c26a26762a4a444d9fec3dcd5f2f57e2c039c2dd526fc72dad",
+      "size": 603
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "fed15e1fc65201b8a7d8a722f2bf1c63e7be8cc37e3fa869a7dcf720e0fc410b",
+      "size": 13797
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "1e6f2e2079e60231a009658840c84f43cc35e543e2f10942a05e8e839b8b0344",
+      "size": 1168
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "e4b6bba1a7a62e57a5339e43e66090ad27ccabab16e462efc7f471664a1b47a0",
+      "size": 1952
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "4acfaa1f8e47b857ba132af7476c329702b8c719d46cdfe6a2cdc3101556ffdd",
+      "size": 2064
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera2.conf",
+      "sha256": "c827c23aa16f4013a374f7ca947514651c6bd2e7b07576c236cf0f151606f16a",
+      "size": 1920
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "aeeeb87fad0dd4dbdd9d2e4a2c49cc0334b28a9a1b3aac2af82f060f0767536e",
+      "size": 363
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "f5edf3cb84428ab9b13b59c1ba3ebdafdfd537b41564da2d064254ca3b99195f",
+      "size": 352
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "5601d96f58107914be1b6bc8492d34570e602766b2f1c2b6b1bab80c1572abe1",
+      "size": 1344
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "de6cc2a21f1a96b9c6056701865480d2529bd9f40f31816dbb0ca4f3de4952ca",
+      "size": 784
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "4dd434d55fddd4bf2832edfef6570c2c71f1980f634f11d5d1f39620d040b7a9",
+      "size": 800
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "a14891fbc6a92a9fe6e3effc4b766d19f7f21638a109109bd57395f40d94b56e",
+      "size": 720
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "0e5b039842c80805726669bf44e0776f59401fd57644fd053e3b57ef9949720d",
+      "size": 2048
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "d1cc3e0bc9ddcc0e1bd2f4978a67cd6438cb8fb9fbf025447ec7e5461e0a78f5",
+      "size": 384
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_mojito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

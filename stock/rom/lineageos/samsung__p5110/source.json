@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_p5110.git",
+  "codename": "p5110",
+  "commit": "a263383bb937a1c299bf222babdac099e8360c18",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2f6fb23e62de052d5032b2290a0c5ab93c96a820a092cce79af1a7d4be1a880b",
+      "size": 1185
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "82c159aa874e3b37f0e5b782b5a17903a2059db210d48410537f4bd0289e5406",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2df5fb3f7144752525cf396b9acb533761229db8182bda0e3207caedf3b7d2f5",
+      "size": 973
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7d7cf5338114b3ad879451909bd13bba8c278ab35652e2191650b2353f541ee1",
+      "size": 1438
+    },
+    {
+      "path": "system.prop",
+      "sha256": "94181d721677355597e73aeca03be568759752f4fd424ac03063a7439c2a222f",
+      "size": 149
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_p5110",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:16Z",
+  "vendor": "samsung"
+}

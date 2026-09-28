@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_universal9611-common.git",
+  "codename": "universal9611",
+  "commit": "dbc7da265e5e39643b09bc0fa631955a600ad698",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6101e5296d8663d9657d94497d41f5f2fb3a5fc6c9d65158123572fd6c3303d6",
+      "size": 118
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "866957f367aa11c9a3059172bd720999f72b9bf0c8a7677a37ed1cec14f1b947",
+      "size": 6380
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "68a6e416c32d85839a57b0c726e2702248f145be0dbe4eed115534eb44ad0349",
+      "size": 3075
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d4697a24824f27d1b5dc74d68cf5a627b16430e76f53176166d585854adab79c",
+      "size": 1701
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e406ba428ea1749871b3046e89bd860aa13a316fdc9b9ec503b4043d5b2ae364",
+      "size": 5178
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "cb16a8f772e001ce3622652667e562d77615fb447d2836502067f7d2ce0042b5",
+      "size": 2564
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_universal9611-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-03-09T22:00:26Z",
+  "vendor": "samsung"
+}

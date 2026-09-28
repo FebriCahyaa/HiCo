@@ -7,11 +7,28 @@ Read-only for tools. See `docs/ARCHITECTURE.md` for the full contract.
 - `oem/<vendor>/<codename>/` — OEM firmware dumps (Xiaomi/MIUI, Samsung/One UI,
   OnePlus/OxygenOS, OPPO/ColorOS, Realme UI, Nothing OS, Motorola, Vivo,
   ASUS, Google Pixel).
-- `rom/<rom>/<codename>/` — Community ROM variants for the same device
-  (LineageOS, PixelOS, crDroid, AOSP).
+- `rom/<source>/<vendor>__<codename>/` — thermal-relevant files of each
+  custom-ROM device tree (LineageOS, crDroid, LMODroid, AOSPA, ArrowOS,
+  DotOS, AlphaDroid, PixelOS, ProtonAOSP, AwakenOS, …): thermal configs,
+  power-HAL / thermal-HAL setup, init files, build props, the device's
+  `proprietary-files.txt`. Common trees (`sm8350-common`, …) are kept.
+- `blobs/themuppets/<vendor>__<codename>/proprietary/…` — the stock vendor
+  thermal blobs themselves (`thermal-*.conf`, `thermal_info_config*.json`,
+  thermal HAL init / VINTF, power hints) from TheMuppets, i.e. what the
+  OEM firmware ships, per device and per common tree.
+- `blobs/rom-vendor-blobs/<vendor>__<codename>/proprietary/…` — the same
+  kind of stock vendor blobs from the `vendor_<oem>_<codename>` repositories
+  ROM orgs keep next to their device trees, for devices TheMuppets does not
+  cover (many Realme / OPPO and MediaTek phones). MediaTek policies live in
+  `vendor/etc/.tp/` (obfuscated by the vendor: identified, never tuned).
+- every device directory has `source.json`: upstream repo, branch, commit,
+  and SHA-256 + size of every file (files over 2 MB are listed, not stored).
+- `manifest/<source>.json` — what upstream lists (metadata only);
+  `manifest/<source>.state.json` — what was fetched, at which commit, with
+  what outcome (`ok` / `empty` / `failed`). `tools/ingest/diff_manifests.py`
+  compares the two so a scheduled run fetches only what moved.
+- `sources.yaml` — the source list (org / provider, branches, paths).
 - `evidence/` — Supporting device-tree / kernel source referenced by ingest.
-- `manifest.json` — Provenance index: every file's origin URL, revision,
-  SHA-256, fetch time.
 
 ## What does NOT live here
 
@@ -27,26 +44,25 @@ rejected in code review — reingest instead.
 ## Layout
 
     stock/
-    ├── manifest.json
-    ├── oem/
-    │   ├── xiaomi/<codename>/
-    │   │   ├── source.json
-    │   │   ├── device.prop
-    │   │   └── vendor/etc/thermal/…
-    │   ├── samsung/<codename>/
-    │   ├── oneplus/<codename>/
-    │   ├── oppo/<codename>/
-    │   ├── realme/<codename>/
-    │   ├── google/<codename>/
-    │   ├── nothing/<codename>/
-    │   ├── motorola/<codename>/
-    │   ├── vivo/<codename>/
-    │   └── asus/<codename>/
-    ├── rom/
-    │   ├── lineageos/<codename>/
-    │   ├── pixelos/<codename>/
-    │   ├── crdroid/<codename>/
-    │   └── aosp/<codename>/
+    ├── sources.yaml
+    ├── manifest/
+    │   ├── index.json
+    │   ├── <source>.json          # listing
+    │   └── <source>.state.json    # fetched commit per repository
+    ├── rom/<source>/<vendor>__<codename>/
+    │   ├── source.json
+    │   └── … (thermal-relevant files, repo layout kept)
+    ├── blobs/<themuppets|rom-vendor-blobs>/<vendor>__<codename>/
+    │   ├── source.json
+    │   └── proprietary/vendor/etc/thermal-*.conf, …
+    ├── oem/<vendor>/<codename>/    # firmware dumps
     └── evidence/
-        ├── device_tree/<vendor>/<codename>/
-        └── kernel/<soc>/
+
+## Refresh
+
+    python3 tools/ingest/list_device_repos.py           # re-list (GitHub API in CI)
+    python3 tools/ingest/sparse_fetch.py --all --jobs 24  # full seed, resumable
+    python3 tools/ingest/diff_manifests.py --out changed.json
+    python3 tools/ingest/sparse_fetch.py --all --only-changed changed.json
+
+`ingest.yml` runs the last two weekly and opens a pull request with the delta.

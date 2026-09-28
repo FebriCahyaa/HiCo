@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_surya.git",
+  "codename": "surya",
+  "commit": "e5a8a8a42c95d8ad588f261bdc9d60c75ca3b3fd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bf83ee17408bb64a240a2d3ada8fee0ee013e0a514aab0e9943f0d0cc69378bf",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5d48a445e3fc36fa67fedefb7970e452042941a589cc39ddb44cdfadd358584b",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a52b0f6a0a88d9ac7e5815a3754cfed583d81b46f0dc0d5f3454306be887213b",
+      "size": 6580
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f63c16c6ee65f1e5b649eaaff79cf1eda9ba9413d649e99183d63202fe3b34b1",
+      "size": 19462
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a6c0a44319e49dcc1120079035691ba5decd7e1e8c995cbb0b50d7f7383520d4",
+      "size": 2798
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "91f2af3f182704e882231dc0a256b4c1003848b1587f54751d2a2cfa11273830",
+      "size": 220
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "17357660d81e4ce8da9874a237cc514ab778497cd0967acc5fad1ca99233c7a5",
+      "size": 36778
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "fcac7ad12b7d8b3fd4efc0f62e56c483b80939fd71c34820af4a3ad1e1748459",
+      "size": 876
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "a601456095351888252cfaf3eb5244d16704c39fe9e10f27c9b889be3357c0a4",
+      "size": 113
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_surya",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-06T22:00:18Z",
+  "vendor": "xiaomi"
+}

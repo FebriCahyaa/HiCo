@@ -1,0 +1,87 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_realme_r5x.git",
+  "codename": "r5x",
+  "commit": "d314b083af5ee739ce04db257d7a19c9e0919cc1",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0bb8d7dfac78152de625197282b996f78fe385d6e9646428413c57ccd093cfe4",
+      "size": 5344
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "595f202d7e07547d7a2dd3b0dff1b2e25f5d61c3772460a60157d8b15f6bdbcb",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c5f0c105d8b6cf1fd64d6ef3c473f3e90258d79def6c54fbd94e59d691a8e874",
+      "size": 7197
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera.conf",
+      "sha256": "10fcb36cb34cfc5bbdf813f372fc0a215222750641162743a77b5dc6107b31f3",
+      "size": 1807
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "2510a6f562e9633614bf04e35d3b5a52aecd652cb7664ad2b7f2d911af13645b",
+      "size": 378
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "acf8b842b158a6f59465074ff2edc7197ffcf37c86fae5b3709a82e26e60961c",
+      "size": 1798
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e23ddffafadaf399be345e1898cd30dce9c16cc38e00724e8b8270389523f3e8",
+      "size": 21345
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bf2bd7cd231dba22dbf1be70841a2f5d9b7dac9496c955dc628b59c8369103fc",
+      "size": 1654
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3da9f7cf227650f8a438ebe7f05700a47f7b85bae2c77a73d07b92a339cb5b63",
+      "size": 311
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "09ab69e5caadfa4bbc10a8d9f9895344c7ef4e844f894d078e91a1889053c7ec",
+      "size": 182039
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "3cf50e6b8d7759eec42e6d99f434e41f46dd919026e69fc92884eefef054d987",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "65cef33c053ba4984fa70b68e72f99a431417794f6b878f2b47e257045ef6b9d",
+      "size": 103
+    }
+  ],
+  "kind": "device",
+  "repo": "device_realme_r5x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-08-17T15:53:31Z",
+  "vendor": "realme"
+}

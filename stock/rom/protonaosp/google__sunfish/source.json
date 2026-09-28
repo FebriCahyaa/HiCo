@@ -1,0 +1,62 @@
+{
+  "branch": "rvc",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_sunfish.git",
+  "codename": "sunfish",
+  "commit": "653a985f1653309abdf23ed88db768b8d8635c61",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b7ff2f649424ec42723cce723bcab7ab6e1f46ffdb14871cc79a3b745f0d21a4",
+      "size": 147
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "520167d4513d70807f94aa8fb8a4b1ba80a1b93784b3037f3f69df6da8647fa2",
+      "size": 827
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bd324267f3460bcd96df4b9f00566ff6ddfd8d5b442b6485bd648f7d0bbf5c81",
+      "size": 715
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "4ef2a4117a7e3c0164bb10be3744a1117b7998328b76eacf7bb9474c8cb2221c",
+      "size": 9011
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "bcafe04c10eb00613b5a8ff542c37fc207d7cb34f2e37abd3b7464a2e453d910",
+      "size": 4743
+    },
+    {
+      "path": "device-sunfish.mk",
+      "sha256": "74de6ce540bff1212f21a8e81486a583e00a96ed772c285d0f3c633a221eb692",
+      "size": 7856
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a4851f77799fd7dc4faf92a7f7ff1cf8d1ce34db465cc7a59699c26e76884241",
+      "size": 36455
+    },
+    {
+      "path": "thermal-engine-sunfish.conf",
+      "sha256": "4ff506ca1cbe240c36e713330d721e2fabd8a1646d09f544e5be646bf60315e0",
+      "size": 1518
+    },
+    {
+      "path": "thermal_info_config_sunfish.json",
+      "sha256": "ae751e70d5b28a82c5a63438fa4d2945f871c18a10db0892736535536c2e3495",
+      "size": 6056
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_sunfish",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2021-08-18T09:02:49Z",
+  "vendor": "google"
+}

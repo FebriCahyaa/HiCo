@@ -1,0 +1,27 @@
+{
+  "branch": "alpha-15.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/vendor_xiaomi_sm8250-common_alioth.git",
+  "codename": "sm8250_alioth",
+  "commit": "cf406c161256b518a1879764a2ec4165473c6d01",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "8b2afaa8fc87e22cebcb649532b9f3714e3defe342daf72a637b90e8fa3eda52",
+      "size": 245
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "b41e79d71b1f1b79c076b76e941d44dd192ebca85497b3ea557fc9c54cc47368",
+      "size": 545
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_sm8250-common_alioth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

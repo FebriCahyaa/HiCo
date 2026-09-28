@@ -1,0 +1,67 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_taimen.git",
+  "codename": "taimen",
+  "commit": "72efcbd9d5b61f0be6457e1b6668fd1a4a48ff69",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a6c64368fa08c8fc89bb87a43ac754bbca05b59983fd700085d6f736334ef49d",
+      "size": 266
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9ec3a316ea7430d68721388396f089f869bff13067e4507202d29812168de15d",
+      "size": 660
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9371e52bd46f05745a289f25dec02c94a7208ee4e9972164325aaacea91345dd",
+      "size": 1636
+    },
+    {
+      "path": "device.mk",
+      "sha256": "28a4ab0b3688d52e15b53fdc666adc4417de0b409ba628d60f30ce5117213052",
+      "size": 5410
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fed0f5051786be3bf09ee33baa4ff4313d13acc763832ee9d6faafd8d63d512a",
+      "size": 3717
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9a829059aa58aecaa0abb962321c4799e2d60531a689771c8baff59fd7dcbc27",
+      "size": 9285
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "6f2b0e2c225b7a70917103f1d0dd59850555accf2823a43f6d79d72409fc3a1d",
+      "size": 661
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "b7197816ed1dbaa176c77d280ee22b7f544f10f6ed78b71730ff98b60b898a79",
+      "size": 3338
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "719487f2635373895508e76dd3ce59b8411b335ba01438a71a7d3941215ff3e5",
+      "size": 4895
+    },
+    {
+      "path": "thermal_info_config_evt.json",
+      "sha256": "c23c9b5f839e377aab2fca446ed4e04a24b45941749f1e8ee990a5ebf2c16622",
+      "size": 4894
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_taimen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:14:10Z",
+  "vendor": "google"
+}

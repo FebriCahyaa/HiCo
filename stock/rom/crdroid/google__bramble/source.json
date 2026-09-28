@@ -1,0 +1,57 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_bramble.git",
+  "codename": "bramble",
+  "commit": "05daa53b2593fb783613697fe29dd7da17373061",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e0aff24157cd46e63b88df023adaa8016f030db50be617d2a9c0fede05ed1d1",
+      "size": 1229
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e11cc0d71ecee760ebe93ce9dbe868c3c14eb8fb9e2a7876be9edfecca47ffcb",
+      "size": 889
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "746cc18c70e2143652cba6a5e672870c0c9b8f49dbeac9ef62bdeb1be0ada9ae",
+      "size": 338
+    },
+    {
+      "path": "device-bramble.mk",
+      "sha256": "56cb521978181aaac9cfd69001e8fecffe946bf2a6b951ee2f4e114f7d83b8cd",
+      "size": 10136
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "0cea7f2e9f95207d5369cee4182e34298ef5d033448022953e0c092a13106e18",
+      "size": 251
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "61911be26a412be2e1504f69926880811c50fb7aa16fee2a20f44e3665221ba5",
+      "size": 213
+    },
+    {
+      "path": "thermal-engine-bramble.conf",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "thermal_info_config_bramble.json",
+      "sha256": "b6bbde6cb49a849e24e48f96a5fa65dc8f0e7f3fb98227e42b33ae18bebd85c2",
+      "size": 6771
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_bramble",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-26T19:11:34Z",
+  "vendor": "google"
+}

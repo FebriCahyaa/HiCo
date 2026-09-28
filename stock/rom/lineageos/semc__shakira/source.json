@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_shakira.git",
+  "codename": "shakira",
+  "commit": "23e3890d282101c0fa83a76a57d3e4b58c98dad1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6e6151cf60e99dc557afcfc28882ce5a41a8ec4ffd499121a7d9680d6385c737",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "283b477cf3c9c10c6344eef5645de37dd163108ce538e89b9923d09d55dca289",
+      "size": 1062
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "47c48983657f31b9ff6e4efa4225e286c96625a8733125344323d0a061f34d10",
+      "size": 251
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d1062abef54bc2866262dbe2625af374568fd86ed77d85c53798c1e4d820350c",
+      "size": 332
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3a12a752c7f58c2d391a17351e5cc90f9de35db805762df1f927b4bad2063800",
+      "size": 2074
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_shakira",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:43Z",
+  "vendor": "semc"
+}

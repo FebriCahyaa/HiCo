@@ -33,6 +33,15 @@ namespace {
 /// thermal) is not enough: full stock thermal protection comes back.
 constexpr double kHardMarginCpu = 3.0;
 constexpr double kHardMarginBattery = 1.0;
+/// s, how long social / streaming apps keep their relaxed configs after leaving the foreground.
+constexpr int kAppExitHold = 20;
+
+/// Session scenario from a target source ("performance", "warm", "social", ...).
+std::string scenario_of(std::string_view source) {
+    if (source == "social" || source == "media") return std::string(source);
+    if (source == "whitelist") return "other";
+    return "game";
+}
 } // namespace
 
 namespace {
@@ -140,6 +149,7 @@ std::chrono::milliseconds Daemon::next_timeout() const {
 void Daemon::begin_session(const Target &target, Clock::time_point now) {
     session_ = Session{};
     session_->package = target.package;
+    session_->scenario = scenario_of(target.source);
     session_->started = std::time(nullptr);
     session_start_ = now;
     guard_.reset();
@@ -150,8 +160,8 @@ void Daemon::begin_session(const Target &target, Clock::time_point now) {
 void Daemon::end_session(Clock::time_point now) {
     if (!session_) return;
     session_->duration_s = std::chrono::duration_cast<std::chrono::seconds>(now - session_start_).count();
-    LOGI("game session ended: {} after {}s ({}s boosted, peak CPU {} C, peak battery {} C, {} safety trips)",
-         session_->package, session_->duration_s, session_->boosted_s, format_temp(session_->peak_cpu),
+    LOGI("{} session ended: {} after {}s ({}s boosted, peak CPU {} C, peak battery {} C, {} safety trips)",
+         session_->scenario, session_->package, session_->duration_s, session_->boosted_s, format_temp(session_->peak_cpu),
          format_temp(session_->peak_battery), session_->trips);
     // Sessions shorter than a few seconds are focus blips, not play.
     if (session_->duration_s >= 5 && !sessions::append(HICO_SESSIONS_FILE, *session_)) {
@@ -219,7 +229,13 @@ void Daemon::tick(Clock::time_point now) {
     if (!target) {
         if (active) {
             // Hold briefly: Flux can drop and re-apply the profile around a quick app switch.
-            if (!exit_deadline_) exit_deadline_ = now + std::chrono::seconds(cfg_.exit_delay);
+            // Apps (social, streaming) are switched between often: hold their relaxed configs a bit
+            // longer so the vendor daemons are not restarted on every trip through the launcher.
+            // Screen off releases at once.
+            const bool app = session_ && (session_->scenario == "social" || session_->scenario == "media");
+            const auto fg = app ? flux::foreground() : std::nullopt;
+            const int hold = app && fg && fg->screen_awake ? std::max(cfg_.exit_delay, kAppExitHold) : cfg_.exit_delay;
+            if (!exit_deadline_) exit_deadline_ = now + std::chrono::seconds(hold);
             if (now < *exit_deadline_) {
                 publish(thermal::read_temperatures(zones_));
                 return;
@@ -303,6 +319,9 @@ void Daemon::tick(Clock::time_point now) {
 
 std::optional<Daemon::Target> Daemon::choose_target() const {
     if (const auto game = flux::active_game(); game && !cfg_.is_blacklisted(game->package)) {
+        // "stock" for games: the ROM's own thermal while playing (the user's explicit choice wins,
+        // extreme mode included).
+        if (cfg_.game_level == Level::Stock) return std::nullopt;
         Target t{game->package, game->pid, cfg_.game_level, game->lite() ? "performance_lite" : "performance"};
         // Flux runs Performance Lite when the device is already warm: do not go to max.
         if (game->lite() && !cfg_.unlock_on_lite) t.level = Level::Relaxed;
@@ -310,10 +329,15 @@ std::optional<Daemon::Target> Daemon::choose_target() const {
         if (cfg_.mode == Mode::Extreme) t.level = Level::Max;
         return t;
     }
-    // Apps that are not games are never pushed to the peak: the whitelist only gets the relaxed level.
-    if (const auto fg = flux::foreground();
-        fg && fg->screen_awake && cfg_.is_whitelisted(fg->package) && !cfg_.is_blacklisted(fg->package)) {
-        return Target{fg->package, fg->pid, Level::Relaxed, "whitelist"};
+    // Apps that are not games are never pushed to the peak: social media, streaming and the
+    // whitelist get the relaxed level at most, each scenario as the user chose.
+    if (const auto fg = flux::foreground(); fg && fg->screen_awake && !cfg_.is_blacklisted(fg->package)) {
+        if (const auto scenario = cfg_.app_scenario(fg->package)) {
+            const Level level = std::min(cfg_.level_for(*scenario), Level::Relaxed);
+            if (level == Level::Stock) return std::nullopt;
+            const std::string_view source = *scenario == Scenario::Other ? "whitelist" : to_string(*scenario);
+            return Target{fg->package, fg->pid, level, std::string(source)};
+        }
     }
     return std::nullopt;
 }
@@ -379,6 +403,10 @@ void Daemon::publish(const thermal::Temperatures &t) const {
     kv("overclock", summary_.overclock ? "1" : "0");
     kv("mode", cfg_.mode == Mode::Extreme ? "extreme" : cfg_.mode == Mode::Off ? "off" : "auto");
     kv("level", applied_ ? to_string(*applied_) : "");
+    kv("scenario", session_ ? session_->scenario : "");
+    kv("game_level", to_string(cfg_.game_level));
+    kv("social_level", to_string(cfg_.social_level));
+    kv("media_level", to_string(cfg_.media_level));
     kv("trips", std::to_string(session_ ? session_->trips : 0));
     kv("xiaomi", controller_.is_xiaomi() ? "1" : "0");
     const DeviceProfile &dev = controller_.device();

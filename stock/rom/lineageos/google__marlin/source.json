@@ -1,0 +1,112 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_marlin.git",
+  "codename": "marlin",
+  "commit": "94ea38fd0f6f6edd6943b0199c209ac585408390",
+  "file_count": 19,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fe7c1b4c308e2f865f73c29908495ba55e05e38e2da11c40b1a76182f44bbce8",
+      "size": 236
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5f13a16ae8b222320d192db0e670e92f449334d8dc6628e63f8c19396231da61",
+      "size": 97
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a13ef66c0fd5a94a64cfdc5ca34fbe170fd20447ff3f1687167315d0521ccfbe",
+      "size": 3854
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "d08ad8800b8d9a1a356451a616d5a8c848cba060c0642917458e345294256075",
+      "size": 21762
+    },
+    {
+      "path": "device-marlin.mk",
+      "sha256": "983f39b3e9c4316ec345c9537eea69fa31a74de398474f43a84964061571fcc8",
+      "size": 956
+    },
+    {
+      "path": "device-sailfish.mk",
+      "sha256": "17940448abac11b412a4d4d4781902300963d64d68527f77ee81425920af00f2",
+      "size": 921
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4190c16019954ad16565aee888fb889b4e1034370164e24813b56dbcc1cde7a7",
+      "size": 212
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "827ed9daa9781325e61bbac170dd8fadc5ee57d9d49059880acc4d8c4384e8a1",
+      "size": 210
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "56b494d711c64080ce4fd8778241a34e04e91abc4bcea9efbb0c57decda96ca2",
+      "size": 807
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "bf96837edc4533b82c3f067a5dfd54a2f3d4ce44c1daaec05551d9ddcdd777bd",
+      "size": 382
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "c37974d50f1946d6c74c9a58ae56e327fbf8b2c395bc2bda505a812333d8ac69",
+      "size": 685
+    },
+    {
+      "path": "sepolicy/vendor/pixel-thermal-control.sh.te",
+      "sha256": "dc6da94dee0e65207552d512a18c6478101627d55b481421e9698236e1b94d4d",
+      "size": 589
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "ccb2ca34d6a10b7ab92084b4b8dfa2150080346f18698c60f709da346929fb20",
+      "size": 1080
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2066a8242ae41677ab06e9ac519bfb54f158ca6fe8b26f5e03e1498ec267a957",
+      "size": 3358
+    },
+    {
+      "path": "thermal/msm_irqbalance.conf",
+      "sha256": "503293a10b888f712e158adaa38b4740a081eebe8b3380ec52a69dddf7ea2c1d",
+      "size": 35
+    },
+    {
+      "path": "thermal/thermal-engine-marlin-vr.conf",
+      "sha256": "d3a5db94026208112552e6ff4e5b3855243c6f876e99e2c09466ba75963a4ef6",
+      "size": 554
+    },
+    {
+      "path": "thermal/thermal-engine-marlin.conf",
+      "sha256": "600cea9f2d822422f2442f207674d60fbf0aa53ccdeba84e984dc07a44c0a984",
+      "size": 1844
+    },
+    {
+      "path": "thermal/thermal_info_config.json",
+      "sha256": "eaf4dd41a4d4e37a5bc38c9507627c62f54c2e98f0064d639fb4e54a7985cfdb",
+      "size": 2689
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "653011fbcca0a187ece8eb0fe16d99295798472b416782eb94d1b17e6e1db101",
+      "size": 4075
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_marlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-09-15T06:56:20Z",
+  "vendor": "google"
+}

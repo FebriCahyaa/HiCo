@@ -1,0 +1,67 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_nabu.git",
+  "codename": "nabu",
+  "commit": "bc8c35b7d6fe63bb129a7bcb59a7ab9c7c7fcfd3",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "987e1403985df72028a94075b59702fd264f70fc7f6006f1daaf992bf0e6f569",
+      "size": 533
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a415cecc539e825a31b0ed96efd9696fb83bd34a1c541aea54505343acc12f82",
+      "size": 156
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bb6f4ace6f7ce653f0613257796b1f1ac1229b2a35737372593167679579b145",
+      "size": 7128
+    },
+    {
+      "path": "device.mk",
+      "sha256": "739c19d6f60631f87e36a9d43cb9a5c6b8cead93cf3f3c802050c1952d420203",
+      "size": 17934
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b2aa145fb8239234d89ea987c9233fbb75b385318102727462f8c2072c1c6c1f",
+      "size": 2538
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "49a7f2b491aaea39149855edb8397a2a2d9826e2fa7eef5abf3e8f65fe16ad27",
+      "size": 30791
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "503b533f82c4f7c3fdfed515c3731cfe490babb1f2b81f9735cdd2a1ec39628f",
+      "size": 1626
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5b612b7ca2c9aced4245e40b61fba453d2b8ce2b81297a988e81114c9d256253",
+      "size": 490
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c5928d063f8c74b4d6a41300120618aa7205b706c0330723e3e7835e5efe116e",
+      "size": 1084
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9f2939c99bc0d509c3f427af70abd7d2b926f908f54dbc4aaaecf4dbb000ba5f",
+      "size": 10130
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_nabu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-07-19T00:58:54Z",
+  "vendor": "xiaomi"
+}

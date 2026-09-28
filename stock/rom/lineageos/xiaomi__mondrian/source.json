@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mondrian.git",
+  "codename": "mondrian",
+  "commit": "0bb28ea96d3adb7ff72064cc1428ad1520799ada",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ee46e6fff1dc63681510151fbbd92650801ca5a78c66037c218d78bd2e1d90fa",
+      "size": 308
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "277634d910a662f6385d854881f74ee2fb74d755fe0ac5bd262b74728564d072",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3679f7652e71b8e8e3b09904f557b20891abcf17792afc9a81359cf619d5b422",
+      "size": 612
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9694f637e9cd08c113f5bf890c136dd5ffbe48993032b27d3576f3a52212982d",
+      "size": 1775
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "75f2fe950bc99dbcedb331aa10a83d400c444456ec29f92e70ce2b99a6976994",
+      "size": 2948
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cf8445b3ac5ec1956cb3903c137f7aa459629ab4ffd1fdb85690d1cf796aa420",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8a8638a5de11cff920947eb42a965ca3844194e909cfff659141c2b3d405e00e",
+      "size": 63575
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_mondrian",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-01T21:41:11Z",
+  "vendor": "xiaomi"
+}

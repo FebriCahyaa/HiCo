@@ -1,0 +1,52 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_huawei_alice.git",
+  "codename": "alice",
+  "commit": "e95a0253dc468b3554fb5318ab13f76f678b6140",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9e1d77564ec8374594f9a96b533e5a4ce219a0c13288bbe8a0a37e062485bebe",
+      "size": 707
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "33642018f73a123aa7bdc8617bf8dd9fc46b3240c1f08187079b2c8d10cc0c5a",
+      "size": 632
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "534c1a02cfeb7b95cfc6c12cf63542c4aaa6e8d6f106a809a427b087aa8b733e",
+      "size": 4457
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f5f4dcec31b2fbf68c43e52b967ecd6ec6c23e69f98b22f04d67868e715aeb9b",
+      "size": 9363
+    },
+    {
+      "path": "sepolicy/thermal-daemon.te",
+      "sha256": "7514d4cb6a8069bb26eaafde4a8fc01699f38f686689b8a5b83f83beb3209e59",
+      "size": 373
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b3c5f6ca0d488d31a08394d5cfe430c169b22ebdf2e90f44bbde5d7b83b099da",
+      "size": 1482
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e72825664eff288f7b2dcbfb8bb2dfbd506e1d3a9f9177f9a310f9962da2e8a1",
+      "size": 36
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_alice",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-17T18:18:44Z",
+  "vendor": "huawei"
+}

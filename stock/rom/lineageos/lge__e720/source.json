@@ -1,0 +1,42 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_e720.git",
+  "codename": "e720",
+  "commit": "4eae2f436339b1f540b23c1ba4b1db45922184a9",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "32c8f8dd9905d73a9d0163903fd4cf0e629a8cecb9559fec585aaacf3c722b1e",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "220bd3f545b883ef3192f4b36172555902aa7094511568773f3de7d3d2803c09",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "19854c6ab94831f42da41584ee20b6cef7bbd7afc9728e2f0e56146f41598643",
+      "size": 2292
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4df70accfa1c942844000b002f63e3ae085d9b6396a54ab1b1667d6dda561fa0",
+      "size": 7519
+    },
+    {
+      "path": "system.prop",
+      "sha256": "13b2d7ee83e6d032907c1ea85617b850f637521fa52d25b80018053c5a4a6ecb",
+      "size": 625
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_e720",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:41:15Z",
+  "vendor": "lge"
+}

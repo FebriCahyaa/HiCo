@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_lynx.git",
+  "codename": "lynx",
+  "commit": "dc20b44bb8455e8da66dad30a01f6c2484ed9c33",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c88f4590b083b23ed13648ec84db7323f02b057c19ba12656182562d6e565849",
+      "size": 989
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "91ded9023186314cf388747d3231639bcfb7f05ee54dc4933cdfe98e8971f9f3",
+      "size": 833
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "bd3c66b912f9b24f4baa0055b085b6782af0ffeed23f2a11bb91d6979f5303b4",
+      "size": 1328
+    },
+    {
+      "path": "device-lynx.mk",
+      "sha256": "ed67c7158c360d68b85fdd6e415a0a22bc9faf82aa13916180a331a0d37b89ce",
+      "size": 13441
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6b9acdca47ae2bb27d18143cac5013500dd8081db6be518b1ec1da68bf2bfdb6",
+      "size": 210
+    },
+    {
+      "path": "thermal_info_config_charge_lynx.json",
+      "sha256": "03b24e340bab303f06a384b584ba2dd20385736312877adb92387014101e557f",
+      "size": 10180
+    },
+    {
+      "path": "thermal_info_config_lynx.json",
+      "sha256": "3414ac0cf86cb649b9432e894c967ccaec7c00de01dea900d4c5ecd523fccfbc",
+      "size": 21902
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_lynx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:00:56Z",
+  "vendor": "google"
+}

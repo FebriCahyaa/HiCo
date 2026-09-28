@@ -1,0 +1,42 @@
+{
+  "branch": "pie",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_dora.git",
+  "codename": "dora",
+  "commit": "4a0ff6675549735754534eecd942c216a6c49697",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ee1105def2de7aff0f5395ff5e0cc755d1a88cf457add037833f084fa87f715a",
+      "size": 696
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5407a964eb74d8edbef3fc70612b408b3e68fec558076bc4f2ae202e79996e4a",
+      "size": 1643
+    },
+    {
+      "path": "device.mk",
+      "sha256": "543af7340a473f2c1a6e1179bb4c9fe33434b6503a1d725f3c35574e877b3054",
+      "size": 4086
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d67dffab15c4769b8198224986d85811c556db86d48b6f27c3ed7b382d0b54d0",
+      "size": 930
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_dora",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-03-23T06:32:47Z",
+  "vendor": "sony"
+}

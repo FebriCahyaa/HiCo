@@ -1,0 +1,26 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sdm710-common.git",
+  "codename": "sdm710-common",
+  "commit": "a7799947f2d8c7d3c8b9fd27cfb209c3f17ee40d",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "eef1e4f3d90983ec244041ccc6aca2ed5c5606f02eb14536a7ee741f1eb8abef",
+      "size": 532
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_xiaomi_sdm710-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "grus",
+    "pyxis",
+    "vela"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

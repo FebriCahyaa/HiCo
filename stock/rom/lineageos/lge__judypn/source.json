@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_judypn.git",
+  "codename": "judypn",
+  "commit": "c323206186cffae33ad85df23a90fb3e020e43c6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b765105ebb2e873e728a84cdc6c09e8151365aa92bb01f2cbdb83c05d069100d",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3e61e2cf4679623921b08762da973b097058cc7b3bc3a348776a738f225f6aef",
+      "size": 1245
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3e7ab03a672fb38ad3f6e8894e11d0259d9031b663077ca50aa454c3bf03dbce",
+      "size": 2858
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3a53fa92fc4769e264fb9b07c26dd87cfae8ceecbde282a7ad0538bc77aada3d",
+      "size": 1477
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "83178b4f21c2fa92733c4b970feb468800c0f7d43d29011ec81efc2bbb1814e8",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e12bb90f7a30355181bbebe12c393dedf4c65e3e4f45220641d724b38b36894b",
+      "size": 20026
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9f1e668e773c9ea2dbe67ebb285ee8b90087017d65a26cdb74ef1e3939f8f021",
+      "size": 100
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e08310933aa4ab0e668b892d9bd188208948343de11145194ecd8e6c3c7be8df",
+      "size": 486
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_judypn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-10-01T07:40:10Z",
+  "vendor": "lge"
+}

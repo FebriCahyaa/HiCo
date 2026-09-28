@@ -1,0 +1,24 @@
+#
+# system.prop for doubleshot
+#
+
+ro.sf.lcd_density=240
+
+# radio
+mobiledata.interfaces=rmnet0
+rild.libpath=/system/lib/libhtc_ril.so
+ro.telephony.ril.v3=datacallapn,signalstrength
+
+# wifi
+wifi.interface=wlan0
+
+# UMS
+persist.sys.usb.config=mass_storage,adb
+ro.vold.umsdirtyratio=50
+
+# Scrolling tweaks
+windowsmgr.max_events_per_sec=150
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+view.scroll_friction=0
+

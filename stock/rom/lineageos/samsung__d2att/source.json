@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_d2att.git",
+  "codename": "d2att",
+  "commit": "bef70d10fe81d8e350b11e24f50e3bf91481087e",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5518a237fcd64be2271f1371f10823b451f53b2e3dccf59d41d82a669d3a4f3d",
+      "size": 1107
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2af12704ee94c40edba0a63855a3e7fc57e90df0d2dc37627cdb572dfa7bbffa",
+      "size": 889
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "99a70dda449f5c92573c941ef472a690b348cfa70109905e781f7044a2a186c5",
+      "size": 814
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "64b88f628a741d88fdddc7b9a7aba0ec1a448c782e52df69b8a40148319549c4",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fed237167cf9a542cc3a8346c207af49af57c9ba2b02cf7625bdf852308f2480",
+      "size": 65
+    },
+    {
+      "path": "system.prop",
+      "sha256": "55d44623849028b91fd913fe0dce84c34139eab0a218df7f36b8dfdd3478ffb3",
+      "size": 114
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2att",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:37Z",
+  "vendor": "samsung"
+}

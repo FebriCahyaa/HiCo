@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts210wifi.git",
+  "codename": "gts210wifi",
+  "commit": "f8da92365b9e5261e5b2a38e7f59da53decd0440",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "49490bc980582f8f0937ad8ce2588c55bdaf84feeb15e133ffc15cdf2f69ddb4",
+      "size": 746
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "afc09b5301835534404ca73c6de31d8b53bddb55cddca06fdd54c5b6d9fee152",
+      "size": 485
+    },
+    {
+      "path": "device.mk",
+      "sha256": "da500fa96ac7b9e601d57fccd51778c2698bc692e010acb3f6b3ec0f2c798eba",
+      "size": 880
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4e99affb2301cf6f22d37ac09271b61a21274363829c7d9c974ec7fd48e4ad0d",
+      "size": 730
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "585eee68f782c3c736d7d8afc59aa60ab0b97ceaf7081db17f5dbb18a9a50f32",
+      "size": 128
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2bf6a1ae92ca6ac9cb391e9a144654dbf2fb012f817a820d8ce9a82aa574ca1d",
+      "size": 1921
+    },
+    {
+      "path": "system.prop",
+      "sha256": "415c08fd811d570163c3a56948f742b51fc16c9597938450f1ce0d6289ee92a4",
+      "size": 135
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gts210wifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:50Z",
+  "vendor": "samsung"
+}

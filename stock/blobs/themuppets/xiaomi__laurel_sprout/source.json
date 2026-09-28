@@ -1,0 +1,44 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_laurel_sprout.git",
+  "codename": "laurel_sprout",
+  "commit": "98cf8526c5aa8ba2e97fd36ec8675a0747892abc",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-high.conf",
+      "sha256": "7a85c0c0b2f89eb09d355c6a608fe40c24b0b58986e414822c39818fbb84a74f",
+      "size": 402
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+      "size": 94
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-nolimits.conf",
+      "sha256": "04d1600825dda36912a53718b73ec185d9c7178d74f4b1614840f19a84f9a005",
+      "size": 406
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-normal.conf",
+      "sha256": "5ccf7a53242bbdaf65d1350f6449785ab462ab908992fb86aaeb871e254406b4",
+      "size": 404
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_laurel_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "laurel_sprout"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

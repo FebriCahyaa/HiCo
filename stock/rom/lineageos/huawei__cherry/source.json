@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_cherry.git",
+  "codename": "cherry",
+  "commit": "1bb195dabb5a1a96eac346ed387a16468b515f13",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1374235daa78b8b4238c8243ba6cce4d1895d7d100b58e848fd1256cd47800c2",
+      "size": 732
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "90abc5399ee73f143890b8b26a717f39da108b3b75040d83e5ba07fcce22ccab",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "421f48f31dfd42e5ae2958caa6401d6b069747846f22785de17eae5c8ae096bb",
+      "size": 1102
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8675decc9f5113aaf9533a940b2030c1d88ff4dc45f4256ca6c42542f77bd6ac",
+      "size": 1016
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2b67776f36934fc06e1528721a609e07712a0d36f30be83bd95a896e723482f1",
+      "size": 754
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9803f9ba4e31f87772427125913c2a720120648737c22a0cce7b166721a92753",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9c83f78b8ae9b95e97495b2484db4577290156c28d38e5c9caabffc5553941f4",
+      "size": 793
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_cherry",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:12Z",
+  "vendor": "huawei"
+}

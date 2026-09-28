@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_nicki.git",
+  "codename": "nicki",
+  "commit": "931c82e1c5632df43da963ba4f219b0206e0a589",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c14dfee8107777dce6f49e592a16d3200b52af747b223ab19e4cdda28230bbfd",
+      "size": 2590
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ebf3b47c2de639bb34977fc1785b3ac6cd7d05eaa7bb7f7e704801889f2f12ed",
+      "size": 904
+    },
+    {
+      "path": "device.mk",
+      "sha256": "48a77d2a4e8a90746c35ca7cb32de0dbb5f2c5d25bfc5223126a051f640e5a9d",
+      "size": 1141
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "10b29b8103f3db8ad2df0948359f420270a1fc61d353e1fb2ff117f1660f197d",
+      "size": 1478
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e6df6a5181af9c5f159e7ded3f5b40cbc8a1b5218a33b75af10b753670279e4f",
+      "size": 296
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "0380a51ea33a5c6b4a19c3bacf9327dc679baa3887928b877e0c9785e48bcbad",
+      "size": 326
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7793bdaeb45b5192c551734cff9182b0697ba51d546e9851f2cfd2f2cf20f499",
+      "size": 679
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_nicki",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:53:19Z",
+  "vendor": "sony"
+}

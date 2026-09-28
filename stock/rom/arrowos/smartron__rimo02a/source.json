@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_smartron_rimo02a.git",
+  "codename": "rimo02a",
+  "commit": "dee39017f8d70cc14757985e096149f2e6d0c902",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "93f78bfbd77690022dd35fdaa49edd136b75155842037155375d614a2755169e",
+      "size": 4859
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f4f64465c9c49f39333627276df1e5791df8fac0bc6725aa6944efd667dc7218",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a5b54613d099a82cf9af63e24bd5402d7a21d245ca0d30fdd8f6c7a0b19d35b",
+      "size": 6441
+    },
+    {
+      "path": "configs/thermal-engine-srtphone.conf",
+      "sha256": "98d02ff420a66dba5223627002f53d08bb70f172c597ecf57531e7779f066991",
+      "size": 3227
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33708de1aa227bceef3b86185b012c6f1feab2b7ce523185fdb6efbe98328f13",
+      "size": 7781
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6c45396cc8c02ab18a00290d17d7546b6981238b1d8dd4958e87b24277fd6bb7",
+      "size": 16142
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "01318f438887439ac8a41665f34bdbc1ed1850ded29b1ba20118dfdcde77c468",
+      "size": 1535
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "502a04116c6601a9574ccffb37f9c859a07493a5d382eee4d3a49f9eecae2ccf",
+      "size": 9033
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2aa1a03a1d660841455e7ad75580d624d55676033d424b55750f2ba659a00026",
+      "size": 6033
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f84136fae85f1df7dfa275b2d197b686a16ddad770429e56eb3b4b74850b5a9e",
+      "size": 40
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_smartron_rimo02a",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-03-02T10:58:34Z",
+  "vendor": "smartron"
+}

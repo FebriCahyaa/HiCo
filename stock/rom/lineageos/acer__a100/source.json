@@ -1,0 +1,47 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_acer_a100.git",
+  "codename": "a100",
+  "commit": "ee93864b48c26382b14be197fc2461f14a0c6b33",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "003312bed4090478b2c6d9983a99fe12293db4d4d0eb60ec7cb23a6cd4211f17",
+      "size": 1150
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "74227a095f3fe0775b3b808ff3bd9ae397fbaf349489887f49d7960f9972af58",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ef8753ba5dfb6113d49750067869788fad4564b477acba91fc88990902c2057f",
+      "size": 1137
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "854d6f3a2ab834794567ec50df00aa0a44e678bbc7adddef6713213bd9217c26",
+      "size": 324
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "df9cb9b3af7d215319b8051bba9eabd8f94a8e179f3fe35434c42f58323cd7d8",
+      "size": 1963
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "65a171ccad7a365d3adc1124a417f435d9f3580de6e1c066a42a42f23e440d25",
+      "size": 802
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_acer_a100",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:09Z",
+  "vendor": "acer"
+}

@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_razer_nicole.git",
+  "codename": "nicole",
+  "commit": "41fe160ef812e53b0abbeaa992bb16085e21da3e",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "4f44cccf15fccbc903dde52fc3f4226db2b3fe39e3572db111ce0426b33db69d",
+      "size": 737
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "d80e2a239b0fa0e33798a101d0f88e0693ed8098edf53c5bb8a54af8c75409b5",
+      "size": 1717
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_razer_nicole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "nicole"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "razer"
+}

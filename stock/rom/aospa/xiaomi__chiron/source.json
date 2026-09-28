@@ -1,0 +1,42 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_chiron.git",
+  "codename": "chiron",
+  "commit": "b54664166c421716b7b5331bbed6a67a3feeba29",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1c994430227b79ec4ea2ea3bbb7cdd746173ddb1febd23a9ca20bb11f4bcd748",
+      "size": 714
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "10208d4921b8cc890e51b504a8ffb153a443e8280c0552d2558f54f97077965d",
+      "size": 1156
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5b0642e53c4983e76274ccd9689a849d4eebd6baee94306140a94a0a19e79c49",
+      "size": 1557
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1d2a81e427315ef424ec4d5a6a806b2ea52cb8d62cfed36790df00e1db3b4ff8",
+      "size": 1722
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a1b54f161482427e4ca37543603f692aac4acd1b2d0a2e4c4ef4e4b9d0df9a27",
+      "size": 7624
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_chiron",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-05-06T14:13:14Z",
+  "vendor": "xiaomi"
+}

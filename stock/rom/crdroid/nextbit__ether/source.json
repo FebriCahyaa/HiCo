@@ -1,0 +1,62 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_nextbit_ether.git",
+  "codename": "ether",
+  "commit": "c7b70ba052a38cb5337db74718058903b49fe66d",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3e4dafc93fc6908b7569e3bace32dc4a89c720de4b3803bacae4c67f9a498f7b",
+      "size": 2885
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0367f530ca6fe14a6cfe591651c2933b65f3f659cce0c65f3e710c594d89304e",
+      "size": 5053
+    },
+    {
+      "path": "configs/thermal-engine-8992.conf",
+      "sha256": "11f5239a99769c5192c0b8eb7c1d0d3a82217e8e52f82bbc7b7dee989376d20c",
+      "size": 1941
+    },
+    {
+      "path": "device.mk",
+      "sha256": "afdc24a826be9d7adffcc16fc24d8ff94d581bb2c8d4a7cedaf75d2fcbcb526a",
+      "size": 12262
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ddc693777ace5d5c5b5fab0a3215d763ce99083c8cd2542ce03622454e42304",
+      "size": 2119
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6373916b33864b425323641e423da115746de413d3b583736718193d9777ed16",
+      "size": 205
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9ece7652325f6e3bfdbf7d505ee1ea739bdc4c0eb4832c4356330f49dbc303e4",
+      "size": 21215
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "b0a98ba7fa6eff513c6c5c07013ecb923161e938d55323c2028cfd5a1c4780a0",
+      "size": 73
+    },
+    {
+      "path": "system.prop",
+      "sha256": "fbe6bfc1e84f6d24adc3193c7c63ea3f419bd853ec43ae7e6c99e755a0b16b09",
+      "size": 2664
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nextbit_ether",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-07-22T08:22:30Z",
+  "vendor": "nextbit"
+}

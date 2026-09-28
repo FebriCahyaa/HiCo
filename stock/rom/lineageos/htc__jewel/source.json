@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_jewel.git",
+  "codename": "jewel",
+  "commit": "65527d6c6b0959f8a2fddddb0e070fb631721a21",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "cfd59246b03eeadb0eda6e9cda72c6f2bc62f2e2d20a6c7698c8d91dac79cc45",
+      "size": 711
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6ae4047e997ebecf969d922c2d8e24bcacad9514e78d6d3b8482eb3cada7adb3",
+      "size": 3115
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f1d0711e3e6296e46316ab6b2018945c4f4b2af9d1c61369f8bac7511199bd73",
+      "size": 3208
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "678be3e672ebd80ffba39bcc9417038eeb546f2063d5ce1f83c6e33c87ebe461",
+      "size": 719
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f14d0a11801a46f0c5edaf61dc75819c1feac7b2c3cb7a1566ddba8717dca3ad",
+      "size": 104
+    },
+    {
+      "path": "system.prop",
+      "sha256": "80f3dd4fe466eb35e7d7772f5838d5fb0978c8a895d9b306cd4af85066fb52ac",
+      "size": 906
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_jewel",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:44:45Z",
+  "vendor": "htc"
+}

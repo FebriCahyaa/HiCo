@@ -1,0 +1,35 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_lge_joan-common.git",
+  "codename": "joan-common",
+  "commit": "b56150ca0eaefa8e5343a8b7a56c30d47dc6057e",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-8998.conf",
+      "sha256": "b0829849a655b0dcb770960cc47f144774d9e42c8a33e883d2af7c65f42c2415",
+      "size": 4926
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-default.conf",
+      "sha256": "683058f8c79a2bab7f279ab7480554905201c5e948f7b00305df2f07e854c56c",
+      "size": 122
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_lge_joan-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "joan",
+    "l01k"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "lge"
+}

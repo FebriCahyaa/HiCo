@@ -1,0 +1,72 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_asus_Z01R.git",
+  "codename": "z01r",
+  "commit": "ce2441322c86b9e57a3ad7550d66cc112d008f73",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a0a9df360fe6ee4c0bec3ff85b0cde5b9a575ba8008019d9188a36c4a1cb811b",
+      "size": 9241
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ea87f9f6956f5f350ac9c1a5eea0e5d031fa00fab1a2dd3762ab211b4912b181",
+      "size": 752
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5b301eed526df4d99183aba35572e6e904352b3934ece71358625627656f5bcd",
+      "size": 6008
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d9a8058356a650df2de2a7f46c1cbd3dd4ecaa02dd9d5c6e29b73626a34b6841",
+      "size": 22754
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5aeb584f732f630a9767e8cec22c5db0cd325011e8b9531332346a717e3c49c5",
+      "size": 1904
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "460e1c5a5d70144b92fb05cff39854bc40272242ec8ab14c1cdd0bf9f2ce495e",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f22cba16eeec07f23c8694498724a4f4312f6dda506d93d2a487c6cedf6d530",
+      "size": 65506
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "88ca25b5b7ca5bf325eb67fd0d63f2f9563e8c2643747a6543e0ce467b2d3cd8",
+      "size": 404
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7219b306d59472d9ed56193e9acf7eae2b8b6e6c47e528d9d57d02c4e8201f48",
+      "size": 2247
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3ba2f6464e35c19fa7fac45e5a6aae9234ec254f78211ef07670d26a7c333c71",
+      "size": 6130
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_Z01R",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-02-11T12:49:12Z",
+  "vendor": "asus"
+}

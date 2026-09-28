@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_honami.git",
+  "codename": "honami",
+  "commit": "d737049b18e1b158c5c22f6d3e2e203b8765d3a5",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d47259083819ab22c6202289acb26a86ff37a8fe83cdccf22a45fa4d8829a350",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5b318f2700c7d8a7b228265a97415c2e6919aface82b01af89aad48482b1808d",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "065fe8ffc090229b2357d5cb19b29dcca9b9cddca79f154248389164747891a4",
+      "size": 1310
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d56ef5dd39340407fecd781a4822c6278148ebc142815b7a7ec04ab4d6879be6",
+      "size": 129
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "92fe9f066619d2f92161c879fbd8d4e4f677cb48fa87e72866e60087514502c3",
+      "size": 8484
+    },
+    {
+      "path": "system.prop",
+      "sha256": "91bcb660a1c5570b1c7fbc9fc89ad5d6f0a6a0390b0eab03c6c4bf8c10db7eb9",
+      "size": 157
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3b1b261260c3c52cd4431367100db5f4d580d297bd689defdd871666fdc054e2",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_honami",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:49Z",
+  "vendor": "sony"
+}

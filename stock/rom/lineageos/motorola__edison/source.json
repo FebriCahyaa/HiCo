@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_edison.git",
+  "codename": "edison",
+  "commit": "9a6bcbcddd5515a7c22fb4376ebb1e72d72ad2b8",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "35b686f63f9e945e97e78000aae3917ce2b5bdbd463cd1658a45137c789d2751",
+      "size": 666
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a5c3d396d9170c3564b4ac7751c1f76d0fa98167bdcdd4dcc2bb14aaad7f391d",
+      "size": 642
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ba983df19a5df32e1011257a2ca8f51edd470793a5e6980e91e11fe41984c102",
+      "size": 1614
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6d70cbac1a39748ae778f3508612d0249f659b54e64d7502997b1fde3aeb044e",
+      "size": 2018
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f4fafba8dafe55fb82728c0c05642b12ea64cb761e30131e49ec22cd9f270197",
+      "size": 93
+    },
+    {
+      "path": "system.prop",
+      "sha256": "da7d3fa66e77f3aef87f7bbcaf661a595cdb6e5f56995cc9a55ee79a749c591b",
+      "size": 3038
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "36668c5e095b6cd53ec231a170eec5f81462408d7e28a3046d2ea82ff835f1d2",
+      "size": 837
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_edison",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:42:45Z",
+  "vendor": "motorola"
+}

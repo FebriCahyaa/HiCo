@@ -1,0 +1,42 @@
+{
+  "branch": "lollipop-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_lge_mako.git",
+  "codename": "mako",
+  "commit": "eb5d6d24494803edeea95e5f4b33043159374464",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "db8e79927f11b208e827f532101526319c247a98bda8e129ad87cdc563802360",
+      "size": 1631
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f84f204b88cd1a408a41eebda4e6f410f19dc8b50f6c4648e5cbae64b892979c",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1e6cf7373a46fa44ca5f22454eb3fe61158f5860278fb6fdc63fef02e75f12ec",
+      "size": 4216
+    },
+    {
+      "path": "device.mk",
+      "sha256": "065906dc99aeb04eee190d9630e8745c6f3a8e68b7fca5dc9138d6ee06604042",
+      "size": 9919
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "1a977082e47a5748bd545fd8bb50bfed4ecad93d358f1eedc3b3215c3496c5cc",
+      "size": 1324
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_mako",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-01-06T18:08:51Z",
+  "vendor": "lge"
+}

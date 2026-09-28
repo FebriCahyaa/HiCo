@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_infiniti.git",
+  "codename": "infiniti",
+  "commit": "d56ed5fa8035961ecab8ae067061e20dc0a8f560",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c63ce47bfa3e7390b6580ac1415267f136a2a48a126a07e1179007c7ed844326",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "40dcdbacd616dc4a22f6ae980f553242c65e5ec35825761b5e89e18c38cf79f1",
+      "size": 768
+    },
+    {
+      "path": "device.mk",
+      "sha256": "096532ada47ed71f123fd214a81be6197b6721f1f7e6287939499ce8bac891cf",
+      "size": 3026
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "aa79734d782de804997613f61e48c7b48e678f8b9083e2e2ad5bd710cec149f5",
+      "size": 3617
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d6958c24146ba4d6c6324d2346bfd35c6ed4a1ff276c1c5bfd0bfb9f536e4b4",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d6b1405c1d3e2e6095fc81e4a7696306bc507fcc36e2e80c56a3e720388e61ac",
+      "size": 83910
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_infiniti",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T12:42:23Z",
+  "vendor": "oneplus"
+}

@@ -1,0 +1,29 @@
+# Charger
+ro.charger.enable_suspend=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
+
+# ZRam
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Zygote
+zygote.critical_window.minute=10

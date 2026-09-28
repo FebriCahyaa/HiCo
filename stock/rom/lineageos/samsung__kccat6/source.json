@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_kccat6.git",
+  "codename": "kccat6",
+  "commit": "1f8289bdf1708435900b861cc05eead476997d9a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e4a4b2fe8c08265d208f9d42aa3d24355307a4cdeb1aca3b67a091a02bd4f9d1",
+      "size": 768
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f545a424c77c156f1a86fa9b6855ac6fb83d870f36e4204b7c5810d9e53c02ad",
+      "size": 760
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0d2c57eb12153e05f5ce0922118615a622ca63c76d6e59181dd8f9027189b125",
+      "size": 1619
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a3eddc77df9f30839da44be4d8fb13eaaec4d336cdfdbba023937b99568838a8",
+      "size": 1243
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2d735e37a1d9e81dccabe35c604b401655a1fac7a55ee7cd88883ec1f2a937b0",
+      "size": 737
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8fad370b8e6f182b0f7ac690ee47839b92ba7d795fe401e3634951e2e37476eb",
+      "size": 122
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6e0b9940924f9cc8935658e2f0dd553a40cc40d0cbeaa1922ee9323a0c8c34b1",
+      "size": 97
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "21a6d357c0a3509f83c912d6bb370af96f8c7600a544ba6d4ef237324c108d6d",
+      "size": 636
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_kccat6",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-04-06T07:07:47Z",
+  "vendor": "samsung"
+}

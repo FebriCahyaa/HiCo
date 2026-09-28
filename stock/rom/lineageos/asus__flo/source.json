@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_flo.git",
+  "codename": "flo",
+  "commit": "3ba4d7c18153062e8bd460bc1fe92dda9982b453",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6d91fc96d68fad13db6d169c31e73e59c733ebbf3d5494b5c325f4276352a191",
+      "size": 14
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f531d0abce44352dc299717ebd705067d61a2bfe31c4b9d41a3bd97b680076b7",
+      "size": 728
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "952d76a4ac6d0b606cf9b1b3ad68b1b0856d1295d35c76e9a93c9bd73fe4f32c",
+      "size": 52
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "544918586d364f4cb90219af75713a976a5be0021aee6c9066f017f71614fbb7",
+      "size": 917
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5abb3434c77f6c097547a0083def7d44dba952c9712c05a58e1b2f160e921d2d",
+      "size": 4291
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "c03498df2a145cd9ad0e98517fde2d3e67e8642ec1addb0a1d73c0e1d72c0261",
+      "size": 11144
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4f5a24eb6b00db96acb0d87e1911f46500833d444ad839adf0c79557fab5e29d",
+      "size": 1169
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c3a3a9cc92330d1fc341bf756f6492fb96e04902b9a6e53f6cca28fc1b49f0f5",
+      "size": 1719
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "198fc06834540741b2513ebe65f9cb77f72ce0186de5a325a8cf0def747ac2a0",
+      "size": 94
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "eae4938db2353e5fd8f4dad1f6cce6347d275be4c4fc71a2c05ea83f5937cbac",
+      "size": 1334
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9cb6575a45152813f69f6a236929c124dc9655e48eee542e0dd3bea0f224038c",
+      "size": 1445
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_flo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:43Z",
+  "vendor": "asus"
+}

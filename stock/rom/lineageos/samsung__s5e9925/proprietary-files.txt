@@ -1,0 +1,158 @@
+# All unpinned blobs are from S711BXXSHGZG1
+# Vendor security patch level 2026-07-01
+
+# Audio 
+vendor/etc/audio_board_info.xml
+vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib64/lib_SoundAlive_play_plus_ver800.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libsecaudioinfo.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/lib64/soundfx/libmyspace.so
+
+# Audio (A546EXXSGEYK7)
+vendor/lib64/lib_SoundAlive_SRC384_ver320.so|26ef33d16f3a4f76891d8e5b4559f96ad0bb2791
+vendor/lib64/lib_soundaliveresampler.so|4b8b33d7dcebaafa2cad79fe27caf91c4ea8a9b1
+vendor/lib64/libSamsungPostProcessConvertor.so|2c1a5325c85a15e3c27d6b985ae37dc809d01a13
+
+# Camera
+vendor/lib64/libhwjsqz.so
+vendor/lib64/libIMUSensor.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libsensorlistener.so
+vendor/lib64/libuniapi.so
+vendor/lib64/libuniplugin.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+
+# Codec2
+vendor/lib64/libImageFormatConverter.so
+vendor/lib64/librechdr10plus.plugin.so
+vendor/lib64/librechdr10plus.so
+
+# DQE
+vendor/etc/dqe/DQE_coef_data.xml
+vendor/etc/dqe/calib_data_whitepoint.xml
+vendor/etc/dqe/calib_data_skincolor.xml
+vendor/etc/dqe/calib_data_rgbgain.xml
+vendor/etc/dqe/calib_data_eyetemp.xml
+vendor/etc/dqe/calib_data_colortemp.xml
+vendor/etc/dqe/calib_data_bypass.xml
+
+# DRM (Widevine)
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib64/libwvhidl.so
+
+# ENN
+vendor/lib64/libenn_common_utils.so
+vendor/lib64/libenn_engine_lib.so
+vendor/lib64/libenn_model.so
+vendor/lib64/libenn_profiler.so
+vendor/lib64/libenn_public_api_cpp_lib.so
+vendor/lib64/libenn_user_driver_cpu.so
+vendor/lib64/libenn_user_driver_gpu_lib.so
+vendor/lib64/libenn_user_driver_unified.so
+vendor/lib64/libenn_user_lib.so
+vendor/lib64/vendor.samsung_slsi.hardware.enn@1.0.so
+
+# EMS
+vendor/etc/task_profiles.json
+
+# Fingerprint
+vendor/lib64/libgf_in_system_lib.so
+vendor/lib64/libsynaFpSensorTestNwd.so
+
+# Firmware
+vendor/firmware/APSV_AUDIO_SLSI.bin
+vendor/firmware/bidirmic.bin
+vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/dolby.bin
+vendor/firmware/dsp_gkt.xml
+vendor/firmware/dsp_ivp_dm.bin
+vendor/firmware/dsp_ivp_pm.bin
+vendor/firmware/dsp_reloc_rules.bin
+vendor/firmware/libann.elf
+vendor/firmware/libgaussian3x3.elf
+vendor/firmware/libivp.elf
+vendor/firmware/liblog.elf
+vendor/firmware/libme_rta_pamir.elf
+vendor/firmware/libnn_af16wf16.elf
+vendor/firmware/libnn_sdma.elf
+vendor/firmware/libnn.elf
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/OD_V3.4.3_08_31_QVGA_PAMIR_ENN_BGRA.nnc
+vendor/firmware/OD_V3.5.2_08_31_VGA_PAMIR_ENN_BGRA.nnc
+vendor/firmware/secure_configuration.flm.cfg.bin
+vendor/firmware/volumemonitor.bin
+
+# GNSS
+vendor/bin/hw/gps.sh
+vendor/etc/gnss/ca.pem
+vendor/lib64/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
+vendor/lib64/libwrappergps.so
+
+# Graphics
+vendor/etc/hdr_samsung_mx.key
+vendor/lib64/hw/vulkan.samsung.so
+vendor/lib64/vendor.samsung.libcolor.hardware.so
+vendor/lib64/vendor.samsung.libcolor.hdr10plus.so
+vendor/etc/Khronos/OpenCL/samsung.icd;SYMLINK=vendor/Khronos/OpenCL/vendors/samsung.icd
+vendor/lib64/egl/libEGL_samsung.so
+vendor/lib64/egl/libGLESv1_CM_samsung.so
+vendor/lib64/egl/libGLESv2_samsung.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libSGPUOpenCL.so
+
+# Keymint
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+
+# RIL
+vendor/etc/init/init.baseband.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/etc/init/vendor.samsung.rilchip.slsi.rc
+vendor/etc/init/vendor.samsung.rild.rc
+vendor/etc/mtu-conf.xml
+vendor/lib64/libfloatingfeature.so
+vendor/lib64/libsecnativefeature.so
+
+# RIL (S926BXXU5BYD9)
+vendor/bin/hw/rild|560cf02e1090d2207af38598b4a20121333fdca3
+vendor/etc/locale/plmn_delta_eng.bin|5a1a2571ac703807da642d09c54a992244fa6654
+vendor/etc/locale/plmn_delta_zh-rCN.bin|b413cb77b463ccd496cfe5af4bdeb49ae8aff357
+vendor/etc/locale/plmn_delta_zh-rHK.bin|360f20bca041e121531118d96b8771e2dfc7ba98
+vendor/etc/locale/plmn_delta_zh-rTW.bin|034e834906858c1349f22eafbbd882b86dbce7d4
+vendor/etc/plmn_delta_attaio.bin|751a1c7105f1c03fc196689c2a71e2c69aa14e1f
+vendor/etc/plmn_delta_hktw.bin|85e08766111c7fb6699b64784afbce2c9255c53b
+vendor/etc/plmn_delta_ltn.bin|4a6f44ae57e84394e6f31814f26fc4fcd7d41b62
+vendor/etc/plmn_delta_usagsm.bin|9a25ec9e9da16ed2f8a9db07f037fe08283b24e5
+vendor/etc/plmn_delta.bin|dbcc4d73dca31bd132b042e36be988701c42a552
+vendor/etc/plmn_se13_prebuilt.bin|b935b074c729261f2819823f533f227f0bea917f
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_34.xml|8a78a095378827de038b13e0470f6b43d60cf71a
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_34.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
+vendor/lib64/libril_sem.so|f472e6e480360ec25dec47fc9d503f42d153bc53
+vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME|998ad2d44439286c9835bc40dce75141cad6f394|3c3d6a8e88485dff8ab08dabd9a4fca59cb42992
+vendor/lib64/libsecril-client.so|5492db9ef074c7e9a7bceb8ac9644fd8d32dc74f
+vendor/lib64/libsemnativecarrierfeature.so|98a7626528fdd41263239d0d93f316747ea8b712
+vendor/lib64/libVendorSemDataProps.so|a90e87724b4fee5b3bc741ccc35969c9bef8b62d
+vendor/lib64/libVendorSemTelephonyProps.so|ecd7b8d54ff08f45154d69860574e96bbb9dad8d
+vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|c2a5f4abeca898f143d08f42550e990224fa16e2
+vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|3aad42fc15ddf5467e784fa5503453db67c33e42
+vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|4a74fad71bb608db867db1a33db13e8343f27f8e
+vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|ffd603a5d0dad411f3f020833cd9a367b99e37c6
+vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|a3226f016f34667dbc7324a88db062aa9ff8069b
+vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|127aa91af345ed9e97e4549c5d19e079c25f6fbb
+
+# Sensors
+vendor/lib64/sensors.flicker.so
+
+# TEEgris
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris_v4.rc
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor

@@ -1,0 +1,19 @@
+# system.prop for surnia
+
+# Motorola
+ro.mot.build.customerid=retus
+ro.product.device=surnia_umts
+ro.build.product=surnia_umts
+ro.product.model=Moto E 2015
+
+# Camera
+ro.config.hw_camera_hdr=true
+
+# Audio
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+ro.vendor.audio.fluencetype=none
+
+# Display
+ro.sf.lcd_density=240
+debug.hwui.use_buffer_age=false

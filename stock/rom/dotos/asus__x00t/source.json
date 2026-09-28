@@ -1,0 +1,57 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_asus_X00T.git",
+  "codename": "x00t",
+  "commit": "d68916c8a6d3a927188ca3f4c9857691ae128af6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1bfb5d45fe76b1ed10f1d1cca5c99ae13d2bde24fad92a42e0c28e89fb105576",
+      "size": 4662
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8cfa64cc7beacf946ef72c3da79a15f2d438f4aabe15af5ba4048e73d0c5778d",
+      "size": 647
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ddd67ed9e683e2d5f3c542bf5c540787f0eee82bc6677dbcd185c3f48b84af9f",
+      "size": 8978
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c647198945149e2b12cf2e4ccecb0b8dccec28c69713a8ebe1ef1f680012bd1e",
+      "size": 5415
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1738389802ea26e0620b11f2f37a1cf239027fa648f00246445fc0bd744643aa",
+      "size": 21112
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ea257292aa8de35b9c11f343d0bf88d70b89f9af9c945a5cbffe2b76021ee0c0",
+      "size": 1866
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ccd6d293ee900d762a99ea4b8fbbfd8048383635db9d50b3139c4c32e67a15aa",
+      "size": 59249
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4adc989e57bf6f298157e2bbf089be5d2dfe26adaf4632d0efb46877107d7cf4",
+      "size": 35
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_X00T",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-09-19T18:09:45Z",
+  "vendor": "asus"
+}

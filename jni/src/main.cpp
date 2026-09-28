@@ -13,6 +13,7 @@
 #include "FluxLink.hpp"
 #include "Fs.hpp"
 #include "HiCo.hpp"
+#include "Journal.hpp"
 #include "Log.hpp"
 #include "MiCrypt.hpp"
 #include "Monitor.hpp"
@@ -55,7 +56,7 @@ int usage() {
         "  config get <key>\n"
         "  config set <key> <value>\n"
         "  config reset           restore default settings\n"
-        "  config preset <name>   apply a preset: cool, balanced, extreme, overclock\n"
+        "  config preset <name>   apply a preset: daily, cool, balanced, extreme, overclock\n"
         "  config presets         presets and their values (JSON)\n"
         "  config upgrade         add new keys and normalise values (installer)\n"
         "  config schema          settings description (JSON)\n"
@@ -70,6 +71,7 @@ int usage() {
         "  thermal check <original> <tuned> [--platform P] [--margin N]\n"
         "      tune/check also take --ceilings DIR (mi_thermald: that device's configs) and tune --plain\n"
         "  thermal table [--json]             current thermal zone/trip table\n"
+        "  thermal sources [--json]           who controls thermal here: configs, daemons, HiCo overlays\n"
         "  thermal decrypt <in> [out]         encrypted mi_thermald config -> text\n"
         "  thermal encrypt <in> <out>         text -> encrypted mi_thermald config\n"
         "  version\n");
@@ -348,9 +350,93 @@ int cmd_thermal_table(const std::vector<std::string_view> &args) {
     return 0;
 }
 
+/// Thermal identification: which configs and daemons protect this phone, and which of them HiCo
+/// currently overrides (journal: tuned copies mounted, services stopped). Read-only.
+int cmd_thermal_sources(const std::vector<std::string_view> &args) {
+    bool json = false;
+    for (const auto arg : args) {
+        if (arg == "--json") json = true;
+        else return usage();
+    }
+    const DeviceProfile d = DeviceProfile::detect();
+    Journal journal(HICO_JOURNAL_FILE);
+    journal.load();
+    const auto format_name = [](thermalcfg::Format f) -> std::string_view {
+        switch (f) {
+        case thermalcfg::Format::Engine: return "thermal-engine";
+        case thermalcfg::Format::HalJson: return "thermal-hal-json";
+        case thermalcfg::Format::MiThermald: return "mi_thermald";
+        case thermalcfg::Format::MiEncrypted: return "mi_thermald-encrypted";
+        case thermalcfg::Format::Unknown: break;
+        }
+        return "unknown";
+    };
+    const auto kind_name = [](services::Kind k) -> std::string_view {
+        return k == services::Kind::Hal ? "hal" : k == services::Kind::Daemon ? "daemon" : "other";
+    };
+    struct ConfigInfo {
+        std::string path;
+        std::string_view format;
+        size_t size = 0;
+        bool tunable = false;
+        bool hico = false;
+    };
+    std::vector<ConfigInfo> configs;
+    for (const auto &path : thermalcfg::identify_config_files()) {
+        const auto content = fs::read_raw(path, 4 << 20);
+        if (!content) continue;
+        // MediaTek thermal policies: identified by location, never tuned.
+        const bool mtk = path.find("/.tp/") != std::string::npos;
+        configs.push_back({path, mtk ? "mtk-thermal-policy" : format_name(thermalcfg::detect_format(*content)),
+                           content->size(), !mtk && thermalcfg::plain_text(*content).has_value(), journal.has_mount(path)});
+    }
+    const auto svcs = services::thermal_services(d.thermal_services);
+    std::vector<std::string> backends;
+    for (const auto &b : make_backends(d)) backends.emplace_back(b->name());
+
+    if (!json) {
+        out(std::format("device: {} ({} {}, {} {}), database: {}\nrom: {}\nbackends: {}\nHiCo active: {}\n\n",
+                        d.codename.empty() ? "unknown" : d.codename, d.brand, d.model, to_string(d.soc), d.platform,
+                        d.in_database ? "yes" : "no", d.rom_name, join(backends), journal.empty() ? "no" : "yes"));
+        out("== thermal configs\n");
+        for (const auto &c : configs) {
+            out(std::format("{:<52} {:<22} {:>8} B  {}{}\n", c.path, c.format, c.size, c.hico ? "HiCo (tuned copy)" : "vendor",
+                            c.tunable ? "" : ", read-only"));
+        }
+        out("\n== thermal services\n");
+        for (const auto &sv : svcs) {
+            out(std::format("{:<40} {:<7} {}{}\n", sv.name, kind_name(sv.kind), sv.state,
+                            journal.has_service(sv.name) ? " (stopped by HiCo)" : journal.has_restart(sv.name) ? " (restarted by HiCo)" : ""));
+        }
+        return 0;
+    }
+    std::string o = std::format(
+        R"({{"device":{{"codename":"{}","brand":"{}","model":"{}","platform":"{}","soc":"{}","rom":"{}","rom_name":"{}","in_database":{},"source":"{}","backends":[)",
+        json_escape(d.codename), json_escape(d.brand), json_escape(d.model), json_escape(d.platform), to_string(d.soc),
+        to_string(d.rom), json_escape(d.rom_name), d.in_database ? "true" : "false", json_escape(d.source));
+    for (size_t i = 0; i < backends.size(); ++i) o += std::format("{}\"{}\"", i ? "," : "", json_escape(backends[i]));
+    o += std::format(R"(]}},"hico_active":{},"journal_entries":{},"configs":[)", journal.empty() ? "false" : "true", journal.size());
+    for (size_t i = 0; i < configs.size(); ++i) {
+        const auto &c = configs[i];
+        o += std::format(R"({}{{"path":"{}","format":"{}","size":{},"tunable":{},"controller":"{}"}})", i ? "," : "",
+                         json_escape(c.path), c.format, c.size, c.tunable ? "true" : "false", c.hico ? "hico" : "vendor");
+    }
+    o += "],\"services\":[";
+    for (size_t i = 0; i < svcs.size(); ++i) {
+        const auto &sv = svcs[i];
+        const std::string_view by = journal.has_service(sv.name) ? "stopped" : journal.has_restart(sv.name) ? "restarted" : "";
+        o += std::format(R"({}{{"name":"{}","kind":"{}","state":"{}","hico":"{}"}})", i ? "," : "", json_escape(sv.name),
+                         kind_name(sv.kind), json_escape(sv.state), by);
+    }
+    o += "]}\n";
+    out(o);
+    return 0;
+}
+
 int cmd_thermal(const std::vector<std::string_view> &args) {
     if (args.empty()) return usage();
     if (args[0] == "table") return cmd_thermal_table({args.begin() + 1, args.end()});
+    if (args[0] == "sources") return cmd_thermal_sources({args.begin() + 1, args.end()});
     std::string platform;
     int margin = 0;
     std::vector<std::string> files;

@@ -1,0 +1,3 @@
+add_lunch_combo superior_ef63-user
+add_lunch_combo superior_ef63-userdebug
+add_lunch_combo superior_ef63-eng

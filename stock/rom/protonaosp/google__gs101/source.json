@@ -1,0 +1,57 @@
+{
+  "branch": "sc-qpr3",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_gs101.git",
+  "codename": "gs101",
+  "commit": "63e717f63697bc8d249435d925ef025451b4c293",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "88af858cd8a85a3b68f4600ee80f1c193b16fd0dd1de3afa9aa0e41046fca58c",
+      "size": 1202
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c8e97628ba8a955cd7881dd0467ee94cd5f276b266204153e63d3a6fbea657e4",
+      "size": 1210
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "067ba5c75b3546c93daf0c7110c64be70acffb84413a643790120f436a6ab466",
+      "size": 12982
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "59306288a05d21577ca9722a5a0587ccc7ea49469afd9309cfee7c3eee01a12d",
+      "size": 1675
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "cc776da508307bbbd71196c2911fd25ee06776a954c5bb438c74be4db114cdcb",
+      "size": 845
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6a4bcd3d20163461ff73896dd0480761e339d31bf2ea8b471bd142682ba874cc",
+      "size": 38461
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_gs101",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2022-08-08T13:00:04Z",
+  "vendor": "google"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_topaz.git",
+  "codename": "topaz",
+  "commit": "14bf4cd5d5286d40e6e2fad01346d10af92a856f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "937e7fe7c8288cba3a9bfffb43baa8ad84949600e5de5421e9b6bae1b922f1c3",
+      "size": 6123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "aafaf5bbbd3d4fa531971d7c15b10025e9fa324c5a50340f004c6d2efaad50f9",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aa978c6efcd7bd22c05092b9fdfc182cf4a3bcf2f7c8ae05b59431606dbfc293",
+      "size": 9719
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0091e3b2d267a3add90778442c7eb1b9bb999473ddea7b9e446c02a6101cbd81",
+      "size": 24254
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "66a1f2d60b028d8f9c9e2faec33309b25da3d61d98a256dc4ceeadd59ba47f99",
+      "size": 1752
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "adb94fc53f0e7d5e39cff0f5dcd2ca08b89c8b846f0e3d35ab550d04e9c1af8c",
+      "size": 73593
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "4c924208f6e4825b39aff103166ce4b7dc97f85fc4609ea4bc1cf89a968c4fc8",
+      "size": 1669
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_topaz",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-12-17T16:56:42Z",
+  "vendor": "xiaomi"
+}

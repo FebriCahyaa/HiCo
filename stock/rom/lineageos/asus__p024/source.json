@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_P024.git",
+  "codename": "p024",
+  "commit": "e4767bdf78de0d17e159bce6b3e1c7e56f586729",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c44a5dd7096b13630bbeb499bf0f35891290555b2f7ab83d1153a99900cd1ca4",
+      "size": 3462
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "995d0070ca0ad8ac0deeb6d2d0b464c496a63835c2584d1d6d69e669115cb0be",
+      "size": 4564
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a95fffdd31d6b60b10d93e53cdeeba38345676201769daa7ed1648bd64075e44",
+      "size": 10459
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "bab5ef357f730b261e04e72e7224ee5120a70beec6d8acd0edd8ae8d0749533a",
+      "size": 190
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "31668ad5900bec87e24c3525d3522cdef50d9e91d0f6f116b5c3b2696b2e0fab",
+      "size": 23203
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0b1cd670f8e31f56d33e05185b8c68642a0868566fe5e2d358221747806f153c",
+      "size": 2725
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9a90bddb50be7cc5057f6c86fdaf0e62619a07f076f29464e4957eae930de334",
+      "size": 875
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_P024",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-11-06T04:50:26Z",
+  "vendor": "asus"
+}

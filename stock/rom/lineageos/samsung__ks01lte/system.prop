@@ -1,0 +1,48 @@
+# Audio
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+ro.qc.sdk.audio.fluencetype=fluence
+use.dedicated.device.for.voip=true
+media.aac_51_output_enabled=true
+
+# Display
+ro.hdcp2.rx=tz
+ro.qualcomm.cabl=1
+ro.secwvk=144
+ro.sf.lcd_density=480
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+
+# Radio
+persist.data.netmgrd.qos.enable=true
+persist.radio.add_power_save=1
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.no_wait_for_card=1
+persist.eons.enabled=false
+persist.radio.use_se_table_only=1
+
+rild.libargs=-d /dev/smd0
+rild.libpath=/system/lib/libsec-ril.so
+ro.telephony.call_ring.multiple=false
+telephony.lteOnGsmDevice=1
+
+#Simulate sdcard on /data/media
+persist.fuse_sdcard=true
+
+# Pedometer
+ro.qc.sensors.step_counter=true
+ro.qc.sensors.step_detector=true
+
+# Recovery
+ro.cwm.forbid_format=/boot,/firmware,/firmware-modem
+ro.cwm.forbid_mount=/boot
+
+# WiFi
+wifi.interface=wlan0
+
+# WFD
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0

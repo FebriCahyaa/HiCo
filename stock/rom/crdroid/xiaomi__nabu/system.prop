@@ -1,0 +1,47 @@
+# Animation override
+persist.sys.activity_anim_perf_override=true
+
+# Audio
+audio.offload.min.duration.secs=30
+persist.vendor.audio.hac.enable=false
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
+
+# Blur (crDRoid)
+ro.custom.blur.enable=true
+
+# Camera
+camera.disable_zsl_mode=true
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
+
+# Charger
+ro.charger.disable_init_blank=true
+
+# Display
+debug.gralloc.gfx_ubwc_disable=0
+debug.sf.enable_hwc_vds=1
+persist.vendor.color.matrix=2
+ro.sf.blurs_are_expensive=1
+
+# Fwk detect
+ro.vendor.qti.va_aosp.support=1
+
+# Netflix
+ro.netflix.bsp_rev=Q855-16947-1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Baseband
+gsm.version.baseband?=Wi-Fi Only
+
+# LogSpamControl
+persist.log.tag.vendor.qti.bluetooth@1.0-ibs_handler=S
+persist.log.tag.ACDB-LOADER=S
+persist.log.tag.ResourcesCompat=S
+persist.log.tag.CVP=S
+persist.log.tag.CamX=S
+persist.log.tag.a2dp_codec=S
+persist.log.tag.QC2Buf=W
+persist.log.tag.QC2V4l2Codec=E
+persist.log.tag.SDM=S
+persist.log.tag.QC2CODEC=S

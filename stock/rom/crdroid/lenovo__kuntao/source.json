@@ -1,0 +1,62 @@
+{
+  "branch": "9.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lenovo_kuntao.git",
+  "codename": "kuntao",
+  "commit": "71347a30964a0f77c0c74295c25620154f4dfe5e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e4e2ba03b3b84ddf22945868b729bcd731a83ddcaf3f86e3a5b993e2aa8fb6e1",
+      "size": 10724
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b7b621f280e56c2f6ac9e62c848973fb7115c47c87133be98ca21cf9cf5da00d",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "361eab4a59f88acaf634894c1f785129e97a6898b1eaff0adb2daee8f2b8d483",
+      "size": 6830
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d0e8fcc263af0c279f827e3ff569b749a5ac21dacc0093dc072e406cdd0d54d0",
+      "size": 16913
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "01150e234403618375b3da2c3f6bf24613c97d4f04274346ec8a7a7053019da8",
+      "size": 2258
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0d089b2e44b91585c4343fddd0a0b16f3446cb0562fd2e75deb66d97760607a0",
+      "size": 233
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4f32eb3b521b988900b2beaea87437d0fa4b4e1019178073194a989b7d6a96c3",
+      "size": 12419
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "872686c4a84820b0ef316fcda8fdb7bf92b8891ce26c4b045358e9c98b79a00f",
+      "size": 47
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3d14978d0037b253c548350ce0720b47f892a15b4827eb6abbbe028003a77179",
+      "size": 112
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_kuntao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-02-08T04:52:26Z",
+  "vendor": "lenovo"
+}

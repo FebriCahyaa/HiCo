@@ -1,0 +1,109 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_rosemary.git",
+  "codename": "rosemary",
+  "commit": "67b416580f481bc105e13091af5b1d109dbd9009",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "9858666f0c57a8c0791da12188b67e41e5cd51c29de3df79c0ba994bc4daf0c1",
+      "size": 3833
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_08",
+      "sha256": "7679013319d44a30606a43e1da42bce0739ebd30ab676adc7971d1ff6825006c",
+      "size": 3761
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "db57d1b7b592461fd020275ceb7d06fc0e99db19d258f14f39865aaae1f221cc",
+      "size": 3761
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "0356cb44b5b57c4e17a2ee01d9a324c3b7674c8986b1cd6360a2e5a5c53e242c",
+      "size": 3761
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "d86ce8db52079569743441e34296badb3e63af0367c8c950553768f17f285495",
+      "size": 2816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "0feaf8584fa8808a61fd8438525d370a12359672e01b8ba8ad3699fec88f7c61",
+      "size": 2096
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera2.conf",
+      "sha256": "1cc36d2cf3aff637e279665ab36964ac2f690fd6cef2b91ccdec006d50638162",
+      "size": 2096
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "35d2e8c15980bce3a9356183982287473dbcaf660c9df5ee88b46763148591ac",
+      "size": 768
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "c8b6f9b963fd583a894b44bf172554d7d25c27ee3264a2ceafd4aea795cc1842",
+      "size": 416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "11a1e3bfb52ce7ba50301e990356121844f4fa7ab142984ec38619904126f7e8",
+      "size": 784
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "d98689b0139af69f4ee5bbed0e946c38064e48fb4639b696e62e352474233f60",
+      "size": 832
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "d2d4b2a1fd8b71939d49710bcc2c6b42f03e8e6f60441796741eb6b6be770daa",
+      "size": 736
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "bfb295150246721e91cb29668e4c9693b45f8532b448aa9fddd8b17aa7020164",
+      "size": 2112
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtube.conf",
+      "sha256": "f6702b74f7dc586e733c412161e05d24e3be2fac3d376907bc404a666a5d2688",
+      "size": 720
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "b45d5c6725416f536f188518aad46cc9d6675b8cf07130b8d06273f6e6f7cc83",
+      "size": 388
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_rosemary",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "rosemary"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

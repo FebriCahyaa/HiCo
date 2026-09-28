@@ -1,0 +1,42 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_shusky.git",
+  "codename": "shusky",
+  "commit": "011971dc6149e773d6e8b39785b32a6bd08a51bc",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "91f101dd332fc2edb9177c02cf8f61992b42f39ffb8c6d660d158c59ac5bcdd2",
+      "size": 507
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1865eebae70f68f31b614c138c0aef5778d5011c0cf7d38c12995e764948ad4f",
+      "size": 265
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "eceffbe3f80690852510949175864a21b1652bdca5c704ddb0fea8320cbec507",
+      "size": 1105
+    },
+    {
+      "path": "device-husky.mk",
+      "sha256": "61c57b2a14ebfe7f86f25ed0d7e94136eae6acae1879d02f3f8319dcaba2b1f1",
+      "size": 1600
+    },
+    {
+      "path": "device-shiba.mk",
+      "sha256": "ff16d271d36535c657d77f370ee389ff300b6a6d712217210eb1ada411910495",
+      "size": 1575
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_shusky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-05-03T17:41:56Z",
+  "vendor": "google"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_cancro.git",
+  "codename": "cancro",
+  "commit": "748555908258d6bf103fb0514624223106929406",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "05888501e375bdfb98197098f0a460f08ea1e6e24363b81ffffcde89c809247a",
+      "size": 1799
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "17d8ac6372e7af0d6e53726de882c38a4c7c48dcb9e7d6f6c27c4b59b3bfa25e",
+      "size": 6244
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "74555511060a27c5a6f487410b49a900952715457ea0d7deae50dcfad522e85b",
+      "size": 1426
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "95468a9eff73560520b7ccc017ef87595edcd320255b615c47dda9bdc48b9a09",
+      "size": 193
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "262901510cf89b134bf2bf80f4a7a5ec56b8ce9a78f23bb25f861d0c481c98e4",
+      "size": 18131
+    },
+    {
+      "path": "system.prop",
+      "sha256": "446dabe1ff46d35f46c52625d2e1a79306b08dd7f07651a177effe4e92479090",
+      "size": 2368
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_cancro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:24Z",
+  "vendor": "xiaomi"
+}

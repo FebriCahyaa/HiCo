@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_santoni.git",
+  "codename": "santoni",
+  "commit": "ed2d1614e6dade59365d9969b1f44d1a4580c251",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "79a71147e4b2399c55d4e5f03e44a06609768f3fd6e90412fb840cd77596e0d6",
+      "size": 4022
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0985a800db5136824bd33e2ba146a4ef5e98afe8c3f371dd9b6173e59da5ce40",
+      "size": 57
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e7021ffcb9cfff891453b4f83e530dd1e8693973af94cd20169c3f216bea4863",
+      "size": 7453
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "160667253e4bbf711d6679fae3622ccf3b06026a3fd687491a17a296a2947696",
+      "size": 4372
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6d97d5fb84fa0a38c41c465447fb9fc6a8b40ed1cd0e082c00d8aaf6ddd97595",
+      "size": 19801
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "228562746c6a974ec455f9bfd6e5be173a1606db592db6f1a0aefbbd54e4ebf4",
+      "size": 1998
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e7a409e37a9f93d60180419c76e7c79eda6feb117fe7d60a48baa20754c0a20b",
+      "size": 80191
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_santoni",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-01-16T12:36:54Z",
+  "vendor": "xiaomi"
+}

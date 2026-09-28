@@ -1,0 +1,87 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_redmi_begonia.git",
+  "codename": "begonia",
+  "commit": "686bf120b3697ed6c9c98f7b87b22253d26685bb",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "372d734b247fc76a66131c9ce0115ffbf6da66855a143eb0b9d48c02635e4d57",
+      "size": 809
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f09fa46507dee5c3af7da414a319ead252868295e156675333661311b53b4bcc",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3e898364cf3192a3c568695aff5799cccf183c70d312aaf0ccb8eea955334415",
+      "size": 5167
+    },
+    {
+      "path": "device.mk",
+      "sha256": "00dfadc4ffb8fe412989497482d6e2437cfaedefb5b21d54f4135265facacf5b",
+      "size": 19707
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a27ae547fe0f21e43dfd000c565163af7203eb57e6f4e4a828eb12c282c74dbd",
+      "size": 3604
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "73d8915dc98799e1ee40a1bf1b6b62b3f6db6045e9344c82e13f2da8a3c00a0b",
+      "size": 1542
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "7bd633f7cd6f7fc0296d8f2564344cd69357de53130b57198cabb58b71537b87",
+      "size": 14227
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "e66373a2f5c97a746175b255b3901a6b887258fe548cab9479152ae6ff089b87",
+      "size": 6354
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9e526e296d6cd0b05f85fbc7c9fea57b8c12c09aa5e2a87190eedebd48ec58a8",
+      "size": 91301
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "bdaa61be6d430b2341e92e64125c3507a4f5a2b71b67a54594186d67e4fd7c77",
+      "size": 961
+    },
+    {
+      "path": "system.prop",
+      "sha256": "08d1cbffdacb35ab567667b09a9707032d15a2f4964dc8f01be1d87c52e89d81",
+      "size": 1195
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "cd9376e1489256a7104e942aece16229a50741bc12c8e38b4c3a1af9ff3f6fd0",
+      "size": 9937
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_redmi_begonia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-11-29T14:27:17Z",
+  "vendor": "redmi"
+}

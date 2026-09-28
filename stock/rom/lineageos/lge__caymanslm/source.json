@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_caymanslm.git",
+  "codename": "caymanslm",
+  "commit": "189d019e66599c5f6ad7d92443a599edf7ac13b1",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "23b1e8b909e6d225ff7373e537d0bb798512f3fcfd6f00379806c3e645f10aed",
+      "size": 662
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "450eab9ac97d65ab6d1dbffb26d58ebec3835668618dadc10f89b5c6bcd6a260",
+      "size": 1608
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3272ea6b05f9ae88c7188167330c23e7c30e5b558c95b1fdc509f50f9214f8c2",
+      "size": 3041
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "391646d0d5d51e69060643f9cfee7be22b7727244370bb2905cb39235d6e7c54",
+      "size": 976
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "83178b4f21c2fa92733c4b970feb468800c0f7d43d29011ec81efc2bbb1814e8",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3bcae7dd0ad5d81077202c273e2455ea10d9c3d1a42307867ae5e3769016d976",
+      "size": 16070
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "fbee8ee6ca80e447786e376fddcad53b8a579de12227cd62811aea78d85b9b22",
+      "size": 111
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5f96db3b1be1914f484ef0ac9ff86af779e894a7ede52443720d49a53e11a6fa",
+      "size": 105
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "16f1710f70a242800db9925045710ad04984819764e6b6bcf17f97defb63cb9b",
+      "size": 327
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_caymanslm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-11-25T16:21:48Z",
+  "vendor": "lge"
+}

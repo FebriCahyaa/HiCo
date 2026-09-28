@@ -1,0 +1,47 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_oppo_neo5.git",
+  "codename": "neo5",
+  "commit": "6feaac3da3055ac142d68837118d1e64f9728fa0",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7c8c89c3a0474f083ae76b3934402f2113151b02a29add2d2a2658402d53c097",
+      "size": 5485
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2f2e107cf54040f8c99a653a35bfe0141d26cb77d567d13fccbf46827d2be2a5",
+      "size": 3795
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "fa9d0db494c9928c03f6da4b18b0fc0996d7cc073cac0527ea9cece1723c279d",
+      "size": 1189
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "836fbed197a5521942f4c949bda31bc4070932541adc5a5f77a1ac5bc2b501e4",
+      "size": 1452
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "249945d9e5fca0011a5c4c1069e35e9d54bb494ae07a3bae2f20f6dd2a282051",
+      "size": 2365
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1806ac8bc9ecad76431010a6fcbae4ca81dd35ec713dcedae4dedb65619f04cb",
+      "size": 91
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oppo_neo5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:06:28Z",
+  "vendor": "oppo"
+}

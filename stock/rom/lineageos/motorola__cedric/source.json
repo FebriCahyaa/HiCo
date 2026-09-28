@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_cedric.git",
+  "codename": "cedric",
+  "commit": "c322a79d6c8faa0913c5a0af175f37c89f714f4a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "807d3301cacb97364040782d7f8f9dc534a1a1c7bba4152361007688cee74804",
+      "size": 43
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4bac498c358b5677e0f136ba90dedeef472157e601a65931c0ba6a47767ec667",
+      "size": 1302
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3701d2dee09303428591594a688dcf31a62a5f0380c27410a3f5e700088dbe95",
+      "size": 760
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8d5ccef3b7fcb20241691b50b04ebf8c74e8f284307cc84037b8931ef1f4da8d",
+      "size": 1476
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "d327f6315758d8746cc4aea851dc4802daf5a6a3dc299bfb80359b5c21c6bd41",
+      "size": 2845
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6dd3a6e5a408f35e7d3715f5e3171668a931d3b20619b786ae87fda11f39385c",
+      "size": 2110
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6413cafe4ade2ac1242d6cd998624c80fed7a9dec7428e46216ccc8cd17ed8b9",
+      "size": 1713
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "52883c48a502a396f784003d96e3f5f2fa25ecb299d6bc956ffc5ff7a9498726",
+      "size": 126
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ca00d335469928cb52b05b02bece602031f5c13aece96fef24934f633f9618c0",
+      "size": 11378
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_cedric",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-05-17T16:41:43Z",
+  "vendor": "motorola"
+}

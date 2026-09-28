@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_flounder_lte.git",
+  "codename": "flounder_lte",
+  "commit": "02589ed493f82cff085490bfcc852560c6830385",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1726414b79bf5a4a9c9f32ad16496f8906efab08d5ef86f22de0493872f245f1",
+      "size": 1203
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bd5a55a359c42f5a1db9788b9007fbee6c8a9c895fabe347486aa104de3cc252",
+      "size": 775
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "03dc292d6d9d72303d4015d601153b578c0cce7a277bdc838ccf7796dabe4c9c",
+      "size": 102
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "492fe809a713b2108afcb1e02105540fce89edb49e5c4231047d0224912904b5",
+      "size": 645
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_flounder_lte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-06-20T06:09:40Z",
+  "vendor": "htc"
+}

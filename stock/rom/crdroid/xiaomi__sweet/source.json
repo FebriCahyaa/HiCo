@@ -1,0 +1,67 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sweet.git",
+  "codename": "sweet",
+  "commit": "bedf2bca1810ed1f71388d9b8020b09e7dbc1e82",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "51356f4d215cd4189b7e18f9c108826c745d9493c11261f33ea196c33ad0895c",
+      "size": 236
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4a3c5d5a48d58fc67bb2ae36892c81c7f0b4aac54d35df6dee05255cc9385cb3",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d046fcdab34d92ddfa4812ce63442580da82ed4ebe3d95a51552f319e1dff47d",
+      "size": 1101
+    },
+    {
+      "path": "device.mk",
+      "sha256": "25ad3aeaaaf3e059478590ed627fcd9e1fe2b67306b58e97b0a0e178863bc2fd",
+      "size": 4757
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "330fdecddc8cf2ee35f0ab7b994f6b115621011e6297bf9ea98db19de34b4a42",
+      "size": 3951
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "b5da0ad253e1783751e8c1db226d1c0bee47e1084624d57fafc671922755a232",
+      "size": 1159
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "4f2ed973daf28de93663ff4b28d970e2e33a05569f05f4a8750eaa3bcbd70ce7",
+      "size": 3840
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "d719be6fc54543cd430fa10877824aab9ca1e8210da8145807ec606d933df1d4",
+      "size": 15639
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "16753c839798c7b4194e24baa22d1dd9700ce3f8ae2a0f39a8e784592b8f3fc2",
+      "size": 7182
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5e48f8a60b1667dd87eea27f31db367cc77ea39c5996039098fe35aa7d2df401",
+      "size": 17651
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sweet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-22T23:13:29Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_showcasemtd.git",
+  "codename": "showcasemtd",
+  "commit": "4f11a400467a291d6e3ff01b9048df666b4a9764",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "754ec1665b2035cbf77424110440c3eb7eeb9c5be287cf992206468aafe050b9",
+      "size": 1188
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2b9ef2f33b1e2e2e1e8049bf2f6229a982b7eec252fb95be6cfd54bc3013253",
+      "size": 1064
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1f97fa3e6c54875548cf14742b83d207e92010388b39413e79069a1678bc9f45",
+      "size": 3464
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4957dfac4ef92292330e915ccfdfe8ec79b622e722031cfcc2438e1570132a27",
+      "size": 20897
+    },
+    {
+      "path": "system.prop",
+      "sha256": "eae9d2471f833388ec0662b0a731d7cddbd3338ef298ad8ad03fd9a412a134db",
+      "size": 123
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7dfb1f998a0c85b2aaa8d9b94b03b339a07241e944017e0399163d024016bc26",
+      "size": 846
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_showcasemtd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:55Z",
+  "vendor": "samsung"
+}

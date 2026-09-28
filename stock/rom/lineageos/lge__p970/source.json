@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p970.git",
+  "codename": "p970",
+  "commit": "c6d59a1599bfc2d4108c1a5b55c03bc43e18fb5c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8b87ffb7ed1322140bbb3558fc18ff39ae646dc68c818871e40b124867a3aa73",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "895b5fe8614ce648b72d038fadb988ff2b067ee6a1a42292c140284a4b3217cd",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e778586d2ad2c1e22960bab69167f4a0f6a458c52d79a6dfe1c9327a2e802e87",
+      "size": 3132
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5384d6695ba3e0653cd48893c29a43d10a552852279f22be5bbd126c69c8be8e",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cb8a8fe1303d0405a53e0cb0cca34bec2adccad6467dcb1b2e776c0537832ff7",
+      "size": 2801
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f576fd9c67aaf9c7d71ac6f553a84f0cebf6ebb8bd603e40a6149aeaac54fe0b",
+      "size": 823
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "cd445531a19cd42b3712302fdea28c28c9e4facc83a3eca6ea82a242a20d7dcd",
+      "size": 635
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p970",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:38Z",
+  "vendor": "lge"
+}

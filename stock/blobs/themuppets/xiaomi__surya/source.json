@@ -1,0 +1,69 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_surya.git",
+  "codename": "surya",
+  "commit": "1278b9adebc628d86a4943654449959f75599416",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "fc2c8f90aafec0440c80fb7bbe95c2ae4909646faa1f592e075ede89585b3869",
+      "size": 1184
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "edff64614a1544a35bca91f501d02d71d317f64eb513a709743ea201b1cd373e",
+      "size": 976
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "2af44fc8a4a94fbc1e80a1ebf203d872634354f004a311a8643690cf265abb94",
+      "size": 1408
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "e3cdf0ecdaef6aa5b1d66d45e7b7be559f8d6eff07bb53a29a10c1d3c1496b4b",
+      "size": 419
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "964316626f65eaed63d9968dd07125cbf62ff08c235ec5f3c503244d63a5f28f",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "376a69aab2020509e8a9fe2c0d2baa89c1f9511b92e673de01234c57039498ee",
+      "size": 960
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "e2ffded71eb23b2ac4780ffbd9d5203c3c99f2dac05e2e3dbfcd7ba4b38594a9",
+      "size": 1024
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "f91c5ad31553857c5626ce68f732046aac2a5abf406d7e91ee4859618b586d3c",
+      "size": 1232
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "488748e25b3e8fae108129f9df934c67511bd2a124ca25248716a85fcc9112bf",
+      "size": 1152
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "d1cc3e0bc9ddcc0e1bd2f4978a67cd6438cb8fb9fbf025447ec7e5461e0a78f5",
+      "size": 384
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_surya",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "surya"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

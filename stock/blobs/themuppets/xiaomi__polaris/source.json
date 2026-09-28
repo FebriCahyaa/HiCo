@@ -1,0 +1,84 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_polaris.git",
+  "codename": "polaris",
+  "commit": "9e9707959acceea4b990cba733d259aab64c183e",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-arvr.conf",
+      "sha256": "dd3e1a5ca4023df4d09640b029fa19ac8999e52862b65f884e06d3cddc90efaa",
+      "size": 1440
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-camera.conf",
+      "sha256": "2406dbd4e1bf6751e8793a76bfb4b69e811738863af2ac07aba0fb4648b19d4c",
+      "size": 3200
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-class0.conf",
+      "sha256": "fe977b2a7e4b03e3fa40e4d843dee67fbc8c68afa9936fc8a1082e1656d35277",
+      "size": 2496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-extreme.conf",
+      "sha256": "6aadf31abcfea07608ff35afff8ebcd1a2940fb7ae178c0c68179409374f2ec3",
+      "size": 1712
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-high.conf",
+      "sha256": "1d240b1c9490f3589e079ed0f5bbe259a263fa9f36573260a9070589be29a991",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-map.conf",
+      "sha256": "e4e7a851f98c2b5bc7febfa4c5dbda74eedf1a0bbd9a6e6e57ce63862e916830",
+      "size": 416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-nolimits.conf",
+      "sha256": "d58a9e39f5bf01c083b97b1f6577cea5021ede9ff79ebc20bdc2bac5f575da93",
+      "size": 1328
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-phone.conf",
+      "sha256": "a890f2ca8fe4d53739f01e7826ff80fa4d24a1821564cf0b332e0140624b0455",
+      "size": 1696
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-pubgmhd.conf",
+      "sha256": "48e89570f2754d3a5ad8e63e9c439133bd38793f4bfd41a77da07219c91c07cf",
+      "size": 1792
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-sgame.conf",
+      "sha256": "f9d81175d6e3bc2210a21fdd8dcf0a58af28d4db0991e446e80b5af269908d82",
+      "size": 1808
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-tgame.conf",
+      "sha256": "6dfdbc0a2afe6c7aa77df168b58566b7d815df6cbf323dbcecf6ed08c847bd20",
+      "size": 1776
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845.conf",
+      "sha256": "9bde9200dc7613a52f9e7e8891d51df29205632d7b696b6a5b4609842901e2ed",
+      "size": 3360
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_polaris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "polaris"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

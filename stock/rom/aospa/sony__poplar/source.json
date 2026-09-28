@@ -1,0 +1,42 @@
+{
+  "branch": "oreo-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_poplar.git",
+  "codename": "poplar",
+  "commit": "186ed5d4989739bd73fbd06d6705f6e33c8f5766",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9b9a93a8aa150988b1fc5ed3768787cbc7447a249e393ae42bdba933dcdacbd6",
+      "size": 696
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "67cbb9322c0cbd36ae1fcce4ea194e56273efd1e76eb5a04dbadea92d02e108e",
+      "size": 1833
+    },
+    {
+      "path": "device.mk",
+      "sha256": "553d82a289d1b4596c78cd062adca5408f64d286dcb942fd9c658edfdf1a2db3",
+      "size": 4458
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "caffd48c97bb93d41ccb843a6fd2041ec4caf5d46233ef2c422049d6b8eaa4a4",
+      "size": 737
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_poplar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-01-06T17:45:42Z",
+  "vendor": "sony"
+}

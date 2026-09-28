@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_gm_GM8_sprout.git",
+  "codename": "gm8_sprout",
+  "commit": "81dc24323842a6997b0897e4e788041bf39f7324",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cc62f5bbdc10a4b59af43d7b409d4b4ebe721974ea71e990225b11503f1198b7",
+      "size": 88
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f19ed5931a86b0a50745cf761c269531bd6f1f8ab08db541002771fcb3828680",
+      "size": 6432
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2347f1b66b1f278c1e5932137cb6857d81f6e9b53075b5f3d5d73a10ba5e645a",
+      "size": 173
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "69e3d40d4bd154991aee1395eb468cdd28503948cb6ba18ba315fed3fd877df5",
+      "size": 5239
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2e848b4a450c40a1dfe091b648c86e213aece7ae417b93ed9a7d9e224b7f737f",
+      "size": 12999
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c67ed9fbe607a74183fe13393b0fec161027a74eb4c7d5f84216abe291d86287",
+      "size": 2037
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bd77bd8c6cf79738631715d68872ac91bc42390241291317a9f25491aacc25ae",
+      "size": 96380
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "736f15090d23cf18dcb0f004930b168d1ed419a0ebfa0599e5fd55d159f4aef0",
+      "size": 181
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e976dc548cac388410634b92bda9e142c36a02402a83661bbc2cf03b6d95f105",
+      "size": 3615
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "581b80695df04b0f3c9aae1fd4e1cd81d06f249a0321fec426f9e748f9b71f46",
+      "size": 2368
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_gm_GM8_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-08-29T22:20:55Z",
+  "vendor": "gm"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "alpha-15.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_zumapro.git",
+  "codename": "zumapro",
+  "commit": "cf4d5ec40a0c95bc0b3220a10348a4b6d53a2bde",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c92ec89eeabb3d4ad0bbe2db9ee1ba734de0f1533bff936b351ce192bd865e00",
+      "size": 1349
+    },
+    {
+      "path": "BoardConfig-16k-common.mk",
+      "sha256": "7ed94f5f641172b7baa7a35b5411e4dfb2208e8962b170fbc0b11692d82dcc02",
+      "size": 673
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "69c63db65c32f2e0be574398f8344897414861c59a8712c512f82da30b30318e",
+      "size": 15192
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "62a65c4eb61cdeabf4caf94c4e5fb11bc65683b07c94b2ff3c03ee1ebb1eafaf",
+      "size": 1620
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "f62b4276abe17d46e7c43b3baea7606827b79d0abc1374e09572901d2e8a358f",
+      "size": 2626
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "860499a926028b5fc93923b70cc19094fa23f39a2550939abb8d4c492b3be4c5",
+      "size": 650
+    },
+    {
+      "path": "device.mk",
+      "sha256": "09d91b870948c4c5f16b4b1e7b1999dff7be4cf4f085740e5fa5b3eb43b49454",
+      "size": 45304
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "26906dd051522f126c56492900d446d6e5f17387ec9e9ee9b25166f5cb5f17c9",
+      "size": 102
+    },
+    {
+      "path": "sepolicy/legacy/zuma/vendor/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "67529879f9ff8d9ed58403ef4c38cfe6a9cb3cf380d1b6f11b52ec65648cbc30",
+      "size": 23
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_zumapro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-04-06T23:08:27Z",
+  "vendor": "google"
+}

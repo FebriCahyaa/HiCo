@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_wt88047x.git",
+  "codename": "wt88047x",
+  "commit": "ba789495f7362b3c512a45e61fedcdb8402b9d24",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2997587adbbd6f58cf2486df0b6dea6bc4647658c5a8232dd935d5f159dd82d2",
+      "size": 778
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1e670965b59e6be87071a0ceaec5c60a18dee9b15395dc9b99f20229849fbbcb",
+      "size": 771
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b358f783e4a7160181387f2935ed31c88f071aa3b5e55064f2461a6c6bbe9833",
+      "size": 2801
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1f25184c371e04672510399c48023a725ca701a37eef9950c97f45515946024a",
+      "size": 1742
+    },
+    {
+      "path": "device.mk",
+      "sha256": "609eadafc75743deb389d57559da09746c6697c4361bd1baa22e56ce547062e3",
+      "size": 7512
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fe5aa40d62df1edeb30e38605cd85220bdf3ea93526237bfc18f4c2594a9016c",
+      "size": 1555
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1459ba69015131ec4ff8e8b0b597f63a769e28820cc8539832836b7ffccb3ffd",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0c3a531fd9cdaf8f87523dbf06d2e1207dfbd3360e6da3d853f4e4488334af55",
+      "size": 17351
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_wt88047x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-21T17:20:46Z",
+  "vendor": "xiaomi"
+}

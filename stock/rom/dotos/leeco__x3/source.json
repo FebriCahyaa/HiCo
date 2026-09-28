@@ -1,0 +1,72 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_leeco_x3.git",
+  "codename": "x3",
+  "commit": "bfd3aea0620e5784591729ea127e231ac9f62299",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "af3175f7da79d0ab16be46e9aa3ad5026ef492b76f6231ac70076b2087d2333a",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d0e5483962a168250090c78b49d7a0193d9b98b94d4df9a971e11f9121e1c5d7",
+      "size": 44
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "25132901276e0dd240455a8281142d19e55be8b658455ef94f905d6ed3bc94ad",
+      "size": 6179
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8a752e9921271a4d1ca2ebe76c2125a18cc73de55e8272659fe2289470a933ee",
+      "size": 13849
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "72cf9af0cca55df39439bcb8273e40dddb9de664679290e75d62bbc0e338fe57",
+      "size": 329
+    },
+    {
+      "path": "sepolicy/thermal.te",
+      "sha256": "86fdc9905f014a074d487eb69a74cebdbd02c17455d6b538cb79f508a70f0f3e",
+      "size": 1227
+    },
+    {
+      "path": "sepolicy/thermal_manager.te",
+      "sha256": "01c462078541de8d6a09a665451d149e1e4e9d34216461c40f46e0121b6537d9",
+      "size": 663
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "658febe4bd9ca54ac18b30bf382acd4b4cc871d6c0b9c8be19955dda4e710e09",
+      "size": 1058
+    },
+    {
+      "path": "sepolicy/thermalloadalgod.te",
+      "sha256": "07232beebab7c9f6e23e4a4bfd1ccb3fa173751d5d8bffcf449daa64f515081b",
+      "size": 1665
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2928699152458dec90a0f69eae091a388dc9d42727e76c3438d81c36c8430d2b",
+      "size": 5190
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4182ca52372cc22bc712d475a7e3af58ae657a75b0189bc6bb6ca73e5fa3783b",
+      "size": 33
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_x3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-02-05T11:47:19Z",
+  "vendor": "leeco"
+}

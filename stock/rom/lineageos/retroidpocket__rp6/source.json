@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_retroidpocket_RP6.git",
+  "codename": "rp6",
+  "commit": "58372a499b4f6dd38b4f2985f1b00b8578e948cb",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "12ad83b716df6b000944eb8500252c4d25006773912389d17b59a995ab36c61b",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7048f4e9a53ce8cfc011c30b98a432271c36974533fc71000ac7d0b5b69fb090",
+      "size": 675
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6127ed6efc6047c508bc771e69514e549971093f279c70facd2803930f76061d",
+      "size": 1035
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9d2e44116827cdf2c86eb95e15f678e9b35f1d561fff613c831691d3e9038a5a",
+      "size": 972
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ceb9241e9b27197ff1d35ee0175c8706fbb7ee975ef0f69bd946c71642815385",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8a700e07ccfba53e050ee5c2bf08a72fa4a91dfc8ea99447d88a6bb3ccd5d07c",
+      "size": 2026
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_retroidpocket_RP6",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-11T20:39:41Z",
+  "vendor": "retroidpocket"
+}

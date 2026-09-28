@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_osom_ingot.git",
+  "codename": "ingot",
+  "commit": "03bd13bc73bf5834c3ab6d797fbc958c49fce252",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "98a6dc503592da46e035a07b4b2bf64071da61c2e269bf54d747124cd83c78ea",
+      "size": 520
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "41fe741a31b7be33d8d6dc173eff7017df32c4d61e1460b14938bd734594884c",
+      "size": 2456
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_osom_ingot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "ingot"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "osom"
+}

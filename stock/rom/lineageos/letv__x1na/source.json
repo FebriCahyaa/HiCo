@@ -1,0 +1,57 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_letv_x1na.git",
+  "codename": "x1na",
+  "commit": "3064d02ef1161f12bb44738e72dede54e07da193",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f28788aed977a7f6b88c2f18b9cc6badede0a022450e00a24f51bce493b21198",
+      "size": 5305
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d55a02cb3deee8eb9fe08709e7594458de6f1cb0f7576d854dc4cf4e908608ac",
+      "size": 6301
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "b38c733a93f4950df9a5109221ae92371ebecabdea7b5cc80c15e4a09cc3deb9",
+      "size": 2836
+    },
+    {
+      "path": "device.mk",
+      "sha256": "489b3aa8de1ca8178cbc85b24609d8c9a1a5f8b78970a5ee53de25810ef09ea3",
+      "size": 16215
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a0e426e9ca635f13b723a7524fdef4cbc0db346aeb53157d9c513f57988b2ada",
+      "size": 1447
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "58875305b20f68cec878f43ff3d2b376cccf67a29e979545c8772669572ed8ed",
+      "size": 20468
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d169b170065f5e47d30ab21451e42332910f0b5554058f8bf1b5998adef9398a",
+      "size": 2821
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f04fadff69e4fe3710cfbd386fd3f00ee160981f0525bad910b494cc52a69c2d",
+      "size": 91
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_letv_x1na",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:40:57Z",
+  "vendor": "letv"
+}

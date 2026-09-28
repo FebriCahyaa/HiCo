@@ -1,0 +1,57 @@
+{
+  "branch": "7.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_leeco_s2.git",
+  "codename": "s2",
+  "commit": "07423d0dde7db0e53945dc269152c89f3edc84f8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "59faaa2a686df1ed46455138714f56ef186202c6f43d5510a7e60c008123c3df",
+      "size": 4479
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2e1d3168552b99d5b1828e5019fb7e2c4f288150a89f64b6d9903ac0d03db040",
+      "size": 6568
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7032e14d143ce7e2c9e159ced7f504f7bf57bebdece2da49b1af98a5e26a222a",
+      "size": 14459
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c21592fd6dfcc59a0dca1918d72c8904addd277213d1711b401cfc41b0ae119d",
+      "size": 1479
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d1ebfc2f5eefd0b1600cac448c81bf2d1bb24f24d048545d6227920db99492fc",
+      "size": 312
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "794515473bf2aa9982145e16f6a2bb3be1a4be37de11b3b9c7007eb74e0454e0",
+      "size": 31603
+    },
+    {
+      "path": "system.prop",
+      "sha256": "fa554597ae7a654896fd199d0130a12a2574c8ddd8aa9006bd624e8a372b5985",
+      "size": 6563
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "14b831d3cb5a3fd94492282d669b284d7a09d5003a94a9228032020b25ee7aeb",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_s2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2017-09-07T12:25:43Z",
+  "vendor": "leeco"
+}

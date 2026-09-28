@@ -1,0 +1,77 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "2ead9dc2f8eabbf87791119098fde7ff5d473e84",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "effc7867e8eecbc5e9be902a3f22e355d82ed3c4a76886c3a54b80ee9fa7ffa6",
+      "size": 1206
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "47329953ac33a44df25556259482abc1046a17751c32e6d73961469d8f52078e",
+      "size": 1814
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e373e57e969700807e3faa633f4a987a0be3b5519dfe8d3da89ed87a9d64bb16",
+      "size": 847
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "50f39ead0fe779189faf8ca2998d81de9420731f209d15454610fc8854b2e3e6",
+      "size": 119
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "2cadf65db65fe3e3dfa19fe38e92244d1659d7f44a7f8f7da9e70a64e572cdec",
+      "size": 11686
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "90d29a63204472e4a354a336b7be16a13f84194c13fcaaadc8c101339bb0700e",
+      "size": 4961
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "642bacf9f3ddf310a87de6a4e4931620b820ca3b3caf9d502ed314359011447a",
+      "size": 2066
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cb7147065f283d4f99c395ad503ffe3ff43e1e50ee3ba93ae2687941859c937b",
+      "size": 241
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "746636cae8140dfb5cb10483321f0ba8e7138601d3e25d7fc64ca380c1fb71ae",
+      "size": 6547
+    },
+    {
+      "path": "thermal_info_config_bluejay.json",
+      "sha256": "710dfbfc1f2c30d2b569fff0b7834edfed6525ae07891ece999b737c70a086d3",
+      "size": 34277
+    },
+    {
+      "path": "thermal_info_config_charge_bluejay.json",
+      "sha256": "cf463f1bfb7d9b6ab9f2bcd997b8fe9779be01f0e5b868605ff5ca29c40fff6b",
+      "size": 10907
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d17a60aa99975b554bbe1fe9332f212e1a848f47db4d74adf1e806a9b75f00d0",
+      "size": 387
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-05-19T16:02:48Z",
+  "vendor": "google"
+}

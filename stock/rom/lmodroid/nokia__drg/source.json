@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nokia_DRG.git",
+  "codename": "drg",
+  "commit": "297e84d8547dc65502ea3d0b7c9436e6856c0770",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2d568f40fa78e598a23a52d5ce48179aa6c5a70324d6d3caf6acace97177ad01",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4720b60207b4eda18c8c45b1c3740dca4506ad177132b543decabeec189fb948",
+      "size": 1349
+    },
+    {
+      "path": "device.mk",
+      "sha256": "beb9fe083d8f7173561f36aff2ae7f044c764905ea231b3be36ecc038d015db6",
+      "size": 1547
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "47ab6502d18d377d7022e4639bfd10595d87528e1dd62a2dbc480798ebaed02a",
+      "size": 1739
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1a6a0afd79d21343d2bd394b4e7b16f625d10bd37f555c941c0e9273916bba91",
+      "size": 37620
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2c29705a88bddfbdbb3cb7aea956e1c30ba833601ab902e7c7b446db74b06f40",
+      "size": 741
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nokia_DRG",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:10:36Z",
+  "vendor": "nokia"
+}

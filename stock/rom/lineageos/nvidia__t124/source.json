@@ -1,0 +1,32 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_t124-common.git",
+  "codename": "t124",
+  "commit": "d0ce1e35000dc1fbfa4d6ba6b778b36ffaa12612",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "048422811190dcd85c87414425846f2b0d712eb7b62ce6c9050ecc778235de55",
+      "size": 755
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f80185b1c3a326224010777f5a48ad9ce21002e2a531f6d04d7097346454f9c0",
+      "size": 2778
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7f1b44976caad1ac59a86fff17e3c960c443365846f570965a01670516ea8dee",
+      "size": 112
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_t124-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-21T21:20:45Z",
+  "vendor": "nvidia"
+}

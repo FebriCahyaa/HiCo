@@ -1,0 +1,62 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_everpal.git",
+  "codename": "everpal",
+  "commit": "85ecc6f744cb41f9191503f502c04298ac619a39",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "33377dbd64865407686f34a202bc23a3b2334ebc69d35a694e4c959d41d9cc14",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f10bab69213c1adc9600818289af44307b9beb34c2c5c78f93b8f5e0fdcfc646",
+      "size": 6061
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "26e6714cc10a95a9f4d82cfacd53e23204510eb5765e05c393837245100e1b48",
+      "size": 7060
+    },
+    {
+      "path": "device.mk",
+      "sha256": "72553b1fe120805640e06c3399f460437c5d5d2b373605428da19d307190b771",
+      "size": 16858
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "046d7e030f0fb19e898927bd94635023320339208a33d5a03b7407d163f683f1",
+      "size": 5357
+    },
+    {
+      "path": "init/init.mt6833.thermal.rc",
+      "sha256": "e56817ca3b67bef4eda1b808d79f14e6a48dd543c0a90555a4ac07b29ec9c29c",
+      "size": 517
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1952fe76339b91ce0e0a6af4ffc9f33c15f66ea0c7127c1787e5337a6d1cef32",
+      "size": 67893
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "90294ccaa03ea35165aca7a104b86f3487614bca57870b752ae11112436cd545",
+      "size": 1095
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_everpal",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-14T11:40:07Z",
+  "vendor": "xiaomi"
+}

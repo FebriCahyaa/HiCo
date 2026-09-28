@@ -1,0 +1,42 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_tissot-common.git",
+  "codename": "tissot",
+  "commit": "dcc213f9894af6330cd725be45d047be53e44e16",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "405fda8529492089e3a32f09d0b5f30a836f84e2accee80cda45abba85c90453",
+      "size": 4700
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4ed2c8129f0954f5db2625b64d982492a2a999e10a387580d176a3c66c91acc6",
+      "size": 5418
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a05bff0f3f9e5b967cdb6ce0a385dfc662435c0551243b0ff60ed5bd78ddb18",
+      "size": 2588
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_tissot-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-06-29T06:26:09Z",
+  "vendor": "xiaomi"
+}

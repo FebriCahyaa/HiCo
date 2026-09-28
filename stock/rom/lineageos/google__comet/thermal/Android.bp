@@ -1,0 +1,26 @@
+//
+// SPDX-FileCopyrightText: 2023 The Android Open Source Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+package {
+    // See: http://go/android-license-faq
+    // A large-scale-change added 'default_applicable_licenses' to import
+    // all of the 'license_kinds' from "device_google_comet_license"
+    // to get the below license kinds:
+    //   SPDX-license-identifier-Apache-2.0
+    default_applicable_licenses: ["device_google_comet_license"],
+}
+
+cc_binary {
+    name: "init_thermal_config",
+    srcs: ["init_thermal_config.cpp"],
+    shared_libs: ["libbase"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wextra",
+        "-Wunused",
+    ],
+    vendor: true
+}

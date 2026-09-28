@@ -1,0 +1,92 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_rubyx.git",
+  "codename": "rubyx",
+  "commit": "a3a349a296648a5a6ce9d1ef6a6086aec77973dd",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "06ccc353c707e9f79e4991d15a1480020f54e5d29f77e19f5d32ea29fc1d047f",
+      "size": 125
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d4971d3c920701e199cf2c810875bbaebb784c69378fa2f16deb5cd90104bf86",
+      "size": 158
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "691f99adee59570c1629658e157c4c561655100bbf18499b09d2af640ee5c9eb",
+      "size": 6814
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "be2283cd4ee8d1d550138182058c943b529137f3785ec78f6aea810f4a855b11",
+      "size": 6924
+    },
+    {
+      "path": "device.mk",
+      "sha256": "62be9325a351a1b08bdac6d3b04281a174bd15273f703235dd1563719147df4c",
+      "size": 17465
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "87ede40318629d2e17ded1f19a4f784a868a01be4af34b50c9c2c4113f084842",
+      "size": 9221
+    },
+    {
+      "path": "init/init.mi_thermald.rc",
+      "sha256": "03b24bf10bdb927bd94faa181dffd5c9bda09f25c0ab853ee09d2e6ac449108f",
+      "size": 246
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "21a19129a633f3524bf777442950912df84372e3d87dc86816a89365674a0496",
+      "size": 1558
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "a95e2e0204da403d2c41cc1a089d4358b67958438791555fac11e343a1266246",
+      "size": 14578
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "31fb5fe7d8d76ad484bb3fcf14b030c5e91f8ab8098e53072ca6ed8adf2f0d74",
+      "size": 7441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a79a89df14fe3625dab23a1763d0e60e4fcf1f6fb4522f0addd23f672405f11d",
+      "size": 97984
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "8e9662290881e3d04f5a6f97f1a584332a344b86323739a52fefa02131de0a07",
+      "size": 1248
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e8b916f2bad28b0625ad4aa9833d09e05576c17a1b637d8b9b508ba848bcad26",
+      "size": 307
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a4932b18073021048de9c708633a6db0dc861563cdd291b21818d0a14ee7c0cd",
+      "size": 9934
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rubyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-16T18:48:20Z",
+  "vendor": "xiaomi"
+}

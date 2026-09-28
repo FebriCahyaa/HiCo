@@ -1,0 +1,52 @@
+{
+  "branch": "17.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_hotdog.git",
+  "codename": "hotdog",
+  "commit": "6a164e0f67f53c3ba065c20488ef6e4156036fa1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ba4c19300121fbdf8e8f9e46728e3405cdf14cf9c731261c88f8f7c96847e826",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c6d166298562bea98b25d28f54f5766277ca2f6e066d32545e500a9303c96b13",
+      "size": 1824
+    },
+    {
+      "path": "device.mk",
+      "sha256": "563c7c8106408ef856548536b6126fdd805e32788f8bfb302405b54bf03e2028",
+      "size": 1682
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6590f863bd6e7a41716e3c977cfb0ddcfa1d9b7e71e8caa21fc6992311df3fdd",
+      "size": 897
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "65b2ea516fd38564184a523b196363f3af0e6dabed8abbae68e65b7d46bcfc87",
+      "size": 36343
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c1e7ad14b22c461b618f9cd691da22634046ccd32e9d0d6ac7864bddc6a6b554",
+      "size": 872
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_hotdog",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-18T09:08:21Z",
+  "vendor": "oneplus"
+}

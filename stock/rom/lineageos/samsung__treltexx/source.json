@@ -1,0 +1,57 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_treltexx.git",
+  "codename": "treltexx",
+  "commit": "4e1721b363049d962458c0c360f1971a2a22c8cf",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d38de38aaf5e552aab777d0dd55a75500f4d6f41214720aa4c07381cf8d0e10d",
+      "size": 1147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "69fb71f5752f92a689997448f547a38db5c7fc6d66536e73d8d5ca06c93fb69c",
+      "size": 393
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "310970a6feb7237c5ed38459aeb0d57a9b1a2c9ab7cbcc870ecad345bf578c26",
+      "size": 4318
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "f67c03b3b5e2d7c355dc98d3526a630807cd1278be711542d5d5aa1206976004",
+      "size": 13141
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c0e0e3dddb7c017a287e280135addd74820eb58794f585579046680f9d663911",
+      "size": 697
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1fe3c91dc0af2b3a7ef11b976c69e6fb59679c5cba8e7be0df7a8edc54b27301",
+      "size": 728
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c316a2d3851eb7a07766cc1d3a12603648cbd9ce7c1828b089c2a9ecf7bff58b",
+      "size": 4269
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0e5ce5409210f9e2553887de00293599f845651857d63c07c22ad4feb275f30b",
+      "size": 70
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_treltexx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:52Z",
+  "vendor": "samsung"
+}

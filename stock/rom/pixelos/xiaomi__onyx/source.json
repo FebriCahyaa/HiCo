@@ -1,0 +1,52 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_onyx.git",
+  "codename": "onyx",
+  "commit": "7cb059a5fd950e4da744115bb66a2e93a643d689",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3610a581be5c418096783587bfed2d914a5dc47758718583b438b3ee9a86c688",
+      "size": 1059
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8280d1a701f5ace747f0c290298a418c946c07408dcfcc0a4bc68c9954bd7d91",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bb7ace5fa8c5652b7ea49ac47456a646cd0095dde0fda3230ce6169f9204098c",
+      "size": 9874
+    },
+    {
+      "path": "device.mk",
+      "sha256": "423e0b17068c95c0fcaa6659945784444ad16b8aed656b7c34ba78c78633d688",
+      "size": 20797
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "38b86f3ad0a8187b800e7c69a24d668d98c266cf5a50d61d1cdcaa07ee603888",
+      "size": 15561
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "02bc024b1478007112fee70f27e94155c59c8c0c1dcd12afea4665283b15213c",
+      "size": 170433
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "bbf5321b9799a68915137802f5db86388f5d608f2d5a8b91b7c71e445b315efa",
+      "size": 2234
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_onyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-13T06:24:04Z",
+  "vendor": "xiaomi"
+}

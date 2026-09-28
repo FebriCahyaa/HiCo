@@ -1,0 +1,119 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_venus.git",
+  "codename": "venus",
+  "commit": "25bf24abb9cb98188a434ea7a18ee5286f7a0924",
+  "file_count": 20,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "0a1b3586b6716dd51a48393206a939a38036dec45c771cfc6b452bf6cc94d30d",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-8k.conf",
+      "sha256": "a49bfa9057f33c0fd0d6d6954919f6ef0ca7becad8dc1d989a9482916468fbda",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "c177b8e003ab1775850b281ea8c4ac09cd2fbb099a4235c28bfd992a36bab280",
+      "size": 2720
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "031f199a92072405568bad27c54ebfc40455bbfa70bf0980eae352f97a67e543",
+      "size": 1452
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "56f160921caedb8340ac22bc00fd9a91fd8280bd1660e1d66612aead49770017",
+      "size": 2608
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "46a538c600ead0fba4ca2e5a2075c474c059179cee06867dc5d5a6b6386f8baa",
+      "size": 2144
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "dd92f30b6ebe09d475a77a2ba962f2dd4ad69993ebb7251a9dc7a031f5f05c5a",
+      "size": 1936
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "959932a84d70815954dd5f79b6bb1bb184354c3b780bae386ca0a045104df6d4",
+      "size": 2608
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "6867c4ed666a4a321e62e2e0b224954e1158e862cb8d9d6c222765306d252c50",
+      "size": 1296
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "31cd8c441b336679da164ad17669f0813b11d77922ea0bfa89e21f1211fa7a00",
+      "size": 3040
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-camera.conf",
+      "sha256": "c177b8e003ab1775850b281ea8c4ac09cd2fbb099a4235c28bfd992a36bab280",
+      "size": 2720
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-class0.conf",
+      "sha256": "7a04bf633f7a48a02cb6fbff8fa6edbe478a855c6406cd6d9972f10df40e786c",
+      "size": 2704
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-navigation.conf",
+      "sha256": "f0abb644603284736db0149f5c178a3a7be9723c35b35869cfefefc52ef966bd",
+      "size": 2608
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-normal.conf",
+      "sha256": "789d00a5b920f02cd8629cd50cca9c047bc980bf23dbd48fb883f3a76862cfa9",
+      "size": 3040
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-video.conf",
+      "sha256": "022af362f7a7e33fca0ac05b422c0c6c614faab0ab2f475d1981d0e141a71890",
+      "size": 2608
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "ceabc2e4d1469144fff1417a997e3fbfbe6ae208afaddfb4a5d07905780c192d",
+      "size": 1664
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "adeba35ebcf06f3a85e49b6c726c63e31abfbe71e3ab61c5cc8b255f8919350f",
+      "size": 1936
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "d1579e61ef149471a9e7f194ae9179e63ce0c01c2e4f243f8eaec90dbed933f5",
+      "size": 2608
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "ea203e5ac4aacc503c160f1f4440064dfc0708565da7ad732029b61e26b6afb4",
+      "size": 1284
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_venus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "venus"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

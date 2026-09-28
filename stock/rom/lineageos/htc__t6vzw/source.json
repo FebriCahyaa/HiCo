@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_t6vzw.git",
+  "codename": "t6vzw",
+  "commit": "6bf9bca874635254cccc09d3c96f94e273e001dc",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "85091a8a9da5ebdd21943c9e5c9e6ee25e6ebd73d204d816ad0a20c2b68e786c",
+      "size": 1332
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ce92120c614e8e36167d4d663813dbd61b608fc4365ce77b0177d6ade9b3b492",
+      "size": 846
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "25ddb452631a9055ade60a9f41071ea0d467dd2791e5ba83ce00b67fbe8839d4",
+      "size": 719
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cddc3d73d96119a8d2735b499b361fe4456ee54014ea32171978a9230f452aca",
+      "size": 104
+    },
+    {
+      "path": "system.prop",
+      "sha256": "60fea9adde131959007d4c261ea1e6bd8b18e4ee6b196ba095dc2cb75d972c8b",
+      "size": 882
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "47f96d31be55e87fedb81cb75a340c9aa30eb5aa204033e08d7730fd55c2c429",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_t6vzw",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:08Z",
+  "vendor": "htc"
+}

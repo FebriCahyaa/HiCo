@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_mermaid.git",
+  "codename": "mermaid",
+  "commit": "34ecdf6099c05593beaf26c8afb70825cb786e82",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "14ffe50d4c9ed6c53f6dc595b1920f1ae49a61283180ff9905ec2adcd363ade1",
+      "size": 1254
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_sony_mermaid",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "mermaid"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

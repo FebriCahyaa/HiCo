@@ -1,0 +1,30 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "9f0ddab69bfebd3bad1f444c2310871ea0f89b88",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "2e8ad4504f16340763e7cdd22a0ed244f9824871601b550857a018be279e5209",
+      "size": 11448
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_xiaomi_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "chiron",
+    "sagit"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

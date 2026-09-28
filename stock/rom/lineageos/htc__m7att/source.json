@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_m7att.git",
+  "codename": "m7att",
+  "commit": "52560863929a5a613e8b998390a54d2db24d4167",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d97c7b76141c3c9202d53a814322fa15b4aa1197ce0dba4d87840bb334202004",
+      "size": 2536
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ea34fbeb88d99607194d8ca547d5bc8f0a292a2ba03af06234a0586885f72c4a",
+      "size": 922
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "acd4c0192c5300a34be851c7b2236ff9cbdf9aa82ee0d870b1edc052e9472026",
+      "size": 92
+    },
+    {
+      "path": "system.prop",
+      "sha256": "628881911d81b810d6e320966baf24fd5767ec62476b3b3a442a327b77956597",
+      "size": 208
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "5e427dca667d236860d0dd6ca6e8fd44484b28955a653298b463bb92c60cfeb3",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_m7att",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:46Z",
+  "vendor": "htc"
+}

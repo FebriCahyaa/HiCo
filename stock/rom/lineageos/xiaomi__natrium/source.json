@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_natrium.git",
+  "codename": "natrium",
+  "commit": "5862d839c379a34b32ecbbebd6a04f1d61f728fe",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2d87dc225e41ecf18583b70248cee7e7cd99391ebb69969f7340dc32b62de4df",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a76e7ba870794e54c36fc7c152704366eab6613aa735ff3ff2f5a31ea151d5e0",
+      "size": 1071
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "8656992d85d7c4a221c05c80fcc0daaaf580dd98e25476f81ee4eeb0392adbea",
+      "size": 3061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "77a51598dcbd71c84f8ef9a4eecc4feabf69b44941cdac44a8b887969421af00",
+      "size": 2606
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7061b4af474a77ccfb7e8d1c9c301b56372c4a2466216bb9c64080cdf82a0410",
+      "size": 472
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d776a65da30b8b62693a2d536cbd71bce2b3da6e8a2f50ef279f769b8a4b5424",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0052ec167a5e268cdd0fbf0bd47447fc126537bad1eb42098e3911b35c58ebf3",
+      "size": 12394
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c4e92c587de597ef88edb73ab9700a639ed179b5fd0180652cf2a7b854abce17",
+      "size": 332
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_natrium",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-06-18T07:38:40Z",
+  "vendor": "xiaomi"
+}

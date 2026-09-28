@@ -1,0 +1,42 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_hltexx.git",
+  "codename": "hltexx",
+  "commit": "e6b3313644a80828317b431d543a001703d3c99a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0157fc54fcf2c4cf0c457256e8db7c507cd34507184e7d219ca76f6e8c6acbe9",
+      "size": 1200
+    },
+    {
+      "path": "device.mk",
+      "sha256": "52e43d7e2f8b81fa6dc46e89990fe70288754956a97d4c30b68a8986dd7c6bc7",
+      "size": 904
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3cbfd7f3749d2dfae6c51255d96a221572403aabd7c4dd02c65f8c63a22f1087",
+      "size": 99
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e295d58b170f826d87128fd68bb6f4f91a9c0ef0f87dac2abc67e9d897319eed",
+      "size": 135
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "66fab52612904349336cac761f0a4ed798caa897f9aadf9a12a465af8c4d35d7",
+      "size": 31
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_hltexx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:11:33Z",
+  "vendor": "samsung"
+}

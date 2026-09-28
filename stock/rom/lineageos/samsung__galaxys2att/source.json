@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_galaxys2att.git",
+  "codename": "galaxys2att",
+  "commit": "6d858a92c036844f6c3441ac062c2f1ddc5eb3d7",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c662a403c09e6f3121cc97e14b72e63e17b04be7d036bddd2a8249dde073580d",
+      "size": 766
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "666b8af4848c01cad9c29714c08db579fc8cf9d835198e71940dc237db7ef6e7",
+      "size": 1064
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0c75ac2d8de8e4d2f32f1651a64b6dc31cd7dc9525e5d1d732eff2a004b313d3",
+      "size": 3935
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a4534c6e716adc066f3ec46815c06f6bc5f72ca1f5e8e91bdb04b5ca2910dc4b",
+      "size": 22926
+    },
+    {
+      "path": "system.prop",
+      "sha256": "94ddb43b60818c80016ee7bb0302cfb7d69f395f8adae270f99f8bc89479ead8",
+      "size": 144
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "913a17afcfb4def9eabdfff6ec3f2dd43998ee3a57124c9a33d1e4253a58bdde",
+      "size": 846
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_galaxys2att",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:09:20Z",
+  "vendor": "samsung"
+}

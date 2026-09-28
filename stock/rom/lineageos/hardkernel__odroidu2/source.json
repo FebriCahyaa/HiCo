@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_hardkernel_odroidu2.git",
+  "codename": "odroidu2",
+  "commit": "e6fe29b94a1128ad6e7b3e1bf1180fdcf481879b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "53ce915459c2d2fbb3ebf9eca0a381e18cae64f2a635e72563c77ee7fcd3fc54",
+      "size": 739
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7217680265fd92c0507bf43cd815eb8c12a54537be7dd792fe25721d1e9c1037",
+      "size": 1104
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f45a9c837bffdeda35931a9c93f51fff41de2d8587aef62b0aec9592b611d1be",
+      "size": 4395
+    },
+    {
+      "path": "device.mk",
+      "sha256": "53f61cf939618fd0e51a83ca89e25bc27eaf678c9d76ec7b875a613efd36d652",
+      "size": 9605
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c9ca76864fe1773ac773db6bbbab69b130d484d423873b59bf6e895d64037c65",
+      "size": 339
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fbb4ce9f41fc47efda1e0bbb410cdc1307cb84ad36d9023fc199e2b1fd04f665",
+      "size": 471
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d103ab924deacf4d52de0edd2027dd0bd2b099edbd95d33160f02f6848c50601",
+      "size": 104
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_hardkernel_odroidu2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:10Z",
+  "vendor": "hardkernel"
+}

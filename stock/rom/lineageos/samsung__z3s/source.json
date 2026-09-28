@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_z3s.git",
+  "codename": "z3s",
+  "commit": "8544363cf93ac81a568ce1b231d4e526bbcf618a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6b95924f23eaa9da081a32b62b7f2e5a09461389ac500e34845a52a649a4dc74",
+      "size": 19
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0a15c4851b5f9549569788a89d0fc773eb5efc92777c21696bc317ba2f0e46e6",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "71d1118575715e2fc72297f101d29bc02ff4d2b08dcaf76038f07adf0d62dba4",
+      "size": 1833
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1a5d412540982963b1e578c7e8924dd52130e25c5a9d8bdae2af33e2c4ae670c",
+      "size": 2642
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4c85c596fd92b3eaffea4efe72c1ef77ee336bd59bc0ff53d49c8e21478106f2",
+      "size": 1988
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "65e2c21f05c609c2eef5b6e038bcf88ce961c76698ae5d41b28ad366e24ba514",
+      "size": 146
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "baba360783b5c40cde0251cb0622d3a74729381b141268df6edfc9c4f4847b63",
+      "size": 3828
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b8a47aaa9f5be6dec941ebd6e0ee9da1ac905b52b2ad7df7fa4574291358ef6d",
+      "size": 202
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_z3s",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-12T20:46:32Z",
+  "vendor": "samsung"
+}

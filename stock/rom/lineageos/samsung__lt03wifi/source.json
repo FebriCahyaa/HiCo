@@ -1,0 +1,52 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_lt03wifi.git",
+  "codename": "lt03wifi",
+  "commit": "5d0c2f367e10722e9b1ddf3c92130630ca7adb67",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1b3d8eab473b41e3169abae957924f7d42c2430396b7d40885e65ff5724e79e8",
+      "size": 718
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d31e524215c8273e7a027e3916088f46adcf4b6bd4aee159ab6c50b5f3927265",
+      "size": 5013
+    },
+    {
+      "path": "device.mk",
+      "sha256": "29636681768e1147630f81e9acf5f1edf9195e3a2b565bd34792090746260eb9",
+      "size": 7057
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ad4334a82d3904a7af4d9a0892a493a4742ff37e2623ae02498e9373840c06a1",
+      "size": 1218
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b820eb273ee9e91cfcb1b177a822141511c8874eb7e4add495929d024cc5744a",
+      "size": 3779
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ec2810f9138dcf97af035d670c850a315f80c6f50e0f53e4a8cfef4eb6de8d2b",
+      "size": 829
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9ec54989ab949ef35338f8626f06e33c018509bedd485437bcbf9fa28c6230f0",
+      "size": 38
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_lt03wifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:14:25Z",
+  "vendor": "samsung"
+}

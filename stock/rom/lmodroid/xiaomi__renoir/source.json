@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_renoir.git",
+  "codename": "renoir",
+  "commit": "cb08a1ead4de8faaca17f0b66238d54f562043d5",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "614c49b2600eb35ae0931698c305d154ebd352c7dd42c00874e9afdab9d56eaf",
+      "size": 81
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "701b3ec74d5d4003c6037e8147378c34ee4fbfe9c748d2c3d89766f091a6bbae",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0bf68ddff354fc788f7f355aa0c74b86a99ddc4c4583c9e94bb3e4357f61bd75",
+      "size": 797
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c28834814a609bed62eccb2f4fa262b3af84b816da42ebfbfa100955e08641d9",
+      "size": 1493
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "36c778de7cf00c4a3828bb97fc9f1043aa0e7f0be64546093051e903d32acdf6",
+      "size": 3120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7dbba9c293101735a95db6c6a4f5ed2ac0756667075fea2695e884e67589e1ae",
+      "size": 28710
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e15b12bdd1634a322364f2637522c7a83d0541fa4d7ec27161a72108486d6866",
+      "size": 172
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_renoir",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:10:44Z",
+  "vendor": "xiaomi"
+}

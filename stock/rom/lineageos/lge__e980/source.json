@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_e980.git",
+  "codename": "e980",
+  "commit": "dba0dfd979ac4b2532a72ef67f03e56486296b3f",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bdcc0ae95edc60d9e290cd1356b2d2ed80c7a869818f64cbce99fd41dcc14ff5",
+      "size": 1155
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0d1d5b4fcee04e724f9fe959f2d63ed14880a08170e0f048d327ed2b107dbc92",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8bc1d48170d62ae8a7385d1079bbb455148a1ac9c85324d5e02f196fd9fad249",
+      "size": 2739
+    },
+    {
+      "path": "device.mk",
+      "sha256": "965c838b3546769fccbc71caae417b2789432f90a94895f6096463ffe3d74402",
+      "size": 2577
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f7d582fa2ff7958938338425573a7389dfb0df61250f3ae1ed4f1eadf4bbd631",
+      "size": 329
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "bd3db1682a90d9c5cb744f6685c5f8075ee5422046509cdbf61cef6b684b1dff",
+      "size": 788
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_e980",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:58:08Z",
+  "vendor": "lge"
+}

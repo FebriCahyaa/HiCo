@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_onclite.git",
+  "codename": "onclite",
+  "commit": "96d92ab3652fb31827938d362f3a115aa06cb3b0",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b93ee30d290a2719422aec4b34db48e9193b7c8950c29b7eae245b8e7c8a1ff5",
+      "size": 803
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c37504662bf414ef4dd55418e8687c576704c3ab199c4dee7490f6493af5bce0",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e7752a2840f3d5ff162f787b31dec180a45300e23e9c4c4a4a2c78ad6037bcc3",
+      "size": 160
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aa77d5390510ef27801c6764f25ee4f8fd88e8783d716844e53adf142db174f9",
+      "size": 5823
+    },
+    {
+      "path": "device.mk",
+      "sha256": "48e88494d4e8f13b81c3e8c22ed4e1340297dc4723bf0ade5e0260b00fadac9b",
+      "size": 17373
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "19b435ef4d16f4e13466b36decf7849fcad855bced98c5f01703cfad982f3c42",
+      "size": 2175
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8471ede828fa098186898bc3c8b490b41e0f1f88355c4d01bcdde70162ab0345",
+      "size": 193
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f67434bc57e098bfec1716c3f761285f58e783bb276fc46c42e088d420fc08c8",
+      "size": 96433
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3e33068e8ce8ee138f9e0a2620bc02c4fdaba40fd01d5d7a673d2c737b1cfe73",
+      "size": 210
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5b4fa15747d85afb994be332e5241aeba8e0d4da13ca7ebf1058edbfcb10b930",
+      "size": 1302
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dddf56d24eadf66490d7ea2e44ad8d85702415225b9a84b326e4f5a89ed083c4",
+      "size": 2272
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_onclite",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-23T22:00:19Z",
+  "vendor": "xiaomi"
+}

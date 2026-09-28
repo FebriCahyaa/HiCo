@@ -1,0 +1,72 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_camellia.git",
+  "codename": "camellia",
+  "commit": "c6465765ca0f6c49b223679517040c192c14f093",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "84ddeaedd99902a3d581b817d53ee1499ea53ddeea29c659cffb927ea21e3802",
+      "size": 1376
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8b4439ebdf76199827bf0a4c75579cd03c5c4c715c6eba11a9704977505726db",
+      "size": 261
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "25c901d2073396f3b743d2fd22cb0a01e60432a181a925c1594dac0e747538ce",
+      "size": 5660
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "988d1a0a63f397c286c3c9a26532470a4ff4ad27291141c1f37948dd55badca8",
+      "size": 2805
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5a3b195557853cec8536370bee9432f2de1dbdd1b5c8007a576889c0404bdf97",
+      "size": 16674
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e94bd4a1cbcdff5b3133dbbacc7fa3282f70d751d4a8feed72b2c2169a39363d",
+      "size": 3125
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "42e50ba17a6b67a453e7b65533905910661ee5ee7183a067b01ff6dc0b86ab64",
+      "size": 71117
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "099aafb9901c8df0c9ddc84bd9c1544f1edfca83edec08341d8dedcc995d5278",
+      "size": 1094
+    },
+    {
+      "path": "system.prop",
+      "sha256": "498aafe5efc53730ab599a8a4913308e39898235d3afcca7920080a7e119e5dd",
+      "size": 237
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6de03f5ee7f71ee74df677394e1d304b64f0695ffa6084692768139112b6786d",
+      "size": 8135
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_camellia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-02-17T07:59:36Z",
+  "vendor": "xiaomi"
+}

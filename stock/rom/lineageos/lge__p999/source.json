@@ -1,0 +1,42 @@
+{
+  "branch": "cm-7.2.0",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p999.git",
+  "codename": "p999",
+  "commit": "035f6133f7f5ba4b1cea640ca15b6ab33fcbbc1b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2ba3e0c7baf8f1594fe245803d20e5b8bec878fe82c76e8d784637ab5781c838",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d28a595f523d621920ae251edda62562ff5e32bc74b2d55c8e82bba195150abb",
+      "size": 929
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "753b7226005757bcb7824ad6e620f56afc373dd2fea19644b5b31cefba600666",
+      "size": 9986
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4f368a29c97da41d187e93962566f8863a8efa4d658fc9d311ebf125c02f6cc2",
+      "size": 558
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4462ea7fa01356e764c2964510c5427b9c1478af6a94fdaf5a02c1acc27c89fb",
+      "size": 627
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p999",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:42Z",
+  "vendor": "lge"
+}

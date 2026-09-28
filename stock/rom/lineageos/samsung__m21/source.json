@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_m21.git",
+  "codename": "m21",
+  "commit": "884e4270d7bc8ddadb91717b382e81d2a7b4f3a3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f3a48f1772f7a4d5df56db141ffe9c34ebfc1d9582eea71a226ba60328081852",
+      "size": 723
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "44c85c34b8d40391037ca9b63ddaf5047f4b2613e100c8448c617f524169e2b0",
+      "size": 647
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0547a73182ca916d8a9cff616e232c0a0706df7b012228dfdaa0d8948f786160",
+      "size": 1214
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2ae219fa5ffeaeffe9c0b923aae06bdd1b9ab7633b86361a9cf20d32dfe873a9",
+      "size": 1646
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "39868d71f0226a6bd7a6c10d26bd76f6fcda79d87fa6a39646912e0de613f9aa",
+      "size": 809
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d3df5be506604af5b8a1f5321a8f1f6ab881ee9810482a7b13024d155f3e0826",
+      "size": 146
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3f28a4117568d9340d5072d152676c349bc6782851fbf8728c151493268bbcd6",
+      "size": 3065
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dc5cc12d221c2e660eaa1f03e5dbb3ec7bc37103d9de18fde761847b376505ac",
+      "size": 146
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_m21",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-07T22:00:17Z",
+  "vendor": "samsung"
+}

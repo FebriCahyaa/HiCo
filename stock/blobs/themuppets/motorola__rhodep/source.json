@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_rhodep.git",
+  "codename": "rhodep",
+  "commit": "bd3b7646592126882b79ed0a176d3fbaa4059b42",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-rhodep.conf",
+      "sha256": "0fe5dd6f7b85cc981bb8c7f1dca4d3cdcc56399e99aeb0366ce653cac76d2291",
+      "size": 2857
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_rhodep",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "rhodep"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

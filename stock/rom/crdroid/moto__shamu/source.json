@@ -1,0 +1,52 @@
+{
+  "branch": "6.0.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_moto_shamu.git",
+  "codename": "shamu",
+  "commit": "cc748378ca2c7d0e560f84106d4ed43b87fe5564",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "093dca33ada5d6d934641b3129d271c5d9eacfe6fd56d552726b166ae5e355a7",
+      "size": 1147
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2ffe9bdbf0c1fb72b8a2bea691439921ad5769c63a9795553245ab9c495aec0",
+      "size": 686
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cfd0e5b4f0506c544ad23b9407627420b2f79639890a6069d5c09dfe53cc7173",
+      "size": 4999
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7b4b99b3856b8b4b7997bea609785666cc1ef9980971a426b5932cb4e81f1f6f",
+      "size": 14232
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f947d5c66fdfdf8c747fef951183ac24a227ed1fd0372a33f4c849cede840ef3",
+      "size": 1432
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "df7fafbf2b9722816c001e393adf952f545f0b61643b1ba5e1304bb36be39b0b",
+      "size": 903
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f3d309608ec4b7fb5d4343f502d55178e74e712ec266e006e6eea9556ac9ec63",
+      "size": 638
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_moto_shamu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-08-27T09:10:45Z",
+  "vendor": "moto"
+}

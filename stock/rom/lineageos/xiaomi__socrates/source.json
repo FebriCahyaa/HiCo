@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_socrates.git",
+  "codename": "socrates",
+  "commit": "d6cb0c84ad601f327af0204ba5332fff0abf6614",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e4c9b5a72f7d47d1edcb7e0d4d16fa288ca6446cb469d3f928c363b61fa93e31",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5ff65a61a697c375ac39959f5fac0e4c9cc27674c5e7e8e52853574eccdc8963",
+      "size": 665
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b7452e207fe70baa24691d381bf59186621123b982aa3201a4a6aa1161e5d02f",
+      "size": 852
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9eded7543f42b0288b41ce27378b76c76b4c710568b7fdbf98d6469e2e617489",
+      "size": 3051
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7e1c097e5a32741b3a9e8bc181afeff0e7a1209d52687117d50ebbde804f85c4",
+      "size": 552
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6b69f4f15537beb3241dfd587c71ad2566e0da90de726fa1274f3ec0f872097d",
+      "size": 31527
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1f80272cc48996bc4654b58cd25e039f4b5274ee8f2b6f59a38f5aff69bed675",
+      "size": 70
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_socrates",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T14:32:11Z",
+  "vendor": "xiaomi"
+}

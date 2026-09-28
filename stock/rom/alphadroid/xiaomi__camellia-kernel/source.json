@@ -1,0 +1,62 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_camellia-kernel.git",
+  "codename": "camellia-kernel",
+  "commit": "eb0a8f4ffc6b85ead1bd23725de0e38f049ae1dd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "kernel-headers/include/config/mtk/thermal/pa/via/atcmd.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/backward/compatible.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/default/gov/backward/compatible.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/emergency/poweroff/delay/ms.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/of.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/lm90.h",
+      "sha256": "bd787718b71d4e86ddef0eb85aef4cfb090e768e61768f144aac294a3962590d",
+      "size": 297
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/tegra124-soctherm.h",
+      "sha256": "51c3e9a098ce15e3baf6ff8d955a19ba0c361914503e0c5ac4f806299eaa50d8",
+      "size": 592
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/thermal.h",
+      "sha256": "7cd432448a1f877e1e001d558ac1bbcf1ad1504f0da8c8701e7b703ff99cdd8a",
+      "size": 342
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/thermal_exynos.h",
+      "sha256": "9a4f823163ef3aa47a5d7c39a1adbf3286770a3048e5bddaa776342434f12fb3",
+      "size": 939
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_camellia-kernel",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-11-16T14:48:33Z",
+  "vendor": "xiaomi"
+}

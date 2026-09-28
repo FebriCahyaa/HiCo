@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nubia_nx659j.git",
+  "codename": "nx659j",
+  "commit": "faf8eb357a826abcae52b5a954ac43fb0b251b7e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f105f91eb4f6103be12550882b2c4a09a6752f00fb2f9362e6cb4fc69516b365",
+      "size": 499
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6d7d57bf77ef7fd9b551570665823e00800745e93aadf7dff1f995cdd5cc831c",
+      "size": 652
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2f5b77b5f86a6a38b7fe76edcc23de12897ce601f1dcda5b4a7a1d7eba400022",
+      "size": 5854
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2678bc1548677f2bc7f797d27af1436894568263bf24cd36c452f5a35dde6698",
+      "size": 15912
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c8563d9885bd574a31d627ddb56a96d511e19cad5d387698eec274b0ccc6e858",
+      "size": 3048
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5503c5f955798aeb88a2c31171f68ade5c45739d54334d2e62ebc179fa185de2",
+      "size": 56311
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "49102b806b5a8d26b19ce37b64a80a540561c206d1f65942aea5cfbc1e99759f",
+      "size": 112
+    },
+    {
+      "path": "system.prop",
+      "sha256": "415d2bbc7dd90e89cd461f2f447359630efd5222b624e658f5fd247be5c8c10a",
+      "size": 233
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f89febde8ee7fe656fa141cae8d297641026322aa14fe490a741e048894c84c4",
+      "size": 7629
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nubia_nx659j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:17:59Z",
+  "vendor": "nubia"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_memul.git",
+  "codename": "memul",
+  "commit": "901d3aa381838abfcb8b6516d73854c8d0b14084",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f639fee247bdd4c2798ddef6580a0f10700b5bee4bc2c7c5e505200c93a191d1",
+      "size": 2777
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4146123beb5a66d8ca3161fb8a8c4152d6d7553fd2ef1fbff8a142bf903820e4",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "87e9a0398420ea5ee81bb3d8c3c2a2fce2557c0c7e67047aec5e7bbe57c8054f",
+      "size": 4490
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "9466a952e1ef09af54942fb5e18a4c9c84dd0abf0aa6c328ef084cbcfa4db63e",
+      "size": 928
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ed2a67c52206e26a15a278403c670609857f510a6a61b0650fcf9e2f30705ba4",
+      "size": 8682
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "89ad160d883c36ff4787b1a291153a7dd520f407f28545cab16e6d4a8d6c63c4",
+      "size": 948
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b02bf39d802b066a48a9e5f20b9a75f9ab08bc97a1a805be8a5e5038e4aab32b",
+      "size": 7586
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f62b21476fdfd6944496e25d9396b3d6c944fdba6c72401d2a87dbed512ed8dc",
+      "size": 1774
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "50167c195baaf63c838de8e7e53c8ba15f11753f0d4c3d7a8ee1aa99d1ba38e6",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_memul",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:15Z",
+  "vendor": "htc"
+}

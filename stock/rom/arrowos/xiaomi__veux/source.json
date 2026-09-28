@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_veux.git",
+  "codename": "veux",
+  "commit": "a37c507267e964684e9a61e9abdfb273571e8163",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "094c0ca987faa0e7481d0f3ddbdcf8e4a19a0566e77f0fd28e33c11a5f75bf63",
+      "size": 4590
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e19132a1ac9c37144530c76e6a41429638ec3b2d287db3b8c6933f84c0b5235a",
+      "size": 223
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3efe1a2b2dedfdf8cc0a17f53bb7e754a1c2b1ec2e179b802d5464bc590f7c4f",
+      "size": 7729
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31c3b934029f0567cfbc594b24bd4f62fdc0b8430fbc6630ca5dac70ffae913b",
+      "size": 19966
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ebd6af1e1766ff7bcbca19c1bdc9ffdf70d6ea7c11578186a99b1f0fba562172",
+      "size": 1478
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ea0e01b8fabb3cd788ce8476ca9acab55fd94e5fda8d360c308d15f233406e91",
+      "size": 59395
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "447c475c8ad9ac6fd60eaa6b571cbfe4f48192e6f5703a64a81194926fefd20a",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0f876345a4ba6347cfedcfc6440569c13a901b639958f7d0b67acc9df00417b6",
+      "size": 1096
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6643ebb00a76fed9d6b1031bc9fbec5f6b9505dbad417154216053424ab4b8c1",
+      "size": 9908
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_veux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-01-03T08:51:18Z",
+  "vendor": "xiaomi"
+}

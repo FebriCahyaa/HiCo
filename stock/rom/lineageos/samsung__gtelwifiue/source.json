@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gtelwifiue.git",
+  "codename": "gtelwifiue",
+  "commit": "77d3881fc1809a2fd5c75657cfa2410898e91134",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a8c9dfb142768b77a66240a45432bcfe37766ec55f1ca4fc8d55a772512f9349",
+      "size": 194
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8d9c1c3c844fae5444acb5749d9b9d285b9e5b783215057b0fdd019d2385c0b7",
+      "size": 426
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5448f2cf7497c44dbe074b9a8a9709581fa44db476bd20671550f888e5f026f4",
+      "size": 373
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "126edaf887fcc46be33a83056c787d9567cc7c666e70f0e08d7d31e7342d067e",
+      "size": 895
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "055c16854e0fb530a9777061d88e1e93e426b819dc5357694da1c2a7926a056b",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d93fda7524a87f5a45fc9e05ab6a95b508aabe1de163feadc508d94e7bd627c3",
+      "size": 2464
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "77d1c9c0433eacc4978b7d7b457a7b4a9ac0efbf2e115d02c05f32d508902bbb",
+      "size": 78
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gtelwifiue",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-01-28T14:44:33Z",
+  "vendor": "samsung"
+}

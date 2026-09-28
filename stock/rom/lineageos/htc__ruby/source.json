@@ -1,0 +1,52 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_ruby.git",
+  "codename": "ruby",
+  "commit": "b530bc74fa564d5e5a6c698994a72a0fbf067bcf",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "582a75575c55f442ccf407b8982b750ca1020a048711c1115195ebda4d341857",
+      "size": 83
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dbaa1c71ebbf6612aa1da52a74fb9fee6fa8d12d66004b972a2122b6c69f8aa7",
+      "size": 785
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dfe164d05a5bcb200188ecdc41d811fe11e4c7a0ec7c0b1f4f55f67ade9c10a2",
+      "size": 3014
+    },
+    {
+      "path": "device.mk",
+      "sha256": "001574ec6c0fb54bf8da75cfa18106bebd79d2fd02d43586cbab83bc533d4a17",
+      "size": 7366
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c8ff3c61c77f2bdfdc97061bd112b2911291c6114e4c0b7987ec6814ef2dd6a4",
+      "size": 12133
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b780c0f595e8412e92b015d129cbb7b6f5feaa5099182451d09fb53c1d14883e",
+      "size": 2182
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "234d2757c4047040b01dbc35088581b8e66a1e5f9d7757699d7af45a4e1dc870",
+      "size": 873
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_ruby",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:37Z",
+  "vendor": "htc"
+}

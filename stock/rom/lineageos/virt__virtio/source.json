@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_virt_virtio-common.git",
+  "codename": "virtio",
+  "commit": "f17927b21dd5eceaf85c8dd3f3e7f8e1a7d3d074",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6dfaf111f5b87334bcf3571ab1b650eb5e28da5f6008f14f7977c9e2d64624d5",
+      "size": 77
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "335f2550da16edc052c80aeccc87b5459dbf9188fc776b12cec53e39733ee6fb",
+      "size": 2149
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "f1056fa002fa4285ced639987036ea3e2af99acca1c103983b3cc3784b9190fb",
+      "size": 1888
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "712e85bef3416688cdb50537b5473d9ab958290a7cb26edf0078acf23efa5316",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_virt_virtio-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-07T18:37:55Z",
+  "vendor": "virt"
+}

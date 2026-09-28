@@ -1,0 +1,57 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_armani.git",
+  "codename": "armani",
+  "commit": "4cad86f1d2fd3333a3df78699f2ba24a9709d7d5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0a00fb557b9b9c8141a695b03025d793f10be1134a67abfa73326b1a414e794b",
+      "size": 716
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "11927a05e9a34693a6a2cd16d2ed51168ea60b45275cfdebe3e913bd4a1b1721",
+      "size": 4419
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "9ffc2bd243b1438c3a0e62adb20ad844da6e82252f7b9ffd8df73ecaf46f0ac0",
+      "size": 992
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4e82b4145b40cd3ebab3f76ff6cd11e362ec0a39c623013d9061c02bb26bf3c0",
+      "size": 7703
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "14a1442a246703752718ac87168051eda51d152ffbe0df39faf69d29ea98e427",
+      "size": 1424
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "84edc09d8b812a70b3b9109ffe7301cdbdf824aa10e84747359390e9f4bc22a4",
+      "size": 6936
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "99302a2ac0bf605f8f2999b1946b72bc513f39fd2265b5617407085f514c54cb",
+      "size": 224
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dc5d2b5c65d2b60441347ee4dec47fd04e3ef8f70648254a1a0036d1d96027a0",
+      "size": 1329
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_armani",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-13T13:49:25Z",
+  "vendor": "xiaomi"
+}

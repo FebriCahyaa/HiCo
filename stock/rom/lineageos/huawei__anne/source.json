@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_anne.git",
+  "codename": "anne",
+  "commit": "708186e72092202a53fd979419864f56abfa7b1b",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ed1fc951223be2a711254c76cae4cc8f49606ce30693522f803315d60194e9ec",
+      "size": 1063
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7219b22d80b9f241ef0852de14c6ff3d05d6e4add136b326cf5b05465e08498e",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6053664166110edba8c9e979817ad9ac50350804dd9e8e52940afd601b21294e",
+      "size": 772
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f1869e1cc7884fbcb75008d72b3019191658d3db3ec226cb63968a9a1126a44c",
+      "size": 1166
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2dc9a9b689d3d7e5159891690aee27e9e1de24843f84201eb0eb1b8cdc41d37a",
+      "size": 754
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "67e4eae3385689cf12f6fae20a950b21e87f8f66850e985f32cfe7b72e017a12",
+      "size": 118
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_anne",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-06-09T20:00:26Z",
+  "vendor": "huawei"
+}

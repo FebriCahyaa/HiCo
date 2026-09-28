@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_discovery.git",
+  "codename": "discovery",
+  "commit": "10890a2471a88d0ac27679cc1cc70d7dc73ba9ff",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f517d6f680a1314f010b55f5c30fc52c763ab3cd440854758442b4784aeb809b",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "14cbe07f6c9235edca3b8f560fc9c0711c9b1a3d3bb8308c4dde77c7e077bef0",
+      "size": 1072
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a56375fef68b221d6bc15caeab6da07317583e31b3291e75d65c25f40b768f9c",
+      "size": 1887
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b1c4d818bfb38edd13a399859bc2dc4e5fa4d37b161d1cfca3b4f123d870ff29",
+      "size": 1698
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a853374d45d83fc5c672cd87efa8ded53a27652f290b074ccd8f8c51abc64a71",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "73c5c187b707bbd5ef8d8f3cbd1c63157e38af6b410c27974800b74f698937e2",
+      "size": 15774
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e8989e80f55e0500ebb25a1ea9f64f34a55838e14b994d289c86b3d0d49e08d9",
+      "size": 297
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_discovery",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T20:29:09Z",
+  "vendor": "sony"
+}

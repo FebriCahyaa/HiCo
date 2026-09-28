@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_olympus.git",
+  "codename": "olympus",
+  "commit": "25f5963ad79356a85139e92dd5dd10cc088ffc3a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c4f06f44c03646f4633e820a18cc57dd00514518c250752849bbaabd03f96440",
+      "size": 783
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "76ad78fb18fad8de236d4f7bc101ad5f778677a0e8288eacae1af05d6ba92532",
+      "size": 5218
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "129186cfce4a4c6647f743dadc9e58a7525f10ea1bc69807a6d06eb91cfe50bb",
+      "size": 18621
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3bfa1db46f15b0fdaafc64a7a18d0ac7a03a062e59642f2724f196484656e629",
+      "size": 2468
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0cd894bf2f3ae45377cbe20a532e10d586b97e29fb05c39bf92ef5ae2f74b699",
+      "size": 852
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_olympus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:02:38Z",
+  "vendor": "motorola"
+}

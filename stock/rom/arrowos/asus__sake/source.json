@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_sake.git",
+  "codename": "sake",
+  "commit": "703c6ad42a897017e91e03a9d23c054f2744f74e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f77db8805e181f9f9f446b16b31e93d5afd86b92ca431ec4937e35e6b973af6c",
+      "size": 4046
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b60fd9a294d2f86acc0a26061b11270a95c538253041a2490f4f8ed79826a8d1",
+      "size": 237
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "35203aad8c0a441a6e3044c404d09cc0cd980bda97a7e13779ced481d7f8064e",
+      "size": 8288
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ece18a31fbefa232e39fcec1b09e1fdfaeae6a2415c8d8e7fa090bbda9cae56f",
+      "size": 18352
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b3caeee44b433a587d49ec36c25a61336f2b13450301a53606bddd23a5c432b6",
+      "size": 1734
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "81c197ba1a66d2f81a8c82c36443ffd813ffbc1ebffa90d7c1da22572d698898",
+      "size": 61775
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "fd23309d6d9f20686123333f4e5d085f3395992610dc70f75772d658ed473503",
+      "size": 174
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e32ae54734f623fbc3a7d7e052cc41425d9e1cce9bce5617203f5c7d10881d96",
+      "size": 4264
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_sake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-17T06:12:39Z",
+  "vendor": "asus"
+}

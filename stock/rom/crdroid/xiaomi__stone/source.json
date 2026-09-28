@@ -1,0 +1,62 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_stone.git",
+  "codename": "stone",
+  "commit": "eaf47802067783176d48e7490e5b3919d14b7496",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2d0a7492cf2c56e8d6b455773946652bb6eb5b7e69b65b4d59a731d7cf510927",
+      "size": 762
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f21188b903dca8777ff12b99462b89342a8355e2f73412574bf98808577407e5",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4745d7a8fb37b71fdb1eb1c095d488d08976f5c1155159ebf42e336e429cd145",
+      "size": 5411
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0905d3d0041e508df3793261b37dc0b546e3afeb6ce35addc0b7a878645c0295",
+      "size": 19191
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9de14bce50e6f46532dea2592712cd8c80ff2ee1d85d088f8f191bbd9c1abff1",
+      "size": 2992
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d698235ef23293523e687c420694168dfae9d4d1a991c5dc478bba1196867384",
+      "size": 51470
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "023fd51059bfaa880f60a907afa412b924a242506e1dba43216a9874e177eab3",
+      "size": 1248
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f6e7f7387579a4f0b439158da5a3cf7ded4a3a98585a73d945da6853508148fa",
+      "size": 5878
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2699ad1fdeae99ad71f93b04226812f4959bf1f12d7f715b32c2f38586bd2181",
+      "size": 8710
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_stone",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-03-29T06:41:56Z",
+  "vendor": "xiaomi"
+}

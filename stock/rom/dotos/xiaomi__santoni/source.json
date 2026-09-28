@@ -1,0 +1,57 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_santoni.git",
+  "codename": "santoni",
+  "commit": "bed3daee96919272a57b82f24e8a2004033ded68",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e52832b314b93019b14cefb0c6408ea2bcdc803db8132251eb3dcd56e2ab2883",
+      "size": 4009
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ee7ff0be4a319ced8a78c35bf8333c22b0491555fab49f693baca48fb2b720cb",
+      "size": 7336
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "160667253e4bbf711d6679fae3622ccf3b06026a3fd687491a17a296a2947696",
+      "size": 4372
+    },
+    {
+      "path": "device.mk",
+      "sha256": "89f5e8fd533e6b14cc6f576825338b06173abfef0d2217b62ee536f509d5802d",
+      "size": 18962
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "228562746c6a974ec455f9bfd6e5be173a1606db592db6f1a0aefbbd54e4ebf4",
+      "size": 1998
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "28499b74b92c49e7c194e42a5d50b8a1c884c0fdfaaeebb690ae9cd5d2e12869",
+      "size": 21456
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6e2e7ceeca7841231e562210a308f4185617351d0c9ea7f31e09b99f60913bd7",
+      "size": 5938
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "65dfcadf9714541134bf6314777efd463530c77750ac5d583bf9fb9f430e1aba",
+      "size": 879
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_santoni",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-09T08:23:21Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_asus_X00TD.git",
+  "codename": "x00td",
+  "commit": "6632a21a34baa01696da58bd4cde542558b11c67",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1f7038d9c2bc948d268c7be174bbc563cd2c111116680c345eaff52da14806dd",
+      "size": 4353
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a94efce679d044c3d4d9b028b5f488c9c096d6d3b96fb9d1026f9f91d0a9751c",
+      "size": 6227
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "8b8aa413b276d0a63d6b99f4119d4d4a1e911ba71ae5c62f25fd42eb822bb3c4",
+      "size": 5200
+    },
+    {
+      "path": "device.mk",
+      "sha256": "65e0aa871382d0d908b4e0eb4ab9619d2cf272b651c92c1df9cb5562b99401cf",
+      "size": 17430
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "391a65b8b64c09ceb36c5116faaeb1c9641658c53b6d8c154f1e4903f18d5e9e",
+      "size": 1200
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "157cce02999a927ca30fa307f90aa0af8f9850cf930fbfc83296c944ff84a4d9",
+      "size": 87348
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "152a26956f3cc687ac6600f7584f09dd3f99118cf5ee5a015da2defd860a8610",
+      "size": 223
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_X00TD",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-07-07T06:01:25Z",
+  "vendor": "asus"
+}

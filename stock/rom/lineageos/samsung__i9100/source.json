@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_i9100.git",
+  "codename": "i9100",
+  "commit": "c33c25820f0b7a2eb42ebcfef4f48c362dc6b511",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3781f8b234451a68fd896e6d4c28f8f4d5412d45ef044164be3cb9ab4317adcd",
+      "size": 1070
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9774d877a1e63245f9f64eb429eebe0194b5b80a2f4a23fdffd8787d0978d3a2",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "032db46b6b4e0a615e11d8068fe6dee018b8b7996ab411fbea42a0337a85bebf",
+      "size": 1307
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ba321ffbf1e91fc96962cb19b49fbf4c8d7199798de536aaef29dc30b6c64844",
+      "size": 4132
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f763e92b584d6c2606c252608543774d05ac8e4acdc73e6fdc2d56ec0a7c4aa4",
+      "size": 360
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "02f41e236c07002f350f8447ad8dce47e2cedfa7b93ed271d40684a1fd78c202",
+      "size": 113
+    },
+    {
+      "path": "system.prop",
+      "sha256": "fc730bb9fe57a11666a0a78c3339a59b0c10ce7298c4aec04bf4c4dc2af9e9c7",
+      "size": 225
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_i9100",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-09-08T19:32:09Z",
+  "vendor": "samsung"
+}

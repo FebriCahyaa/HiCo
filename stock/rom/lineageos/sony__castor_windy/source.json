@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_castor_windy.git",
+  "codename": "castor_windy",
+  "commit": "c607c164c320553d61d561b93b19eca4b0b44d59",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6b95924f23eaa9da081a32b62b7f2e5a09461389ac500e34845a52a649a4dc74",
+      "size": 19
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c70afd2bf6de00ef771b9f6bf7a8befab8c079e656eabd6e2e8d750946ea057c",
+      "size": 724
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f8d496bd4db0d41fa40c1a0dddc0b7128f170c3d5f5d289c066a0fd0c68a0eba",
+      "size": 784
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "289fc4d216f4f39a48ed2f0c6029aa39299c054972bc185cc613c1915c2c0c3f",
+      "size": 1088
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7975f772af35cd0a7114e58ca83053ba781ce67690b773190ce6c5ed31c083e7",
+      "size": 1062
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "55172edc2440c0a8308a32e1978d83ba4655e46e01eabdbdb508738c74c669ec",
+      "size": 529
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "45db8c33193924351d256526a21922d9ffe4973330191244048b595d10c8d902",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "33c87e5ed0700eaed8be809effb381aa0fba2c8c1e96869a39906fe1da6d8a9c",
+      "size": 8607
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_castor_windy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:10Z",
+  "vendor": "sony"
+}

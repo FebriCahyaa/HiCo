@@ -1,0 +1,132 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_google_coral.git",
+  "codename": "coral",
+  "commit": "c4e9b3a92c790d5ac7f02326d58973114cc869c9",
+  "file_count": 23,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2cc6524add5c5adfa148ee81b2d41ebb8454499406bb8c0c939c2b5624453907",
+      "size": 1366
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9787eb3f93f2c33ba0ac0458523cbe144a6ffcabc037bfa02a4bb847ea1fca0e",
+      "size": 7259
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a921b26ea0adcf059c10b647032f6743c3028aadd711eb1b14379abaf0f30660",
+      "size": 1176
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "55da55261612a28a57f18314ef88e7c9e64d5d0e05676e44d5849ad694641d5b",
+      "size": 7812
+    },
+    {
+      "path": "BoardConfigArrow.mk",
+      "sha256": "6aa7b49e901335aa937a6f4e70abb288a9924b1a15b8797dfb2dde096fd42ead",
+      "size": 605
+    },
+    {
+      "path": "device-arrow.mk",
+      "sha256": "57411c3b39b96a14f9498db0e20a949f2316e290325a63a36102fa5dac95c270",
+      "size": 5202
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "665b03eeda2ba1f7f7609bbb56355b8f4ad8cb52a5a3d0049cc93c7c43ec1bbc",
+      "size": 4986
+    },
+    {
+      "path": "device-coral.mk",
+      "sha256": "368542a5a3635cfd8ecfa12b683f20f69c539afa38cd42467478805ea7326a56",
+      "size": 1509
+    },
+    {
+      "path": "device-flame.mk",
+      "sha256": "d25a7721e172500df546c700e44e45cb66a7c531bf556be39357e77c503a6c34",
+      "size": 1617
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dc78a7c2720a4e1d80f6664c3b65be8daf104ef2590256051afa06a0d983c4d1",
+      "size": 49354
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f88aa38525edbfbbb93f71378943f14983b55e9fb6724d84ed487ad459b95df0",
+      "size": 242
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e966fba1a9a3bae294f9db6ef2372eb934db79fb3b3a8f03799967b687f8b596",
+      "size": 108
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "76e9847f2bd9190225f89dbccfec2fb1ad30af0b9b49bcbd510264015f47cd22",
+      "size": 401
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "38f36afbdfbcdf5607e63a485c2ac1e373e76fa9d52ad44e8f4c1f14c769ba49",
+      "size": 838
+    },
+    {
+      "path": "thermal-engine-coral-normal_mode.conf",
+      "sha256": "15bc31b5bbe28904210df3da30ee8368782d81a3a9b397a055b73de255151a69",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-coral-retail_mode.conf",
+      "sha256": "5d10587b932142c0f9c0550c89cd6301a5a767820241f513555f39dce9217640",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-normal_mode.conf",
+      "sha256": "d95d1b5b04f59bc84aae53910b51ee8a6018d9ba455967033ac4ea1e1106735e",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-retail_mode.conf",
+      "sha256": "db400b4087619e02688af013fbb2ad9b68d65321ab28d844842e872f7001b6e7",
+      "size": 2276
+    },
+    {
+      "path": "thermal_info_config_coral.json",
+      "sha256": "09618c1d3c1091adcf4b260c4706dc47e233360a3c710659932e0370a2a406b9",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_coral_jaws.json",
+      "sha256": "9ebf27b33fff124b891ef7a7290656a1ab84956de1ccda9e014d3b5aa71d384e",
+      "size": 5602
+    },
+    {
+      "path": "thermal_info_config_flame.json",
+      "sha256": "ed691982acb0d58742677d26c4d064f7603a583530f4a4049adf47f6b0c10078",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_flame_jaws.json",
+      "sha256": "ef10ff9bd887be55a82ddd6bf6e4d2e40c680991e40ad4006bde99e23994f7f7",
+      "size": 5602
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_coral",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-11-25T23:28:37Z",
+  "vendor": "google"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_google_gs101.git",
+  "codename": "gs101",
+  "commit": "83633cfc93a60dcdd95d24fd470b62ece5eafccc",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "88af858cd8a85a3b68f4600ee80f1c193b16fd0dd1de3afa9aa0e41046fca58c",
+      "size": 1202
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "72f7b9bb00bcb98dc8dea909ea7b272231ae5a9dba0f8736c0badc61cc7b9761",
+      "size": 3451
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "481dda1e19549ca54f8809035c4d99a6c436fd5df57fbf437f0d45ff75928442",
+      "size": 12515
+    },
+    {
+      "path": "BoardConfigAOSPA.mk",
+      "sha256": "0c719459cd587a9f2872de88354fb7efe92bcb6f22841802c0b4a3c6c44ee324",
+      "size": 1397
+    },
+    {
+      "path": "device-common-aospa.mk",
+      "sha256": "93965ff8b1bab6116e3bb1f87cce058fa361c38704d7ed3622ca0ac89192b2a7",
+      "size": 1514
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "75ff07a776669c6e7130ab761299793289dde7834d3084cb647ff12b792c0871",
+      "size": 2023
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "35402fc936329949fc54dddc023a9c749c4369219bcda8b7100fc719ddc9fd67",
+      "size": 850
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d997e49725882513f5025102cc641ce57b635d48f9592a6e7ab14f57dfcf6292",
+      "size": 44069
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2229c85e222aa3b1086c84487d7715ff107765430eafe99185d3c07eb7dbc285",
+      "size": 249
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_gs101",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-11-21T06:00:42Z",
+  "vendor": "google"
+}

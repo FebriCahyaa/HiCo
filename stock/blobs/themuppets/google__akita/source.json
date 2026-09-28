@@ -1,0 +1,59 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_akita.git",
+  "codename": "akita",
+  "commit": "4d2af721c9b872901326af9d9db6951ac0560168",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "e9ce7bafec7afd56229c5e17b27b288d46a44eb91d692451fefafc38de95cb20",
+      "size": 84466
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "eba2a1af7220033cd7f7de62285334e2d48acec35b9bc0196b83ed231d317e5c",
+      "size": 32381
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "6b2e0210bb8f29b6fb4fbd663d236d651b8999ffb23eafbde4bde468b2c51574",
+      "size": 9031
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge_proto.json",
+      "sha256": "89e7f3959ba97d60a954e206c7001c02b90a92d8e4e252a696e4bd56e5853085",
+      "size": 10064
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_proto.json",
+      "sha256": "6dbe61aa362e0b187cf6e890420d2078ab140ff2f91e16c2ee5f1aed9c87f3c1",
+      "size": 21973
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_akita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "akita"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

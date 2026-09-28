@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_smartisan_trident.git",
+  "codename": "trident",
+  "commit": "859b9e860a1b07f16281d88e7a33c7c68bbe1f22",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c8b3819fe986d60186923e5cc22e8ae2662cc8034805dedd0ffe70ca38b0700",
+      "size": 618
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "654a05b801cd46a638bbcdb723b17cc6c32927b176a012ddea5e261bc08deae2",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2eb4fcaff46d087beb377d2b2a37c4a0551db9d895efe8e4cb615d7c13751cb9",
+      "size": 5406
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ca9a084993aa067ee4b15d72beb548b11c1ee648efb76fd866e0ed5fd99ff385",
+      "size": 20368
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "da27085fe237d82ec6c9ea80d023107f2e270ef4eb60498a3f7a3b0fa31f675e",
+      "size": 7704
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "babffe69ca1883d52dcb6dbfaedca456651650aa2d1ce9cf400cc4dcb99dd6b6",
+      "size": 65250
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d3ed03baa0768be98a841fee144f9e7a1ef361d02a186eb62cb6ca3ed383834b",
+      "size": 2369
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6c7318562f18bd84ca4bbcf3fa3f54fcc4e105d5435aab303d2d2a33ef1d1979",
+      "size": 6344
+    }
+  ],
+  "kind": "device",
+  "repo": "device_smartisan_trident",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-17T03:16:19Z",
+  "vendor": "smartisan"
+}

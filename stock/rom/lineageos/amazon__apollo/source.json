@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_apollo.git",
+  "codename": "apollo",
+  "commit": "e0ff29870ceeb65aad2923c25a8424699bee68f6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9140e633cf03e02a11480a0d94b1e92d7f073b77879a4309be5329f4817f74fa",
+      "size": 160
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6764d7d75f24b197ab5e442a2df1aaad0cd3d716d7a86acf3dc1604a84777c74",
+      "size": 49
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2a9dbb269692be8888f44fb96d92ccbcf62d91b328a59c2d33c6c36d6f5c7195",
+      "size": 606
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "b87dc70f90f3d0a6f0a10e297c1119e26990e2da7f26339d5645891e0f266947",
+      "size": 1985
+    },
+    {
+      "path": "device.mk",
+      "sha256": "24395e305bb62f95aef0bf1568c99f0c2cede9e216a9fdb577f10dbade256c8d",
+      "size": 1321
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f63cae4ed56cd3d55fa244e9b533095e582329eea1a5e80bfd44c4153e91000c",
+      "size": 133
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f6fd4f2de4d9181383b7305e53f2120763c89618e717f79508fc570f62bef82",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1a83502d4cde557e360fa1be4550d47c6d374b02d991c3aaa311718521392ea0",
+      "size": 11444
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "876ca5ae6048d774ba76b3504edc9cc8ae7391082cbdd29af09476a1363cf231",
+      "size": 42
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_apollo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:43Z",
+  "vendor": "amazon"
+}

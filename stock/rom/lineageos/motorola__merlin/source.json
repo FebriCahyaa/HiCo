@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_merlin.git",
+  "codename": "merlin",
+  "commit": "23306b970e3eb1aaff25ab5298150ef0cd9386c2",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b3616e6643313c865e2edda735536b143af3488952a6582226ac73c559c9785d",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "227b216f4c1578310dc706195145531d83db7e5ddc958368eb315f0338592832",
+      "size": 707
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "47fc5ccfce15ac903bea4c9996af973ce810bbe2af08c59db4bab15d978a47ef",
+      "size": 1635
+    },
+    {
+      "path": "configs/thermal-engine-merlin.conf",
+      "sha256": "3a1e242869dde13708d85a456d3f79946cfcddd70026018de43f3955a84e0c53",
+      "size": 4250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a4f8761ec09e0d637060194e60929840e795956cb2cad086e38cd264cf144503",
+      "size": 2403
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f8abf44c5aeab27384e55fd7540985ea76809f97623fa81fc86c3571116db10d",
+      "size": 310
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5e3da7d4ae41dfc98132fa052e891e13981278b0046b6a05c0ecf38228e2c903",
+      "size": 126
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3b22e8f613f96f542383257006881123d558609755ee1d5511b09f556d1d8e18",
+      "size": 5030
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_merlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-04-13T05:41:42Z",
+  "vendor": "motorola"
+}

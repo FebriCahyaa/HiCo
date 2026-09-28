@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p920.git",
+  "codename": "p920",
+  "commit": "7cfb1c00dc445af5a7eee51892f8fac2fa35b4e0",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "da7be68cc8e26d17958da3ce1d6a3cb5f7bb750ff6cd63d13983d02a4b0b55fc",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9948403bf2df9ee5be8cff2dbf4fe8f80a3bd73e9dd7641a6097c12a2f65e013",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c17c0d964765ab9943b507c15e6de9ead1ebdaadaead080e39b023b46a3a990a",
+      "size": 2542
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0fbdf35b4e94a36887ec77b1869cd7d04f25bfc4fce5464409d9becf8f887552",
+      "size": 14848
+    },
+    {
+      "path": "system.prop",
+      "sha256": "425f5fb3a524ee2a4a3cdcac71527c9edd07fc82da03cf59f371ec6964cc4234",
+      "size": 1083
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p920",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:36Z",
+  "vendor": "lge"
+}

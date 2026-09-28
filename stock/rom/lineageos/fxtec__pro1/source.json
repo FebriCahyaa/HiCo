@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_fxtec_pro1.git",
+  "codename": "pro1",
+  "commit": "c775176f6446d021e04512a555c29bf4bce51ccb",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d15079f8251628ca7881f35a3b7c176119106a8baa3757027a858c84604b0849",
+      "size": 2077
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "851bf1d80934764dee45735c3adfa5175de2b3bf3a10f99258ff671ad4d342ff",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c7ed883efb9898b5752fa24166a753f9767c0ca18b747d610c09d14571866cb2",
+      "size": 4688
+    },
+    {
+      "path": "device.mk",
+      "sha256": "743cf7f181d22220127a71ab9f820e3899786d6df3f200f29136bd677aaee83c",
+      "size": 18717
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0679fd72341600c7d3c408c4bb362d1e19a05def7fc343b8c08bad001250deae",
+      "size": 4475
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2e792339d50fd9f42932ef7202e8b7432d2928a280284ce7ed59e53543cd394e",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "49622809de08712a146f6312221017a748dfcef8780ec3adda8d6ba427712517",
+      "size": 46195
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "95ece9bb3a36b2b88115969f2fff6029bb09f6b8baec66f754b898ce282b2d06",
+      "size": 1581
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5f26a374427fd52bb95dd0b3ad25160d051e31c5205fd437a88b66144d9069ee",
+      "size": 5226
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_fxtec_pro1",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-03-20T05:53:38Z",
+  "vendor": "fxtec"
+}

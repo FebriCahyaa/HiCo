@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_vsmart_casuarina.git",
+  "codename": "casuarina",
+  "commit": "cf6d6484e837853d8d33568a2a6e49e601285857",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cd184db25637f98325e0bcb059fe3ef5fc7691f44ac997aed285caccf1a3b50f",
+      "size": 519
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d8fa4295033256b834a6feb7f1538689021bdc9ae658fc7655682913cc7ea073",
+      "size": 157
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "132eecb77862adf6237932b20a990f8e25c6f3831c7d51497da9a53d5b6d1b73",
+      "size": 5127
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eb70f41aed1d7b54fe4e9e715f5934ca75ee13751966cb4ddc31512d85b43fc6",
+      "size": 15841
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "29213a62fffd4b7c924a65b7d709e7a09aafded1b7cb8c2ca52735eeb156a4eb",
+      "size": 2790
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4d9ee89825c07b3cf60b9b0159c738d9f6671fd005bca038a8706abb2398aaf2",
+      "size": 106
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3377beb566a76c80f4ac5c6450e10da97aed01da7d3582c1ffd931db3258ae1c",
+      "size": 33583
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "5840b2030dd0155d8cad0ffebb45498c00ffe3605814ef37283e21960e747407",
+      "size": 97
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "4153f6feb69db8d2bbe84ca917a35a1b82dc383a45d7789755a6bc4430eb3864",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "014ebc0985190ddda953998641381fae4dad6b201993017bca5ffe82637fe0fe",
+      "size": 1106
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "754e2a3e82a9aa82501e0ade6e15f50af0a3ae9e12189ac26f34b415ab9369c5",
+      "size": 4050
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_vsmart_casuarina",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-09-12T02:28:03Z",
+  "vendor": "vsmart"
+}

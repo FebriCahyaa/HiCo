@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_venus.git",
+  "codename": "venus",
+  "commit": "de881b6a9800baea0853464854ab8cd7bb6a950e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cedad25b9c9b06d92ed43cb5f538dae6899726ad4da373443ad328c02d1edefd",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "570012c0d00511ed8df08d2c5adf290789bb28fa5343b4a936f42d7c29f51d9a",
+      "size": 1040
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d10af944082881626c5a1f73b8e3a18105f5a7d8aa8afe616842dc4c5f542c5e",
+      "size": 737
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "195e873c5837f8aa1a1556f23713ddbdc158ddfd6c90d32140ac245d737dbc11",
+      "size": 3447
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a8d046a5623065bcd2f19bbd09459c6010f15d9694e8eebc7805a02ca4e1366f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e77cab9b8ac2ffea4543af3303304344c2c2c527ed861252bc79a8c799e62d56",
+      "size": 26755
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "11d43b4e2e2325c30c31d98dd8970d4ddc6932c6f572f375fe353ddf2a6018b5",
+      "size": 254
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_venus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-19T07:29:24Z",
+  "vendor": "xiaomi"
+}

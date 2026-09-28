@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_hayabusa.git",
+  "codename": "hayabusa",
+  "commit": "a2e2a348c7f759d7d82b242faa87163484a7eba0",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e560f8060c62cd4c60354f01c3d7c1415e9d2d306addddfda529b50856c15ab1",
+      "size": 725
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1372b5463df357745cf176d7074d7c8cf01f7b2224ed2268819a5c53e32053d6",
+      "size": 883
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6e10437077d62ac179569b51589c55a2dbf5a9ebddb84060734132ff4a882cbc",
+      "size": 947
+    },
+    {
+      "path": "device.mk",
+      "sha256": "54c458c50caa3d4cfbc5f1555e4bfe8af2ee74874450565cb1c8c2f6ef3202a2",
+      "size": 1300
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "35bc5715fb3af5331b951c6321219877279978ad10b40e794b48ec987ac96407",
+      "size": 783
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "07bb099460b1bd04c51a4d67bd264fff07b0addfffc248964e1a0cc3b311bc90",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_hayabusa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-01-03T21:00:19Z",
+  "vendor": "sony"
+}

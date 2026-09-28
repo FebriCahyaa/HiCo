@@ -1,0 +1,87 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_klee.git",
+  "codename": "klee",
+  "commit": "8557f6175d4f33f6f3300c3154acc4f686ae2ab4",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ea4cd25b5fd0689c2c421e50506b715786f11fa82871e86cb389fbd697f68006",
+      "size": 313
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9c8e7c180182dea4e031f521866a47bf9a316dde69d3c58cf2538b53dd5f8202",
+      "size": 204
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "58aa12d5e8815a034a3a7c2435c09760e158f792627a187d084101979918b72d",
+      "size": 142
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f8f63089116bbb2ebe059b880fb24bb6abe14d3d75c63f3f218df64da06e29c9",
+      "size": 8729
+    },
+    {
+      "path": "configs/thermal/thermal-map.conf",
+      "sha256": "2fdd895a03dfe3426694e32f69c2f425af3c59ae9f3177a6eac74781494dbc53",
+      "size": 64
+    },
+    {
+      "path": "configs/thermal/thermal-nolimits.conf",
+      "sha256": "fc7de31948800f561cea1bd410c8fa30bc87aba40f18e5324ec0192e42d8bd74",
+      "size": 1952
+    },
+    {
+      "path": "configs/thermal/thermal-normal.conf",
+      "sha256": "4ed7e7ba123026449f53af24412255013c856e749d62287b0d35a8094e4999ab",
+      "size": 5520
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "dff849e72de2c9ffa795a0ba4ea873461c9adac0da2818e1f58c49d125e535d2",
+      "size": 6496
+    },
+    {
+      "path": "device.mk",
+      "sha256": "30cadae3028604490ac129dd70209d38e871ab2c54d600aaf297a195ef06b1f5",
+      "size": 18591
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d1ef448d801e2f03e351215009e91780874988b149dace6124861afd14f1648d",
+      "size": 12690
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a5bc5e71efa06442d0c91230f9edd1c7de2853f869796723ab271fafe24abf20",
+      "size": 135323
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "7378737e785bc39cfa92ab336f5a93e2b0e36b9a3fec29dd385c3fb96792dc05",
+      "size": 238
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "4517f37cecfee50b24352a90717a8203e016e71f5c0d489a4e27a1425eefd338",
+      "size": 1111
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "78459ec132c76d7a7e5a7d110ba6ba2e4b07ba0500192c0c548dddf39d5f5dd4",
+      "size": 16304
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_klee",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-08-16T20:30:47Z",
+  "vendor": "xiaomi"
+}

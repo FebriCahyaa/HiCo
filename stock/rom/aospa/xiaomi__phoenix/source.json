@@ -1,0 +1,52 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_phoenix.git",
+  "codename": "phoenix",
+  "commit": "ed89be845b6e79e1c991d71cf5e977bb79187412",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "10fe96e7d66ec8b0c3f0223a9dd90234cf058e1d206c9304262435b76db6a772",
+      "size": 737
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d46fb6675fceccd86fd3d5c981086095a72f8f28fd156f4ea7d368bcaae8c34a",
+      "size": 3567
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "38b7bd7eff3010605d695de676fadd6d8c0d8462dc4d651c28e7e6448e24aa81",
+      "size": 6364
+    },
+    {
+      "path": "device.mk",
+      "sha256": "95e0e265212cea55c3693fa4a4977235195da5ee1d644796159034e850e67704",
+      "size": 15620
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f1506b5f66431ca8c033fb848bb9f0608661506fe53cf5ca6ad5cc207fb66387",
+      "size": 2260
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "61069347dd1f280f38a233f190882c104791ed7c126bb04c39c942ca5e6505f0",
+      "size": 63046
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_phoenix",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2024-11-03T06:00:25Z",
+  "vendor": "xiaomi"
+}

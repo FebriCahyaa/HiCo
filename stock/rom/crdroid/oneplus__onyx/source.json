@@ -1,0 +1,62 @@
+{
+  "branch": "6.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_onyx.git",
+  "codename": "onyx",
+  "commit": "ad8a491c29885d4cc50cda8b3181ba31b872b3bd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "91c3ba2df3aca9ef25898c1e6cedc4a2d7992a55d9ffe129c5d2260f3de3c2b0",
+      "size": 5426
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9cdfcf113fc71a83475a038c96c91fd7426c1def5f5f0f4e352445f6dce2ae52",
+      "size": 5025
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "ee58d41cb0b0e6e482b92aa66a9602cfb2c2dfc405e1267bfedd5c3236e200e3",
+      "size": 2084
+    },
+    {
+      "path": "device.mk",
+      "sha256": "165113a5d032eb5432a7954410b591d00f3d0c7f94b39c352e78a16a56883230",
+      "size": 8776
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "64eab7e09ab2518b12036b6163f337b88b040e563e7cb5ff7ff18bc435f2bebd",
+      "size": 1450
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bc7053bd1d1ab2ebbf694291edd473e380743194e639ffb6df732b210c9e26e4",
+      "size": 8130
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "22d5b804dfcee79188bbf828de18d159a2812f90677ed2216ed2dce014d321a0",
+      "size": 402
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9a0d455d958b2634bd6649513765d6f34744011945cb02debf70d4417e45286d",
+      "size": 2604
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e22193603d0faeb8caa065eb566ef1c88034c3af6d9e52bbba161607e256efec",
+      "size": 39
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_onyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-06-26T19:28:25Z",
+  "vendor": "oneplus"
+}

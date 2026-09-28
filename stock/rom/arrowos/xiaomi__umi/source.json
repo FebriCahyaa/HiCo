@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_umi.git",
+  "codename": "umi",
+  "commit": "fbdaa43c6e31ea787daa0dccd49f3e3f91035213",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "caf08a5ab1d9e41769b8486b67551b6e90270c1d511e501831d84c6ffc124dc8",
+      "size": 164
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "55dcc7de2b72ab6d10db735f6d7f8d774149114736106e6bf7ce71c1bf66f6e3",
+      "size": 801
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "65581f4d9a67557137cdc805a51bf32ee7b5b501f7855532eb3f3e20a030869e",
+      "size": 730
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c23a5618611a2bc083447391e53a86587a473f606f824ff7f5d6affa2f15a6ba",
+      "size": 6204
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f7f6e23de6aa100f7fdd53dead3dfb82648f5f45e93100a7ce6f532c98b5dcf8",
+      "size": 1579
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "35ade6b798032b358797b516f8a9760c007e30f77408f2313ef083ea232e75cd",
+      "size": 8953
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "f8b4213aa62dbffbf52cb30c46aa22f97ae167f615627225945f9170bc3c4317",
+      "size": 163
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ef798b057b9face9ea4c546f7c6f661b7fd4bb7965c1ca701ad365d70ccb2a46",
+      "size": 3824
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_umi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-04-09T17:15:20Z",
+  "vendor": "xiaomi"
+}

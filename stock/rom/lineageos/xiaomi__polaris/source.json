@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_polaris.git",
+  "codename": "polaris",
+  "commit": "1b46255cfa29026819b9177f1c7f73ee72388e76",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2ebf8dbe029152a6a4cbc5a12de06bb1d36960e4bc481cc7dc56eaa49e4d37ee",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fee7ee5beeab67088052311f1b2543e0e037b150d4c00fd92cc27ad7cec0ab06",
+      "size": 758
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7e6ef5f04dd5b758ec8b3621b5e22e0806b797465532a155b8bbd5355d499a32",
+      "size": 4309
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "89ef81cd121b2a1552f64813fbb977b285039098f2e6af7c947b5ad08affc520",
+      "size": 1799
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "53c8da3b7a3a61d8ab8d20197438103dc6c3625a675ebbbc1f0a1996fb2bcd6d",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f365630fac62e3f86dfddc56512cd29077f43e653f6070e01b462f44c13301e6",
+      "size": 11689
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09159256c5d48dfe14e7adb6fde6a0576fbe51389bff2d69b3b66cb85ebfae8f",
+      "size": 160
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "744db069e5954951987a87a34e204ed9d232cdc03b9d1d61bcb53a0ab2022ecc",
+      "size": 161
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_polaris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-07T23:49:14Z",
+  "vendor": "xiaomi"
+}

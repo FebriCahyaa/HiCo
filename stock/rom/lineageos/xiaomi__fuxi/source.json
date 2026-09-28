@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_fuxi.git",
+  "codename": "fuxi",
+  "commit": "2fdaf0b6bf0e8fc0a9e0ae4e1532e3e6adbd3a88",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8b46ecc4a3e1cbce0052fca6934f15685febdedc20f0008523464857c980717c",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "bbbf9e62724d839d0349812c7f900d08bb57c3b4ecedebf28c98861899fa997c",
+      "size": 216
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9f71da2166a296b647fcf6f19995d0e2ccf2e8b72583e1350a9bed25ed982f21",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cfa43a2444e26b18bdaef4acbe66fdd0348fce8f6bdab63033016ffcbfd2c1d0",
+      "size": 663
+    },
+    {
+      "path": "device.mk",
+      "sha256": "447d4c09dddfe95c8705b581861d1bfb99bc4f309013d6d4b80ef1be443dc7dd",
+      "size": 1486
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "5d6e96499425f4bb2feb7c0d38eb41f40db90dad27bf2a702ed8d27d514c4913",
+      "size": 2487
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2121cab7ea6c914f5e3c7a95494a9edfcc5193f5a552c5b9e69a6c97d4033ce0",
+      "size": 117
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "336acf1e5af900ee56f6071cf51723bea8e48c7d03cb99a6044637278d24df26",
+      "size": 70560
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fffa6ce3e48c51c941b0679e806056a3e877404a15e4a4a56f073a90e84d1f3b",
+      "size": 70
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_fuxi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-19T15:23:22Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_voyager.git",
+  "codename": "voyager",
+  "commit": "5b22b2207d3bb4cd587c8c2f704eab5706519af8",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dafd05f9667e729ce374720f05c5e00735596beb6080b36f25f2591a45509137",
+      "size": 655
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7a3c90ae6f4b9868f8515d05b7e50f6fafd4358153b6a232616be8ab860eedf1",
+      "size": 1066
+    },
+    {
+      "path": "device.mk",
+      "sha256": "42c35805dc68449716fc85499f96eeeca74aa5ffdf32cbf32246f73c571e343d",
+      "size": 1879
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1f76ce4dafbf92a6c18cb14e00781051153216ff7da90e664a328a6031889d74",
+      "size": 1599
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e6bdda31af01a19d2d8cf13586705c8ed54c33d1837bbcb6ab88a2bbccd4aa71",
+      "size": 12511
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "18526d7c8329807bbf6ec30d33a796a0c62429f17ebf318965a244a752a51218",
+      "size": 297
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_voyager",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:11:11Z",
+  "vendor": "sony"
+}

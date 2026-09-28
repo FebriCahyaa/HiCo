@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_nuwa.git",
+  "codename": "nuwa",
+  "commit": "d1dadb866fc9d606697479fa78a53ab471922900",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f3ae5bcf8e8c1bf94373741674bdfa94e54fbd18567b966cb466e22fa7733636",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5c94ed007afc9f03f1a6035111d92a786d964b447b9dff806b26c0bef457a923",
+      "size": 203
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4bcae0d09df38b05c429ef23cd86660d5e4dc4e824b813277acdad500bcc371c",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a80f759624a580c5589e0635b0924182036bce6da635d2546cc7a05d063c5624",
+      "size": 766
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0791a41668b22c696b52a09eb96e070ba3324159543590ed03c53f611005d235",
+      "size": 1553
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "aaf104046d78772af2f905a7b62f96cf07472e5d77fb8a2be69752d2b8459444",
+      "size": 2825
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3544a38ffde296dca47f514f870b19d2761839124057b4fd8a53af9760bc2570",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "190b7e7342c91f19b062667979624cc63d9b00db255449b33dbb041893bceddf",
+      "size": 70450
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_nuwa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T01:34:21Z",
+  "vendor": "xiaomi"
+}

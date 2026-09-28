@@ -1,0 +1,27 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_vendor_gm_GM8_sprout.git",
+  "codename": "gm8_sprout",
+  "commit": "81064df790514af24c6f74a096d2998c4535a1d7",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal@1.0-service.rc",
+      "sha256": "3c9c698550dd54bad4a7392cddf1bd7670004b1fc82e2b8092efc71d9388b059",
+      "size": 130
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_gm_GM8_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "gm"
+}

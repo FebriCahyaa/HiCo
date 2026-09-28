@@ -1,0 +1,84 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_ursa.git",
+  "codename": "ursa",
+  "commit": "4428d63ef3ddd4900cedcbd83c9b2ca87d8d4479",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-arvr.conf",
+      "sha256": "e0f80a2f6a02a763c2e16ecef5ba8a466b874b5809ca0ec5e059a415b901453a",
+      "size": 1168
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-camera.conf",
+      "sha256": "4d8ce3faaefcba19aa097e9dedb7110f4f8e80dd642cd6f979df4d25a230b2b9",
+      "size": 2928
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-class0.conf",
+      "sha256": "f6ecebe17a9e9a8763e04ddb86728658b9098f5a365aa7de40cde095d2904daf",
+      "size": 2224
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-extreme.conf",
+      "sha256": "5949125ece707388b6f5351e3f1e87192d912383036358046b6b1351c7f7276e",
+      "size": 1440
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-high.conf",
+      "sha256": "0ad19b012f1f146978a58c5984060622732d2f9715a3c753e32a8a7689f38ada",
+      "size": 2640
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-map.conf",
+      "sha256": "e4e7a851f98c2b5bc7febfa4c5dbda74eedf1a0bbd9a6e6e57ce63862e916830",
+      "size": 416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-nolimits.conf",
+      "sha256": "f6d3f2a58fb98cd14b759deec2998af298a0de96c26df728ea20cac6a270a280",
+      "size": 992
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-phone.conf",
+      "sha256": "e07f3ac61458534994c5f1b927b40ba6001f13b56919344824957d5377212d4f",
+      "size": 1424
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-pubgmhd.conf",
+      "sha256": "fc1ed0802cbf27bf06d0cf36b3bb7fa03c747c1c6de7b3f5e80a593edb758e05",
+      "size": 1520
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-sgame.conf",
+      "sha256": "4e68466a8add36c4b6768d0e9c2c212098d64f0b330680f9dd25f352941e7ca2",
+      "size": 1536
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845-tgame.conf",
+      "sha256": "186e36a34ae3119901560f0a4b6db6821ee6c457213b37b4bd13bb6456115774",
+      "size": 1504
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm845.conf",
+      "sha256": "fccde41369cb328742489f18bc49f4849ddd39040c0481db527cfd94654d20a7",
+      "size": 3104
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_ursa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "ursa"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_X01BD.git",
+  "codename": "x01bd",
+  "commit": "ecdc710c95711b3469cf088d995b9778d0c01d31",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c9422cc3ed8223a0e35db2e9fd8fbda648805525dd924019d6f0d6a7db039858",
+      "size": 304
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f6a340fb072b81aa8c70b1be414420e10422fcdb2e359dcaca621b9bf6085767",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b5b8ea50e469450e15e55cd3328988400664e9484a3e65d45bd7795daa60e76f",
+      "size": 616
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "bf9bc2149d061d66cede28bb1e81b2a94eb39a2123ac6b608315215c0620550c",
+      "size": 4687
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1a322593e2bc4286d6fdf821d75a30b2e5820c2726fb8e06240e8fcc24c305a8",
+      "size": 756
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8acb54ba6ec0794a8ce629f3e888177ddc64f448c43776c5a01d93fee6b103dd",
+      "size": 1122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3022b9589a5d60b07714724e46db32024d908b5757ee245ebcde6341e19e4e16",
+      "size": 13726
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_X01BD",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-12-10T09:06:49Z",
+  "vendor": "asus"
+}

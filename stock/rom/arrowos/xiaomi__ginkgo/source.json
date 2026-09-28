@@ -1,0 +1,87 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "9a0947e7c55c20eeec5170bda331ba7669700437",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4171be910352523c53d6857f5f841b821763efa1c5bd103ec1022fb263e3ccf1",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ede5e016f8d7fdebb933dff7b32dd4f146d6954c73983760c3007933ff4bdbdb",
+      "size": 5095
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7d3495622dcb6c924723d97a9c1c154a6953fb574f1e3d903c8cfc88fffe2a8e",
+      "size": 231
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ae78a8baf49207f748dcfbc24ca9b9d6addb7f29c7157cd50dceebf03562d360",
+      "size": 6166
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera.conf",
+      "sha256": "dbf20003675b10bfa1cae96c61cd86458be847d2a3ed88fcc99f02ff1427c0a2",
+      "size": 1907
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "c04b9487e00b0ffe3c6ee6ca0d726d27ea7e9c5625b0f6be6819e28dff229993",
+      "size": 391
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "7dcc5b8d570c637fe70043a2eda5286b9d8d1aff0fe15962f874d065ec2e1361",
+      "size": 1890
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "device.mk",
+      "sha256": "efd96bd16b0624f2ca6dbfcdbfeae956c63d99330eaea938a45b70aedfe165b9",
+      "size": 20418
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7adec7ce113df52dd8ad2739ebefb18b2e3b9be8e195e7ce969c7424e605cd0",
+      "size": 1744
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "79b8fb6b9e93007db29fa73c7571ee7f8088a82de9c7284890e5f2bbb1668b1d",
+      "size": 144263
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "05a95a220d20957afadd0817f95c7e35586e54888ad65f02a2c261b653a0047b",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "674cff556e764231dca90f4e19e06decde8ada0797c2d35d1e9dc087144f44e8",
+      "size": 1938
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "88eeb2a5755e9b9c9073cd92c70dfcbef62f1d2ee8809017360ddcef948aa23b",
+      "size": 8866
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-12-24T14:00:06Z",
+  "vendor": "xiaomi"
+}

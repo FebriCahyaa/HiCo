@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_yandex_Amber.git",
+  "codename": "amber",
+  "commit": "d01b90514af1fd0294a4690fd810e6bdfd6c4216",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "13b0bc8034a772fa9ac4ad9f68e57440538d99b0d2f01d4085a3785ecfcede50",
+      "size": 4926
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e5be7222f89a99f1eb481a402d65f4b04417d81dc78470f57d3a059f14026078",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "94c788a48a610ef75d478477f9f69a45e49c4ebc1141594afe123bc1e6ab20bc",
+      "size": 6139
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c61c9ca6a79d238c043cfcdcc5b9563879ffc9d06735c452518e4a0cef91e7c9",
+      "size": 25337
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "00e5eca2d701f2578522609bac0f46d07e0e432310e3323e5e1952b05904a408",
+      "size": 2616
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "563b25b2b968f82aa6571c17e06ca7650115d20cad684cbb09777e7502563271",
+      "size": 231
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dd8fe482c82aa748cd2308a93a1c296cc76687fc34dfde7921763cb2d6baf39a",
+      "size": 6825
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yandex_Amber",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-07-15T14:01:31Z",
+  "vendor": "yandex"
+}

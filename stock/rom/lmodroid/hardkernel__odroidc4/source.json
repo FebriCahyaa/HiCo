@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_hardkernel_odroidc4.git",
+  "codename": "odroidc4",
+  "commit": "234bef057cb111569f0e0f093d69268293becb5a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "87dcc95ee11945eb47a8692abc0724158568c07973dac8249250122d5be26b69",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c44bceb02e6bef0a9094a371020800b689516464f35323fd31a6a545c7fbf0ca",
+      "size": 622
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8fc5de9b7a06cca35ce2b03547280bcac8740a6b32031ec819b44b6f8e6c6d6c",
+      "size": 596
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "47382dc29f2ff1d90d2358202ac6c0c8b12b1bbb3ff22839f9be0f51d94f3768",
+      "size": 934
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "423539009c619d72bde0711373adb6ae41d45e2e3649f36a542f00f9e45ef6a3",
+      "size": 214
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "aef33762142ecdbeb7ff875cdd8af20efd625cbb0240a71672358d59aea7b5cf",
+      "size": 124
+    }
+  ],
+  "kind": "device",
+  "repo": "device_hardkernel_odroidc4",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:17:58Z",
+  "vendor": "hardkernel"
+}

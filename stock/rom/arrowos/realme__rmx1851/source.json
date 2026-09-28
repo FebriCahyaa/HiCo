@@ -1,0 +1,72 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_realme_RMX1851.git",
+  "codename": "rmx1851",
+  "commit": "3cf87af7bd2e39fdce42d13c14966c55ade5a0f7",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f39efe0952ca7b9ab9d9e82fccce529ae440e3c500fddc5e207dade2d0b7ee38",
+      "size": 4488
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "164500bfa17232bb85b57b6b3376f7e93b955c4195852b4440147bfed1ba62e0",
+      "size": 756
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "92cbb115fd1840662a0cb9f8799592fa07f155ce87fccc8192388318a1bb8995",
+      "size": 6276
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d9b61372319add931b3c6aeaf608bf35f8d2165ee0b3838e770fa7ced39f8189",
+      "size": 23959
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "328ffdb61aa2d74c24b525698de76641d03d9450af9408bf67c0deab2581220a",
+      "size": 2294
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d31c636ec0305939aa456e8a8cf5bd773493c4df87c8505f18e6422745c9744e",
+      "size": 78340
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b7b379fab2a9a281600c714a367ac0a0190287085b63b9fd54da282b85a57d5d",
+      "size": 110
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b0e727e70ae53967c4453bd5c319bf681a4e1d978e55e4a62a12f9a2d3578665",
+      "size": 3634
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a400701ed22a9138e659f0608de1ec6cc26e0b698cdcf75041ec17eb9af9f6cf",
+      "size": 6183
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d379b7240b96ace097d9f8d215d3e595dbcc5b07265222315032a50f911f2f5c",
+      "size": 696
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX1851",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-07-20T19:31:42Z",
+  "vendor": "realme"
+}

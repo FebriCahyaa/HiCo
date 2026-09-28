@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_apple_snowcastle.git",
+  "codename": "snowcastle",
+  "commit": "0b43c0629a7813dc533a8ad4d1a537f70b8aa576",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "01754d391531c698782e0b6cc81f9a241b6a220405adf662c463aa5e2d5b989b",
+      "size": 171
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "74c7064576e9e20950a7f0cd404b85219c242e91ccb5b854ad9f5a4f1fc22f74",
+      "size": 412
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c9227edf9bac8c376d4acd1488e3b8bbdd51fd7114f56e8bc2ac0e1e7cb349bc",
+      "size": 5268
+    },
+    {
+      "path": "device.mk",
+      "sha256": "40b258be2079a8b451818de6a85d628847ba15a5641fb34bccfd34ac73636b3b",
+      "size": 5342
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "17375323c32073738eefd871f428af84d4ffe58fd4b30cdf5bf131a8da8bfb88",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_apple_snowcastle",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-21T06:27:13Z",
+  "vendor": "apple"
+}

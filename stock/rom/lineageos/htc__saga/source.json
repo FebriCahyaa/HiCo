@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_saga.git",
+  "codename": "saga",
+  "commit": "361936d7d15860f5ed43f073e0db886a189f3e8b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e5325e9e00f0042ae1b7c9656d88182d4684c7620a42ec76856685c20d783c79",
+      "size": 780
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ba8594ec7d5722b123c0115031b5f2a5c9007842790ea0ac28917106630bc8ca",
+      "size": 2742
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d262906bccdfdd50068223673171460831fcfdd8ae54403100c8749f9eb03014",
+      "size": 8867
+    },
+    {
+      "path": "system.prop",
+      "sha256": "addf681a404f6a7c6ba4bc04d96c4fdc36c22bc36674b6869516d823ae0ae560",
+      "size": 1486
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ee271af42825dc615470ae83bed4795b7727b3ccb3a4f7522cc5c8b5893fdeda",
+      "size": 873
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_saga",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:42Z",
+  "vendor": "htc"
+}

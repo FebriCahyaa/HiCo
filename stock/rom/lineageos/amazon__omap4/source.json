@@ -1,0 +1,37 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_omap4-common.git",
+  "codename": "omap4",
+  "commit": "d3c48ef21da104ee7ac3424ec826da435657e9d3",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c01116d117276cf4a54970cafc080adc2f85c094539a0bfa4672ac07116e0bfd",
+      "size": 1773
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bb2981fba3da0826ad27f0c9eccb3e7b47472511232649a96e27b45d1728fb40",
+      "size": 3772
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0d462f62c810b6f604014fc589cf75db3a4d461d644afd0fd079dd86a2f9c006",
+      "size": 340
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "62ccd458e2344093491160f8703fa8a28a69e45b01a7dcc7073a2637ebe1db8b",
+      "size": 2069
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_omap4-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:49Z",
+  "vendor": "amazon"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_smartisan_trident.git",
+  "codename": "trident",
+  "commit": "ce4551557a1949d49d178531e391cab393d8b94f",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c8b3819fe986d60186923e5cc22e8ae2662cc8034805dedd0ffe70ca38b0700",
+      "size": 618
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "310a439b6149d896617b35f26b405d12222e7f1286161c2eda48faf6fd183ae8",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b75d026431d3232c2cb30673b5e39bd9acfe123a3340f23ece2096c58cd18429",
+      "size": 5405
+    },
+    {
+      "path": "device.mk",
+      "sha256": "129b258296eef97e99c5017341a7006af381b2bed412d74984202910c256d40e",
+      "size": 20367
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "da27085fe237d82ec6c9ea80d023107f2e270ef4eb60498a3f7a3b0fa31f675e",
+      "size": 7704
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "94a08d3d9ef5e3bdcd895f8351996d6401894cb2e057aee351061bdd07e51af8",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "babffe69ca1883d52dcb6dbfaedca456651650aa2d1ce9cf400cc4dcb99dd6b6",
+      "size": 65250
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d3ed03baa0768be98a841fee144f9e7a1ef361d02a186eb62cb6ca3ed383834b",
+      "size": 2369
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6c7318562f18bd84ca4bbcf3fa3f54fcc4e105d5435aab303d2d2a33ef1d1979",
+      "size": 6344
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_smartisan_trident",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-14T11:55:50Z",
+  "vendor": "smartisan"
+}

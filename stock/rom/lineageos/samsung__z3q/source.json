@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_z3q.git",
+  "codename": "z3q",
+  "commit": "9ca674244cc887f3a4f4e3d9e394fd5d0346a827",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "97c34bcb73939cb0ef3791affb439f70703b7c1fb16ecf5df52993e809bf51c7",
+      "size": 129
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "af3f3a40d18caa782a2e97ccc62a396552ce41488c66598dae7952615eae0e25",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fd02367a0b247954dc0a3c024180593bcb866280947cf9bcc1ea8955d54a45a2",
+      "size": 615
+    },
+    {
+      "path": "device.mk",
+      "sha256": "17a1a69f83a17168e4007fba73172c748340622c70ede6767c5e77406cd130ec",
+      "size": 635
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6008ed7b75e2ddef6b8f671951393e2fc07461361d11131cdb84eb7447298797",
+      "size": 457
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "bd064b80c7d0cfb93c0dc75a4e129fabac35db1ec65349c964b699326752afe4",
+      "size": 132
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_z3q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2020-05-24T22:06:08Z",
+  "vendor": "samsung"
+}

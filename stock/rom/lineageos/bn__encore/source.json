@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_bn_encore.git",
+  "codename": "encore",
+  "commit": "b002cc0d2dcd2953b2bc69dd9132baf94a81b516",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5ee8bb4796e62a8eebb44ee3b1156817dd61304823a437970b2a1afd9cedb7d6",
+      "size": 1295
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bf02ba3e21a7de03d63de97196a3eced57eac99e0a8bebd588308394dc7b0a61",
+      "size": 1104
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8925867dc8a3ef8fda87789b00748907c66e924818a28da786fe6c2d0398fff9",
+      "size": 7127
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "45ae6c44f5353dadda99452d62d7aafe459b683b6a1f1c9ddb5be35f65b7607a",
+      "size": 894
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "80acc184a114135a3a367d46aea061838de84d3985078baa1587f3f7808e88f6",
+      "size": 2713
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d8bc196fdbc206256853a0f02dab0290aa8758cb55f33817d3050924e9261be9",
+      "size": 406
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "c013068e4d9909021483c6ffc06282b6d9c9d349845c65111a6be3ba353f02c5",
+      "size": 956
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bn_encore",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:51:00Z",
+  "vendor": "bn"
+}

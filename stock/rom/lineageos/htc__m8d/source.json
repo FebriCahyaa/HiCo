@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_m8d.git",
+  "codename": "m8d",
+  "commit": "edfcc49908aa3e56207cecea90220a1f348366df",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1adfdeb0d6705033a8b4b3f2fdb0ecf94a5942116ce6eb3bbf0397c11470ee9c",
+      "size": 79
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "204dbbfd1c791071161366e42775bcc6d5549b8a55723ced2a3bc8d3b2ce4471",
+      "size": 751
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "eb07725fc9462ecb09f7f9a480ebd8def21af99aa50b748891fed893501886e9",
+      "size": 2048
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ec7012083dd1bca153b3ee63b131e5256cf3649b02e61f564a544179e49e4e60",
+      "size": 1007
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "04045226d285191feaf3a8270ccf9abfa34776bfdf64f8128b8bb943aec61c3a",
+      "size": 460
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f283de73d0fb5ef1cceff1d6d73c513c97193a0e549046aa20c17cd2c6c3f0ab",
+      "size": 104
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_m8d",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-06-07T09:41:53Z",
+  "vendor": "htc"
+}

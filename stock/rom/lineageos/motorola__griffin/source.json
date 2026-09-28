@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_griffin.git",
+  "codename": "griffin",
+  "commit": "5ad859a57dc0bcd3054a308353e380cfab7e725f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "24e242a91d39e0d6dc6ac8fdaa500811d57656c07e6498e4eef0fd42650f9c6e",
+      "size": 5729
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d2f7ee838a429bd35017211a982530e6ccbf9ed67fcb27b5e50472f9ea2c134a",
+      "size": 767
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a5ec406637cda7f22649f9939b22611ab8f54b0390bd223efd5447fb22208a87",
+      "size": 7185
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e2ce105aa118718764134619c32c2c11564fef78d3ba4d60658490147ef4d2b0",
+      "size": 17591
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3a58187710229d0729b2cfc234fd915bff3f13118f2820b1f5eee331b7b1bc91",
+      "size": 2516
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2fca16f24c8cbbac210f9d07f1b9a9c00c25f1179a699fb3e765135d2adf53d3",
+      "size": 280
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "26b2dc142d5f58fc6ce8d4fd4fa2f0450fba5ae0174c9cb128c7cf690fe2dced",
+      "size": 27204
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b9710cbac7e5133507406197c1a7a4b2a62ef0f643b4c01686a4436685a5f121",
+      "size": 467
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_griffin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-02-17T23:05:25Z",
+  "vendor": "motorola"
+}

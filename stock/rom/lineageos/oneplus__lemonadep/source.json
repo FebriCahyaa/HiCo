@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_lemonadep.git",
+  "codename": "lemonadep",
+  "commit": "07728a70f2564788029b153354cef27d15d3e457",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b2909af73ad9b51f2a97fd348fbfde3f274911ff7a925116c593f4abca5013f7",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "01e2efe31849bf07c966e5c307a22bcee5958f5d38c0b857a989471b399d6f12",
+      "size": 553
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ec4a6c6c49a6133f92fff504def0324f031ea003acdd53538d42f5d945e32499",
+      "size": 3544
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ae229df1f0910595da74243b45d5ad757b63b4ee3ffb7f0f909d983e8d24610b",
+      "size": 4142
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "05e07ea2a81658784ebc9e102fa87e2933b1c7bd217d43a1be64f142306f8b0a",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b1f41da6e1160c0329e71744c210967a15f06801163c002dd8f45f6fc41f097a",
+      "size": 43784
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "02039f19927127c3185ad677b8a6a49a5bdd1c00e96af850e96867d5a0fd6927",
+      "size": 198
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_lemonadep",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-25T16:31:43Z",
+  "vendor": "oneplus"
+}

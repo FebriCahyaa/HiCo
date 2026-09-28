@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lge_us997.git",
+  "codename": "us997",
+  "commit": "9ac1f52fff517448d85e7601c3a7fa3447e1360a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7fadc9d10d1be31394b2440c0e4dcdd04c8d01fb31b3c756d834b0a68f032ae5",
+      "size": 1134
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b1ecdb4cdcbc23591e1a0d695aefa9dc309c268c6ad2e7689d5ab5e2fce2bbf3",
+      "size": 737
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4185620e68e949837c0c0285894bd2a0ca982064b178f505dfa16bbe9627d5ab",
+      "size": 899
+    },
+    {
+      "path": "device.mk",
+      "sha256": "46b89eba81826f83041a19fce79b17dd117ee88de0f5995ea12bfac4a3112c97",
+      "size": 1357
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a9ecd4fd29d3dffc58b1c22e179264b35653c9486b83016ac6f96eafa845cffe",
+      "size": 765
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7cd0e762a22dc1277cc54399b077ec4f6ce05ab7b2f827569c0c444f1edd64d3",
+      "size": 920
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lge_us997",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T02:24:17Z",
+  "vendor": "lge"
+}

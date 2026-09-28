@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_phoenix.git",
+  "codename": "phoenix",
+  "commit": "34a11dbb256ec05b1543f30938deabd8550edaa2",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "add04c1892a9ba139fa4e1b281df17accd773e98a28271ff742c409b13eb5b54",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "74b19a19be8bc91f43bc0ea5e774fc1283943957762364fd52e73de12846f1e8",
+      "size": 1516
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f89ef9d6073b7bcbe734ebdb28ba8e661fdc76d1eeb6eed778e9daa7b778ca2b",
+      "size": 4154
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "dd369c1e2b55bc1d72d14d736d5b07b722976e3e2dc7b14d6c12b7fdebc54bea",
+      "size": 4075
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e56541439f965a2454e3aeb37916be6f3a7acb2f617dc38bd211b6f022b7a65e",
+      "size": 16410
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4e077a1981a405433cfdd7687a424aedc4cf4d36a023e7bfe068a0989586fe9f",
+      "size": 1016
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_phoenix",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-03-22T11:26:14Z",
+  "vendor": "xiaomi"
+}

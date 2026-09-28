@@ -1,0 +1,62 @@
+{
+  "branch": "lollipop-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_asus_grouper.git",
+  "codename": "grouper",
+  "commit": "7410cf2b1176832b24190bb1858fea4c3bd2a7f9",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0255de82694cacaa956f7712d62d8cb0a5c53b0f65d88a63a64315e40ec9aecc",
+      "size": 783
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "852994b0f3f7d8e28427053120f9cfbf2c35b930ef5953a77da196942c74a5f5",
+      "size": 85
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c1f7986dca82fba9aa1843d1961ecc45c36203fdd9bc042bd12424479a5eaa0b",
+      "size": 1710
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6806c7720366b088b7fc59e11621cee9e88353fda3fd55751c58b954f7194f25",
+      "size": 3343
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "27a97fe8fc130e376de90e32b4ce666122ce6dc4b2fa091bb593fad75892fa85",
+      "size": 5464
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2e2e3b64e6f97211e0b2bddb2a9c41f1c432ffe8357f41bf49ce9ae2badb9565",
+      "size": 1175
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "988543dd0a13e66f3930c9ff13de6ab55fc75195cabf63917987c97398cb8193",
+      "size": 782
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a42413d41a4bf3ab01ae1b0fcc3f3159e6446e7fb5ff8ed2b62585d563e68a40",
+      "size": 435
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "02536c242ab9242f95a7c0f2b746db4a09be04194ed7b16021f44035f510bdca",
+      "size": 848
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_grouper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2015-08-12T01:55:38Z",
+  "vendor": "asus"
+}

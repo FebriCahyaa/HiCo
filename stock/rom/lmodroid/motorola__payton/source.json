@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_payton.git",
+  "codename": "payton",
+  "commit": "1ae4c1a16dc187e58082f1860ca2617c76c6cf33",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fe860ab25cba1683ff9fa1bebbfb1851e89dc948df0fe2dce6281a9cb1cad1db",
+      "size": 76
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4b3a838edd4cb928d1930b7120190ae189428514a7575bc81563c58cb7bff6da",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "124fb1e590eba672d650d191c1aa8acc3f408159220908ce019eb47eb78c86ed",
+      "size": 1735
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "bf9d802a43c92bfa6b7d821db97598551fb17d5958bdaba476bb08bd37d3f14a",
+      "size": 3560
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1c6b03b80d45f482e5552e07b1924ffccd4d0a9b659421b03567fe56f796f830",
+      "size": 4781
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f00a9ea84830a83d128b1f800ca7f4ce882d6937a008adeed7662c7557710dce",
+      "size": 2471
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a266523ad1a83586aa0d23e3f4e5e1a9896d9ba4b336fd9c8c8dbdd2cefa7fe8",
+      "size": 21743
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4d9bd97898dd3699d07385c590bf1a97c7c45662306010c725be5dff71bba0d3",
+      "size": 1523
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_payton",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:06:43Z",
+  "vendor": "motorola"
+}

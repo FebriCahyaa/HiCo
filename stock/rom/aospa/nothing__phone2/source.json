@@ -1,0 +1,62 @@
+{
+  "branch": "calcite",
+  "clone_url": "https://github.com/AOSPA/android_device_nothing_phone2.git",
+  "codename": "phone2",
+  "commit": "9a3ff3c09691eab556c365551baa2373257b5680",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2463d51939eea4635ccad0532cfdab30cb1ba15d47f7cf1ec3d89082e6221604",
+      "size": 467
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "12ab07bd08a1f1d9f4e78d131c151898b048650eda5132233aee4d087127deb8",
+      "size": 130
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6196b2930aa8e4c67c3e3e20b17354432ab28d0a9850e3a05bb36232747781ef",
+      "size": 4323
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "d81d8b7e72f579c7abf6fa11f93d0da967d6540117dd3b749beb73a0f8b820db",
+      "size": 1159
+    },
+    {
+      "path": "device.mk",
+      "sha256": "18c2752eaa39b872204955a932c7b50970e7970575f2dd991f3b3c2428d4d9ca",
+      "size": 9708
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a44f3d27c5d445db87c6d50d19c73724aa26f9034ae7df5c8e6f6f8f7989c7e1",
+      "size": 6210
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b5e3ae88edf948c055bd225422d0dc3b5a34a4c1346d547856c9ff18af2c6bff",
+      "size": 78394
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "cd51b0f8363e7c6e9bfa763f7f8fdf3399ff4cd903305ded7a7810d680b7e024",
+      "size": 1766
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "72b2bd348d7edf0a4451388b6b65896f5db1b898693e8d924a06ecdd1ba1803b",
+      "size": 403
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nothing_phone2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2026-09-26T03:58:12Z",
+  "vendor": "nothing"
+}

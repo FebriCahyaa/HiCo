@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_eqs.git",
+  "codename": "eqs",
+  "commit": "42c76fec0512d8dfbac3d5514111c55aec46e4a7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "17fb0bea566c29a1fe6cf070cbcbae6acda7d46089914d3ac3ac0979bf523ff4",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bacc2d1f0dd24834e4716b74689a0a48143f74a6c750ea9a96ccf576660cdc4b",
+      "size": 1488
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fcebd0bedf30f4cf7ec284655897271bfa8f6ea2b9ac44feb309586b7058a1a9",
+      "size": 3917
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e3db11bbf6d9f98eb465b5e736fb42f70509941867f1afb020af85b9bffbf40c",
+      "size": 3142
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "284c76566c45858cfec4f422d17f6363f524ebc19ccb502eac6ce323aac7611f",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c237d35b54ce93af8bd3a51ceddfcbbc534b4270777b6941b21a217263460cce",
+      "size": 19454
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7a843d24390fc37c6f3271d168b1b35532dc47a1936fa9706af88c1df4db9111",
+      "size": 473
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_eqs",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-07T18:02:48Z",
+  "vendor": "motorola"
+}

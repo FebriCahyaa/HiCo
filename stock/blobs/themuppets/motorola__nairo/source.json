@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_nairo.git",
+  "codename": "nairo",
+  "commit": "f5a3f400e145ebb1e8951066070868199aa7eb2d",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-nairo.conf",
+      "sha256": "377c82d63f3aeb4f0a6bf0ed1997ee2e004ea0b76e9dff0d69752acf7d227c48",
+      "size": 3646
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_nairo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "nairo"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

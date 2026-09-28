@@ -1,0 +1,62 @@
+{
+  "branch": "rebase",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_twolip.git",
+  "codename": "twolip",
+  "commit": "cc40eb50b0103d614669fa1fa4709369771f74c3",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "795955398ac9928dab570b15cd0fc584559f86114801d182bfe78181e4051a76",
+      "size": 135
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3fa0e904003fe25c6128f26652baad4e56c35942531908b92fa5315f28bcc730",
+      "size": 4870
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bef97405a0e0e73569f90eed396bb9956f87f9cd148d8d55ac887ac64efe1ddd",
+      "size": 258
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "98a7249397ec33524bea0dbf649d50a6700e3a36a9dba8422e4748382864b818",
+      "size": 4797
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e0186389b1cd209fa32cccfe713f573317677130430110fe8cf96bdc892bf7b6",
+      "size": 18172
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e1e8c0abf270a4a8755249020c6097cbe2b8a044241781276d214c6045e0f6ae",
+      "size": 2524
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ddd9a808bafafe0467b32cc8fb5512c0b3a45cf673c3cd10de50995af338cfe3",
+      "size": 930
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ffcb2b1084ec7c1322cf6604ab1e596901090609ed06fb9226508f60522dde41",
+      "size": 86806
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_twolip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-08-28T13:20:28Z",
+  "vendor": "xiaomi"
+}

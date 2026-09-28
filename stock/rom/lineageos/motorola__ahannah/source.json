@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_ahannah.git",
+  "codename": "ahannah",
+  "commit": "a7d26ab4405f217ec7f5abf9e886173436e2cbef",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "807d3301cacb97364040782d7f8f9dc534a1a1c7bba4152361007688cee74804",
+      "size": 43
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a60d5ae8c808f05b5c4c9d4745d662570d46064e9048a35905452dac6920296e",
+      "size": 719
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "376fb9afe0703cc738ebf0219bcc8b4c47b3a42308a2b6a3dd95baac45443077",
+      "size": 764
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f5a3213a22c3966a1ad4e24bc822bc58148b298d871de19c2c33fac8c5f935f9",
+      "size": 373
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2bd720691e8d65f5dd7da107450d9c54fd800e35124aa95b33035e431fc30570",
+      "size": 723
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d436bff6a0c4068b2e4562df4c10ba0885a395a575cb4ae0099b9b05c7946e86",
+      "size": 473
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e1c1ed47890e10e450d2d44e9adc9138b3196d858fbd0031f2c633a1361e9346",
+      "size": 124
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_ahannah",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-02-08T23:03:16Z",
+  "vendor": "motorola"
+}

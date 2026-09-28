@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_t769.git",
+  "codename": "t769",
+  "commit": "ac32012ca1d4cdb0088cebec4d13d080cc7b7ef1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "93c7289203ac6aaa792bad42e706fc902d08aa7baaa69b1158ba35e125c069ab",
+      "size": 2365
+    },
+    {
+      "path": "device.mk",
+      "sha256": "347e391680b086addade7780b7f5d9900f76af119e8aaf0699e95048dc371bc6",
+      "size": 1123
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a354d5b94f9ec7f4968db3a025e91ac2ca1c3ad641c13b86d33d5df0b9a8c952",
+      "size": 1695
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "55894ee01bfce1eb6717b3ad436d9757cafb6e79cbe660324add5dccc49ad234",
+      "size": 28
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_t769",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:18:36Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_fog.git",
+  "codename": "fog",
+  "commit": "68c28fc0cce31d809a207f5cfc183a61303b9683",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5f80d0117859a8b01d2072f2eff9992143d8c4cf13e9c23b4f31ba502d5f74d0",
+      "size": 200
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4592415c0176b91b3aaa2676e29b8e78b092fa28ee574d6f449a274f0ad4d3af",
+      "size": 9575
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c1b3bcfdaaea34cb95c6224ad37d4d24cbc69ecfea4c40618fce994ce87af3bb",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b8c4ecef988c2a050a9aa04085f9617fd5a7bd6ae07e2d7bbee59d023969ac3a",
+      "size": 7761
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ad9c53240a673a24a7af51fae4116c48f1baa4b487f739d1b917d87f649f4eec",
+      "size": 19551
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "49978097dc6d2a6bf5121110e550f3b9f2b670216ad7568a8c77ad2526db9fab",
+      "size": 96
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "01d3ad42e3ab98e8fc64ba363fcc89575d02e5143e3b65147564d4fa56a3b97a",
+      "size": 59412
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "c4bc43e771f41c69e69e5857533e2d8651ba62c9856ab5e4ed7d2286aaf96e08",
+      "size": 954
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b4347f458564fce246a041b31d6256a1def6e54c8046cd43d17d4aa5f8193aec",
+      "size": 266
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_fog",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-12-21T14:09:37Z",
+  "vendor": "xiaomi"
+}

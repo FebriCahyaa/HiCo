@@ -1,0 +1,67 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_zuk_ham.git",
+  "codename": "ham",
+  "commit": "56c53386cd8af46881d49bf86c71d00742d1a0a9",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "25876cc9294ecee3aa515c6e136a5139bf60b2e7a7f950c15d308f248da8057c",
+      "size": 90
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1c495752467ecdcc8b2797919b50d683aecc18d5beac1f5af457a55584e71b30",
+      "size": 754
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f7c2b421f83c59755515db100821d5ddf271d7d3661281cfeea7dab43ee91e7f",
+      "size": 52
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ab24288ee47260e116b210c6dfd5a448aa85f4f4cb20ea28555df0cc2026a41e",
+      "size": 6761
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "ce21463845c01fddcfa505053c854b4633f0ddd9c8e24e12171330fd3153dc1f",
+      "size": 4981
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fd92c01498cc99f0b13b1ed4d74f0052e283806abd28d186d29dc441aad096f5",
+      "size": 1519
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "613f1435a1bb84ea928179cb778dfe8d6f1ba0efcf2715485aa0eec08a2e7e8e",
+      "size": 10561
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4e42767292d9424723729f475fc64402fb4759319553ce18dafb165778941d2e",
+      "size": 180
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2a76fb06fe650b4dfdfccc7959d0bd986ded28ec2630a5fde27d849a04bdc17c",
+      "size": 1466
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "eb5301f67b5346ca9918de092b352796ece8effb6ab8518bffffbc627ad95646",
+      "size": 34
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zuk_ham",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-04-12T02:27:59Z",
+  "vendor": "zuk"
+}

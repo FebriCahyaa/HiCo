@@ -1,0 +1,125 @@
+# Proprietary files - from Samsung package version A515FXXU5GVK6, unless pinned
+
+## Audio
+vendor/lib/libprofileparamstorage.so
+vendor/lib/libsecaudiocoreutils.so
+vendor/lib/libspatializerparamstorage.so
+
+## Widevine - From P610XXU2EVC5
+-vendor/bin/hw/android.hardware.drm@1.4-service.widevine|60d0ed267f1468110a79c64a56af3c978f269f18
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+-vendor/lib/libwvhidl.so|3246cb592658f2d8f23901ac8ddcc03b6176f06f
+
+## Firmware
+vendor/firmware/calliope_iva.bin
+vendor/firmware/CC_DRAM_CODE_FLASH.bin
+vendor/firmware/CC_DTCM_CODE_FLASH.bin
+vendor/firmware/CC_ITCM_CODE_FLASH.bin
+vendor/firmware/CP_AUDIO_SLSI_SEA.bin
+vendor/firmware/CP_AUDIO_SLSI_SWA.bin
+vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/dual_cal_wide_sub.bin
+vendor/firmware/kernel_bin_enf.bin
+vendor/firmware/kernel_bin_inception.bin
+vendor/firmware/kernel_bin_mfb.bin
+vendor/firmware/kernel_bin_mobile_vgg.bin
+vendor/firmware/kernel_bin_nfd.bin
+vendor/firmware/rtdsp.bin
+vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/spkamp.bin
+
+## Media config xml
+# _rc is used for M21, M31. _ti for A51
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_profiles_V1_0.xml
+vendor/etc/mixer_usb_gray.xml
+vendor/etc/mixer_usb_white.xml
+
+## RIL
+vendor/bin/cbd
+vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libfloatingfeature.so
+vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
+vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
+vendor/lib64/vendor.samsung.hardware.radio@2.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.samsung.hardware.radio@2.1.so;MODULE_SUFFIX=_vendor
+
+## RIL - From A515FXXU5EUG5
+vendor/bin/hw/rild|2982c9628c9f8f82ff579cdb1273baed47112dfc
+vendor/etc/plmn_delta_attaio.bin|751a1c7105f1c03fc196689c2a71e2c69aa14e1f
+vendor/etc/plmn_delta_hktw.bin|97a5a4747e8c32d463d8f26254257309b8a03a63
+vendor/etc/plmn_delta_usagsm.bin|9a25ec9e9da16ed2f8a9db07f037fe08283b24e5
+vendor/etc/plmn_delta.bin|6a826cb6a8a1d460403ab2ebccf4f0d7be546ce6
+vendor/etc/plmn_se13.bin|5239d1c74574102bcaba13ecb094be67e65704b8
+vendor/etc/init/init.baseband.rc|db12805a9f48672283094d8538f2fab69bef025f
+vendor/etc/init/init.vendor.onebinary.rc|b3fab964774039b1f2f6eabf821556919b26369f
+vendor/etc/init/init.vendor.rilchip.rc|83d57882dfaefaaa21c5dd636bafd655dfaf0b10
+vendor/etc/init/init.vendor.rilcommon.rc|5a669667301c678eb825abb41531ae1e19897886
+vendor/lib64/libengmode_client.so|f4d4ec4f2c29cf3ce54a74e3c28936ab5c41ab39
+vendor/lib64/libreference-ril.so;MODULE_SUFFIX=_vendor|88d198da07ea1a67245beb1da4c48da9d627ef32
+vendor/lib64/libril.so;MODULE_SUFFIX=_vendor|ae21d2979f849435331f7e5c224dd1ce61615eba
+vendor/lib64/librilutils.so;MODULE_SUFFIX=_vendor|c929ab09b9335b404cb6aab859d5cc20a986d2ca
+vendor/lib64/libsec-ril-dsds.so|3c7b8e57793a89ff141b08a1160482fad0940609
+vendor/lib64/libsec-ril.so|1a131c93609c7e48f835cde1fecc4a9a403c697e
+vendor/lib64/libvkmanager_vendor.so|cdfb5546e476058b1eb3695b6c21a181f9bb44bf
+vendor/lib64/libsemnativecarrierfeature.so|ca44453cf7cca968606b56936be7de0d214d74be
+
+## EGL
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal9611.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal9611.so
+
+## TEE non-firmware
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris.rc
+vendor/lib/hw/gatekeeper.exynos9611.so
+vendor/lib/libteecl.so
+vendor/lib/libuuid.so
+vendor/lib64/hw/gatekeeper.exynos9611.so
+vendor/lib64/libiwt.so
+vendor/lib64/libkeymaster_helper.so
+-vendor/lib64/libskeymaster4device.so
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so
+
+## WIFI
+vendor/etc/init/wifi.rc
+vendor/etc/wifi/hydra_config.sdb
+vendor/etc/wifi/indoorchannel.info
+vendor/etc/wifi/mx
+vendor/etc/wifi/mx140.bin
+vendor/etc/wifi/mx140_bt.hcf
+vendor/etc/wifi/mx140_t.bin
+vendor/etc/wifi/mx140_t_wlan.hcf
+vendor/etc/wifi/mx140_t_wlan_sw.hcf
+vendor/etc/wifi/mx140_t_wlan_t.hcf
+vendor/etc/wifi/mx140_t_wlan_t_sw.hcf
+vendor/etc/wifi/mx140_wlan.hcf
+vendor/etc/wifi/mx140_wlan_sw.hcf
+vendor/etc/wifi/mx140_wlan_t.hcf
+vendor/etc/wifi/mx140_wlan_t_sw.hcf
+vendor/etc/wifi/platform.txt
+vendor/etc/wifi/slsi_reg_database.bin
+
+## GNSS
+vendor/bin/hw/gpsd
+vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+# vendor/etc/init/init.gps.rc
+vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/gps.cfg
+vendor/etc/gnss/gps.debug.cfg
+vendor/lib/libwrappergps.so
+vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
+vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
+vendor/lib64/libwrappergps.so
+vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+
+# SLSI NFC firmware - from M315FXXU3CVH1
+vendor/firmware/nfc/sec_s3nrn82_firmware.bin
+vendor/etc/nfc/sec_s3nrn82_rfreg.bin
+
+# NFC
+vendor/etc/init/init.nfc.samsung.rc

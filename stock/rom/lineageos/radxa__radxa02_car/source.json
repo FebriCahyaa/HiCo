@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_radxa_radxa02_car.git",
+  "codename": "radxa02_car",
+  "commit": "f769790c9fcd315b4aa3119bdcda67c53cc1f8fc",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7379a2764132d8416ed73ff0486af365e146ed4a8ee40a433f0c1aa2a4586648",
+      "size": 154
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "81cb77d8b87fbf7e93bddd770f524e15ddbedf49c8f055ce80c77a04684c9b77",
+      "size": 236
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a6120f1bc57afb4cc3491ce1ae2d12c54a311911c9bd2ccc01547f1e82d855ff",
+      "size": 280
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "57c8f83bf737000728891cec8abc14156dc0bfeaf8e0ad409cb15b9da5bf5f3b",
+      "size": 378
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "39bd18dc3f57dd5ac1974de55a09bc391eba7d44578fd0604b690f98437e8eeb",
+      "size": 104
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_radxa_radxa02_car",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-29T05:24:41Z",
+  "vendor": "radxa"
+}

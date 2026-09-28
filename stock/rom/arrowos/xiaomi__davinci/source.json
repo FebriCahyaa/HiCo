@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_davinci.git",
+  "codename": "davinci",
+  "commit": "25f2b3dd2a091f5f3ad216137985929553d4dfcc",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e6dfcc3a4b31fc60d4c2df9fca18d65b312e489162fc26e0067f8d7206a6a251",
+      "size": 208
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "540b2bfea773c8caec80dcb48a031a94185cffc9b9b89dcf09c712ac9939ec26",
+      "size": 247
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "575204136d9672269d4811e6ad6bccd2c14f6896f2a15b74feba785bc74036f7",
+      "size": 2008
+    },
+    {
+      "path": "device.mk",
+      "sha256": "15b794d7ec21d52675c8844560c53cfcfa849d442d70cda9b9a7627850c80793",
+      "size": 3945
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "239b9f4551363e40b88f3e5dbfac1e65e4fd1a63d47799314c40d29acafd8d7a",
+      "size": 526
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "09246c492a9bf28e337a4419bf73beff52e5e8e061bf1a17b1369ddce1be8573",
+      "size": 12942
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "816fdfdb4d1d82ff5957ef108163f19ba20aa69bb8068edbe53730109140c417",
+      "size": 335
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-08-06T07:54:03Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_hammerhead.git",
+  "codename": "hammerhead",
+  "commit": "4002d0f785e68d7da8e1dcbaebb95042b339721c",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2c0c90e8ac7f2b0608e3360f6ed3e6d9349fa5d2bc7b5499e4770e8fe4765fc6",
+      "size": 1152
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5b9330a32e6205330a8ad4de1ca85ddd9d949b6f6013d92d522e14494ba4de61",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1bd2203cdde5157498bd8555e4f12fd9d7b6289f5982d28f47db2174b6f1d9f5",
+      "size": 4668
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ae2d3cb3339d0f6c3fffa6b46b536e882055e269986dc196c68e0a2fb4b26fb0",
+      "size": 15784
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "200b30d9445f6fb1ede146cb171b1c264ecfbd5070e5229f937b296bcdd6f2cd",
+      "size": 1445
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "dfa058e47573c72efa2a7a07b54e908cdeea77325aeb76f3cb62181453ea2679",
+      "size": 102
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "aee6674340c7903b10bac875810ae27abe18b55fa5726cd2d4e55e483e086f64",
+      "size": 2114
+    },
+    {
+      "path": "thermal-engine-8974.conf",
+      "sha256": "27f289ed04432be8500ca160c9f19479f974a7aa775e44567c9954b3780dd95e",
+      "size": 1803
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "495b9c38527a6bfe50188c549fa84c165e81d2f0ff2410b9d7c3e86db29e8246",
+      "size": 643
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_hammerhead",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-12-20T23:10:05Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lge_betalm.git",
+  "codename": "betalm",
+  "commit": "84332280c97b54f7dbbbeb0b018421df41e06c7c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "13bcba9cfeca699e8c70a9a2d6c075bba68ad30e6248e7691ff0b1dd855889fe",
+      "size": 217
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "934899fcce20fb167202e17d7ce192cff7e4c2cc2690574cf610a798640e12fb",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "38b0d86df12973692c1a067e5d3c0cdfb6b751a7034d948e664972b77514933e",
+      "size": 646
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4fcbf3179e07eafceaf867f69c0dc571bdce421b719f72a13a61514ab5cf602c",
+      "size": 2831
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "df879c16164aef8aaea5db4355fd095fd577c154f1b617b505f0991487fdb227",
+      "size": 1136
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "904cf0081bf7d139bf1f1c562b7360e97d2e9c021f9a848f9541efd7c9621a85",
+      "size": 45214
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6434918222b1cc0c959697adf8682ccbd77b01e3afd0a6901f7db93df6266fc5",
+      "size": 69
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4ca6ae768772e1acd999ecf1722c9d66cf458a555f4bc36c76667eaf2f972776",
+      "size": 341
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lge_betalm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-01-31T04:09:38Z",
+  "vendor": "lge"
+}

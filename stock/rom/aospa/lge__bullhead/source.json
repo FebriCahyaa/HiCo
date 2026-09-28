@@ -1,0 +1,52 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_lge_bullhead.git",
+  "codename": "bullhead",
+  "commit": "21b64b41b476d1575604f269435acbfd9712093d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f63a324b40aab23a6d2ef4db8250ab9f36e3339807487f7ef37d50054f27629d",
+      "size": 2119
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "318c3366d0d8fee6aaa28c0d8dcab7fcb039a4c76832b00e0a8ad0ca0529b995",
+      "size": 5800
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cf4dd11cd72bea3080526dcdb52a5d86c68efda519bb70edbb6f00e06afb9523",
+      "size": 21834
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1fb50a72b5cb540383158c2888409432d8eaca5467f207339c26148e1cb710bf",
+      "size": 1658
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "e14e7127d4d5d0fc62cec142883ef5814927909cfd8bcc2f1829378b2cb9a553",
+      "size": 1408
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "659be7049fe8e2be0674c0a6fdf94ef5d15cdbdf0aa69f93f86c860eaa47b8ef",
+      "size": 924
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "690e622dcb1036b6948d9327643f05ef1836fc3ee9d83bdd48d3bfcabfb388e7",
+      "size": 8995
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_bullhead",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T21:41:52Z",
+  "vendor": "lge"
+}

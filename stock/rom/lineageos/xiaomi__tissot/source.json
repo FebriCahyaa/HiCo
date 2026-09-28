@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_tissot.git",
+  "codename": "tissot",
+  "commit": "4a723911ede0db99949b15821e6b00246cb239aa",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "75161f7411f791371d0e9af3e8e42b2220ae01113662fab6e3f43737f82b9504",
+      "size": 212
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f332a59cfa2a1befc2019e1651f318271ede6c5791f9190f8cb20be4f8aec6af",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c2a52c24fcd23bb4f1ebee0f0fbbdbddbdab88ba0395283234dc1cefea411b97",
+      "size": 897
+    },
+    {
+      "path": "device.mk",
+      "sha256": "90e404e001e90a7ad5beacb17066ce83755aafcdf9a655364c46ffe4f934efd1",
+      "size": 2898
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "acfeba93cf6110001e21c366ae6e6bc5c956adb4098a91253e412410a87c794d",
+      "size": 943
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "21b81f5f8725f7a3b4d30cbd77061072e161c60e7f0d95fba782dde8a8c2c023",
+      "size": 223
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aed4363dcfabbf033e6829e8ca80337bd5812b11350c1a413b2d880b7121131d",
+      "size": 17960
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_tissot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-04-01T22:00:17Z",
+  "vendor": "xiaomi"
+}

@@ -82,6 +82,10 @@ struct Result {
 /// thermal*.conf files on this device: vendor partition first, then pre-Treble /system locations.
 [[nodiscard]] std::vector<std::string> device_config_files();
 
+/// device_config_files() plus files HiCo only identifies, never tunes: MediaTek's thermal policies
+/// in /vendor/etc/.tp (thermal.conf, .thermal_policy_NN, .ht120.mtc; obfuscated by the vendor).
+[[nodiscard]] std::vector<std::string> identify_config_files();
+
 /// Independent safety check of a tuned file against its original. Returns the violations (empty = safe).
 [[nodiscard]] std::vector<std::string> verify(std::string_view original, std::string_view tuned, const Policy &policy);
 

@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_tangorpro.git",
+  "codename": "tangorpro",
+  "commit": "62ff57f4c1e70dd0ad82fbf2303bc7ef5cc98825",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d94c74dfeeb1b248cc327d0259dcf99c64f64a3272651c92232887322ed264b7",
+      "size": 999
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "da2456d70f1062a5987a2a3592d28ee07b5464fae7a246023f6fd6776c3ffa2c",
+      "size": 858
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "fb61111ff4a1ca43256781893847f15893c138951c0881bbe0a64c191e2519d0",
+      "size": 840
+    },
+    {
+      "path": "device-tangorpro.mk",
+      "sha256": "7b44d44432a1b625b322816c71febac81d6cbc407279f874bb3a0f19fc87d8b3",
+      "size": 12291
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "460026eba9b707d65fa3b8e6301a3d7ebcc10149a9cc43ccad5e5c9e77f1e0c2",
+      "size": 215
+    },
+    {
+      "path": "thermal_info_config_charge_tangorpro.json",
+      "sha256": "2d47abfc8e1c178a495123877c8944c5534925c7ac068bda142c3bc4ff60d3d4",
+      "size": 4373
+    },
+    {
+      "path": "thermal_info_config_tangorpro.json",
+      "sha256": "9efb81c728a4230ac534631b9a5cc1fa5d3954123ff076c3e3a2e88824c88031",
+      "size": 15180
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_tangorpro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:14:31Z",
+  "vendor": "google"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "jellybean-3.4",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_jlo.git",
+  "codename": "jlo",
+  "commit": "2fd378c9de1b3fc032268bc2833936351618a48c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3d1208d3139b2bfbcaa9d29eaf8b17021116d379ac8e8036ee0ffc9898a39d08",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "76a209fc20a372c10186399dac21646157f4f5a07ed385a8e6089f1e5fa99fd7",
+      "size": 52
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1fd4e4b61194cbfb62d14cca6cbe676a3829eaef09061493d396358fdcff511c",
+      "size": 1991
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e6319625f42069de37bce19eca84104a9a6fd5cef6def4d25fe0e87d46b45774",
+      "size": 584
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "453bb0cca118d77b3b4a53e2b33e9e4a461e36c402bb1ec69b86a10ba40e2778",
+      "size": 2251
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a39c90ea42d0293b2aa17180ef7e71950d188567798eb48af9743abd7a28f4e0",
+      "size": 70
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "43139d97026156dcba59efcf53efb056e762dd5ee4eab62a9bbd83319a8f694f",
+      "size": 27
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_jlo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:41:49Z",
+  "vendor": "sony"
+}

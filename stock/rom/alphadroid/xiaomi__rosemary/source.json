@@ -1,0 +1,67 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_rosemary.git",
+  "codename": "rosemary",
+  "commit": "63e28ac725738ce5ef5133696587ee46247695ef",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a90d5e097e26294730c8cae76ac344d11179b8aaee094d7dc6575185013042da",
+      "size": 195
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c572b03e130122d03a1735303dfed9f73ed1d07ad764df8d426613c10a184228",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3007dc8e73a821ce22c106d1876dced6a5e156529144fe339cdd6f8ce31bbc18",
+      "size": 6102
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "f192a6422258c56dee4f4bbc5d8fbd4ce39f12f7ba20ad23eeae532f9eb31d88",
+      "size": 6380
+    },
+    {
+      "path": "device.mk",
+      "sha256": "70592fbcacc94226a6a21cb56e202c6b1f1ebba23689646bb03c46dec50fec28",
+      "size": 18508
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "bf878e9445f9daa8409efc51d66da466f4de20e4154af266462235f3330d9787",
+      "size": 9531
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "64c48967325ab24f07236c63d558ad650c5723946988e23e2074590578e682a2",
+      "size": 83420
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "9c064c3608b7072e820252b3abfcb62346969c88ed1576e389ec985e7a0483ef",
+      "size": 1141
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6409e6f648c531a8c34f507d06cc60d365ad45fd9257b7be975d0dd25ad447bb",
+      "size": 1241
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2f7580fdfc615fea6a119083b21bd535e934462102887718b29933928f9889e1",
+      "size": 9788
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_rosemary",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-07T00:16:10Z",
+  "vendor": "xiaomi"
+}

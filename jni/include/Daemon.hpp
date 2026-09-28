@@ -45,9 +45,11 @@ enum class State {
  *
  *   Any state ── Flux gone / mode=off ──▶ Suspended / Disabled (stock thermal)
  *
- * Levels: a Flux game gets game_level (Boost at max, Relaxed otherwise; a
- * Performance Lite game with unlock_on_lite=0 gets Relaxed); an app on the
- * whitelist gets Relaxed at most; the blacklist is never boosted.
+ * Levels per scenario: a Flux game gets game_level (Boost at max, Relaxed
+ * otherwise, stock thermal for "stock"; a Performance Lite game with
+ * unlock_on_lite=0 gets Relaxed); social media apps get social_level and
+ * streaming apps media_level (stock or Relaxed, never max); an app on the
+ * whitelist gets Relaxed; the blacklist is never boosted.
  *
  * tick() is the only place that decides; the event loop just calls it when
  * Flux's files, the config or a timer change. Stock thermal is the default
@@ -83,7 +85,7 @@ private:
         std::string package;
         pid_t pid = 0;
         Level level = Level::Relaxed;
-        std::string source; ///< "performance", "performance_lite", "whitelist" or "warm" (max held back)
+        std::string source; ///< "performance", "performance_lite", "warm" (max held back), "social", "media" or "whitelist"
     };
     [[nodiscard]] std::optional<Target> choose_target() const;
     void apply(const Target &target, Clock::time_point now);

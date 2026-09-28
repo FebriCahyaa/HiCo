@@ -1,0 +1,107 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_redbull.git",
+  "codename": "redbull",
+  "commit": "b0c893004f2c1dc7bf61978019efd226cebf5882",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f65dd0d914bc457e3cb91be604f0352cb1bad35fa206243a82361f18da24837a",
+      "size": 1562
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "f341ca0be4d2250365ef4806d832006f81619757cd213fa2cab6c731763eeb7b",
+      "size": 14631
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "1e3569f908b20e7b4d4924c9cb8b0432a3684c750cb511cbbb0c976b0205b544",
+      "size": 1192
+    },
+    {
+      "path": "BoardConfigReservedSize.mk",
+      "sha256": "ad18bbf089547851f5656f2a3ec5cb26ff740df739d88771d7c31e3fc10189c9",
+      "size": 527
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "5472cd7dd1ca334e2b45d10b495041a163f6cc14a6c301ee4ca3125399f844b6",
+      "size": 33087
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "fde6fecc5267ac0c37a181fd9885b3ca8a2ad42cf48e93726a1a8ed5ac529347",
+      "size": 3873
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/dump_thermal.te",
+      "sha256": "8409f4f5e3954a6cc73571c48d4e5ea9763d833ef6013f3dcaefae989618ab06",
+      "size": 252
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file.te",
+      "sha256": "6cefe2edab3ad3a76666a7860ad02549452219e8dd2ea8d5fc8c7fd355d35753",
+      "size": 81
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file_contexts",
+      "sha256": "755d7ef948f4f1582f8b12e9c3c0e31747d5cc70c052a271dc4b4534ce225f5a",
+      "size": 849
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/genfs_contexts",
+      "sha256": "842299c326461e2a878336e05832621185922df8dd12cc3b172e2d3c6441a5e1",
+      "size": 644
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/hal_thermal_default.te",
+      "sha256": "3bd19caa5b8b364d6d027fa7e7895fb4e904285556a87281561d634636c3b644",
+      "size": 813
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-logging.sh.te",
+      "sha256": "b38377b629836fb4b218827a86577f245c700e008ec3166781f79d696de775c8",
+      "size": 381
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/pixel-thermal-control.sh.te",
+      "sha256": "652d80278862e213932dfa08ecb2b7fb820c87d07355442fe5ee2adeee9cc6f7",
+      "size": 589
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property.te",
+      "sha256": "9e7c9001131fc88bddd6faac201bd2ca7a534b569bdb27222d05862ec97388ce",
+      "size": 55
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property_contexts",
+      "sha256": "7e85a2e2653801b14213ac6ae40cbeb3c5ce3e60db2bdde520be114990ee3b71",
+      "size": 76
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/vendor_init.te",
+      "sha256": "88739ab42caab3f4c51f1e2e7c82c51e7fc21a8e546500734056afc57b694382",
+      "size": 159
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_redbull",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-27T04:44:08Z",
+  "vendor": "google"
+}

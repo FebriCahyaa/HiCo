@@ -1,0 +1,77 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_concord.git",
+  "codename": "concord",
+  "commit": "42bf2b7f0f6e40b31dd2b0fa94eaf84fb93f22ed",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e056e682f2a90f632f5c653e061134fb48c919309f9184d68e3b1f0fd035a050",
+      "size": 700
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "61a74062b63fe168b9f01295504853361263d370082092a679dc0e0f95d6704e",
+      "size": 875
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "84ccd70ab86244915b98b65b6955da8b34744cc4afa56edc929938a1c014ca26",
+      "size": 4323
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b15b79ade3f3a96d4b337bc7dda2c0cd7e0d05b06afe976d824e71e1d61d2238",
+      "size": 5185
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "959fd1910d2a300e2acfd6f45aae76a940d14874a0356af47bcf2adb5dca8784",
+      "size": 946
+    },
+    {
+      "path": "thermal/thermalhal.fett.xml",
+      "sha256": "7d043db1b787290f5554ad57e9364e7ad276f9a9203d503ac939fb4022de84b0",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.kryze.xml",
+      "sha256": "7d043db1b787290f5554ad57e9364e7ad276f9a9203d503ac939fb4022de84b0",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.rau.xml",
+      "sha256": "c90622e152c585eb65059499ceda40dff35391bb0676e5186b637465fcff1d9f",
+      "size": 1236
+    },
+    {
+      "path": "thermal/thermalhal.saxon.xml",
+      "sha256": "2c119de8a1e7b2feccaaca3fb288d691afa541fb3153b1536dd929fc99e5f56a",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.vizla.xml",
+      "sha256": "2c119de8a1e7b2feccaaca3fb288d691afa541fb3153b1536dd929fc99e5f56a",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.wren.xml",
+      "sha256": "7d043db1b787290f5554ad57e9364e7ad276f9a9203d503ac939fb4022de84b0",
+      "size": 1234
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_concord",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T05:51:06Z",
+  "vendor": "nvidia"
+}

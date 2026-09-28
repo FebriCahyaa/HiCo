@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_spyder.git",
+  "codename": "spyder",
+  "commit": "24c30eb50b6f5606521179f7e0d33087392d025c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "81914605cebaae11f898d0bb6d7ce7be800cdfc19355ace5acf64c975f35f91c",
+      "size": 666
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "784570c1e1e0828f7bc4c8807ebafd3b2528857b8aefb1bf8168670953bb5b6c",
+      "size": 642
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f3fdfdcb48d951248eceaf2428e8b2e71e05564b615ecb21119844c64a0e0b7c",
+      "size": 1707
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4b0cdd15dff643e153d5bba819e020b28861da0234c8702719bbf42850a94e5b",
+      "size": 1718
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "907dbb5b043d5512e72881a532e1876e8f2286ca06a52b1a4afc86e92b07f96c",
+      "size": 93
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "338cc3b60552ad121f65802444139c6149fc7175cf1d79a8bd7eaaef8a56030c",
+      "size": 238
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5fa15c1e72b455b16001691dd04aee1ef1b50f0f7f25771015bc0c69061ddc21",
+      "size": 6165
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_spyder",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:18Z",
+  "vendor": "motorola"
+}

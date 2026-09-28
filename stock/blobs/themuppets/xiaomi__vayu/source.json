@@ -1,0 +1,69 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_vayu.git",
+  "codename": "vayu",
+  "commit": "b6c4991f3005f5970f9fa98d3eb675d80a437773",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "d6b53879042664437b854abc540f2ef23b3413ab0871a3af88e28e7fe2060d6e",
+      "size": 1488
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "db7e7657d8522fa463ddd875d51375144570f1079ac2664334b70baf2fea6cfa",
+      "size": 2064
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "20c0fad8dfd53b88f79b0935290bea06949dcd6e4dc009af73fa1041ad7a085b",
+      "size": 486
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "2f62ef51589d2403646f8ca74f2f5faef0c0757ab07bdc21acf851e41cb2abb5",
+      "size": 416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "22969a8f5db46aed1ebc3e0a5a2568fdc6c839bbce307f53298f7508c07b5f34",
+      "size": 848
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "d3895e188e5680539a13b5d4ebb4e65fb7e0732e9b2cb25fff8053163ee7deae",
+      "size": 2096
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "1e90f7289aa140f933f2449bd772a5f24c922b896d0c44da66b6f221b612dc80",
+      "size": 1568
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "3dd952304a245e32937a9c2d846a6dc180557e82e054bb844fc1554a84ed5fcd",
+      "size": 1952
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "a15ddd34f340e11b8d45608cf1f64f26f167dc0511606445db0b1e81971d0c8a",
+      "size": 985
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_vayu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "vayu"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

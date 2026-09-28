@@ -1,0 +1,47 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_intel_mixins.git",
+  "codename": "mixins",
+  "commit": "9e5a1a4a987a98b59ffe7fc5e9159970b31a650f",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "groups/thermal/daemon/init.rc",
+      "sha256": "0a2fc6a5b472d51f74ae4ad2bdcc88eb70dbdd30b0a3edfb2b5172dc7a1eb727",
+      "size": 664
+    },
+    {
+      "path": "groups/thermal/daemon/product.mk",
+      "sha256": "2c40d0b0493a807383b26982711a5de2611f29c1dae4bdd69d152d45732fbd8b",
+      "size": 285
+    },
+    {
+      "path": "groups/thermal/daemon/ueventd.rc",
+      "sha256": "cbbbe2a857087c3291ffdba0baf3440980d5b3d5448c67b9c9cb975997a055e5",
+      "size": 331
+    },
+    {
+      "path": "groups/thermal/ituxd/init.rc.1",
+      "sha256": "43691217b6da1d7e11ec93d392138df458ef0339448a77ee0dcdf7486b1dbd5b",
+      "size": 88
+    },
+    {
+      "path": "groups/thermal/ituxd/product.mk.1",
+      "sha256": "65710b3a2ba8c5ac9a68768197f8e37e707d40f84517963171a86943b9fb51af",
+      "size": 311
+    },
+    {
+      "path": "groups/thermal/none/empty_dir",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_intel_mixins",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:40:56Z",
+  "vendor": "intel"
+}

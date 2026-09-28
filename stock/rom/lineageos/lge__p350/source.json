@@ -1,0 +1,42 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p350.git",
+  "codename": "p350",
+  "commit": "c9ee55c1da82bd5e403a182e6bb20ca80bcf6183",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b9a8a003ff2c08071f430815661879bbc07a10bdece1abe6a3878b5cdc88961d",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ccf8111ed0d2465794074b8abf3fef3b6d3c8438eaf44a590fb1a3c475fd2a1e",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e8daefa67610b70edc2a23052bf50bddda2b36593ce423371aa8d1f6a2fbd4cf",
+      "size": 2819
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c6a22a96bcf802896acc7d8572dff77ba5691ab4e808c7f82fa098ee0318208",
+      "size": 8716
+    },
+    {
+      "path": "system.prop",
+      "sha256": "980d3a577a36c34da283c89bb90bff7b1b4b8aeb0c20266524c85b87b9422ddf",
+      "size": 699
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p350",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:29Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_muskie.git",
+  "codename": "muskie",
+  "commit": "f79fd7db9248acfa3bce907fa2b2f05aed17b1c0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "034969f77b3c5b3a8c50aa1458a0d861bc2703302d8a1acb9d53071cf6489451",
+      "size": 785
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "eb6cdd4e7586f5c5496b6b9e89764362e8c2e63fe30aa336ee50561f22be93a4",
+      "size": 4710
+    },
+    {
+      "path": "device-walleye.mk",
+      "sha256": "fa98967c05debe12caab3fde3156d4123fda32bacd54fb7a22fc438741c9c6fb",
+      "size": 1446
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f0bff9d89db2c81c765837475424a4863a5a0eec6ba5e89ff4194de9d27a08cd",
+      "size": 3100
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4bcd77f27ec05582ff438fd38ece5f10ceec4ecef0db5ef7e350b3d8a601ed2b",
+      "size": 102
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_muskie",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-03-17T21:49:05Z",
+  "vendor": "google"
+}

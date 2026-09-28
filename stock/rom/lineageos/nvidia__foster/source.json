@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_foster.git",
+  "codename": "foster",
+  "commit": "aa1bf701c00a4febfd64a91ddc82b4a5af600b53",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "759128c09f6b6499352bad1bfd2d8da35d0504c109b388077eb129ebf8767443",
+      "size": 674
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c70ba7f3be8df21be3f65683a1ba714010c0b1a09c3cfaf051a4a0d8856096c2",
+      "size": 687
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5ef54f24aa48d56710a28419171da1c7ef7c22bb9d256de725072b66a449533d",
+      "size": 2510
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d179d1327449755f95dda3a8c3dfd5a5568c36777a2192d93f17a114aaf928ed",
+      "size": 7282
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8a552099ef221a5dad0745862c325c836c26d0b5f02feb38e89a5a86fc67b364",
+      "size": 930
+    },
+    {
+      "path": "thermal/thermalhal.darcy.xml",
+      "sha256": "a80056061d72b80a9518df2505a47b5a41fa9eb22ad54d1633d203e8e3a4ae36",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.loki_e.xml",
+      "sha256": "a80056061d72b80a9518df2505a47b5a41fa9eb22ad54d1633d203e8e3a4ae36",
+      "size": 1234
+    },
+    {
+      "path": "thermal/thermalhal.porg.xml",
+      "sha256": "76a7c2f4839afa717c63eb1b2a8f442f83a869d58991725501b323eee658d522",
+      "size": 1067
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_foster",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T05:51:29Z",
+  "vendor": "nvidia"
+}

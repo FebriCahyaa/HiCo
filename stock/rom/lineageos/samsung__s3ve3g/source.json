@@ -1,0 +1,67 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_s3ve3g.git",
+  "codename": "s3ve3g",
+  "commit": "6616aebe98a1927465d6f87ad2a3f617f8695504",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2b7f6c6c3cb39a92eaa7921cc3a8ab2751ca2a7bf14482b0592f6f7b8c3de485",
+      "size": 712
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1ef0f0e315b45bb557fac7d50c0fe4fd5f840522b2a2cade83651de929748c81",
+      "size": 648
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "42ab17f8862a239db29ee599e2170ed32b71ba401c9786bace37fe9567cae5a0",
+      "size": 2203
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "4a8c09fc74c44f16f4b719952654a6afb8febb91887142fa50d9dbf59595a497",
+      "size": 823
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1931650b2202101809bf48cac7e6a8949e416e880eba75f036cb1135d1c2f955",
+      "size": 2585
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a87af55ebcea0ac43741e7eeeb4e3bbcc9699a76d69fa0c618a64eba04b332de",
+      "size": 1437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "02f3b17eaf084c50c43cc7403ceeb075e810cd305d1f3a1f822b65524c837263",
+      "size": 7600
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "28e6acb81b99589da5e355a1739decaa32fba75577cace25b10ad857f2d4a704",
+      "size": 178
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a59c54fd5da4abf630db32d3a2968c16f682c567991347310200c7561c923aac",
+      "size": 1561
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9f3e098fb30c2e72281e0416ff9ce3f3c65ed9f5137372c194594fc80439595d",
+      "size": 66
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_s3ve3g",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:39Z",
+  "vendor": "samsung"
+}

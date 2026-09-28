@@ -1,0 +1,57 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_land.git",
+  "codename": "land",
+  "commit": "3304e5c2db126114214ad48febfc63945a6e7140",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d5ab0f670f578495bd33bacc6d7ba3be554edb25d3ebfff1627400c39d58a947",
+      "size": 4457
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5de1da282e6060036d3e263f6eb5063d458940a8905972a5a9c17edcb1d40ca3",
+      "size": 7015
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "109d1f1b3391bcc5d6c8f87149a93ca27802339063e38b5112600ee173fbb29c",
+      "size": 4366
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cab21313bd33e2b9f7ec19ff07993fb4fd6c0740e620733aea9e27fe892197f5",
+      "size": 17553
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c3b6a2cf3fe2017445ce14ff68e91c176a19358554e1f06fdba85fb727739043",
+      "size": 1995
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7162624390d3de2e2a49e11151f9beeabaa763ad2b116e1696ff7791a5424cfe",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e480accc0afea4a0feb689339aaf0a4d69a42ba1ecb59359ecdcb55916dfd638",
+      "size": 52382
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "40b12b690e17e01605668fa2b497fe8075a66c05be5ec29ecce51ef3ddc2a599",
+      "size": 5312
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_land",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-06-08T11:42:38Z",
+  "vendor": "xiaomi"
+}

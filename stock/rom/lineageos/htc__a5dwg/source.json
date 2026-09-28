@@ -1,0 +1,42 @@
+{
+  "branch": "cm-13.0",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_a5dwg.git",
+  "codename": "a5dwg",
+  "commit": "8dbdca09dc49dd50cfc00c4900e7c50be6381c16",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "72b1568aadb22d0f8fcfa3df45d8b74d77125b315f54d106ac6e55d4e71567dd",
+      "size": 1622
+    },
+    {
+      "path": "device.mk",
+      "sha256": "69d8c16e6152a6574836e56404580b0d86537a703ef89b695b8babe02be371a9",
+      "size": 681
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "285b48e45866548addab99b3ce2ab26886186f6ea4aa832338e9e38b79f15f70",
+      "size": 95
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a24d765ceea556577221c7969830ef1147c45c150355637222998f33210d067a",
+      "size": 171
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9546d4b54045e3a86b757e6bbeb0aedde956b649d2570c56439e6da234978ba3",
+      "size": 64
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_a5dwg",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:18Z",
+  "vendor": "htc"
+}

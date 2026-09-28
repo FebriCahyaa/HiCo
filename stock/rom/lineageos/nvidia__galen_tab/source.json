@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_galen_tab.git",
+  "codename": "galen_tab",
+  "commit": "79e38f2e70a50c3a4ad3c8f5555cebd48c121d1e",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f894a08b4f51171296a591c15f3d83791f9ebab6ca6f992f65e55551b37e546c",
+      "size": 891
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "62a1dc89cac28170b67cd16c3783fac630d931658c342fd2daa5148e2d163101",
+      "size": 638
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4f086e91064698c3f46fb40ae16cc346bc5c2692cfa8e741e1a49d4a0f68239a",
+      "size": 891
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8d7cb78ee4ddb1d77e88e6d47b9e17dea8739daa2ecb871f71a48b17dc3fa663",
+      "size": 98
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_galen_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-14T22:13:39Z",
+  "vendor": "nvidia"
+}

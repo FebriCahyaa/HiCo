@@ -1,0 +1,57 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_nintendo_nx.git",
+  "codename": "nx",
+  "commit": "2e026d6f045a8abe8fa0794498dd3f412369d658",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66a2a6310d79338d6c88256a6bdab68cbde9413b2a4f937d5b4af5f7731b5fec",
+      "size": 700
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "df793f29c457e5ac4c96da9c554785cbf75daf3319b7765c590824253c87c8c2",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "27033844d8403920642c76c8d45ca6ba48afa1e200c3ec152bdd600f8f9bd80b",
+      "size": 3889
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d33868c54a2053192e5b8f4bcb9f6b31e3bebb11cc84202a7fad5ba7481acddd",
+      "size": 5809
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "29814164bdcc11be50ad9ba252ba951709464741cdd5fc38fafbb0bcff7a297f",
+      "size": 732
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c1a4f54b06012f0ca878827acf65d466a2d26ecad2c82ebb7b7cb2d1d3a55d34",
+      "size": 1783
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "6bd44095ce84a2bb6740685063b5b1bf068aa46e8415226b8b20c1438334a2eb",
+      "size": 707
+    },
+    {
+      "path": "thermal/thermalhal.nx.xml",
+      "sha256": "00a5ba108f26f09feba3cfe7c997167d083e636828e26a510f637e424900e52c",
+      "size": 1388
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nintendo_nx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-07-13T16:54:28Z",
+  "vendor": "nintendo"
+}

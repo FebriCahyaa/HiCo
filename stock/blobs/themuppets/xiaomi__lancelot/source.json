@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_lancelot.git",
+  "codename": "lancelot",
+  "commit": "c12c64755ed27865f900e95a885b51c77212d79e",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "589a45f70329931ddd32a441487bed543a5310e86f73f098af6ce32b8bcacfd4",
+      "size": 3072
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "bbd9b8b5cce76a2685f4f7cd5969086b5c99c9910a4486591e175ed493e3ab44",
+      "size": 2000
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "2e29732e6e783f77b438170bdfbb8e8544882cb4b2f4f905a01605d31388b64e",
+      "size": 2592
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_lancelot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "lancelot"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

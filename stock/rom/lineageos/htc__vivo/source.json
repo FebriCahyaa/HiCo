@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_vivo.git",
+  "codename": "vivo",
+  "commit": "bb41b5eee063c2f7fec1f3acfb0a42cb7cb2007a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6798936f008cada1db9ae93243ec098b0d82e50f9b9b6b9a4eaa431443e830ca",
+      "size": 780
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3d23cc6a7fbc9d08a2ffd608cd55e5533ee7736723478bcb9b07aba15e585521",
+      "size": 2766
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "43693d204a4409a4336c14971af92dd6b270aeb08208510008e3ab9d11050d7e",
+      "size": 8237
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c009ac6b3be0398e9dd30b22deeb4dde059e73127d6061f3392660ab9c7cfa1e",
+      "size": 1562
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e4435c2d3a01559414726f678624dbc4a74864a1067cfa21729c6b91077471b1",
+      "size": 873
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_vivo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:21Z",
+  "vendor": "htc"
+}

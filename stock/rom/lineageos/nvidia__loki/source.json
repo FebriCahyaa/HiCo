@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_loki.git",
+  "codename": "loki",
+  "commit": "a28b9b696f6bca5a863ad4c271745eac35989012",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3fb03c8ef09fbc6e21fc100a01c640d02203e57e0d7b90fdf4512d1e2d1bc197",
+      "size": 707
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fb6990253d20289cd6675614c1314df67d8280b4866e0be81d4ed79f20a4a7e2",
+      "size": 929
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3f4a410a0a75474dc4c4b1c30d087540d7f1bb1345add1808ef76643308b8f8c",
+      "size": 1893
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c19180282f43b28399efeb77eb7136cd2860d52ae4c5190cd1ed04dddf2cb3bb",
+      "size": 1201
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "510f56bb479fe02fa8d960287853b1a8626bc41fb8ce0e934cd5e906a29375e2",
+      "size": 290
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_loki",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-11T05:22:38Z",
+  "vendor": "nvidia"
+}

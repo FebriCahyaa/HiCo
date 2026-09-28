@@ -1,0 +1,33 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_sm6225-common.git",
+  "codename": "sm6225-common",
+  "commit": "f0fc153185df47efa88a7f058ec4bb35c15ea76e",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "bb5e5e3d3560294ed32f4d49ff45bfc9bb486cf037ab7fb03b57e7f66c20365d",
+      "size": 23158
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_sm6225-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bathena",
+    "borneo",
+    "capri",
+    "caprip",
+    "cebu",
+    "devon",
+    "guam",
+    "guamp",
+    "hawao",
+    "rhode"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

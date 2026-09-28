@@ -1,0 +1,37 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nvidia_sif.git",
+  "codename": "sif",
+  "commit": "47d810257cb222088e58005d78b3ff61c8a891df",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f84637f33aabab1bcd1703d2da7bd4915afe941c7e8fc1c285cfa6aaed1bf483",
+      "size": 682
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b668fe996f16289c99596d331109d230dc54fffe3cc50307a3c5400226e25f47",
+      "size": 854
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f3ee1622f86a8e5b06c0cfe87c3ce26de7c51646e17fff930b46fff57d107ba8",
+      "size": 886
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nvidia_sif",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:13:00Z",
+  "vendor": "nvidia"
+}

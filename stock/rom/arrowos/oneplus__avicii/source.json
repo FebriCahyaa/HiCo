@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_avicii.git",
+  "codename": "avicii",
+  "commit": "218f8e95a4e5da3c138b4737cf220e007f724e10",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7ecd6e6110a60346022493fa29c255111180a2926e413ae978fc41fb96ca8cff",
+      "size": 1131
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "eb0d1b845a3fc7cd5c33a930dab8d07d3f2d23be02e57dd571f39631d9556850",
+      "size": 757
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4f1ce1e9c27624285b6399676e083b62d4d9eac4f8721d2724f3551324be2d43",
+      "size": 1145
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "a028b67de7aaf4345c012929e92cf3c292d68e21ae7c9d70a4ed366e21a91bca",
+      "size": 17846
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a2b93e462b3e071a963f2981d927eea5b0f87d68cd2ba87d95bc0ea1d659ea2f",
+      "size": 2392
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a22787f315ba53e97c4a83d3fa1b2f09ac3b232ef6d2a65cfaaec3d49e2b1346",
+      "size": 471
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "27591930a4eaa36ac50db333050f86af283875e7063a33b74078d66ed6dd1a6c",
+      "size": 20255
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb4a49a5ad8ce8afaae53426dbdc546a09949145bb16b029756524b0f87ccc1c",
+      "size": 91
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_avicii",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-21T18:16:08Z",
+  "vendor": "oneplus"
+}

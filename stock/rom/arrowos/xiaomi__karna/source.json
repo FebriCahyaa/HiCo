@@ -1,0 +1,82 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_karna.git",
+  "codename": "karna",
+  "commit": "1bffdb3c629f6d67bc25cd7737f6375287f2b165",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fed984e109dfec22d12082ba11b0bf36946c6d10f8c703500feaefc702402942",
+      "size": 169
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fcd4e27fe3558610c1ebbba541200c6dbfafbf5a482c806e02cd069143b63183",
+      "size": 713
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f850bdc17ce714a968d3ef873fe7f39c075dfdb6588e45a384b9c055e24b965b",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "94d297d74362fd7f7ec527af7993bf8ae1d4019564a8df1786db534385a2ab41",
+      "size": 5592
+    },
+    {
+      "path": "device.mk",
+      "sha256": "65ecfc2d77c4f71100e8e196372002126118b6a2d437bce9c33ae6293477301a",
+      "size": 5899
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f8555e421dbe41b0bfc373f2b68f41cb8070f4dee3da01ad30c4cd26dc12eddf",
+      "size": 1559
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "1651026d3d4b8f10635cada631f89cdbd495d0e680e15524ae88938454978c48",
+      "size": 3547
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "08d33a9438d77d6612a97cdc5bd3fa81e9ea23473063e1c11c476e19ca9422a8",
+      "size": 17064
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "318875375bf61c7fb7553973a43973337a55348b47d5febae9081dce7d970629",
+      "size": 6326
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "baa6918fe6ac90274f31d1cb687bc7cc493f7ad6659ba31c23aa6942b2c331fa",
+      "size": 2152
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "f8b4213aa62dbffbf52cb30c46aa22f97ae167f615627225945f9170bc3c4317",
+      "size": 163
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a04e74c34430fda28de7b272c9067d6ac518be9897de65fa3f902f8e195f217e",
+      "size": 97
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_karna",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-12-14T12:45:36Z",
+  "vendor": "xiaomi"
+}

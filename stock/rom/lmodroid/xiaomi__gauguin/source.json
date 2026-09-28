@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_gauguin.git",
+  "codename": "gauguin",
+  "commit": "a6e636dce6a627fe90add44377c6850ae07e1801",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "448311b95b4f4f2cedf69dae214bf43864bb96b727e86dfc4433f0d22dcf55d4",
+      "size": 990
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8e3867fcd1be84e64d318f1f8a4694f4bc3c8b5d0ee3daa4befa99b1c78068d9",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9804c5f345da924e040ea56de55d3679ce905c58c7e9bc81ae2cec46f44ade6e",
+      "size": 5739
+    },
+    {
+      "path": "device.mk",
+      "sha256": "be57a671e43b6bcf153dd04ca95066803b51b9ee569b9b3f4db45603597dbb6a",
+      "size": 17320
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "24746a7b432fc67ba8161eea3d8fa44de9ad4937ec9fa5969b9837437c36f807",
+      "size": 3263
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4d7d4bb42bebe44e289a20c19086e1d0b93ae6e3afb1f6864075529e75bc68c9",
+      "size": 45139
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "503b533f82c4f7c3fdfed515c3731cfe490babb1f2b81f9735cdd2a1ec39628f",
+      "size": 1626
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5b612b7ca2c9aced4245e40b61fba453d2b8ce2b81297a988e81114c9d256253",
+      "size": 490
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_gauguin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:45Z",
+  "vendor": "xiaomi"
+}

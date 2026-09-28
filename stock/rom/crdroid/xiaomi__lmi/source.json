@@ -1,0 +1,57 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_lmi.git",
+  "codename": "lmi",
+  "commit": "629e091e4f618277791f2d3f8e119d0df7cb0bae",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9a4407ff0a51d68a5d5a45dc5f36f349593a40eb75ef4177ce91b663846e19cd",
+      "size": 70
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cec0dd0f94f9df992ac4ccbe3952d60a5d2f51c347833262176b0171f2215572",
+      "size": 4544
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d9574b1740ff640d2f0526aacb324b97bd1d3a2e6964c3219290b343383e7111",
+      "size": 121
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e162932275dc290d19846aaed77d768d03c0dcef03facf2c7117e8438b588c74",
+      "size": 8536
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b2cb1e3af794ce68ddf80096a9373c9c7bc63bc709a1ffd1150ec38276521e50",
+      "size": 20366
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "21c624a542e8ef97e15bcf9edfc468f318d638d389771fc7b6fae43b6596dc1f",
+      "size": 3691
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e0290131d708969fe6fa8e56299285b91794efee56f7595d72b460217a2e2a8b",
+      "size": 51106
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "9b2042fbb0a57ce82738d4a84586db3657d356a5c6798d7a1ca8b8f304d4a821",
+      "size": 1638
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lmi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-01T10:02:30Z",
+  "vendor": "xiaomi"
+}

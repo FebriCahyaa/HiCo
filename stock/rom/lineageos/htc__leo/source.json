@@ -1,0 +1,52 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_leo.git",
+  "codename": "leo",
+  "commit": "e1797ab2796e5a0bdb39f52f76b69131f39fc4a4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4ac5a18b04db62855db1e8747980236a93c12d85a9f3418cacdf13d7b8ac79dd",
+      "size": 932
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ceedb966a077ee28de90ef71e3fd0c9b3ec7af2c4089f9d457e7a4c3b6f8be31",
+      "size": 818
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ed30b5598a19c4660db889c5c7600a882882a4e61dc7f15fae1d7dff56a924b2",
+      "size": 3514
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7688912e1d1daff1b00f672335e6d78f9595da3b10bee811ffceb4719197c269",
+      "size": 1022
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "594b3f1a68054e5f1cf2a75935332713f4a6c161d1ad9f0a055331b1a54a39cf",
+      "size": 762
+    },
+    {
+      "path": "system.prop",
+      "sha256": "94b4d5a24748ec45db60731e36e52e1eb1985ed4d8c3eb4eeedbd6f27f38f184",
+      "size": 1370
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d5dcb6b1daa376c238b062fad8408dbdaa0193d3730fc3fb0a73f9453f70c472",
+      "size": 871
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_leo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:35Z",
+  "vendor": "htc"
+}

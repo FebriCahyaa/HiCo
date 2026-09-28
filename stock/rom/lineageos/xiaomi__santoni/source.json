@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_santoni.git",
+  "codename": "santoni",
+  "commit": "f5aaaa4a43cf1e848ad51593c80a35a90c897fb1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a745272602ef7b44fe7dc57880e29e325db752c6f8b4ca411092dd0b9583dfd2",
+      "size": 1125
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9d97cc417b4a5dc3f2663e3a7f708fb08169634e4a0d90acbcadf8a5f73c7459",
+      "size": 652
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9221fc16f0a9a29aebcec0e03ae6becc68e96aa94ba3ef43c6512ac7c705fe0b",
+      "size": 1197
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b277b9ed01e313c95a5ed2fe00cd0d311ea035ead5966a93f706e415840c41a3",
+      "size": 1384
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d921f32779a88a4e1570dc2ec3c9dc68d3befa9cd8092a5cbe9e18064c651c6c",
+      "size": 794
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "78f0df32f223a77186a498120754de98ba067664919648db78449e42fd8eee33",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "54106592d2f6861a7c00e738f18f126f1e742d02a76f32ad09814cded82ef4a0",
+      "size": 14095
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_santoni",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-10-05T22:51:27Z",
+  "vendor": "xiaomi"
+}

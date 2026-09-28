@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_kenzo.git",
+  "codename": "kenzo",
+  "commit": "862e9fd2b00145ad5afed9e630d2d2417684a01a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "361f76bd2d572b46bbff8fc45cea10285cc9858519be90e2c02eecb8adb48b1d",
+      "size": 1061
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "583f606a26403a9c55d220d4379400ed37dec3aa3e6d89133ad31d3498424f14",
+      "size": 644
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1f89d9f9c6ca5099dfe830ad135facade23b196f9179e4dbb7cdfdcdd13598f7",
+      "size": 1308
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4eb71fd93c593542e51db281789a0217257b3623b4519a24112aadac53a881c2",
+      "size": 2130
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2f1e9caa0fd65985171ed4608eb5653a3cf02fe69da9ff9962fdf737dd188821",
+      "size": 834
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5228bfce2c9ec643f64b7f037bc9372ad3d391872b5083490c214ac423664709",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5ef6038d6967bf9d2efa0266a9f514bf1db01c6ac72ea5e4d594537cf27e138d",
+      "size": 25527
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aa00d6255f618d43184fc86c86dd7149ebe097c128125c9f73255d1ea85fff6d",
+      "size": 404
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_kenzo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:46Z",
+  "vendor": "xiaomi"
+}

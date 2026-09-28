@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_tianchi.git",
+  "codename": "tianchi",
+  "commit": "7a6d12e6de02dba6e58150a96fbffe5aebe74008",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "222e673657bf6a9f4de4f3cd0248f19fad291a2edd49526eced33f696f45e4f6",
+      "size": 400
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "99a0b2823d3315ded0a719727f26cc62eb85813a8523f08a2871635fe4dd05e3",
+      "size": 56
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "effc3c1c5c91d8a97286c018b51e5abd7fe8c28237d8224a4df751097a6ff83f",
+      "size": 1314
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d56ef5dd39340407fecd781a4822c6278148ebc142815b7a7ec04ab4d6879be6",
+      "size": 129
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "47c9d14a529a0bb93d0a083a7b94b20012d69e633a81c8bb4a52903cb15bb918",
+      "size": 17282
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f03c9df6b7e1b6c066e9869f37a29a077a8fe837bfb52014b5029da065c0e02f",
+      "size": 1768
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "74ba984c76c383e149c4d4163de2a18fbe4fb297ca322ea93365b28061db7e68",
+      "size": 31
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_tianchi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:53:42Z",
+  "vendor": "sony"
+}

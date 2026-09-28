@@ -1,0 +1,40 @@
+# Audio
+-vendor/lib/libsrsprocessing.so
+
+# Display calibration
+-etc/pp_calib_data_dual_0_sharp_cmd_mode_dsi_panel.xml
+
+# LiveDisplay
+vendor/lib64/libjni_livedisplay.so
+
+# NXP amp
+lib/libtfa9887.so
+lib64/libtfa9887.so
+
+# Signed Venus (media) firmware
+etc/firmware/venus.b00
+etc/firmware/venus.b01
+etc/firmware/venus.b02
+etc/firmware/venus.b03
+etc/firmware/venus.b04
+etc/firmware/venus.mbn
+etc/firmware/venus.mdt
+
+# Touchscreen firmware
+etc/firmware/A4_15_2.2_AA.fw
+etc/firmware/A4_15_2.2_AA.raw
+
+# Fingerprint
+bin/fpsvcd
+bin/aosinfo
+lib/hw/fingerprint.msm8994.so
+lib64/libaslxml.so
+lib64/libfactorylib.so
+lib64/libfpcal.so
+lib64/libfpsvcd_remoteapi.so
+lib64/libfpsvc.so
+lib64/libslbase.so
+lib64/libslcryption.so
+lib64/libslos.so
+lib64/libsysparm.so
+lib64/hw/fingerprint.msm8994.so

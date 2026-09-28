@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_haydn.git",
+  "codename": "haydn",
+  "commit": "fc1ca353e6ea6b77b4a9582f74588d5223509383",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "614c49b2600eb35ae0931698c305d154ebd352c7dd42c00874e9afdab9d56eaf",
+      "size": 81
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3ea97aa348ed9e39c7939151fd29407bc4cf3f8a076c740cf5ea9bfa43df1d5b",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bb7387a60eca1698da280d9ad95f7c47481ee188f56ce798214a8943a3e6df4f",
+      "size": 1110
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2cfa952fa1a9217390e9b906d716bc4a7262ef74e0bac64f98d355a1d7852710",
+      "size": 2253
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "68dc1064bb660d51fbdec7d723ee17b94ea14f445ed8a4b61a47ef2ec1fc9e8e",
+      "size": 3168
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a8d046a5623065bcd2f19bbd09459c6010f15d9694e8eebc7805a02ca4e1366f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "03216ae56ae7354589b4ee01a5c173ecce296fa28867978d36b295b5867e4d7d",
+      "size": 29904
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b768a2820a94d29571a62adbeb1d76aa068e98602f7d56005ff9302a41990202",
+      "size": 183
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_haydn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-13T07:46:23Z",
+  "vendor": "xiaomi"
+}

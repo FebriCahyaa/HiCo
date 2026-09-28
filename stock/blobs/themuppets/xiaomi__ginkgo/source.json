@@ -1,0 +1,39 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "03b254234ed64ea3d5f5ace9028dcd817d773a5a",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-camera.conf",
+      "sha256": "10fcb36cb34cfc5bbdf813f372fc0a215222750641162743a77b5dc6107b31f3",
+      "size": 1807
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "2510a6f562e9633614bf04e35d3b5a52aecd652cb7664ad2b7f2d911af13645b",
+      "size": 378
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-normal.conf",
+      "sha256": "9264913cdb971831a1fcd72f76e2507abbff1fea0796962bf872d551252e2a27",
+      "size": 1798
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "ginkgo"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

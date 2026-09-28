@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_urushi.git",
+  "codename": "urushi",
+  "commit": "ba33268e4574760ef19194cf6087e184ba4c1ca1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "496a1b1b3cc5b82bfc70cd9933eca086731ab331325968bda52297c6eddf9e9e",
+      "size": 121
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "588092ba32d3a163f8d13c5505f2266a392eec9255a1ce7f30deecc49a6ac1ab",
+      "size": 1061
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b73d32448fa4b0d910ecab6675e1c8eb0bf5620aa436aa52fdba20fe447b6e6a",
+      "size": 324
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5c33704a8fa7d60b38b4a3b9802b79d59488cde0bc481384fc0a5f66bb92b4c1",
+      "size": 331
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c0c636e1c4a7bd82a29cfcc9e6daf6f9db4dccf4b20f8800ddbeddd7a0710126",
+      "size": 3290
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_urushi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:53Z",
+  "vendor": "semc"
+}

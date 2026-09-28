@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_yu_lettuce.git",
+  "codename": "lettuce",
+  "commit": "0f4e7ba5b01664fd044710d33c147546ed56e4d7",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4eceeaf884311026c3aa2478e1b0d1fae95c9c967bf96fbdd3d30fb2b9f8cade",
+      "size": 42
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "58c58ab9f2fb3782ec78cfaccefeb895c9f7a0c3960ab241b1afe6bbef9e1d53",
+      "size": 708
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ab53a7ed55ee0938bd9934b7b1b6d9d0ad1385ae27116dde0b1c469d18af5793",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fd52aa9c70b2ea344f22a9b2cceb1fb20bfb5cfdadfef3a8c2b6c09308a5f9b5",
+      "size": 2180
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "f1493ae2df78fb877d72735d623ee1059fa4b3295d8da1b63d5050f346f3597d",
+      "size": 1582
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2ff28accfefb38aa138dbe2efc8b34abce35cc3431d6a55af16fd5fd25aef2aa",
+      "size": 5905
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dee0c6ccd30322426d186d2abbf28da2b6b29e6b93eb69a6516064b3cd288914",
+      "size": 1955
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6aa70d8cd67c072946f6c9c72d0092845dc7d1feb1f6c4d7ae471c182fee5222",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9c573db01c6a43831cb331ee3717e1dffdb1ed4b71698fc530e46a218b8bf9df",
+      "size": 13104
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d673140b5e130946258111080268b3a420f8e8f9c1bc2a4ac25a941f96c40ffb",
+      "size": 678
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_lettuce",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:07:11Z",
+  "vendor": "yu"
+}

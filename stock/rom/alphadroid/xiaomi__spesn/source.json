@@ -1,0 +1,77 @@
+{
+  "branch": "alpha-15.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_spesn.git",
+  "codename": "spesn",
+  "commit": "5d62452d55f70cceb47fcfe27cc737f16b5e8382",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c04ef6136c418a58cf9f78a2aefaf918f7cbbcd79d8adaec48166067a737cf1d",
+      "size": 303
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4a45e8a49086c3c7f340241545c31b9a72cdf403bc06500e72c7cca26324e1ce",
+      "size": 5133
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a6083e09be8f22af1835abaf04e6efda3225cb685f0b0f409a85b21b5e1cb66c",
+      "size": 237
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2378e68ffc40ec8cb1069530a5efa22a98b1f11ce5493f506441b9a38868e506",
+      "size": 8216
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c5bbf195f527db21ea8ad70ca545130add5dd220187c6ecbd298d787a7171bc3",
+      "size": 20870
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a6ff8ed931e3041e71a34eb1c028740b3da2475dec3913c38d32ff3ed73b6983",
+      "size": 2065
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3522525f17cc68d5d9452d7b6678c8dcb81842e549688742fa95fb93684b9f86",
+      "size": 55854
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e1e31ef4a1f00ed0f584da9e78e1bb28ef13783496214308cbec27879143d930",
+      "size": 1043
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0b8405401678408456de331cd045568a4810c3e5318f6be2b24819916b20cf02",
+      "size": 4025
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d346de39d2c0835206db2411fd58cefa972d671e694a5430e43f69ff4ae2bc72",
+      "size": 10403
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4056d3fdf563314368751063595bd8e1c0c4d9d9f2fc82249412d8964c3bcae8",
+      "size": 1130
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_spesn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-03-03T03:16:07Z",
+  "vendor": "xiaomi"
+}

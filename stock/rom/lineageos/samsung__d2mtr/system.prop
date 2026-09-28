@@ -1,0 +1,21 @@
+# system.prop for SCH-R530M
+#
+
+# cannot take spaces
+rild.libargs=-d /dev/smd0
+
+# Fields for custom RIL
+# MAX PROP NAME is 31 chars --|
+ro.telephony.ril_class=SamsungCDMAQualcommRIL
+ro.cdma.home.operator.alpha=MetroPCS
+ro.cdma.home.operator.numeric=311660
+ro.telephony.default_network=8
+telephony.lteOnCdmaDevice=1
+
+# More ril props
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=22
+ro.config.combined_signal=true
+ro.gsm.data_retry_config=max_retries=infinite,0,0,60000,120000,480000,900000
+DEVICE_PROVISIONED=1
+persist.eons.enabled=false

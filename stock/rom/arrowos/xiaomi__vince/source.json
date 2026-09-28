@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_vince.git",
+  "codename": "vince",
+  "commit": "303135742ee54b3eea68aae4d9eabd5125f152a7",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e49f2508a293cca8d6b3e0b811657948f2c0be8fae2a46b11eb6fe1ca44e8fd2",
+      "size": 4688
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "079cf726a7e5e0184c997d4bb1f91b0bd226cf33f74d665c9476aca06bb2c168",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "02c8fe9ec002969116781f655bc852278e3ec4b10841090ebf76ffe4c595e60d",
+      "size": 6872
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "device.mk",
+      "sha256": "33b0dbda4cb861657f6440b453a9788619fe9ddf54d0b7b42b31ecb48485fe63",
+      "size": 16655
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "66eebb44d310d940ea5ee847ba41df7e8212ed233182b7521d9d7f3bf16eb331",
+      "size": 3147
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c2634d5e50dfc47ba2aae204845931d53a2edf271124d64652e981f07dd5b1a7",
+      "size": 33615
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "d2980c838b8532f3b78748e2f2a2e45d0e077e993b3e596bdd14b6d91ab750ca",
+      "size": 45
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "c32def1d6ff12e5865c1c282bd063ed0098149d576b520888367ce2328202454",
+      "size": 38
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vince",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2018-12-25T12:17:35Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_razer_cheryl.git",
+  "codename": "cheryl",
+  "commit": "e7990dd5b94c16574c45bd241a23f1abc76b9638",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "26d37189b9f7928fdecd39c48102dbbd274abc0ae912fe50854e533dc339115f",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f0e51acd0cab8ab78b697fb3f576727de6c6def958954cc1f886a1ec91033931",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0a95697cac60facd8cb3b02bd2ae8e078f4ba5a0d959999cd460b34e677fe391",
+      "size": 4342
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6f581d1db6790ae3387bb91b9fbda5b120da3965ef5ad9205ec7c60cb74746a8",
+      "size": 17173
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "01193cfae7a67f6b673a66f22401d312968868742991a9e5d5b62e9b03a16d40",
+      "size": 3813
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3b5acf3fb02652ff438eed8d678facca2b2103a33e0b4fbb972538792aaf96e0",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3aab091e9f5511d1029336a3388f98bbc0ee73f7ad1b7725fa49d6b79027a52",
+      "size": 43360
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "de701fcf72e1715f8652e993ad6f2a40980861e553f2e7fa86ae68cae837b27f",
+      "size": 44
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "27bab3b0774672e438a7162fda54a868447193830be82d3dd946d3338813bc1a",
+      "size": 6817
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_razer_cheryl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-03-20T05:57:10Z",
+  "vendor": "razer"
+}

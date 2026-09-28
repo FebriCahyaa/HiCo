@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_yuga.git",
+  "codename": "yuga",
+  "commit": "cd552553ba99afe0caf58365334be7c2fce9d050",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "908c42f8c0a9245b677b706531307c0e4fe37a18957022eab8a0ca91abe6a0c4",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7ca773b9f1c749cefeec971c02ecd4e2bdbc9c8dea584b66ff9ac3fcaa6c451b",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "35bc803b60bc1117db261aa204d68e51787efd1c162f1d6b0e643090cf69d14e",
+      "size": 980
+    },
+    {
+      "path": "device.mk",
+      "sha256": "97021ee7a4bcab73751d86d3f8fa788b44673cf47165479b1953decda4baff46",
+      "size": 1238
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "11f2ae030ed226ae0667731c4dd07ae10fa11939177523f7555aff981c260e11",
+      "size": 782
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "03dfcd45f22e850540b80acc9b5332a62b97c6fe2c160f70ba777ad156b24a66",
+      "size": 116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_yuga",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-10-19T19:24:49Z",
+  "vendor": "sony"
+}

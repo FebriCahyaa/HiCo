@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_iyokan.git",
+  "codename": "iyokan",
+  "commit": "8b4461b18f6ba06aa29fb4078232d369521ce87e",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d7272905562e24cc215914ecb0025af9ed3638a3c6598b942b193acf0a2ec1e2",
+      "size": 121
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5d098f0bc50137b4591893909b0cf0a30a7db621849e2bc2bb62a70a8af43045",
+      "size": 1061
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "93834e8d20521dbc963ef85e16227ff179a4fac3a3a7540065271c616d51bc31",
+      "size": 324
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e8d063d9c230e6abe46d589cd8ae1aba9909b056e4d6387377fbf1bde50a9ef0",
+      "size": 331
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5aa5a83689909de4e8ca2666a5bc2527cfa7cff3a92d15ac208639dc6aa4111a",
+      "size": 3245
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_iyokan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:35Z",
+  "vendor": "semc"
+}

@@ -1,0 +1,127 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_google_coral.git",
+  "codename": "coral",
+  "commit": "9033c4ca6313e60ddce10680b9856db7f3a34410",
+  "file_count": 22,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2cc6524add5c5adfa148ee81b2d41ebb8454499406bb8c0c939c2b5624453907",
+      "size": 1366
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5ee7256d516af94d060cf9e740166d37339070becdd1fb7574d5f8b92341bb38",
+      "size": 7571
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bf815dff7e682b51c1a34dc7cfb78e38945eeae2c4b92f26c5ade3688b182fa3",
+      "size": 1056
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "5c07d5f9a9d383728beda705c820f675c0d98e0917da9b0890cc0a2c60af664b",
+      "size": 7695
+    },
+    {
+      "path": "BoardConfigAOSPA.mk",
+      "sha256": "ed48bf0b0efd44a65e14c5c77bf163925b925c7c3861600049ca5ac558a69dde",
+      "size": 565
+    },
+    {
+      "path": "device-aospa.mk",
+      "sha256": "7328762ecadb224b481da0c2eda73bc3e3f2d9dd39f4e3e3cf2d050da2715492",
+      "size": 4656
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "665b03eeda2ba1f7f7609bbb56355b8f4ad8cb52a5a3d0049cc93c7c43ec1bbc",
+      "size": 4986
+    },
+    {
+      "path": "device-coral.mk",
+      "sha256": "b9e030f131bfaf9188e66f295f7e4f7024ec031125ed8db107cf6fa858b59824",
+      "size": 1534
+    },
+    {
+      "path": "device-flame.mk",
+      "sha256": "84adefe9efb241d874bfddcd708fbe863b34a38e12df4dc6b7397380b069d3a4",
+      "size": 1677
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c407465b448001eecc0ed673e38a613ab93122d9871d78fe728660772661f49c",
+      "size": 45781
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f88aa38525edbfbbb93f71378943f14983b55e9fb6724d84ed487ad459b95df0",
+      "size": 242
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "76e9847f2bd9190225f89dbccfec2fb1ad30af0b9b49bcbd510264015f47cd22",
+      "size": 401
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "38f36afbdfbcdf5607e63a485c2ac1e373e76fa9d52ad44e8f4c1f14c769ba49",
+      "size": 838
+    },
+    {
+      "path": "thermal-engine-coral-normal_mode.conf",
+      "sha256": "15bc31b5bbe28904210df3da30ee8368782d81a3a9b397a055b73de255151a69",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-coral-retail_mode.conf",
+      "sha256": "5d10587b932142c0f9c0550c89cd6301a5a767820241f513555f39dce9217640",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-normal_mode.conf",
+      "sha256": "d95d1b5b04f59bc84aae53910b51ee8a6018d9ba455967033ac4ea1e1106735e",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-retail_mode.conf",
+      "sha256": "db400b4087619e02688af013fbb2ad9b68d65321ab28d844842e872f7001b6e7",
+      "size": 2276
+    },
+    {
+      "path": "thermal_info_config_coral.json",
+      "sha256": "09618c1d3c1091adcf4b260c4706dc47e233360a3c710659932e0370a2a406b9",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_coral_jaws.json",
+      "sha256": "9ebf27b33fff124b891ef7a7290656a1ab84956de1ccda9e014d3b5aa71d384e",
+      "size": 5602
+    },
+    {
+      "path": "thermal_info_config_flame.json",
+      "sha256": "ed691982acb0d58742677d26c4d064f7603a583530f4a4049adf47f6b0c10078",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_flame_jaws.json",
+      "sha256": "ef10ff9bd887be55a82ddd6bf6e4d2e40c680991e40ad4006bde99e23994f7f7",
+      "size": 5602
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_coral",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-03-22T06:14:30Z",
+  "vendor": "google"
+}

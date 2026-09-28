@@ -33,6 +33,8 @@ export const useHiCoStore = defineStore('hico', () => {
   const list = (key) => (config.value[key] || '').split(',').filter(Boolean)
   const blacklist = computed(() => list('blacklist'))
   const whitelist = computed(() => list('whitelist'))
+  const socialApps = computed(() => list('social_apps'))
+  const mediaApps = computed(() => list('media_apps'))
 
   async function refreshStatus() {
     try {
@@ -104,6 +106,7 @@ export const useHiCoStore = defineStore('hico', () => {
   }
 
   const monitor = () => run(`${HICOD} monitor --json`).then((s) => JSON.parse(s))
+  const thermalSources = () => run(`${HICOD} thermal sources --json`).then((s) => JSON.parse(s))
   const log = (lines = 200) => run(`tail -n ${lines} ${LOG_FILE} 2>/dev/null`)
   // One text file in Download for bug reports: state, device, settings and the whole
   // log (with the part rotated to .old). Prints the path.
@@ -133,6 +136,8 @@ export const useHiCoStore = defineStore('hico', () => {
     running,
     blacklist,
     whitelist,
+    socialApps,
+    mediaApps,
     refreshStatus,
     saveLog,
     loadConfig,
@@ -142,6 +147,7 @@ export const useHiCoStore = defineStore('hico', () => {
     loadGames,
     loadSessions,
     monitor,
+    thermalSources,
     log,
     restart,
     restore,

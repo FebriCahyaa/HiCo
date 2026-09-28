@@ -1,0 +1,92 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_venus.git",
+  "codename": "venus",
+  "commit": "f85f9fc73f1bd8697fd858e48ed8f5f6b59697ab",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fa2e9f1795ab1ff9ac51898b513b93f8ff5a76b6f706f1372749c3376c1f2b00",
+      "size": 3984
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "67471b44f8946a5ce29c1e3c5a95797639321142b80bf2b9325987f87a5610dc",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d31d5e67e96f25087785be9641590edbd878ca71b899a92c8aad3e9a48f371d6",
+      "size": 6955
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fff15e471d332f6ae5d5e2b5be65f30b3ec3057bfbdd6b8c6668b13d306e5d8f",
+      "size": 22337
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "544b380a56620e93685190d4a32ead12662f79435b98422cd40ed95cb7f852ce",
+      "size": 2981
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "befddc73631720f093a6b327fe2c69034ac73dec149d320035f912a88c1f351f",
+      "size": 1205
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "f26ad719f686d184a5fd2618a61c0e630761aa4f1814a28883a175edc2798e14",
+      "size": 2743
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "66c9d7647b85cb3f6b9a034de7354b30f8eb7ced84992dd8e6c7f703f73a0720",
+      "size": 14128
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "826f639fa01602fe32c2b67ee0546df66eb6c0129c40b773f189bf09028f4131",
+      "size": 6023
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "32f6b18f2f47b3cd9f2f85da24453c48c4ab997cf9737dcf48b37dd667ebf2e5",
+      "size": 58796
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "343c2f8d01fafd62ce5b7879da578b7c5cedcfcf35473737610fbd2275b06ebb",
+      "size": 310
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7b07ca534aa7a927c5c943eac67826bf5152bc4a5ef1e88a62e436be38a63a80",
+      "size": 968
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "cdc2bcf1bb3b4f39b69e7eb5779f21d945235e3d797b9732d52a137889b66960",
+      "size": 10336
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_venus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-07-13T19:16:23Z",
+  "vendor": "xiaomi"
+}

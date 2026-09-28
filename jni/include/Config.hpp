@@ -21,11 +21,18 @@ namespace hico {
 /// trips raised, every game at max); off: never unlock.
 enum class Mode { Auto, Extreme, Off };
 
-/// How far HiCo pushes the device for a running app.
+/// How far HiCo pushes the device for a running app. The order is the schema's
+/// range: a key with max 1 accepts stock and relaxed only.
 enum class Level {
-    Relaxed, ///< vendor thermal daemons keep running with configs tuned for the chipset
-    Max,     ///< thermal throttling disabled (games only)
+    Stock,   ///< the ROM's own thermal, untouched ("OEM" in the WebUI)
+    Relaxed, ///< vendor thermal daemons keep running with configs tuned for the chipset ("HiCo Balanced")
+    Max,     ///< thermal throttling disabled, games only ("HiCo Aggressive")
 };
+
+/// What the foreground app is used for; each scenario has its own level.
+enum class Scenario { Game, Social, Media, Other };
+
+[[nodiscard]] std::string_view to_string(Scenario s);
 
 [[nodiscard]] std::string_view to_string(Level l);
 
@@ -39,7 +46,9 @@ enum class Level {
  */
 struct Config {
     Mode mode = Mode::Auto;
-    Level game_level = Level::Max;     ///< level for Flux games
+    Level game_level = Level::Max;     ///< level for Flux games (stock keeps the ROM's thermal)
+    Level social_level = Level::Stock; ///< level for social media apps (stock or relaxed)
+    Level media_level = Level::Stock;  ///< level for streaming / video / music apps (stock or relaxed)
 
     // What is unlocked while a game runs
     bool unlock_on_lite = true;        ///< also unlock when Flux runs Performance Lite
@@ -69,6 +78,10 @@ struct Config {
     int exit_delay = 3;                ///< s, grace period after the game leaves before restoring
     bool notify = true;                ///< Android notification when the safety guard trips
     int log_level = 2;                 ///< 0 error, 1 warn, 2 info, 3 debug
+    /// Social media apps (social_level); starts with the common ones.
+    std::vector<std::string> social_apps = default_social_apps();
+    /// Streaming, video and music apps (media_level); starts with the common ones.
+    std::vector<std::string> media_apps = default_media_apps();
     /// Apps that are not games but get the relaxed level (never max) while in the foreground.
     std::vector<std::string> whitelist;
     /// Packages that are never boosted, games included.
@@ -82,7 +95,13 @@ struct Config {
     std::optional<std::string> set(std::string_view key, std::string_view value);
     [[nodiscard]] std::optional<std::string> get(std::string_view key) const;
 
+    [[nodiscard]] static std::vector<std::string> default_social_apps();
+    [[nodiscard]] static std::vector<std::string> default_media_apps();
+
     [[nodiscard]] bool is_blacklisted(std::string_view package) const;
+    /// Scenario of a non-game foreground app: Social, Media, Other (whitelist) or nullopt.
+    [[nodiscard]] std::optional<Scenario> app_scenario(std::string_view package) const;
+    [[nodiscard]] Level level_for(Scenario s) const;
     [[nodiscard]] bool is_whitelisted(std::string_view package) const;
 
     /// "key=value" for every key, in schema order.

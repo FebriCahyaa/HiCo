@@ -1,0 +1,42 @@
+{
+  "branch": "jellybean-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_p5att.git",
+  "codename": "p5att",
+  "commit": "a198997954e2e21ac7cb5dacd21dc91bdab78ab9",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "57e9141e049ed6c287188c8542d65775be5ac9433bf8ecb963a5ebf6c2bef907",
+      "size": 2688
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2b288839efe7a2618a2598ca1e512d1bba5f7bd0afc11ea4e10281b5146c9668",
+      "size": 2095
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c6430280688073eafdd50c1284046cef12a43be4a01b3e692442aa0ec4149a3b",
+      "size": 2024
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "071ffbffe68645d1eef3ab4aae453a63268955a0ece3547461f4502d2199ab67",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_p5att",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:10Z",
+  "vendor": "samsung"
+}

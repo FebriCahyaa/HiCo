@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_smultron.git",
+  "codename": "smultron",
+  "commit": "5a4e1926ad24b208376e4d96cedd7d8ed0c79d1a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "be014e8cc8229ed6e5fee6fb622d7ae7148e9b4b16098faf1a55896de78c23f7",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "34107ac22d61d9d47edecdae0d55eb76d1b64139f57c27a9042980fc8598b99b",
+      "size": 1063
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "80113c56ff1a425f06158e9bf6e459b50b35a36b4b5896d8e0c41039d28a20a1",
+      "size": 329
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c94ad35db070c70c1051ced57afc7c0f4e7bbdf291cbf6f05f2d97aeeebac7f1",
+      "size": 333
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0cd1d075f05d6c25775b5c77188195ba58d155cca7001f1e3783ca69f0d3191f",
+      "size": 2826
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_smultron",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:58Z",
+  "vendor": "semc"
+}

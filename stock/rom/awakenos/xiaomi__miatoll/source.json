@@ -1,0 +1,302 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_miatoll.git",
+  "codename": "miatoll",
+  "commit": "d580815396b3101422ee5f9a52e306bff3e2d823",
+  "file_count": 57,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2a278384851a13c828d458fc17bab3d9c687a40026773434848319d9a4ed53af",
+      "size": 216
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d4169ec4b53b21bab3f5a5f311097644762e8f2062aa849a464882612e7cece6",
+      "size": 4229
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "28679ce4a55184be1f32a634a364d67e34b62afabee14bb58162589c9569ce04",
+      "size": 248
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b374c143ad168a4338033c167c091c0c5ac397391c761f61c6e25cb208c1c35f",
+      "size": 6603
+    },
+    {
+      "path": "configs/thermal/thermal-engine-curtana.conf",
+      "sha256": "5998569a74efaf6a191e0cc3ad578c31ec35f08f61bfe122661bb9c29d63dcd2",
+      "size": 1561
+    },
+    {
+      "path": "configs/thermal/thermal-engine-excalibur.conf",
+      "sha256": "ae631635f57e34b36870e9db2628c3c875c215ba8dcc2fd4a92c8c49dfa02e2a",
+      "size": 1565
+    },
+    {
+      "path": "configs/thermal/thermal-engine-gram.conf",
+      "sha256": "ae631635f57e34b36870e9db2628c3c875c215ba8dcc2fd4a92c8c49dfa02e2a",
+      "size": 1565
+    },
+    {
+      "path": "configs/thermal/thermal-engine-joyeuse.conf",
+      "sha256": "761f9e97591ea49f774f647ff9a8e498094b608ea0bcedfef8b2ff4dccb807a9",
+      "size": 1564
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "0adcba09905542ee9336591174286d413efbb915f4180058b969766119761904",
+      "size": 5482
+    },
+    {
+      "path": "device.mk",
+      "sha256": "86b486def5cce5da9da5d7cfcfb698e849e42671ba5fcb69fbdfb098b8b444bf",
+      "size": 24388
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5ef04e9b31f44a8021f64963a8840a49933abc55713f1b32c0798c1206d5cfdc",
+      "size": 1757
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b6634d2e6ab6671ded600728888bd766c496139dcbf031b1d2722ccc972a6aa5",
+      "size": 82062
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "42beb60d63f16c71e8387bf64bcb11392613f8454875bed3273408d6bee3c93a",
+      "size": 494
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3a85901111374742c44b36a4cf5f900d959f755605818c57929590787f771c72",
+      "size": 332
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "f8ae986b5b26bf315c93a4a0a9c4fa6a0f2f7c0fdae6b1f14a7988e5dff12255",
+      "size": 2326
+    },
+    {
+      "path": "thermal/OWNERS",
+      "sha256": "2394ec057804e4c8b65a3f47815654fd3fc2cc7e2440e16bbdf891dfb109ab52",
+      "size": 52
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "12c8cfc4ed6cf6cc1f4f41ff3a74dbb86037328d8aedc3f0ce18a3a3cf6cfcc1",
+      "size": 34359
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "f9c177c5f57a8f53984b02350908e77607bc2ddc82ac0b2a2e836dd9a92bd8d8",
+      "size": 3796
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.miatoll.rc",
+      "sha256": "e16822e602b293bfbe21478670d56461e8521583ee39b07e2fc09884c7a64e2c",
+      "size": 424
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.miatoll.xml",
+      "sha256": "e232ddad5a10b5524e16356d8f786154b7e6fbbbd85b603cf8763f2d6d288a44",
+      "size": 350
+    },
+    {
+      "path": "thermal/init.thermal.symlinks.sh",
+      "sha256": "347ac270501e96cdcf5c6669d3f642f068e7fb4fd5dda9aa050821e7330bf512",
+      "size": 298
+    },
+    {
+      "path": "thermal/miatoll-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "thermal/pid_1_0/Thermal.cpp",
+      "sha256": "20d320378c1810bda217f6a4381913435b5b158b8bf33653e58fadd83d99e597",
+      "size": 34118
+    },
+    {
+      "path": "thermal/pid_1_0/Thermal.h",
+      "sha256": "1bb19d198736642b0ba5f788ab621ce85ef4b2f8e3edc884498c16c6aedea4e7",
+      "size": 3804
+    },
+    {
+      "path": "thermal/pid_1_0/service.cpp",
+      "sha256": "848755e945e9086a1995cd4b0620907a539ba708c840f633f93890162ab268e1",
+      "size": 2095
+    },
+    {
+      "path": "thermal/pid_1_0/thermal-helper.cpp",
+      "sha256": "49f886a5f75da7136fbb044680c52a090cfe794bc74cedc405306f63d4132add",
+      "size": 45469
+    },
+    {
+      "path": "thermal/pid_1_0/thermal-helper.h",
+      "sha256": "4172fcc726e325e0116a01e14433221cb8529628d51243dccac84ccf959e1432",
+      "size": 7578
+    },
+    {
+      "path": "thermal/pid_1_0/utils/power_files.cpp",
+      "sha256": "b513f4255db7d0b0d2c102cdeea6e91a1ea76abb2bb5cca1bced7fda0820430b",
+      "size": 12130
+    },
+    {
+      "path": "thermal/pid_1_0/utils/power_files.h",
+      "sha256": "a3a914363033541d61e164fdc6aa139a47bc1d833f38382b8b781f898ea51b71",
+      "size": 3287
+    },
+    {
+      "path": "thermal/pid_1_0/utils/powerhal_helper.cpp",
+      "sha256": "455032685c55cff7c760a9d34b729f0e492f709c2b7ad505e7e29bd67bf73f10",
+      "size": 4151
+    },
+    {
+      "path": "thermal/pid_1_0/utils/powerhal_helper.h",
+      "sha256": "317da101188db9f947466f33c97cb4420313f130496e015dc284f0735f03615c",
+      "size": 2274
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_files.cpp",
+      "sha256": "1ad33531e156a8c90f21cab1d5d58e229fa1f9eec28a977821e16035430f9627",
+      "size": 2847
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_files.h",
+      "sha256": "9d892a00a4c3adfccf51abf14da82bb26f8f1ad3e4b094061fb565a06c917d54",
+      "size": 1896
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_info.cpp",
+      "sha256": "ebb9dbd57f1c56463af34b984791d6bbaa7d40afe40e12c3e5fe46f52c161021",
+      "size": 44676
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_info.h",
+      "sha256": "54c552ae081295c6567e8ee4089282645d2b94c4e7c1ed39efaf24bccd817e82",
+      "size": 4865
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_throttling.cpp",
+      "sha256": "377ceb852885a5b540e79835bc81361a890c34e5f2cb40f6d960728056e65874",
+      "size": 19304
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_throttling.h",
+      "sha256": "7ebd6eb951dbfa9b9b41a8cb3156dbf611f7cafe158d220c093b15ec06e554da",
+      "size": 5418
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_watcher.cpp",
+      "sha256": "fab990215dde3ecdb7fccc8cf851336ee041fd3ad99aa0adf25f54420487da61",
+      "size": 19017
+    },
+    {
+      "path": "thermal/pid_1_0/utils/thermal_watcher.h",
+      "sha256": "be0145714c65b3fc2193e451c6b9fd6b2069a6a4edf4d714eacf7cd0c1ce0ef2",
+      "size": 3997
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "7e9e66d191e76823f3bf9c2078f33e732500db8ac34b6cc82d94d891d5309115",
+      "size": 2122
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "e46434252d53c593ed56326fe4b6e9224b7caa5b22bf2f3a7f33655d85ff42b9",
+      "size": 46504
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "d00a2ee9d4051b6bcad4fc8f86a972258f64da5e7b5e5c451af1fdce0ead1f6d",
+      "size": 7630
+    },
+    {
+      "path": "thermal/utils/config_schema.json",
+      "sha256": "0e8021bf405a6c231ee2948c1f5115235661dd8a499f4ba891b383d947486b1a",
+      "size": 6592
+    },
+    {
+      "path": "thermal/utils/power_files.cpp",
+      "sha256": "b513f4255db7d0b0d2c102cdeea6e91a1ea76abb2bb5cca1bced7fda0820430b",
+      "size": 12130
+    },
+    {
+      "path": "thermal/utils/power_files.h",
+      "sha256": "a3a914363033541d61e164fdc6aa139a47bc1d833f38382b8b781f898ea51b71",
+      "size": 3287
+    },
+    {
+      "path": "thermal/utils/powerhal_helper.cpp",
+      "sha256": "455032685c55cff7c760a9d34b729f0e492f709c2b7ad505e7e29bd67bf73f10",
+      "size": 4151
+    },
+    {
+      "path": "thermal/utils/powerhal_helper.h",
+      "sha256": "317da101188db9f947466f33c97cb4420313f130496e015dc284f0735f03615c",
+      "size": 2274
+    },
+    {
+      "path": "thermal/utils/thermal_files.cpp",
+      "sha256": "1ad33531e156a8c90f21cab1d5d58e229fa1f9eec28a977821e16035430f9627",
+      "size": 2847
+    },
+    {
+      "path": "thermal/utils/thermal_files.h",
+      "sha256": "9d892a00a4c3adfccf51abf14da82bb26f8f1ad3e4b094061fb565a06c917d54",
+      "size": 1896
+    },
+    {
+      "path": "thermal/utils/thermal_info.cpp",
+      "sha256": "1d2f01f8777fdd0372582f01febe60cea0d1145c3c9f60073a55baf4a7b9b923",
+      "size": 46493
+    },
+    {
+      "path": "thermal/utils/thermal_info.h",
+      "sha256": "650f3e146d227a139f6b9fa8eeb261074f396d87133fbc718dbf5928dc188282",
+      "size": 4966
+    },
+    {
+      "path": "thermal/utils/thermal_throttling.cpp",
+      "sha256": "7d0e5f0ed5593c4af8aecace6d50e8203bf74a356486e522b966a934eeb7199b",
+      "size": 29793
+    },
+    {
+      "path": "thermal/utils/thermal_throttling.h",
+      "sha256": "84022957d58bc0e78320545ce5e0172194e67966f3702b383864948617451894",
+      "size": 6290
+    },
+    {
+      "path": "thermal/utils/thermal_watcher.cpp",
+      "sha256": "5ce66bb336d230fe7b8879c57ed7b91a88075068d08dc0d0922a3f6528262bae",
+      "size": 19014
+    },
+    {
+      "path": "thermal/utils/thermal_watcher.h",
+      "sha256": "be0145714c65b3fc2193e451c6b9fd6b2069a6a4edf4d714eacf7cd0c1ce0ef2",
+      "size": 3997
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4fb526c20697ba011ca44b477486f98674da319197ae46bca1d5740ee8b6db4f",
+      "size": 5546
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_miatoll",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-02-19T07:03:07Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,122 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_coral.git",
+  "codename": "coral",
+  "commit": "f526c18c5315932e5931a9e18f3b89cbb3128eed",
+  "file_count": 21,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "627b4fdd836fbb2c17b427a6701becc268b83b5a8c40a3b5831fd122ef71dd47",
+      "size": 1332
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dad236b7f32de127297930e1f33c53f7930a85596e62735265d1bdb514682add",
+      "size": 1244
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "540b6b1bbecf4440c60e68287aceb7d87f4d69898577817999d5c65236ebc254",
+      "size": 7475
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "16dc5413ac210b203240fff1ee457c8e563b01443dfda3637caeaac3088e5155",
+      "size": 801
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "f0b509832e31a3f8189199eaf459c302cfea4fa37add2dbeb57665388437381a",
+      "size": 5171
+    },
+    {
+      "path": "device-coral.mk",
+      "sha256": "13cd7d0d70672a92bac8c8540d072da3753eb217cc2f845d1c1601018fc844eb",
+      "size": 1494
+    },
+    {
+      "path": "device-flame.mk",
+      "sha256": "b4039c8ae2f588e0c6256099050c2d88d02a094126fe6fcf6abd87d854770e1f",
+      "size": 1602
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "9a7cda79c371fda41610a7019604a0281620bb9e1ff8da388a32bca7b1681abb",
+      "size": 2615
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6a8a6926185b3a67c4bb940991ce7dc72ac605ed281c7a50dd4dad69ec837d39",
+      "size": 40307
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "721949f3904368cb36f27848ea71516d1369c0413f4448897b9e7542c5fac3cb",
+      "size": 211
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "76e9847f2bd9190225f89dbccfec2fb1ad30af0b9b49bcbd510264015f47cd22",
+      "size": 401
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "38f36afbdfbcdf5607e63a485c2ac1e373e76fa9d52ad44e8f4c1f14c769ba49",
+      "size": 838
+    },
+    {
+      "path": "thermal-engine-coral-normal_mode.conf",
+      "sha256": "15bc31b5bbe28904210df3da30ee8368782d81a3a9b397a055b73de255151a69",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-coral-retail_mode.conf",
+      "sha256": "5d10587b932142c0f9c0550c89cd6301a5a767820241f513555f39dce9217640",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-normal_mode.conf",
+      "sha256": "d95d1b5b04f59bc84aae53910b51ee8a6018d9ba455967033ac4ea1e1106735e",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-retail_mode.conf",
+      "sha256": "db400b4087619e02688af013fbb2ad9b68d65321ab28d844842e872f7001b6e7",
+      "size": 2276
+    },
+    {
+      "path": "thermal_info_config_coral.json",
+      "sha256": "09618c1d3c1091adcf4b260c4706dc47e233360a3c710659932e0370a2a406b9",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_coral_jaws.json",
+      "sha256": "9ebf27b33fff124b891ef7a7290656a1ab84956de1ccda9e014d3b5aa71d384e",
+      "size": 5602
+    },
+    {
+      "path": "thermal_info_config_flame.json",
+      "sha256": "ed691982acb0d58742677d26c4d064f7603a583530f4a4049adf47f6b0c10078",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_flame_jaws.json",
+      "sha256": "ef10ff9bd887be55a82ddd6bf6e4d2e40c680991e40ad4006bde99e23994f7f7",
+      "size": 5602
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_coral",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:08:07Z",
+  "vendor": "google"
+}

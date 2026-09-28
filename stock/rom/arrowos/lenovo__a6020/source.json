@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_lenovo_A6020.git",
+  "codename": "a6020",
+  "commit": "3495b4bb793f15bf970fcae5d7cdf8adac459ebd",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a22da2ecfff7806879be0a4e90c50e398eb1c3eabd6aa6407cd1524b95b63e44",
+      "size": 1503
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2e2686f60c9cb73eed4a2cf38d7f122a5c2273c4c8a214dbdd72483e481e53d8",
+      "size": 801
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "22959acac66187ba09f49aa4d7d696f37dba3edb573687cbb9ab195abc59b40c",
+      "size": 7306
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "ce4d9dc4409601b5540813458f786c3c5d2525dd29a84bbfa5960033e1856100",
+      "size": 3695
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4a540594661c97bcc22dbdb2645b42b7ce2834530fdf664b64ab3a31eed16cb6",
+      "size": 12738
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f317a54f02189313b0bdf83273cdce14c067f6342f15571b550deb8918dcbcb0",
+      "size": 632
+    },
+    {
+      "path": "system.prop",
+      "sha256": "51058e1e2ae472eaa2845b7528ec0ba63081b78e960424a7274b16c9b1d81b93",
+      "size": 4028
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_A6020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-02-07T01:36:19Z",
+  "vendor": "lenovo"
+}

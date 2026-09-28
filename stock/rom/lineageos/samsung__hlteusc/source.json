@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_hlteusc.git",
+  "codename": "hlteusc",
+  "commit": "c6a993cfbe1de921a1b06c272214f611d6031ef0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0055e06a05517fb0ba3a9568dcb425e349e104ef12099755026b35e6142eced1",
+      "size": 724
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "870a684084ec9419713575665a8bbf80a073231e6b8019fb4064bc6595798cb7",
+      "size": 1233
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8538f072597acf12b46ac1e8e29ee1d404be17e633b1e7f56299addac1ed54b0",
+      "size": 918
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bf910f36cf4f507d7de218564b25b0f76eab2f0fcf5ebeee4022cbc6b724162e",
+      "size": 111
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "861b48ce1e468e8180ff1eab061ec5cc3a47d23cea07a2b3d2ffbc1d74de9958",
+      "size": 769
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3732d304227943a3e544fb86959c371f091946de6852b471905f0f19b7f9c225",
+      "size": 147
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1dd054a23c930d8c78c6b32e75f8a4589b9424eeac6682c1ab0257df9f4dcf40",
+      "size": 31
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_hlteusc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:45:16Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_leeco_s2.git",
+  "codename": "s2",
+  "commit": "fd891eb9ff11d2cd10a5215b635111e6dc97cdad",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b9122fb28807565c3e46f7bf0ee5c8cb7264a54d6c9bab021f44cbd01b6643f9",
+      "size": 4142
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5110c74413c29647b83f7143afbbc69ed83c1e4607cc4350e28cedb5d73a2fc6",
+      "size": 732
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "84241aa78327a06c673906cdad3e02b048ac9a2ee64b15ee317ac6f37c1a0292",
+      "size": 7689
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "78b70d730d50d4e155a231c3391b19b79183f9a66672814cdb0f70404e2668ca",
+      "size": 3224
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fe5face988b38e341cfbb39097a09333c4d64b873135cd5004b9104af2c8a502",
+      "size": 19966
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dc8591305f789aa52c08ec458798886fd4d90a3213138da23017bd1247b509a1",
+      "size": 3284
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4eccc9a141105ad52bc1d7a6b17d65e56500479f987e2d6d3c9d4388dd0365cb",
+      "size": 18679
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "5e237f36cfba4addb2773bd48953e862b563a3d6c80d89180481533626c54b14",
+      "size": 51
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5ccf728c3064fd8237d16d0acbfe809f40d75cb7262e1e1a09e7dcf3899467b3",
+      "size": 7508
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_s2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-01-19T06:12:35Z",
+  "vendor": "leeco"
+}

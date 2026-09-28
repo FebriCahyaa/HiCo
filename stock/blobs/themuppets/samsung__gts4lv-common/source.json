@@ -1,0 +1,45 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_gts4lv-common.git",
+  "codename": "gts4lv-common",
+  "commit": "b04a4eef4efc9975b2e6fbb0beee31c525fc0c95",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "eef1e4f3d90983ec244041ccc6aca2ed5c5606f02eb14536a7ee741f1eb8abef",
+      "size": 532
+    },
+    {
+      "path": "proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc",
+      "sha256": "228faf829ec9e4370ce2dbbe1a6fe950330de4caf979a4eaa5df07d101bd818f",
+      "size": 294
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "0b722b633b4229ce7d2a6e8580941a725bfa2f55b2907fad39466af89d01fef2",
+      "size": 3788
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml",
+      "sha256": "3f5b1c78f8a06eb25ae5b4e873a010802ec8bd6546091095c5fdee22b45e1566",
+      "size": 562
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_samsung_gts4lv-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "gts4lv",
+    "gts4lvwifi"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "samsung"
+}

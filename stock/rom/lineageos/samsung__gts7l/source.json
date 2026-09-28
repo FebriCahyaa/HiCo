@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts7l.git",
+  "codename": "gts7l",
+  "commit": "e3cab80e323c389dd05355141b917151f5790773",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fb44583af33fa1227e799309fb46e498b6d8b7b23adbf7f0dc74e21110de64ec",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c5124401fee596bf6768eecb156fe5dfce3d5d8a854598efb32289d909edd78b",
+      "size": 158
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "978b57d63ae21ecfb82187f57f7c00352eb6a53963db41a584d1a4be4c1234a4",
+      "size": 812
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fcc96f518b4ed89e86a79d930cc108ffa1f9aaf42e5eadcb7ebf49a6854811af",
+      "size": 1161
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2d9bf00b91c5b09021e441d02854e5e23daf8a78ac7ce56e87da5dd05b7cde45",
+      "size": 749
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "bd064b80c7d0cfb93c0dc75a4e129fabac35db1ec65349c964b699326752afe4",
+      "size": 132
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3b47489f07db8f85fdcce1f8ec5912697a60f06a7be75d26dbfeb0ca73472cdf",
+      "size": 9835
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "328d35ca124aee38f71cb3d125da23548be27f8591ddb71fab1f16b6e3321108",
+      "size": 271
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gts7l",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-01T21:38:17Z",
+  "vendor": "samsung"
+}

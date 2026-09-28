@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_X00TD.git",
+  "codename": "x00td",
+  "commit": "db3ec0f203805281b2cb15e043aac4239548ccde",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "530a67242350f7382bcce878fe9c503a2ea136358b05c2a1254c4de09d5f94ce",
+      "size": 201
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bed04acdea4b1a0af553f400fac185874dea07264dcca2247be030b710520b1c",
+      "size": 594
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "9c28c00409808a6c2daf574f920d1e83fcf9aa5c6d35c0b825b6e06bf785473d",
+      "size": 966
+    },
+    {
+      "path": "device.mk",
+      "sha256": "617382889dca25d331ed7b484b3fcd538495d3a34a0f6c349b6bb3789d20dc15",
+      "size": 902
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "456f00fec6cc2a5e4cf9cf3417d07db0704da043c1406a33ddf64811c6d2cadb",
+      "size": 1596
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f14baf9cbad16bdfc42ba3ac39ac50824f843d9ab00326d92347e700deffbc06",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1132299ad0e37eb81dc3598efa3a9aaefbec8eebfac4e99d1fca411c2442a985",
+      "size": 33878
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_X00TD",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T15:25:55Z",
+  "vendor": "asus"
+}

@@ -1,0 +1,77 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_deen.git",
+  "codename": "deen",
+  "commit": "42a2b86bd30ed4cc35648d4268fa548cb8bf4475",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "382b4a8c9384b40346c50b00a603721d69c66aa24b9c0b6d34736b8a258a888a",
+      "size": 5414
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c9984d03ab654a8956a410df2b6ef7a779e9582817b2ebe98e1a36b889d5be1f",
+      "size": 750
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e0f3a10b2a1f255a11de989b0ec1468f5725c8aa45a22d98a591ded29cf06243",
+      "size": 7943
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "050ae4fad5d55a163a1be25a0ffa6da0708758310d178920ae2a8fc054fafad4",
+      "size": 2840
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7cff602355aa83f973d12e30eaa7c8dc019fc43c1bab04d8c53f3e075cc6e02f",
+      "size": 21903
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8d534720c1844809996b6a607c904c34c2ed6502be77ebf237d737f7310cf3f9",
+      "size": 3868
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "dc3233de3ec1b8b308ad7bdf597f5a82fb5002be5645873916e032525a270be1",
+      "size": 369
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bea3bb487b3ea3b4cda7237b4b35093b7471dfa4361fd24c03e0d273b29d60e7",
+      "size": 46897
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "78361d6520b0e174e043709de9f8932f11d101cde11ccbd4eba1874cfa2e35b8",
+      "size": 850
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2eb8f3d0de48885ceee2eb583de13b8aecd78fbc46443799d0d500f24f574368",
+      "size": 1193
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "14d99be2e98ee5e546c6da4d40858b8904e53e4f59259791b3d6ba619af8326a",
+      "size": 5735
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_deen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-09-03T16:34:26Z",
+  "vendor": "motorola"
+}

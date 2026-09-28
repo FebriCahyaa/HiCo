@@ -1,0 +1,57 @@
+{
+  "branch": "marshmallow-caf",
+  "clone_url": "https://github.com/AOSPA/android_device_oneplus_oneplus2.git",
+  "codename": "oneplus2",
+  "commit": "e1ecd35b606a7f803c871bce095505e6ffa0003a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "80735b2b1ff1673f177341eb9e73eeeb0603141c9f772673ebb5e253823ccd14",
+      "size": 5333
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "519c9776ecda40ac3e9b53b71ffbfcdbcaa67c805679740a136c1cf4f4d83e8c",
+      "size": 5421
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0edfe24df062424043fae3de087cee13756f61eda75d92db66a944473bfb610b",
+      "size": 6435
+    },
+    {
+      "path": "device.mk",
+      "sha256": "735baddfb3a9b9ab550d876d3f178d383fd93ec48598e680a0ff04a3754756fa",
+      "size": 10568
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "02ba1a9245e952a22f4bad57952a4c3225271790de1c6b9537b41fedf7cabd21",
+      "size": 1454
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c5cc9b5bb0120a76f38d55606b1adc19f9ae2a2feac11f7f9c2b812a001c0ed5",
+      "size": 14900
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "df2d1f8ca29d2d1ba0d89e2d25398350860af004da5f36a213385bf60647dfe5",
+      "size": 54
+    },
+    {
+      "path": "system.prop",
+      "sha256": "58a23874a4e0cbf9a7853a485b5ba2caecb82a47daf3bd171395e5c6b6aed768",
+      "size": 3453
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:40:13Z",
+  "vendor": "oneplus"
+}

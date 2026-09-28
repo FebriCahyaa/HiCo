@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_alioth.git",
+  "codename": "alioth",
+  "commit": "ed5194c1ff26d693a0cee3139d7a2495aefb282b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "37b5984f9f018d528ca051519259b015a39005241e30036ef833849fd5319681",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7e4525c33533ac9936341096b75b4870e53a1e907979d35875f2e4e710b25752",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "491d3b704c31851d1a074d12f419b276ac9fc705fa63e7bb5a3367817efed24d",
+      "size": 589
+    },
+    {
+      "path": "device.mk",
+      "sha256": "df60540b4f21c53cb744fa66f329a767c35cf83701afe9b426395a9b60a02a09",
+      "size": 1186
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "68153c256f5ad3e4d3afc817ef8c139efdbd173739e8eeadc304fb8f63b8737a",
+      "size": 3075
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1e1e67873fff1c797e81fbf56fde23cb32f01ccfb149c340c6265d7e5907b36c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fbda9eadb68dfe41657b1841852fcb21c5e3f815932e58e267f00861e12b768a",
+      "size": 20932
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "28c29146c50ac358937c3f0fcc6263881a39e79ae7be2fa3ba6bd7510e6fe087",
+      "size": 1590
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_alioth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T05:11:16Z",
+  "vendor": "xiaomi"
+}

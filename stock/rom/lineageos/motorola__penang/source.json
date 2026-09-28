@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_penang.git",
+  "codename": "penang",
+  "commit": "d4948e8be392232c386ac94f6234d147dbc60c3d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dd79c044379d50da2a1bc8c5cb5fd028795f371292809195e160eacd9f6c0518",
+      "size": 313
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8cee7a71c4678004790db8dbb830027dfbc45d5b43450d52451cddfe328781b8",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b0669ba092ae89bcba2328d61f85cec2c70b4a544ed383d988cb5a04a838bf59",
+      "size": 1767
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b8ec9b9cb7519cf180da35896859149a76c42089fcccdcc8f3bcc5052fccfc64",
+      "size": 2734
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "62066362a7921cd4c62691698ef7129dca95e986d86fd7e8d5625fbd5eaed6bc",
+      "size": 1351
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f8a9a31fac7efe57eafc269a584819265927c3cfb6cacd27295f28f64d32c4a2",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f527664dfdc1d09b68eb5804624bceeb2a56af49361e36c1fea6463ec4304329",
+      "size": 12386
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2521f5c2c3f29739782f3c00f760c03b9f8dae85f73d3f4b77af4917c172a9d9",
+      "size": 650
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_penang",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T00:16:09Z",
+  "vendor": "motorola"
+}

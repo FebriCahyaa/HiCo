@@ -1,0 +1,62 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_land.git",
+  "codename": "land",
+  "commit": "409ba030f6076e34b8a4c04cc329c01c90ec9e23",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3410ad1e43f0e5f1c6edba1ba3ca7ac53e095439fd113b31ee850fa67a774c28",
+      "size": 4835
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f4be8aa5282e6d407cecbe52b836959af9da9f0549913fd79b99dabb6b24455b",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6de69ffe4771f3e16670fee9e68212941364ffbac9a1dec7307a57de1ee162a6",
+      "size": 7686
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "a450441aafb1bb607a944a6ae17696cda2d2886f5b526ede375f95b8dda5e09c",
+      "size": 2466
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4361ba1b7065ff6789b7dd5199801eadd34b710fdeb271c596a7149bcddef320",
+      "size": 18968
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c3b6a2cf3fe2017445ce14ff68e91c176a19358554e1f06fdba85fb727739043",
+      "size": 1995
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d473ec76e647f352a6cb3e9b1b62ce1984d624e85d3e4509cdb3beae9dd61af9",
+      "size": 58626
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "cf2aa8aaf94485dc458f46941f64bec337cfa164ea8741e9b3a9c89559e1e351",
+      "size": 405
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "30586deeaffc5b645bad3c39934dbf14ebcece72112c57e0c39cffd776a84f0c",
+      "size": 35
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_land",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2022-07-29T07:24:22Z",
+  "vendor": "xiaomi"
+}

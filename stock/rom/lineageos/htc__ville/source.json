@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_ville.git",
+  "codename": "ville",
+  "commit": "a6fa1ea087792812433da61713b7c42d5c03f9da",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "913bdcae05e79121d4ae35dafb3be781076cf1ba5fdc4536ad3c5e71624ff34c",
+      "size": 711
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9ef03c49199119d46f8ad44b689d7c9d83b28da3b22dc1caf0b74d820278a824",
+      "size": 3071
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b416b92b0a3159d2ae0fc6672aae1c5914257787de231b13480d4447637ddff7",
+      "size": 2663
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9535fc8be56e3d29319b93d20b7e281de47592a516177b9ed66915ff35dea6fe",
+      "size": 719
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f14d0a11801a46f0c5edaf61dc75819c1feac7b2c3cb7a1566ddba8717dca3ad",
+      "size": 104
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4384f2c100fdc6cd4d530147c9bce18bf61b35185780a82b50e12db184edde5d",
+      "size": 504
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_ville",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:16Z",
+  "vendor": "htc"
+}

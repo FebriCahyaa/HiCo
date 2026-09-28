@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_motorola_xpeng.git",
+  "codename": "xpeng",
+  "commit": "0ab16944bff795cae3b3fd91cb8cbf28778c5571",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "908464cd3d6afa4e34dfaee9f2730901bbca279b3a1a37850f3a2b4a84ca606f",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "682c6f8a8399574cbb84f4ba221007103ef2c6c05a7851b592812d7149019fd5",
+      "size": 1397
+    },
+    {
+      "path": "configs/thermal-engine-xpeng-game-perf.conf",
+      "sha256": "6fbb76291bccf97b4efc16d5fad51edb7f7dbec65228706f68e0e06933c6db5e",
+      "size": 4502
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6b9df8695cf95b24f7b2e7442c0592906103a925d41b3a40d9d9b3eee7ec63d5",
+      "size": 3737
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e0d61c91da2234ecb2dea07bff13640553b109070da731f03f950ff201bb21ee",
+      "size": 2700
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0e1d47b997238bf23e9612b5c500b3277bc2b2e418bf009a6428b604da91424a",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6d23b6ea59e67de145e17b56603db607c8fbc661f2dd7b655680617fc622e2fb",
+      "size": 18445
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "cec3e7e0bee74a53e8a9be164ddd1304af67d52c8534cd5443e4c59aaf237db3",
+      "size": 150
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_xpeng",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-13T05:35:26Z",
+  "vendor": "motorola"
+}

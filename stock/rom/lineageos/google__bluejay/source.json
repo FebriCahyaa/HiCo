@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "7744308a0695ad0d6c67aba4fccc259495f2de77",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "188edcbfe99562b74d9304574ece1c5f00777a95bde049f29f4ef71c7134947f",
+      "size": 548
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "572aa6f12b62b92d4d8c7e3ac38632ced3da54fdce159979240465734152cb37",
+      "size": 200
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "e88c81140e99b44d39be898f3c468432163f3ffd90686e4f0377b2afe4f12878",
+      "size": 1602
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6a019f7d592a22a3540a77a31c0345ab31440f038be960839bdf65f549e6b7f3",
+      "size": 213
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "20f9f0302e217d8d2295ac5ed7e813c8d4419777fc8f4a47772a91fbc5ec1509",
+      "size": 221
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T16:10:32Z",
+  "vendor": "google"
+}

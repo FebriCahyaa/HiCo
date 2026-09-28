@@ -1,0 +1,50 @@
+# Audio
+persist.vendor.audio.delta.refresh=true
+persist.vendor.audio.misound.disable=true
+ro.audio.monitorRotation=true
+ro.vendor.audio.enhance.support=false
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.karaok.support=false
+ro.vendor.audio.ns.support=false
+ro.vendor.audio.sfx.audiovisual=false
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=65
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=55
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.lowpower=true
+ro.vendor.audio.soundtrigger.snr=14
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.training.level=50
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=80
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
+ro.vendor.audio.soundtrigger.xanzn.vop.level=10
+ro.vendor.audio.soundtrigger.xatx.cnn.level=45
+ro.vendor.audio.soundtrigger.xatx.gmm.level=25
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
+ro.vendor.audio.soundtrigger.xatx.vop.level=-10
+ro.vendor.audio.spk.clean=true
+ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.zoom.support=false
+ro.vendor.audio.zoom.type=1
+vendor.audio.adm.buffering.ms=6
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio_hal.period_multiplier=3
+
+# Audio hardware
+ro.hardware.audio.primary=pipa
+
+# Display
+debug.sf.set_idle_timer_ms=1100
+ro.vendor.display.paneltype=2
+vendor.display.enable_hdr10_gpu_target=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_hdr=1
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_idle_timer_ms=1100
+
+# Display Orientation
+ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+debug.sf.ignore_hwc_physical_display_orientation=true
+ro.bootanim.set_orientation_4630946808805831297=ORIENTATION_90
+ro.bootanim.set_orientation_4630946922172900481=ORIENTATION_90

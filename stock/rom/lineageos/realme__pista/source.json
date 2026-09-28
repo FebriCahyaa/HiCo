@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_realme_pista.git",
+  "codename": "pista",
+  "commit": "38c81f20ab83fb1a22aec46ef56e9e9649dec44b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f74c765ebe2c46519016179e22784aab0172ce3596b3259976da2d0f86195caa",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c9f1c1d2fa31a73298be3c0b0aabd2ae2ec37e5eb619b7ec302fa4f841891e11",
+      "size": 780
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e0cf5f60df0c09b2550c32507a6dc9f682f977ae81cd73d2f7c27201cbe3ff0d",
+      "size": 2121
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fce6315f58af98b643753ccf36c2157b873e6931d589c8e1d3b563ba03234477",
+      "size": 2927
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "86735a516d2cf8eba28b23b6979e1803bb942c37d56f94bc59ac3192faa671bc",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3eba4eb3b9c07f9cc8c711aa73fad37e55a46c2af9bdf98e62a46d4661ba7309",
+      "size": 70456
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_pista",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-26T13:26:50Z",
+  "vendor": "realme"
+}

@@ -1,0 +1,82 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_lisa.git",
+  "codename": "lisa",
+  "commit": "bd595b8f849980fccd5adb3f6c3472831e2ab93e",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c3d13dbc5ffba4e0a8fd273d96f52619f834309be3c88da94af1a68bc9fc12e4",
+      "size": 178
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d1a8ff36e25026559a8384c054f3550910e8665b10ebba3fa05438f744a30458",
+      "size": 4000
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "be384d3591b5d8b2d5d7e50ad721018dbbf78d44e62541dc59e357302b9ddd87",
+      "size": 231
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "375107b39a18b537f5f66aef862a4bfd39e7d46bbd98ae1745d5c3489978854f",
+      "size": 7777
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0bfbae076703367d5cd9c7e90df636c29a5a2026b39c96adab6b8ae89830cf09",
+      "size": 23629
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "af0c881289427cfb920b857fbd45e9194995d784ed80066472c95c7c497746ab",
+      "size": 3893
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "cc6805ae3cd16909e9322e6ce07fb1e3700eb833769a4dc1737a6e3513bf77cd",
+      "size": 3272
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c961f3da8842a016adacfaca3c5f9ec66eee83e826573f6d2c4103345c100176",
+      "size": 1454
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "01f1c720e777fa39f79a36e887964124b582a9f3aeb809f7220db9b8af4d3b33",
+      "size": 14214
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "3b7e9148c6b482420f9407a6f27b8feaec77246da6dd110b56b663d7515073ec",
+      "size": 6485
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b997a24be16f77e6cbc3697ee482973c93e2b7d61c3322de6cba9043a885c022",
+      "size": 63678
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "79eb5140c89a8082387bb09481f9f78f9afe2afe11ae772725cb09ab5a812d9d",
+      "size": 1366
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lisa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-02-23T18:17:12Z",
+  "vendor": "xiaomi"
+}

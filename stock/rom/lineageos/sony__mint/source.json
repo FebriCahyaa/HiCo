@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_mint.git",
+  "codename": "mint",
+  "commit": "6afb4032a29f43e246300e00c0cd7fffb43330fa",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "588300f2f0abf8f1184d5933e5270ace4bd5c0f8f557105cca31f27e8eac682b",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fe860c2b173fbad8c0a900424c1c6897a822416102ba1e99037bb676ee46b607",
+      "size": 859
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3f11f2c20ab4e1be37c49694df54880d385129dc3b74247772509d535058d867",
+      "size": 939
+    },
+    {
+      "path": "device.mk",
+      "sha256": "823a9f9e879e3eca3acc43095e55f7861736decdcc997ed22a0c8faedf731525",
+      "size": 1292
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ad65e3e1726d9fc93c8b5f908c1d2c4bbc9bd27f8b94ad8575f2a97b25f74651",
+      "size": 779
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "07bb099460b1bd04c51a4d67bd264fff07b0addfffc248964e1a0cc3b311bc90",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_mint",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-01-03T21:00:19Z",
+  "vendor": "sony"
+}

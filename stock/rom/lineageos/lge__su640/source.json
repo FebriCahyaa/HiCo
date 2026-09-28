@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_su640.git",
+  "codename": "su640",
+  "commit": "7f51cd936041fda4470b6fd2e9f04754a5bd01b1",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ad36105273708e6c69f3aa09bab6d4cf319eba09749d7476e5cd0f2e59cce5db",
+      "size": 104
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6da3dac2d6c016a089220aa71395410131dbe0b5becc960b9db448f737448f05",
+      "size": 49
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8c0330b774803138c099f22e58f2211369e801e69b50d91ff20a5bfb86bb02fe",
+      "size": 443
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7bb27ce0d5337e93405871a47713c3fa27e283e83fcf928c691d623430102723",
+      "size": 329
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b179ecb88164ed67392fe6add3eeadeacbd2a0979de69ccb6ac347ca18d144ae",
+      "size": 1482
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0d8f140a3febf3a71857ebd3b5f4de26fc35b3d49ececd6245d24e91d20a0117",
+      "size": 206
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_su640",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:42:07Z",
+  "vendor": "lge"
+}

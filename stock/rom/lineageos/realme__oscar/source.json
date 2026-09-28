@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_realme_oscar.git",
+  "codename": "oscar",
+  "commit": "eb2a44f9e3f5903ec634fc19280510d119237ba3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "711d6902a04d806c5c3598cb7c47318e26fca490a3b936dc3fcc5f63fdf5c933",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "83ae7a40353943152b07cb7b078b4ac7d484e5afef7be759ae7859c449c6fc26",
+      "size": 602
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6a5423768122c9a0f87a29722d56f5f0fa86cf540f8246c8ee5a0e30851b4029",
+      "size": 3671
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f932505481356833d89a0efab1dd4c00ac9a89fd1a0fdb3d304f1274a217c7c1",
+      "size": 1489
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "abcc2f3a1a7ecee5e3ecd7cf9c598782f9880c7907a4aa1526251afce7064f8c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0179e4a5cde713e0a3b02210c742985d0317c5c217e32aa2ce6007ac00a50176",
+      "size": 59040
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0dc86de4b6affe77c884285f15da11ab124da25441eab9b7e413ef04642acf57",
+      "size": 124
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_oscar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T14:31:14Z",
+  "vendor": "realme"
+}

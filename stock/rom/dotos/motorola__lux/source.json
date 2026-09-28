@@ -1,0 +1,52 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_lux.git",
+  "codename": "lux",
+  "commit": "104d5bbd4326251eabcf69f075e71729e0c4e306",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "34fe443a901c5e55a3536c335a745d85bc2a716a547312be616c2eaa8de91180",
+      "size": 718
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9493d60e26e865e30fb48f9daed9463b9b99c4e46534c35fce65ef5a9d8d9f0d",
+      "size": 1515
+    },
+    {
+      "path": "configs/thermal-engine-lux.conf",
+      "sha256": "3a1e242869dde13708d85a456d3f79946cfcddd70026018de43f3955a84e0c53",
+      "size": 4250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e54fac2242225995d0915d363db4090419db448523b44c6db33566cc4008e326",
+      "size": 2603
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "944f56601301096584bdf1bd194ec1a5b71c5a49337ca0bf8b6ed07a69298b5a",
+      "size": 753
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4e578d303cf5a60dd5b27c619c6c7de1b82ac89e5fcf5707c389d9fd14d89ead",
+      "size": 4625
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0695b30f17a27afded8b485e79b35ccadc6104cc7166ea0343c753a30b80b2d5",
+      "size": 172
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_lux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-02-16T21:30:38Z",
+  "vendor": "motorola"
+}

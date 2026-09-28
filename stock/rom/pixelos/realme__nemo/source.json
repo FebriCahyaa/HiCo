@@ -1,0 +1,62 @@
+{
+  "branch": "sixteen-qpr2",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_realme_nemo.git",
+  "codename": "nemo",
+  "commit": "8933a0e16568e7aac410e55e097921b344a3b0a1",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e876191098838c581a0c89e95adee34bac78a0614301b90b71d7e80799dd9b8a",
+      "size": 953
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "aea75ddd8f8415b0059411d7f5d61dc90ddae6e341ea4e7364cea1b81493aa75",
+      "size": 182
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a584e3776119693c8c7c96c07fe3f5ebff1a83206468ac302a228789d8be317c",
+      "size": 4602
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "39b9f2f7aa7d02272fd4cec869504420f67d18344f1f97cf6d191a78180d1204",
+      "size": 7442
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6bdde949bbfbab8081ac528e512184411d94347add07d578ca17789a4fae08f8",
+      "size": 14724
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "cccf7d0908678048c8d716119af0e35f63383d924d743f762f160b2aa6627dc7",
+      "size": 3886
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ea3ab55631da29da95f3e52862c2a5d7ca76a49f7ba8464b3ab74c5bd6698299",
+      "size": 65741
+    },
+    {
+      "path": "system.prop",
+      "sha256": "07c04cf49c80cdd8d0bb9da876c59d9f59f3069663b82a870bf79b315101d0b2",
+      "size": 189
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a3f19e6455ee23f246f66bb8df1c97a1ab7bf2dd872325c789f5bfd2bcf0d34d",
+      "size": 6507
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_nemo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-04-22T17:28:02Z",
+  "vendor": "realme"
+}

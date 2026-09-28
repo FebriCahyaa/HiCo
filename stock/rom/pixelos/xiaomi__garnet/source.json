@@ -1,0 +1,57 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_garnet.git",
+  "codename": "garnet",
+  "commit": "ff68818485c4c93ecf1621dc69e2913556a72e37",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2f7e4859cfc1b9375215b3c7ac39ccd529ab2b4a22fd1dcd255499ee8d0f950a",
+      "size": 912
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1ac62fafccbdf3bff838346c071bc9aaa6d4cbb7b9b5cd4731dc8fd88424f4a4",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "76f83ddde0c85db10bd15e44e117a6a0b466e74751752188aaf8f273c8367b6a",
+      "size": 8461
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d98e29eb9cfddae372071a277c284d3ce117dd5e7cfb3d2f9f4ab996a007fad9",
+      "size": 20297
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "74a1e0246dc410be3a27f70f5f93e63bb15dc6b9cd4f57da39eb363c7fd400fc",
+      "size": 6445
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a395a7304335a263932a2419b8b6541a47e91aee0f06ff0638556ae8567de474",
+      "size": 437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5036bc1ccbce9e81764bc61f9b0dce3dcbaacdb32d7781f8fc1688e3f62654f0",
+      "size": 108716
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e315ca14839321b101051d4b01fe693a8f2f4f9e42f20b7bb18c4daafe90b180",
+      "size": 1934
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_garnet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-08-21T21:29:04Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_bananapi_m5_tab.git",
+  "codename": "m5_tab",
+  "commit": "40d713e84d116ebd1f6e0ee76d948c764a959cc4",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a9dff914b11221860523953b2e22d2caa1b83f30d6721782a0cb2ce7be9f1a30",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2403adf3abe2841b35f00b927e964d0bb28c8e3f0c43153f7fbf046b076b5bd6",
+      "size": 183
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d365c5f80c16f5015c81f959190cefe4b54e1a19c94bab8ef34cdfaad9196a39",
+      "size": 240
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fb76ed57e1ffb8d2efc48842bba688647e039745f0f83be6a99b2b9177d09e98",
+      "size": 373
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3204790748543c5408184841567b2dbfb48c63eb9e36d5ba2e7f622f7f422c38",
+      "size": 100
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bananapi_m5_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-29T05:21:34Z",
+  "vendor": "bananapi"
+}

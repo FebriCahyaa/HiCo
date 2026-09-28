@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_caprip.git",
+  "codename": "caprip",
+  "commit": "8db8dcd1161a5a58690ed2af95b3980a9d40b1a0",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "248889d2b50c3901631b241ecbc55a7702f81e4edaeac87b4faff7172f9edac6",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dabc7471e44ee76bb3d79870cfedf52acff80567434ba60cab4d3c080e9eefbc",
+      "size": 2244
+    },
+    {
+      "path": "device.mk",
+      "sha256": "23940d3c95716d7f53fb95ff775a870461f1be6189997fd826c8bbd010146b7d",
+      "size": 3736
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7d6e1b9b1e857c33227e4459c31df5eba20c182530d230075a85b732ff508110",
+      "size": 2140
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "89e8cfdb73b69b2e81b11397403083348ddf8634deabbdd21b929f4ff207afcf",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "29ce10ec098da44c8c33fcb6dc07dd2f918a23104c7a094896ae5eda9db9715a",
+      "size": 12346
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2af05dfcdd63c4e1a68621e8ef84379e17aa5179db64c0fb7b2d968ea1455588",
+      "size": 679
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_caprip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:44:52Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_jetson.git",
+  "codename": "jetson",
+  "commit": "ef55fffb33080befe75622dce4bd454ab0a45b18",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8254d9f98f1d54940d1b97bad4bb84313dc15cf25da8a30f095721d2089d88cc",
+      "size": 687
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c0de62127ec526d1d812cdcc4a326be317790e7a8bc83568e87884e82b09977c",
+      "size": 645
+    },
+    {
+      "path": "device.mk",
+      "sha256": "269ec074e6aebe9dff9601722d0841979a3dafa7cf3ac2cb63f02472c0f82669",
+      "size": 262
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "47267997a9c58d732520f97dad402073a388c7a05c254f9dfd1a97c8e5bc54e4",
+      "size": 112
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_jetson",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-06-26T02:34:39Z",
+  "vendor": "nvidia"
+}

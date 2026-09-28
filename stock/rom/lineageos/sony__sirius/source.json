@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_sirius.git",
+  "codename": "sirius",
+  "commit": "196849caa6e34f292e4e0b347395257e34068fd1",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "74425a0bc2e457681723e6be0568c88837c2bd4472121488e1e760863c96ba45",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "103ed27a05028319582df5e0bdcf1bb923812716d7da49158bc2808d93ac004b",
+      "size": 760
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4da9c81f02c1b470b79f28acffe6ce77467ec65f62a16fa881fea44cc002b597",
+      "size": 1385
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b38ba9fb9509a490f187879ab464aee0336e0a935330dc429213f42c776bcb2d",
+      "size": 524
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "45db8c33193924351d256526a21922d9ffe4973330191244048b595d10c8d902",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dcae3bc0968d11bccd86f48277ffb6b3b949134215c31d6958722dbdcb206b63",
+      "size": 13362
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_sirius",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:13Z",
+  "vendor": "sony"
+}

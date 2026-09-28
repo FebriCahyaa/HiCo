@@ -1,0 +1,36 @@
+# Audio
+persist.vendor.audio.voicecall.speaker.stereo=true
+ro.vendor.audio.sdk.fluencetype=none
+vendor.audio.adm.buffering.ms=2
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=true
+
+# Display
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=500
+ro.surface_flinger.set_touch_timer_ms=750
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.sensortype=2
+vendor.display.disable_idle_time_hdr=1
+vendor.display.disable_idle_time_video=1
+vendor.display.idle_time=0
+vendor.display.idle_time_inactive=0
+vendor.display.disable_metadata_dynamic_fps=1
+
+# DRM
+drm.service.enabled=true
+
+# HVDCP
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.taper_term_mv=6500
+persist.vendor.cp.vbus_offset_mv=1040
+
+# Keystore
+ro.hardware.keystore_desede=true
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Media
+vendor.media.target.version=2

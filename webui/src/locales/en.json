@@ -18,9 +18,9 @@
   },
   "navigation": {
     "home": "Home",
-    "games": "Games",
     "monitor": "Monitor",
-    "settings": "Settings"
+    "settings": "Settings",
+    "scenarios": "Scenarios"
   },
   "actions": {
     "restart": "Restart",
@@ -94,7 +94,8 @@
     "max": "Max",
     "relaxed": "Relaxed",
     "max_hint": "Max: throttling is disabled while the game runs; only the safety guard limits it.",
-    "relaxed_hint": "Relaxed: the vendor thermal system keeps running with higher, chipset-tuned trip points. Cooler, but less peak performance."
+    "relaxed_hint": "Relaxed: the vendor thermal system keeps running with higher, chipset-tuned trip points. Cooler, but less peak performance.",
+    "stock": "Stock"
   },
   "mode": {
     "off": {
@@ -154,6 +155,16 @@
       "safety_cpu_temp": "CPU ≤ {v} °C",
       "safety_battery_temp": "Battery ≤ {v} °C",
       "thermal_overclock": "Overclock {v}"
+    },
+    "daily": {
+      "title": "Daily",
+      "description": "Social media, streaming, browsing. HiCo does not touch the peak; the vendor thermal system stays in charge.",
+      "confirm": "Peak stays with the vendor; games only get the Relaxed level.",
+      "points": [
+        "Vendor thermal always in charge",
+        "Games get the Relaxed level, never full unlock",
+        "Lowest safety limits: 85 °C CPU, 42 °C battery"
+      ]
     },
     "cool": {
       "title": "Cool",
@@ -246,21 +257,50 @@
     "trip_zones": "Zones at or above trip",
     "no_cooling": "No cooling device is currently active.",
     "no_trip_zones": "No thermal zone is currently at or above a reported trip threshold.",
-    "error": "Cannot read the thermal monitor: {error}"
+    "error": "Cannot read the thermal monitor: {error}",
+    "sources": {
+      "title": "Thermal sources",
+      "description": "Which thermal configs and daemons protect this phone, and which of them HiCo overrides right now. HiCo never edits the ROM's files: a tuned copy is mounted over them while a scenario needs it.",
+      "hico_active": "HiCo active",
+      "stock_active": "Stock thermal",
+      "device": "Device",
+      "chipset": "Chipset",
+      "rom": "ROM",
+      "database": "Database",
+      "verified": "verified profile",
+      "generic": "runtime detection",
+      "configs": "Thermal configs ({n})",
+      "services": "Thermal daemons ({n})",
+      "tuned": "HiCo tuned copy",
+      "vendor": "Vendor",
+      "vendor_locked": "Vendor (read-only)",
+      "no_configs": "No thermal config file found in /vendor, /odm or /system.",
+      "no_services": "No thermal daemon registered with init.",
+      "format": {
+        "thermal-engine": "thermal-engine",
+        "thermal-hal-json": "thermal HAL JSON",
+        "mi_thermald": "mi_thermald",
+        "mi_thermald-encrypted": "mi_thermald (encrypted)",
+        "unknown": "unknown format",
+        "mtk-thermal-policy": "MediaTek thermal policy"
+      },
+      "kind": {
+        "daemon": "thermal daemon",
+        "hal": "thermal HAL",
+        "other": "service"
+      },
+      "by_hico": {
+        "stopped": "Stopped by HiCo",
+        "restarted": "Reloaded by HiCo"
+      }
+    },
+    "active": "active",
+    "idle": "idle"
   },
   "games": {
-    "title": "Games",
-    "tab_games": "Flux games",
-    "tab_apps": "Other apps",
     "search": "Search apps",
-    "hint_games": "Games come from Flux Tweaks' game list (add or remove them in Flux). Switch a game off to keep stock thermal for it.",
-    "hint_apps": "Apps that are not games can get the Relaxed level (never Max) while they are on screen, e.g. camera or video editors.",
     "empty_games": "Flux's game list is empty or Flux is not installed.",
     "empty_apps": "No other apps found.",
-    "whitelist_confirm": {
-      "title": "Relaxed thermal for {app}?",
-      "message": "While this app is on screen the vendor thermal system runs with higher, chipset-tuned trip points. It is never fully unlocked like a game."
-    },
     "on": "HiCo on for {app}",
     "off": "HiCo off for {app}"
   },
@@ -464,5 +504,48 @@
       "flux": "Flux Tweaks releases"
     },
     "legal": "HiCo Thermal is proprietary software © 2026 FebriCahyaa, used under its EULA. Parts of the WebUI come from Flux Tweaks and Encore Tweaks (Apache License 2.0); the Google Sans Flex font is under the SIL Open Font License."
+  },
+  "scenarios": {
+    "title": "Scenarios",
+    "intro": "HiCo keeps your ROM's own thermal files untouched and only changes how they are used, per scenario. OEM: the ROM's thermal as shipped. HiCo Balanced: the vendor thermal keeps protecting the phone with trip points tuned for this chipset. HiCo Aggressive: throttling off while a game runs, the safety guard stays on (games only).",
+    "game": {
+      "title": "Games",
+      "short": "Games",
+      "description": "Games from Flux Tweaks' game list"
+    },
+    "social": {
+      "title": "Social media",
+      "short": "Social",
+      "description": "Chat, feeds and short videos: WhatsApp, Instagram, TikTok, Telegram, …"
+    },
+    "media": {
+      "title": "Multimedia",
+      "short": "Media",
+      "description": "Streaming, video and music: YouTube, Netflix, Spotify, VLC, …"
+    },
+    "level": {
+      "stock": "OEM",
+      "relaxed": "HiCo Balanced",
+      "max": "HiCo Aggressive"
+    },
+    "hint": {
+      "stock": "The ROM's own thermal, exactly as shipped. HiCo changes nothing here.",
+      "relaxed": "Vendor thermal keeps running with chipset-tuned trip points: fewer early slowdowns, every protection active. Switched back to stock 20 s after you leave the app.",
+      "max": "Thermal throttling is off while the game runs; only the safety guard limits it. Warm phones get Balanced until they cool down."
+    },
+    "apps_title": "Apps per scenario",
+    "tab": {
+      "social": "Social",
+      "media": "Media",
+      "other": "Other",
+      "games": "Games"
+    },
+    "tab_hint": {
+      "social": "Apps listed here use the Social media level. Common apps are already in the list.",
+      "media": "Apps listed here use the Multimedia level. Common apps are already in the list.",
+      "other": "Other apps (camera, video editors, …) that get HiCo Balanced while on screen, never Aggressive.",
+      "games": "Games come from Flux Tweaks' game list (add or remove them in Flux). Switch a game off to keep stock thermal for it."
+    },
+    "saved": "{scenario}: {level}"
   }
 }

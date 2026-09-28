@@ -1,0 +1,52 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_trltespr.git",
+  "codename": "trltespr",
+  "commit": "da227bbb8a0d49ae8366b57c65d2d379dbd17fb6",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "eb153deaa4b948eec6fe07968ec4308e58e97d6e4c746e6e6edefba793f87912",
+      "size": 738
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cbe86d668b6424d0a48acbcca34eda44a2bfbd982d8302a20c003aa0b877540d",
+      "size": 1127
+    },
+    {
+      "path": "device.mk",
+      "sha256": "28e0a953b577d15fd837c14abf8697ac0ee996e62e233caec7b658782e64ad3e",
+      "size": 933
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b688942f845b70afe618700adb8b02aebc8fe440a8249da036e1245ea3b2f50b",
+      "size": 113
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "99d2b3d88a8b30201aada0515f3c3b2494afe57c680c88101e01cadbb38d9539",
+      "size": 1305
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0e6acc4ed9d507912e517c12a0377942048ba2fef460b3833366c2ea9e629081",
+      "size": 168
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b7aa71454c306d086a8be029a4de3b3ec120e4fa3f2672c4314bb6ccda7459bc",
+      "size": 33
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_trltespr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:19:17Z",
+  "vendor": "samsung"
+}

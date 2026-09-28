@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jfltecan.git",
+  "codename": "jfltecan",
+  "commit": "4ed449d540bf3d09ac5ed9c82e4b3e6e8fd4c60c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0d781a3be7c7640717b044599ef3c398e9f71695429adc96143a6f49e0d9fa8c",
+      "size": 1496
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9b19654f9c68444c66ce436cc8f57b2e8173d67e9db8b9f970e2e41995176377",
+      "size": 1104
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f8029262840b60d8b6f5d2fb8867b40a4d1b4ad817e70f94d57d54ba048325d9",
+      "size": 915
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "58dbf8cf4f8c72449c9af4d4e4baf630004318dcbaef13255e8dc0cd70ccf5c0",
+      "size": 99
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f1942f1c027cc35bf42038be82b843ab22c6161aa8c43385d9b368d8632a2701",
+      "size": 180
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jfltecan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:12:27Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_skyrocket.git",
+  "codename": "skyrocket",
+  "commit": "80657e82e06e96822c0e9f57f45eb6d6648442fe",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c753b28fcd778ee37c3e1b64df8c6b40784ebe99c49c0b48de220a400e921e01",
+      "size": 2090
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5547b3999aebabdd5243ea91aca6757e9c8da976247ae81394c61ec3cf4ea1c8",
+      "size": 1229
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2eeecd1b724d9d16a9c1113a593ed39d6e84432bb75bfa68b54d4da6a483c8ba",
+      "size": 1770
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "087075e90484c24cb66e5ada24b4e91dbd3ded35546c32138a9c2152972c82cd",
+      "size": 34
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_skyrocket",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:54Z",
+  "vendor": "samsung"
+}

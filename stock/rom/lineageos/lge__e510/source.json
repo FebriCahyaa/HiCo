@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_e510.git",
+  "codename": "e510",
+  "commit": "102af52a39e3c920ed227b6a8a22228ed90b8d21",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "50d956409a1fa721cd9b6481156896d8ad8126ebfd5b42e5c21594300eabcdee",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b8667f9da0dc61e4f21f2910372d82da248803ce4221852f75fbe7660fda0a04",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "941f3aee0af4f4f1a3c31a29acffda92bb0cea5d4710da70ea235e14a24851d8",
+      "size": 2272
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c713ef24eba91f3a367609230d180ef86f8ee606f4fc271d48340abf54f6db62",
+      "size": 7757
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4a4532488f9e995bcfa7f702c8d188c55a19bdfdf6c4a88b79e11cb1e8bdd44d",
+      "size": 676
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_e510",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:57:48Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_ocean.git",
+  "codename": "ocean",
+  "commit": "1038576b8f123899668678756d1a86d4f038ea2d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8126ad91fdf57c46e3e0ed97d32e0448fd01dfa13d9c821f2143a630e9408745",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c2f03a14f26ec4bc642b01f4de26bf04c004b3e83d0d84cab295bf7222192432",
+      "size": 1402
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "721762edefe9b1bdad623664fa55d5c99b0e99cd565e71cef23c6c06a9a944a3",
+      "size": 2530
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6adc234db0907843156c493aaca26cff12a288225514943d283c28939cfca59f",
+      "size": 4424
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "df4c0a17a25cb0ca8c26b36060dbc6810039c8053e43b622f394956c9822d8f6",
+      "size": 2235
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b131d74ce6652aca51e6e019829fd35d17eb1e6510c70c6f7e521c5051d97b7a",
+      "size": 13894
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8c4d85169a895f3b8a60d2a6edc02c5da4580e1e3f7fe5b81be7ba0e2229c36b",
+      "size": 1161
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_ocean",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:05:42Z",
+  "vendor": "motorola"
+}

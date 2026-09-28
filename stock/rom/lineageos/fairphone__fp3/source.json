@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_fairphone_FP3.git",
+  "codename": "fp3",
+  "commit": "ced6e2f9445a883ccd28de27117b3a841d9d58b3",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c5f693729bfe00e972972e58bb0afd953e21a0188c8b1dc033faac00c7080ac7",
+      "size": 467
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "491327509f50826ab203f0997b6f927803cab35610bff43431594ca60af0db55",
+      "size": 1132
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2fc2064cc69ebe557ec8506f98a1c3564db5ed82304d8dc2661b4abe3b715043",
+      "size": 753
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a5911855810dbde3cee2c4456d68bcd8f132e57a119f4bbb6ef5066e1f5fb18",
+      "size": 8027
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "device.mk",
+      "sha256": "89358fc3084117b2e73beb165ff4793532789686c5c1b43b9f78d3f75b93f4ea",
+      "size": 28397
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a494a9eb1bb13f9d2bf888c0e5f5baa7884da5a8190f288825f3d66b0f4af099",
+      "size": 1895
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d7bc7566a63f6a5ebcb3c637d677243af60d425f720df8e45153689671784ad4",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f35cbe2d9161296545480240931f13195b1d5d2b7553231c2cdc915ed4f26a6c",
+      "size": 99952
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "4153f6feb69db8d2bbe84ca917a35a1b82dc383a45d7789755a6bc4430eb3864",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09928c552cfc3d519b16d5a86c8253643bfdea02c78998b6f2728f499a109494",
+      "size": 4966
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_fairphone_FP3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-15T14:39:02Z",
+  "vendor": "fairphone"
+}

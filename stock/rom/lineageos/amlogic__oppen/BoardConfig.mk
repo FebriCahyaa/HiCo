@@ -1,0 +1,44 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+DEVICE_PATH := device/amlogic/oppen
+
+## Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := oppen
+
+## DTB
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_DTB_NAME := s4_s905y4_ap222_drm
+TARGET_DTBO_NAME := android_overlay_dt
+
+## Kernel
+TARGET_KERNEL_PLATFORM_TARGET := oppen
+TARGET_KERNEL_SOURCE := vendor/amlogic/oppen-build
+
+## Kernel modules
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/vendor_boot.modules.load))
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_dlkm.modules.load))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+
+## Partitions
+BOARD_SUPER_PARTITION_SIZE := 1887436800
+
+## Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+## Wi-Fi
+BOARD_WLAN_DEVICE := realtek
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_rtl
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_rtl
+WIFI_DRIVER_SOCKET_IFACE := wlan0
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+## Include the common tree BoardConfig makefile
+include device/amlogic/ne-common/BoardConfigCommon.mk
+
+## Include the proprietary BoardConfig makefile
+include vendor/amlogic/oppen/BoardConfigVendor.mk

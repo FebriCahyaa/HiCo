@@ -1,92 +1,136 @@
 {
-  "device_total": 2505,
-  "generated_at_epoch": 1790537571,
-  "schema": "hico.ingest-manifest-index.v1",
-  "source_count": 14,
+  "common_total": 83,
+  "device_total": 2947,
+  "schema": "hico.ingest-manifest-index.v2",
+  "source_count": 16,
   "sources": [
     {
+      "common_count": 0,
       "device_count": 1253,
+      "family": "rom",
       "manifest": "stock/manifest/lineageos.json",
       "source_id": "lineageos",
       "source_name": "LineageOS"
     },
     {
+      "common_count": 0,
       "device_count": 56,
+      "family": "rom",
       "manifest": "stock/manifest/pixelos.json",
       "source_id": "pixelos",
       "source_name": "PixelOS"
     },
     {
+      "common_count": 0,
       "device_count": 384,
+      "family": "rom",
       "manifest": "stock/manifest/crdroid.json",
       "source_id": "crdroid",
       "source_name": "crDroid"
     },
     {
+      "common_count": 0,
       "device_count": 0,
+      "family": "rom",
       "manifest": "stock/manifest/derpfest.json",
       "source_id": "derpfest",
       "source_name": "DerpFest"
     },
     {
+      "common_count": 0,
       "device_count": 0,
+      "family": "rom",
       "manifest": "stock/manifest/evolutionx.json",
       "source_id": "evolutionx",
       "source_name": "Evolution X"
     },
     {
+      "common_count": 0,
       "device_count": 105,
+      "family": "rom",
       "manifest": "stock/manifest/arrowos.json",
       "source_id": "arrowos",
       "source_name": "ArrowOS"
     },
     {
+      "common_count": 0,
       "device_count": 166,
+      "family": "rom",
       "manifest": "stock/manifest/aospa.json",
       "source_id": "aospa",
       "source_name": "Paranoid Android (AOSPA)"
     },
     {
+      "common_count": 0,
       "device_count": 78,
+      "family": "rom",
       "manifest": "stock/manifest/dotos.json",
       "source_id": "dotos",
       "source_name": "DotOS"
     },
     {
+      "common_count": 0,
       "device_count": 7,
+      "family": "rom",
       "manifest": "stock/manifest/voltageos.json",
       "source_id": "voltageos",
       "source_name": "VoltageOS"
     },
     {
+      "common_count": 0,
       "device_count": 351,
+      "family": "rom",
       "manifest": "stock/manifest/lmodroid.json",
       "source_id": "lmodroid",
       "source_name": "LMODroid"
     },
     {
+      "common_count": 0,
       "device_count": 13,
+      "family": "rom",
       "manifest": "stock/manifest/awakenos.json",
       "source_id": "awakenos",
       "source_name": "AwakenOS"
     },
     {
+      "common_count": 0,
       "device_count": 77,
+      "family": "rom",
       "manifest": "stock/manifest/alphadroid.json",
       "source_id": "alphadroid",
       "source_name": "AlphaDroid"
     },
     {
+      "common_count": 0,
       "device_count": 1,
+      "family": "rom",
       "manifest": "stock/manifest/spark.json",
       "source_id": "spark",
       "source_name": "Spark"
     },
     {
+      "common_count": 0,
       "device_count": 14,
+      "family": "rom",
       "manifest": "stock/manifest/protonaosp.json",
       "source_id": "protonaosp",
       "source_name": "ProtonAOSP"
+    },
+    {
+      "common_count": 83,
+      "device_count": 342,
+      "family": "blobs",
+      "manifest": "stock/manifest/themuppets.json",
+      "source_id": "themuppets",
+      "source_name": "TheMuppets (LineageOS vendor blobs)"
+    },
+    {
+      "common_count": 0,
+      "device_count": 100,
+      "family": "blobs",
+      "manifest": "stock/manifest/rom-vendor-blobs.json",
+      "source_id": "rom-vendor-blobs",
+      "source_name": "ROM org vendor blobs"
     }
   ]
 }

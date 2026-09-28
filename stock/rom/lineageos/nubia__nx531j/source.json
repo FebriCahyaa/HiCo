@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nubia_nx531j.git",
+  "codename": "nx531j",
+  "commit": "3d37484ecca1beb0339e1d47046d058d518b5f38",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "40245e314cb8f1bdd5d0ac3e2ecd604f8d4162ed8e490ebc45fd89c0dc61fd6a",
+      "size": 2507
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e5b61271b809d9efd03666cf794832301c463d6e454d4222e3a1a7f3d89735ca",
+      "size": 46
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "032ce549b8bcd9b71acf33fcdaa99f05302f371c34df8b0a0801e79d47d54a14",
+      "size": 6956
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eb8eb9c7e23d87ef0c5a0202af2704ed2968df8fa4f8857c36fa0545ecbe3233",
+      "size": 13998
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2e310b0a9b8aee119e90efaf336bed626797c8ba7f4668c0e5e510da7cb81285",
+      "size": 1706
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f238050196153fe16d16c303c05e22b8419902f7a029e85f04bc7744b9f82ef8",
+      "size": 24627
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "cb604662676b3ba7e00216fbe8407c6efd3d4997f16b644be8da3609e7cb91ac",
+      "size": 36
+    },
+    {
+      "path": "system.prop",
+      "sha256": "94bfa97139c7d169bcd5e2657e437b1a99e849069507f623063916f39bb1af34",
+      "size": 3769
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nubia_nx531j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:48:27Z",
+  "vendor": "nubia"
+}

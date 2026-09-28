@@ -1,0 +1,43 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Bluetooth
+BOARD_HAVE_BLUETOOTH_RTK_TV := true
+include hardware/realtek/rtkbt/rtkbt.mk
+
+PRODUCT_PACKAGES += \
+    BluetoothOverlayTarget
+
+## GMS
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE=gms_minimal.mk
+endif
+
+## Init-Files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc \
+    $(LOCAL_PATH)/init-files/init.recovery.beast.rc:recovery/root/init.recovery.beast.rc
+
+## Keylayout (IR)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl
+
+## Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1-service
+
+## Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+## Wi-Fi
+PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
+TARGET_HAVE_WIFIHAL := false
+
+## Inherit from the common tree product makefile
+$(call inherit-product, device/amlogic/gx-common/gx.mk)
+
+## Inherit from the proprietary files makefile
+$(call inherit-product, vendor/google/beast/beast-vendor.mk)

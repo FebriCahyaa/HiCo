@@ -1,0 +1,77 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_stone.git",
+  "codename": "stone",
+  "commit": "a22494da1da33bac913c6115fa232f4a887faea8",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "33fe9a971413df8d3774aada5b01e71113cc99a41ac4c46ce0fb5dc486e45dcc",
+      "size": 4952
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a6d64c47518e50b02500058e1771bdf6f382ed1cebc6236a657884d2a972c812",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fdf9693993529c6006a478a365d9e990c4e7e4aa6843263d12152ca3c8e9f328",
+      "size": 8366
+    },
+    {
+      "path": "device.mk",
+      "sha256": "255281b76e01a6c05747a0db581a6367c8379ff815abb2bec3cc3b2ae186a993",
+      "size": 23852
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "eedab24b39bbba94009f83a27d785a5545916e770bfd4a47a15af7457b6ddca7",
+      "size": 1660
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "befddc73631720f093a6b327fe2c69034ac73dec149d320035f912a88c1f351f",
+      "size": 1205
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "f26ad719f686d184a5fd2618a61c0e630761aa4f1814a28883a175edc2798e14",
+      "size": 2743
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "66c9d7647b85cb3f6b9a034de7354b30f8eb7ced84992dd8e6c7f703f73a0720",
+      "size": 14128
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "826f639fa01602fe32c2b67ee0546df66eb6c0129c40b773f189bf09028f4131",
+      "size": 6023
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "92b4abda6b6a6441ba980c3166fd220a64beb0dd2571beea8bca19fff7b95c0e",
+      "size": 61366
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "447c475c8ad9ac6fd60eaa6b571cbfe4f48192e6f5703a64a81194926fefd20a",
+      "size": 1199
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_stone",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-07-13T19:07:50Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,67 @@
+# Audio ACDB
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+
+# Camera actuator
+vendor/lib/libactuator_ak7371.so
+
+# Camera chromatix
+vendor/lib/libchromatix_s5k2m8sx_common.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_liveshot.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_preview.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_snapshot.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_video.so
+vendor/lib/libchromatix_s5k2m8sx_default_preview_ak7371.so
+vendor/lib/libchromatix_s5k2m8sx_default_video_ak7371.so
+vendor/lib/libchromatix_s5k2m8sx_default_video.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_120_ak7371.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_120.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_60_ak7371.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_60.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_90_ak7371.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_90.so
+vendor/lib/libchromatix_s5k2m8sx_liveshot.so
+vendor/lib/libchromatix_s5k2m8sx_postproc.so
+vendor/lib/libchromatix_s5k2m8sx_preview.so
+vendor/lib/libchromatix_s5k2m8sx_snapshot.so
+vendor/lib/libchromatix_s5k2m8sx_zsl_preview_ak7371.so
+vendor/lib/libchromatix_s5k2m8sx_zsl_video_ak7371.so
+
+# Camera configs
+etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml
+etc/camera/s5k2m8sx_chromatix.xml:vendor/etc/camera/s5k2m8sx_chromatix.xml
+
+# Camera eeproms
+vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so
+
+# Camera sensors
+vendor/lib/libmmcamera_ov8865.so
+vendor/lib/libmmcamera_s5k2m8sx.so
+
+# Camera OIS
+vendor/lib/libois_bu24218gwl.so
+
+# Audio libraries
+etc/tfa98xx/coldboot.patch:vendor/ampl/coldboot.patch
+etc/tfa98xx/shenqi_music.eq:vendor/ampl/shenqi_music.eq
+etc/tfa98xx/shenqi_music.preset:vendor/ampl/shenqi_music.preset
+etc/tfa98xx/shenqi.speaker:vendor/ampl/shenqi.speaker
+etc/tfa98xx/shenqi_speech.eq:vendor/ampl/shenqi_speech.eq
+etc/tfa98xx/shenqi_speech.preset:vendor/ampl/shenqi_speech.preset
+etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config:vendor/ampl/TFA9890_N1B12_N1C3_v2.config
+etc/tfa98xx/TFA9890_N1C3_2_1_1.patch:vendor/ampl/TFA9890_N1C3_2_1_1.patch
+
+# NXP Amplifier
+lib/libtfa98xx.so:vendor/lib/libtfa98xx.so|7a0784d9b49a20355b670d11a60892b92deefb54
+lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so|08116fbaf94b2cde1ebf464c4134379bfce6311e
+
+# Sensors
+vendor/etc/sensors/sensor_def_qcomdev.conf

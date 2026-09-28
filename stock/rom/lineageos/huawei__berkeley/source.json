@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_berkeley.git",
+  "codename": "berkeley",
+  "commit": "11267a10f748ecb7a83561c1e952db9a87f18ab0",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1b8af1ff2a1027264e9ecb5e86ba8f01f1a264aeca93c3744f1e247bd5fa42ae",
+      "size": 1067
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e749a98ae0155139ea7c06439ab1d7be6d3c7bcbfef0bbb6af314e365cf1bea9",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0f7cc0618d8cd749978fe75376b4da49f0e7627642de169d2dfe645a3993d362",
+      "size": 786
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4f82420873323f2fc838bdf15e6964d9de2af95265d9a52c775fe004e8e5fb45",
+      "size": 1176
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5b66c62c775c2216e8071285fac105610fc7939e3db627bbb0c351fdd5fca902",
+      "size": 760
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "28652391d3fc16a27d277228c8875579cd7f8c58e1de5499fd9862a183350f13",
+      "size": 122
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_berkeley",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-31T20:37:49Z",
+  "vendor": "huawei"
+}

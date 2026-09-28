@@ -1,0 +1,42 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_brcm_rpi4.git",
+  "codename": "rpi4",
+  "commit": "2790cd7abd95f68a3f15b2964eb7076ae9552e5c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4de996b556f4cb682748b14a749f95a55e4e2a2870c4738529933eee23f03b1f",
+      "size": 101
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "547b24cfbbb95386913a7ac65cddb5979c1020c15cc2fdff05bf2c61befbe085",
+      "size": 358
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e903bed243e937d0a261936c44bd6d735944782de198b24a2ab0708183123d3d",
+      "size": 2430
+    },
+    {
+      "path": "device.mk",
+      "sha256": "41957c57909dca6c0234c40a1626b366123e23705992047d9159e09a6b777d5b",
+      "size": 14026
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8ff01ccf0fc73a08c4b202d5c52c2651eb72383c4292d8d4dc6bc47180fe8c0f",
+      "size": 2439
+    }
+  ],
+  "kind": "device",
+  "repo": "device_brcm_rpi4",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2024-06-09T21:52:08Z",
+  "vendor": "brcm"
+}

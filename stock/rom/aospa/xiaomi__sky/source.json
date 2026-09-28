@@ -1,0 +1,52 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_sky.git",
+  "codename": "sky",
+  "commit": "6446db54f2ce9c41f08e9b892061a6b2d7600038",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "da4540bb56ea88e48b3ad1830855a048e78a4e844728d2323d7dac3700b80f3f",
+      "size": 157
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "71a62063cc42124d265b383a4123f63097484fcadb47fa1acdebdfc29a8b769a",
+      "size": 3749
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8d8ba4ce2b4e017c186019517fccf8abc6e9287568188cae5bd7be1af2653110",
+      "size": 4485
+    },
+    {
+      "path": "device.mk",
+      "sha256": "60ea568fe99aeea38e5df0063f24569d9c9dce5dfa3a9e573cfad2463cc5cf8c",
+      "size": 14298
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "32358c82fc47574455f8e9886a76cb200e68051af4184abed1a620be74d0c660",
+      "size": 2286
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7633adee3c2498e7297b22878e0b315eae89a828eacc6fe3f0f7f8b484e3a33d",
+      "size": 56961
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "b2bfa7157dc75f20435f28a324c2251a8960d75127f0c75c54a11c68f93b603f",
+      "size": 1284
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2024-09-12T10:06:56Z",
+  "vendor": "xiaomi"
+}

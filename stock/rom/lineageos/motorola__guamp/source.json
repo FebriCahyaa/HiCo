@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_guamp.git",
+  "codename": "guamp",
+  "commit": "f0534bf1b4338ff816f017d561a501b1b299daf9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4e8edde757d5d00a25de367e3e4488ae714b982386bfa793769d6ac4cb7fb669",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c382bf04ece8b18343c2ea87c42bcde08ee1377283d4400ab0318ad5b7f4e289",
+      "size": 2434
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ca690ca34c13211cc105703602b4e87320ae05c2966161c1833731adde3fa9d0",
+      "size": 3697
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6f3f88a2bc3623dca991e2469095fface4f5053df129cc8379c2dc9dd7a917f8",
+      "size": 2280
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "89e8cfdb73b69b2e81b11397403083348ddf8634deabbdd21b929f4ff207afcf",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d6c40f679d5fa29d85419f8e85fa516733653029f27f2715a6a0276f8785068f",
+      "size": 11168
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d5c1ced464843dd5f47657f850f1401217d98ada4d91ce3f0a0b55a6647c3d5b",
+      "size": 662
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_guamp",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:45:06Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_vili.git",
+  "codename": "vili",
+  "commit": "c241aef21e5d24602eb72a32f91d2f8dbf3562fd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "529a4ef95ef63ee5ec9f2c7183ff11a505b414777340f58ef87f8a5f7787f570",
+      "size": 72
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1b5523d9183499eb7bdf11f67be95ed5ea7579cb4e79806da35ed93ffe4617fb",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3fd672b8935c3d8df49f53e2d0a9b2f9630eeba0694ba25420310dbd3b15dbae",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bd9f634b36d7d112a38da0d8883c96bf61f2092655044e531c540e9404e12bc5",
+      "size": 1192
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a2f834da649ce56f51cee9ad304b9fe34ba57f153a5b7f58f44fc318aa587b05",
+      "size": 1228
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8ccaa7227a713f5212bd568f13be89cc9700a5ae1f62203bdf945805ed4ab3f8",
+      "size": 982
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c57a121729798e9175a0ee1036f5b51f22eb7f5790999fc439dd2d20ab9b20a0",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a67da37531844ebbed17cebfe607533e41d3a5be6eba2540bf6a058e2436a521",
+      "size": 35762
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b45c0b05359127b13c8f454fac0845b63af2ff6d6390767b949ce9b7de9a7826",
+      "size": 57
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_vili",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-08-02T17:14:47Z",
+  "vendor": "xiaomi"
+}

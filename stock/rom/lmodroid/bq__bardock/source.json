@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_bq_bardock.git",
+  "codename": "bardock",
+  "commit": "5cd346bfb66f1144b38c15d58fc62e9cbcab0ec0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "48212439dea0aa4e027e5a58ab75a55f87c50291c446197e34b9b7ad146a6c2b",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "064ed3c56eb422051dba9a4d1e5a78230fb1153644ef8170f1bf4eb9fdcb108c",
+      "size": 738
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ce054ff9c987483e8277210383d4dc6acc2e5ea6646f3f55da0a34cd8246ceb",
+      "size": 1012
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eb0bb084539038ec2963e141c02597f666ed3f732b6c0bf002fef5df0ec76cb7",
+      "size": 989
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "52d52adb3d271b04d297e774b9ef245b65692f55ec8c6e25bf9f4d4d47cc427a",
+      "size": 450
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5b766a454cbc60e32442daf27e6321e589317bb3f6f24fdc74327b6ba64a97c2",
+      "size": 2357
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fc78b645dba351b576642482039b6651af112030849c5ae57a2a3c050abfdac5",
+      "size": 43
+    }
+  ],
+  "kind": "device",
+  "repo": "device_bq_bardock",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-04-21T22:48:08Z",
+  "vendor": "bq"
+}

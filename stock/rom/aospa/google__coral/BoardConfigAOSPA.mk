@@ -1,0 +1,30 @@
+#
+# Copyright (C) 2023 Paranoid Android
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Build
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# DTBO
+BOARD_KERNEL_SEPARATED_DTBO := true
+
+# Kernel
+KERNEL_DEFCONFIG := floral_defconfig
+TARGET_KERNEL_VERSION := 4.14
+TARGET_USES_LZ4_KERNEL := true
+
+# Partitions
+AB_OTA_PARTITIONS += vendor
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
+# Ramdisk
+BOARD_RAMDISK_USE_LZ4 := true
+
+# SEPolicy
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+
+# Verified Boot
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3

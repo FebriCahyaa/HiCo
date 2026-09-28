@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "9edca88d98180883ac7779e6d3eb074af24887f2",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "effc7867e8eecbc5e9be902a3f22e355d82ed3c4a76886c3a54b80ee9fa7ffa6",
+      "size": 1206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1460f630881621c21c3899946ca41b23bddd262ae60eccd7ba857f4018f26695",
+      "size": 848
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "f30f52efdf1d937a99eb4649a87b09891bb8251df6bafd16239c0bdfadb28059",
+      "size": 608
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "db60ecd24418b4e09285166a8285ebf4ea20f56b69204f68e5221b2f4f18e8b0",
+      "size": 12882
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "030764477e00e567f2f3194890dcd7a5b44b7cc6c15025ac8da71b02071334bd",
+      "size": 1074
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6a019f7d592a22a3540a77a31c0345ab31440f038be960839bdf65f549e6b7f3",
+      "size": 213
+    },
+    {
+      "path": "thermal_info_config_bluejay.json",
+      "sha256": "fbbf34730fb031a7d2c3c883b76f511954ae1bee2c4ec56c9212c2cf32969716",
+      "size": 20850
+    },
+    {
+      "path": "thermal_info_config_charge_bluejay.json",
+      "sha256": "d8305a717d3f7171b81461f7e2afcca9e10ec885e83f940d265de6527bcf4313",
+      "size": 10196
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:43:43Z",
+  "vendor": "google"
+}

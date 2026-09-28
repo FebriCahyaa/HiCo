@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_klimtwifi.git",
+  "codename": "klimtwifi",
+  "commit": "f4ab9b8d1a9dfb1af94a01f354079a539571bbbf",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "65fe615897a1b19249b181eabd5614d5e0b395db62a516e272df290ebee22153",
+      "size": 719
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "918d0c2aeac69a176683e7730917ee7e2f828699d4ad9ad9680442be55e797ef",
+      "size": 1742
+    },
+    {
+      "path": "device.mk",
+      "sha256": "48809374ba8dbe464678cea4f0be07146fe88ff0a9bdd36f3115a54169c7bd85",
+      "size": 2406
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cf90bd46bb3f3b8c58eb6c1953cd2d545d0d2ad015808b146565b25e3e6b5a17",
+      "size": 1159
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "48d008a8ce207e78ec2822c8e3a6e177f5c300697ca073e1758c9684b88e0fd7",
+      "size": 139
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cc2fcc14dc3ed7666b288381a73fbb57a17db6c186c3731f90c52dd0fc418c18",
+      "size": 187
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b0cd4f5525405be600e79f829738dc937296fabe3f3ab95eec9c3d20d34c1981",
+      "size": 44
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_klimtwifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:15Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_asus_X00TD.git",
+  "codename": "x00td",
+  "commit": "5a8115cdbd027bfbac4530b9b4bfc45a0b1c1895",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a8703032437404c33eed6da752a109191e7f2310af0d49397e5eea2cc2dba46a",
+      "size": 304
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "863392b535a4a48a91a75ea2efeb363350d47558da04b488d9393f9332c2fa7c",
+      "size": 203
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d365b792bce13c64365eeff9eeb5332a2e5fc40e7f7bcf0f04b7a0093f49beb2",
+      "size": 565
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "369d02c183699079f3cdc279d5f063dcea6450dd29c11b5644b8e03c621cba0e",
+      "size": 4857
+    },
+    {
+      "path": "device.mk",
+      "sha256": "482dc50fe57b1d53c9b215b0afdf997ba9f88434dfa2d722d80c5c17da59c656",
+      "size": 654
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0b64ace90b7a3d3a32241822dbb2739388558c02425d9d07abe907885b3eaf6d",
+      "size": 1123
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "009ae52978dae005e98cb8f32ab0a230f189ae68b6f7b345aae95e2098658c05",
+      "size": 34321
+    }
+  ],
+  "kind": "device",
+  "repo": "device_asus_X00TD",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-04-21T22:43:55Z",
+  "vendor": "asus"
+}

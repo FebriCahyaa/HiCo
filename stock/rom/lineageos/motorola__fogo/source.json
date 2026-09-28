@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_fogo.git",
+  "codename": "fogo",
+  "commit": "21a7f41c99b5b2197673ae29e85fcee9ed73d9aa",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dd79c044379d50da2a1bc8c5cb5fd028795f371292809195e160eacd9f6c0518",
+      "size": 313
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8cee7a71c4678004790db8dbb830027dfbc45d5b43450d52451cddfe328781b8",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ce19a77227d61e981eeabb76a4a49c9ae42a9bf0745aa55e9e2cfbe0d094b3d4",
+      "size": 1692
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d3b0009d97044657f428bf35617a087ed4faf32d0eacba2302f307bf4ac80ab2",
+      "size": 2911
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ef6265991165afb5ecf8d884d17d3eda33cfc1e1ae1b4b0e0ae0aca79a204f7e",
+      "size": 1940
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f8a9a31fac7efe57eafc269a584819265927c3cfb6cacd27295f28f64d32c4a2",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "06454f3ac150d6c4a03c631db36247223b24d161575892e09dd45a15844aff8f",
+      "size": 12509
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2521f5c2c3f29739782f3c00f760c03b9f8dae85f73d3f4b77af4917c172a9d9",
+      "size": 650
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_fogo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-22T03:58:56Z",
+  "vendor": "motorola"
+}

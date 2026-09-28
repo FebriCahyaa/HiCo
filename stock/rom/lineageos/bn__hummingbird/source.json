@@ -1,0 +1,57 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bn_hummingbird.git",
+  "codename": "hummingbird",
+  "commit": "b9537a436cc75f32cf5c637bc3d5074ca3176ea8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8ca7eea1789e3678701e4c4eaf520f75f52d82f52c9fe4577399edd3a75831e7",
+      "size": 780
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5f2bc6434cc5fdf4d1028d23b243658ce1ad242fccbfe6ae53b70d5d0aa13d44",
+      "size": 1109
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0df7a99435022745d66a1fbf7e3716f2e626b311c5152d0b756d09ff1e8c3dc1",
+      "size": 3007
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6a3c4bf3bdf394ceaf18fa265494cbdb9ba638b817a9571d031ab462b831633b",
+      "size": 1917
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "010f8824b11deb23fbf84b80ac29885b9d7779a02495f314a349f73d2cd213bf",
+      "size": 388
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "26d85937f3d47ce435e9ee42d064dfb58f1a1a8eaeffeace28d741859df01ef4",
+      "size": 1563
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d6ac598b19f510c0d7f42de401a8c6a02376de850c9d677734ed4ac91ad6679f",
+      "size": 1108
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "5f0de7a5c411f8ef5a9d5eec1d05055a6832252bad979c6b268be4ab94160c91",
+      "size": 887
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bn_hummingbird",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:51:13Z",
+  "vendor": "bn"
+}

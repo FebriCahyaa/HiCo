@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lenovo_heart.git",
+  "codename": "heart",
+  "commit": "c1ebbd68ecb9bba593a46398010c96266c16f764",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "98548686bbf4c569f932e7836b778df59ba4600672170159d7dc2082ab53fd06",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "630d60e5245bd8e20de325eb8453d388693ec59624c9f0363e50b89f24e38fcf",
+      "size": 733
+    },
+    {
+      "path": "device.mk",
+      "sha256": "473d302c892ef87b0156376694a7d148740544f0fa31219233a4f83851be8c1e",
+      "size": 2158
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3919a8aabd80909b75e53cd79290ed2337145234bc715a35253fd7789d9cd4f3",
+      "size": 1512
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "073333e8df1ac098a88bfe6002966c26bcdbe811f9b9193e8ec89219ed536470",
+      "size": 11134
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "35fc3a0e05d5354d4dfdba4fa4473d9ee1200feaf8f1aecec6733e4826ff8e53",
+      "size": 109
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lenovo_heart",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-03T03:08:43Z",
+  "vendor": "lenovo"
+}

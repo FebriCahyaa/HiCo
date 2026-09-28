@@ -1,0 +1,92 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_raphael.git",
+  "codename": "raphael",
+  "commit": "ba1a9fb359b4fd87c9399e92f78a73bd1c8b723c",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a5565b92d4fc6699105e5aa5d00915895edec257c65c3bb9ab937ac6bd8e8a4f",
+      "size": 1413
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "953bcbac68b517b4b60a70f54f202bde9269ba98d045ce77b6e2fe440fc26559",
+      "size": 3996
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "433aa3dbb4e1470a6728ded3dfff9d78618560f08dc6073081ba35ece401a767",
+      "size": 748
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cefd96ba801fc9e2462dd7bb0a4139af2375dd8539fc99de9d8544257d41d661",
+      "size": 8643
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7e5557653efd05309ad9a4b9a1aae02e9887c3340b4ed5af5a895439e6b2c4f8",
+      "size": 24665
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7fe539ec76b8648815af6a44d6a49a89b800974a671b5a9c1a054bff0410b04b",
+      "size": 1999
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "821059996dac31fe4bc90adbdef40cdf1ed4cbf6a1b68749fd374a91e9b118a8",
+      "size": 57541
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file.te",
+      "sha256": "103c480e368196f554068f69936f1b748669520894d7c21c55cfa40a4be07655",
+      "size": 73
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file_contexts",
+      "sha256": "13ab0d51a930731e440b1054b2136baae8c9d859560cc1e51cacfa886598ccd8",
+      "size": 403
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/hal_thermal_default.te",
+      "sha256": "11dd987e7c26549d6661c53dbc24206c9762ca2e4fe714658813f4360349c5f1",
+      "size": 433
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/mi_thermald.te",
+      "sha256": "69a9e55a1d4a7a2bf99e558a18af931f99a99b23adc19ce57d74cfcc54e0c139",
+      "size": 1578
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property.te",
+      "sha256": "18c0f1abfe5b9ffe76b15a76b3d7f7777b23895387bfcb0cc40d7b39e538fada",
+      "size": 82
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property_contexts",
+      "sha256": "087d1ef0cfc7df1cd265e4ac053a5cc6666a9f0106ad3ca87eb24ce0d39bff8f",
+      "size": 75
+    },
+    {
+      "path": "system.prop",
+      "sha256": "83e04c013b9ca3dab1713588793486371e50ff0d14757ac731c6269fd2990fce",
+      "size": 3166
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "15a14ee254373dbd1a3d06ce36b8e8942ad654258463f19f76f2f7c9c7ad2ba5",
+      "size": 10745
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_raphael",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-09-27T11:45:35Z",
+  "vendor": "xiaomi"
+}

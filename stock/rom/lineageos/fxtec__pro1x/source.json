@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_fxtec_pro1x.git",
+  "codename": "pro1x",
+  "commit": "78b1d79dc184b9697bf1fcd143d880be50eae958",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f67ec7c6776a24faff17127bc81197f6e365af0f51dfd71902cc44d146d771e0",
+      "size": 524
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fcb3f301ec90d712ffdf214cbd687f2ab3d65539270ea3ddbe231140c36c9d40",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e9548423f9705b743210d636580fad211cacb248e61ef8643d8d12288c1ac06e",
+      "size": 6363
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a3c5d1d739ac36994bcc83e8f77edd99396a4e585732f71b3dfe82e7a26c5613",
+      "size": 15799
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2a091fecb9ae87549fe67bcccc059a861ab1ba494dbafcd20516317cc403ae4e",
+      "size": 2121
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "eea6baa6cd5810967c12561424b9a7dd4efe51863a611bfc7b544b8235cc41f1",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "497fe4a3680d82068ec64de7dfedd97f5c29ecddfedb06f761ad86bb5e6722f4",
+      "size": 37471
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "85657263ad89a4a104842f3127da69b34412dae62207478793b5bedaf385b952",
+      "size": 7497
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_fxtec_pro1x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-30T17:41:36Z",
+  "vendor": "fxtec"
+}

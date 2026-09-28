@@ -1,0 +1,72 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_selene.git",
+  "codename": "selene",
+  "commit": "c8a38b12954ae078fa89c3f63218bfc62922ee2c",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "bdf9b175f3f18b272687c38a4b6ac9db34a2b7cc1582a1ce438cbfcd86bd60a9",
+      "size": 1495
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6f1a5be40f20ea45afe71dd7f568eb167055709fefcebfb6ef55d3c6a712c99b",
+      "size": 754
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9377413e03de6fa4b26c8365a4f97317be7b8425be9dccc26778043dfee8e145",
+      "size": 6289
+    },
+    {
+      "path": "device.mk",
+      "sha256": "aa780816afb2266d307aa62904aacdae5dcd1bbcd339e63e580098cc1fe4a6a5",
+      "size": 26970
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "33db5ef519ab9ee94da002f6459c9060526237afff491f0579bef167d378cc24",
+      "size": 3519
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b5b9564be4f7e2437b5474fea626112e2a56bf1817d04e83ab0702c92f70a2f3",
+      "size": 65799
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "da577ec1a7f9dfb6c802d4fa8155de38ae80a8318e1728958516319711f7253b",
+      "size": 1276
+    },
+    {
+      "path": "system.prop",
+      "sha256": "34d9ada51f36139a81af8fec1fe071c6eb7a7e9203a25788c2ca348badcb5a84",
+      "size": 2403
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b2353e913f0538783a14d721426649251fde2e6345c98e257b5bd61d2351948d",
+      "size": 18158
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "fd455225becbfc2c14632dbc633a6ba65719593870dfadbc309d16ff59ea27e2",
+      "size": 489
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_selene",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-10-26T16:26:53Z",
+  "vendor": "xiaomi"
+}

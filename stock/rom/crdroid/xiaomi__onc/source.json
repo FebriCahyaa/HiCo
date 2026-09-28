@@ -1,0 +1,57 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_onc.git",
+  "codename": "onc",
+  "commit": "0135e3a0bfa1ac1bb930da3f82956e51c66f1ec9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0f86d17afbbe664d6705ea5cac96a3640583d50a59da927cea4257f87ba48474",
+      "size": 4991
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f13fa826f9b3c0a5b449a1c08357a57175191a047db70bde6a8d02956c1fec97",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5efc2345bbc44c86b5a0dc88a9a4dceb7642920e387502e4d7216d9db9dae8fc",
+      "size": 6465
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "device.mk",
+      "sha256": "321fa81cfb2f292a65f17ae7a8501a5735e57a1f550cf7c29c5a8b92f9571cc4",
+      "size": 16370
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5bbfdb15a73a4dca4dc4dd3cf4ee27d89de431ecd1dc08c6d2c511253317473f",
+      "size": 1228
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "49706495459981cc94a5d586972ba00e3c87463aad381ae21243cc30bd934351",
+      "size": 205
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3a657ad4de8dad099a3eec8e801274d62109fb2c47e5f1fc895d595b42cee3e",
+      "size": 75203
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_onc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-01-08T13:05:14Z",
+  "vendor": "xiaomi"
+}

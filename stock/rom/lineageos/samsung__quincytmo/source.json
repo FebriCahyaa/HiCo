@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_quincytmo.git",
+  "codename": "quincytmo",
+  "commit": "9b52c0cf3f44cd72567e36c49fdcbebf50d494c4",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e7abef2565a216d47a38400b069ce1074772e61f153532a4d7787825ce8383f5",
+      "size": 1638
+    },
+    {
+      "path": "device.mk",
+      "sha256": "79184abcb66c47a7887f6f2ab6ce7a1187644a666c418c181ad2ff4686997c8b",
+      "size": 1107
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6adc4cc747e789eae054e1e09cee1b50ee90a7e12ae8448f028775359e0c1a86",
+      "size": 1901
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b29100cf6aeff1220fb6eb38daf022240d7b76fa3085c18f5842c81ee97d527c",
+      "size": 34
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_quincytmo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:35Z",
+  "vendor": "samsung"
+}

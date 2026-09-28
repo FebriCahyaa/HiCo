@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_pioneer.git",
+  "codename": "pioneer",
+  "commit": "74c7cec8c1f6324708a1e852476b21c24f09272f",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "056918b382eec8fa314e61a22eddb26c334b39a0b40f0bf09011881e57037249",
+      "size": 181
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_sony_pioneer",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pioneer"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

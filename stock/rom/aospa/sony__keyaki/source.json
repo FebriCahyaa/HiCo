@@ -1,0 +1,42 @@
+{
+  "branch": "pie",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_keyaki.git",
+  "codename": "keyaki",
+  "commit": "cafdf5ef344fb29d19c17a7ace7a6149a7aa445b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f6d0ab54f2f55b3f16252300ed673e480f668cd4c45529ffc90edaba3b434cd0",
+      "size": 696
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3f8cf34db5d5821f4f43ce4c2657e74826e26e74e238509f077e8e3060d8d7d2",
+      "size": 1535
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f0e4271a63aed27591d02576e9e900023e137692a79f2e7bf2631b192e5365e6",
+      "size": 4246
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f7febcdc28917b400543642cce8f2206c97da1a915a9d48aea5332c782e4b4ba",
+      "size": 930
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_keyaki",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-03-23T06:31:50Z",
+  "vendor": "sony"
+}

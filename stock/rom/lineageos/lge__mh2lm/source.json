@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_mh2lm.git",
+  "codename": "mh2lm",
+  "commit": "350f64863c5a2c0367ac018ce8325dc3df7a6e00",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "43fc5ad3277a5860e0f23593dc493ba85d62b50c4e65545470b6308d9c4a3f2c",
+      "size": 66
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ef805f3a3574c0f65dd9da7511195df9f136272c017e784d04ec8c78fe6ece90",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4e50f5022ec0dc33baed81328b9ac7c97b5f2668478c50e76c46a2fa411e9e84",
+      "size": 915
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1e7102a6091033398d72b54215170c0032aaf789b25802b5ea9415145a912c2e",
+      "size": 2566
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "403ba228fa8de4d1737358ec50f2fe294a1691357ee558541924a955f3a1c878",
+      "size": 1106
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5bd717ceb3d319173bf1ef241b5424871f8d84bbbc4a959ffc64935b63ad97a5",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c52a9609553d5389a423da0927fc733fc52f5a7c2c191d8f43ebf87291c87b65",
+      "size": 34802
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7c1b3f4af94e5023c547b046ec8a08a3b640ee1373bf73f6b61a813486f0179c",
+      "size": 75
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "60a5b4c96bd993f4e20b5fac26b2de5986ebf843f3368f210182d8ac587df46f",
+      "size": 249
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_mh2lm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-11-25T16:10:09Z",
+  "vendor": "lge"
+}

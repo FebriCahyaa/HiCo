@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_whyred.git",
+  "codename": "whyred",
+  "commit": "d7483e3ae4e5aa13fd894c743dd068c7611ae27f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a26622277792dda17bf51f330b00419942f835e50d387a1b8f99581ff8cb4818",
+      "size": 308
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d709d369e193f4c0d0f3ca69f7c9a7e45a9ace1cafa410792ce14ab55dfe54aa",
+      "size": 258
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bab90cdae1929a09f2170044dcef0af3242cacecc927ca87f8f257deb84d5650",
+      "size": 832
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1c6782b7857aea912a40097f5b91631e9a0c02aad0f5dc001137e7bd90388a4f",
+      "size": 1637
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a86bc13fd2a6939f4a78731a087614a39e5bc4952e45e7a440b7112abe639145",
+      "size": 913
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2d8b79ccadf0a40344dd9f6a5153c80c467d9dea0fcd3c3280f55faa40f18e3c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0910bf612ccadffde6e18b09ea6133d1c43f58397b154f3de2f900ca456a05d9",
+      "size": 62376
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d43dc8c4569034c4e2264e7f7d2849ec350234f6af6be4ee817a99c8dcc2aedd",
+      "size": 928
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_whyred",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-09-13T22:00:18Z",
+  "vendor": "xiaomi"
+}

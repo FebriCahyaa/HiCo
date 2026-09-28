@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_payton.git",
+  "codename": "payton",
+  "commit": "34424a7cf609f47d27246961c3a87fc5fd4c38e5",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fe860ab25cba1683ff9fa1bebbfb1851e89dc948df0fe2dce6281a9cb1cad1db",
+      "size": 76
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "77606ea1db09fb5a091e86ebf491784ee242c81f6257bbc3f47e4f1037b5050c",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "124fb1e590eba672d650d191c1aa8acc3f408159220908ce019eb47eb78c86ed",
+      "size": 1735
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "bf9d802a43c92bfa6b7d821db97598551fb17d5958bdaba476bb08bd37d3f14a",
+      "size": 3560
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1c6b03b80d45f482e5552e07b1924ffccd4d0a9b659421b03567fe56f796f830",
+      "size": 4781
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f00a9ea84830a83d128b1f800ca7f4ce882d6937a008adeed7662c7557710dce",
+      "size": 2471
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f62da33a4842580e968a42fca6cd97466e11c6d4bd9663f16460df627508091",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a266523ad1a83586aa0d23e3f4e5e1a9896d9ba4b336fd9c8c8dbdd2cefa7fe8",
+      "size": 21743
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4d9bd97898dd3699d07385c590bf1a97c7c45662306010c725be5dff71bba0d3",
+      "size": 1523
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_payton",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-08-28T17:22:13Z",
+  "vendor": "motorola"
+}

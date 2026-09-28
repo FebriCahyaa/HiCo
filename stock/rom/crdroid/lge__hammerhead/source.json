@@ -1,0 +1,52 @@
+{
+  "branch": "6.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_hammerhead.git",
+  "codename": "hammerhead",
+  "commit": "8683cb55ddf7767117890e6ea10053d74cd2388c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2c0c90e8ac7f2b0608e3360f6ed3e6d9349fa5d2bc7b5499e4770e8fe4765fc6",
+      "size": 1152
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "89d103ffe27954537fedb4eacc596bdcf9fa0bb5e607daefeedd9f80f3548e95",
+      "size": 777
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "49e124d001439c83c87b054579dc6ea3d13fabed428586a05d08de59410adae3",
+      "size": 5005
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9e06002c8975e7a1c35336eeea5f7c67e743add991990e5ea17eb857e1078e0e",
+      "size": 14713
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4c353e3a9eafe805e94d2e6e5b8e48f317a098d1b8bcc7e1d738a912531f8bb6",
+      "size": 1425
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "167788f20759283d7a58f5c360a50ed294da20a3746427dd6b7553951bf1f0ef",
+      "size": 1887
+    },
+    {
+      "path": "thermal-engine-8974.conf",
+      "sha256": "27f289ed04432be8500ca160c9f19479f974a7aa775e44567c9954b3780dd95e",
+      "size": 1803
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_hammerhead",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-08-25T09:53:24Z",
+  "vendor": "lge"
+}

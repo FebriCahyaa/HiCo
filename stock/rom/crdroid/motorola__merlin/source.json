@@ -1,0 +1,62 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_merlin.git",
+  "codename": "merlin",
+  "commit": "e898b8e155dd9b1edc1909fb0a571eccd88d51c7",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b3616e6643313c865e2edda735536b143af3488952a6582226ac73c559c9785d",
+      "size": 721
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "80d326d2df279c4c9eec9072719d171832902dc92a0a70e38d851436532cd54a",
+      "size": 1790
+    },
+    {
+      "path": "configs/thermal-engine-merlin.conf",
+      "sha256": "3a1e242869dde13708d85a456d3f79946cfcddd70026018de43f3955a84e0c53",
+      "size": 4250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "11919b3149747b6b667d786142356caf3b4c1ce5f10fb1c41588614016d18bca",
+      "size": 1971
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e9477a97820fc42d35e15b9746ff91e0562e61bef87efeebd7f0f7a81468a6a6",
+      "size": 756
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0018bb8d45604dc32c0bf393bb288b034829e65f6847e092f9c448a5d2d4f750",
+      "size": 911
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8274cdfb4fffcb9217289d66175644917fa14a62ba756f8be049b12d9dfaa87d",
+      "size": 4883
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cef0a6da87114c73e323bff6d395a07d087eaab734d8c4bab70ebae8557376a7",
+      "size": 476
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "954a9dd990d3d30101121e2daf75c73ee43f0a713052ce60b6ddf16f83f3fb23",
+      "size": 76
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_merlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-05-21T07:35:30Z",
+  "vendor": "motorola"
+}

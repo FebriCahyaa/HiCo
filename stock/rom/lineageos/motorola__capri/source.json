@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_capri.git",
+  "codename": "capri",
+  "commit": "da1a52ed454cb43d31bfd5ac5681706ea693f190",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a2209688fb98ae43043c74464eb6c9e8d09bcf1a5b82525f9d8d6f870f3c7534",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "779ad0d8621faa460704896d3ce1e9f2971829c9dd220a2c806766a8a695119b",
+      "size": 1921
+    },
+    {
+      "path": "device.mk",
+      "sha256": "453646061b2da51ba7c9c304867bc5bebf38baaf1bcaf9b3ccd133a02e635d43",
+      "size": 3684
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7cd3a9d8bc3c981f7b104c28c2fa57864c9c5fec0a837204b57389fba7c33c07",
+      "size": 2230
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "89e8cfdb73b69b2e81b11397403083348ddf8634deabbdd21b929f4ff207afcf",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "65eaaf7e093ca7819e93509fc390285fd5264bd8f01c8dff09936636058e36e1",
+      "size": 13325
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c521c146951bef20a11667f89599117674612d2467e9a7a2f5871d285627286e",
+      "size": 584
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_capri",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:44:48Z",
+  "vendor": "motorola"
+}

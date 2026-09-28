@@ -1,0 +1,52 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_pepper.git",
+  "codename": "pepper",
+  "commit": "e1c85b1d00305469488d68858132d09bd77f62a0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a4b58d49825f1169ae03da1c7389339fd897336d1b1b5b2cce7bd24234e88104",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e77c0ffccc94babfd4d95cf7d5fdff0f081e527f3020a31ba3874a1fa92d6951",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6fe88b664bddd0cbe2df092b513dd6ec180d90b6ff3a28b26692969e4633a84f",
+      "size": 964
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ac27a0112df013c09daf621b6b708252ddbb8760c9b4365f6090d07928f4fec3",
+      "size": 587
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3016731c6427c6b2a7ceac03427a12d0e1ab1d9ad21ebb8f57d9d8b9a67ef6fd",
+      "size": 29569
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c23a886e8b6c85409d73008b57ec82248409273c5e7e493bc19ccc6b8d63baa4",
+      "size": 1696
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "79d3157f2b9aee4f0ef136eea2d05c138ef40bbe1146c34d57a70c16349d42af",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_pepper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:42Z",
+  "vendor": "sony"
+}

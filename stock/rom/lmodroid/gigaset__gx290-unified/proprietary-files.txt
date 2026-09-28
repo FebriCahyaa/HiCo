@@ -1,0 +1,91 @@
+# Audio
+vendor/etc/audio_param/AudioParamOptions.xml
+vendor/etc/audio_param/AudioParamVersionInfo.txt
+vendor/etc/audio_param/BtInfo_AudioParam.xml
+vendor/etc/audio_param/HpImpedance_AudioParam.xml
+vendor/etc/audio_param/PlaybackACF_AudioParam.xml
+vendor/etc/audio_param/PlaybackDRC_AudioParam.xml
+vendor/etc/audio_param/Record_AudioParam.xml
+vendor/etc/audio_param/RecordVol_AudioParam.xml
+vendor/etc/audio_param/Speech_AudioParam.xml
+vendor/etc/audio_param/SpeechDMNR_AudioParam.xml
+vendor/etc/audio_param/SpeechUI_AudioParam.xml
+vendor/etc/audio_param/SpeechVol_AudioParam.xml
+vendor/etc/audio_param/VoIPv2_AudioParam.xml
+vendor/etc/audio_param/VoIPv2DMNR_AudioParam.xml
+vendor/etc/audio_param/VoIPv2General_AudioParam.xml
+vendor/etc/audio_param/VoIPv2UI_AudioParam.xml
+vendor/etc/audio_param/VoIPVol_AudioParam.xml
+vendor/etc/audio_param/VOW_AudioParam.xml
+
+# Audio-Hardware
+vendor/lib/hw/audio.primary.mt6763.so
+vendor/lib64/hw/audio.primary.mt6763.so
+vendor/etc/aurisys_param/Speech_AudioParam.xml
+
+# Camera
+vendor/lib/libcameracustom.so
+vendor/lib64/libcameracustom.so
+vendor/bin/libccu_imx214_mipi_raw.dm
+vendor/bin/libccu_imx214_mipi_raw.pm
+vendor/bin/libccu_ov8856_mipi_raw.dm
+vendor/bin/libccu_ov8856_mipi_raw.pm
+vendor/lib64/libmtkcam_hwnode.so
+vendor/lib/libmtkcam.logicalmodule.so
+vendor/lib/libmtkcam_metastore.so
+vendor/lib64/libmtkcam.logicalmodule.so
+vendor/lib64/libmtkcam_metastore.so
+
+# Fingerprint
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.mt6763.so
+vendor/lib64/vendor.sw.swfingerprint@1.0.so
+vendor/etc/init/vendor.sw.swfingerprint@1.0-service.rc
+vendor/etc/sw_config.xml
+
+# Firmware (WIFI)
+vendor/firmware/wifi_fw.cfg
+
+# Keymaster
+vendor/lib64/hw/kmsetkey.default.so
+vendor/lib64/hw/kmsetkey.mt6763.so
+vendor/lib/hw/kmsetkey.default.so
+vendor/lib/hw/kmsetkey.mt6763.so
+vendor/thh/ta/0401c03fc30c4dd00000000000000104.ta
+
+# NFC
+vendor/firmware/st21nfc_fw.bin
+
+# Radio
+vendor/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
+vendor/bin/stroke
+vendor/lib64/libcharon-ss.so
+vendor/lib/libcharon-ss.so
+
+# Sensors
+vendor/lib64/hw/sensors.mt6763.so
+
+# Thermal
+vendor/etc/.tp/thermal.conf
+
+# rootdir
+vendor/lib64/libstrongswan.so
+vendor/lib64/libsimaka.so
+vendor/lib64/libhydra.so
+vendor/lib/libsimaka.so
+vendor/lib/libhydra.so
+vendor/lib/libstrongswan.so
+
+# Misc
+vendor/data/misc/ProjectConfig.mk
+vendor/etc/init/init.md_apps.rc
+
+# GPS (Certs)
+vendor/bin/starter
+vendor/lib64/libcrypto-ss.so
+vendor/lib/libcrypto-ss.so
+vendor/lib64/libssl-ss.so
+vendor/lib64/libcurl-ss.so
+vendor/lib/libssl-ss.so
+vendor/lib/libcurl-ss.so
+vendor/bin/charon

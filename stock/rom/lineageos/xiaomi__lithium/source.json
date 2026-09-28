@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_lithium.git",
+  "codename": "lithium",
+  "commit": "bac0b4e18fc2c6d86d7c79b2764c6e575ad140ec",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bd20be6d77d340179892a2fb6d5eb81f87c127d831b27058921c2a60735a9b90",
+      "size": 1061
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "056a908042b196b02235bca9251aa35a285b9b186b132e09137597aec31af9d7",
+      "size": 767
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "be90a3cffa70d50b7e22d8759b4e7b90c9758bb985cab91aead6aef8a39dfd0f",
+      "size": 1057
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "8656992d85d7c4a221c05c80fcc0daaaf580dd98e25476f81ee4eeb0392adbea",
+      "size": 3061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "731559e901b8bffc180fea461da193707b5822516c9d285441cc731c3c54103b",
+      "size": 1993
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2099c08e071ef4c7e5212172eff1a0c943ee0cf9d8c8d37b37cb895e970fc526",
+      "size": 472
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d776a65da30b8b62693a2d536cbd71bce2b3da6e8a2f50ef279f769b8a4b5424",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e03dcd9851deae1c3303d12c752e1b3935eb643d39f7468d2e2d508f08f4f4d4",
+      "size": 5854
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lithium",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-10-13T20:52:01Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,102 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_munch.git",
+  "codename": "munch",
+  "commit": "6202df32fc64fa7c82fe03f1a836645660962b03",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cbfb7debee5617587a29d538e0ac474ec484b7f90f0f064cdb812d879baf1491",
+      "size": 643
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ca4d20a2ffdefadbc6660b8eff861f03b0ddbae0fbb07490b1e35db572a32d57",
+      "size": 3804
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "79ab81d1c4feee8694c112c4666d1a105a110a90bb6d71262e73a31815fcaa66",
+      "size": 5002
+    },
+    {
+      "path": "device.mk",
+      "sha256": "54fd70721fef05d178bcb8ec22e605aa87e810ad282423ecbba2de0987c13fed",
+      "size": 13697
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "93bd9b62b3aff2c0093b1f7197052abdfd1d009ce138c07e174463b637854d70",
+      "size": 2222
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "cc6805ae3cd16909e9322e6ce07fb1e3700eb833769a4dc1737a6e3513bf77cd",
+      "size": 3272
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c961f3da8842a016adacfaca3c5f9ec66eee83e826573f6d2c4103345c100176",
+      "size": 1454
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "01f1c720e777fa39f79a36e887964124b582a9f3aeb809f7220db9b8af4d3b33",
+      "size": 14214
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "5826767f23abf5d6844dfe6f858ddd02c7d353d7a7a03971f976f0419794453b",
+      "size": 6486
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7224cd73e0ee5b243d9d107ac7e277333a28540d2af6e24c823dbb93716ce4f7",
+      "size": 70364
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file.te",
+      "sha256": "dbf3d83c1ea55c7a0de855d6ef6e079a65193df50033962f9492957e0ad945a2",
+      "size": 78
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file_contexts",
+      "sha256": "102370fb56662e0a7743846939caac1e706533c57db40a4906082f8a92288153",
+      "size": 377
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/mi_thermald.te",
+      "sha256": "c27137abf31966284ec8e19faa3ea8fbb7ae3536d9de1baff5c72b335d539974",
+      "size": 1427
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property.te",
+      "sha256": "b0755c2c89415103e296473c93d41303596d857d0e5cb6f760e720144afdb8c8",
+      "size": 50
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property_contexts",
+      "sha256": "8c241e00c115f5419b4024e85ed72bd557d8dfb4d517876fd41e92dad1870405",
+      "size": 108
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/vendor_init.te",
+      "sha256": "bfe5b7fd0551f4646682fdc17a9f5008a955b29213a6d864457ddb3e83faa64b",
+      "size": 90
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3196e966437098e9ffe23d036a7204578e5c60a9d71a7bc7468113a1c24d63a2",
+      "size": 117
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_munch",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-10-18T06:01:16Z",
+  "vendor": "xiaomi"
+}

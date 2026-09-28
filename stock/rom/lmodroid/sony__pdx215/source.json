@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_pdx215.git",
+  "codename": "pdx215",
+  "commit": "1e393e394d20e65fc93250216d6a1dad9b3e25d9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "95d6c83088a506f39269ba6be700afd70af4abe68ef2ab2df550a06d23789339",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "901380efe914916cc4f3ed67c5c527fb44e620aabbc149727e58ea951c37e155",
+      "size": 1541
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1159a17b8be2d08e5588f8318b38b0130763318cd5fc6b09858363348f82ead7",
+      "size": 1854
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "cfd4e91c2dc0fb23a4a6514c59607e6b50bba5ff935bb39272032c408ca748d7",
+      "size": 803
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5245e4934ac9f455a7e44179d351a9c55ec34e75cb7568fbad2cad114d775859",
+      "size": 35781
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d9c4bde2b615a21f1ff5e4b880249a842b1b1afed6c2fc84e7045d006109b075",
+      "size": 55
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_pdx215",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:07:18Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jfvelte.git",
+  "codename": "jfvelte",
+  "commit": "91f1a3c960ee69577d664ea1fdcb193678c6e0e1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6c7fa92d75776dda4bf9b79e7a1da0459d78413650d22794da26ccfa08073cf7",
+      "size": 815
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "729d58980504c8b67090031c927fb158bccbf0cde7d1a25704537f00c565b874",
+      "size": 733
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "269d6e0cdd6559699b1e16347ae56bda39dba3625fe3f7fba3dd5b10d3213322",
+      "size": 983
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b748aa5d3ff30e5094d0ad52308645d9cba126e7875082e5de9c297712096cc6",
+      "size": 1975
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0e47211bdcc7abcd9115ac6ec4ef8f94f990543743aaf82fa84aab70011a307c",
+      "size": 468
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6650941328f7e58fbbcd46aff1ae44cb29f32a78fa9b765f8976057bf2c9a57a",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ba29cd0f0257a02963f275e0d8020a27fa42d0dd6c331fe62435c0cbf48e7e2e",
+      "size": 2582
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jfvelte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:13Z",
+  "vendor": "samsung"
+}

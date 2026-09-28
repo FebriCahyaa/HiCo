@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_gohan.git",
+  "codename": "gohan",
+  "commit": "b26b84a7b72af139212a98ede877e6ea5a47cc68",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ece686b1e3bea53e93187e3758b4766004482bb4cac7a5a4aa21d6e8c56a2711",
+      "size": 7069
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2f382bb4ae3072f09ecc445341c6523e074ebb8694e3cecc9d846befaae0a239",
+      "size": 7012
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0bac2feae2935757e01e7d54648f7ca581f43075ea1461b85c4ce909b3c907e5",
+      "size": 10556
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c0ac3c82dfb2957f22c41e66aabf389b9ff2a5116b83db9f56921906843efcb4",
+      "size": 1687
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "127513400fd459d41d974ebf7fc32ea7f642f223b494f2c80e445e07fe0b603a",
+      "size": 184
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "07e2bdd996b95537311317b68f418c698953440978b9c7b32810d05288bee95a",
+      "size": 16698
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0f77717f6e570a9fb982d71677c9776797e450c3cce2de055f5113093c5d0686",
+      "size": 4536
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_gohan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:20:58Z",
+  "vendor": "bq"
+}

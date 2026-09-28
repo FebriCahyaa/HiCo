@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_d855.git",
+  "codename": "d855",
+  "commit": "f8c86e2ce053445e64c39fde69ed598bdd6f769b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "236a7c7f31c85eb2b197e3cd744d3f031c66d955ad8e67ff9fed7a05637bada6",
+      "size": 1136
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a46415dcf289dcdc301406bd6f87a092f54e811eebca8a869c83d9bcea3f102f",
+      "size": 750
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3418e1972200cbaa67a424c3a6d296bef6aabe4f032fdb0400dd9db4af69375c",
+      "size": 2378
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a5314ebe82c25b867aeb4807b51a2a191358e5a77bab0a9a348cced48cd8b4b0",
+      "size": 2330
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3602b690663e557b9d7e44d052773a40f20820c9fdd4863fe86d5392ed399b64",
+      "size": 102
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b6375bf96331f5e466abc7a559558621455bb6d782c354e3583568d4ead1eba9",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a270835400b5459130d19543c9c697d39d98de073b53b7cf4f52ffe22db6e2e9",
+      "size": 2065
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_d855",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:36Z",
+  "vendor": "lge"
+}

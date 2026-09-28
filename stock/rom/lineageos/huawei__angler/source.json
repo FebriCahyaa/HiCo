@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_angler.git",
+  "codename": "angler",
+  "commit": "9d6ffc1de649c986ea05c6d7a4ac3b5a939a06a2",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d8906594cdf40525643b628ea764e64890b2137bd1e7b35c5285d07ead0d07f2",
+      "size": 1485
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "feb7da25937ada81c91a227040730bf897133dbf51a20ffb866d6c136f6936e7",
+      "size": 709
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1d1466204dc63679d4ecadc5f85eb9715143da2f89652e3bea19650c4c4da0ff",
+      "size": 5727
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3ce1ae664da3ee78e58a1e5d6906baf59f7f4d7f72052ba518f88c259b712767",
+      "size": 22054
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f4e3e25282e68e2432d599d4505986fcc5e3386ae8b0071f509ad810ccc8aaf8",
+      "size": 1602
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "87022e1cba87832e899bef48e032aa6dee4b651c79621e9598602b996dfd1ec7",
+      "size": 100
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "960aa950f2c49c50130428aaeaf5b5655b7e4b2626f42113e96f3de338f594b9",
+      "size": 920
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "310f7e05d4d82d1deac68e26379d5abb58f5966ced6b91064be47fd96757d35b",
+      "size": 922
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "7d70dfd41ecb418778092491eceaaeff307c60f6243e8e02e41d904326f7daba",
+      "size": 8803
+    },
+    {
+      "path": "thermal-engine-angler.conf",
+      "sha256": "d64367fc80ab0d49711529297c3c2789ef8fb8a0a0daf8323a2046b9ac709c61",
+      "size": 6929
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_angler",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:10Z",
+  "vendor": "huawei"
+}

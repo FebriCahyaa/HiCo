@@ -1,0 +1,102 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_bonito.git",
+  "codename": "bonito",
+  "commit": "e2cac2e5d4b3d5bab6ed96492ceea03d0635f9c9",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b248c13244bff56cf472db6f758aff469959404a5e2a600a30dd8c2a15a0e2b0",
+      "size": 1340
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b2d49a490824f6b55b4193e507d727009392b287a2ad2609a1a6258a318ac28a",
+      "size": 988
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "2d2769aee05246cf0de28d6f9e00677cc3667cb61d4a90c3b6344f6bdfbce57a",
+      "size": 6467
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "18f80e35b03b1c2cf671c4e9532ccaace0ff45714f5550d5d366d05e84ef8def",
+      "size": 1354
+    },
+    {
+      "path": "device-audio-mfg.mk",
+      "sha256": "955e019ebdd6df29aaf1e4832fed46919ff4a3615b8573c24a50c07c6aede9e4",
+      "size": 728
+    },
+    {
+      "path": "device-bonito.mk",
+      "sha256": "a31cb5ec20aa018c010fb949172c73eb46b6875ff4ef10347a1f098017883a19",
+      "size": 2433
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "0abe2a50d867562472f3b057f4d1fdfe93be82f56c06f3f1e1508b12bce37ee8",
+      "size": 4806
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "b878f42086b9db28bfd715f64d2651884dca1e25d9f3e2841a3080a5af3326c1",
+      "size": 2387
+    },
+    {
+      "path": "device-sargo.mk",
+      "sha256": "8dca2311967cab317cac00da96b4f75be87e8bebd6124786d721d688658f61ca",
+      "size": 2611
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6c3ac0f07f20d7db0461abd3a0207ae67fb278506a29969082ee3c259b05da22",
+      "size": 37498
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e2b4e8f7ef235c0fc3e35c217b8d7ffc0ba943e106a5304f9da0a2e26036d905",
+      "size": 212
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "33eb528873db3898d5f0a585edbc7a9340510919e6add8333e3c26396c6f5122",
+      "size": 1293
+    },
+    {
+      "path": "thermal-engine-bonito.conf",
+      "sha256": "fd317e36c3b329c73d72c9aafaf89525a121e2f78c009542f51faf2d50f65a82",
+      "size": 1277
+    },
+    {
+      "path": "thermal-engine-sargo.conf",
+      "sha256": "06ed59e49c02f3cbd45b6cfa081c598e14bf11c119a8bad68d63fb2685e10fae",
+      "size": 1277
+    },
+    {
+      "path": "thermal_info_config_bonito.json",
+      "sha256": "e9c2ad2913dbbbffc52e6fc801d51bbc26c2e751d4f522145e2ece198c5d84a8",
+      "size": 5390
+    },
+    {
+      "path": "thermal_info_config_sargo.json",
+      "sha256": "7e06f26bc5a2eaf6270e54f06cc10d847975617e23816a23f89c77dddb6731cc",
+      "size": 5390
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bonito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:11:11Z",
+  "vendor": "google"
+}

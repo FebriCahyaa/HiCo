@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_sif.git",
+  "codename": "sif",
+  "commit": "2aed348be7357f499f28ed498b9edaba371b5af3",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "446ac8e6b2c3cb0a8825c59e836705d8dff8c91027692bcd026035365863d55c",
+      "size": 681
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b668fe996f16289c99596d331109d230dc54fffe3cc50307a3c5400226e25f47",
+      "size": 854
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2ad82abcfc251c0d06938e977262f458f779042d4ff6a5f7948954746fd793a0",
+      "size": 828
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee65dd1db7068bcf64e49f874c6f38d1014be86ef6ac52a624f8769813e10432",
+      "size": 100
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_sif",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-14T22:13:54Z",
+  "vendor": "nvidia"
+}

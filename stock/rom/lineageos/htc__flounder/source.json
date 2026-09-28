@@ -1,0 +1,77 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_flounder.git",
+  "codename": "flounder",
+  "commit": "2ef67acc1769613c968493feeb8e2548a1519d37",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d1ea4d007940f99656abe9aebbc2d168f27647c6144a6928f5f401fc1d423f66",
+      "size": 38
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a857b7c41ac04e83e65c64c366e8c68a4e8f27d5b998b39e4eef3e961334feed",
+      "size": 1399
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7e8b4acd951e8a0644ada2218f8b04b7418275953341929750f4b13113e9f1f1",
+      "size": 701
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e01ae7cec6fee0ce35f34b20c916ffbbb787ab535f1e9a2b5b388d9540fc77f3",
+      "size": 4234
+    },
+    {
+      "path": "device-lte.mk",
+      "sha256": "45002acfb1a5b9951c1bb14bb54fa554317b9cdb35e4404e4d68573d8e32c156",
+      "size": 975
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e19d16b18f002fb9bfa612c52434f565d98a9c7799510ca80ae0a855a132c958",
+      "size": 15880
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "693a4d6fe42efbfa2545e6e8e18148abe328fc6451ce788b4d90ecda4853e7c4",
+      "size": 3410
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3f067f465e82cf5a6ea0fc87f32de60800e054bd624fcae08134cc2637d1873f",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "41fb2275c2dc98090ecbc09ba753fec552e6e014aa702f2362cf59b10411459f",
+      "size": 597
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "712417c327c5074a978964abd5b0e4c868c1d6e14d48d6eebf57e753999d0673",
+      "size": 924
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "bdef370d2e76450a9704b0cf88cf9e9ebb6d214fa37d05b416a4132452ee2b00",
+      "size": 7626
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "89775d3cab1e485f1476b1394bd1621ac217941d2118805ed54cf6d2ae936741",
+      "size": 641
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_flounder",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-12-02T21:00:19Z",
+  "vendor": "htc"
+}

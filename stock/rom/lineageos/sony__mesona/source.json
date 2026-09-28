@@ -1,0 +1,52 @@
+{
+  "branch": "jellybean-3.4",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_mesona.git",
+  "codename": "mesona",
+  "commit": "13b3bf25d231156145c6987033957add4a52e137",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "014bb21aaa3ee26c289951aa40f142ff0265b149a3a617d9654f37e4fe85ed72",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "75e2e36e7f38b79437c3c641c8725d11ef1a3024522b710247a2f48deca474f0",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2314d498b8c285a1d6f81b7885f9b11944ceb3112487756bbd9efc04eff5c9dc",
+      "size": 912
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ede9addd008d0613e15321a50c5058c708b30a322870c9f18217adfdbec3c114",
+      "size": 587
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0197de281efeef169b49ea51060e98a0c498d1d7f66cbada3f25d254ad541fed",
+      "size": 2225
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e1c87d9ecf8178e8c649c8786ad9ac9eeedc3872b66c7e0cb0ff45ab9919fd99",
+      "size": 70
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f4c02e7b86341aef73ad9eea29338dd7054453249408bb07b7b5c4163b88c286",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_mesona",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:11Z",
+  "vendor": "sony"
+}

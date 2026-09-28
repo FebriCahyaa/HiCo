@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_realme_luigi.git",
+  "codename": "luigi",
+  "commit": "f9f7523997fbe0b22cdc2092da44b25b15612472",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e9f375fe95a31f2604d3ca16ee6c688d3652f4946d7685ca9972aaf54cf98809",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4d9926ccebb49421bcc3862448a31c61c060e8e41b7016f2d9870f6f9a751dc1",
+      "size": 466
+    },
+    {
+      "path": "device.mk",
+      "sha256": "332e7832b24a52b6404b549e835f533d3fd08d71e9d7fa7c6f66a9b691100abf",
+      "size": 3432
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fd0938f17d8b8e07fa4f8a1c1c282ba89e2f090d394e096e956892c7ce211e90",
+      "size": 1378
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "abcc2f3a1a7ecee5e3ecd7cf9c598782f9880c7907a4aa1526251afce7064f8c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f87228a59411d0eb5994a2e3d0ade2ed35eaa4553eb151b0aaa0983c7cd432d0",
+      "size": 55725
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8432f7ccca3d7c4a08b2416074935df48860b899dcb2425e3acaf78974dd07bc",
+      "size": 240
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_luigi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T14:31:44Z",
+  "vendor": "realme"
+}

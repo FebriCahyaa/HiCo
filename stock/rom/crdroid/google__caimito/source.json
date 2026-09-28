@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_caimito.git",
+  "codename": "caimito",
+  "commit": "e59f9e88a08e3792c48cd0eb079a6c90cc1f8d00",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "826c159c2d1c1cf92f44df541df552a8ebdf31727be3f59546f8b5c90bddb3f9",
+      "size": 509
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d385fca378edc71bf84a60996d0776a767a48af8d719cf9000909269ceb1389c",
+      "size": 338
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "123f8fb513ff92771bc6b0d96ade2173997dcf2f9f2031aba2e43e29289dafba",
+      "size": 1278
+    },
+    {
+      "path": "device-caiman.mk",
+      "sha256": "64ebedf0f04e949c32b1d93882ca1558aa91a7ae33a62bc8d14ca4dc3f96eb1d",
+      "size": 2420
+    },
+    {
+      "path": "device-komodo.mk",
+      "sha256": "155b39c1d34ab1df9b259867dff42fb085c91ce4ddf9d3a489fec7e30b1f2690",
+      "size": 2420
+    },
+    {
+      "path": "device-tokay.mk",
+      "sha256": "610336c1d4d91437f1f1b0c65d8bf1f15ddf82be31391bfea0a28fb9e1d99e79",
+      "size": 2386
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8ace094c4b344eaec2b7c27ee56ce750520d1f6c5dccb560b93ead2c541ffcfb",
+      "size": 225
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_caimito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-07-19T06:57:19Z",
+  "vendor": "google"
+}

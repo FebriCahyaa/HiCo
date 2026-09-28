@@ -1,0 +1,97 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/vendor_xiaomi_fog.git",
+  "codename": "fog",
+  "commit": "bed5bb4d9e8fcce92a178a7ffce7592e4bfc19e3",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "0fc98ee855aebc62e08958290b8ec0e74bcecf3414cdda872e30b451648c9c06",
+      "size": 22582
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "3bc4ae2947efeb0887cc95b8f8bc6e85a6eb06d3e098920ae2d6c8a3eefd998a",
+      "size": 1328
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "ad33d097b8c5a5a32becbb02ce8be563174ea225e1503364b0a80d0d926f7fa6",
+      "size": 1056
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "c3867b2fbb294d38446ebc918add510c4130c8e5fe016929918a1e55e5aaa042",
+      "size": 1504
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "e3cdf0ecdaef6aa5b1d66d45e7b7be559f8d6eff07bb53a29a10c1d3c1496b4b",
+      "size": 419
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "ad3b73946037a6ce9d2b2e44989fa2daf3189eee73fe2255464aa069be33533c",
+      "size": 1360
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "a046b8da0bb0a13338583a93805c24c141ceb7646d8fa39dd4865676d66ec4dc",
+      "size": 416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "13c257717c7b472f1c7383238f7bdde2c1c028d167f9786cf63ae446ac035c3b",
+      "size": 1280
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "b6be5e0efaea023f921261b1664db11857df7cf38a0ee27f04c5c1b16d3d1be4",
+      "size": 1040
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "27b2dce0edc30d021873da3e0029da1afdbec87f4182a07a7eea2ce30684cc9d",
+      "size": 1280
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "f30fe175f63b2cc691f1b72b458d6810d0166d85b873c807fd87384bdbc7542d",
+      "size": 1184
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "aab6a8e7f0421cff40cc57ef05f8a6661f722dc7ea86e7ce4517f348435a6962",
+      "size": 1312
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "95f685fb17ded714604e98637af1c181fa7a7fdb2119196be7c174899dbbbe51",
+      "size": 1376
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtube.conf",
+      "sha256": "f3901c29f3d5613d21f4b7a1f631bd9c09cbe23ad5c20f11f91b3ac1cfc9b879",
+      "size": 1168
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "d1cc3e0bc9ddcc0e1bd2f4978a67cd6438cb8fb9fbf025447ec7e5461e0a78f5",
+      "size": 384
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_fog",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

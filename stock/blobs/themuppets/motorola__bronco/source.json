@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_bronco.git",
+  "codename": "bronco",
+  "commit": "3036559d1f363d5586f946d606c15dd1aae6ecd9",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-bronco.conf",
+      "sha256": "79ff886f0f7ef6f4a9e8c4f488a869eca6b10f473dc1e91ad8843fe8a7a31be5",
+      "size": 5250
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_bronco",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bronco"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

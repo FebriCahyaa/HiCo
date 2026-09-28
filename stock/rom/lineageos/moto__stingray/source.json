@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_moto_stingray.git",
+  "codename": "stingray",
+  "commit": "7b930c6a413debfc7e90a2805b0e7d4fdba72b9f",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "08a96731d4541b061e54f399bfacc16b3f5f4358d86b6111ee3c71db0ed84f0e",
+      "size": 600
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1f76826d41ce02a83ce5284e36994de5a7498dd1edf06aa2f03b97f42de01b54",
+      "size": 122
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1afd1380c73eaa8ffd404bb7dae1b6028c258c04658c06a59fa85ff397ad5159",
+      "size": 1766
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0f14856908c64bca1a1d736aec09f7c909b71257297871ea783201bd9439d84f",
+      "size": 3436
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1aa33f755452089f32845a047f2b78b4b037469767abc59510f310d306eb3256",
+      "size": 1915
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_moto_stingray",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:00:56Z",
+  "vendor": "moto"
+}

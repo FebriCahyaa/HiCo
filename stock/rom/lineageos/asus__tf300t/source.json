@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_tf300t.git",
+  "codename": "tf300t",
+  "commit": "9bc975483a7058196b87e3d55bf157654cb05d94",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "eb7544c76b4ca43e7d1f229b17e5037cfb469b48a51e1682c81efa413cc55ad7",
+      "size": 1077
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f03c55d177fa4fc265e1f77acff45c9db12cda3ade58980119e3b132d8982e9e",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cea13b83e1da188355f6d364175eac3c84f1eda354a502403ddbfe5e36c755d4",
+      "size": 3352
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2b49bf8b396617c253954e39c810f18a1032e9662c3baa0b99580262bc6bb9e6",
+      "size": 275
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e862859cb38232e0a66f77e13e21552a2d9688027973b716de71bce931cdc51d",
+      "size": 5435
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9eda7f784b763b59285065545eff6fc73a84533c83fb3858d7df6e632cb9f3c5",
+      "size": 71
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "36eed60e3297602ab86ab1f24cdfbf4d50534c649e74bbf3b1082ff940494e22",
+      "size": 643
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_tf300t",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:45Z",
+  "vendor": "asus"
+}

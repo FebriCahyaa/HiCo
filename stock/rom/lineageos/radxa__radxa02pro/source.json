@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_radxa_radxa02pro.git",
+  "codename": "radxa02pro",
+  "commit": "69141df68126e66ec9d93d2545d556980b0a0994",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d848f724a9e1ddee180059b1b7989b71d3579eb47c872dc9229865de659dfcdb",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e142bc64f0eae5b9109da0d98069fb81fc0c4bd80aa4134c4bb4759f9fdb9427",
+      "size": 1041
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7f14d8fa4df3674274d109ccb2107ac8b9886febc3b3a374367bae0f114cf876",
+      "size": 1072
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3136223cba9ce73995d734586a1dcf7f904cfbf91ca23fdedc103a0e82f99240",
+      "size": 572
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "42d79c9ac4c99e28e023f33ee1977b13979e120413b5e42d09cad784fd12bc1d",
+      "size": 483
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "904f42e1c36530708be7ea394409e6b7ece0e2d3b82b3d3a68a2a142d73e7e44",
+      "size": 399
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5e358a0dfb846bd0a858b1276084640cddaf0e52ca1b7c476bed740db296b5e1",
+      "size": 334
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_radxa_radxa02pro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-13T12:30:45Z",
+  "vendor": "radxa"
+}

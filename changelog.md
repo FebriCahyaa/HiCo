@@ -1,5 +1,47 @@
 # Unreleased
 
+### Thermal per scenario
+- **Scenarios** page (replaces Games): pick the thermal per scenario. **Games**: OEM / HiCo
+  Balanced / HiCo Aggressive; **Social media** and **Multimedia**: OEM / HiCo Balanced (never
+  Aggressive). OEM keeps the ROM's thermal untouched; Balanced mounts the chipset-tuned copy of the
+  vendor's own configs while the app is on screen and puts the stock files back 20 s after leaving
+  it (at once when the screen turns off). New config keys `social_level`, `media_level`,
+  `social_apps`, `media_apps` (common apps pre-listed), `game_level=stock`. Sessions record the scenario.
+- **Monitor → Thermal sources** (`hicod thermal sources [--json]`): the phone's thermal configs
+  (format, size, vendor or HiCo tuned copy), thermal daemons / HAL (stopped or reloaded by HiCo),
+  device, chipset, ROM and whether the device database has a verified profile.
+- Daily preset now also sets Social media and Multimedia to HiCo Balanced.
+
+### More devices: ROM org vendor blobs, MediaTek
+- New ingest source `rom-vendor-blobs` (provider `vendor-probe`): the `vendor_<oem>_<codename>`
+  repositories that ArrowOS, crDroid, AlphaDroid, DotOS and others keep next to their device trees,
+  probed with `git ls-remote` from the device-tree manifests, only for devices TheMuppets does not
+  cover. 100 repositories found, 40 with stock thermal files (Xiaomi / Redmi, Realme, OPPO, OnePlus,
+  MediaTek and older devices).
+- Vendor blob paths now include MediaTek's thermal policies (`vendor/etc/.tp/`: thermal.conf,
+  .thermal_policy_NN, .ht120.mtc) and `powerhint*.xml`; TheMuppets refetched with them.
+- `hicod thermal sources` and the Monitor list MediaTek thermal policies as "MediaTek thermal policy"
+  (read-only: the vendor obfuscates them, HiCo does not tune them).
+
+### Stock thermal dataset and delta-only ingest
+- `stock/` now holds the thermal-relevant files of 2,400+ custom-ROM device trees (LineageOS,
+  crDroid, LMODroid, AOSPA, ArrowOS, DotOS, AlphaDroid, PixelOS, ProtonAOSP, AwakenOS) and the
+  stock vendor thermal blobs of 209 devices / common trees from TheMuppets (Xiaomi, Motorola,
+  Samsung, OnePlus, Google, LG, Sony, Nubia, Realme, …), each with a `source.json` recording the
+  upstream commit and every file's SHA-256.
+- `ingest.yml` fetches only what moved upstream: `pushed_at` first, then one `git ls-remote` per
+  candidate against the commit in `stock/manifest/<source>.state.json`. The fetch matrix comes
+  from the change set; fetched data travels as artifacts and `tools/ingest/merge_fetch.py` merges
+  it (removed repositories and trees that lost their thermal files are cleaned up, failed ones keep
+  their last good copy). Fixed: the old diff never saw a change, manifests were not passed between
+  jobs, common trees were dropped, the DerpFest / Evolution X orgs were wrong, PR failures were hidden.
+- New `repo-manifest` provider (TheMuppets `muppets.xml`, newest LineageOS branch per repository,
+  no API quota) and `blob_paths` for vendor blobs. `tests/ingest_test.py` covers the cycle offline.
+- **Daily preset**: social media, streaming and general use. The vendor thermal system stays in
+  charge; foreground games get the Relaxed level only; safety 85 °C CPU / 42 °C battery.
+
+# Unreleased
+
 ### Thermal monitor scope guard
 - Monitor telemetry now exposes all discovered cooling devices as thermal state, with active/idle status and counts.
 - Added a regression guard that rejects Flux/Tweaks/game/performance identifiers from the thermal monitor/tooling surfaces.

@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_bacon.git",
+  "codename": "bacon",
+  "commit": "720174cf31c5f4b20e16e0c97ed472069b9873cf",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "55addda7501f08862327eda3e4ffd694b8cd13528bfddd3a0737e68975d7b692",
+      "size": 716
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7c6b8603206cf427e60e393b106d83f0cb189797be95b1ab1ac87cee65c5b2ab",
+      "size": 717
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8ab5e5f1a17177e5110cb5da71b80195e3518cbaa72fb7bd42cefab6c071c880",
+      "size": 2346
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ab90d4e6b988c519bd96a43c8a058f0f77bc01ba0bd39cc989bfb3ff72ac8da7",
+      "size": 744
+    },
+    {
+      "path": "system.prop",
+      "sha256": "504d1aea168bd9cd833edb2d7b39d29a1bdaef3edfe07968971b8fbf9c2e1d0a",
+      "size": 484
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "79fc1468e222cf1b40dd07f6907cb29ed99f50e85e283075613e3f4f57181312",
+      "size": 38
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_bacon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-07-21T20:37:16Z",
+  "vendor": "oneplus"
+}

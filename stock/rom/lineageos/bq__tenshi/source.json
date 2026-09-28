@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_tenshi.git",
+  "codename": "tenshi",
+  "commit": "8ab629e6dd99b4f354aa4f79bfd866a2448aab16",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9baac09f0a408f9646c4695533284de3dbbb520ca1d386be9d21e86ef61ba4c4",
+      "size": 757
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3151a7a686cd03f544263bc9158b0d3283b857e51adc5dd048393c91c5b3b66b",
+      "size": 1019
+    },
+    {
+      "path": "device.mk",
+      "sha256": "009c8a88a3c69766a1f4bc26d9ffff5e99ecb714d576bd52db57f644c37df1cc",
+      "size": 1454
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "df6e956cbc2b17eaf2002e95d8cb5d714c132f5486e36ec72cdf175c462b5e86",
+      "size": 1643
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ada447539b12b6ea19f549f7913363cc42d09dc49318318df808f5744ceb3759",
+      "size": 106
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f28c64b5a38d1364c8c4dead8b061e16b3e70404d1ecc5990e443a55491b4cf",
+      "size": 17803
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_tenshi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:01:02Z",
+  "vendor": "bq"
+}

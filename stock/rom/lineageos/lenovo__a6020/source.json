@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_A6020.git",
+  "codename": "a6020",
+  "commit": "0304c5e79321e4c6b9d65ad62611afffd25c5a18",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "680cb73b651d07222c612ae10428090e81a2dc129b53f14edfe55844aaddf26c",
+      "size": 1500
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "943043c6e55106320a62f7005b493f1d6264be6a5e6da7ea29fa5f592e29b26d",
+      "size": 54
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "331a4c7a7455dc2ac8882144179409b6b90af19079b998b07aacf550ffde7547",
+      "size": 969
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "f6f14e6758226f638994233d0c833311764af3abf1a7d32d85987229a491f65d",
+      "size": 3274
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1587c164364f1e7562ee9df739ce57d43ad3508df8fa6087f3e43416cc9ada52",
+      "size": 849
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4c4da3a8eda549c7dc29e72e788a871d0bcea470f86f25c2461d068110890bbe",
+      "size": 1537
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f317a54f02189313b0bdf83273cdce14c067f6342f15571b550deb8918dcbcb0",
+      "size": 632
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bd94145db617fbc4bf7ac77468ccd7fa8604681dbce27dbd5ca6f8e3b6440821",
+      "size": 14711
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a12e40e75a00a72d87eb16af7eefe3acec79631c31f060e2331091953d839a8c",
+      "size": 2271
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_A6020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:22Z",
+  "vendor": "lenovo"
+}

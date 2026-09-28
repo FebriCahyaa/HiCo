@@ -1,0 +1,57 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_huawei_kiwi.git",
+  "codename": "kiwi",
+  "commit": "9520b9dc201856cc9fd91bcdcb619d7f03648dca",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "54ff6329354dcb0545ed589d4e4410b099a321df5afad640da4c0eff19d13f58",
+      "size": 3133
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "514b5fb91220bec963c0a5d7effe274f982640af635eccdcd8dc772e37aedba2",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "eb789ec0dedcbe394b05592e88f72c6d85109bd49b378e65a967f6ca7cfa2aa2",
+      "size": 5475
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1e6ededd0f930bf43120cc31bc96aeeb4e9e71a940b6e77aa3eb06b89f7b8c53",
+      "size": 3444
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f0499d7ea466548ced0811590ac05ded3b191898ddae3f8e65402fa20ce98480",
+      "size": 8901
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f0f1c688bd5b62deeb36fef7f8519092f2118cb0bc425377ceefeb0c817a34e2",
+      "size": 1989
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a2db859efb5bbda350f709d0884f0f8c003cb20ec9b0df3bcf5c48cbcf085982",
+      "size": 48967
+    },
+    {
+      "path": "system.prop",
+      "sha256": "71c21d865eca1b1050c361b370cf09550dce47621efe32b2b537bac79ca7dab6",
+      "size": 3097
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_kiwi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-01-23T19:52:49Z",
+  "vendor": "huawei"
+}

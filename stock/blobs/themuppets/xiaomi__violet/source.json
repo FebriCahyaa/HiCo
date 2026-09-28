@@ -1,0 +1,64 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_violet.git",
+  "codename": "violet",
+  "commit": "ff7e312971e2e47bcc5f33b3314e5fbbd1a3c8d8",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-camera.conf",
+      "sha256": "0dadce8933d1a9f5d53484536d3e55e60c1709ebe7689245073564449748735d",
+      "size": 2461
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-high.conf",
+      "sha256": "70d66172d3ca1c2c9525e759363d1b40e4333f3e471f845fccfe81640d3fb69b",
+      "size": 2392
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "62929b864afe125d6085f0987bd398dc01577a3ebf60cc7ced7d12c4c684aed0",
+      "size": 422
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-normal.conf",
+      "sha256": "2455abcf5168cd63fc0aa0c1d846a765071f86fe8593962de618886614ec6d5c",
+      "size": 2332
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-pubgmhd.conf",
+      "sha256": "70d66172d3ca1c2c9525e759363d1b40e4333f3e471f845fccfe81640d3fb69b",
+      "size": 2392
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sgame.conf",
+      "sha256": "70d66172d3ca1c2c9525e759363d1b40e4333f3e471f845fccfe81640d3fb69b",
+      "size": 2392
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-studio.conf",
+      "sha256": "f270f4c588db9d41e1e7081b6dfa53aef047451e481b8dca84828aaa710c0a31",
+      "size": 2180
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-tgame.conf",
+      "sha256": "70d66172d3ca1c2c9525e759363d1b40e4333f3e471f845fccfe81640d3fb69b",
+      "size": 2392
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_violet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "violet"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

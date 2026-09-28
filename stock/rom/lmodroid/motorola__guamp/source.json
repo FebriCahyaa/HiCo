@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_guamp.git",
+  "codename": "guamp",
+  "commit": "964cce679d47f44a94ab06ec978286f0c1e820ee",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "25fe5591962e1f096d142a6fe4ef3b8a9e0eb3bc21a0def9156733d155648a33",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c382bf04ece8b18343c2ea87c42bcde08ee1377283d4400ab0318ad5b7f4e289",
+      "size": 2434
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7acea39b84e1723307791bd397d6904bc8e0b6cb05b0188098278add5c816f8e",
+      "size": 3692
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "222755200a2b79c57309a7bfb6e3eef9b75aba956dcdfeb00fe8efd3bd9011ae",
+      "size": 1830
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6ce91095767a91f5a9e81371940ad9fe682045245d6253175fe0ae7432f7756a",
+      "size": 11198
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d5c1ced464843dd5f47657f850f1401217d98ada4d91ce3f0a0b55a6647c3d5b",
+      "size": 662
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_guamp",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:52Z",
+  "vendor": "motorola"
+}

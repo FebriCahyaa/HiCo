@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_robyn.git",
+  "codename": "robyn",
+  "commit": "9e5ec5dca74ce4505f06f6c2b6403dd5c4718ae2",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "81e894b0d6aa968c009a929c43fad1c4947c183e136693f34713edb5fd9067a3",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b44621e6b6f75e0987b08b8d730ed9b89695859b77d77d4c4af2ad88d3c8ac44",
+      "size": 1060
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ac3821b8db2b492e1a92280f50f859f9eca96efd399b2a0d35332a22855e7555",
+      "size": 237
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "16bf7e8a4e28bc8c0d9f7523a60197d64bfb9da3863c0b9e3560e3f7067c8861",
+      "size": 330
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "05c853c4f0e7ea6149961ae47ff8a77a2433af4dcd9f7a0b5396cee6595c65d9",
+      "size": 2120
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_robyn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:47Z",
+  "vendor": "semc"
+}

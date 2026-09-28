@@ -1,0 +1,30 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "21740411e10014de3de54f52ca0033db9b7351e4",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "f8f3a6148004e1de3b9c19f509a901c449f94f5d500653f789729a5881d25989",
+      "size": 793
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "5f50c1348162466b020d52148c8bf0b1ddcddb10be2da8f092b00476c6e11232",
+      "size": 48719
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_sony_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pdx214",
+    "pdx215"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

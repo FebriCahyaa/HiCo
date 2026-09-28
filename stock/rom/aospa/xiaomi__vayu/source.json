@@ -1,0 +1,77 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_vayu.git",
+  "codename": "vayu",
+  "commit": "0eda102aa9cbf2543e1ef2d63eab56c4aed25906",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f0e287b34baf46d6ff5d7109ad2b0129d49073219a795c986dc9b004c8670730",
+      "size": 3942
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8e936a724ee5adf68256d8871ffcbdfd0d4f0247c3166c943a8289d257297660",
+      "size": 4066
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a6fddcb9f4b4a303f634f43c1662fe49eef9d4838bf042d5a456866af5cc2fc",
+      "size": 13236
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "95c93c86e96b9137290ccecd46e0e8715040a339aaa505f04fad8070b36db8a4",
+      "size": 1451
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "db5ed0bf3d69ff2e5c6e07f1966f2c18de4f038d970c7960aec2e1d3c91335a8",
+      "size": 1451
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "197103c2fce4d7f2e35304e1a0d58274200d0a9558cbbc5a1fe52b48e6f54d34",
+      "size": 3317
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "71a959eaafb6561be20ecdec6b4b0dacb258fd6d9ecc318c5778fcfffb91daee",
+      "size": 14259
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6a6621a98ed28d2df1556428e0998244295241c7ac3c2ab255a621da9fa3a10a",
+      "size": 43566
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "bc2f8415b2ad8596b49863747afe0985684f5fc7ebe35942e744dbce5c2e0daf",
+      "size": 115
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vayu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2024-10-24T06:00:59Z",
+  "vendor": "xiaomi"
+}

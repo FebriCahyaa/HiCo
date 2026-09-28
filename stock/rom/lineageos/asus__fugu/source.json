@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_fugu.git",
+  "codename": "fugu",
+  "commit": "53bd5d21220169b45c3dbfdb1f1d003a29f04a5f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a26e8a44b5e1c81540c63779f5c8441f25d9e7b7967a6ae14b3d0ee9ee92f46e",
+      "size": 1093
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1b69673feba56abf8188ad814801e4348ba4fa3f38db6f44fe78fb6b00159c47",
+      "size": 833
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "77f2911dcffd78925b2eff7ccf1ab1409ff852780284ca80ce236cf9e6ec8194",
+      "size": 5211
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1526e2cc3c256f605b452048ab68037961948ac4f6e215e3ee569f8b863ddfbe",
+      "size": 10266
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7e3bc9139ca89a87315e8ec110279d879e417c70fdf2ce9e15fe150e12cf712e",
+      "size": 1870
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c00e6bfc42b2c9c2c601ffbede8395c0bbea0918b5da113162e639fa0f2ceb8e",
+      "size": 96
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e55f66ef8e7bdbc395511920631a05b49127c08722b70830411c4aa789698090",
+      "size": 1080
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_fugu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:44Z",
+  "vendor": "asus"
+}

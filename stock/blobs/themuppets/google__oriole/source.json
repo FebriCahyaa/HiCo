@@ -1,0 +1,69 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_oriole.git",
+  "codename": "oriole",
+  "commit": "2faa90e80e23af9c4d8ce25950afe7f13a8f11f7",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint-mainline.json",
+      "sha256": "b48f9710860595a16fc2e893988d87b33ee8f4ce51b4e0b1ed1f44630eec93c0",
+      "size": 32188
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "8584099596b0c5b82f413cff151cddee31a58e3e91959d7395129dc17e972212",
+      "size": 44898
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint_a0.json",
+      "sha256": "5863859bea7da942b9d915de150d1ee2a1d5d88574d582491c1b3e9e0fae8ab7",
+      "size": 7347
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint_a1.json",
+      "sha256": "873a26d8b253099a4b79861fc259716a3309235997ff83ae93413ab7a1209cde",
+      "size": 8289
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "e61199d92a5f9d466bb64a7fd1d4731258f42b056d07236f264ddb7de0150614",
+      "size": 20306
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_WHI_A.json",
+      "sha256": "3c5cef729d6b297a49f74ba2eacdad0a29bfa798761cb8a0cf9e45d4b58050ab",
+      "size": 10559
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "cea1a21033ecf0bed4aa1c81a3c3a10355bd61091665dc4f230b6f28b67d4235",
+      "size": 12340
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_oriole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "oriole"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

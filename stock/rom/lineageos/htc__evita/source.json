@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_evita.git",
+  "codename": "evita",
+  "commit": "25b93bf95fac520fa1952a8b756b536d4fd4fcab",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b999819b831163eaffa3a958a91de078fd9c6856b1b699ca1186db02df9f8329",
+      "size": 711
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3ce9831624dac4b1e0c318dbc2e0794936370a95629f85e4898090f795d521db",
+      "size": 2907
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9e797864308f0789241d048592f05c82bfd4fb85d838e3e2e2b345773489ed3e",
+      "size": 3122
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d04de907068b7eae6152c2321f7e8308d1dcb4f0972629151ad42493801388a4",
+      "size": 719
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f14d0a11801a46f0c5edaf61dc75819c1feac7b2c3cb7a1566ddba8717dca3ad",
+      "size": 104
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3e33c10b6bc4e38c2cc4dd5014f6246f3b353326522744d9b35fe40d3a23167f",
+      "size": 509
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_evita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:44:28Z",
+  "vendor": "htc"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_google_lynx.git",
+  "codename": "lynx",
+  "commit": "33d550c896e8ead2334700ae647014cc29f99ea7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c88f4590b083b23ed13648ec84db7323f02b057c19ba12656182562d6e565849",
+      "size": 989
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6d78ec6520eaad50221406bb176c7ddf0e742cae47d2acdf9588e5a8a640dc4a",
+      "size": 2164
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b76dedb63e4187094ff00129d2826ffa320a618545abb93ede93f023e56261f7",
+      "size": 744
+    },
+    {
+      "path": "BoardConfigAOSPA.mk",
+      "sha256": "f54447483822aa1936327caf72e9e3adfcb72010c601cbc0740f1e5cb3d60ab5",
+      "size": 588
+    },
+    {
+      "path": "device-aospa.mk",
+      "sha256": "23a380af0167d0b7ba6b46d7fc535afce5a93da88d88bbdc64a75d7c94103177",
+      "size": 950
+    },
+    {
+      "path": "device-lynx.mk",
+      "sha256": "2df05634b5feccf362d1b6fa13f60db945061ed904f76cda3424c2bc4b108ce0",
+      "size": 10878
+    },
+    {
+      "path": "thermal_info_config_charge_lynx.json",
+      "sha256": "4e09567f81a5fea8eb8aa7fec6f0a66aa1b5ed2c97c52fb2a93ef4737f7c6d7e",
+      "size": 10750
+    },
+    {
+      "path": "thermal_info_config_lynx.json",
+      "sha256": "56498cb96e588effab50015e02784bfac68411964add548bb6be1929404f135c",
+      "size": 33109
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_lynx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-07-29T05:23:09Z",
+  "vendor": "google"
+}

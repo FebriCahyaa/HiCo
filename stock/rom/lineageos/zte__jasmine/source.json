@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_zte_jasmine.git",
+  "codename": "jasmine",
+  "commit": "02813b5878614fc3b785d9f5b541a4ad1cdb8a1e",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e6c1e0bd766de29bfb5985bf11a0bb5d7d369997c4065e7a654b4ed76f91f223",
+      "size": 4540
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b4b69c46997fe1ce3a44b1ccd1d04773a19ed4eac65f37e1971fd8d61190bbdf",
+      "size": 644
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cc137a6668cedd3e32df8030a7b5cc6c9f37bf325948768a019458ee149753e6",
+      "size": 5165
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "02eb798e566f3a7c92eba39351c6110daa0bf8657630d65498ccf442516c1f13",
+      "size": 4307
+    },
+    {
+      "path": "device.mk",
+      "sha256": "710b8d3bf9d1581c8f017ff73fa8f87c0fdd1f2099017d307808b818defd9e16",
+      "size": 9951
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f36569ff204d751969964b3eecf15b7f85f0c51ad5b1ac363f5a066fd3e39c03",
+      "size": 1769
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cc60afb91f27809eb9e89099fd54b9f56009e16167298a94ea71f7b2cf1fee7f",
+      "size": 197
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c4ced130fda2c4f2f9a4548862c3352da8cad7f97aa506e876b462ec202add1a",
+      "size": 16274
+    },
+    {
+      "path": "system.prop",
+      "sha256": "12a430c46c62d8690ec343923b996ab67b6e921bc1aa1fe969d4a6f530514bfd",
+      "size": 2641
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "fbdba5afba097b60fd6f79605cfae13023f8942c7545bd28532206072439a2a6",
+      "size": 42
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zte_jasmine",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-08-09T02:21:04Z",
+  "vendor": "zte"
+}

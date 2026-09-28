@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_roth.git",
+  "codename": "roth",
+  "commit": "9e85bfb44d07f9c7540031ca4c502591e77d2189",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c09efb0523d26b2ec126d8261b91e233e1ea8dabb95107d1153e018a47727a97",
+      "size": 719
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d857d84c12d604b0322776083a7c3fb6715dc0d72e8b1eaa7d5963205567ddba",
+      "size": 683
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "02b301e7939590289811f7f3ec9d6763c6d9c7b4cf6291d148109a2059d8fe5c",
+      "size": 1095
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b0929e28cda5a0d95abea994a4bf45db29d3c27e2ad4a20b647d8ec0dd2f58b7",
+      "size": 969
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c2762fd359d2648404dd55d46ea56fa38db14924b6394c6b64a6da3598c7b145",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_roth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-15T16:54:44Z",
+  "vendor": "nvidia"
+}

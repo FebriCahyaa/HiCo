@@ -1,0 +1,35 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_lge_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "5571af064cb6512f6f451ef5e7aafd58a4792670",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
+      "size": 595
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "47c20144721740ac9ed4bf44667c96e1e704503481ad07926593661678682a7f",
+      "size": 38974
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_lge_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "caymanlm",
+    "winglm"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "lge"
+}

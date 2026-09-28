@@ -1,0 +1,147 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_10or_G.git",
+  "codename": "g",
+  "commit": "ba1bef0d55032c4487188028b5cf3b533e17deed",
+  "file_count": 26,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cd17ae7385209d5e5bcdefd7efdf60872d883f1a9e36c47daa7965a1aceb8d88",
+      "size": 4382
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a27d58fd136add5d58caf363d99a7afc3fc3eeb3283e0accd75d3fba84c45e8d",
+      "size": 233
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "306cf83d0c160f8edd919290d4ed629edbe29ab6bd81f173d15cdf6588ac5ca7",
+      "size": 5804
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "18a1b514d30205c60c01976670e8cc7bd85791c16cf71bb4b409b77d435fe129",
+      "size": 4653
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e5ba2bfb13692976e5133d79ff5bc7537e62e3fcf16570904e97d4a5b48643c1",
+      "size": 16952
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c028ca195099e29ddf5d891416e3ad34df0248ed909c2810028e90664125b335",
+      "size": 1502
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "36dd8a17d03046b7d4e1cbcbd1190eeb672695428520d64009e32480cea0f80b",
+      "size": 90
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2568f0802e6717a2ecdb0b132660a2a2fd1e179addb2335e446bc86200f369c1",
+      "size": 56501
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b047680c5865038ed8d02066ca10ebe66d3b7e5c583081916e2caf9471bd0468",
+      "size": 129
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "0caccd9e3b1997ede8a7fbba8d9c27ea4f17b2ccea24f22e76db61459bd81969",
+      "size": 707
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti.G.rc",
+      "sha256": "bea8840a2d33ed96af734f6160f739cbbc8cec43aa9e2f039a574f2ad0818ae6",
+      "size": 1763
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti.G.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "678d9ce62c7975ab0a6bc26775b594ed9b30c6b658bab35a52ff93bda358b345",
+      "size": 8257
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "09fa1d1151e183de630d73ee2c5d4a5c9ff55eccadd1c1b7ef94b5adbe0c38b2",
+      "size": 3778
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "1270cb1801f77b3a2946f54d432b7cf2be881c219d55fa12e188ad54ae611367",
+      "size": 17459
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "9d74a136eb87e597252829f0124ebf2fa173290412639df07f3426c1cfd4134f",
+      "size": 2852
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "dce783521aa8fbf851e8310fd79f6b5b1581ee9e97efb05795026fe0e8dcd990",
+      "size": 17430
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "55ba25577176f80e02fddf3484c51f73666beda022b6ad505d7a2d1d813be5f5",
+      "size": 2286
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "aa3a9d35ac10009e9419a317adea329baed5a62c755520adb3ef72ee0f68220a",
+      "size": 3387
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "778ed5291d6a35f801f445b39b71e921e6a8a4621e1d647eae4baedb07f2cf0b",
+      "size": 6618
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7e0f728cfc38ab8b46736b77452f84d35455973ffa504ef8c7d4648cdcba99ea",
+      "size": 5347
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_10or_G",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-03-21T06:12:51Z",
+  "vendor": "10or"
+}

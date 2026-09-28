@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nvidia_quill.git",
+  "codename": "quill",
+  "commit": "3c6ce938e77c41524ce8ddb1ce3afa0d4c3a9492",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66a2a6310d79338d6c88256a6bdab68cbde9413b2a4f937d5b4af5f7731b5fec",
+      "size": 700
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "65c82beb42f7b067dbb7ad304e8d5be8d909aa54cb937097ea52d4e96926750d",
+      "size": 863
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5e5ec64b36c248bc7f3da5a53f4ce0f0a402eb13576ee824540b46341e3a6178",
+      "size": 4307
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ef350ee539395c471d325919e169ea9d449da01f65f5d911a954800b55078edb",
+      "size": 6204
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "thermal/thermalhal.quill.xml",
+      "sha256": "93af9999d45a731ab1f0d3ea0161f0107caa33b57c0323789a46fac0e420486b",
+      "size": 1414
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nvidia_quill",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:12:20Z",
+  "vendor": "nvidia"
+}

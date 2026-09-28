@@ -1,0 +1,67 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_nokia_drg.git",
+  "codename": "drg",
+  "commit": "a5a175b182321650e93c6614e84b702805b8a509",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a691b09104cd6791bbda5c41e997fbdee9119a63ac6b7091f9f7bf280dfd89d8",
+      "size": 160
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b7e7e0cf54c01c8c90a8cd50d978606b77225fec43bb267cc4c7c3070f038072",
+      "size": 4635
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bcd942ba1d0fc849f35b42496c0768ee398d690dc934e346cf036b3d3b6a29d6",
+      "size": 283
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ee8c36cd835be077bdd2fcc29ceb4c207f41861bd9ae2af2ec85ec1bbd197067",
+      "size": 4780
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3eaf83754d1393fb998a1617cfe0c3b6d166a802e39b9e95a00d075d02aa956c",
+      "size": 18216
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3691c6ea86d9bdbaa0b2fecafff0d618af53f2075a7b38d679ab2f481853c1d8",
+      "size": 2627
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "22e04d0dcd6a2036fa0c6ea3c26ccfd5876d3e434c24050ac5f0d65a6d56a3af",
+      "size": 49841
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "7ca3d47233cc993bb590f81d9fb87c7a096ad383086d76be22d7a8869a8fa1b6",
+      "size": 127
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7f45a3f406ea55d59fd31e3e6615cbe37405eed483212cfc0ae2201e163334a6",
+      "size": 4123
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "83409712b4d325e91f89694b7a93c03a7f696a0bbf245db3ba934bc41e19c3c1",
+      "size": 6847
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nokia_drg",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2022-11-22T13:35:13Z",
+  "vendor": "nokia"
+}

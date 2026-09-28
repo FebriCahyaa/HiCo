@@ -1,0 +1,77 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_realme_RMX1921.git",
+  "codename": "rmx1921",
+  "commit": "53b237a769f0635ad1fd59e9078f7657dbf1b6b5",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b0cbf3cd1d40f1fef3a2b5d1cbaad61312b4092d04a8eae8e1a13a1a7487cdb7",
+      "size": 205
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "75cdd5556b6c7db659c43711570d4f9870ed2255fefe625955b53db81ce9f2be",
+      "size": 4041
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0faefa99796b3fd7e2649d45ba1a386ef59ae6042e5dcd7c5a5324b9125b2564",
+      "size": 257
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a9c2fcda475000d0ba6d0d8977f11913c439a73e70cd1c5c651bf25926fa6e4f",
+      "size": 5303
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2af2a34cdfffe67f4bc5cf9bebd0ac9d48ebd72002434e109a1bd51254dedbac",
+      "size": 18180
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b28b325d2b9cc213b63e114cd429757381c17a6265ab5c679961dfeb909348da",
+      "size": 1879
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5db631b6fc61f2ffb7d60be106a0559fd364f89461b1bdcbc636cfc38b1c5c33",
+      "size": 74917
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "73b91c4338a9968a59e55bb8ecc52749deb5ef175220f7006fa81c52be203b8c",
+      "size": 53
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "9479c7504260b55d6dfed287989be749c14a8976943a519ef01f0c1c676202f9",
+      "size": 48
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "56abb519410a6b65cedf2445813c992db69c6493afb881448e6d472c50d5431c",
+      "size": 102
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b5731d1738d276176a27a9f7c2004b3c74bfa2e28c9f5c7cee5d5cd39767b44c",
+      "size": 313
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a188760e720a3266821e2029c5952774d8345312c5fa4a75f0ae734f93b2f897",
+      "size": 6489
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX1921",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-11-02T13:12:29Z",
+  "vendor": "realme"
+}

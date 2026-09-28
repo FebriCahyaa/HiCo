@@ -1,0 +1,52 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_equuleus.git",
+  "codename": "equuleus",
+  "commit": "f74058f8c30f58bff3f33593ac9bfc5a9ea91ca6",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "33d9170d5c48cf3a6b36b365bfdaf8bb8f090004d524a896325e1532124f2a65",
+      "size": 1009
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "12d9555a81976fb32e72311bef9fcc26c1b51d2fa046cabaf810e94fb39ea3aa",
+      "size": 926
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7cdc0069324b67a168ab058af1aa0461a6495b845c2c2598f77863c03573d135",
+      "size": 4019
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "86ab2a6166ae760d31544e303209f94b51553894872929fea3800442af58644e",
+      "size": 467
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "eb598c62f84fa1d59bc9f547e2e510976e4fb7850ce2ac5850e198785fa68f7c",
+      "size": 11504
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6ffa7343cee28efacc82cad193473502add80f86679744ca93a4a5c16ae58cac",
+      "size": 205
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "511e3b44b307fb8298711db4e9fb13af6a8ce5526e51ec71cf8f64ab85d1c308",
+      "size": 221
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_equuleus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T20:31:05Z",
+  "vendor": "xiaomi"
+}

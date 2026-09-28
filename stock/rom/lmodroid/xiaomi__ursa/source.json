@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_ursa.git",
+  "codename": "ursa",
+  "commit": "5fe0cf9a75f92f824196bf926f6027763d274ffc",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e54847c35c5223764290ba943a304c63f646cce603ed58c239853d256868b0f",
+      "size": 155
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "53d267d780569486127ed6d9ffc5198016e6d4a553107ec756775b49de65cea7",
+      "size": 655
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e927d01311d4768f5a09206934d6aab10abd96f47176c6200ecebfad7c414f05",
+      "size": 879
+    },
+    {
+      "path": "device.mk",
+      "sha256": "72b9f76226349ba815f68b4e5df299619e22cf8746c58cf480a54a79e5c912b2",
+      "size": 4000
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0f8fdcac2e4cc71b505ea3461685f4bb0014e1b33a1ba48ae1d7ef9e2a5576dc",
+      "size": 1608
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "260d93ecd9c2db9ebf832c27a081fd57d7ea959e96120f8bfb68c46cabc06b6b",
+      "size": 11108
+    },
+    {
+      "path": "system.prop",
+      "sha256": "74e2d075df1f30a88fe61e133c80937a0794bc9a6636aa7eff0e7e75b4d1558c",
+      "size": 218
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "235befeb90eec61ab91c60c53c65209a4ae54bb047e2c603524c2b6a9188a918",
+      "size": 412
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_ursa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:12:32Z",
+  "vendor": "xiaomi"
+}

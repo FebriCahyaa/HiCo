@@ -1,0 +1,57 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "32cca56862522aa74a8677f06e00093caac9ea7c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "effc7867e8eecbc5e9be902a3f22e355d82ed3c4a76886c3a54b80ee9fa7ffa6",
+      "size": 1206
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "bda626cb55e58f7a6f0aa25eacbcbfbcdea02317d0ca2cc2acc446cfc16c5983",
+      "size": 1900
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b5034b2f815ae44a306419bdf8e49c9298e3b36125d009929d7df5c08518f3f2",
+      "size": 754
+    },
+    {
+      "path": "BoardConfigAOSPA.mk",
+      "sha256": "7c45fec72b40a3958a339c338dadecb032f5f9d975d45ac694b6e81a50a2b04b",
+      "size": 589
+    },
+    {
+      "path": "device-aospa.mk",
+      "sha256": "fa04f0a9288da0f7daceb3ccec3723ce6f43174ccd203b893633f90bba763fe5",
+      "size": 4568
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "29818cb24f6124753ad6edd8d65f56ca7e2142125b47e7539446cf5015f6af15",
+      "size": 9909
+    },
+    {
+      "path": "thermal_info_config_bluejay.json",
+      "sha256": "64db8154906600e1a2024d27d15435337e6fd554d9efda63a4c3713c9618b6c3",
+      "size": 31003
+    },
+    {
+      "path": "thermal_info_config_charge_bluejay.json",
+      "sha256": "cf463f1bfb7d9b6ab9f2bcd997b8fe9779be01f0e5b868605ff5ca29c40fff6b",
+      "size": 10907
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-09-09T06:00:22Z",
+  "vendor": "google"
+}

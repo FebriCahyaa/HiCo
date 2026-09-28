@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_n2awifi.git",
+  "codename": "n2awifi",
+  "commit": "98751ec499c13748b3c5b6d0e81902aa29fa6b46",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5c009e4472692971ffbc401e6a7f17288ff8fdb9b9087249f82c5867d90fc5f7",
+      "size": 717
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e19cf1ac4535951b8449eb4260ad4603207c627d14ada5fa1f34387efa20cace",
+      "size": 1557
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6ac36f7a704a1842114456f8253d27b35654bb505c51581261438dbb1bb80c74",
+      "size": 2389
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cfec3a637b7c4fe28812b0e58bce82a67441e82ca45df41351bad14c2542ec16",
+      "size": 1157
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3aba2feaf6f909d30a70632858e5694d4c4da52ef9d999d890939814fa7182b",
+      "size": 120
+    },
+    {
+      "path": "system.prop",
+      "sha256": "bb5c2686a2f191887890f80b54bc56c11703b67d181154e7524681f4a0ee9fac",
+      "size": 79
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0611c574884664dabee0bcd484ddac4acd92a193efa5c7bb4332f15c23057360",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_n2awifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:17:36Z",
+  "vendor": "samsung"
+}

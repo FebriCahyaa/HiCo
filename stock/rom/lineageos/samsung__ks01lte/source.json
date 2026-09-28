@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_ks01lte.git",
+  "codename": "ks01lte",
+  "commit": "865cf1f4dcce6889496b8c6626182f69020f695c",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d225ea7c08d495abbccd6cddb091d8bf2bc0116d5ea209eb7e56806073a73aae",
+      "size": 1079
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e4d29a962f16f7067ac76fa6034537667b12f213794cb5227b28dfb45b79f78f",
+      "size": 4255
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "size": 727
+    },
+    {
+      "path": "device.mk",
+      "sha256": "566b95707b2b40abe1867896590aaad38a0e625822aac9f39653837179954442",
+      "size": 6521
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6b3cd3226d674471a8f677a3b01260b491393d8f1cee291b9c900e9616f5a5f1",
+      "size": 1218
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8bcfaa60d3aebec1eed5a68692dab47fcc30070e8d764b0c3928d1e70dd97b7c",
+      "size": 8494
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4a9d2edb21daedfababb6eda38ddfdc69249a70ac6aaac506cd0b1b174cecb83",
+      "size": 420
+    },
+    {
+      "path": "system.prop",
+      "sha256": "032dfe7c788bb70b948b047ee506aa49a02707ffc728e9bd1f7619086d3d41b8",
+      "size": 1011
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "96c45111200b0a73c5b00a1e388e86b62102ea873917b151aff50c5b94bee3dd",
+      "size": 32
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_ks01lte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:50:54Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_barbet.git",
+  "codename": "barbet",
+  "commit": "97f77d17d3081ed1b5dc31792c3678c02de5f444",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b0518ffe16d1d3babfccd84d6c41b2d88df703cc146af588582f7714589cc35e",
+      "size": 1227
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3532f4c725bf07f0329b769f61d0851fb0b4a07f3a50f430baeb22e9eea0c99d",
+      "size": 846
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "39f14fd076fe1a3ad043a8d191298713d5c301070db637e1a65a09b940abc2bd",
+      "size": 337
+    },
+    {
+      "path": "device-barbet.mk",
+      "sha256": "cfebb10800c468f5d633a7876011e1492965930438b2ac9aba74166bc5a1cb0f",
+      "size": 8936
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "72dab6a169e593e1ade3d3949709a1506465f0599e1f3e9cf75d0329c1105f1f",
+      "size": 302
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e79232cdc3da8177fd745b86842bfb321cb155b677b42767a84df690b73c46b7",
+      "size": 212
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2c06a197234b8c2dc1bce4c64462225352f65dc1a1047d738538b2f82fdb5919",
+      "size": 106
+    },
+    {
+      "path": "thermal-engine-barbet.conf",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "thermal_info_config_barbet.json",
+      "sha256": "7a0dba36685572ac66cdc6d221c9bd12a75b047f61a2f390a7e824971807a689",
+      "size": 8665
+    },
+    {
+      "path": "thermal_info_config_barbet_evt.json",
+      "sha256": "eeae60caad485da88946a2f227ce8e5b4fc75c4ecbecc5d28524281fb6c995a4",
+      "size": 6771
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_barbet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T07:11:14Z",
+  "vendor": "google"
+}

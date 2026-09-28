@@ -1,0 +1,57 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_motorola_cancunf.git",
+  "codename": "cancunf",
+  "commit": "56ca90493d18a5870834893edf964b87bb4d1c7b",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c300f2f95d96e50988dc72c727ce53c5287ccd0c74149b6e191014d1f3f356c9",
+      "size": 105
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4a83356205d5152a61a1bda9deb44739d7de0a8cf9ce670670e68d53944ed84d",
+      "size": 137
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "81568a264054e5e3c537b4440a6f900cd4e57432508b46c9be14af1da1e8b5ef",
+      "size": 7497
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "ca8db981bdffcdc0b0e8e1165bed076c2f2c284059d4be20094f8095e6388153",
+      "size": 2843
+    },
+    {
+      "path": "device.mk",
+      "sha256": "aa9ce881fd7bfd42c0abf40bf72d195918500e8b772a9980a7bb8d658eded7fe",
+      "size": 22031
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "487e1821bafa3c3c48bb716549d807f2b161c17b5a6351ca12404eb2b4eaf94c",
+      "size": 5741
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dca59c1b6d0cc1c6d66e8438321cfe4afd08d4f5c4e56a8883fc533d082e393f",
+      "size": 173863
+    },
+    {
+      "path": "sepolicy/vendor/thermal_core.te",
+      "sha256": "b99677f79e50e9e5f11a2be20a1b69c7df027cb85a2891d78edb388770eece29",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_cancunf",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-08-01T20:03:22Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,59 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_nubia_nx659j.git",
+  "codename": "nx659j",
+  "commit": "98a912ff2acc816c0d431e00bea0e3e95e9a9188",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "68b59328b1e76957bfe4504ce5d062634caf5d2a988fc94aaf39ed9dffbd34d5",
+      "size": 1104
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mode-02-01.conf",
+      "sha256": "45e503b9e1b1f9f03d68676a390fa81605f1b942b2659a368e0e3b838aca99cc",
+      "size": 1357
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mode-02-02.conf",
+      "sha256": "e714974175a35d86bf7fcc5bde431a6e94312da55bb400b31d08b62aa3a7e7b4",
+      "size": 783
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mode-02-03.conf",
+      "sha256": "a7fd64f27e40fb95c4df9a5114033b1e1916cea909aa0d80ea16f4edc37b72e8",
+      "size": 901
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mode-02-04.conf",
+      "sha256": "8922cb9144eb7ed2901f232093ce2e41526f2bf98063f237385160d8128816f7",
+      "size": 457
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mode-02-05.conf",
+      "sha256": "3421ebbaf4d6bd681c41aeea205bff019180f8fb6758d1a0e2cbd94f79f8d383",
+      "size": 481
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mode-02-06.conf",
+      "sha256": "0bc20ca58e635994b08da7066bd77887fc34aea5dfa0698b7575f2a1f45e1e85",
+      "size": 762
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_nubia_nx659j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "nx659j"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "nubia"
+}

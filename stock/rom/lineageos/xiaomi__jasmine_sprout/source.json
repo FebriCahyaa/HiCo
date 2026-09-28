@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_jasmine_sprout.git",
+  "codename": "jasmine_sprout",
+  "commit": "38e2df6724b21e685829b76e52b8844ff48a507d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3caec0fa82cebf881c0590c15ba6889cfbb110c4be2745e28fc9851cd239c42c",
+      "size": 227
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "45e113b0c4a38ea6c1054a7dbc95e28b1efd8645a1e3ba0ba851ff096d75e600",
+      "size": 285
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "baba66eae061106598d8a5c6981f6afb82fb9b891945fb93906a0c1df7e5ddab",
+      "size": 694
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0884bfdc1c23c312d86ac8cfc1b96da66929e188afcb7be60717518541302510",
+      "size": 1455
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "df9525b34029db187aee244e8050f6b6bf5ee8f5e047c3107a1054f3a8e6bfaa",
+      "size": 683
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "87640403ac62694316fd4bc9f12335c1d60baffd1b234cc69f0fd76b813b4c7f",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "43c27bc12a1853833477c0a407c14d307239ee33ef6ed011b10c15259b9abed3",
+      "size": 870
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_jasmine_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-15T18:32:53Z",
+  "vendor": "xiaomi"
+}

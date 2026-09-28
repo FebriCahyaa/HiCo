@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_expressatt.git",
+  "codename": "expressatt",
+  "commit": "571b75fc5c0e4bb006a766806f70a051b615c191",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "92763f61a66937f4c74b7d2a18a26880579a0f044595813a30e9077ca1a0fcb8",
+      "size": 1177
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cddc6b1b2fea85f7c0d4fea0e7a6a8d2013a0974c2e80aa5e758bde7e004dcb0",
+      "size": 3304
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0bd1e2f21aafacaf92c6640cd26e3a4d0903d759c46c43116d25085e535bbf2c",
+      "size": 1645
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "44bf3dcfb55ded60cbbd3523839511079161b17b825edb19a146f8771a639fbd",
+      "size": 101
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6ee6d29d2aa33cd7bad05b845d5a7748f2e7736c197502668d45b4767090bac8",
+      "size": 287
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_expressatt",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:09:03Z",
+  "vendor": "samsung"
+}

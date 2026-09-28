@@ -1,0 +1,35 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_ayn_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "8d991b57a48dd54cc2ea50a3a417f0c191b871c2",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_config/thermal-engine-high.conf",
+      "sha256": "e80cf53d2387ca0c2584c3a98789c45c8ab0e1d8fed1aa62f4543402bbacb9f7",
+      "size": 1530
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_config/thermal-engine-normal.conf",
+      "sha256": "d6d2493be8b28b0fc792d255aef90fe151766ab7477e0632d8b68e20c00a2b33",
+      "size": 1530
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_ayn_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "odin_m0",
+    "odin_m2"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "ayn"
+}

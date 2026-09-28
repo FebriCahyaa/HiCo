@@ -1,0 +1,17 @@
+# Bluetooth
+bluetooth.device.default_name=OnePlus Ace 3
+
+# Device name
+ro.product.marketname=OnePlus Ace 3
+
+# Graphics
+# No SF idle timer: kernel ADFR/LTPO drops the panel self-refresh (20Hz floor,
+# 1Hz idle) underneath the current mode, like stock OOS. An SF idle timer just
+# ping-pongs the timing 60<->120 (each switch resets ADFR stepping and costs
+# DSI commands), fighting the panel's own idle machinery.
+ro.surface_flinger.set_touch_timer_ms=300
+
+ro.surface_flinger.panel_refresh_rate_node=/sys/kernel/oplus_display/test_te
+
+# USB
+vendor.usb.product_string=OnePlus Ace 3

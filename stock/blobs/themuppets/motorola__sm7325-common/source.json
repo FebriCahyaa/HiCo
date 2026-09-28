@@ -1,0 +1,28 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "16423f571dba3e2f10324c2600291e8536afd58f",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "4d5b6200e46a0a12af47cee7e3c7812c304af3b13a916b15187a5f74eff5db1d",
+      "size": 718
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "berlin",
+    "berlna",
+    "dubai",
+    "tundra",
+    "xpeng"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

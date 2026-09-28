@@ -1,0 +1,72 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_oneplus_oneplus3.git",
+  "codename": "oneplus3",
+  "commit": "a7d4d7a8f54fdcdaa20b3b08b26419f87cd0b1cb",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4c849aa44af92b4b39b7c0974a51681af3ab07d3d02dc28faf276f59f4fa4edb",
+      "size": 3416
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e999a995da1b157764720b18f87ac197fe6740787de5543fd40128faeaeb73b1",
+      "size": 5933
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "ed814eb0d9f2f67594a11faf3cf80c8e4f1cee60185fe1e4fcfb3c609f5cbc30",
+      "size": 1851
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "eaf4dd41a4d4e37a5bc38c9507627c62f54c2e98f0064d639fb4e54a7985cfdb",
+      "size": 2689
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ab957981f91c603f8158657ee3d8d63300ecd2c7b43504d323c8219f03295af8",
+      "size": 18219
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cd3cb1446e1ba00a37f3cef9275ab6131918a33d6284317a99c6c2f88e887ba6",
+      "size": 2384
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f1c84188d50eb6afd3746b9cbff313232110ace8acb87fe7795104dab68334d0",
+      "size": 58754
+    },
+    {
+      "path": "sepolicy/hal_thermal_default.te",
+      "sha256": "d28de69ce60e93a9fb0e6fc32be74f3791d29a055b689592f0cfe849852b2aa3",
+      "size": 301
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "cf30feb42a87e82cb983a9867fd1d1bea5363db6c261dcfb739e2429d85d9c25",
+      "size": 179
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c717fc960ba9fbd100fcb17212bce6e68844abae31674c4498941482a3eb971c",
+      "size": 1394
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T17:11:24Z",
+  "vendor": "oneplus"
+}

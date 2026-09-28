@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_ibiza.git",
+  "codename": "ibiza",
+  "commit": "c6f1ea526d3ae7640a6fa9ff9568bb47ef12f9b2",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-ibiza.conf",
+      "sha256": "cfb0475af8304628323f2a5d2e973968ea1ccd803aa9b207384ae95185bd74ee",
+      "size": 4163
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_ibiza",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "ibiza"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

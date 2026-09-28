@@ -30,7 +30,7 @@ const transitionName = ref('')
 const pageComponent = ref(null)
 
 // Define top-level routes that should NOT animate between each other
-const topLevelRoutes = ['/', '/games', '/monitor', '/settings']
+const topLevelRoutes = ['/', '/scenarios', '/monitor', '/settings']
 
 // Triggered when the enter transition finishes
 const onAfterEnter = () => {

@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jactivelte.git",
+  "codename": "jactivelte",
+  "commit": "a1941d1dee29f70f9432f8d5c92ab5151d6ba485",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "da63698364618ee2af9c690d41e589c211a42fe269d4114af59d160981108189",
+      "size": 742
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1b31a21e45b8f02103364483fce7ca5d13fbb0f3f0dc1035fdc0254d92c071f8",
+      "size": 1085
+    },
+    {
+      "path": "device.mk",
+      "sha256": "180d93574519bca757e7c18c2011a008f7beed47acad9cc27a57e2d7dff3db68",
+      "size": 1199
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4f2408c49418671492a7f9513e48a0a41519031b328e2aa56ea7a91deb2ab710",
+      "size": 471
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6650941328f7e58fbbcd46aff1ae44cb29f32a78fa9b765f8976057bf2c9a57a",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b134c22fa2d4a234098c8e359adeb8e51c63dafb8f19bf4a36b828deaa645e01",
+      "size": 3008
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jactivelte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-12T18:24:21Z",
+  "vendor": "samsung"
+}

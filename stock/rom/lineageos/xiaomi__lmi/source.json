@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_lmi.git",
+  "codename": "lmi",
+  "commit": "1f0372de77c5068880273bd2f8e3552fa55be3a0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e494eedbc3a46b9e92575faf368ac24c7d306a4de1086f5021196793fac38516",
+      "size": 202
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1100223ddbfbe4d75af19f509d04d53920dfd32b8ac44220aa6753ae77ac05a6",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4ffa70a3341d2013fd706acd3076f0c12ff47f116705404d168488440e93d446",
+      "size": 503
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b82401cd233811bacf33d27c0b076047f902801b7513b7c6070f3792ef4bc1e0",
+      "size": 1539
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d6e614dfb30b985b35e2adbc2a511f94579f77776b1cbbce0063cd12aa09dd0f",
+      "size": 2748
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1e1e67873fff1c797e81fbf56fde23cb32f01ccfb149c340c6265d7e5907b36c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "68503759024670ed25ee1424b3d05d568b9cc89342e73b5fe49054e30da4ee96",
+      "size": 20299
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e2231129c0e29c6acdaf5d3ecebc564ff134d262b608f94e74d66a0ca6640d88",
+      "size": 1312
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lmi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-08T08:42:02Z",
+  "vendor": "xiaomi"
+}

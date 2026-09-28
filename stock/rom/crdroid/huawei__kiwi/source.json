@@ -1,0 +1,62 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_huawei_kiwi.git",
+  "codename": "kiwi",
+  "commit": "4c098ff750ebb3528adfffe474618436809a003c",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6375f0004cce2bf2e2193d061af194bc5360c6f7f3cd954d8f903d14a8807c66",
+      "size": 48
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "df66819f50790be03d199c46730bac0927e516fefcf1cd7bb59e53365dce26e9",
+      "size": 3171
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "514b5fb91220bec963c0a5d7effe274f982640af635eccdcd8dc772e37aedba2",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "92f7a9fdfe66f44390993b6013166e49195931cb910900ef2c95c2b9424c22f8",
+      "size": 5606
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1e6ededd0f930bf43120cc31bc96aeeb4e9e71a940b6e77aa3eb06b89f7b8c53",
+      "size": 3444
+    },
+    {
+      "path": "device.mk",
+      "sha256": "abff8cfee93bcbeacec8ae42247bffae56c20690b052f970025112e5867eb413",
+      "size": 11188
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fa942454d7d53d27f18cd8e6b2e9084f7b673b153c1f9a5a6205615f78cb43a4",
+      "size": 1487
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a874d44376987550de115fc4bba821a5c51768fe7f3de657a845d874460f8056",
+      "size": 28178
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2e9ba407308b6cbdc997c427d7b449b575364ab43787cceaa9fe0df7cd80981c",
+      "size": 3353
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_kiwi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-03-14T21:27:15Z",
+  "vendor": "huawei"
+}

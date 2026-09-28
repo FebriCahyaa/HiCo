@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_caprip.git",
+  "codename": "caprip",
+  "commit": "daa9cac621455e5d454666c44c774448f9486a11",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7c31bb5301490cbb103944ce288766681e6c048178eccd466168e241114ca2f7",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "36f03eaebe2c3fbbea52632ba6f8dd7aa1b284fd0ed4a2148ccf8582e78e04f3",
+      "size": 2255
+    },
+    {
+      "path": "device.mk",
+      "sha256": "07c2a30cb008b37296aaac4770d54ac6f214512e4b7a5e11c3afb56b31a6aee5",
+      "size": 3707
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a50799b562fa9b08236834ff2e3f687f70e0ce1745a1c68212571251ea215895",
+      "size": 1690
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b9907e5648be78bbdbcb113ddda300dad50a566056ca2a61373080c80308a920",
+      "size": 12284
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2af05dfcdd63c4e1a68621e8ef84379e17aa5179db64c0fb7b2d968ea1455588",
+      "size": 679
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_caprip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:18Z",
+  "vendor": "motorola"
+}
