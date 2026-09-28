@@ -53,7 +53,10 @@ jobs:
             || echo "::warning::A source failed verification; its committed manifest is kept (see log)."
 
       - name: Re-list repositories (metadata only)
-        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", ONLY: "${{ inputs.only }}" }
+        env:
+          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          TADIPHONE_TOKEN: "${{ secrets.TADIPHONE_TOKEN }}"
+          ONLY: "${{ inputs.only }}"
         run: python3 tools/ingest/list_device_repos.py --only "$ONLY"
 
       - name: Ask upstream what moved
@@ -100,7 +103,9 @@ jobs:
           path: stock/manifest/
 
       - name: Fetch changed repositories
-        env: { SOURCE: "${{ matrix.source }}" }
+        env:
+          SOURCE: "${{ matrix.source }}"
+          TADIPHONE_TOKEN: "${{ secrets.TADIPHONE_TOKEN }}"
         run: |
           # Exit 2 means some repositories failed; they are recorded in the state
           # and retried next run. The successful ones must still be committed.

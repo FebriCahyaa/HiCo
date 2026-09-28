@@ -32,9 +32,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
-    MANIFEST_DIR, SOURCES_YAML, STOCK, candidate_branches, dest_root, device_dir_name, device_key,
-    load_sources, load_state, paths_for, remote_heads, resolve_branch, run, save_state, source_map,
-    write_json,
+    MANIFEST_DIR, SOURCES_YAML, STOCK, branch_dir_suffix, candidate_branches, dest_root,
+    device_dir_name, device_key, load_sources, load_state, oldest_and_newest, paths_for,
+    remote_heads, resolve_branch, run, save_state, source_map, write_json,
 )
 
 MAX_FILE_BYTES = 2 * 1024 * 1024  # no thermal or evidence file is bigger; guards the repo size
@@ -138,6 +138,49 @@ def fetch_device(dev: dict, source: dict, paths: list[str], stock: Path = STOCK)
         return result
 
 
+def fetch_device_multi_branch(dev: dict, source: dict, paths: list[str], stock: Path = STOCK) -> list[dict]:
+    """Fetch oldest-qualifying AND newest branch for a device, storing each separately.
+
+    Returns a list of per-branch result dicts (same shape as fetch_device).
+    Each is stored at <dest_root>/<vendor>__<codename>__<branch>/ so branches
+    with different thermal configs do not overwrite each other.
+    Used when source has multi_branch: true (e.g. LineageOS).
+    Falls back to single-branch fetch when ls-remote finds only one qualifying branch.
+    """
+    key = device_key(dev)
+    heads = remote_heads(dev["clone_url"])
+    if heads is None:
+        return [{"key": key, "dir": device_dir_name(dev), "status": "clone-failed",
+                 "commit": None, "branch": None, "file_count": 0,
+                 "error": "unreachable (ls-remote)", "pushed_at": dev.get("updated_at")}]
+
+    pairs = oldest_and_newest(heads)
+    if not pairs:
+        # No qualifying Android 10+ branch found — skip this device.
+        return [{"key": key, "dir": device_dir_name(dev), "status": "empty",
+                 "commit": None, "branch": None, "file_count": 0,
+                 "error": "no Android 10+ branch", "pushed_at": dev.get("updated_at")}]
+
+    results = []
+    for branch, _sha in pairs:
+        branch_dev = {**dev, "default_branch": branch, "branches": [branch]}
+        result = fetch_device(branch_dev, source, paths, stock)
+        if len(pairs) > 1:
+            # Store under <vendor>__<codename>__<branch>/ so branches coexist.
+            suffix = branch_dir_suffix(branch)
+            base_name = device_dir_name(dev)
+            result["dir"] = base_name + suffix
+            # Rename on disk: fetch_device wrote to base_name; move it.
+            base_path = dest_root(source, stock) / base_name
+            branch_path = dest_root(source, stock) / result["dir"]
+            if base_path.exists() and result["status"] == "ok":
+                if branch_path.exists():
+                    shutil.rmtree(branch_path)
+                shutil.move(str(base_path), str(branch_path))
+        results.append(result)
+    return results
+
+
 def _stage(source: dict, sid: str, dirs: list[str], stock: Path, manifest_dir: Path, stage: Path) -> None:
     """Copy this run's results into a fixed layout for a CI artifact:
     <stage>/<rom|blobs>/<sid>/<vendor>__<codename>/ and <stage>/manifest/<sid>.state.json."""
@@ -197,29 +240,39 @@ def run_source(source: dict, data: dict, jobs: int, limit: int | None, only_keys
             _stage(source, sid, [], stock, manifest_dir, stage)
         return counts
     paths = paths_for(source, data)
-    print(f"[{sid}] fetching {len(todo)} repositories with {jobs} workers", flush=True)
+    multi = bool(source.get("multi_branch"))
+    print(f"[{sid}] fetching {len(todo)} repositories with {jobs} workers"
+          + (" (multi-branch: oldest+newest)" if multi else ""), flush=True)
     started = time.time()
+
+    def _fetch(d: dict) -> list[dict]:
+        if multi:
+            return fetch_device_multi_branch(d, source, paths, stock)
+        return [fetch_device(d, source, paths, stock)]
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
-        futures = [pool.submit(fetch_device, d, source, paths, stock) for d in todo]
+        futures = [pool.submit(_fetch, d) for d in todo]
         for i, fut in enumerate(concurrent.futures.as_completed(futures), 1):
-            r = fut.result()
-            bucket = r["status"] if r["status"] in ("ok", "empty") else "failed"
-            counts[bucket] += 1
-            if bucket == "ok":
-                fetched_ok.append(r["dir"])
-            prev = state.get(r["key"], {})
-            if bucket == "failed":
-                # Keep the last good commit: a transient failure must not look like a change.
-                state[r["key"]] = {**prev, "status": r["status"], "error": r["error"]}
-                print(f"     ✗ {r['key']}: {r['status']} {r['error'] or ''}", flush=True)
-            else:
-                state[r["key"]] = {"status": r["status"], "commit": r["commit"], "branch": r["branch"],
-                                   "pushed_at": r["pushed_at"], "file_count": r["file_count"]}
+            results = fut.result()
+            for r in results:
+                bucket = r["status"] if r["status"] in ("ok", "empty") else "failed"
+                counts[bucket] += 1
+                if bucket == "ok":
+                    fetched_ok.append(r["dir"])
+                prev = state.get(r["key"], {})
+                if bucket == "failed":
+                    # Keep the last good commit: a transient failure must not look like a change.
+                    state[r["key"]] = {**prev, "status": r["status"], "error": r["error"]}
+                    print(f"     ✗ {r['key']}: {r['status']} {r['error'] or ''}", flush=True)
+                else:
+                    state[r["key"]] = {"status": r["status"], "commit": r["commit"],
+                                       "branch": r["branch"], "pushed_at": r["pushed_at"],
+                                       "file_count": r["file_count"]}
             if i % 50 == 0 or i == len(todo):
                 rate = i / max(time.time() - started, 1e-6)
                 print(f"     [{i}/{len(todo)}] ok={counts['ok']} empty={counts['empty']} "
-                      f"failed={counts['failed']}  {rate:.1f}/s  eta {(len(todo) - i) / rate / 60:.1f} min",
-                      flush=True)
+                      f"failed={counts['failed']}  {rate:.1f} repos/s  "
+                      f"eta {(len(todo) - i) / rate / 60:.1f} min", flush=True)
             if i % 200 == 0:
                 save_state(sid, state, manifest_dir)  # resumable if the run is interrupted
     # Forget repositories that left the manifest.
