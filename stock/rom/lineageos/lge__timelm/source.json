@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_timelm.git",
+  "codename": "timelm",
+  "commit": "f61f3b928982516188eec51d8f50bd901b0d3ce9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cb9afcf0db950076e06125428b926f6b9a604f8cbf485e379c4783a723bc0511",
+      "size": 614
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "21c14fd2275b7ccbe189ca14cd03a7faf1dfa5238a653f45cf926a7814813590",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1ab8213dcd86d90fd3e1d58aa543d530bef4431c8d0481c394c1763a05f3bcab",
+      "size": 7344
+    },
+    {
+      "path": "device.mk",
+      "sha256": "51265d276ce6d4eeed57e93bdceea446d63eecc60e5990af8c84be0248661538",
+      "size": 16419
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ecdf94700345feb60c2cf96a7f3c568ad2990037613f5ccd754f5fa6b2553bdd",
+      "size": 2232
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4a0e2458927903e10d9583af31e94b611c551afcb6c9eed9a2e8ba67df376286",
+      "size": 183
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cf5fb46331e4a1b611a5428c9da347a4aec9dbaf77ec4adf8a3a3c4afc7fdb92",
+      "size": 44006
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c9163384452280b148faa60d6708068b6feb22ba6b9771aa6bae17e5e231c10a",
+      "size": 8786
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_timelm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T03:47:43Z",
+  "vendor": "lge"
+}

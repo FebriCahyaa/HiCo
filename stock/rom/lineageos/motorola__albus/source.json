@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_albus.git",
+  "codename": "albus",
+  "commit": "9818323641b09bd01f036db16e0250b56335ff5b",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6507a644417a374a282a4d87fd57c541914b2e9b907633e591fc82e67c4ccca9",
+      "size": 9716
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "48ade7f84ed3304b072492087e24bd906dfc4cc75e5488f86d03cf1095078e45",
+      "size": 759
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "63c95bddc2fdc0d4e5d3d606405aa98b379166e4592860b5827f6fd2abc383c9",
+      "size": 5405
+    },
+    {
+      "path": "configs/thermal-engine-albus.conf",
+      "sha256": "f63ecfcac1271729456b337fc511ec31aba1a86b66be0d029cbcd0a891485816",
+      "size": 2542
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b96813fe6bee1bcd32eb20bb0713e29fa22154bc459c86e8fb799ae4136afbab",
+      "size": 19017
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c0a6260fce4a0b7bfb4fd35eec9cb140abe05a07736145375c593a120484849",
+      "size": 2388
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "830e16b31fd1b5539cf75a476694fe38f768c889a11fc9a3cbe053c52f955ad7",
+      "size": 375
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5083d2a4ca250d6fd3babd4bc6e68da3050c4c8e047e3dc7a69106a4bcdff40f",
+      "size": 23906
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "05a43e7eda21ed1e1e098520b17c26455d1a70ac79c5a67f09765bc7af416836",
+      "size": 132
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_albus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:21Z",
+  "vendor": "motorola"
+}

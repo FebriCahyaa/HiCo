@@ -1,0 +1,47 @@
+{
+  "branch": "marshmallow",
+  "clone_url": "https://github.com/AOSPA/android_device_htc_flounder.git",
+  "codename": "flounder",
+  "commit": "c954ae2b95bd157f7864296fa6f7b6678f5cb758",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ab6d84a00dbab9c77b6aca63088a2c5b70b58efa2386c1abe6047b93fad678e1",
+      "size": 1213
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "db19881dff6e24c5f972eb7e6351b2ce934525e86fe3ed0efc29a3f3c3e78eda",
+      "size": 770
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3a935433393b087ae3b1ab8ba3194bc447ef6a22cbfe3cd0af707bb5806aed0c",
+      "size": 3826
+    },
+    {
+      "path": "device-lte.mk",
+      "sha256": "369547dc8f909255ca39c99ed017e259f48950b33ba69d9efc85aad5c3fd933b",
+      "size": 1029
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7e802d99cab7a9034ace6a0f5b404089ab0860ab37236df76d7678d26632bc52",
+      "size": 13387
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "89775d3cab1e485f1476b1394bd1621ac217941d2118805ed54cf6d2ae936741",
+      "size": 641
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_flounder",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:39:24Z",
+  "vendor": "htc"
+}

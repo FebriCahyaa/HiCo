@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_tundra.git",
+  "codename": "tundra",
+  "commit": "561811089e11c7cbd23d235390ae4040fee98940",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "379f8785a18b7db2fdcb7776c7f9ecb16d5048c9ade7b8eeacb3967f3ee08353",
+      "size": 166
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c7923cb9e47936e94e3c088928e1e111c797236f005a62aa29ef2c631f5647d5",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4cc56208132cdafd8737b4664ee1f488751a4f45d1b485a1b87c60772ffb76cb",
+      "size": 1648
+    },
+    {
+      "path": "configs/thermal-engine-tundra-game-perf.conf",
+      "sha256": "b8c00943ffba350f2613608274ae3545de130363e744a39075bd30a30dbd1d6a",
+      "size": 5044
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2cf51fc347ea39455261fa3acb83954de415a71da04baa3982e6005d65c7c136",
+      "size": 3305
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d8f26a19447d395ca30afc28a891ebd2b3a4b62f4eedf14a879e9d3e8c6b95ff",
+      "size": 1764
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0e1d47b997238bf23e9612b5c500b3277bc2b2e418bf009a6428b604da91424a",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "32c397897c6317d02453f0af16ac5b350e4bc30aaf6f1f7d6880af03eef5741e",
+      "size": 15308
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6aa30883096f7ee69d4b38a493923c0d25ca3f7f021b87c994e747a6c57add5b",
+      "size": 123
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_tundra",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-09T03:56:14Z",
+  "vendor": "motorola"
+}

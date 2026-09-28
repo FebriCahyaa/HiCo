@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p880.git",
+  "codename": "p880",
+  "commit": "c8d389a5d9660c78ad8525ec7c54cc7eeda981cd",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d29a39eb199679805b8cf0f859fe8bdcd81ef635e54373cc4b434ed33c82a2ec",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "659b721887c333ef555a1aadf8bbd598b40681b89395f7b090b5716105a38197",
+      "size": 2548
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d6cf662b38f102b0d899fc4fd0ab06baca1ceb24d8e349134218ae73ce1edcaf",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "eb2e738feb2e21a91cac71a61d1a845933f3b9a6b2e59a9684e1679d4c6c0b3d",
+      "size": 2049
+    },
+    {
+      "path": "system.prop",
+      "sha256": "369e14b14caa4b89d3f6590a307a98a54540e9ddacd3d3c79377bd8de774fa36",
+      "size": 426
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p880",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:37Z",
+  "vendor": "lge"
+}

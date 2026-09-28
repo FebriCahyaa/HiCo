@@ -1,0 +1,19 @@
+[
+    {
+        "repository": "pixelexperience-devices/kernel_xiaomi_vince",
+        "target_path": "kernel/xiaomi/vince",
+        "branch": "twelve-plus-wip"
+    },
+    {
+      "repository": "PrajjuS/vendor_xiaomi_vince",
+      "target_path": "vendor/xiaomi/vince",
+      "branch": "elixir-12",
+      "remote": "github"
+    },
+    {
+		"repository": "mvaisakh/gcc-arm64",
+		"target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+		"branch": "gcc-master",
+		"remote": "github"
+	  }
+]

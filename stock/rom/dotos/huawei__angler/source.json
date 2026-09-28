@@ -1,0 +1,57 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_huawei_angler.git",
+  "codename": "angler",
+  "commit": "204420d208d4238c0c7dae0cc6a87db77f4c5e7a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "32d99b21a467ed7bb2cc4a3ca2bbf4ed92e825c7477e7907b29645bfa5b3424c",
+      "size": 1148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "60101a3daa74df5c2e24abcad8b9e9e5b10da6378ab293c8e9f0e3a9ebf9e328",
+      "size": 689
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "92c41861f3422e0375e0f0cc3559d6fa19ef3398be4d4ae2e2d714c6f49ad18e",
+      "size": 5789
+    },
+    {
+      "path": "device.mk",
+      "sha256": "720d02bc0a495cf5c4883e977c99654f3663fac87dd7b25a505f3e37851a759f",
+      "size": 23228
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "9a919e2cf5b8942d5aa8c08adb73227c5ac4c104417f874ce2c03e988bf84182",
+      "size": 1031
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "310f7e05d4d82d1deac68e26379d5abb58f5966ced6b91064be47fd96757d35b",
+      "size": 922
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "7d70dfd41ecb418778092491eceaaeff307c60f6243e8e02e41d904326f7daba",
+      "size": 8803
+    },
+    {
+      "path": "thermal-engine-angler.conf",
+      "sha256": "d64367fc80ab0d49711529297c3c2789ef8fb8a0a0daf8323a2046b9ac709c61",
+      "size": 6929
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_angler",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-08-30T06:04:23Z",
+  "vendor": "huawei"
+}

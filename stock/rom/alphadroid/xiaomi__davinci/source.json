@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_davinci.git",
+  "codename": "davinci",
+  "commit": "c79a2236a3a885c4f79e2f7dd9c154e24d58fa15",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e6dfcc3a4b31fc60d4c2df9fca18d65b312e489162fc26e0067f8d7206a6a251",
+      "size": 208
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2b7839ed5a7cf6e7dbaab744d729f41683ab165229cbc1ade7517f03b8edd459",
+      "size": 257
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cad9555d4c53f806524fa7e92669d43bb1ad7479e3fd51b42e0608ee0f20c789",
+      "size": 1906
+    },
+    {
+      "path": "device.mk",
+      "sha256": "003b8b85ac8f08936185b8b2abbf5801111358deb7cf4f5b0d92f957b8f3aa3f",
+      "size": 4156
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2f9ee5f252dfd5507a83beb6b59d76b9ac4c0435879561f393d9173ea5a72ba7",
+      "size": 669
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8407d0232c285b3405b981d4d4c896942a822e18017327a40384685fe0907576",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3cce7ac2517f4c4d393af723044b342be7d0543d59d9388eef337a9cd8507aa2",
+      "size": 14211
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0b01c23eee386d51a696a49ac626f7c313b4e503adf1ef0df0b24bc2ff0ca98c",
+      "size": 275
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-08-01T07:04:58Z",
+  "vendor": "xiaomi"
+}

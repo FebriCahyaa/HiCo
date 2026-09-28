@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p760.git",
+  "codename": "p760",
+  "commit": "b20a953625c3d765f5e4aae5469bfc48e46412e0",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "872c650638bc4e7ff7fcb93027fd0231e2f834e7ae41e22bd9e7b232951cb296",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c456752763568f26c80ecac022b9fad8e5bdb9f25b237697a7aadb14bd338a9f",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a0c8903c44a41ed5b64eaef2c2f3f74506ce548fcf0089c1963046b25680bb39",
+      "size": 3039
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "14d652f6ce6cbb698603c292aaf8f0f6bfcbaa37c6dfb07680913cb942cb76aa",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "28c238152435aa2f3c35df941d429d926822925a9519a0f2c6d3d70b2278bfd6",
+      "size": 1566
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d6406e37b3c7a022871ace6ee03cb4195810c500ed307aaae62279793e83f319",
+      "size": 1083
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p760",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:34Z",
+  "vendor": "lge"
+}

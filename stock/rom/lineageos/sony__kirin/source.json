@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_kirin.git",
+  "codename": "kirin",
+  "commit": "f4994c956129d51b7fd260da1570efde1afe6e5e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "624864637b0a179e03db626f6059dd60aee0526d107df8bb7947b4eb414b9b49",
+      "size": 652
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b3dd5980558a565ebc7100d67cf431505e1dc4051c60a0965581601c0be08934",
+      "size": 1060
+    },
+    {
+      "path": "device.mk",
+      "sha256": "905d37d7912c2dc3c8ae13b3c729cce7a534f9fa7e747522b9b36ed906bc3633",
+      "size": 1407
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a86db09214029c81c22c47c57bfe6b03c85b525bca7a11588bfa4c719e26f71e",
+      "size": 1404
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a853374d45d83fc5c672cd87efa8ded53a27652f290b074ccd8f8c51abc64a71",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4381e65318c08c19c0c7ad11239753508f4b90c16f8a8f8660018dd723f42794",
+      "size": 13721
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "403ccc5c5a5e8725fae39e4d1121da2cde559ea436cbbb5c3ba6eb2b2093fd79",
+      "size": 345
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_kirin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T20:29:17Z",
+  "vendor": "sony"
+}

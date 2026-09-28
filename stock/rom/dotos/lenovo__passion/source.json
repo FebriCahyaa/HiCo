@@ -1,0 +1,62 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_lenovo_passion.git",
+  "codename": "passion",
+  "commit": "c1a3de8d528e41709d6bc829a7d3a3f04011b8b6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "dd28ff2f91ad792c7261b91570cd489ec0880461b662f031d15eb9e8de2971a9",
+      "size": 4769
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2ee925c5dd12c5dfd0f06e2bd5829ea92986ce6872e2ca8c22bb35bc7f7bd5d5",
+      "size": 56
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aceedfbc53300d6ee71120a1e54688e9a1d39efecd5dc371c0bdb6ffd84d54b9",
+      "size": 5085
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c84299d76452959dad166117516b529a2acdd4a5446fe73be0c2d188269c412a",
+      "size": 7832
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dd585bbdb7e40edd49273c4a3eda428b9c01dcc4df754b16dab8bf7125c3e4f4",
+      "size": 1556
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1bb5b35e043db85da87d61c36ae0ca9ec09bd6ad93d9f6b7141651cd30e789dd",
+      "size": 13342
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "872686c4a84820b0ef316fcda8fdb7bf92b8891ce26c4b045358e9c98b79a00f",
+      "size": 47
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d7e1a13055ed7defb47334e41d44d1ee298118c5c456009e2a0419610f9d539d",
+      "size": 2859
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "8679bbe6969acf5e061f4669452078a7a5ed974967e5ed64e4f37796baf686b1",
+      "size": 70
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_passion",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-17T07:42:10Z",
+  "vendor": "lenovo"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "cm-13.0",
+  "clone_url": "https://github.com/LineageOS/android_device_google_molly.git",
+  "codename": "molly",
+  "commit": "6bc990e7d85ae0e2eb4fada283de8a0a5ee90b04",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b2e5dc07799cf99f8c6feb87525ad283242f2eb31d12af4837693c769a2b8b1d",
+      "size": 221
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9bc4b7fada3c17ef134e2bcfa0eb19930c4d3019077a45d50462f3eb63145a03",
+      "size": 2388
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9d8c253c7478d7f8faa88934180a8f401081af11f7060b20b5352797e19bc343",
+      "size": 4101
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "affd11c4515297cdd9067e9bf3004f22a83b6780e8ad01300eb3ffc9690ae3d5",
+      "size": 1336
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a97505d04f27f5280ef6bc5a429a8fb4efc0a8c5fb894dc977539f9699948cd6",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fa1d2cfdd4c0c04faf22ec011020067018c389ba0b2346230af866e9a9382cba",
+      "size": 3528
+    },
+    {
+      "path": "system.prop",
+      "sha256": "55d01a5ace710fcb0e2e5dc2dcfc730cdd223e0375ebcb02d0a8e142eaf07643",
+      "size": 1468
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f33c87f74ed2bb68b2cf0b26e54e7a862797d09dd24af3b19f5d81d0d86bac8e",
+      "size": 165
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_molly",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-24T06:43:22Z",
+  "vendor": "google"
+}

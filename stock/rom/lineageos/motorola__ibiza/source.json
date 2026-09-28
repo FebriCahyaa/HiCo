@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_ibiza.git",
+  "codename": "ibiza",
+  "commit": "ae18aa4554762f9e0ea16cf214ecb4d62e436afd",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dd79c044379d50da2a1bc8c5cb5fd028795f371292809195e160eacd9f6c0518",
+      "size": 313
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "772bcb64e2fc5dec0dbaf6076a6e41dc4f0dcec355c445e8f40fa6559f97767f",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "50697609c592140bfbaa950f0b8c0424af1b8ed1b9d7042bb0452cb637a7882e",
+      "size": 1785
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ffc6719a8252b552d97238b6d2b7f4b673fa212c8b8744be8c48a3e201eef879",
+      "size": 3490
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "716a6b010ad6837b4a0053bf41f37f05ca236537441a3b23a0072b885fccbde0",
+      "size": 1802
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f8a9a31fac7efe57eafc269a584819265927c3cfb6cacd27295f28f64d32c4a2",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "49b3c28faa71caf112180b2b9366ddc89090c69c2d659ee7322d7309063e23ef",
+      "size": 11792
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "84b9eb878747ad2e1be449bb4b81c8d7e392d4a0e45592897ee60de561c67ac5",
+      "size": 186
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_ibiza",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T13:03:30Z",
+  "vendor": "motorola"
+}

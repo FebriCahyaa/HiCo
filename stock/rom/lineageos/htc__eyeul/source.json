@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_eyeul.git",
+  "codename": "eyeul",
+  "commit": "5dabd6232509d6bd83b9bbccb153eb582a419494",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4c2dbe6df95201cd7ae0de6af4042fa7755b7ac41b33b0a5650abeaf777e4f18",
+      "size": 1022
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4ddc416e1802a83b27cc130e146715d267448b7a9cfe8301d3dbac1d3cc7934c",
+      "size": 1944
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c3fd7cb4d3980c37f59617f1dccc7d96474f94dafe0dab8ba55fd5ec1b2a4fbf",
+      "size": 1089
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5c796229688bad1273b7548657e7860352edd824f1e20cf79e886736748f511b",
+      "size": 917
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0ce6c27c56262eec02b6042041c84f6703b319db75bc485d8645cd68f71222f1",
+      "size": 10441
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9c809f1d49c091203aa60f70f025f7e5ef541ed7abd6e53ba3ede251282aaef0",
+      "size": 166
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_eyeul",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2020-05-02T11:37:31Z",
+  "vendor": "htc"
+}

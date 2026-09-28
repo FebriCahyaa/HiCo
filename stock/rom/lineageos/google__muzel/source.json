@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_muzel.git",
+  "codename": "muzel",
+  "commit": "1ac4c7e78b5900832453f06b5eb2a5bbf3ee0a48",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a627ee4c44748313be8833f5d845f6a95a13dd449bf101f1781d539385a7a657",
+      "size": 505
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "27459a7877d8c7a7d864ad73c3e3593cfd0d9329d1ff641d30b55b91fb3b24b5",
+      "size": 344
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "138cf301c284587e21399d186138da312270c95a4cd0b2aea0e9b53375e0956b",
+      "size": 1277
+    },
+    {
+      "path": "device-blazer.mk",
+      "sha256": "5105c42f51dcecadb7271b7d5f89cc96fcbc3f874c3be7d9e3bbae3be43caa97",
+      "size": 2395
+    },
+    {
+      "path": "device-frankel.mk",
+      "sha256": "12390e06e239f09cd669b1f3a77d30051d9ed26fb62a09e48cf052a0581f2407",
+      "size": 2063
+    },
+    {
+      "path": "device-mustang.mk",
+      "sha256": "2109a35b22ab7a55874e863eb85c0635203637893aa57ae1e1e97142f34b4f02",
+      "size": 2405
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "65b38bb5d384bc50ca398d259863b8d57aa55a3bf99628bbbbb9a22e50d23d5e",
+      "size": 219
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_muzel",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-21T15:39:41Z",
+  "vendor": "google"
+}

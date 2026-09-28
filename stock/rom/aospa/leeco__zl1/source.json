@@ -1,0 +1,47 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_leeco_zl1.git",
+  "codename": "zl1",
+  "commit": "d63b76b4b389e3e772d602a886ce4411dfc4278a",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b31050208aa1ef637f65b0fab8ec9bbce69f6644be36df69bb787503a0497987",
+      "size": 4262
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4dfdd413d2d15c2c928dfe6961fe2c72bccc4ce5a4ffb7b9ec37a402fac75fde",
+      "size": 4757
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "a9768899e4faa6c69d45b6b061e08bef6621f55f1dd0cdab12110a4e75d63f23",
+      "size": 206
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1b615efcf9d90374fcd6f4f346444538dd7dd18f33e1f3edac811a105582ab97",
+      "size": 3873
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "a99e32105405645397a4e33ef16b5980ec813ef1dbc772b9aef915cdea51c1a5",
+      "size": 890
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "8ee5d7d7a459834cb912348ec968e7a3b76ddec3b263a78b5356b27874b52c4b",
+      "size": 8709
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_zl1",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T19:28:09Z",
+  "vendor": "leeco"
+}

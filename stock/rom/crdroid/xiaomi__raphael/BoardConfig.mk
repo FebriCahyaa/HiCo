@@ -1,0 +1,30 @@
+#
+# Copyright (C) 2021-2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Inherit from sm8150-common
+include device/xiaomi/sm8150-common/BoardConfigCommon.mk
+
+# Include MIUI Camera board settings if present
+ifneq ($(wildcard device/xiaomi/miuicamera/BoardConfig.mk),)
+include device/xiaomi/miuicamera/BoardConfig.mk
+endif
+
+DEVICE_PATH := device/xiaomi/raphael
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := raphael,raphaelin
+
+# Display
+TARGET_SCREEN_DENSITY := 440
+
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/xiaomi/raphael.config
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Inherit from the proprietary version
+include vendor/xiaomi/raphael/BoardConfigVendor.mk

@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_shusky.git",
+  "codename": "shusky",
+  "commit": "6cc483a07a85b115a0f0405817082f25cf356586",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "91f101dd332fc2edb9177c02cf8f61992b42f39ffb8c6d660d158c59ac5bcdd2",
+      "size": 507
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1865eebae70f68f31b614c138c0aef5778d5011c0cf7d38c12995e764948ad4f",
+      "size": 265
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "eceffbe3f80690852510949175864a21b1652bdca5c704ddb0fea8320cbec507",
+      "size": 1105
+    },
+    {
+      "path": "device-husky.mk",
+      "sha256": "96de93ff7b43b263d9d0d89b7a8779ef44f29f613e77cc4ac8a2296fa20e1265",
+      "size": 1788
+    },
+    {
+      "path": "device-shiba.mk",
+      "sha256": "8ee722a1e276d9007c1acd8fb4c6c21cad7b8ff602cbf0634c76f7304d798544",
+      "size": 1763
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d33d0715130e071dc7e210c51158b530f24733cd08605da8d213590f9e7c898e",
+      "size": 217
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_shusky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T16:10:34Z",
+  "vendor": "google"
+}

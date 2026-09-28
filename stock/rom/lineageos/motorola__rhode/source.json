@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_rhode.git",
+  "codename": "rhode",
+  "commit": "6e757ba4a1be4bdf5c8db37192b17fa1d47a8bd8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "32a730a9ce549b753d4d3345cd36de67e26e004821704173ae76591a598235e8",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "774471df379dc958b27dfa3dd3bb37d79030a987fda5656b81d5ab53aa32a58f",
+      "size": 1521
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5a30ff4543d9fd05ec9b0a392dc10c1e90aaf74e6b0d67cf4667833b9a8c2d29",
+      "size": 2261
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6d2763ee737facc8010be396f96538271479fe8ded73213a496d99f474dffca6",
+      "size": 1875
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "69a08e94762465c85b26f6b4784122ed76fa74fcf8140e5a391f6b60d9a4dbe9",
+      "size": 233
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "55e8532580544dd6d3a8b8685933a0254631443cce2b1fbf9dbf59f9da64701a",
+      "size": 11373
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0ce3985979f53b7ab0627e4a64d13a271bbe23025ae552d278321834a6a33db6",
+      "size": 495
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_rhode",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-22T21:26:47Z",
+  "vendor": "motorola"
+}

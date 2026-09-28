@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_wileyfox_crackling.git",
+  "codename": "crackling",
+  "commit": "4a244d4c09e2c688fbf9669a9dad809773e708a0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "eb688a616c653cc366f352612507af48c362e0c627464e81e7b97ac55fe05f75",
+      "size": 710
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5f89e7f364e05414d1de1d9b27c3fee054ae92691ff68d759d8d91792c3368dd",
+      "size": 770
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ef73fd199fa02ef50ca0e2c0df22b09333fcb3780dc1b942655128a918922edc",
+      "size": 2388
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b2d0085c86931d1f843ba4d7e9980fbbca1ea7f9bff0beb935a81878b197f724",
+      "size": 6775
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ae00d85acf95030615bd24940de07afadb0b1122658ae5f02dfbf32e11c0fe02",
+      "size": 1963
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6aa70d8cd67c072946f6c9c72d0092845dc7d1feb1f6c4d7ae471c182fee5222",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "feba03e3cdb20029dd63586cb4792fded7665db01674d51162a67aa9d2323da5",
+      "size": 12229
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_wileyfox_crackling",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:36Z",
+  "vendor": "wileyfox"
+}

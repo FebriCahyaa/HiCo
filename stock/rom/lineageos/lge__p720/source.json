@@ -1,0 +1,47 @@
+{
+  "branch": "jellybean",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p720.git",
+  "codename": "p720",
+  "commit": "b8e9d72b4919e4ab802a0e165af6c39ab1304bb9",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "cf75b21e700274b5205371070f31876626582290278c35b9396ec7f66e9ee4eb",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e13c102fb7ffdc31f99623cd4176a5add4b825905db83a0c98bfd783d1d180bf",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6fc9dc00033b10b6c34c87d802041cc907760f78d3019483d6de8f49fd838812",
+      "size": 2798
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e3d6c57f718fd5e6876469b177268454cf0a1c967e2959659681f704c2764f42",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cdb164056bcc14a0b1d346393eccc4e4acb944b6a033ea64f466a82e3bce2e47",
+      "size": 1627
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cfa86aa88404d4907417b82e26860747cec2b6ac79ed90f5658450c53a6ee4c7",
+      "size": 1025
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p720",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:34Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_Z01R.git",
+  "codename": "z01r",
+  "commit": "ae4d7eb7d1818c6270794a730121115a377957ac",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "100bf5513c8728b663fa87553d516c472e6c099053b45306be82aa46a3ae5fa4",
+      "size": 765
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3ec648ad58a56e6e7cd48bea28408d22f45925008174e04a81d4f01987375927",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8b4814e60559ced67a9c091426a31f4860c1063eb70a611b69781e7adbc2ab64",
+      "size": 5368
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e5597aaba3eb97ed34c575df75beae211bb550ca575630bffbe7a2e38e71e66b",
+      "size": 21834
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c3645cd2a95cac5f304eb584194f5a83a1c8412726661804587318cdf98fadbd",
+      "size": 2788
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "460e1c5a5d70144b92fb05cff39854bc40272242ec8ab14c1cdd0bf9f2ce495e",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fc1815397ecd04c824285471e817ef1c9babcdea10b833813e9560ca8a558a2b",
+      "size": 55680
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "88ca25b5b7ca5bf325eb67fd0d63f2f9563e8c2643747a6543e0ce467b2d3cd8",
+      "size": 404
+    },
+    {
+      "path": "system.prop",
+      "sha256": "26011125aeea5105751dee62e7cff783a1c03e7e1c35a1618f25072daedfa5f5",
+      "size": 1933
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "74b5023d78052b13e9c5e1cbd6d3fcdbcbf70337692b654990aa187470049193",
+      "size": 6666
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_Z01R",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T02:27:26Z",
+  "vendor": "asus"
+}

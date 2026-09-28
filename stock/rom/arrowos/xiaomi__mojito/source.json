@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_mojito.git",
+  "codename": "mojito",
+  "commit": "021c3e25fe13571b44c20101e23960bd9d4e55a3",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "009facac6cd483f6e68353c94bda3032fd31352f8eebc3c94a0469809dec61ab",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8db2887155830f95c5cf6a98cac6ef80669f827dedf569ba26149b1924a0b201",
+      "size": 9231
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e562c7c7d8afafa2a06b3d3c7f19c50c704ee6b01a29e1ee91060d07b4532d8a",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1afc8d68466d13d6416459f0b46f8cf9f141245da289344332192be4066bb7d4",
+      "size": 7065
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9b3ae552cd3f2ac7ee4ba48f7cf802a72914a06b9422fbe2bda2418b9f92c615",
+      "size": 20035
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c7c4a22aa67ca60fd2c6b5f027e4683e9c306af3ea07df8115a24e67c498cf51",
+      "size": 1828
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0e27f5d372217d2575b517d948b339836498383b6a3d2a6f6131ee81318d9cc2",
+      "size": 46656
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1865eee21a9765b84f08f57e4148688eda79f2638a10bab4c263ead8555105de",
+      "size": 852
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_mojito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2024-01-18T14:16:45Z",
+  "vendor": "xiaomi"
+}

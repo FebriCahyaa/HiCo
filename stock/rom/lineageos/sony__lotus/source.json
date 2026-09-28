@@ -1,0 +1,52 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_lotus.git",
+  "codename": "lotus",
+  "commit": "1aadab1f4fc3b05da060d277e8cf9d5fb35e38de",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1224c2ac539ab821f16269317b03f9af4f0b73a4eefc313e0031a39b41c2fbbe",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e0cc5a863d30985fccb882a9f93553a34ee499b5ef45f094cdec1f81567cbb71",
+      "size": 54
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b78e167f58b0443bd0aeefcdaf99e1bfd9215872ccd7d361f49652acd721d1c3",
+      "size": 959
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "53cfed4f8070f0543c1673a3618e86d044ac0e8dd063d6ccd09049f34cb106ef",
+      "size": 586
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "48c3297714866a8e3356ce2dcba44441cc1abfc1dcb3f9628458ea679f741bb2",
+      "size": 29503
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c23a886e8b6c85409d73008b57ec82248409273c5e7e493bc19ccc6b8d63baa4",
+      "size": 1696
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ffedb25eedf5ea8c4efd559559ffcbdf8cbd6d85a5d6b36d1fcccf2eebaff109",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_lotus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:11Z",
+  "vendor": "sony"
+}

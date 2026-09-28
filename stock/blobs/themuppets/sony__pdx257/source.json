@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_pdx257.git",
+  "codename": "pdx257",
+  "commit": "b746cd7ffebc23edcfd331607503c458f6f3901a",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "15bfe40fdfeab98af86ecac2697bed157e90dd8d6dbcfec6ef7f3e761f0f8e95",
+      "size": 632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal-engine.conf",
+      "sha256": "a301d5ca3706489b5fabdf8b44f2af613da9629b1970a91d3d2ccc4a298b197b",
+      "size": 14760
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_sony_pdx257",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pdx257"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

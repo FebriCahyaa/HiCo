@@ -1,0 +1,72 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_mondrianwifi.git",
+  "codename": "mondrianwifi",
+  "commit": "8f5fff88c359fb6e08dbdb34d81c3cf720c9f303",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c67cd591413cc59f0bf845706ded85ff91ad025f018a6d085d2471540e06de6b",
+      "size": 1359
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c710f8a15f0bb5c00a64509e7c052d7769eff1c5548e03c710489f617f89e5fc",
+      "size": 61
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8abcbfa247ca80c9a8f7ccc0ac8f21b9a849c6db001941286ad3fae2d32788c1",
+      "size": 3742
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "5df330c262329368c6a6d1ce82eaf31163d35a89d8be33e883a548acf226808b",
+      "size": 1882
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9e32ef19aee734af693aa1095e593fb3fbbab254aea2bdfae520d074647f6f4c",
+      "size": 4704
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "67b07b12676a8bd31748fc69f41e60a92d5a5a9ae6b2835f05706bdc8288027d",
+      "size": 1222
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "126a569c2baaf1f060cd3d63c23cd5bad96aa6084615227b5b4f4b18410fb98f",
+      "size": 358
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e14466ded5756743e86f81bdd976d88774d2aaf144be9e982f439721329dd0ae",
+      "size": 6861
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "6e52ec2d978bee6485e4c16333fa28c2b06def9bb404f5becedcd9cbc0895e9f",
+      "size": 394
+    },
+    {
+      "path": "system.prop",
+      "sha256": "feab3b575d8afdc6180c7c5cac1bf565c8d0fc1b5790972cd24f60fafddc4c9f",
+      "size": 391
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f4dd1bc7bb50ecd6255f37e76a15bb922c2068f75686f0f7ede8879ff40f893e",
+      "size": 43
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_mondrianwifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:38Z",
+  "vendor": "samsung"
+}

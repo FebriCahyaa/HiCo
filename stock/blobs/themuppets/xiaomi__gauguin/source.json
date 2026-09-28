@@ -1,0 +1,114 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_gauguin.git",
+  "codename": "gauguin",
+  "commit": "493266035b75a08d9eecc524e3f9a6b86583d97f",
+  "file_count": 19,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "8b2afaa8fc87e22cebcb649532b9f3714e3defe342daf72a637b90e8fa3eda52",
+      "size": 245
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "eef1e4f3d90983ec244041ccc6aca2ed5c5606f02eb14536a7ee741f1eb8abef",
+      "size": 532
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "9b7ca487184ba6126504b1098235075729f8121dc141dcdad211bf807ad884fa",
+      "size": 1504
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "9805f9cf4e3c4452f84ebd2ce14460fed686f4770a15f1590107576a227d30fe",
+      "size": 1504
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "3998097224ed66bdb4e61d31fe87e099e6c88124d9c24f1a6c7c5e043718aabd",
+      "size": 1376
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "2493063267a6199792eb777b24e6430d577a31aef44979df1ae928e06fbd4667",
+      "size": 874
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-india-camera.conf",
+      "sha256": "b3c2c1dcbd50b307b421a16604a19e543022ef717a104df6d145796133e51139",
+      "size": 1424
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-india-normal.conf",
+      "sha256": "a4115426e03c568cb4b2e5e61954724589a24732a4f65b0ab4271aad91fc27d2",
+      "size": 1904
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map-india.conf",
+      "sha256": "626ce2c8db93897d19e384f9eb9cb24148fa3be4c58493fc262c0625dbca9a4a",
+      "size": 336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "1c0c02fb5e91063c75b7cce358b6ebacf416396a21029e4d834030e7e100c97f",
+      "size": 656
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "34855ba8fc5f0956edaef8b1b14e825222c0c5d71cb1662f29438e6b0ac675d0",
+      "size": 1264
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "c92c023f589df78e70451ea716174a2c703f619c1fdcedec975d523c7c289b76",
+      "size": 1664
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-camera.conf",
+      "sha256": "3998097224ed66bdb4e61d31fe87e099e6c88124d9c24f1a6c7c5e043718aabd",
+      "size": 1376
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-normal.conf",
+      "sha256": "0c1424cabc35430c2660ef7c7ed9fff249ada48dabbe88e39337ddbb4bdff8a4",
+      "size": 1664
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "4ea904ef9223fa9719ee1147378c0a1e536a28d112a5ec97fb6a6089d292a6db",
+      "size": 1232
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-region-map.conf",
+      "sha256": "1f48395fa9ce166a0736b62b87f9fd0967caacfb2cd8e521315bd5df8f629fec",
+      "size": 64
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "bfc0b54636f3e301645df323b9f0f5cddcfe9e58ca197e5508166e324c12ee57",
+      "size": 1200
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "7099a0a23c055c18df1162c88b9c9756177afdb733b71511e499abe691e28a61",
+      "size": 554
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_gauguin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "gauguin"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

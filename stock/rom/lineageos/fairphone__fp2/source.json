@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_fairphone_FP2.git",
+  "codename": "fp2",
+  "commit": "f38e10cd6a2cd55310a5090200db0221fdef53a1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "58b5118f9d19826c19e24583b2a0f0e7b8c9780acf6e0b44553619f67b901a44",
+      "size": 712
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a6d91f7fbdd131adff3d37031ea111b37dceb3f0b3617e9f6bf0b135e7d58941",
+      "size": 753
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1c9b5b6e12f0abe1f3e7787337539a6fac3302c0b4e962b2a4c9ddb2540d2f9b",
+      "size": 5154
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "size": 727
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ecf28c5871b0a06d93cbf2fc126e0e16bdf4f51c100297f23cff765b80bae4f9",
+      "size": 1857
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ac1913c023bde9bda8dd26cafa2fa410d5e6fde287461a80caee0e679e7e9db3",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "12a4edd6e418f66468c7ebb57fb7ce3c1b60fd25f5855da8b720626d6d99f431",
+      "size": 8960
+    },
+    {
+      "path": "system.prop",
+      "sha256": "fb8ce7f23b5dc7d4b99f36815bd4f293e9e2eb0da44cc804560eff0b91735e90",
+      "size": 2799
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_fairphone_FP2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T20:19:31Z",
+  "vendor": "fairphone"
+}

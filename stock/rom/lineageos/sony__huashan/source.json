@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_huashan.git",
+  "codename": "huashan",
+  "commit": "ecddb29fe76493132205023890ca23e9d5e780f0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9084ca0798761423317961db8818bebbaf3ef0131257253d8de156b4df7ded88",
+      "size": 980
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dc424036fa58898e8a5bd4fa0f009746c509056c7dba53c07865c9f58d651f60",
+      "size": 877
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "149a17a2e16c9b9f7aa7cd106840e65746ad9dad298b7c6f7be55e63e20a32dc",
+      "size": 908
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fdb481424ecbc76a4de4efbd547a79af9b1d19d3010be3261f9ae3637c292848",
+      "size": 1512
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "826d7bd8682242f1b688b77f0e4a6b0cd6257b3b826f8260b0c6ff7b81d2bc6e",
+      "size": 1887
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c6d0811598276a5f91a6903b56920a725bc69740a5e4928f0b47286c61b533b4",
+      "size": 536
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_huashan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:15Z",
+  "vendor": "sony"
+}

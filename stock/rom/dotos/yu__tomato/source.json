@@ -1,0 +1,52 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_yu_tomato.git",
+  "codename": "tomato",
+  "commit": "508fe67502428582903f5547e393b28f0ad2066f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6fd1fcaae724cdc51e72a76efb8ea7a2db38c71deea3dd63a36b991b83e45ab7",
+      "size": 707
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9092d5d160859da0421e472d57967099cbc006eddc8d5fed67606796f73445fa",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7973834fd688636dfb566d328b0c8296b4915a4256704342cb92f07c19747cda",
+      "size": 840
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1e6ededd0f930bf43120cc31bc96aeeb4e9e71a940b6e77aa3eb06b89f7b8c53",
+      "size": 3444
+    },
+    {
+      "path": "device.mk",
+      "sha256": "44888cbc1e89b8e22677c2c8bf7db8406c3fa9d6e806713f9da07613c72b2878",
+      "size": 1016
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3757cb42e87c8e19006a446765278c9591f76980a0ef7d33b655428b67a6bd68",
+      "size": 1512
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "99bf4510f4ba067da7b6a4d21ca80ff93584a60c603a03871e9c241e4aed0ad4",
+      "size": 193
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_tomato",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-20T19:06:27Z",
+  "vendor": "yu"
+}

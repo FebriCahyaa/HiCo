@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_d2x.git",
+  "codename": "d2x",
+  "commit": "c515b86cc43e58efecda5c5bfc4416e099dde4a9",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ab6448fe3c81e51bdbc4cfd12254b60125d7870ffed05e5c8bab0ddc4bdd80c5",
+      "size": 752
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "46e471672b0dd448a27ce3cb32e1c5f50335decf12a17763594b9d676a59179f",
+      "size": 985
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1b34b19f65633c0ba7bc8572fadec156baca932a852dbe791db460499d829e9e",
+      "size": 1086
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3250419ed31d9cac91344138164e21e50a3c64590e2a7a2778f11306ee457a43",
+      "size": 1835
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c93bab5ffc6600888c3f6531f612f43595fa984970c77fb475c665fd55c52a6b",
+      "size": 4335
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fa07a6a054c33d21365a051a9be026f54a75b90bf39faec97a5592c1f0298ad2",
+      "size": 246
+    }
+  ],
+  "kind": "device",
+  "repo": "device_samsung_d2x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:48:46Z",
+  "vendor": "samsung"
+}

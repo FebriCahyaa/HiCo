@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_chiron.git",
+  "codename": "chiron",
+  "commit": "b873fc0f141727faf6f1c1454da56c235fb18f30",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "eb76b13da0750e19c8280ff9835e82e5d657739104df0cafbab7d59b88dd863d",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7d56a8a0d7faff3000443dfddfed830da0ccacc51a3257134ef02ef9ef0da87e",
+      "size": 1181
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e712239186077e9b4a7cc5f5dbdae49b3d938ec0b64efd55438387b364be9ff9",
+      "size": 1609
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "dfb91b4030f4cd2b4b2cdef64cb036830e3207ce404dfe1f0f85939fc824bc87",
+      "size": 1289
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "76727406ea4eacf81e910c718fb6de9e4645b6cd2036e0d84a5bfb93ae2fa7f1",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "560bf45a7cbc2d2c11576217f56c40d47b8321751346d7c5d6f91a9a93d525df",
+      "size": 7449
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f88e9c27f5c452f892c5710655b91476ba3cc373c23374d0ca2b4715bed7ada1",
+      "size": 76
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_chiron",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-03-29T13:01:56Z",
+  "vendor": "xiaomi"
+}

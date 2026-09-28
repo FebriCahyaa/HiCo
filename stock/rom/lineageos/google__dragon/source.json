@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_google_dragon.git",
+  "codename": "dragon",
+  "commit": "ad0267e01beabb9fd6d5e45704801631e3f2acae",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "89fd2c12f5994cf3fa2a29053c14eaefa4d582aeae82fd1aa49090983b35e2b8",
+      "size": 648
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3bb4f463b800ad614aa74865251eb918e6d2a0449d1ce5136490085db91964fe",
+      "size": 1210
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cd7a471f72c5a3a6e34e479a2649a76acd6925de11cdc55babd1b97cf59ec32a",
+      "size": 692
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "493965b02d163e196138ff587d3a3b73106881cf86954552b9ab8f5bca750577",
+      "size": 4500
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8881d48a4abfc0538ae2bd47f9309778edf8a45c6cff03c92bc5a881f3099a54",
+      "size": 12927
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e80790befc53169efdbfb55c88e9fcb843a823a40f248f51b5d58685d9d4b594",
+      "size": 2602
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1ce36774362ff19fc57c3f79179b98361a624b4a5531c8f34ec20688f1964977",
+      "size": 112
+    },
+    {
+      "path": "sepolicy/thermal_gov.te",
+      "sha256": "0c87e15a25c47f45c07e9ad10b613bfa550dc164732167c6b941da43b57f74f0",
+      "size": 403
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f3218219601d752ec85bd7b9f9d4373bf1504fb658930d7ece4b8ccc6f54d41f",
+      "size": 712
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_dragon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-08-14T11:26:36Z",
+  "vendor": "google"
+}

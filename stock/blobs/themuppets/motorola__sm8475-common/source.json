@@ -1,0 +1,25 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_sm8475-common.git",
+  "codename": "sm8475-common",
+  "commit": "abd91100feda09a1ed570ef9e7b490c5a241a7ca",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "34541fc28515c307b48382034381adbfc7748484c0489ed83e51fd1938d42a93",
+      "size": 670
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_sm8475-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bronco",
+    "eqs"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

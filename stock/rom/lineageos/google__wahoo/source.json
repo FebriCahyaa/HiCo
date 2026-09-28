@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_wahoo.git",
+  "codename": "wahoo",
+  "commit": "6f81d0ae7bd00878c4735aa72f2775fce9a32a6a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7c71d2e7af8e60f932ea8cd6d6cd8963d67b59bbe97fcd6c881e7bc24ec961b0",
+      "size": 5094
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6c3c07a4694db9fcd966301d37c788ad42dd13b8779a2d8720e7f66bd36208bb",
+      "size": 20835
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5f40cb032ec32fb6fca6388fdcededae61a796db413b492331bb6887d22f74ee",
+      "size": 324
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "c3010bfac9c746c20eb4792ddad1a5c04cf7f403b2b52794161a7f49cdc73af2",
+      "size": 1448
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2cc9ef54947aff50fb17e96b998b6f2e65b1d8093e358e48315bdf39bcec8e5c",
+      "size": 1282
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a52094093bf1b0379c5ca3f4fb7fbb6083adfd1b22259a12f172a0f8e86a1c21",
+      "size": 3998
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_wahoo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-21T02:32:53Z",
+  "vendor": "google"
+}

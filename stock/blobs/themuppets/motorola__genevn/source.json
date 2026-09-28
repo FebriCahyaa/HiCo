@@ -1,0 +1,44 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_genevn.git",
+  "codename": "genevn",
+  "commit": "a4eb4d2cd7d32a33d309bb6eaf65e09610a6fb63",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-genevn-camera.conf",
+      "sha256": "c6bb5f8a7920b13e11a592887577d3700ce3ffcc10d9089528d37e5b0ed03134",
+      "size": 3130
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-genevn-game-perf.conf",
+      "sha256": "5ff54286c12229628ad9baad5fff388f22d0b52ca4db35d4ba1a878893ad39bd",
+      "size": 2742
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-genevn-teams.conf",
+      "sha256": "5c671685dc42683b8dd76d1dcf7f83ab7f40461400412ef90adb695f2558b75e",
+      "size": 2907
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-genevn.conf",
+      "sha256": "b6b18c90c8a30fc2dcdd6d17eb520e1cd157ef7139c354525de30037ee3ac6ca",
+      "size": 4402
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_genevn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "genevn"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

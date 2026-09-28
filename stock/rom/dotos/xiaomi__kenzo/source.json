@@ -1,0 +1,52 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_kenzo.git",
+  "codename": "kenzo",
+  "commit": "63a1019352dc6fbf9662556e75e7798671a7678f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "361f76bd2d572b46bbff8fc45cea10285cc9858519be90e2c02eecb8adb48b1d",
+      "size": 1061
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "583f606a26403a9c55d220d4379400ed37dec3aa3e6d89133ad31d3498424f14",
+      "size": 644
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "35f9755200cf7377cea02903b0bc0a6b0e63509d3fbb45b167898c6a325d41f9",
+      "size": 1393
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5a9b15da95127214372527a9dd20d39c1c830eac4e8af9717d0a419c3d22a084",
+      "size": 1897
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2f1e9caa0fd65985171ed4608eb5653a3cf02fe69da9ff9962fdf737dd188821",
+      "size": 834
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5387800404d21b1c1131fe7a3ef0a763f9649a094163b99864a262f8da5da059",
+      "size": 25799
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aa00d6255f618d43184fc86c86dd7149ebe097c128125c9f73255d1ea85fff6d",
+      "size": 404
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_kenzo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-03-20T10:25:10Z",
+  "vendor": "xiaomi"
+}

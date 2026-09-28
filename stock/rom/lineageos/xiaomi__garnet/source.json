@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_garnet.git",
+  "codename": "garnet",
+  "commit": "f4fd18a207e4ace6c907a7feac90663c97734990",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0d6c110e21ccc3cdce6169409981576ce1ff674b666638f6ac021b8f6e26b91a",
+      "size": 851
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6a6f6a91eb071bb37adbf1073ae0142c08a2292e60cfa1009cb8a89e8078eece",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "62a9292025e08bca559ea5af3877493871432797546a7e6e5f6c79f20032a362",
+      "size": 8231
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e910e7096a0027d80b6fee90c9deb2768ba8680194896e5b90f2ca15a683fa93",
+      "size": 20220
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fbca8448a4be362e30d2274ddaeac61c911a0092e2e0d218a3d57aa1c8c9f80c",
+      "size": 6067
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a395a7304335a263932a2419b8b6541a47e91aee0f06ff0638556ae8567de474",
+      "size": 437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "901574a775c727d8c707ed5b6d998850e7e2b7b0231f6abacea143d7e00d4a9f",
+      "size": 106788
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e315ca14839321b101051d4b01fe693a8f2f4f9e42f20b7bb18c4daafe90b180",
+      "size": 1934
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_garnet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T15:31:17Z",
+  "vendor": "xiaomi"
+}

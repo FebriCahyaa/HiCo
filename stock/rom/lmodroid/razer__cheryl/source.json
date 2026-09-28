@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_razer_cheryl.git",
+  "codename": "cheryl",
+  "commit": "bc08c579f8ba6c83f867c3d6bff2882602c4ead3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "26d37189b9f7928fdecd39c48102dbbd274abc0ae912fe50854e533dc339115f",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fc4ef1b5d0bdf4467a7878e988c74e44f7e64c5addbb27e1b1fc7bb3a82f9e28",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9dbbe3e8254cd7722f2bcf647abe1cdafcbb0d6922b1139bd015f0f3b34dcef0",
+      "size": 4343
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5a401ac3ca9dc4e804624341772c2b6d8fd2f09e90c4827190e4413135f010b3",
+      "size": 17174
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "01193cfae7a67f6b673a66f22401d312968868742991a9e5d5b62e9b03a16d40",
+      "size": 3813
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3aab091e9f5511d1029336a3388f98bbc0ee73f7ad1b7725fa49d6b79027a52",
+      "size": 43360
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "de701fcf72e1715f8652e993ad6f2a40980861e553f2e7fa86ae68cae837b27f",
+      "size": 44
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "27bab3b0774672e438a7162fda54a868447193830be82d3dd946d3338813bc1a",
+      "size": 6817
+    }
+  ],
+  "kind": "device",
+  "repo": "device_razer_cheryl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:11:18Z",
+  "vendor": "razer"
+}

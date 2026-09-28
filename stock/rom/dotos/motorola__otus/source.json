@@ -1,0 +1,52 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_otus.git",
+  "codename": "otus",
+  "commit": "28b2127ffd71728452c0ea709a8a30d34565f7db",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bc04093f26cd40c6d22af7080cbeff86ba366fdb90cb194d575c0a1818405075",
+      "size": 1142
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6c7f3c67993dcd5fb146d8e55d145aa90edf7b82311d88068b34cf58b936db4f",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2d53ad93ad4b6b569cbfb8a17acc7e7d62d50bad38aa18b57658ed466e21cf48",
+      "size": 1445
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4cc75e388ff7d84ce286388a5ce4f2425d9d2c7341888bfe9a656b188c8b86c6",
+      "size": 1460
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f5b495dba9a350e289dff3fcda1ab076f7ce25952d13c799eee29230af1e4cf4",
+      "size": 785
+    },
+    {
+      "path": "prebuilt/system/etc/thermal-engine-8610.conf",
+      "sha256": "190b9dfadeef09c9e3515d29c1e82c95bf79e8168c499a79a645eb4af8e34d3d",
+      "size": 518
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5f86c462ad01b8cc6ca6c4cdbd48dd9fa681904e70bc93841633de60c0abb52d",
+      "size": 1401
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_otus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-17T02:46:01Z",
+  "vendor": "motorola"
+}

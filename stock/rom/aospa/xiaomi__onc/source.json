@@ -1,0 +1,62 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_onc.git",
+  "codename": "onc",
+  "commit": "a172ad6139c5fd996c79eb6d68889b3b7defa4c0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d88f86957d554b4bd5da7f1287aef9ccb6a01e3692a92557773e57b3c0f3717f",
+      "size": 4767
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a7f595e9257b03ee72700ebb1fd01a469b0b31171a531d8a4ca40d77f6206192",
+      "size": 4963
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7d17f984dcfd25afc9692b4bb96a890c78951fc46c548c779786189aced40070",
+      "size": 14165
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "238f0a8acb7733b230ffe11ca920cdccf12f2b6a1da994e1c5a5ca3f0bd1f1d4",
+      "size": 1919
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "157059585dd90bc00dfdc5fc9e646eba907e45fd29db8a581e5b4039e4024b2b",
+      "size": 92926
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e8d8840fa659a55b772ea57daafec53d9937fbd2c6b0ff4b8caceac46132c66c",
+      "size": 164
+    },
+    {
+      "path": "system.prop",
+      "sha256": "593aa95c122da06a02f58e4a659209efc4b5fba237cdd6862f6ed97862a974ff",
+      "size": 3619
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6763a2d268f5818e5e02dd1ead03396c26d2f8624488755e6c0321cfa6f262ad",
+      "size": 1097
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_onc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T22:19:51Z",
+  "vendor": "xiaomi"
+}

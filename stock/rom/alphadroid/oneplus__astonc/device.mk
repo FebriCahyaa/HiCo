@@ -1,0 +1,111 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Dalvik — Ace 3 (astonc) has 12GB RAM
+$(call inherit-product, frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk)
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2780
+TARGET_SCREEN_WIDTH := 1264
+
+# Camera (SR model .bin names, see Android.bp)
+PRODUCT_PACKAGES += \
+    sr_models.bin_symlink \
+    sr_ref_models.bin_symlink
+
+# Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946607878435459.xml
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    sys.brightness.disable_gamma_conversion=true
+
+$(call soong_config_set,qtidisplay,pxlw_vendor_namespace,vendor/oneplus/astonc)
+$(call soong_config_set_bool,qtidisplay,pxlw_hw_iris7,true)
+
+# IR
+$(call inherit-product, vendor/oneplus/ir/config.mk)
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.oplus
+
+# Fingerprint
+$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
+$(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
+
+# LiveDisplay
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,false)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    OPlusFrameworksResTarget \
+    OPlusSettingsProviderResTarget \
+    OPlusSettingsResTarget \
+    OPlusSystemUIResTarget \
+    OPlusWifiResTarget
+
+# Power — FQ module name: lineage-libperfmgr lives in its own soong namespace and
+# cannot resolve bare "power-ext-oplus" (that module is under hardware/oplus).
+$(call soong_config_set,power_libperfmgr,mode_extension_lib,//hardware/oplus:power-ext-oplus)
+
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.oplus
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    OplusEsimSwitcher \
+    OplusEuicc
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+
+# Touch
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,true)
+
+# Vibrator — source QTI/oplus HAL with 12R/Ace3 stock-tuned effect streams
+# (project 809 def bins → AOSP Effect IDs, incl. TEXTURE_TICK for back gesture).
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.oplus
+
+$(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
+$(call soong_config_set,OPLUS_LINEAGE_VIBRATOR_HAL,INCLUDE_DIR,$(LOCAL_PATH)/vibrator/effect)
+
+# Inherit from the common OEM chipset makefile.
+$(call inherit-product, device/oneplus/sm8550-common/common.mk)
+
+# Inherit from the proprietary files makefile.
+$(call inherit-product, vendor/oneplus/astonc/astonc-vendor.mk)
+
+# OPlus Camera (global 12R stack)
+$(call inherit-product-if-exists, vendor/oplus/camera/camera-vendor.mk)
+
+# APS P010 over-walk fix (GOT-interposer loaded into com.oplus.camera via libAlgoProcess.so
+# DT_NEEDED — see device/oneplus/astonc/apsfixup + extract-files.py .add_needed).
+PRODUCT_PACKAGES += \
+    libapsfixup
+
+# OPLUS Fusion Light Sensor
+$(call inherit-product, vendor/oneplus/fusion/fusion-vendor.mk)

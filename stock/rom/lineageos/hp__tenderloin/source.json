@@ -1,0 +1,47 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_hp_tenderloin.git",
+  "codename": "tenderloin",
+  "commit": "9c64b2295fbe18368d75cf14999f4c03184cbe25",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "15c8ae3ab6fb05a0107b9031dd5080c8b4e09c228c8daa1e8b6ad5ebbcb5928a",
+      "size": 89
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ac7ff03b39e1703bba2c0641e94fd48b284c343ac15e956de6492f02a220697d",
+      "size": 61
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c95a77a1c9298ea2c25fa107308739c137dd6b5b4f28b9734185e6bd16a9950f",
+      "size": 4193
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "18e1bff9a9efd81fbe3f4db47dbd68c8a1edc17f74893bb221de48e4011e1dcc",
+      "size": 846
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d2ae3c6c2b5e645eddff5f07f46fc393dcd792701144b8c8e4c9a49fe4af7d53",
+      "size": 1119
+    },
+    {
+      "path": "system.prop",
+      "sha256": "518b5220fe603ad530cfc78fb7ff58684dfa9c150a847b3cae84f906388d550f",
+      "size": 246
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_hp_tenderloin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:13Z",
+  "vendor": "hp"
+}

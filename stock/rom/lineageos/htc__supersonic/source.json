@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_supersonic.git",
+  "codename": "supersonic",
+  "commit": "3b4b960334e69f8825c16cfa27cb92af18e04f96",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "11d68ea95fcc41345901386041135e89eeb7849371d4cf51706c0b1a1f523386",
+      "size": 786
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "db6b492d8c369d2be9f2ef82cce988ff01dbd250858315dba1812859b8b9e323",
+      "size": 3051
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "26807adcf4521b0297d278f4f9249241f1d3d0fe2ef5189cc8ef1ad5d6936e2d",
+      "size": 9840
+    },
+    {
+      "path": "system.prop",
+      "sha256": "82bd9848992e82df6fcb944c32f526c02732718a8050d5a9cd3cefe3e411df97",
+      "size": 999
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "2329b00ae2a78eef83a2be848a8ab902f88748a23e24649a4c2e11c66513f817",
+      "size": 854
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_supersonic",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:54Z",
+  "vendor": "htc"
+}

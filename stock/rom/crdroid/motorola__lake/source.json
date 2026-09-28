@@ -1,0 +1,62 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_lake.git",
+  "codename": "lake",
+  "commit": "958d1397ca552eb5870f5442d714f5672335c506",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a526d7628a8a2a79a76045db1f41a072ac0cd9b1614f6792e623c300bb9e59d4",
+      "size": 1242
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "45a17c6724f405e19c5cccc320eea4f56d7e42261d369d3aedfc5c64429b693e",
+      "size": 772
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7a361aae3e851fb0648d292447096f1768ac42109f34b7759b705fcedf88fc8d",
+      "size": 2085
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e146d4271681f6db9876295eb6b810b5f45c2eead1ccc02ea8539e41453f74a7",
+      "size": 3636
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5f149b2996e11caefdcbda413df3eb34783fd0c016be47e94e09e906b634e37e",
+      "size": 4353
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ab471de1f860fef422541288719b6a3c5fb24aab0e7fbba34815e9576149703",
+      "size": 1383
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1c08472b150ee3071e0e65d5eca9cdf1c459de22cd93fc8e208222b15d1555b8",
+      "size": 22496
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5e4279ea810a757feb17774876e2dd429ba03d6ede009d20cfb6df0308ec7675",
+      "size": 1674
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_lake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-04-07T19:02:33Z",
+  "vendor": "motorola"
+}

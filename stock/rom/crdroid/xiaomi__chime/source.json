@@ -1,0 +1,62 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_chime.git",
+  "codename": "chime",
+  "commit": "896dd61519f8dd689c87a8717d073aeb6f7d2f5b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4f60a573fe297eb1143b010cf76b2007fe8b438b9589de5ebce3fafb2e92e916",
+      "size": 345
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7ab215de05288874327f1c826cc070aef7bba7fed5588ac056b02c0dacd56834",
+      "size": 5685
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "91abc7ed8cb7986364862475bf81c211097246921632ba32a097287fbd620470",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fb013e941c61d3c98a51f292b64635ee96378cb55b0a0b765337a2b71772db54",
+      "size": 8675
+    },
+    {
+      "path": "device.mk",
+      "sha256": "53cfb8d6aefbd1b5c5659447c5f6930c9c1b7c093a82311ccce68250cc49a3c9",
+      "size": 26156
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d9fa4002aa8dc0e619095c070c6b8c896c9b40148512dee726b072fb6abd7e68",
+      "size": 3104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ccecd59b979bc839d611616226a7a3e52213d44269a626a972ecd2cd64027bdb",
+      "size": 59422
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "c4bc43e771f41c69e69e5857533e2d8651ba62c9856ab5e4ed7d2286aaf96e08",
+      "size": 954
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b4347f458564fce246a041b31d6256a1def6e54c8046cd43d17d4aa5f8193aec",
+      "size": 266
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_chime",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-16T10:20:18Z",
+  "vendor": "xiaomi"
+}

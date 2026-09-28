@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_voyager.git",
+  "codename": "voyager",
+  "commit": "4d0d0936fc1e0bc5fc0b968e469b8e1e88eb1d64",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c4bdc71c1678630192f5eddccd9bbc0ce40356192f48202d21b5a275bfd7047d",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7a3c90ae6f4b9868f8515d05b7e50f6fafd4358153b6a232616be8ab860eedf1",
+      "size": 1066
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5c560a87b931969ff42325c27301852e70baebab0a5cdf862730360f7159661a",
+      "size": 1883
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "54a75c8cf76ed029ebe52e34bb66ab95ee48af57157ea17f034ddb29d6d6e847",
+      "size": 1696
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a853374d45d83fc5c672cd87efa8ded53a27652f290b074ccd8f8c51abc64a71",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e6bdda31af01a19d2d8cf13586705c8ed54c33d1837bbcb6ab88a2bbccd4aa71",
+      "size": 12511
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "18526d7c8329807bbf6ec30d33a796a0c62429f17ebf318965a244a752a51218",
+      "size": 297
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_voyager",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T20:29:13Z",
+  "vendor": "sony"
+}

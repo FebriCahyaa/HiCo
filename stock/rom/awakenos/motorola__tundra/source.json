@@ -1,0 +1,67 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_motorola_tundra.git",
+  "codename": "tundra",
+  "commit": "6795c321048448c0d3bcbdfd673ac80fa427d5a2",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3a1b9ad94f80f8b1c0e29598e0df68c3d7124765ac844648be9030b1b05cc3e2",
+      "size": 3842
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "476de2b8f15634d81117736666842df3ddbe75eb5f8a6687a61171ee0d2886d2",
+      "size": 248
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8588d5a316409c8437899d35f44b7beee488884a296a394756f346242a3dbbf1",
+      "size": 5592
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9d7cc35fab573496bcdf51620edfa8abdce53767deb349a30283839b1859c6e6",
+      "size": 21318
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5b9bbd98afc907a539d45b5cd967a5df5fb5b1c8108e9f0adb3f0f5439483da1",
+      "size": 2079
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "168cf819defbe50fff2770d4db807930516e0409040fc577ea02968e27685a49",
+      "size": 54852
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "0c882c16ab1676c715e66b0a426c75d4b748e3ea55bcf79f8b5830eb7a047ad1",
+      "size": 270
+    },
+    {
+      "path": "system.prop",
+      "sha256": "05e12624c493c61e3b9fc97f7f3f4b37c5ea6471527f2a35aa97f64b2427c404",
+      "size": 1634
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c95f48b5d6e38074fd01927b2f776bd3aeadbec7cd8c37e9d3cf951ab66b5ba1",
+      "size": 10352
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_tundra",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-09-19T08:06:55Z",
+  "vendor": "motorola"
+}

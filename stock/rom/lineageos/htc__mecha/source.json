@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_mecha.git",
+  "codename": "mecha",
+  "commit": "49aa46d924dbf0f547f381d43e647dbad6f21203",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "03a83a03d88c82d4cabad55e8bd41aa4aac1488ba06b3b7fc17815287d3b56a8",
+      "size": 56
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a6247ffedad9906de17d0fc6ae11ff5679d20e785ed13037a3db9dbdd81960fd",
+      "size": 2931
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c580b197f9ceab91886a15852dbac8f22014a3120b26a8795d824c17873a73bd",
+      "size": 13213
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b2e8f854e36553f1fd310414c520b4552ea1063dec0eab41145504d765694e78",
+      "size": 3497
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ee908925d86acf014b9b4f05b3439d6ce2c4ce7d26b57a2e1f583532a4b5ca99",
+      "size": 875
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_mecha",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:11Z",
+  "vendor": "htc"
+}

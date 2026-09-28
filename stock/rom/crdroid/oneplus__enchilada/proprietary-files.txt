@@ -1,0 +1,52 @@
+# All unpinned blobs below are extracted from OnePlus6Oxygen_22.J.62_OTA_0620_all_2111252336_14afec75dd6fa
+
+# ACDB
+odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Codec_cal.acdb
+odm/etc/acdbdata/MTP/MTP_General_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Global_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+
+# Camera
+vendor/lib/camera/oneplus6_vstab_db_0_1080p_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_0_1080p_video_60fps.config
+vendor/lib/camera/oneplus6_vstab_db_0_4k_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_0_720p_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_1_1080p_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_1_720p_video_30fps.config
+
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.oneplus
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.oneplus.rc
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.oneplus.xml
+vendor/lib64/hw/fingerprint.sdm845.so
+vendor/lib64/hw/goodix.fingerprint.sdm845.so
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/fp_hal_extension.so
+vendor/lib64/fpc_hal_common.so
+vendor/lib64/fpc_hal_extension.so
+vendor/lib64/fpc_tac.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixfingerprintd_binder.so
+
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+
+# ODM feature list
+odm/etc/odm_feature_list
+
+# Sensors
+vendor/etc/sensors/config/sdm845_ak991x_0.json
+vendor/etc/sensors/config/sdm845_bmi160_0.json
+vendor/etc/sensors/config/sdm845_lsm6ds3c_0.json
+vendor/etc/sensors/config/sdm845_stk36xx_0.json
+
+# Touchscreen
+vendor/etc/firmware/tp/fw_synaptics_17819.img

@@ -1,0 +1,44 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# AAPT
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_rgb
+
+# IDC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/idc/fts_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/fts_ts.idc
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
+# MCU
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/mcu/mcuapp_firmware.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/mcuapp_firmware.txt
+
+# Overlay
+PRODUCT_PACKAGES += \
+    Frameworks-Odin2Portal-Overlay \
+    LineageSDK-Odin2Portal-Overlay \
+    Settings-Odin2Portal-Overlay \
+    SettingsProvider-Odin2Portal-Overlay
+
+# Recovery
+PRODUCT_PACKAGES += \
+    recovery_rgb
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Inherit from the common OEM chipset makefile.
+$(call inherit-product, device/ayn/qcs8550-common/common.mk)
+
+# Inherit from the proprietary files makefile.
+$(call inherit-product, vendor/ayn/odin2portal/odin2portal-vendor.mk)

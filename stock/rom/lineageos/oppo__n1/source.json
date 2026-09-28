@@ -1,0 +1,57 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oppo_n1.git",
+  "codename": "n1",
+  "commit": "98ace7c6d74991828c027ea416bf4c8240899a96",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "be854a8bddfd57cd5839815bc456ba49e41907def85808ab431bd2ea510c448a",
+      "size": 1484
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9c1433ed61143c958d3b72033be8dea2572872e4b086254814c3c04e168adc65",
+      "size": 4969
+    },
+    {
+      "path": "configs/thermal-engine-8064.conf",
+      "sha256": "fbdb061f40e80d75a20988aaeb65a9f5dda680b7c2a1497c86c0d65d7ccfc2d8",
+      "size": 875
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "98d040eff548369667e563774905071b2c484a62bbdab59cbab5ebc09a3f0701",
+      "size": 619
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "770a73f083ca492ec6779f7d341cc16367d4dc2e2015f1034e33d8effd4a07d9",
+      "size": 3272
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "fa1d70ae729235f17abb876b9d1a955da4915726959b122d8180ab28e28d4c29",
+      "size": 900
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f62ea0eba10d72e2b72707b3bc1a43926f45422aa2263ac32f0d6ca3826c9df3",
+      "size": 911
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "76576b74c76164872010440a441cb256ad791b9c37d8ab8ddf7cdfb8b9fa01e6",
+      "size": 85
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oppo_n1",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:06:18Z",
+  "vendor": "oppo"
+}

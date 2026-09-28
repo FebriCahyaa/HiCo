@@ -1,0 +1,47 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_zte_skate.git",
+  "codename": "skate",
+  "commit": "0467d9387d865432e9cd0cedbe080be776166707",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "23ba3238b1fd8d652ae3bb3c695cdabb931afe1cd90d1740b1a5321cc2b16592",
+      "size": 775
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3fb63d4956f385a8899b0ebee6d269574b924c9257eb197a2e5cdef1347508b7",
+      "size": 1061
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e07df6d538048126f4c6dd1af486b140a06c3bc7edc3fbec398100621efcbd52",
+      "size": 3140
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4412a5b33afb7e0172bcdc7048c47c71e1f3995c460ff0cd7698c54733e86ba3",
+      "size": 15412
+    },
+    {
+      "path": "system.prop",
+      "sha256": "93dcb42840aacc852c9065afe6eaa4e561f373d054d0ec9cca14ccf06b03a9c0",
+      "size": 677
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "756daa50c39d80007345c91521a470e48ae3c2bb0565b334a0163bddcbf1523e",
+      "size": 875
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zte_skate",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:49:53Z",
+  "vendor": "zte"
+}

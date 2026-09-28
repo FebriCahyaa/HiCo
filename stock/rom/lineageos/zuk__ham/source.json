@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_zuk_ham.git",
+  "codename": "ham",
+  "commit": "0a810c7ddf453a7d3684353b39091960815b3150",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "71beb15043d09c2bd29d441b2d97025ac38469cb978114516eb8a808d7abc4dc",
+      "size": 764
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "900374005898af766d418eab07c85db0d53c53c51774af55794fff531aba974d",
+      "size": 746
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2d702bd38ba5dfdc557613f17df3cf60e776dec850f06d51246315f233cdbb95",
+      "size": 6943
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "02772b8ef03a59fe5a54b457069aadf0d0143f1e09fe7399d7aa068450ccf389",
+      "size": 1946
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c9ce210538134ae72b5e041311e0c98919985e8548d4c0ec22fac32066d4115e",
+      "size": 1771
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a05e46030fc7614d9b304e7789fa887199ed6f045bead99adba93b9335d86150",
+      "size": 237
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ae73de3797425de9a3ba2ca5c6c84829e82008963676d26a0db682173bc52a83",
+      "size": 9688
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "09ed59b1b6769b6bcd0499b5d05ee1bf0ddc12e6d3e0130853bb3a92f2146779",
+      "size": 46
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9aa696dbff8333df5dd8f2deae54fe9bea15e4f7205f39bcbb1e389a936f6230",
+      "size": 1357
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zuk_ham",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:07:15Z",
+  "vendor": "zuk"
+}

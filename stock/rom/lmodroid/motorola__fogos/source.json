@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_fogos.git",
+  "codename": "fogos",
+  "commit": "4d2bd9730c8743b6a53344964984b83ff0f538b4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6d8e1a1adcac6fc2134cb85e08666a84f7c87c3784fef6c35e6d6167ec745897",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "518b208eccc89e07e122ce877b3933714d0f1790929277deffecae25bcd134d8",
+      "size": 1839
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e0b49842783dc93eb3e9524dc2393ccb260cd4da2e061b8ea8c27a72ba35955a",
+      "size": 3584
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a67bc543dab2cbcaad3342f3751c4e44ddbcc5bc5a612ee55632b4cb97b611ca",
+      "size": 1669
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b66f2217b8cf323316a43c39ef5388d5c1d86fe0a7a8c942b8c23592f98f29ba",
+      "size": 13409
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "411c1b887606f1692809f653b007b509445a4ba4303c632fce519b0415686e2f",
+      "size": 584
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_fogos",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-11T05:08:36Z",
+  "vendor": "motorola"
+}

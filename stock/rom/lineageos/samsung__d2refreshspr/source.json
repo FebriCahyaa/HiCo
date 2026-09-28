@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_d2refreshspr.git",
+  "codename": "d2refreshspr",
+  "commit": "160c80ecd16a95027270da16f56532f5a48dc924",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1874ba8ef8fded167547ec72ef5d242a46159e6900277d35237f0fea25cf4028",
+      "size": 1186
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8967e809bc7ed77a18594ba69563f97f443581573a3aa230f91d5bd45d447c37",
+      "size": 1022
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "11f4997bb9f0c23ccf8d8073bd164295acbe350c6b5c4261f37de461ed7fa308",
+      "size": 821
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "64b88f628a741d88fdddc7b9a7aba0ec1a448c782e52df69b8a40148319549c4",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fed237167cf9a542cc3a8346c207af49af57c9ba2b02cf7625bdf852308f2480",
+      "size": 65
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d29ed1cc07a92d91589bbfb00de3f4d1a9e715270086ba4384a149641c078481",
+      "size": 354
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2refreshspr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:28Z",
+  "vendor": "samsung"
+}

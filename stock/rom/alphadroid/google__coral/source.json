@@ -1,0 +1,132 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_coral.git",
+  "codename": "coral",
+  "commit": "7cf007aae7f4bf5d6db22eb2593ad0a529506802",
+  "file_count": 23,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2cc6524add5c5adfa148ee81b2d41ebb8454499406bb8c0c939c2b5624453907",
+      "size": 1366
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5ee7256d516af94d060cf9e740166d37339070becdd1fb7574d5f8b92341bb38",
+      "size": 7571
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c1645de628f32fe72a2bb844e2020c7ed5d065ea5857bd7401386a7fc06bac12",
+      "size": 1184
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "7d635cbc76af2137311c49fb803191b97f241ca0f2af45cbd429ca3b9618c343",
+      "size": 7862
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "83854837cd85e1ca1b65e932ecc401e9ccfcf66c95cdc0eab2c6069646b66db5",
+      "size": 1750
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "665b03eeda2ba1f7f7609bbb56355b8f4ad8cb52a5a3d0049cc93c7c43ec1bbc",
+      "size": 4986
+    },
+    {
+      "path": "device-coral.mk",
+      "sha256": "368542a5a3635cfd8ecfa12b683f20f69c539afa38cd42467478805ea7326a56",
+      "size": 1509
+    },
+    {
+      "path": "device-flame.mk",
+      "sha256": "d25a7721e172500df546c700e44e45cb66a7c531bf556be39357e77c503a6c34",
+      "size": 1617
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "7a7f6bd6c95b0b5112b597bd517916861ab76d216d3ea9c339a39d21f1b7b7c2",
+      "size": 5918
+    },
+    {
+      "path": "device.mk",
+      "sha256": "847488102cced5a1245d3fd71db27df1ac89c1035d98acf7a8ac5865412adf4b",
+      "size": 49470
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f88aa38525edbfbbb93f71378943f14983b55e9fb6724d84ed487ad459b95df0",
+      "size": 242
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8f8623d78d86769f25ef05b3fd62219a19f59f527ae2d4c0bc218654a8b302e8",
+      "size": 223
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "76e9847f2bd9190225f89dbccfec2fb1ad30af0b9b49bcbd510264015f47cd22",
+      "size": 401
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "38f36afbdfbcdf5607e63a485c2ac1e373e76fa9d52ad44e8f4c1f14c769ba49",
+      "size": 838
+    },
+    {
+      "path": "thermal-engine-coral-normal_mode.conf",
+      "sha256": "15bc31b5bbe28904210df3da30ee8368782d81a3a9b397a055b73de255151a69",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-coral-retail_mode.conf",
+      "sha256": "5d10587b932142c0f9c0550c89cd6301a5a767820241f513555f39dce9217640",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-normal_mode.conf",
+      "sha256": "d95d1b5b04f59bc84aae53910b51ee8a6018d9ba455967033ac4ea1e1106735e",
+      "size": 2276
+    },
+    {
+      "path": "thermal-engine-flame-retail_mode.conf",
+      "sha256": "db400b4087619e02688af013fbb2ad9b68d65321ab28d844842e872f7001b6e7",
+      "size": 2276
+    },
+    {
+      "path": "thermal_info_config_coral.json",
+      "sha256": "09618c1d3c1091adcf4b260c4706dc47e233360a3c710659932e0370a2a406b9",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_coral_jaws.json",
+      "sha256": "9ebf27b33fff124b891ef7a7290656a1ab84956de1ccda9e014d3b5aa71d384e",
+      "size": 5602
+    },
+    {
+      "path": "thermal_info_config_flame.json",
+      "sha256": "ed691982acb0d58742677d26c4d064f7603a583530f4a4049adf47f6b0c10078",
+      "size": 7894
+    },
+    {
+      "path": "thermal_info_config_flame_jaws.json",
+      "sha256": "ef10ff9bd887be55a82ddd6bf6e4d2e40c680991e40ad4006bde99e23994f7f7",
+      "size": 5602
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_coral",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-11-13T18:00:16Z",
+  "vendor": "google"
+}

@@ -1,0 +1,84 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_raphael.git",
+  "codename": "raphael",
+  "commit": "8c5eb865d0ad9f18fa6fb16bb0cd00e32e6443e0",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "e36080ef51ebb2e19af4c87bc6740a924e40f8a760d21d47da1bf42585518341",
+      "size": 1152
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "f54ee0ac662fdda909254e0cd6deabc4220897e35cf2180ed1668ce8797e0d18",
+      "size": 1504
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "c9be7a0273325bbd70b9393deee74d8a7755c1be5312c190781e3433a1d9bf60",
+      "size": 698
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "7a2dd77ba397a99207a5aa5b4a9d5e3a095a0f4ce86d89c388df54c6a76eecd9",
+      "size": 1504
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-extreme.conf",
+      "sha256": "03bbe7d921ab49b4f694e3a58b31f8c6b27537aba64df94216157f0562b97eaa",
+      "size": 1344
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "671c872b6952eb048c3d8715185a2a20fca41e8e1c2610216c045c9dad48a308",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "2976555696532e37a6dd26c008d6b6a0fdf4f29cf6339be72800f372bf89c77f",
+      "size": 1136
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "39dbcd03279f1fce3570476e375fda4faad80a205ce89e2edb94bc54601c26dc",
+      "size": 1488
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "d88ca6fce55686e1d217c4ac478160b283744862758f87f95ed96fa691c88c6b",
+      "size": 1152
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "17fa2079ff2ae8354c8ffd98f75a5ad20bdae70237467b06cb52dd7dab5dfd57",
+      "size": 1120
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtobe.conf",
+      "sha256": "6e4fde8208c532b1fc40beb4fee20f21f8a86e746d9dc41af158c1176b510768",
+      "size": 1456
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "4fcd0f5b5b05d8d508300f978ae34c551c24da4b93a16a73c0c5a513a3e51816",
+      "size": 867
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_raphael",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "raphael"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

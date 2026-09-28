@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "45adf59f7bfd3df92c5a2972e3939e342443dbd6",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "ba56411dc159433cee76fa1788dfe0fc13441470f5c3fa38ef436167102494a1",
+      "size": 643
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "rtwo"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

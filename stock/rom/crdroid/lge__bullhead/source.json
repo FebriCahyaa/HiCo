@@ -1,0 +1,47 @@
+{
+  "branch": "6.0.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_bullhead.git",
+  "codename": "bullhead",
+  "commit": "f408dd3f503829636ca8da772fcbc29fc7df6c3a",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c2be16bedd78e1f8e1f27b200fdae8f72630aaf8f247638469d8a3de7f88078b",
+      "size": 1343
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0b8fd6035493fdb4ca16f556b4cdce94323cc1de773ced2be4eecbe5ac1301b9",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9752c89496bf0c46ee5af8cbb204a442b19173b0bd78455af8e02ef076b6b2c4",
+      "size": 5214
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b9cbab1a5988f4bd588cf5e20aa84b6f8f740beca9c23782c9ba215433ddef1c",
+      "size": 15963
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4d4baeb9eca9589cd4067025249e44ed5739c6b3c1362a46230ea63b7d70a3d0",
+      "size": 2538
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "1a014cb3c4b5956f1bdd6ea47fbb8464a419597ae0cef7b30605a707dfaf87fc",
+      "size": 989
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_bullhead",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-08-25T09:53:07Z",
+  "vendor": "lge"
+}

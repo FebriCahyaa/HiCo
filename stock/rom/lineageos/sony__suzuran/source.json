@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_suzuran.git",
+  "codename": "suzuran",
+  "commit": "82548c4ca8c20cb537ecaa1149758813b43d8706",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "20c478536e62b1db0046f11d05eb5f42e7a9f287454e889ac774c906e66c4f4d",
+      "size": 1132
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c18ceffd98d120633c4803054cab8b47991aca67ab2c6009f06a9471187e0b7d",
+      "size": 1695
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "18cfb691f9ccf824880482d0ec212d793537e433cb0f6914f680a053c9785fc7",
+      "size": 13906
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3ecaa1cf07cda4767712fa5eb6dafe8c90dcdef4074d0eae7f2e6c7ffdaab4c1",
+      "size": 2512
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d0866e4c4d13261b3e6a1bc67601a24c5388a9a3ea19a9d08473b413a9dd099d",
+      "size": 830
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee16a908b910f0bcc295311c18a9da939b499b3233ebe33021dd478af855ad2c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1d29d37176934471b09ab102d9bf8a0ec3a81fb77bd222c28e53426758a82f2c",
+      "size": 22006
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7b27b1269360c7934d081ff0b48f5b3f5f57b5cd04cdcac710f18ab6ec0dfbfc",
+      "size": 205
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4e2352ea7f1ab5a0f81977133e44a7cfdb42b7fb05f9cfba60d3df3d22b5450c",
+      "size": 643
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_suzuran",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:13:52Z",
+  "vendor": "sony"
+}

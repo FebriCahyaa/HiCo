@@ -1,0 +1,67 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_woods.git",
+  "codename": "woods",
+  "commit": "08c00b2927878cac5d2ed326f7287361739fd436",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "82a9b578f0ec7c50ae106f5705d54d1a39f4892e1d574a43148d37d1a166c2ae",
+      "size": 118
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ce576286910c384dbfedf457d23e3c49920f589aab4033ecd6b777369c2efe47",
+      "size": 5869
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "80e98ec4a569ed8719ed098f93f09f6fa44166d0158db36f7218815f43d8d977",
+      "size": 1465
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1a766581482318e82fded97999badd1e600ae6deee35081f778b2f0b241d1124",
+      "size": 7739
+    },
+    {
+      "path": "sepolicy/thermal.te",
+      "sha256": "136426ef44423a0276a1ca5185f1e4939821c9c58f1d3373a706d3877cf53191",
+      "size": 1179
+    },
+    {
+      "path": "sepolicy/thermal_manager.te",
+      "sha256": "138cbd682edcdd66d73a9148c5a36f5af50487765667bddee602084982958791",
+      "size": 1963
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "7935824458ead3ef02692b42341e03ba3c56da49214bd14d12154b676cd4b31c",
+      "size": 989
+    },
+    {
+      "path": "sepolicy/thermalindicator.te",
+      "sha256": "7848e16ae23be18dc03912ddc1e7f068172f387ecaa609fd7ba60874e4c11024",
+      "size": 2691
+    },
+    {
+      "path": "sepolicy/thermalloadalgod.te",
+      "sha256": "58154c13bcec4d23d4ce4599eec77169494327e041b839e75e2b112054c579b2",
+      "size": 1150
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9352585d0a7b3ca492e345006195e62431f16109df49e0e6937822bc378f4126",
+      "size": 3127
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_woods",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-19T20:38:33Z",
+  "vendor": "motorola"
+}

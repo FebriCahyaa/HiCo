@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_z3dual.git",
+  "codename": "z3dual",
+  "commit": "b5ca703e41d1421fd37e35a6cf36d6cef6db3529",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "26f9e440e52a3d4665c0f457b4ece5f9d26cd65c71d2d2ae95d4eae0e167bad1",
+      "size": 816
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2d258d91b353c2aef8503151541dce6d445c50fab5b21c7561043d55fc3500b",
+      "size": 813
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "30d57c8db8588096cc44424628117c47a98404e3681c81ff0b380028ba15b0ae",
+      "size": 832
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8cd2a3a7f9bbb1342632cd2fec5b9c80d27454fd1ede00da6d4c4bd66ace4f02",
+      "size": 981
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5346744d7a80e72aec48b6f54f3cbab2764a527f21bd6f25cdc557de8461ee9e",
+      "size": 92
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9835c969b930fb49277917daf310449a53490e869b0100c38eb4f21ddf0a75c2",
+      "size": 8454
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_z3dual",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:34Z",
+  "vendor": "sony"
+}

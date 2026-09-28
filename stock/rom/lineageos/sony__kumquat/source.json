@@ -1,0 +1,52 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_kumquat.git",
+  "codename": "kumquat",
+  "commit": "1b5ed4d74c9e6aa3234b69d94b6c2630e60f4617",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8ce77f8d9f9e9cb5fb28313732ec17b080322364e29d6302cb7f756c883265d2",
+      "size": 124
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "77c56ed0715c25bb52e51449967dcb75bdd919cb902b59f40ff61f63a7acbb08",
+      "size": 56
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "97fd9569d9d4ffdba10d7b742c0a77aebe53b7aa6a7ad1aafc3eeedb98d58616",
+      "size": 991
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2f65e4953d7985e674ea1969f9ced6480d3db945f987aeffdd1a7739ae5fa9c5",
+      "size": 588
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5bff9037fbb142d8d3b16a46f6dd7f1eb0aa4220146764137083ea77fd741b2c",
+      "size": 29514
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c23a886e8b6c85409d73008b57ec82248409273c5e7e493bc19ccc6b8d63baa4",
+      "size": 1696
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "61901c6e3da7252212974a084b9a8fefd75dcbe47c1fd2c41fb4eb334f19f510",
+      "size": 31
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_kumquat",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:00Z",
+  "vendor": "sony"
+}

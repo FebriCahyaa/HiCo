@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_g710n.git",
+  "codename": "g710n",
+  "commit": "76141dd874e71c463bc6aafd123b5af23b137982",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f25128a2798dba3b755111102d8e8e422e80adbfa288fd2573505a8ec49f67ec",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bb171908345460c2ca84a926a96d13549a624e62250bc92b99a30e440a242ad2",
+      "size": 769
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "227ca145be1b6a5bc16d8cfebb6eef5579597f34f63be56b74aa0dd51ef7e05f",
+      "size": 532
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2a961b26d60e2ca30d375edcd07b79ad117c7dc24cfdb85d28bde321b3545a81",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "06472e37a0d39868d3187f26cd5507b2c360a77094be86257e200b7c8ee852d3",
+      "size": 2565
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_g710n",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-03-20T16:19:38Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,107 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_santoni.git",
+  "codename": "santoni",
+  "commit": "7f9a24cb4444f3a51f7427e2c9d919aa2855b6bf",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "21d5e7e1b03d2e589e095c52a6065a03c969d9d49b9f4f15c89da0e8f167f6ef",
+      "size": 60
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a421158518d738d57d07ca41fb8091f78e1c40a6946f33df0845c125fa42d0d2",
+      "size": 8522
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7c0ac36ce40f979cf77da74798488f7c76a2c2f417557fca86c15784835366d9",
+      "size": 191
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "208bb4681aedd5d9762d4e198e2da58ec7bf82fd83a15f76f55fcaa248def6ef",
+      "size": 6621
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "4423d1d4e3a6a77efff0c46b522a960323ae921d1c2f05088bf4bc6132975811",
+      "size": 3649
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e7ab1f7bfed916d90e960b6b08440eb724baa0bb136f542e83544477436e5cba",
+      "size": 22505
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7c81949c00504903c8452c6177a0a4c1573b938ca21efe75cd1366eca14bc035",
+      "size": 2544
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "46a0a0da3ba4fca3d4365143bad75af4dc7a1cde35d2d8a28d4e4e25ed50c6c8",
+      "size": 15626
+    },
+    {
+      "path": "sepolicy/legacy/legacy/vendor/common/hal_thermal_default.te",
+      "sha256": "70c9ab8b1a5cd4d68246b32f3e60aa14bc0ad307ef99b2e93639086ddc76ddb8",
+      "size": 1632
+    },
+    {
+      "path": "sepolicy/legacy/legacy/vendor/common/thermal-engine.te",
+      "sha256": "933be7ef9cc46c072bdbbb5498b989fdbc819a7af92f19207156e32a0ff9883b",
+      "size": 4220
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "6429c09d73078e20e0f75a7d82e8c5a307a941eb2bfcd69e375438759587a565",
+      "size": 298
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c6765c7b00355f27964b403f84c28eaa3f2bc7c49de2a512a6cd807c45f309dd",
+      "size": 3587
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "5241c75ec76a652418181a58ea0a458d65b893f9b174a8d08c316a1e9fa3ef28",
+      "size": 984
+    },
+    {
+      "path": "thermal/thermal-8937.c",
+      "sha256": "7137cc44974497bb41e5d50922ac304e1f231329a4c6c51ad876cea8951616d4",
+      "size": 2575
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "thermal/thermal_common.c",
+      "sha256": "3f4537489e41d9197fbf0e04201586ad02d932c60146168cc4d94ddbec460a10",
+      "size": 10914
+    },
+    {
+      "path": "thermal/thermal_common.h",
+      "sha256": "6aee2168ab1a998b63355e54b693bd646967ea3a6baae4ccc196f646f6a3e103",
+      "size": 2216
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fd2966b7e9583bad7cd8c3c353360e8e6af3d55c6b1d16bd13d81163ef8d76ce",
+      "size": 6527
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_santoni",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-04-16T11:19:58Z",
+  "vendor": "xiaomi"
+}

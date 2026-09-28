@@ -1,0 +1,67 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_onclite.git",
+  "codename": "onclite",
+  "commit": "7bf890d0d2c19b93a730eb6f10d1869aa483c692",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b93ee30d290a2719422aec4b34db48e9193b7c8950c29b7eae245b8e7c8a1ff5",
+      "size": 803
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c37504662bf414ef4dd55418e8687c576704c3ab199c4dee7490f6493af5bce0",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "53d82f69fb08ae63eb50a17f3b344768da822016323a6da8c5602df218edf39f",
+      "size": 161
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f16b42f91e777f71fae9245357af238a57eea6d108156266cefa1ca59894664c",
+      "size": 5824
+    },
+    {
+      "path": "device.mk",
+      "sha256": "54d2d1a9d2ea7a678f76e06cf0c206293ca9a414753f5aac338182bcf89ed323",
+      "size": 17374
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "19b435ef4d16f4e13466b36decf7849fcad855bced98c5f01703cfad982f3c42",
+      "size": 2175
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f67434bc57e098bfec1716c3f761285f58e783bb276fc46c42e088d420fc08c8",
+      "size": 96433
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3e33068e8ce8ee138f9e0a2620bc02c4fdaba40fd01d5d7a673d2c737b1cfe73",
+      "size": 210
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5b4fa15747d85afb994be332e5241aeba8e0d4da13ca7ebf1058edbfcb10b930",
+      "size": 1302
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dddf56d24eadf66490d7ea2e44ad8d85702415225b9a84b326e4f5a89ed083c4",
+      "size": 2272
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_onclite",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-07-25T03:07:11Z",
+  "vendor": "xiaomi"
+}

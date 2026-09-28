@@ -1,0 +1,127 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_miatoll.git",
+  "codename": "miatoll",
+  "commit": "387d063882c2813406b1e90fbc162e2ff575c18c",
+  "file_count": 22,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bef765279caf3d52582907a6849f859cb725cde13e1a3406f717fdef8a19a082",
+      "size": 379
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7c8edfc99d48611b4a6a9ece428c10e15cb51bd1430744124d7e5b2f858c6f2b",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "512e29a899d5d9ff73ff0a2d0a1275d72fe1b0529e45a82a93f82e74e37e8f96",
+      "size": 6379
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-curtana.conf",
+      "sha256": "8f2444315212b34795af6a1517cae35a6b656061fdad6e8e53083bb947ba2c69",
+      "size": 1451
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-excalibur.conf",
+      "sha256": "d059331b02ee752186f946d63f35fd734317469849e3a58dc57df5ddf81bcef3",
+      "size": 1410
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-gram.conf",
+      "sha256": "d059331b02ee752186f946d63f35fd734317469849e3a58dc57df5ddf81bcef3",
+      "size": 1410
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-joyeuse.conf",
+      "sha256": "d059331b02ee752186f946d63f35fd734317469849e3a58dc57df5ddf81bcef3",
+      "size": 1410
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-curtana.conf",
+      "sha256": "93c7f05acba9526e68e2cd91ab108efb184deb211bd3b5f90c305f0f6879c580",
+      "size": 485
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-excalibur.conf",
+      "sha256": "d6eb1dd167c07317b8e59acbedb651b9ae131cd7dc3b1fa193630892fec98301",
+      "size": 509
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-gram.conf",
+      "sha256": "6cec3f726775f2a0471dddcd49d4b9c4208eeaa89d738b3f656179a581ca8bd3",
+      "size": 449
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-joyeuse.conf",
+      "sha256": "798897c805c34ad96a57bff409a8b2ee5eece7df1e83fce77c2fab7eb0b59b6d",
+      "size": 485
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "c78f9203f3a9fc3323a09abaf6ebd6c81c2b5f4f76e4783024a5cb0dab3352c3",
+      "size": 13
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-curtana.conf",
+      "sha256": "bf3ebfe84f6a6cd1218ecfd050827d026278ef45bfff76848f6446a4e4bc79d7",
+      "size": 1429
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-excalibur.conf",
+      "sha256": "63ec7032cf0f8b723ce6b27894f557632e00a95055f92fc6a4ef5aefc550d845",
+      "size": 1433
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-gram.conf",
+      "sha256": "63ec7032cf0f8b723ce6b27894f557632e00a95055f92fc6a4ef5aefc550d845",
+      "size": 1433
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-joyeuse.conf",
+      "sha256": "e4c814b0464524181362bdb574a96121cdad71b6a78ada45801e23a743deed87",
+      "size": 1432
+    },
+    {
+      "path": "device.mk",
+      "sha256": "932e8d7fceb983db133c375472dd7d98e7a97a7e8b234e62f3c7da501c31577d",
+      "size": 17205
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "99519816673355fcaa6f8a76b8cefa58509c7496fcf715237d8caa13a8f2282d",
+      "size": 3898
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3dbccc13525da98649c8ae931f877d78ce60490dcb2fed809f3fdec07c354ce6",
+      "size": 49359
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "26b7d35112d00fc128f3d495ab8e1f4288758ac3848728a3d7e01ce9a1efdfc1",
+      "size": 551
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a6b5137e357debaea0a5c406003a63878fdcfcd89910342b524a01cbf5a5d86b",
+      "size": 575
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3b3e324ad3818206ee028f03d2e89fb21e0101c084fce00161b1dea9af8c1663",
+      "size": 8169
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_miatoll",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-08-07T12:54:52Z",
+  "vendor": "xiaomi"
+}

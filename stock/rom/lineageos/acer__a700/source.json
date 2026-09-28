@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_acer_a700.git",
+  "codename": "a700",
+  "commit": "12e03f4eace7ab1f0736f6c033a932a8ee3de580",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fda34eda29a0681123d485db5d5a362330eaa821c6f1497a57d54919ca16542c",
+      "size": 720
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "14839721ac22f6fa00e7f4d14629760be28d530f9cbe554ab17e5212bdc99be4",
+      "size": 53
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "11480a4ec284b4539b07f1fd2fb11b8296a2ac2cda6da65349c4e5432a34a333",
+      "size": 396
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9fd33ee69ec9184776608fa6dbb0d1aac5d50220441a74a871286eae62bdd8c6",
+      "size": 502
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0c10f9dc59831ebab58bbe97a7db2378525881808b18626541dff2b8995c1aa2",
+      "size": 345
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "60b59b86f1b36274fba89d9169603399229818e8a3ef55259f1fe63fa77836fd",
+      "size": 2211
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_acer_a700",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:26Z",
+  "vendor": "acer"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_starlte.git",
+  "codename": "starlte",
+  "commit": "9c55d5415dfc9eb7d9b256cc82e5127c968d8504",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5e5faea40af2397f5eba3211c6890b7f3b399ae610fef27267d20eb660acc33e",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d71eda1f505b6a43ab4e023770057fbdae43f02c6c08ab49b3ace2ada4f0ec26",
+      "size": 764
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ec72e8497ad523f0f541cb67ba57934b68032e599e3611872aed86b48930f00",
+      "size": 1099
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b9c7e09c235247ed9af159816cd16af022a3fec8081be50e22257daea5c2fd2d",
+      "size": 947
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "42f761cb5d23bb294658593ee4a77acc58ba8f8a93fd3e6fb04ded25ec3ef9a3",
+      "size": 1137
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6010b9563fed2cf604766a855d5e2ccc7b1dc77e40f8dc62315aa44bf80476b4",
+      "size": 140
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6b4511b9ad40a245f37ef7c0dd6061622dab4fa5d53bd358c0759d494e7ab66e",
+      "size": 2805
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_starlte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-04-08T19:18:43Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_ivy.git",
+  "codename": "ivy",
+  "commit": "839ec7a1c994519da92e10b8dd7f182136e0904f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bb5220d37d5ea8e06cb878157e7f586e0083000110f46406177b503f5cf4c90d",
+      "size": 1128
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8be7a9f93c164cf1f0ba1ab1dc50f7efe3225ca176b441fe0f5514213b4fc671",
+      "size": 1698
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "9b90b519d4ea73384431d7a2031f30874739cd4b44a96f11b3c9a15a36bc84cc",
+      "size": 22275
+    },
+    {
+      "path": "device.mk",
+      "sha256": "95f1e1c8d56b4e378f5131c81fe0ca8c7a44e254ac08ca171bbee339e6d4c00b",
+      "size": 2308
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d0866e4c4d13261b3e6a1bc67601a24c5388a9a3ea19a9d08473b413a9dd099d",
+      "size": 830
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee16a908b910f0bcc295311c18a9da939b499b3233ebe33021dd478af855ad2c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0079cff189e170d2312d2c96fd25a866e70d86c2928ca7dd782ee2e41fe771f3",
+      "size": 15181
+    },
+    {
+      "path": "system.prop",
+      "sha256": "abaf7ed01e550b856d9ae6484c41652f03c9e0d63f2eb6569744c844604954b7",
+      "size": 138
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "148897d4c1f9719db6667f47f851b9a6171cbeba35743f5323eaaf00fdb1b756",
+      "size": 639
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_ivy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:15Z",
+  "vendor": "sony"
+}

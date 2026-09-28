@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_aston.git",
+  "codename": "aston",
+  "commit": "c87144bac8586c122dada16b1bd0f649a56652a4",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "689be1f0f0ba159431f15d602279cab3642508a39040275e01e9fa1f08498aa3",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fbae6df2a69c1477f1bc027d0ca181913a8586bffd056d7c658c56ba6ab8dead",
+      "size": 751
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3f270809974a0005847c5888020bff9bf822c35ce7af56b00b4ac793125c9700",
+      "size": 3271
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a0513765793e9eae197bec93563955c84e1327a94abcb6a375b888665c877c8f",
+      "size": 3346
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "47437989fb20f115ce7fea28f714c1ab69169ddd04234a0b497db0cc2ad18d25",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fb5cd3fd9f548665b4f3b151fc8f3d7e5144d92ad5bf002e7efb52bfba17333e",
+      "size": 62308
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5aa534a80639cf569f95b6f1a8fa91ad9fc8ba0213e255622c0160c1dfb29e8e",
+      "size": 194
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_aston",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-04T12:15:34Z",
+  "vendor": "oneplus"
+}

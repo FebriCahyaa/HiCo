@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_p5100.git",
+  "codename": "p5100",
+  "commit": "ac451b4459bc58661883cd13b491ac500b2e7a92",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0ebaaefbee00c03fcf5c60595e1a1a2adfb77388170da2cc0f1e09c84618e3b7",
+      "size": 1070
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b98de719f44362ceb56b4d99feffd9a34255a6c49b13032b414bb917e1aacf64",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a6eefb4379729da0b8697ed7f49d357e2574bd0bbba5c4175d6bfd71b3d3102c",
+      "size": 991
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d9fb43e5f4d2d021c966288a1af5a52eb51f64bcce61e3a1e68240c77ddc7834",
+      "size": 3618
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2e5b2c84b8f8a5b37405561abcc8c03f29bc4af05e491a50feed4198c0062427",
+      "size": 1429
+    },
+    {
+      "path": "system.prop",
+      "sha256": "30aacb2416a5bf55e995df23cdf01ac5261b4a5bd838e003a17bc9b2fbe5d654",
+      "size": 184
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_p5100",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:00Z",
+  "vendor": "samsung"
+}

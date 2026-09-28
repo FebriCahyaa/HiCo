@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_hltespr.git",
+  "codename": "hltespr",
+  "commit": "5b96f375204bbf9747674e16288b82ad8acb2adb",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3e20a3e2278b92d3b65ad526c1e8eee306acea7d623b41d80eed45e95fe1565c",
+      "size": 724
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fb8bc780083d8dea7a79e598abd305d83bf38e81c421af454d42d1e4669dd7ef",
+      "size": 1232
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0582e0facef0ad5b0cd3ee01b50cf459ecd509bd83258e0bad49b6f8996ae7b0",
+      "size": 918
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3b259ef34559469aad119b3c1559f647fc08e301fea13cf72160399bd975e844",
+      "size": 111
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "861b48ce1e468e8180ff1eab061ec5cc3a47d23cea07a2b3d2ffbc1d74de9958",
+      "size": 769
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3732d304227943a3e544fb86959c371f091946de6852b471905f0f19b7f9c225",
+      "size": 147
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "58330ad275cfe38e3863407de93703f20a6a870bd92d15f2b03400436f95465c",
+      "size": 31
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_hltespr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:11:14Z",
+  "vendor": "samsung"
+}

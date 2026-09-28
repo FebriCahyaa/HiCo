@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_msm8960_jbbl-common.git",
+  "codename": "msm8960_jbbl",
+  "commit": "680cf488ebc5bfbeaaeb19c7ceb77f724f30c8ec",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c36e451ec89285e08c818a6a0b1b275174d3ee0dedaa5ac60d36f0c0a558395c",
+      "size": 5901
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ae8093697e004b085fbcdaf9f4e39f2cad94b7cefc7265106288a98aa28797a3",
+      "size": 2944
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4b79c1c0aee7d09454d297b448c803d7605c568528fcaefbc04215552f15fa23",
+      "size": 350
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d9ad11658f6440a104c12eff8d4766dd81b31aec3273f2978336867f1c054b87",
+      "size": 239
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "54898fddd58400b0150d7becc21ddfd9bdedfdb65fdbfe0ff1f0f5ce85a20a1e",
+      "size": 377
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_msm8960_jbbl-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:19:32Z",
+  "vendor": "motorola"
+}

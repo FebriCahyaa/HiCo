@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_zuma.git",
+  "codename": "zuma",
+  "commit": "b955305e1e9d030dcfb0d82d4388d391c6d345fd",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4df287e77fac47bcfd0733c0fe366f50ecedee6182506ea3cbf4cdf208e4aa10",
+      "size": 1343
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ddd695ed64f8749881f8a0febc766959660c2ab6f13a240b42de4534a745efad",
+      "size": 1209
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "533bf209618d3def50ff29ffb78ff025b554bbf359aac960a5ec561699d7e3dc",
+      "size": 13899
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "69afc051ed99241fb2ba1133405599bb0d50557f38930f466e9c7b9c2f3f0e3e",
+      "size": 1261
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "7af35f1e90cf908d6ed8d717e18a3c0d66348f943a80e01d8de4885afa8c5148",
+      "size": 2808
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "f8458b99b2e07a63bce9f527f884f0c6a597efddbf95738b47682392b4e9d3cb",
+      "size": 647
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d17bad65937d5545934a5db2895b777cb8397fc70e16d9e1a0cd277d07d58b9b",
+      "size": 41424
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "26906dd051522f126c56492900d446d6e5f17387ec9e9ee9b25166f5cb5f17c9",
+      "size": 102
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d603ed20e913206b4468ac480d530bfa7dc787a9d6b6e43a3fefb170e9b5be8e",
+      "size": 1187
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c90a3f77390276170b45d4f686ac932b6ef173837594f6618b85ef40c7cfbebe",
+      "size": 23
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_zuma",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-08-01T18:08:58Z",
+  "vendor": "google"
+}

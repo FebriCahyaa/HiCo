@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_leeco_x2.git",
+  "codename": "x2",
+  "commit": "ae1affca70c01106ec36d20f39db494b47bb8a2d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "37993fcb346300e6b544dd6cfa26733842285b6b1fb6fb3b265fa18454ddda13",
+      "size": 1198
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e070dce63a45fcb2d6192668b20d1d3136d1bb4d747eed1f67c37e0e7794bfbe",
+      "size": 747
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1b69eb093a0ca61cdda410ecd5d91370c23d975c826cc8d7e1d287604200ba30",
+      "size": 1639
+    },
+    {
+      "path": "device.mk",
+      "sha256": "63a476883dde46064578cdc009f24870c368fb4fc1315c74454b6d68b2d51fdd",
+      "size": 2369
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cfc035ac8695ba54c5c01c727d7cdb7ecb4e0b7c9d62778d22d281e5932d729f",
+      "size": 1369
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "dc13dde6f6a5dca01edf59603238b2c6b81eed742dae1fa1d94a8978cecc415d",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aeb0d1dc7d1c5e1101a1176d06b731a7eb773a04927cfde4dbe39572b1a54301",
+      "size": 15386
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_x2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-10-19T15:07:58Z",
+  "vendor": "leeco"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_leeco_s2.git",
+  "codename": "s2",
+  "commit": "1c12856e5c8d70e756aa48f91d1ad9066ddd9fd0",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "25e689bf82d735b8c466f5ca855f0e93ee5c88f88a3d18e90d1c69bdd74376b7",
+      "size": 4492
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1f818a7662ac9406b2c9f9bbd48903ea0ae2cf4e7bffdf3948e3f8176ee1a1ca",
+      "size": 747
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bd03db09f7f4ad04f13f64970edeca2b5ccc191900fe84345f98fa76a4cad6d8",
+      "size": 7035
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "22ef5c1f5f5fc147e36dfea6b6b496b142aa1b5f227392cf72deaa8367484766",
+      "size": 5194
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1e79bc1ff6b13881d0b505a636c9e502f374bde563afd770f03d87fa51ff0609",
+      "size": 20731
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f96470d47583da6408746f723aa0470017d2f02785cdd4b4dd5a1d5dcf5f1708",
+      "size": 2493
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f846556242efcbed43b9085c02c72234f08d6077e8cdd61e02592a52aeaf4d5",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "339469167b7a9bf585da8cf43d6fc065d1f359fbd7bdb79f5b9836dbf5fe0ba3",
+      "size": 15525
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3fc3e94ba13f10761c0af31cc76ae14711518bcbf7bb111a921de3258eabfd9d",
+      "size": 90
+    },
+    {
+      "path": "system.prop",
+      "sha256": "bc0082e7063a7c4f70b5e3c5fe6c051858d14375c524b1b88d7adf5ae3be2127",
+      "size": 6200
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_s2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-12-28T21:00:19Z",
+  "vendor": "leeco"
+}

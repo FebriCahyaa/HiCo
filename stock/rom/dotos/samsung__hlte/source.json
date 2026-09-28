@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_hlte.git",
+  "codename": "hlte",
+  "commit": "f69258cfd94c8f3345dbb243f1288a067e9f2c95",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "472c4d7607eac364209a28c22197acf680b7784469bae778b4f957f5e34a4607",
+      "size": 721
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "73fcc88011aba2df434766f1829c1c9ed05979cacdd7318c65aeb2727edb9d35",
+      "size": 1172
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f71ec2d62f49c09c0e753f1f59dabc07da98444765756f46873379c157a927c2",
+      "size": 1410
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fb55e717730f9b1a9256e9b4577678f9b11d7d589111a27ac385a1dc4f7df30d",
+      "size": 775
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d60baab97fe5bf044a50d89c3979b8f296e061dacef91e07a6042be894e7a22",
+      "size": 116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_hlte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-08-12T03:11:03Z",
+  "vendor": "samsung"
+}

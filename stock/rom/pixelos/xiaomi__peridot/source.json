@@ -1,0 +1,57 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_peridot.git",
+  "codename": "peridot",
+  "commit": "b041c34e90e817e7bd33456192b420d4e17522a2",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f1a5870984eba8be45d8af3c3c528abffb37d3245a494e504e7f68f2972d5c4c",
+      "size": 1154
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6fa39c1d76487600ee3d303ee610d1e15df0ce528ab89c17513a85f442d2fc0e",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6014e59557172e9a7c9928504fc157b3104b780adcdc58c93a16085d53c3ffb1",
+      "size": 10005
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7ea10d3f3310c6ff1408932fd81cef3151b65387ea28272bdd5e0125ef40b835",
+      "size": 19617
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b949fcca02bcf74a70a9e0e0fe0f8d256c1acbc13bd12fd6e4762317d57f4a5a",
+      "size": 15457
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0511faaa6f8050e19f61454f256afaaac431425543b8b63dca85cfe0f9c58043",
+      "size": 437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "870c884722ba93576de947e4af365420edfaf04876c561294e81a3d6e1a00dbb",
+      "size": 112554
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1ffe96ed1452c31fa72bfb0f20b50b06592bbc465497311df8e12b0258a7eb63",
+      "size": 1815
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_peridot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-13T06:33:58Z",
+  "vendor": "xiaomi"
+}

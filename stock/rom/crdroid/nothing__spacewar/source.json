@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_nothing_Spacewar.git",
+  "codename": "spacewar",
+  "commit": "90e18534dbaf24abf7e9c81496c261f4fd35904d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8712b1399e2107eef3122c076f2f4ae351b16e6fe9f984f1b8ccf514617a5aec",
+      "size": 553
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9d0cdc0a6595d594c12b13497afa08c2cd5980273c9b7b73c7b90eb773293548",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e43b308b141eb4280a8663f2c6b0393e903a83ba5f150dd26c0a576675a77c16",
+      "size": 6504
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "8d2bd614d5ae03f45ac5ba9211d6d52a7ddde2fead06b5b5ba1747c62f7ae9df",
+      "size": 1131
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6af0cfc6bd94c47c87b76545194d668ef302d0b152aee80e70ad17f31afa966f",
+      "size": 20367
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "014ef5333ed6bb5470a162adc6ab3fc4737504159a152165c93a4af4edbe3570",
+      "size": 2139
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b25e0a5f56c9e5afd7c1aaf12e87abdf1d3a251ca8e5db65d039c6974f8b57fb",
+      "size": 66058
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nothing_Spacewar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-24T23:36:03Z",
+  "vendor": "nothing"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_equuleus.git",
+  "codename": "equuleus",
+  "commit": "db40750f063e86110e20db1455729c0f6621f7da",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e54847c35c5223764290ba943a304c63f646cce603ed58c239853d256868b0f",
+      "size": 155
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1957d325b8a70be4dc98cdde5630a91298ab6276f0f5692252a926e76943f016",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a5e39af653ad254f837c1f9606da23cbc6f39a0b6c3ba4487add8a83a2c0cecd",
+      "size": 895
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8f7e563c017c8515296692c343e8b74b25bdb987a20249ec9233501084dfd392",
+      "size": 4007
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3b19c22c284703be276858479b9cb16d05901482e8ab1d215835b96aae4f6c94",
+      "size": 1560
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "53c8da3b7a3a61d8ab8d20197438103dc6c3625a675ebbbc1f0a1996fb2bcd6d",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2ca2f39f9f6a76f560d374b10ff49b5da7650cd955ff627b04c9d052b32a2509",
+      "size": 10554
+    },
+    {
+      "path": "system.prop",
+      "sha256": "74e2d075df1f30a88fe61e133c80937a0794bc9a6636aa7eff0e7e75b4d1558c",
+      "size": 218
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "64c95425552fe03a66f83240db47a712bfb16cbe8e8824890acf382a0f17c8f5",
+      "size": 386
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_equuleus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-07T23:47:19Z",
+  "vendor": "xiaomi"
+}

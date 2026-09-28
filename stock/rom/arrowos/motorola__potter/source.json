@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_potter.git",
+  "codename": "potter",
+  "commit": "2f322590ada320b15673ce989247124394198fc9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d916e4158ffcf9c755e2825beed04f72a28c16c2167b48d7c319aee912f8c368",
+      "size": 6649
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bc3f7c0648a916f760bca683b33b871843413f38f0c4877a973a542218e2bafe",
+      "size": 758
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "801dadd9138056f1297d25471a9a067cd8db668a557d8de15439353049b3175b",
+      "size": 8401
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e0336f7590ae2037815980ff0380de8a8ff31edff95da1589e462122c6b13274",
+      "size": 2579
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6aa8d3deec1707e636d6df4bd0dfdaebdc280366e33b259a38a00cae93c2224a",
+      "size": 19412
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1d1b453fc9f68f52065401075663724fad4edd7f6aafc0ead8182e039197dcc7",
+      "size": 2229
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4b45fb4d47ac99a6c19602b159348b1f2ad3889d29b5be5ca6a317ca55484da1",
+      "size": 51690
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "f19dea0f450a2f473875f6319bf5e1bcf04f3a37400c0a5a3cbd0d545ad9a537",
+      "size": 585
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_potter",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-12-02T10:47:18Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,37 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_nextbit_robin.git",
+  "codename": "robin",
+  "commit": "e154ede514eb9cc617f01d62a7096389b4b8549d",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1f3b097584d99525aef30819a33a5cf22b53d6f392b6543c70a7f20a6972b270",
+      "size": 876
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a89a292b236335bda41d7bf16b56e65b0b836a2c1040e34a154c1bc3ff9e2b21",
+      "size": 4026
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "a756e834a9e2ec53fa7410e5ea08693f65ca0f97dc4bc2ae358e480808b42921",
+      "size": 172
+    },
+    {
+      "path": "system.prop",
+      "sha256": "179a9f7ac4e84128b32f3b7473d401288b308f43e4db995ebac2ae778fac23f0",
+      "size": 5351
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nextbit_robin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-12-31T06:02:36Z",
+  "vendor": "nextbit"
+}

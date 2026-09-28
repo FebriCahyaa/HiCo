@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts28wifi.git",
+  "codename": "gts28wifi",
+  "commit": "935e3d1ccee099494bd41d4174a0d0f385327fc4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bcc9e8c62ffe63e8302d366e25066a448a52ac1bbf54b5c18d7785caf26c8d40",
+      "size": 744
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d238c1beda54dcd959e648c480d02dc432e83b773e9bf95642a6ea9428b3247b",
+      "size": 454
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d37e22cb26fc46faf0265490b903114368f5f928e1e33874d065afd6dad61054",
+      "size": 877
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "76393de02d41ce79c7a5204478d03a4ccc0e62b8ad0408768bc5e235f70db8d4",
+      "size": 729
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "585eee68f782c3c736d7d8afc59aa60ab0b97ceaf7081db17f5dbb18a9a50f32",
+      "size": 128
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "536dfd9418d4e2c9d85aade552609e7c88b8247c58f581cb0925d8a42ef18038",
+      "size": 1983
+    },
+    {
+      "path": "system.prop",
+      "sha256": "266b4343d2f2f0c229fac8fa62b3c6c3161b47d531a598ea76f5e3569dd6b3f7",
+      "size": 101
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gts28wifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:18:46Z",
+  "vendor": "samsung"
+}

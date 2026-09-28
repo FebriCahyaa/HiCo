@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_quill_tab.git",
+  "codename": "quill_tab",
+  "commit": "a5e6dd0d39b859eb284dc280d8540823acfa8390",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0d9bef6c3125ae010645cf0f123b7c2dbc20056f3fe22469e230fe6aca0a7baf",
+      "size": 891
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "621e7c5c5e88184dc2f12644b8461a97dab4ea00a55ec67f3c803caa1fb23f2a",
+      "size": 638
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31fbdbd96b61b8c690ec4ae6f42e03f97c809058b0d5f7382657b7d24088b35b",
+      "size": 891
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4fe3fcfe4ba2b34987b9bb0958a3f17751936d0964f87e61e302bfdcba7f1769",
+      "size": 98
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_quill_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-14T22:13:28Z",
+  "vendor": "nvidia"
+}

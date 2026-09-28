@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_solana.git",
+  "codename": "solana",
+  "commit": "22a5df9757a4b2270e637bae7ebf57b53a5be4ea",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a6f0af2cd09c1f0b1e866f6407cfb0c3c5d5210985087af2ba9ea4bd3dab0089",
+      "size": 73
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3d079b53d7561214afa73519814db80f01d1557ea83291c4503bbc4e2ef69932",
+      "size": 642
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6f2a9870ac33dc6ed26deca70f613ad463eda0a44c07d5986337af2b4934f6c7",
+      "size": 8310
+    },
+    {
+      "path": "device.mk",
+      "sha256": "28458845f888b0c870e1d231dfb0a796cda69f759ee7cdfce3333d4b3e1dd946",
+      "size": 9340
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fe3c578e9c1e7ad938d5c880b2cf63fe3916ce9cbf8cef047d216fa70926a2f6",
+      "size": 93
+    },
+    {
+      "path": "system.prop",
+      "sha256": "059167b51f623da772a7ce2889a9c1545a0e33033cc5a42caffd85b8be1401d9",
+      "size": 9494
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "64be68d205a789c0f6fc2f86bbf139c6cbc040da6477e6dd677d5def028da509",
+      "size": 837
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_solana",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:21Z",
+  "vendor": "motorola"
+}

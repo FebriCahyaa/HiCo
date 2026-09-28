@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_malata_smb_b9701.git",
+  "codename": "smb_b9701",
+  "commit": "098f4633e2d884a3715b7461d37eef79249d24de",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "edb33ed5838494ea543aa22b890e0d5b3068ab78fa2d64203358a5bc1047e79f",
+      "size": 53
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c26e71c2fe52d30c79481ae708a5c78d6829400f1977eb840e111a6e1526988d",
+      "size": 431
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a5d0bb8330e07cd4526270cae1667084f6df44ba54e0e3e8fa37d03c1e9ef651",
+      "size": 12174
+    },
+    {
+      "path": "system.prop",
+      "sha256": "48cee8b94002452cc21a74eb3e37fc23800080be4d24fef514268d46c1f1af1e",
+      "size": 991
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a78e275d1d677e27782bfaf7f968b8b8616bb61881a00675aacd52c8db76e302",
+      "size": 850
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_malata_smb_b9701",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:00:52Z",
+  "vendor": "malata"
+}

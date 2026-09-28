@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_hidl_interfaces {
+    name: "hidl_nxpnfc_interface",
+    interfaces: [
+        "vendor.nxp.nxpnfc@1.1::INxpNfc",
+    ],
+}
+

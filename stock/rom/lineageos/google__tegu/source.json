@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_tegu.git",
+  "codename": "tegu",
+  "commit": "842f0c44ed7b3fd3610c6eb2f7f7c8f72e19d992",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9a8bfe8069d0c72a78bf11f84636fa806ded6b8c1e1584c84d9517c6b63d1791",
+      "size": 503
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9096b323baae35cee808b860fa168916d7c7d4c389663fcab0df9f489aedb75d",
+      "size": 194
+    },
+    {
+      "path": "device-tegu.mk",
+      "sha256": "02532c987a3b94b3c141ecfc609bf359a2ea8da84ae321acab10047929f9aa77",
+      "size": 1778
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ef499df64b1bc2162a8df1d6781fe49722ee7304124b975b5b091d9a6b02debd",
+      "size": 210
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "63186895262ac939971860c8f583eba75738e33fd5e8ef3516d35954e18984e6",
+      "size": 219
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_tegu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T07:04:15Z",
+  "vendor": "google"
+}

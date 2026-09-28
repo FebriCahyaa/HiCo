@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_onyx.git",
+  "codename": "onyx",
+  "commit": "7e4ea34b45b225ccc99541cf16eb36160c087b26",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "276eb61365fa24dbb24e2de4d26ddda73e84c37732f958f312992eacc9e0513a",
+      "size": 5360
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "82d58960de638cfbb5f9e69c3ac02ed5a1528a252982b40bc6a2196b333e8053",
+      "size": 5109
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "ee58d41cb0b0e6e482b92aa66a9602cfb2c2dfc405e1267bfedd5c3236e200e3",
+      "size": 2084
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5f8b2eef3c61351f3960977fd6b1adc5fc516f4e43247be2354044820edb9e50",
+      "size": 8692
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "031f9ec56b1d35b0c9c7508eb76c5e18f330b85c5c0720b50d76a4a33deded8b",
+      "size": 1425
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "20d66726c05f028f448fbd7085a7b3e760c2640918faa606e29e045bc8274db4",
+      "size": 200
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c8c285480da99942a9f3e56769409099bb43150494b5becc7fb48ab9794c1935",
+      "size": 8029
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "22d5b804dfcee79188bbf828de18d159a2812f90677ed2216ed2dce014d321a0",
+      "size": 402
+    },
+    {
+      "path": "system.prop",
+      "sha256": "979d5c4d033880f15fb86da00042683c3fe4e8f4f6ad37019b0c5d54589ae083",
+      "size": 2954
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7b8b792fb934736419330722d12fb555b70fcc7b182cbd7ecd1fc7f425a69057",
+      "size": 106
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_onyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:04:18Z",
+  "vendor": "oneplus"
+}

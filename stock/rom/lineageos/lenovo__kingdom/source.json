@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_kingdom.git",
+  "codename": "kingdom",
+  "commit": "36e11ba52f2aa0f8f58dea0433c2e643afe9e7ca",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1852df5988ea6fbff4cd4e79f0245e753d9543555c9f4ce12d38b52901b57dd2",
+      "size": 5411
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "61d8b5e4f1b5b11f323ca096250604d19da5d9ff4d5d3e398982d87cf987d50c",
+      "size": 6169
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "bd5e1dff2605c61f4538584191275b4de0df8e02166d75ae532446ca56b6221a",
+      "size": 1810
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7cc0043f7236d530c5fe9df30276a9375661a2addba3367480264cef1831df54",
+      "size": 1425
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "687e1d5f2cc9ca5cdf0f08b6041805a4f9789c17de4124afde68cdee75651910",
+      "size": 435
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1a24e453870c4591b1363920f7782c28da0afcce8e9a08e490773a7b8b549b84",
+      "size": 6985
+    },
+    {
+      "path": "system.prop",
+      "sha256": "95c28dd536c2a59888ff885736f68900c7850d49b957bcd0418488500a5e2cfc",
+      "size": 2131
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_kingdom",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:26Z",
+  "vendor": "lenovo"
+}

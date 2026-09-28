@@ -1,0 +1,52 @@
+{
+  "branch": "7.1-old",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_d802.git",
+  "codename": "d802",
+  "commit": "e7119250b33a88faa6e3d62d487258061b1ecb01",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "059363e2e692ef9189957941460f1c2c5e46fd7afca50e07091433605ed4982b",
+      "size": 128
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a3df5307e732672c57dccd7cb68e42560a6b8c54c12df751ca323cea354149ff",
+      "size": 782
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b2841e4c89f3ca300b44f7e07b5468e76e19f540d296959ca19045e6b240eedb",
+      "size": 963
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2233a46dbe52450ecdefdc4b2e6d2509c23ebb5316f792c88d7d4b60ac52e4c1",
+      "size": 102
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ebfa82338e23b5edd066167b8a2323ac2e2337597dee8db3390c0f3535cc5929",
+      "size": 143
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cde4e98b8c89f06c406ae7f1dde3ab50003e5395f54906a84a720f9152169216",
+      "size": 499
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c5603728e773c439140e585dd61ee63bc19529f0d8b0605efb42b120c94df1f8",
+      "size": 101
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_d802",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-03-03T12:31:52Z",
+  "vendor": "lge"
+}

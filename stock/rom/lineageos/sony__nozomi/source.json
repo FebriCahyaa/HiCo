@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_nozomi.git",
+  "codename": "nozomi",
+  "commit": "2a51ccaecb760fd48a82c858581fe2c6eda08e25",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ed59ba611b9fa8857ed85addd7eee6a43c16079009ef95a0495f28e4a9d07658",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3fe643dd095039d29355e58f39bc1b2000d6206760adac28b9a9cf1b5ba6833e",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "00ff0722f13130d4aa92c4dd277e8ec33d2ea60b589d65e66409678e216ab9d8",
+      "size": 897
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "39eb41ae0189ddd4e4ea22ecb29a87eeb5f17815e470734bc63d9520c2c47581",
+      "size": 130
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c68e3fb455e4ded270155b669de0e6b868eaf0511279b3c088402c24668423d8",
+      "size": 3203
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c886c042261e09ba7c58a56804f86df321b9b3c467544ce025e4ca624800dd37",
+      "size": 70
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3aee6be1f5c07e026ffd2b3256277f0e57603e4fdd0e753a181af265e165f893",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_nozomi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:38Z",
+  "vendor": "sony"
+}

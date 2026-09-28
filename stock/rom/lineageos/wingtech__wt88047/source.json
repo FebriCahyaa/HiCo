@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_wingtech_wt88047.git",
+  "codename": "wt88047",
+  "commit": "e48a9adacb79565e907ecaf9a882e2d2dfc6f446",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "52a89523393e18d44b9b37638d2d35a75c21e07af9d9e10759b843b199f4b1a8",
+      "size": 734
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c9f5a806fb3a95d80e7d02d03952ef9df5e69314039d50bd9a4ec3b4588ae960",
+      "size": 762
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "811211a4cf2f213ab9d5ef06ee3356ef205c17f429a97a2df501b05adad274d6",
+      "size": 3031
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1f25184c371e04672510399c48023a725ca701a37eef9950c97f45515946024a",
+      "size": 1742
+    },
+    {
+      "path": "device.mk",
+      "sha256": "22d7b151deecde7a6e75533d527d19871298d1b39dee7d05d4410a8b13ee8b84",
+      "size": 7481
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "14344ab020726f22ecc3bb68fc8fb9580077d7d8f8b31b017627a35bf9af9180",
+      "size": 1715
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1459ba69015131ec4ff8e8b0b597f63a769e28820cc8539832836b7ffccb3ffd",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "207b1fff0f6a57a90cbd85609eefd61af3a4fd62405e73523e9da6d2d4c1d078",
+      "size": 16595
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_wingtech_wt88047",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:37Z",
+  "vendor": "wingtech"
+}

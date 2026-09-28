@@ -1,0 +1,42 @@
+{
+  "branch": "lollipop-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_asus_deb.git",
+  "codename": "deb",
+  "commit": "894c4447a2d6a2d6c6be2753cd1f8951b4c15147",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "450e4ae89345a30fe3d55cf2e25891d3637f07c011427ce2a1612dbd363fe07d",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d1217a21685f61673df31db9dc07a14b5e154caa0f81b7608d23a60a302467d6",
+      "size": 924
+    },
+    {
+      "path": "device.mk",
+      "sha256": "875564ab2c6d4a94b8a61603c8eb5c0759c056cd3930ec6e22f3e9bd71b7cc3a",
+      "size": 1478
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "179be30def94bc16438043facf25a9b4ccdadd6beab089812abd88f5d15dba38",
+      "size": 778
+    },
+    {
+      "path": "system.prop",
+      "sha256": "014395a0e746b62ca47692d98d247e42f0fcd970ab95ea508ea282f30c2864df",
+      "size": 174
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_deb",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2015-07-17T02:25:03Z",
+  "vendor": "asus"
+}

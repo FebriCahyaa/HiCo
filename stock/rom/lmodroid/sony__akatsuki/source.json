@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_akatsuki.git",
+  "codename": "akatsuki",
+  "commit": "447e8eadf697e2cb81ee2d2215611d6322bd1fd9",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "462cdb1d53faf7f725fea823d856a6ada965d8ec5db3f7c0dd199055c7b7e7c9",
+      "size": 720
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "82eb866a33164fba75b82514814c3867ca8f8dc5a97c140fac2379d039d83d88",
+      "size": 775
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5f3d82ccd6ca4c0bc33a11a04bc23d1dd97ca64707aea395bd3c8cf54cb1c646",
+      "size": 692
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0631e9318d019ce9280d1a67a2b97676efa840fe72a927c9dab64dfa14a5da97",
+      "size": 20315
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ef4f3ef95d8510586731bfd1462230c58064a009ebdd08910d109fd5f525e35f",
+      "size": 2197
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "92eeb41b244f30828656c3ad38ce0c7ff1f02d14fb0818ff9c10d39da15d5bfc",
+      "size": 594
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fc095bd6f93b9eaf48d987cd0facb8552fdd2cbc62cead757008af74878f11aa",
+      "size": 17105
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b53f5b5530bdca739961dd4e5e81d936bec9a8cbd944a54f4ca4da73dcfc641",
+      "size": 361
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0c1b0eb2946d448fd51930f2a25f14ea23e0ee5ec7899d7ad4c8e684bc029589",
+      "size": 159
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_akatsuki",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:39:22Z",
+  "vendor": "sony"
+}

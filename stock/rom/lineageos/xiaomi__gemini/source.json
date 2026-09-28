@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_gemini.git",
+  "codename": "gemini",
+  "commit": "8b36b5e1c61580afd12c483101285cb423dd8c68",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2e13bed83932aac88677a3c9437d0fc2fbdb877d16ac80e7ae19e5e639a7ac2",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b3b362c7eef08823d9d8bba42b40aeaa1599175e70a4d3bfb9869fd424aa9abe",
+      "size": 1119
+    },
+    {
+      "path": "configs/thermal-engine-8996-lite.conf",
+      "sha256": "47cc113ef5faf2439b1ef7a2dcf3472fff86dd009f87a29b7082d1fd07d6401e",
+      "size": 3518
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "c8cc7e135d07df7a63af14485a50a360215268f7b895b56c3470590ded0c7d6a",
+      "size": 3519
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5aa26f48c71061548b3c685105c2be6573de3f0c6a7029a4a8ca7693e8b8a2c0",
+      "size": 3058
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "aefbccda4098d8004d86dc1281483f768c4c12a8b48527910a85e94a4d49bcf4",
+      "size": 471
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d776a65da30b8b62693a2d536cbd71bce2b3da6e8a2f50ef279f769b8a4b5424",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7389ef18a73f01ecfb6cc89c8956053f647c90f584b117652f6d39bf66262b4e",
+      "size": 9398
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7bffbddf1a2cc2f9190eb46c44184027cc582d11b61294d8e4ab5325ae247f8b",
+      "size": 182
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_gemini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-06-18T07:37:45Z",
+  "vendor": "xiaomi"
+}

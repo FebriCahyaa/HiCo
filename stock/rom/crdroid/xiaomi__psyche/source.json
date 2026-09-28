@@ -1,0 +1,72 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_psyche.git",
+  "codename": "psyche",
+  "commit": "9b77fbcaf988e785c1698ca9850e31dee1a71cc4",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4924511eba85be414b6013390e34817d86174419e1d5fa8a671dcbe1bab08bb2",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ec6806484333618f17054619c8f9ab4c7de03a3bcc586f88b3124fcea21c9cfb",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f40a61d8c6553fc81c352c5f756c1bc8224b9dcf674224933b3b5740136842fd",
+      "size": 720
+    },
+    {
+      "path": "configs/thermal/thermal-normal.conf",
+      "sha256": "6c2ca279528443650584188633ba100e35ff661ab5f787b9ce7d73203207182d",
+      "size": 3392
+    },
+    {
+      "path": "configs/thermal/thermal-per-normal.conf",
+      "sha256": "d2bbab2918c34aa26d4a0f41891309d68ccd8f54a5277a11e1544850aacf0332",
+      "size": 3392
+    },
+    {
+      "path": "configs/thermal/thermal-tgame.conf",
+      "sha256": "90f791109d75bba0f19e28ed8c4547e0536e450451cb1cc985e13e26b50cbfb3",
+      "size": 2208
+    },
+    {
+      "path": "device.mk",
+      "sha256": "52ab559f3c234222682672da08eb24800bcbcf111034e41129d1262106f6083e",
+      "size": 1760
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "19b872dffed02fde45d6b7faa96d4947295175cee6cf6809a15006699bc86c19",
+      "size": 2604
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "65d12001dd9b04f441e470e0f1b4961820a2fd2fa9d855a6d6b85356940e7a2c",
+      "size": 22590
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ed11393675d36ca709e05f50c35ae08791c27dbd56f3d9bbbfeeb3e189023c65",
+      "size": 2773
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_psyche",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-03-15T17:46:31Z",
+  "vendor": "xiaomi"
+}

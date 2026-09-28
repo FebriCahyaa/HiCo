@@ -1,0 +1,42 @@
+{
+  "branch": "marshmallow",
+  "clone_url": "https://github.com/AOSPA/android_device_google_dragon.git",
+  "codename": "dragon",
+  "commit": "04f269cced8a1bc1d72a3cd44e35dac09c997529",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "eb8505f56b4fede36963b703150cb8bf1b7ae379c16590ea6172511fa379dbef",
+      "size": 1211
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d4e9c99b5691d0f9937d898926c01ba821332aeb4e9d411a5a2e659e68cd9142",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fdba607aef101ee4c739b8846bdab7492861b933b3e9ccc08b7fc08347b9283b",
+      "size": 3960
+    },
+    {
+      "path": "device.mk",
+      "sha256": "03cf261dd8d559d155c7680af1bd378a226d4dfd71b8b2b30ed79c830a0d2a12",
+      "size": 8957
+    },
+    {
+      "path": "sepolicy/thermal_gov.te",
+      "sha256": "1af334c0e2abc2f087b4972e0c23f88321d4b476e4b9e0aeb188db17192971cd",
+      "size": 372
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_dragon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-01-06T17:54:57Z",
+  "vendor": "google"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_gemini.git",
+  "codename": "gemini",
+  "commit": "13a51d844637fe6c8b7c7f725f09831bf68ef558",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0926e9b05d6a8439835b2977f678d27cbe278eced0977d99c7e051726373bca1",
+      "size": 3029
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "95a3b2c9e09970e8b9c7b520620108cec0531eaeec1899db947136c88fde774d",
+      "size": 5186
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a06257df6b04f7ee2c283ef421495433fc44f1b0372746bdd95374025c612ecb",
+      "size": 10851
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "a2c4fffb262d165c3a722929de576d6e3f7f9f9b14df88667fa6009dd82e410a",
+      "size": 256
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b5e20dc997d4d4ffdcd4555856e45a2120030afd947dd43662c73d20f96e71b0",
+      "size": 3742
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_gemini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T19:49:41Z",
+  "vendor": "xiaomi"
+}

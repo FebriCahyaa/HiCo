@@ -1,0 +1,62 @@
+#
+# SPDX-FileCopyrightText: 2021 The Android Open-Source Project
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-FileCopyrightText: The Calyx Institute
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Kernel
+TARGET_LINUX_KERNEL_VERSION := 6.1
+TARGET_KERNEL_DEVICE := tegu
+TARGET_KERNEL_DIR := device/google/$(TARGET_KERNEL_DEVICE)-kernels/$(TARGET_LINUX_KERNEL_VERSION)
+TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
+
+ifneq ($(TARGET_BOOTS_16K),true)
+PRODUCT_16K_DEVELOPER_OPTION := true
+endif
+
+# Shipping API level
+SHIPPING_API_LEVEL := 35
+
+# Inherit from zumapro
+include device/google/zumapro/device-shipping-common.mk
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0-service \
+    hwservicemanager
+
+# Overlays
+PRODUCT_PACKAGES += \
+    DMServiceOverlayVendorTegu \
+    FrameworkResOverlayProductTegu \
+    FrameworkResOverlayVendorTegu \
+    PixelDisplayServiceOverlayProductTegu \
+    PixelNfcOverlayTegu \
+    SafetyRegulatoryInfoOverlayProductTegu \
+    SettingsGoogleOverlayVendorTegu \
+    SettingsTeguOverlay \
+    SystemUIGoogleOverlayProductTegu \
+    SystemUIGoogleOverlayVendorTegu
+
+PRODUCT_PACKAGES += \
+    ApertureOverlayTegu
+
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/vendor.prop
+
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/recovery/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.tegu.rc
+
+PRODUCT_PACKAGES += \
+    init.recovery.tegu.touch.rc
+
+# Satellite
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.satellite.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.satellite.xml
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)

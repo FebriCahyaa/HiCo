@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_zenfone3.git",
+  "codename": "zenfone3",
+  "commit": "65d38d99370bedb2cedc4996ee3510c32318cc35",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5ef70749cb7ab2dd123c4742dc47445299949dae65b80f494afe080201563a6b",
+      "size": 29
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c7206258f6645e3fc2e612da3742f74b385f14e71a75e86ef91547d3ebcec8ec",
+      "size": 3722
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8515887028ec8e1dd1a87c71f4b92c7dd2158a12a6d49309d7839d94b012af31",
+      "size": 771
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f6af505aaa1017a3dc7573efe7c121e61ad744c0b62cef87de4d9539b195aaca",
+      "size": 7601
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "02f9dfe0246f987477ee6efcbde89608bd39ecc4c082a861d9c52c97d4f26b64",
+      "size": 4402
+    },
+    {
+      "path": "device.mk",
+      "sha256": "839ad861da22862a1f9dbf833e61a5af51cf2f1a03b9ce09639a5b8b33ae2fc7",
+      "size": 21637
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b5667a877cacb76e9e087e8d498122b6dee1c943a4705e0ae3c0d51735f0346c",
+      "size": 1594
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "28542c32f0c8e046e7bfdd578e35d8e5befbf2635d7d1e2c7dc6fbeb0f46a039",
+      "size": 229
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7ec434a828f0f42e01092715c5e9cd9347a9fefb2719bdb72ec71f8c2c00e4c6",
+      "size": 32427
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_zenfone3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:15:38Z",
+  "vendor": "asus"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_oppo_n3.git",
+  "codename": "n3",
+  "commit": "4f6bdd58379b8e1a5aa4619d8424b75ef28b1755",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "aeacde0b0ea4919ead5e99085f1fe6425030f48a01970be6bf30505dcbe76e9b",
+      "size": 723
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "621fe7cbf5cd8dfa868fdb8b839a0e53773ec18633d1bc1d76e80e3fa4f9ccd0",
+      "size": 2403
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5030db5d9d09fbd10eb3583f3ad8adcebeea0e2c1a746398af474cdcb4fa248a",
+      "size": 730
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3377ec8dc50f1d7f0e48692a5e01b8a545ebc127c195d6cb7b2458178e2207f",
+      "size": 215
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a9d59688e0b67cfc4cfec0549431bf408929a019b048b9aaac6406aecc4019bf",
+      "size": 609
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oppo_n3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-08-10T22:18:56Z",
+  "vendor": "oppo"
+}

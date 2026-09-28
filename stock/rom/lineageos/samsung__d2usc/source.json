@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_d2usc.git",
+  "codename": "d2usc",
+  "commit": "8b261cd0d4137eaea79fcb064d0fa8606142f057",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1e8e736976bde48ad78a6378053b4eeb70043a1939ddf1c55a9717a4803cbb56",
+      "size": 1155
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b2fe0c324a99f7ceee31e0d5e1fa952235aa5a6366bef9afe9f653897bb3d8eb",
+      "size": 974
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "86f92f09ff519ebbc2e33db21e511adfa91d03226ed5e25349118bdf941fd516",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c0707f81b327f26654208881500220ff2042d2cbc5be5f4ea9dd72e94e9cbdd9",
+      "size": 557
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "51b9fd71bb88e58587083d23dcaf844f779e6c3bc3cb6827ff2ff36724b951fe",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2usc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:35Z",
+  "vendor": "samsung"
+}

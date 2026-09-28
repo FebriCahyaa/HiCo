@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_discovery.git",
+  "codename": "discovery",
+  "commit": "89d589344f0c1d27b4b12f9f38261545d1e05a75",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dd5f2d3f66d8da37fb85786a2b4e0af2e985bb64e87c98600707951997d9c3dc",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "14cbe07f6c9235edca3b8f560fc9c0711c9b1a3d3bb8308c4dde77c7e077bef0",
+      "size": 1072
+    },
+    {
+      "path": "device.mk",
+      "sha256": "896733eda97e694d3221be8d2e5b676b249f8c585fcc1b14c2be313f350e7d0a",
+      "size": 1883
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "cf6dd2d92d0e5886aa8530686aa29446c4d10be44fd3842b361cb0e6975e997d",
+      "size": 1601
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "73c5c187b707bbd5ef8d8f3cbd1c63157e38af6b410c27974800b74f698937e2",
+      "size": 15774
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e8989e80f55e0500ebb25a1ea9f64f34a55838e14b994d289c86b3d0d49e08d9",
+      "size": 297
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_discovery",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:09:55Z",
+  "vendor": "sony"
+}

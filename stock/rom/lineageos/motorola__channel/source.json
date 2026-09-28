@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_channel.git",
+  "codename": "channel",
+  "commit": "a6b1eae852989a6e7e169337d358c0cf401e9443",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d19f01cb90da811e3b188d7b75f20a5dc83717baec255911b258cf169928022a",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "355e6e8667bc207beeef5d69fb5b587d3be25d1e0daab3145963fcc9495360d1",
+      "size": 1548
+    },
+    {
+      "path": "configs/thermal-engine-channel-NA_TMO.conf",
+      "sha256": "a7c57002b5a49390e4b3d11f1362c7bf49f2ee2ecf7ae148c5319c3b2358b8fc",
+      "size": 3294
+    },
+    {
+      "path": "configs/thermal-engine-channel.conf",
+      "sha256": "428020d42fcba87ceee608d6bd4c8fffe9098319ab7a9bba897088ba4a2e09ca",
+      "size": 2940
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5afcee6d097d143b670c4e0888c8fb7ea9c3f2b762f552f882ac81acd387e801",
+      "size": 3466
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3d5bdbdcc861bb6ef46f44f43a279c8908e3287d7ca6b8faee0b3c22f7256112",
+      "size": 2239
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "97ea43c09523a725f6c5fbaaea599d1b8720607174c4e43242b3da6203f7687b",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "113b655e5b91e753db229d98e70440486d3bfc1ffea65e411b4b68dda0e5f70f",
+      "size": 10151
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "859fd672f4ba5c95e0891baa2acf6e29e04b6d3880a3cfe816b859a41cf1d9f5",
+      "size": 1190
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_channel",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-08-26T21:08:21Z",
+  "vendor": "motorola"
+}

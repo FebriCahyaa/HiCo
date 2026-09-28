@@ -1,0 +1,72 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_laguna.git",
+  "codename": "laguna",
+  "commit": "99afb693a28f4343283e0f61958d3693133cd1b0",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e8ffc3cb79e7a2cb6989b54cc320c77f209ba8d0a644e02068968e93b0263163",
+      "size": 1204
+    },
+    {
+      "path": "BoardConfig-16k-common.mk",
+      "sha256": "38e9a152e0a5c5c2ec771f9107aa2ac82aec6406343ce65e61291c13c70ded23",
+      "size": 2243
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "cfa979d63864ef5af113d0020f4c65b9cef330039a197d9492a1f1494a793474",
+      "size": 9456
+    },
+    {
+      "path": "BoardConfigReservedSize.mk",
+      "sha256": "ad18bbf089547851f5656f2a3ec5cb26ff740df739d88771d7c31e3fc10189c9",
+      "size": 527
+    },
+    {
+      "path": "sepolicy/system_ext/private/connectivity_thermal_power_manager.te",
+      "sha256": "116ee752aae1c0cea4a4f3fb752f1cdc6e2a232e7b9d9d3f9b58618792bdfa9c",
+      "size": 519
+    },
+    {
+      "path": "sepolicy/vendor/dump_thermal.te",
+      "sha256": "6fc5c51b1a2055cd9be16a785d0782ee1310e1e4bac7ca47122dd9e04dddbc10",
+      "size": 208
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "79abd61edd2606fb86e12ab28c4712c79e551e1f15ea81c22457663ccd752d8e",
+      "size": 786
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "a689360b150aae79fbe5f2aef9223c777f2583d6222de3bd3e27b30da249e17a",
+      "size": 158
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "70fa05b0e4925a4891ccdb879c51e821f143e8f2b0d768802fc4908123a09640",
+      "size": 577
+    },
+    {
+      "path": "sepolicy/vendor/pixel-thermal-control.sh.te",
+      "sha256": "33402b7dae79fe4a57c1b572327ea97cdda7388b71c12d34cdb85fe418cadb5b",
+      "size": 161
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d6a51db07317cdea490b1d135f2ff10e5258838ee3c2b64a3ee038692a6edc09",
+      "size": 5897
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_laguna",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-10T18:56:58Z",
+  "vendor": "google"
+}

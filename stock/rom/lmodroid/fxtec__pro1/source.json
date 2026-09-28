@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_fxtec_pro1.git",
+  "codename": "pro1",
+  "commit": "016d6f74079003b55fc6a8fb3877b6c08b1e74e9",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d15079f8251628ca7881f35a3b7c176119106a8baa3757027a858c84604b0849",
+      "size": 2077
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b5df649c2bba0bc55b0442d955326df854acfe4e447b9238d2d9d7c0f682401b",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ee52bde4f90d124ad50cdd807fefe9813698539659805650cd47aa3583d932f6",
+      "size": 4689
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5932245fd821c45e082f7d4602cb4ffc24deb3a7b13ce81d36c5ac052fb315c6",
+      "size": 18718
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0679fd72341600c7d3c408c4bb362d1e19a05def7fc343b8c08bad001250deae",
+      "size": 4475
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "49622809de08712a146f6312221017a748dfcef8780ec3adda8d6ba427712517",
+      "size": 46195
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "95ece9bb3a36b2b88115969f2fff6029bb09f6b8baec66f754b898ce282b2d06",
+      "size": 1581
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5f26a374427fd52bb95dd0b3ad25160d051e31c5205fd437a88b66144d9069ee",
+      "size": 5226
+    }
+  ],
+  "kind": "device",
+  "repo": "device_fxtec_pro1",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:12:22Z",
+  "vendor": "fxtec"
+}

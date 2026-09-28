@@ -1,0 +1,47 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p930.git",
+  "codename": "p930",
+  "commit": "4138fcca929c261a3c8326627945143a7c37af0d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bca6afec833e4db81754233ec084759a888843606d79159cf5c9b9c5bf1ea095",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "132b2e3a6c690ec798ec1e58b5bd1a000b7ca9d552b993b90abf519436d9f086",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fc341c68e560293ccc47168f4807eab3b0c8fceb191c8a4a09d91283217a2d72",
+      "size": 437
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "22bf1081e5c71d3e05d08e62b4fc2e13296670c271569373fb9ab96362a82a72",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6f6727c4cfc7c3c11be117d40363c29a06e346d238b7e322f9a4f8a7a54232c1",
+      "size": 1429
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9c746fc306296f4fffbb5d8ee4e9bc2bdec97adc8c8bbb48be45f4bdb91da977",
+      "size": 144
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p930",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:37Z",
+  "vendor": "lge"
+}

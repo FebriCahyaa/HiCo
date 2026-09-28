@@ -1,0 +1,26 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "eea30efdd31677a1fa48168c4dcdea6852d3b039",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "8b2afaa8fc87e22cebcb649532b9f3714e3defe342daf72a637b90e8fa3eda52",
+      "size": 245
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_xiaomi_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "cepheus",
+    "raphael",
+    "vayu"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

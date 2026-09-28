@@ -1,0 +1,52 @@
+{
+  "branch": "mm6.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_falcon.git",
+  "codename": "falcon",
+  "commit": "0d154d35eb9c2c32df01ec0a92081df55e933087",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e9aa12d0e9a10f4a94c30d0c30468dfde5d8157995531814b617d24e2d9c393a",
+      "size": 1062
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3469784925a992440689362c868e906c26ee75fe7ee97d13689e8a3e7d3f05aa",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "69ff10b1660d988e5e28e3ec8cf5721914578da11418949a0b06e8bc544dc881",
+      "size": 1551
+    },
+    {
+      "path": "device.mk",
+      "sha256": "29dc562548fdd81123e9e7614d1c7210e31c74278b1fc741d14e4556f7fc19d0",
+      "size": 1374
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "76790285e58bc6baf9a362ad304162083da48a1a1a31e4e3dc09a2d916e8343b",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "839b6739d6c49bac199fe29b9a59be8296529f5b0e4b55f3725f5b9e90227ca4",
+      "size": 935
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_falcon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-06-02T18:43:43Z",
+  "vendor": "motorola"
+}

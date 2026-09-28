@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_beast.git",
+  "codename": "beast",
+  "commit": "dbd27fd2778fa09761bcdba96c6b4d6e002fa994",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c447abed5761003d9965a980f6716e39a26a9f08b39c25998a5cf27f0334e2e0",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ec94f7c3c60f6c18a72ea8c02068994857719b6908577f647b86728f6d40207d",
+      "size": 994
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2ce81c1bf3e73ac54e1cc7e9334059aa781766a7895592e321ff24658fc83401",
+      "size": 1192
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "8b5690848b12e123bcaa8537faef6e403189352f02f262c0b645a93292ee752f",
+      "size": 853
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6a4132986fff5d4b9159aba55674bab4e4036a849f1770bc7e24da8a2f3b3bba",
+      "size": 1621
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bd5d12fcdd9e04f2905b5fdad6313d91c3796bf634da6b65f8a3bb3dcb6aabdc",
+      "size": 709
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_beast",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T02:31:15Z",
+  "vendor": "google"
+}

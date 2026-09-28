@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_captivatemtd.git",
+  "codename": "captivatemtd",
+  "commit": "e0a97de049a8a15f73dea72b9a8ba0afb2d502b9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e35d53ecfcadd978d1ae9937ace62924a9d40e6ff22dd72e81fd2d08c62d481f",
+      "size": 1120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "432a2aef1767a349389d094f45e6baf5e12177079b40b58cd6a58722b8bb6007",
+      "size": 1065
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5816b617c86eb70bbb2f2c95c42f2c2729128cfa4366f75f4f9a46d42623cecf",
+      "size": 1016
+    },
+    {
+      "path": "device.mk",
+      "sha256": "67620738c3f6dd1fe1187adc4166474ae8aad97b4952836b28fff6976062fa5e",
+      "size": 2682
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b467be1eb0483dec5ccc48c2554c6b99ecfae7433b82e3626ab45227f1cbeed2",
+      "size": 509
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "030b5dbd9c0767622a041833e6e3e4e8d4aa78c9e0ec462930afec47358709b6",
+      "size": 223
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cdd46638a162449f28cca9e68964da6da710d5d9833685bea64ca1e54075be65",
+      "size": 121
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_captivatemtd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:07:26Z",
+  "vendor": "samsung"
+}

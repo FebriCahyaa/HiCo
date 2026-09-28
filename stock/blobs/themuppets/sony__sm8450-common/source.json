@@ -1,0 +1,25 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_sm8450-common.git",
+  "codename": "sm8450-common",
+  "commit": "fb29beb54f2caaa8e67639361d75a504ca2decc4",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "d803f1e4fc80a008e57d9ff64c1bef23ee3d4d7515a9e73990cd2c26377ce1ea",
+      "size": 684
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_sony_sm8450-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pdx223",
+    "pdx224"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

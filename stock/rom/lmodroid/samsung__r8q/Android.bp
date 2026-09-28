@@ -1,0 +1,9 @@
+soong_namespace {
+}
+
+prebuilt_hidl_interfaces {
+     name: "vendor.samsung.hardware.nfc",
+     interfaces: [
+        "vendor.samsung.hardware.nfc@2.0::ISehNfc",
+     ],
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "a6a26d1eb779fc705fc95b7689bc07cfc81dee24",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ae037ac949cd687abed9d328d3694c6c0f8dd4b16ee06a7540e683e2453a4e62",
+      "size": 348
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "320d455c2edb72319da29999500f36d7a1d586d8d67579b5ef6e4c87e1255b67",
+      "size": 2325
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "9e0881fe489cab049dda2cacac71d9d09bdf66643c63b955c9495eb3f66e5bc1",
+      "size": 1798
+    },
+    {
+      "path": "device.mk",
+      "sha256": "537817d50499d55386dc690c097aab649e7f912337ae7d0db2dd2cd850b3a8a0",
+      "size": 10934
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d55c63659d8dc6a9c8b0f2c1750a1d491c11e87ba68c17f48ee82656b6849ffc",
+      "size": 1285
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e7e9ef37a306fbe30f92d4d70cd575b0a4cecc27c57815b95300e9e9bfba250c",
+      "size": 87291
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T22:47:21Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sweet.git",
+  "codename": "sweet",
+  "commit": "354099ca5c99d44f3f8db4fdbcb99fe5905147d8",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6b27f7b4c90c06abffa81067f9f46c1321c6e07fc8d46eb883a34a0cecb460f9",
+      "size": 206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4454e4b303a158832e948a8651fdad6644ed688956e823bd58dc30fe3b1d69f7",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "41802c5fae9374a45c92aae71b35e3eede2bf0f9a2611a8dbf0616fee9b6fbe8",
+      "size": 2881
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f30b641f1415109a32a8915d265c96eeba6b05f9c297700683c8e30c670cced3",
+      "size": 4694
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ede2b51f2b4654f09aaae91ed7e3f4c9a59bd0f96d3d5c7183aecf41016ae359",
+      "size": 669
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8407d0232c285b3405b981d4d4c896942a822e18017327a40384685fe0907576",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ee109faeb563b34eade8fb8710ef8c4dc1a41dbb3abab4ca27d39098818f2e61",
+      "size": 15724
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "64eb848d4cdaa2b7bfc2d024511926bb6bb82fdf8e9917fae924ca2f7b6c6f86",
+      "size": 580
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sweet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-05-30T11:22:09Z",
+  "vendor": "xiaomi"
+}

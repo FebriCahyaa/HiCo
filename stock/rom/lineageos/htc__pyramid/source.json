@@ -1,0 +1,42 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_pyramid.git",
+  "codename": "pyramid",
+  "commit": "950b1ff3b0e9ccf115a2a46dd376ab5c2c7e4766",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e95762c77fc0225710ec16a90251ba89a62079c1be1ecbf1f994e9ed8d208e99",
+      "size": 681
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "74fa42f91ab5b05d60b03b697904b2d7b44cbf136bb130fef3d88f09fce6d73a",
+      "size": 2261
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "46b89beeae66a5f2edc52fc916a8c834620e7a1a5b2290031fb9eb681bdae502",
+      "size": 277
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cdf4782fd75e898ce8aa87d4c906a8726d6f8dbf6ee4a6ef8c452fccaa6033c0",
+      "size": 1317
+    },
+    {
+      "path": "system.prop",
+      "sha256": "bac23c6a48cae73cbe921734f69824da85ca2f389250d67f19b8865ff1490d52",
+      "size": 822
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_pyramid",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:55:39Z",
+  "vendor": "htc"
+}

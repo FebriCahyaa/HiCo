@@ -1,0 +1,23 @@
+# Audio
+vendor.audio.min.dr0=5.0
+vendor.audio.max.dr0=7.5
+vendor.audio.min.dr1=5.0
+vendor.audio.max.dr1=8.0
+vendor.audio.min.temp=20.0
+vendor.audio.max.temp=60.0
+
+# Camera
+persist.vendor.camera.physical.num=4
+
+# Motorola
+ro.mot.build.customerid=global
+
+# NFC
+persist.vendor.nfc.st.multisim_fw_config=true
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+persist.vendor.sensors.mot_tap=true
+ro.vendor.sensors.front_light_compensate=true
+ro.vendor.sensors.glance_approach=false
+ro.vendor.sensors.mot_drop=true

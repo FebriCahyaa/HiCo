@@ -1,0 +1,91 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+USES_DEVICE_VIRT_VBOXWARE := true
+
+# Boot manager
+TARGET_BOOT_MANAGER := grub
+
+# GRUB
+TARGET_GRUB_ARCH ?= x86_64-efi
+TARGET_GRUB_2ND_ARCH ?= i386-pc
+
+# Inherit from common
+include device/virt/virt-common/BoardConfigVirtCommon.mk
+
+# Arch
+TARGET_CPU_ABI := x86_64
+TARGET_ARCH := x86_64
+TARGET_ARCH_VARIANT := sandybridge
+
+# Boot manager
+TARGET_GRUB_BOOT_CONFIGS += $(DEVICE_PATH)/bootmgr/grub/grub-boot.cfg
+TARGET_GRUB_INSTALL_CONFIGS += $(DEVICE_PATH)/bootmgr/grub/grub-install.cfg
+
+# Bootconfig
+BOARD_BOOTCONFIG += \
+    androidboot.hardware=vboxware \
+    androidboot.partition_map=\"sdb,userdata\"
+
+# Fstab
+ifeq ($(AB_OTA_UPDATER),true)
+$(call soong_config_set,VBOXWARE_FSTAB,PARTITION_SCHEME,ab)
+else
+$(call soong_config_set,VBOXWARE_FSTAB,PARTITION_SCHEME,a)
+endif
+
+# Graphics (Allocator)
+$(call soong_config_set_string_list,minigbm_upstream,cflags,-DHAS_DMABUF_SYSTEM_HEAP -DDRV_VMWGFX)
+
+# Graphics (Mesa)
+BOARD_MESA3D_GALLIUM_DRIVERS += svga
+
+# Kernel
+BOARD_KERNEL_CMDLINE += \
+    8250.nr_uarts=1
+
+BOARD_KERNEL_CMDLINE_RECOVERY += \
+    console=tty0
+
+BOARD_KERNEL_IMAGE_NAME := bzImage
+
+ifneq ($(wildcard $(TARGET_KERNEL_SOURCE)/Makefile),)
+TARGET_KERNEL_ARCH := x86
+TARGET_KERNEL_CONFIG_EXT += \
+    $(DEVICE_PATH)/configs/kernel/vboxware.config
+else ifneq ($(wildcard $(TARGET_PREBUILT_KERNEL_DIR)/kernel),)
+BOARD_VENDOR_KERNEL_MODULES := \
+    $(wildcard $(TARGET_PREBUILT_KERNEL_DIR)/*.ko)
+endif
+
+# Pre-install checks
+$(call soong_config_set,VIRT_PREINSTALL_CHECK,BOOT_DISK_NAME,sda)
+$(call soong_config_set,VIRT_PREINSTALL_CHECK,USERDATA_DISK_NAME,sdb)
+$(call soong_config_set,VIRT_PREINSTALL_CHECK,DRM_CARD_NAME,vmwgfx)
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
+# Recovery
+TARGET_RECOVERY_FSTAB_GENRULE := gen_fstab_vboxware
+TARGET_RECOVERY_PIXEL_FORMAT := BGRX_8888
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor
+
+ifeq ($(AB_OTA_UPDATER),true)
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor/ab
+else
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    $(DEVICE_PATH)/sepolicy/vendor/a
+endif
+
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+ODM_MANIFEST_SKUS := display_drm display_fb
+ODM_MANIFEST_DISPLAY_DRM_FILES := $(DEVICE_PATH)/configs/vintf/manifest_sku_display_drm.xml
+ODM_MANIFEST_DISPLAY_FB_FILES := $(DEVICE_PATH)/configs/vintf/manifest_sku_display_fb.xml

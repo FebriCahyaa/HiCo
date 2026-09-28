@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_natrium.git",
+  "codename": "natrium",
+  "commit": "f3c0eab03b75a058989c1c6d5b6e988ceddc5a15",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9cb3601976b2495a7c6a299361fbb5826a4fa7d9fc0a0b0f0e664fed6672386d",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a76e7ba870794e54c36fc7c152704366eab6613aa735ff3ff2f5a31ea151d5e0",
+      "size": 1071
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "8656992d85d7c4a221c05c80fcc0daaaf580dd98e25476f81ee4eeb0392adbea",
+      "size": 3061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "68bd2a7cfc4022ea6d616453fc7ff237b489101359992475a3520a2d8a363be1",
+      "size": 2607
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7061b4af474a77ccfb7e8d1c9c301b56372c4a2466216bb9c64080cdf82a0410",
+      "size": 472
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0052ec167a5e268cdd0fbf0bd47447fc126537bad1eb42098e3911b35c58ebf3",
+      "size": 12394
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c4e92c587de597ef88edb73ab9700a639ed179b5fd0180652cf2a7b854abce17",
+      "size": 332
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_natrium",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:04:13Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_google_seed.git",
+  "codename": "seed",
+  "commit": "aa69e7d12d3ee587dc093b07c50924144ca0267d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "68e762895306b461b9953126ed63c6f94ace5730b3da4c9218c005eeed52cf72",
+      "size": 1294
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "42149478de78f25a773c46b5fa612e40eb09c1135b625bd02a85e8eec9cb7c4b",
+      "size": 854
+    },
+    {
+      "path": "device.mk",
+      "sha256": "337ecd55631ee5ddd910ddbefa8188af8ae23cefb892a0b9a839a7c5e1e36cbb",
+      "size": 909
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9f2df3d83e4f8ca554dc5cd1304cb7cb7c4f24cffbb995bc34e0cbd1d38586ba",
+      "size": 1690
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f6e7511474cdce4551d414a2a86f12b824ec42c2f62ae17260a8348cbd1edcd2",
+      "size": 218
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7d16a5e9d8621dd1da79cf6aef9db5c85f7ea46ea2451854a0152485aefb000a",
+      "size": 11013
+    },
+    {
+      "path": "system.prop",
+      "sha256": "61daddcea007e32ce9d92e46cec94b1270fe81469afcc7e25e8149a02ffcfbf4",
+      "size": 249
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_seed",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:17:49Z",
+  "vendor": "google"
+}

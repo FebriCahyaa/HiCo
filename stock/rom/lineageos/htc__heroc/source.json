@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_heroc.git",
+  "codename": "heroc",
+  "commit": "cb608da6350959e698902780362069cea8fae173",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3cbe9a12ff407ce7ae6fc966d4ed86cc4621bc94c78a4daac08a97bcc23bbed9",
+      "size": 781
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "489ecb48806ac352d7d16cd415f0b4d4b487cc2fbc5625e33f7a0346911b4c04",
+      "size": 2813
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cfb92c3ef22b981e58dc587ac19da9153b8f246014dad1d5fb6866afc235ee63",
+      "size": 5878
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c286f96b26e2a454d6282f7e709f6361516b3863225e62fadfcf9c1973205c1c",
+      "size": 789
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1b03c21b98488370d5b24c19b2698122cb440eeba2168d4d3169d2edcdfd4403",
+      "size": 847
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_heroc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:04Z",
+  "vendor": "htc"
+}

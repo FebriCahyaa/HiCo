@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_addison.git",
+  "codename": "addison",
+  "commit": "daf1d8d27e577517e4dd52560180746f88212165",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "180dfdadba198c0ca1586557e2a9dc4b4506f94b503713766b5da1da54fe0f97",
+      "size": 5686
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2b4292bb68337fb011a63824d0b1b45a372d4d1b7b647f1b38b2368852558872",
+      "size": 767
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f6305766a1f59cd4e2655db29fdb46672ee88ce3b0274a7ee3eea79d58b9ef71",
+      "size": 5891
+    },
+    {
+      "path": "configs/thermal-engine-addison.conf",
+      "sha256": "a123ca2194784517626218e86970f69a2b2676a6d534ad3f49d0c0db15f3958d",
+      "size": 2579
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a75efebe0a579a05d8589401a9b26a7a06f21099b2c0a0add8c298a549c8f193",
+      "size": 17967
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3748b204308ff728f0a7d78630a0d4ad5db8704902dcb3a6d51f9a7730c84a45",
+      "size": 2532
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7c94de1dd95b6d0cdd62bf83c5644672dba8b3c853995bd82611bab4efc27cf5",
+      "size": 375
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5e17462bc28abb179ad6d73077a244aedc1a1eafb73aafa36aa3a31f3974de85",
+      "size": 26732
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "05a43e7eda21ed1e1e098520b17c26455d1a70ac79c5a67f09765bc7af416836",
+      "size": 132
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_addison",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-12-14T21:02:29Z",
+  "vendor": "motorola"
+}

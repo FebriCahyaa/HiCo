@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_freebox_nicepool.git",
+  "codename": "nicepool",
+  "commit": "7b857ec83aded79c20f9aff0b456b7332ea5b96f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d2348df7ca0e74a4a0a22768cc1643e8385eee0603aeee2615943432104c8260",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "57c311352f0f999b3207df19c29f4b468d09b671a1873825d717315115dadd63",
+      "size": 1634
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8b1c62f35784fcdc76fa7febafaef3ed2a636d7beaba190a8188727b7db339e6",
+      "size": 2621
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b56ea2a9e0957fee04345144435b2f7efbc3df34f33f2c40dd1cf4b0683631b8",
+      "size": 2468
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8c9e67c765da935f7a3c35ffed668d5b490a6f6c885316a1256b61867bd5531d",
+      "size": 491
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bc181db5d94189bafd662c1537a7210dff93236746a3e72ec61fd7d678d46d69",
+      "size": 3759
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c20e66c810284e022474e3e2aa5730895e1fab8afb7c16b55e1e7acd0547cc81",
+      "size": 384
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_freebox_nicepool",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-18T22:35:56Z",
+  "vendor": "freebox"
+}

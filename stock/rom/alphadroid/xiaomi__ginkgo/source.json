@@ -1,0 +1,77 @@
+{
+  "branch": "alpha-15.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "a12c9d7c559383b36aaa3c633efde369198e8ad3",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4171be910352523c53d6857f5f841b821763efa1c5bd103ec1022fb263e3ccf1",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "05e69870f44cedbc95e5624c7d20f4fb365a9c9d5568fc97ca400af321afeb75",
+      "size": 2659
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f582be98ad7807be46bb2da7e2370e3839172a2dd33c9b370d1a256f926f34b4",
+      "size": 130
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6e0342d84c3de271354bc2dbf88a9023dd75404c55ea96719f8e0676b54d1969",
+      "size": 7361
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera.conf",
+      "sha256": "dbf20003675b10bfa1cae96c61cd86458be847d2a3ed88fcc99f02ff1427c0a2",
+      "size": 1907
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "c04b9487e00b0ffe3c6ee6ca0d726d27ea7e9c5625b0f6be6819e28dff229993",
+      "size": 391
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "7dcc5b8d570c637fe70043a2eda5286b9d8d1aff0fe15962f874d065ec2e1361",
+      "size": 1890
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f53ee2d0a6a6b482405a44a665cb4d6489e596d4f1b92241f2c46b4ad58df615",
+      "size": 22895
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bfad66012d62925c59d13337981c36f73d0cefa50ee93bbc460987b743c2d39a",
+      "size": 3590
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3f41c1ea338686fe4480bd16f2f7f4fdb0268b7c83062050ea7d6062a32a1989",
+      "size": 202341
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "05a95a220d20957afadd0817f95c7e35586e54888ad65f02a2c261b653a0047b",
+      "size": 187
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-02-22T15:11:26Z",
+  "vendor": "xiaomi"
+}

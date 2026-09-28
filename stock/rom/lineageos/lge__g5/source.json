@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_g5-common.git",
+  "codename": "g5",
+  "commit": "7f046e4faab86ba5f6bdcd22f56415d990b73262",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f151fe2b93f3943e6c20875a47e9304025111ddb4f6a5e489f7bfd86c05d642e",
+      "size": 775
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "387c266df8c2287e70cbb717384014bb069c02a35c2c6d84ec34c85ceb104619",
+      "size": 1523
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "1175138765acdd4b30a5ff1533d076a161212c9e5cc62fe5858c7cf10bc86145",
+      "size": 1841
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4477f4b9c1ea9601d136cacb706f5c1bf62e30d0503b3109c8aca1badfa75aa6",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ef6cf37f132233aa9421bda0149f4d0d96c6b2c4f58d1240db0e183ffdb07939",
+      "size": 18406
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_g5-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-18T06:02:40Z",
+  "vendor": "lge"
+}

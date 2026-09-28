@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_kirin.git",
+  "codename": "kirin",
+  "commit": "429254c13680b84f3a15f0e785cea5bdfaa88018",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7079aec16701b3d9fea333dc36d27be3074bd44518206823224084db8e411010",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b3dd5980558a565ebc7100d67cf431505e1dc4051c60a0965581601c0be08934",
+      "size": 1060
+    },
+    {
+      "path": "device.mk",
+      "sha256": "681a5c8348436a8784c7a2bd2bfe4d4bec21811083e909319ba51515d830993f",
+      "size": 1408
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "05633d97e482c9b431595c804479728efe56e86faf7b454b45640dc2e71caca9",
+      "size": 1234
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4381e65318c08c19c0c7ad11239753508f4b90c16f8a8f8660018dd723f42794",
+      "size": 13721
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "403ccc5c5a5e8725fae39e4d1121da2cde559ea436cbbb5c3ba6eb2b2093fd79",
+      "size": 345
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_kirin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:10:30Z",
+  "vendor": "sony"
+}

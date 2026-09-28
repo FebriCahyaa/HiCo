@@ -1,0 +1,152 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_platina.git",
+  "codename": "platina",
+  "commit": "2a1d733b7fc9ad4e427158e84e3ecd7457ea9f4e",
+  "file_count": 27,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2dae72303ba0262161ffb49b35692ca0ef4d4dc87f9d8d1f4e661480093886ff",
+      "size": 43
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "dda6b41dabf91951be2a61d97035d887bd61afa26da97b3ab552bb0c36b01021",
+      "size": 4087
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4d284b7c89c29dffd6b91ec9f3eeb2503c3e8f618d0b8b50d813750959cce208",
+      "size": 767
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0910d587b1d42dbddf1dc9ee843e9ae601c146c1e2dd44e5fbdc46f75b236137",
+      "size": 4999
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "abecac7b78a2884c229f7207b4f1aceb06a163ed1efb5e2f5057413ac908ee51",
+      "size": 1467
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b1c7f7bf0cdfbe85b7461b4790b3183dd3bf4c5d3766e4d8f546cc3b26ed5313",
+      "size": 19665
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "101188309e21d8889648f174ae11d4bd02eea143f2bc4da7c0d57aa5b8c31b20",
+      "size": 2539
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a3f124b1b563987b2ea3d368ffdcbf7344c1274d477b2a1df3f144a50b4157f3",
+      "size": 51837
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "a0a233565c681c10cd7feb98d7c6a7935323984d2db9298b035a99611c96a946",
+      "size": 339
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d8eb44a3196183327ae25a6301cc0ffe98772eb7756a1bc92db461f5f3c31445",
+      "size": 741
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "c45bd26e2dba5cd80966d945fe65dbebe4d6d467e9d8af3c9f21dbab7acc173c",
+      "size": 743
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.xiaomi_sdm660.qti.rc",
+      "sha256": "41e8de582a37407fbfba593712b030b51d26c3e887dfb379296bad27afe802b6",
+      "size": 1775
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.xiaomi_sdm660.qti.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "678d9ce62c7975ab0a6bc26775b594ed9b30c6b658bab35a52ff93bda358b345",
+      "size": 8257
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "09fa1d1151e183de630d73ee2c5d4a5c9ff55eccadd1c1b7ef94b5adbe0c38b2",
+      "size": 3778
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "32dd31e3311d41c87ffe8c70ee9b483bd22b0435be29173b4e0a637886ec48b1",
+      "size": 17354
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "9d74a136eb87e597252829f0124ebf2fa173290412639df07f3426c1cfd4134f",
+      "size": 2852
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "fc46c7b8250b665ab481286c2a4e363b6d2e56f09f36db2f50bbbfd44027c4c0",
+      "size": 14146
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "55ba25577176f80e02fddf3484c51f73666beda022b6ad505d7a2d1d813be5f5",
+      "size": 2286
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "aa3a9d35ac10009e9419a317adea329baed5a62c755520adb3ef72ee0f68220a",
+      "size": 3387
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "778ed5291d6a35f801f445b39b71e921e6a8a4621e1d647eae4baedb07f2cf0b",
+      "size": 6618
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "55abfe7ebdde8f390224323e0b445f4383e26ad7c9128f29c3c6056eae7368f7",
+      "size": 6281
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_platina",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-06-21T19:10:29Z",
+  "vendor": "xiaomi"
+}

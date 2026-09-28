@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_lexus.git",
+  "codename": "lexus",
+  "commit": "fdc6291e884c8342fee88b4bd16f2a76ff79ce76",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "17329c0ada1e624cbf2b4c5ba3b71aff5fcd370e035a0ab9d070343a8f0ed973",
+      "size": 463
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "61be8e244c47eb6d22c34565b557cf04ebf2c0768cdc74887ac705b9d3df8032",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "feb31b632a6f0a4a186cf8eed665852fdbabd04aeccc2318d4af1cee4a3658a7",
+      "size": 751
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b513da3b999d86acdf0f4cadca6be4c397323040bf3676fc1d783761be3ced61",
+      "size": 2590
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "bce79b03755ef35a95ee20517c26a28960b67f58fb016701926e92cc3e9c3ebb",
+      "size": 3989
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5576039657f165366aa01fa4beb88e1d65afe5f3b9763d0e8ec1993dca2b8638",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f034e8d92aafc13e4ab48967dd678b2f459b14f2d3e15db9563855d5ea5bfba9",
+      "size": 80329
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5f0b79f2e682d63e486d033da5b78665e4d6411631de52ed9df7805b8fb7ba78",
+      "size": 391
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0d55c38f713ecdad5b8627eef6a3841076dc6ce79673173c9ec34977e57a60f0",
+      "size": 111
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_lexus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-15T20:25:17Z",
+  "vendor": "oneplus"
+}

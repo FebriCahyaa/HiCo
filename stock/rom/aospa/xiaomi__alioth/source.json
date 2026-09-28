@@ -1,0 +1,82 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_alioth.git",
+  "codename": "alioth",
+  "commit": "c5a6e7e7e4d5cebf52cbf769f0ba0c5f68f82436",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cbfb7debee5617587a29d538e0ac474ec484b7f90f0f064cdb812d879baf1491",
+      "size": 643
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b1db6d54f5205ec061347923e4ef42e5a748d8d55e39d4291aaae70d57bbe424",
+      "size": 3679
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ed615f996469de270561c78641dff0562b7f9e6603a15624cd8ecffdaf1ba468",
+      "size": 4956
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b7492e14b47a7a0e27b9773e197169ee5bf266e8048500b7c68fcf7194a77477",
+      "size": 13929
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b8402ff6928d49c03cc2bb2e1c613099cb674f517e14238de402211a6ad5077f",
+      "size": 1995
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "684b43f80f2ac8762153d72f8a980114753d84460a0d77963309b7c6cbebdd9f",
+      "size": 77651
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file.te",
+      "sha256": "dbf3d83c1ea55c7a0de855d6ef6e079a65193df50033962f9492957e0ad945a2",
+      "size": 78
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file_contexts",
+      "sha256": "102370fb56662e0a7743846939caac1e706533c57db40a4906082f8a92288153",
+      "size": 377
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/mi_thermald.te",
+      "sha256": "c27137abf31966284ec8e19faa3ea8fbb7ae3536d9de1baff5c72b335d539974",
+      "size": 1427
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property.te",
+      "sha256": "b0755c2c89415103e296473c93d41303596d857d0e5cb6f760e720144afdb8c8",
+      "size": 50
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property_contexts",
+      "sha256": "8c241e00c115f5419b4024e85ed72bd557d8dfb4d517876fd41e92dad1870405",
+      "size": 108
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/vendor_init.te",
+      "sha256": "bfe5b7fd0551f4646682fdc17a9f5008a955b29213a6d864457ddb3e83faa64b",
+      "size": 90
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9ea6b9012e5357d8723cf358e893d523ce7de2c9097b7f24330588dd511c4cb7",
+      "size": 170
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_alioth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-08-13T06:00:29Z",
+  "vendor": "xiaomi"
+}

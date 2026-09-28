@@ -1,0 +1,67 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_google_marlin.git",
+  "codename": "marlin",
+  "commit": "213b7b290764711fea3847e984c0bf2f6481434c",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "00268221a4018866eb466b8a3da48419304ba46bf07602343573c6657abad109",
+      "size": 1491
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e0423697e8da31f6c1c7be8dc4ffb9d235a11212ec80ec333e4214ffafa32852",
+      "size": 85
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "ee69aeaf6263dd323089694a5b69cfc40bb39ba905128ad7fa2f3e8adb6aab68",
+      "size": 17645
+    },
+    {
+      "path": "device-marlin.mk",
+      "sha256": "f72249ce65b062afe43d71f1fbc4a8545bf0496f1147465921ec953d1a9b548f",
+      "size": 2178
+    },
+    {
+      "path": "device-sailfish.mk",
+      "sha256": "c80c80b568c7ce7d40869d8e40c648ac6d839f646d6eb56447f5594869c431db",
+      "size": 2198
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "09c6b0ef942fa5e1d9cfbd45591adf986f3d485cadf769f84eadcd9ef115e82a",
+      "size": 828
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b20632d6941acbe7de11ff4421355a7603d4b7c921a23e8863ebaf48ec40189d",
+      "size": 5846
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "d492b3ae4b55d54ee54e20b9fcb64ab3889ef057f78c63602635adc0f2651255",
+      "size": 899
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "97d08b4c9a2a8472624e6ebffcd935dd1c033368ad3403854d57f24ea8746c7e",
+      "size": 8844
+    },
+    {
+      "path": "thermal-engine-marlin.conf",
+      "sha256": "347fb051e9b41c49e04396394b2519260e0d11b67826d3389511cc7547fea426",
+      "size": 1188
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_marlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:39:21Z",
+  "vendor": "google"
+}

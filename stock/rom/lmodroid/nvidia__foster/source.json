@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nvidia_foster.git",
+  "codename": "foster",
+  "commit": "f680951eda53d11a897b6ed9b0b644a2f5eeb8a8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "759128c09f6b6499352bad1bfd2d8da35d0504c109b388077eb129ebf8767443",
+      "size": 674
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7f046da0ead261d2d610e4e1d1fa96c43a9982a6e81274b5736c89a725bb08ff",
+      "size": 688
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7727c546dd79ca147b8ecc95b355a4400ce2309943355bb12ccd717eb541a524",
+      "size": 3324
+    },
+    {
+      "path": "device.mk",
+      "sha256": "05fe8f885b4c2229bb657e1caf66ba020b0486fcd1322a3d87a7a958eea79fcf",
+      "size": 10196
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "thermal/thermalhal.darcy.xml",
+      "sha256": "4dc41bf18941b5237c3e065e5f8c1e23e68825b4044b0d26df6eeaaf40584a5d",
+      "size": 1236
+    },
+    {
+      "path": "thermal/thermalhal.loki_e.xml",
+      "sha256": "636af70a5d196adba60ad6efdccbb1e6c99a510b23a0751a4f6593c832baedec",
+      "size": 1248
+    },
+    {
+      "path": "thermal/thermalhal.porg.xml",
+      "sha256": "7845c843c8fdf69490c1d73f0de56cabb78e49130ab5c800cee73baa56aa3181",
+      "size": 1063
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nvidia_foster",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-08-07T03:08:51Z",
+  "vendor": "nvidia"
+}

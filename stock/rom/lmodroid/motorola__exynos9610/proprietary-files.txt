@@ -1,0 +1,163 @@
+## Common proprietary files - from motorola/troika_retail/troika_sprout:11/RSBS31.Q1-48-36-20/3e578:user/release-keys, unless pinned
+
+## Camera
+vendor/lib/libENF.so
+vendor/lib/libhifills.so
+vendor/lib/libvdis.so
+vendor/lib/libyuvrepro.so
+vendor/lib64/libENF.so
+vendor/lib64/libhifills.so
+vendor/lib64/libvdis.so
+vendor/lib64/libyuvrepro.so
+
+## DRM
+vendor/lib/liboemcrypto.so
+
+## DRM - Widevine
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+vendor/lib/libwvhidl.so
+
+## Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc
+vendor/lib/hw/vendor.egistec.hardware.fingerprint@4.0-impl.so
+vendor/lib/vendor.egistec.hardware.fingerprint@4.0.so
+vendor/lib64/hw/vendor.egistec.hardware.fingerprint@4.0-impl.so
+vendor/lib64/libRbsFlow.so
+vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+
+## Firmware
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/CC_DRAM_CODE_FLASH_HIFI.bin
+vendor/firmware/CC_DTCM_CODE_FLASH_HIFI.bin
+vendor/firmware/CC_ITCM_CODE_FLASH_HIFI.bin
+vendor/firmware/CP_AUDIO_SLSI.bin
+vendor/firmware/WithLightFixNoBN.SDNNmodel
+vendor/firmware/aw8695_haptic.bin
+vendor/firmware/aw8695_rtp.bin
+vendor/firmware/aw8695_rtp_Attentive.bin
+vendor/firmware/aw8695_rtp_Bird_Loop.bin
+vendor/firmware/aw8695_rtp_Crazy_Dream.bin
+vendor/firmware/aw8695_rtp_Curve_Ball_Blend.bin
+vendor/firmware/aw8695_rtp_Ether_Shake.bin
+vendor/firmware/aw8695_rtp_Hello.bin
+vendor/firmware/aw8695_rtp_Momentum.bin
+vendor/firmware/aw8695_rtp_Moto.bin
+vendor/firmware/aw8695_rtp_Natural.bin
+vendor/firmware/aw8695_rtp_Pyxis.bin
+vendor/firmware/aw8695_rtp_Simple.bin
+vendor/firmware/aw8695_rtp_Sparse.bin
+vendor/firmware/bl.unchecked.bin
+vendor/firmware/bu24218_Rev1.5_S_data1.bin
+vendor/firmware/bu24218_Rev1.5_S_data2.bin
+vendor/firmware/bu24218_cal_data_default.bin
+vendor/firmware/calliope_dram.bin
+vendor/firmware/calliope_sram.bin
+vendor/firmware/cs35l41-dsp1-aac-cali.bin
+vendor/firmware/cs35l41-dsp1-diag.wmfw
+vendor/firmware/cs35l41-dsp1-prot.wmfw
+vendor/firmware/cs35l41-dsp1-qissheng-cali.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-indmusic-aac.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-indmusic-qisheng.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-music-aac.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-music-qisheng.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-notification-aac.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-notification-qisheng.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-ringtone-aac.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-ringtone-qisheng.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-voice-aac.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-voice-qisheng.bin
+vendor/firmware/default_configuration.hfd.cfg.json
+vendor/firmware/marley-dsp2-aov-frontend.wmfw
+vendor/firmware/marley-dsp2-aov-vrgain.bin
+vendor/firmware/marley-dsp3-aov-control.wmfw
+vendor/firmware/mfc_fw.bin
+vendor/firmware/pp_cfg.json
+vendor/firmware/sec_s3nrn81_firmware.bin
+vendor/firmware/sec_s3nrn82_firmware.bin
+vendor/firmware/tracker_cfg.json
+
+## GPS
+vendor/bin/hw/gpsd
+vendor/etc/gnss/ca.pem
+vendor/lib64/hw/android.hardware.gnss@1.0-impl.so:vendor/lib64/hw/android.hardware.gnss@1.0-impl.samsung.so;FIX_SONAME
+vendor/lib64/hw/android.hardware.gnss@1.1-impl.so:vendor/lib64/hw/android.hardware.gnss@1.1-impl.samsung.so;FIX_SONAME
+vendor/lib64/hw/android.hardware.gnss@2.0-impl.so:vendor/lib64/hw/android.hardware.gnss@2.0-impl.samsung.so;FIX_SONAME
+vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so;FIX_SONAME
+
+## Graphics
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.exynos9610.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/hw/vulkan.exynos9610.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
+
+## IMS
+system/app/ShannonIms/ShannonIms.apk
+system/lib64/libmediaadaptor.so
+system/priv-app/OemRilService/OemRilService.apk
+system_ext/app/ShannonDataService/ShannonDataService.apk
+system_ext/app/ShannonNetworkService/ShannonNetworkService.apk
+system_ext/app/ShannonQualifiedNetworksService/ShannonQualifiedNetworksService.apk
+vendor/bin/charon
+vendor/bin/wfc-pkt-router
+vendor/lib64/libcharon.so
+vendor/lib64/libstrongswan.so
+
+## Mobicore
+vendor/app/mcRegistry/00060308060501020000000000000000.tlbin:vendor/firmware/mcRegistry/00060308060501020000000000000000.tlbin
+vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:vendor/firmware/mcRegistry/07010000000000000000000000000000.tlbin
+vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin:vendor/firmware/mcRegistry/0706000000000000000000000000004d.tlbin
+vendor/app/mcRegistry/07061000000000000000000000000000.tlbin:vendor/firmware/mcRegistry/07061000000000000000000000000000.tlbin
+vendor/app/mcRegistry/09090000070100010000000000000000.tlbin:vendor/firmware/mcRegistry/09090000070100010000000000000000.tlbin
+vendor/app/mcRegistry/FFFFFFFFD00000000000000000000016.tlbin:vendor/firmware/mcRegistry/FFFFFFFFD00000000000000000000016.tlbin
+vendor/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:vendor/firmware/mcRegistry/ffffffff00000000000000000000000e.tlbin
+vendor/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:vendor/firmware/mcRegistry/ffffffffd0000000000000000000000e.tlbin
+
+## NFC
+vendor/etc/sec_s3nrn82_rfreg.bin
+
+## RIL
+vendor/bin/cbd
+vendor/bin/hw/rild_exynos
+vendor/etc/sim_configuration.xml
+vendor/lib/libril_sitril.so
+vendor/lib/libsitril-audio.so
+vendor/lib/libsitril-client.so
+vendor/lib/libsitril-gps.so
+vendor/lib/libsitril-ims.so
+vendor/lib/libsitril-se.so
+vendor/lib/libsitril.so
+vendor/lib64/libadropbox.so
+vendor/lib64/libril_sitril.so
+vendor/lib64/libsitril-audio.so
+vendor/lib64/libsitril-client.so
+vendor/lib64/libsitril-gps.so
+vendor/lib64/libsitril-ims.so
+vendor/lib64/libsitril-se.so
+vendor/lib64/libsitril.so
+
+## Secure Element
+vendor/bin/hw/android.hardware.secure_element@1.2-uicc-service
+vendor/etc/init/android.hardware.secure_element@1.2-uicc-service.rc
+
+## Sensors
+vendor/lib/libhubconnection.so
+vendor/lib/sensors.rp.so
+vendor/lib64/libhubconnection.so
+vendor/lib64/sensors.rp.so
+
+## Wi-Fi
+vendor/etc/wifi/mx140.bin
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/bluetooth/bt.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/bluetooth/platform.txt
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/wlan/platform.txt
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/wlan/wlan.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/wlan/wlan_sw.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/wlan/wlan_t.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_robusta2_dualfem/wlan/wlan_t_sw.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/bluetooth/bt.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/bluetooth/platform.txt
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/wlan/platform.txt
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/wlan/wlan.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/wlan/wlan_sw.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/wlan/wlan_t.hcf
+vendor/etc/wifi/mx140/conf/leman_s620_troika_dualfem/wlan/wlan_t_sw.hcf

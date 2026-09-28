@@ -1,0 +1,25 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "b38840b443c5ac5b4cd1fa27bd2d22058c8828fa",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "f8f3a6148004e1de3b9c19f509a901c449f94f5d500653f789729a5881d25989",
+      "size": 793
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_sony_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pdx203",
+    "pdx206"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

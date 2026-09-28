@@ -1,0 +1,49 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_tangorpro.git",
+  "codename": "tangorpro",
+  "commit": "606622bb9146bc48e349bbc2c0250d07343afa8e",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "648bccf447562e148ab1bf0d34795808a808689d455df2cdf37dc6dae93a4b76",
+      "size": 45945
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "9efb81c728a4230ac534631b9a5cc1fa5d3954123ff076c3e3a2e88824c88031",
+      "size": 15180
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "2d47abfc8e1c178a495123877c8944c5534925c7ac068bda142c3bc4ff60d3d4",
+      "size": 4373
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_tangorpro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "tangorpro"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

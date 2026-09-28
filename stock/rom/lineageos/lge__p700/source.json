@@ -1,0 +1,47 @@
+{
+  "branch": "jellybean",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p700.git",
+  "codename": "p700",
+  "commit": "e2e042f143862b73ea69801848984db23bbbd168",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c185626a200226e737db7a2c634b90a63c74eb70bd1c4c6b180ae1462258e517",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3b08550b43b5c0effeeac367e2600612f4b198edb1716387356d4c9d8e7a832d",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b1f8ad2d1bf563a36bab0527990bb6090ea72b388a04134a399046540b4096a5",
+      "size": 508
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a68bb3776035eccee5d742fc1590034359409486ed6b1fd0739a3734afe12a2b",
+      "size": 328
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ac3de44b2855e91cc9a1a5576d188535c8e3493ac0bd094a3e9ab23c419ec45a",
+      "size": 2235
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f70ac1f921f5a0c1b5d2c1e2c1615633a770d536a5382aedae24a350b2f0cf98",
+      "size": 71
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p700",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:30Z",
+  "vendor": "lge"
+}

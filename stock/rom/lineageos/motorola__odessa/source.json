@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_odessa.git",
+  "codename": "odessa",
+  "commit": "49f6257549cd2081e7a07d7efae4ba51f3139983",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9677f251ad0de9802b9806b625a457c0672bbe87167c9eb36102b515d0fb761f",
+      "size": 828
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "59b10defdb895c0b08c33abcc669f5d9f254e4fc35e6cd77bc5414619a67c6fe",
+      "size": 765
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "abc3c1e2b165cec772eb766f01ae9e5c4f9ef6bb48a1fc3097a1a1ce0ccf9668",
+      "size": 1021
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ec7765beb1109ce357619d826c9ec324d340c8298213fc76a0ee89564e47f4bb",
+      "size": 2855
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9dc9a608683ab6af029fdf5de9ac4b9a5982722ebddf29603170148068eb3ffe",
+      "size": 472
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3f21f8fb6da7911a5f96d317c971ed9efd6b282d51be8ca651e5a19ff575e3b",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7002f56840fa4f7b74775b6a0e220ae6162599749cf39bffd07229a0c79a2fee",
+      "size": 9827
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_odessa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-10-24T13:38:46Z",
+  "vendor": "motorola"
+}

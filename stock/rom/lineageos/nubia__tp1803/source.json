@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nubia_TP1803.git",
+  "codename": "tp1803",
+  "commit": "1e3ac445b13ab4a9bc4c43703e59f9c4882bcdec",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5ea53c4afe54b4df10f411970ba6c43d38735b288403431afcd4236f902a7c0b",
+      "size": 527
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5480a159f74ab1cfd8769af18d16698e70a9b5645461cedb5530c7c22b01e6f8",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ca13449014ed252f15b1a905fda1eae6bc3238e3645af5e4c77edfa2d0b514ca",
+      "size": 5572
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5d343536928b6c7ed1538befd4904938dee9b5afec197f45fbacbdb6c118ba47",
+      "size": 14696
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "99f42010625c907561106f605de36cdda7f83cd92c97c72f4234726c1ccd8f4a",
+      "size": 2827
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cc4ebc1dd0f0449a6fcf2f7684d3ee9c816fb3f5a6c17d40e8cb6f8608f2fdd1",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cf89fb9ce8be9141d168b61041ba600376d3ede720e4a5be2c09ef8e8890c59c",
+      "size": 31857
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a6e2002245b6743dd649f771d128dcb17cb0cb47606d6e6b1e5fe204dfcc0c99",
+      "size": 181
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8f119377ef3ce36851538dbbed0b805034b2e1b2987cec44abd55efe73437e77",
+      "size": 5249
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nubia_TP1803",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-30T17:41:19Z",
+  "vendor": "nubia"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "rvc",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_wahoo.git",
+  "codename": "wahoo",
+  "commit": "b9171a3ac3543829025dffc7d1832bf81a1b8f86",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "17a4965a3346e86bc7a4350c1a6760815a2ceecaa1cec54b4ea635d4fc5e4bc2",
+      "size": 142
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "33a2bc4ffb104ad669573f62ecf08d755725b17047bbd668425f6976da4b16b3",
+      "size": 3734
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6d1c071501cbd797888aa6dbba37c56f3218170155a8494c09fab70550fd6a9d",
+      "size": 5919
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6b505ba27f0c58cc1c09091539ee215683160421729090e2a7881dec6e7440f3",
+      "size": 32343
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "bf074862653a6bfcf955a27a69897bc60d4bda3e6c4d18017a890cdb7dd18df5",
+      "size": 1433
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ac33f0cba844fb959281d046d7b68aef903c6ba6dc9390fbd1778ea17faa97d0",
+      "size": 1744
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_wahoo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2021-08-18T09:02:01Z",
+  "vendor": "google"
+}

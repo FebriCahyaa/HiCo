@@ -1,0 +1,47 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_oneplus_oneplus5.git",
+  "codename": "oneplus5",
+  "commit": "1803621693883323b44bf2bbee2362c8920ae35c",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9644e6154150f28b3d7f7ae2de71a290fa733ae71f976acd44f0492b88f6c2cd",
+      "size": 4395
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a413cef442efc712edafa74a00085565e62c52fc2f34797ee7fe64e6b1ca43d2",
+      "size": 2648
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "63c78579ad77091ef8c3e7541e0102d98d560e47f896bed8322f35908511eac5",
+      "size": 1667
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8e8e2ad1ea4429ab11da93b1a4afb3efe652a3e7219e9dbfb17ec3a3bf504071",
+      "size": 57291
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a00442376d44285f95989b86e67e7ae9a364313e4ea3adf75d9c49765b2088c",
+      "size": 81
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-09-18T17:20:40Z",
+  "vendor": "oneplus"
+}

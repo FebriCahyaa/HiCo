@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_crownlte.git",
+  "codename": "crownlte",
+  "commit": "a265301fc8a41dca861f149eea71d3396bb4b735",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e68150ee039da9b2335168aebb28517f843703c02faa63699438cfbb04d795aa",
+      "size": 728
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2e9cddc18e0a57e8fd6644ba27bbd0510ea2a3fbd11b0a615ff3aafe2e4acbc",
+      "size": 768
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9850a5fbefe2d7b6a528ce61f6981e33dc1525d98aeab5eafe8d9826ce3fdc3f",
+      "size": 1102
+    },
+    {
+      "path": "device.mk",
+      "sha256": "78fde79b5d9d7207cd5f73074bea2c153f80b5b8e6709e917027e871121ec6bd",
+      "size": 949
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "97cce029382d96c76e50cbfd16fdc9712e1fe466c5e5045d2af43300ec351b90",
+      "size": 1138
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6010b9563fed2cf604766a855d5e2ccc7b1dc77e40f8dc62315aa44bf80476b4",
+      "size": 140
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f1375bb1592a47b0d14391aa5a599dc6313874810c322944ba75d6651baa6210",
+      "size": 2756
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_crownlte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-04-08T19:25:13Z",
+  "vendor": "samsung"
+}

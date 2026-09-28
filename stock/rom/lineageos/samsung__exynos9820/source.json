@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_exynos9820-common.git",
+  "codename": "exynos9820",
+  "commit": "38af956a4eec889cb352b4fd42e5e801c19a51b8",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f44dd8b028ba1ad6c5e78fcf2acc48d715e42793f960217ca860be1f1b9187f3",
+      "size": 184
+    },
+    {
+      "path": "BoardConfig9820.mk",
+      "sha256": "659e5ae4bd77a61963dfcaf92d23454479ccea2628f3d1d3188dab46e7c5faaa",
+      "size": 1226
+    },
+    {
+      "path": "BoardConfig9825-r.mk",
+      "sha256": "5c24fa87638c122a08fae071d5e788c6a1b0410d3fbd13c1dbebec0ff5d249dd",
+      "size": 1710
+    },
+    {
+      "path": "BoardConfig9825.mk",
+      "sha256": "a89f74267d64a5ea907341d7d02ae2f49b00a975fa66849c00fd618672b94355",
+      "size": 1432
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0c3cb60d2c4e9d290c2be003d70c97584328f0be4bb40f3f76d2dfc9241687e8",
+      "size": 6069
+    },
+    {
+      "path": "BoardConfigPieLaunched.mk",
+      "sha256": "1da46c166b10b93763ed85670787f932bdd1020b136702abc96bedb4197dadd3",
+      "size": 1466
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "5b0a68356a09e40a103cca1c2b9dde14f8df4be2863b230c1f366938e7e6d0bf",
+      "size": 3151
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d1bad3c868d2a867fe3c64ebec5f2ce37c3f6d947b8b5ebfd5cda4ce27858ad3",
+      "size": 2391
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "74c11668a57ecefba50e21771ccc086645c74f44c717c2d974bb488d50cc3d8d",
+      "size": 1357
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ce8d69927a1cc62ea216c21b843551c8b071a29feacfdbc540c01a70264027db",
+      "size": 7682
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ec2e2a9566499b98eedd980214533994f0aa699b8e978dd4f824e975cb7d6557",
+      "size": 2443
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_exynos9820-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-08T05:08:54Z",
+  "vendor": "samsung"
+}

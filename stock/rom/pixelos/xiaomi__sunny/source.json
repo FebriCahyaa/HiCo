@@ -1,0 +1,57 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sunny.git",
+  "codename": "sunny",
+  "commit": "70b2463194c52b4e95bd44b6c1c6b5cd055f8655",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "19b3e6e4a2c649b668b224b876e223deaa0e6adccf039bdb8921ac2a6d81b750",
+      "size": 617
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8d127e4831240d983e1ba137048eeea37387b72471a7aae65373710335fc6269",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0b09d48c7df2d4b421b448ffd50c9f344515ed9110037bcea8cc0855faf3ceac",
+      "size": 5979
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6772a7c3df2e225eaa04e14d575a45eceeedbb000f2a6043f051fb3e1fe13637",
+      "size": 16953
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "8cc327b93fe5e10de35f26b2f24a88ee16eb296c3f3a698c5e1e6cfc1c90271c",
+      "size": 3284
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "07d716c74b8e37766f6fdbdcbc5d8c037963d2759b4728eb28ba15367f4f6016",
+      "size": 43631
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1865eee21a9765b84f08f57e4148688eda79f2638a10bab4c263ead8555105de",
+      "size": 852
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sunny",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-14T09:42:48Z",
+  "vendor": "xiaomi"
+}

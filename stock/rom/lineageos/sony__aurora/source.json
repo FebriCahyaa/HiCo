@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_aurora.git",
+  "codename": "aurora",
+  "commit": "d9da519ce635fa6f2b0e4bf9a56e6f6c0241ccff",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9a9be47d330d252813e61044b85c3c86100a2df4fb8cd50af0d6d48d1f64d835",
+      "size": 718
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d92ef6681c09fb7ae84e549608a9e8511ba13582b16570fe898b4e0be6187783",
+      "size": 763
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "760ad42e221aba5ea9e58d3497caa8e809ac3606245669c4c59d18d320802c7b",
+      "size": 723
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "2992778317bc1f1c739b648efc5e0a77b1c8ba2ec6b3496de5ae3fa67b563ac5",
+      "size": 19939
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0cd033e68f46c506860538c72b963b1eac0f587508c0beb6aa40f28189cdf993",
+      "size": 2080
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "79bb3e98610907d9d89a756614d1f0c7ecaed8404321f9d23ac065dc4b7e1950",
+      "size": 592
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "906bc0642b5129edad333dc0abb388955088a62ffc417ed7bd4a629f8e333b20",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "17d13ebe4b53464ca06f5274374a86c6f7d13397ad74b9986104d47493efc1db",
+      "size": 28106
+    },
+    {
+      "path": "system.prop",
+      "sha256": "48357b34dd7863cff30db805a3490691d3cdf02e89ad2eafce17bf4d8d8b4288",
+      "size": 370
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "29bbb685fac905859a740110e7da69bb24d9b478dad7bbe764cad199151cd1e0",
+      "size": 167
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_aurora",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-07-02T13:00:36Z",
+  "vendor": "sony"
+}

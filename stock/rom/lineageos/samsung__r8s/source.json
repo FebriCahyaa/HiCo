@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_r8s.git",
+  "codename": "r8s",
+  "commit": "2f08049d2af85a7217dafe5858d044132371cc77",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6b95924f23eaa9da081a32b62b7f2e5a09461389ac500e34845a52a649a4dc74",
+      "size": 19
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b6be709e9568b44615dd4243025a8568fc82396fe0da298a30c126597cc18c9d",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c1542d0e5ba5180b8b93f8913f7bf06188e945150f7ec2837189845a6e32330a",
+      "size": 1762
+    },
+    {
+      "path": "device.mk",
+      "sha256": "edc80e0c31db33418658b392b8ff268dc7987872ec17a6406c85cfc3ff1030a8",
+      "size": 3234
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "273604eb5f358cff9578443098fab8d1e6a680f4d5df4a7e71599fd4efd2130b",
+      "size": 1944
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "65e2c21f05c609c2eef5b6e038bcf88ce961c76698ae5d41b28ad366e24ba514",
+      "size": 146
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "202d8ac4915920dddb30228715a6804f28b76302e68706373149fd5cd6ba1538",
+      "size": 3700
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1da65d6111f14aa0a0eaf3825436997d08fdd445609ff352a570d44dc604aa58",
+      "size": 271
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_r8s",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-13T21:42:48Z",
+  "vendor": "samsung"
+}

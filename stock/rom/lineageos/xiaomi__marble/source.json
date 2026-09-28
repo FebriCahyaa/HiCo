@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_marble.git",
+  "codename": "marble",
+  "commit": "1084339e859668a9f8293eddb83472f553e56fd0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ee46e6fff1dc63681510151fbbd92650801ca5a78c66037c218d78bd2e1d90fa",
+      "size": 308
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6f364a6fcad935aa97a58a7b2e4acf15844a825492f665fbd6c9eb94355b80a8",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b8cf625c28caedcd181bb551245de16314eeb5c5a7516b540715fd7db39875ec",
+      "size": 662
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1e487ee6955d60b5d42365396fca07a1f84aa0761ac41b8dbff2a7ac1f273dd0",
+      "size": 2144
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "36facbcec42238516f36e35652ff86d6d2b786302ca8d6af35995019148facfb",
+      "size": 3148
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cf8445b3ac5ec1956cb3903c137f7aa459629ab4ffd1fdb85690d1cf796aa420",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fa87f31f41a6e60d22f62feb924a9562d8b8ec132087dae04d8270053a3a3ec0",
+      "size": 59611
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_marble",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T20:45:58Z",
+  "vendor": "xiaomi"
+}

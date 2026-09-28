@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_ayn_odin2.git",
+  "codename": "odin2",
+  "commit": "0d74f78c034466b5ac572b11d595213a42b4d7db",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8cddd5ff6e2ea18c2b3d600231ee840f052abd755a470151547e1ac2c0aa760c",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a1531238edd3ae9ca474cf7663f4a5aa01809815c5244b8c5bc5beeb0a768b5e",
+      "size": 661
+    },
+    {
+      "path": "device.mk",
+      "sha256": "41ffa87047e7019c8ca639593bd3aa825a027a8455e9396b43e52b5b60316f73",
+      "size": 1250
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7dcc5e56a3ebc0daa1178c23056194799ec873d845d055c5c2e429ef11c11712",
+      "size": 1188
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ceb9241e9b27197ff1d35ee0175c8706fbb7ee975ef0f69bd946c71642815385",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "815793d25161aa332c6886b5a045c13904c18ae9d516be9c2362ac7b7ae73aa5",
+      "size": 2173
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_ayn_odin2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-18T22:05:43Z",
+  "vendor": "ayn"
+}

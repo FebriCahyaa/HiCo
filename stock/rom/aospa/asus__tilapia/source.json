@@ -1,0 +1,47 @@
+{
+  "branch": "lollipop-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_asus_tilapia.git",
+  "codename": "tilapia",
+  "commit": "7cd14b5f2fab4e7eebeb5c7a4b45cc7d292d5e82",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "60b975e3f4463b7cc9f0a80bdb29a3bf94d5c7ec3f27e80ca18d614196812d16",
+      "size": 85
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "999cd84cce17dc223b7d760640e8591264a65f774f3897149ffc265170a7c2f2",
+      "size": 1787
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f0ea503e1dc8ac99b9c23327d0e01b196256fdde705965f5aff55ea8a5729b83",
+      "size": 1202
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0f4ab9e0274ff4e4a0bd175ea2393b7b7bc150692f1d6192b49f3ab174c4e3bb",
+      "size": 782
+    },
+    {
+      "path": "system.prop",
+      "sha256": "52dcaf0b5d9d06ad7921639f7e930b794a84665fc2c0da9ac07004e31b4c2434",
+      "size": 442
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "7a3844633adc9b57cc060b4d3a907f5c5ebad24a81989b2384c2ed1be3a9fdcc",
+      "size": 848
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_tilapia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2015-07-17T02:25:05Z",
+  "vendor": "asus"
+}

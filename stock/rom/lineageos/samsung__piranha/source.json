@@ -1,0 +1,37 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_piranha.git",
+  "codename": "piranha",
+  "commit": "b62328c41322ebbb0b530dcaac457ffd05d25413",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "85c3d153f53f5b34f672720a8780f147b38efa7f71ad5ad22db9b57a046db372",
+      "size": 718
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ec44c3638cb02f8270ce0768235b1110265b528ef932acd90fdb321078c44947",
+      "size": 3540
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2f9b62b4cc09ad38e8ac7e8096a7aa1de92731ee2deadb248799c5f029ee5da3",
+      "size": 4555
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "215e3c534a27827ca14e2dd8bf27a9c55ff5db655203dd9be3e2db54f8e517bf",
+      "size": 790
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_piranha",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:21Z",
+  "vendor": "samsung"
+}

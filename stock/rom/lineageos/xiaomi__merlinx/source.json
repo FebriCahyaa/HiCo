@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_merlinx.git",
+  "codename": "merlinx",
+  "commit": "a1ce99ba4fc74aad66de2c3adad05ce8cf45179d",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1e8817ff4154df66e7a687b18ddcb5eede134e30f0d8d9ecc42ddcc7f84891ef",
+      "size": 219
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "81a57411bfa85ea984c3be7851d9ed02cf9538137b42919863357768004acea3",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ed01dd9d9dec38860ace500067753600e2ff28dcf3615169107e456135a563b7",
+      "size": 583
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "a0099eacbbd897cc8a745e5aca6a477ffadb4011467502a30592b9fbcca4138d",
+      "size": 6009
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f8d732e8ebbc9749b5eeb7d3e6a205e44771e5df50a4b3c9dccba07412aa39a5",
+      "size": 2507
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "79fd6f068971a5bc04986aab9a52213f988d8a6fb3644a31d2789391570baef4",
+      "size": 3208
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "88341905143be3cec90c536a4640fc94c9dd076fd40ce1a66205b71153a0097f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1028b86ee86bd5cfddec3131c814e12e809007a805b23cb796286df9e3018295",
+      "size": 16595
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_merlinx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T16:43:05Z",
+  "vendor": "xiaomi"
+}

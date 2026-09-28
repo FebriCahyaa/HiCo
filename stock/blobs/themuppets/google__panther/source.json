@@ -1,0 +1,59 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_panther.git",
+  "codename": "panther",
+  "commit": "a6f0e53e2c0398307642380c9ee1ef4f61418e09",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint-a0.json",
+      "sha256": "a485a76eef1bcd8422ffaa51f404b9ef9ba6c3079d82790d4ea7a28557aa1093",
+      "size": 49251
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "b365ed6fe1e1ef4db695173c165960b1e2c742c4ac4416dcb62b25641874622f",
+      "size": 54132
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "a4ba034e30c5cccebe18ad4b924e276d72e4ad1e2a98d8d101f24f8d955f843a",
+      "size": 19897
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "884742776b013e36c518352e595df1cbe4f953c990b6bfdb978450c7b2278495",
+      "size": 6291
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_proto.json",
+      "sha256": "5ac637c1157136bdd7a78bc3e2fb3a8723379702fc7bab01c4ef3c2368b807e5",
+      "size": 2594
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_panther",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "panther"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

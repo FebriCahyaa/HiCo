@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bn_acclaim.git",
+  "codename": "acclaim",
+  "commit": "7101c6bdd07faea18b19e599c0c31c8e9331c561",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "03b04dec8c7616a38aa0dc302e7c660e38419e373d2ffb132eb9e14c56c40a0d",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ee49255cb107c5b2c2fca82040b6d31914896d81fa8258f057cd363ac21a5632",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e1ef7a0ff97d5ee1ca3f0419ea9f6bce26a1089fb55c399753f8b17550993196",
+      "size": 5566
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3b3404a0f80331832d1cfd62da6964d6c3397bd67e841ba813e24c833acc17e8",
+      "size": 4809
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ba3a2f3ca841296ccb720825a37aa031187a0ffc39a64762d98da2965fe8e8f6",
+      "size": 331
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9dc50789fe09a7470eca8fe6a3b2366f5d9a21ba738b5701c0e298e042dfb9a5",
+      "size": 1892
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "120e40cd40ae23a710520818c6ed1ce159a57c86e5603c887729880e3f03116b",
+      "size": 744
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bn_acclaim",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:14Z",
+  "vendor": "bn"
+}

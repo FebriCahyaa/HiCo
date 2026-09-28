@@ -1,0 +1,62 @@
+{
+  "branch": "11.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_polaris.git",
+  "codename": "polaris",
+  "commit": "d905a9de59436ae346d632b40163c87982cf390e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f195a792daad0b1933d46a5f59c8d3dbb396efccbd1d308c1828d38e236e9196",
+      "size": 621
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2527cc90ce94f11afc449b4ae7a0c000519244b473735655f5944de7e9e7a0a3",
+      "size": 767
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9880c069d0474d227320aa00093b7b0205d79c05885192f1480b8525f2e18995",
+      "size": 790
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e586e3e5b94ab22b8efcaf5bc3e9054a1102ea417fa08a96a30a64f10e07992d",
+      "size": 4521
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5e2eb9cdae598d836cc9267950a9087372f904bbb061287fe1cb1d99c092e6a8",
+      "size": 471
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "53c8da3b7a3a61d8ab8d20197438103dc6c3625a675ebbbc1f0a1996fb2bcd6d",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7a495a1a883f0a0f8fd8e7e1a4350b6d8183591dd7870121aba823a3b8abaacf",
+      "size": 13278
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09159256c5d48dfe14e7adb6fde6a0576fbe51389bff2d69b3b66cb85ebfae8f",
+      "size": 160
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0910dd3e4689a5b61bc44686053bf4d15b0c6c28c91ffb7f2552cebcfa5d76c6",
+      "size": 58
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_polaris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2021-08-23T12:36:09Z",
+  "vendor": "xiaomi"
+}

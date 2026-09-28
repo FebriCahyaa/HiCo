@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_g0s.git",
+  "codename": "g0s",
+  "commit": "e7fedac23d103733280a2762ab319ea259ba8beb",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "746e921ac0a056b4bf4164371be783eb88431500150146f4b21c907e9719df57",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ff7d9edd3792e77f4d9ab104af4453ed5807ed6d1d0aa5bd011207d870407551",
+      "size": 1271
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dfce1f9d48d75eab39ceb0c812f8f8f98552f3ad1766d4e3b893aeaeb4311689",
+      "size": 1496
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "96218029861b6a74f7e63140e50841f55b86d4fa45dec0b2f8f9aa8262cac17d",
+      "size": 2224
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "595cf2b6b415ba5c7a52a289e7dd1c45721eb8dc814935dbde517bca57fbdcb3",
+      "size": 134
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d83749be4b11aca5a69b8c7438b25fa95631e5fc4f4e382bc4b8952bcc6ace90",
+      "size": 5322
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_g0s",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-07T13:39:43Z",
+  "vendor": "samsung"
+}

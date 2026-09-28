@@ -1,0 +1,37 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_msm8953-oxygen.git",
+  "codename": "msm8953-oxygen",
+  "commit": "0ed310e086702c31ee0eb20aa7931dc51e320a9c",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5c3145e688a6a3e278a371306f2bc9f01c0b3cb32002691c413f653f27f83444",
+      "size": 4020
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "042a426ea788dea53f0ce9c4552250bc3d0b62871a7ac14a3643fa5a82e4455b",
+      "size": 5849
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4120e974ccd82acb275f6d1c9525f94cc95dccbbec3891cc5fdde5ef3cfe11e3",
+      "size": 2214
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_msm8953-oxygen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-12T08:45:44Z",
+  "vendor": "xiaomi"
+}

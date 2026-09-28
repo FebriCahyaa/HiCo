@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_virt_vboxware.git",
+  "codename": "vboxware",
+  "commit": "f9ee81f5431e20cfc8f9cc877d0a5f1568038643",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6dfaf111f5b87334bcf3571ab1b650eb5e28da5f6008f14f7977c9e2d64624d5",
+      "size": 77
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d3fe2ca243315c7ce6418fa898fe90fe9bc31ba61c0c976d18346a03dedbc7b0",
+      "size": 366
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3aef9037c2cc9e37f687307f72191877a614d6bd40745a233d400e02c70d55bc",
+      "size": 2472
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dac136fd566f6733e06505d8f9f88f195eb3bf97b84d967a0d9cada2c5cc7992",
+      "size": 2282
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "712e85bef3416688cdb50537b5473d9ab958290a7cb26edf0078acf23efa5316",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_virt_vboxware",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-10T17:23:29Z",
+  "vendor": "virt"
+}

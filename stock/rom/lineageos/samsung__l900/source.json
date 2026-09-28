@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_l900.git",
+  "codename": "l900",
+  "commit": "7dc90313f956c583f2aae414429f51a146433056",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "dbeda79ed1e97e82bccf89eaa9f2b92d6dfbb05263ffec138c87dc41a02232a7",
+      "size": 714
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "216f48567afc0e44facb8137e70c640707af8be533f989777e0f4d94be016e0d",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2327946b113c68950ebd0da9cc21a9cf8d640fea7729f54abb8347525236f5fc",
+      "size": 1102
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a6a60304d4975d3105001a715a5d3006bcec205da6697c61086840c17103ed7f",
+      "size": 4082
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b08b3915472a71d00126b987a6a2e260eaf9005f59818c9c13a9ccd0d374d910",
+      "size": 253
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9deb4557ce4da6236d7f393006be30a093dd2e5693c94428d068f8a1049c156d",
+      "size": 88
+    },
+    {
+      "path": "system.prop",
+      "sha256": "af3f379daa49af0280db22f4d254ed6d3f6eadd78e057aa86643653e9d4da2d4",
+      "size": 1231
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_l900",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-05-15T07:32:58Z",
+  "vendor": "samsung"
+}

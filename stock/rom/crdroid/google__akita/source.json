@@ -1,0 +1,37 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_akita.git",
+  "codename": "akita",
+  "commit": "df039f469f6490af84daad563361a2eb9ff921d6",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "70ee2c1d00769678002490b70074ab2b5610d28a1dacea2dccdd038714b6beea",
+      "size": 505
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9cbf1a0fb2bcd92a8e101956d549bc17721bfb454478ff7604a0147fc55a4e4b",
+      "size": 196
+    },
+    {
+      "path": "device-akita.mk",
+      "sha256": "90fd90de99119a7776b63d9f563272184151a177eefc762d9e26349810eb9ebc",
+      "size": 1664
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2920c1cd52b3053a2d4396723dd5677ba90c87594ea80c45d6c7d8c48db06bc0",
+      "size": 211
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_akita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-05-03T17:43:02Z",
+  "vendor": "google"
+}

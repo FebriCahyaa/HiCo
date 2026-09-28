@@ -1,0 +1,57 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_redfin.git",
+  "codename": "redfin",
+  "commit": "bd565b219b9fe5f1bfdce6ef8ce54522e9199d86",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f7459bd87f8e7caa11920b6e40fc913629bd95f40155270b76366fee36f99136",
+      "size": 1451
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5634e646e9e23cdde0054889cbb9e067998800ebf19e6c050ba1a63419201d20",
+      "size": 1013
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "a007cf77b5c82aa77d805d2c86fb55ce42ad6e14a3a455030520c6c1588d6a65",
+      "size": 342
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "6aecf49346d9342de4926d721ebc1a7619b8078670f354c0433fafed31f0b0de",
+      "size": 531
+    },
+    {
+      "path": "device-redfin.mk",
+      "sha256": "b216e9273bee8a69c77379622783330a17b78776141a4b7addd5d8a1669da6c5",
+      "size": 11072
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fce48f3e4e36e983122b62c5c80c101595be2a452924e7ff2e11f7f6267969b5",
+      "size": 212
+    },
+    {
+      "path": "thermal-engine-redfin.conf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal_info_config_redfin.json",
+      "sha256": "35bc12fd0885e865b4d6f8c99318cb31e8bd2f77d9291fcb7f99b5344820ee99",
+      "size": 8355
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_redfin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-26T19:11:31Z",
+  "vendor": "google"
+}

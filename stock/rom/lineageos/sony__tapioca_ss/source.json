@@ -1,0 +1,52 @@
+{
+  "branch": "jellybean-3.4",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_tapioca_ss.git",
+  "codename": "tapioca_ss",
+  "commit": "2fb21d6e648cf6a5dd7c950792b63439c40b500d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "181e054ae1359d595cc847f57b02e22d5153703d05cc4b9c80b186491610eb9d",
+      "size": 127
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "516aed748c15b9be11ea185946d1f63fe05675567ce7cd5ee55b3cbf99d68bce",
+      "size": 59
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f1ba88ddfa4ee7c13d8cebd9b5d327fbc62bad842f09e72e7afefbb9ff949b75",
+      "size": 926
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1a102287469195535cc232cc605b54266ee190709a7e8a7c55786f7c3735a48a",
+      "size": 591
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "453bb0cca118d77b3b4a53e2b33e9e4a461e36c402bb1ec69b86a10ba40e2778",
+      "size": 2251
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e1c87d9ecf8178e8c649c8786ad9ac9eeedc3872b66c7e0cb0ff45ab9919fd99",
+      "size": 70
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0dc130dcb350a97b0252be2fd4e262d102f0a99b1312dc32300a19a5de7a6283",
+      "size": 34
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_tapioca_ss",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:43:56Z",
+  "vendor": "sony"
+}

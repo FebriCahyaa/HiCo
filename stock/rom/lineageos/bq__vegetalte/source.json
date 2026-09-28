@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_vegetalte.git",
+  "codename": "vegetalte",
+  "commit": "c0f574acf97fb514af9fed40435159cda2ccc8b0",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b3e734e9c11c6dd50ec322bee983eb8d2484e437234e6c335da43df21453211d",
+      "size": 1315
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2be8db7c2e231fda576a8db9253caeb6b3d2cbe086ee5a0a86bc1682b1a11222",
+      "size": 698
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8ed3d247782998f7f73a448258de568f20d980065299409ff3a4f559feca6dd8",
+      "size": 1556
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f8dacee20e94ef28893fd97391a5e1ba4432cddabaccbd58eddc966f2bd06f38",
+      "size": 1592
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "52359151246822336939bf71ea66ba9116fe56678374957a2bed01303afce2a3",
+      "size": 1691
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "fb4d4f4e79db0e304f4ec0932a5feb14e4ccc6f43a357ea6908e59a5ffe1dd72",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4003a44ef69277765486f81e374a5badf09b64432b1913db52e44126ee80c37e",
+      "size": 12220
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6bcf00a4ea1102a38f921a1d4a67fa916c52152709d7ed771e7be7cd95cb020d",
+      "size": 208
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_vegetalte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-04-28T07:01:37Z",
+  "vendor": "bq"
+}

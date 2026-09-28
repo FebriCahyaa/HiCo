@@ -1,0 +1,52 @@
+{
+  "branch": "jellybean",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_holiday.git",
+  "codename": "holiday",
+  "commit": "c90964c68a8d07899ba7d6c15126434f72e0d040",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e95762c77fc0225710ec16a90251ba89a62079c1be1ecbf1f994e9ed8d208e99",
+      "size": 681
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "55bad57070c8dbef27675b0b99287ed0ad56a3d754dcce899e08f82f0715af50",
+      "size": 663
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a30786eef71d5b29f4044ced9865d53cb570d72288312a7f640f12dd1b449e35",
+      "size": 2354
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9cf0590c1c3f5834d1b77dd943023c407221c7865245d4fbb817893669cfe0b9",
+      "size": 277
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "13745c0b761fb54167de9943791d1092a650a645fb65d2e11e559f391a3a9f16",
+      "size": 2495
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4b7874dc84e687e1405cec2cd557079f6bf8764f03075f33eb4bc3c648d6384a",
+      "size": 2536
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "30a4d0983d4c07268149b00e7406eb2f37cc0414c7cb99647ef5d1c144431978",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_holiday",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:23Z",
+  "vendor": "htc"
+}

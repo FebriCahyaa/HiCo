@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_tf201.git",
+  "codename": "tf201",
+  "commit": "0326cba4b10247e5b77e255a2a7262b31cc2eb6e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "089a6b8edfa01eabada2dfc71314fe7983527f39c6309eee09c0754d6967e2b5",
+      "size": 1076
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "43f8ef441a380e535219f6297b6d031b0a739e3ee2c13c72d3805e0b9dd8119d",
+      "size": 689
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "541c4ae02843566bbcfb50226c4ed09f59f130c6603309613d548be427a20251",
+      "size": 3271
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2aaf40e0cbe3c9e09af0e61605f01b59f8208db47379b5d6c309199ed82acf36",
+      "size": 274
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d1de83c5f4becf4b08ad547759a49f1b26498c494de34512d1d52c3613ab3a6a",
+      "size": 3402
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5be6c67db70710c0a268c9d8483e847920f0a25e8a09136fb8c422bfa3d261d3",
+      "size": 49
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "65264225e4a18bc34c700c5dfbe6eb7f06bdb2533dd2880734822855f1c0226b",
+      "size": 642
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_tf201",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:44Z",
+  "vendor": "asus"
+}

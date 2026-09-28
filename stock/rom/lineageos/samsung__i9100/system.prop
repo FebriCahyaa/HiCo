@@ -1,0 +1,11 @@
+#
+# system.prop for i9100
+#
+
+rild.libpath=/vendor/lib/libsecril-shim.so
+rild.libargs=-d /dev/ttyS0
+ro.ril.telephony.mqanelements=5
+ro.ril.telephony.nstrings=4
+
+# EGL blobs crash on screen off
+ro.egl.destroy_after_detach=true

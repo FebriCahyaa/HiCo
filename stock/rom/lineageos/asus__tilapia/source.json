@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_tilapia.git",
+  "codename": "tilapia",
+  "commit": "d1dbb94cea361c8d84e0ec00f45ec056aed8407d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "60b975e3f4463b7cc9f0a80bdb29a3bf94d5c7ec3f27e80ca18d614196812d16",
+      "size": 85
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1c2be9a015edba6632eb0b8d633dad0eead2e14c91e537a35f3ea758fdde3c7e",
+      "size": 1859
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5f65b53965b99a042963a5c2c2ba176b7fac7867a16c825a73413cdd0f27d5e8",
+      "size": 1295
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "23f7ca6c3fcdb6b46d1b5c453cedbcf7f498563fcd8a712cb624f4329050b9f6",
+      "size": 1023
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ad1eff6fc0b4d033b3ca60b02d68e6927d34e73d1402557d598f4fbca861371f",
+      "size": 110
+    },
+    {
+      "path": "system.prop",
+      "sha256": "52dcaf0b5d9d06ad7921639f7e930b794a84665fc2c0da9ac07004e31b4c2434",
+      "size": 442
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_tilapia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:52Z",
+  "vendor": "asus"
+}

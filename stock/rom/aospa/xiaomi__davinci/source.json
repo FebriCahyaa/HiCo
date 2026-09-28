@@ -1,0 +1,52 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_davinci.git",
+  "codename": "davinci",
+  "commit": "b70307e3afc69891d75ee2397e50a33e396f7379",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6f3b2e93a71da36e6a788c4878d71e1ecb9379bcd2fdb064a1f9256cf99b5323",
+      "size": 720
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d4c1a148d42fa0e7dd5ba484249231cd0824e9ac20f44bf6ff502efc1efac58a",
+      "size": 1639
+    },
+    {
+      "path": "device.mk",
+      "sha256": "070a0e9d4424a320a486c60ae06139991c5d34361eb7868d3aa3ad7d6692a599",
+      "size": 3698
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7fe323f7f3f288d96096b665f5538491966243480cf8b8bd3f2ab1d89ad90de5",
+      "size": 788
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5be15fbfbb7ba0b17e803164d939bda4af89ab7eac561598a0962960a1626469",
+      "size": 12962
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fcd7cb62751718343fe19ca472cd601738c418664a2dde8b518c0c7c1c6ad8ba",
+      "size": 235
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T21:45:44Z",
+  "vendor": "xiaomi"
+}

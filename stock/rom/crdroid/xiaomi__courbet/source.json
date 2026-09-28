@@ -1,0 +1,72 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_courbet.git",
+  "codename": "courbet",
+  "commit": "279535bd4b16fc2bf5c3dd57edfbcd142b1da0eb",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bb41923bb41d27c99d1e8a2fd165b80614fa73b6980b8f28bf5ad8b4a4f87cf1",
+      "size": 182
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "afe8cadd7bd4bba175d379b844256e91f873d04a1d119d6b58b43489738793eb",
+      "size": 208
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "01dbcda7c8534d6e060a19cf1b5277c3387c2991b7061debbb25e12ba508da4d",
+      "size": 257
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "545df820ab9947975eead86d5f8f75e30482506dee324c588b9ac14eee6c4541",
+      "size": 2539
+    },
+    {
+      "path": "device.mk",
+      "sha256": "abb866b55d2ae538f857181a29d3ed73b12d69ff995c137663b16889e8f4ee50",
+      "size": 4750
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "beee0b279db7e7b0ae1abaa5c95a2d6c39869dd9e528ebcfbb769361e63e1814",
+      "size": 1581
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "b5da0ad253e1783751e8c1db226d1c0bee47e1084624d57fafc671922755a232",
+      "size": 1159
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "4f2ed973daf28de93663ff4b28d970e2e33a05569f05f4a8750eaa3bcbd70ce7",
+      "size": 3840
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "5ccfdcc50ee8b5d62d9eeef3fd814583c3765312a89daeadffb2cb6e7e887ec7",
+      "size": 14237
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "bee29efd08bd1d3e1e79c6ad1e27643a5db8aa86d15a7abfefdafa5478655609",
+      "size": 6871
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4259ed2d5540093bbacd4b723c10ccc3d88c2cfaae77ba175d2443fbe240ea90",
+      "size": 20211
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_courbet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-01-02T22:23:07Z",
+  "vendor": "xiaomi"
+}

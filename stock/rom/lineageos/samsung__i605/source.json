@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_i605.git",
+  "codename": "i605",
+  "commit": "215c7b5394d91bb2c9174cfae9f070c8a18a1a8c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8e768615e4baed5ca056dfa949e3d27972d84b1dcb290e814a2044323418556b",
+      "size": 714
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d4f2801fa2cc97387d5764870f5664172994e2467c2440bb20f3fc45b98200b0",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "23cf27d6a3a205536f7ed143e5f51ceecf55327e64838f3d39ac39b72da006bd",
+      "size": 1005
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c3906ff18a048c26149f330a09811e174a4d303646464179e797f6b2210c9dc6",
+      "size": 4123
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b08b3915472a71d00126b987a6a2e260eaf9005f59818c9c13a9ccd0d374d910",
+      "size": 253
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9deb4557ce4da6236d7f393006be30a093dd2e5693c94428d068f8a1049c156d",
+      "size": 88
+    },
+    {
+      "path": "system.prop",
+      "sha256": "854b90d7fa6c2c9d159e3c155b76c3759ee18259df79f301d869ad2346e20e58",
+      "size": 1213
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_i605",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-05-15T07:32:24Z",
+  "vendor": "samsung"
+}

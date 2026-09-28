@@ -1,0 +1,52 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_nypon.git",
+  "codename": "nypon",
+  "commit": "35d1e76515b41fccfed37e7e6088ffb5a8c1acf4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "03b5bb8964c44c599ed4e1d057a057e4575c5f66c368c45420fc73a99f907c6e",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "66c73b8d51e02a08a7eafa9fcb17417737bce8c9a70e98ae1df6bf604103346d",
+      "size": 54
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "df2569f8bb9a3935207af139421976c16a463392b240e82f42f776725fa930a7",
+      "size": 915
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "55f63bbd0c7c8d9771243f70d49728d22ec2461ad454e283f3651b3a891ec6bb",
+      "size": 586
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "90eebbcc8f45b21a2097df96374dd7bd0c526d9d67c87cb346877ec22d31ab0f",
+      "size": 29981
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c23a886e8b6c85409d73008b57ec82248409273c5e7e493bc19ccc6b8d63baa4",
+      "size": 1696
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "26e6e0665b2e66e341a811a0829010f23326ae91762884750dd22e3fe63fee9b",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_nypon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:36Z",
+  "vendor": "sony"
+}

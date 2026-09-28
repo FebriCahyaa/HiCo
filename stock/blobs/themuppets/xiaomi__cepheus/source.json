@@ -1,0 +1,69 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_cepheus.git",
+  "codename": "cepheus",
+  "commit": "0a93f4efd54bdbc4049ff800428d9c67f5a4e045",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "889b01af4f550bc2eb23f7cfe44d4d804200d97f159549699fc25440a31aacb7",
+      "size": 1120
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "f0c94fd3d4df3f548c233b3956cb2a8d29ad1636cab3cbce7149a75dea0735ea",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "20c0fad8dfd53b88f79b0935290bea06949dcd6e4dc009af73fa1041ad7a085b",
+      "size": 486
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "671c872b6952eb048c3d8715185a2a20fca41e8e1c2610216c045c9dad48a308",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "22969a8f5db46aed1ebc3e0a5a2568fdc6c839bbce307f53298f7508c07b5f34",
+      "size": 848
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "cff8ede5c0fe6e33fa6d940d6dd65158ccc8e4d408f9e66971326823ee86837f",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "c54df6512860921a600bf66d1a68c1b64d675e5b777b6c7a94e1e181822fd6e4",
+      "size": 1056
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "99bcca32cdd9b446b0728077c12adf1e813013dd990b22cf60eff578ff27bcc1",
+      "size": 1152
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "4fcd0f5b5b05d8d508300f978ae34c551c24da4b93a16a73c0c5a513a3e51816",
+      "size": 867
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_cepheus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "cepheus"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

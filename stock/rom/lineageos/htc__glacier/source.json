@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_glacier.git",
+  "codename": "glacier",
+  "commit": "508e15cd4327fc3440f3e58c5a5e09ed86017f08",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8ff74cedc855b9a9611d99a859a180340795862371b70cd7dc0f8dcffb0b8e4a",
+      "size": 58
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d302e234dc97700d787e6d6ff5de47503813efc8bc471643844414cffbcce934",
+      "size": 2188
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9fa652676fd68856aa089041847772ce0cd1bbba3f7b42d1c33dbd0ae245d3a4",
+      "size": 8647
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0944a482936327f2e2f25f54131b17e0665c7794e12465393ae4200c06b855b1",
+      "size": 1189
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a84aee416f6ae5486a034f259316caf68efbb48b733b990e69cc8983a6ac2b40",
+      "size": 851
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_glacier",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:01Z",
+  "vendor": "htc"
+}

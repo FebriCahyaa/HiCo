@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_walleye.git",
+  "codename": "walleye",
+  "commit": "8383521cdb163324c42e8ce013ebd292457cf0c5",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "db744b4e0461431d2312c423015d5aa0dd675b88bb847469f32e799b3cd3884a",
+      "size": 660
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "01616056b10a0f4ead247a26d222de9f95e1d0b6aebe229eb3ff513802a9e2a2",
+      "size": 1340
+    },
+    {
+      "path": "device.mk",
+      "sha256": "41dadb43e2520db8653f8ddbfd441444295b4bcf237e7c9b28841fbb4620fe8a",
+      "size": 4842
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f80dfebb660649b65015168e184cb7e13879bf9864b8d7ae8a2a22657022efa8",
+      "size": 3718
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4bcd77f27ec05582ff438fd38ece5f10ceec4ecef0db5ef7e350b3d8a601ed2b",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9a829059aa58aecaa0abb962321c4799e2d60531a689771c8baff59fd7dcbc27",
+      "size": 9285
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_walleye",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-05-05T21:01:43Z",
+  "vendor": "google"
+}

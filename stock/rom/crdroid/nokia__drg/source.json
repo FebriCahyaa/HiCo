@@ -1,0 +1,62 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_nokia_DRG.git",
+  "codename": "drg",
+  "commit": "906a0849f49f178493f9c0728508125fa4291f8a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ecc4004ba97824c2897835fd95ff65daa1acf84ccd2ed708dd09cf603dcba271",
+      "size": 5229
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e63856d0508a0102558d3f7eef420aed2b97beb3784e0342f82d76f55d0b9522",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ce985acd4c46406843843f093d95b0b2c79407a4c560522deba3e922400aef7a",
+      "size": 5410
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7b921f1f00e2c76e7f30698782fa3f6f96081d60033a4572459f73c4624e6e2",
+      "size": 3639
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3c9d15a1d96187863d8f90c312661c43916409c9477cd717e3c582c4aeba3c9e",
+      "size": 53193
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "7ca3d47233cc993bb590f81d9fb87c7a096ad383086d76be22d7a8869a8fa1b6",
+      "size": 127
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ec2dc98c259e5758a6de7ca5a6043068efdb413d8d9c5be0f3b3fa5ee07f7b1a",
+      "size": 4157
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7c9a8f09c2301611df84fab90b2708b6871f0af388ef0c8e74c7cad0d24fbaf3",
+      "size": 8214
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nokia_DRG",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-08-04T11:45:01Z",
+  "vendor": "nokia"
+}

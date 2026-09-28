@@ -1,0 +1,33 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "b587a9b4596d808a34e0c2f413851ade3d9911f3",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "eef1e4f3d90983ec244041ccc6aca2ed5c5606f02eb14536a7ee741f1eb8abef",
+      "size": 532
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_oneplus_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "guacamole",
+    "guacamoleb",
+    "guacamoleg",
+    "hotdog",
+    "hotdogb"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "oneplus"
+}

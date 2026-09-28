@@ -1,0 +1,157 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_coral.git",
+  "codename": "coral",
+  "commit": "daf43120b62106607878a2d2f0709f902e6c21dd",
+  "file_count": 28,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "627b4fdd836fbb2c17b427a6701becc268b83b5a8c40a3b5831fd122ef71dd47",
+      "size": 1332
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b132460bf1b0b62315e8d5ac39bc74ee0d971488749cb31d3a63e60910d93a98",
+      "size": 452
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "56aebf2967dc91d2c5d10d9a713bf606e61e66c1ecc3991cc185c1afb6def92f",
+      "size": 4847
+    },
+    {
+      "path": "configs/thermal/thermal-engine-coral-normal_mode.conf",
+      "sha256": "15bc31b5bbe28904210df3da30ee8368782d81a3a9b397a055b73de255151a69",
+      "size": 2276
+    },
+    {
+      "path": "configs/thermal/thermal-engine-coral-retail_mode.conf",
+      "sha256": "5d10587b932142c0f9c0550c89cd6301a5a767820241f513555f39dce9217640",
+      "size": 2276
+    },
+    {
+      "path": "configs/thermal/thermal-engine-flame-normal_mode.conf",
+      "sha256": "d95d1b5b04f59bc84aae53910b51ee8a6018d9ba455967033ac4ea1e1106735e",
+      "size": 2276
+    },
+    {
+      "path": "configs/thermal/thermal-engine-flame-retail_mode.conf",
+      "sha256": "db400b4087619e02688af013fbb2ad9b68d65321ab28d844842e872f7001b6e7",
+      "size": 2276
+    },
+    {
+      "path": "configs/thermal/thermal_info_config_coral.json",
+      "sha256": "09618c1d3c1091adcf4b260c4706dc47e233360a3c710659932e0370a2a406b9",
+      "size": 7894
+    },
+    {
+      "path": "configs/thermal/thermal_info_config_coral_jaws.json",
+      "sha256": "9ebf27b33fff124b891ef7a7290656a1ab84956de1ccda9e014d3b5aa71d384e",
+      "size": 5602
+    },
+    {
+      "path": "configs/thermal/thermal_info_config_flame.json",
+      "sha256": "ed691982acb0d58742677d26c4d064f7603a583530f4a4049adf47f6b0c10078",
+      "size": 7894
+    },
+    {
+      "path": "configs/thermal/thermal_info_config_flame_jaws.json",
+      "sha256": "ef10ff9bd887be55a82ddd6bf6e4d2e40c680991e40ad4006bde99e23994f7f7",
+      "size": 5602
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "f3bd89e20dbe1a27b9f22a20a4fb983734e185bbd17f97ad608d2d935b9ed555",
+      "size": 32819
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "721949f3904368cb36f27848ea71516d1369c0413f4448897b9e7542c5fac3cb",
+      "size": 211
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8f8623d78d86769f25ef05b3fd62219a19f59f527ae2d4c0bc218654a8b302e8",
+      "size": 223
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "76e9847f2bd9190225f89dbccfec2fb1ad30af0b9b49bcbd510264015f47cd22",
+      "size": 401
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/dump_thermal.te",
+      "sha256": "8409f4f5e3954a6cc73571c48d4e5ea9763d833ef6013f3dcaefae989618ab06",
+      "size": 252
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file.te",
+      "sha256": "6cefe2edab3ad3a76666a7860ad02549452219e8dd2ea8d5fc8c7fd355d35753",
+      "size": 81
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file_contexts",
+      "sha256": "755d7ef948f4f1582f8b12e9c3c0e31747d5cc70c052a271dc4b4534ce225f5a",
+      "size": 849
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/genfs_contexts",
+      "sha256": "842299c326461e2a878336e05832621185922df8dd12cc3b172e2d3c6441a5e1",
+      "size": 644
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/hal_thermal_default.te",
+      "sha256": "3bd19caa5b8b364d6d027fa7e7895fb4e904285556a87281561d634636c3b644",
+      "size": 813
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-logging.sh.te",
+      "sha256": "b38377b629836fb4b218827a86577f245c700e008ec3166781f79d696de775c8",
+      "size": 381
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/pixel-thermal-control.sh.te",
+      "sha256": "652d80278862e213932dfa08ecb2b7fb820c87d07355442fe5ee2adeee9cc6f7",
+      "size": 589
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property.te",
+      "sha256": "9e7c9001131fc88bddd6faac201bd2ca7a534b569bdb27222d05862ec97388ce",
+      "size": 55
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property_contexts",
+      "sha256": "7e85a2e2653801b14213ac6ae40cbeb3c5ce3e60db2bdde520be114990ee3b71",
+      "size": 76
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/vendor_init.te",
+      "sha256": "88739ab42caab3f4c51f1e2e7c82c51e7fc21a8e546500734056afc57b694382",
+      "size": 159
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "dd751accc40534aa4a2ee83c5cc75974ff8c1041ebc745b6c993672e8d606792",
+      "size": 1408
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "42348f0699c277eca0e8d9ea38bffb145be162a47d7d565119e4e680b2b72902",
+      "size": 5494
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_coral",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-30T06:14:43Z",
+  "vendor": "google"
+}

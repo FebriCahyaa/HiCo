@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jfltexx.git",
+  "codename": "jfltexx",
+  "commit": "221635b6daa1f162b8c18350bd16b15b8c8f616e",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d4dec30dec298c71f577d0042ab5a39a9a9b9900ced64f3c2a8be7ae5a01df53",
+      "size": 733
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "75e630f5c6910cefd512979af0441d0a03207f272751c3196f23b2acf3f0b42e",
+      "size": 950
+    },
+    {
+      "path": "device.mk",
+      "sha256": "98f1b0f936e64f6593adefcd87d67236f7de3923f986dbaf2119ef6bfbc25f59",
+      "size": 1189
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ca55eefbf9a86ae35fd6273b23bc0dd8ca16e0044900900584aeafb485798789",
+      "size": 468
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6650941328f7e58fbbcd46aff1ae44cb29f32a78fa9b765f8976057bf2c9a57a",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "00771f471b41cdf4bf002395e9592df652d624a36da900632f1df5aec3fbd216",
+      "size": 2474
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jfltexx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:13Z",
+  "vendor": "samsung"
+}

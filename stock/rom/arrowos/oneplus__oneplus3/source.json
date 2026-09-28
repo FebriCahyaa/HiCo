@@ -1,0 +1,82 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_oneplus3.git",
+  "codename": "oneplus3",
+  "commit": "10f4c6904fcce58db21931a0c3aa38b45415283b",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ec16e59c9324ce4225bab61909382d947ec3ae3033736579348efd116ec6abe2",
+      "size": 51
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5230e66c3955a9f49ff40af0aad12160b8f270c638ad73bc7591e20ae2049352",
+      "size": 5248
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "444b20acdd1770a758829696278a10b770944a94db85040b5b1be20dd9b82bf4",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "62d49ed7a2961d1f7bf50e754e1550e95c5ae1c42b0fcda0086601d2477f39c6",
+      "size": 7264
+    },
+    {
+      "path": "configs/thermal-engine-vr.conf",
+      "sha256": "3771549c4561cf2505332bd6cc5a58a50dac2805fd740868925eb6dad9126409",
+      "size": 365
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "80d343cf2827999e45b2cb427884ba64f14882f9372dc45c270e6bf99c2b8ec4",
+      "size": 1470
+    },
+    {
+      "path": "device.mk",
+      "sha256": "99980af9a8135a384bd4654ecc908024b0fc83ea92f7f1a32a67274a0012db01",
+      "size": 22746
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6ec4f6afa67115fa76e5a6d332568987db2b52cdb1225ef572218d1dcf80894c",
+      "size": 1954
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d4f0b65294c9e9b1853f3abd0b2635b48f474686638236e6e71136e964eced5d",
+      "size": 45816
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "de701fcf72e1715f8652e993ad6f2a40980861e553f2e7fa86ae68cae837b27f",
+      "size": 44
+    },
+    {
+      "path": "system.prop",
+      "sha256": "11a78aa55e976e115ce42c0b61e84a8d345d39b76765c1ba7c595b1c8d338236",
+      "size": 6170
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "2ac99513c871c3209450a391fbb8134b7b4f7cdc5af6facf50597afdda547516",
+      "size": 950
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e16c04229581528ccf4d54ef418deb327e3fe3e28742876222a20b620220bd54",
+      "size": 8854
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-05-15T18:24:08Z",
+  "vendor": "oneplus"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_ms013g.git",
+  "codename": "ms013g",
+  "commit": "87dab124a8d4d41ab48357937964e4f2439e90e9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fb8ecde2881406ac390495f9fdfcdcd5385ca55999c9311baa89a5c508c62e4e",
+      "size": 715
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "483a37bd6892f972bb5dbfd6ef0a3d3168e0e8a97709f3b1f8cf776df44676dd",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "84b71e9b92be7dd7e4801df2add6bf36dc28c6dbf05a9e6cb1aa7f25cb99affc",
+      "size": 1332
+    },
+    {
+      "path": "device.mk",
+      "sha256": "27234e31fe58f39081606f4a793ab0d04848b4f730e36f714b2f88f40b266796",
+      "size": 1051
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2529af890af9759e8bfdddd6cc3fde61ba4f2efe75680e440aff3693465f46f6",
+      "size": 734
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8ce028084f5dc6f3983cae0c2041ec433cc91a2cc248875c59a8c5f386be65d9",
+      "size": 116
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b4814b184fd4ebe30acb863ee1421c4e3260aacab62a2fa16ba006286781b5fd",
+      "size": 76
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_ms013g",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2020-05-23T15:16:59Z",
+  "vendor": "samsung"
+}

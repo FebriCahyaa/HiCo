@@ -1,0 +1,52 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_nubia_nx511j.git",
+  "codename": "nx511j",
+  "commit": "d4fbf9fecfadae3de9fa3c0cff9bfaffc9945ee2",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bec21f184179cada14e452123bee82b146eeb5acb7d5bc38f0b5fd781a78244d",
+      "size": 3875
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8f875929d57722335a5ebf7a0459c5cd68e96772d437effe86deb073400b2600",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6879e7e74770cba2dfde6c006a5f09d2d2bbb6cf2097839062437f63fdc2e5a6",
+      "size": 804
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0bd6d27adc28444bce16e82b8ed56ee78c73a134865f14dd761928b1c6322661",
+      "size": 4068
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4ff9e5b138e62abe0b1ae9ab9ec81464248fb93804e228b0a4a01fdbf4c762cb",
+      "size": 873
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "46728d7555348329c1ec958a6eb60b9a5fcb36a3ee61bd9058f3952a210fd447",
+      "size": 1711
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9af061455e126bb6934cd7303cda4779785ed549380230c20c9037d98f9a1fd0",
+      "size": 15407
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nubia_nx511j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-09T00:13:34Z",
+  "vendor": "nubia"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_m216.git",
+  "codename": "m216",
+  "commit": "b3530032abcd3357c9fd9389a712d589e56fd68a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f20079605f68b1951822fce5192975cfacc2a8710e49a85eb1e285d83639a555",
+      "size": 1200
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "556d04885cfd360bc1e9b90ebeb0931941d6efb87ecd64b9aae5f2ee3a3c735c",
+      "size": 1490
+    },
+    {
+      "path": "configs/thermal-engine-8916.conf",
+      "sha256": "113394a137935ac030c750f2c7cb6104c4186212abedb882fe8f8effadd4d436",
+      "size": 911
+    },
+    {
+      "path": "device.mk",
+      "sha256": "960900ef759fa3312b1beef788608dd76a5754336ceba5b392998b4033e13f12",
+      "size": 2103
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "49ce4c6ed8d0e5f0ae734563320ffe26e1aa639b970ac25f17aed4c2528fc56c",
+      "size": 1421
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b03945932036aeb413ee0819fde36817aeb417832b4727a0c1be3e45dd6a837c",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6d43cadc2e54ba42f7b055284dace9b36a239b01038e7e54e3798fe96536194a",
+      "size": 11077
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e7c908eb44118c8ed315225c953f7feb75f7ad0784df87a54ee23d45505aedd6",
+      "size": 106
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_m216",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2017-10-20T03:43:07Z",
+  "vendor": "lge"
+}

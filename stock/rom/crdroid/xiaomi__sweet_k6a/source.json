@@ -1,0 +1,92 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sweet_k6a.git",
+  "codename": "sweet_k6a",
+  "commit": "1895cb85eebdc76bd26ea58ce40d81e1ff7714ef",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e6dd38a408c42edf98830e8024cf9239bd88a41166b3a349ca12ee608d64231a",
+      "size": 111
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f9fc38486f0f0b26c607d8153e91c6e6990bf741d48b2ff12952d2b7f48182bb",
+      "size": 5308
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2d75e731cc7fcbcdbadf53a0e053bab6d6d884fb0f6006e7270cb393d01f960f",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0c9074b73d25b421d35ce76979ab0347f98ce38aea2bc874f1a6d6dc4a098998",
+      "size": 6200
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3926a4e3334b26c34d6cc3d55af799bf389007035cf2e071bf4573e9600c7fa6",
+      "size": 16791
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ee509b63b713b63dd10ceee8cdcef4ae94cdc186a9b48a27a253a67c110d6d7",
+      "size": 1942
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "a0b8b2981884cd25fcb5c4583046f27bb48da78148cff6be710bd9ac5dc6ade7",
+      "size": 1395
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "ff017b2e276c924eaf15a281751b5461bd78990c61b9ce1e7629df55b47eeba9",
+      "size": 3412
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "95db6585bb123b1d000147085e92f070165a160aba183a3d26a64d52d84f0209",
+      "size": 1669
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "8a670d395d10abba24db150d07350e0d4ced12b8fbf118ca9e9e30c20d3e6352",
+      "size": 15015
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "37d3ffcc029a8449fce047afb94a3affdf93db0314ccbe55804ce8e70690cec5",
+      "size": 8765
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsActivity.java",
+      "sha256": "d10ee32993b980cc3e9e16a1d45309571aeea93ce1d5baa2099ca3fe06ab8c86",
+      "size": 1590
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "9e26c86955e7031a41c9853171efed812777360f8dfacae4e4e434b65b62c1de",
+      "size": 5067
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "edc39a6ea4d2adb5b0eaf932f4fbc39c97a2002a1f55973e4411e7e4fc779220",
+      "size": 67147
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sweet_k6a",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-01-23T16:31:49Z",
+  "vendor": "xiaomi"
+}

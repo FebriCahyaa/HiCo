@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_grouper.git",
+  "codename": "grouper",
+  "commit": "acb91b20b8d5f033c14655471d689db6d30a9abf",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0255de82694cacaa956f7712d62d8cb0a5c53b0f65d88a63a64315e40ec9aecc",
+      "size": 783
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "852994b0f3f7d8e28427053120f9cfbf2c35b930ef5953a77da196942c74a5f5",
+      "size": 85
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9daf95ef1efa226060694ea9f53ea983b1516f2ae0dc904f0aaf07b3371151be",
+      "size": 1708
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "04da0e8b08aef99508c6775758020369afd46731a8b37fe3990ccdbb42c8ebad",
+      "size": 3240
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "8a73a93a19609b3d4559cec9d4763093a3810bf703bc88a4ea97c91fb209a37c",
+      "size": 5597
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2e2e3b64e6f97211e0b2bddb2a9c41f1c432ffe8357f41bf49ce9ae2badb9565",
+      "size": 1175
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f9f7379a69d63333925c840f91de5c1540b36e69e67fc23231d9fa9bb9841fec",
+      "size": 1015
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "60be012f294de940c7be8623e538ce00ba5d7d33c6e18dae335527f37af543a8",
+      "size": 110
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a42413d41a4bf3ab01ae1b0fcc3f3159e6446e7fb5ff8ed2b62585d563e68a40",
+      "size": 435
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "02536c242ab9242f95a7c0f2b746db4a09be04194ed7b16021f44035f510bdca",
+      "size": 848
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_grouper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:40Z",
+  "vendor": "asus"
+}

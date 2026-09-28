@@ -1,0 +1,61 @@
+# system.prop for dlx
+
+# Audio
+persist.audio.fluence.mode=endfire
+persist.audio.vr.enable=false
+persist.audio.handset.mic=digital
+persist.audio.speaker.location=high
+qcom.hw.aac.encoder=true
+ro.qc.sdk.audio.fluencetype=fluence
+
+# Display
+debug.mdpcomp.maxlayer=3
+ro.hdmi.enable=true
+ro.hwui.text_cache_width=2048
+ro.opengles.version=196608
+ro.sf.lcd_density=480
+
+# GPS
+ro.gps.set_privacy=1
+
+# Media
+mm.enable.smoothstreaming=true
+qcom.hw.aac.encoder=true
+ro.input.noresample=1
+
+# Perf
+ro.vendor.extension_library=/system/vendor/lib/libqc-opt.so
+
+# Radio
+DEVICE_PROVISIONED=1
+mobiledata.interfaces=rmnet0,rmnet1
+persist.eons.enabled=false
+persist.radio.apm_sim_not_pwdn=true
+persist.radio.snapshot_enabled=1
+persist.radio.snapshot_timer=22
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+rild.libargs=-d /dev/smd0
+rild.libpath=/system/lib/libril-qc-qmi-1.so
+ro.baseband.arch = mdm
+ro.cdma.data_retry_config=max_retries=infinite,0,0,60000,120000,480000,900000
+ro.config.combined_signal=true
+ro.config.multimode_cdma=1
+ro.config.svlte1x=true
+ro.gsm.data_retry_config=max_retries=infinite,5000,5000,60000,120000,480000,900000
+ro.ril.set.mtusize=1428
+ro.ril.svdo=true
+ro.ril.telephony.mqanelements=5
+ro.ril.transmitpower=true
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=10
+ro.telephony.get_imsi_from_sim=true
+ro.telephony.ril_class=DLXRIL
+telephony.lteOnCdmaDevice=1

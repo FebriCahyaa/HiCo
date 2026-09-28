@@ -1,0 +1,92 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_beryllium.git",
+  "codename": "beryllium",
+  "commit": "299d5e3e8215026de95c9c34d6ffb45f93b0bf08",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4171be910352523c53d6857f5f841b821763efa1c5bd103ec1022fb263e3ccf1",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1c2e2f7f982770f522bbcbdc5d776910cd73fd622ff670741b0bbdcda043201d",
+      "size": 4408
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e81733dc270e7701cf476f437be35060ba8ef171d8e1cbe8ec31dd9e6524583d",
+      "size": 771
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f8fe6d9ec53a140203f2f0bfd49398df54c1860bf781b5dc5fe739b766c7909a",
+      "size": 4961
+    },
+    {
+      "path": "device.mk",
+      "sha256": "60abc55d62173f1c754571fbb29c70c05a70f9dacf7ce5af39775c1104d6d73a",
+      "size": 17656
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "78a651f5807efc6fdc902731d9540b1a844fdff2383fafe8e001eb42c3e5d22d",
+      "size": 2077
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "26c5bdb710d189688b7c4455a5db202cf7a00f248f0a251c7a7e35ad491841ff",
+      "size": 1451
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "197103c2fce4d7f2e35304e1a0d58274200d0a9558cbbc5a1fe52b48e6f54d34",
+      "size": 3317
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "71a959eaafb6561be20ecdec6b4b0dacb258fd6d9ecc318c5778fcfffb91daee",
+      "size": 14259
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "f9b71c4744130e39abe93d9caa89a1d87e2f981b0c0d83c4167cfa6576fb8ebc",
+      "size": 1606
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "32c5684a27ee9b4b5b8a3921f32f71979845acd74d750277ac51e8520662bfc1",
+      "size": 79358
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4212a1b496ae49e0f473fc4f958d175acedf9812a0498c48ac3b178dc766aeea",
+      "size": 2653
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ff0f7269de6db204a62e105aafd198e80c5ce7e3717aca6c907b736fd13192d1",
+      "size": 6772
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_beryllium",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-01-28T13:21:36Z",
+  "vendor": "xiaomi"
+}

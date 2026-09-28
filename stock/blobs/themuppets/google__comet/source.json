@@ -1,0 +1,59 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_comet.git",
+  "codename": "comet",
+  "commit": "05c3df7617bd3140a38e78c72bd75fab7de5fe30",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "c0a1e487594d2363174c6233f2c76db9bec9035e44705f5a640d42864df78f71",
+      "size": 92615
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "79f9a24df59e6dd4a563268b90f4bf1e2417ff374d430435c2cc069e3b5619e7",
+      "size": 68436
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_backup.json",
+      "sha256": "82cf2c1af3cd8bcad318a16a802ca69511f62e39dc6319d5f5f7aa2ada5b2a84",
+      "size": 12609
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "201381614e21b16c16ec0f0c0c30f1c072eb4beea58167410f71ec9b9bdec8f7",
+      "size": 10272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_lpm.json",
+      "sha256": "5b649e61e07b89ce71bc212c50884cdb9990289b0cb4d7f73185afcb2b20fc27",
+      "size": 5298
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_comet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "comet"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

@@ -1,0 +1,30 @@
+# Point to RIL
+rild.libpath=/system/lib/libmoto_ril.so
+persist.ril.mux.ttydevice=/dev/ttyUSB2
+# Increase # channels to 10 to allow M2M communication
+# Keep 8 for umts
+persist.ril.mux.noofchannels=8
+persist.ril.modem.mode=2
+# Enable ALWAYS_READ_IMSI_FROM_SIM
+persist.ril.features=0x34
+persist.ril.modem.ttydevice=/dev/ttyUSB4
+persist.ril.tcmd.ttydevice=/dev/ttyUSB3
+# Leave default mode to 4 (CDMA) but need it to be Global (7) for LTE/CDMA
+ro.telephony.default_network=0
+ro.telephony.call_ring.multiple=false
+ro.ril.ntmodeglobal=true
+ro.telephony.ril.v3=signalstrength,skipbrokendatacall,writeaidonly
+
+# The OpenGL ES API level that is natively supported by this device.
+# This is a 16.16 fixed point number
+ro.opengles.version=131072
+ro.opengles.surface.rgb565=true
+
+# UA profile
+ro.mot.hw.uaprof=http://uaprof.motorola.com/phoneconfig/motomz601/Profile/motomz601.rdf
+
+# BP flex version
+ro.build.bp.config.version=UCAEVEUB1B8EU03F.0R
+
+# Google use the system property to control if allow device to be unlock without SIM
+keyguard.no_require_sim=true

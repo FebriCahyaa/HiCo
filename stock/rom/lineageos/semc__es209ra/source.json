@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_es209ra.git",
+  "codename": "es209ra",
+  "commit": "69979b9b728333436fb9a980df4fc62acb0473a9",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4ce062e403141f32d5d55d2d4578117bc518911bcb33506ea8d561d4a9a78fc5",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dd46170107f6a85ef7599d1d7a6e9b3f787bae82b7017fece8196a3da3791e9a",
+      "size": 1062
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "24adef6dfa1966d05e9e5c6c7d0e52f9524e2c24637d48160a44d2f4a1952140",
+      "size": 2004
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1573e1994c13433e11ba9c6d70a359834159991d46c10afef3b16e2271590f5c",
+      "size": 332
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ca3365890ed5310dc1b319e077d5f0a754352b9800b5a713dcfa5f322c6efb30",
+      "size": 1312
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_es209ra",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:14Z",
+  "vendor": "semc"
+}

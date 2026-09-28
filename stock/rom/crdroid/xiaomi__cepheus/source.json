@@ -1,0 +1,72 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_cepheus.git",
+  "codename": "cepheus",
+  "commit": "d43425d684d68cd48d464135198143a3c370c37b",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "58ba29bf70c184f2160c5866ce77fe358221cda6a9491948caf45deb7db11749",
+      "size": 555
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c7419773e2b4688bf48c3ee6d06d7e88ba071086121ba65460be40de84b68a0e",
+      "size": 764
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1177a59795dc4009f959a8f73e479574c7aa56e991535c9df3d5d838a6abefed",
+      "size": 7493
+    },
+    {
+      "path": "device.mk",
+      "sha256": "09fc337363e0aae67e27f4d272eaf4287c22b4630e78c4b6384f66ee804d66f1",
+      "size": 23139
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "671c165c9b0a7a725607e390375ac64c13ab15737f56cb9af7d7e85f4f374eb1",
+      "size": 2068
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f5ac33718659bd7dc8f7ed68647323c0dbae1c94d9d0a9c98894987522df555e",
+      "size": 49347
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "9dd5a73c8bd446561257b50d7e80a7ffffdc8e3f4474ea44fe968ce25886628b",
+      "size": 491
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "1c9eee40bf000bddfef4f1a3c4f6f01d0d9debe5e2312f5deb0879d41b1154ce",
+      "size": 380
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "fb2d121bc1cd0af4701b94fb0e988de4611a7695450e025dcbf4cc84674f41e3",
+      "size": 1798
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b4510873a1c618601078d93dfeb9a7085bfc992022006280fb9c98b0ae4485a6",
+      "size": 277
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2cfa7bbdd9d511d3060fb634effdacd9a7f666cad62cfab2b1e0e07af24c150a",
+      "size": 9369
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_cepheus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-01-03T08:29:36Z",
+  "vendor": "xiaomi"
+}

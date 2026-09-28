@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_gauguin.git",
+  "codename": "gauguin",
+  "commit": "7802d0f22bc6743c4b437a21c00ceff4fbb5957b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d256130b535210d520ffd0bd74cb5eda806c72077f20feb3c5e965197e781972",
+      "size": 955
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "18da104d0bbbc7cfdc9fb02279699ca32773d2cfba60de6da56fdf8bccd69563",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "67824487651babd8625af0d4a3fa94aba4dbc869f86975ee282d4162f8782499",
+      "size": 5674
+    },
+    {
+      "path": "device.mk",
+      "sha256": "acdf95253d38eda80de8bdfde446e862f276e53c9c9336ab698f0d5c3992b548",
+      "size": 17334
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7ec9b6e25f3ffd746eaa279326e668d12178efef4fcc1aac23f961ee72be17b8",
+      "size": 3534
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "dd711ed1e8614f972ca449cce4d76658d35f8526b435d0607a4c6848c4fde823",
+      "size": 197
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8264821312210ea1a695fc0154345ca458e432f975fd6614cb72b8fa1f20ba22",
+      "size": 45464
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "503b533f82c4f7c3fdfed515c3731cfe490babb1f2b81f9735cdd2a1ec39628f",
+      "size": 1626
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5b612b7ca2c9aced4245e40b61fba453d2b8ce2b81297a988e81114c9d256253",
+      "size": 490
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_gauguin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T19:10:46Z",
+  "vendor": "xiaomi"
+}

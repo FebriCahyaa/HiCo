@@ -1,0 +1,57 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_leeco_s2.git",
+  "codename": "s2",
+  "commit": "803d54a5402c266ce4cd2b10af8bc78451508c41",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "34a79c17c19a9f0f5205b989bf0e24669725848af377f8f7505ec8c51579253b",
+      "size": 4839
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "80bf8a3437aa3a194d4dfe9bf39f16ef42fb05ee28e4499d2944e6b115994744",
+      "size": 7070
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33708de1aa227bceef3b86185b012c6f1feab2b7ce523185fdb6efbe98328f13",
+      "size": 7781
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cd98e5d1f61169ba16ca1ad2a6d86b1b66854a40cb937ecc57cb130f7e69bf52",
+      "size": 15824
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "01318f438887439ac8a41665f34bdbc1ed1850ded29b1ba20118dfdcde77c468",
+      "size": 1535
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d9b5df04a08aa04d4ae51892b58bc4d33bae51d389d135bfaccc5528c9d4184b",
+      "size": 15265
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e20f4564dcb1238a0a54aeef3832049c98ff25dff72c891598ae2fbc4d9be8d4",
+      "size": 4900
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3e5c507d9f25e84eebcc6a328e100bdac534ccd5ab04c1719f7872d5d414a620",
+      "size": 33
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_leeco_s2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-09-14T16:42:23Z",
+  "vendor": "leeco"
+}

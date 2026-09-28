@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_evert.git",
+  "codename": "evert",
+  "commit": "00667f7b91400e16f7f8cb66a524a6f9d6da7054",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "939ef2dc824bdbdfd18ce2e7dd079305a1151c561f9919dbdca8d5555ee4eb32",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2613ae9fafc154c5a2e1520d85d83b8f24895c79b1110843d42383b9ed07219e",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "20f353502b4d2c9956852571196289814187e9070202f784dacfd67329826c63",
+      "size": 1730
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "de30b724eb70329345a46c9e8c34c37e8b032feaf3acf1c06e31502d008d4ebf",
+      "size": 2393
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2a75e66fc7df405b3431ff4835241005b28d22be8eea2e34b55775a83b956f00",
+      "size": 4219
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d736ed90c759df943ff1212dab54386dcfca788d516dc5b1ee0ec48fa27d1b24",
+      "size": 2385
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1d2d29fe56c63d88fe55652b8d130f33e2e16fd114371d1b33428f3f7e5d62d",
+      "size": 21720
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e1a16f647ad3250446905a77d6c2953e26a1c9089ada90a56734f7a53e159940",
+      "size": 1553
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_evert",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:51:14Z",
+  "vendor": "motorola"
+}

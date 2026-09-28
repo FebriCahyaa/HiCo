@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_e975.git",
+  "codename": "e975",
+  "commit": "9d64b8f704c535f67b6ddf811dd85b0edf9a24a7",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "030d05c2db2433821b69185064b676a52fa8641d37bb381e931a3697d743b8eb",
+      "size": 1384
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1a93c0efdcd1dfea253c7d32bfc295b069e3c69f886974f3b9b368a38abcd6e0",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cafe12de6efaf6f5cc71ff7442ccdfe10268ee52f1ae3a5875eb0dfcaca5e4af",
+      "size": 3600
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ee74ad43408fffadb11db36729f205d3631273add74f9464bb9cba752cd8d48c",
+      "size": 8903
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "28c0e0265585b705622ff7a38fc05db9db6e716da4b3f08af95a8d1195375af4",
+      "size": 329
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_e975",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:58:08Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,70 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_mt6768-common.git",
+  "codename": "mt6768-common",
+  "commit": "8e7ec44fdec81181fcd916f1799478318a2d89ad",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "6bf35751fd3380c45014581d202b7fde19a6c7b36720d12a84934348956b6931",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "d4c1838831029192c21434c649ce524f24fe985e3f6881bbeb15380cd7919dfe",
+      "size": 560
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "964316626f65eaed63d9968dd07125cbf62ff08c235ec5f3c503244d63a5f28f",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "6350b368cb4689da6b129710e2adbb00809985bd8f6cfd5b01d8ad8f553dc4a3",
+      "size": 1440
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "ffae86d9d0fcabab49b0f1c56a1bd37e321aeaae28481810be6c3b9aae7f8769",
+      "size": 3456
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtube.conf",
+      "sha256": "7ba247603a87618d03410fa543871e971c93d509c5e18d047fe3a44253b32ee1",
+      "size": 1664
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "93ccbf63475ce98d7093d9ef6140e31515c787e55149a352638efce4c3dd3a99",
+      "size": 498
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_xiaomi_mt6768-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "lancelot",
+    "merlinx"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_hydrogen.git",
+  "codename": "hydrogen",
+  "commit": "842c99c9f862050c90c61472fcbb5158759dc7b6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "49966f52a943b5a9752e68b8ed44bf3f2396752ab205a843172ff9becc7b7a8d",
+      "size": 1064
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6d8ff3239378cd9b7a6b14ad69d302db026699b553d8f1b03464874991230298",
+      "size": 647
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b4d7faec96646fcdc1d49df899c2abf9c086124e6b5b608b22545d2fd7a09183",
+      "size": 1351
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2e50952e0befd1614b0fef1d61b201f9de0bebf2cce291e887b94516f4a15959",
+      "size": 2275
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "986cd88c2d2fb10266906c9ae0cff8ed35e012b17aa6103a037aac7257aea413",
+      "size": 837
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5228bfce2c9ec643f64b7f037bc9372ad3d391872b5083490c214ac423664709",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ad0591e8b5b621762446433ed37b0ef74b124aef704e4f7e164e3ccc666c186a",
+      "size": 15162
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "ad186fadcdfac155b4ba80318e235bbfebf64a87077cfa5d12dd023287ff2bfe",
+      "size": 114
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2dc772a00e8afa9a529a76811af1cef2051e80046f6401b38080c34a7e0735e5",
+      "size": 505
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_hydrogen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:23:53Z",
+  "vendor": "xiaomi"
+}

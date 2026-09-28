@@ -1,0 +1,47 @@
+{
+  "branch": "cm-13.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_yukon.git",
+  "codename": "yukon",
+  "commit": "51fcbb80f2964582081a36eb564d751924ea0f23",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5d65097e24426c459b4c8da0fc17e5ad0fa780cf07537c61303ead33f5e13d4f",
+      "size": 958
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e544473a29e55f6263fcd40267ed800e94a7919c79e29aa3e2fe0ea2eb1b4543",
+      "size": 4157
+    },
+    {
+      "path": "device.mk",
+      "sha256": "892a79eb739d26a8ef710e5f85800c03c81262c2e92bb0bbb0c129b6a39d1263",
+      "size": 8314
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4a12137b276ec748bc66c4ed8f75204f7cd5cad7ee9287815945f589853c8ac7",
+      "size": 1514
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9a1127e2b7d2fc34fde0dde42ccda4e28da87f76d288030677f96f3691690b91",
+      "size": 3578
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c0b19279c8209883bdf6266141dce4cefedef851e9245f34c67437506c899248",
+      "size": 1738
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_yukon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-07-24T18:53:43Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_beryllium.git",
+  "codename": "beryllium",
+  "commit": "9fb6c90a9f72275c7b889854c6fd4b267090d6e4",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "876d87fd52713b2460fe6a86104da9d97a687804d561a82a59b4d2208efe0b67",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "96decd1e66cb01a6b8027948597da71e443ce0bbc85de94e5ff16dc018c29e32",
+      "size": 818
+    },
+    {
+      "path": "device.mk",
+      "sha256": "270fcd334343b1a9e36994038f3cb7dc6c130ac4838b89d846110ce4ad490f5f",
+      "size": 3172
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "16402cd1d1308f071dc30d7e50a4ff6faa8d3365652d257d451fff28b8353c35",
+      "size": 1440
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "53c8da3b7a3a61d8ab8d20197438103dc6c3625a675ebbbc1f0a1996fb2bcd6d",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e0715d3d2889a1325da784d66ac2290e9cc566c546445b40f4a8e155b8794505",
+      "size": 11726
+    },
+    {
+      "path": "system.prop",
+      "sha256": "51ec34e148f8fc1e800b142459a0625bd532406cfdae75cc6b7a71653ff558da",
+      "size": 89
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ad198cfac0208833bd6aa12d0c4b66b2411c55cacfd0f9df5d924d4380af8c37",
+      "size": 305
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_beryllium",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-08T18:58:47Z",
+  "vendor": "xiaomi"
+}

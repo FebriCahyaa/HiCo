@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_vermeer.git",
+  "codename": "vermeer",
+  "commit": "3c1131521fbcda2c556d14efc2cb57f3f4e52859",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "62d6fa46065b3161e11392db1c3b4b5bf6f28b776365ba0792af85a2c9488fb4",
+      "size": 303
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8e3647c6d97b7655d1e0cb1994338f431604de2ed95c03e71fc8a13e12acd794",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "249d25c690fe00110143224d9221496443ad2182516211cf713f1b696fe606ad",
+      "size": 946
+    },
+    {
+      "path": "device.mk",
+      "sha256": "702bc128e20f6de3038f1ba07e9fa434813066d3a0571e6c986d5aaf4c06dda6",
+      "size": 1688
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d983899a4e555c7aec5815ff5f8440a12d56d5ba5ff3b9c7688268f64b1cdf5b",
+      "size": 4388
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3544a38ffde296dca47f514f870b19d2761839124057b4fd8a53af9760bc2570",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "01a28d1076dac3b961a6c7576986f14dec7890da1631c50ad71d2f0cda6952fc",
+      "size": 73756
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vermeer",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-24T16:58:53Z",
+  "vendor": "xiaomi"
+}

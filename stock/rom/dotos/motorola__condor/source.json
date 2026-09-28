@@ -1,0 +1,57 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_condor.git",
+  "codename": "condor",
+  "commit": "0835288e90a712032d286f9be5f63db09f96f913",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "316ccadc563a1f5fcfc20674abb71dcd3d4cfcf67a6a7edd7dda2253a96e741e",
+      "size": 29
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "81f49ec573eaf527d0f010f9ed6493cbdc49340eac9888da2f0f2b61e72738b1",
+      "size": 1161
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fe08ce2ff315674a7e6a996ac2c754887dbf4450395d123c4bc72d49fa833b45",
+      "size": 1500
+    },
+    {
+      "path": "device.mk",
+      "sha256": "15d70e6e4495b3f4332af2c7a021c228eb0a4fcadc307e015d65b2179898fc9a",
+      "size": 1620
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "902fc856b29c020d82a8c5dee759c0dddca1a18b2ff8abd2f116979c2463c21c",
+      "size": 787
+    },
+    {
+      "path": "prebuilt/system/etc/thermal-engine-8610.conf",
+      "sha256": "636cf656d36396335ea83d08265ee231644e042ae5b408c2a11c62dc1242e925",
+      "size": 554
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f36f10743ec18867b35880edaa9143ba5ad31297b892f786614d322344b0279e",
+      "size": 1204
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "29bafaeac5be54ff185662ac11a3b951fec9702aa8276542e0b33feb319258ee",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_condor",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-16T18:04:13Z",
+  "vendor": "motorola"
+}

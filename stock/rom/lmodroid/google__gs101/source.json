@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_gs101.git",
+  "codename": "gs101",
+  "commit": "8f99481f9b8532b8c5aa2b561d627d8211be530d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "91ff79f0c35bb0b1396246781e5f6be640581554c898230dd9f27dc676a3ff51",
+      "size": 1434
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "a0b27217dd4b8299a7af6f706097f1e2ae89e8d73dd916718b18e8549ffd6723",
+      "size": 14597
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "d9d0b74280a710b59d7b013af8785e2b90c4440ff755b27cbffb634ac7d1bc73",
+      "size": 1064
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "72b9a7da3f098bde37bf8a8ab74cde483fbf6392f8961f5ffea023ed3935f8fa",
+      "size": 1934
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "35402fc936329949fc54dddc023a9c749c4369219bcda8b7100fc719ddc9fd67",
+      "size": 850
+    },
+    {
+      "path": "device.mk",
+      "sha256": "63ce949a34cdc518e81142424423d81fdfcbd6c55588a5fc0fd6cd17f72a47c1",
+      "size": 44349
+    },
+    {
+      "path": "sepolicy/whitechapel/vendor/google/hal_thermal_default.te",
+      "sha256": "d85ca3945b1bd5e52f144dbfab5b3f0d03a5947a04fd3237935e05b207b9b747",
+      "size": 117
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_gs101",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:40:43Z",
+  "vendor": "google"
+}

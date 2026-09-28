@@ -1,0 +1,35 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_amlogic_ne-common.git",
+  "codename": "ne-common",
+  "commit": "0a83253a84376a532cfb2c26552ced5ded99c7bd",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/thermal.rc",
+      "sha256": "5f1e8f2b8c5b6a7141e5452ddb76ff2eb8e4466e10950e180ff4288686764c22",
+      "size": 127
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "4e5709fe75062de0f0a2254a5be7942e2dc162245a484bc5602415b09230cf7b",
+      "size": 562
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/thermal.xml",
+      "sha256": "03f75a627ad428efa2f63155651187ac90c9522bc9ffca2f702843b933c58bf9",
+      "size": 203
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_amlogic_ne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "ohm",
+    "oppen"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "amlogic"
+}

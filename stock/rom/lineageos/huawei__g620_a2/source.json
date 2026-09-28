@@ -1,0 +1,57 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_g620_a2.git",
+  "codename": "g620_a2",
+  "commit": "0c767ba81aeb2c81f80ad44d7fec0d54f181f339",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "06263fa2e3a9d3bf2180fc89dfc04f5faf176472c922ee986023b2eb83be06b6",
+      "size": 5663
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8b813f3bf81b89d09a574f4a76dc747bc62b3fca04776e226db4ab00898f80f1",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d8ce57191387dc8868bbb28bdd71dd902c43724c537229b625869ee67b944d8e",
+      "size": 4483
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "55c534597036d5f9828cf8213af89008524cbfeb61c2afff2527de3310b7d8de",
+      "size": 393
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6749958d8dbc968941e18643746ddb83ce238bc4c7d5abfe900f729b11431185",
+      "size": 6590
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ed3fdbf32eeec824bdf8133c200f825d264c03a42e0e6105435452770b85e7db",
+      "size": 1649
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "46e7f5802f22dcd5ff76cc37090def4198947f28634bad659bc97297d6737873",
+      "size": 120
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2f6cb4fadb2523d0f59ef17bb41c9f25fbaae6b988bba85b2f4e7b842a5b7e8c",
+      "size": 1620
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_g620_a2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:44Z",
+  "vendor": "huawei"
+}

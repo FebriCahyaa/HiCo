@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_lt03lte.git",
+  "codename": "lt03lte",
+  "commit": "c072d0e88f8eca2af6a05a885d4951e2005ba8a8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "99ca26c8073ccd813dfc341cc44d9657df5b2ee96825a48d25aa80c6cfab8399",
+      "size": 716
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bf8d01645e2f76afc970dfe6593d75293b22a666fe514aeef9d3b7aa4a872203",
+      "size": 3615
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "size": 727
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dc368ddc9f1b0184ee218d080db1a7caf2ef79d68d7cc3d2b8bb3c6f2315776c",
+      "size": 4829
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e3bc75055b84f1b9eb72000d882123e16190c578456506d13425be6eba969e5b",
+      "size": 1431
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8e3bfa3389195b26288d9f0d08520803a35c9d646a455798e640b3c4aea27aff",
+      "size": 441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0889b57dc21e1312f0fe9ec0153758d4666d8d69037f007ca6c80edab42a7f08",
+      "size": 7763
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b380ba663cf0628e7bce5403aee6f81e0ae5e75a300434042b4f2f75f19e3a91",
+      "size": 1502
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_lt03lte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:19:45Z",
+  "vendor": "samsung"
+}

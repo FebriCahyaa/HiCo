@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_gpad83-common.git",
+  "codename": "gpad83",
+  "commit": "56e0e948c16c6cc4c21111f1a05156f85244ee7c",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "763c674e4a4538c5ee10f9b736c63764734abaf3f522b7e052e59ca8a41d8803",
+      "size": 741
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "160476fd7866197aac911fcc69c34c494fd41eded8d807d7573b410e8c1cd2e8",
+      "size": 3930
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f6ae99ab3992bc2ac09ac4237fd84a15a2dee5bd69cc43942302077206cf6f81",
+      "size": 191
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "2663729d65bc4ccd7dd7da30bbd7210a230db857ee1c4444d71499151ed0968e",
+      "size": 235
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_gpad83-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:21:17Z",
+  "vendor": "lge"
+}

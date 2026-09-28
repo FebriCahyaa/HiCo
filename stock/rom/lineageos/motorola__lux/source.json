@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_lux.git",
+  "codename": "lux",
+  "commit": "ecc3b145128acdf1b793594755e743bda484bd9f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "34fe443a901c5e55a3536c335a745d85bc2a716a547312be616c2eaa8de91180",
+      "size": 718
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7b3696578b2162bf444fe9f95cffec99dbd7ccceb005e0a23e9cd507cfa9192c",
+      "size": 701
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6b0bb6f09bc6ffe0fcf48810187910ad3afce548d49cd550ca176d8c178e1405",
+      "size": 1780
+    },
+    {
+      "path": "configs/thermal-engine-lux.conf",
+      "sha256": "3a1e242869dde13708d85a456d3f79946cfcddd70026018de43f3955a84e0c53",
+      "size": 4250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "486898bb8c3f04c0070ed0767705358ae5c2171fdd526b05473844d6e94cac6e",
+      "size": 3397
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "05c20ca62dbbe809e5373fe0c62dc459d8654bdcd461ef692d4d035346c82063",
+      "size": 307
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5e3da7d4ae41dfc98132fa052e891e13981278b0046b6a05c0ecf38228e2c903",
+      "size": 126
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f09565a0d14cd32be9d221e2a6ce7d2ccd29d9d4e515e9061438c5f9999ed211",
+      "size": 4649
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_lux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:33Z",
+  "vendor": "motorola"
+}

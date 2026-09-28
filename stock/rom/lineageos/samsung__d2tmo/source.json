@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_d2tmo.git",
+  "codename": "d2tmo",
+  "commit": "2ca847c3728f1137b2133821eee9a6eb4918d55a",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2e69b436314cacb52694535b4dee925e24b7161ea47c1141739a016af7894dee",
+      "size": 1095
+    },
+    {
+      "path": "device.mk",
+      "sha256": "39e612e005da8e5bcfd9c1e16b24bcc50c8bed4eb0f129ad86ec53938ff7bef2",
+      "size": 896
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "241f47fbf21bb132fae9ef78fef78ea23431b7df51996f7f700ec84848433a67",
+      "size": 814
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "64b88f628a741d88fdddc7b9a7aba0ec1a448c782e52df69b8a40148319549c4",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f748854c99f817dfe3e007cc44910bcbd6b5e92f8900447ac22a30f79ff437e",
+      "size": 66
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1b94f434dc8b1bc109abd19eece1b1fe29d4a5575273df6d70f7a4d12202e4fe",
+      "size": 137
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_d2tmo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:20Z",
+  "vendor": "samsung"
+}

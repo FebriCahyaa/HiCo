@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_desirec.git",
+  "codename": "desirec",
+  "commit": "9177a0b032c990b751a848f45cd059b331593a44",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f53e601785b6bd8d14e753e49222e5e61a0b8d209fc69a55cd61f2e44147a83e",
+      "size": 991
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "944a2d959228bafe7cb6da7c32c879ef7eebd21cef6836b24c0fc703e95266f9",
+      "size": 1098
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "934ddb315b7ea2d36d0e577bc9aa62737e991917c0de0812a264e77717701c4a",
+      "size": 3596
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "afd113df9169a971d8b56e7e77c9a327b4f156265274a2d8e1cc1866096fd7fa",
+      "size": 3135
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "10cfd65ddb446c96a4102dab1fe2d68903226b98900419a04010bf01a47eb828",
+      "size": 881
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_desirec",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:31Z",
+  "vendor": "htc"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_lge_h930.git",
+  "codename": "h930",
+  "commit": "6cae52622f075201b8dc6207d6a5b8d267b969d2",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "39b8c3a25662514d09da3fb0df2ad0b0c417d18db124dc1f880bd791ad17c90a",
+      "size": 1133
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b1c533da4e5e114e3f1c74244b1f0162dafe2bd85b6a0a8352fff3830851f901",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "61dbecbd0d041faab503447fa5b0c8673dcd7b92542bc3864dcfae872065a0a3",
+      "size": 894
+    },
+    {
+      "path": "device.mk",
+      "sha256": "83cc9c0ccd08851c025d382d0295494c64139c633147b4af5509ace6d0b8402b",
+      "size": 1004
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ab1ebbb0ae415b6af4c85ceadd6bed6d4dba17ef01692fbd66cc8edf81a091fa",
+      "size": 726
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "259995d4b6891806e457d1707fc46e9b26284439a83144a1b7856ba0202f996e",
+      "size": 1818
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "056390192a3468beb9a7493de035f20129029df58768c4457ce4e8aaab712d65",
+      "size": 39
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_h930",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-06-14T09:54:56Z",
+  "vendor": "lge"
+}

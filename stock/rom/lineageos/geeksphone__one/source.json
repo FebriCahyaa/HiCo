@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_geeksphone_one.git",
+  "codename": "one",
+  "commit": "9f7cc30be52b30c577a2ede9cf7baba0afd5b12c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "20a4562ef4e36c02549213a03e07ad4c761c9404e1924fed3f53ce0367d4c0ad",
+      "size": 1051
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7a21fcfbbb8db0219fb4c0cb3b34be4fd9846d408ac7fcbd976e530cad3feb63",
+      "size": 1655
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f4a7e172527700b441f16c186f4280a2eb2d4e7a80b48a3fde0c99d7a01ec3d7",
+      "size": 1260
+    },
+    {
+      "path": "system.prop",
+      "sha256": "374ced6bbf1c7485d2e735ff5e00a1f64f0b07a8473c99da429efe3653b8edd7",
+      "size": 699
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e6b09ab3518fe0a5ee07f773580af863ed6dc9f924dac197277fade71f8b8f7e",
+      "size": 881
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_geeksphone_one",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:52:06Z",
+  "vendor": "geeksphone"
+}

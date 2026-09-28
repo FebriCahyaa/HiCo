@@ -1,0 +1,87 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_joan-common.git",
+  "codename": "joan",
+  "commit": "e7500bce2f2776627af733d053cb5b0cc1ca3c29",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "01986023005417a99215c32511c35b8e176c1221ce9d6e364d32674d2f276447",
+      "size": 5023
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6e7c96594e962bf59ab8b5de59ef34e8e9bccec34bd6c6c904f0188851c44120",
+      "size": 6506
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a62124406ebc1a897fc58fcb7ec1188ef0592a45e0d76943157f1419f4ab30c",
+      "size": 1891
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "58307cd9881b7aef607c73585119f0057161daec2e96bfc6b3050650f15c717f",
+      "size": 409
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4871af669fa82e52f1ff218f1d8c44dd25baf9dec03b8e5c7b88295181237bcd",
+      "size": 41865
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "842ccf5dc9b12c503ac02783d3c435c62bbc14a3c67949330c2b53a6f2f8bd94",
+      "size": 237
+    },
+    {
+      "path": "sepolicy/vendor/thermalserviced.te",
+      "sha256": "189036d4e53f2acb5d9b8b2424c55a10e3e7427e7ea3671423d3c18cc8f2c39b",
+      "size": 53
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "19a187f345137f26aae5d99614b10450db95c4b096570558b350e68efa121d9a",
+      "size": 1112
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "d46ee1c33530dd6b1497234c98b010d1008f33b267652f52d7cba174e4eca510",
+      "size": 5560
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "dc964ac21dd8e8ca576358b6912b95b729b3977d35561671dcae74b1a71ac72e",
+      "size": 2559
+    },
+    {
+      "path": "thermal/android.hardware.thermal@1.1-service.joan.rc",
+      "sha256": "0599dd9300d626e71972d5af17ac9b4396930b3fb535fa8087ee6cb7ddaecfdc",
+      "size": 128
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "eb4e18a81792fa73c976a8c7f959c81bccf71ac619d4ede55e2c94792f74be60",
+      "size": 1839
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "dca8ea2bea65611956b71ca95f6936c40d762e7eacc83f888c0e9133467e4fd0",
+      "size": 9286
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "96940ff8d81262fb8bc39be40abef226ed31d2b55deecaa17b702bfe76cad482",
+      "size": 3701
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_joan-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-06-11T08:09:03Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_tucana.git",
+  "codename": "tucana",
+  "commit": "a5be646f6280a1ecbb1cf562f3b96e7acb1209a1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d326447c57533e9b078df87f6458647daa761a68789a9acc4c1f56dc1c4eeddb",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0de1a8ce611b2aa764ee77b3d39b654ab47676b0030d3e37ad62a53b5f39275c",
+      "size": 1284
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e018618774057cd9228dfd9b8309f19abd5d67c740543d39e96b858ab22adc8f",
+      "size": 3705
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "14b49799f492d1f0295f3a94f5d530bfde86e3c5dc495b1ecb5cc6125da831ae",
+      "size": 3199
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8407d0232c285b3405b981d4d4c896942a822e18017327a40384685fe0907576",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ddfc9643a8a784eed08a0450d861700cfa8cfe7d3f89fb00a302a5ee793be98a",
+      "size": 16870
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6647cb10e546880d55b0f5304e8be1e93d9facd5e9ef261361fd8789f44d34ac",
+      "size": 380
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_tucana",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T05:07:19Z",
+  "vendor": "xiaomi"
+}

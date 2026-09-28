@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_bathena.git",
+  "codename": "bathena",
+  "commit": "2595e576ba4c73df0568c175bcc1b1af54732f82",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8139c1d7b11b2694d9df1afd4170dbb3d9aacca7d4ae3335096de7135787db17",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d8ff15634ede40ffaf2b82c8fa62feb74633e999a4d58bac2c9c18c182bb650a",
+      "size": 2442
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c7b8805595f861c2e0acd922d1432823b61d49d21a47814140533628a852278f",
+      "size": 3491
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7b84d83e12432f6c0d15a66e06e22b63ab03547c5773d1af008cdaa2db84919d",
+      "size": 2282
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "89e8cfdb73b69b2e81b11397403083348ddf8634deabbdd21b929f4ff207afcf",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e144504043b7c91589dd48fc8d2ce43ceb2098bdf63210153dfc8a9a6819c3eb",
+      "size": 11364
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3520b95ef2711e4111a20fb0cb1e06cdf7d14b2450c3d36fb99c1520b1c4dab2",
+      "size": 511
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_bathena",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:44:40Z",
+  "vendor": "motorola"
+}

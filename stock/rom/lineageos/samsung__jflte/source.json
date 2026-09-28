@@ -1,0 +1,57 @@
+{
+  "branch": "cm-11.0-old",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jflte.git",
+  "codename": "jflte",
+  "commit": "cdf9aa9f2966076dcce18afba92009cd9a723b22",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6dcf7778adc2c270e066dd4711f4f8dcab0c9e7f0969e217bb219a8b0b1794c1",
+      "size": 2152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f4dc0559ca123dc21a47a19b3a92d75518a8d7f25ec15d0184291d0cb42f6a55",
+      "size": 6186
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "10f45e99b11f50358c1bce9d368520442bab81ee483a4dc8f69c7dd8ce17fa13",
+      "size": 1939
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7ada086b5c58fc6ff883f63cad9154d350a02ba2cf7a5d459bae070a8a9a937a",
+      "size": 7995
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "98147cc7899d96c48a02c6fade596b92dc5568d0d75d1758450ab2e0668b5712",
+      "size": 1202
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a7076e9e64734498fadf6186befd2a57db4046496db4f16599bf2bbc33bf9c02",
+      "size": 5430
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b37ff199032eb433c479cab81a8f0e2131db339ebe51a543df3cc576677dfd89",
+      "size": 1190
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "2804e8311fa72fbff57bf4ed38ef9d49ebba70aced33eeb196da455352a02e03",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jflte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:12:16Z",
+  "vendor": "samsung"
+}

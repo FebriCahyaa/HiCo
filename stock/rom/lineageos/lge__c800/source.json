@@ -1,0 +1,47 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_c800.git",
+  "codename": "c800",
+  "commit": "69cf1802b751ccea46c54386786deb30a220c018",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "79451ccee804dff7cb38ee76097de451a3d59b6999c4d347f42692b5818dadf1",
+      "size": 785
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c9feb0ed1a92219db7e6fbf18febdbea03b8cb254b3aadf112c51ffd752b7632",
+      "size": 4496
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ff71d3dcd4b3e9f4ecc76b79f7b5a42f1a3a41b40efb75e21b399e19868b2a10",
+      "size": 10639
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0b9197afa30bc3948f70ec1441084d2e1217d31cc4c2ba049ccaf56980d12570",
+      "size": 17261
+    },
+    {
+      "path": "system.prop",
+      "sha256": "97ade8230d88b80cd910b9f9e0404e26b3e7e95d4a451e6861d15e8d918a7266",
+      "size": 1167
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1ebe4dc5cad2213790214eaf8e413cef477d94a66568bcb9787dbea8c4517b37",
+      "size": 843
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_c800",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:57:30Z",
+  "vendor": "lge"
+}

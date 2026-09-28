@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_jem.git",
+  "codename": "jem",
+  "commit": "5ba51ce1569d437984ae01e647044a412fa2627c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2217aa4cd11954d131fb9f423c4ba82d83fea3378fe9243f79cedc1fd8c3604e",
+      "size": 775
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "50f7d8a5b6d3238be084ca12350a64863fdb4415e33636f14f7a2564f08b5d2e",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ff2031d658f2b3eb6e5b88b36276298ff2e3d074f788785afd3e1ab418c6c1aa",
+      "size": 2296
+    },
+    {
+      "path": "device.mk",
+      "sha256": "046bf36d25fd2666de6f92884c3feff06dc8fb727967e4c55ce9b176f8ad632f",
+      "size": 3013
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ec4d37dd76cf805c51598378dfcdbfe03be8918ef566c3500b4257d78ef1e250",
+      "size": 458
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "24f8b94c7b9e9e975c7955cfbea91feafa8709c373daa2e3f7da55f289bc69d5",
+      "size": 6121
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1e1be9f90d63e767f9cce56a8ec2a3fc6fffc1125f47c98e7107631b9043e81d",
+      "size": 668
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_jem",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:48Z",
+  "vendor": "amazon"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_google_wahoo.git",
+  "codename": "wahoo",
+  "commit": "931f09316b9d95171e7d572ec7d0f295cc43fb75",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "983f7dc36a686063998f586f9af4a4d0549a074b511f0be7e0c5ff326969c67c",
+      "size": 147
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b08b9327c2d9ba608a3ec2af3589655774f6427c44be9bae00ea603327cc9b89",
+      "size": 3733
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9039eaf8b20f937acff0d22d3b27f1cadcafb8bac7de24662f1e5499d9876a89",
+      "size": 6371
+    },
+    {
+      "path": "device.mk",
+      "sha256": "71e3cb7fe5234da7b610c6b464a4eebadfb9788f99cb61f7aa9c9d7a07dcc0ac",
+      "size": 33941
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "c3010bfac9c746c20eb4792ddad1a5c04cf7f403b2b52794161a7f49cdc73af2",
+      "size": 1448
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9f5c28449237b0ddcbefae38078de6b613c3396f1cd2ce2d31407e715e36bd4d",
+      "size": 2630
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_wahoo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-09-21T11:00:57Z",
+  "vendor": "google"
+}

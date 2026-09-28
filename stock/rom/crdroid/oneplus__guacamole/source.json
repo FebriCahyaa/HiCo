@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_guacamole.git",
+  "codename": "guacamole",
+  "commit": "06f1ca002734cf86eca1d97f894b6e841a1e2089",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d74ca77b12bc20a7adb218fce2b4a68db0b97cca5f4a42ec2505eb92ec5b7b22",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9dd1644067d610f5dacfcf25a6fd3a3b3502ca02a51ede3304037afe8292c703",
+      "size": 1000
+    },
+    {
+      "path": "device.mk",
+      "sha256": "afdbb02a87cb014bf97ce756cd195a8b6df60f5779fb3e7a0ec8da134b28cb90",
+      "size": 1388
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fae08065eb3a5ee148c8488de24d67f996cb78c8c87707f6fdda8b8988e42d9d",
+      "size": 901
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3fe72b70e18929e2bec97fd88f27914d5fb23612c7a04456163d42790f707eaf",
+      "size": 24310
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8e6d8485294c85994bd2084374807c320f034c0b65d4c21b450ae137915fe6a3",
+      "size": 911
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_guacamole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-11T16:53:25Z",
+  "vendor": "oneplus"
+}

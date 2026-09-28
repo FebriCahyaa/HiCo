@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_debx.git",
+  "codename": "debx",
+  "commit": "149bf5ae3c57654a06e3e88d339269b229c35186",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4ed26c58c43f64192f3ac09e2ac338350dcd48a57e8b4636aa7dec0d9bedb148",
+      "size": 35
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "af3653a9b4d2c464aab3c0e7e23692128b9410a888f6963a02e8866c448c953f",
+      "size": 504
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b2914896ec7b2e213f88766908d8698843b0d72885f63f2fbd444b15973f2f52",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8e7d3dc8f2a6d4b8ef9b34a6ebfbd5ebcf3491e7ddb6dfa8ba4098dd652ae448",
+      "size": 873
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6a4ae4e464fe4449c4eb9dd58d0be9081d3b668f5b022f66a185cde13c779811",
+      "size": 1060
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e8789b3952098d6043b2606d84d3fec360303b5fb61be42eadff9d302e92c250",
+      "size": 1328
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "34a6884d076b2998174bfc23eda1c53f4172da00518491618a6c61282df0c4a8",
+      "size": 92
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a91f610f03d9b267d9272eb7ff040ff60747f4a40ebf315ef9b2c034b959c0c4",
+      "size": 386
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a235330f11d494f2eb96b457dd6b97a35fe03cf37ec8436f2dd720479dfd6ffd",
+      "size": 236
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_debx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-08-02T22:16:36Z",
+  "vendor": "asus"
+}

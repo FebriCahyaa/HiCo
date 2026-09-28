@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_castor.git",
+  "codename": "castor",
+  "commit": "464420e2b93e463b4870de80e6aafd629a5b0efa",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6b95924f23eaa9da081a32b62b7f2e5a09461389ac500e34845a52a649a4dc74",
+      "size": 19
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1ceae2f2a801f42640afef423f19f0a197ce032c869d3e0d047351b801197289",
+      "size": 718
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "41521e2a695559ed68f29f679246a009178cdc16c0cb3a8de44ece501b5ffcfc",
+      "size": 760
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a631e8e2c52a72cb1d8c367e04be6ee1b01de644c652de6e5c04dc49619a743a",
+      "size": 965
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "69c5e51d1caefea897f2e73f0018441608995678a169c1899deeccd92d9ce65d",
+      "size": 523
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "438fcd9f29bc984b42cc60050a421f91968bf2c681a9925fef7cac4de49a097e",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c6f8cfb84b6c340f3a19122fdac1d6b3d54d2700a976c546be36a3ec8616bd91",
+      "size": 8657
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_castor",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:10Z",
+  "vendor": "sony"
+}

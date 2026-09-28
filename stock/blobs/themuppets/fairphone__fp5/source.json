@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_fairphone_FP5.git",
+  "codename": "fp5",
+  "commit": "ff119ef90ec7064019439063f8ac9ac18d85338f",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
+      "size": 595
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "e4087e158d24593b5bbcf213d2d816f7f8dc70e71093c1292f4dbd3fb852bb46",
+      "size": 350
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_fairphone_FP5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "fp5"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "fairphone"
+}

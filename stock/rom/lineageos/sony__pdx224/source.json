@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_pdx224.git",
+  "codename": "pdx224",
+  "commit": "318dd83df2909b115b937291e023838632799ed1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a0c940932c4f8e4c37f322ac0543580a9998b735fecc451c86f57e51c211768e",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "142a04b87f92b63896e64791af1552fe69509a0364d98915ba8a16d8b14e4988",
+      "size": 487
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cd17f933d5b7b5855b02fa4f0ec3e8cdbb5abfb7eda1349330c0b2f8f4f12f23",
+      "size": 747
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "481459f56fa36a17b2656a89b197c7c66f31ca786015cff02b78b9d4f5033534",
+      "size": 2725
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "eca22a3ee43e31218dac17a9201b6d26cd26f0815560d51090148c6edf84099a",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f2a0b8ec43f3963af65d6b0a9155cb6f20370314f7fc5b80efcb84801c08c051",
+      "size": 23007
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9ab10542d45cece48a91bbe2fe55c8f59d082c8fe6e73155286810e4670765eb",
+      "size": 53
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_pdx224",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-16T06:56:03Z",
+  "vendor": "sony"
+}

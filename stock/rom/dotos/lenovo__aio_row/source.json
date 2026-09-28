@@ -1,0 +1,57 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_lenovo_aio_row.git",
+  "codename": "aio_row",
+  "commit": "0920faf5128a472cf3995144debde64c1e70d37d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "50c7571cba037f6c2a54723db62c4fe54bc416839469145ca13350cdecb86da7",
+      "size": 708
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ded6a5006f041d53279f986e1225a2398e9271c897776ffd105f5911402c6f03",
+      "size": 1360
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0dc51617aa0f4d4b7e68a82d7ec35e51d3eb621211e511297632d56fb23d02e7",
+      "size": 1911
+    },
+    {
+      "path": "sepolicy/thermal.te",
+      "sha256": "8d7a194c1e3e47bc6203e5531a39cda5212b8ac25bf7bffe0c42a7afc292c215",
+      "size": 1230
+    },
+    {
+      "path": "sepolicy/thermal_manager.te",
+      "sha256": "eaf7dcb78adabd9bf8dc0b91157beca8aa6c525e295886b59b6f239659ecd209",
+      "size": 1999
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "3275181af2f5993c767b2aedb6fe31737f7739c970b10ba15dc4785b5da990b0",
+      "size": 1042
+    },
+    {
+      "path": "sepolicy/thermalloadalgod.te",
+      "sha256": "eb4e60c1a7a572baae6a126c0e6a406657af1a6fb54e461a51202a2ebc0d4055",
+      "size": 1649
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7aa550b2192ce7b5bab170fa7e423b6fdbc14fd73ef236bf09e0993ed8bd6804",
+      "size": 2493
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_aio_row",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-30T08:23:03Z",
+  "vendor": "lenovo"
+}

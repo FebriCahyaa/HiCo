@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lge_caymanslm.git",
+  "codename": "caymanslm",
+  "commit": "453abb8f02deaab967eff626e3fd9bec998b8cb2",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7c9084597b8cfe0a8817475824f1ba05fe690fc78fa538820181bdd59acb00a6",
+      "size": 663
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "450eab9ac97d65ab6d1dbffb26d58ebec3835668618dadc10f89b5c6bcd6a260",
+      "size": 1608
+    },
+    {
+      "path": "device.mk",
+      "sha256": "28e3b28442b3d31dd5ecb852a54591f9fc956027d5661bfc9ee194fddc8676fb",
+      "size": 3042
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "391646d0d5d51e69060643f9cfee7be22b7727244370bb2905cb39235d6e7c54",
+      "size": 976
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3bcae7dd0ad5d81077202c273e2455ea10d9c3d1a42307867ae5e3769016d976",
+      "size": 16070
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "fbee8ee6ca80e447786e376fddcad53b8a579de12227cd62811aea78d85b9b22",
+      "size": 111
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5f96db3b1be1914f484ef0ac9ff86af779e894a7ede52443720d49a53e11a6fa",
+      "size": 105
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "16f1710f70a242800db9925045710ad04984819764e6b6bcf17f97defb63cb9b",
+      "size": 327
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lge_caymanslm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-03T03:08:10Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,15 @@
+#
+# system.prop for tenderloin
+#
+
+ro.cwm.forbid_format=/boot
+
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=45
+
+com.qc.hardware=true
+debug.mdpcomp.maxlayer=3
+debug.hwc.dynThreshold=1.9
+debug.sf.hw=1
+debug.egl.hw=1
+debug.composition.type=dyn

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_amlogic_oppen.git",
+  "codename": "oppen",
+  "commit": "369a7ce13711c0b07ded41a0ea93a9948811e49e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1214665d93040af3ef3aebd796d1d114bcbba2ca6ba51f8c43e93fbe0878f2b7",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a267372ac6470a3a316c48ed3ef85ba18edc6325e15e1b2fcb30f1356b5a6de",
+      "size": 1246
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4cf0b8fab6592a6a8f257adf0ba98f227261e15e83794900208e80018d5f3eda",
+      "size": 1295
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "cd89288a9265bd97cdfb4469835bafc49fde530bc73900c0db5a777261746917",
+      "size": 1437
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "74055a2b6ccd80ef94cba7f7d050ed955db6b14633d3bfde1a5004b7f6e26651",
+      "size": 509
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8f21d518753668a18ce65ad804f3115fc9aa455ba0d1f5b10acbdf079c810ecf",
+      "size": 2095
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4a0f559a2f26e20994765056a5dde5a0fc8dac96e37094d7381cacc1696745d2",
+      "size": 480
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amlogic_oppen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-24T03:50:13Z",
+  "vendor": "amlogic"
+}

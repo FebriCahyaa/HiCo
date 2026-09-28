@@ -1,0 +1,57 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_m52xq.git",
+  "codename": "m52xq",
+  "commit": "e0a5f6cccc5bac0fc48e264e251b73bdbf94467f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c359d3874924ffaee6a0a617fc3b324fbd0967670184ae607ec340d33164613b",
+      "size": 301
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "846045a47f744d416b22daa5783ae046d4ece6a142fe2dcd02acfd2a1ce11192",
+      "size": 754
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cc16d09e567dc32abab78e9febe9e6ecf4a468476df567b9650c7799aee7461f",
+      "size": 1411
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d2829e0654de64e17765917dea45f6f3072b9c6b4818845270c7e6219a46f7fe",
+      "size": 1411
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e6f7d6f41671de10b7c506fc1adedd735321a270ee3f5dd4050895be3bd18e6c",
+      "size": 1219
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "de9f05610448b16ee173fc4b02eb868fa7202b9a151f3f149172d58e0feb59ad",
+      "size": 3879
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6a0af59d84151840a27786242d768f5d4ad315c9d84850808cf8d3b9ba270aee",
+      "size": 17156
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6c31b2dde22689cffe63e4cd93f0ac641116255db32d6ddc5fad1ffeeb31e684",
+      "size": 225
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_m52xq",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-02-03T10:46:23Z",
+  "vendor": "samsung"
+}

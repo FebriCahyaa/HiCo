@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_v480.git",
+  "codename": "v480",
+  "commit": "5be656a142688049654ccb3739b43e4cecdd4b0a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0349fda086750e80885b12684ec8fee98d2bde64aeff50fbe1f5cac9a1e99148",
+      "size": 911
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "1f2fd6e868f94907f3483fbeb2528fa190e1ba92a1bfa263ce7571717dbcdfea",
+      "size": 736
+    },
+    {
+      "path": "device.mk",
+      "sha256": "005dec2bf8ee6bcaae6451801a9c09111a3e7995b62c9deb50f603038a266c61",
+      "size": 1134
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cbe100531b4c92d0dccfc788bcd4bd09c579ba47ff378bd38e9e48f759466011",
+      "size": 136
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4c3a9b373ce879f64f7d8cd4be86f9461e7e7b742bb7d7af5597431e039d50df",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b3fe3a798da9f14a46eebde16c6eb85abd3a1e6678a931463216f1a51e5fd075",
+      "size": 276
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7b3cf68c841384080a461db4e12620ac7d4f4de1e4dd3cc6d335749d612ae71a",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_v480",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:00:03Z",
+  "vendor": "lge"
+}

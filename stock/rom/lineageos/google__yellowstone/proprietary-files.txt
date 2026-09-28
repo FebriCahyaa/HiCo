@@ -1,0 +1,145 @@
+# Audio
+vendor/lib/hw/audio.primary.tegra.so|626e35306b001bbb2a67a44abe63a2d1a30a6f2c
+vendor/lib/libim501.so|65c228a4344d62e5184f03ad015d52af7ecab5d3
+vendor/lib/libnvaudiofx.so|e451486f04e222ec6befaa48f818851df25b08de
+vendor/lib/libnvvisualizer.so|e29fab130db68939087535cb00a5a22deb053068
+vendor/lib/libnvoice.so|d5bd167a6c58611ae3e03eb6464eaea3510fb0e4
+
+# Camera
+vendor/lib/libopencv24_tegra.so|b3cf0dcecb5dcbb09b831b58892a825fe2c80bd4
+vendor/lib/libnvcamerautils.so|d0db12dfc858297decc57afdbdd975a80ff7c36d
+vendor/lib/libnvcamlog.so
+vendor/lib/libtbb.so|82c5963d11f4a939139b86fcd21f799eb7202ab2
+
+# GPS (Broadcom/MTK)
+vendor/lib/hw/gps.brcm.so|e07962c14276c4e699938cbece532d4bce2d55d7
+vendor/bin/glgps_nvidiaTegra2android|15c853be84202969f2fb172ba5c8cf230c659615
+vendor/bin/gps_select.sh|b5563e2b35ee2a89d20bd1ef325d877721ba82dd
+
+# Graphics
+vendor/lib/egl/libEGL_tegra.so|0c0650479f98562e79c5f6bbd5e296e6cd0675f5
+vendor/lib/egl/libGLESv1_CM_tegra.so
+vendor/lib/egl/libGLESv2_tegra.so
+vendor/lib/hw/gralloc.tegra.so
+vendor/lib/hw/hwcomposer.tegra.so|9dfc6887dafea42c8d6ea0d5b44046bd9008d227
+vendor/lib/hw/memtrack.tegra.so
+vendor/lib/hw/vulkan.tegra.so|e80ff3d6d428a440127bef1e51c9c9e55dfe6c5e
+vendor/lib/libcuda.so|d3a81ed218322186ba5955508f86b48b2cc3a3df
+vendor/lib/libglcore.so|0fba593ef515d0ab8cc24ab0fd5027de1dab5119
+vendor/lib/libnvavp.so
+vendor/lib/libnvblit.so
+vendor/lib/libnvcpl.so
+vendor/lib/libnvddk_2d_v2.so
+vendor/lib/libnvddk_vic.so
+vendor/lib/libnvglsi.so
+vendor/lib/libnvgr.so
+vendor/lib/libnvhwc_service.so
+vendor/lib/libnvrmapi_tegra.so
+vendor/lib/libnvrm_gpu.so
+vendor/lib/libnvrm_graphics.so
+vendor/lib/libnvrm.so
+vendor/lib/libnvRSCompiler.so
+vendor/lib/libnvRSDriver.so
+vendor/lib/libnvtnr.so
+vendor/lib/libnvtvmr.so
+vendor/lib/libnvvicsi_v3.so
+vendor/lib/libnvwsi.so
+vendor/lib/libw.so|15c457399d016fba0b3c3b05f5de895479bb5971
+
+# Graphics firmware
+etc/firmware/tegra12x/nvhost_tsec.fw
+vendor/firmware/gk20a/NETB_img.bin
+vendor/firmware/gk20a/fecs.bin
+vendor/firmware/gk20a/gpccs.bin
+vendor/firmware/gk20a/gpmu_ucode.bin
+vendor/firmware/nvavp_aacdec_ucode.bin
+vendor/firmware/nvavp_aud_ucode.bin
+vendor/firmware/nvavp_mp3dec_ucode.bin
+vendor/firmware/nvavp_os_0ff00000.bin
+vendor/firmware/nvavp_os_8ff00000.bin
+vendor/firmware/nvavp_os_eff00000.bin
+vendor/firmware/nvavp_os_f7e00000.bin
+vendor/firmware/nvavp_vid_ucode_alt.bin
+vendor/firmware/tegra12x/nvhost_msenc031.fw
+vendor/firmware/tegra12x/vic03_ucode.bin
+
+# HDCP
+etc/hdcpsrm/hdcp1x.srm
+etc/hdcpsrm/hdcp2x.srm
+etc/hdcpsrm/hdcp2xtest.srm
+
+# Keystore
+#vendor/lib/hw/keystore.tegra.so
+
+# Media
+vendor/lib/libnvmm.so
+vendor/lib/libnvmm_audio.so
+vendor/lib/libnvmm_camera_v3.so|121a75953898fdde089966f1780a45d467736576
+vendor/lib/libnvmm_contentpipe.so
+vendor/lib/libnvmm_msaudio.so
+vendor/lib/libnvmm_parser.so
+vendor/lib/libnvmm_utils.so
+vendor/lib/libnvmm_writer.so
+vendor/lib/libnvmmlite.so
+vendor/lib/libnvmmlite_audio.so
+vendor/lib/libnvmmlite_image.so
+vendor/lib/libnvmmlite_utils.so
+vendor/lib/libnvmmlite_video.so|1891b9fa7e3c7ff2fa39274919957725a8919da7
+vendor/lib/libnvodm_imager.so
+vendor/lib/libnvomx.so
+vendor/lib/libnvomxadaptor.so
+vendor/lib/libnvomxilclient.so
+vendor/lib/libnvparser.so
+vendor/lib/libphs.so
+
+# NVOS
+-vendor/lib/libnvos.so
+
+# RIL (Icera)
+vendor/bin/crash-check-arm
+vendor/bin/downloader
+vendor/bin/icera_log_serial_arm
+vendor/bin/icera-crashlogs
+vendor/bin/icera-feedback
+vendor/bin/icera-loader
+vendor/bin/icera-switcherd
+vendor/bin/modemnic
+vendor/lib/libril-icera.so
+
+# Trusted Little Kernel
+vendor/bin/hdcp_test
+vendor/bin/tlk_daemon
+vendor/bin/tsechdcp_test 
+vendor/lib/libnvcap.so
+vendor/lib/libnvcapclk.so
+vendor/lib/libnvhdcp.so
+vendor/lib/libnvhrcv.so
+vendor/lib/libnvtestresults.so
+vendor/lib/libnvtsecmpeg2ts.so 
+vendor/lib/libstagefright_hdcp.so
+vendor/lib/libtlk_secure_hdcp_up.so 
+vendor/lib/libtsechdcp.so
+vendor/lib/libtsec_wrapper.so
+
+# Unified Scaling Service
+vendor/bin/ussrd
+vendor/lib/libaffinitydaemon.so
+vendor/lib/libgov_boot.so
+vendor/lib/libgov_camera.so
+vendor/lib/libgov_force.so
+vendor/lib/libgov_generic.so
+vendor/lib/libgov_gpucompute.so
+vendor/lib/libgov_graphics.so
+vendor/lib/libgov_il.so
+vendor/lib/libgov_spincircle.so
+vendor/lib/libgov_tbc.so
+vendor/lib/libgov_ui.so
+vendor/lib/libussrd.so
+
+# USB firmware
+etc/firmware/tegra12x_xusb_firmware
+
+# Widevine
+vendor/lib/libwvm.so
+vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/mediadrm/libwvdrmengine.so

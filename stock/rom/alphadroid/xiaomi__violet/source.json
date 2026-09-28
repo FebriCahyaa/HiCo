@@ -1,0 +1,77 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_violet.git",
+  "codename": "violet",
+  "commit": "9e09979fe4423a4a22884572dae4a42556ea0988",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cdbc50ea9ccba69adb8251c4afe67bbf74a53797b8438badf6dbc827d237a2bd",
+      "size": 622
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a2e35909390cabcf514e35c0b5410e4dfb8e4f40e63e4562f47d4799d7d10021",
+      "size": 1564
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8578ca3b9dc4711c3fc4e70443249bd0c8332754217f2bda99fc8f1ab7398c48",
+      "size": 322
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "df93c7c7498d15af42542bff3aa391597f859ce33881ec71c81ce9548082f244",
+      "size": 8334
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6ee4d89206c07d458a1e3305f4cf4b39fa9712d359c47eea00986d46afdeefbb",
+      "size": 19276
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "70d9b33f32776d35d8490d03943f0159ecd956b20d31bc0b267793d598022f5f",
+      "size": 2446
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "da6501889d6950eb66cb58f5838ba04d9363d0a3a6dc69477e63019dbb3886f0",
+      "size": 74230
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "7ec60f595d5cbd73d2041e5dbd855d1509697e34768e82070cd70daeb4540cca",
+      "size": 883
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "81e948141139d0d189e8fc3f98eef196e80a07104ade9af8d73be0d738b092e5",
+      "size": 871
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ae0221d05216d881809232065e09ece920efa94081ba278ca401c902eb8f7455",
+      "size": 9089
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3de387371c74c1f92003bccc146eb19fcb428bfb3bdd6a87a83ac5b6570f8028",
+      "size": 864
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_violet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-08-27T12:59:30Z",
+  "vendor": "xiaomi"
+}

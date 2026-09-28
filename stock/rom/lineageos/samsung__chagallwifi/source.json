@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_chagallwifi.git",
+  "codename": "chagallwifi",
+  "commit": "00ed7b4067165724f1362e9baa7a3a693f11dd05",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5df767b6cb0e1124013e6b85c669ffd1a01056cca4c1d67c8237a055f5b443c3",
+      "size": 721
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "41d85c565ecc4b2314ff52e8d6a17421f6ea88c4d9a391e6b45ee8fef56ecee5",
+      "size": 1915
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e023ec82421ced6713bb6d305e68d53b89a7dd8bedca0d9d314d1ddbfee66cac",
+      "size": 2305
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "22e0c27a738f5cae25319db9e08c779ecfd91854e890bf85701c39bc97180fb7",
+      "size": 1161
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c79e8661b2a199866bbd7a38b0dcf459ae4aba32997d2b132029e9489f9ecf85",
+      "size": 140
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dd71a427660a94956866b42461497f33b90c591774689421fd31303d81cfdeaf",
+      "size": 495
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ee8f68dab349bfa58192fb58cddfe84c565634f2376c434d02e3811f25f73f8f",
+      "size": 46
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_chagallwifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-11-20T04:04:36Z",
+  "vendor": "samsung"
+}

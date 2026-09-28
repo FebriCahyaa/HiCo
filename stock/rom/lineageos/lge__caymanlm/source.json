@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_caymanlm.git",
+  "codename": "caymanlm",
+  "commit": "30a04c4e6c3f720278584d8a3509efe9f7a7198f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2e46a6b8b2cbae5b5fb87a8130dbad275d39ea173684d4c01429de3ce54e600b",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "059d1b600a079d18959e3284d86e153de4e424166263aad292808e50088c42d4",
+      "size": 489
+    },
+    {
+      "path": "device.mk",
+      "sha256": "48154963ce8d8ed6544c77b24a1cf240d10f6129dbf93bc4f34b43d7fec76009",
+      "size": 1424
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "233dc682349c695077fd561c808f465eb449a8e8c6a89439911e20962dbfd5f0",
+      "size": 1307
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d38b928a1fce075077159290958241ffdf9ea5500dd67efb772b4cbeb3ce3537",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a66ecb30cfacaa32ea8cbe849323c2b5d53572c2c6da5616e9299f8bc2c7afa5",
+      "size": 30430
+    },
+    {
+      "path": "system.prop",
+      "sha256": "90a8843bf292d12a6e13b0bacdf22d9da2a7c3735968c3134aad32761ff2233e",
+      "size": 71
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b043a146d714331d363703a8b2b5ab45dff1c8cdd1bf9a6d7e2a4e4d7127787e",
+      "size": 359
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_caymanlm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-26T21:47:56Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,102 @@
+{
+  "branch": "alpha-15.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_beryl.git",
+  "codename": "beryl",
+  "commit": "a9b878ee446cce2db0825e3d32002ac8ed355700",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f3ae5bcf8e8c1bf94373741674bdfa94e54fbd18567b966cb466e22fa7733636",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a0f952a46ec3ef6d584340b00f6b73874ad436d4945baa9a2e1995a34546860a",
+      "size": 19728
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "95dd519a280f34826650c584e64549601bab58b2ba1311b8f8a86a300380c1d1",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "082214bbefe8ae1e5da083b14b2c7ba79caa76771298320f7c8a8d7ef270e168",
+      "size": 7032
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "8e23c8e35a28459c01ca68ce31df6f32b99db055384158625e0dfc65b4b58a93",
+      "size": 1176
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1fc8d30536b7fa0348edec968594dee418d930fc7e2f173832ad0fe7b3845ca9",
+      "size": 16418
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d12098493ccf9bf43e6dac73734aafdae27583967cc5f690c5b8ca7099ff209d",
+      "size": 7031
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "0263caa60832522de0daabda88816f96697dad5ded19ee38d0e42aa7928d8a0f",
+      "size": 4142
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "bad91a388b6241156388c59141ad8f7c38262bf61c92a6844bef7d49ac812223",
+      "size": 1455
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "00af09cc9c9235e85e567499113421ebc860bceaa55ff590f8e91dfe20e8c038",
+      "size": 14990
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "97b4cc596c9eeaea707ab3467ac8b7946ada65bac26c5d776891c379b5cc7022",
+      "size": 5599
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "87afef0550aafd80a05d284b2f4b093f0c0241bcd5388222aaab7c6c3264f97d",
+      "size": 10568
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "efea258ebab722699806dc2ca52f79bd8cffa06b9a347becf2079e9d6c715da9",
+      "size": 166952
+    },
+    {
+      "path": "rootdir/etc/init/init.mi_thermald.rc",
+      "sha256": "516c2e477712b846b1d8c639685f2c552d5e0ca98c0470eeab326714a8e88474",
+      "size": 667
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "cf01e6d628e4d6172ef67d83b5b99017207c7c13c6695560c20d9b359d22ef46",
+      "size": 1038
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4f776f9d43d8dd27d52f506e729ff8fed1ae6fbdffb7e4a8572f1ed34c11e57a",
+      "size": 1050
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3812fa93dc5d2dfd25421d0858b19e603b590331b2dfdd55dc41930361e4f6dd",
+      "size": 8762
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_beryl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-12-16T17:53:53Z",
+  "vendor": "xiaomi"
+}

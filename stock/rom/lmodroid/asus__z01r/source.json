@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_asus_Z01R.git",
+  "codename": "z01r",
+  "commit": "a3992baeebb1ed1d1e3a05113c10deea664c5810",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "48ba8ba0c345331c2b841c0dfa4d4fe57ea2a1f02e5ef5d1c585430c1d898487",
+      "size": 858
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a85b360323b5f569465111bc719b099951546bb25e24332edec78061465ccc38",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "49b1007440ad7f9c450096bdf4392da712d21319a708c57401c7bc0f0e66b6b7",
+      "size": 5425
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f7b20ed919ec34b76831e0fdbcca63d78ff027b1bc55b437c812822dc35f034a",
+      "size": 22073
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c3645cd2a95cac5f304eb584194f5a83a1c8412726661804587318cdf98fadbd",
+      "size": 2788
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "825aa2d066f6c921a7c6771a92202012ddc603618587ac218d72d57f8bc8579a",
+      "size": 54310
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "88ca25b5b7ca5bf325eb67fd0d63f2f9563e8c2643747a6543e0ce467b2d3cd8",
+      "size": 404
+    },
+    {
+      "path": "system.prop",
+      "sha256": "26011125aeea5105751dee62e7cff783a1c03e7e1c35a1618f25072daedfa5f5",
+      "size": 1933
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b46081e7fc8bc62d7c445bae1bb997afb9bc89deb376ca7525daa98eacbe2660",
+      "size": 6607
+    }
+  ],
+  "kind": "device",
+  "repo": "device_asus_Z01R",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:08:14Z",
+  "vendor": "asus"
+}

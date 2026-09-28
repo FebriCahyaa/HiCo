@@ -1,0 +1,77 @@
+{
+  "branch": "9.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_oneplus3.git",
+  "codename": "oneplus3",
+  "commit": "a3a440c391d80ee1c117c6b4a2eebb99030540b8",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "58e4ecbef2ccc15f4e505b549b6688b06d41d21884340fa2b80ce3136e0578a8",
+      "size": 5232
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "95bf0ae0e704dedccb423319f08423505e8ddf6a3be10c016fd04f7df50b8582",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "746cc34c303b63cd7540589903852c42a3d16c9b27c8481f3e8ab034fcd57019",
+      "size": 7466
+    },
+    {
+      "path": "configs/thermal-engine-vr.conf",
+      "sha256": "3771549c4561cf2505332bd6cc5a58a50dac2805fd740868925eb6dad9126409",
+      "size": 365
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "80d343cf2827999e45b2cb427884ba64f14882f9372dc45c270e6bf99c2b8ec4",
+      "size": 1470
+    },
+    {
+      "path": "device.mk",
+      "sha256": "736c2fb54cf2d566b10fc173b921a9e6b8500beb58735f2d714805df9bf58f35",
+      "size": 21087
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d14f40bbc867f3fcff70a6f15095e8dbd35739be96b6745e5bfaff5517821031",
+      "size": 1995
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8687bc6e61c1f856362e81dccc64b0f8deb4b13d3b256d1b052f99dd4c5143cb",
+      "size": 205
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "91203b0d33f76600bb0740aeb8ff09b21465c5d3595e02ed720184f724dcaf81",
+      "size": 35690
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0c366a5dcc9252113e0e9dfc40aeefeee42462bab74ca90993e4947970708d34",
+      "size": 6209
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "2ac99513c871c3209450a391fbb8134b7b4f7cdc5af6facf50597afdda547516",
+      "size": 950
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e16c04229581528ccf4d54ef418deb327e3fe3e28742876222a20b620220bd54",
+      "size": 8854
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-06-26T13:10:30Z",
+  "vendor": "oneplus"
+}

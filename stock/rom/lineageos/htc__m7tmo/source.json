@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_m7tmo.git",
+  "codename": "m7tmo",
+  "commit": "061e9ba5a1c6f30c7881b9d3bf48d933ae223df1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8cee159dd1c3f20de1ffb9facfbe1e45edce901cf33ab159d7069096bdd16867",
+      "size": 2536
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a151b9b70886c055d314b7ee7f2db58e00cec301ca68b1c67acc4e1859c0212b",
+      "size": 922
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8b7fb0a8ffab2b4982157749cbf4ad726acf9a28cbb7925ff6be0de8e9539f95",
+      "size": 92
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0218a0807a356c368b9c5710866b10516e34d3e95d74a57a38bde0d42b113f00",
+      "size": 208
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "18fea17eaf3c7890bd7c99051ca6c37e2c8352f721e9903c5dd6e9b929a708da",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_m7tmo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:54Z",
+  "vendor": "htc"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "pie",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_suzu.git",
+  "codename": "suzu",
+  "commit": "eb069ef7ceb650748feb8d769eb2b64bcfc5846a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5d4d9696c566b86b882640c46c37b490e7ee2b0feb9f1abf877379ea3fb3cb58",
+      "size": 696
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a30c065efdc83c65f96fc461a71846d1ff63dd8d4bdb59d7c40c45663b2bf036",
+      "size": 1484
+    },
+    {
+      "path": "device.mk",
+      "sha256": "59462b1a22b767998962f607c98338d4df38377c9f73f2dd4f6c82fbdc48e541",
+      "size": 4241
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b04ae90bf9cad350e4385416cc1c26a1c8fb76d5a743610d3cad22dc0d6dbee7",
+      "size": 930
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_suzu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:41:13Z",
+  "vendor": "sony"
+}

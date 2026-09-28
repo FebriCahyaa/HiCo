@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gta4xlswifi.git",
+  "codename": "gta4xlswifi",
+  "commit": "d258e685e6a885b9b4e8684f3c009115444318e1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "051acf1b15b60451dda3194d2fbf4a5ab8d40641a1110488e8018a4501b03add",
+      "size": 785
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f8c68e3828f2815ac49fafc6a04ec95151d81bbeb98b9e3a1a45102e3acf993a",
+      "size": 964
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dac19c2600f3190bc3d7e0ff5d88d09ddab05033633b7f7b3e2d9c16e806509a",
+      "size": 968
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "eca60a618b105d6ca5df4429fea364cc060fdf7e238978b098edd236db8a6874",
+      "size": 1026
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "76a2607af552bd07ace81ca7b1d3f858a499b3d7ddc57913cc0064268ca242a4",
+      "size": 134
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8bdf16c6d3033abf1f867c2d2a0ff4222661dfd0c34c332445b4dd5458ac97cd",
+      "size": 2095
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bc2fd61a9c15a2f2ac7092f9dc5c41b7c63d75b670964fc03ffa26beca41f0a6",
+      "size": 27
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gta4xlswifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-22T05:51:30Z",
+  "vendor": "samsung"
+}

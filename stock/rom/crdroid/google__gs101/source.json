@@ -1,0 +1,67 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_gs101.git",
+  "codename": "gs101",
+  "commit": "55b5609bf89ea4ceab5bcc0bb0349d40c16c8c50",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "88af858cd8a85a3b68f4600ee80f1c193b16fd0dd1de3afa9aa0e41046fca58c",
+      "size": 1202
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "08026764376495d9aace0dbfa606e90ba9b16b922b0d88ca9e2af0fbcc9e25d1",
+      "size": 8860
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "703fa6fd705c556c8b2e1ffd4328076129ef61c26ee3a7493d1f224ebb3b6ff8",
+      "size": 110
+    },
+    {
+      "path": "sepolicy/system_ext/private/connectivity_thermal_power_manager.te",
+      "sha256": "116ee752aae1c0cea4a4f3fb752f1cdc6e2a232e7b9d9d3f9b58618792bdfa9c",
+      "size": 519
+    },
+    {
+      "path": "sepolicy/vendor/dump_thermal.te",
+      "sha256": "6fc5c51b1a2055cd9be16a785d0782ee1310e1e4bac7ca47122dd9e04dddbc10",
+      "size": 208
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "24258595a753b70abd0dfe6e42878d2dedd5c0087267e85029d0dbc6fcbc829c",
+      "size": 807
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "a689360b150aae79fbe5f2aef9223c777f2583d6222de3bd3e27b30da249e17a",
+      "size": 158
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "70fa05b0e4925a4891ccdb879c51e821f143e8f2b0d768802fc4908123a09640",
+      "size": 577
+    },
+    {
+      "path": "sepolicy/vendor/pixel-thermal-control.sh.te",
+      "sha256": "33402b7dae79fe4a57c1b572327ea97cdda7388b71c12d34cdb85fe418cadb5b",
+      "size": 161
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "89d29cfda6359b4c4537bf88103324ca8964706945175df37191d9cbcbd4c346",
+      "size": 4835
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_gs101",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-06-30T18:50:39Z",
+  "vendor": "google"
+}

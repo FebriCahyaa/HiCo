@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_messi.git",
+  "codename": "messi",
+  "commit": "5d5c172e1f95df49e83d63d59b0be8d07023e99c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9588959b3c9a953dcc0cf83795cfa0b27686c6756a9862441ae9ec3b4145b9f0",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c7d66f6142f48bc2a844cb840b4265bd95ddcd24b3c01f7353175b6a7c80410d",
+      "size": 655
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e57dcaa0f8147322b1f03a889ab7fdc7af9b3fb750c0bc7427404d4312f59538",
+      "size": 1839
+    },
+    {
+      "path": "device.mk",
+      "sha256": "89800ffca92a41511de4a912177ae657e69e562bd9269ca4e38c812ef59377e3",
+      "size": 5869
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "5c9815fa99c36474e4ae025e6b03cc2751c82172d892a0d36738727c64637b6a",
+      "size": 4497
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f62da33a4842580e968a42fca6cd97466e11c6d4bd9663f16460df627508091",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "602d061e9ffaf4d93376b15df0fb29cdb830346bf093a3857cbfa2f3caad90d0",
+      "size": 21213
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6e9c80ad77215357fcbe0c7be797b8b0185f5d80b9cb4dd4b3010bc5544abbe5",
+      "size": 1750
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_messi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-08-28T17:22:01Z",
+  "vendor": "motorola"
+}

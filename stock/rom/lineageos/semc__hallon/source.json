@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_hallon.git",
+  "codename": "hallon",
+  "commit": "01f1839c5ad58d2dbe352d42f51d3ee62dc8f29c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ade81a5ed774a9c837414202f66b3afdd0767b860770a6e93186c72add972311",
+      "size": 121
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ed2f2f577de57c8637df650a3f7bdba72877e62d04a6137e750900a3002d6327",
+      "size": 1061
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f9e6befb9bd9aab735a3883254fd3e82f678d25199d5efc7104999037bf7a711",
+      "size": 352
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ec83a1db31c749c3b07bd584bf13f0086437ea340678dade8cd8c19ee155524b",
+      "size": 331
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "981873d42f43beb7ba5dd15612c996d0b2e11630aa838decb86b241009ee9a24",
+      "size": 3314
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_hallon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:20Z",
+  "vendor": "semc"
+}

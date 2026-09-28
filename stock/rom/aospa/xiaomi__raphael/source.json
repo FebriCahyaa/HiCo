@@ -1,0 +1,52 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_raphael.git",
+  "codename": "raphael",
+  "commit": "ab44739fc31a4f4d6b9552c82da665ed561aa91f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8d380796df23ce69943bfeb9d87b213a17a48159446ad177858cfade35a59d33",
+      "size": 567
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "de848bbe550e05a3d9c29e6e1d6f839be683f968a5326e4e71ae9898edb6b7cc",
+      "size": 3945
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d89d382023e9cd3db8cd292fa8b1b4905262ab02f141b902433f925648614ee1",
+      "size": 4561
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f5700d8cc3bde40938a2918f6b7da73716d33d304647dbe7000d694c02fd6532",
+      "size": 8842
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "14eaa843390cec183b6cd3ac82142035fc05fac5ea23bd52be365a69f3fc5f8c",
+      "size": 1341
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1b9aa90965d5a923002501ba30cfd9fc875b7b3ffd83a205ba25f739b2430970",
+      "size": 51785
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_raphael",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-11-03T04:39:32Z",
+  "vendor": "xiaomi"
+}

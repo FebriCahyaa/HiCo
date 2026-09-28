@@ -1,0 +1,57 @@
+{
+  "branch": "ursa",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_sweet.git",
+  "codename": "sweet",
+  "commit": "865666523a1999bb0d6892b0c59fa6ce161d43b4",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6b27f7b4c90c06abffa81067f9f46c1321c6e07fc8d46eb883a34a0cecb460f9",
+      "size": 206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "27f08af45bb710d5efd10b94fa9621028ba5b7d132faebcecbeb4925a1130c7d",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c3ae282d269257693e4c737d5cd97108809c20e8a6fef07d626dd4cec84c5a85",
+      "size": 1610
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7ec03d5187fc6f95f52caac209665b15a2d3c464ea00c1289c31fc24a5bd6873",
+      "size": 4132
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d245502c26d669e9499ef35d24222a74bca043ede702883acd4806da7d75730c",
+      "size": 1017
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ac52e7575701e194629c9937946757db62c736e7c4fc56898b3fc4e93a34a0c0",
+      "size": 15951
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "30b927e86aeaaa9130ccb2ac67f28f26f5cbcab1e4e3a3bdf7e75abaaa4c788d",
+      "size": 572
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sweet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-12-15T08:34:35Z",
+  "vendor": "xiaomi"
+}

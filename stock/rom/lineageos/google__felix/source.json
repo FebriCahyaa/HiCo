@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_felix.git",
+  "codename": "felix",
+  "commit": "0e3215c1febcc192d3e1171544417d4fd51ec08a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2a13076b85f2c5d481c7bca2ad3969d813af535e1bbde316242db98378d90fe0",
+      "size": 544
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "87ef0489f204646f71445d7e9564befac5188ab981b1aabcb6b6cd78c1a21645",
+      "size": 196
+    },
+    {
+      "path": "device-felix.mk",
+      "sha256": "ba0e7175163359ad547c0cf94730f699d00b9bb8e301a437adbd0fca593af068",
+      "size": 2395
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "44f6cf62de9f57974176781b232a0c1c1e3241b97f2865259596eb240a94bc4a",
+      "size": 211
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "84a729605645cd0b924b9688c90cf4405a4dee0074993914f01d43b5f2997ab1",
+      "size": 217
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_felix",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T16:44:52Z",
+  "vendor": "google"
+}

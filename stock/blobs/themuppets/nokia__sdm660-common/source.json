@@ -1,0 +1,26 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_nokia_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "4f1f0e45274129bee24da2c9e041c37a0079c1b3",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
+      "size": 595
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_nokia_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "b2n",
+    "drg",
+    "pl2"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "nokia"
+}

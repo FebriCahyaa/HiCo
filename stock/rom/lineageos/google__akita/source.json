@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_akita.git",
+  "codename": "akita",
+  "commit": "23990e90363e322b4f2bbc87937d8d7ff5e5c42e",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "70ee2c1d00769678002490b70074ab2b5610d28a1dacea2dccdd038714b6beea",
+      "size": 505
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9cbf1a0fb2bcd92a8e101956d549bc17721bfb454478ff7604a0147fc55a4e4b",
+      "size": 196
+    },
+    {
+      "path": "device-akita.mk",
+      "sha256": "a4501c5ee1eeefaf4d74b9afabb8927d1f3b6e037f6b60d70ee7ad54a36319c0",
+      "size": 1852
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2920c1cd52b3053a2d4396723dd5677ba90c87594ea80c45d6c7d8c48db06bc0",
+      "size": 211
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f94a67ec4dbce96bb2e6762268d67dfa18af03c20125c8f00acc81e93e34060f",
+      "size": 215
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_akita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T16:10:26Z",
+  "vendor": "google"
+}

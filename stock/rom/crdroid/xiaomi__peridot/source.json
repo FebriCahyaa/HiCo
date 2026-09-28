@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_peridot.git",
+  "codename": "peridot",
+  "commit": "c31fa753e7bfeaf6b82fa1611512af7d7e899239",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c994666d24b6ec459d865bb66cb8c59b92775b89b6f01f795ab220201c1213f8",
+      "size": 1093
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ae181b990aa21a8f5311a8903a236f419ccb1acd477a1e341f38d69db24229b3",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dc1190b6f9bff4942fc04402532ccd4528a001063425a3f8c7e9d3dd2a66192e",
+      "size": 10567
+    },
+    {
+      "path": "device.mk",
+      "sha256": "455311c9fb57dd89cebe10d20c6b3f58af6d501e93cbf0f08c44da9cbafef5d8",
+      "size": 19781
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ac1607966a7cd308c2c147433e2b504a1d1a68c9367180a08319d354e9797bef",
+      "size": 15108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b4121eec06cef406161a28353645e8bbbd6249d66771238c0ade50d3a45b1107",
+      "size": 114009
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1ffe96ed1452c31fa72bfb0f20b50b06592bbc465497311df8e12b0258a7eb63",
+      "size": 1815
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_peridot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-22T17:41:38Z",
+  "vendor": "xiaomi"
+}

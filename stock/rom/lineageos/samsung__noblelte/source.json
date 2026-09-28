@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_noblelte-common.git",
+  "codename": "noblelte",
+  "commit": "d37c575fa44809034fa0fd45e062f035f215c469",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c96621ffff9c4482a8d58eef582ff1fd3ceaca8363fe8070c6a53beef73add72",
+      "size": 744
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "92e489b7ea994c4557d6b68353106d484b8c7027955b38c4658f687bb6e8804e",
+      "size": 4985
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b5e89e5d28625150fec6761040246495e539355a31dfd397cb35445f93d3bef1",
+      "size": 735
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "02c49fb37de82718ee830a0b3a0c8b1a8286ff3669d5d79bd89290c6f0aeda50",
+      "size": 779
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6d0e9597472b3a028149369bcf03ad4f353bd2dbb6b32ba785519633ddda4ea9",
+      "size": 13554
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_noblelte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:22Z",
+  "vendor": "samsung"
+}

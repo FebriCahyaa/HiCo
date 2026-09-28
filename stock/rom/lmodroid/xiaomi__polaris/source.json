@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_polaris.git",
+  "codename": "polaris",
+  "commit": "5ac785cf888df41db6253198cce938a6aa9f3129",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9ea763a70cc3a8642fb620c89053d5a9bda02c4271a59b2b96ecc5b1e7452d53",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fee7ee5beeab67088052311f1b2543e0e037b150d4c00fd92cc27ad7cec0ab06",
+      "size": 758
+    },
+    {
+      "path": "device.mk",
+      "sha256": "91ba7b2f817d71cfabceeaa45c6e54ccc91278058955fb554f92046e3bff3e19",
+      "size": 4310
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "89ef81cd121b2a1552f64813fbb977b285039098f2e6af7c947b5ad08affc520",
+      "size": 1799
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f365630fac62e3f86dfddc56512cd29077f43e653f6070e01b462f44c13301e6",
+      "size": 11689
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09159256c5d48dfe14e7adb6fde6a0576fbe51389bff2d69b3b66cb85ebfae8f",
+      "size": 160
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "744db069e5954951987a87a34e204ed9d232cdc03b9d1d61bcb53a0ab2022ecc",
+      "size": 161
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_polaris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:12:17Z",
+  "vendor": "xiaomi"
+}

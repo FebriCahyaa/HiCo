@@ -1,0 +1,57 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_mido.git",
+  "codename": "mido",
+  "commit": "4621483595d85f4fb9eac5a702926361742a44f6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f083a245d613a680c5b8463d920208736fd32027d8d1ee4561f4ec96448191bf",
+      "size": 3402
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b47fa44eaf9cef5995246979dccde12c2637166b98c1393f03c4628577c5eba0",
+      "size": 6402
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9189d84ffbee90de732fe6623aee679dbb5366fe1c4999a0f9cc9034a9d48d23",
+      "size": 16578
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2a385db748366d992b6d9213d6d5bc24e1bf758ae33a753d99ad04906b4b2ea4",
+      "size": 3342
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "146753e96e3fad199201f3581c6089a4bcbc3f5c92da76c5393a265315d1566e",
+      "size": 74676
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "de701fcf72e1715f8652e993ad6f2a40980861e553f2e7fa86ae68cae837b27f",
+      "size": 44
+    },
+    {
+      "path": "system.prop",
+      "sha256": "89f41ec29e75eaa332fb24e0274dab0bb3ba85a601a59daf7edace77d1521476",
+      "size": 549
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_mido",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-09-23T08:17:24Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "rvc",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_muskie.git",
+  "codename": "muskie",
+  "commit": "8434019f09721ea9e2bee40bbe36be79a1836fc7",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9b97684889a2a6fa4513401aebcb1a08b7b80b5037ff37220eda7cf110e96bb8",
+      "size": 885
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "24c9b356f2d8f6b6356eac5fd4ccc0c33a7d2e402f1fa4b53d2da5bf84e3fb94",
+      "size": 7922
+    },
+    {
+      "path": "device-walleye.mk",
+      "sha256": "fa98967c05debe12caab3fde3156d4123fda32bacd54fb7a22fc438741c9c6fb",
+      "size": 1446
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_muskie",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2021-08-18T09:02:39Z",
+  "vendor": "google"
+}

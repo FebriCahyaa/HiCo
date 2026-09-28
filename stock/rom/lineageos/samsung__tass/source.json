@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_tass.git",
+  "codename": "tass",
+  "commit": "dfe022e1c4c454a3a2498905982ea42b3b1bb073",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "060b8977f0754e1088fc4d12d738ad3b13b9829bd7784d774f3a2df3a4e358e6",
+      "size": 130
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b3892c541b92311687a70dbf5d8f5c597225ecdd4930e435b0334b1952ccc74f",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b3d341bc79ba362cefeec4b93832cb543ce43bad7be7fe63e2ea420c9a7cbfb2",
+      "size": 3549
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6f1498669bc4a8ac7bc78f28db5973a840769732c3da8e255435e6b19885e4e9",
+      "size": 18538
+    },
+    {
+      "path": "system.prop",
+      "sha256": "399149e29c8ad6ac226c09ad2725605d58e2f6e2215ae15a75ef6d096b6e2578",
+      "size": 1802
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "36360b975ef5694739e7ef96b059a06d14e05974f8e35d4dcc834f5e84d9e7e0",
+      "size": 865
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_tass",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:18:52Z",
+  "vendor": "samsung"
+}

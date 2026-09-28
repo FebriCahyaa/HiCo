@@ -1,0 +1,52 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_dipper.git",
+  "codename": "dipper",
+  "commit": "23cd49973207b6ebccccef517d8a1c8c8308f961",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e179855651495dc9267c7cd1128ca4cd12c1c2d74f636d39b6a60c40f5994f0b",
+      "size": 969
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "eaee5673daf92c6fb64f042e5e63d6260156683e6787ba96f23ebbbba40d4e13",
+      "size": 880
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c25a87d747ab541f9c2036f81fec1c70eb4647e4a97d2143eea7ed8a9324e595",
+      "size": 4218
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4efc2401ab43fef9df711846f31e7c1b9ac8e1b9bf0ef36aa6cd1868d84f2e7b",
+      "size": 470
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1cd45420951985e7cf0753a84c9dbfb22b271067b2045bd0dea24bf9019369df",
+      "size": 11907
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4624532439fe1a736e79af7b0aae1b01a0f4f62bff83d9070542a93825b194b0",
+      "size": 202
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f3e793608f6b2e775d70ac821ed085b35c2c7b36c0883245b8bfb47b3070ad2c",
+      "size": 222
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_dipper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-12-31T06:02:12Z",
+  "vendor": "xiaomi"
+}

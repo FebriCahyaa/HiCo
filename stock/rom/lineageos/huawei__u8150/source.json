@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_u8150.git",
+  "codename": "u8150",
+  "commit": "77be123d6da88cc84e4692c7ada60b863e6cab05",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "13aa557d7a8bb985131ac42204a03742c5a290a704f9da657a71c2e9f7e9faba",
+      "size": 729
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d5720653fc15763154f74b868ecc7099402a1b104670e2660f71f5e8942701ce",
+      "size": 661
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "20af138a320682f889a2f52c579dbddd32bce861f10c8b90766a2833a51af13c",
+      "size": 3641
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c1644d7bec13f896436da2cfaed6010641b0b062b32c1d82edc6d52a68129840",
+      "size": 9167
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4f048241ccd8300d05cb973bffcd6134e45a2ab1bb4e35fb603f8de94cd9e7f5",
+      "size": 879
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "783fd36d0e724ab547943f100b02de2be4917ff19417b977ceca94705bd8d35a",
+      "size": 843
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_u8150",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:56Z",
+  "vendor": "huawei"
+}

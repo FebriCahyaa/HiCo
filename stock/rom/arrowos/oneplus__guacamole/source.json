@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_guacamole.git",
+  "codename": "guacamole",
+  "commit": "1d616c3d558e0f4379b73a4d3a62dc4403e08331",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "12bbb410696bbb507f3f571aac221e353599f61815bcffae857c2c4ed3a77043",
+      "size": 6215
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b8a298b9fc577375631cf04af4a1c497bfe9ee95752720b16338bfa28451720e",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0093ebd3ece37188843f4b397e276ede5715bb8084d2a50239999cde25d0a4e5",
+      "size": 4997
+    },
+    {
+      "path": "device.mk",
+      "sha256": "20ec1f0e2de382eb53f3431ba31fdc4728ade895c4a77b7949961b9e39d82a44",
+      "size": 21556
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a5ba2f5c85008890aca816f57b324b1f223abf3bd83568cccf1457be3ca2735a",
+      "size": 2614
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "57ec9b41c26dd972c84dbaf535ed8f906dfa6c8f6d2727d2b0a9be8d646ded18",
+      "size": 52386
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8692a94d08b78b25c4e8457e2cbf9861459e1a9c41cfca6738ca5c961ac92272",
+      "size": 1512
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "73e39032d8c31c964a44ff550e8d251e0b2b3143f3a9476a630de9b468cb061e",
+      "size": 5816
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_guacamole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-10T13:20:42Z",
+  "vendor": "oneplus"
+}

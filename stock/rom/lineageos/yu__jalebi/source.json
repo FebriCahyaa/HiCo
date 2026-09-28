@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_yu_jalebi.git",
+  "codename": "jalebi",
+  "commit": "9fa117990586b3320cff8ea78583abd6ea3e0606",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3abbe71c93d2a81f019ec93149e6d671e28a68fd170f4e1a480328a657c5772b",
+      "size": 733
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "729d768dc0d69af04f51a8ae9577d42b7dda4a262bee106dd76650ce187c5bd9",
+      "size": 691
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "06cd8daae63d7bd20cc39ef7214515934e9e006a8185eb3145fc500f682dfc7c",
+      "size": 2176
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "7a193368316a9ad86c765afb5c92571767d1d49509b01297fd340fa6f66b391d",
+      "size": 1749
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6777406b49beb22d3d497c4973893de1092c8131fc79ca8b3765789d61648398",
+      "size": 4964
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ba0ef2849bd0c4071bab0093747d2083c03a8b8c4334bc33c80584d0745ffda",
+      "size": 1950
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6aa70d8cd67c072946f6c9c72d0092845dc7d1feb1f6c4d7ae471c182fee5222",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "68177ca4ab3f11892d953f03c39d0aa8ad17b76dd567fcf11fbc94b790cf01ad",
+      "size": 8698
+    },
+    {
+      "path": "system.prop",
+      "sha256": "58b921d9525a2240e978c1fc0ef21b45c795a627a33d3ae7a0ff10ad27b87a21",
+      "size": 989
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_jalebi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:07:11Z",
+  "vendor": "yu"
+}

@@ -1,0 +1,92 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_surya.git",
+  "codename": "surya",
+  "commit": "8e5e5534429f978db8f427f85d48419681c5e9b9",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6fcd4635ac5a1c8e4b00ba7af7871ea5d05531551f13163b778c75ddec5b294c",
+      "size": 199
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e2609a110b2360a36cc4486c692daae386d80d13d9ca5ed1e6369c933fb81daa",
+      "size": 227
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1ea782010fd0c4a9dacd1a07066c309b2008eca55bc2dbdf45eccd43e718cdc5",
+      "size": 3181
+    },
+    {
+      "path": "device.mk",
+      "sha256": "565c370099e5157ddf510120fa5c2af6bbdcc7b253d735fe14efd70d1dc90a8d",
+      "size": 4023
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "372f9f68b3211d37656fbf32df1f7a5dc07f60414615acbc6d2c44f0b8c4e177",
+      "size": 469
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "566063e6ee35d0b67f0bdb008487be8dbce8401114d8fe9a2adce40d957e6591",
+      "size": 1692
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "99420c1f9408c9a46709f4eebcb3674c51ec95e1380572d21d141afd26a2f197",
+      "size": 3347
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "f37971436e939da299b81ad6f366d2e0bcfdbb2e7dcb7fac0dfc81bfa8aab115",
+      "size": 16840
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "0651bcda7f0f31d471ee3872039d4a4c69203f162cd949ffdfe94e84d4dd381c",
+      "size": 7020
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "e83ed80da06359b8d2f7c45db4eab049e78b21c3ba84b4c7e53d539ecd7515c7",
+      "size": 5473
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d8d2d8c9df10760370e4ee99f7948b830decf4d75bf486fb9d9d13637b4238bb",
+      "size": 18801
+    },
+    {
+      "path": "system.prop",
+      "sha256": "def97ac3d7eff26d0bf05b48f03831af030578a80dd52f9b17cba8cfa1bf919e",
+      "size": 41
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "59f5babdf828baacc3f68c52a2ab1890645a5f654f1f0b12908b5788291c88d0",
+      "size": 1067
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_surya",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-10-05T23:51:37Z",
+  "vendor": "xiaomi"
+}

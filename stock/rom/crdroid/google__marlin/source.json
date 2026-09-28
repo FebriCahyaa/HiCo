@@ -1,0 +1,92 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_marlin.git",
+  "codename": "marlin",
+  "commit": "af3c2a7b15809095472a44f07962da84311db649",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "25b7f9b09bf9ce57af500243cc3fa68e430870cdc963d01f2b9ad397d8c65483",
+      "size": 41
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "494f4b7e0e3e47c9c46d1e935a2808cdc00593afa86c6c71ddbc666cef5f7574",
+      "size": 1494
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cce0e0754237e4546e040510a241e04e86daf5e0f0c1c0450428592a325b8078",
+      "size": 123
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "aaf687a202d16f1114aa67e707e517f37ba9d981ddc9841b59d352eeab2d38b3",
+      "size": 331
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "b4086278fcaa4023b2b884a9709357e7c659f39aba346a98d730892300dbb521",
+      "size": 24277
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "755bfb3a81d635c6e492d04da56c624ad132b928b451570dd001d9c308dd0db2",
+      "size": 338
+    },
+    {
+      "path": "device-marlin.mk",
+      "sha256": "6593e826776bd7c7532c0c69fb908d5734ebceb23f7dadde6502061f7ba7a29b",
+      "size": 1989
+    },
+    {
+      "path": "device-sailfish.mk",
+      "sha256": "c08fa98f1c6809bb93cc7964e778342b9123c93a1b581f8e8e01ef7e1aa58bb6",
+      "size": 2003
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4a4daf760e72ba9678c19f19b6e45d160cf1345a9eddc160b34dd53bb9303b81",
+      "size": 1434
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0b77543ff14d05db29caf21474ddaca57d61afaf20dcc6e8499922fe1dcc9645",
+      "size": 201
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "2ab0ce32c5915008601d52fd633805ccfdbf8eb722ababca1f0211e36f4c8b2e",
+      "size": 1134
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b20632d6941acbe7de11ff4421355a7603d4b7c921a23e8863ebaf48ec40189d",
+      "size": 5846
+    },
+    {
+      "path": "thermal-engine-marlin-vr.conf",
+      "sha256": "26b889e5396861ee205b7ca44ff824c5dadb7b43a6b5594d70115e0f7e8a9537",
+      "size": 554
+    },
+    {
+      "path": "thermal-engine-marlin.conf",
+      "sha256": "4e49fd36c94caf51711bf9ffb73f2cac0e9df347dbea83eceaf5a87a3912bb7b",
+      "size": 1844
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "676c2f696c1219702e8e12a4609d2206209501c7ab6a7cce152ab53b320851f5",
+      "size": 1721
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_marlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-03-11T20:55:39Z",
+  "vendor": "google"
+}

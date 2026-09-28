@@ -1,0 +1,94 @@
+soong_namespace {
+    imports: [
+        "device/xiaomi/rova/qcom-caf",
+        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/qcom-caf/common/libqti-perfd-client",
+        "vendor/qcom/opensource/display",
+        "vendor/xiaomi/rova",
+    ],
+}
+
+soong_config_module_type {
+    name: "mithorium_firmware_wlan_mac_bin_install_symlink",
+    module_type: "install_symlink",
+    config_namespace: "MITHORIUM_FIRMWARE_WLAN_MAC_BIN",
+    value_variables: ["SYMLINK_TARGET"],
+    properties: ["symlink_target"],
+}
+
+mithorium_firmware_wlan_mac_bin_install_symlink {
+    name: "firmware_wlan_mac.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/prima/wlan_mac.bin",
+    soong_config_variables: {
+        SYMLINK_TARGET: {
+            symlink_target: "%s",
+            conditions_default: {
+                symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
+            },
+        },
+    },
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/prima/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_wlan_nv.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin",
+    symlink_target: "/mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin",
+}
+
+install_symlink {
+    name: "firmware_WCNSS_wlan_dictionary.dat_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/prima/WCNSS_wlan_dictionary.dat",
+    symlink_target: "/mnt/vendor/persist/WCNSS_wlan_dictionary.dat",
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libEGL_adreno.so",
+	symlink_target: "/vendor/lib/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink32",
+	soc_specific: true,
+	installed_location: "lib/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib/egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libEGL_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
+}

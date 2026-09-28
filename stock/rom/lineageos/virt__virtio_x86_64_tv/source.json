@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_virt_virtio_x86_64_tv.git",
+  "codename": "virtio_x86_64_tv",
+  "commit": "a53f6640fa464ff9eddb78454493d58d6a79f1f5",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d2298344689a097916d21d4b100ecf95e09206abc765a8e121908b4533dcdf9a",
+      "size": 280
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "596f8f747c6a9ca537601486fd3a27e3737f1b8e7216a20b9fd70019f395c997",
+      "size": 205
+    },
+    {
+      "path": "device.mk",
+      "sha256": "02844f6db11e2a402bff362c3d1da19a3e4b57cfc779b4690f6967f176ce5010",
+      "size": 383
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cf79079d2386b505d0e7de571738d8e5059f5f2622163cf0316591a6ccbf5f27",
+      "size": 114
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_virt_virtio_x86_64_tv",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-11T06:16:56Z",
+  "vendor": "virt"
+}

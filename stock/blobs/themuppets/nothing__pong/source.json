@@ -1,0 +1,59 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_nothing_Pong.git",
+  "codename": "pong",
+  "commit": "1dc6e7ff9f25c8e7028132e20536bc9e6de3d56d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "515bd70fb699c8ad484192c7e615bd658470dfb09495db6fd455d052b8996c08",
+      "size": 896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "e30e12466307a7f49e28c9e5c944144152bb63b0536a8a16c6c902a534456e13",
+      "size": 792
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.high.conf",
+      "sha256": "ef1c0a9672f042e9dd662132ead69a435be8848e54af3f62cca387a8e458a0b3",
+      "size": 1717
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.low.conf",
+      "sha256": "3dd2909f2b22a4f60f9a6135d6ffec5c03721ffb75156b5a18527b28bc82960c",
+      "size": 1250
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.mid.conf",
+      "sha256": "d9d28238d984783521ddd3c56c667e5128630374617667b6af955ac452d2f79d",
+      "size": 1767
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.noth.camera.conf",
+      "sha256": "9e69ac51ea4720da2c6b648db8997f5eeea7558bbc5c18814bddb1c6234257e5",
+      "size": 1869
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.super.conf",
+      "sha256": "da15ec3171d8f28f66eb6f694f9227513816f8b4051f9bb12d9eabc7281f14de",
+      "size": 1717
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal.third.camera.conf",
+      "sha256": "5e325a4d515989a47060f80aef604a79690ee356eae4e9a33077707653619c32",
+      "size": 1792
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_nothing_Pong",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pong"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "nothing"
+}

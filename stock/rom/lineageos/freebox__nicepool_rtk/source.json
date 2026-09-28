@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_freebox_nicepool_rtk.git",
+  "codename": "nicepool_rtk",
+  "commit": "4fbaf00a787b072959d12eeaee23f472d2f567a9",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "63d19cae37494d6a9dfbfd1c7dd79b8eaa42df555339e4aa79b459d870fbf1b9",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "26122f72ee999bceb8a81adef23b1f8fd5cef0960a8856e370cbf336924fb0fc",
+      "size": 171
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0f7e25533d71452a0c5fe86382a73873c2ce70eb69f8800152af18b7bf8bae12",
+      "size": 233
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ae43855dd28bd3c4c87338c0698e95a6c54c939faa02ce87f164d11b6b5d2a7e",
+      "size": 384
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f0bc518ff548cbc73221022f49e23eceb61842e971183eeab4d6351e18dcfd7a",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_freebox_nicepool_rtk",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-18T16:06:54Z",
+  "vendor": "freebox"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_akari.git",
+  "codename": "akari",
+  "commit": "0670e16b49aa684290ebadf9f400d7f92bdfa0cc",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8bc6b3fa6131964edada215deeea9a5847c87bbbf39cd487126e4f7798af037a",
+      "size": 717
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0301038b219b0566b7116bd3e61cd133f771465df3e15b41a5852c7df0935df3",
+      "size": 763
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bf343f5130a4b0c079fe9b4781d5a0e62dffd710892658444687f65141c9366f",
+      "size": 683
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "dce2628ac192286c7d149c5da089ec0a2085a086d5934d63a7c4729b1f7add3b",
+      "size": 20618
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d20a7d99e24142396ec02ef35f34560d71c3ff13b200f43fae3739207388cdbf",
+      "size": 2101
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7133eba705301a6b278f561c3100501ed58f7ade2624eda5ee9c93ca92685424",
+      "size": 591
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e63e75cf0554a8da87329d0463d4dfb108f0878cc5a772f0124011f82ec51cd6",
+      "size": 17755
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3a51bfc0c719fc486977a6bb05ff8161b811cbfdb0453403b514ff7d66cea1bd",
+      "size": 365
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2326dab94c1fb8a897bb4c3c51bb4afb7ab1df5b75b7a62e9d65125e09ee08ed",
+      "size": 197
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_akari",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:39:14Z",
+  "vendor": "sony"
+}

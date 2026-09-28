@@ -1,0 +1,42 @@
+{
+  "branch": "7.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_sony_kugo.git",
+  "codename": "kugo",
+  "commit": "e0140652e0891931c3272af3027359fbf4ac09a2",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "56df844b7d3c407772839ab9621bbee9918427619b018bfb762b1db77abae7e9",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ab0960e1f70b52152e14aa60011bbce58507b32377a21ae44e34fef297335868",
+      "size": 1063
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0456c82bc1dbbddb329ffb20d37afb4b7f34b7706e1c098cbcdba6ca0b2f30d7",
+      "size": 2999
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ac3f803ebd3b9617287087fa1833b14af9cd5bc9912c3796eb2e872db28686f8",
+      "size": 640
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_kugo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2017-05-01T07:42:30Z",
+  "vendor": "sony"
+}

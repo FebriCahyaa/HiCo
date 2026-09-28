@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_liber.git",
+  "codename": "liber",
+  "commit": "e5f1b78b7d05829de230cc903e13b57299e86d58",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "073bd9ed60e20c2bc1f389a821098e836a213e18926707a2a26e99baa6f90374",
+      "size": 827
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "11676948f1a26791e089b76ba31b8424829fb80171a040317ca8147b4de255c9",
+      "size": 761
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "73c247e9c4e8e1b28c574bd1610a5eae1f8ff1fa674147538cc0233d700db7bf",
+      "size": 1309
+    },
+    {
+      "path": "device.mk",
+      "sha256": "aadd5986142fc4690881466fcc2b937b5471b1ea2a8005ca3ef30d10da38c00c",
+      "size": 2831
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6f49badf98914ade64710f088134a907f215ae882ef0b09b07a302dc0db16736",
+      "size": 645
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3f21f8fb6da7911a5f96d317c971ed9efd6b282d51be8ca651e5a19ff575e3b",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e58773bdaab5aa7756e05f2b97ac6a227f3b0a6b1aa39bf9f2525be22c5b62aa",
+      "size": 13763
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f570ae4744d16e1e2a09016f73329ce68a854293e6e0920a6ceac548bf396597",
+      "size": 184
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_liber",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-11-08T17:57:30Z",
+  "vendor": "motorola"
+}

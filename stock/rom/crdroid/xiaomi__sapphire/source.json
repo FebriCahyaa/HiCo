@@ -1,0 +1,57 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sapphire.git",
+  "codename": "sapphire",
+  "commit": "11ad2567e97e7730601b648c17dc75c215feaf04",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c93cec61d90cdd4fc7c5a6314a8d375f5c00fe4d34b701c3f735eec6e30feb0",
+      "size": 730
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d228d54108852d3c4a97587068f3a819b3c0f812efdab305695a93bc2ec9bd49",
+      "size": 1020
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c172586f816e91ecc13900ddb0e5dfac739274da67e52e7b447e5ad0aa50c4bb",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cb37af80e262aae4d2c87edda6c4bedac4cb8a9e6172214d62c9a0468ee228e6",
+      "size": 10057
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8e46368ab129034f7c331e2b76d8419811ba10fbd9df2f5f250d5050993719fe",
+      "size": 26741
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5bc535897927b88db06b091833d6bbea0c8f907856e6c5cbff7568ead94ae63f",
+      "size": 3628
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "137604243ec93a1fcf267a38293fff24509cf134716487804a1e7f5105fc2fed",
+      "size": 90196
+    },
+    {
+      "path": "sepolicy/vendor/thermal_service.te",
+      "sha256": "be47080f6c8f74e6d4706058c408648faed6a88e1e76f7577c6ad4b69de32f32",
+      "size": 478
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sapphire",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-02-24T14:36:07Z",
+  "vendor": "xiaomi"
+}

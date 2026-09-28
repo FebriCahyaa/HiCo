@@ -1,0 +1,82 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_chime.git",
+  "codename": "chime",
+  "commit": "936e1922472ea62c7ae00211221bed7056691745",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dd1d8502d76fe200c1c9859067df6684416196dd6158c432e117e4ec0e8998ec",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "77a496923389a1b3efdd7ab805739086eb977e03afffad65d1f7a65380fde6da",
+      "size": 5332
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "97f6d5bb8852a9d1aecb4c0479f965f5a0e74998b88a9deab8bbcb7730cb7be4",
+      "size": 364
+    },
+    {
+      "path": "BoardConfig-chime.mk",
+      "sha256": "c9cc02967ef1a11858a6b8190e400460c776c5243064900148244b68065f16b6",
+      "size": 6047
+    },
+    {
+      "path": "device-citrus.mk",
+      "sha256": "9d383399078d305aab099ea7ef318afdb9fa54f028b3f3ac552893674c052870",
+      "size": 365
+    },
+    {
+      "path": "device-lime.mk",
+      "sha256": "7b4d54031b2e2e5b46bb62d7b3d7ef32e6a19883f0ad5b8f08658b552ddbec1e",
+      "size": 357
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3dbf4336c7771c01058faa37235dcd1195b59f1679d78d749041ea3806f0bead",
+      "size": 1284
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2cc6321cd42ab9782c47093e534d784915c9672431ed3674d2d3c93be7ffb80d",
+      "size": 46480
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "c4bc43e771f41c69e69e5857533e2d8651ba62c9856ab5e4ed7d2286aaf96e08",
+      "size": 954
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b4347f458564fce246a041b31d6256a1def6e54c8046cd43d17d4aa5f8193aec",
+      "size": 266
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6768d5c4d3ea7abef3d3de466e3857d7875d20c1c21d711eddbb434b7feb32e9",
+      "size": 1794
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f62ca7441de80efd22e55365fc51fb11ebf7da92c04c22abb766ff872a70a551",
+      "size": 11134
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e52ca2e62c1b72736dacab4dbc5ec4e9cfc959583c7442f6526af585125bf5aa",
+      "size": 591
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_chime",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-03-24T04:26:00Z",
+  "vendor": "xiaomi"
+}

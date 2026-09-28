@@ -1,0 +1,77 @@
+{
+  "branch": "12",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_realme_r2p.git",
+  "codename": "r2p",
+  "commit": "25b763d7ae13f9defe047d5b257b53c5f8d273e9",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "88730d09e862455ba0e7d260726545cb5975c0843f49aa2b317e6df74957741a",
+      "size": 4765
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e90dc22db78c66fd290ac503c109fbde2722634de41e771f3f86f2ee7568256c",
+      "size": 237
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fbd3a0fa1027ba024343abcb79502e8f71895fa76c6567a0d5195fe2f365eedc",
+      "size": 4787
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "f58fda56ecd5c34c3722b9f2e45e1206f07d93b803a8e989688f29176ee1e604",
+      "size": 3693
+    },
+    {
+      "path": "device.mk",
+      "sha256": "61098c436ab95cf9419cc15f116f9d2663fe2234181bb95a548faece1fe6a00f",
+      "size": 18228
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "01c2c6f0a7c293b111668a8e76feec95ab8ce4326748110a774818a19dda0e47",
+      "size": 1962
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f196851d0bf3f31b875401186e30c905e5c0070c1682da31dfbca17821a4eec1",
+      "size": 152478
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "3cf50e6b8d7759eec42e6d99f434e41f46dd919026e69fc92884eefef054d987",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "96621c315fe69500bc7e99e487cd6ba585cb2f72d8e3cc84e7831d9b3475c0f7",
+      "size": 359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e04e5fad66d9d30d68ca29152013a5f57be26391faa3795cadfb0776e540fd2e",
+      "size": 2299
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "949c654158574ac10971213988d7aa1723a0b1f2db513d9f1cf0cf7acf81fa40",
+      "size": 6696
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_r2p",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2022-11-22T13:35:31Z",
+  "vendor": "realme"
+}

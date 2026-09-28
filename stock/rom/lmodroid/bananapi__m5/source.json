@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_bananapi_m5.git",
+  "codename": "m5",
+  "commit": "8500e68f59d9d1d63f9336f4043107986bb57584",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "887cb2726094b0e5b83239cd54ac31b22c5ec015d9997527f8da5d74cf029c47",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c48fa51c07709c918245182e3bd021cacac755b98878b69930d9ef3b6cc7133a",
+      "size": 1045
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8ba303d3062274a99636ddf299f8aab17f5407627924ceaf24f790094370c35c",
+      "size": 807
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "db2a69f6d85d116d6cb669b456f4f68f6e3f71986f3779efb2e3327bce10d916",
+      "size": 908
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "423539009c619d72bde0711373adb6ae41d45e2e3649f36a542f00f9e45ef6a3",
+      "size": 214
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9168fde5476b6d82f022b2a404a1a168ca92ffd02820912d70b9d887f0951201",
+      "size": 154
+    }
+  ],
+  "kind": "device",
+  "repo": "device_bananapi_m5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:17:40Z",
+  "vendor": "bananapi"
+}

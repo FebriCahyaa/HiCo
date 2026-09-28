@@ -1,0 +1,57 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_realme_RMX2020.git",
+  "codename": "rmx2020",
+  "commit": "d0f25e2a2e43047635ebbe5c4b50ecdac286f551",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4a292a719c86c31da9743f23884db928524bde5ae24457169d60b10208b1c4e0",
+      "size": 645
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b09b38076a7486e84397102b06f759be33c1c9e328fb3e3910fc7f8e5eacdd66",
+      "size": 137
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cba538cfc02c2502e9a0b5ba295504251fc1973e16d50bc13021d145ce75190c",
+      "size": 5776
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "875bc9be904b09af68219c0a978b014cca2b2a1e839cfb8f9a5ecd3dd98b9bca",
+      "size": 7071
+    },
+    {
+      "path": "device.mk",
+      "sha256": "28c81515fab287e54f2c5852df381fd21278197b8500ac961b5fcce6b2490e95",
+      "size": 16483
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "948aedb5617f879be63e940764e0bd2531cab310e1e70fd0ae2c1efa5f73cbe8",
+      "size": 4517
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "944e749be7fd3f9048716ae7e2ede5080099d7d1972bccf716bc031d5c813e40",
+      "size": 61551
+    },
+    {
+      "path": "sepolicy/vendor/thermal.te",
+      "sha256": "5974045ea3be624eeb55b0a07eef68531c5061d27a0ba9eba9ac28b3ad2b741a",
+      "size": 46
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX2020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-27T19:26:06Z",
+  "vendor": "realme"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_r8q.git",
+  "codename": "r8q",
+  "commit": "2c025676ea50772489d5d0cf402ab32c407dcca7",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ee72c7161b0373fc660e02b42a1c4ed3bc3e9ba391d96e0bd5924bf136196bca",
+      "size": 171
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "70450c5c89d06082ade50ecd2db4fd9fce86884698a9c172a8defe111007d8cb",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "65c820e95eb0f77e2e5cf59c8b676497cbd5c582beccbbee908cee721934a15c",
+      "size": 1389
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e87d25aee7d85f56e45e1f2c104d2117942b38fb64f11def098c6554844ca430",
+      "size": 3109
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7bfad0ff7e26a4b3f93860b5ba69e29f0d0c20ad60aa269d9e9d328470cd6f38",
+      "size": 1430
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5da6eda832e1f0ef5b534b16a0218b1ff62bdf386f537b1714c249a32033180c",
+      "size": 10329
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5fb6916e249344e64b582699383a689ecbfd6fc39cec1d029dc1b28f54ea609e",
+      "size": 153
+    }
+  ],
+  "kind": "device",
+  "repo": "device_samsung_r8q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:09:46Z",
+  "vendor": "samsung"
+}

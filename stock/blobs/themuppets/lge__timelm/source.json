@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_lge_timelm.git",
+  "codename": "timelm",
+  "commit": "f92b9c938d7bb9db4ab5b0483fa7029747971408",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-8250.conf",
+      "sha256": "18e134225a72b73c3cddf5d5c1d5b8e2be8a1b031146ce8aa7d5165cbdd91e1f",
+      "size": 4209
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-default.conf",
+      "sha256": "9ba10ed0d6f1f46d8f4a1f122572a10c1752493fb25fa218deac8fe583d5540e",
+      "size": 1597
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_lge_timelm",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "timelm"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "lge"
+}

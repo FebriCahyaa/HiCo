@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_pioneer.git",
+  "codename": "pioneer",
+  "commit": "6768139f25d696bd5ddfa36c2f3f8f68282715ac",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4e025863e27d1171fe259c87c73f79d1aea6a33bbdd3c82ae22a67320c817c2a",
+      "size": 655
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "101efb784c40caeff97a89bf0099185b152630c0bf11a59b6b657c91a0f0a64d",
+      "size": 1066
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6b31d14d7d1e1737a92284a8cb9808405e71fc57454b4f6f093b711080006b25",
+      "size": 1879
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ed82c831c279a5e3b64c0303f0b523ac29572a685d234bb165b00e4c74a774ef",
+      "size": 1599
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "973e57eaed34a874069de966f842c24619c664044f3635be8627241fde3f6a79",
+      "size": 13281
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "208380cb9b0cb33d567f49b1688a232f28f0dbda0bd0c609d7be2488e622881c",
+      "size": 297
+    }
+  ],
+  "kind": "device",
+  "repo": "device_sony_pioneer",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:10:52Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_topaz.git",
+  "codename": "topaz",
+  "commit": "376aeebc0b06aa96e553c3a7b8e95536d666585f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "24bb8b6bbbc9f3c0cf5027d6dfd2cd4441d4472355a437aff46ac1a252c490ae",
+      "size": 222
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5adfe82618cd3e0b84658af5cb57fe6f402fdef5f27b57e2c934eca9c41aaa65",
+      "size": 600
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5859994e1b0ff62f0a84227011b1b76583af10b2cf0dad0f459ffbff8a867a85",
+      "size": 259
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2c3cf3d7a6642479cfbe4316d7268cc1dbe0ffc540314e0ba05c4c69ce38f9dd",
+      "size": 8559
+    },
+    {
+      "path": "configs/thermal/thermal-normal.conf",
+      "sha256": "b8b17653cdc2ac554c22fd0f8d80a1f639a226026304fa38bd3a5b42bf711487",
+      "size": 1856
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3ddf5401dba295a2152abe83a3364ae78a968a02d9de38e85d0e02130cd08b65",
+      "size": 7968
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "733bd68f18ab27c39e74d826abca92d707d471e0f6b84fb39717fa71c8aea338",
+      "size": 1199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6e1ed4ad0fbf0a7561eeb533eacc75d73b40703ef106e0f357f1eeaf776db085",
+      "size": 6838
+    },
+    {
+      "path": "sepolicy/private/mi_thermald.te",
+      "sha256": "c50932379d2606160d2a409fe7803158d2843e59f1a237f42dd518635263e003",
+      "size": 138
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_topaz",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-11-03T02:21:32Z",
+  "vendor": "xiaomi"
+}

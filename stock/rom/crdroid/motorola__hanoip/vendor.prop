@@ -1,0 +1,42 @@
+# Bluetooth
+bluetooth.device.default_name=Motorola Moto G60 
+
+# Camera
+persist.vendor.camera.privapp.list=org.lineageos.aperture
+vendor.camera.aux.packagelist=org.lineageos.aperture
+
+# GFX
+ro.config.avoid_gfx_accel=true
+
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
+# Audio
+persist.vendor.audio.spatializer.speaker_enabled=true
+ro.audio.spatializer_enabled=true
+af.resampler.quality=7
+ro.audio.resampler.psd.stopband=132
+ro.audio.resampler.psd.halflength=960
+ro.audio.resampler.psd.cutoff_percent=98
+ro.audio.resampler.psd.tbwcheat=0
+ro.audio.usb.period_us=20375
+persist.bluetooth.sbc_hd_higher_bitrate=1
+
+# Display
+debug.sf.enable_transaction_tracing=false
+debug.sf.disable_backpressure=1
+vendor.display.disable_inline_rotator=1
+ro.config.avoid_gfx_accel=true
+
+# App
+ro.launcher.blur.appLaunch=0
+
+# Perf
+ro.vendor.perf.scroll_opt=true
+
+# Suspend properties
+suspend.max_sleep_time_millis=40000
+suspend.short_suspend_backoff_enabled=true
+suspend.short_suspend_threshold_millis=2000

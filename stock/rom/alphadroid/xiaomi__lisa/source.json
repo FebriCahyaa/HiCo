@@ -1,0 +1,57 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_lisa.git",
+  "codename": "lisa",
+  "commit": "1377151b7763f472b87e8dded1880519c51d5a18",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "614c49b2600eb35ae0931698c305d154ebd352c7dd42c00874e9afdab9d56eaf",
+      "size": 81
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a7fa38ca2655a801b3669831a02124d12402ce6d0e2b9e91797e40e437b7a7bf",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e7af50d13d47250fcf9c1d8c75e436d8de1f588028751d8099bd7a7dac494f03",
+      "size": 638
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f2bec44185698fc01a26125091a805109736bff575ba21312bc37c78e7474b51",
+      "size": 1829
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0f35c4813555be40ef7534161bf1781760000fdb9e0ba88980d4fa180d3ac2c4",
+      "size": 3077
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a8d046a5623065bcd2f19bbd09459c6010f15d9694e8eebc7805a02ca4e1366f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c76bde97b7b9d68f69b1cf43054153bb96e1dfe4c2ca4e30b61c4240eba718f6",
+      "size": 25654
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bacf0c63a0dd64dd2e3df49ce0e93b9dd5947393032561d46325758ce2f47395",
+      "size": 221
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_lisa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-20T06:43:57Z",
+  "vendor": "xiaomi"
+}

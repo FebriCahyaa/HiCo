@@ -1,0 +1,47 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_serrano3gxx.git",
+  "codename": "serrano3gxx",
+  "commit": "433d87cd3862a4303ccad9929e5de86d4b64f70d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5a92356eea854a1a2089f8bf5de449806d1b6d422eaedc71b491bafc3178cac9",
+      "size": 1323
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8e5a49d7ae8e4682ee89f10a87917e0f8e168ace4ea01edecf67b5cd59a76e77",
+      "size": 1218
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8d3e3a3ec9f28d641857307f20353921d9215f1b7308fba84cd9bcac903142ac",
+      "size": 143
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "076285644486d7faddf3aea6b92a23685b601ebfff307a5c34656bf50e667c09",
+      "size": 122
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7334c5ba796f3d7e35850a1cb3466831b16b7ed9bdbeb37dcfcacd9f715c89e6",
+      "size": 116
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "43f38455476315b0860e46b4c5069511bd3108a3c799d5924611ab99b4071779",
+      "size": 46
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_serrano3gxx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-07-17T11:43:00Z",
+  "vendor": "samsung"
+}

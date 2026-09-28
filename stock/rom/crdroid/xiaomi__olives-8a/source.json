@@ -1,0 +1,67 @@
+{
+  "branch": "Lineage-18.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_olives-8A.git",
+  "codename": "olives-8a",
+  "commit": "85fdd87121165d253e05ef8ef5afc5e7041e93ef",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "69aaeca70cc999a57873b1c9e00ed73859ae31c6ef43774f7738ac33d57edbf1",
+      "size": 206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d4a663cb5981e6be9c619e1cbca7393e15e93344813f7d6b60ecd9e5132bc8da",
+      "size": 253
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "417e813297f79373cea1eb2feb9e6e69eb25653481d71f63ab30e2cae4e041dd",
+      "size": 917
+    },
+    {
+      "path": "device.mk",
+      "sha256": "633c046e29d4389f58afb2c850d96dbe8972a36558358e3e69805d2e8f64e66d",
+      "size": 1185
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "263ca2dd317247a5cff389d5d361d33549c39d70d17df3cd144a0b1dbf44f288",
+      "size": 470
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0a707493c7ed15aabcf94041394575642d826d8c6d69ee0cebf371103077b030",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a7370276dba6915ecf2621da433100c3a9f4d065ace54662b46eb5b61d44538f",
+      "size": 176344
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ce81dfc62778015cff014f0c00b2091d264a2002b9ac5ddb48e1fc4535f405bb",
+      "size": 189
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "2651205e614b5e437e66828fffcc2a4024887f5cb9d64dea976e2c4bd895f5a9",
+      "size": 562
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_olives-8A",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2021-11-06T18:31:29Z",
+  "vendor": "xiaomi"
+}

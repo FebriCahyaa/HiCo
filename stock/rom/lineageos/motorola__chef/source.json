@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_chef.git",
+  "codename": "chef",
+  "commit": "a52f2ca5af48d7ed1947049919d8546b0f708cd2",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d8b7e6499dc9f9cec4853e6e187a6ae7c540c7aa87f364cfe7ac5e8bd9ccf83e",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cd0681f80fa5e92afd48d0211d5c838f987356d0f2783d83efb416494aef2bcf",
+      "size": 1621
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "743f6f68a0da585907cd2e624260317d8618083a4ae53f56fac997824b343e6c",
+      "size": 3493
+    },
+    {
+      "path": "device.mk",
+      "sha256": "16819de4b692bfd73ff50b0026b0c1b10a43d0b7d479aab49d567817f3ff9eea",
+      "size": 3076
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c0085c693f0f781fb23eb32e3917a570da89d193405fb057f00613a5b9fcbc3f",
+      "size": 1909
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f62da33a4842580e968a42fca6cd97466e11c6d4bd9663f16460df627508091",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e4f9fcc6bfd5f618a0a1493da806bbddc5768a2691bcd460dc523ed96555f4a4",
+      "size": 15001
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e3229b8842961539f2b2a58ae1adee2c41d9ed95b1cb17d86ee8acdd4fec42cb",
+      "size": 1520
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_chef",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-08-28T17:22:30Z",
+  "vendor": "motorola"
+}

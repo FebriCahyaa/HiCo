@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_otterx.git",
+  "codename": "otterx",
+  "commit": "265935d68ed74240e0785d6029282e85e3d37f29",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "96b3f17237877aec5da50dafa5d86eb6c967fce7b8f0da5c4b51e8cee620c037",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e3b7af860dd62d886637538bb965ef28e972cfbbedfbeb09ce809c1d6996e0c6",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7ce450f461e8e60bf6f2dd14472dfab80b1abb5c437ebee47b8780cfc4747ea8",
+      "size": 1797
+    },
+    {
+      "path": "device.mk",
+      "sha256": "da8da5ad900a9dfdc5439ff96bd658b7bd60b8444fc8499849bb8ddf4cead153",
+      "size": 1898
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ce2d46c6bef58c87bced56cfcb4876851ba4619771b9743b31b8d07dc5884586",
+      "size": 122
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c571da929a11d4663cc997416f5ff29545d399bb3ab6ce96cf7244b678ba22f3",
+      "size": 235
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "33a74b9631234d2583425a574bf1f788395dfaadedb1b35a55552fffd9b88af9",
+      "size": 680
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_otterx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:58Z",
+  "vendor": "amazon"
+}

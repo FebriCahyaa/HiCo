@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_baracus_tab.git",
+  "codename": "baracus_tab",
+  "commit": "a3ca4eab5a7d97a8549687381dc2a40d2efb1d9f",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "729fb3b1e339c6dffa875d7de50f7cfbd182a98abf9d2b3640c18be396865cbf",
+      "size": 697
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "63c1c65dc2785215cac4ead4c1b5279fbda666a94eb059b59517ee620a6714b9",
+      "size": 640
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e4071d868c6f48b46c413f05f625a7a4c6b36fa16310874224bdabe773daf9f2",
+      "size": 1454
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "39ed519940046101f7588b38fe4ed42626752aba8e47c7faa36d98af4a535400",
+      "size": 207
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_baracus_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-08-21T16:59:21Z",
+  "vendor": "google"
+}

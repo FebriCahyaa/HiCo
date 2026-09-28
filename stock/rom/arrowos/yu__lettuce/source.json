@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_yu_lettuce.git",
+  "codename": "lettuce",
+  "commit": "7bbc50199ae296f9b38e8306dcdbf7ad878d6da5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4c6294f82c97a06bd374973379bd3242773bfa9dcce1f50d6b5b3fecf2683dc8",
+      "size": 37
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fd5022ff6989b9cd8f8652589e224d2b4502c2ff2aaf180116d0a4357f6638e7",
+      "size": 3956
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0246916fbb59e7fd744745a6384976ccb0c47c4afd0a657471c096091fe05fe3",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ba7a29f48ef30796eec39da721a553773ba6e17fe132e93da1f8178d05ca97de",
+      "size": 7321
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6a1c8c01410e319abf7f3f40c6bd152f53eb69378c83940b1a17e236682ac964",
+      "size": 15603
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e334f01c373c8618740106baefe1b9473f607fae7c5c6235ff681352bf964567",
+      "size": 1950
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d5bd594db6cdc76709352eacad88d5f1e7109d03de65d1a217bc403b7f8af1a6",
+      "size": 16039
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4bf5c3c6468ff6fdf4c69f1ed6412e62033b17eebca5087e7bd0df0d5be6401d",
+      "size": 4288
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_yu_lettuce",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-11-03T06:46:12Z",
+  "vendor": "yu"
+}

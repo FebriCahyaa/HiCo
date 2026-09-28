@@ -1,0 +1,77 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_vayu.git",
+  "codename": "vayu",
+  "commit": "a2c8887e8b99c977dae103ac7583624990c1768b",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "46e191b4bfd7f71d68541cda910cf52a4815d20d2fd87e2112e142487babeaab",
+      "size": 203
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "52f12c5b59d6ac76f1d3a7595d58f2bbf19eba37383f95bfa71c222ac22ad181",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "edf2484a9fd5245d1a71efcd34bdbe4a2d8724bcfe38a21a8a5609148248c7fe",
+      "size": 627
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5174a7b3ca96d901602ba247d770e48913669add168821840da69b85dd199eda",
+      "size": 1590
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6b8fabe4fd1c2963c032a72d64717e86edb13d92be4b80e30a569228a81b2665",
+      "size": 2987
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "b5da0ad253e1783751e8c1db226d1c0bee47e1084624d57fafc671922755a232",
+      "size": 1159
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "4f2ed973daf28de93663ff4b28d970e2e33a05569f05f4a8750eaa3bcbd70ce7",
+      "size": 3840
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "d719be6fc54543cd430fa10877824aab9ca1e8210da8145807ec606d933df1d4",
+      "size": 15639
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "16753c839798c7b4194e24baa22d1dd9700ce3f8ae2a0f39a8e784592b8f3fc2",
+      "size": 7182
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f0dd5364fdd43c2f1aa09048f89d7a76b7f730d2cbcb501681d5229748d72a58",
+      "size": 16576
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2b1742909801e497a13d8f571d5d68f6570b561e56338023b403b9f252484699",
+      "size": 471
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vayu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-02-03T19:39:03Z",
+  "vendor": "xiaomi"
+}

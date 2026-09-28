@@ -1,0 +1,72 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_garnet.git",
+  "codename": "garnet",
+  "commit": "16d9d1822589ad238e81f1ee12965bb2f573ceaa",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a006a136ab97ef58596d97034765e078fd2a441b17b0d5cdd424b3f1a9b1d970",
+      "size": 876
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6a6f6a91eb071bb37adbf1073ae0142c08a2292e60cfa1009cb8a89e8078eece",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "98cfbd8751b5cf7f3b36f7ee4cef02a8ed94eea7646a16b2debf8ed0c39fc9ac",
+      "size": 8377
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2a7cb940798ca6b604a0d0e48d22138fa9fc14089ade0684b8fc60ee08cccc21",
+      "size": 20150
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "879e85ddf9a4a4604a7f7b2216d18b03f6c48a71f95b159128492e9f597daca0",
+      "size": 6333
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "ed1da71b46a16d99a0c04d800e1b1b8a4f975cfa4ff7aca90062d7458b4a7fc6",
+      "size": 1544
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "72cfff0df8991110ec5c424e53916428ccc9d4cb0785f18382666f0b945ac894",
+      "size": 4011
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "f733f178e154d2b86e03b9b64adf52b5d3ad9f2ef2e3377501018442e7044857",
+      "size": 14292
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "3d9678f3988b3ab36d808b627f5da0ab5ee4433a01a562a05f5047ec0a530ab5",
+      "size": 6147
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3fbc4c4431533a4813f6f6b2db68d8990a960cde25ae8eaa3a36b52e8221640f",
+      "size": 105366
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e315ca14839321b101051d4b01fe693a8f2f4f9e42f20b7bb18c4daafe90b180",
+      "size": 1934
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_garnet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-15T04:22:46Z",
+  "vendor": "xiaomi"
+}

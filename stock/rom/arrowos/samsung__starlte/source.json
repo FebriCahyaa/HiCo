@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_samsung_starlte.git",
+  "codename": "starlte",
+  "commit": "56462ed18673cfb04cde1048a13927aa97966ff6",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5e5faea40af2397f5eba3211c6890b7f3b399ae610fef27267d20eb660acc33e",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "df0a0da35fb9463981ce27ebb3819489ed2e4e6baa6a6a3bce5071475742edbb",
+      "size": 756
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ec72e8497ad523f0f541cb67ba57934b68032e599e3611872aed86b48930f00",
+      "size": 1099
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b9c7e09c235247ed9af159816cd16af022a3fec8081be50e22257daea5c2fd2d",
+      "size": 947
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4c29c20cdde3ad23f9e631472119d2d1e59da1fac601d55f076abd8aa993b8b7",
+      "size": 1004
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5f1acea1a39f6af84c4797f256b201ef5eb5ea6ecc57791f92e4b545d3a38231",
+      "size": 3180
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_starlte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-05-16T07:32:43Z",
+  "vendor": "samsung"
+}

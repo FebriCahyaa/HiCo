@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_a52q.git",
+  "codename": "a52q",
+  "commit": "f328f13fd1af99b3c37c572ba3ed78c14fb03dc5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d3dacbf0c1934649fc8540e99b9e329b850b7adef7eba1fd3aec5d29ac8b118a",
+      "size": 300
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ac3040bab7805a0b1c8be966e6d3d6778aa74ad7784dee4da0e869ec69bd58c3",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dbde753df419fd529ad929f2b2514e9d2cfe67daf7115f845b2d37b532ee5c67",
+      "size": 953
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c7f5b4c5e1fd9879a787c136ab16d3131b86d347a6c040d4f5c79d30d64a1e79",
+      "size": 1091
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f84c8922cade4dc9881c41f54cb81cbdd0836fca31a619a6d0825fb562fbcac5",
+      "size": 791
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b4fa7053498b708af63867363f568c8f508d8cece8b3204c4a4e362448e26494",
+      "size": 132
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6f2291189562e92b7dde5c2562494c295f6d60a3c46289786719c07bd8dfb910",
+      "size": 2485
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3cc2dffdfe6d5a66a07f2df15f7389102a85fbcf1b01d543bf5ab881f7700df1",
+      "size": 171
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_a52q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T12:45:31Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_miatoll.git",
+  "codename": "miatoll",
+  "commit": "37aff784f7c7817bfa3a791957460d47d745592d",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "999e4fdb59d287d9fdfdf3acebdad6757cb63fcdf5054c4271252127994572de",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0467ac919a294350c94ce0aecb25bbcdfeec886b382b646d1e0a29388aa53435",
+      "size": 442
+    },
+    {
+      "path": "configs/thermal-engine-curtana.conf",
+      "sha256": "5998569a74efaf6a191e0cc3ad578c31ec35f08f61bfe122661bb9c29d63dcd2",
+      "size": 1561
+    },
+    {
+      "path": "configs/thermal-engine-excalibur.conf",
+      "sha256": "ae631635f57e34b36870e9db2628c3c875c215ba8dcc2fd4a92c8c49dfa02e2a",
+      "size": 1565
+    },
+    {
+      "path": "configs/thermal-engine-gram.conf",
+      "sha256": "ae631635f57e34b36870e9db2628c3c875c215ba8dcc2fd4a92c8c49dfa02e2a",
+      "size": 1565
+    },
+    {
+      "path": "configs/thermal-engine-joyeuse.conf",
+      "sha256": "761f9e97591ea49f774f647ff9a8e498094b608ea0bcedfef8b2ff4dccb807a9",
+      "size": 1564
+    },
+    {
+      "path": "device.mk",
+      "sha256": "958ec880d33d201307b5eba8394c272563cb158e213a4c47bffaeabb87d884b3",
+      "size": 2077
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d1868e18b9fd32eafb9935ae910a9162acd6f1d2bf998fc3ee4fe254213ccbed",
+      "size": 433
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d7752446af571476d6564b4c19083f5a3a034cc30b47055586b55074ff0dc3f1",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a3bbd0da00aeb3204c892c528e9f6ef52b24816e459084551c8bd8f4a6a71b6e",
+      "size": 2116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_miatoll",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-05-24T13:31:40Z",
+  "vendor": "xiaomi"
+}

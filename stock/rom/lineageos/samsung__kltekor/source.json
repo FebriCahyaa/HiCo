@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_kltekor.git",
+  "codename": "kltekor",
+  "commit": "be28c3a1bcaaf7fcfe488bb4ceda42553f8018a0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b9199234b66cfabfd8ff24f278ab721b0162ae07dc50d36d9e01465c048026e9",
+      "size": 716
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "13a6dbce1bf46111066b14163f7afa8f15bcdd0521480f24a238b4085492d51e",
+      "size": 652
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3f05439363c72edc4d0a6dffb684e597cdddc4d0eb5207a7cb55707eda64e653",
+      "size": 1158
+    },
+    {
+      "path": "device.mk",
+      "sha256": "aae30677145c52c5b1710bc7af650dc9231273e2d7217ea1d63a209cdf8960bc",
+      "size": 1206
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8d7529cfbaa316ad983353386917c0edb7a6b06c2cbb6618626cf063f5454e91",
+      "size": 1587
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9b77768b8bdd35910174e9b6d871f096017a54efcef8bf699697cb7d6dc33f4b",
+      "size": 116
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b2a0178be73d5600a0e98a5196b4a4af161cacba159ab638b80c3ceb6f325fe",
+      "size": 75
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_kltekor",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-04-09T18:42:02Z",
+  "vendor": "samsung"
+}

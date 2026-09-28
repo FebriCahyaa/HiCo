@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_z3c.git",
+  "codename": "z3c",
+  "commit": "555a00c062eda95013f715bc719ebe93a6152542",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "82057723ea3441990c6ef10c43d10e4db3ac06bb4c657b6079e9132f4a9af359",
+      "size": 715
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "eaf7a908a130a9285831d834dafbe4a5d0d147a3e1592713411f332a93922052",
+      "size": 748
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a34dfb78cb9895adfafc8ad47ed7b1c2b5e3f6da9cda05a446f63cec581b7f54",
+      "size": 1241
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9b41b64ab04e8520ccd186a77bb450ec7960a5761a6b50f217a93489141ec51a",
+      "size": 521
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "45db8c33193924351d256526a21922d9ffe4973330191244048b595d10c8d902",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8a51363a7636041c0bd75f2421252fa76a69c7841b1aa0adb864f7a604454c7d",
+      "size": 8454
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_z3c",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:34Z",
+  "vendor": "sony"
+}

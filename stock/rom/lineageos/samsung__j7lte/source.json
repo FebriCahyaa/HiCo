@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_j7lte-common.git",
+  "codename": "j7lte",
+  "commit": "c460cfcce01ac3b4f9d04a265f2013773722e79b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9a051c6376ff917ffa931413ec31cd6f767d047a8ba2f117997e56e195063857",
+      "size": 731
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "701c50a19866488b78c9284e6e160556cf08a37b290d76bc873066a36d909d5e",
+      "size": 787
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3248fcc7caa36cec3872bcd81020a49141a6f60bea3683311812903f5708796f",
+      "size": 1008
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "806a480a6bb01b65f48376c70b867d799e097664f562368fb0c40cc947a7ec63",
+      "size": 227
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "50ab0a73887d57c81ce1db65933ebc6e3918010444a9e004618899170e97487e",
+      "size": 5079
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_j7lte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:12:11Z",
+  "vendor": "samsung"
+}

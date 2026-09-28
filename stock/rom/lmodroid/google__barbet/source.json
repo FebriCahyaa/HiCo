@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_barbet.git",
+  "codename": "barbet",
+  "commit": "05d75dfc42ab882165952017db49ea787569b2ed",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b0518ffe16d1d3babfccd84d6c41b2d88df703cc146af588582f7714589cc35e",
+      "size": 1227
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "777e4ae11e383e25eca0ec6caaa557e297d739773e9e6a77162ec8da4a64c060",
+      "size": 848
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "39f14fd076fe1a3ad043a8d191298713d5c301070db637e1a65a09b940abc2bd",
+      "size": 337
+    },
+    {
+      "path": "device-barbet.mk",
+      "sha256": "df1c5014906b3bef1770ce161037267d8d3831327c8c91eb4d2505c83d1c2c80",
+      "size": 9057
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "72dab6a169e593e1ade3d3949709a1506465f0599e1f3e9cf75d0329c1105f1f",
+      "size": 302
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e79232cdc3da8177fd745b86842bfb321cb155b677b42767a84df690b73c46b7",
+      "size": 212
+    },
+    {
+      "path": "thermal-engine-barbet.conf",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "thermal_info_config_barbet.json",
+      "sha256": "7a0dba36685572ac66cdc6d221c9bd12a75b047f61a2f390a7e824971807a689",
+      "size": 8665
+    },
+    {
+      "path": "thermal_info_config_barbet_evt.json",
+      "sha256": "eeae60caad485da88946a2f227ce8e5b4fc75c4ecbecc5d28524281fb6c995a4",
+      "size": 6771
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_barbet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:07:24Z",
+  "vendor": "google"
+}

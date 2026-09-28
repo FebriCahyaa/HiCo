@@ -1,0 +1,10 @@
+#
+# system.prop for mesmerizemtd
+#
+
+rild.libpath=/system/lib/libsec-ril40.so
+rild.libargs=-d /dev/ttyS0
+ro.cdma.home.operator.numeric=311220
+ro.cdma.home.operator.alpha=USCC
+net.cdma.pppd.user=user US Cellular
+ro.sf.lcd_density=240

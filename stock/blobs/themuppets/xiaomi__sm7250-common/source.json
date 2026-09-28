@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "3d3544d3fbfa4f0f25235413577a8e0d2706ca5c",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "971ea7419a5c2d2495b94671caec8ee6c3950f2086b4c0237a237f4a48f5c2c3",
+      "size": 540
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_xiaomi_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "monet"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

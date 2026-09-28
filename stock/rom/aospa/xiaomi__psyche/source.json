@@ -1,0 +1,57 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_psyche.git",
+  "codename": "psyche",
+  "commit": "cd65dbcdb8c828772946b381e5f471b8b36750b7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e28d58dcf41949b0467b785e6fa5e76625d64bec0b8d7ee4592a6bdaa2d8da39",
+      "size": 905
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "078f100cb991e0fb534988dd73ccb13d09ef6c73c59e636aac303af906bcfc1e",
+      "size": 3679
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d1d39e4ffdccfea683fa1f58dc2c3307f1504b977a135a389e9f796144c51d6f",
+      "size": 5136
+    },
+    {
+      "path": "device.mk",
+      "sha256": "51ca27d2022a7ee66f633c87d15d4f3c1ba708f07ee6ea67ff336c93814318a3",
+      "size": 12474
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b98eab7d303032e3039475826284ae1701f94e1194b96ca0e395a2f8cbc453a7",
+      "size": 1995
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d6442ce9956c1756e9bc90a25c9f79af27604bcde6aa616849f8fb707e95ea2c",
+      "size": 83496
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file_contexts",
+      "sha256": "68bbf63f82b93779693d2c3a6bdc2e9da00e88a36da25c77fd4e63e8aec21af8",
+      "size": 178
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1fd469015197eee685d3f1f2a014f54c5c3aa1ec9f3836a16f57abccea2a15f2",
+      "size": 170
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_psyche",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-07-08T06:00:56Z",
+  "vendor": "xiaomi"
+}

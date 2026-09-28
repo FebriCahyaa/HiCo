@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_google_sphynx.git",
+  "codename": "sphynx",
+  "commit": "131db86da9e28e84e0cc95fce2d74d4ff704cc55",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "62a9f71dc804f0c455a08ac8aea48dfab20c643958bce3e59788a5a779f55a20",
+      "size": 674
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "440c89f0103198e05ca5b12354110a4614eff4eb1de188c104a87146cae8b14f",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fb4caca1b2516b968b127509aa7a4b4482c82f1402cff9deeb49a719aa9892de",
+      "size": 2740
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d1ccca5e818c9d33a0a11f8e2dd162ffab9246660127245ac991d2b03f6779e2",
+      "size": 3906
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "38172d4939ed2ad6f59788f136de8f8774c68f83e01ce6a8ba21521aededd2cc",
+      "size": 734
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f3d54af6977aec1ac7dfdd8c7169942325513af690cf28f48de878a0c1586496",
+      "size": 1542
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "d5e9bb82433443c7078d7fc0440f92aa625414d622725054176683b7f6c830fd",
+      "size": 712
+    },
+    {
+      "path": "thermal/thermalhal.dragon.xml",
+      "sha256": "4dc41bf18941b5237c3e065e5f8c1e23e68825b4044b0d26df6eeaaf40584a5d",
+      "size": 1236
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_sphynx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-09-18T20:54:11Z",
+  "vendor": "google"
+}

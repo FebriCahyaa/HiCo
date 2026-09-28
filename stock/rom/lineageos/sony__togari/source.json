@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_togari.git",
+  "codename": "togari",
+  "commit": "e79065f0ef7f74d17f912ca3a25d121d31677331",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "39bbd081fe692bb8b517192b754ac0fa9a787434a8a978e897e981e46e47e9fd",
+      "size": 123
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f16ebc43fbb5fad66638a36c1fdbb4d43cd4d7e27feacef87a233efdab662909",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "026a48776a62ba2eac37911eb6ee1394e275583b321a8d5acbd13852d83d8d30",
+      "size": 1310
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d56ef5dd39340407fecd781a4822c6278148ebc142815b7a7ec04ab4d6879be6",
+      "size": 129
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b8290695ff932717ba86990e73d8a1d999004e2e168b7efd33bdce7f8ab14315",
+      "size": 7625
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f2dd1223475aa8c7e5a3936b0c193c7d67fc56875859987f686a26f6eefe324e",
+      "size": 157
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "059965ad988a16c0e2e106bb96b95e019141e00e8ef7a608928d576c0acb3236",
+      "size": 30
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_togari",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:47Z",
+  "vendor": "sony"
+}

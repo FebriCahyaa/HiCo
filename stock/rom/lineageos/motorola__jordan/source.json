@@ -1,0 +1,52 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_jordan.git",
+  "codename": "jordan",
+  "commit": "660a99df1e958e37d9da5adbef68bad05b1782a6",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f42af241bda18e4dd803f23dd384f1f2f825a5ef72a3d2a6400aed9714666121",
+      "size": 686
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "42b619ee2d96e2d4c4cd1f4a9d12899441ab1b7f6f273a46d61a0c4a34288879",
+      "size": 782
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "08102db9f48b9ee7833ee71df128c7c521d136a81b9a9668408f334b81a67204",
+      "size": 4870
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "92f8cabc0b5d05fcdc6c94e158f20a122e309802b586f3b3f0e72342cd576794",
+      "size": 335
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f0193ab0148c737c349905f2c5113ad8732d486054b0400719ece902f1132291",
+      "size": 4168
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8f3183ed1e51f9e2bce3fb046f5f35ad2ae26aaf18e908784e9087599546a31c",
+      "size": 2188
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f5afeb744173e8ec23c0e00ed7f6556c36d9cddb423737858581f44108fa7555",
+      "size": 853
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_jordan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:01:30Z",
+  "vendor": "motorola"
+}

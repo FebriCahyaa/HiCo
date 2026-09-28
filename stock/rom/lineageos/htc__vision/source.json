@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_vision.git",
+  "codename": "vision",
+  "commit": "209395775918b2969dc35338240b9e920998bc48",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "30f81a248e66cb7f05b1f6dae7bb16d1f4d8541fbddf1605a96b05e92e6410b6",
+      "size": 782
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4c4476745a43bc5f57c563751c0bec8a473eac5b6cde98cc513f280adf9925e9",
+      "size": 3621
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8290e225a53dd2fd54e867d5b6669093d88fd376cba5187e8860d8f52fd33926",
+      "size": 8646
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b89ee04db9ae237a6eac6e8aa41860d2bed97a76d57987bd470d9f9fc283dca",
+      "size": 1241
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0a401260713b25065f9e3d16e56ea902565989922b3eb89cc1700a2611ca7608",
+      "size": 850
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_vision",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:23Z",
+  "vendor": "htc"
+}

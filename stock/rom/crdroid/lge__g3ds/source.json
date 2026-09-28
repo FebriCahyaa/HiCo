@@ -1,0 +1,52 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_g3ds.git",
+  "codename": "g3ds",
+  "commit": "60fbd147bb52a78e54a88257a28b741562c5a206",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3916f09ec9cfe1745650dc1152fc468fb593d4da8a63a4b3c80008191e582a90",
+      "size": 1135
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8eb9f4560f013e890e78a4afd0039f211ffc34b6daee7820f31471f84e456da0",
+      "size": 750
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d6efde6bbec3963f2ec0a165b4c5b545543f14eba13a2973a73fb5df13580182",
+      "size": 2346
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0f9b8477fd10d6b17440e11ba8b9b0027c56adbbc4c370873f767d9a4e36065b",
+      "size": 1837
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d5293459e9b9301759963b47667fd20b1bb7983e61cb75df93b878c2934309b2",
+      "size": 102
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b6375bf96331f5e466abc7a559558621455bb6d782c354e3583568d4ead1eba9",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d49b01b84ac84ccc19d6ada748c26a07f44ef843aa676dee5a6567fe073cb5cd",
+      "size": 2301
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_g3ds",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-03-19T11:01:14Z",
+  "vendor": "lge"
+}

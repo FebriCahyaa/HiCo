@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_samsung_universal9810-common.git",
+  "codename": "universal9810",
+  "commit": "f69d689d72f5d3210c31e205a12919dd0dc0fb6e",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "df30f506e2f373c73905d95273f2434922ff732086275cbb5978dfc7a012203f",
+      "size": 746
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "00e8434236593026e8f2a4ec16aa03ddcadca76385c4754e1b909771d161749c",
+      "size": 3373
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6282436779b8abca76ea9102496cfd88dbe23e384b45a8663a63922130174e29",
+      "size": 2697
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a69f4309b05d0b1c88da3bbbec9741a95791fde45898f3ef30f121e3f6a563e7",
+      "size": 402
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cf8c5b8d15ecd79730dfa07f689a05dd88441a7c4e3914452982bf66477d2121",
+      "size": 788
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_universal9810-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-02-08T20:51:05Z",
+  "vendor": "samsung"
+}

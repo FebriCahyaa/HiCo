@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_ido.git",
+  "codename": "ido",
+  "commit": "15d518bc0edcf1dc9a5597adab0c2b108726809a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8ecf5bb188b362884588912e1d13936ab4c852a1d902c9492d2c1fe83d86f6db",
+      "size": 5773
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e276851e535678c01137829957632417ef1f3a7482e398b6665acb139ccc1823",
+      "size": 5149
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "cbf3c76cb91cf920e307a895631ed7c246bdb62e49e95158b8cf54fc3cc5be4c",
+      "size": 3087
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2b9b258dfe7fd904d008a58578bac97ba37bc23aae9d56366ab55d625a9b01b8",
+      "size": 10409
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ad850597e4074e95542043164bf207e49af26a34c4f07e5f380313f591836d2",
+      "size": 1689
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b72fee934a166f478ff47291627d2b720da75da939675a6f622192fcfa1bc115",
+      "size": 524
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c625586a781fc0fc41321e8d752d2de561fc16f0057d8bfd11426bbf113e0b0d",
+      "size": 22682
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e0114ebe4957b8fb4ec5cf4f705beb7337cc921ed52141062b7484ae2ebf9f58",
+      "size": 2460
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_ido",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:46Z",
+  "vendor": "xiaomi"
+}

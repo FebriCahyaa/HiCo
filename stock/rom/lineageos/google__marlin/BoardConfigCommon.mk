@@ -1,0 +1,120 @@
+PLATFORM_PATH := device/google/marlin
+
+# BUILD_BROKEN_*
+# Needed for /vendor/lib/dsp libraries
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# A/B
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    vendor
+AB_OTA_UPDATER := true
+
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := kryo
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := kryo
+
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+
+# Display
+TARGET_USES_GRALLOC1 := true
+TARGET_USES_HWC2 := true
+
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
+
+# Graphics
+BOARD_EGL_CFG := $(PLATFORM_PATH)/configs/graphics/egl.cfg
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(PLATFORM_PATH)/manifests/device_framework_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifests/manifest.xml
+DEVICE_MATRIX_FILE   := $(PLATFORM_PATH)/manifests/compatibility_matrix.xml
+
+# Kernel
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 cma=32M@0-0xffffffff loop.max_part=7 androidboot.boot_devices=soc/624000.ufshc
+BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
+BOARD_KERNEL_OFFSET := 0x80000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_TAGS_OFFSET := 0x02500000
+BOARD_RAMDISK_USE_XZ := true
+BOARD_RAMDISK_OFFSET := 0x02700000
+BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_CONFIG := m1s1_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/marlin
+TARGET_NO_KERNEL := false
+
+# Media
+TARGET_USES_ION := true
+
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x02000000
+BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
+BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3811790848
+BOARD_VENDORIMAGE_PARTITION_SIZE := 448790528
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_USES_SYSTEM_OTHER_ODEX := true
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_USERIMAGES_USE_EXT4 := true
+
+# Platform
+TARGET_BOARD_PLATFORM := msm8996
+TARGET_USES_AOSP := true
+
+# Properties
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
+TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
+
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/init-files/fstab.common
+TARGET_RECOVERY_UI_LIB := librecovery_ui_nanohub libfstab
+TARGET_RECOVERY_WIPE := $(PLATFORM_PATH)/recovery/recovery.wipe.common
+
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := firmware firmware/radio persist
+BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
+
+# SELinux
+SELINUX_IGNORE_NEVERALLOWS := true
+include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include hardware/sony/timekeep/sepolicy/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor/verizon
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
+
+# Verified Boot
+BOARD_AVB_ENABLE := false
+
+# Wi-Fi
+BOARD_HAS_QCOM_WLAN := true
+BOARD_WLAN_DEVICE := qcwcn
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+WIFI_AVOID_IFACE_RESET_MAC_CHANGE := true
+WIFI_DRIVER_FW_PATH_AP  := "ap"
+WIFI_DRIVER_FW_PATH_STA := "sta"
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WPA_SUPPLICANT_VERSION := VER_0_8_X

@@ -1,0 +1,42 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_zero-common.git",
+  "codename": "zero",
+  "commit": "480456c5786f29eeaa9194f37f0bb2e19daf6363",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5e50e367138c529bef9dbb916d103fd224d840ca87be8edc6df2c0d60fca71bf",
+      "size": 30
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2b9a1d1e89be962a991f3555c686e04874003deb441e2590525cfff61c6f08b8",
+      "size": 918
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "69b3c4325bd45a6779ae1892f74369e708ae623bb5dfc6dbb52195950ae7cf66",
+      "size": 9107
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4fca6b7f384e5966ec291d7cac392d090bd0f87c83ddbf2636b9d8129774f41e",
+      "size": 1631
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8b6b40aad8264e98088aa3cdd8f8fef24e4eab56b28aa6499dbdff6cee330e63",
+      "size": 1947
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_zero-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-09-01T08:48:40Z",
+  "vendor": "samsung"
+}

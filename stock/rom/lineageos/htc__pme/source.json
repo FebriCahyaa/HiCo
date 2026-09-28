@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_pme.git",
+  "codename": "pme",
+  "commit": "a186e68dd83958a87f43f8973abad6d68468e78d",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "478c019efdfd51fe2cff612cb9b4daed7b64f451b6f75de4a6f477ae7127d41b",
+      "size": 5701
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "174ba0f25600e9fefe3e905b110983ca5dc5fa528bca091a49149e9a1c95be5b",
+      "size": 5881
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ae08c79fb151791807ea9c965b58ee5a01d49dcc6fa92c33ce7abab80e6c287b",
+      "size": 11601
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6947d0cf56816d84af719190b97db063a499936b5721db9f0672c9738847080b",
+      "size": 1509
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a7add80e07f2ad2e2089e41cd562cec00195b58190361e71e01310c892e1bcb9",
+      "size": 798
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b29eac64e958386d4a06a9ce5dbfd1688a9038d9b4bf7142ef5c7f4616da9ce3",
+      "size": 37311
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "99096617e7e283d2d44781ade75592ecf533c8af539d716faec55702e421aeef",
+      "size": 87
+    },
+    {
+      "path": "system.prop",
+      "sha256": "37218eb12ca4572d8d2a7fe5b05e36e3a16416f6dd0ee928be2720e0bd717f96",
+      "size": 2356
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "a99e32105405645397a4e33ef16b5980ec813ef1dbc772b9aef915cdea51c1a5",
+      "size": 890
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e54ecc84c700ccc3dbf42161bb1a3ee83c763abc16da2f3e71579a6d3394f3aa",
+      "size": 8876
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_pme",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:02Z",
+  "vendor": "htc"
+}

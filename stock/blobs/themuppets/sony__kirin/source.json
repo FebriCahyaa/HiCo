@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_kirin.git",
+  "codename": "kirin",
+  "commit": "e872f3e5a19477e1310f1ac1384530a506e4f330",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "bd9a5c1087a6a6283aad081ee748b113b127c195ecf04245bd8d69d6baed8b22",
+      "size": 1214
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_sony_kirin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "kirin"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

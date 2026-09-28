@@ -1,0 +1,258 @@
+#
+# Copyright (C) 2025 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+DEVICE_PATH := device/xiaomi/klee
+BUILD_BROKEN_DUP_RULES := true
+IGNORE_PREFER32_ON_DEVICE := true
+
+# Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv9-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_VARIANT := cortex-a76
+
+# Virtual A/B
+AB_OTA_PARTITIONS := \
+    odm \
+    odm_dlkm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vendor \
+    vendor_dlkm
+
+# Boot Image
+AB_OTA_PARTITIONS += \
+    boot
+
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
+
+# Bootconfig
+BOARD_BOOTCONFIG += \
+    androidboot.serialconsole=0 \
+    androidboot.hypervisor.version=GenieZone \
+    androidboot.hypervisor.vm.supported=1
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := klee
+TARGET_NO_BOOTLOADER := true
+
+# Display
+TARGET_SCREEN_DENSITY := 490
+
+# DTB/DTBO
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)-kernel/dtb
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
+
+# Graphics
+TARGET_USES_VULKAN := true
+
+# init_boot image
+AB_OTA_PARTITIONS += \
+    init_boot
+
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 8388608
+
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
+# Kernel
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
+
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image.lz4
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
+
+BOARD_SYSTEM_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/system_dlkm/*.ko)
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/modules.load.system))
+
+BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/vendor_dlkm/*.ko)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/modules.load.vendor))
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(DEVICE_PATH)-kernel/vendor_ramdisk/*.ko)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/modules.load.vendor_ramdisk))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)-kernel/modules.load.recovery))
+
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_SUPER_PARTITION_SIZE := 9125756928
+
+BOARD_USES_SYSTEM_DLKMIMAGE := true
+BOARD_USES_VENDOR_DLKMIMAGE := true
+
+BOARD_USES_METADATA_PARTITION := true
+
+BOARD_SUPER_PARTITION_GROUPS := mediatek_dynamic_partitions
+BOARD_MEDIATEK_DYNAMIC_PARTITIONS_SIZE := 9121562624
+BOARD_MEDIATEK_DYNAMIC_PARTITIONS_PARTITION_LIST += \
+    odm \
+    odm_dlkm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vendor \
+    vendor_dlkm
+
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_ODM_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
+
+TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
+ifeq ($(PRODUCT_NAME),halcyon_klee)
+-include vendor/halcyon/config/BoardConfigReservedSize.mk
+else
+-include vendor/alpha/config/BoardConfigReservedSize.mk
+endif
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6899
+
+# Properties
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6899
+TARGET_USERIMAGES_USE_F2FS := true
+
+# vendor_boot image
+AB_OTA_PARTITIONS += \
+    vendor_boot
+
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE += rcupdate.rcu_expedited=1 rcu_nocbs=all rcutree.enable_rcu_lazy
+BOARD_KERNEL_CMDLINE += log_buf_len=1024K
+BOARD_KERNEL_CMDLINE += sysctl.kernel.sched_pelt_multiplier=4
+BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
+BOARD_KERNEL_CMDLINE += cgroup_disable=memory
+BOARD_KERNEL_CMDLINE += kasan=off
+
+BOARD_BOOT_HEADER_VERSION := 4
+
+BOARD_DTB_OFFSET := 0x07c88000
+BOARD_KERNEL_BASE := 0x3fff8000
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_TAGS_OFFSET := 0x07c88000
+BOARD_RAMDISK_OFFSET := 0x26f08000
+
+BOARD_MKBOOTIMG_ARGS := --dtb_offset $(BOARD_DTB_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
+BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
+BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
+
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+
+# VINTF
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+     $(DEVICE_PATH)/framework_compatibility_matrix.xml \
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
+
+# WiFi
+BOARD_WLAN_DEVICE := MediaTek
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mt66xx
+BOARD_HOSTAPD_DRIVER := $(BOARD_WPA_SUPPLICANT_DRIVER)
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := $(BOARD_HOSTAPD_PRIVATE_LIB)
+WIFI_FEATURE_HOSTAPD_11AX := true
+WIFI_FEATURE_SUPPLICANT_11AX := true
+WIFI_DRIVER_FW_PATH_PARAM := "/dev/wmtWifi"
+WIFI_DRIVER_FW_PATH_STA := "STA"
+WIFI_DRIVER_FW_PATH_AP := "AP"
+WIFI_DRIVER_FW_PATH_P2P := "P2P"
+CONFIG_IEEE80211AX := true
+WIFI_DRIVER_STATE_CTRL_PARAM := $(WIFI_DRIVER_FW_PATH_PARAM)
+WIFI_DRIVER_STATE_ON := "1"
+WIFI_DRIVER_STATE_OFF := "0"
+WIFI_HAL_INTERFACE_COMBINATIONS := {{{STA}, 2}}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{AP_BRIDGED}, 1},}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{AP}, 1}}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{P2P}, 1}}
+WIFI_HAL_INTERFACE_COMBINATIONS += ,{{{STA}, 1}, {{NAN}, 1}}
+WIFI_HIDL_FEATURE_AWARE := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+
+# Verified Boot
+AB_OTA_PARTITIONS += \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
+BOARD_AVB_ENABLE := true
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_ALGORITHM := SHA256_RSA4096
+
+BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_BOOT_ROLLBACK_INDEX := 0
+BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 3
+
+BOARD_AVB_VBMETA_SYSTEM := system system_dlkm system_ext product
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 0
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
+
+BOARD_AVB_VBMETA_VENDOR := vendor odm vendor_dlkm odm_dlkm
+BOARD_AVB_VBMETA_VENDOR_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 0
+BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 4
+
+BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_ODM_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_PRODUCT_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_SYSTEM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_SYSTEM_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_SYSTEM_EXT_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+
+# Inherit the proprietary files
+include vendor/xiaomi/klee/BoardConfigVendor.mk
+-include device/xiaomi/klee-miuicamera/BoardConfig.mk

@@ -1,0 +1,52 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_wingtech_wt88047.git",
+  "codename": "wt88047",
+  "commit": "efea2229f25bb190b1eb917fdca9deac0a0161a1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "52a89523393e18d44b9b37638d2d35a75c21e07af9d9e10759b843b199f4b1a8",
+      "size": 734
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f0cde074cd207e7563429bff3c433f07c4878ea9c0df5383719c6bf6a5a3df87",
+      "size": 55
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1ac8f8511b1c9842894678d03879cfe6e820dc0cb8247fd639d7627e6ecb2990",
+      "size": 839
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1f25184c371e04672510399c48023a725ca701a37eef9950c97f45515946024a",
+      "size": 1742
+    },
+    {
+      "path": "device.mk",
+      "sha256": "390fcea9945fb1582d1a3b4583cde621edf9a1ca07e3435e4a9457afd9d803b9",
+      "size": 897
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bdab3bf1715a9bf79feba4c20e5f856a6905788bab2bc97789f3f4791b85b206",
+      "size": 1695
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4bcb023f32efc6d990ebe174c15a8d8a547e9718ae58888d167fda69f3f827c2",
+      "size": 11685
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_wingtech_wt88047",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-29T17:28:43Z",
+  "vendor": "wingtech"
+}

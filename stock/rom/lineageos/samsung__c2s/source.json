@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_c2s.git",
+  "codename": "c2s",
+  "commit": "28d9e75af35c5bef24a75cb711761811ad6fccca",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6b95924f23eaa9da081a32b62b7f2e5a09461389ac500e34845a52a649a4dc74",
+      "size": 19
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9e485e29512226932b4c10103867a771a3e0981061c9befdd16a7126c80f4275",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bc31ec4deca41cdeb02b332cefa732e3bdebfcbec90e82e7f46b87b18ace021f",
+      "size": 1833
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a6b258a213ade0a974c6c93ab180e97a7dc90ab52085e7b031c20bcb2c0ea59a",
+      "size": 2836
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "68823941a9783e98a74ade30e816840863e1ef87a79341cb743a40f905019bbf",
+      "size": 1864
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "65e2c21f05c609c2eef5b6e038bcf88ce961c76698ae5d41b28ad366e24ba514",
+      "size": 146
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "42fcf696cb9f244c0678831170be3eb745d641d0f5f624c34c5f11455f1673ea",
+      "size": 3329
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7eb38e8d41fa150bf82f385fd35220f8dd7985a54389497418c2fad121e79249",
+      "size": 805
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_c2s",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T18:59:30Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_earth.git",
+  "codename": "earth",
+  "commit": "55b4fe3e7c9bf217c92009f0bb71697a48ff43e2",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "31c31c3f136f3ed5e706c5c10ba8ebd3846ab906b602fa945d570b9985811bd4",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dd13647aaf27824c1f87c98dc051efc6e76d4fde3b85518bed921bddea110d9b",
+      "size": 5694
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "7682389522d00d89dd2c5af411a0a378bf397813f293578212da8b459d568e62",
+      "size": 6952
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4aacedadd24bcf27d90a7da195eedd0284495724d21e1793da04676c13e4eada",
+      "size": 13534
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f5dd40459083a4a6e7624fcded58ca965df6ce36f52631d444bc01a21b61a834",
+      "size": 7661
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9ebba7e558e160d6c6d93fe041076d42fbf790422b80257953f3ffb3a899bfd9",
+      "size": 407
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0073f4e4207d4d56c86faf1f738ebcc284a930f86c257c79a4f2dada368b074d",
+      "size": 44113
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "90294ccaa03ea35165aca7a104b86f3487614bca57870b752ae11112436cd545",
+      "size": 1095
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f8612ea6dd634bddc0794e2763711e4fe13643a74bbe577137dccf982adf032e",
+      "size": 177
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1358f99dc4b0eaf9602146dac740cda3955c6f6fd3e73ff7d0a3aac978386da4",
+      "size": 7676
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_earth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T16:49:17Z",
+  "vendor": "xiaomi"
+}

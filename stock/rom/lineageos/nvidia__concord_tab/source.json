@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_concord_tab.git",
+  "codename": "concord_tab",
+  "commit": "9d89c7741826afecc8eed9a2c3227a35b15647c5",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "33ec51838477d16239141343d092b5db6af732441fefda7c4e07214942fca4a1",
+      "size": 907
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "60e049ec287993d4fc4fdcc31b20a446b508544b38fa78db91d56d940d57a462",
+      "size": 640
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1df4898e391706bc810a62eaf502466ab144a6b7ac7b457eed1c2dd5a4cdb91e",
+      "size": 893
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5b17ba1f693c0526df34efab81747e80d7fc748caaecfa28a2ab268321d90791",
+      "size": 102
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_concord_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-14T22:13:47Z",
+  "vendor": "nvidia"
+}

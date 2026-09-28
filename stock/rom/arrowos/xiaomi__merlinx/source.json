@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_merlinx.git",
+  "codename": "merlinx",
+  "commit": "6b28e22878d3dce747a6f68412d2f78d79f0baa6",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2fd204033fac86dc3d7cf9dd4fac5ec77fa51738130226679ce89356bacb5469",
+      "size": 1767
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "398c3adfb6ff92ce60c4d4241e2fe627d920414feb2395cb2b58c37ac1062560",
+      "size": 750
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c9dff16d7a89ab530eff50e534f605ddd22637a687eb26d4ba5391234f68c7e4",
+      "size": 997
+    },
+    {
+      "path": "device.mk",
+      "sha256": "92044150d57e941f74646b877411d6603afde392a58849eb24710344ae91ef2e",
+      "size": 2336
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e5c72004e828a8ee13d83a88a4df285e337fdcd9054b44fc652addfd65a46a2c",
+      "size": 2152
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ff0f922f95c31ce7a48a6ea0708dcf6f62d4f847a12c212a4d5c38110a755ceb",
+      "size": 62131
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_merlinx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-10T22:34:49Z",
+  "vendor": "xiaomi"
+}

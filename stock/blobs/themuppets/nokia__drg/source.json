@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_nokia_DRG.git",
+  "codename": "drg",
+  "commit": "85a57e7ef71d3d856db3f33e6072c7f95921d0cd",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_nokia_DRG",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "drg"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "nokia"
+}

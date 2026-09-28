@@ -1,0 +1,167 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_raphael.git",
+  "codename": "raphael",
+  "commit": "4428c9daddebe91bc24b91eb025fbb383a1c2520",
+  "file_count": 30,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e01fd6dbabe1ad511f3ce2e0b590c6e78d1e3d15ae537728afb738839e6fd50f",
+      "size": 206
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e252150d7cf50613527416187c6ac27062f9f5b51a5fea0c312b59134482be4b",
+      "size": 4982
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0dc50e99e090a889995cdcd4d0c5d43d4b4c0777276c3fd26224ad00fdd13a41",
+      "size": 224
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "404dbdfda0e621ad6b1f5d89605f4f952360877ba81d980a1af61dd3e63a8924",
+      "size": 5240
+    },
+    {
+      "path": "device.mk",
+      "sha256": "630b51c950fa785e52dd3420c623b632961b14d05d474d04ce35f376191452b6",
+      "size": 21002
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dc4f11fd0915fb66169a9b7c8b965203d4c5ba8d2417280ceff5a8d0d7810556",
+      "size": 1500
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0d313935ad1eb097acd6510083f1c030b41e0ec8c4a084d098d5844a1edaec5b",
+      "size": 49832
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "42beb60d63f16c71e8387bf64bcb11392613f8454875bed3273408d6bee3c93a",
+      "size": 494
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "system.prop",
+      "sha256": "662e295927de6b9e1c9fd636c27f10662ed938b45fef9f89f82ea59e906d5a74",
+      "size": 944
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "9f11da3e4d16488532168c1f832b076ed90d571d40c574771e38734093b30fff",
+      "size": 1046
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "98f6666b0ea1fb80d442fb2c4590ca3fc48b2648ca9c087b9f9a768a8a50c5ed",
+      "size": 32577
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "1d2e9155d648ec5d8b17f1a0ecdc1724a0dab8300975d7a3e7717567dee56410",
+      "size": 3725
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.xiaomi.rc",
+      "sha256": "d97ba228012292552eafe45be2fb3a01c78d9253202be0b26b269668ad8bacb1",
+      "size": 556
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.xiaomi.xml",
+      "sha256": "e232ddad5a10b5524e16356d8f786154b7e6fbbbd85b603cf8763f2d6d288a44",
+      "size": 350
+    },
+    {
+      "path": "thermal/etc/thermal-engine-msmnile-normal_mode.conf",
+      "sha256": "8af41dc826ad9b24544d1e41d64010be1810c8041fde7531fbca89fd784be4b9",
+      "size": 2156
+    },
+    {
+      "path": "thermal/etc/thermal_info_config.json",
+      "sha256": "025e0d079df710962d1ba1d6c6bddcb2f980afb668cf3abf07c3a0549e5e8239",
+      "size": 5910
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "f968b095f513803ca351a62632cff454de21a9bdbddd0003f07f11d8c50ac71f",
+      "size": 2022
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "c25cd25058b26b68bfbc01258e436cbf2f5aa49809ab101feb93660fd2d02e6c",
+      "size": 59784
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "d48fc0a4c672297ac1faef043cdb775044010a0bd896958d780c25b1a77f1fee",
+      "size": 11008
+    },
+    {
+      "path": "thermal/utils/config_parser.cpp",
+      "sha256": "82556b556f4dab2c1fcfc16ce6127d881bfa71effe8005a9337478112a146061",
+      "size": 39033
+    },
+    {
+      "path": "thermal/utils/config_parser.h",
+      "sha256": "a1f91b73e6f6ad466696e6858eef0bfbde80d42c0552dc9632dc7e18f3b2ca6d",
+      "size": 4569
+    },
+    {
+      "path": "thermal/utils/config_schema.json",
+      "sha256": "0e8021bf405a6c231ee2948c1f5115235661dd8a499f4ba891b383d947486b1a",
+      "size": 6592
+    },
+    {
+      "path": "thermal/utils/power_files.cpp",
+      "sha256": "26592360375eb0b78cd5e7547ba7f874fa4ec7d062969effed8384cd36b983b8",
+      "size": 17112
+    },
+    {
+      "path": "thermal/utils/power_files.h",
+      "sha256": "f1939dca33be73312fbdb9984b106bcf873ef0d81060c3b9f10483742552a6b2",
+      "size": 4900
+    },
+    {
+      "path": "thermal/utils/thermal_files.cpp",
+      "sha256": "567f26f83e4446d3404810332ae5cddea1b3f87f9cdee9a160c673ff8c913296",
+      "size": 2539
+    },
+    {
+      "path": "thermal/utils/thermal_files.h",
+      "sha256": "f84694956e5a9cf1a7531a51c703a604404356bdf63bca9f18853c9a7bcd848a",
+      "size": 1896
+    },
+    {
+      "path": "thermal/utils/thermal_watcher.cpp",
+      "sha256": "0b6dec3f5418f8ab34bc7c79ce1a69a629233470dc61a1b1cae285a85ee64c8c",
+      "size": 19037
+    },
+    {
+      "path": "thermal/utils/thermal_watcher.h",
+      "sha256": "bed6280e4bc0a52b28c56a5aebc4fce53257910b754821a3b3558fc28fddc9cf",
+      "size": 3906
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0a8e0f656cbd604c675842e3baf6c51523355c5ae1e299e6955b93c1575f3d69",
+      "size": 4266
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_raphael",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-10-17T09:47:33Z",
+  "vendor": "xiaomi"
+}

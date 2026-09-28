@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_on7xelte.git",
+  "codename": "on7xelte",
+  "commit": "b0f89e6d06ae7db5be09d04193a3f13eb932f779",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "575d0c8d1350c278c9eeb127841f564d4b8f830afc024b7f4c462a1eb9e45bf5",
+      "size": 729
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c81fbdd553a7b0ec0dab0a350af9b4b701e6c8c616321bded57884d97f1aab5c",
+      "size": 1170
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dd4774e17d9beb23e77619b7206401d7cfd5ee672b98750f98ed32b83a5af10b",
+      "size": 1105
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "11fb6e01bd8696c101f7634cfb7c2310f7051b6032d089e275505ceb06b0c165",
+      "size": 1704
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d6a63d8d6956bc86c1ae82ab932e5e6f35646515f8e2e9b6bd484895574d8760",
+      "size": 1043
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "30bbd41ddc4c17084a98488e4aa9e0b68770e0369df54af3b079a171a949f015",
+      "size": 14072
+    },
+    {
+      "path": "system.prop",
+      "sha256": "afbbd97b40dfed5464dc27646d66af939efe2a67318d7c0117e1292115702c60",
+      "size": 266
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "3113458a5c2762a7807c165a544794e2c599132b045b451a92cd65434e7e0fdc",
+      "size": 43
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_on7xelte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-07-22T16:46:57Z",
+  "vendor": "samsung"
+}

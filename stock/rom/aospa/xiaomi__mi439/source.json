@@ -1,0 +1,132 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_mi439.git",
+  "codename": "mi439",
+  "commit": "5d8b5191845e8780a89871f0b103d5ca2999aaba",
+  "file_count": 23,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5ade261a385f858602a1a21728a6186067a33d58d556b1af94b479502eadf3d0",
+      "size": 5180
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9b0349c6f98db323ec19ebf4c393f1066b86ce20d08bb500f8733523693c26ba",
+      "size": 7495
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b30c2f12cf5f1c69a4fc0d1be52db6a82dc186067792d224096c05ffda21149a",
+      "size": 15411
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6036624f6374b91ca4309bdfe07cf13894aad3c492462136182d78cd95c1cca9",
+      "size": 2251
+    },
+    {
+      "path": "hidl/thermal/Android.bp",
+      "sha256": "8a92f09fe6123967b3ae2685b1629adba06ecf767069d7e4911da80ef3a6f7ae",
+      "size": 743
+    },
+    {
+      "path": "hidl/thermal/android.hardware.thermal@2.0-service.qti.xiaomi_sdm439.rc",
+      "sha256": "30be2385ec10110e3a169f02e825b4d13aa9761a496120f45acefe2f8e96e332",
+      "size": 1775
+    },
+    {
+      "path": "hidl/thermal/android.hardware.thermal@2.0-service.qti.xiaomi_sdm439.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "hidl/thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "hidl/thermal/thermal.cpp",
+      "sha256": "678d9ce62c7975ab0a6bc26775b594ed9b30c6b658bab35a52ff93bda358b345",
+      "size": 8257
+    },
+    {
+      "path": "hidl/thermal/thermal.h",
+      "sha256": "09fa1d1151e183de630d73ee2c5d4a5c9ff55eccadd1c1b7ef94b5adbe0c38b2",
+      "size": 3778
+    },
+    {
+      "path": "hidl/thermal/thermalCommon.cpp",
+      "sha256": "1270cb1801f77b3a2946f54d432b7cf2be881c219d55fa12e188ad54ae611367",
+      "size": 17459
+    },
+    {
+      "path": "hidl/thermal/thermalCommon.h",
+      "sha256": "9d74a136eb87e597252829f0124ebf2fa173290412639df07f3426c1cfd4134f",
+      "size": 2852
+    },
+    {
+      "path": "hidl/thermal/thermalConfig.cpp",
+      "sha256": "a555e45103233610de6bc66473000469d4815b84576151510aaef1501edaaed3",
+      "size": 20270
+    },
+    {
+      "path": "hidl/thermal/thermalConfig.h",
+      "sha256": "55ba25577176f80e02fddf3484c51f73666beda022b6ad505d7a2d1d813be5f5",
+      "size": 2286
+    },
+    {
+      "path": "hidl/thermal/thermalData.h",
+      "sha256": "aa3a9d35ac10009e9419a317adea329baed5a62c755520adb3ef72ee0f68220a",
+      "size": 3387
+    },
+    {
+      "path": "hidl/thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "hidl/thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "hidl/thermal/thermalUtils.cpp",
+      "sha256": "778ed5291d6a35f801f445b39b71e921e6a8a4621e1d647eae4baedb07f2cf0b",
+      "size": 6618
+    },
+    {
+      "path": "hidl/thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fd7c2d302372419a10edc1fd8eddd5b286664b0ce776a3ebc66343ed61ed35c9",
+      "size": 220383
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "646e5914f672e13786caf91f3cb894189b527b23ccb1133783189813eda55bbb",
+      "size": 67
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "e254313b081c7839ce16b278462a9ef178c6417682d9b3f16025521a64fa370f",
+      "size": 163
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_mi439",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-09-08T06:00:20Z",
+  "vendor": "xiaomi"
+}

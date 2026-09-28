@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_smartisan_trident.git",
+  "codename": "trident",
+  "commit": "8c1ec1d367c29499fe58c0e5989e31b2dedafcca",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-845.conf",
+      "sha256": "214d6b5dcd9306c94f9ca4c9ffc680373c56692c57bad0d3678970373e958a0f",
+      "size": 1341
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_smartisan_trident",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "trident"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "smartisan"
+}

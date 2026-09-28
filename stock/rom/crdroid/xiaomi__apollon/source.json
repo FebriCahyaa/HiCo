@@ -1,0 +1,87 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_apollon.git",
+  "codename": "apollon",
+  "commit": "07a5a50762008961431f314f9d456ad4b5ee3daf",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "98b8a5f83e804a6bddb4cbdb9433db4f5747a1b234a8163474d0e04d3b4fc66a",
+      "size": 275
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c74af1b50c6660ab1ad124e356f4ee5109be92a6ac35f37576ee035106e32e57",
+      "size": 9218
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b919f4d7485d35e77d480a40561b201868287d6a58351ffd2381a0121c557309",
+      "size": 257
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "64d70385154c3394463ae53499148bd2064a07df0cd6efc03a59265662a5ab3c",
+      "size": 7069
+    },
+    {
+      "path": "device.mk",
+      "sha256": "22f60418731f521d518ff41d5363bd2b9bbef319a1a1a2f02177159758b07858",
+      "size": 17626
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7b69ddeb88d02d52321f52c09d0ab6b4eb9d1cadfc46742255b73e52446a0005",
+      "size": 2122
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "beb1e12e13e24a28a3a1aff3e70d8154ee28b983b61d6f35b88914b08f118b1b",
+      "size": 689
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "c89624cf901b0c88b4b8578c4d064093b239bf15147b22f5a03fa501e43e3b3d",
+      "size": 1204
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "bf5fb97ae6b7bf6ca070c3656d7746711ed1c599e9032f6e5ee1198024561464",
+      "size": 3874
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "ec43af8fffcd5d7753184a475fe24c4d067f9b7b8cffc825db17b247f634138d",
+      "size": 14191
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "bee29efd08bd1d3e1e79c6ad1e27643a5db8aa86d15a7abfefdafa5478655609",
+      "size": 6871
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ef294fecb51176129358ef0c84647fd43cbc2991d846d1bcc2527e2f5b4d22ea",
+      "size": 50609
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "c83ccae32e984cfdde9e9e5c84a081c6c421f653688e1c387006b62af4288c41",
+      "size": 889
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_apollon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-07-16T23:58:09Z",
+  "vendor": "xiaomi"
+}

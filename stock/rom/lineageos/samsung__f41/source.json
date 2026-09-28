@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_f41.git",
+  "codename": "f41",
+  "commit": "5256b5a6802530be002071fa424a7c0d881efe73",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e1cbd1193aad8c66bbc37c86a6d4afecd91b923333e5f4e151c0dd30fcf8a4c1",
+      "size": 723
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "016df327bcddb9cec6640e129efdb6977bbed1e465a0df85c0c2f58c804e4ee7",
+      "size": 647
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ed2a9739260ffa200604e977bbdbddca866e96bf6d3e3df058fec34fdd07f635",
+      "size": 1214
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a5728751c68109e89f51864436e3834cb7a17d119dd968e9309c47d6da92c0c5",
+      "size": 1514
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7a1e3c44fa2bcc70742c72075327c8c12eb3ef5d469453b9802708194e87a147",
+      "size": 809
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d3df5be506604af5b8a1f5321a8f1f6ab881ee9810482a7b13024d155f3e0826",
+      "size": 146
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "25d4f4c453d45c210d60f8f466e216284b5bb69f19df8eea60680f6749dd335f",
+      "size": 2947
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e0ba11ae739140c72650adeeb7445482add0ba5321884345e3905a66407c0621",
+      "size": 146
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_f41",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-07T22:00:19Z",
+  "vendor": "samsung"
+}

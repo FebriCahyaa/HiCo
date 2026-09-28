@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_felix.git",
+  "codename": "felix",
+  "commit": "8cdb9ae709527410a0549ac829bf958227d9c607",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6ceb9808c4a6a742cf5e518be62d97480157aee6d328dfbc6143550b07f21758",
+      "size": 1143
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "962cc18d2730ad4a3a84a535345a4030fbc7a6d85a2cc53a6959cba0e0ac34e1",
+      "size": 838
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-felix.mk",
+      "sha256": "00c7e8a3c5013fd52e2626ac8c84adc95383c716c783aa6bbf0a9467dab97750",
+      "size": 18120
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "de66d8ec6a0c648a35f337add27ebadcd1f0e217b86e9136c84b4f13e058783b",
+      "size": 1177
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "44f6cf62de9f57974176781b232a0c1c1e3241b97f2865259596eb240a94bc4a",
+      "size": 211
+    },
+    {
+      "path": "thermal_info_config_charge_felix.json",
+      "sha256": "84b2e3e317933e46b0a2bcead67f611588e7f672af1aebfe25f1b1aac1bb76b1",
+      "size": 11006
+    },
+    {
+      "path": "thermal_info_config_felix.json",
+      "sha256": "e746520a4cc8e6f1e72adb43712396a90b94217f742acbcb49b20339da1af00c",
+      "size": 23658
+    },
+    {
+      "path": "thermal_info_config_proactive_skin_felix.json",
+      "sha256": "88f98bf927b6ab3254b15f63998110aaf10fb2a1a69e6f7c533fc8e90de60fc2",
+      "size": 34734
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_felix",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:51:46Z",
+  "vendor": "google"
+}

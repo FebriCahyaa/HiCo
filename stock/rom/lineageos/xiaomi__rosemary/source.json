@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_rosemary.git",
+  "codename": "rosemary",
+  "commit": "7a8560d992c54d12bc756e8769065c6e1b999c2c",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a90d5e097e26294730c8cae76ac344d11179b8aaee094d7dc6575185013042da",
+      "size": 195
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9a7d25082e287ef45203a89cab9a8ca5c981d66168d6c4375e21b7b7251f1968",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bd44cc42318aec6efce9aab8e59f61b837a5993b0c1652a2815627035462e1cf",
+      "size": 6145
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "f192a6422258c56dee4f4bbc5d8fbd4ce39f12f7ba20ad23eeae532f9eb31d88",
+      "size": 6380
+    },
+    {
+      "path": "device.mk",
+      "sha256": "01fb877671f1132ea106084147c24d78ec78f0d008f4741f872321cefe32c4f2",
+      "size": 18274
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "8cd1e0ff393b2187049f09610ca01088316c73852d5c6212e496f2ceef585011",
+      "size": 9518
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "194aa8276206023a4b5d6ff185a79315bc1e413743a24953729b5cac462e5ba5",
+      "size": 409
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f2845c3282c6fa4500cc6fb267cb27279162078d69ebd0b83c3a6d544e96440f",
+      "size": 83360
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "9c064c3608b7072e820252b3abfcb62346969c88ed1576e389ec985e7a0483ef",
+      "size": 1141
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6409e6f648c531a8c34f507d06cc60d365ad45fd9257b7be975d0dd25ad447bb",
+      "size": 1241
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bffcd22a66e628bda466718dc3161dae76c85ff3b8922a4ce4998b740ef47fd7",
+      "size": 9580
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rosemary",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-21T08:37:14Z",
+  "vendor": "xiaomi"
+}

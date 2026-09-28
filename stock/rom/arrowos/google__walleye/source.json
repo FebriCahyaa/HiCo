@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_google_walleye.git",
+  "codename": "walleye",
+  "commit": "546a133b103a06410f554ec1d9e778be3e50571a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bb24c5db382ab7a465c31c0d0524be422e462d1dc8c6b3259c3ad9cf0fd0d6d3",
+      "size": 713
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b0ece765a1150ee462d13842a4bf4b36018ee092d1d208ac8ad17fef3f46ea72",
+      "size": 1400
+    },
+    {
+      "path": "configs/thermal/thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    },
+    {
+      "path": "device.mk",
+      "sha256": "993376a0a890726b619abf933e7f08abc6b1c7aa7c6f4d85e42ff5583f51f0f3",
+      "size": 5392
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5067f2ced6820dacdaddf3ff88904be871d1645fe28ddf9571b025fccf15d86a",
+      "size": 1568
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d1c19954011007f6c0a5171c0a8e54da1f379b8febab463d6ca5b469f9f286b8",
+      "size": 9262
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_walleye",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-11-11T09:47:43Z",
+  "vendor": "google"
+}

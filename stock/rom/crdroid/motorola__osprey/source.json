@@ -1,0 +1,52 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_osprey.git",
+  "codename": "osprey",
+  "commit": "dcb4adceb68175639b49b585cbf166fca594ec04",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4ecd5ed547fcc8b46ee068f10ff3c366a0dd966f712de70f62e7da33a25b1c02",
+      "size": 721
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8e8274929c98e8a341ed1406ec360e0961dc59b4f83f543f7bea10ec44972739",
+      "size": 1985
+    },
+    {
+      "path": "device.mk",
+      "sha256": "987016d1152bc60a3312e5f6e876bf512e45fdfe8fe65b193c2a2c1c5855c531",
+      "size": 1769
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a957ecb0b855204c6f0b74b3e2df2296f6de130fb39ea345230d7f71d1063c7f",
+      "size": 756
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "48cad47468bbddccf37ab59afcfa6bda941696d065e686af83407fab6d2bf120",
+      "size": 912
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8e7e4d90e81613b4a912f49756d3d218e67b1da9e637c0069a063fbdcb2f7e11",
+      "size": 4926
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f94ed9c6ab5256788d9d6084d02cb031101651e1242a592304be380fea6981a6",
+      "size": 318
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_osprey",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-05-21T06:40:31Z",
+  "vendor": "motorola"
+}

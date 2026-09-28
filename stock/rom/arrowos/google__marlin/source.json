@@ -1,0 +1,87 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_google_marlin.git",
+  "codename": "marlin",
+  "commit": "9835d4361292ef5bd33d30cd7981aaac30cf37e5",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "077fabe37bb683c280c532a868c337d2e241d29f9e0301c52d55baf15065ccf1",
+      "size": 152
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a145a8b25d88ebc9ee512a69d18082b8386bb2424976a7b89e35edaa718c6e09",
+      "size": 1844
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4bb10cd002401a5b915c6639097566c96e8c648f3d3a251715be0940d535ba8b",
+      "size": 230
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "3db5b5479b9e4a973e7d1ae8c5de38d6e46eab6a84e5d118cef8da2d34da14cb",
+      "size": 411
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "285670305351de8b608dd2f886438bf9ea46ab5672d4fb3de9c71a861eed95d0",
+      "size": 26525
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "dbc89d0c06532b1d2759a6379532fe62c5ac2bebe541c31dd83a6a1c213b7e93",
+      "size": 629
+    },
+    {
+      "path": "device-marlin.mk",
+      "sha256": "2390b7a334062edef5df41b28ba31fd8fd0c5ad1c6cac6779ca0e0173a3222cc",
+      "size": 2480
+    },
+    {
+      "path": "device-sailfish.mk",
+      "sha256": "0af054333c9c68021cd46adc7c2ce788b2c224483d384166210ea4a1b5a5c6bc",
+      "size": 2492
+    },
+    {
+      "path": "sepolicy/hal_thermal_default.te",
+      "sha256": "2bb88e592a8b0e6848ec15086f3f9c58a0aa7bdc30ad7fd42cec2a94b0770dff",
+      "size": 293
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "c929f35635d69a891ad12272b9a8811ff30258e9aa86d2bfef9e9f1ee2c713d3",
+      "size": 1168
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0d1038f1c9308ed4df2a61fc73e7abc3b067874033ad94858636d38388f14307",
+      "size": 5494
+    },
+    {
+      "path": "thermal-engine-marlin-vr.conf",
+      "sha256": "d3a5db94026208112552e6ff4e5b3855243c6f876e99e2c09466ba75963a4ef6",
+      "size": 554
+    },
+    {
+      "path": "thermal-engine-marlin.conf",
+      "sha256": "600cea9f2d822422f2442f207674d60fbf0aa53ccdeba84e984dc07a44c0a984",
+      "size": 1844
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "eaf4dd41a4d4e37a5bc38c9507627c62f54c2e98f0064d639fb4e54a7985cfdb",
+      "size": 2689
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_marlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-02-15T13:43:54Z",
+  "vendor": "google"
+}

@@ -1,0 +1,10 @@
+# Add device specific blobs here
+
+# Radio
+vendor/lib/libsec-ril.so
+vendor/lib/libsec-ril-dsds.so
+
+# Audio
+vendor/lib/libacdbloader.so
+vendor/lib/libadsprpc.so
+vendor/lib/libaudcal.so

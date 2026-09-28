@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_xt1060.git",
+  "codename": "xt1060",
+  "commit": "64a39184134b01d7284e46d71bef4d73cb0919e2",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "716d182b124cb3d67042f294cddc8ab40ad4a555e818030507c2d85a82ead713",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a1f67138a545aac66e7c738f57d4726e587551dd7b0c94067c7c9b17dff16994",
+      "size": 1377
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a348e135ff9cb037c18969ee3bd41f9b7efe943dfc7be29c00e6491c3fdbd33d",
+      "size": 98
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7d9d8d3fa747290571fac6c7a860e197a89dfe32dc4bc00c66e7d8459295054c",
+      "size": 294
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "8e6ced3919d451111acf749ccb187e83220eaca8aac33948aca71f5d3f6f7817",
+      "size": 36
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_xt1060",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:53Z",
+  "vendor": "motorola"
+}

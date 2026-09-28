@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_odin.git",
+  "codename": "odin",
+  "commit": "f12813f509fe8bb4c03982f04cb927856fe4a7d4",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "acfd6cc23ad6b594bf559874eb5a5a7235e5c03560cdae63c54fa38174a8fb70",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "aa877e126738caa4302ef652e093c3122c52c7272128c8cb798caf15f3543851",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ae350600b45c7c6cecd0efbc29de80f9abcfb5f3b25bb937c68f8b390f3de9a0",
+      "size": 980
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0b47f177371661777cbf74129f0caa5b871abe8d8d83bf751fe19e0483a140b2",
+      "size": 1238
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b988e4115f62817297a537a112fb815eca5b5c5d826e67fa3d35cfb5222448c7",
+      "size": 782
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "03dfcd45f22e850540b80acc9b5332a62b97c6fe2c160f70ba777ad156b24a66",
+      "size": 116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_odin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:23Z",
+  "vendor": "sony"
+}

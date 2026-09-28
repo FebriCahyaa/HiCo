@@ -1,0 +1,72 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_jasmine_sprout.git",
+  "codename": "jasmine_sprout",
+  "commit": "e28818dae5f1506355c2f34e8f5ff715aa65f1fb",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cddd150be3a87557dd95ca67a5a9aac095043ed7d29a931483bac41ed548c1c2",
+      "size": 5502
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6a31987b7fb55def4f1781c315d63563d4de32f519ae31f04d01ea803606c3e1",
+      "size": 320
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9f6b2c285365d58099590ac876559973e5401357e77a6cb1b9e32efbfaaaa289",
+      "size": 6500
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "65068896ca4470cc4942cb6156cf50c7c09fea04d183ee01933bbd1971ae6c1c",
+      "size": 1289
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f2bfd32f959ff320eaee746b76f183d446d0b309970261c08657b8d5900ee0b3",
+      "size": 28093
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6f8b2ddea3b4994eda3a0a841318c67dcc926cbd979f7562e53f2f38099f23ac",
+      "size": 2224
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e700aa7eae3beec1b5955c89a1971ceacc8c73ed8f655cf0b99d8473f47932eb",
+      "size": 129812
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    },
+    {
+      "path": "system.prop",
+      "sha256": "875fdbd3c5a0ecd17758f9a929e642b1ac0ddfe90ceba31de2e3171f98dc0d48",
+      "size": 5335
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0646f3ffacdb510376fd4d511442e2cb243db98d7bd16cab622506950f78af5e",
+      "size": 6474
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_jasmine_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-10-25T17:57:43Z",
+  "vendor": "xiaomi"
+}

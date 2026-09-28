@@ -1,0 +1,37 @@
+{
+  "branch": "gingerbread-release",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_thunderg.git",
+  "codename": "thunderg",
+  "commit": "9a6d94472131ee0a1a5ac88114034d539e6ae124",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1bc5a628367084a4b432b37aaadd14d88d9dfd0b2d31c39882b606786ab48327",
+      "size": 59
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "90be092facb64f56f17b218627ea9daf4e02c14f3c604bcc1de6b97d3e7733a7",
+      "size": 3069
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aadb64e70e2327d00a70aab2d230778b1e948f42e5f7a7ee79ce7e6bfa2fa39d",
+      "size": 2339
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "5284c555fc6378a4bfb0f830864c20edbe9d9c866a775f670e98d83cd814bb43",
+      "size": 843
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_thunderg",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:52Z",
+  "vendor": "lge"
+}

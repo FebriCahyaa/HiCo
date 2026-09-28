@@ -1,0 +1,132 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_google_crosshatch.git",
+  "codename": "crosshatch",
+  "commit": "3608ca4c9132dd71093ad7e35baa83b00e8ea434",
+  "file_count": 23,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d37e6f0baa6061df67807ac066beeb33afafec7063f085b0ad14761c2e5b3679",
+      "size": 1379
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6ea1f9a7e5f3ca1b22ae08bb5f4c3b3fbea295256aff24bb1da69166c3c2673b",
+      "size": 3948
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fea4fbdfb26ff0a3f32d60e22f7c2a4528013cceb18f2d4249346d1f96a3ca8c",
+      "size": 1090
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "97ee933acf8e6865d19b77573853a4322b1060bcca7899e9ceae9e10b13bb1a0",
+      "size": 9478
+    },
+    {
+      "path": "BoardConfigArrow.mk",
+      "sha256": "f7e732c3066dcfd708bc7a77c791a34b4e30bee983e0d23f58a8d29b7cfe4e86",
+      "size": 1060
+    },
+    {
+      "path": "device-arrow.mk",
+      "sha256": "64c61694fccf39a5852c0c294a5227557b2a59586366ee2fe60edc1e761817e1",
+      "size": 6274
+    },
+    {
+      "path": "device-blueline.mk",
+      "sha256": "19fe2acc9d693b34b147846ecf2a69122fa60b6e040d0f04fc708e7fa7f6cd84",
+      "size": 1855
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "b8bb09a770d694f71c550a482d2d0630a3ca2e9c57dc015a8cdd1a8696706f73",
+      "size": 5142
+    },
+    {
+      "path": "device-crosshatch.mk",
+      "sha256": "11a9c49a286b67efdaf2dc1824153657a899054cda67aff5fbd688b7990ca308",
+      "size": 1995
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5a2ac7b60147f47f5e68fddb71ef55d0d8bb91cbc9d1d45b739b868772f63468",
+      "size": 42193
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "3cfd61221e22ff6eedacaf1361325d13db401b800144f2feb8fdad3fb1ea0c12",
+      "size": 1310
+    },
+    {
+      "path": "thermal-engine-blueline-novr-evt.conf",
+      "sha256": "5cf56a2a148e2642c570e10fa0b3d8fe1e8b7dc54fcb29ab211dfeef5aacb6d3",
+      "size": 1986
+    },
+    {
+      "path": "thermal-engine-blueline-novr-prod.conf",
+      "sha256": "ec9ba3b17373df791e2aaedaad1c7d0c422b6483e64167cefbb365b425d42a64",
+      "size": 1996
+    },
+    {
+      "path": "thermal-engine-blueline-vr-evt.conf",
+      "sha256": "0973e355350f038ea4840873993561bc9e02d21c750f71ba5eac57b580e9f18b",
+      "size": 701
+    },
+    {
+      "path": "thermal-engine-blueline-vr-prod.conf",
+      "sha256": "35823d447ad03ed3d32f26477c4235f5a1ff78e9b6c06b40f205a55594de4380",
+      "size": 733
+    },
+    {
+      "path": "thermal-engine-crosshatch-novr-evt.conf",
+      "sha256": "5cf56a2a148e2642c570e10fa0b3d8fe1e8b7dc54fcb29ab211dfeef5aacb6d3",
+      "size": 1986
+    },
+    {
+      "path": "thermal-engine-crosshatch-novr-prod.conf",
+      "sha256": "172a53b3d0040af1a6dcf39a407e997177359cec6bc487553ec607fc100c196d",
+      "size": 1996
+    },
+    {
+      "path": "thermal-engine-crosshatch-vr-evt.conf",
+      "sha256": "0973e355350f038ea4840873993561bc9e02d21c750f71ba5eac57b580e9f18b",
+      "size": 701
+    },
+    {
+      "path": "thermal-engine-crosshatch-vr-prod.conf",
+      "sha256": "35823d447ad03ed3d32f26477c4235f5a1ff78e9b6c06b40f205a55594de4380",
+      "size": 733
+    },
+    {
+      "path": "thermal_info_config_blueline.json",
+      "sha256": "db7e8ce463b0bda56fe35994c62e1f31a33b3b3068d4c8ed8d1df9310f076dd3",
+      "size": 5460
+    },
+    {
+      "path": "thermal_info_config_blueline_evt.json",
+      "sha256": "57d5003e2f3f250578ed7917460f6f7d3b31895f0849c0841af3de5059abad8e",
+      "size": 5464
+    },
+    {
+      "path": "thermal_info_config_crosshatch.json",
+      "sha256": "7058a59164e79951978131bae2d2bcca59f45d783c5eb2032022979feb344ef5",
+      "size": 5460
+    },
+    {
+      "path": "thermal_info_config_crosshatch_evt.json",
+      "sha256": "f6fea09524a68aa26ce225b35c480b3f562596412b1806c8ce0171f2aa7b4981",
+      "size": 5464
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_crosshatch",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-11-12T07:03:02Z",
+  "vendor": "google"
+}

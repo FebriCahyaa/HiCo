@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_suzu.git",
+  "codename": "suzu",
+  "commit": "97ce6fbedc23536341a3c3a0147ab53140780f67",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9a980ebb706c6306a168d09504283ab38d78a658066c97ff7757776422c39421",
+      "size": 714
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ea507c70029b0fea3ebfb732eaafe92afd6b6073ffebce1e4c07a5b7c346dc63",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "23ce3e02a2260238d9092bd3d0d393b31bcf5624f34f1b948a6f208e7f98ad25",
+      "size": 853
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f59b46de6becbdf6cd405a6dfbc44e1cb557aa2b94421b32a8730c3bee211b41",
+      "size": 1804
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fe2e69c32d57da141c89a177f516d15ee2affe7a397e8e30b3e5a21d334340f5",
+      "size": 784
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "66ed7834d1eddeb63ef4969eba8159a7754fd28b888f297903554c791b1fe625",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "06c17b1329f7a133a13988d761d8f7100e93640c0fa1ca1cc0619571921f1f18",
+      "size": 4007
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_suzu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-08-19T14:30:27Z",
+  "vendor": "sony"
+}

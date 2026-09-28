@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_karin.git",
+  "codename": "karin",
+  "commit": "8615c7349ffc604cd665d36d51eeaba109002de7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3137ad9c5184e87a92e8b5f2885e010c0ccf57dd375546799ddbb0eb84eb73aa",
+      "size": 1130
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a6e70f7354d9bc4059e5b1d97c6cc6a6759c2fb5f84e77f7a4acf3f54145929e",
+      "size": 991
+    },
+    {
+      "path": "device.mk",
+      "sha256": "df89ba291bdf943cd4933a4e1a80353ead8d8915902b5114dcd9c66c72700181",
+      "size": 861
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d0866e4c4d13261b3e6a1bc67601a24c5388a9a3ea19a9d08473b413a9dd099d",
+      "size": 830
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "991c46378e9b6c392f496ab5646b7eb14c0c4ce623c87f622870f60c35781567",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "18d47eb69e68a8acdda04f6b1f4af7097410c2ab809c61ec765e2bf6bc4a1982",
+      "size": 19692
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7b4e0df9d4938b5f21673d4689cd53535d20d305208bb243acfde03cbbef1d86",
+      "size": 138
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "eb62330c9c47bbac87e5ba46f018281b72942ac417ae65e59fef6406b4457eb1",
+      "size": 641
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_karin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:46Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_pantah.git",
+  "codename": "pantah",
+  "commit": "56c52c0f78444ac9edcd33c2eeb65a6d3a1a1685",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9d26588fbfc7bb82262a870d230209bc89a3656d4d273a4bc5059fbc84e183f7",
+      "size": 507
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "461de811d2772e106adaaba3b4513380c2a88450df9d7d5915c5cd694bfc904a",
+      "size": 269
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8f3fe93c5852eb1274529d39fe592a3664a71e73e85dd2b93e0eff5d9f8596d8",
+      "size": 1156
+    },
+    {
+      "path": "device-cheetah.mk",
+      "sha256": "532578fb3961e23acf90088885ab8775376bdf11fd59b6e186a197a2565113ba",
+      "size": 2313
+    },
+    {
+      "path": "device-panther.mk",
+      "sha256": "7e749d218c9041524f6146c4de3b1017f6e0ec731df81abaff75c0e4626fd0fd",
+      "size": 2227
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_pantah",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-04-26T17:37:54Z",
+  "vendor": "google"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_wileyfox_kipper.git",
+  "codename": "kipper",
+  "commit": "675a3ae008c2faf5edf2bbe1922877dcfe4ada5a",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "af49988a4627c631bbd89d48f0bea77165c643678033e2cf07ba9c2fb71bcb06",
+      "size": 707
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fa0519a8e8317f712675ce8d5813cbca90fb555a15c17b07c23851576e3905f6",
+      "size": 648
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2e3e2fca49ed2445c628b6e0240f835a9d7478a406a0fbe57e1a6664e03f276b",
+      "size": 2135
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "b228539ad727c4f4d4b925c8ccbed5dae17e3d365c6b7a5782579c91580606d2",
+      "size": 4075
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2acbd3b7f526cebeae9d2ad438fe77ab73ce4803ad9fbf88408a7ea1d49c9124",
+      "size": 6261
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4460f4286913fcbae03dab08ff8fd7d9ce0d2032c8b8cfee6e55786282f07df9",
+      "size": 1960
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6aa70d8cd67c072946f6c9c72d0092845dc7d1feb1f6c4d7ae471c182fee5222",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0cb15316cab39005fb6ecacc98704dae9529e22a85e849db60a8fa08d983a7bb",
+      "size": 12316
+    },
+    {
+      "path": "system.prop",
+      "sha256": "df1adcb2404469258e6ae03b45290d35fea09a91f911872e008f619ec174a834",
+      "size": 933
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_wileyfox_kipper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:36Z",
+  "vendor": "wileyfox"
+}

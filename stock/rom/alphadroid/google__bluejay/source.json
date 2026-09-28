@@ -1,0 +1,72 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "4807e2f0cd2a6410ac026a9d7f6f579ecf638bbc",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "effc7867e8eecbc5e9be902a3f22e355d82ed3c4a76886c3a54b80ee9fa7ffa6",
+      "size": 1206
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e3b8c8aa12d37060b3b13f34cb0ef5a4995988429dbb0a887a64f48ca8768dd1",
+      "size": 990
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e373e57e969700807e3faa633f4a987a0be3b5519dfe8d3da89ed87a9d64bb16",
+      "size": 847
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4f2e4bf6b6f5667cb56c6c9b72fdb74375ac297ae65a8109382a1b339210194e",
+      "size": 162
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "0791e8a03b350bfcaf96f31882b6ca1213885f486e4380470923cb4e6b4e9986",
+      "size": 12185
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "6dbac607475c9fece6e87e9d256aedeb480658b6139e83eb0c022ad30a9c978d",
+      "size": 5678
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "642bacf9f3ddf310a87de6a4e4931620b820ca3b3caf9d502ed314359011447a",
+      "size": 2066
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e307342a7fdfbe4ff79ad275af601a92e143a95e7e559c63042b0bfb839661a9",
+      "size": 6954
+    },
+    {
+      "path": "thermal_info_config_bluejay.json",
+      "sha256": "710dfbfc1f2c30d2b569fff0b7834edfed6525ae07891ece999b737c70a086d3",
+      "size": 34277
+    },
+    {
+      "path": "thermal_info_config_charge_bluejay.json",
+      "sha256": "cf463f1bfb7d9b6ab9f2bcd997b8fe9779be01f0e5b868605ff5ca29c40fff6b",
+      "size": 10907
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5cf15dc441607a43ef42ff54ece5fcd862fd850a68bb370e763ceb195795d7d3",
+      "size": 347
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-07-23T19:58:56Z",
+  "vendor": "google"
+}

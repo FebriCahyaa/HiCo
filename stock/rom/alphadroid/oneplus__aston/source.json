@@ -1,0 +1,52 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_aston.git",
+  "codename": "aston",
+  "commit": "4f96c6a49effba3118590a1a870c7a183fdece7a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d41fab40e9e755027d95f01a3230f94aba5e543db95323d92954c7da9060281f",
+      "size": 674
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f88f1d69fedf30b3034e6a930b5004906bebac058984ef939f54255f287e5073",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7cb96d3c26a5f9e8101316ebd1fbd56e016b98ed1859b0c8ce75d141061ccc4f",
+      "size": 1304
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5808cdf44f1e9a44adf6eb85cac2a0c4a1d83fc78828fe3594978395a1cb1ebe",
+      "size": 4456
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b395046ee4d96680b3d0d8e147a9cc63cb485f12043c06cea1472404c4c8f540",
+      "size": 3893
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dde316188f0c19e528e3ffc9fe7337c114b66236316268b10f23f45bbcca369d",
+      "size": 112723
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1f1ae43b392b24d291afb021e86f156854da9fc09504b3dd0b45cb809c491065",
+      "size": 573
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_aston",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-13T23:47:31Z",
+  "vendor": "oneplus"
+}

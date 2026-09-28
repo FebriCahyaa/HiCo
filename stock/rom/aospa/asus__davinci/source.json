@@ -1,0 +1,62 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_asus_davinci.git",
+  "codename": "davinci",
+  "commit": "d627bf0564aaf3975ca4d1ea4459f11b637b873d",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6c0bb9046be73bd228c142ca2aadeab1d24c8a4710b742baec60be7389e6ab3d",
+      "size": 686
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2d81871e2ba4913582f3f35b3ab17d71405639aa9e7ea330a9b9beb70f9dfd1f",
+      "size": 4198
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6f7a3277dcc357b8544f77ce9ad9ced2848a1e5177dbd6f19dc2d77f92ed170c",
+      "size": 3986
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9b674e508ab5b4a35b0aa874a81ef22e1ae35bd3ea661520e027470006a9766a",
+      "size": 11872
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b5f3ea2567083ae37ce1dbc996440f037c87d702209b296ed1052df65fca9cdd",
+      "size": 1838
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fac24da257d4887150b4981805f1602d3e804972d5412595edce0d1da158d5ff",
+      "size": 60745
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "65c1c6badbed7b9e78a23979cb3c1ccfea1e9cc51caf31041a23d2da2f9bf616",
+      "size": 122
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "40a2fb7badc53be7cf692d96baa769ac0f5b527491905292c3c9ba3ae7bf0b74",
+      "size": 2485
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ab866beb86cc7d0279f36bba7bb6ecdec08d9596b6960fee473f00f65e1dea7c",
+      "size": 219
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2025-01-06T06:00:20Z",
+  "vendor": "asus"
+}

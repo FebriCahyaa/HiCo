@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_p500.git",
+  "codename": "p500",
+  "commit": "ff3f13a67fa4cc1aaa7d0a9dc31728e6c74f4a74",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d1fb6faf365674ba9359a2e9c637800256d9ca1151f295f5cf1485e93829cd4b",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "52c88f34ca2ca75b88162e3b695d7e8a91181a850618a9c523891178a18260b2",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "15e53d73dddf92364239c23520bef044e8d3f3ca6d6e6c186dc58148ee8ef10f",
+      "size": 2380
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2ac2af3c8925ae4bd9d37adf3167c3b12be735fffa4dd83c4cafea9af250bb4f",
+      "size": 7527
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4434836761cc2c4bf16234247e3541724bf3aaf57444f7272fc556be47dc7c25",
+      "size": 660
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_p500",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:59:31Z",
+  "vendor": "lge"
+}

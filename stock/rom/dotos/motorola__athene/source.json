@@ -1,0 +1,62 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_athene.git",
+  "codename": "athene",
+  "commit": "5ac0faa1b9fef784d6dea142a6b718bc5b81a6cc",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5ef70749cb7ab2dd123c4742dc47445299949dae65b80f494afe080201563a6b",
+      "size": 29
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "21e06b43739ef5b4fa29be7d79875ca37a2caf44244652a677f0a403f0e739d8",
+      "size": 6172
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "977fff2b19d7395d99fe6227d70363bb09cb19020131a612642d045de0fa3870",
+      "size": 6840
+    },
+    {
+      "path": "configs/thermal-engine-athene.conf",
+      "sha256": "40edf3d4c99ca84b842ea603febe806580e58c978c39b6b1349870b083a4bb57",
+      "size": 6692
+    },
+    {
+      "path": "device.mk",
+      "sha256": "280400e2315e84be9c0aaba566cbce9144493b27764e90e83cc8957dc26b2a9b",
+      "size": 14185
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a39a78134adc5bfd556ac95984afd75f2290a9d40c8fe240ea17bab237e91568",
+      "size": 1702
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "05ff2cbd96329801e4ff625a0185584b18fa0c456a2f53601b330efb3b97068f",
+      "size": 38607
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "fbcd97782fa46b4996399339f4f2234c66fbe217e30d696f6a6bb267b65daaa1",
+      "size": 157
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aa8d9b3046e7100a62b2708ea5eac3a31f220cd8ebdb64093cad628be57cd34b",
+      "size": 6710
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_athene",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-09-07T07:55:00Z",
+  "vendor": "motorola"
+}

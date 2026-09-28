@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_oscaro.git",
+  "codename": "oscaro",
+  "commit": "cc3cdfe0cbab52a99923ebade88c936493284be6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3e2ec3530feaa517b49c337b7db9f0611c16342be7577fef901ac092ee002d3c",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9148ec006ec80905282645c32288d5c4711359260e11c72e39916d9335ed34a1",
+      "size": 471
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2bae89cfa7dd7417fbf6cfeae27eba4572814090ae85ff26fa9770c2c5bb5df9",
+      "size": 3391
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "15293abdcec983d8cdbf8aba0e1137ab9f1c1f3d05e43e5d384a758847a1a185",
+      "size": 1414
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0c047803ca81d24c354df28e8237542ff5a365f9f0fa05b2dabb7c867c76de99",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f5c39765eee21a0a22f0dc7fc91b2198b5db2e1870b161d7ba9be00bb9cb19ba",
+      "size": 52451
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "59614acec3479153f341140b3a8266f98fe14107cffb5b12cff4e12c78df8223",
+      "size": 127
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oscaro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T02:59:23Z",
+  "vendor": "oneplus"
+}

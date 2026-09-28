@@ -1,0 +1,37 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_legend.git",
+  "codename": "legend",
+  "commit": "83d4a17e7d95317ca0e00f20248f86a1cc023297",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c3f0c5ccfd3b736c57eab46da528b71dec48896e78eab7c2a90d565cc11b9179",
+      "size": 782
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b2e4c1c2b2153da98d256c668bdd69ffc885335a0b4bc84360810328a43e9c32",
+      "size": 2581
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2ca57c02bac2a647c5639e2c938fb1df1b36bb94e2d1e790a024ffbabbd41f2f",
+      "size": 6235
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "cfd6792efd34e7f6ad03466a833525bd7877082b6028dc9ef9104cf87efe0dd9",
+      "size": 844
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_legend",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:30Z",
+  "vendor": "htc"
+}

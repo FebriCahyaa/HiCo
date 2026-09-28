@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_pioneer.git",
+  "codename": "pioneer",
+  "commit": "5571a8b8f94ec9d36321b39136f7614f7cd59d43",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "59080b523dfc7c7c3abcbd7153b743c4d98336e3fa0628a41ba7fe8f9d9f9404",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "101efb784c40caeff97a89bf0099185b152630c0bf11a59b6b657c91a0f0a64d",
+      "size": 1066
+    },
+    {
+      "path": "device.mk",
+      "sha256": "da81695f2e0b7db9c88ef0fd5fa81afe5645e3854d920126a46c4e86d078bd43",
+      "size": 1883
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "56b2a12d8534cc6d9e5b31437b42c15ab7407a8e3538cbf96e314e213c0e77d7",
+      "size": 1696
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a853374d45d83fc5c672cd87efa8ded53a27652f290b074ccd8f8c51abc64a71",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "973e57eaed34a874069de966f842c24619c664044f3635be8627241fde3f6a79",
+      "size": 13281
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "208380cb9b0cb33d567f49b1688a232f28f0dbda0bd0c609d7be2488e622881c",
+      "size": 297
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_pioneer",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T20:29:05Z",
+  "vendor": "sony"
+}

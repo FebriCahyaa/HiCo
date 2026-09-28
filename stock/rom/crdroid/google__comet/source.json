@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_comet.git",
+  "codename": "comet",
+  "commit": "adfe70ede6d02e8036e4312a78882df9c7b4a5a0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a858547a885e090a9619de7bb01bad21164c3743982f0e73936f79fd3e80be1b",
+      "size": 505
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "02c984fa149b770b6fa128e8c94e97f147813323dadab0e0fd6137e1a32bf90c",
+      "size": 196
+    },
+    {
+      "path": "device-comet.mk",
+      "sha256": "ed6ae6ae6ac301651e95c9e033478e0c4d6cc33f0d261063a89c3daaf6229cad",
+      "size": 2759
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "24fc72bdfbc979817502bcafbf073df7a05177957dbd5845310f83550a41c31f",
+      "size": 211
+    },
+    {
+      "path": "sepolicy/vendor/init_thermal_config.te",
+      "sha256": "c69fde7324f35e68f3c3f8fdce41a4d44aae5d1118aa52091978106bd26dab19",
+      "size": 198
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "7a23cf4bbe95cb90fac4cf50a72de055abea32ed97ea8a496d44d8b3f59a099b",
+      "size": 685
+    },
+    {
+      "path": "thermal/init_thermal_config.cpp",
+      "sha256": "7fb091dd7ef4f41431eb74f6e209a97f3031d1fee239489b526b5e23005fa9fc",
+      "size": 1326
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_comet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-06-28T16:04:48Z",
+  "vendor": "google"
+}

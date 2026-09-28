@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_quill.git",
+  "codename": "quill",
+  "commit": "6f083b09eb0738171d9613504301cfd06c9e676a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66a2a6310d79338d6c88256a6bdab68cbde9413b2a4f937d5b4af5f7731b5fec",
+      "size": 700
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d2a21bd7fccdd91742fdc11a235922042f615732f6ece67a925f23153b1ed675",
+      "size": 859
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d7ba9ddc29b08d8cd83176bc44b6b4f27974c8d2f76e0ea2c56912dafaa30811",
+      "size": 3992
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7dfb99d037b284f22473f909440248e02dd7ada61791a4457baf572cd24083a7",
+      "size": 4895
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "32f41fbb965a996967fad144dbb9b7288992b3e0fd38bfe7fc4b3fdb87139c6a",
+      "size": 1033
+    },
+    {
+      "path": "thermal/thermalhal.quill.xml",
+      "sha256": "14642d55578f32acbb4b79dcfd27557fe4f3a2c2e003ea1bc471be4fd8448bc2",
+      "size": 1412
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_quill",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T05:51:20Z",
+  "vendor": "nvidia"
+}

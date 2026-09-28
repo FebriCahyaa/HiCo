@@ -1,0 +1,92 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_picasso.git",
+  "codename": "picasso",
+  "commit": "903f8565d7c6d0694a10038b8b8ce2018d722b4d",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "46aea9a198eabec96c1f4e534726fc1448f3e225effe626a1470963775291661",
+      "size": 162
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "66865fdd209b568424ba9abd8dee93cd07b37baa6e4b965df0a8ced8aa199dab",
+      "size": 4982
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1339af5f666027030b91c47b160441f5d002e10c49db8d71b3361518508afe02",
+      "size": 257
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dfc68b27b6fb4945f1e3793a0368d53293c15e88d7f831b41d5072fd663e55a8",
+      "size": 6410
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "65799626120ee90591c9b578706315cf6ca26c2621f2b2c9fddb294d13de9c9f",
+      "size": 5596
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e0b72fbe70dfb334bd8ea5f5de84a7f8d158afe2b701882fc2f55718abba3815",
+      "size": 24097
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e7e0c5b52ba8b5ed3e506b25008b792fd482c2a7925713078018c0f757959beb",
+      "size": 2033
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "73d8915dc98799e1ee40a1bf1b6b62b3f6db6045e9344c82e13f2da8a3c00a0b",
+      "size": 1542
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "e66373a2f5c97a746175b255b3901a6b887258fe548cab9479152ae6ff089b87",
+      "size": 6354
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b4a9623e42eed46f7eb441e0834530d73d0d1464349c163cd635f9e04e12aaaa",
+      "size": 64894
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "0386c03db376efcc745108723a92522c7c22a8a70585314a19072ed22eeba03d",
+      "size": 839
+    },
+    {
+      "path": "system.prop",
+      "sha256": "740a46ebbd8bc0724ebb8bb9a62ce9c0a5411678650b690c5b2d04ddb464e63d",
+      "size": 2256
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0f50ef046e3f0e55b00636af29cbec56467a12689623ec7b802e9638268160cc",
+      "size": 7854
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_picasso",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-12-16T12:04:20Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,87 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_lmi.git",
+  "codename": "lmi",
+  "commit": "e668204d082e622b0121af7fccb2f8a6f1fc75eb",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "46aea9a198eabec96c1f4e534726fc1448f3e225effe626a1470963775291661",
+      "size": 162
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d637e85d2f0a5d06c2f52762732b8cbc3e2c272c32ce182785be5a81b88633e4",
+      "size": 5002
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3fc8d6aa16b3b5f7aa04ae4630dbbd596255d9a695d0a5fcda6173494ea6f606",
+      "size": 212
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f4d980315eed7a0c2156274b9cde4eedfb12d94068af20d5a96bcf1bdb6fe091",
+      "size": 6196
+    },
+    {
+      "path": "device.mk",
+      "sha256": "225de9b39f98534edc6e74d9c684b0b9f41f2c31c16c945395cc3dabdef73b46",
+      "size": 20945
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "466633c5a7d447875dd651bdd470e51bca472386c3341cd42bad115050865ba4",
+      "size": 1291
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "a4bacf9a913c32956a1e3186f528e26561155e22c3a84b1be15af0006d203dbc",
+      "size": 1458
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "5cfd92c4a1d7ca97a66e73c0d5c041705dc2798cf8b2981a8ffffc30928b272a",
+      "size": 3266
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "aaea8107eb719693ee442ad0ca97d7d0d562ce85aa5e4c6cac47478971931b2b",
+      "size": 15729
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "4582a923d2d3145569a2b2dd8603d582604c5dcc830a625c25150f98ebd454db",
+      "size": 5592
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5a95f4cdd7a4a7f86692d26942ec6cc2df028eb6b5144d49bc36c95ff61d63a6",
+      "size": 54294
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "0386c03db376efcc745108723a92522c7c22a8a70585314a19072ed22eeba03d",
+      "size": 839
+    },
+    {
+      "path": "system.prop",
+      "sha256": "69021ae10416475370b84bccb0e1ef420d36b73b90cecca67c50700bd9dda02c",
+      "size": 607
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b6a58a60d737a991451d4aa13b42de313797d5aeec2798d96ef147ceec3aaf6d",
+      "size": 7454
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lmi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-12-14T13:10:04Z",
+  "vendor": "xiaomi"
+}

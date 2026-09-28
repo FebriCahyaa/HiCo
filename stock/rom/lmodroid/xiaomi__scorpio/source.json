@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_scorpio.git",
+  "codename": "scorpio",
+  "commit": "2e5c535beb81d1dc4229a5bf729b9c803a7c71be",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "32b98eccb7048a3d0be378d629fcee76d02205e9c5a8a4be00125640e0bd1ae9",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "caf9b6aaf8902d0bc7d4babc8966ca9d046a515371dc1b6493a352eb63a5f445",
+      "size": 1071
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "2137c7bc6f6cea2d708406163f4063788c63f5997b8b0a7bc9be47317c3d3db1",
+      "size": 3061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e50b2883452f629e15b4e98ab74c08b861f5cc5d2e7621f93fe0c10f13bb385e",
+      "size": 2764
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "588ebe73c881c07d217c2e619faebe6ae7214e0bcae0aac1141e9a641aed1f8b",
+      "size": 472
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5cf4d97bbc99c94cc212411580b14d4f6db0f2bde1fa4e60cbbb3b7cc8711714",
+      "size": 10697
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a4ab14208bd5e5c6dc7c9d13d6ee1a81789c719a0a89aad2dad6d96071c92d4c",
+      "size": 236
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_scorpio",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-05-03T13:21:58Z",
+  "vendor": "xiaomi"
+}

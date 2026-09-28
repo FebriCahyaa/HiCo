@@ -1,0 +1,47 @@
+{
+  "branch": "6.0.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_mako.git",
+  "codename": "mako",
+  "commit": "d9bbfe4b3d647c6d7e6ede72b75ee5ac2d227412",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "524b5812529c01e389e7565861e2ecdbc6aa362636c2b22ca54e495757f042af",
+      "size": 2298
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1875fbf9f3bc050b5994eaa7be922730cc66fb0c77ee749db510b4fbb66b1f8c",
+      "size": 686
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2d52fd9ee122404fcc1fec3997900bba3ad03b362c7280cffa3966ab7a559ce3",
+      "size": 4054
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0baeb1dfbf65d646cc96befd6a3f27dce4f0c6022089381909dc1e779635e6d2",
+      "size": 9583
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f923c1113aeccdfea3c2fe160aa49b4157abf7be2758338a166f38fad1701391",
+      "size": 765
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "1a977082e47a5748bd545fd8bb50bfed4ecad93d358f1eedc3b3215c3496c5cc",
+      "size": 1324
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_mako",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-08-25T09:57:45Z",
+  "vendor": "lge"
+}

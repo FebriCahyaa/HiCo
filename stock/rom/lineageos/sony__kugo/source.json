@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_kugo.git",
+  "codename": "kugo",
+  "commit": "6f5d13b62566277f0c5b4f1ac7e57939de5f0535",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d12627474d89cf48173e7f6836c76ea2431ae839bc5ee2c66edc7a1a0cc786f9",
+      "size": 714
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1db7cd0622338d694f9f0c9ef1260f44937e80f22636b416629d8eac6e26556f",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b378d53b5eec3fc6a2931724b5c85354877ca2b85dc5e585eb9b526fef6a345f",
+      "size": 853
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1fd186192e489af1daee86431dc1eb988ad3849e39c490c26b4ce1b58a7a4e3a",
+      "size": 1862
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ebe5039f2d568295404c0e9d0be957c17be2cd94cd97804a81a5ec62732a8ff0",
+      "size": 784
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "66ed7834d1eddeb63ef4969eba8159a7754fd28b888f297903554c791b1fe625",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "42c415e33f61323ce15b0c97a73c2837cbbd7d17529e6cfb6d81fd1164730c85",
+      "size": 3889
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_kugo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-08-19T14:25:07Z",
+  "vendor": "sony"
+}

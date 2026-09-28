@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_shift_axolotl.git",
+  "codename": "axolotl",
+  "commit": "2cba6b91615196a5e1dacf045212971d37899b5a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e2fba91449442f70d6b02ff9d131513773be89cc703b8e5d40deecac40dcae71",
+      "size": 566
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "416a7e0d7255197fcec1f336dedb1832f5c6e3d8a87abf640ae507da80385e80",
+      "size": 182
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "73ec385f934f87a49d56004807d4af9a8392d896f6832bfb610f3a398601d503",
+      "size": 7314
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3fd53a1337009a2b7d715877d8d4814499b19b1893730bc0012344a26473e424",
+      "size": 19622
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4f9f34154f7a546acab53aae1fb82d80ce175d5811d9c7f072659869ff3e466d",
+      "size": 2285
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f6ae8301eb4f4ca155495b226541b4b5637cd1b6e0d6e4ac5ed8a8a6432bcd31",
+      "size": 42336
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a2e2cdad89494d7965b8e261387479b97e5b0886e876fe67cabc8edb81ac672",
+      "size": 459
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f406b339d9b7d65ea34294bb142ec4b3ad5197cb46974a05a22a9191bef30848",
+      "size": 6885
+    }
+  ],
+  "kind": "device",
+  "repo": "device_shift_axolotl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-11T05:08:14Z",
+  "vendor": "shift"
+}

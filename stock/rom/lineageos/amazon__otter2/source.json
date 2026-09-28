@@ -1,0 +1,57 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_otter2.git",
+  "codename": "otter2",
+  "commit": "e8ca39c5cf97e1f7c83ed9862b61fe1128625b38",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2ce99437df1e325bbf07f727b82a56f7b9e53852b89d477caf47bd1d827aea0e",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "05825d9b387f91cad79eee4402bbeb6684cb8f919e311c3c35afe625f046f8a6",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "17172d7ff382215f7ba446a0c26fdedf0f7c5a0cc46c84e84bac78e012637c59",
+      "size": 1971
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8e9ddb418a3edd974b120c92190f689769ff8f315e06fc3601bc2d95d9171deb",
+      "size": 1408
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5594af80ef8b155624f67f548b4f9b00a84d23a58f374edcd34bd027679bfac5",
+      "size": 399
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1e21704e37496cb6471d656cb8f5e573c9a633bf03c04a401c8348ca3863cd7",
+      "size": 1019
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c2ea0412f72a1a5a687fa45f7e0bb825a841053d360402a06dc9f522f5d0b361",
+      "size": 233
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "0f3f3580db8e9462dd28164678afad91a7f3a2da4c580413d215321c1d21ae91",
+      "size": 717
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_otter2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:49:55Z",
+  "vendor": "amazon"
+}

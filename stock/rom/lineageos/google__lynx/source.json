@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_lynx.git",
+  "codename": "lynx",
+  "commit": "e87c6c3eccb02fce1a7b66caefba40d12aa9fc13",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cbbbdb53bece9c9ac401d41ede57b3b1f1999a19559dd7a5d7193b2bbb095c59",
+      "size": 503
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0961f523d676713992a65dad0003ff45a1c7bc6466d25539a9029c9753b7affe",
+      "size": 194
+    },
+    {
+      "path": "device-lynx.mk",
+      "sha256": "1cd7f24a365b83297cfb286ecdad9d41137ee8beac42bcb2f13373d14cab819d",
+      "size": 1800
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6b9acdca47ae2bb27d18143cac5013500dd8081db6be518b1ec1da68bf2bfdb6",
+      "size": 210
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "973da2cbe59a576a834dab60d8a6ac9f5db6d98986dc1c450c7b4f24136c1ff7",
+      "size": 215
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_lynx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T16:10:09Z",
+  "vendor": "google"
+}

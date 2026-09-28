@@ -1,0 +1,47 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_fuji.git",
+  "codename": "fuji",
+  "commit": "462fc14adc46e190329bcdd1d8294c7eca93274a",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "51c31ee5549dca993f102a85ac4ebcf6d10aa000d0d24a5cc644fcfdbd8b1bbc",
+      "size": 119
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b215eed04d3305c9be6f4bed8d6b692dd79a5d576a7c9449982cf42dcca6bac2",
+      "size": 1059
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bab6cb89802ff4c310e984fc4785cd20637c0ebc2ae021dd585ca41c5bbd4a23",
+      "size": 3569
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3dd3fca2a5abb49f32c1082b59f77b97729b732e0405d73b3aaeb0effba081bf",
+      "size": 329
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7e7d8e9463052f46b6e283c010e1750dee22a4f261dc08057ef5c3ee2b5fb36f",
+      "size": 3589
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "853ddaa3c2d8d29c11ad73b4856c6edfc0ab4cf78a31aeb71bec5014b3174c6e",
+      "size": 630
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_fuji",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:12Z",
+  "vendor": "semc"
+}

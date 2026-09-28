@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_land.git",
+  "codename": "land",
+  "commit": "a0174df17d829556a5995b4784d746be0739fd28",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1ebfbc6feefbaba0357c0aeb5baf9b5dfa4e064432fe22e35de6bd333985ab92",
+      "size": 1106
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "273a6e50e95a9e7218e799a47e687812ad2cc5d077af1b967c1ec196821ed2ca",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f9e112813be291e29e2317dcef71f39b8e95799ef7a72defde25c25355be8752",
+      "size": 1257
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1a814ec37224b3c987258fa919d0e58065c8017d2b4c6a62d1bbf54ed9ffcad7",
+      "size": 1558
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cd981cb909224cea76220ccb92c0be9d63b7787889e35f91ca05a73eb2cc2ecc",
+      "size": 1883
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "78f0df32f223a77186a498120754de98ba067664919648db78449e42fd8eee33",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "31ad0127714c50f0e49893f76529d84ca67c918cef7c0e67ecbdbef0615fbdee",
+      "size": 26935
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_land",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:10:30Z",
+  "vendor": "xiaomi"
+}

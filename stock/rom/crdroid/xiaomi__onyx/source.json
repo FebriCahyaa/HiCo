@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_onyx.git",
+  "codename": "onyx",
+  "commit": "2fd93e7e02e29bc2308126442e49b96341ba8fda",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "89dd29bc7d9aa50b2ce295f1f10b27d9c8be1e0aeff46f2a351d31fd7f6988dc",
+      "size": 998
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7bfe0070be4af97ce0e207bf4a662170ee74333e91e22d443548553a84f68058",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b26f541d40d0929428d0fa4b19d3a31e3d1c5bd6bb1e6f7c093a132f842df057",
+      "size": 10486
+    },
+    {
+      "path": "device.mk",
+      "sha256": "757d448ad3d66ee27144f12a05bf12d486baea810d1637746e69cfb8af50254c",
+      "size": 20572
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c2a7f3a56c9a3bc753bdbdd58e76705d95c52b8531a88b447e3409f31f553ca2",
+      "size": 14777
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "63352823f2357d71a128811100b950883b6408dabfb3b8403e2c39c674fc22b4",
+      "size": 172493
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "bbf5321b9799a68915137802f5db86388f5d608f2d5a8b91b7c71e445b315efa",
+      "size": 2234
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_onyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-20T04:18:59Z",
+  "vendor": "xiaomi"
+}

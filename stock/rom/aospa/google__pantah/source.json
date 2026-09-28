@@ -1,0 +1,97 @@
+{
+  "branch": "topaz",
+  "clone_url": "https://github.com/AOSPA/android_device_google_pantah.git",
+  "codename": "pantah",
+  "commit": "c7e8e29b4ff0dcfc7e2fc26b0c45de7b44f2a79b",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c4dca881ec9297e5f1aec9907206318069c3a0294045f52c7764fbbc185faae1",
+      "size": 993
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "903398db354ee94bc16816f340990f9c48d8bd1c33314feef5e9909a090ec96e",
+      "size": 2225
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9bb73312828f3c92e17345d7c759163d3238523e0658d6146a2c37fe13a0c7f9",
+      "size": 1077
+    },
+    {
+      "path": "BoardConfigAOSPA.mk",
+      "sha256": "7c45fec72b40a3958a339c338dadecb032f5f9d975d45ac694b6e81a50a2b04b",
+      "size": 589
+    },
+    {
+      "path": "device-aospa.mk",
+      "sha256": "f73a616816358b169151fe1ca911df0c9325a603e9a6ad1ec47a395fcb063c41",
+      "size": 4200
+    },
+    {
+      "path": "device-cheetah.mk",
+      "sha256": "790e46cc837eab16ac855b4d13ea7a8ed7f2e2f000eaf42995c2a0edb88b43d6",
+      "size": 14913
+    },
+    {
+      "path": "device-cloudripper.mk",
+      "sha256": "57fffc4146a4eae198cee42f5e4807330a422591e32ed4440dc0646ebcdcffd2",
+      "size": 7885
+    },
+    {
+      "path": "device-panther.mk",
+      "sha256": "95be1600a11a8e9d134e6a944fb403dcbc1ed269850e076c2b6c2bd71651ab64",
+      "size": 13976
+    },
+    {
+      "path": "device-ravenclaw.mk",
+      "sha256": "ae0935b382ed24d5e2b98f06d8d2b4478646b1e46527530b53ea2f1c88ab9e39",
+      "size": 7905
+    },
+    {
+      "path": "thermal_info_config_charge_cheetah.json",
+      "sha256": "c07a7fe4ced1e1e8b243f7e4d4b75f5e01b6a46a54a6033e235342ffdfa3b95a",
+      "size": 6599
+    },
+    {
+      "path": "thermal_info_config_charge_panther.json",
+      "sha256": "9eb37c036fec50deb1ee952f74f6da2d543f0c140b83243c09e518ac9e9e4128",
+      "size": 6620
+    },
+    {
+      "path": "thermal_info_config_cheetah.json",
+      "sha256": "fd351a08826393add07adcdcdec377d42611cec1c1faafebc28764969672e570",
+      "size": 29480
+    },
+    {
+      "path": "thermal_info_config_cloudripper.json",
+      "sha256": "acfe993552d5b055af388289ac281405d91656b1d204b102f8d926b3172f1795",
+      "size": 14709
+    },
+    {
+      "path": "thermal_info_config_panther.json",
+      "sha256": "ebc1e62750af78dab4678e12fdaa8eaddf3ba0e9130bd6ee0228bd042065bc7e",
+      "size": 29494
+    },
+    {
+      "path": "thermal_info_config_proto.json",
+      "sha256": "e24654a51ecb42e3cfa28b59473ab14a0e0879b9f7b0ad9db36128bc583653b0",
+      "size": 14975
+    },
+    {
+      "path": "thermal_info_config_ravenclaw.json",
+      "sha256": "ff82280d769d8ccd47823ac700e09f2758e1721042e39267b9de79ea5517ec6c",
+      "size": 20072
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_pantah",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-01-20T20:16:42Z",
+  "vendor": "google"
+}

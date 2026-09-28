@@ -1,0 +1,42 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_sakura.git",
+  "codename": "sakura",
+  "commit": "05dc1cbc8f2f6d052773d7b79a0459513f8d8cfa",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9afac796ca751dafe32229717384054c0d76f8dd8c2054647845114ed9775f51",
+      "size": 1446
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "27fa904be81e7a25706ac4828e812def0343f9820addba1931a09642b405dfef",
+      "size": 1662
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31603323afb6abb4ea2b652b4aef0a5ed0e95fe17a5bb14d0dbc61db0fd5cafd",
+      "size": 2142
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9119bbb084cd57df3737ac76603ebd2e8fc5a6e9c908813ddc35fcefc741155d",
+      "size": 790
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "da6450606504701939530a8a70509a86579d83d504b4814eb523f402550a429b",
+      "size": 99110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sakura",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-08-26T04:47:42Z",
+  "vendor": "xiaomi"
+}

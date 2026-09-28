@@ -1,0 +1,35 @@
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=quicken
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
+# BT
+bluetooth.samsung_samplerate.supported=true
+
+# Samsung Stuff
+ro.product_ship=true
+config.disable_consumerir=true
+ro.vendor.cscsupported=1
+ro.cmc.device_type=pd
+ro.cmc.version=2.0
+
+# RIL
+persist.sys.fflag.override.settings_provider_model=false
+
+# One handed mode
+ro.support_one_handed_mode=true
+
+# System
+persist.sys.binary_xml=false
+
+# ADB on boot
+#persist.service.adb.enable=1
+#persist.service.debuggable=1
+#persist.sys.usb.config=mtp,adb
+#ro.debuggable=1
+#ro.adb.secure=0

@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nokia_PL2.git",
+  "codename": "pl2",
+  "commit": "9ffe9a9552542f0d1708943b9b84d438695f84aa",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a1e511a5a1899d98cb77426366fd793e7ec0d3ec58685218e3f236a9563383b6",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2592c61d09c28f42581e6931ad51074a97f426a77a604f887612073a007a9d4d",
+      "size": 1350
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3c96a5e543dd681858efcd06549cdf20276e171462be871907304c1cfb0f9b62",
+      "size": 2612
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "00d71a761dddd7fdff90fc2bc7234a3ef2c56e36bac3f2c4f090d4d9a99bc7ab",
+      "size": 1314
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "95d150f06810fc28ea5c529e4a2cff39be1abeb3299221dcb873317fe73ddbad",
+      "size": 25520
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "44851814909ab7dad84a4c890acf515859215b45e5026658588ea54985c36c15",
+      "size": 299
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nokia_PL2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:10:39Z",
+  "vendor": "nokia"
+}

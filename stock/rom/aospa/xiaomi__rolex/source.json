@@ -1,0 +1,57 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_rolex.git",
+  "codename": "rolex",
+  "commit": "22aec5eb4eb9065bacfd850b5a282e4152656b5e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4d4f413ee3ea6e03972d1e7d8fe79f6d13850638639ead8e543aa64870e117ec",
+      "size": 5160
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6b3e05111d6654d5950f46778c7ec51ae82e13e3aec78124e51a79f8e1f78a9c",
+      "size": 5784
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e048524e6fed45a529ab8527353329af0392aebc50d921f41d854097ac0d5535",
+      "size": 4133
+    },
+    {
+      "path": "device.mk",
+      "sha256": "81bf14185ff7de977094f2ec4814c7cb8f881e7ddf7f1404e964c446971e2c47",
+      "size": 16724
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4e1d8310188e4fda75cefaaac74ea17a78cb8a6063efb4a9f9e6e9c701062691",
+      "size": 3383
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fbbd89f60d3f883bdc0019297c7838d80324d25dc41569a0d9bfb0bb669de291",
+      "size": 174543
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4855c37b2a8b8eb8cea93665e81e9a6a5a8c11924ed18e706bc5c83c765443d3",
+      "size": 561
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rolex",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T23:05:03Z",
+  "vendor": "xiaomi"
+}

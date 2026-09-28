@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_tsubasa.git",
+  "codename": "tsubasa",
+  "commit": "3179a5dfa861dae7dc230733b3b997ddcf7feee2",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "331c10c638129f1a884e04a00708825f23e3165560fe77124262ebd4fec5e3ad",
+      "size": 724
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a9add959639924615dd3a5644a3bbf694c954d608d355f503c906d57f08a5baf",
+      "size": 877
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c0c60f690eec2ecca7a51b50b5cf4b18a08cd37279c7be5e559476d767fae0a6",
+      "size": 945
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f44bb9eb292ab28b60ccb4fe025656b323193049334289bcab7f0d4a1f10a62d",
+      "size": 1298
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1772e61f29023ff174606ee6c11939d7ee80530f8d7626791e72609d67dfd194",
+      "size": 782
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "07bb099460b1bd04c51a4d67bd264fff07b0addfffc248964e1a0cc3b311bc90",
+      "size": 110
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_tsubasa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-01-03T21:00:19Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_haida.git",
+  "codename": "haida",
+  "commit": "d502ffc0638d2d5ad13222e52ee1123306f20f47",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0dddd9e7b2697823891afe4afb71d9422f150fe144fd4cc18f9a943501bbba04",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "04d2e4d2c5154ea3bebd97b84535745579cc5053c4b64122637dac915b887fe6",
+      "size": 1060
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9fb8d927b050d3f4c58e4f4ac64367b68f681a1d12c1f5b23358226150951f1a",
+      "size": 323
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9fee054f1369e62bd42ff7215be10445452ceceae2fd5e04e5b174cd0e930133",
+      "size": 330
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e6b256966bb7c248ba7b3088ef67ccc873e8fa7f91643aaab259f148a5addf4c",
+      "size": 3271
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "c3a6d987ae4ccc34c85e950357f22a04e701c4a49b58d6c17294fe3d23099e5e",
+      "size": 631
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_haida",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:21Z",
+  "vendor": "semc"
+}

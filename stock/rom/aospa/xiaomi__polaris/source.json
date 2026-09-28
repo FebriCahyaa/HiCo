@@ -1,0 +1,52 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_polaris.git",
+  "codename": "polaris",
+  "commit": "8e088de378250c70b69ae7de68c11a3d92fb8b16",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9abc55c2c80ef0fa933f3325a38bb5e46da02ec5a411d999f8aba782191e01d2",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "31ebe180cbcce15fe2d858be44b0f001e7f55cf0aea6a1ca875282dc76182398",
+      "size": 890
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2229b401df90b16ef2bc15e09357ed0d0db757410355933a97f8bd67d61d941d",
+      "size": 4466
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3e6d83809348d48c816cdee2ed4aff1e7c7716b715246204efd2ad37c65abdb2",
+      "size": 471
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e78056481581d66bc8467fde848e361eaff64a08771a39cc1b87501ed3ad4906",
+      "size": 13584
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09159256c5d48dfe14e7adb6fde6a0576fbe51389bff2d69b3b66cb85ebfae8f",
+      "size": 160
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0910dd3e4689a5b61bc44686053bf4d15b0c6c28c91ffb7f2552cebcfa5d76c6",
+      "size": 58
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_polaris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T20:50:56Z",
+  "vendor": "xiaomi"
+}

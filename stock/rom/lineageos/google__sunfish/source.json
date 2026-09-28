@@ -1,0 +1,152 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_sunfish.git",
+  "codename": "sunfish",
+  "commit": "52074bf3c0b66efcba89f557e605535feb29aaab",
+  "file_count": 27,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b28a179029bfad802d1b230d88ab5a2853d1972a8491d25e39281a3d8a3e62fd",
+      "size": 1336
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d3d687115344001299189b29fb44c8608d719e840a47b9c5558cfaaa281158a7",
+      "size": 851
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "5b3dc131798ec83aeaa220708a14c1f668ade878453649a145b2a78a4f076f5c",
+      "size": 7331
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "8d8d55c49a17fcad5796bfd3194fe9b27a14fd5c04711be55ea310cacd819e55",
+      "size": 807
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "38f69165f2c31b6a2cb640defbab16bb024cb6bacb1addeb42aa661a93f0f2cb",
+      "size": 5146
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "988b4f5f6cfbc321dccd70cc67b7ae8f4026ef1f3bd4c13d054a72ed41632a2e",
+      "size": 2834
+    },
+    {
+      "path": "device-sunfish.mk",
+      "sha256": "445196e925c7f106fcf34930cd7cbe7ae3cc078e31aebb158364d7a161e0a3b5",
+      "size": 8243
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1a9c4627a379b168b224fd350f559f2c4ea85cdef064fb663d411443cc9d7987",
+      "size": 28525
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e9ff602358ba010da049894e7a968efd40d1d54cfb4a58835a00eee5dc3ccb96",
+      "size": 213
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e966fba1a9a3bae294f9db6ef2372eb934db79fb3b3a8f03799967b687f8b596",
+      "size": 108
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "516d4d443f6e51084ec846cfc0745d1f7c978156020432cc25d0e017704b442c",
+      "size": 106
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/dump_thermal.te",
+      "sha256": "8409f4f5e3954a6cc73571c48d4e5ea9763d833ef6013f3dcaefae989618ab06",
+      "size": 252
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file.te",
+      "sha256": "6cefe2edab3ad3a76666a7860ad02549452219e8dd2ea8d5fc8c7fd355d35753",
+      "size": 81
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file_contexts",
+      "sha256": "755d7ef948f4f1582f8b12e9c3c0e31747d5cc70c052a271dc4b4534ce225f5a",
+      "size": 849
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/genfs_contexts",
+      "sha256": "842299c326461e2a878336e05832621185922df8dd12cc3b172e2d3c6441a5e1",
+      "size": 644
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/hal_thermal_default.te",
+      "sha256": "3bd19caa5b8b364d6d027fa7e7895fb4e904285556a87281561d634636c3b644",
+      "size": 813
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-logging.sh.te",
+      "sha256": "b38377b629836fb4b218827a86577f245c700e008ec3166781f79d696de775c8",
+      "size": 381
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/pixel-thermal-control.sh.te",
+      "sha256": "652d80278862e213932dfa08ecb2b7fb820c87d07355442fe5ee2adeee9cc6f7",
+      "size": 589
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property.te",
+      "sha256": "9e7c9001131fc88bddd6faac201bd2ca7a534b569bdb27222d05862ec97388ce",
+      "size": 55
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property_contexts",
+      "sha256": "7e85a2e2653801b14213ac6ae40cbeb3c5ce3e60db2bdde520be114990ee3b71",
+      "size": 76
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/vendor_init.te",
+      "sha256": "88739ab42caab3f4c51f1e2e7c82c51e7fc21a8e546500734056afc57b694382",
+      "size": 159
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal-engine.te",
+      "sha256": "a0709d76ee7355fedbd11b49aba74834f6122aa515268ba38746017288126b1b",
+      "size": 720
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "531af437b8981b9927fec3f696348e9e5778f70de9fbe0606019223b3f665c5b",
+      "size": 464
+    },
+    {
+      "path": "thermal-engine-sunfish.conf",
+      "sha256": "4ff506ca1cbe240c36e713330d721e2fabd8a1646d09f544e5be646bf60315e0",
+      "size": 1518
+    },
+    {
+      "path": "thermal_info_config_sunfish.json",
+      "sha256": "ae751e70d5b28a82c5a63438fa4d2945f871c18a10db0892736535536c2e3495",
+      "size": 6056
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_sunfish",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-30T02:03:43Z",
+  "vendor": "google"
+}

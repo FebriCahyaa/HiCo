@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_guacamoleb.git",
+  "codename": "guacamoleb",
+  "commit": "e5c9ee601f3436c5c09c206afff0ba750b6295c5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f7feac74fdb0fb78df46c9d316cb39c3268c518b1556be9726ee14744f7495b3",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "22c38a1ae4a102cd27b9d9862b89440632bb753480afaec4f51a823901a22ea7",
+      "size": 951
+    },
+    {
+      "path": "device.mk",
+      "sha256": "42c5227286cf03d3528e2ddc9578ececd50344ab08a26cbe85614686b852e389",
+      "size": 1332
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "027f4b75f97bb8e66f54237a3310834a2e34a011c44a27d0ca0224f23099443a",
+      "size": 901
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7a0cd9f446560315d3675ccf99e155734667ffe8a22c706e4d5be5ee39d9a0cf",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ab77fa65c8d004c2411537f99a730dcf55c28561569392818970e766be2ec870",
+      "size": 22987
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "71393e9a927fb54e21346dee2082266645f3a7fe1585f9fa7bdb024c6c740286",
+      "size": 876
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_guacamoleb",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T10:28:38Z",
+  "vendor": "oneplus"
+}

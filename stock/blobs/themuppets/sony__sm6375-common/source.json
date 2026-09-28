@@ -1,0 +1,30 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "2114108d5adfe787503ad0c87508d78123551991",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/odm/etc/thermal-engine.conf",
+      "sha256": "7238d6f96baf2af9d071c390e055b08934104d6745db9e88028403525c4f813c",
+      "size": 8440
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "23ce761f2c65ff5e4c933842c75f11ab1bdc5685291e99fd5b1cb63640a07735",
+      "size": 741
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_sony_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pdx225",
+    "pdx235"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

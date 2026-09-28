@@ -1,0 +1,77 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_gs201.git",
+  "codename": "gs201",
+  "commit": "1114884f08b29d604654177d777024bfcb5e3e28",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "573e773ec0c9f03df9d2e2af12143f22bd0dd74e06219201ec15c98ba181517c",
+      "size": 1202
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cd63310128f712f34666055a558978292074f5ca2083ff4e417dca775a164a2c",
+      "size": 1210
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "1039f5cc9a9edf6e208393475bf383151042d77490a3510df95a52a6cc8f983e",
+      "size": 13954
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "d8c176631e1b14edf83eb08593dae485f214034c63e697021b9f454061248802",
+      "size": 1580
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "848c29d1867cb0fdedfcb554d3aed545ad57550df85b8a9a819400133a1c435c",
+      "size": 1971
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "e2bfc1eedd953c55e636569a1defcad442545ab53f8b522760702098cdccbbe4",
+      "size": 648
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ad730d2439095ed6ff5ede6c1bb3c67b9e136e7ab349f6653172069d9f06461d",
+      "size": 42525
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "aed95dc7c4c8586abbcb1d34c329e5dc0ddff3cd7e3e8e9e7f25241d7b9eb01f",
+      "size": 219
+    },
+    {
+      "path": "sepolicy/tracking_denials/hal_thermal_default.te",
+      "sha256": "2dd0347ca857e063c151ed06f88a0cd2e6395e1d667e0fd37f8df7dcec8ec2e0",
+      "size": 520
+    },
+    {
+      "path": "sepolicy/whitechapel_pro/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_gs201",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-10-16T18:14:33Z",
+  "vendor": "google"
+}

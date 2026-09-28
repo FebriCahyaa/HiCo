@@ -1,0 +1,82 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_vayu.git",
+  "codename": "vayu",
+  "commit": "a5e966055b006c4ea1bd14614bd95df36969d555",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3a92fd7db52b6cdf3f4bde4db4d6211152f84d544be76e51dcb31e4396b3f80d",
+      "size": 624
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "31c2aaf8fdd125b0518fe4dc59553240bcebb772f851a7037a18a95879625073",
+      "size": 7102
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8c04267b77a0817bacc305fe621fa41162e8643aa0544f5949e494557dbbb4e3",
+      "size": 228
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1d6217bab26d7593568126b8b48b328a2e71d2095239c7edf335c780a2bb15c7",
+      "size": 7396
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c9d43d0936030dfca51f73af580ed4a53a99ce2bbd1c85a10c5a6d4fcc03f05c",
+      "size": 20899
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4061038c5c51002fc6645c6002dd5ecb399202e6573131ff7bcf81299ebe9f10",
+      "size": 2671
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "73d8915dc98799e1ee40a1bf1b6b62b3f6db6045e9344c82e13f2da8a3c00a0b",
+      "size": 1542
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4279b92ef8fac269e44e2c1f55b624cb5806e6edd8a5f71911a655c5e186b955",
+      "size": 14250
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "e66373a2f5c97a746175b255b3901a6b887258fe548cab9479152ae6ff089b87",
+      "size": 6354
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "adfa3ed5a13df00147340af0ded0596078881418ee74725d7939525b0b7d3863",
+      "size": 46243
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "0484a280046273a10244f40b0f6f5cd36c1a9396c88fb597e2467ff25b5a209b",
+      "size": 940
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_vayu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-08-01T07:41:35Z",
+  "vendor": "xiaomi"
+}

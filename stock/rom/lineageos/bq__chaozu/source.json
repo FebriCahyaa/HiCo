@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_chaozu.git",
+  "codename": "chaozu",
+  "commit": "a7fea51b3fa4ca8624ff338d38be2d14cddbb462",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "12b7d5662752df2878fb69d1c624282b31482b1bb193512b36f7f64070896d38",
+      "size": 757
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7ec7a4913035298fea89e0cbad9eebca721750777bdf5bcd20a8f948795d5c31",
+      "size": 1075
+    },
+    {
+      "path": "device.mk",
+      "sha256": "52b6d651d57ec6d7955d16ed004c056ed0d00b45eacd89c23fb2f6432865183a",
+      "size": 2268
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "34077c02479b4b76add93d8edb81cc419a2a119d3a6eb80e7ec76ebcf388d5ff",
+      "size": 1643
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1be1ff1247215423ec825b61d268a075a413ccebed479a27bc2080deb46f1e90",
+      "size": 485
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c058fe21fec7c2507ea848144d1139efe8719fa4ebb121eaa442cee18a5513af",
+      "size": 19600
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_chaozu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-12-10T08:01:26Z",
+  "vendor": "bq"
+}

@@ -1,0 +1,36 @@
+#
+# Copyright (C) 2022-2023 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Bluetooth
+bluetooth.device.default_name=ADT-2
+bluetooth.profile.a2dp.sink.enabled=false
+bluetooth.profile.avrcp.controller.enabled=false
+bluetooth.profile.hfp.ag.enabled=false
+bluetooth.profile.hfp.hf.enabled=false
+bluetooth.profile.map.client.enabled=false
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=false
+bluetooth.profile.pan.panu.enabled=false
+bluetooth.profile.pbap.client.enabled=false
+bluetooth.profile.pbap.server.enabled=false
+persist.bluetooth.rtkcoex=true
+
+## Media
+media.omx.display_mode=1
+
+## OpenGL
+debug.hwui.use_buffer_age=false
+debug.renderengine.backend=gles
+ro.opengles.version=131072
+
+## Platform
+ro.product.firmware=00502001
+
+## SOC
+ro.soc.model=AMLS905X
+
+## USB
+vendor.usb.controller=c9100000.dwc2_a

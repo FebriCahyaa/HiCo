@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_fairlady.git",
+  "codename": "fairlady",
+  "commit": "c529dddc06ad55e84b05572fd37d748fd314d0ed",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c98e7e2ddef88499a08bbaed40b996f0f4e46fcf1f4c89a3228a0d6019c89dac",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f0b1686989d8db103549daee101e942fb58f45356527ed38c119229f12718ad9",
+      "size": 759
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c34d63db4350955fe6dd66569e98c7644de49ae2fc01194528c9b511c2a4e442",
+      "size": 2122
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "299293681f5950a6c18e07ad291e9c16e6cb2829d5dcdd4ad86aa72cf783e5bc",
+      "size": 3544
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d6958c24146ba4d6c6324d2346bfd35c6ed4a1ff276c1c5bfd0bfb9f536e4b4",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fb7c750a70dcf7f53c13c9e6eb782b69da0e00a202fe8ba2aca052dcbd2cb6a0",
+      "size": 79386
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_fairlady",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T18:40:16Z",
+  "vendor": "oneplus"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_lenovo_A6020.git",
+  "codename": "a6020",
+  "commit": "7ba009afe2e243e9f399f3215a1043a8ce2a8b2f",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7fd9daeb2f242bc2f53dce57d4967a15e98e3ba01b0c45689ad6b4853992cf9b",
+      "size": 24
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "680cb73b651d07222c612ae10428090e81a2dc129b53f14edfe55844aaddf26c",
+      "size": 1500
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "95734d7ce4af14dd429be7f15f06506791df86634c15b1d88f10e66e30637623",
+      "size": 701
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "db3906f586be28e222afdd43c47f1a1e7e5a8fdb34a64e34515062f04a045524",
+      "size": 6758
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "ce4d9dc4409601b5540813458f786c3c5d2525dd29a84bbfa5960033e1856100",
+      "size": 3695
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a30a172239c05d7b7b7083b185d9790f479f12107e8f458794b8074ee1511c6c",
+      "size": 11847
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4c4da3a8eda549c7dc29e72e788a871d0bcea470f86f25c2461d068110890bbe",
+      "size": 1537
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "60842d119f175e77ecf58874c90e49eaece2cb5dfa7a387cdda8ffd74f6d03a3",
+      "size": 14740
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4d718067164e0e50fe17eed434b1a9afb9543caa17ddfd7c30c2b3fec2e7822e",
+      "size": 3201
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "5736b6e4c939c45a3f9851d369f8034d16fd703ce27f47459ac9a7d48163627b",
+      "size": 97
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_A6020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-12-01T13:38:08Z",
+  "vendor": "lenovo"
+}

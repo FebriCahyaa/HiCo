@@ -1,0 +1,94 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sweet.git",
+  "codename": "sweet",
+  "commit": "1ff2aa2967fbcc3bbaad915e41783f13422ad8b6",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "5516c21eba66f2e54f712dc71e5e19c955a6375e24f093fd2d05455d9ed8f1a7",
+      "size": 253
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "17632312f8d9322b1b2d63905823751838a3914db4799c226371bc45ae85620e",
+      "size": 1632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "ea8522b26fabc4de93b7cfe9b2f44807da549f8fd252ce85e1dbd547d947beeb",
+      "size": 497
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "fa214c78547fd466579cc55bbb8029d622382d8d8b62571e4f5b04d79be05c71",
+      "size": 1680
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "08240bd58e4d0917b5a326ad2bb5ebf541a81aaf74a646a7edd0b8137358c471",
+      "size": 416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "8a38af272c59c0d7ddd6c814b36371dff2d1aa287a31c92826ecda2400301313",
+      "size": 1424
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "74291a6852080a332db2a94efdb35e6d98790ad052ca31d87ab9e9bb9b03332f",
+      "size": 1568
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "382cd80b7132cd74b5b94385063ab2cea8701688dfc08a557f0e4bd81d5530da",
+      "size": 1568
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "a3bcf7a415fbca3487a6e0fdba2ef773cfe89e78420b7f17098ca65826dfe30d",
+      "size": 2208
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "06919294d419bc9389234fd5419fa3d8f0fa0f34f3ba9e489b408609ba3554e1",
+      "size": 1328
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "82e74caf7c33798257847520f1c37a0257ed374b640e9a2fed3f66c1343926af",
+      "size": 1232
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "4ed1278e426f13a23a479bf30387dd7d336dab643d6f89cf150992865f4fc9d4",
+      "size": 1632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtube.conf",
+      "sha256": "c94ac55cc21a5a1fef4ff3083be7d571e9d9fcf7d1c9c8487fe992c7e055f84f",
+      "size": 1632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "a22002b25ebbdaf7b8fd2e5b1162db0ff24859795b16761de649f938f5c32bef",
+      "size": 678
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_sweet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "sweet"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

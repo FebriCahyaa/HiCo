@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_bardock.git",
+  "codename": "bardock",
+  "commit": "bb120929a35778033e79ddc9d75f6ff0600261c1",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "48212439dea0aa4e027e5a58ab75a55f87c50291c446197e34b9b7ad146a6c2b",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ffa1fa44dceb2632ae6fa33af1d0dc07baf3eb3d024e3f65a5b17b9e945b30d7",
+      "size": 735
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ce054ff9c987483e8277210383d4dc6acc2e5ea6646f3f55da0a34cd8246ceb",
+      "size": 1012
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eb0bb084539038ec2963e141c02597f666ed3f732b6c0bf002fef5df0ec76cb7",
+      "size": 989
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "52d52adb3d271b04d297e774b9ef245b65692f55ec8c6e25bf9f4d4d47cc427a",
+      "size": 450
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6ec760e70690f3451863693d2ceaa981316c317eac15efd85672f16dd14a9af5",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5b766a454cbc60e32442daf27e6321e589317bb3f6f24fdc74327b6ba64a97c2",
+      "size": 2357
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fc78b645dba351b576642482039b6651af112030849c5ae57a2a3c050abfdac5",
+      "size": 43
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_bardock",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-01-28T19:16:50Z",
+  "vendor": "bq"
+}

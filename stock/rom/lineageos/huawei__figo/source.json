@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_figo.git",
+  "codename": "figo",
+  "commit": "130135f1774ff931fa6db6c092acda55e5e87040",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "aa226a834026a18bdf61aa807d5cce7f2a022a9a59522f8efafe3ac41771088e",
+      "size": 1063
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3741de9887d678b05e610875619fbb3c37d19284cffa20ea9eb006d98a481b64",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7fa5e3daeb34095310369aab1193b2c36be3c9cbc5fa3ae9ab54400334480bc6",
+      "size": 772
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a378b8fa8fd7e2589c45d8a102220572615b1f9edad025444588c2b11054667",
+      "size": 1164
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8eab3a35b966c0defaed24ce15336fd245bf356fc2adeb069145faecf39a8d79",
+      "size": 754
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "67e4eae3385689cf12f6fae20a950b21e87f8f66850e985f32cfe7b72e017a12",
+      "size": 118
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_figo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-06-09T20:00:26Z",
+  "vendor": "huawei"
+}

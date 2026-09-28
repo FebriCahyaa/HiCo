@@ -1,0 +1,52 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_falcon.git",
+  "codename": "falcon",
+  "commit": "2695effc4dae6e5e44c726c80b1c0312bc52fbcd",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e9aa12d0e9a10f4a94c30d0c30468dfde5d8157995531814b617d24e2d9c393a",
+      "size": 1062
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3469784925a992440689362c868e906c26ee75fe7ee97d13689e8a3e7d3f05aa",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2c217fe89d5acc18b511f105d31872805f3241d9460b882b0be67a04eac667e3",
+      "size": 1713
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1db48cfa1b45660f8353580ad69c3bb894a8353bda3de2d51a0cfa204183b310",
+      "size": 1277
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "50944fc2393c7b61b3db58cf9d0ab9f9bf86a3eebf1ee29ce761bc616a595b8c",
+      "size": 832
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f9165e048f3be23a29f63eafdf4fd880ea16fe96a2e531c68f72d80d3e7e57ff",
+      "size": 911
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_falcon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-10-12T08:29:37Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_gemini.git",
+  "codename": "gemini",
+  "commit": "6d8444f42cb41f1f3c8b6593b822279fd2573599",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4ceebab8d4960513cb5787af67bd0bbd72d0d6e7716ec5f0490f7e65d7d0fc2f",
+      "size": 1172
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c3b331937ac952d82beec23713cca403f2753349255e118c1a5899affb198b7c",
+      "size": 47
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6f011506b9a3b4059a8e8e98d419ea0fb469c9aac18ea3156de4fd3edc47d51a",
+      "size": 1174
+    },
+    {
+      "path": "configs/thermal-engine-8996-lite.conf",
+      "sha256": "47cc113ef5faf2439b1ef7a2dcf3472fff86dd009f87a29b7082d1fd07d6401e",
+      "size": 3518
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "c8cc7e135d07df7a63af14485a50a360215268f7b895b56c3470590ded0c7d6a",
+      "size": 3519
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fc1177f68f749e6a12f557b5e1d3ba72281b03645d9397b506bb1c61bc6b6a21",
+      "size": 2644
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f12c81d3dab140a1509abb6ab4dd1dabdd3a348a325328d1b5e52e1e78b88bff",
+      "size": 835
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "449760254fd0945a3b91ffb1f484cfa8fb295904e24a2e5b3eea7b0baeac9575",
+      "size": 7357
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f94a58de8dc43ea86a9574c6d458dd071c2b1858544e6c8b84455d1fd59c68b4",
+      "size": 82
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "45793b58fb6a7dc77bef161d6f79a27c00402fc5558c287a401b2a45bd8f07ac",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_gemini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-16T15:30:42Z",
+  "vendor": "xiaomi"
+}

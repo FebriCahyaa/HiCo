@@ -1,0 +1,57 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bn_ovation.git",
+  "codename": "ovation",
+  "commit": "afa1e7aa552afdc79e60fcd72b63b910ed7d5218",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3239906aade784eb530bc51f0ede0ae7126c83d37aca04c03ebaf3190a87c0b9",
+      "size": 776
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "86d0afe9bfb67a79a0a86bfd5d4f4019fe293b9aac6b3448f53f97428aadb7ca",
+      "size": 1105
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0b6717c02e52d24b28750e40936d77455cc31c6a3f45169fd72eed2c0a72b202",
+      "size": 2923
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e87f1c183f2be9f660d3d0a13cdffbfe6dfab28368350b85d5bed1d907fa8042",
+      "size": 2024
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "010f8824b11deb23fbf84b80ac29885b9d7779a02495f314a349f73d2cd213bf",
+      "size": 388
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "26d85937f3d47ce435e9ee42d064dfb58f1a1a8eaeffeace28d741859df01ef4",
+      "size": 1563
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3b7451c29ff6f4d47ec20a71dc6301c3198a67ba945d5a822246afb8522f82e9",
+      "size": 1070
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d2cc1489c5d9eb08f2fd7fe7443e25dd60bc871826b006df2d2f77aa52ecedfd",
+      "size": 879
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bn_ovation",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:51:11Z",
+  "vendor": "bn"
+}

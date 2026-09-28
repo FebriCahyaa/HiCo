@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_zeusc.git",
+  "codename": "zeusc",
+  "commit": "3d96d3052fb24ec4a58f5a87b8c7b3d136efc742",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ebb409987c83d83410581510359390494d56491902c39fe75432c9c3a3710128",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0c92aff1037555ff122f48eccbb864dd731f3d279357f2340a49e77ad2b63223",
+      "size": 1060
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1f25857cbf9b9c0af2d8b20c9d2b4c3532e95c90e6d4497c3eff8d1e6ffaab5b",
+      "size": 187
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "14e3b1a9a589ff3d77f9044a29f1c342d24822d2cf840c219661e29e8f2b68d5",
+      "size": 330
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6d65e293058491ebe5f0e4f0a5a3c4fea5a9a588599b1f22f73f2b17421cde1d",
+      "size": 2067
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_zeusc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:58Z",
+  "vendor": "semc"
+}

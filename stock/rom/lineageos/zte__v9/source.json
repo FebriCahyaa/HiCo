@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_zte_v9.git",
+  "codename": "v9",
+  "commit": "3c26a5b9aabf42d985a7d8c33b4b026868002829",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d1800dcc9691f23cc3b9ebb1fed271cfbf3f25c46af7d0a67fadbe901127b30e",
+      "size": 768
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "28a7d0c90e4fa24ca5927a7bfc139e165cbd2086241404496d945cefcc7a49ba",
+      "size": 1058
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "97fd7c13e8e79cf775914b8bc30bb8958bd1be52b447b111f619baaf3a417343",
+      "size": 3081
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5caa720d9635afad61c6ed988cbffb34346421ac8ae28ee794bf3e296a1cc421",
+      "size": 13395
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7695a43c83e850cb6a239208f1c37bb908958fc286c5cc2d2d0eb9ee70dbe752",
+      "size": 652
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e02fa1b59ed71e160aa5e015ec661f82b2fca1f45a07c7da4729d909da00ea43",
+      "size": 869
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zte_v9",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:46:29Z",
+  "vendor": "zte"
+}

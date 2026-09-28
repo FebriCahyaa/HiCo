@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_parker.git",
+  "codename": "parker",
+  "commit": "8d11c4dfe9bade8ca1afd03f0765f998ed06e785",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "63ae501f7dd154f6c33b649aa3575b4da0113f4d482516e7c46147b8cf4c85a1",
+      "size": 828
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b9739b554c8475a4b378eb3e0cb296556e91c6120638261aebda16eca725ecba",
+      "size": 765
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e6747cf6e6d1e1a821346391ebb077a3b914c186962ab6624314e2983f8bb678",
+      "size": 1578
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8ca86227f8f539a81a298fbd55020835ec51ea98bbe09e369ba4a9e4f1b32784",
+      "size": 3326
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bca3d49675040489e77b12690b6273eef62a264f67ffa3d1dcbbeaec04fb96ee",
+      "size": 801
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3f21f8fb6da7911a5f96d317c971ed9efd6b282d51be8ca651e5a19ff575e3b",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "be95369e5125c11d61c4b7ea941f644805a02d678544d5e9d9b95f844b2f19d1",
+      "size": 12953
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_parker",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-11-04T10:53:16Z",
+  "vendor": "motorola"
+}

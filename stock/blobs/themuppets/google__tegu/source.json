@@ -1,0 +1,54 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_tegu.git",
+  "codename": "tegu",
+  "commit": "bf62ff4acc43e8d0c051029bc21287120e6f73d3",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "a40d3a721d2fc5bfa984c240ad1d324ef1f65293d36cb00c92da9e5deff2c374",
+      "size": 94023
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "d7c904af2078570dddcca22a8312c8bc358f25195b4a065dbb10c2d4d0518b79",
+      "size": 63889
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "d3781a6798e2760526ac976784fda3cc9400daf9a4c91cc5e6efdec2d7e6eabe",
+      "size": 9636
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_lpm.json",
+      "sha256": "d1b0054cf7103f041b03c12adbbe159268d9f06c853a1804bf9d8da46c4427e3",
+      "size": 6172
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_tegu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "tegu"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

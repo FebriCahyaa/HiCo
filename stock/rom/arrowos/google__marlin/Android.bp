@@ -1,0 +1,12 @@
+soong_namespace {
+    imports: [
+        "hardware/google/pixel",
+        "hardware/qcom/bootctrl",
+    ],
+}
+
+subdirs = [
+    "vibrator",
+    "usb",
+]
+

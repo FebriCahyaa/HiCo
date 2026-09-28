@@ -1,0 +1,72 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_rosy.git",
+  "codename": "rosy",
+  "commit": "e994fa1e0356d6ed4e077588cf0778b1d6fa4779",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "07c9b4afa19103f72aeafe84dcafaa6c2c10e627aefd0f158eabeef211b1a3ad",
+      "size": 4698
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3f2ccc068f1a07fae8354cb0ceb3a7fc42b8f4e22a955ea66732a4bec6500154",
+      "size": 5117
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+      "size": 94
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "afcb6b812d1d19358f53a6ae2690eb3fc9b07b0ea7e528da10597ea207d4104c",
+      "size": 2134
+    },
+    {
+      "path": "device.mk",
+      "sha256": "65ae896e93634b2abbfbc35c17db9ff6e5e4566a5b5d7094573e1cbc056731ff",
+      "size": 16380
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a72315735ebd4cf7f521fbec07ce415d81a14d645b497c4a9294d6e4b738283a",
+      "size": 1707
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b2848a42faaa828a1bfe0d3567c4b62a7f32a093ca5a0369364ce901bf09d002",
+      "size": 211204
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "99ea31eb53591f1add06f7e10cdc5975e975fc91b8baf2eb3f66c646ecadece8",
+      "size": 292
+    },
+    {
+      "path": "system.prop",
+      "sha256": "63f0addcbf3d71d7bdcae231fd0026b4de3813deb9a907f0fb181cb8f110b5ea",
+      "size": 5380
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4401e4fa851edb35e620b5dfc8d0f81be7ce660a3cd9ed4ebec3b7609ef61457",
+      "size": 2340
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_rosy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T17:11:11Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_lancelot.git",
+  "codename": "lancelot",
+  "commit": "25ef80d795e62bdfe82da2c3fcc80835e331a0fd",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "12387ae1e567d14524a62e58d8b83b4598cfa41952b1c53f478661ebf4539141",
+      "size": 220
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b4dea0814028284d9bdcd0dc734eadfb3d7b89b36bc96241b2cad89e93174d6f",
+      "size": 265
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "03025cf6a6f0f41bd93d4d4ab43ec5f162ecd1fdb8b71ca81389432281f54cae",
+      "size": 564
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f2b5f6785889c8bbbedeec8ac9c3ebbaf27ed672182e704c5ea82d3ee9d4f087",
+      "size": 3066
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "646f5e6afe3e2fe83191694b04f2da812af1cb5bd83857a6613ed1a7822a6799",
+      "size": 472
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ecdd08b460c17db2c08d8f094afb73214bdfd95ce980a5962c665c34c01d97a2",
+      "size": 12851
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_lancelot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-04-21T22:55:40Z",
+  "vendor": "xiaomi"
+}

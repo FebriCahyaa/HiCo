@@ -1,0 +1,77 @@
+{
+  "branch": "sixteen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_cepheus.git",
+  "codename": "cepheus",
+  "commit": "5302e196362389cd9d6d65fc6a470a0fc7fadd59",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "58ba29bf70c184f2160c5866ce77fe358221cda6a9491948caf45deb7db11749",
+      "size": 555
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d2768a637ac9ce7ddcf7571396a8fdec270476d571f42fbb24d48a3e6730c127",
+      "size": 2043
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "df85b2b19559504747ac21221930a5fb187e173d01242093e6bb4716dfa89288",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "922f0c54fc59062a49ac51c86bb5f19528b0db0087eda6df4205b74617f07f18",
+      "size": 7547
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8837bab33a0de6c931e486ea1be176b61bb8bb7c810248af6454bf278c3484e5",
+      "size": 22477
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7b123c1cae1724cecd107f04c5ad52b57caa286e9400b69143549927ac315131",
+      "size": 2807
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4a03c7410dda1136167d5d51df270e4fff2f7f155e4b983e5589ae3d8012bb21",
+      "size": 50804
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "9dd5a73c8bd446561257b50d7e80a7ffffdc8e3f4474ea44fe968ce25886628b",
+      "size": 491
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "1c9eee40bf000bddfef4f1a3c4f6f01d0d9debe5e2312f5deb0879d41b1154ce",
+      "size": 380
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "fb2d121bc1cd0af4701b94fb0e988de4611a7695450e025dcbf4cc84674f41e3",
+      "size": 1798
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b4510873a1c618601078d93dfeb9a7085bfc992022006280fb9c98b0ae4485a6",
+      "size": 277
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3ccfc395726eed426c7ba633b3d86e98c3898996d26d5877f4a239859a2a48e2",
+      "size": 9276
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_cepheus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-05-29T07:39:32Z",
+  "vendor": "xiaomi"
+}

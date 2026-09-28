@@ -1,0 +1,127 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_gs-common.git",
+  "codename": "gs",
+  "commit": "3bf01df00019fecfe24cf1cbd621bf394e6d3550",
+  "file_count": 22,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "22c6f35147f406a335a9de2b25b3a7a7857fafb3060f74cd5f19ca6eb064d03a",
+      "size": 1716
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5e50f514e5261c3607e24e6d5ad81cfc4fc81182c5b8e33772fa4c114074d972",
+      "size": 1303
+    },
+    {
+      "path": "thermal/OWNERS",
+      "sha256": "7e82f44c1c00f326610c6cdaf3359db4961ded620c504bad6bf765e79be039dc",
+      "size": 55
+    },
+    {
+      "path": "thermal/dump/Android.bp",
+      "sha256": "206dba0ff3b20a44b1aed27e977268cdab59a9a5920a0ee2b1a270de4d2c4e04",
+      "size": 180
+    },
+    {
+      "path": "thermal/dump/dump_thermal.sh",
+      "sha256": "ecf467a5908cc481588da31855a45982a9f5bcf9c149fd0be5db3e1bfc109f36",
+      "size": 1524
+    },
+    {
+      "path": "thermal/dump/thermal.mk",
+      "sha256": "4effa7af729719de739cebf47cb1ea78620058e911fcd3aa27f1ea8b9a2ec62d",
+      "size": 113
+    },
+    {
+      "path": "thermal/sepolicy/dump/dump_thermal.te",
+      "sha256": "8409f4f5e3954a6cc73571c48d4e5ea9763d833ef6013f3dcaefae989618ab06",
+      "size": 252
+    },
+    {
+      "path": "thermal/sepolicy/dump/file_contexts",
+      "sha256": "822684b9727635a965d610c5c6567b08715d905253f1dab7f7fc3af441bf779e",
+      "size": 71
+    },
+    {
+      "path": "thermal/sepolicy/dump/genfs_contexts",
+      "sha256": "8f9c9f6e3974f2d1fe9f0dfd1b811045dc018ec16897ed3b7cf499ff934c5d38",
+      "size": 107
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/file.te",
+      "sha256": "6cefe2edab3ad3a76666a7860ad02549452219e8dd2ea8d5fc8c7fd355d35753",
+      "size": 81
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/file_contexts",
+      "sha256": "9be58413382d168e5564589033dc6e328fb99b12e70923e92d4c55ee1c533c03",
+      "size": 735
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/genfs_contexts",
+      "sha256": "ebeed13bafd8e7a33228695431fe7a9ed062e7be7d9717413c51a50d41466118",
+      "size": 323
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/hal_thermal_default.te",
+      "sha256": "3bd19caa5b8b364d6d027fa7e7895fb4e904285556a87281561d634636c3b644",
+      "size": 813
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/init-thermal-logging.sh.te",
+      "sha256": "b38377b629836fb4b218827a86577f245c700e008ec3166781f79d696de775c8",
+      "size": 381
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/pixel-thermal-control.sh.te",
+      "sha256": "652d80278862e213932dfa08ecb2b7fb820c87d07355442fe5ee2adeee9cc6f7",
+      "size": 589
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/property.te",
+      "sha256": "9e7c9001131fc88bddd6faac201bd2ca7a534b569bdb27222d05862ec97388ce",
+      "size": 55
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/property_contexts",
+      "sha256": "7e85a2e2653801b14213ac6ae40cbeb3c5ce3e60db2bdde520be114990ee3b71",
+      "size": 76
+    },
+    {
+      "path": "thermal/sepolicy/thermal_hal/vendor_init.te",
+      "sha256": "88739ab42caab3f4c51f1e2e7c82c51e7fc21a8e546500734056afc57b694382",
+      "size": 159
+    },
+    {
+      "path": "thermal/thermal_hal/device.mk",
+      "sha256": "24ddbd39710785224fcf5998677ce1f418796d49b1602e43f71737dc0a82df55",
+      "size": 243
+    },
+    {
+      "path": "thermal/thermal_hal/thermal_config_schemas/Android.bp",
+      "sha256": "b71a58d1cdbc5e7a6eabeddacd2962f4be87c6c8d218e4d9ba1184bff3a82a7c",
+      "size": 363
+    },
+    {
+      "path": "thermal/thermal_hal/thermal_config_schemas/thermal_info_config.proto",
+      "sha256": "dad752584f109ae6e1d396a574039fd75d4c1627bcf8229253fe64d9fbbc91f6",
+      "size": 5866
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_gs-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:40:50Z",
+  "vendor": "google"
+}

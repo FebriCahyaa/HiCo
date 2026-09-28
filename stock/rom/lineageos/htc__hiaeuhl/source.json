@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_hiaeuhl.git",
+  "codename": "hiaeuhl",
+  "commit": "172ea5b272babff9968d6c48b6eae451dc9d6d21",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "31ba821b451a54f97d331391e6893b18036bd5eeb36f41fadcca9da81ca413b5",
+      "size": 725
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a20d3f18317e4febebe0a6b5c5cf930c6ba34cc2119d309ebdaed057929de2b3",
+      "size": 1131
+    },
+    {
+      "path": "device.mk",
+      "sha256": "851d90dc6324b5a9207242eac6a88b708d607a66ae7824014cfe5210ab2e0ddb",
+      "size": 786
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "58ec7ae8b41fbd81ea4f542d9084af6cf4a6af93bd55d5f5f9de0624d25969c9",
+      "size": 749
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "eb183b35d3d9fc34071f89137cb9930327a6cbfd0cd5a3649c8e095d00f0b91b",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "01bef5093a50ea866f093aa4d51a06400fb8111a986834428cb1b4fd0377e866",
+      "size": 2040
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ef8127686689212ee517f03ef6907517100319057cd9ff34677b484d17402dab",
+      "size": 66
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1ac740c541fc53550e658158c1ae89e3b44a40436daf09dd6d550192117e245d",
+      "size": 42
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_hiaeuhl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:54:09Z",
+  "vendor": "htc"
+}

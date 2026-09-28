@@ -1,0 +1,42 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_wayne-common.git",
+  "codename": "wayne",
+  "commit": "75f1ab870b08d49080d295f731e903a70e1b5e41",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cab8bb7e7ff73e0b16692e2ce8abee2c5460a7c9aef223e2d9b975a65da3c20f",
+      "size": 788
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bfee2371dae61516918e181a86570063322412cd5d89fd2f84f93aaa47a21714",
+      "size": 1501
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dec9b897befcd2cbd0c72a267c8288c73e47ab39e5a20df7912e53a637055d0e",
+      "size": 533
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5a5edb4528c7e4a08cabe9bee17a107b9b8972364ff4cd64fa73c325ac41365f",
+      "size": 50746
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_wayne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-05-29T12:56:00Z",
+  "vendor": "xiaomi"
+}

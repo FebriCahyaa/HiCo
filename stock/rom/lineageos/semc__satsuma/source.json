@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_satsuma.git",
+  "codename": "satsuma",
+  "commit": "fb070b1caff87f987b1c88af7c01401d466b6819",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "43c6914e4fb79fe1784b842ea3276f5e126af236bb516e6e2369297aa46ff29a",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7e1f6b3378600325c12f68db0ac7d81c5d2018014ccff5b72d08bc3dc52015e5",
+      "size": 1062
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f4cf141bc2819110cdd460b88439886ef3ffe9a8eccb76aafd5d397d19998f49",
+      "size": 325
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ec385c85217065c83960cb513887e9969d67bb7a2c3b86d3bf872bbd6d5073dd",
+      "size": 332
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "55a763e063ec6bd6becb76654d0ceb18f6b3b2c94410444fa728af3ee25bf789",
+      "size": 2830
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_satsuma",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:46Z",
+  "vendor": "semc"
+}

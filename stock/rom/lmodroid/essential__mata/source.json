@@ -1,0 +1,67 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_essential_mata.git",
+  "codename": "mata",
+  "commit": "63bc17e16848f4a163efd1dfa3e694e2e57cc6a3",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a70495ed06ecd6ec92226d45e92bfa549b0692f34b4565bf0e2849ffdae8d325",
+      "size": 308
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "599093b4b43ac7adc4f7f4cd09b5eaaa80795ad530573c65b47bb75c52102be2",
+      "size": 770
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f2cfc1fc322c43af8170baa6b5ec05aa70983904dc7433f82dd5abfdab099dfb",
+      "size": 4797
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c19b5c395ccdec7f77096f6194ade28bf9a6c7eddf31979302546c5ddf5dc580",
+      "size": 1274
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "aa5ab0198f3b06900aadd92b4adb43927d1c5927c3bda926c4bc0bb1f25fa1a8",
+      "size": 4299
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d55749629cb068ebddd34eb18741dbaa7a738d6e44c2e33a4413f3a82a67a127",
+      "size": 19192
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "18e6a94b61bb10c615e0361708fdbb58394f55288b097c6acfb94d98ac723c71",
+      "size": 5265
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9c90902a68d3498d4605e05a932e0cb81fd70f60fa4cf820caa3b84444dbca98",
+      "size": 49861
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "c12d75ef0670c3559923b3ce8c4a5ddca654f6ed2619e190c605b5e71862e83e",
+      "size": 228
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "70f7a29df924e46b5dd33d7bcf9f6087f0aa5d2623038f2aaa6e3540029d9a4c",
+      "size": 5442
+    }
+  ],
+  "kind": "device",
+  "repo": "device_essential_mata",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T03:17:46Z",
+  "vendor": "essential"
+}

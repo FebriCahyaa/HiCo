@@ -1,0 +1,62 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_thor.git",
+  "codename": "thor",
+  "commit": "8c9a732d395cfa3aae5af6f2bc1ca3a2bce29766",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bd1095d7faab3b7029ad98bac0bf2d1175b69f68fb291b30797931e2f2e2ccb8",
+      "size": 158
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "28b7f906b61da65731a65f96181626f6971094a82dd452604ade407b5f8700b9",
+      "size": 47
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "592f20b176a382fc0dc3d1f3cefd2e12273c93887484b9ebb281d1358385a3fe",
+      "size": 441
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "da41bb8ae956808b53fecd43d01c8a130663649c8adf3e13690f594d81f8bcc2",
+      "size": 1558
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b11919e4797f8112c06373d1029aaef571e7fd12589c74b48a7d02799dcec4fb",
+      "size": 1103
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "db7cc4120cc0c29a853a66336b9a776c26b93093a592889d605ab1f348db7a84",
+      "size": 131
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f6fd4f2de4d9181383b7305e53f2120763c89618e717f79508fc570f62bef82",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7aed80dbbe1530b8727f680d11f836bc191c793be02ddd260f4c1c6579de6521",
+      "size": 11424
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d2338ecb557952fa1c6dd91d375b18d45ba3828ff7044bfe2502a348a77625d9",
+      "size": 40
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_thor",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:01Z",
+  "vendor": "amazon"
+}

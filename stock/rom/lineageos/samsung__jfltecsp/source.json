@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jfltecsp.git",
+  "codename": "jfltecsp",
+  "commit": "730e33637e773fdbbe5445989d78d0af160b44ff",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2c94a0ad6680eaffff17dd67124a67bd15a152e2b5fd8b3da71767f6f29dc04d",
+      "size": 1151
+    },
+    {
+      "path": "device.mk",
+      "sha256": "da92cc92ab2fbce4be2c60e9deabaf9556a25c2c28fa339d80725ec287a0c803",
+      "size": 1038
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cebf9e614f75e842d787544cf4fa5c85f5f61960df44b0bc30e2be7c121d4db8",
+      "size": 100
+    },
+    {
+      "path": "system.prop",
+      "sha256": "761c587bb2b79ac73116cf284dd4841942e966da26c84192699560c1861c4234",
+      "size": 504
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ad897f845361db246483232ab83d131a71d65f78d1381caa066659bcd0bd25e0",
+      "size": 33
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jfltecsp",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:12:35Z",
+  "vendor": "samsung"
+}

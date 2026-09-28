@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_amlogic_g12-common.git",
+  "codename": "g12-common",
+  "commit": "62f2d48c2fb4879702e5ba373ebc375fa940f713",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.droidlogic.rc",
+      "sha256": "0b2905988ecb796625370903cd8878afe2a3e678eff2ff70f0abd0991281146d",
+      "size": 263
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "47a1834870f1c298aeb7c56ad0893f65f2abe2cd56c41099f5d232eec3691fcd",
+      "size": 567
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.droidlogic.xml",
+      "sha256": "e232ddad5a10b5524e16356d8f786154b7e6fbbbd85b603cf8763f2d6d288a44",
+      "size": 350
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_amlogic_g12-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "deadpool",
+    "dopinder",
+    "m5",
+    "m5_tab",
+    "nicepool",
+    "nicepool_rtk",
+    "odroidc4",
+    "odroidc4_tab",
+    "radxa0",
+    "radxa02",
+    "radxa02_tab",
+    "radxa0_tab",
+    "sabrina",
+    "wade"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "amlogic"
+}

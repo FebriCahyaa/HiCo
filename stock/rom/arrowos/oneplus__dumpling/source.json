@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_dumpling.git",
+  "codename": "dumpling",
+  "commit": "1f07149ea573c2705742388b92cebbc884e495db",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "44d8db1931f4bd3a4fe2adeae0de0d1b8008323a1293901ca0fb48830b07d186",
+      "size": 1145
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f0d00b6c3f12d15003e404c98c4d08e7f7f9a9462cbfe5397d0283ed41d21423",
+      "size": 777
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7d7a9c66ffa2ecd415f8dad532992906d53e1f7ad063da6e1939da6eb476d866",
+      "size": 1427
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1d66e1c084c5bec3baab7a57c70a6b1fb889eb4da0fcb344ac50c22a70144105",
+      "size": 1832
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b99e04a8c7f77fa6e3e188ba6c479e4a6bf3b22d6456cdebb340900005482363",
+      "size": 735
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1e9740a86c7065b807fafafad2e0d76424e391ff3829835fc4cb0db9265c2af9",
+      "size": 2900
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "87cff48f8668a7c738fa0d1f05e7de09400a8a12ebc234e40a80c6355b43258a",
+      "size": 62
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_dumpling",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-11-10T08:47:12Z",
+  "vendor": "oneplus"
+}

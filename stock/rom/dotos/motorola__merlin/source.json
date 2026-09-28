@@ -1,0 +1,62 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_merlin.git",
+  "codename": "merlin",
+  "commit": "cc87b41508d6e8bb7067c0770aa3927f3e0ba422",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b3616e6643313c865e2edda735536b143af3488952a6582226ac73c559c9785d",
+      "size": 721
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fa002743aab703b1177478243ba6addc063ab280dd03dd64bf63114acff7cad1",
+      "size": 637
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e438fb2718fab8926f4e4b2cb9647f320858691c45f07e0bde190bdfccc51127",
+      "size": 1938
+    },
+    {
+      "path": "configs/thermal-engine-merlin.conf",
+      "sha256": "3a1e242869dde13708d85a456d3f79946cfcddd70026018de43f3955a84e0c53",
+      "size": 4250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "11919b3149747b6b667d786142356caf3b4c1ce5f10fb1c41588614016d18bca",
+      "size": 1971
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e9477a97820fc42d35e15b9746ff91e0562e61bef87efeebd7f0f7a81468a6a6",
+      "size": 756
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8274cdfb4fffcb9217289d66175644917fa14a62ba756f8be049b12d9dfaa87d",
+      "size": 4883
+    },
+    {
+      "path": "system.prop",
+      "sha256": "49f88a1ee8026b5c50326e6a8028c79fbf6c651d06e949f127b8ae3d893616de",
+      "size": 433
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d20b707074b07cbaa65b7b317dff72e9035e1ac4b42ecceb635918ed65f95dba",
+      "size": 38
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_merlin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-07-03T09:22:35Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_monet.git",
+  "codename": "monet",
+  "commit": "d90757722eff18f8e43d8758d159fcf57fc69a80",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b69cf573eca103a0378d31406854812fb18c3f7c561935de3445447debc91f0a",
+      "size": 204
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "08dfaec68404d5804816e6a75200a9f61ac29cbbffe8a0fb8c4a6ea5503b25c9",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0b09007980081005f68d8895c67da11d46dc4f1431ed524ea7130be80f0c4559",
+      "size": 629
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c427b443ea0081a96d01b7b836d6ec310558ef3c47b8cbb1d3464864ccc7345e",
+      "size": 818
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b48e48d33ef17d6e9baea1007ef798c714783ac142c5f9f1d68e969cce5ea2c4",
+      "size": 1115
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f48a0f6019c452331c4a8d01bb9e47f390c40e25a7cfb6acabe4b9cedd766274",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6fb9163d5df1cd72d496d34144e1ca1de3ac829783c585bbf96573a81d0cbc5c",
+      "size": 22262
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8c00bc8b44fef183a68f3a9bb9a72f62a26297cefe0b932463d5b5cc45490b38",
+      "size": 197
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_monet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-11-20T06:12:47Z",
+  "vendor": "xiaomi"
+}

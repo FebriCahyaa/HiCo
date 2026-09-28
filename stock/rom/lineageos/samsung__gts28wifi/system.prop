@@ -1,0 +1,9 @@
+#
+# system.prop for gts28wifi
+#
+
+# Disable ril
+ro.radio.noril=yes
+
+# WIFI model
+ro.carrier=wifi-only

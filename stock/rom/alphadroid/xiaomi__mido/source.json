@@ -1,0 +1,172 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_mido.git",
+  "codename": "mido",
+  "commit": "babcc8db319efb6358f9022bf9f268af39567c1e",
+  "file_count": 31,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "78ba28269826d3c2b8bbe03ca9b171c6edba1f7977bd7db2bb709a2ffcde91b1",
+      "size": 5227
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1dbab2cf363c0b49689664b82b3b994f89c910aea7057e44fbdaed712b2c5e51",
+      "size": 755
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c56ca5054d421aced9f86d83340e655a4a25a7c91360fee090914c56248ce86b",
+      "size": 5849
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "152ccd90ad26cfdfa89b82b2abcd5787664f092c4effa57f2d3201a1fe4c967a",
+      "size": 4364
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c5307db9ea538f3bd36af145df28c012f0ecfda3a32d2fd8d1b8998126d7aca4",
+      "size": 22483
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3b4eb7a9a968890704f18a9de43cd121e7dd26506b32024e8d2206eaa97a0da1",
+      "size": 3895
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6e2667c542bd936669bd2234bb359b6278c56a7be635a0a1147d281da16904ca",
+      "size": 73613
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "145bf30b423507211c817b23a295acd7004e566ca28534c077761159e5b83223",
+      "size": 197
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cdc28711ca7c9ae72fa2c3b69f130341e57d4a33cfe33b41668e51550b04306c",
+      "size": 4375
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "c4c6fa7ce62edd31b550dcea87e1d721524d31fd1d778d99611f28af381acd86",
+      "size": 1596
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti-v2.xiaomi_mido.rc",
+      "sha256": "eed35159669cee1bfaa76abd96ec9732f1ab6beb8c4abd621ccbbfcd4f85bd92",
+      "size": 1916
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti.xiaomi_mido.rc",
+      "sha256": "fe19a619ad83fe2103ff758e888cfdf106262fbc4083457ca394863ad2da725c",
+      "size": 1773
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti.xiaomi_mido.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "667ede834c8a402afdf88a4a46c80e46b6833e6961ebea46ec9acd352e250582",
+      "size": 8600
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "8d84fd2275a4161eb2af2398459c6e1cf3f224044d002b7ef4a793ad13433470",
+      "size": 3855
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "6368dcf9c96082d2bc21d84c6b92ee4ce9fcfe453ca9eae4d06b83c0224afb08",
+      "size": 18826
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "86de61b04456b615606083f0885c23c75ef7783acc6d6097b7e2374adfec0ac5",
+      "size": 2872
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "6cb029c000cb9c32e5cd2c8c965f3ca83850d07573c77f8a2a93f42ae0f3a50f",
+      "size": 30025
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "e09e541def4f55cd5b042763180087ae886097eb515e31f898efeb174692e70a",
+      "size": 4099
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "5a929668279cc648b6bfbefe4681d42434650a186302d89f230c7633d1089f98",
+      "size": 3490
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "thermal/thermalMonitorNetlink.cpp",
+      "sha256": "7e9f92addae23169391fa2b633f3d87d9fde1fb32be9bab782232e2bf27b45cb",
+      "size": 8643
+    },
+    {
+      "path": "thermal/thermalMonitorNetlink.h",
+      "sha256": "28a1218a30700ec44e8db1d806032afb777d4cce42191ad854b73ddbb0dcfaf8",
+      "size": 3091
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "a7bbaf34c27f9e3b274dfc12f3e3eeb76884262e56df855e0165a38c1f930b99",
+      "size": 6611
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "thermal/thermalUtilsNetlink.cpp",
+      "sha256": "b0e8a6c7636bcd54c79614962235f9f9556da99009c56dc3d9c88dbe1e0b6695",
+      "size": 8166
+    },
+    {
+      "path": "thermal/thermalUtilsNetlink.h",
+      "sha256": "550bb949785aa2dd1ac11573b0e53c460b02e2b91e9400286e9dc7e5600ce8df",
+      "size": 3453
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7ea205673a626c703bf719ae2cc265ee508877426bcc1b9da1db5b4cfaceff2f",
+      "size": 4177
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_mido",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-12-31T07:19:39Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_che10.git",
+  "codename": "che10",
+  "commit": "04ab305da770da86f465c025c55189042e698f56",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7a3da5ceb6378d7c1449223f9ac4ff441ed02f6bbbbe1359763469f06c07098a",
+      "size": 731
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2cccd023f50361ad18fc2930da194187bb247069ddf21a9a743807dde41ce61b",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "233620940b92bbbd0b17f5f262ecba62387d353943100d155ec8cbc5ab87f504",
+      "size": 925
+    },
+    {
+      "path": "device.mk",
+      "sha256": "79b2d407e43c76f592a1dbccec6db7de436a560a90df5f9799ebd119b05260a1",
+      "size": 1236
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4245954bf66abda2679ae0b9afc7c204428aa09bef03298cca42411257e1311e",
+      "size": 753
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9803f9ba4e31f87772427125913c2a720120648737c22a0cce7b166721a92753",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "65eb40dccb3a4d6403eb2fad8f43614d4a0c9bd446b450cfe31201118d648611",
+      "size": 115
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_che10",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-05-14T07:03:39Z",
+  "vendor": "huawei"
+}

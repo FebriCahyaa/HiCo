@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_click.git",
+  "codename": "click",
+  "commit": "cd2ba44217fe9e579fd0208fb90b5581d2a9cbd3",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6d6ab77159f3fbc7e5594f3ab562316c1332ea23f6c6225b6802dcefa8697e28",
+      "size": 947
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f08861bdd03a96df01015b167fe1803cd5c9d90c84b6aa701de66c7b3e517b6d",
+      "size": 1053
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3688e40dc191954f5518b211c150d275770a80f291d6f5248ef4c4bc0c3857ee",
+      "size": 2897
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "afb82f919559ac4beaa676a2dc0a164c11fc8ec1beee739c649609f8b7d6f96b",
+      "size": 5660
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2a25bf59f92cbcc51bdf8feb589a2cf706cf861cc99b7472a006f650c4184fdf",
+      "size": 2132
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a443c51a37e82577a3704d4ddb648540f344d5de9896a1a8956520f2ef1e6ef8",
+      "size": 844
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_click",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:28Z",
+  "vendor": "htc"
+}

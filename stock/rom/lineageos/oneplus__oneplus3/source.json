@@ -1,0 +1,87 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_oneplus3.git",
+  "codename": "oneplus3",
+  "commit": "e975bda0561217fae2a342c2e8c1848b3e3cf370",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5230e66c3955a9f49ff40af0aad12160b8f270c638ad73bc7591e20ae2049352",
+      "size": 5248
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "95bf0ae0e704dedccb423319f08423505e8ddf6a3be10c016fd04f7df50b8582",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d4ddf1531b4fdb2af9dc36e435cf70ecf27b53b284911168107c42b15da96b48",
+      "size": 7283
+    },
+    {
+      "path": "configs/thermal-engine-vr.conf",
+      "sha256": "3771549c4561cf2505332bd6cc5a58a50dac2805fd740868925eb6dad9126409",
+      "size": 365
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "80d343cf2827999e45b2cb427884ba64f14882f9372dc45c270e6bf99c2b8ec4",
+      "size": 1470
+    },
+    {
+      "path": "device.mk",
+      "sha256": "bc5be0fb72a126306dd971422d6dcba55c3e16a7c755b0a50a8273cab94d6357",
+      "size": 22837
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6ec4f6afa67115fa76e5a6d332568987db2b52cdb1225ef572218d1dcf80894c",
+      "size": 1954
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8687bc6e61c1f856362e81dccc64b0f8deb4b13d3b256d1b052f99dd4c5143cb",
+      "size": 205
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9923cfedfd2a64a97099a826805d4d46a77885c0f2b3f88c1f09720210751bd2",
+      "size": 43141
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "de701fcf72e1715f8652e993ad6f2a40980861e553f2e7fa86ae68cae837b27f",
+      "size": 44
+    },
+    {
+      "path": "system.prop",
+      "sha256": "63574014ae89b1a1100c7c10ffbcdfa311096895e73d1aee432f57d3faba30fb",
+      "size": 5196
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "2ac99513c871c3209450a391fbb8134b7b4f7cdc5af6facf50597afdda547516",
+      "size": 950
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e16c04229581528ccf4d54ef418deb327e3fe3e28742876222a20b620220bd54",
+      "size": 8854
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_oneplus3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-10-19T15:08:32Z",
+  "vendor": "oneplus"
+}

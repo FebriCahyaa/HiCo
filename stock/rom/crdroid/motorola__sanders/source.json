@@ -1,0 +1,67 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_sanders.git",
+  "codename": "sanders",
+  "commit": "eccbd4a28fe5d72cc20051bcd8f5f287fc867770",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ddeeb454abaeaff12b80c0ce51009113bffb1c810b2a6d0ec561d5f347550c42",
+      "size": 26
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6f89c670cc090960fe40cd2c199be025b2cb788a3507c150b669507e20ac24a0",
+      "size": 6663
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "947fc8f6c06cfcddb758714e1a1dfcdc560633bccd81d6f59c898e96cfbff561",
+      "size": 706
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b01efd906ed54c8b36c40574ad39ed7261abc2dcd41aec7cf9056815f2b1578a",
+      "size": 8163
+    },
+    {
+      "path": "configs/thermal-engine-sanders-INDIA.conf",
+      "sha256": "72ee960b54ba90e48b50274d1de111d860a7c1f71ad1765be056db69b2b8ddac",
+      "size": 3806
+    },
+    {
+      "path": "configs/thermal-engine-sanders.conf",
+      "sha256": "b2e150c93406717221bd601bb12d89e3247b6e57abe91537709341feaf384858",
+      "size": 3395
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4a163a1631435d56d94fceac69f9b313b892688b105ff56dafa48349d92df19e",
+      "size": 21131
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7b7363588598a8ab985ad798dc7b9d6fcf6124b63d77fdaee9482110931112a8",
+      "size": 1445
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "342904a919c201e84e574fa801703dd31dd9b359187c4cdc602dc37a54ef5d55",
+      "size": 29380
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "63e3adf4565f9fa1fd53990f8a9b2fe329432e34d7e03e382c01eb674e630d25",
+      "size": 574
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_sanders",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-12-18T22:17:29Z",
+  "vendor": "motorola"
+}

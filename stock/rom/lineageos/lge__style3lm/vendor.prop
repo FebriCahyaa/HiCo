@@ -1,0 +1,20 @@
+#
+# vendor props for style3lm
+#
+
+# Bluetooth
+bluetooth.device.default_name=LG Style3
+
+# Camera
+ro.vendor.lge.aux.camera=0
+
+# Fingerprint
+persist.vendor.fingerprint.type=rear
+
+# Misc
+ro.vendor.lge.build.target_operator=DCM
+ro.vendor.lge.build.target_country=JP
+ro.vendor.lge.swversion=L41A30d
+
+# USB
+vendor.usb.product_string=LG Style3

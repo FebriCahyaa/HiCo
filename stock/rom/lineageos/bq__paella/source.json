@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_paella.git",
+  "codename": "paella",
+  "commit": "e7777ebfd1ecf432edac3613998f0c061bf98d6e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "854d89bc779a7a247966ceeec2eb756bed8960efec3169939a11e5856584f031",
+      "size": 757
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "122778d46b15f62574dc536542753a3b5082103beffeeac9de7a9caf3348e344",
+      "size": 695
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1231a47a2d1ee037af54a5479718688bd91706bf5fa21638170dd04edcf644fc",
+      "size": 1493
+    },
+    {
+      "path": "device.mk",
+      "sha256": "491c3174e1d258344a90872e3dda693530c6f8b761f4e02752ee98529c52ee82",
+      "size": 2073
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "60c0237344e82efd6e65f59668ae460465a4518fb29b6b9167d8cee23578b19e",
+      "size": 1708
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "fb4d4f4e79db0e304f4ec0932a5feb14e4ccc6f43a357ea6908e59a5ffe1dd72",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1ef02ac3d98113ecb08653dbdef73653f8c4b4a97e0ad3de14fa82101a8fe150",
+      "size": 9000
+    },
+    {
+      "path": "system.prop",
+      "sha256": "70b2bab7cc80fcd776bc31fc196e5a672ce5ce990518b4e1bb5e6333748a9247",
+      "size": 121
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_paella",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:59Z",
+  "vendor": "bq"
+}

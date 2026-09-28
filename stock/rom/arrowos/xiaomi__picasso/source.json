@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_picasso.git",
+  "codename": "picasso",
+  "commit": "0eca1d7fed65757ff8ae4aea3dbf97d396623e87",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "46aea9a198eabec96c1f4e534726fc1448f3e225effe626a1470963775291661",
+      "size": 162
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "66865fdd209b568424ba9abd8dee93cd07b37baa6e4b965df0a8ced8aa199dab",
+      "size": 4982
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d8d3b7c7d4715523c10f0273ef57ac7eb8e607ae910cfb78d867f677fbddb360",
+      "size": 224
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9867f3adee9d251571be67e576ef301e77100e33b184913f6006c0fc93b97fa8",
+      "size": 5949
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7980c38d9f97a6254748d8fddc7adca62c03de37854620cadc70f5e1be9f57cc",
+      "size": 22839
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "66e97287c68e7cc5003e11177a0352a76362b05163bb93e1e9ec7f3c5c26ede5",
+      "size": 1713
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b7084378349274af254f03e505341742e34e71e3d3d6fd36fdcf71692fc920f6",
+      "size": 55098
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "0386c03db376efcc745108723a92522c7c22a8a70585314a19072ed22eeba03d",
+      "size": 839
+    },
+    {
+      "path": "system.prop",
+      "sha256": "75bd79a1755b2f596e6e186402b9ff60b907b4bdc44ff12d8ef513c6f5c31661",
+      "size": 834
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5d6de862bd929f5260e57be9bfe8fc2a83346c3463cdf022a7e54cb0a55431ec",
+      "size": 5616
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_picasso",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-03-29T04:21:06Z",
+  "vendor": "xiaomi"
+}

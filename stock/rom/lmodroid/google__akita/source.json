@@ -1,0 +1,67 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_akita.git",
+  "codename": "akita",
+  "commit": "fa40532c3907fbd90471d5dd466292f0d64d844d",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5cc7a347b7b506daf9e9b21e41d73c9d6a779f4b86b0ee1f085546b5da27f56b",
+      "size": 991
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bb11463e9b5845549a249edd7f50ea895353219eb081f43e55a8410bec55487c",
+      "size": 876
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "bd340119a75ddbf40263bbe0654b47f220770ce8c2cd0dbb8aaa095bd1c126da",
+      "size": 753
+    },
+    {
+      "path": "device-akita.mk",
+      "sha256": "42945141cbdda9b4c6d38c91f439b20c1c66f9cfee3f2561f59ed476c27f96de",
+      "size": 18064
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "08090d00312745a302ff43e4d808563be7404e9ca59a5fceb9ad5f84119247c9",
+      "size": 1205
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2920c1cd52b3053a2d4396723dd5677ba90c87594ea80c45d6c7d8c48db06bc0",
+      "size": 211
+    },
+    {
+      "path": "thermal_info_config_akita.json",
+      "sha256": "eba2a1af7220033cd7f7de62285334e2d48acec35b9bc0196b83ed231d317e5c",
+      "size": 32381
+    },
+    {
+      "path": "thermal_info_config_charge_akita.json",
+      "sha256": "6b2e0210bb8f29b6fb4fbd663d236d651b8999ffb23eafbde4bde468b2c51574",
+      "size": 9031
+    },
+    {
+      "path": "thermal_info_config_charge_proto.json",
+      "sha256": "89e7f3959ba97d60a954e206c7001c02b90a92d8e4e252a696e4bd56e5853085",
+      "size": 10064
+    },
+    {
+      "path": "thermal_info_config_proto.json",
+      "sha256": "6dbe61aa362e0b187cf6e890420d2078ab140ff2f91e16c2ee5f1aed9c87f3c1",
+      "size": 21973
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_akita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:40:14Z",
+  "vendor": "google"
+}

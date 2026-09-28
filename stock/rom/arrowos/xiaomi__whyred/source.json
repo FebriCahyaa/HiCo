@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_whyred.git",
+  "codename": "whyred",
+  "commit": "8e201940cc12c4a3c850484975a0a946657e737c",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "80ef8987b22fac606f0749c8c0e651486a9a16f9d9f684fbea68a2521ff5211f",
+      "size": 5122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "643d702acfff817d32543e9310a39732c1c18aabd03318596a82ce57669d23e8",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dcce4a04d0433f3f04b2bc59e56c2c3a01cdc5f9c8d76ac96823fa5929bd183f",
+      "size": 7743
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e5eccf5ad50150aa9198ed66831b16a8989afbfc445ec2d7c3bfbbad5dc50345",
+      "size": 20608
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fa6cdd2d730fda31496b5ba5c1151780758510dd9f33fa0801466be94cef9459",
+      "size": 2894
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1f3bf146e9e7a0b81a990ccf7d58c0a3ba8494b905b40d9f4b6da0d59a1d9f20",
+      "size": 93717
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "3cf50e6b8d7759eec42e6d99f434e41f46dd919026e69fc92884eefef054d987",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "11008813811ba3654be74759ce23558eb939803d761a65ec74e1c493c0585380",
+      "size": 232
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2d43213729616082e092931d6caf3b8d1c54e440de7998828e8c5213e9be7c68",
+      "size": 6064
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_whyred",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-04-17T05:44:37Z",
+  "vendor": "xiaomi"
+}

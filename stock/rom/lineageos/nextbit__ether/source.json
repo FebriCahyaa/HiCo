@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nextbit_ether.git",
+  "codename": "ether",
+  "commit": "5bf4b4df6305d1b04740c1e73b3f41557ad859bb",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0b6e6d8451af9c597203d4334127a5feb2d9bab043b3046d1f8bc2ccd7d9b169",
+      "size": 2134
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fc889d7fed8f87b8914cc5c756f6f3aa9899c72ae9137216617a661b8ae712bd",
+      "size": 780
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "08802f425124190bdbefc61fd812079991d1eeed948e0ad5caa7e2ba09c5b238",
+      "size": 4948
+    },
+    {
+      "path": "configs/thermal-engine-8992.conf",
+      "sha256": "11f5239a99769c5192c0b8eb7c1d0d3a82217e8e52f82bbc7b7dee989376d20c",
+      "size": 1941
+    },
+    {
+      "path": "device.mk",
+      "sha256": "bc8bb7d5ad36aace8891f8c83a1029676b68504df8a4e27c671e01448c2771f2",
+      "size": 14253
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b05014b384fe58c84cacca61e002d96756af1a920dd3e37a05d5d28ec60c41a0",
+      "size": 1756
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c3868f3f2a2c93cb9a8c216e125ecf677086956741cd16a27c26cf3526f2a9f0",
+      "size": 213
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "abe5c34778e0d5e0b7a08a3c3d59e95b00623682e4e623e0a72296689cbd75eb",
+      "size": 18454
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "b0a98ba7fa6eff513c6c5c07013ecb923161e938d55323c2028cfd5a1c4780a0",
+      "size": 73
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d449c8d9979345a85de08a9c58f01e4d1be4a9bbd1de8974b654c87bb42d6d51",
+      "size": 2680
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nextbit_ether",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:56Z",
+  "vendor": "nextbit"
+}

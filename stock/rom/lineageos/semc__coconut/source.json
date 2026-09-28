@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_coconut.git",
+  "codename": "coconut",
+  "commit": "be2e1c34b2882d47324ef995c2558aad7f0f500c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "206af8d6483e9d588e3633bceaffb85fe931d7879b93e333bc336d5d68c79c5a",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d6eb086bcfebf72bf7b28d4641765bd5faf23de520e1ce35fe35f75e6f810cd2",
+      "size": 1062
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "82aa8483e9040c466f22d2d7e268a3ff1571532803748db3fb7d00e812d87225",
+      "size": 326
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e45ed525e0a0f992b9c80f1a3c49d5906fa66658f293c8e898101be0f4efe0b0",
+      "size": 332
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "66f85864e18cb83f37f7d43e62bd1f6eaa4a6551e5690c6444c15a31d6ce38e9",
+      "size": 2904
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_coconut",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:17Z",
+  "vendor": "semc"
+}

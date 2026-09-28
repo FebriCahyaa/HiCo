@@ -1,0 +1,42 @@
+{
+  "branch": "froyo",
+  "clone_url": "https://github.com/LineageOS/android_device_malata_smb_a1002.git",
+  "codename": "smb_a1002",
+  "commit": "d4cbffffd1af7eddc5629f681a0768e2bfdd90c1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f5856fdada9ca87b368f2ac3274bccac8c10d12db0efedc807a163def04f42c5",
+      "size": 58
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c713245b0a6f08ba30bb7985aee764d7cf3bf7ce93a5556f2f3bcdcfcbfa0385",
+      "size": 3253
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a1f4d1b855482afcb152d9a440b1a87b948398b33caa99b70164633e852d6e77",
+      "size": 10718
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c1492f44c44ff3ac48eddffb7c115e698d7a7ece3381dd3e468a88f2f25045bf",
+      "size": 792
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "b4a3a1e6c290e8db68f0a5db944627f03e4a77585765298864a26214966a09f8",
+      "size": 851
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_malata_smb_a1002",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:00:49Z",
+  "vendor": "malata"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_Mi439.git",
+  "codename": "mi439",
+  "commit": "b0ed59c717d5ae43003e04c9ac6653fefe7754b7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1e2294d68a57c385d34e9f9a78e92f0b3d365e39228e9bd44bba9e44bb1f1a02",
+      "size": 163
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "557e059defc4c94d85a9902c51f2113fa4d6efe90a0cb163d5624244eb2ae9fb",
+      "size": 249
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "902208ff0d2a082f4cde0d1f8c8aeebbaba15db139d30705620ee7508e8cb59d",
+      "size": 3742
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c88f7e5be12da064dafc73dfda292c29939eac3380e43e0b4c2d2d93567df557",
+      "size": 3268
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "73dff36a3a23d559b8783256ca2122f95ebc852d67538e84db390e58d1c92d22",
+      "size": 691
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "835b5aaae06fbf0560eaf52750d499ae351784358accef847b4a80e56e2338ce",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1bdcc3d8b4abd40701ffddcaf673f5c90a306827e80c2739b6f6c3338e38c757",
+      "size": 5100
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2348c5afb05632b1fb29d232d3b19c48e74cda416aa4c951745de066ff296c89",
+      "size": 985
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_Mi439",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-10T09:16:26Z",
+  "vendor": "xiaomi"
+}

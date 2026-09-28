@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_devon.git",
+  "codename": "devon",
+  "commit": "a329fdb9571538af3cfe8bf59f40c7eefdcc7af5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "51118bce498fa63aac26201227a30cabe12294ff0f30cdc239c97e537ae47fbd",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6f629be83dcf2bda6fe769eb076b16efdbfc4458e47e431f41db66085157504e",
+      "size": 2010
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0d4f6c017ba315d043b2d0164894fea279aae9d5140e4db8ea5cb51691ff3ae2",
+      "size": 3214
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0da7c63dac825e5660905a9ec43c1c35e08deccc9f92a60aa57941cff363ec58",
+      "size": 2098
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "89e8cfdb73b69b2e81b11397403083348ddf8634deabbdd21b929f4ff207afcf",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "668fe0b271f174ffe2ea9369d1d8ea38e01293f3dfdfaabeccf7b81fc848c5a5",
+      "size": 11842
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "414b96dffa1e58fe3be7da6072abaca21526f563737095b10da41504108a52fb",
+      "size": 594
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_devon",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:44:59Z",
+  "vendor": "motorola"
+}

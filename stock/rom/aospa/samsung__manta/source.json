@@ -1,0 +1,47 @@
+{
+  "branch": "lollipop-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_samsung_manta.git",
+  "codename": "manta",
+  "commit": "c7751d2ec917ca483dc1351d8c4ff1284b4d54b5",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "82c66d529ebe9a77365cf41ee97cc081c16b2b0e4aca1f9bd24304f5c875951e",
+      "size": 1159
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3bf47d723b971dd55a8dbd69b85c4d64b562cbeb5b5e19aa7dcdee65a2647452",
+      "size": 680
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "126c656a3b3d6b55b20d5b38c75491dd745e3d31568b5f69133a8280301cab3f",
+      "size": 3095
+    },
+    {
+      "path": "device.mk",
+      "sha256": "df44ddaa8971ecfe40f5c263d43079cbe6300128e37fdf7a033fb1de2bf309ea",
+      "size": 8147
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1ed5ee0666bb2c8254cc9692172a12a554ab30ee04027ca505b7179eb523bc4a",
+      "size": 809
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "fe1c5588a4a2456bef506c9bff48a45beca739bfe291bedaa1980fc5afd38304",
+      "size": 642
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_manta",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2015-08-12T03:40:26Z",
+  "vendor": "samsung"
+}

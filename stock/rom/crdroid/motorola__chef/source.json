@@ -1,0 +1,62 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_chef.git",
+  "codename": "chef",
+  "commit": "60413c4cd729a31a1317e375ae4cd92b82df578b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "365d3b1da87d23c2ce672850f79e4695b166946acddf5285ac6f1d348b7f18f9",
+      "size": 1242
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bd9addd905d6a2931c77a965d7c8c3fdae1a3c0d7e53670ca183c2946112712d",
+      "size": 758
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7b0c5e8d09ee2a58b977242d1458f28873f1a7f955bd54de38fe19f287ac94e5",
+      "size": 1686
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "743f6f68a0da585907cd2e624260317d8618083a4ae53f56fac997824b343e6c",
+      "size": 3493
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f1b1e22a296e26c25af2f5cb87365c4e9875ccb8a0553daa9c51599e6cccc81f",
+      "size": 3000
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a95a176007630cdf5528e4780bec70febe552b8ba77b6a0cea8e330d7b22c818",
+      "size": 804
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a1394439daa6cf23bbf7a10da75f8c58f452c39b132c9786bc1b26762b5cc065",
+      "size": 12852
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "618752762d3bfa2ba77b0f76e009751c7dbc79fb34008cf785a25d8ee8251f93",
+      "size": 1475
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_chef",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-03-25T10:08:50Z",
+  "vendor": "motorola"
+}

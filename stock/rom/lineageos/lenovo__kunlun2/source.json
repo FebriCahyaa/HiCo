@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_kunlun2.git",
+  "codename": "kunlun2",
+  "commit": "7b2b5490857e990ae98daafc705ae28e99ff8493",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b9ac9d3919256905d6f5e8f169fdf0c6ce16afef28c5aa16d8425a04edabbb91",
+      "size": 725
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a1df0a66e6837a0b537543211c01a61ff537223c5c4dcdfbfe1adddfbb415a7e",
+      "size": 762
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6e423fa80aae0678480a9ef0c37d333fdd55402db981d6c2505ba62703683520",
+      "size": 423
+    },
+    {
+      "path": "device.mk",
+      "sha256": "38f9a358b445653d9b4fa208f718f00998dd46fb2eb14ba8484c984ce8caec55",
+      "size": 1541
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4695d46aac81197bf7db2ebb311a3916b1a67dc092e3e2905ac0b61d65d1e639",
+      "size": 518
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "638c43ef49b841cd52eb694305638fb0c88d66f947670e12d2bd82587999b283",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b520bdc8f90a4d3878feadbc79ab8347e6b278d4317dd433976192f602e86082",
+      "size": 5738
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "05edab15912a417fdb854ed0fe4df90e7dee1db7633c0064b03febe48cce3ed5",
+      "size": 105
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_kunlun2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-05-04T11:32:19Z",
+  "vendor": "lenovo"
+}

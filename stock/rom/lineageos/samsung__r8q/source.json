@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_r8q.git",
+  "codename": "r8q",
+  "commit": "27bf887e7cbcda29aa047bd4fcd1760e515cd921",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a803bfc970f8855ec2cc90943b495f38adbccc6704a7c23fbf00586f9ef23470",
+      "size": 648
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "65c820e95eb0f77e2e5cf59c8b676497cbd5c582beccbbee908cee721934a15c",
+      "size": 1389
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d6f42b516362b6cc720406b0bc300f7ff1e05d5bbda808ea64a307c202e5a444",
+      "size": 3445
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fd8df30681f46e4fdfa184b32142bb183d5c6c4f6b4073983b707ee2fff33a83",
+      "size": 1307
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "04a155e7012bed7afcaa067727c2acb24329fb2a6ac11c6f1b212f3ea4978b86",
+      "size": 255
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cbe3827228b84913bc304649074330e4c5a05eb4010c342a2f4400fed504a843",
+      "size": 9760
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5fb6916e249344e64b582699383a689ecbfd6fc39cec1d029dc1b28f54ea609e",
+      "size": 153
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_r8q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-01T21:38:30Z",
+  "vendor": "samsung"
+}

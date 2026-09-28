@@ -1,0 +1,87 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_shusky.git",
+  "codename": "shusky",
+  "commit": "3043a1c85779d46e02dfe1e09910df524fd795e8",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "25e20dcd0fe50312532c669c96d39cbde78db0d41c95d52a05249542e7646344",
+      "size": 993
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5387187d8b655ee5e48902270a71f76f81f9820aadf34b3e25f533990429c306",
+      "size": 1286
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-husky.mk",
+      "sha256": "d592d5a20a1b09ca150b9187004cc5ff4db1a0771775703995bff327708f5556",
+      "size": 20016
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "a1d1a2f367289296a24fc4a63e6b130ba7352b0398c5c438439e5d1adf5a8efb",
+      "size": 1168
+    },
+    {
+      "path": "device-ripcurrent.mk",
+      "sha256": "2f34c92ace98e612a17408efe24856f87539af245973e8bf444f8e7ea127fa43",
+      "size": 10607
+    },
+    {
+      "path": "device-shiba.mk",
+      "sha256": "d7ec52b8da27216003a717fe0c79a87d119cdfc7e703e9015a66b2624be46e5c",
+      "size": 19350
+    },
+    {
+      "path": "device-shusky-common.mk",
+      "sha256": "0604c6a42fd92152c33efc6412d42f86d6cef6d534885e9c7c9dfc12687f7d37",
+      "size": 1316
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_husky.json",
+      "sha256": "7b688d987f11f1e1142a01be1c7e60c8b648fceb7eebc11afe3ad920a44c54f7",
+      "size": 13405
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_ripcurrent.json",
+      "sha256": "f9458d2ce994489d519310614da6b5d39b6a9de6594a3f48f3db60b6f945909f",
+      "size": 375
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_shiba.json",
+      "sha256": "b4a3b3c22d36d756c65e3aaf3ad850ffce7d8d385366179ceef2f037a7858be3",
+      "size": 14991
+    },
+    {
+      "path": "thermal/thermal_info_config_husky.json",
+      "sha256": "487f5fc121bed6034ccfd7c69133ffc842f06aa4814164ff990304b407aee67d",
+      "size": 50441
+    },
+    {
+      "path": "thermal/thermal_info_config_ripcurrent.json",
+      "sha256": "551850d488d679e76fc5bbcb16c7d69650482ed20523262ab0c3b1fb1942ebc1",
+      "size": 2439
+    },
+    {
+      "path": "thermal/thermal_info_config_shiba.json",
+      "sha256": "b89aa84047f7ab901832d2dcb865b48249647aa44610e62b1a46987060f88b01",
+      "size": 51613
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_shusky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:57:27Z",
+  "vendor": "google"
+}

@@ -1,0 +1,82 @@
+{
+  "branch": "9.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_ysl.git",
+  "codename": "ysl",
+  "commit": "c83a3b1a112502d408e7ee55f596fc951e60e45c",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7491abb4c103733e7663f8bc5ab123afd017e9db1759e86d823c73b930f2a108",
+      "size": 5077
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e4e697228ddc261cf5c50fb68c2e119f9b83da6864d6e126fd3ad0cdcd48fca0",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "478b38ca45a7d29a8e70df123e427049033bbed9059e0e96f19b4b03bfd39cc6",
+      "size": 6873
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e747c88b84630374547411a1f5e6ada154952e2f6f494024bf3536af38b0443a",
+      "size": 5870
+    },
+    {
+      "path": "device.mk",
+      "sha256": "35710ac5722c28ffafabaaf4edff127768399ca65a476e06464a31512abbb2d6",
+      "size": 16965
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "328d265ee35358b46739a4f0f6fde9873b770745213cff35b1ccd785a9a75e26",
+      "size": 3330
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "20e15d194a91e6d1545d7660c21eb91bc2bfb595bcba8d82cf10862c8813448f",
+      "size": 532
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9ddb66b36d11a9c87bccb69e4d30bc8375a298ed89032248c77280dd8785a31a",
+      "size": 34357
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "9172e6b315bbc2ebe2073b2992cc67420332783971d90afe1063e2a3da14e923",
+      "size": 1079
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "thermal/thermal_common.c",
+      "sha256": "1eacff1d7aaf9d7ff7ed7ec17159b46d6a93cd98bf00c47705dc93977213bedb",
+      "size": 11054
+    },
+    {
+      "path": "thermal/thermal_common.h",
+      "sha256": "c8e1273a307321d0975da506903450539d6bbcebe4178970b12508941d620eaa",
+      "size": 2546
+    },
+    {
+      "path": "thermal/thermal_target.c",
+      "sha256": "9d9fe37b2b1b451ccc8ec8536dd8ef5b3b9afbc28980dfad873cf2e8bae0b4ba",
+      "size": 18796
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_ysl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-09-04T01:44:27Z",
+  "vendor": "xiaomi"
+}

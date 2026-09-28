@@ -1,0 +1,52 @@
+{
+  "branch": "sixteen-qpr2",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "3521319e18531872c901e27c475aeec7e03819cc",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6135ed0bec730dde0dc5ffc58f185cbcb4c13a337d68a32dd11bcb36ec75aec7",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3078d99a732bdd975f1c2f9b32a13e8cddbd04a8081dce9ad4ddef5349965cfb",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "76ff99b278d7a0b98ba4f3651d2c10e738e272fe5c2dcf6332ad7661766292bd",
+      "size": 1279
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fc6ba04a522c5e9b50bc6abdf07b0406cd890f4504d67066cd966fb5b49262d8",
+      "size": 2995
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1e5ea71bd1a97c854547c176d5bef8fc48532344a0aeacc055a88478cd1e0418",
+      "size": 2068
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "915c7690a182c6357284a75c761e374ffbf6299ed412fe2913885cbc687a9139",
+      "size": 87594
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5c25896337a8600a48bee492e717e251649c1eb1922907b8c9668613856f441a",
+      "size": 150
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-18T09:35:25Z",
+  "vendor": "xiaomi"
+}

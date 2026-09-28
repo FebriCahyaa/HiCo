@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_manta.git",
+  "codename": "manta",
+  "commit": "4f2199d74f0a6359a99be644086d41914c5f80e3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2193447995caa636a091fb617763dbbcece4cdb24dcff5c09483e042b9515c6c",
+      "size": 1196
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3bf47d723b971dd55a8dbd69b85c4d64b562cbeb5b5e19aa7dcdee65a2647452",
+      "size": 680
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0571b1d6dbef0fe973d8dad477a88e92a5c9957fa1c8fb593c4ce65bafd026b9",
+      "size": 3333
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9e7540ed99be5f785dc65b8e9f61fc211cd804c7d3a5e2efea533b504df28be8",
+      "size": 7193
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2fe81eefe32ae6191db92bf763f211a22f57d1aab5b673b368474a48ddd50e7f",
+      "size": 1426
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "16bd40453de6575ba0b9d134de9ac141ee57b1e3e147a27c0902186d35e79689",
+      "size": 338
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c8167c893502b566dc5539b8a90516fa9f45ca69fa4b233dd62be3a31a467457",
+      "size": 991
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "fe1c5588a4a2456bef506c9bff48a45beca739bfe291bedaa1980fc5afd38304",
+      "size": 642
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_manta",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:14:40Z",
+  "vendor": "samsung"
+}

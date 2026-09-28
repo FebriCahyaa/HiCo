@@ -1,0 +1,37 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_u8220.git",
+  "codename": "u8220",
+  "commit": "bf2f5546eb80938c354fedc42807a178be868777",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6737de6a333abc4d5a64127b856f07d8963d77354a657e3e759060709a8822bf",
+      "size": 726
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d0dcbf929dcd64f8d3ac8616ca28f6baa77cc0c04fd3a6d305b0789b99de6f1e",
+      "size": 2907
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "40853389303bf3f3830d603a1933b0ccb4a6e6980473f61ab651d566831716d5",
+      "size": 8496
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "950cf905f27b5d9ac82c98f2feb83fdd2aad13a30f9130109095a2697980c2c7",
+      "size": 843
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_u8220",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:56:53Z",
+  "vendor": "huawei"
+}

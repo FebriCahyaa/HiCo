@@ -1,0 +1,47 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_amlogic_g12-common.git",
+  "codename": "g12",
+  "commit": "cd5dfc88a58ed41900bef775c8d69d57652ffee0",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9eb67d4febaaaca764ab9cd18546ab8635e5b82453a16827c1e150aa27768f80",
+      "size": 2649
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "26119c6ef7fe2cce2c8f30c6e547abed54deb5ba7fe3c036eaf8f822bf90cd10",
+      "size": 1762
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "90cd5746b0158c42d57a38dfc8991f77fb92763dbb381ee9d6aced8e07cfdc90",
+      "size": 6505
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6c4cf0bc5a465d3a478cf461b09d5c326234a1fb4f9682e0a0e63583bc20646b",
+      "size": 156
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c9feb4d89509a49bf1e623cf04fa62688c778b82426cd673d32dcf642fea46fc",
+      "size": 1487
+    }
+  ],
+  "kind": "device",
+  "repo": "device_amlogic_g12-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-08-21T03:08:52Z",
+  "vendor": "amlogic"
+}

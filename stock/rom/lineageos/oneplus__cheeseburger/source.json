@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_cheeseburger.git",
+  "codename": "cheeseburger",
+  "commit": "c8b2af03c98d0cf932253a8945d019c80f85beeb",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ac30b9a765a397b6cd07b18759329c6a9033d42ddbc7e9c332d4d7bcb0718d77",
+      "size": 55
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6e5e353bcadd43cb9940828ac4ce1b8a31deb9a184c82cbee8775a8569dcad47",
+      "size": 169
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7052a7af91ab0b97f598f1b5d1d4fc9d21fb3c01163a58a5f55dc0ecfca9d71f",
+      "size": 602
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9be14d79e7e8da5ce211f36b87b4446796ff7d0f8ee4dbc2c300a04f82a830cc",
+      "size": 1498
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "12b1f610a7be6441170d6e4414ce1685a1d6ee293a17d0308e11079c67d33a84",
+      "size": 941
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9af4475a2cd8856b4c8626319657a3a836cf3ad4171fd8cb67f811b65a735222",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5521872e49766843d2dcf43eedc6fe865d7a7a4bf73780ccaf484efbcb67d7e7",
+      "size": 3330
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b758e1d3204200571e04ef20d542e291e6229c2dfb841833553a5c90f1d4c818",
+      "size": 127
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_cheeseburger",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-07-21T02:56:11Z",
+  "vendor": "oneplus"
+}

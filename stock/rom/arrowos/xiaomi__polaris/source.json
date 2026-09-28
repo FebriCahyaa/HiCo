@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_polaris.git",
+  "codename": "polaris",
+  "commit": "50458f4b2cd799976837040b9f3c52ce3d71185d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f195a792daad0b1933d46a5f59c8d3dbb396efccbd1d308c1828d38e236e9196",
+      "size": 621
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "34441928ff149e0ac9494b26288bd32a7ff3d64c85485644171e5f762d055ae9",
+      "size": 754
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5047445c81a03270f114352440d10d0e29922b8422f36b2f8d693aea731f2123",
+      "size": 828
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c2d5ede6ab6135ae30f963cbd061eaf918d162cc8c9bc44efe866e38fa3b641a",
+      "size": 4117
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5e2eb9cdae598d836cc9267950a9087372f904bbb061287fe1cb1d99c092e6a8",
+      "size": 471
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "db587ad387768dab68774f1396f2fa4ec00478177a68bec3269fb1202a76f69c",
+      "size": 13752
+    },
+    {
+      "path": "system.prop",
+      "sha256": "adef57062b264d32a4f83467a0fd89c7fb51d027f56537a9634c8a66793dbd26",
+      "size": 191
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0910dd3e4689a5b61bc44686053bf4d15b0c6c28c91ffb7f2552cebcfa5d76c6",
+      "size": 58
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_polaris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-08-25T23:01:42Z",
+  "vendor": "xiaomi"
+}

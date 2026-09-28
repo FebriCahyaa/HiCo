@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_smith.git",
+  "codename": "smith",
+  "commit": "dad30710a0c3f3f074a91e6a9045798e878f4b7a",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-smith.conf",
+      "sha256": "3da9417f9a3f6187f0cb8f36e1f5e1188e34c5805f54263248b0c692e5448859",
+      "size": 2377
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_smith",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "smith"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

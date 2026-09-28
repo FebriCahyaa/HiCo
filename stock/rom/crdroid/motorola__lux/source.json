@@ -1,0 +1,52 @@
+{
+  "branch": "6.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_lux.git",
+  "codename": "lux",
+  "commit": "125257cfa66321645f4ada8b35e9fb48ac474c64",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7de044565cd5c496ad50d23bf2eccb035e4464bdcadcda76ec6a9dbcc5f01aee",
+      "size": 1777
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0f565410c0256297c4575307b6bd5d50b134d073bec0667e86f3e6f6e5664a9b",
+      "size": 1435
+    },
+    {
+      "path": "configs/thermal-engine-lux.conf",
+      "sha256": "3a1e242869dde13708d85a456d3f79946cfcddd70026018de43f3955a84e0c53",
+      "size": 4250
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cc2e4d470e1c9522bb82ae9b7aaf02ac4c38987f90ee341be6611ce751e95b4d",
+      "size": 2205
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7acc779b220b05c427187e7dbd5c280423b19175dc34ddc462aa082c1fb3759a",
+      "size": 111
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "21483e900ce16288298c602229d5148ef22a0e81beb22b6971b071bbc74ed73a",
+      "size": 4733
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0695b30f17a27afded8b485e79b35ccadc6104cc7166ea0343c753a30b80b2d5",
+      "size": 172
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_lux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-06-02T18:38:49Z",
+  "vendor": "motorola"
+}

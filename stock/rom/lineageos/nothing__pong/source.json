@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nothing_Pong.git",
+  "codename": "pong",
+  "commit": "4c8a91e95540b0d075a66f18b4fb61092d99d510",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0bed2a0d40aaf4557e1678b58bec6d4a803b8897e0606c2ac388e07f35008f55",
+      "size": 763
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1e3a77dcebfc47aac0fae27907bbd358d4d8d77a0a5179651557ca0cd1145197",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "35eacb47dbdfc495fd1deffc21e25a8eb4f917aab30e2ea7b3c5e88399420640",
+      "size": 7090
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ddbbfe085bddc30d2493265b344c3c8197c15c66d53f958084c7edea3e41d892",
+      "size": 19199
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "29df020a2b723e020c32c5788c551e35009688264bd8b1c31528435ef6c01786",
+      "size": 5818
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "701eac37a9fb1485bd1b8f0ea64760c3dca792d0a39b0b49884bb14fd86b4884",
+      "size": 352
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bc3f411b47ff43f9fb83321ef30bc32919604dc49173d7b85b9cb6fdc44589c2",
+      "size": 81828
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a9dfa58f4f19fcc08da7a8706b4893c7677eb159d4613e93c4b29185000e4031",
+      "size": 8208
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nothing_Pong",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-01-31T12:40:41Z",
+  "vendor": "nothing"
+}

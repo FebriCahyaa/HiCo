@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_tissot.git",
+  "codename": "tissot",
+  "commit": "a487800a2dc2e16c29f1eea05a82c2d16e8cbe87",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "cc70bc04a20e132ddf6c837902f5223c8b74d81f88c594d01ee2f262631f1ad9",
+      "size": 1446
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "59df2aca4bde61b2dbee2e7df7631c7f65759e2789f63de36a12d20a156406ff",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4915dc4e5a465a5e99e2b841370304163052610f7b14fe6bbb74a3210fd96bbc",
+      "size": 1318
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6b72d04eea857703e32a4b45b8ee8818d19d6889293a5c32cf583b11c7db8cdb",
+      "size": 2526
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9fd4215d7f41932152a30a6d62a1db06ed97c2414cd85fd459c0af0304549b50",
+      "size": 790
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "eaff8c0f9c94a4b353a4f0ff9668dc1487f244ef0020ff8071e4e4bc874c5393",
+      "size": 18057
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0b555f0b5986eb088b77a6ceb3930881ad5d7edec2d28f58070d363c7588a868",
+      "size": 254
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "32d2e43abeaa8cdaaa824fe08e9b9f2bdddcb3b84d5701b03fb747ceef8334fb",
+      "size": 38
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_tissot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-01-01T07:17:43Z",
+  "vendor": "xiaomi"
+}

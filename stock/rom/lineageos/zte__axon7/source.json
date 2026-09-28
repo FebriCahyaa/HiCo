@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_zte_axon7.git",
+  "codename": "axon7",
+  "commit": "eb803aeec1af7bbdc559b732e91ab62921616b7c",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "08b714b7a37ca167c417ad0d57aac368ce16f77bcd7c40039304d148ce433e93",
+      "size": 4174
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "875010559cf26783ffb68cf4d886c61cbbd34e15f0dd3e45d3dcb48cfcdb279a",
+      "size": 7539
+    },
+    {
+      "path": "configs/thermal-engine-8996-normal.conf",
+      "sha256": "feb61e2e3138c4ba5ea527e39198975bdbc75e74c98e365fdcba6b056671c7db",
+      "size": 5512
+    },
+    {
+      "path": "configs/thermal-engine-8996-perf.conf",
+      "sha256": "00ae2c377c19143c10fc56fab69ea937492b23b2148569ef569d8483463d7d59",
+      "size": 5420
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a62b3467ccc822841bde65b98db9a8b9719c655b082d9a0e3635b2157fb26b18",
+      "size": 17567
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2078f2f8ff0d3ffa8208fc5f12ce84efc7db73f0bd72c9d24462e363c429a86e",
+      "size": 3220
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "821d9df310a2ffcb5efa15889bf86d80679ab5b59a39bbf321e0e2aba36ccacd",
+      "size": 429
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2b2c76a518aa00c3089f566b1c1ff356871653a99c18741b9aec0e063d2aa4ff",
+      "size": 14665
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9e6d0416afb41df26f11cf536406e12cfb9c1dcdf55c9f998610013036cbdf08",
+      "size": 3977
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zte_axon7",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-06-22T06:20:44Z",
+  "vendor": "zte"
+}

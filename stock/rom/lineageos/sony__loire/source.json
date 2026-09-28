@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_loire-common.git",
+  "codename": "loire",
+  "commit": "0b1acf7796261de4c60332333b2fa5006ac2fb5d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d3b126815e2367e5c9223da0cbf927f28e8e5312e706248d1bba8629738d5c34",
+      "size": 5267
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ecea0857760cfc0f0658518cf68ea974de6ed21e5e330257e89a604057b6d50a",
+      "size": 6474
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1f71b49c8f1bd9bc395be8d8395246f017aea0161ef27f769c01bbb217be953a",
+      "size": 2634
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6f09c5e73866904526ea397adf1d3653f39acdeabf64d059a3d3738a6c4530b9",
+      "size": 320
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4536d1c0c9d5a2e8255cf140e808b836d7d791d56e12bca543330ed9a233e433",
+      "size": 33857
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_loire-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-08-19T14:27:13Z",
+  "vendor": "sony"
+}

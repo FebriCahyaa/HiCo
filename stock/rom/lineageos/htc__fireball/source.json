@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_fireball.git",
+  "codename": "fireball",
+  "commit": "89fb5d0be8abdb0c87c6c49f272336adff31b2d1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9b05ad8c4d42b3f6f6793a9218809e1ac9f2b3c58071df07c38a305ee54bc546",
+      "size": 710
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "670abcfa7276db6c49688038b3c5e52b36c21be56042806d4693dfbc2f8f2cf4",
+      "size": 3007
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3592a40497b30b3ee960773fa0029177ec6369ec8b8008fa567eab85390a3df1",
+      "size": 3614
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "07434393690240463b59a6555fc4f6b4ba402f00b9b8376aede509f57dd589ba",
+      "size": 722
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f14d0a11801a46f0c5edaf61dc75819c1feac7b2c3cb7a1566ddba8717dca3ad",
+      "size": 104
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "da121b071bf0627c390fa5f758305d1cfb5b106a3f9fa12336825087e37a2bc4",
+      "size": 47
+    },
+    {
+      "path": "system.prop",
+      "sha256": "378fc6c7794108c4c79316f145134ce332b18b2f6bbb23e87f2bbea13f9e6d0c",
+      "size": 1246
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_fireball",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:54Z",
+  "vendor": "htc"
+}

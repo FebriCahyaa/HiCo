@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_nokia_NB1.git",
+  "codename": "nb1",
+  "commit": "a8f71e8998789d6862eade68594006a8f5972654",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9acbf9d4b525dbe8c15facb6f0c9fa4653c47943959a700d62f03fa376c19307",
+      "size": 79
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0f5e45ee1e3143673954938907afcfb73295627e98f3c5cc4bac7d9fb6d6c9b5",
+      "size": 156
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bbcd8ff145490bbca238bc90446851748b5429d4c5cfadbdc8b6605cfe71a651",
+      "size": 2187
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f36533d923c29a1af2d44be1ba57db8bb935fbbe10e14702c3db543d9a4fb7c6",
+      "size": 3548
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "08ea6aa24a61c1518d001028dbc21c40b871c344aea2610847f7328794509de3",
+      "size": 2786
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "77a9584179ce8d8255900ce4c1f7fcb58ebbca9d92e63a198c1be25103fd7a5c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "28fb5f5ce9482d53905e0edb934180407f3d77a329fa6522f6636c41f6eb5620",
+      "size": 20839
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b137e513049a6bd5a7347e7f7cf95ef2895388d89a7fecbd5d9c877b64d072d2",
+      "size": 78
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "846ec32e8ae1252a0aa3a6f9e970052c710ef7000e5cb045062d0e39b28743be",
+      "size": 178
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nokia_NB1",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-10-01T13:45:08Z",
+  "vendor": "nokia"
+}

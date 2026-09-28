@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "ed81cb281771825d354a2bccd514cff6ea48a6e9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6135ed0bec730dde0dc5ffc58f185cbcb4c13a337d68a32dd11bcb36ec75aec7",
+      "size": 113
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2b7f4beb5fe33df9a7b81793928c8d5600ae2d4d8fab3c64dd40b4ff0d8fb5f5",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "76ff99b278d7a0b98ba4f3651d2c10e738e272fe5c2dcf6332ad7661766292bd",
+      "size": 1279
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8bad55228d19f7c53081fa4882e64cb9221f3c4b405936301460454e57eb63ae",
+      "size": 3056
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1e5ea71bd1a97c854547c176d5bef8fc48532344a0aeacc055a88478cd1e0418",
+      "size": 2068
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "915c7690a182c6357284a75c761e374ffbf6299ed412fe2913885cbc687a9139",
+      "size": 87594
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5c25896337a8600a48bee492e717e251649c1eb1922907b8c9668613856f441a",
+      "size": 150
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:47Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_tf700t.git",
+  "codename": "tf700t",
+  "commit": "247c725fdd0df2d3f141e88704f523bb52f9a986",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7e450303f03802fc423070b77c09f013781eb895e1c6a1ab1dcab3576e1658a3",
+      "size": 1077
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c04f8341647e655b29013cf238ea71a8dcfb0cb264cf9ada20c4ba5b81b259d0",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7919d8dc3828ba5e4bb43654127e0641f298db7e773344f106c7dc41f507e043",
+      "size": 3400
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "be600c9bdb6b1f357901e567041d29655fe084576bccddae0b74cbd379a6c1c9",
+      "size": 275
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4705fc1153e169e7af030aef1f4f39de77d9792f36c0cf676f55d0854ff1f64a",
+      "size": 4072
+    },
+    {
+      "path": "system.prop",
+      "sha256": "377eb12f73bffa4eb71880e0f7db375df0e716a49674e9ab104d63b4046a153a",
+      "size": 181
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ac0b601c9f535211dc4c6c4927863faac223906ba4989bade3073680efeeb2fd",
+      "size": 643
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_tf700t",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:50:51Z",
+  "vendor": "asus"
+}

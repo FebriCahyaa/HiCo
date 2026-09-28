@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_klimtlte.git",
+  "codename": "klimtlte",
+  "commit": "38e7deea3504fddcf6aa8bfc00764658289a0457",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5337f7318b3be3d1e128dd92dd4bb59884a9fbe5d0fc2e06466421046b8c317c",
+      "size": 718
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bd15d0fc4fe0aa0d6c2287238bd7925d7e01a1f6b047a9d46ee255710e2297d3",
+      "size": 1937
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c91794e94fa92379ef0b58dabd98fd5127b2b946711332ef0de7526130c1c919",
+      "size": 3010
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bdcea562ed0981f8899fcc7618f183d2cce4d628a28c88430bc475535c80d470",
+      "size": 1158
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c79e8661b2a199866bbd7a38b0dcf459ae4aba32997d2b132029e9489f9ecf85",
+      "size": 140
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6a2253a150f056bab1ad2894bf04006106a5cfe14035c056d0bf7ac56cb240c1",
+      "size": 398
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4b4758657d4c24aa8787a64a464b735f237bd456ebd1a68fc95176cc82f64d2c",
+      "size": 43
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_klimtlte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-09-26T05:42:17Z",
+  "vendor": "samsung"
+}

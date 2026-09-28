@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_miami.git",
+  "codename": "miami",
+  "commit": "01394cda611dcc116fcc406b1582eeec961e443f",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-miami.conf",
+      "sha256": "a48423278da40a6e8c45f666ceaead040aae13f94b39962f0e88a00d2e41dff8",
+      "size": 3994
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_miami",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "miami"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

@@ -1,0 +1,44 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_fogos.git",
+  "codename": "fogos",
+  "commit": "e3b2914c5804cea3e64b1b53b606effba4d18bb5",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-fogos-camera.conf",
+      "sha256": "1ba4aacfe47bca0e844bd5e888536618886cadd519397c79e5e26d75b3ec57b1",
+      "size": 4640
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-fogos-game-normal.conf",
+      "sha256": "e8d23529d0d6c6ed739b2ca0f11e9b84c25329eec443cf03621e9eb5a4346cc1",
+      "size": 4644
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-fogos-game-perf.conf",
+      "sha256": "6288901d703b50fec27868a7c49d5d48648d71053df51355d7b6c2d82c0b1f06",
+      "size": 4618
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-fogos.conf",
+      "sha256": "0323837c1f7ca82b50c4cb79ff47b03964571f149affc9b51ca9f4f8d56c0238",
+      "size": 4671
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_fogos",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "fogos"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

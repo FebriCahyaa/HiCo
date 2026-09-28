@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_begonia.git",
+  "codename": "begonia",
+  "commit": "d67b38d287713b777dab65ad76e342e66e29fae2",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "cb6f7e38e7e6ec35854b91e5363b0ea55b5e376535b7d099201c35736c4c0b2c",
+      "size": 708
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e9a9a1330472f8fb609d694756c1a5b1c3cab0aa3d1b6b0870a91dcc6d4a293a",
+      "size": 806
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fbf208006dce31e39d3f88478ae473f25ea4bf2a665397c77f13c35d202f7bc9",
+      "size": 920
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c27d1e613398e62fc7df1cbab1a70cb8240f81a295694b6692965c486d07b179",
+      "size": 3709
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "13d83c60b09db87e303ad53dcf2cf2ae1e62f7aa10edb1356ab12ad5ee253512",
+      "size": 822
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ac7c7eb2b3b12b559f5f5ea236ba5fb8ee04c08b2c001056a2bc8121b42d168d",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "544c466bcbf92a07a9bb6c3b4523617a209765b099942ad791665548f7be5625",
+      "size": 1391
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_begonia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:39Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,179 @@
+# Common proprietary files - from Samsung package version P620XXS7BYH2, unless pinned
+
+## Audio
+vendor/etc/default_volume_tables.xml
+vendor/etc/dolby/dax-default.xml
+vendor/etc/usb_audio_policy_configuration.xml
+
+## Audio - Dolby Atmos
+vendor/lib/libprofileparamstorage.so
+vendor/lib/libsecaudiocoreutils.so
+vendor/lib/libspatializerparamstorage.so
+
+## Audio Firmware
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APBiBF_AUDIO_SLSI.bin
+vendor/firmware/APDV_AUDIO_SLSI.bin
+vendor/firmware/APSV_AUDIO_SLSI.bin
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/a2dpcom.bin
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
+vendor/firmware/avsyncmix.bin
+vendor/firmware/bidirmic.bin
+vendor/firmware/calliope_dram.bin
+vendor/firmware/dax_param.bin
+vendor/firmware/dolby.bin
+
+## Camera
+vendor/lib64/hw/camera.s5e8825.so
+vendor/lib64/libexynoscamera_plugin.so
+
+## Camera dependencies
+vendor/lib64/libMERTA.so
+vendor/lib64/libc++_shared.so
+vendor/lib64/libexynoscamera_merta_plugin.so
+vendor/lib64/libexynoscamera_swlme_plugin.so
+vendor/lib64/libexynoscamera_vpl_plugin.so
+vendor/lib64/libhwjsqz.so
+vendor/lib64/liblmecpu.so
+vendor/lib64/libsec2lsi_conversion.so
+vendor/lib64/libsensorlistener.so
+vendor/lib64/libswlme.so
+vendor/lib64/libuniapi.so
+vendor/lib64/libuniplugin.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+
+## Camera Dummy Libs
+vendor/lib/libexynoscamera3.so;DUMMY_SHARED_LIB
+vendor/lib64/libexynoscamera3.so;DUMMY_SHARED_LIB
+
+## Codecs
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_profiles_V1_0.xml
+
+## Firmware
+vendor/firmware/OD_V2.1.6_01_26_QVGA.nnc
+vendor/firmware/OD_V2.3.7_02_05_VGA.nnc
+vendor/firmware/SetMultiCalInfo.bin
+vendor/firmware/dbmd8_va_asrp_fw.bin
+vendor/firmware/dbmd8_va_fw.bin
+vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/dual_cal_wide_swide.bin
+vendor/firmware/hx83102e_gta4xls.bin
+vendor/firmware/is_lib.bin
+vendor/firmware/is_rta.bin
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/lmecpu_GC5035.json
+vendor/firmware/lmecpu_S5K4HA.json
+vendor/firmware/rxse.bin
+vendor/firmware/sb_music.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/sectiongraph_tplg.bin
+vendor/firmware/sectiongraph_tplg.conf
+vendor/firmware/secure_configuration.flm.cfg.bin
+vendor/firmware/setfile_4ha.bin
+vendor/firmware/setfile_gc5035.bin
+vendor/firmware/tfa9878.bin
+vendor/firmware/tfa98xx.cnt
+vendor/firmware/txse1.bin
+vendor/firmware/txse2.bin
+vendor/firmware/volumemonitor.bin
+vendor/firmware/w9021_gta4xls.bin
+
+## Gatekeeper
+vendor/lib/hw/gatekeeper.s5e8825.so
+vendor/lib64/hw/gatekeeper.s5e8825.so
+
+## GPS
+vendor/bin/hw/gps.sh
+vendor/bin/hw/gpsd
+vendor/bin/hw/vendor.samsung.hardware.gnss@2.1-service
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/gps.cfg
+vendor/etc/init/init.gps.rc
+vendor/etc/init/vendor.samsung.hardware.gnss@2.1-service.rc
+vendor/lib64/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
+vendor/lib64/hw/vendor.samsung.hardware.gnss@2.1-impl.so;FIX_SONAME
+vendor/lib64/libwrappergps.so
+vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+vendor/lib64/vendor.samsung.hardware.gnss@2.1.so
+
+## Graphics
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
+vendor/lib/hw/vulkan.mali.so
+vendor/lib64/hw/vulkan.mali.so
+
+## Keymint
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
+vendor/lib64/lib_android_keymaster_keymint_utils.so:vendor/lib64/lib_android_keymaster_skeymint_utils.so;FIX_SONAME
+vendor/lib64/libkeymaster_portable.so:vendor/lib64/libkeymaster_portable.samsung.so;FIX_SONAME
+vendor/lib64/libkeymint.so:vendor/lib64/libskeymint.so;FIX_SONAME
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+vendor/lib64/vendor.samsung.hardware.keymint-V1-ndk_platform.so
+
+# Ramdisk firmware
+vendor_ramdisk/vendor/firmware/hx83102e_gta4xls.bin
+vendor_ramdisk/vendor/firmware/w9021_gta4xls.bin
+
+# Recovery firmware
+vendor_ramdisk/vendor/firmware/hx83102e_gta4xls.bin:recovery/root/vendor/firmware/hx83102e_gta4xls.bin
+vendor_ramdisk/vendor/firmware/w9021_gta4xls.bin:recovery/root/vendor/firmware/w9021_gta4xls.bin
+
+## RIL
+vendor/etc/init/init.baseband.rc
+vendor/lib64/libengmode_client.so
+
+## RIL - from a14 - A145FXXS5BXA1
+vendor/lib/libsecril-client.so|96bf65152d221ac528b763f625bb93e56899033d
+vendor/lib64/libsecril-client.so|26efd845750d4ad91e3a5c5dd7d95d40e8ef52a8
+
+## SECNATIVE
+vendor/lib/libsecnativefeature.so
+vendor/lib64/libsecnativefeature.so
+
+## TEEGRIS
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris_v4.rc
+vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
+vendor/lib/libteecl.so
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+
+## Sensors
+vendor/etc/init/init.sensorhub.rc
+vendor/etc/sensors/hals.conf
+vendor/lib/sensors.grip.so
+vendor/lib/sensors.sensorhub.so
+vendor/lib/sensors.inputvirtual.so
+vendor/lib64/sensors.grip.so
+vendor/lib64/sensors.inputvirtual.so
+vendor/lib64/sensors.sensorhub.so
+
+## VNDK - from prebuilts/vndk/v33 - android-15.0.0_r20
+vendor/lib64/libcrypto-tm.so;FIX_SONAME|7291c0e41fa86b3739df0c0c20de21e88f43661a|f53b9d897921ade77c511eb98955db374fcc5c69
+
+## Widevine
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib64/libwvhidl.so
+
+## Wi-Fi
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_slsi.rc
+vendor/etc/wifi/indoorchannel.info
+vendor/etc/wifi/mx140.bin
+vendor/etc/wifi/mx140_common.hcf
+vendor/etc/wifi/mx140_t.bin
+vendor/etc/wifi/mx140_common.hcf
+vendor/etc/wifi/mx140_t_wlan.hcf
+vendor/etc/wifi/mx140_t_wlan_t.hcf
+vendor/etc/wifi/slsi_reg_database.bin

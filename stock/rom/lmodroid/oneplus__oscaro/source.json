@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_oscaro.git",
+  "codename": "oscaro",
+  "commit": "369a7fb77d4dcac391252c69b7fae76977f49d76",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ae790bbd909ecbf707a72697ef238c43dd1a3882e41958e4eb2586aad4d77e52",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9148ec006ec80905282645c32288d5c4711359260e11c72e39916d9335ed34a1",
+      "size": 471
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c8cdf04c0833ae2851c50bfebe535c79845b3d5a18e2019da0b8dfdad9e1fae8",
+      "size": 3026
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b4ab76dd66c736c059479940c2d2012830c76d59ebe7c03d443d3fe0cc702f84",
+      "size": 1292
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fe065dab6bfd3b3aeb3fe8769e1c7d11c95cc13445d9de9a8445a425ce923070",
+      "size": 52647
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "59614acec3479153f341140b3a8266f98fe14107cffb5b12cff4e12c78df8223",
+      "size": 127
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_oscaro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:30:35Z",
+  "vendor": "oneplus"
+}

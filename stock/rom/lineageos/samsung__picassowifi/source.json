@@ -1,0 +1,52 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_picassowifi.git",
+  "codename": "picassowifi",
+  "commit": "733c36410809916f4752132d71b4727e82f81fb3",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6d5e51fee2a937cf3d8acfc2babf38a4d765308692cfc3e3ffa211d82625de24",
+      "size": 721
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e1ae876faa2d09cb1f3b95a530005c89ced6b8352e824fb10b0e04ddcf8b1a26",
+      "size": 4752
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cbf1d76d796680a6f8c5844a690851f9206c7283fa465c2614f3a345288723f7",
+      "size": 6226
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ea73628795e4bdb636debf2e581a8ebb0b5c1fa95d6545e674ff4d28586f95a2",
+      "size": 1221
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f08aa869bb39745a26528dbf4f774ac7ac9e016a036423397ea3968341483781",
+      "size": 3698
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b665d3d918ce8bb557eae82e9d6af03b485159be906837a0a5c40c6438b8b2ea",
+      "size": 744
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "bd81a265b813bb048c02453611be3e16f97fc02c1c0c73bdb4b3e0a04c319b3e",
+      "size": 41
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_picassowifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:17:21Z",
+  "vendor": "samsung"
+}

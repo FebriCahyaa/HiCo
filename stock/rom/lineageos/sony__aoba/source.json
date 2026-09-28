@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_aoba.git",
+  "codename": "aoba",
+  "commit": "f0953a8bd2445fb5c34238cd135d2b8479546340",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2c7231df7dbe98228328cf57efa54849b4ec38e6cc75868bcfeafc47bdd316fc",
+      "size": 121
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c6a9c99fb8fd2f83e4a9d1a18ce903c8290d107ecf77acf9de5f6b650918e1fb",
+      "size": 53
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ec61a9356977691088395558fd6e6e06047d31f19ed0c6248cad167a584c09da",
+      "size": 868
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7365605daf36c692ef24a9b6e0ded8f8d5d8b9d7cae09a5298afa6b2e1be2f77",
+      "size": 749
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ad00598c42d642e0603caa7a18678a227f8ce21aa79cc743aa6d8bce2de5d67c",
+      "size": 3622
+    },
+    {
+      "path": "system.prop",
+      "sha256": "64f6643c4cf036526af59313c9d9d2c121da2653978186de14f82fa5dcdfe218",
+      "size": 205
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ee020b82f45d7d13a9550865fff5c807d81cfef166aef76769a47cf47b0b916c",
+      "size": 28
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_aoba",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:21:22Z",
+  "vendor": "sony"
+}

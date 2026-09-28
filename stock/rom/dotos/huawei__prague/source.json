@@ -1,0 +1,52 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_huawei_prague.git",
+  "codename": "prague",
+  "commit": "95c7231621e80d1e160fab94fb28a5e640afb0d3",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3262c79c73d5020da8d402a5cff63904140f2d0e0476f5a09abc271f4f1267cc",
+      "size": 25
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "bc15ac114bc116066f4ad114b9967fb96187b2625538da47c57f48134fd0d04b",
+      "size": 1145
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "63fff491cea8fc1e629a2b6e6d1e9ba494a042f20ca963bd063234d003db31c1",
+      "size": 1107
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7dcf3d8afe4a00bab7426e21645d6dfa2a4c0a5c25f0ddbac800371fbf72f3e4",
+      "size": 3407
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f1e2b68c3f69b4fb376064f9a95c1eef06fe416cad77c8bc5131e23641d4f3db",
+      "size": 6692
+    },
+    {
+      "path": "system.prop",
+      "sha256": "bc564990eb72855b29fb331c333221ea6bcb878d7b4884bfca4561eac82ee8e7",
+      "size": 961
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ffcab94ab70b96b8ea180e581dbddc83cda848f308950e502d890c95a862870c",
+      "size": 37
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_prague",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-11-24T15:54:06Z",
+  "vendor": "huawei"
+}

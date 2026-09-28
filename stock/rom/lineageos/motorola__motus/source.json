@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_motus.git",
+  "codename": "motus",
+  "commit": "5caaed648a23faa3827c8cd8534b17c58913d594",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "484781589c2ed585e4e0dd2ce05cd7f13ca874d06f41a66f3b2965a94cae0da5",
+      "size": 781
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9861c1f7e0aa5de1889e56d28148e91b164397aba26ce11e12cc3d5d660bee62",
+      "size": 3549
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b97c9eadab3a843f87a2a8fc4d5686916954baa17b9e1987ea0380aa09d6c151",
+      "size": 13100
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a103f7da1fed3eadc05859e0ffec5ce069afb0c48af58a6c3bff505cb47c1400",
+      "size": 1321
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "9e62dd497c5cc14e3a199ea85116eeb22809b0fae2388f2d22b77e681d8512e9",
+      "size": 849
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_motus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:01:59Z",
+  "vendor": "motorola"
+}

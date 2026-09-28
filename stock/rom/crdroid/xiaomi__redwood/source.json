@@ -1,0 +1,102 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_redwood.git",
+  "codename": "redwood",
+  "commit": "9cee80948702a1b19681ce28a023a14e4f4a0fe1",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "29bd6e16c9576a0a268447fb319037c02f59bd0c46096fbbce1a580af8fdf4d0",
+      "size": 506
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cd945b3b6c672b46d2d3448dde3075e02cdc1518f52a804f0f7998bb83fe442c",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b645547ecf249040b267df6b2935c5f0a619e2e227fe4b0e1f16e3ecc8125d36",
+      "size": 7342
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9b8ea93e71c6f126d8c72a0dad05b3ae471ec3618416e074c476ef1f8f684871",
+      "size": 22255
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c6821330328b7588c8a72d04ee09afe129ca9fc04e6219a88337c2e0fe2b99a1",
+      "size": 4917
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "566063e6ee35d0b67f0bdb008487be8dbce8401114d8fe9a2adce40d957e6591",
+      "size": 1692
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "1404125df0b01168e1f15f9a5f2eba0fc1b2c19122dae190325d76fe2877b5f9",
+      "size": 3318
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "d056a07e421fe66e7d062f765bb210655733f65d1506aa4244ef265b6ebee212",
+      "size": 1461
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "06107f4ee94edaa5159951d8dde79dd1d2f14ca3c2f8ad3f3e071df1245da845",
+      "size": 14472
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "1a3edd974050d6b98af6ba916e93d67a92ed3b87319fdb204cb834757b64d1b5",
+      "size": 7019
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsActivity.java",
+      "sha256": "6d640b7b2defe1c679b738fce005a95360f15196ccc542f21f02f8a97256a458",
+      "size": 1578
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "2ccfe5242269e7fb9fb6311ba2e046ed30294574a80450e34b80e845fb180a98",
+      "size": 5068
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "97844e099b8b081e4bc590546af97076f0456c581bd93938e04ea413ced9b614",
+      "size": 53254
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "d94017fd91f6cd71812a71799c55dffa2d10dc91ca9d49e79201a1dc550a0138",
+      "size": 291
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "61518515ae59cee8114620850bc01f5c5bfa53d87bbcca6bae15c2e28da9f467",
+      "size": 1362
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3fcd6f62996b30e0c502ca3a69381883b3d78b0f33e4a0807e673ce407eb9bf0",
+      "size": 11400
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_redwood",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-13T09:22:55Z",
+  "vendor": "xiaomi"
+}

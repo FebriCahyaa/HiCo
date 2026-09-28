@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_google_tangorpro.git",
+  "codename": "tangorpro",
+  "commit": "2872956e4a742f32069380507e3235f5f99c2b42",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "228028780c719361027cab58d00956c5d7609e76e2a93ad2dbddaa94c7d80fba",
+      "size": 513
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ecad2a9eb264badbc43a9ffca8b52d5e1b550d283413919adf22cd59e3b9b715",
+      "size": 204
+    },
+    {
+      "path": "device-tangorpro.mk",
+      "sha256": "e945f2e72d5d83bf520d9fdeddcc547bdb3667b2e816709c4d03be559993e71b",
+      "size": 2892
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "460026eba9b707d65fa3b8e6301a3d7ebcc10149a9cc43ccad5e5c9e77f1e0c2",
+      "size": 215
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e985c71fdb998465d2edf784b3394acc0c41ada9facf81df350e85444c708983",
+      "size": 225
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_tangorpro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T16:10:13Z",
+  "vendor": "google"
+}

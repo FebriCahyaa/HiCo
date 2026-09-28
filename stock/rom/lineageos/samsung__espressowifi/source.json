@@ -1,0 +1,77 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_espressowifi.git",
+  "codename": "espressowifi",
+  "commit": "f561c863c5e6121ede8f537ecdd0af1f8f0cfcff",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "09b731a546e821e017e2945270c5161a3644d3b7369108ce0a1f4e8a30a676af",
+      "size": 1128
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "39b0ab564642c4f8e80715ba372fef574355db5ffd16e2a31a01a97080de674c",
+      "size": 688
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "92ce2c0db3401b1e34a149da27998b999e78990546c7d548e0695125b0d5591b",
+      "size": 874
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "be79b766ed0fd86c6e01040aae988a95aa297746047be5a51c9df1cdaa4a6ddc",
+      "size": 2930
+    },
+    {
+      "path": "BoardConfigCustom.mk",
+      "sha256": "f870217f1acc434b2fe4f1979ebdbc3b5d8c3e9d026b2a30cb5a0802828bc6a6",
+      "size": 537
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "b59498936db05fba8b8b771617d4a6b81719c7bc0206cf7b96cd258c8b16ca01",
+      "size": 6125
+    },
+    {
+      "path": "device-custom.mk",
+      "sha256": "c212ce84ba39d6dc9aa2fd8da3968eb8001cf6754c1b966d0c30dec59a365212",
+      "size": 891
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4a537d7d865417444db578f9ba7fa8b0157a83ba0018573fba42241402e44c7e",
+      "size": 1405
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4ddcb33b07a2e253210cd9f06239b7ae90215273302fa9c60a37d844cca73fb8",
+      "size": 3708
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "11a0441ba39a41d18e058f79ac967d1bcfba192a378a904ef88c3115714640e2",
+      "size": 211
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ddbbc2acdacde61cbf493bc688c1e61d47afb0219e1c1cb76aee03a602999c1c",
+      "size": 1140
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "75c985479bcb5afc741fead3b1bce735acca96b644262fe444fda0edea56a671",
+      "size": 47
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_espressowifi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-12-14T12:54:51Z",
+  "vendor": "samsung"
+}

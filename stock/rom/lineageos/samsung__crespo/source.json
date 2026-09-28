@@ -1,0 +1,52 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_crespo.git",
+  "codename": "crespo",
+  "commit": "155b129abcdd8098c4a46ca0f09072f7526df6ea",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "01324fa0f88cceabcce2a6bcad9107646bd4e62d7db00cb52484cfd360828d85",
+      "size": 739
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "31638ab73d32c004db86a362c8590f6be11ea72699f6dab76fb5ed72155cc8a8",
+      "size": 1059
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e1cee308dc190976e778d3aa83042822ee0e72275048528d180345461ec2b29b",
+      "size": 1018
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cd0b9830ac5c172362985aae68c1c18006230b39e893310e49dd6bf0d985d861",
+      "size": 3453
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7a27248f0a5db176813dc2ff3242df4fea906203549cabb2ab897e10906ffde1",
+      "size": 2746
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "837f6e88b7d8259ebd35d7e30caf9cd1c547dc1b0a3d85d1243b76eac141de9f",
+      "size": 7385
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9e139c2a96790eaf1506f62a3e8bb1efc1e809d613b19804823eb4e382c58779",
+      "size": 120
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_crespo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:09Z",
+  "vendor": "samsung"
+}

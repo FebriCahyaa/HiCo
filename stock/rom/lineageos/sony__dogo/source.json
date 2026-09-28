@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_dogo.git",
+  "codename": "dogo",
+  "commit": "869609970b6b7a6a8186161867d36bd2e5c76098",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b2ba3bb0d11879d26e24864dfffc96855355b786472f37cc1ffb3fa122bff305",
+      "size": 759
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e597d0c70eb015572ae01ce77fb19993a90bacc757321c4c5a4d39ca88230cb8",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "79d634b456974f755dd348e14a99aca2cce941c7471f9db805b69010bd6d474e",
+      "size": 980
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d43b59c16fa04d7e26609366e169fb17b9c1f4fd4ab8a4588b50e9310fcb2320",
+      "size": 1320
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f57e287ed9a8a70b29c7d59615f8f92b8d3b4fda0d899ab0f3500c0ef47ddab6",
+      "size": 782
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "03dfcd45f22e850540b80acc9b5332a62b97c6fe2c160f70ba777ad156b24a66",
+      "size": 116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_dogo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-10-19T19:24:12Z",
+  "vendor": "sony"
+}

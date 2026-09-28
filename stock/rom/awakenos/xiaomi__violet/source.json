@@ -1,0 +1,87 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_violet.git",
+  "codename": "violet",
+  "commit": "220f933f8c027b66ef53921155d6ffbf42e13cbe",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e60253b4d138caf57f9349fbc6907eccf55f9a820d6f65a9747b808190b8f7c1",
+      "size": 5232
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "63c0f8e244a1b9ddaa664b78e13da0a188a07f10f1183b49084e2be64adc7b2a",
+      "size": 738
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a236fb07669462e6e1268cd17a79753273e18017063e1a32c3a108a641896d46",
+      "size": 5870
+    },
+    {
+      "path": "device.mk",
+      "sha256": "42ddd548ed195c9589c20ec271d9f288fd32a5641abab39ac6de9077cc47f9bb",
+      "size": 18146
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f210f0872ba01845a5d510daefd7ffeb4df9c4cac873f2b184409a6b026858d8",
+      "size": 1340
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "2ac2577a698c209e4b8b41aa54620def6061e749fc8c268afd7059ef97c997de",
+      "size": 3274
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4e6fab15f435bb141ac06ed8e616c5af03c0a197b560c288c802179b169f4ee6",
+      "size": 14171
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "dea3db0084a06f379dce12f4bf27260b3665cb81c88db0306ff3fbb3741196db",
+      "size": 6148
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "52b0e99a607adde7e72f674af08f03764c9c7ea883a869e7e84ad21fef28a607",
+      "size": 55589
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "system.prop",
+      "sha256": "42c6a7a998658511f9df3dc4f238a7d5aca04b563c97a8695ff8e7e1f770d3c0",
+      "size": 939
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "78c319a8b605aba28d007cf4bd24db11fd23739682ccbe6477a8e1f228c5521a",
+      "size": 7697
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_violet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2022-11-22T13:24:53Z",
+  "vendor": "xiaomi"
+}

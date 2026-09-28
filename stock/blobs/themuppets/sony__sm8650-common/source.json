@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_sm8650-common.git",
+  "codename": "sm8650-common",
+  "commit": "83dec08804541219d5b83779f52c4ed8281ae93b",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "15bfe40fdfeab98af86ecac2697bed157e90dd8d6dbcfec6ef7f3e761f0f8e95",
+      "size": 632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal-engine.conf",
+      "sha256": "63d705b4deb3f16f1645d9b01a62de0e5397fd173180fbee8067289f002b2a0a",
+      "size": 66428
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_sony_sm8650-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "pdx245"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "sony"
+}

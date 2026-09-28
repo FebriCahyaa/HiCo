@@ -1,0 +1,97 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_camellia.git",
+  "codename": "camellia",
+  "commit": "a434b39ba033c10f66c38e9362bdfbb9ef3dbc5e",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "84ddeaedd99902a3d581b817d53ee1499ea53ddeea29c659cffb927ea21e3802",
+      "size": 1376
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8b4439ebdf76199827bf0a4c75579cd03c5c4c715c6eba11a9704977505726db",
+      "size": 261
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c67cf6d04463237297ea57072293c2b74fc5151f5213c02ad715bb2327f374e2",
+      "size": 5755
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "988d1a0a63f397c286c3c9a26532470a4ff4ad27291141c1f37948dd55badca8",
+      "size": 2805
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f371c21d1a72a86bcceee1d34f57b1deff8c26697e7ce4e7974753f0507567f6",
+      "size": 17366
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e94bd4a1cbcdff5b3133dbbacc7fa3282f70d751d4a8feed72b2c2169a39363d",
+      "size": 3125
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "cc6805ae3cd16909e9322e6ce07fb1e3700eb833769a4dc1737a6e3513bf77cd",
+      "size": 3272
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c961f3da8842a016adacfaca3c5f9ec66eee83e826573f6d2c4103345c100176",
+      "size": 1454
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "01f1c720e777fa39f79a36e887964124b582a9f3aeb809f7220db9b8af4d3b33",
+      "size": 14214
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "3b7e9148c6b482420f9407a6f27b8feaec77246da6dd110b56b663d7515073ec",
+      "size": 6485
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0215ba9ef8d86e9e7e40f8cc649d683df372b1775767d88ed9df8968636b5b8c",
+      "size": 71822
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "099aafb9901c8df0c9ddc84bd9c1544f1edfca83edec08341d8dedcc995d5278",
+      "size": 1094
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9be07acadf1a41ed9a0e1413a3e15d5b8197a50474ead5a5ec9d93ef00b1d269",
+      "size": 608
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7d6b10e193045a3a82ae6ee0f6b8dc71344415d155337b5d93a4551722ea69c1",
+      "size": 8234
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "be0d5f1bc0f53f5d5e65ce5ae3e7aae83204d12dfa8d3d524d2e5cdcbfa067b6",
+      "size": 115
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_camellia",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-03-02T15:57:23Z",
+  "vendor": "xiaomi"
+}

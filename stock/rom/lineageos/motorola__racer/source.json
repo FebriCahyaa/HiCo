@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_racer.git",
+  "codename": "racer",
+  "commit": "b8c530e4fa4169a02cdb6d1bfbff5dd2dd654377",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dc75250eca4e6d82b4774c3eee1b450d7d30960b31d672ac6aeb7c545529b85a",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ac86f7ff3bb0387d6888ed44427d6cfe7224a7711a071199faae5470855a885",
+      "size": 1912
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2400a3f4cb81c826a10f7d69985f87801c1711a1305601a082d9330682ac5e8e",
+      "size": 3011
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "de9db07492ab155c9cb2d08e3aadc0548229a56a4b763cbacb3c6213f223366e",
+      "size": 2925
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "158c211d573913b3831dc2947c73375e26004a9251846143464d91d47c4d8ed6",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0035955fa7d5e2506b34adcd2f8c3b74bd3a67946fdb649d83a07d69b396096b",
+      "size": 11952
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "def8789ebf16d7b4ff23ed994b2364ce3beaeb684d5c8f9ab547b128833dcc09",
+      "size": 1731
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_racer",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T11:43:31Z",
+  "vendor": "motorola"
+}

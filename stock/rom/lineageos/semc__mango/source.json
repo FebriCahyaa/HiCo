@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_semc_mango.git",
+  "codename": "mango",
+  "commit": "563bef9cf4c942b5b378a6d5e8dffaa2e57ad555",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fa4770ae786331312f6c9cb34404457ae18a3da817b40a7ce8e4120e1553bb80",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7f53d99f50780dbdf5a4074cbeca787120d66eec6ea74d66c52a700bbc96a4b8",
+      "size": 1060
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2100f7f5f0384ed8fd1c362e4a49ee7347308dd47547dbb75c0f0b947930c3d9",
+      "size": 323
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "15090b603efe3ee0b480178ec131c04ad319322d55700cf03be0bdcde02888e5",
+      "size": 330
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "49137ee9af999390ce6f0d5e3dff3ea2e0fd58d645b0632fe9885b44c25c662b",
+      "size": 3021
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_semc_mango",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:20:33Z",
+  "vendor": "semc"
+}

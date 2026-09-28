@@ -1,0 +1,42 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_htc_m8d.git",
+  "codename": "m8d",
+  "commit": "6a08a974b5361ab78d1f4bab3e18cc3fc352a646",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "204dbbfd1c791071161366e42775bcc6d5549b8a55723ced2a3bc8d3b2ce4471",
+      "size": 751
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "76dd50eae52e810571b3c3f0a840b75fac0cdfa9402116e198843354c33e8c22",
+      "size": 2028
+    },
+    {
+      "path": "device.mk",
+      "sha256": "594bf041a05ffdc14175b4b4b6e5bf2933a2b880e7254de0ef398ea0374f9a88",
+      "size": 944
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d8f6e34422d9185549c4e87efcd8aa1cf1a7ed3c0a2df8f30c2f4d62b17aecc4",
+      "size": 801
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f283de73d0fb5ef1cceff1d6d73c513c97193a0e549046aa20c17cd2c6c3f0ab",
+      "size": 104
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_m8d",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-04-28T06:21:52Z",
+  "vendor": "htc"
+}

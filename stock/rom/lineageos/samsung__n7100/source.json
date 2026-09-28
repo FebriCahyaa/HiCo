@@ -1,0 +1,57 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_n7100.git",
+  "codename": "n7100",
+  "commit": "e2e84b05ff8eafb17634b7daf3ca00129b061c4f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "676a3d2d5e82c86e2c3254cc93b6e421f68df554ac360951ee2ce121263d008f",
+      "size": 715
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "25dc9d18407288e4cb22826f688e944761f5684da46f29151985bbdf24ac7a61",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f6bb897ab4f908e6dc14322122f9e0ec32e5253c951e0ff9c1fd6e7bb649ffe4",
+      "size": 1720
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7965f3516fb293358af310947fa40a9d40c29efa29dc5cf01925402e75dfa971",
+      "size": 4047
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3f387bb585c5b2947d5326f1d71110e0e9cdf016c429bf2d7928d1a69f453b0f",
+      "size": 497
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5d41879790ebfcc621dd7161c3318c1d6b86120ce19c1b66e57dce63ae9dfd71",
+      "size": 191
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8d8d0c9bce1821a31010c9aed370d2d9e80c90a0470e0db120c9bd13f6be7825",
+      "size": 175
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "8c320343ec2a4d8b68b9228192845e93fa7fc127b81d738babdab009fd566475",
+      "size": 74
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_n7100",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:36Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_guacamole.git",
+  "codename": "guacamole",
+  "commit": "4fb2b3ff82a9f20acc50ab7a316a11ec19ad5590",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3e5eb53fe18c6b6d80ce1cb69751c7f826d1a32d518afcd4325a09c16f1495ce",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2d9c557c13c57f5b85ba4c1ef0ad4280cd3c17feb29f9f9fa678427eca289fcd",
+      "size": 1081
+    },
+    {
+      "path": "device.mk",
+      "sha256": "96745eaafc1fa821d0f37d223d8dac8921bcda45e24d5228f658575a4fba5261",
+      "size": 1455
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d691831d21a83c599a5c8a6f74790e9c01f7c44380fb72b96021d26a85ef4d76",
+      "size": 900
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e36c24e7bc19d77b7b50356ab2ffc3e95f05c2a220d90f768d91033b7a7809d7",
+      "size": 24058
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8e6d8485294c85994bd2084374807c320f034c0b65d4c21b450ae137915fe6a3",
+      "size": 911
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_guacamole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:55:41Z",
+  "vendor": "oneplus"
+}

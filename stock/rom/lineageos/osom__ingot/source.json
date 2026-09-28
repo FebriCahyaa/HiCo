@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_osom_ingot.git",
+  "codename": "ingot",
+  "commit": "1fad057745cad45f54e8b01a6fbae9881a9433f3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4e94d50ad2b274f73bb8911cb27256a551ecd74fd49c89b40c47b8caf8010d0f",
+      "size": 557
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "60a4e442ef2cf10a246f80ea960744c7c599e5db34c863f0cb92af176f87e408",
+      "size": 158
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "18f12fefc772ed10972df4aedc0b964c940717478d4206fa1d0eafab5cbab28e",
+      "size": 6964
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4bcb554ef7c3f2bbbc4b27900e47af027e42d5fdcdc460af5f02a010a451f6b5",
+      "size": 17739
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "672df8847387683c4b46b52f2e56f8c034774644878131160b0ff3296dbc4815",
+      "size": 3891
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "fc2df7795ee8633662e0a3c2be54e8786ec3bbaaa72270625dec6e21f037fb69",
+      "size": 334
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9bf65eb7b3ef552d712192bc23e42ad0698290c17b4cf786fc892e916fcd317e",
+      "size": 57758
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d3828ee76e5dae933e56654789c215edbf3924bcc22f5219f576f78df7787998",
+      "size": 5318
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_osom_ingot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T03:14:43Z",
+  "vendor": "osom"
+}

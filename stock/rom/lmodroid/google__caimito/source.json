@@ -1,0 +1,182 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_caimito.git",
+  "codename": "caimito",
+  "commit": "2b8cb941fec3e8ffaba0fabbebde5a917a95148f",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dc1d4ddbaff92abcd16c50d472e98c256006cdc63cb63a327c8198e9d2cfc7b4",
+      "size": 995
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7e6a8fc80e68054060d444389b7adab7251944f6c8e2904c160bbe1cc4981e5f",
+      "size": 1700
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-caiman.mk",
+      "sha256": "ce9923981b3afc3514fc01dfd968d48dba6510c444298215201e0ee018e1d4d9",
+      "size": 18049
+    },
+    {
+      "path": "device-caimito-16k-common.mk",
+      "sha256": "b2328c580fa7d7e6353b13a75b2273e7ac8b818cf00de7a6d3e4c64aa2c2cd86",
+      "size": 2769
+    },
+    {
+      "path": "device-caimito-common.mk",
+      "sha256": "cbe4377e3e2b7436e98d04ac3e5f35127f5a679ad2ff12eeba02724d4e757014",
+      "size": 2850
+    },
+    {
+      "path": "device-komodo.mk",
+      "sha256": "790ad33dea8f33adb656b07f8071bde4a31b35846acb6dac0688733475f03f5b",
+      "size": 18090
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "81c215312d7991b516079a3c7f586cbe2eb105901668f9bb858ce1d5ec618ebd",
+      "size": 1419
+    },
+    {
+      "path": "device-ripcurrent24.mk",
+      "sha256": "f62ad9a47a0cca704ab2867e01ee218af39e15a14c2f06629d07bee9577d18af",
+      "size": 9226
+    },
+    {
+      "path": "device-ripcurrentpro.mk",
+      "sha256": "6543de04c4853c2f86371b3c0c3fd3df488a2560a9e625b1431d3471266c72d8",
+      "size": 9405
+    },
+    {
+      "path": "device-tokay.mk",
+      "sha256": "9859e06d47f805929f030f7c9f40dde68668bc49d550bc8f5560bb8a3c07eeda",
+      "size": 16954
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman.json",
+      "sha256": "9bcfafb338e9ccb0f7bff1fbb60098d30fff26755627c568698213f41a5b00c9",
+      "size": 70388
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman_proto.json",
+      "sha256": "c9020897b9e8878d9d1fa2a0dc8db3ee242b683a7551b4d698e2216bf15b4627",
+      "size": 36463
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman_wingboard.json",
+      "sha256": "016a31e4afa3b16341bf51c1771d19f1209157b714811febecae1ab9c3b6bdcc",
+      "size": 44827
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_caiman.json",
+      "sha256": "23aba769b8030e666b35cc9e0db6d1ec0d6ced1193a98fcaf6b57f791885cf23",
+      "size": 12828
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_komodo.json",
+      "sha256": "a379a41edc7fa03dbe567a6b8d7986e1582b5fa9e6a5650e5523c2232ae869d0",
+      "size": 13362
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_ripcurrent24.json",
+      "sha256": "60fd5da654dee80ec5e1f0dea49253c1da55ccc9dcd35231322fe54f7b151bad",
+      "size": 375
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_ripcurrentpro.json",
+      "sha256": "60fd5da654dee80ec5e1f0dea49253c1da55ccc9dcd35231322fe54f7b151bad",
+      "size": 375
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_tokay.json",
+      "sha256": "1e81c0e7de3c1e76a4bff5cf2e2b97a8cc59fda0bb3a2185a3f34466b49ff063",
+      "size": 11742
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo.json",
+      "sha256": "24d0ad72d39f082ff9d17786755ae634522035e0a8ffeb2319b75304d7315fa3",
+      "size": 71470
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo_proto.json",
+      "sha256": "fcb18d57fa762476f0db5d872f901d45af53dca1e0a91b5dbb5bc1e364a8250f",
+      "size": 41238
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo_wingboard.json",
+      "sha256": "57c99278e034848db68844dbf20c7c7d59cc7e89b25a2d9ebbc7bc48a2e55e6b",
+      "size": 44083
+    },
+    {
+      "path": "thermal/thermal_info_config_ripcurrent24.json",
+      "sha256": "718338f46c561d9d584ef0664783aabffc0dfeca0504222852311ca469f60d7b",
+      "size": 12851
+    },
+    {
+      "path": "thermal/thermal_info_config_ripcurrentpro.json",
+      "sha256": "b0f3b8f05d50913b1f1df7e9c54e660720196af9efbd08171670d6424c10ebbf",
+      "size": 2439
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay.json",
+      "sha256": "dba64724aba91e037534db0aa6934891ed2b85ee84f1842180b14bc16801c38f",
+      "size": 68428
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay_proto.json",
+      "sha256": "9b91eaddf92d05afaed056dce64ef1edb41a9b2078d466252d4b1b9f8f9b7d4d",
+      "size": 37790
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay_wingboard.json",
+      "sha256": "7eb977c89224b45eb035c13fa5d3ff443d913ee0429b796ffa09e1eae33299cf",
+      "size": 45134
+    },
+    {
+      "path": "thermal/vt_estimation_model_caiman.tflite",
+      "sha256": "0357de9ef22a8c26575f941c420d21870e5497adcf187face4ac4f59e031a008",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_estimation_model_komodo.tflite",
+      "sha256": "eb8135f3129904ae4de79ad1140ee095cc0b954fbe5cec7b6284c5c13a41d9cd",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_estimation_model_tokay.tflite",
+      "sha256": "d5571bc76edf03baa044768e0683fdd5ec4807663704fbb07d2cdc97d6927351",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_caiman.tflite",
+      "sha256": "602660cef26285f3da30bd9ad97b3a748f1c8a3ee462c8240a06c39124f9ea4d",
+      "size": 15579
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_komodo.tflite",
+      "sha256": "7b324558014829091f4c8c4369c26cc5c7956337b813d164543fb77c8ddcaf7e",
+      "size": 15751
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_tokay.tflite",
+      "sha256": "810f6ef340617284e6039b968fa9108aedcc3a726f39aaf50af1ed2443ff85bd",
+      "size": 15751
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_caimito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:24:51Z",
+  "vendor": "google"
+}

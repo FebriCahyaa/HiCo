@@ -1,0 +1,57 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_g2-common.git",
+  "codename": "g2",
+  "commit": "210d58fd46a10556ffd3d15715580603c1e59fa6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8d681621c0a67a1d98e541a09dcc60c1e0b0b650218fb57900d6e30cf75ab7ad",
+      "size": 28
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6403974bcfcee8a75a52114e7f3833650ab28c22d4aeaed0bd0a09a16aad93ac",
+      "size": 2608
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a5a8edce0e1cdcd2a3df588e664d7398a731953d031c2efbdbcbcb617c0c2b26",
+      "size": 5397
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "75e4988ad3371808707079ee21184fdcda0e09293fa7738b4dbcd451de227c34",
+      "size": 3162
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c9a544c09db3886d5230abbd26cef5afbee1fd20236a4661c9eb0c34ea7de246",
+      "size": 2489
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "15d7ccd2ddf2d22321352611cb921eb032bf30ad89b8c3d685a01ee3e2d7f49d",
+      "size": 550
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d2860b65d5ddd411f57a150d534c0e5cc1bcf37fb6cfbc3c61ae5f40d0743fa0",
+      "size": 11349
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "141341d3497d0db0ddb6b90b6fb769304b9814c8b45deedde227cf8b6dd13498",
+      "size": 229
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_g2-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2019-01-27T12:54:50Z",
+  "vendor": "lge"
+}

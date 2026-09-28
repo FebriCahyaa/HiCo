@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_karin_windy.git",
+  "codename": "karin_windy",
+  "commit": "17d51eaf2adf97eba20e744c63f7773973891477",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3ef919f0b121d52a1e2bf115e28696a7ec672f433ec472b3b3a66370a8706f4b",
+      "size": 1136
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3b7c19153b3ec9292aa6618f194eefdb8a748199b4c971633c6d00aaf65eb766",
+      "size": 1016
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "79ea899751930f63bb005847bfb849fd7f8cd6b5ccf719b70d7019ef8cc146e7",
+      "size": 1311
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "9b90b519d4ea73384431d7a2031f30874739cd4b44a96f11b3c9a15a36bc84cc",
+      "size": 22275
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8838e063fc7164139936642ab042489d51fa24bb55eec814317d7a18ed50e567",
+      "size": 1200
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d0866e4c4d13261b3e6a1bc67601a24c5388a9a3ea19a9d08473b413a9dd099d",
+      "size": 830
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ee16a908b910f0bcc295311c18a9da939b499b3233ebe33021dd478af855ad2c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "18d47eb69e68a8acdda04f6b1f4af7097410c2ab809c61ec765e2bf6bc4a1982",
+      "size": 19692
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7b4e0df9d4938b5f21673d4689cd53535d20d305208bb243acfde03cbbef1d86",
+      "size": 138
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "92fa5c846095f3ff5d2af2f4e108370f6322e9ebc15b98d0d79af93744b21a26",
+      "size": 647
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_karin_windy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:46Z",
+  "vendor": "sony"
+}

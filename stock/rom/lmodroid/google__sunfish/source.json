@@ -1,0 +1,92 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_sunfish.git",
+  "codename": "sunfish",
+  "commit": "25c39d13cdae045d38a003389516a28a85db02c7",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b28a179029bfad802d1b230d88ab5a2853d1972a8491d25e39281a3d8a3e62fd",
+      "size": 1336
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cc3c0d5329746998e1a72749b8201e6cf20519d203db57f8521f06d9b89ce720",
+      "size": 853
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "c7ff1cad1e73fc460d492f2707ff2031e84b83aacffc7d8358dd5dca9e8e7615",
+      "size": 7101
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "ce7f7c3dc3b54c985ca33fcb826bb81310143fd36e2bb1665dbc229d7e78ce59",
+      "size": 858
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "fe97169fe88a0bd55895d215a4ebd2d49b15108e98f81568af0cfb213446b1f5",
+      "size": 4821
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "b122f382f774232accda4c37a0d7bd39869c320495852e82e41b7f8262b96a50",
+      "size": 2580
+    },
+    {
+      "path": "device-sunfish.mk",
+      "sha256": "445196e925c7f106fcf34930cd7cbe7ae3cc078e31aebb158364d7a161e0a3b5",
+      "size": 8243
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5a969d81443c18b6ec29e74ae3281624eeb6a7f72d39b4af79b73a206c0ca0f1",
+      "size": 28833
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e9ff602358ba010da049894e7a968efd40d1d54cfb4a58835a00eee5dc3ccb96",
+      "size": 213
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "516d4d443f6e51084ec846cfc0745d1f7c978156020432cc25d0e017704b442c",
+      "size": 106
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal-engine.te",
+      "sha256": "a0709d76ee7355fedbd11b49aba74834f6122aa515268ba38746017288126b1b",
+      "size": 720
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "531af437b8981b9927fec3f696348e9e5778f70de9fbe0606019223b3f665c5b",
+      "size": 464
+    },
+    {
+      "path": "thermal-engine-sunfish.conf",
+      "sha256": "4ff506ca1cbe240c36e713330d721e2fabd8a1646d09f544e5be646bf60315e0",
+      "size": 1518
+    },
+    {
+      "path": "thermal_info_config_sunfish.json",
+      "sha256": "ae751e70d5b28a82c5a63438fa4d2945f871c18a10db0892736535536c2e3495",
+      "size": 6056
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_sunfish",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:09:18Z",
+  "vendor": "google"
+}

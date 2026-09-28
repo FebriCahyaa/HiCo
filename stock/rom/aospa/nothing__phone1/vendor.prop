@@ -1,0 +1,64 @@
+# Audio
+ro.audio.monitorRotation=true
+ro.vendor.dirac.acs.forceAfm=true
+ro.vendor.dirac.acs.storeSettings=1
+ro.vendor.dirac.acs.ignore_error=1
+ro.vendor.dirac.acs.startAtBoot=3
+
+# Bluetooth
+persist.vendor.bluetooth.sar_in=0x26-0x26-0x26
+persist.vendor.bluetooth.sar_none_in=0x2c-0x2c-0x2c
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+
+# Enable incremental fs
+ro.incremental.enable=yes
+
+# Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
+# Display
+debug.sf.disable_backpressure=1
+persist.sys.sf.native_mode=260
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
+# DRM
+drm.service.enabled=true
+
+# Factory Reset Protection
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Fingerprint
+vendor.goodix.locked=0
+
+# Hardware ID
+persist.vendor.fastrpc.hwid_version=PVT
+
+# Nothing Features
+ro.vendor.nothing.feature.base=0x428124a040124b4247b97ffL
+ro.vendor.nothing.feature.diff.device.Spacewar=0x80002a4041a032c34800L
+
+# qteeconnector settings
+persist.vendor.qteeconnector.retrying_interval=30
+persist.vendor.qteeconnector.retrying_timeout=2000
+
+# Sensors
+persist.vendor.sensors.sync_request=true
+persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.on_change_sample_period=true
+
+# SOC manufacturer
+ro.soc.manufacturer=QTI
+
+# SPU
+vendor.gatekeeper.disable_spu=true

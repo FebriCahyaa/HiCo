@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_x1q.git",
+  "codename": "x1q",
+  "commit": "c28a000c7ebd633f949b1a33fadd828bbfb939c4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "eced3d43424b862508cb43d1f522ade0c57cf0310be52dba86f4d94d4354fd07",
+      "size": 129
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "40089a40b23f78275896f3c4cadb4aa03430cbbb07c4de36c0176b99a63ffeb6",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0e55449edd2ab56d1c57e12ba4d8b0afb356549dbef80d6c17f0a9f119ad3cf7",
+      "size": 615
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4776208f4810da7d40b15f9435c95088814e450a9a7766ea6725c45e7fcb1275",
+      "size": 635
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a0521449fa8b7ecb52c3adc08b59cc15be218d797411e1960dd8a743ba460174",
+      "size": 457
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "bd064b80c7d0cfb93c0dc75a4e129fabac35db1ec65349c964b699326752afe4",
+      "size": 132
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_x1q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:59Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sweet.git",
+  "codename": "sweet",
+  "commit": "894ae0bb9465ed070f4a11e9d3ad7c3e91e7e14b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "51356f4d215cd4189b7e18f9c108826c745d9493c11261f33ea196c33ad0895c",
+      "size": 236
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4a3c5d5a48d58fc67bb2ae36892c81c7f0b4aac54d35df6dee05255cc9385cb3",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "811d33618df4e3d1de2215d1dbef7f395d246bdb818fa594c30f1860b4d692e0",
+      "size": 1101
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a72e880a2fb92bc7d8239f6dc90fb9ac1e68707ca8a73db93832edbe53d4fe44",
+      "size": 4480
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "60fccdcb26652adda469fc46709f861a3a44890430d6ad2fb9ea5bdccf17a21a",
+      "size": 3584
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8407d0232c285b3405b981d4d4c896942a822e18017327a40384685fe0907576",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "549ee4f5d972c02b560d257c5744414e04d8fa671a67569b95bdd69429e83b9e",
+      "size": 17306
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sweet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T05:06:40Z",
+  "vendor": "xiaomi"
+}

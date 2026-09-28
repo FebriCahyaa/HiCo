@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_bravoc.git",
+  "codename": "bravoc",
+  "commit": "2996278f77303a7c5481ccc7d7fdcde71e9c19b1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3661a22cdbe350d1e8323e04c2adca79db7e6ad92bd82c7e867ad1f42d50fa47",
+      "size": 788
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "405499781af23bea88e758541bcb5a59361b1a77f97a08cdb9af199f144881e1",
+      "size": 824
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fc8ef60f4ba51db2c7b06aaaf73c419e24d26998c97d1151587078c2f3e05a60",
+      "size": 2979
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ce92088a661c4438704e8ff4cb819547893aa9b93755b0a9f375889a4a34949f",
+      "size": 7638
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "549d4dee212466c6b68882a62315c88ea28e5c8985f3c8766b70f52ee389b0a5",
+      "size": 847
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_bravoc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:24Z",
+  "vendor": "htc"
+}

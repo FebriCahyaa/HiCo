@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_deb.git",
+  "codename": "deb",
+  "commit": "25c59513a0ec447dbc6fdec94388e15eb3367606",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c0d781f699c5a62e6f17bbb386488a32039bb7d656e4b18b31971522535a8923",
+      "size": 1379
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "259eed10c1b1d98cf9c6e88e09fba229b866e0be38002659985545edd0bddea2",
+      "size": 1074
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4940955a9073ed8387314cd5c63c45d069cc480b996a0d8def504227b8ad1404",
+      "size": 1291
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cf79e609dc95b5ef9f88cb6f7a9e2d8e8577babf2b0f5198892375ff08acba10",
+      "size": 677
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "970ddc06a8c0716f6b4871c3ad8b0441f6edf8344af4b28286159fb132a00a97",
+      "size": 90
+    },
+    {
+      "path": "system.prop",
+      "sha256": "64f37decb0de29a7cb39aa82de9cb342061f4c4bc9bfa24aef2cbd36cdee5a03",
+      "size": 409
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_deb",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2020-10-29T23:57:39Z",
+  "vendor": "asus"
+}

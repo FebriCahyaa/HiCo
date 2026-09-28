@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sagit.git",
+  "codename": "sagit",
+  "commit": "519a09aa1cc246749650f19019f2a89ef310a25e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e43dccbbcca8aad522cac99fc56a994de912973173c50d7a3c38e9a6a61685f0",
+      "size": 657
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2f2a82b18a3a5c2266ec6c72f70861be256f6dfd2f09b183fa1e2719ccdd844c",
+      "size": 1064
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a2bdd7fd0c99d336df2f04fa4c6fa451e44eaa15e5c6ef89b941694f183f2aec",
+      "size": 2080
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b891542c6f7eee9c5e9a026b5b9846d73baf353dadd2f3437404503cc5ee207c",
+      "size": 1014
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "76727406ea4eacf81e910c718fb6de9e4645b6cd2036e0d84a5bfb93ae2fa7f1",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "690ebe5410168ed5b5b681692ab35b5ec8b8fe720c3bb2f2dd70e0f6b0126c59",
+      "size": 8376
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3c1146f172600dee075cf633fd143ccac91b0d749111266ae9d048b6a285a7e6",
+      "size": 153
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sagit",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-03-14T22:00:18Z",
+  "vendor": "xiaomi"
+}

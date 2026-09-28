@@ -1,0 +1,31 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "f6a02ddb0740a78f91ea878b709f49f854056d33",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "91b83c41aa8054d66db932eae27e4e97d97579ae661246b5376c7e730c1f6880",
+      "size": 698
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "bangkk",
+    "denver",
+    "fogo",
+    "fogos",
+    "ibiza",
+    "miami",
+    "milanf",
+    "rhodep"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

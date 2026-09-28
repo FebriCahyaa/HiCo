@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_pollux.git",
+  "codename": "pollux",
+  "commit": "9484fb840434764dd92199b2ce8784396b61610d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0a623e6163650a2331b947920bc9394165f54924d2a98c0499319c486d994d20",
+      "size": 761
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3a879f4137a3e84655b7f6760fa599fbc61e5c3002f93db2406f8650c286cc9b",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4fc0dcbd7e5b79e08e42b12be1ace5d5b99858da7caf37964fcf0e581727353a",
+      "size": 984
+    },
+    {
+      "path": "device.mk",
+      "sha256": "574634483a3ea4a074c11dfb24ccb64ccc47051b6063e7a54c609611703694ae",
+      "size": 1066
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3b6dd1c1fb000964f79a7e5be6b6949427621aa699cab9766fc39a0ff1844f7c",
+      "size": 791
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f7d27d05648aa59fc3d202ef9aca16e10ae2dcf8ffcba84d037f1098f2c3448e",
+      "size": 114
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_pollux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-03-04T08:10:34Z",
+  "vendor": "sony"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_m20lte.git",
+  "codename": "m20lte",
+  "commit": "e8003124d2a6337642d3a59827eebea7334096c6",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e227a3dd267fba4b7b172a244ba5d02cf1b7ef1d7316ec9c232788d7eda52c26",
+      "size": 132
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "75da6668aaa1a0f8a5fd3fcf6dc53ae7723c4d38cca2aaec1a769a0712dfba19",
+      "size": 58
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7145f04c8c7f1979c231a314c06d550ac8d8954c332a2adc91b3c05f4e92b8e8",
+      "size": 727
+    },
+    {
+      "path": "device.mk",
+      "sha256": "128ddc9fef26055090dcfdeb1a7d7f6c6c34db1d5d6c23ffd2e3d1d156b5aeb0",
+      "size": 788
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c4e009cde6fb28bf00620bcbf977cec0918ed2f8d03b4a156863ea2b797d12c7",
+      "size": 478
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "978700068d78c4c70310ed3d30ee405f1dc1fbca12da1d38397e9d24de5352c5",
+      "size": 147
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "40c13d163c577ccb7c234506e3d6e2a5c678200b475f406fc279e7e178b2f7b3",
+      "size": 3687
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_m20lte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-02-15T21:00:18Z",
+  "vendor": "samsung"
+}

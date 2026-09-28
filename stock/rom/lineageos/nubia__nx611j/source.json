@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/LineageOS/android_device_nubia_nx611j.git",
+  "codename": "nx611j",
+  "commit": "a563b66786c32c10c197469e3c4da6573f06acdf",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "83535abf8f9b2d174aa5733b7501d4f2a5570a8139ea4871000599defa44ed45",
+      "size": 530
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7653e69a2181bced778a0f8b4a6edbc63dfeecc436559f656c05f6da23e79680",
+      "size": 1309
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0c99d4c0dc4e35897d867852e905c591402b9c7239e107dca022914061f9bb57",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "163fcc36af30e0623408370318aeec04c18620f1505a38e973eba9b57c2bf951",
+      "size": 5024
+    },
+    {
+      "path": "device.mk",
+      "sha256": "046f91ff6b273ce8d64c01319f535c96c4dea1b86247c9ad23058980e10df7c2",
+      "size": 19445
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "707d948a4c181e3198afe6d3c238d1271701aa9dcb8f8d9c01c593703236643c",
+      "size": 4818
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3dc5ca0e35f561f8532e0b3597019ef3767179a816c74ddfa060f090402a91f0",
+      "size": 183
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1d1d95ee7cda446510ec5437026caf37783d000697bb9511f39bbf10ebd3dc6b",
+      "size": 36682
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "ad37deee0344f3d6d6295d5281fd971eac25da06837a58cb6e9db80b4519b7a7",
+      "size": 363
+    },
+    {
+      "path": "system.prop",
+      "sha256": "df0d51a3561c52353e086d4379ca8422fbd57af3b30dafbf7d5f0d5689588ca3",
+      "size": 355
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "03a50494f20441012c65b43a617dee2957e6a8ce880547c8ffd4dcaa6bfa9c7b",
+      "size": 6547
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nubia_nx611j",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-12-06T11:51:04Z",
+  "vendor": "nubia"
+}

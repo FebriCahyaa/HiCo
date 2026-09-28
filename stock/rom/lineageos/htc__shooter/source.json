@@ -1,0 +1,47 @@
+{
+  "branch": "ics",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_shooter.git",
+  "codename": "shooter",
+  "commit": "86b0f655b6b02dca590490bf0ee2f8c9b731e508",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3ee40f8624821c05b3f8ff5488cb5cadaa941bafb3af74f43661ff1e27558eec",
+      "size": 86
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cdf43f51dc238c87c7bab0a26f384a0cfbf6aa9dec6b2696238a2ec0ac6ad201",
+      "size": 783
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5fc07af25b8a85f3009de9ee8a94450a0780ea143fc9c70ce683e8ffb64cb407",
+      "size": 3216
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c0807eca70a3f93edc9b5f16256e67ac5d3d5b0ebe848ea70645d39c3e309ef8",
+      "size": 14446
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b1cacd9f700f1f1bd6b7f6ad1804736cd8ab2a1543551276d9e8728207b9952f",
+      "size": 1651
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f7ed1905cc06ee5205225e5dc44c97ff86511b686732437541957378128cb1b7",
+      "size": 879
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_shooter",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:40:26Z",
+  "vendor": "htc"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_hawao.git",
+  "codename": "hawao",
+  "commit": "bbcedf62dc2d6352d3a7d1a3928bd2d854042884",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "746a075af1e51bef208058ab126cb579cce15cb4867a74a7e7165cfde08844ac",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c67893abde293e0ac8bc81ba5be78d147d3a9b2f14e54400a414f20c424f95e0",
+      "size": 1959
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f958c77d9e6b113891d32a6ac770e10fbc573458836922e69909b403b51609e5",
+      "size": 2463
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0cfa7eaf2a719c64ce5f1e1a1cefd0df96427e43e3f83ffae7154b83b964cd67",
+      "size": 1707
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "69a08e94762465c85b26f6b4784122ed76fa74fcf8140e5a391f6b60d9a4dbe9",
+      "size": 233
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6093bdc822d65ca8bb5283ba9cedb3bfaa377b48e5f77613aa8c5ccfc1a23542",
+      "size": 11215
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "41d350d03c83cd6d37103dd1931265d9376a1aebf6d659cea34936d100436a56",
+      "size": 443
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_hawao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:45:11Z",
+  "vendor": "motorola"
+}

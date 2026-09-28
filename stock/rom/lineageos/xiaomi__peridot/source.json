@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_peridot.git",
+  "codename": "peridot",
+  "commit": "36d1462f9907a218e9e61206beb9f40d87a8188a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c994666d24b6ec459d865bb66cb8c59b92775b89b6f01f795ab220201c1213f8",
+      "size": 1093
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ae181b990aa21a8f5311a8903a236f419ccb1acd477a1e341f38d69db24229b3",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6c95f4e94d94985e6301cde9ee4f29924f2a8fb8039c2466290a78c83f34398c",
+      "size": 9887
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ef6886678d7af1744621969d35d2ba611a7d282e3b1d7fd81f91ae9d7c7c52ef",
+      "size": 19252
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "8a9da0e5f83a99c162cf24df3d04f8cc8e2885b3355bef579f6b16bc552f7d5a",
+      "size": 15358
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0511faaa6f8050e19f61454f256afaaac431425543b8b63dca85cfe0f9c58043",
+      "size": 437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cf019fb3ec0c8bbf707d828063ce662506765b157f84dc946b2d2162d0398b28",
+      "size": 112587
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1ffe96ed1452c31fa72bfb0f20b50b06592bbc465497311df8e12b0258a7eb63",
+      "size": 1815
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_peridot",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-27T11:18:50Z",
+  "vendor": "xiaomi"
+}

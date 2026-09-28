@@ -1,0 +1,77 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_realme_RMX1801.git",
+  "codename": "rmx1801",
+  "commit": "906cd32777bfd6a55ca32d68cca3590a45e5c7e2",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "373d767e0ce0bb3599428a917232025083e18842d9d5150342e5767ddc98021b",
+      "size": 5276
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cee1b54fe9682112e79d032e64966b14ceeb548d33ce0f3f3e84260bf958dd29",
+      "size": 764
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d9c5f27ba69e46f82f5eeee9494607fa3c20840ac2d49caf8e8e192af14e5483",
+      "size": 6416
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "f58fda56ecd5c34c3722b9f2e45e1206f07d93b803a8e989688f29176ee1e604",
+      "size": 3693
+    },
+    {
+      "path": "device.mk",
+      "sha256": "356feb7bafdee609ecfce33d8b752f0f6f167d9596fca3a716f2ddf46570b216",
+      "size": 18557
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "468e0a7f339d9deabd913a640de14d1938d404fe64b0a98019871567bac87088",
+      "size": 2226
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "93341be7fcb497160981281ebaa6f296da3a26c19cdad496c52bbe632d37dfed",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3bce2203d202e38f3d64f7a9b77f32c71195cd76e8bbfd113565a116f0da424",
+      "size": 157922
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "cbc7b03e13f147aafa12591440f9fbbba37c76965cf69711677e9285e59dbdbe",
+      "size": 269
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0e152dcee1974b38277e9531f9ac6dba6435e0ea757b3118777a65dd9196f660",
+      "size": 2647
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ba3802195c5b68f269878bf2747b18ec8b17ee5ac587c42487362e99a2deb320",
+      "size": 5518
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX1801",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:04:33Z",
+  "vendor": "realme"
+}

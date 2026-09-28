@@ -1,0 +1,42 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_geeksphone_zero.git",
+  "codename": "zero",
+  "commit": "c75114bde2fd1de7b567083ad658b57da7ab5055",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "91dbd90e608fbb0e6934d51150d69c2305c8d1b35254b5b3b2b70fc0bbbc1afc",
+      "size": 103
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fc2649a9a20544f0852929683216187564ad0529ff2a4631f14c4170a890af63",
+      "size": 48
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "520ace2a112221f05ba236bba13768ced67d3c726bc6bdb9114699f1f5b5c0a8",
+      "size": 2271
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "760f4858e857d09b7a54d8fb446c303e7470ffbbef6639619aaf1ea819e2a77d",
+      "size": 1578
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ace43e441742eb74753fdf4303d77ffbe213f2d0e71d844a9e9c76513784215b",
+      "size": 720
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_geeksphone_zero",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:52:10Z",
+  "vendor": "geeksphone"
+}

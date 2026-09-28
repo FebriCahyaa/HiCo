@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_munch.git",
+  "codename": "munch",
+  "commit": "f8cd70ece747a6aadd559b05cdd58f8c445e9b96",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e4800d804497ae9c5c2db4205da914d8cce9b89bf355564a47a820c09217e1f8",
+      "size": 204
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "415d55a223c88a66ee5a5a39cdf830fa3a0dda4c251898ffd1df317e07b0f112",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "06cb974f256ce0e7e667084fbbbee11f251529a1070ad63cd81bf7c9afa30766",
+      "size": 612
+    },
+    {
+      "path": "device.mk",
+      "sha256": "253f72e149d7c83785edae8de20394b6e22303ca994169289e6a6e01c78a52e1",
+      "size": 1130
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "622b6af62452f82adc64f4270f5a5c61011860e4f19bca4c88a80a150f6685a1",
+      "size": 773
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c96b43e4839923c8fd3195a8fa52879b2b286c6a3bce77389002ba1d2b7737b7",
+      "size": 23550
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8a22ef203f3c6bf2b37c9bc0bbf1dd403ed9e27f04a7d8c28497daef6e6b1399",
+      "size": 1464
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_munch",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-08-29T08:11:12Z",
+  "vendor": "xiaomi"
+}

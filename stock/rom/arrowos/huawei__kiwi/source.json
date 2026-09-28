@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_huawei_kiwi.git",
+  "codename": "kiwi",
+  "commit": "8beb81c0e905382cc1ba1081c967309c13ab0d4a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6375f0004cce2bf2e2193d061af194bc5360c6f7f3cd954d8f903d14a8807c66",
+      "size": 48
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5d13005d8fa90e0345e942e7836c7e19b87692b8335c6aebc66a5cca1883fafb",
+      "size": 2869
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6cf02652d5db08f25ecf18c5efd18b93efdee7417b3889ddd7743a81a331f785",
+      "size": 681
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "37684547cf2b4a9bb0d92d902d58f4bbee8aa986cc13d82ea6ec2ab3a3105748",
+      "size": 5740
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1e6ededd0f930bf43120cc31bc96aeeb4e9e71a940b6e77aa3eb06b89f7b8c53",
+      "size": 3444
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1a0bb5540c793dbcb6453da03d51b6e63cabcded6d2b179cd3a04a147661851f",
+      "size": 12602
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dc7dc737a6856438249e0c05b0809e025318e56097a1e185e0bd9dcf7c896cf7",
+      "size": 1485
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2b4c8d823d12656fd9934565450a4968cc56b38d254efe5a039a75e688f5ec2a",
+      "size": 29757
+    },
+    {
+      "path": "system.prop",
+      "sha256": "801c3868f521e351cfc22b24c9166555b6122dc3c9be05c47be8688a674f01f0",
+      "size": 4131
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_kiwi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-03-09T08:16:28Z",
+  "vendor": "huawei"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_moto_shamu.git",
+  "codename": "shamu",
+  "commit": "3f48ed4ec509c59465e1e3833b74a684b5569f2c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "093dca33ada5d6d934641b3129d271c5d9eacfe6fd56d552726b166ae5e355a7",
+      "size": 1147
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f2ffe9bdbf0c1fb72b8a2bea691439921ad5769c63a9795553245ab9c495aec0",
+      "size": 686
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b230902ac1fd527b96d8c972f0a540b014c526f0279da252bf3f323c20981880",
+      "size": 4505
+    },
+    {
+      "path": "device.mk",
+      "sha256": "600d613013104d8498ac6c2e696a60da29bf3c28f72000ae8e40a62da64baaf6",
+      "size": 15570
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "80cfa2e47b53f39e2a7abd80152c187a599bca8c6bb044c4530f250aff35898d",
+      "size": 1011
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "6410d9710121276e4959008892c49a0422c110a8838fb2a532e2a42ba7ca9723",
+      "size": 887
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "d92dd99f25f0f3ccf0d5e3aeadab735ea73284a93daebf2633ed70b40c517685",
+      "size": 8410
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f3d309608ec4b7fb5d4343f502d55178e74e712ec266e006e6eea9556ac9ec63",
+      "size": 638
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_moto_shamu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:40:02Z",
+  "vendor": "moto"
+}

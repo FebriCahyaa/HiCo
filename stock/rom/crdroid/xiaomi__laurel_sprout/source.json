@@ -1,0 +1,57 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_laurel_sprout.git",
+  "codename": "laurel_sprout",
+  "commit": "356d8edb5b2d12a752d9cf4a655ab34e76d5c58d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2bdcb6cbe66499848c7a545fb347aed5ba070a81a30b2e1298b2133b6a1b3609",
+      "size": 671
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2bc51410e84a0fa54c8a25ccb4fcbac2ef661743f8a773b07c06b59102ca4cdb",
+      "size": 1036
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d0dd6b91b05fc11b63f1f633c6cdd223632f906c1c5922762ec05b72b4cfb0ef",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "21f996bebbff69773bed6204173adbbf4377c3e6a704faeed3a26d224381f54e",
+      "size": 5548
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b025e46393acfe2f9b2c9d792c170bd66bd0c33766796420b88c73c0bb30f436",
+      "size": 13175
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "75db51def9c7a9ba6f0998c38054f5eeeb8b7b6a675db2b98422a349d750e606",
+      "size": 3816
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "28a3256fdaf612c85e37cdec9397b89952611753029a623b5f26bc7952363b5d",
+      "size": 88883
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "7169f0161d0bb3cda3f4ea01b3da7bf5c2b0ef73f76cff915ed83533dcee975e",
+      "size": 340
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_laurel_sprout",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-01-21T06:41:42Z",
+  "vendor": "xiaomi"
+}

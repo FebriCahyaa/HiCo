@@ -1,0 +1,57 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_ghost.git",
+  "codename": "ghost",
+  "commit": "a01939033b9c1e6666ad511a75f5935d3bfb4d5d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e65632d10eda0ef103df2a46ebf6292d108f8c22cc8000609c58cc3be8108c9b",
+      "size": 4030
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f9359820952127b262fff813875d5d4cb742d0eb005bc243caa73c9c8ba5faab",
+      "size": 644
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c3748e0d6a20b97ba1cd02b04352654b219a42ea3d90d2a87357f811eba44c72",
+      "size": 5439
+    },
+    {
+      "path": "device.mk",
+      "sha256": "67f1aeaf01c927ad49c5f244d4a5b2796f70e90ade378464e11c4e699de7cb5a",
+      "size": 9177
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "003c530613c2e29013b781633df8e9d7ea262675e18e47d33a5776d8a88f718e",
+      "size": 1217
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3dba8715fb161111e672e603a67179a07b656bd69d1ff66ce1c4ae5e80ab51f7",
+      "size": 7225
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "6d48177f2629bc50c31e2401a36e8418ab10c72b639962f07dfb26fcb96dbace",
+      "size": 984
+    },
+    {
+      "path": "system.prop",
+      "sha256": "fe371ad61570adeef3081cc413ef1237cf2b8a92b27168081842e4485e59c1e2",
+      "size": 1980
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_ghost",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:13Z",
+  "vendor": "motorola"
+}

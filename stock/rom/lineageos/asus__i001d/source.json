@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_I001D.git",
+  "codename": "i001d",
+  "commit": "1588611f4996a827433795849cead493ef595358",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "175204e38c7ccf5f4f663acf2ec9e49e4de9b322f3523f5e0499af7e81a986e9",
+      "size": 711
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e53337083ed5e49daa12b2f6e6b50d4460cc785944ef74309b9b3877c0ed5013",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "237ddbae351e9eaf97116669bbbd510110dbe725e350437679da4f0bddb31188",
+      "size": 4151
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b80eedc0fae12ad8e7556d28ae19acf5f4cdf4d634be985811b5c0d1c2107094",
+      "size": 5253
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "763feed3107aba4eaefc4fde3a998382bc30baf5b68116cd1cbc46c8db554253",
+      "size": 2323
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cacd4ec1a2e87c722548642a6ba9b436317d055fbf4d8395c6c1d00d080d2bea",
+      "size": 96
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "07104885f103ae15752cf5b806135aa5f7ddb4dedca78ea636fedb6b3b81788c",
+      "size": 6207
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_I001D",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:09:41Z",
+  "vendor": "asus"
+}

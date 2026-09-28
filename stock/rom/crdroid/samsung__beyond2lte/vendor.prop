@@ -1,0 +1,17 @@
+## Bluetooth
+bluetooth.device.default_name=Galaxy S10e
+
+## Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.sensor_location=1080|265|250
+ro.vendor.fingerprint.supports_gestures=true
+
+## RIL
+ro.telephony.default_network=9,9
+
+## BLUR
+ro.launcher.blur.appLaunch=0
+ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1
+ro.sf.blurs_are_caro=1

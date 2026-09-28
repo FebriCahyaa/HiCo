@@ -1,0 +1,47 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_ha3g.git",
+  "codename": "ha3g",
+  "commit": "dd3eba4d0f50e96e8f1e9f6b168a653c17e4f1d1",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b2694e9829bb7d0cff5665ea165f5dbb7863cc52e96d206c6488b45637911ae0",
+      "size": 713
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1f656eddb3a8092e96ccba0779f41f3f19a9919988072514d973146399cd5291",
+      "size": 2488
+    },
+    {
+      "path": "device.mk",
+      "sha256": "25bc28fc8c6cf8a1685747ffee70aad6455637228021bac6c16bb5eb8ccb323a",
+      "size": 4105
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8f50ac01d09f920e3316f20c0058da4852307a06b2f01cecace1c9e0b2c982fe",
+      "size": 1154
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "48d008a8ce207e78ec2822c8e3a6e177f5c300697ca073e1758c9684b88e0fd7",
+      "size": 139
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2598ed410cf47a92918d3bb48fb47fb6fad313aca1e767023b15c4d9733dba17",
+      "size": 291
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_ha3g",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:21:48Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_zeroltexx.git",
+  "codename": "zeroltexx",
+  "commit": "6ef8aaa9df17aca6c0ea604e0d28b0562295efc5",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4513f596817820da1d2e25c4058a5e57bd943b92ee3eab5871830f48095292de",
+      "size": 1126
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9db02d80f0cb52625f81409192bb5a905f2f5cf1a031902f3544b3970953ffbb",
+      "size": 88
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "21f40b6fee26d7f280c92e31681a91ef9d6531b9e20a3598c476bc3d787ce590",
+      "size": 1252
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f367ff05b96aa3b496a613ea3c5d278bd4c7e6294786a00aa33f6f17bc716be7",
+      "size": 1209
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e4a6d80212bd636a1cfb66ef78275b80ee0864ae622bd07de0a33f9bfcf99788",
+      "size": 738
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a63b72effa9fb716a988b0be3b7c15c4872d2846b6f8a86ca5846fbfe5ca496d",
+      "size": 128
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_zeroltexx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2019-03-22T07:09:39Z",
+  "vendor": "samsung"
+}

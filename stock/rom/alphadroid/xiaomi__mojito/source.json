@@ -1,0 +1,82 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_mojito.git",
+  "codename": "mojito",
+  "commit": "cfddc7636e64af33c3b552900751cfc052afe1af",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "103027d13db49f21c953c440c9a49ee4094ac477c6c1ff8ad66564d764803bbe",
+      "size": 4801
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "82cdc2a33ab0abcbddf9f929bbfbc16588770e3502f765a2130532ba5859d029",
+      "size": 253
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9b990b6006b0008c08b5692a56b19631fc3869abf5755af0bbe2b68d49e617e7",
+      "size": 6937
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0b176108423806d50da300d5dbf0ac5f9be61b0ae35e8ca1c5f04c504ba5f8e6",
+      "size": 20698
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "75f7e5c4b4668e6e70e0eb4a3d2e9ef216abb6e80c7046c34cf1fd218b70382f",
+      "size": 1579
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "26c5bdb710d189688b7c4455a5db202cf7a00f248f0a251c7a7e35ad491841ff",
+      "size": 1451
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "197103c2fce4d7f2e35304e1a0d58274200d0a9558cbbc5a1fe52b48e6f54d34",
+      "size": 3317
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "292c7ba5448f6ef0498ebca04564031955a0c7f7c1540510b41f8c0f66807861",
+      "size": 16171
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6a1028506384fc033e3c750cf8b3fe732e3929b250205bb52efe95ad940ec254",
+      "size": 55387
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "679bfb6e4928b051692a76aff9bf719e166f160d930eec01b7a5e9961eb9db5d",
+      "size": 866
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b4347f458564fce246a041b31d6256a1def6e54c8046cd43d17d4aa5f8193aec",
+      "size": 266
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_mojito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-05-08T06:32:41Z",
+  "vendor": "xiaomi"
+}

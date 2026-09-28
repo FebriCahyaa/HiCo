@@ -1,0 +1,25 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_lenovo_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "689b16db2759b7aa3b4a4e13654bb16eb7196271",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_lenovo_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "heart",
+    "zippo"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "lenovo"
+}

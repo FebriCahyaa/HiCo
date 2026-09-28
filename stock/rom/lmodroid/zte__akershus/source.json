@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_zte_akershus.git",
+  "codename": "akershus",
+  "commit": "d013b92ad3895b5b493d0af4227892e08a029f77",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c8b3819fe986d60186923e5cc22e8ae2662cc8034805dedd0ffe70ca38b0700",
+      "size": 618
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ac956d06ec7673b247b0f9dd10f58bf563c6fef77306993f9ed6302f4ac5e6c6",
+      "size": 154
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6356318f7c70dc6362e5942efe864fa4d0134dd6e3c60e5cb433c2dad800f6a0",
+      "size": 5631
+    },
+    {
+      "path": "device.mk",
+      "sha256": "504a19a47eee0956574702cc74c35316eb937790d0fafa21ce2382330688be7d",
+      "size": 19666
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "711ae38a90e6e08676a0b1b1459f17e32709e9a354c337d6699c970ce2aca866",
+      "size": 3915
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9b3b574ce8ccec08e19f3ce92cf0b5393b844cf992f37b1ada95b5e17ed6959d",
+      "size": 60393
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4cce35c4c3dcf009fca278ec56601ca16043b7421fd57f38ebd5cf1c85c3fe10",
+      "size": 2390
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "00ee2d27cd832508baa62776e9ac60e5dc2a1014464e124d0f53b72617654033",
+      "size": 6295
+    }
+  ],
+  "kind": "device",
+  "repo": "device_zte_akershus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-08-14T03:08:03Z",
+  "vendor": "zte"
+}

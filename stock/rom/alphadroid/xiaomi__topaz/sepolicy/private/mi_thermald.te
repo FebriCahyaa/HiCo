@@ -1,0 +1,4 @@
+type mi_thermald, domain;
+type mi_thermald_exec, exec_type, vendor_file_type, file_type;
+
+allow mi_thermald system_file:file r_file_perms;

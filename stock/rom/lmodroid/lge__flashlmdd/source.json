@@ -1,0 +1,57 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lge_flashlmdd.git",
+  "codename": "flashlmdd",
+  "commit": "598f528702eb605500731835d296c4c58c8e2e11",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "80b92e89a9c9686acb9ba11e9b4f66af2edc866ba0f802a1ac423cb20c70e6fd",
+      "size": 220
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c10d37948f6b35d0a35a405ef9f0f2417de41d8c31e4a250f25e15ebab9ddc7b",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fca7ba498762bbdbc492d8997f80ea69d87b3b47d1755ce1d490ee3f4cc246a5",
+      "size": 755
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a771bd98150afc9e65230127771a96941b6169e5a7eb353077182e7099eadf35",
+      "size": 2961
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2ab800100ec64b86994e34ecaaa6b7dace65c7b636d3d64032f6b059cff65293",
+      "size": 957
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6382d91d045abd4c6ea18da4ae1804bf7b43a40af7235e49eb9f0323b33c19b7",
+      "size": 45317
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b21bb6b9d6beaad09a5231e4acc6ee60ac2ce0ee8312af16510d2f681601547a",
+      "size": 75
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "31926ba7604d343a0573111d1612d52e6a63f81fedcf430ee7c938c80e4b58be",
+      "size": 341
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lge_flashlmdd",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-02-14T06:00:26Z",
+  "vendor": "lge"
+}

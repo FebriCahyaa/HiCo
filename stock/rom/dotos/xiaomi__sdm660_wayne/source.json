@@ -1,0 +1,82 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_sdm660-common_wayne.git",
+  "codename": "sdm660_wayne",
+  "commit": "e5e21c39faf49411ef0e58450a6718419dca9a66",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8c5afc0177150654e16da629460e8d74698a39491c0b7bb5b1d8a1d7ba315467",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "21de426b8815ef8e83c58ac713c4c72138247736fb56921b4e6adc7d1f27e6a9",
+      "size": 5468
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ee9593e86bdf095fa9ac8552f0baef21e97aba04113529a59b59dfd0c409a6e5",
+      "size": 7131
+    },
+    {
+      "path": "configs/thermal/thermal-engine-battery.conf",
+      "sha256": "cc5fea645a6f26fa96a55c3b3fd69b2aa823d4b000fd4b4fd779877f7f7e14a3",
+      "size": 2544
+    },
+    {
+      "path": "configs/thermal/thermal-engine-battery2.conf",
+      "sha256": "cdb316615c7931a12ddee2fe78511245c24ed2b690a369c0c19f4275737c8485",
+      "size": 5133
+    },
+    {
+      "path": "configs/thermal/thermal-engine-default.conf",
+      "sha256": "878eedd39e664ddfa3cc9aa3ab0b102253c940bc9f1ba70a79869c3ae4b4c912",
+      "size": 2544
+    },
+    {
+      "path": "configs/thermal/thermal-engine-gameing.conf",
+      "sha256": "79ae98107a6cd9b2c8f8a4b578443afd0688b4a7b34a7c945927a699a81dad91",
+      "size": 2545
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "d644be9908cc5f33bf9ecb5fe153ee8cdc0f68b98479fb1743fdf432ffeed004",
+      "size": 165
+    },
+    {
+      "path": "configs/thermal/thermal-engine-performance.conf",
+      "sha256": "8df1b9f0b12c7834ace6a1d14c7b995dcec5222969635c9d271329d399e4a921",
+      "size": 2545
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "85512f23a8442e48f467d92083b84d965dd7e1c7f7532ed69f55ea1b3d4620df",
+      "size": 4710
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6696ef71841492b772115c99645c057ea628aa291d6efb848ee0e59197b0796a",
+      "size": 67847
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "968e46c46e79e7add4a672d9550b65d9da6b7297edcd405af2ce4b1f1662674f",
+      "size": 364
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sdm660-common_wayne",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-05-30T21:02:40Z",
+  "vendor": "xiaomi"
+}

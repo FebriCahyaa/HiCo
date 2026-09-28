@@ -1,0 +1,47 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_trinket-common.git",
+  "codename": "trinket",
+  "commit": "9750dbacdb54a7e383d706c60a76c48524690a67",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "65622acf40b909709e57c49bf1dab36b3b8182ec1e518adf1432884cc6c189d0",
+      "size": 213
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "385dfc9bf6972cc910ccd66d5d462583bae9bc2a55555a66171758a76176aa5c",
+      "size": 3820
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c47273370c16502e165f1e7458dab34f55eda2307c47a1bf402b233e8b91b51b",
+      "size": 2901
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "10b5e2c1447339712e53eecf6691b3a80b3f7d521ee94262a0682c6efda8cf2f",
+      "size": 1293
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a7158f454fdb3b0309ec72ba6d7b7d784e5916bd94c3d16b2f0eb99b6ca84017",
+      "size": 37258
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e90631fa1dc3c3ff81e3e01753cc39def006d1845ed39536f9d044b43f0fb7c2",
+      "size": 3980
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_trinket-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T17:07:54Z",
+  "vendor": "xiaomi"
+}

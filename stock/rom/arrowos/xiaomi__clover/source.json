@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_clover.git",
+  "codename": "clover",
+  "commit": "0131915db7222d591bf7145af9ef1bd819e08e2f",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9fc27e82ecaac69dc25dcd6f5013344e834597439eb0bac44dd3c80e93718471",
+      "size": 815
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4e719a33391ab13d50e9ba727c006c73800cb7708019f65785945b9f2228c550",
+      "size": 755
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "eb8cdaa31338ee93c7e10f8f30cfe3e88992eb282e97482ea9571c0bc4c8e495",
+      "size": 1641
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eea5316b950bfdca6083df15f916919c1950a6032778da12790ca14a14a5cf5a",
+      "size": 2919
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8240f9627e6c213ba85e20d9dab7ed2923f43c28196ddd6837899cbbf172a3c5",
+      "size": 906
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "236920c97b32e1713fb88c5e468d175a0474f86da0b065ae543b789b218a87ec",
+      "size": 19811
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_clover",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-08-23T06:40:26Z",
+  "vendor": "xiaomi"
+}

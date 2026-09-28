@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_kenzo.git",
+  "codename": "kenzo",
+  "commit": "9343021087b73731b5e828f34ef6dd019c96161c",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "361f76bd2d572b46bbff8fc45cea10285cc9858519be90e2c02eecb8adb48b1d",
+      "size": 1061
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f534ea4d6d5f87d2aa6d28937ae2d16b3e09816a3c8e7044b534ddd698f1b730",
+      "size": 678
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8187773d476e05eae466c7c6ae89b0558a30e486aaaeb77ab6e474b2f92031bd",
+      "size": 1309
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1f749ae2f66f91288d131c037068a40063f470be1dcb86a08433e529b737e88c",
+      "size": 2132
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2f1e9caa0fd65985171ed4608eb5653a3cf02fe69da9ff9962fdf737dd188821",
+      "size": 834
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1cca91c676762a53025007a2c5c8364fe0dc5e0311ed2fbd7a1d1701b6c1425",
+      "size": 21837
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cf6d5f0d58d4f2abdabba719bbef32d344139d97ba973fceab4d03caa74f126d",
+      "size": 402
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_kenzo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2018-11-05T12:13:52Z",
+  "vendor": "xiaomi"
+}

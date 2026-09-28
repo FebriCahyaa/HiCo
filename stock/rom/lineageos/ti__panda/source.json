@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_ti_panda.git",
+  "codename": "panda",
+  "commit": "232b56aaa83c04c5858efc2288185e84084eac33",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8e66bf0fd96496438faa28184ac365879046f7af48d589f140dd6f455736f7ed",
+      "size": 1195
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "410793d656c1bb3878e9d4f65279ea6e39a7f4ccb00df8b47ab8b4a79d130668",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3b1a76f17a94e6a99ec32d0d29ba21f044bc7080038a11d98ec05acda418219f",
+      "size": 2369
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a58c4c89245338603e1f3b325c7eee7ceaf644ed0633e636ffe027a664bda951",
+      "size": 3087
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "ac7c3268ec72204f3cc70b6b0ffb7d61bbbbd68e650d1a89f4e5e817d30cc964",
+      "size": 642
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_ti_panda",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:49:24Z",
+  "vendor": "ti"
+}

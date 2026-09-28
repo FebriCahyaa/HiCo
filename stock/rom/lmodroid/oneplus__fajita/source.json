@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_fajita.git",
+  "codename": "fajita",
+  "commit": "4a4f251ff37230e232e341fede7dca7544b55a79",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c8621b1524b254d035c1e5ffdc8857fc035a0e4f487fb2a6392882a2ebc8471f",
+      "size": 659
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "15b23849da6e70ff85fc59dde41a5ee7c2ac3a358b1f96ce7e1c5354dff10e50",
+      "size": 942
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f649721fca078ee0da304a992a627f55340b388bebd89374dd3862a535d11d6a",
+      "size": 2006
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "55e360ab3a760cd23da17fa53e77c792ebb5f51ff5a4d3bf3c66a0d2d26a89ae",
+      "size": 608
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9e762ed331a3dab194289d29189bb9f6595cecd444ce0d327bd7ed5a16b4eadb",
+      "size": 1504
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "80c4759ccafe379f184ae9f41e84967c0a7833c721814fad6c50ae980546d5ef",
+      "size": 97
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_fajita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:51:32Z",
+  "vendor": "oneplus"
+}

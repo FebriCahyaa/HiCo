@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_serranoltexx.git",
+  "codename": "serranoltexx",
+  "commit": "cc194239f8da8aeaec1c99e5b060193afb6b0275",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "844a5f5af308b5ed304731e35f7aae9c55a78fd3c567bb47d5dd4bd9ab6ac73f",
+      "size": 719
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b7111b96b169b13933d50cad77a2186bb538a228ecf1324aff8daad3ab5c8790",
+      "size": 1355
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f1662113848ea45f367836c8d742917e93639d24cc6de7a573efb77e4e141833",
+      "size": 1302
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f27339c7d57e3fe892edb80f453d27ade2cafc345d3d124af94dc41764a2d9ee",
+      "size": 478
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "076285644486d7faddf3aea6b92a23685b601ebfff307a5c34656bf50e667c09",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c92dae32c441579ca24eed5921ff9eab65909ebee6c8c2ac62abc605c3893b79",
+      "size": 253
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8b1dc38723d97a9ebf1a8c9b7b3c57aa1688001cdf214042c5d1db0dc74b345b",
+      "size": 150
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_serranoltexx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-01-07T19:53:47Z",
+  "vendor": "samsung"
+}

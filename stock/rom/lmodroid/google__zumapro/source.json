@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_zumapro.git",
+  "codename": "zumapro",
+  "commit": "673a806d652586e2c1606bd12331e000d0299f22",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a9e5803785ce675a6e4f1a95cc58a97c2ff6f1eae16f92e5058ddcb35e6097a6",
+      "size": 1727
+    },
+    {
+      "path": "BoardConfig-16k-common.mk",
+      "sha256": "7ed94f5f641172b7baa7a35b5411e4dfb2208e8962b170fbc0b11692d82dcc02",
+      "size": 673
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "97c6531766f2af3ecd102caa4c1a496e16cfbc1c223632963a15cea9d3c8f540",
+      "size": 16681
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "fe89d6e967a0a4e2aaacd179ca3cb1fbe7eaaf424f15f784fefc0f3d3757e367",
+      "size": 1327
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "00814921d377476689e8862e201cc05f5eba963b497057ddbdc447b166b2b7d4",
+      "size": 2838
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "860499a926028b5fc93923b70cc19094fa23f39a2550939abb8d4c492b3be4c5",
+      "size": 650
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9140b4554174c55bdef6b26478c7f969d3b00b22e1da4cc81932526c559595ff",
+      "size": 47624
+    },
+    {
+      "path": "sepolicy/legacy/zuma/vendor/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "67529879f9ff8d9ed58403ef4c38cfe6a9cb3cf380d1b6f11b52ec65648cbc30",
+      "size": 23
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_zumapro",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:31:52Z",
+  "vendor": "google"
+}

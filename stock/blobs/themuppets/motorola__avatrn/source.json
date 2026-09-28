@@ -1,0 +1,49 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_avatrn.git",
+  "codename": "avatrn",
+  "commit": "edb8ce2e1782b5ba2be57d198cdfc60bda95f8c4",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-avatrn-camera.conf",
+      "sha256": "f63c6393dea220db47e2156be0538e1b8d98b0c72b8344d0f5fb253aa70e335e",
+      "size": 4158
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-avatrn-fastc.conf",
+      "sha256": "fd2bd6a36af880733a535140450b6b3b738c38b1b8eadd5d47d843d7ac01ce08",
+      "size": 6550
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-avatrn-game-perf.conf",
+      "sha256": "789f08095d5ffea31eec6b9fd9df531ebb4cf79168165bbb05b76dd803275639",
+      "size": 4037
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-avatrn-teams.conf",
+      "sha256": "24dbced35f28dfffa1502de7d4cacf8e76e40fca216da4f2fb27c28bc6787d02",
+      "size": 4203
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-avatrn.conf",
+      "sha256": "24e5e73f897bc12c3c22a024e62596ec1072ee2fe19804cc24806d3d355fd55d",
+      "size": 6442
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_avatrn",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "avatrn"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

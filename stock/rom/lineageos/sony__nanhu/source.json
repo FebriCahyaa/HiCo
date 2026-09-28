@@ -1,0 +1,52 @@
+{
+  "branch": "jellybean-3.4",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_nanhu.git",
+  "codename": "nanhu",
+  "commit": "7f13faae9ec660a5c72d08377bf52fdd0d65856f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "397c6db3d23eb54ce4bad90bfaff22cdd8f0844d7a35418357f0bf1b20ebf2c8",
+      "size": 122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1b9b1b35393036234a7860cc1dd35edc6b83f422a9fe36a7ad75c4fc2bf16ee6",
+      "size": 54
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8e8a9b996d9f459e0751102acc2e73442178073d01a64651acadf944137c4590",
+      "size": 1436
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fa364925d3a7d56f85e98a3ce4147bee537070321cb18311861cf8b2f733bf99",
+      "size": 586
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c5450fa3de1c8b3751181cae90a0b4c33e1edade61150f36d00c9b0d6dc91e35",
+      "size": 3223
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e1c87d9ecf8178e8c649c8786ad9ac9eeedc3872b66c7e0cb0ff45ab9919fd99",
+      "size": 70
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "1abcaeeea3cca3afcb77b206498102175983bc8777ccd82964f94e97a110daa8",
+      "size": 29
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_nanhu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:42:27Z",
+  "vendor": "sony"
+}

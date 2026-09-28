@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_guamp.git",
+  "codename": "guamp",
+  "commit": "6a7d9633aa340e5fdba357e24b570bf76782decd",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "85f2f6380eaa12f11495cb421e33232ad395cba4b29e3db4eb506286d6ea801a",
+      "size": 548
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-guamp.conf",
+      "sha256": "52ca99d561feb518580ca45530a9ec5854795174b099873a34d303eb80bd5a0c",
+      "size": 2105
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_guamp",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "guamp"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-21",
+  "clone_url": "https://github.com/LineageOS/android_device_zuk_z2_plus.git",
+  "codename": "z2_plus",
+  "commit": "d07080b24591199b440ec327253b524ddc48d0d4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7fa41813679c0c94091c3b3514eaeec76c26622708b25e42d2aeb0f5583437cd",
+      "size": 1180
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d4cb32ce72e4cb0165d6fa88af477ff204db7a92bd1e02156d9e5821bf47effb",
+      "size": 762
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "58352973b4ddb8a463f9f21efe2357a0e35fbe78813bd2dddc831b0e9b5511ea",
+      "size": 1386
+    },
+    {
+      "path": "device.mk",
+      "sha256": "654a8aed4630a36578d2e77bcd8299044bdd75943fd55a1b7bb92acdcbb4280b",
+      "size": 1564
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "87e0fff88cb448caaf9929d892e83b79680f1f39d4ec2d70a24fee622cd0db5c",
+      "size": 1020
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "96e4013a41f7f02655475ab2b9d0230f4ece71cb406e2c5f386cd450233f5475",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4da8b5ed50c4464628f561d14027d0e648fb7395d4901b2eb6ec0afcf505b6bf",
+      "size": 3740
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zuk_z2_plus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-12-26T22:00:18Z",
+  "vendor": "zuk"
+}

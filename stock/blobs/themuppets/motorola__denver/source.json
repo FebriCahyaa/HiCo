@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_denver.git",
+  "codename": "denver",
+  "commit": "4264933081cda2171e1da1de0cc8d33361db71d6",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-denver.conf",
+      "sha256": "9d2217bb1f1ae28a9db1d58e273ee39a0a91dd97dc1e72cdb15e267937b15c46",
+      "size": 3684
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_denver",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "denver"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

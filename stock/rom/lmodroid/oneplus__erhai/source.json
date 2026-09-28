@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_erhai.git",
+  "codename": "erhai",
+  "commit": "812ed1701c27c300201c2c6b835fd2d37088e406",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "cfe7126a3a3453b5ce6b921a07b1713d966d146b75fe4c539d7e63b278407779",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f1a0719756d9c604ea0ca5676c18327d0f2a90681e09808904b1f478f7d00ace",
+      "size": 868
+    },
+    {
+      "path": "device.mk",
+      "sha256": "9bee43a9f24d5226ba30359e5cf3cf521dc4d550b27758c0440cefcc23c741b3",
+      "size": 2467
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a457c01b5e126ad5d035e9c1720dba22798c637697bee330e9bf001b645297d9",
+      "size": 2849
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "431c0bf2189b54e9a7cfc1f09669c14c4d28653ce50b2cee55c0470f3bdd1599",
+      "size": 64552
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4a92d345630b2d41686d51d34816d0fb762e8147faaab3d6f057e61ae50c4b1f",
+      "size": 218
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_erhai",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:09:59Z",
+  "vendor": "oneplus"
+}

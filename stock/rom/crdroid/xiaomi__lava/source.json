@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_lava.git",
+  "codename": "lava",
+  "commit": "b48d195875ba2a2083f1df17e680b0983cab5e2a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "43650a41b48e6339ec48d0957801e34c549f4a0d70cd656844463677d63c3cfb",
+      "size": 1764
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8241d3526951a54adad9ef3c0921cdb9fab9d7b7e0d3311b87631e249e7ff1d8",
+      "size": 746
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f9e8cb154759b2b9d9eefb80e60469fb686daf58708d9355bf3f79dfbda0a4e5",
+      "size": 974
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b2dff84ff284cfd8aecef9fe190787cf4cc47bbad62b52e82b65f5f3c6a8f3b2",
+      "size": 2378
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "08352d2de8ead9d1f300c67193c62ae193f0ad0bc17307ca1ce8d18490ab6b0d",
+      "size": 2017
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fe55f6de6f34c3908de9cff5d5e2f5d5a68f02905aa966d92dc99f0749fe795f",
+      "size": 63616
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lava",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-04-19T07:59:46Z",
+  "vendor": "xiaomi"
+}

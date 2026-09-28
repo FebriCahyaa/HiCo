@@ -1,0 +1,47 @@
+{
+  "branch": "cm-12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_jf-common.git",
+  "codename": "jf",
+  "commit": "749596e894b740a41e8af50887560037282b01e6",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "b8212eeba9b32176c3d8bd84580391f705d171011653795dcc8f5b798595bfe9",
+      "size": 2266
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0da8401f42749c216d4e3a01f836315934c5aa3b9714b6ac549f55b5222d979f",
+      "size": 5168
+    },
+    {
+      "path": "configs/thermal-engine-8064ab.conf",
+      "sha256": "4fab079538452e8d617843f9e98eab6a646030f6517737eff7ddc2b917b2914c",
+      "size": 1769
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "4fab079538452e8d617843f9e98eab6a646030f6517737eff7ddc2b917b2914c",
+      "size": 1769
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7ba83d90bd5809eb073082a2766a32df1a3eace1c0195314ba9662870a2a78c5",
+      "size": 1539
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "99a5265c662c031a1ae23d9faa76735b67aebd61012499ae6a47057dc59e2ac8",
+      "size": 204
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_jf-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-05-15T07:58:56Z",
+  "vendor": "samsung"
+}

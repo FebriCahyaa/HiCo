@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_dubai.git",
+  "codename": "dubai",
+  "commit": "8995dd46866d8a62a067c382fc2a803a46c835cd",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "379f8785a18b7db2fdcb7776c7f9ecb16d5048c9ade7b8eeacb3967f3ee08353",
+      "size": 166
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "27006d54b2a634d425bf67303ed2b801b3a9c9a1d666316c579ce0c05e2c203b",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8c7e58a2ed15adb11bcd591a3db61bc1ab7bd3433d0464c9770f7774756cdb32",
+      "size": 1563
+    },
+    {
+      "path": "configs/thermal-engine-dubai-game-perf.conf",
+      "sha256": "278715b41d63dad521817f45536897ca978354d582cb7b93b1f6a3e4a694678e",
+      "size": 3263
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d9e117a974fde92959f654b35546e60dc7628a0ed9c062a9db9f8f59ada7138f",
+      "size": 2868
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9bffae2291babd9de4dcfeb8897ce17ec5b5a00bf5d40e5a8724b439431ff21b",
+      "size": 2229
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0e1d47b997238bf23e9612b5c500b3277bc2b2e418bf009a6428b604da91424a",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "77772d842e54c3530ae1d719c0009bb6b084ea705b626ed6a6292dabaa234140",
+      "size": 16600
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "111e4791fd9a8b66d73b5a788a51921e0981501534d05defbf88096d134d6e41",
+      "size": 149
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_dubai",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T15:12:50Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "sixteen-qpr2",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_asus_X01BD.git",
+  "codename": "x01bd",
+  "commit": "91a82376c3468dc1cf132a12aee63427d4365065",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7b2d4a31434eec4fdab84f7afc03931396eec5cec0c6bacc49407828194a2271",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b10e619fae09ff7d63fce8b26ffb2c42fe2d6e6fb22987ce4e528ad70c85d938",
+      "size": 645
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "204e8db1c4d584e62497cc7e4d96864afd7a3bcddf800e6656e64622a4a5da87",
+      "size": 4699
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fc8a80811766dc96e11538998cb0a0487e96ba61e3e300644b4c933a2baf75be",
+      "size": 975
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3d1e3fa9145d9c5b13c804b4aa060a87b5d1600f467cc4806c542de8fd6f23fa",
+      "size": 1527
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "972e4834acf7aff51d0e9aba35c1162e745d85b4296f97067537131d9cc7825e",
+      "size": 13040
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_X01BD",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-04-16T13:15:39Z",
+  "vendor": "asus"
+}

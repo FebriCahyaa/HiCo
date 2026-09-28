@@ -1,0 +1,76 @@
+#
+# Copyright (C) 2018 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+BOARD_FLASH_BLOCK_SIZE             := 4096
+BOARD_BOOTIMAGE_PARTITION_SIZE     := 26738688
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 26767360
+BOARD_CACHEIMAGE_PARTITION_SIZE    := 268435456
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 10099646976
+BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 2147483648
+BOARD_VENDORIMAGE_PARTITION_SIZE   := 566231040
+TARGET_USERIMAGES_USE_EXT4         := true
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE  := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR             := vendor
+BOARD_USES_METADATA_PARTITION      := true
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := foster,darcy,jetson,loki,mdarcy,nx
+
+# Boot image
+BOARD_CUSTOM_BOOTIMG    := true
+BOARD_CUSTOM_BOOTIMG_MK := device/nvidia/foster/mkbootimg.mk
+BOARD_MKBOOTIMG_ARGS    := --header_version 1
+BOARD_RAMDISK_USE_XZ    := true
+
+# Bootloader versions
+TARGET_BOARD_INFO_FILE := device/nvidia/foster/board-info.txt
+
+# Bluetooth
+TARGET_VENDOR_PROP += device/nvidia/foster/bluetooth.prop
+
+# Charger
+WITH_LINEAGE_CHARGER := false
+
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+TARGET_KERNEL_PLATFORM_TARGET := tegra
+TARGET_KERNEL_SOURCE          := vendor/nvidia/$(TARGET_KERNEL_PLATFORM_TARGET)
+BOARD_KERNEL_IMAGE_NAME       := Image.gz
+endif
+
+BOARD_KERNEL_CMDLINE          := firmware_class.path=/vendor/firmware cpufreq.default_governor=performance cma=512MB nouveau.atomic=1
+include device/nvidia/foster/modules.mk
+
+# Recovery
+TARGET_RECOVERY_FSTAB        := device/nvidia/foster/initfiles/fstab.emmc
+TARGET_RECOVERY_UPDATER_LIBS := librecoveryupdater_tegra
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/nvidia/foster/releasetools
+
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2024-12-05
+
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += device/nvidia/foster/sepolicy/vendor
+
+# Verity
+# Only needed for signing
+BOARD_AVB_ENABLE := false
+
+include device/nvidia/t210-common/BoardConfigCommon.mk

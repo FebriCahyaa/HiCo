@@ -1,0 +1,47 @@
+{
+  "branch": "nougat-mr2",
+  "clone_url": "https://github.com/AOSPA/android_device_lge_hammerhead.git",
+  "codename": "hammerhead",
+  "commit": "70c325ff4b435603679b6be654736903aef2706c",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d7fef65f3e9fc6195a8239f523bd7d19e091547a40d73862572aa54898808314",
+      "size": 758
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a51bf6a6b6be21025ed5b6e78d80f2942c0f328715d666165d8d7a747f914e51",
+      "size": 3815
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4e0b4fa832b4ef5ea7d3222bf78788145c86583fe285e0c34a82d279c3bde1d8",
+      "size": 2788
+    },
+    {
+      "path": "rootdir/etc/thermal-engine-8974.conf",
+      "sha256": "27f289ed04432be8500ca160c9f19479f974a7aa775e44567c9954b3780dd95e",
+      "size": 1803
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "1f41d541242b871b359994b2c1db186e7c4412eeafc3aa64e34e45251aec51b0",
+      "size": 1906
+    },
+    {
+      "path": "system.prop",
+      "sha256": "be15a652cf0f75ca09895b6aa7b8a4b0cb00ca6a3ddeeb5f55b2c706dd4c7c88",
+      "size": 2491
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lge_hammerhead",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T20:38:09Z",
+  "vendor": "lge"
+}

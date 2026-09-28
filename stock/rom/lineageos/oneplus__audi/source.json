@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_audi.git",
+  "codename": "audi",
+  "commit": "7bf2d1454546f581e18cfafee8c2b0d4ac9bd180",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "17329c0ada1e624cbf2b4c5ba3b71aff5fcd370e035a0ab9d070343a8f0ed973",
+      "size": 463
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8a11ebec805b2d8d814bea9ac813b2e69644adfd2a9adef0c1387d7bd3a6121d",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "482b08626b00378ddb245ab0844a1c0ab5cce104ccf2b26a4eecb4f5a62c429b",
+      "size": 748
+    },
+    {
+      "path": "device.mk",
+      "sha256": "94e67ad6d8b791e0a6ac91063b922d9cdeeaca1750f5181d76912f692c9cd8d3",
+      "size": 1837
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b0f2f094176c78b55558e81ee8736b1e9963b92794d544f55a26f82529e252ae",
+      "size": 3844
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5576039657f165366aa01fa4beb88e1d65afe5f3b9763d0e8ec1993dca2b8638",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0d24ce9f6b14627ff3fe4f6a0bbf49ffc8ca80113604e4be69727ecf19cbf52e",
+      "size": 78334
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b07fbc964ca2513971e7c378dc7418d6405dfabf85330e31fe8071d8db4630d4",
+      "size": 150
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_audi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-16T15:09:31Z",
+  "vendor": "oneplus"
+}

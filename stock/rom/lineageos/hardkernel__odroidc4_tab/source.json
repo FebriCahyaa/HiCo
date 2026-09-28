@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_hardkernel_odroidc4_tab.git",
+  "codename": "odroidc4_tab",
+  "commit": "e84ae7a4ee3426108f419094ed6b6781db09465c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "40a7c070f0de7e004f81df986acb2e738b279be30ba31928e725e50007c7d6e2",
+      "size": 155
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8ac5cf25e19e32cc8f80b0df52303d71286f5961425343c24cccb11d2adfc768",
+      "size": 191
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f9b24c05dc3dfa82bb59cc0852a311e15f8fb7f9f3dcb89ab9eefc5c5261c464",
+      "size": 248
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "13f8e6e6c1bd5c088c85696947fe7086482b41c809d064ea2858c3099e5fa215",
+      "size": 379
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "17fc18d963431fd8483a636d2f7b24ab425d1155e13c57c058290c132609ee3f",
+      "size": 116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_hardkernel_odroidc4_tab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-29T05:21:08Z",
+  "vendor": "hardkernel"
+}

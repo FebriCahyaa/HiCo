@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_a70q.git",
+  "codename": "a70q",
+  "commit": "7a0308115b733c2fc783335b1f6e022cfb52e34c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8aec1b08d1f12d644f9443f63e1634b35be2076b41b2764ce6e50492011c782a",
+      "size": 707
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7adf901f66a2da402dc546138ee2de31da6b30f3da5cc6b47a7a4a31dac4b488",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9d050d1b1b9809ddaa60c042e32132703d8b83c0d015e80d4990db7bdbb571f1",
+      "size": 1024
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f4ba2c60c979a080269860affa492606f42d1f2daab8544b607282213dcb3f53",
+      "size": 1174
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b1abede1753f383006a045d65b97336ba87c0db73b16d68db08ce702a31c37cd",
+      "size": 772
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "01b5c6328af5f42bc6b71e6549c0c8ce1d291205af2c288bd7d3c18db8253f30",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c0dcd9f5ed64246ba41d5997ae102da0ab11c114f148eb10fe4900209e02476c",
+      "size": 13436
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e94614fdcd2a96456ac5c8a42bbc45de15e042bbe10314834e3171379898fc5e",
+      "size": 118
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_a70q",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-06-28T12:56:21Z",
+  "vendor": "samsung"
+}

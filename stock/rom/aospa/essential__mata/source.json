@@ -1,0 +1,67 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_essential_mata.git",
+  "codename": "mata",
+  "commit": "44bdd641db77cc34d09c9da0d576ad0696f836b8",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "883083520d1e78da31733fe885b7a9b6ae7926e64d198793487e9efc5f7cd7fa",
+      "size": 76
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9aff2c7197abf24b6cb7da3a0df6bad817c5299ba81e3a9169312d7f6365fef4",
+      "size": 4004
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "20232c5426c17058b93d08f448ae0c949a3d4d28133bc8384aabb1606b7a7b95",
+      "size": 5060
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c19b5c395ccdec7f77096f6194ade28bf9a6c7eddf31979302546c5ddf5dc580",
+      "size": 1274
+    },
+    {
+      "path": "device.mk",
+      "sha256": "290c2b1791cb6dd321027c7fc0b563a9cd496e858e12f2dfc136a99ec0ef0d9f",
+      "size": 16700
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "365b91ec2db2a607ca79f57cd558aaf9b05227e9024ca33eda2e770073226c01",
+      "size": 1835
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "00a0ca6f7e02940cc8d28210cdfab039886285be0e5924d61241a3096eb2f0ef",
+      "size": 31743
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "754755ed2504a9143a543f9981d5c1ba570d38a7f5e8b44b088a68d0623526f0",
+      "size": 148
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b201cdf8366d1e888838df6bfb5ab29700518c3698a39d8af625a0f788416511",
+      "size": 1558
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "520d8719ce45826f6c2090cc615abcd27a2d706d3cea4a8b08146afae64d4ea4",
+      "size": 4659
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_essential_mata",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T19:24:12Z",
+  "vendor": "essential"
+}

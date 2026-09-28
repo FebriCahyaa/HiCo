@@ -1,0 +1,57 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_namath.git",
+  "codename": "namath",
+  "commit": "beb932c854ee8242fe92086e4b407624296284a3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fea907a52493fa56a72f3778cfc03124ea8a25641f961cde1a41a92b1fe46ab9",
+      "size": 119
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "02482dfcf3ad5c479253373b724ba7c335699d6819c758a7320ea82c62b5b47b",
+      "size": 5860
+    },
+    {
+      "path": "sepolicy/thermal.te",
+      "sha256": "136426ef44423a0276a1ca5185f1e4939821c9c58f1d3373a706d3877cf53191",
+      "size": 1179
+    },
+    {
+      "path": "sepolicy/thermal_manager.te",
+      "sha256": "138cbd682edcdd66d73a9148c5a36f5af50487765667bddee602084982958791",
+      "size": 1963
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "7935824458ead3ef02692b42341e03ba3c56da49214bd14d12154b676cd4b31c",
+      "size": 989
+    },
+    {
+      "path": "sepolicy/thermalindicator.te",
+      "sha256": "7848e16ae23be18dc03912ddc1e7f068172f387ecaa609fd7ba60874e4c11024",
+      "size": 2691
+    },
+    {
+      "path": "sepolicy/thermalloadalgod.te",
+      "sha256": "58154c13bcec4d23d4ce4599eec77169494327e041b839e75e2b112054c579b2",
+      "size": 1150
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2f66a5e63cb6fb1f40e054fea5f9dd871e01e37a9e75fe3e6d3a0167c946fc76",
+      "size": 3167
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_namath",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2017-12-30T23:38:42Z",
+  "vendor": "motorola"
+}

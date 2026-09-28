@@ -1,0 +1,62 @@
+{
+  "branch": "rvc",
+  "clone_url": "https://github.com/ProtonAOSP/android_device_google_taimen.git",
+  "codename": "taimen",
+  "commit": "68c3a1de6f7cf8b035c489c6f675f6d9fa3b2b3e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4af56d3c89ebf0da23d7c553b8480397b294bfc316f6f9298cd930dcd556ca30",
+      "size": 1553
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "38ba8d567ba9df09690acbc7c6048ca5fe51d059d03cf86e611a4d73cc75f819",
+      "size": 806
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f16f0cd37afe675925d9b4447b6ddb4e4043bc86cbd84573859ff5735182edee",
+      "size": 4067
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3458a0aa492c3093b020884034830394119932d67ff0ff8afb156424cf9cc5f2",
+      "size": 5834
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "6f2b0e2c225b7a70917103f1d0dd59850555accf2823a43f6d79d72409fc3a1d",
+      "size": 661
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "b7197816ed1dbaa176c77d280ee22b7f544f10f6ed78b71730ff98b60b898a79",
+      "size": 3338
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "719487f2635373895508e76dd3ce59b8411b335ba01438a71a7d3941215ff3e5",
+      "size": 4895
+    },
+    {
+      "path": "thermal_info_config_evt.json",
+      "sha256": "c23c9b5f839e377aab2fca446ed4e04a24b45941749f1e8ee990a5ebf2c16622",
+      "size": 4894
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_taimen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "protonaosp",
+  "upstream_pushed_at": "2021-08-18T09:02:04Z",
+  "vendor": "google"
+}

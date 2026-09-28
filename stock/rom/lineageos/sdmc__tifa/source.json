@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sdmc_tifa.git",
+  "codename": "tifa",
+  "commit": "1a3ad43d19fb799676227ef4cd4b00d548ffbed9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "96843d2ac9e357903df383c42876069ad9a32eed8e87bf78581bdec735938e37",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "29cfcf7c1e69611b7cf3ecb075f64f1fd4359156d8a182d3feb719ca999098ef",
+      "size": 1130
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a5b5830ac5c7382001faee0742b1e90c525e96d9700399446461f3ddf42f30a4",
+      "size": 892
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9901692d5b7d5676e575bbd3da86bf3147e9812a2b31a9dc5e283f4fa71f61a0",
+      "size": 1433
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ecdf7d11b4acdef00cb79583d746bb16c1d94c1c0b52c04f9df621339aa20168",
+      "size": 412
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aede0e4bd7d8ab00ddb2fab54a4fbbf6a9a439b91a3497b51c03111f78420058",
+      "size": 2732
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "56db153e6da0415353a0a3e992701537879924f5161c157e824ac1edc9a856e4",
+      "size": 524
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sdmc_tifa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T05:09:46Z",
+  "vendor": "sdmc"
+}

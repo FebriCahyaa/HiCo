@@ -1,0 +1,47 @@
+{
+  "branch": "gingerbread",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_u8160.git",
+  "codename": "u8160",
+  "commit": "55f2240dd5d577a156a0ebc9f38fd698f605c1a2",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e5b5e96ff666828b438b01e82ac813c6f2185cbca02adbab87d6d69b3bfc73fa",
+      "size": 725
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9562d23d37c58e3773418dd6350085955c0424e66bc961a998f5fbd23c910c99",
+      "size": 661
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "73870d0359c7a42634b83d0f5af253053e84ca33e815656fa7882ae127577d12",
+      "size": 4111
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cf70216ebc150c6b5b262582f2ec06aa71dd9a236f19c44ef86ee720d630287f",
+      "size": 1001
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "38c89854634f8095f367f584ff1580ee26c76703c8cc444de046f6b62ed1a7d1",
+      "size": 754
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "35ceb1a989c6642e893adc1849681233011ea2f2a6d3f9f423c8629dce0b14d9",
+      "size": 881
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_u8160",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2016-12-27T19:40:54Z",
+  "vendor": "huawei"
+}

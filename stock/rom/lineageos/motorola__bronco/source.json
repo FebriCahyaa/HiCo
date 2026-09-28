@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_bronco.git",
+  "codename": "bronco",
+  "commit": "50ee506c9243a015e21bf6646a140751afe76c06",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5b7c11b406031296d619061620704c7455c115722f7b3342d45e24473e40b62c",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "75a4f72bca4a1f5765e655881cf3616dd9f17d8d59e4c3ee99b33245327b7c06",
+      "size": 1498
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0a86323477b2730b958955e2b5f4f7fdbd3e214278b2a57e65cc3574b8a09768",
+      "size": 5413
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "419d68c5c9b95b9dc43ebf2edf420309e6fd179f1b5af9bee1d251c8acc5725c",
+      "size": 3554
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "284c76566c45858cfec4f422d17f6363f524ebc19ccb502eac6ce323aac7611f",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "280f2b6d675899aab8f46be349bfa0f699ba54d769c33ab631c183231c8fb514",
+      "size": 17940
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fa959a05c76d3604a622bd3ccb86639cec170d55f1250c4a1b16a62ad91f91af",
+      "size": 666
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_bronco",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T01:16:54Z",
+  "vendor": "motorola"
+}

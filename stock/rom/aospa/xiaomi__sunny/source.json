@@ -1,0 +1,57 @@
+{
+  "branch": "uvite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_sunny.git",
+  "codename": "sunny",
+  "commit": "1769435321c7c11d5e73cf63236834f9f24b15f8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cd456017e7f6d4e390ba3215cba6c6569c63c4384a21e31a47953cbd0dddf235",
+      "size": 616
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4f8ad3c9b5921cdb9d2abaf4598018ba0528d8eba24f3db062508eaa3c0b0d0d",
+      "size": 3565
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7e7611717b43548da2add03a3ad341f004d42d30e06e69dd8727180db666b94b",
+      "size": 5783
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2c83fb4a4a005ccaadf80084f4e64dbb9914d67f729c88672595eb7987d5b2e6",
+      "size": 8680
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fc8e27243db756f2db3cb51a27d165db7bf1963ca5a4a7effb306fc7d52e3011",
+      "size": 1482
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9508c9fb9b78896dd85468234728368a1236c55511ab9fc16251bc14afef7e09",
+      "size": 56124
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1865eee21a9765b84f08f57e4148688eda79f2638a10bab4c263ead8555105de",
+      "size": 852
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sunny",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2024-06-17T09:54:54Z",
+  "vendor": "xiaomi"
+}

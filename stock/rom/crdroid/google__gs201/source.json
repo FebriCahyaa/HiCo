@@ -1,0 +1,62 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_gs201.git",
+  "codename": "gs201",
+  "commit": "9e6df58b15fb5577a8c6de56a8e74fcec23c2946",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "573e773ec0c9f03df9d2e2af12143f22bd0dd74e06219201ec15c98ba181517c",
+      "size": 1202
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "0c9c2b16fa24f5a77060eb7bdb58af970721fa063677f86fbe42758c795bfa39",
+      "size": 9788
+    },
+    {
+      "path": "sepolicy/system_ext/private/connectivity_thermal_power_manager.te",
+      "sha256": "116ee752aae1c0cea4a4f3fb752f1cdc6e2a232e7b9d9d3f9b58618792bdfa9c",
+      "size": 519
+    },
+    {
+      "path": "sepolicy/vendor/dump_thermal.te",
+      "sha256": "6fc5c51b1a2055cd9be16a785d0782ee1310e1e4bac7ca47122dd9e04dddbc10",
+      "size": 208
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "79abd61edd2606fb86e12ab28c4712c79e551e1f15ea81c22457663ccd752d8e",
+      "size": 786
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "a689360b150aae79fbe5f2aef9223c777f2583d6222de3bd3e27b30da249e17a",
+      "size": 158
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "70fa05b0e4925a4891ccdb879c51e821f143e8f2b0d768802fc4908123a09640",
+      "size": 577
+    },
+    {
+      "path": "sepolicy/vendor/pixel-thermal-control.sh.te",
+      "sha256": "33402b7dae79fe4a57c1b572327ea97cdda7388b71c12d34cdb85fe418cadb5b",
+      "size": 161
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0480423d9cebb105e0209aa7a576d38d1f8a3cc117918dcf3fd54d21ecaef527",
+      "size": 3795
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_gs201",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-20T04:51:38Z",
+  "vendor": "google"
+}

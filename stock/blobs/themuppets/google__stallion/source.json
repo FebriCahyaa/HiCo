@@ -1,0 +1,54 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_stallion.git",
+  "codename": "stallion",
+  "commit": "6a71f4202fd2b37716dc1894dce69bd439b0c53d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "6578c97ae036706d267747309ae3e1ae7283d0effb6ce6267329f68485166a2f",
+      "size": 94896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "9199c4b20f1687214271c9cb2782b8770d7d67e561b5e69bd07bf92360c1fd89",
+      "size": 56611
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "ae98ef63ff972075f9c1d6266a10211f59295e9a1b7a397893d468093a70bea3",
+      "size": 11535
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_lpm.json",
+      "sha256": "370ce7f7ad9699f565a823a846f3929627284443b538efa998f8d44313065b5d",
+      "size": 7592
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_stallion",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "stallion"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

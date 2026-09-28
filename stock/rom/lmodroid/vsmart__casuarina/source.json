@@ -1,0 +1,67 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_vsmart_casuarina.git",
+  "codename": "casuarina",
+  "commit": "3d38455bcc08756f068816bfa3bbf823da102d8a",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cd184db25637f98325e0bcb059fe3ef5fc7691f44ac997aed285caccf1a3b50f",
+      "size": 519
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e628b1fffee88cc37897d54fa07157b49dfb10ff59d558cbddc550040244b111",
+      "size": 158
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d95982a2ff1a08ec7d9946fe7b60137a7787e5b954c6394ec4d7c0a703c4babe",
+      "size": 5128
+    },
+    {
+      "path": "device.mk",
+      "sha256": "76fb94f9718a47cc4072af18b8c4fa8f84ca0d6c348cb9fbe29f972b6d4cde3e",
+      "size": 15842
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "29213a62fffd4b7c924a65b7d709e7a09aafded1b7cb8c2ca52735eeb156a4eb",
+      "size": 2790
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3377beb566a76c80f4ac5c6450e10da97aed01da7d3582c1ffd931db3258ae1c",
+      "size": 33583
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "5840b2030dd0155d8cad0ffebb45498c00ffe3605814ef37283e21960e747407",
+      "size": 97
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "4153f6feb69db8d2bbe84ca917a35a1b82dc383a45d7789755a6bc4430eb3864",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "014ebc0985190ddda953998641381fae4dad6b201993017bca5ffe82637fe0fe",
+      "size": 1106
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "754e2a3e82a9aa82501e0ade6e15f50af0a3ae9e12189ac26f34b415ab9369c5",
+      "size": 4050
+    }
+  ],
+  "kind": "device",
+  "repo": "device_vsmart_casuarina",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-12T03:10:19Z",
+  "vendor": "vsmart"
+}

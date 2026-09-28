@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_nairo.git",
+  "codename": "nairo",
+  "commit": "6369c7974ded20ceea2ab9fffe672e92edd6558f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "20ce22a3e1355e8afc60f735a1f0830ad26175708dd53a12c354384bade05648",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9f11355f7408b5a313a53ef4d54749aa86336839f3bd94c338e2fbfe6fe320e6",
+      "size": 1362
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a7fd33c942325940466b23efc88d9f05977b8e955d38a88512ff8bb918a9f9ad",
+      "size": 2570
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "65c6ec15b81065836d54daeeaadca26b4842898d7991d0bd91bcf8f08b80434f",
+      "size": 3124
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "158c211d573913b3831dc2947c73375e26004a9251846143464d91d47c4d8ed6",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a62ac6e911d6b5b11624ae18e9547b5d79b66de859ffde51bada4c42a8e9ec88",
+      "size": 12378
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f8938614aca3b750fa24a559468ab0ba7531d734867d20a3a8188b73f31e9ac2",
+      "size": 1598
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_nairo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T11:43:20Z",
+  "vendor": "motorola"
+}

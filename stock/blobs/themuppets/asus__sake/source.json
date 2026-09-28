@@ -1,0 +1,24 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_asus_sake.git",
+  "codename": "sake",
+  "commit": "0e9e7be68c4a31fe9bb08115e5c299d17d1017ab",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "19788433d29c7e99ca9b166561589f4adbea07c530819f2d850bea26319834cb",
+      "size": 801
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_asus_sake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "sake"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "asus"
+}

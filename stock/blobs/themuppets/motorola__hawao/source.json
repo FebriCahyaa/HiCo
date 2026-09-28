@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_hawao.git",
+  "codename": "hawao",
+  "commit": "cf5a70f1f71209b0de6694521ac481212edf04c6",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "4a054a2a53b98d4ede385e0390f39e3dcef00d638d14cc569f4d766568b9c3c3",
+      "size": 611
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-hawao.conf",
+      "sha256": "15fc7e96952976dccd2bbe1fcfe149dc0d3d41a9fe46cd28e55299c8e6d45c41",
+      "size": 2701
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_hawao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "hawao"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

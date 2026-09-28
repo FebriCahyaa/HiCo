@@ -1,0 +1,67 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_zte_tulip.git",
+  "codename": "tulip",
+  "commit": "ba017c7d7768c4b564cefac09ba1a3cd97bc956c",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "23c416c89599fe2323473ad4ff577507b0702ff696c78d6ab4eda29b0e7df22b",
+      "size": 4538
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "55f6a93ed93d9330d3a110a2d713dc59e074a68f9fd3a5e068760f5d4436ca41",
+      "size": 642
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "84b03f262ecf2f5e10ca8cc513aa4031217e6272e335ef226bf8de8b37b4602e",
+      "size": 5116
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "b57cd0965bfcc4ceab1b05a847ad1544643cb1085b5d78f3e96b75fcce05ae37",
+      "size": 4307
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dd38689b263b130ae3c1ff94d305aca2e7813a53f9fdc8e1bd5983c42b8b600b",
+      "size": 10732
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "60b1e7390eba336786ea64b7d0a9258f115c040995c80ab6c5aeb65b0b26b5f9",
+      "size": 1767
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cf262dd7dc1e810a17adfe65f8a228fbdd0dd6072ab78eb3692a7b4b7c757273",
+      "size": 324
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8a63d04bf825008bf31e8a58f27bd9ad720f7eb6a7997889431cc53f6984fed1",
+      "size": 17724
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b7804fc986ccb9304b3aecafe8456aa6da0049caab15b7b085f6e0e6d75f5fdd",
+      "size": 2749
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "541134308692d3a0cab2c957b89d3a0503b954b47cb8001ea17aa03fd4e354e7",
+      "size": 40
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_zte_tulip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-02-02T22:16:02Z",
+  "vendor": "zte"
+}

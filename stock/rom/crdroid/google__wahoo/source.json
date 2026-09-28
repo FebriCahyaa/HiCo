@@ -1,0 +1,47 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_google_wahoo.git",
+  "codename": "wahoo",
+  "commit": "35d0d08a6cf6f14f882ade2c2d1a531fcfcab8ea",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "351639add214e7f441147ae5b154234c06508a2639083bced5b5261122c9c8f3",
+      "size": 4876
+    },
+    {
+      "path": "device.mk",
+      "sha256": "14d37a6d168b691e49dd61bfe3559cfc559b478c6b8747b49a77fff65c2837be",
+      "size": 20872
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "94b495e8c6b49844b66e985a97b33d565bfe7ac5c70b458b859a89045d8f00ca",
+      "size": 1503
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d7c07f48d8c96cc5ae04e587a2362e7236684f78d7f17b916376b3bf2958e1f4",
+      "size": 1591
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "32fd2af5c1fd6a3b3fc41c84b7fec8b6b1e8312d23d4bf19f525a0fda2c320fb",
+      "size": 4223
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_google_wahoo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-09-20T18:08:13Z",
+  "vendor": "google"
+}

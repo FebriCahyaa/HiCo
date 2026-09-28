@@ -1,0 +1,149 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_munch.git",
+  "codename": "munch",
+  "commit": "dbe2bb12b8a5856d28e6dc491f88b4026c939d4b",
+  "file_count": 26,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "cb1f1ae3406927c0a5505d9963d00d7560883ec1f984a53e07a0d81e4e82f110",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-8k.conf",
+      "sha256": "6385f8065348e6dc0353512c834b43bd15ffd7e1a0dd1bc5438cb166e1fa098e",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "d1b721f4dc9e15534e4a0e6d76ff41e1ee71c2a708ddfdf30e2a6240346bcd48",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "adc1ed067a6595db84a9e3d98975a129494927e84b7fcb85f438a8119d58e41e",
+      "size": 1050
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "7fde98983af013626ec8ba673e5f88e595f19b15778a209d6e4c4629a706ef06",
+      "size": 2320
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-hp-mgame.conf",
+      "sha256": "7b91b32b5666f94454a19775e00e8d26dd76b72ef911fd18f917e5e0a99f8807",
+      "size": 2128
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-hp-normal.conf",
+      "sha256": "8696d36dde44d9cb52dc794e3303fb4405c21aec1e4f8df5ed9f50a12c3f4881",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-huanji.conf",
+      "sha256": "774fd0f34eaf4e17f0bde1bbafc2bcf18de69bce3380642dfe1d6af3b2aa67e4",
+      "size": 2368
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "f16d148624a9f324897ce08259fd0e43235f9470609bde21a2f79ec4df66e588",
+      "size": 2000
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "202a53854687612d88704939db6fef7489e8baa60ce53ac88ad077c842f76f56",
+      "size": 2256
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "f7053f05a74882cd57ebea3b29db430594c1e67af962a3c362ca51bde4c31883",
+      "size": 2416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "8019d2bce7e3ba3f53b20e228db43fc6dd4ddd4ff6f457288c8a608c775fa23b",
+      "size": 1264
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "405af1815ac201cafce58eace797f0b8c7a04be93a15c5d1d758e281c4e412f1",
+      "size": 2656
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-camera.conf",
+      "sha256": "95e9131354d25fcaa7fcda61fc72cae973493f2139952c2cb209d2527a1af435",
+      "size": 2336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-class0.conf",
+      "sha256": "83d6329564c2dee852f6d0d9fa3b04f61a324f50a2962c7bd928d156591eb7d5",
+      "size": 2336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-huanji.conf",
+      "sha256": "6ce3b3f686854b84550bbaddcc86638e063c848b6c30c94a7758440acbb596fc",
+      "size": 2432
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-navigation.conf",
+      "sha256": "7a2ce74f1c2f38e133baeb31f8b465ef4371f9b0acaa408b5a5b24cc0f89cb8f",
+      "size": 2480
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-normal.conf",
+      "sha256": "a2141161eaca407994afc47005b8512190bb26aaf01c119ac8548a24fca9f663",
+      "size": 2688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-video.conf",
+      "sha256": "f5e2447aef703f06fe93050026753ef0bf75d49c840113151512837dea2f66d2",
+      "size": 2464
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-videochat.conf",
+      "sha256": "3f85a87fa1c9050bf5100158d7fb5e11f472f20484387dcc0e88b7b7420174c1",
+      "size": 2432
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "17db05a6e20df8b1cf818ee7b2e2746be3914973fc08dcc620e2eacb16bd12f0",
+      "size": 2016
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "35a7f28ab35992c0ae2a29117d1a01a8cc596c9589923f524736549dbc197438",
+      "size": 2112
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "ba030706f4230a373603341c9f5731fce9e1b4978ba6bb5f17e778ae10246320",
+      "size": 2400
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-videochat.conf",
+      "sha256": "0f20c03dd990a4d033447605a38201b6088627b4489551ebbf9ad15c38fb589c",
+      "size": 2304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "e6e3777a45e586770f3d2966da207f64180e5b3aad36b97e8beacbf47353473f",
+      "size": 1049
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xiaomi_munch",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "munch"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

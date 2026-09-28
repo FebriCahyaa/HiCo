@@ -1,0 +1,72 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sky.git",
+  "codename": "sky",
+  "commit": "a3f587f39c350dcdbd9c3eeaf0522308ff5e88b2",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a47f7e7e76088a0614e00de199882fb1ec029466769f21cab930a36518be6735",
+      "size": 653
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "54edbbab3ff20d1f5561a29de4f53712f5502631a52864a18f9f23ecde41d265",
+      "size": 153
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cb567abd17f58f4604bc2809fb725eee06cdbfc1bfba4fcf5a7a27a7849fb817",
+      "size": 9670
+    },
+    {
+      "path": "device.mk",
+      "sha256": "923331d1285bb0670c57b45168eb82b6060cd5fa5b9a82f05281164653d8f463",
+      "size": 23660
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "cfdeea393501bdc2a884d63c1573c879216583ca6167b68b7a8e12b4c7c22a43",
+      "size": 5227
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "bdc8fda085f3e3f42a483cd9e4751c69e75e00540fe3b005719948a0ecb2ab75",
+      "size": 1565
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "48cab0bc4c69a28fca00face06b31db5fe2ca4e1ffb5d8cd7f6a6167e1e38b3a",
+      "size": 6358
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aaa0be1775aca269a6fdc271892ee478c809574e8bfa31fcd8e1919b0d053296",
+      "size": 70076
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e5fa9568799f839eae1dc98659c367a8d8555d2f48b88255a2715791f177cf87",
+      "size": 1797
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_sky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-08-03T11:39:51Z",
+  "vendor": "xiaomi"
+}

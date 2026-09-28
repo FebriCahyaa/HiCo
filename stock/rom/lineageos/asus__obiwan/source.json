@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_obiwan.git",
+  "codename": "obiwan",
+  "commit": "2b72a2adba4089deb06e64032761630de3f99121",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "45334640fc54972af9a436410094cf5b470a6ce084aea6f9acd10355696e110c",
+      "size": 4234
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b5694c79fcda2c3f72d8024d6ddeeaa592a06b1b7cb618a2113b3b02eea2ae62",
+      "size": 228
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "753c6ff3ba657d5f595f9658812b04b47c001b8c16716efa82a0f16a247654a3",
+      "size": 6596
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a1fe3a33aa9cf1b9b067487395ace22faf5299d57b28640c21c414a529d62eb0",
+      "size": 17512
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5f51b5b6173085aff52a622aaa088295bfa01e7d4d056c32170a164554d20931",
+      "size": 1674
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+      "size": 4
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "534b008c0a16857d65a6ee5c3a0db2ac69b8c509b12399d83b5b2c1a66219a5d",
+      "size": 51784
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "e4f3358f56fd705db5b6a7016fed675f6b2fbbb6b2b8406767a080f57c91953f",
+      "size": 186
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "34b22576a01835b43bc3cbe48db43eec3a7ae299a58eab4967a301f94672c0a3",
+      "size": 5700
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_obiwan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:47Z",
+  "vendor": "asus"
+}

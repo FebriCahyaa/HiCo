@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_razer_cheryl.git",
+  "codename": "cheryl",
+  "commit": "a7725d8bf663838d755aaff953a16c58450e533d",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-cobalt.conf",
+      "sha256": "54655d79486f7bd9c880a6ea115cd1380583ea9b109346c60f2eddce2b997aeb",
+      "size": 958
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_razer_cheryl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "cheryl"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "razer"
+}

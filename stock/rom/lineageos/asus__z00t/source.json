@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_Z00T.git",
+  "codename": "z00t",
+  "commit": "37c1d5f1bfa17fefb859e7eb7254bdd58a014290",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e839e08cacc707e877340f2d19ed60055a4435cbb1a7dd537d0617f63fb63de3",
+      "size": 1060
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7377eadb3fb50e992421f3cac6290d82a6fbc41f2c08a3575af84d2701626c34",
+      "size": 643
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "1a468b5cb40c14135d2a57a66b2b73b4ac8e04e81e4ae45656233bcc58a5153f",
+      "size": 1024
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31d16e8be6fb9bbaa6016886c15297bce8ab833290552745b398c64b7f35f385",
+      "size": 1038
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5b3eab15351eb4217e5e225c187d7e9dfb25be0a5ad175407d4575ba3904a57d",
+      "size": 829
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7ae714c2c96b2c8a72a0d33477fd8b4452e082c6bd45fdd7b64e94b7ce5dc404",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c72213c1917820220422134cfaadec6c439b2c4b57b6101a4ab386d8d9841558",
+      "size": 32
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "40d205cdc89eae282044d9f8dd91bf326e93b6e015c36e37cb29bef1687a5380",
+      "size": 107
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_Z00T",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-06-26T08:49:21Z",
+  "vendor": "asus"
+}

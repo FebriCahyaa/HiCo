@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_cepheus.git",
+  "codename": "cepheus",
+  "commit": "a9819e1fede883b723c83584e44ea44e2b3c185d",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0f7e1fa74eb4c6f74e942d36430d44974a313f6d786f32546663919acf7939a0",
+      "size": 118
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a5ebccfd4b1f1664042aceb72bbd40a190a712bf3b8a981d55258e1f37b4dd41",
+      "size": 211
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0a4756ed53f8f52fce7bb0d16cbe741adf8948eb3e11a30c651905f77d59c5b0",
+      "size": 152
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "771ec8906099213f2002a197cabf882698de69e357b06b7c81ef2027ea3cbf88",
+      "size": 474
+    },
+    {
+      "path": "device.mk",
+      "sha256": "aa616163a8bc957894eddab36f3d2f06eee2da4c0b06c6c991a5357f7873ee89",
+      "size": 1129
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3504603e68e02822bc8069325b6c07b0c1749b5e6f064f0d2186f69b6f06c6de",
+      "size": 1386
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e459912f4b0f3a51fbc4b99ae24181d0a1becef718106619e6080c394dd3eb20",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3b3b42c9b712cd1e9aed9e0d110dbb9268c08b3b58c548dd45a5856db481f8c6",
+      "size": 15490
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2b874f57fece97c040c2b15928c58c7951679d72fd938eb84e67188d0d49f99b",
+      "size": 226
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_cepheus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T18:58:28Z",
+  "vendor": "xiaomi"
+}

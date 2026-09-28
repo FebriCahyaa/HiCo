@@ -1,0 +1,47 @@
+{
+  "branch": "cm-12.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_seagull.git",
+  "codename": "seagull",
+  "commit": "aaf2c6912fe6e66cf97fee7bbab731407bf2b166",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f873372009b46f71b8c110bec8c808cd4e874e76dc6d66931f6f20b39606d816",
+      "size": 1561
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7158333a94322a10e0fa89656d4b556b784e1dd853f0f4bfcc0f63204ed44d48",
+      "size": 645
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c8d5b610cbaa45962b96633a214a8d0666ea583f45abd9bfa0302ceef77ab146",
+      "size": 839
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8dfc01ddecbd10e209aab6207d9f3f739b71b96a6c31ef53b980c8f560dcd6b1",
+      "size": 240
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5b23f510bd4b7f00e36e8cb8cdf37c105458c97f63964d166681f8a1bb467668",
+      "size": 924
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "87b1ac5a8bd6c813d7518300937692fad3d84c46c385fb24c0f1e4e1a8586093",
+      "size": 680
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_seagull",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:43:17Z",
+  "vendor": "sony"
+}

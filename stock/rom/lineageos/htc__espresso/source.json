@@ -1,0 +1,42 @@
+{
+  "branch": "eclair",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_espresso.git",
+  "codename": "espresso",
+  "commit": "e20ee9adb747ce70a002594316b028d0ba1b7ac6",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "82246a4d4146c6505aecb4c368ac37cc3afd4dce8e1f965058a972982b40e9fb",
+      "size": 54
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e83837dff6e52d1d9e35f3f5916df3ae3e10619f0f82b941adfe9352430f4114",
+      "size": 1387
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eb610f188caa9c17a5691489b7cae8d3e3095041ce132267672c71c5f5302093",
+      "size": 951
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bc17e592059e3a6391534fb571c18f3c28aa3f4e78a195e2d4307e6f0c8fc8c0",
+      "size": 2717
+    },
+    {
+      "path": "system.prop",
+      "sha256": "119d7415dbdcca9358729ee761fe5d0d53f84ace139461eeeb153e13b295afe9",
+      "size": 638
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_espresso",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:53:47Z",
+  "vendor": "htc"
+}

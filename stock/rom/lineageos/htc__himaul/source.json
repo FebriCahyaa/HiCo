@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_himaul.git",
+  "codename": "himaul",
+  "commit": "9a4526dc9613bc9a8700de39c98455dd01f741a9",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1fa94512ea59d56fd3576d4bc7f11290ea513ebc4820a0558407dfa82ba94fb3",
+      "size": 1137
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fa0f1c22ba4a0132b0e4e4ff9e1b79509b34953ad15664e019ecdbadc7725246",
+      "size": 832
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2820e96ac403afbe29c6df2eae274e5591a95cec29c054413e28517aeb7330e1",
+      "size": 838
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d3f1e9d0d10d475103e6f840ed845053f7d63df767830a53d346129aaab3119b",
+      "size": 748
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "36227aa48f38093cd5f8517e2855f8f68400f7cc7a3f468ed8b22d57b39c2648",
+      "size": 108
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2edcbfc20ca561acaed152939b0397b774a63756d14c3b164da03a5fb20f1467",
+      "size": 630
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_htc_himaul",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:22:44Z",
+  "vendor": "htc"
+}

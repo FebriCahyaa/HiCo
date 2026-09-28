@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_piccolo.git",
+  "codename": "piccolo",
+  "commit": "81b0c9bae7a4c785d8fe9f09b56a6689bc043d18",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9eb41470a3a807ea28b767cbecc1483c6a82319a2ce4029a8c3afad8fc64d5fe",
+      "size": 758
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f482320081ddd2970a8c6918c2cdb79ecab8f1d4d35c60cfcd0aa028207fe172",
+      "size": 696
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "eaef2aac8e0f4f5e5c4b924ce50a8136368a8a44870af880b524289c912c2e35",
+      "size": 1681
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "b4fd6550c1afb3b50c6bcce95881bb69cdbbf81d7c953a501b5a9724b1e49976",
+      "size": 5042
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ef3ab022154dcd0fb13b352082855f3845decd1f4ca10a4049eeac6b53271f50",
+      "size": 3032
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1d99de948414060579bed6bc03bfaac1d61c27f707940eb0b4e1fb5dc56852fb",
+      "size": 1709
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "fb4d4f4e79db0e304f4ec0932a5feb14e4ccc6f43a357ea6908e59a5ffe1dd72",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6b7b31b5c0cd8c70e1d2278125edc1b4fe574f2114d2de3040c2effce2f9b6e8",
+      "size": 8915
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5183a23d80858f3ca90888acd46954276d846120c250283afe090a3ef79297ba",
+      "size": 215
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_bq_piccolo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:59Z",
+  "vendor": "bq"
+}

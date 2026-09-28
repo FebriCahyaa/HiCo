@@ -1,0 +1,42 @@
+{
+  "branch": "8.1.x",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_oxygen.git",
+  "codename": "oxygen",
+  "commit": "fc4e1aa8e91869021d43f739e98dbb20cf3c2b2c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4274499242b000d1dda47131a0438b207de06aee6daa9efb96c36ad63ac8201f",
+      "size": 1127
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d15d96032d3441de6fc4e6c5b515afed1f0aeb207b4ff93ef718dbbd9a4a08c2",
+      "size": 1388
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c397521ce7fc6f1aaa68ebda53e1dac1cce4e13bce255698b59bfc27029a498a",
+      "size": 2207
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "53424dda672c151f87507024112f6aa8826a22747bd4e1518db9e2d53fd2e00f",
+      "size": 790
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "93b80a99e9e6caec43eea7db4e439f15639d98dd3c8531fc8da994f64fa3cf0e",
+      "size": 15012
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_oxygen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-16T12:21:18Z",
+  "vendor": "xiaomi"
+}

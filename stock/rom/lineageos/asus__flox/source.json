@@ -1,0 +1,77 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_flox.git",
+  "codename": "flox",
+  "commit": "936d74531565ca36e663e71dbcd43212fa93071b",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4ed26c58c43f64192f3ac09e2ac338350dcd48a57e8b4636aa7dec0d9bedb148",
+      "size": 35
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "628b8732195c4fb8e8d7d92f4412d84cd21c50f2d95aae15422eb7bc2bd37b63",
+      "size": 318
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "70ef294c76b5d77f878303fee2a156f9e03b57bd1d0f62c4940b0c4732c53e61",
+      "size": 142
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c079375cee72194d9d71fc9e25c47cabb49832736badd571a95e1c3412f5b931",
+      "size": 553
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cb99b0b57a2eab21ea9383732f9fd81abc9728c4d15213790de414931e1b8a3a",
+      "size": 4178
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "eac46b2d02873e435e45d9b664e65acbc5345649e37feb6a12584b73d5407f70",
+      "size": 11618
+    },
+    {
+      "path": "device.mk",
+      "sha256": "db42b24a60fc353e181597e2b184d2e0f336f7c27cec5f012c49091f26f45d95",
+      "size": 574
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1dfb908dab836fc5b2e0eb1539fade10476886f4d472fb33c415edeb7751488c",
+      "size": 1500
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "198fc06834540741b2513ebe65f9cb77f72ce0186de5a325a8cf0def747ac2a0",
+      "size": 94
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "49e252d690657744e63c0103c2bba7deec1f9d48d9be0282a30169f9dcf82b23",
+      "size": 7329
+    },
+    {
+      "path": "sepolicy/vendor/thermald.te",
+      "sha256": "6c2b53f414448b905aefcce6c94bb393949bca98a3f1bbd175ad2d94f863d6e2",
+      "size": 1472
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3b3bc6c2903fe5018a407ca86101acb7e8c78d8938f53197c54a743dc8bf1b5a",
+      "size": 1834
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_flox",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-28T21:04:56Z",
+  "vendor": "asus"
+}

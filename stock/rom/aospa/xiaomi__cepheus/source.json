@@ -1,0 +1,57 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_cepheus.git",
+  "codename": "cepheus",
+  "commit": "ceda3cf883c96e9a3e27c301c70dc0cf00c514f9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ec630f0328a26ed484742ecf8c1a44f595c6d64c220f7c846a7c3a8104898b15",
+      "size": 95
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "44789f00638fb73631bec824a5531d2172bde30631442bfcf73dd81fd3412929",
+      "size": 4779
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "06b0b8b49a31dc680be5b8f85079aa40cfcd6749410a108b864c3b3bf5171680",
+      "size": 6105
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e71659f467a0e14a366fcee6496580f01bc00be8ac0eba6dd3ccc6cb7c07c2c8",
+      "size": 1587
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "35cad7c0de333240498d37b6f073db81ac79bc6720a7d36495a73669d01cdc3f",
+      "size": 41327
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "49835a99cf1048d5b6a772c0dcb98e1ecb88cc724d4529389af3808e45b333c0",
+      "size": 1314
+    },
+    {
+      "path": "system.prop",
+      "sha256": "60bf70e801d7677cdd716eff1dffa251b6e5cca2eccc774566023847168cf7e5",
+      "size": 2151
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e43e2208081bc5982acecfc0f36c1e9062eb445ebc966d11469fc5c41f6d6a77",
+      "size": 6907
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_cepheus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T23:21:16Z",
+  "vendor": "xiaomi"
+}

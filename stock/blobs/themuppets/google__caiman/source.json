@@ -1,0 +1,69 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_google_caiman.git",
+  "codename": "caiman",
+  "commit": "7c8dd254e7ecad2041d771dac0520558d7765fa6",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/android.hardware.thermal-service.pixel.rc",
+      "sha256": "23ef9e5ab603f6458c64642ab72bd466ea8ab4841977ab53d25a8641fbbd43dd",
+      "size": 423
+    },
+    {
+      "path": "proprietary/vendor/etc/init/pixel-thermal-symlinks.rc",
+      "sha256": "a8cb65590b1f74e29c4983978d9421074606b8a1ba13ba09d0b4f0f43ddde8ec",
+      "size": 312
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint-proto.json",
+      "sha256": "b8defa792cffa9bd9250dc90d0db9341db09f13b9a4b56de454a398cc1c09f32",
+      "size": 66588
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.json",
+      "sha256": "5e87ec4bd2eb9163938824358f165e9889ca4478291fdb5bea395896622cf37c",
+      "size": 97689
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config.json",
+      "sha256": "1cbfbe13aa6e4a498b79b741039a964e28aebb12cbb0d65b8e772cbfaeeb1111",
+      "size": 69340
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_bg_tasks_throttling.json",
+      "sha256": "485943435e7172c16a4a2245398520d98482670dd17a9d4f43df6668c827f5a1",
+      "size": 3439
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_charge.json",
+      "sha256": "23aba769b8030e666b35cc9e0db6d1ec0d6ced1193a98fcaf6b57f791885cf23",
+      "size": 12828
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_lpm.json",
+      "sha256": "8916a98e8edff4c9c925bcd118cac1494593ee499161f06f9ac423521ef116d5",
+      "size": 6173
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal_info_config_proto.json",
+      "sha256": "a7141f65441a770388d60392844719ab549d93fc33ad14e3ada4626a29463517",
+      "size": 35697
+    },
+    {
+      "path": "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal-service.pixel.xml",
+      "sha256": "99b7485ba1175a4261a510a596ba9b11f98743245f86a9c767e24b0897e9dcc9",
+      "size": 304
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_google_caiman",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "caiman"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "google"
+}

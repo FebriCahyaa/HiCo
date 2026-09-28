@@ -1,0 +1,67 @@
+{
+  "branch": "marshmallow",
+  "clone_url": "https://github.com/AOSPA/android_device_asus_flo.git",
+  "codename": "flo",
+  "commit": "d44522a27ea905bf1e50b6b50a8eea4b5149808a",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "510ba0884b87bcb772ea2b8fdf8ea506cdac64558aae492eb05015e47db770e4",
+      "size": 1628
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "34beccf20ec76f31106d05b2dce1ebd27c5f73cd1488a3fd26125054a0e411d2",
+      "size": 684
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9839a28b71206be3fd13c049595a3112544d05e38c8969a02386b81405659723",
+      "size": 970
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "30810fa72ea50c8e8d3a3cdbbe502c5f163346242e45a9e8dcbe6041238c6405",
+      "size": 3796
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "d28a010fe0564ec0b84b95f0d6d8e99e3185ca70ab51a292e3e28fcfabb0b342",
+      "size": 10061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "81eefeb1845d4bd4b24d9c506750ae71e70eda8e771ad46bb2d682dd29c4ab3e",
+      "size": 1329
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8fcfeca186b71be5c0215be7407299a8fd1680d71a061c9b6ae2fef68f301870",
+      "size": 778
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "1a977082e47a5748bd545fd8bb50bfed4ecad93d358f1eedc3b3215c3496c5cc",
+      "size": 1324
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b7c59d682b4f2130d25401776ebd4c68021e5238c2429d6232b053bb50bd7fa5",
+      "size": 80
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a11d81ee2bfa5e61b4ef1f3d482cbaf10e6b1d4e580dd9c83c9a25e50474bd6b",
+      "size": 636
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_flo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:39:13Z",
+  "vendor": "asus"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_shieldtablet.git",
+  "codename": "shieldtablet",
+  "commit": "d1b8b5ddb823f337a27e58b20b6380a22fb90885",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66a2a6310d79338d6c88256a6bdab68cbde9413b2a4f937d5b4af5f7731b5fec",
+      "size": 700
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2edcd753d2f83e55305264c1db2a90d6652a52c0023cf5d1ee037def2d66cdf9",
+      "size": 727
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0a1099f304eb086d24d1426ad8db88f105f9728bc7acedc9c9c86ae53dd27de2",
+      "size": 739
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7b0d71096103e1ca6324bdb7136bfa7c526c386b4f8455935a851d983c6237e0",
+      "size": 2448
+    },
+    {
+      "path": "device.mk",
+      "sha256": "66a32fbf6fd5b85aa7c7c8fa8a44cb996194f85a8da85c3f413f507dec6c9b9e",
+      "size": 6287
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f8129d871ff9500b65868bbcdc6e2fa4eecc1abbd77faf69174989ca70ee3c",
+      "size": 676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9934b804943fc94650b6e1df6247e06489c2d15fa62d3b13adff74823f862ee6",
+      "size": 1023
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "61bc7b54d155478248288d5371fcdb4658e3e338e4af60c9d36df4d783852450",
+      "size": 1512
+    },
+    {
+      "path": "thermal/thermalhal.loki.xml",
+      "sha256": "537c91863549aa45b93531b076d42d9425f72707c0dd08f22db2b804d7cfa98d",
+      "size": 1248
+    },
+    {
+      "path": "thermal/thermalhal.tn8.xml",
+      "sha256": "7845c843c8fdf69490c1d73f0de56cabb78e49130ab5c800cee73baa56aa3181",
+      "size": 1063
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_nvidia_shieldtablet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-21T21:20:50Z",
+  "vendor": "nvidia"
+}

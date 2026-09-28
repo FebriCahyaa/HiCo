@@ -1,0 +1,82 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_shark.git",
+  "codename": "shark",
+  "commit": "19b208d7df4081784356227579e53d8b75ad2dac",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cffa789f5b4a8a5b4e00b9a7a94b32f908870c3dda089db28b86da7cc11a89f6",
+      "size": 645
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "591f2c68d61844ec4a5e20b00eb232ae410363f6f351cab6200ca0736c579f3e",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "18799c20cb8b10ce7f6ed512e21e21b98dc9f9b402c477fdc16c12cbab2bc7de",
+      "size": 4802
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0b30184d0333c8a5e664f55800cf7c52b0cc1cc0650b3bdca6fff366e72dfec2",
+      "size": 17036
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7c86302669906768d0db934fc3e6b49955489ad93b5e556765b365b50be867f1",
+      "size": 3928
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "6bb37274478ec64e9a0101808f773286def165dd136a73f28bbd361e9e176b34",
+      "size": 1476
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "b2011f4ce443b45b9768f79dbc26370ba4b50de52e53f8ba97cbfde3c871d4b4",
+      "size": 3266
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "3e00cffad6782ebb3e99455cd28a498b40e3250de77035a64ba9623cff0d7629",
+      "size": 14271
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7b40f6b285054cb6312a99bf2cb351151fde56e8895fa263f69cac6aa9bb808c",
+      "size": 48292
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e9e68ca2ab489e9fb1c7a21832f626c57c752137c4b9c0a9ae5615f93e92dc20",
+      "size": 2642
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "676963881d87b29e1d88a2ce14942b3f39764a64ecf33d5c1eb3a717d0008607",
+      "size": 6560
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_shark",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-08-14T03:09:28Z",
+  "vendor": "xiaomi"
+}

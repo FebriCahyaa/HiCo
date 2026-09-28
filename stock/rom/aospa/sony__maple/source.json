@@ -1,0 +1,42 @@
+{
+  "branch": "oreo-mr1",
+  "clone_url": "https://github.com/AOSPA/android_device_sony_maple.git",
+  "codename": "maple",
+  "commit": "c534bb7628fd4f3dd3660f88118ba66726c8e316",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fd9720cad29f3cce260cc5264a5ac2e7bb9166c29963f982a5209b0115d2bd74",
+      "size": 148
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d748b027ef19eb59d446382d7873f71bc8b0288192cd0e69bf0ade7564414c3b",
+      "size": 696
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bf0ce26b346d9a286e6a742c7c8dab437dc58429d35ff4ad38bfefa2536a7449",
+      "size": 1715
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c981703cb2fac96ea7134a60a39a7435c3639b1c156ebcc0436246673067981f",
+      "size": 4335
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "d0b6a693705aad4f2d34c176e56523e375da387b44ab2852e0881671da217cf5",
+      "size": 737
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_maple",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2019-01-06T17:45:59Z",
+  "vendor": "sony"
+}

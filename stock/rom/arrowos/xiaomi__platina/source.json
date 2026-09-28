@@ -1,0 +1,62 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_platina.git",
+  "codename": "platina",
+  "commit": "8027d02228882364854f179ba9230eaf54403d4a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "24fb35cc74ef6f7c1e7e6f99c5c646e5b9626bfe0e6cacf7608e1128e77f4aea",
+      "size": 8964
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b51089140eadf6738efa063d20b14bc2d3c23bd2d17dd3194d0e1fcf350344e6",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a6dadb37fb7481d19bcbceaabecdd26ee9a1b782d9b28e6b5fe9e04897e2f2de",
+      "size": 9003
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cec9804f6c1f338c2c052cc11d428c3829f05a2d3d66b0430798ddcd1c3273d6",
+      "size": 19962
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "11e4489d4d9d907bf3e28fc4ebe04fc95ab663e9d9fd8985d5f5e75c30039090",
+      "size": 1860
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "780889f7aa4a7a10c7514610332f45927903c80aa6fa601d232526895e50d849",
+      "size": 117126
+    },
+    {
+      "path": "sepolicy/sepolicy/vendor/thermal-engine.te",
+      "sha256": "c49d715ca8514176c6f288930bbd91fe7899d89dbb9b5c6c9bb804ada6096c69",
+      "size": 547
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "a7d31f2c671d0acf4058e28516395e43e9c988e918bb56102b16e9b2cabe9233",
+      "size": 424
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "802a6c25a5369b702b6427b9dd3cd82b46359a24f7fdedb5066266060ea18c73",
+      "size": 40
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_platina",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-03-15T13:23:00Z",
+  "vendor": "xiaomi"
+}

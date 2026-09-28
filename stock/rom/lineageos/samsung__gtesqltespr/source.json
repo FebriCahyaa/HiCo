@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gtesqltespr.git",
+  "codename": "gtesqltespr",
+  "commit": "54c1e40a9852a52bacdea496335a0dee9f70735f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "616a0f73cedaea810cedb5146e83a0c053ddff32a3eb745035091e1d18d2f32f",
+      "size": 195
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5fc74aef317c2b88c4082feb18a16ccdaa131d3b15e579f7290db9bd4edc6286",
+      "size": 420
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7add48455453220d524cdd4ade91fc507159a2c297cdd473ba5d15e98f51a0ad",
+      "size": 377
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9849cb77f103d702afa6f875b4287c764bb514bd82e4223c40903025b315c71c",
+      "size": 896
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "055c16854e0fb530a9777061d88e1e93e426b819dc5357694da1c2a7926a056b",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "289bcb835185e47d4eaf31b9bee722b2d884311bd2b6a955a4f0dd585d09e1fa",
+      "size": 2542
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "126f52d6610fe2079e464c1b323af5aac5cb36495b0cebb3116fca98c7ee8142",
+      "size": 79
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gtesqltespr",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:09:50Z",
+  "vendor": "samsung"
+}

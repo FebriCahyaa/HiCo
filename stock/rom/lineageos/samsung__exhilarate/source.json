@@ -1,0 +1,42 @@
+{
+  "branch": "master",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_exhilarate.git",
+  "codename": "exhilarate",
+  "commit": "89991021f499a3bded57fe481e20013372278c14",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fde6fa9403cab781583d8ea8f6186c317e5743469c59aa388dad7822ac5a8f54",
+      "size": 2096
+    },
+    {
+      "path": "device.mk",
+      "sha256": "535559b42ef8b8e0185316856af9cb4017096234c288d0f2ed04a30bf1ffd545",
+      "size": 1241
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0a64d83fe465e65ce5dab71ea30bf6a07a7f90af1777488126f4b6ad1030e247",
+      "size": 97
+    },
+    {
+      "path": "system.prop",
+      "sha256": "936c6f0b3fd4e23378b39fab07fe22a6b4c8886f9a1a134b234a0ff5a8157c23",
+      "size": 1695
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "dc313b4b4b0be036ec17a70396a6a4ec99b8c0ac50291b07304a7df501b0d897",
+      "size": 34
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_exhilarate",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:08:50Z",
+  "vendor": "samsung"
+}

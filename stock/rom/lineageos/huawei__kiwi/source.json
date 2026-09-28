@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_kiwi.git",
+  "codename": "kiwi",
+  "commit": "8d2f206ad19bf34f6d61bfcfbc8c60c79dd4f894",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6375f0004cce2bf2e2193d061af194bc5360c6f7f3cd954d8f903d14a8807c66",
+      "size": 48
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5d13005d8fa90e0345e942e7836c7e19b87692b8335c6aebc66a5cca1883fafb",
+      "size": 2869
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0509f81649f949240b1e075da9b9ec1634682ecc8dc6474fecdf399f5246e0e6",
+      "size": 683
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "738bf286e3e1a98150ecd796971d4b4981986ec33cd008c3d223cff28631bd69",
+      "size": 5597
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1e6ededd0f930bf43120cc31bc96aeeb4e9e71a940b6e77aa3eb06b89f7b8c53",
+      "size": 3444
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c036c9b58baf4cba7a31fc9c01cde6d3ed96160880ece3b07cdebef80329c940",
+      "size": 13164
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fa942454d7d53d27f18cd8e6b2e9084f7b673b153c1f9a5a6205615f78cb43a4",
+      "size": 1487
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5f83f7645fac109e2d313b5568aad7f8da9c459baec3477802857397d2b417fa",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2b4c8d823d12656fd9934565450a4968cc56b38d254efe5a039a75e688f5ec2a",
+      "size": 29757
+    },
+    {
+      "path": "system.prop",
+      "sha256": "97bf1fe10510e8fdd898108babc11d665b92cb5e5fd1ad5c8de42522a319f25c",
+      "size": 4371
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_huawei_kiwi",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:15Z",
+  "vendor": "huawei"
+}

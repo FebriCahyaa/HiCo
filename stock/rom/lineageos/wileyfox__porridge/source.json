@@ -1,0 +1,52 @@
+{
+  "branch": "cm-13.0",
+  "clone_url": "https://github.com/LineageOS/android_device_wileyfox_porridge.git",
+  "codename": "porridge",
+  "commit": "9c9ae131c02ea3133167ed5a29bf51a203059154",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a96f33cb769d5a119ac57aedfda94a57242cd784af196e054b1722fc561b368e",
+      "size": 732
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9f4044dccd8552ea33ec1ff01f42c7475796142af750f7a09c2984cb3febee01",
+      "size": 1820
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dfd0b377c381670714929989a05a1ea2cf6de1bb1c11f89e60952f67fac9296a",
+      "size": 3428
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "14390cd930e3618cb6967338a108383383edc7238d44a187fe74a3ea8c610e5c",
+      "size": 1466
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9220d3fcdeaebabe49a37e191b20ba131699bc307705e5a84d513f35533baed0",
+      "size": 50
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c0d6d686c76de9a16e769dc9baa7e8423a0a2d40717be4263981117214cae3ff",
+      "size": 351
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "87b17f9ccdce28f558d32e7e85b187d6426dc0d842c6d948b13c99aa5840595f",
+      "size": 103
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_wileyfox_porridge",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-08T00:44:34Z",
+  "vendor": "wileyfox"
+}

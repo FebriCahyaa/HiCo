@@ -1,0 +1,67 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_lisa.git",
+  "codename": "lisa",
+  "commit": "42dbf26f40185c75318e5ad9cfce5a8a0bf8f910",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c3d13dbc5ffba4e0a8fd273d96f52619f834309be3c88da94af1a68bc9fc12e4",
+      "size": 178
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9edf899eb0fc39342c7dd29753d0d5610346e7f07677b213ab08a925ee379c2f",
+      "size": 3901
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "417e3719fb40c683e47c22ee8cfe2e66e9e0b69267a135af6a81ed1a286194bd",
+      "size": 237
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "fc64541a222b48fe6c95f3a92f3a57e550954682d24dbd2faa7b8b2ad0d62e34",
+      "size": 6809
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ba4a56f9b37079dc302b281e9a84b6b31736e505a9c490a82f436c3e2fdf79b6",
+      "size": 22647
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "48ff9b512e37495a787e02b96566e005d4003079f3c5b4002d824a04f4a5fd8c",
+      "size": 3114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ac2632e6db38db7765324baf5596e4aad26c9f596353b05cea81e4c00207c071",
+      "size": 88001
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "60a3b1790039d14afa75d4dc631eb0e55b7b1f81974efad3b3dbc3fc955f5b3a",
+      "size": 1156
+    },
+    {
+      "path": "system.prop",
+      "sha256": "57ea06cf5d08e8824e51fca95cdbb0957cf0fb88e91f06e1e06252fd826dfcfe",
+      "size": 919
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4a27b7ddc4d2c7eff296eb7132a3006ab4eb9a7ae2c7b0210a4496e14d9dd235",
+      "size": 9789
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lisa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2024-01-31T14:47:35Z",
+  "vendor": "xiaomi"
+}

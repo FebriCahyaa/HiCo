@@ -1,0 +1,52 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_beryllium.git",
+  "codename": "beryllium",
+  "commit": "dcfc5673d2de268454821a2d7a45b71d194d719a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "100bbf3dcee0a26a5625fa213e14beba642228cb44d01db04ff3dd1c4177042b",
+      "size": 759
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e5e6505d1a1c93e0ea121b393dc824c83e06bd926ff0fbc430c426f6d120e8ed",
+      "size": 921
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4d6821630d3f7e5194453c2428728e96fdb453abb57f337b2ea97047ff7ca983",
+      "size": 2873
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7ff5b057a32fb3356f114a205ab7400b73f02b7749b2f34e98f1254a206380ad",
+      "size": 473
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fa01e6422493be109e36f2b8395d38ebd55737ce3fe083688cca81c57868f673",
+      "size": 13956
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e5abac3960ce4282a0bd3cf002d6ff42e7d7666f3f297a3b3fb06ced949ad680",
+      "size": 181
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ed324ea614d01958c21a0bf6646cee6e3b8b7de8bc37af70858010bd1524b15b",
+      "size": 25
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_beryllium",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2023-07-12T15:40:46Z",
+  "vendor": "xiaomi"
+}

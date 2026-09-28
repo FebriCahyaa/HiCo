@@ -1,0 +1,57 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_realme_r5x.git",
+  "codename": "r5x",
+  "commit": "dfab52198f36bc38327be857d998866df8dffc50",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "30ce248ffc05b940afa90ca765dd773f8be52389bf5f5de6c00a3764ac64f1b9",
+      "size": 570
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "be70eed382ec84309f2adcbb68ba542be2391c3083ddcb2bb007f5f6797020ad",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e4b78cdd7b724d091c600bf17d84aaaf997d3bb84fbbad77664b27cd41adfe8d",
+      "size": 6019
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6fa299a0f5652b7c74ab775c86694728f7bddd20decee61f2dc553edaa7f7ef2",
+      "size": 14553
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c238373e3e49d6dd18eb0df982aa464d8bbbe1101b3ee6e13270bc768242b114",
+      "size": 6163
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "47bd68849000095ab8c52cb13a1623c0d64f4a771b5e0dec775c641627475a91",
+      "size": 148951
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "3cf50e6b8d7759eec42e6d99f434e41f46dd919026e69fc92884eefef054d987",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "65cef33c053ba4984fa70b68e72f99a431417794f6b878f2b47e257045ef6b9d",
+      "size": 103
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_r5x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-25T17:13:31Z",
+  "vendor": "realme"
+}

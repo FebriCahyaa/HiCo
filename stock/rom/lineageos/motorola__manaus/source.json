@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_manaus.git",
+  "codename": "manaus",
+  "commit": "0dba6fc39c2d86d41a12829a9a1c6bf3dcdb11b6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8b3e016acea8e5c195c808680e9c1ff73018463c5b6402e7d2f45ea68e3c2d70",
+      "size": 270
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e7f6f27b3a09f933b668c5e79ff7a815dbed6efe9e7ec81506b3dc547cf797c1",
+      "size": 141
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "83f857e79651f865a8ce3862bcaadada286ab62b5006e25682b116db37e150a4",
+      "size": 1578
+    },
+    {
+      "path": "device.mk",
+      "sha256": "542cf49758436e229c8cec269d70380060d8a6fb6d1e858ab95ec6ad758c9986",
+      "size": 2730
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "5d2a1b129c8445a52cea278dd61a8bd18aa7825210fd72a786e520095e029389",
+      "size": 2503
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "676d1bdfb52d8447458d18270f4a9fc087cd7b0db308df24f5078e5934dd3da3",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ebf7a9f04b739eee2489be5830ec7fc19279ff292b818c0d2317c4771d8cca4c",
+      "size": 47157
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ecfc555616659de0f44d43cf7769d9f2a09fb33d09b118939082ce699399566b",
+      "size": 46
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_manaus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-08T16:19:59Z",
+  "vendor": "motorola"
+}

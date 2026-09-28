@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_cebu.git",
+  "codename": "cebu",
+  "commit": "f06d385097c93f74f56971d301132978cdf5fe4d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9aee43e18318e747e2013418892f43967b48f60e172d79ebf18edafa15374105",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a46b3cd10d9296910c214b4bc99c05f88a1ef77b5fcdc8900279b8734bab2440",
+      "size": 1671
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1ceccd950b9170ddee6f6be9a4d6a5b0d9e37cecc282275c2b9ef4c8463cfc7f",
+      "size": 3399
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "46be2fa3a3740f1a4438884c29ed0319909e25b56a98045d4fdcf066e5df776a",
+      "size": 2232
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "89e8cfdb73b69b2e81b11397403083348ddf8634deabbdd21b929f4ff207afcf",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bdae8544f078e8120c282be42c1fd07a2b14c27b8aa96a6ef887680cb55e7615",
+      "size": 11211
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "49fd68deac11bc931a0535498242c8f2e08306339e9e72ff24fb1c771cdeb739",
+      "size": 575
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_cebu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-06T12:44:55Z",
+  "vendor": "motorola"
+}

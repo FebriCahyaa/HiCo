@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_athene.git",
+  "codename": "athene",
+  "commit": "3d73540df850e53200fd35cbf436b730ccccc33d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "0dac74e0669b39287befbf43fc05177544c2661810aa48b5f485433bd6faa655",
+      "size": 6703
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6bfebb36de7e62e926c14a6fc9e5dedbdbe0ae3536ba050ac98bab3448d6fda9",
+      "size": 826
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4f258ae33fbcd995d8e7245d3cdcba24efeb32abf0dc58d6082b4875985fb7c9",
+      "size": 8746
+    },
+    {
+      "path": "configs/thermal-engine-athene.conf",
+      "sha256": "3da3d7232460aad3100d5cfbb6e6ab2a1bc249ee09366de3edd5518300e28804",
+      "size": 3338
+    },
+    {
+      "path": "device.mk",
+      "sha256": "09e5cebb163aa871f4076b4631c9d480997e4b381bf35ec1021fddb6d8254566",
+      "size": 17647
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "fbcd97782fa46b4996399339f4f2234c66fbe217e30d696f6a6bb267b65daaa1",
+      "size": 157
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_athene",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-02-16T02:08:22Z",
+  "vendor": "motorola"
+}

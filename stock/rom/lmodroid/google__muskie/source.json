@@ -1,0 +1,57 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_google_muskie.git",
+  "codename": "muskie",
+  "commit": "9d6e6cda4f95ef1eac97cd80377ca90f6012c68e",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8967050a39907c66c8d17037c1e450399482f96336f6f19395f8500ac838b849",
+      "size": 786
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "41c88d95a11fd7ef8225d227b5ddf92aa2c99fd5016124c902287d40dae7213d",
+      "size": 4784
+    },
+    {
+      "path": "device-walleye.mk",
+      "sha256": "fa98967c05debe12caab3fde3156d4123fda32bacd54fb7a22fc438741c9c6fb",
+      "size": 1446
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d4474430dc62ac054be9167096f61e9ddc3d2df86006cfe7e07cba535e6b5c9d",
+      "size": 2887
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "02e8f2e2976c5b859e475afd6b3382fc6ba3033b16dfc5760b53f33e4fe54dfb",
+      "size": 453
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "c17315150a567c77027dd90b8843ae3f4e7647aabe453c28a2504b8463f4eb76",
+      "size": 1962
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "8a225335209f249bee23b6d8c0d08a99f7a1bc5482f035caa7b9fdd998a52c61",
+      "size": 4896
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_muskie",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-01-20T19:42:24Z",
+  "vendor": "google"
+}

@@ -1,0 +1,77 @@
+{
+  "branch": "alpha-14",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_google_akita.git",
+  "codename": "akita",
+  "commit": "5394bb7c3682ae4b6be375a61a75981f8c95c65a",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5cc7a347b7b506daf9e9b21e41d73c9d6a779f4b86b0ee1f085546b5da27f56b",
+      "size": 991
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6f61113d399a44564c00e2f3b1a34303b45a54fb6e00b9f8c997007ce36cd240",
+      "size": 1210
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1e5ebb4337eff265313f47f755aed376b0bc87778377ebde92bd7c6e571361be",
+      "size": 838
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "b4fd5a4b39bfd1f8e4bb0c40e15c370ac259782c91b0a575cd108e46e2f4240c",
+      "size": 226
+    },
+    {
+      "path": "device-akita.mk",
+      "sha256": "83fcd23dee179e1e69a7f5de33032912646aa5783a8116e901d7ecae00f363b6",
+      "size": 16722
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "234a015a922215741b1c9ae3809afc93931c7d1641721cabedee1a42d73243a0",
+      "size": 6747
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "167fd25205e1885d15299c5bb6d229235bb19f0f9ef0d9985874aabfac148294",
+      "size": 242
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "897c3d48e54c12a6125f553a7733d96e334a2b0cd790b386ee41031f821bf97a",
+      "size": 233
+    },
+    {
+      "path": "thermal_info_config_akita.json",
+      "sha256": "65c3ea92332f678dfead39f351613ccdb4a1244b87d67588b79166d1cda4b877",
+      "size": 35845
+    },
+    {
+      "path": "thermal_info_config_charge_akita.json",
+      "sha256": "9751580277acfad87c52d4938b2ddc7a0daa7f7e6d6053166e0379457f465ba4",
+      "size": 9599
+    },
+    {
+      "path": "thermal_info_config_charge_proto.json",
+      "sha256": "678e8143dd743d45f761d58066af988e93508f5de841bb79ba623e069c1c6273",
+      "size": 10632
+    },
+    {
+      "path": "thermal_info_config_proto.json",
+      "sha256": "e324f1497ad1b17282f6e73aca2b85da33e701fc801cc43b412f596e978201f6",
+      "size": 22541
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_akita",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2024-08-01T18:04:52Z",
+  "vendor": "google"
+}

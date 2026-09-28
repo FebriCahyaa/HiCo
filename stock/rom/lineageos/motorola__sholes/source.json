@@ -1,0 +1,42 @@
+{
+  "branch": "froyo-stable",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_sholes.git",
+  "codename": "sholes",
+  "commit": "4544f049667463891a02d808f40c70d84eae82b1",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "93f387e8cce9beda45f167bead00465e85d106e15f98ccf7758c2364fa45200f",
+      "size": 782
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5e4323be932c88d9ec3cf593f19d01f4c702346b5c1be6d8f9fa8f8779fb6539",
+      "size": 2943
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "819bac47646dbba91ee4b5e99122901f126ce3f235996c65addeedf7640bb826",
+      "size": 22580
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5b9237dc79d8ff3636c77e2e00fcbf2be185ef1efb0fb388758268f835663cb1",
+      "size": 858
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a47f74315fa3d9ea86d64db4d1bbb13521fbb7d2e4ff97e02dedec701ac8ad95",
+      "size": 850
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_sholes",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:03:24Z",
+  "vendor": "motorola"
+}

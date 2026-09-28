@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_mermaid.git",
+  "codename": "mermaid",
+  "commit": "4ff50dceef76142eee5a58df22836db3271253ce",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7fa6417f9ae3dadf78e377933fcdac2133083c2ae0776c714fa9e7c61a9c3712",
+      "size": 654
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d9fba62095e7c342d4c3d09087494b10cdbd410db4fed680be685e4ec5840368",
+      "size": 1066
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0c7fc20b94d537e3ae8fdf235a458af734eb367f7c62a97fa3318c1a860371c6",
+      "size": 1411
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b79ff7fa7fe50c7aedf72806dc4c1270f39d96bf290505fe23cadf6acb2acfdd",
+      "size": 1406
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a853374d45d83fc5c672cd87efa8ded53a27652f290b074ccd8f8c51abc64a71",
+      "size": 110
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8123e1504916789fb0ff9e97eab97249b2a3049b39dbe995df7f6b7c29670fb0",
+      "size": 14537
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fcca1a3ea56d1cea8481c88cac593ef883c97601118ca0f7ada284bc083f6494",
+      "size": 345
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_sony_mermaid",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T20:29:29Z",
+  "vendor": "sony"
+}

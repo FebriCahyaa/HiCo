@@ -1,0 +1,47 @@
+{
+  "branch": "gb-release-7.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_droid2.git",
+  "codename": "droid2",
+  "commit": "020ad728be5616f392bbe2d6d0a88e15502e8c60",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "902c24c838acbe70589009b6e4b89fe2e3bd3d13655069ceb05505355c0a36ed",
+      "size": 73
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5dba513f7c3564452763ea2ddbb4238b288c05fb362bcc27dca77e196376189c",
+      "size": 782
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c7b195cb4ad1deac5852652eee9719bfb7f61114666a4750d439085e48362ed0",
+      "size": 4367
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "53454f305a92930015ea1e88c7e75b6ede9e6123b563f61edc5a4950e5a826d8",
+      "size": 37367
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d2f06b0c04bb934a1adbde0eca914500342e3451d8e0aca7a986e3858999af0a",
+      "size": 5026
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "65c9f3d439d59417d0650fe826fc5d148190469ca5fbb23584235fe8db221a9c",
+      "size": 850
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_droid2",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:01:15Z",
+  "vendor": "motorola"
+}

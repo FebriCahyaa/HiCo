@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_m21.git",
+  "codename": "m21",
+  "commit": "db7342f83000b78f85c374291d26dadbc3b06385",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "44c85c34b8d40391037ca9b63ddaf5047f4b2613e100c8448c617f524169e2b0",
+      "size": 647
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "072e4671642374d4f94d3587bdd283716d7409db66b8ef7868d97f862a02d46a",
+      "size": 1293
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f8872af3b1124019976f521d86f4974922c9983b8b85bc309fd5e0a66ba95ed6",
+      "size": 2110
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3fbeb66dd5b90e52ab72985d738889e44f0947cf9b2ba632b0c300c9fe00c1aa",
+      "size": 1487
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d3df5be506604af5b8a1f5321a8f1f6ab881ee9810482a7b13024d155f3e0826",
+      "size": 146
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a9b4562265f099d1f1a8c3526f1b81d0fc176c3fabf4ab53c247762f1d7209f2",
+      "size": 2380
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "dc5cc12d221c2e660eaa1f03e5dbb3ec7bc37103d9de18fde761847b376505ac",
+      "size": 146
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_m21",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-02-10T18:27:53Z",
+  "vendor": "samsung"
+}

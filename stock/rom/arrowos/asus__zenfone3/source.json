@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_zenfone3.git",
+  "codename": "zenfone3",
+  "commit": "c1e7efd607455fceca414e743d90028c6b397c2d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5ef70749cb7ab2dd123c4742dc47445299949dae65b80f494afe080201563a6b",
+      "size": 29
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c7206258f6645e3fc2e612da3742f74b385f14e71a75e86ef91547d3ebcec8ec",
+      "size": 3722
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5219a25723080ba2def9e4e7d557eab2647d487fc79ce8f71aecd0e11161fd88",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e06a9cb9e0037e002e4bdb1da0ae77b41406d7b35360656f0e0955623f5cb5cf",
+      "size": 8215
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c47f5dc00551316b7021289437ccadb2a73b45e68752b0428f0fff0180c8eb12",
+      "size": 4395
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4afed7035f47341f00bb5ec67437826ff5e454a79350141310fbb7738429acb6",
+      "size": 21542
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2238fbcf290743b6946b55dbd8188ad74f8d98adfd436a42e00c3b8fdadad3fe",
+      "size": 1668
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "76a73f8b08eb7c18116d8d2daddaec81a47da55b6bf952831a4ce1f9d1c4597f",
+      "size": 13791
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_asus_zenfone3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-07-30T20:41:34Z",
+  "vendor": "asus"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "6.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_otus.git",
+  "codename": "otus",
+  "commit": "65b574cd4329979ccb53d7398f41a491002440b9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "bc04093f26cd40c6d22af7080cbeff86ba366fdb90cb194d575c0a1818405075",
+      "size": 1142
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6c7f3c67993dcd5fb146d8e55d145aa90edf7b82311d88068b34cf58b936db4f",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2d53ad93ad4b6b569cbfb8a17acc7e7d62d50bad38aa18b57658ed466e21cf48",
+      "size": 1445
+    },
+    {
+      "path": "device.mk",
+      "sha256": "03f80a56503165c7e9cfc131d3eddaddbd00625d0d981caa594aacc2f3b21da6",
+      "size": 1458
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5ef7582798a04ab139424e02936adc49ca515e7574e0f73ee14df628bfeccde2",
+      "size": 589
+    },
+    {
+      "path": "prebuilt/system/etc/thermal-engine-8610.conf",
+      "sha256": "190b9dfadeef09c9e3515d29c1e82c95bf79e8168c499a79a645eb4af8e34d3d",
+      "size": 518
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "aed8c8455aeccd3e82e4bd0b55071484598e0245ef9cddb8c7d8d0f5732bd995",
+      "size": 39
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_otus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2016-06-22T14:15:36Z",
+  "vendor": "motorola"
+}

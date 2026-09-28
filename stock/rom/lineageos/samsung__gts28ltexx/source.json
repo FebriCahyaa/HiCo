@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts28ltexx.git",
+  "codename": "gts28ltexx",
+  "commit": "a6e40de75f02e0879702d76bfb106c1608b17398",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "918609d647a9298edf51fc611d2c09bbe2e3599db27a1712737acf173b59bb66",
+      "size": 733
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d300c63273459b7b99e9b7f479d2d85ff8f5c99a980eeb0a416275a817b28434",
+      "size": 481
+    },
+    {
+      "path": "device.mk",
+      "sha256": "513e25959636afb373210049a1a7605552f1645c86b431d79f9ac9fe0fc746d7",
+      "size": 880
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5d778c7ff6d2bea63376089e79efc0ce4d28b193add7afbfec135944e7890cfc",
+      "size": 730
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "585eee68f782c3c736d7d8afc59aa60ab0b97ceaf7081db17f5dbb18a9a50f32",
+      "size": 128
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "679e1bdfc599704666af1f23b875379f2fbc3d7e93c036a490f617e8fe666f00",
+      "size": 1900
+    },
+    {
+      "path": "system.prop",
+      "sha256": "41c58a93939684395784b43c33a51c8102674743a1946b561ff67693c6cc7d10",
+      "size": 679
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gts28ltexx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:18:44Z",
+  "vendor": "samsung"
+}

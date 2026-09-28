@@ -1,0 +1,2 @@
+add_lunch_combo dot_passion-eng
+add_lunch_combo dot_passion-userdebug

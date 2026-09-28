@@ -1,0 +1,57 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_lenovo_kuntao.git",
+  "codename": "kuntao",
+  "commit": "7da41ae01f3d704f51edfeb1b9ad523488a42cbe",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f96248859677846bd038b27ce417d60b71b51f9c846827dbee8d1573e4c8a462",
+      "size": 8945
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4fe1d011d3ef5169a06d4360feadfb6c085ecb81197278664572d70d5b4c61b2",
+      "size": 6561
+    },
+    {
+      "path": "device.mk",
+      "sha256": "dae25b60e3c87a73c5619f7d6a8d8a5acd1a300e55cb0f203a9e25ece8ec0463",
+      "size": 13009
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "84d773a258dce74499bc57f00cb0eaf08d29ff1f54f8f6b57304f103631802b5",
+      "size": 1801
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e3f195657430db9441e007e438ae3b71d8089bc72089066eab3dacb978e62dab",
+      "size": 14741
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "872686c4a84820b0ef316fcda8fdb7bf92b8891ce26c4b045358e9c98b79a00f",
+      "size": 47
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b3424fca1fcb7cd1f34230919ab595952122ccf85bcf2f320ce90c4f5bc0e685",
+      "size": 3978
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "8a45ee2b92964325c3cd7d1577495731e9f83b1b2eb5255cd944e324a51540a0",
+      "size": 100
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_lenovo_kuntao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-06-15T07:30:56Z",
+  "vendor": "lenovo"
+}

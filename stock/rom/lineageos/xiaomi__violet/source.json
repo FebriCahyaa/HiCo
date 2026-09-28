@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_violet.git",
+  "codename": "violet",
+  "commit": "266836f9d5a9f6357df23376b0d8dddb9df296d4",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0c88e14849ff84b41989b9b5de161ba0de3542e11a36975cd99c24bcf0a3cb88",
+      "size": 200
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e43841cdd87b6cc50a54b4a56a6fce063f2fdde240a42e35bb305cb0c79989c9",
+      "size": 1573
+    },
+    {
+      "path": "device.mk",
+      "sha256": "bc1049dfe29539939a2ed662213d560a11ad98958231a87b214f1e698487f19b",
+      "size": 2491
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c9768a71e88d64e4b0641dbeff37a43d55d17067d8bf04ae9032bea73b2d97be",
+      "size": 1886
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8407d0232c285b3405b981d4d4c896942a822e18017327a40384685fe0907576",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9a97423d49dc2b7ce93bc816110342ce0c500f4adf6edff6d072ba8bb5c92921",
+      "size": 17976
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "72198bc663ff707473e6d90ccfeb367e09547a0dfd468c60f9ca5ef8e2b81eb7",
+      "size": 180
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_violet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-23T19:34:24Z",
+  "vendor": "xiaomi"
+}
