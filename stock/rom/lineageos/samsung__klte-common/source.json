@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_klte-common.git",
+  "codename": "klte-common",
+  "commit": "8f71a63415397def5ba886f4030b0d91e2253262",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7e9a5bb5293d7fd03ee26581c9cb718473ea8d70ac8e3a18ba357e391db9861a",
+      "size": 840
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b94308aa72003bca5e02240810662e7c7c843453362c343d1d3baeab099a7458",
+      "size": 4227
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "4822ffc1f994fba20f1995baa60dbf0b1df92c921f5204de6e563bcfc649308a",
+      "size": 1934
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8ffee6bf1cd0769341aa5d9e0dc10eb4ec8b5a75f2b1816f601c2d4f56a98e8f",
+      "size": 1338
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8b919f3a81bf41d8fa96cbf927057e56eafa7bc58dc8de9106d4ac09bca7834f",
+      "size": 227
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2106233227fc1753972c0443025c35b395ab6989599958f595f8fae3dd3a6e80",
+      "size": 1578
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_klte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-06-22T06:20:44Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "fd35e70d7f88e1d8dce441e0e894f10a0484afc1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2fc896bb1ea4b509d3e390a1f0af75d956bcfe89326fe9d5460ccb04b5ffb9bd",
+      "size": 4126
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2891bb0a13ba5112b5c10c8d4d0139599057b1b0eba5178092f232495b3631f2",
+      "size": 6175
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1649ea758e9e445b95877e1a84e7e4fd2b55dada2bc0ccb360296772ff7f74d0",
+      "size": 3403
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7e90ccc8dab99854e156278e4a14df3e5ef2f680e313e347a5987b05ab4a1b55",
+      "size": 104916
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "7a20ab50d76b9464cf2ddf36643f86205edffb5a1f82d1e8745a13016787c7d7",
+      "size": 59
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1d10f42f66da6b1b299aac4c53c7946846fe15f4f4d8ba42a1063b83a6c7985e",
+      "size": 7955
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-10-17T04:26:54Z",
+  "vendor": "oneplus"
+}

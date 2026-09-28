@@ -1,0 +1,62 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_rosy.git",
+  "codename": "rosy",
+  "commit": "867056fb45c8cfb03fe9f4d4276423f0d0b045f7",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "63f26bbeb4c782fe86820952889b3c339e3ce802e96716f862fc653e03c76c7f",
+      "size": 4703
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bcdb1a502143a597ab969b595df2d0a7628efeb59aa9c66335e91a94e82eadec",
+      "size": 738
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a386e4627b18722b753785cee82022e6b8cb45d2efb6056f3454ceb621e8ac27",
+      "size": 6791
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "1fb43528efc3549905d36d07e37ac9c873c999168cc42492eaa3f1301dad0b15",
+      "size": 4511
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7cd93d17431ff41fdc84168a6e505bbd1ec1f1088bb652aac6723b7470607bdd",
+      "size": 20023
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c48728fd8466e7e0045900d53c806e874bfc11941675543f7ecccf66ad21fb2",
+      "size": 1824
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "977991e2d51fa5e1060b5092aef07816f79ba90d1b23fe47e14cbd195287836b",
+      "size": 156882
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "3fe5fe474e16e0153d39bd65ba672b9c51774399ddc653fbfe848096fdf4ac96",
+      "size": 160
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_rosy",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-05-16T12:26:44Z",
+  "vendor": "xiaomi"
+}

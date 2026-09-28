@@ -1,0 +1,72 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_taimen.git",
+  "codename": "taimen",
+  "commit": "614d8b87031226b10742edaf3619e9ce3cda7a3c",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5dbc7316daab96d7a38451b1472eadf6c920993686e33a862bf922438b76e971",
+      "size": 109
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "04bfa5e40c5580989572f6d035554ab907d36f13c9772ba659a08996eaa98af6",
+      "size": 1583
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fb5b2b186d7ef6d80143e59f98a39aecda80b9db2bbf064b58cd340663a14710",
+      "size": 809
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "274aaefa3dfdce97b9dae3fbe3058c64b34d5a9bef81f8a93d536a18596d3a6b",
+      "size": 2191
+    },
+    {
+      "path": "device.mk",
+      "sha256": "365bae9f5d53c0cb4d35b51fbecfbc951dfa656299f36ee60147384ba2cb0547",
+      "size": 6720
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8c7a9e84b58c253eba1c27a6041695dbdf74e59a5c9797c42630e0363e6b843f",
+      "size": 3064
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "22ada5030712d0f53dfd4368712728fb812fd431be0e9c64354f42fc72d88ccc",
+      "size": 11068
+    },
+    {
+      "path": "thermal-engine-vr.conf",
+      "sha256": "6f2b0e2c225b7a70917103f1d0dd59850555accf2823a43f6d79d72409fc3a1d",
+      "size": 661
+    },
+    {
+      "path": "thermal-engine.conf",
+      "sha256": "b7197816ed1dbaa176c77d280ee22b7f544f10f6ed78b71730ff98b60b898a79",
+      "size": 3338
+    },
+    {
+      "path": "thermal_info_config.json",
+      "sha256": "719487f2635373895508e76dd3ce59b8411b335ba01438a71a7d3941215ff3e5",
+      "size": 4895
+    },
+    {
+      "path": "thermal_info_config_evt.json",
+      "sha256": "c23c9b5f839e377aab2fca446ed4e04a24b45941749f1e8ee990a5ebf2c16622",
+      "size": 4894
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_taimen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-07-19T11:27:43Z",
+  "vendor": "google"
+}

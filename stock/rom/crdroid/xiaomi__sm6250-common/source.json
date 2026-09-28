@@ -1,0 +1,117 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "8f05dfe099963c5a20cf5b2d1baad0ad4f8c8241",
+  "file_count": 20,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bef765279caf3d52582907a6849f859cb725cde13e1a3406f717fdef8a19a082",
+      "size": 379
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f2365d4139af3b709a4147a9de47fd308b8916d90baa5ec3577f3b387421c52e",
+      "size": 6434
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-curtana.conf",
+      "sha256": "8f2444315212b34795af6a1517cae35a6b656061fdad6e8e53083bb947ba2c69",
+      "size": 1451
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-excalibur.conf",
+      "sha256": "d059331b02ee752186f946d63f35fd734317469849e3a58dc57df5ddf81bcef3",
+      "size": 1410
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-gram.conf",
+      "sha256": "d059331b02ee752186f946d63f35fd734317469849e3a58dc57df5ddf81bcef3",
+      "size": 1410
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera-joyeuse.conf",
+      "sha256": "d059331b02ee752186f946d63f35fd734317469849e3a58dc57df5ddf81bcef3",
+      "size": 1410
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-curtana.conf",
+      "sha256": "93c7f05acba9526e68e2cd91ab108efb184deb211bd3b5f90c305f0f6879c580",
+      "size": 485
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-excalibur.conf",
+      "sha256": "d6eb1dd167c07317b8e59acbedb651b9ae131cd7dc3b1fa193630892fec98301",
+      "size": 509
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-gram.conf",
+      "sha256": "6cec3f726775f2a0471dddcd49d4b9c4208eeaa89d738b3f656179a581ca8bd3",
+      "size": 449
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map-joyeuse.conf",
+      "sha256": "798897c805c34ad96a57bff409a8b2ee5eece7df1e83fce77c2fab7eb0b59b6d",
+      "size": 485
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "c78f9203f3a9fc3323a09abaf6ebd6c81c2b5f4f76e4783024a5cb0dab3352c3",
+      "size": 13
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-curtana.conf",
+      "sha256": "bf3ebfe84f6a6cd1218ecfd050827d026278ef45bfff76848f6446a4e4bc79d7",
+      "size": 1429
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-excalibur.conf",
+      "sha256": "63ec7032cf0f8b723ce6b27894f557632e00a95055f92fc6a4ef5aefc550d845",
+      "size": 1433
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-gram.conf",
+      "sha256": "63ec7032cf0f8b723ce6b27894f557632e00a95055f92fc6a4ef5aefc550d845",
+      "size": 1433
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal-joyeuse.conf",
+      "sha256": "e4c814b0464524181362bdb574a96121cdad71b6a78ada45801e23a743deed87",
+      "size": 1432
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "903d805540b1fd3ddf39647ec032dfa8d1c73e78730c4a40b608183c883f5f06",
+      "size": 3543
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "99c5f0b6fe278d5152b2836514be1af65470b5467fab7c88ce7156ad30354520",
+      "size": 47452
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "26b7d35112d00fc128f3d495ab8e1f4288758ac3848728a3d7e01ce9a1efdfc1",
+      "size": 551
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a6b5137e357debaea0a5c406003a63878fdcfcd89910342b524a01cbf5a5d86b",
+      "size": 575
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6e6644c2de6793c159627b6c6d43a4e3ee7ee8bace2ad9a004367b74c31e04ad",
+      "size": 8046
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-07T06:13:39Z",
+  "vendor": "xiaomi"
+}

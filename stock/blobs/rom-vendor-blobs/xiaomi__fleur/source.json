@@ -1,0 +1,92 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_xiaomi_fleur.git",
+  "codename": "fleur",
+  "commit": "04093516bee2ccf24614d295eae47be578e0a2ee",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "cb35b8cfcc74c9907682951506dd86d235d993aba224c8c68cee71c97f92c1b4",
+      "size": 1824
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "bd785e54080db3bdc77fe815b1bfd0df0324ab19b280c37a329bcd5964820000",
+      "size": 1025
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "d288cf015c2994ccc6cc79e8ce7e3e9a43f2cb001a6115ed1746c8c1de240d69",
+      "size": 1840
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-hp-mgame.conf",
+      "sha256": "a7708e5be85baaa0eec79219aa7c77831fb916a2e956230c9e99ced99f804dff",
+      "size": 1680
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-hp-normal.conf",
+      "sha256": "8f2d299b24d752203ff84da687fb175939b5c82c1a9a1a695846016c38a7f77f",
+      "size": 1808
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "2d0e222c3625d68efa5561597ec6b2dd55a7a1a5c44bf5e054009b023eb5e7cb",
+      "size": 496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "b3eada845812279e75f8140ccca86431c81373006993405433898404132ad505",
+      "size": 1648
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "a27d9531bebc9ef26b9b24c3ee1c3b2f899429486cae94f9aeadbee515251df1",
+      "size": 1968
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "4903ce64f89369d36c3857b3740d83a33fbef8f33d21210a9b0cb368ddb67a56",
+      "size": 1344
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "7f435f137d2c2d736912460f165f2b42790b6f57679c8ff80e39dfbb84bb220e",
+      "size": 2048
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "be468284e049f4f4654283cf6344b0b55068e286ca40f7339bd4ddfb90009a53",
+      "size": 1520
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "09a5915f9e0da4c75e5305dd4c56eb9381f2d64b80e373005d3d94c7241c65ac",
+      "size": 1648
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "f4854ee9fb7cb81b0a791ca703e1bc8daf4ff822550967cb0ff8aa5f4d2eca4b",
+      "size": 1824
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-videochat.conf",
+      "sha256": "7ec5c45459b64381f02b7d350a187e1d16111525c3595ef2221a5a15aaa83180",
+      "size": 1888
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "b45d5c6725416f536f188518aad46cc9d6675b8cf07130b8d06273f6e6f7cc83",
+      "size": 388
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_fleur",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,77 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "e770dea128e38d5ab4d2c1cd8b6edf5ea6a4082c",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2cfff7162e82101fe38bdcd2ac0f6e77b00a32076341b1316fe5a70fac2af045",
+      "size": 4384
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e7416c0d88e9726afb252aecdc9889f0cc055b1442a54f24704b55aa9ff9625d",
+      "size": 4473
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f08adabe82a287c6c28cf766494a2c0ead5abdeec84b9e7e6ef246f7b45b588f",
+      "size": 3974
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "a4bacf9a913c32956a1e3186f528e26561155e22c3a84b1be15af0006d203dbc",
+      "size": 1458
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "f9e701968231f3816d23d1be3baec2121446d803f5cde8add9d47b0cad720ec5",
+      "size": 3325
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "3e5673b3402d02ebd3a879a6fa871f4a0e85f5cc7207dc8c1c534c50fce9d77e",
+      "size": 16083
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "dea3db0084a06f379dce12f4bf27260b3665cb81c88db0306ff3fbb3741196db",
+      "size": 6148
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2405b7f69593bdf8de30e3f9627fab60b494e130879f91b0c89f8b5563831016",
+      "size": 38054
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    },
+    {
+      "path": "system.prop",
+      "sha256": "937eafaceceed8ef362d576b339a8dbfcc716869e96f9970f93f02bee2ace91c",
+      "size": 275
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a30b5d475949311f7c1761f3759c244c8c6420976f0508f15a2d1c45e3116034",
+      "size": 5520
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-07-28T02:35:38Z",
+  "vendor": "xiaomi"
+}

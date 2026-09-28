@@ -1,0 +1,42 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "1938b983c4a64acfecefba0c24518612129747c8",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "20b872fb90988ab29d48d3630e86fcfcd95f49a99dc6bc97f113e50ba8b2eb89",
+      "size": 759
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8013fa63931a438637bb2fbe10091d1853ee8f844d6d06861c09bd35020e9077",
+      "size": 9631
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d735f70a5df91e8d0b660711b0f0910eab88487d72bf6d22ef0ca8025a7e99c5",
+      "size": 5366
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "48cc66637245c5b7a5d8a9b665edd5d026f75d923868f50b9c269357f5c47e07",
+      "size": 55075
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1a02d6167b8a0b0d402453d8686704e259960ce117c57b65d6873dd0c50463b7",
+      "size": 6237
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-21T19:46:07Z",
+  "vendor": "oneplus"
+}

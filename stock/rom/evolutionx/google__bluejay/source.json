@@ -1,0 +1,47 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_bluejay.git",
+  "codename": "bluejay",
+  "commit": "c44661447ee6cabe0fa5980d897021ea56067d63",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "188edcbfe99562b74d9304574ece1c5f00777a95bde049f29f4ef71c7134947f",
+      "size": 548
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "572aa6f12b62b92d4d8c7e3ac38632ced3da54fdce159979240465734152cb37",
+      "size": 200
+    },
+    {
+      "path": "BoardConfigEvolution.mk",
+      "sha256": "a63855a6ff6cfe0403902028ff9c8b8eb711d823a28a24a07e58d8dcd87da0a7",
+      "size": 97
+    },
+    {
+      "path": "device-bluejay.mk",
+      "sha256": "e88c81140e99b44d39be898f3c468432163f3ffd90686e4f0377b2afe4f12878",
+      "size": 1602
+    },
+    {
+      "path": "device-evolution.mk",
+      "sha256": "f1ac19d77aa4f33a0d3aa7b64e97acc279fd42e585688fe5015a8f1fefdba6a7",
+      "size": 158
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6a019f7d592a22a3540a77a31c0345ab31440f038be960839bdf65f549e6b7f3",
+      "size": 213
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-08-24T10:07:54Z",
+  "vendor": "google"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oneplus_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "6377047d50644718c29905b262546a49d0b71bcd",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e50540b9728e281f82c94712231b7080143e72bbf0538bf7f7de0b541e5bc12b",
+      "size": 622
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8aef5e0586b7a89dd3ce825ab00adbd55df154b8d5de872dc2c6f5e7c73c28b5",
+      "size": 570
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d89ba1642579c45cc9dec9ce91c6b0e4c328eee2a00448893478796f9cf3675d",
+      "size": 6264
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3ff598566ff684dadd2cc2dd64a5c9bf786227d530d5f96e06ad32cd52a25646",
+      "size": 3081
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5dbb5eb5a4ad9a6f94af75f07464b0888fcba5b262630e0cc709e171b359ef0e",
+      "size": 43245
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a00442376d44285f95989b86e67e7ae9a364313e4ea3adf75d9c49765b2088c",
+      "size": 81
+    },
+    {
+      "path": "system.prop",
+      "sha256": "308298187a4b598587ac6ab00f653f558165beaa0b57593097f176281ccb6188",
+      "size": 1792
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f86a3bfb0f2310b6f5147b278241e7dab7f7fc2fe483595f82ef21d7dd9df190",
+      "size": 5533
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:27Z",
+  "vendor": "oneplus"
+}

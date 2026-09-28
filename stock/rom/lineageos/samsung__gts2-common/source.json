@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gts2-common.git",
+  "codename": "gts2-common",
+  "commit": "0f358b1dfa3aced78749da7dcfdbf2ce0e4b5b86",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e3f55e6451cf8b68e0d0ad46a84ecdff1f0216c5f191d8db49a23ea8c2ad9303",
+      "size": 1299
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "29d06b45b53e03a4b343d733bdb59959f9fb4c8d1eda6d3663454a91499aabc7",
+      "size": 1330
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "6d638967e2e58635b45b98106d19d6324a6e8757238f2bfa41a434ab8b837fe3",
+      "size": 2133
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a251c80d675b451a4031bc02730ac969626475da57ab4393f5706e0a06306ccf",
+      "size": 731
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "17d500470b2e4d66e47de9a210bdf3a3edab2e571098d0668355c1d9502df49c",
+      "size": 771
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a62c2b715040c29e6ea9752a796bb9c8a800aebf43b67ef49d106850d2de0b5c",
+      "size": 1292
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_gts2-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:18:48Z",
+  "vendor": "samsung"
+}

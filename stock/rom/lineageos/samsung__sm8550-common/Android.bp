@@ -1,0 +1,14 @@
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/qcom-caf/common/libqti-perfd-client",
+    ],
+}
+
+cc_library_headers {
+    name: "samsung_sm8550_call_state_headers",
+    vendor_available: true,
+    export_include_dirs: ["include"],
+}

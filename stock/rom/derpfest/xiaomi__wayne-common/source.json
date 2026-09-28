@@ -1,0 +1,77 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_wayne-common.git",
+  "codename": "wayne-common",
+  "commit": "74ef0b30568f2b1ab2a9deb6674415bc415d63cb",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7886055650d91d2b897db5ec50ba2eec55f3405c117483f16a0344c6efa23d37",
+      "size": 233
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f60c7a184653984553e05e508da32646c70bef3dabb9b8a63c06212ad33eda80",
+      "size": 623
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "45d7dd1c5c39886345b75e76b1352dbb10964464e7fb9b4099c3cc40abb7019d",
+      "size": 129
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "ac8d6bce5537258b741776ed8a1533096eada2af0b5c29dd0c4c8488c0d750cf",
+      "size": 5587
+    },
+    {
+      "path": "configs/thermal/thermal-engine-video.conf",
+      "sha256": "fa55af7a1ed9c047e9d5843938cde90740359524e97e54bb6c37369f1538839b",
+      "size": 5809
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "configs/thermal-engine-qcom-gaming-prod.conf",
+      "sha256": "d23f6a3b7272d63c58d8b175ba3bafefcded11636bd5cced86d4cd23a3062d06",
+      "size": 2533
+    },
+    {
+      "path": "configs/thermal-engine-qcom-normal-prod.conf",
+      "sha256": "5dbd230d2301ae282cb1e435472567565372481fc8584be5c9c05c8088f6c47b",
+      "size": 2330
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "882bccdf4d71110f4575e982d9c1ee2e7e654c40ab15d6e0f3658fc0e90581aa",
+      "size": 3967
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "147bab7c21962262792d8bf026778a36368222289c88452dc0eb19c18484ac32",
+      "size": 675
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3590c8c7b7ee7f97aedb2c29953b54d158ed82c7b8023bda893eff4ea1da6965",
+      "size": 48121
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb7a06663a67180b4aa69924f6e5a63c198c261c39f433a36574058b6fade725",
+      "size": 582
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_wayne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-10-12T19:11:01Z",
+  "vendor": "xiaomi"
+}

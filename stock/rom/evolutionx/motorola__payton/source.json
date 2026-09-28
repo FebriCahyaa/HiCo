@@ -1,0 +1,62 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_payton.git",
+  "codename": "payton",
+  "commit": "bac3ddc1652afc533a5c08fd02a6d94a380912e0",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f8116af598083299bb28a610c30f49c3b2628f0e3a55bab69df59643f3fe5ddc",
+      "size": 171
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8cb11015a01fdc53542d40fa86f2a31f74bb0fc1ce084aae39fd8ef5db907d77",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ef81168e396587c55785a6796def8ef49e8e8a40f43b2f3154a5a29ba0536043",
+      "size": 1299
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "bf9d802a43c92bfa6b7d821db97598551fb17d5958bdaba476bb08bd37d3f14a",
+      "size": 3560
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4dc83c2f99bbf284573f967c1001cc661dde97642201703f4afd0243bc7080aa",
+      "size": 4315
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4567a63463f8dde2269b42c163be33eedd48e7590792cf885606e3709e31ffa7",
+      "size": 2466
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4f62da33a4842580e968a42fca6cd97466e11c6d4bd9663f16460df627508091",
+      "size": 124
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5fd201abb35c6c5af5dcd08a21811e16b30a8f31627f4b5b914ca7c6bbbdac6d",
+      "size": 21168
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "da6cb34586b894df6e81d64d634d9a23e65d8f458c313de7d62b32903813e28a",
+      "size": 1525
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_payton",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:41Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lenovo_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "1e20b6177b7e389a8aa7328b1a9c8369a60882d6",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bf938feaa3a03919415b47ef205307ea22e964e7a967d94d1968956cc35880f3",
+      "size": 554
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9509428c9fb8784985adeb7bcbd2aa9be6ae6411f22fa508dfc3328664ef911b",
+      "size": 1556
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6f9ec5c577ca67861b291078fbc1be4a5fb73d40ae461b15c9416007b92e5716",
+      "size": 7498
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dcd1935fdbce53784f156ee0c973d098b601d8f0c01ac41dbc6aa56bf707f81f",
+      "size": 2817
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "694b4e6f500da0b2bb6e9aa3af30e39645cac9df00e065b769f9501bf4674346",
+      "size": 1560
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "e66373a2f5c97a746175b255b3901a6b887258fe548cab9479152ae6ff089b87",
+      "size": 6354
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "37502474e196bc95c7405d6fe1014d780c207ad7c8f788f765ddde2d5bcc88ef",
+      "size": 62593
+    },
+    {
+      "path": "system.prop",
+      "sha256": "db57bb1578f53c59e4be47c807ef2ce65b03fe4f28ad28c22ac75307da5dea7d",
+      "size": 2725
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "960d1b05191a47a440332f8614c362d86444a9a364e60547f7b13122dd14d5bc",
+      "size": 4799
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lenovo_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-01-10T21:35:56Z",
+  "vendor": "lenovo"
+}

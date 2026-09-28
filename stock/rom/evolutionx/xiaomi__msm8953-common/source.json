@@ -1,0 +1,62 @@
+{
+  "branch": "cnb",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "4d2e36d3e6707741747a32027bfaf81fe0ce4301",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d7a7c459f1d7dcd18956eb897a2840b440005854d8ddd36d684687aae782bfc2",
+      "size": 945
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e75658d9bed23283e78a49b885b5be8f0d3a5955ae3dd60e667cadd768679bcc",
+      "size": 4872
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fbb9b94ebe262e2347a8927ac438829d8c0ba078cd60d1687484ce4abb4a1884",
+      "size": 2446
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5f7322750fc851776287d887c5d3899b2f5924e2cf5c6a13725ddb613b7830d6",
+      "size": 199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ee10a6b609cb64e66f9de080d6bb596f2a907eef236c786175c6f04b179e5188",
+      "size": 35635
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5b1fa2751f35a632deb785cfbf52804a671dc57808af32e8c7d98a138ed0ddec",
+      "size": 46
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b558394397cca349d43355ac21a6ac49a8b6a90da4edd3821046c9abec6ac2e",
+      "size": 283
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5824ac3cb0560f407ad3229198fddc06d579b18084a412fa7c2cac4df73cf45e",
+      "size": 5567
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-27T19:27:23Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_apq8084-common.git",
+  "codename": "apq8084-common",
+  "commit": "6f94a35102200495d67e3ffae7d7197e2906e315",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "fb51299598ca4bfd5e761e1795123616bd49137677d2f7a739b77d906877bcf9",
+      "size": 13192
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "755ba5695bad9102c8015f97e424e908d3dc4ad55bfdfd1cf2adfc8677aa0460",
+      "size": 5655
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "6d7156a22eb2b6730db2c2d39b7109f7ee674b2cb023c1eb21e80065a53e6186",
+      "size": 920
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f2a588cbff67d2c16a301c19bdbd6c5c1b76a6d6ba524191877ff3d6a9954c01",
+      "size": 1778
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "650c040cf1cf8b0cad3ab52afc4092cf3930794593e2bb2dc18760e1148faac4",
+      "size": 326
+    },
+    {
+      "path": "sepolicy/common/thermal-engine.te",
+      "sha256": "e91c52eda0c9676d8d0ea09d4b144e347c2faecf8a6d566c8cc68e0b4a555a49",
+      "size": 400
+    },
+    {
+      "path": "system.prop",
+      "sha256": "30b28f7e988b075cf58375f2f4cc860f1cbc4f57722b88f02304012983a65639",
+      "size": 2658
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_apq8084-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:04:37Z",
+  "vendor": "samsung"
+}

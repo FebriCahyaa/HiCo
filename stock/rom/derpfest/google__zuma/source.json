@@ -1,0 +1,72 @@
+{
+  "branch": "16.2",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_zuma.git",
+  "codename": "zuma",
+  "commit": "e1a51e6c0c389ebc5cc8ae7a5bae1bda1503fb98",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "128d6dd14366c52fd1d98a8d72d200d8c8de518c8b37dd033954d62bb25a0211",
+      "size": 1200
+    },
+    {
+      "path": "BoardConfig-16k-common.mk",
+      "sha256": "01a4eca27d37fc4d1dc014e04393afd5443f93bef1b0e42d4a88ed5c17243af6",
+      "size": 2110
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "0480b351b3506eeea1f5416117e5e437d90b4a73eef10265b2e0e9f2a4cf424a",
+      "size": 9330
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "703fa6fd705c556c8b2e1ffd4328076129ef61c26ee3a7493d1f224ebb3b6ff8",
+      "size": 110
+    },
+    {
+      "path": "sepolicy/system_ext/private/connectivity_thermal_power_manager.te",
+      "sha256": "116ee752aae1c0cea4a4f3fb752f1cdc6e2a232e7b9d9d3f9b58618792bdfa9c",
+      "size": 519
+    },
+    {
+      "path": "sepolicy/vendor/dump_thermal.te",
+      "sha256": "6fc5c51b1a2055cd9be16a785d0782ee1310e1e4bac7ca47122dd9e04dddbc10",
+      "size": 208
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "79abd61edd2606fb86e12ab28c4712c79e551e1f15ea81c22457663ccd752d8e",
+      "size": 786
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-logging.sh.te",
+      "sha256": "a689360b150aae79fbe5f2aef9223c777f2583d6222de3bd3e27b30da249e17a",
+      "size": 158
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "70fa05b0e4925a4891ccdb879c51e821f143e8f2b0d768802fc4908123a09640",
+      "size": 577
+    },
+    {
+      "path": "sepolicy/vendor/pixel-thermal-control.sh.te",
+      "sha256": "33402b7dae79fe4a57c1b572327ea97cdda7388b71c12d34cdb85fe418cadb5b",
+      "size": 161
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7756cfcfef6400be2db2e0d0d12b7e8f7c177036b99011903fa3610a8fb785ed",
+      "size": 5726
+    }
+  ],
+  "kind": "common",
+  "repo": "device_google_zuma",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-07-10T23:29:51Z",
+  "vendor": "google"
+}

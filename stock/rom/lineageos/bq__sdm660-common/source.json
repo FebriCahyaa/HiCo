@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-20",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "fbb051f5460c13ac84a4c3007cbe07a11b866621",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "be1623f63bbfd3fcda23349e1f99c5de166489d35efb190b6fb82a7d203cf988",
+      "size": 6207
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4eb46deb3874963becf954362acf0d80c34cfb7d0b31da8e448db915a3120d12",
+      "size": 6732
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ec07b4ff00b5a4361e3258d7e0d7ed06e8621156c928279f46141bf2f3ebb079",
+      "size": 1881
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f629c78089df4b3cca88eb2ac2908b179bbf4f454d87e80df390ce7cdd09bb91",
+      "size": 223
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "35473ec04c27bdff1992dfafecd8c937d1f3cdbc9461c7c6a0b622d4db497055",
+      "size": 47016
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "660c56c68d2a323fd01c39014bb0e664bd3330185f554887f79aab405afebb95",
+      "size": 78
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_bq_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-02-26T22:03:23Z",
+  "vendor": "bq"
+}

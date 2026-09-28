@@ -1,0 +1,119 @@
+{
+    "Sensors": [
+        {
+            "Name": "CPU",
+            "Type": "CPU",
+            "ZoneName": "mtktscpu",
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                90.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "90.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "GPU",
+            "Type": "GPU",
+            "ZoneName": "mtktscpu",
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                90.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "90.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "mtktsbattery",
+            "Type": "BATTERY",
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                50.0,
+                55.0,
+                59.0,
+                60.0
+            ],
+            "VrThreshold": "50.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "mtktsAP",
+            "Type": "SKIN",
+            "HotThreshold": [
+                "NaN",
+                39.0,
+                43.0,
+                44.0,
+                50.0,
+                54.0,
+                63.0
+            ],
+            "VrThreshold": "39.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "mtktsbtsmdpa",
+            "Type": "POWER_AMPLIFIER",
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                68.0,
+                90.0,
+                100.0,
+                110.0
+            ],
+            "VrThreshold": "68.0",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "NPU",
+            "Type": "NPU",
+            "ZoneName": "mtktscpu",
+            "HotThreshold": [
+                "NaN",
+                "NaN",
+                "NaN",
+                90.0,
+                90.0,
+                100.0,
+                117.0
+            ],
+            "VrThreshold": "NaN",
+            "Multiplier": 0.001
+        }
+    ],
+    "CoolingDevices": [
+        {
+            "Name": "mtk-cl-mutt01",
+            "Type": "MODEM"
+        },
+        {
+            "Name": "mtk-cl-mutt02",
+            "Type": "MODEM"
+        },
+        {
+            "Name": "mtk-cl-tx-pwr01-nr",
+            "Type": "MODEM"
+        },
+        {
+            "Name": "mtk-cl-tx-pwr02-nr",
+            "Type": "MODEM"
+        },
+        {
+            "Name": "mtk-cl-scg-off",
+            "Type": "MODEM"
+        }
+    ]
+}

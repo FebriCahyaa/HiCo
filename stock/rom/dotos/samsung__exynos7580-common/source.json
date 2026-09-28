@@ -1,0 +1,47 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_exynos7580-common.git",
+  "codename": "exynos7580-common",
+  "commit": "d23aed0d442981cabb27d6568288e5dca584fc31",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "432162a0c61111ea181624b661ef5e0dc4f558395acc8d487c97724a7fa592ad",
+      "size": 1256
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5e981629c561467a0c3966df028bd53b1065716778de9358100e6a0cf0c51313",
+      "size": 787
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "ed8d2922a63744e7b798e36d5964ac6571de78a0112fb1e2d73c940503095e9d",
+      "size": 931
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "25d1131222822e78713d4c703e070fe6922e44218e89ce5233342080dec20543",
+      "size": 1436
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "912bf63c520da46fd125f02df449a8b9ba022f2dcd10d04707976029bd4633d0",
+      "size": 1039
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a273dc50dd35b79f84f3b8669000cb334f209b6b4c17459d54c70130ad632894",
+      "size": 852
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_exynos7580-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-07-10T14:22:40Z",
+  "vendor": "samsung"
+}

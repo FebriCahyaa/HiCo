@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "45b3b7dab47ac792be975fb7623f03268c4a6dc2",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "14e5f00fe527daa9d59d2f31773ad9583ddf35e4664a04c502d3af6391deec9e",
+      "size": 414
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "aa61c87fe09715cdaf98bb3b62362041e5efe81d34c18a42aa2eccc60b35bd31",
+      "size": 6379
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "0adcba09905542ee9336591174286d413efbb915f4180058b969766119761904",
+      "size": 5482
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "47bd001c19ea811a5df0263cf2444822d4bbc270f5fbe3bb67f2e6f65abb55cf",
+      "size": 3916
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "822578af460776acad8decc3abffce9c30b6c320eed2a2708cabdc741ef36172",
+      "size": 300
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aa2a90a2351ca26a5ad7182c3773237422a4b1bae45b55b548c098b6ddb3693b",
+      "size": 46325
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "25adb54e8afb3afcd21bccd18eecc40e15fb299f6f2c35487a4e44160a1de9ac",
+      "size": 493
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a6b5137e357debaea0a5c406003a63878fdcfcd89910342b524a01cbf5a5d86b",
+      "size": 575
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "724272d9cd3b7e0616e83e432c966cb11cec71b49c8dcc02a2dbcb394c9a30af",
+      "size": 8034
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-30T09:10:40Z",
+  "vendor": "xiaomi"
+}

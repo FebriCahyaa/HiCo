@@ -1,0 +1,62 @@
+{
+  "branch": "11",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_onclite.git",
+  "codename": "onclite",
+  "commit": "77bde0eb79ebb55034c8ad3881b694cf8215550d",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2fe3b98e6ab3584e9cdbf6b8ee16582d78737599164f22b6ae321e7edc583015",
+      "size": 4686
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "367d1d49dee412938598dfc33197fcee4f1dfa4a32b67d92d89d91f1fc3d934b",
+      "size": 56
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "49d2392ad380d3998d187020e957eb9640f1d5fcc69a37ac5223e5ffcec08906",
+      "size": 5917
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a1649f6511b393f19c13e0670bd7ee834dc79c0ea7463962a9a363cbf368a8f4",
+      "size": 18462
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e2d110fbd3e0a0d60ebcd2bff7e71adea5e4beeb09181547c328ff3f3e3a2272",
+      "size": 1571
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f9a4b8cbda47f869784b5c53770b7367ca6ac976bc58ddda1f8433f1d37f9e5b",
+      "size": 108114
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "e8d8840fa659a55b772ea57daafec53d9937fbd2c6b0ff4b8caceac46132c66c",
+      "size": 164
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7278c52102809228e4717b626c6f93c3b17fdfcde3941ef427081893265e6d70",
+      "size": 2694
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "06a540fd447e68f4d339ad17d14088c2fe031bad40927e6b747ef1d64a2aabe1",
+      "size": 1710
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_onclite",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-10-03T20:20:21Z",
+  "vendor": "xiaomi"
+}

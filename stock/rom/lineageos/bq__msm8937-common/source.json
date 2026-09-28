@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_msm8937-common.git",
+  "codename": "msm8937-common",
+  "commit": "90eaa10fe5bef3619d0cc94f901a5dbbe47677a0",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1d357d91938ab432e222188ead05decbcb0f20a0eda7373172df5438a9836f38",
+      "size": 9735
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1fde182b48bf2b6f1aea9d2be0036be6f27a2186190b42fd305365ecccb88e71",
+      "size": 6991
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "918d960cb8b30f68d3b7cdd2c921d863d5ff641794e86ee9924f51053640db69",
+      "size": 183
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4f9c9812b7b757a10514a83cd9ba4aae47a201a817fdbdf5f8c7a8dea74472d1",
+      "size": 4722
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_bq_msm8937-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:57Z",
+  "vendor": "bq"
+}

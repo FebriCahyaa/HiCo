@@ -1,52 +1,52 @@
 {
   "branch": "fifteen-qpr2",
-  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_gta4l-common.git",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_gta4l.git",
   "codename": "gta4l",
-  "commit": "59b76f7e208176514749b2b397b9f27f62183ebe",
+  "commit": "e5f53a76f45eb3bbc2e7dc70f436d0b6c25ad4d4",
   "file_count": 7,
   "files": [
     {
       "path": "Android.bp",
-      "sha256": "44880bba7b7bc45efe668e38caf2cb28b447530ec3ccbe90047c8237d81a207a",
-      "size": 330
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "0e8cb615db970c82bf0f9aad1d716739f6900cfc37c18ac1d60f09b80a1d5007",
-      "size": 8144
+      "path": "AndroidProducts.mk",
+      "sha256": "247d58cf002721a425b4ddef6bd8e404c1930d2f02914264d3a5aa1a33dd0e1d",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "536967023a74590cc09da12cd0a5dad3910eb1f8766cff52bfc5218fd17ba440",
+      "size": 1597
+    },
+    {
+      "path": "device.mk",
+      "sha256": "13368eb818f304b0c7b415d91f68f5b424f8772cf8ec679b0495972c621b1dfe",
+      "size": 1730
     },
     {
       "path": "extract-files.sh",
-      "sha256": "078306c333625aa4c7f1c80d8af97245f37d31c728cba2b81edcb60ab04ea2f9",
-      "size": 3561
+      "sha256": "904be838dcf50f503e702ce579c1dba27f01b564ae39d9a10124565823266e8c",
+      "size": 525
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "f80b39799c4627303653685309b0fba50e8ae8c1fdc2c9f1142c8eb80c482200",
-      "size": 43118
-    },
-    {
-      "path": "sepolicy/vendor/hal_thermal_default.te",
-      "sha256": "32f3db0243b00865f3f03a893e62732c709a4958f233bbeb1f1cc924e0b654e4",
-      "size": 139
-    },
-    {
-      "path": "system.prop",
-      "sha256": "8c97c8b4991366ed48ef5253253c03c21a593ac5240945b9f1824ea450cfbb65",
-      "size": 191
+      "sha256": "c38344c74c16db63b8e02fd3eb7c49323fd6a74f49a273bb243191a39938370a",
+      "size": 5176
     },
     {
       "path": "vendor.prop",
-      "sha256": "444c2224503d110152bd72a870617009e93825041f223dcf27d2e6548b2483d9",
-      "size": 9360
+      "sha256": "c5fcfd51a482f9135b5c34cf9745f287d56a247fd7428a1625e65d67685e826a",
+      "size": 349
     }
   ],
   "kind": "device",
-  "repo": "device_samsung_gta4l-common",
+  "repo": "device_samsung_gta4l",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lmodroid",
-  "upstream_pushed_at": "2025-09-07T12:54:21Z",
+  "upstream_pushed_at": "2025-09-07T12:54:19Z",
   "vendor": "samsung"
 }

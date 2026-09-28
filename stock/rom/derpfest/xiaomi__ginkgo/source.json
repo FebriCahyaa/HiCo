@@ -1,0 +1,87 @@
+{
+  "branch": "12",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_ginkgo.git",
+  "codename": "ginkgo",
+  "commit": "4646c08d21ca86c2cce2539f6b532a23b1c3905f",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2e41a97c6fcaf999de35af2bff0b1753edda41f813e5d5abf87bcf99bce55f12",
+      "size": 5772
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2d368d0f71445a781182b29266e118b1875ba8c41af7ac559796d3da9369c1a4",
+      "size": 227
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ff1ff8b4ca966d6812f61fa28f0695582b5241888e3c68e78c68dd9f92107d71",
+      "size": 6378
+    },
+    {
+      "path": "configs/thermal/thermal-engine-camera.conf",
+      "sha256": "dbf20003675b10bfa1cae96c61cd86458be847d2a3ed88fcc99f02ff1427c0a2",
+      "size": 1907
+    },
+    {
+      "path": "configs/thermal/thermal-engine-map.conf",
+      "sha256": "c04b9487e00b0ffe3c6ee6ca0d726d27ea7e9c5625b0f6be6819e28dff229993",
+      "size": 391
+    },
+    {
+      "path": "configs/thermal/thermal-engine-normal.conf",
+      "sha256": "7dcc5b8d570c637fe70043a2eda5286b9d8d1aff0fe15962f874d065ec2e1361",
+      "size": 1890
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f5d0ce06e378020076c97d6ccf15b2b87c9bbb430abff71b2aec3272f3a3cfc6",
+      "size": 20665
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ef759514fe45d3d190b33a73ba22bfd24a75a0b66d132c315f5d92134e9d65b6",
+      "size": 1635
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5fe74b7f007edd65e6678a4ce52d88ece5d13cf6d554d0c866dd50a5be4bac24",
+      "size": 150095
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "05a95a220d20957afadd0817f95c7e35586e54888ad65f02a2c261b653a0047b",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "03a683625c9bfc260171a829ca6c219c81964c733cd337262caf0cc7f653a7b6",
+      "size": 2022
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3647ed0e9d19368a6f9fff15e3d5bdb521278aa453b57dbe6953f3e1ee38438e",
+      "size": 8279
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_ginkgo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-11-11T18:41:02Z",
+  "vendor": "xiaomi"
+}

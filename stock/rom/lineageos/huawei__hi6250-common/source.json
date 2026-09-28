@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_hi6250-common.git",
+  "codename": "hi6250-common",
+  "commit": "0e194b615640b9f312a02fe25148a18ba53657bf",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "8cb96848434b4efb24ec6de266ecd9f3d27e19aba17179314edb8cf8bef70025",
+      "size": 727
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cf5d1d9c6ca91f344be6fc2548a58d64872a9384e90f127d42e393cad99915b2",
+      "size": 3031
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "53a8dee33d0ceffde9e47c4b12cc7ab4f119f1f6b26196d3ee9597c3ae32ff61",
+      "size": 1914
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e7b06e0f7378e69b8a3371542f3880671746ffa5b6ea067e396a476c039b16f3",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e397e5c097e63d7580a55d3b8d24f599fb79f3460f562c1ecb5ec0e2331603e6",
+      "size": 91147
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_huawei_hi6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-10-14T20:00:21Z",
+  "vendor": "huawei"
+}

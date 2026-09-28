@@ -1,0 +1,42 @@
+{
+  "branch": "twelve",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_wayne-common.git",
+  "codename": "wayne-common",
+  "commit": "9eadb7f34b89189ca385e2d28adf4df3280b2c83",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7886055650d91d2b897db5ec50ba2eec55f3405c117483f16a0344c6efa23d37",
+      "size": 233
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5be010b25cc0a158c41628067d03fc773ab78af3ee558ab10668e37230105956",
+      "size": 624
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8af287e0c114ea8281dc44420f47d54cd08dd9ff36f9e1d3f458e7ec9094ec35",
+      "size": 489
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "397e1c3f3bb4d154c88ac9bc794148ab85e7be116d9d7d4790a3b006eebf64dc",
+      "size": 49202
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb7a06663a67180b4aa69924f6e5a63c198c261c39f433a36574058b6fade725",
+      "size": 582
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_wayne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2022-08-23T10:26:40Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "derp",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_tulip.git",
+  "codename": "tulip",
+  "commit": "c82757edf9b56ad58ddc7bcd62542ca3bea8d0d7",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "27dd236bfcca1e88e1e200b9aa83b254207821455851032bb02204a915241c9a",
+      "size": 42
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8fc5126d617d405f19932188ae820211aeeaefd4fc46cae39865f7ec96a40636",
+      "size": 5176
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a83d8298ee3d3e2ce273dd7e29ab18cfdc1f75e41d492e716d7097a7566ac9de",
+      "size": 744
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d1e7b9ba90ffbe7158c8ae47a89ec48eb579c006d13c50d3c668be47b07a9097",
+      "size": 8162
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a291ecf7b3eea08df44f9c199b0d354fcf07c7063d76228be86d123f0e72c192",
+      "size": 25666
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5c51fb6c9cc88ad6ed0a78228d5e91c0152a54e2e51f1e4d36eeb7758d7045a0",
+      "size": 3695
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "354d16edd01be073d2966a5472e7cd496dcd3ee291adabc51f581083ecdf3113",
+      "size": 107953
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "6353eeb862c288c135e8e15599425206c420136f0ca3da8ac7f2dfc1e2bc0c16",
+      "size": 542
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e9f6c67e52926676729b0baa6a4200cc5038fec2387e324de6f86b6f4d54efed",
+      "size": 502
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_tulip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-03-03T12:12:22Z",
+  "vendor": "xiaomi"
+}

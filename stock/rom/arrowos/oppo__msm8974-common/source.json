@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-9.x",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oppo_msm8974-common.git",
+  "codename": "msm8974-common",
+  "commit": "ab3224cd1df352a8695004ba5b935d729c1ef998",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "196a92c086d8c27d9ddea65241a9697b2e4a857d55626cefc0b49acec92e9cc4",
+      "size": 816
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "46c3670f41b6801ef066c85bd176c3494035dfe3f7c4bcd6f3ff53dc21a6915a",
+      "size": 5334
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "02772b8ef03a59fe5a54b457069aadf0d0143f1e09fe7399d7aa068450ccf389",
+      "size": 1946
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e2f33ed22d2013aecbe391e140f1f32e2a461cb97b66b4577596267061061b0b",
+      "size": 2283
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b6260399c9221397e05bba95d3fa09e52e6337ce1768818adac9f620e0d90c43",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ee875d6861ddf5e02a053140d313a7487334c309bf9e6731ffb163ba6f41c8dd",
+      "size": 5347
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2404363c2025466068657e9c312d50381dc7eab16bbfaee7d798c70ec49de013",
+      "size": 1717
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oppo_msm8974-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-06-12T11:57:56Z",
+  "vendor": "oppo"
+}

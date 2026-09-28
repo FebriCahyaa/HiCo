@@ -1,5 +1,6 @@
 {
-  "device_count": 77,
+  "common_count": 20,
+  "device_count": 72,
   "devices": [
     {
       "archived": false,
@@ -7,8 +8,8 @@
       "codename": "akita",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_akita",
-      "size_kb": 129280,
       "updated_at": "2024-08-01T18:04:52Z",
       "vendor": "google"
     },
@@ -18,8 +19,8 @@
       "codename": "bluejay",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_bluejay",
-      "size_kb": 123505,
       "updated_at": "2024-07-23T19:58:56Z",
       "vendor": "google"
     },
@@ -29,8 +30,8 @@
       "codename": "caimito",
       "default_branch": "alpha-15.1",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_caimito",
-      "size_kb": 239981,
       "updated_at": "2025-02-09T21:36:20Z",
       "vendor": "google"
     },
@@ -40,8 +41,8 @@
       "codename": "coral",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_coral",
-      "size_kb": 12825,
       "updated_at": "2023-11-13T18:00:16Z",
       "vendor": "google"
     },
@@ -51,8 +52,8 @@
       "codename": "gs101",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "common",
       "repo": "device_google_gs101",
-      "size_kb": 165105,
       "updated_at": "2023-10-16T18:49:01Z",
       "vendor": "google"
     },
@@ -62,8 +63,8 @@
       "codename": "gs201",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "common",
       "repo": "device_google_gs201",
-      "size_kb": 45176,
       "updated_at": "2023-10-16T18:14:33Z",
       "vendor": "google"
     },
@@ -73,8 +74,8 @@
       "codename": "pantah",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_pantah",
-      "size_kb": 29580,
       "updated_at": "2026-04-26T17:37:54Z",
       "vendor": "google"
     },
@@ -84,8 +85,8 @@
       "codename": "raviole",
       "default_branch": "14.0",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_raviole",
-      "size_kb": 258855,
       "updated_at": "2024-07-23T19:41:58Z",
       "vendor": "google"
     },
@@ -95,8 +96,8 @@
       "codename": "shusky",
       "default_branch": "lineage-21",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_shusky",
-      "size_kb": 13254,
       "updated_at": "2024-08-01T18:07:35Z",
       "vendor": "google"
     },
@@ -106,8 +107,8 @@
       "codename": "sunfish",
       "default_branch": "Alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_sunfish",
-      "size_kb": 13530,
       "updated_at": "2023-09-25T18:13:33Z",
       "vendor": "google"
     },
@@ -117,8 +118,8 @@
       "codename": "zuma",
       "default_branch": "lineage-21",
       "fork": false,
+      "kind": "common",
       "repo": "device_google_zuma",
-      "size_kb": 30234,
       "updated_at": "2024-08-01T18:08:58Z",
       "vendor": "google"
     },
@@ -128,10 +129,21 @@
       "codename": "zumapro",
       "default_branch": "alpha-15.1",
       "fork": false,
+      "kind": "device",
       "repo": "device_google_zumapro",
-      "size_kb": 15430,
       "updated_at": "2025-04-06T23:08:27Z",
       "vendor": "google"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_motorola_sm7325-common.git",
+      "codename": "sm7325-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_motorola_sm7325-common",
+      "updated_at": "2026-09-13T05:35:49Z",
+      "vendor": "motorola"
     },
     {
       "archived": false,
@@ -139,8 +151,8 @@
       "codename": "xpeng",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_motorola_xpeng",
-      "size_kb": 431,
       "updated_at": "2026-09-13T05:35:26Z",
       "vendor": "motorola"
     },
@@ -150,8 +162,8 @@
       "codename": "aston",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_aston",
-      "size_kb": 2511,
       "updated_at": "2026-09-13T23:47:31Z",
       "vendor": "oneplus"
     },
@@ -161,8 +173,8 @@
       "codename": "aston-kernel",
       "default_branch": "alpha-16.1",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_aston-kernel",
-      "size_kb": 5445,
       "updated_at": "2025-08-24T08:40:17Z",
       "vendor": "oneplus"
     },
@@ -172,8 +184,8 @@
       "codename": "astonc",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_astonc",
-      "size_kb": 3499,
       "updated_at": "2026-09-21T19:46:59Z",
       "vendor": "oneplus"
     },
@@ -183,8 +195,8 @@
       "codename": "fajita",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_fajita",
-      "size_kb": 71,
       "updated_at": "2023-09-01T17:03:10Z",
       "vendor": "oneplus"
     },
@@ -194,8 +206,8 @@
       "codename": "lemonadep",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_lemonadep",
-      "size_kb": 210,
       "updated_at": "2024-08-20T19:12:05Z",
       "vendor": "oneplus"
     },
@@ -205,8 +217,8 @@
       "codename": "lexus",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_lexus",
-      "size_kb": 351,
       "updated_at": "2026-09-15T20:25:17Z",
       "vendor": "oneplus"
     },
@@ -216,9 +228,64 @@
       "codename": "salami",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_salami",
-      "size_kb": 228,
       "updated_at": "2023-10-08T18:12:04Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_sdm845-common.git",
+      "codename": "sdm845-common",
+      "default_branch": "alpha-13",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_oneplus_sdm845-common",
+      "updated_at": "2023-09-01T17:04:32Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_sm8250-common.git",
+      "codename": "sm8250-common",
+      "default_branch": "alpha-13-old",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_oneplus_sm8250-common",
+      "updated_at": "2023-08-02T13:40:58Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "alpha-14",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_oneplus_sm8350-common",
+      "updated_at": "2024-08-20T19:14:25Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_sm8550-common.git",
+      "codename": "sm8550-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_oneplus_sm8550-common",
+      "updated_at": "2026-09-21T19:46:07Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_oneplus_sm8650-common.git",
+      "codename": "sm8650-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_oneplus_sm8650-common",
+      "updated_at": "2026-09-15T21:01:25Z",
       "vendor": "oneplus"
     },
     {
@@ -227,8 +294,8 @@
       "codename": "waffle",
       "default_branch": "alpha-16.1",
       "fork": false,
+      "kind": "device",
       "repo": "device_oneplus_waffle",
-      "size_kb": 1361,
       "updated_at": "2025-10-26T16:56:53Z",
       "vendor": "oneplus"
     },
@@ -238,8 +305,8 @@
       "codename": "bitra",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_realme_bitra",
-      "size_kb": 54508,
       "updated_at": "2024-07-02T12:39:21Z",
       "vendor": "realme"
     },
@@ -249,8 +316,8 @@
       "codename": "r5x",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_realme_r5x",
-      "size_kb": 33461,
       "updated_at": "2023-08-17T15:53:31Z",
       "vendor": "realme"
     },
@@ -260,8 +327,8 @@
       "codename": "rmx1851",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_realme_RMX1851",
-      "size_kb": 841,
       "updated_at": "2023-06-09T15:48:32Z",
       "vendor": "realme"
     },
@@ -271,8 +338,8 @@
       "codename": "rmx3371",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_realme_rmx3371",
-      "size_kb": 182,
       "updated_at": "2023-08-31T14:52:43Z",
       "vendor": "realme"
     },
@@ -282,9 +349,20 @@
       "codename": "rmx3461",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_realme_RMX3461",
-      "size_kb": 239,
       "updated_at": "2023-03-16T18:14:26Z",
+      "vendor": "realme"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_realme_sm8250-common.git",
+      "codename": "sm8250-common",
+      "default_branch": "alpha-13.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_realme_sm8250-common",
+      "updated_at": "2023-05-11T20:24:54Z",
       "vendor": "realme"
     },
     {
@@ -293,8 +371,8 @@
       "codename": "spartan",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_realme_spartan",
-      "size_kb": 949,
       "updated_at": "2023-08-07T15:31:59Z",
       "vendor": "realme"
     },
@@ -304,8 +382,8 @@
       "codename": "beyond0lte",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_beyond0lte",
-      "size_kb": 85,
       "updated_at": "2023-06-20T18:13:01Z",
       "vendor": "samsung"
     },
@@ -315,8 +393,8 @@
       "codename": "beyond1lte",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_beyond1lte",
-      "size_kb": 79,
       "updated_at": "2023-06-20T18:07:18Z",
       "vendor": "samsung"
     },
@@ -326,8 +404,8 @@
       "codename": "beyond2lte",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_beyond2lte",
-      "size_kb": 79,
       "updated_at": "2023-06-20T18:14:03Z",
       "vendor": "samsung"
     },
@@ -337,8 +415,8 @@
       "codename": "beyondx",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_beyondx",
-      "size_kb": 90,
       "updated_at": "2023-06-20T18:11:22Z",
       "vendor": "samsung"
     },
@@ -348,8 +426,8 @@
       "codename": "d1",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_d1",
-      "size_kb": 90,
       "updated_at": "2023-06-20T18:10:16Z",
       "vendor": "samsung"
     },
@@ -359,8 +437,8 @@
       "codename": "d2s",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_d2s",
-      "size_kb": 97,
       "updated_at": "2023-06-20T18:05:06Z",
       "vendor": "samsung"
     },
@@ -370,19 +448,19 @@
       "codename": "d2x",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_samsung_d2x",
-      "size_kb": 100,
       "updated_at": "2023-06-20T18:08:56Z",
       "vendor": "samsung"
     },
     {
       "archived": false,
       "clone_url": "https://github.com/AlphaDroid-devices/device_samsung_exynos9820-common.git",
-      "codename": "exynos9820",
+      "codename": "exynos9820-common",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "common",
       "repo": "device_samsung_exynos9820-common",
-      "size_kb": 7338,
       "updated_at": "2023-06-04T18:31:47Z",
       "vendor": "samsung"
     },
@@ -392,8 +470,8 @@
       "codename": "alioth",
       "default_branch": "alpha-15.1",
       "fork": true,
+      "kind": "device",
       "repo": "device_xiaomi_alioth",
-      "size_kb": 312,
       "updated_at": "2025-05-21T16:22:34Z",
       "vendor": "xiaomi"
     },
@@ -403,8 +481,8 @@
       "codename": "apollo",
       "default_branch": "alpha-13old",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_apollo",
-      "size_kb": 1222,
       "updated_at": "2023-10-15T11:12:23Z",
       "vendor": "xiaomi"
     },
@@ -414,8 +492,8 @@
       "codename": "beryl",
       "default_branch": "alpha-15.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_beryl",
-      "size_kb": 720,
       "updated_at": "2025-12-16T17:53:53Z",
       "vendor": "xiaomi"
     },
@@ -425,8 +503,8 @@
       "codename": "camellia",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_camellia",
-      "size_kb": 348,
       "updated_at": "2024-02-17T07:59:36Z",
       "vendor": "xiaomi"
     },
@@ -436,8 +514,8 @@
       "codename": "camellia-kernel",
       "default_branch": "thirteen",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_camellia-kernel",
-      "size_kb": 44280,
       "updated_at": "2023-11-16T14:48:33Z",
       "vendor": "xiaomi"
     },
@@ -447,8 +525,8 @@
       "codename": "chime",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_chime",
-      "size_kb": 1544,
       "updated_at": "2023-03-24T04:26:00Z",
       "vendor": "xiaomi"
     },
@@ -458,8 +536,8 @@
       "codename": "davinci",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_davinci",
-      "size_kb": 1235,
       "updated_at": "2024-08-01T07:04:58Z",
       "vendor": "xiaomi"
     },
@@ -469,8 +547,8 @@
       "codename": "fog",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_fog",
-      "size_kb": 35553,
       "updated_at": "2025-12-21T14:09:37Z",
       "vendor": "xiaomi"
     },
@@ -480,8 +558,8 @@
       "codename": "garnet",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_garnet",
-      "size_kb": 5406,
       "updated_at": "2026-05-02T18:08:06Z",
       "vendor": "xiaomi"
     },
@@ -491,8 +569,8 @@
       "codename": "garnet-kernel",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_garnet-kernel",
-      "size_kb": 109867,
       "updated_at": "2024-08-17T12:13:16Z",
       "vendor": "xiaomi"
     },
@@ -502,8 +580,8 @@
       "codename": "ginkgo",
       "default_branch": "alpha-15.1",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_ginkgo",
-      "size_kb": 8523,
       "updated_at": "2025-02-22T15:11:26Z",
       "vendor": "xiaomi"
     },
@@ -513,8 +591,8 @@
       "codename": "grus",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_grus",
-      "size_kb": 3615,
       "updated_at": "2026-09-13T20:28:29Z",
       "vendor": "xiaomi"
     },
@@ -524,8 +602,8 @@
       "codename": "ishtar",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_ishtar",
-      "size_kb": 112,
       "updated_at": "2026-09-19T18:17:21Z",
       "vendor": "xiaomi"
     },
@@ -535,8 +613,8 @@
       "codename": "klee",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_klee",
-      "size_kb": 1565,
       "updated_at": "2026-08-16T20:30:47Z",
       "vendor": "xiaomi"
     },
@@ -546,8 +624,8 @@
       "codename": "klee-kernel",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_klee-kernel",
-      "size_kb": 138728,
       "updated_at": "2026-08-15T21:59:13Z",
       "vendor": "xiaomi"
     },
@@ -557,8 +635,8 @@
       "codename": "lisa",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_lisa",
-      "size_kb": 146,
       "updated_at": "2026-09-20T06:43:57Z",
       "vendor": "xiaomi"
     },
@@ -568,8 +646,8 @@
       "codename": "marble-kernel",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_marble-kernel",
-      "size_kb": 306818,
       "updated_at": "2024-01-07T19:17:13Z",
       "vendor": "xiaomi"
     },
@@ -579,8 +657,8 @@
       "codename": "mi439",
       "default_branch": "alpha-13",
       "fork": true,
+      "kind": "device",
       "repo": "device_xiaomi_mi439",
-      "size_kb": 57764,
       "updated_at": "2023-05-31T09:08:33Z",
       "vendor": "xiaomi"
     },
@@ -590,8 +668,8 @@
       "codename": "miatoll",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_miatoll",
-      "size_kb": 2084,
       "updated_at": "2026-07-10T13:31:34Z",
       "vendor": "xiaomi"
     },
@@ -601,8 +679,8 @@
       "codename": "mido",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_mido",
-      "size_kb": 12773,
       "updated_at": "2023-12-31T07:19:39Z",
       "vendor": "xiaomi"
     },
@@ -612,8 +690,8 @@
       "codename": "mojito",
       "default_branch": "alpha-13",
       "fork": true,
+      "kind": "device",
       "repo": "device_xiaomi_mojito",
-      "size_kb": 953,
       "updated_at": "2023-05-08T06:32:41Z",
       "vendor": "xiaomi"
     },
@@ -623,8 +701,8 @@
       "codename": "mondrian",
       "default_branch": "alpha-15.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_mondrian",
-      "size_kb": 118,
       "updated_at": "2025-05-30T12:51:32Z",
       "vendor": "xiaomi"
     },
@@ -634,8 +712,8 @@
       "codename": "peridot",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_peridot",
-      "size_kb": 1300,
       "updated_at": "2024-08-18T19:18:11Z",
       "vendor": "xiaomi"
     },
@@ -645,8 +723,8 @@
       "codename": "phoenix",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_phoenix",
-      "size_kb": 1883,
       "updated_at": "2024-01-16T18:57:17Z",
       "vendor": "xiaomi"
     },
@@ -656,8 +734,8 @@
       "codename": "raphael",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_raphael",
-      "size_kb": 29525,
       "updated_at": "2025-09-27T11:45:35Z",
       "vendor": "xiaomi"
     },
@@ -667,8 +745,8 @@
       "codename": "redwood",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_redwood",
-      "size_kb": 81561,
       "updated_at": "2023-06-11T07:27:13Z",
       "vendor": "xiaomi"
     },
@@ -678,8 +756,8 @@
       "codename": "rosemary",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_rosemary",
-      "size_kb": 732,
       "updated_at": "2026-09-07T00:16:10Z",
       "vendor": "xiaomi"
     },
@@ -689,9 +767,20 @@
       "codename": "rubyx",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_rubyx",
-      "size_kb": 1284,
       "updated_at": "2026-03-28T16:57:34Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sdm710-common.git",
+      "codename": "sdm710-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sdm710-common",
+      "updated_at": "2026-09-13T20:16:50Z",
       "vendor": "xiaomi"
     },
     {
@@ -700,20 +789,97 @@
       "codename": "selene",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_selene",
-      "size_kb": 3249,
       "updated_at": "2023-10-26T16:26:53Z",
       "vendor": "xiaomi"
     },
     {
       "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm6150-common.git",
+      "codename": "sm6150-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm6150-common",
+      "updated_at": "2026-07-15T17:42:24Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm6250-common.git",
+      "codename": "sm6250-common",
+      "default_branch": "alpha-13",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm6250-common",
+      "updated_at": "2023-07-26T11:14:48Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm7325-common.git",
+      "codename": "sm7325-common",
+      "default_branch": "alpha-13",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm7325-common",
+      "updated_at": "2023-06-11T07:47:29Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8250-common.git",
+      "codename": "sm8250-common",
+      "default_branch": "alpha-13old",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm8250-common",
+      "updated_at": "2023-10-15T11:14:28Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
       "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8250-common_alioth.git",
-      "codename": "sm8250_alioth",
+      "codename": "sm8250-common_alioth",
       "default_branch": "alpha-15.1",
       "fork": true,
+      "kind": "common",
       "repo": "device_xiaomi_sm8250-common_alioth",
-      "size_kb": 2370,
       "updated_at": "2025-05-22T10:50:29Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm8350-common",
+      "updated_at": "2026-06-23T06:24:21Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8450-common.git",
+      "codename": "sm8450-common",
+      "default_branch": "alpha-15.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm8450-common",
+      "updated_at": "2025-05-30T13:19:35Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8550-common.git",
+      "codename": "sm8550-common",
+      "default_branch": "alpha-16.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "device_xiaomi_sm8550-common",
+      "updated_at": "2026-09-19T18:19:09Z",
       "vendor": "xiaomi"
     },
     {
@@ -722,8 +888,8 @@
       "codename": "spes",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_spes",
-      "size_kb": 0,
       "updated_at": "2023-04-19T00:59:49Z",
       "vendor": "xiaomi"
     },
@@ -733,8 +899,8 @@
       "codename": "spesn",
       "default_branch": "alpha-15.1",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_spesn",
-      "size_kb": 261167,
       "updated_at": "2025-03-03T03:16:07Z",
       "vendor": "xiaomi"
     },
@@ -744,8 +910,8 @@
       "codename": "stone",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_stone",
-      "size_kb": 1571,
       "updated_at": "2024-07-13T19:07:50Z",
       "vendor": "xiaomi"
     },
@@ -755,8 +921,8 @@
       "codename": "stone-kernel",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_stone-kernel",
-      "size_kb": 89081,
       "updated_at": "2024-07-13T19:09:43Z",
       "vendor": "xiaomi"
     },
@@ -766,8 +932,8 @@
       "codename": "sunny",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_sunny",
-      "size_kb": 2913,
       "updated_at": "2026-06-05T17:32:00Z",
       "vendor": "xiaomi"
     },
@@ -777,8 +943,8 @@
       "codename": "surya",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_surya",
-      "size_kb": 4824,
       "updated_at": "2025-02-19T11:25:57Z",
       "vendor": "xiaomi"
     },
@@ -788,8 +954,8 @@
       "codename": "sweet",
       "default_branch": "alpha-16.2",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_sweet",
-      "size_kb": 4130,
       "updated_at": "2026-07-14T18:48:16Z",
       "vendor": "xiaomi"
     },
@@ -799,8 +965,8 @@
       "codename": "topaz",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_topaz",
-      "size_kb": 348847,
       "updated_at": "2023-11-03T02:21:32Z",
       "vendor": "xiaomi"
     },
@@ -810,8 +976,8 @@
       "codename": "venus",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_venus",
-      "size_kb": 1973,
       "updated_at": "2024-07-13T19:16:23Z",
       "vendor": "xiaomi"
     },
@@ -821,8 +987,8 @@
       "codename": "veux",
       "default_branch": "wip",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_veux",
-      "size_kb": 28500,
       "updated_at": "2025-01-15T20:47:02Z",
       "vendor": "xiaomi"
     },
@@ -832,8 +998,8 @@
       "codename": "vili",
       "default_branch": "alpha-13",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_vili",
-      "size_kb": 187,
       "updated_at": "2023-08-02T17:14:47Z",
       "vendor": "xiaomi"
     },
@@ -843,16 +1009,17 @@
       "codename": "violet",
       "default_branch": "alpha-14",
       "fork": false,
+      "kind": "device",
       "repo": "device_xiaomi_violet",
-      "size_kb": 19988,
       "updated_at": "2024-08-27T12:59:30Z",
       "vendor": "xiaomi"
     }
   ],
+  "family": "rom",
   "org": "AlphaDroid-Devices",
   "provider": "github",
   "repo_prefix": "device_",
-  "schema": "hico.ingest-manifest.v1",
+  "schema": "hico.ingest-manifest.v2",
   "source_id": "alphadroid",
   "source_name": "AlphaDroid"
 }

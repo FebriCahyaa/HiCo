@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oneplus_guacamoleb.git",
+  "codename": "guacamoleb",
+  "commit": "f2ec9e0f55a384189a31c7ec4a16cb7a90e1c3c5",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f7feac74fdb0fb78df46c9d316cb39c3268c518b1556be9726ee14744f7495b3",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0156a98967a986906c7a6b76afd5f09f166a7275db777c74b2dca5c0872c2a1a",
+      "size": 1032
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1f2fa28a0030ce6b3736bdaf62fd3dd735db2229f98599531cb4714f911b2417",
+      "size": 1463
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "027f4b75f97bb8e66f54237a3310834a2e34a011c44a27d0ca0224f23099443a",
+      "size": 901
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ab77fa65c8d004c2411537f99a730dcf55c28561569392818970e766be2ec870",
+      "size": 22987
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "71393e9a927fb54e21346dee2082266645f3a7fe1585f9fa7bdb024c6c740286",
+      "size": 876
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_guacamoleb",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:17Z",
+  "vendor": "oneplus"
+}

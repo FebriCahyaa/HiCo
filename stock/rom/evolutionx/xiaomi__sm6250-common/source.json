@@ -1,0 +1,62 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "a6c0c869be46bf3740f0872241fb57df7ad80c6e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "14e5f00fe527daa9d59d2f31773ad9583ddf35e4664a04c502d3af6391deec9e",
+      "size": 414
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6bbdf8a18847c69e5e02edad720fd3a569dd232e545f6c13ae0b7086fc13a3e4",
+      "size": 6327
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "0adcba09905542ee9336591174286d413efbb915f4180058b969766119761904",
+      "size": 5482
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e703cdafab0f8e65d2ef353a8ab9059f438f3859c40d39a5d724e73419a3351e",
+      "size": 5525
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ae207c4b927f05ce8dcf653601f4deebe19f36ab62e16720b42287ffe619f9c9",
+      "size": 50145
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "25adb54e8afb3afcd21bccd18eecc40e15fb299f6f2c35487a4e44160a1de9ac",
+      "size": 493
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9f57fed7a4f910c6b83186ead56444d74acea5976e9c88ebc6ebdc51d2a8c196",
+      "size": 664
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "00bbc99aa237f73158af5bbd35949b69743cb588cdef64e69c27c2a76de2e873",
+      "size": 8197
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:49Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_realme_RMX1921.git",
+  "codename": "rmx1921",
+  "commit": "b394c8cc69bd84a1b7d1823f5502f9c26aa3a7f8",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "50206a4cbf9a019722f282f7c52dccb59663738d7a0a54f87d783418572058ee",
+      "size": 675
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "36cc036c0466689d916f93d7565210654abe792caddf72030561be62dd6acfec",
+      "size": 1027
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a8b6ae0b55de45b87bbef95590d03eca2a993621b1a3a0507b3eff1621d6bb88",
+      "size": 221
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e779f0a2131130310c6dcb81f2b31b6609552a7fe778da78f69b902549a9b99d",
+      "size": 6499
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ae718843378902165e1fd885f4d8966da91a72507990697616ee537221569486",
+      "size": 23951
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ea53221f72db4deec960557152db0ef0f5514310651be11538523c0cf4cddc1b",
+      "size": 2088
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d7df00a0ee2b0e53098ca2897884d831d3094e0fb95705086441430992614fdd",
+      "size": 71131
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "d8510b3300411841ccc35b48a89bbf2d555cfe21fbecc27c01bf43eae202088a",
+      "size": 391
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "542b7bb0879e0e984186248087ac3d20fa6c5e7623e7430689b67283ecd4d470",
+      "size": 150
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8598ab1bc56049e2b5f9034c470f4f3315b73eb9eab5cdc46c5e45c7fcac17a7",
+      "size": 3951
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d5988d3114182b07bd2ef68966811571a2dff32219456e923aeadf24a85c3834",
+      "size": 7310
+    }
+  ],
+  "kind": "device",
+  "repo": "device_realme_RMX1921",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-01-15T12:57:45Z",
+  "vendor": "realme"
+}

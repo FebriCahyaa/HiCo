@@ -1,0 +1,82 @@
+{
+  "branch": "eleven",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_oneplus3.git",
+  "codename": "oneplus3",
+  "commit": "c15e2b881991712e683ab1ea1bbbd0edbc401a0d",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ec16e59c9324ce4225bab61909382d947ec3ae3033736579348efd116ec6abe2",
+      "size": 51
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5230e66c3955a9f49ff40af0aad12160b8f270c638ad73bc7591e20ae2049352",
+      "size": 5248
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4cee174b9f92dc6ea2d48f956cb7a06319b820b1a30ed35d78e7f10b5234cf6b",
+      "size": 650
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5c4195997736d4ac4d24e67033aba0f59e582029fa6ad704188b5effc612c37f",
+      "size": 7408
+    },
+    {
+      "path": "configs/thermal-engine-vr.conf",
+      "sha256": "3771549c4561cf2505332bd6cc5a58a50dac2805fd740868925eb6dad9126409",
+      "size": 365
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "80d343cf2827999e45b2cb427884ba64f14882f9372dc45c270e6bf99c2b8ec4",
+      "size": 1470
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b597cb21784dc7160f19ce3dd407de5cbc7f08cb9439f4bb9974ac142faf0df1",
+      "size": 22801
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6ec4f6afa67115fa76e5a6d332568987db2b52cdb1225ef572218d1dcf80894c",
+      "size": 1954
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8e46806d6c6b2d8eb871a5cc6b78458fc0944cfb15b22c401b125b591fc56db8",
+      "size": 45951
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "de701fcf72e1715f8652e993ad6f2a40980861e553f2e7fa86ae68cae837b27f",
+      "size": 44
+    },
+    {
+      "path": "system.prop",
+      "sha256": "fd24712db813b65b2bae00e3391bf7a8ed30b76d41f2f215a8427e7ea3a41df0",
+      "size": 5183
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "2ac99513c871c3209450a391fbb8134b7b4f7cdc5af6facf50597afdda547516",
+      "size": 950
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "e16c04229581528ccf4d54ef418deb327e3fe3e28742876222a20b620220bd54",
+      "size": 8854
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_oneplus3",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-03-07T15:32:56Z",
+  "vendor": "oneplus"
+}

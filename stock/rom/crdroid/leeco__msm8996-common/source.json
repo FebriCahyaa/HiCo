@@ -1,0 +1,42 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_leeco_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "a16b88346a91b31ec1551521af069d4ec12beeef",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a2e7886f85fc9b3f72a818af86f4db2409271f06cf0385371e843435e1c4db0f",
+      "size": 5370
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a200c8d3b30c28aba377ba3e001abb778078f7c6381cb89ce24ecd3d2d031010",
+      "size": 7202
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "e0465015e5748740e87b2e25bb9a5f52e5e0778f5c01d1983d3334df4689dbba",
+      "size": 8360
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "54170d727f6992649fed242530546d6cb4627454e32940e2883c2de47599839c",
+      "size": 1981
+    },
+    {
+      "path": "sepolicy/thermal_engine.te",
+      "sha256": "5d33730497d1f8f849018c00a04dc02ee242850012c320baf5f5f01b8a7157e0",
+      "size": 227
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_leeco_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-11-03T07:31:36Z",
+  "vendor": "leeco"
+}

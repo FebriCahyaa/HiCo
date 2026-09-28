@@ -1,0 +1,42 @@
+{
+  "branch": "derp10",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "82913ac200406bc61b74616d422d12e092599ddb",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "79068c90519d4d86604adb8dc810c63471688e35ca6a2bb964412f51c28c49d2",
+      "size": 4842
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a36c0a11bd218f1b970d71cfe401716c9f6495a3b39b5bee32de302654edb36b",
+      "size": 6054
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e3f77caf4f9dd1d9dcdc5decd55f3abb403ea7868aeb517de069593615cf787b",
+      "size": 4968
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1eec1309251e6a3179b7495411ad11c87337e4c63c91c9e8dff59762a0666d98",
+      "size": 225
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-11-04T08:56:49Z",
+  "vendor": "xiaomi"
+}

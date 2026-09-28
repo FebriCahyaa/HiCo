@@ -1,0 +1,37 @@
+{
+  "branch": "cm-10.1",
+  "clone_url": "https://github.com/LineageOS/android_device_bn_common.git",
+  "codename": "common",
+  "commit": "7848f45bb9ae1a2952bbfe7d65207532cabcfeb0",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4d4d198fcc542a83d5c4358e4283772fab2badbf728f28dec7a7b8a0f8ecd60d",
+      "size": 1243
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c33fe787958b40e63bfa243bfb1dae0b37866654d73aa0bf7d4eff0b101f0722",
+      "size": 5839
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "46d7d63ae6afad05cad0bbd8c04fd69fc63e7933d44669e51b7c21826cfe3548",
+      "size": 339
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6f254c34e3de6435293f6e4ca1ced3e8a5246d61c332fab1a33e84b7e2f5f614",
+      "size": 1576
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_bn_common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:51:01Z",
+  "vendor": "bn"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_meizu_sdm710-common.git",
+  "codename": "sdm710-common",
+  "commit": "db837bc9b8d89203528af98188d2e7622b5a82fd",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d95e293930a0e680729336b8d27ca5666d35aa94bb8cd3388d5913fbb0f24be0",
+      "size": 121
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f8c0416b1111e4acb40cc323487fdc2dc8591c283a7b5ffda9f94cb37b33fd89",
+      "size": 2858
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "870fdd166bfab4529a41ac6947eee6bfb30cb10398888ce88302035f1c3fd74f",
+      "size": 5105
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "041043ed00cec022ae7225cb0acabbf7e6f5b3e2fa5ea8a3150f436831e9ec1a",
+      "size": 1134
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b4ca5e72c59865b9093b94fce994a2726745d0fc0f8eefe237b5821176306692",
+      "size": 215
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2e444c0503c8f25e97c568cb1d1ac15ba475773900c2247f8dc90f09ec80a7f1",
+      "size": 19202
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c7247cdad73edb246c975ded72805c348bb777ac2d1e4d70ccd9b08713c7214f",
+      "size": 5863
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_meizu_sdm710-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-07-05T09:44:45Z",
+  "vendor": "meizu"
+}

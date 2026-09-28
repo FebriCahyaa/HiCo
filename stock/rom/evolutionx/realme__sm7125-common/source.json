@@ -1,0 +1,157 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_realme_sm7125-common.git",
+  "codename": "sm7125-common",
+  "commit": "0efba04a4a8650de38b96c4fc715405ac7a1b7b6",
+  "file_count": 28,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d1a5154b63ee9aeb8f5f41ec030f1eceb10c56d401f882ef17176aacfa6b9d2b",
+      "size": 533
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "67965217bb369d31e9f9eb79ff5909f1937792588e4b1810e9c544cc9ebd709e",
+      "size": 878
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b76080e7797acd171f3ce6b95152a54d462a886cac6368bb9cd991487ce8d284",
+      "size": 8029
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "042bed3bf4a83eac5eeaa910ebd51d96d9d0251e34ab40d4d8a1b23adf4935b1",
+      "size": 2971
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1fba01e0a151352973088b72207bfa1b6e3fa8b4763470f4919cbcfea6c944b8",
+      "size": 46202
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "c7df84b63c94147e1625ec1d7a3c4c05b37637f5c4c9fd8035da9393f8c3b273",
+      "size": 57
+    },
+    {
+      "path": "system.prop",
+      "sha256": "33221f42d9a67381e1847e5307c73aa2e9eb7b772ca1015e37754bbf6987336e",
+      "size": 3650
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "6711408fd9f76ca2ce08d7b1b1d1ce970baefd00b5c45dc90230bb7c0745dc07",
+      "size": 877
+    },
+    {
+      "path": "thermal/README.md",
+      "sha256": "d316aaf1c37b6649f005dbc3b4064e7244a759a01c4cbd634c6edb2cb9a79b5f",
+      "size": 2328
+    },
+    {
+      "path": "thermal/Uevent.h",
+      "sha256": "dbafac4101777b29e7c8e7f07e50a5942acb9f2011b1d2306902205247ca6b76",
+      "size": 1782
+    },
+    {
+      "path": "thermal/android.hardware.thermal-service.realme_sm7125.rc",
+      "sha256": "505a787e487db45d957e1dfdc1d57ecaca92c27180528532461f050e3bc264aa",
+      "size": 2075
+    },
+    {
+      "path": "thermal/android.hardware.thermal-service.realme_sm7125.xml",
+      "sha256": "caa6d6a662dbdc569a69091450a635912672807ab2663e5ed63d9cb17da45a70",
+      "size": 1934
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "f87200f65e9c17bb3af3c40a178df16d28ef3c96766d76c8834e59725bdc5006",
+      "size": 1778
+    },
+    {
+      "path": "thermal/tests/test_monitor.py",
+      "sha256": "57f2bc60fe487d2e46ff21e4c062255aa83f7cfc6b81ddd08d5e21568480ddcf",
+      "size": 2666
+    },
+    {
+      "path": "thermal/tests/test_reads.py",
+      "sha256": "ee052dff0b67c7d9d6fca6a3942a963809be2ef3185d332924d9f7bf627d02dc",
+      "size": 3976
+    },
+    {
+      "path": "thermal/tests/uevent_test.cpp",
+      "sha256": "a544a6d91f1b61ead9b19b80aab0be52f4881a1a133f94091e9108db75e71bab",
+      "size": 1020
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "0921eb3344797a54533c21f6ea0a586d1f2a20ea6408f0c70ff3e2f0dd9f4991",
+      "size": 10445
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "96faa248604d73dabbb68daa6815946eb0c3f1a2fb195918ca8c4474a8cec717",
+      "size": 4201
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "ce6fe6c3780d4b29ff3592adcf8072e76dfd4e2b89ecc6e22795ffb022ce1bef",
+      "size": 22741
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "7120b095fd9df0d342af33548ea74e4d9cb63587241c6fd55eee71f755516fce",
+      "size": 3200
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "367caf3802cc648980c3df8a52762a2240ec6dd4296772d55822c06aa9a7319e",
+      "size": 66404
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "f6ae332b2b7149187375574c46b280b59e6811ca73cf8ef4b0fe26e0c9d4b488",
+      "size": 2554
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "2a5c6e3d952b447bbb0717cd682737c72f1af3e8d993e322ccd4e1cef9b8bc98",
+      "size": 3533
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "7c3c6705a44c1e2b1ea7ca9b4fb78464ed8c5a146b8d2a5cbb272c3f153f2451",
+      "size": 5589
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "63cbd354d28b0b1fee229a3c6fcb21977aa931e56a9866abcde73403b1216b2d",
+      "size": 2542
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "3e0990e1894381d0fc22ce992107f1ff2ab9f72aec380981b4d045dd0ca210f9",
+      "size": 7947
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "0b701673ddab08a4d28db0d4ff2cfd8ad2d72650031d084f0bbfe45122fa84d9",
+      "size": 3731
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3a5961b9f16aa1a80826a021935ccd0111766f2b59c7a0c540e9cb7606fb9481",
+      "size": 8295
+    }
+  ],
+  "kind": "common",
+  "repo": "device_realme_sm7125-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-22T08:23:30Z",
+  "vendor": "realme"
+}

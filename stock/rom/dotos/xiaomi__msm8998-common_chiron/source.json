@@ -1,0 +1,42 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_msm8998-common_chiron.git",
+  "codename": "msm8998-common_chiron",
+  "commit": "f4a843e671cee62ea4b1a6fb0a6dda24a40441be",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6784eb5da7657de1bf2a6228aabc444ffb98f35d1c00dbb49aff955fe3c596fa",
+      "size": 4164
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "06cd45a8783b0b0a99e9a2024fac01d6ddd0011d30e7726197276f158ea8bd64",
+      "size": 7023
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "560c34f4d3f01f8ce1d61541742c9a2caa1ecbdf32351713d635be96e3d7047b",
+      "size": 3176
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7fb462b67da664d20c8983e2bdd1f0dd305ad627de8270484eefc0466425d2cf",
+      "size": 19645
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "a04e2d7d945fb9698d4223eb3842cedd81c11042bd277e1d3a400cade12fe536",
+      "size": 426
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8998-common_chiron",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-07-10T19:49:22Z",
+  "vendor": "xiaomi"
+}

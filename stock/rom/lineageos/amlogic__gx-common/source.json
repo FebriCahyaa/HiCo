@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_amlogic_gx-common.git",
+  "codename": "gx-common",
+  "commit": "128645d8dacfafe331e19be44fa3509dc8a73eff",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "fa18bceb0b7c2a1f62560ef6245e50e771482df4d3d4271aafb0206dc88e58a8",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1cc71022cd9c2ae3ff28171289957088f386a383d4f81d6c002676634226e84e",
+      "size": 399
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "82dd6b5abdd9fadd9a256cfde2e5152b83a84256b03217080771e05a013458fb",
+      "size": 1627
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5945e47052a947dc1d5a9efaabc1f448b83c1920fec2a71fe9b3cc107b61de7e",
+      "size": 4892
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "20e40d4a8d202aa62ddf5e4bd754fd448ea14c7b37b5471871844c93b0db1723",
+      "size": 650
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d78612b93295697a4a416f78b146a92a405f4c4ced6fb4f292609678e27a55f5",
+      "size": 4508
+    },
+    {
+      "path": "system.prop",
+      "sha256": "65ddaa6258d37de120b95c723b1b2bddb711b475fcfb6a0fe466a354e8b7b9b9",
+      "size": 65
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d2f4604a6ceed0b7f4f8b953b06db0062b39455f2af12cbe91d0d7d361d859ac",
+      "size": 99
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_amlogic_gx-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T16:36:29Z",
+  "vendor": "amlogic"
+}

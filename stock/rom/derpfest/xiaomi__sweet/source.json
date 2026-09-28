@@ -1,0 +1,102 @@
+{
+  "branch": "12",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sweet.git",
+  "codename": "sweet",
+  "commit": "b0807b12dc265773910e339bd4a46048c1137f01",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "083d77aaeab3e428929c5568a2ea5affe6e54f7cddcaeff00916f1916df3b580",
+      "size": 745
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8bd9a7996fa6a0c47d2ddda8d3e6c1e538441bc89e7f1d5b5c4058985a823a55",
+      "size": 4247
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e8fc5fa935e015f9ae35c62c1e42f4c2bbdfae43f67e8f0a9686cf126df50995",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ae33954f607f1cc7357695cee32b783540514fe011bc536a9f94e6dfc3edb186",
+      "size": 5382
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4954aa0766ee144c1d35f00b21ca83fa214da8498c9161ee796d31c636fab9e2",
+      "size": 17054
+    },
+    {
+      "path": "devicesettings/src/org/lineageos/settings/device/thermal/Constants.java",
+      "sha256": "d9ec8c863eadbc01c39e5be22ab7d039d77dea4353247f270a7117c722edbfd4",
+      "size": 1698
+    },
+    {
+      "path": "devicesettings/src/org/lineageos/settings/device/thermal/ThermalActivity.java",
+      "sha256": "d1f45394bda6979969d90a4f326c04ae6c08df9c17c214c312e38a0074f6e2c4",
+      "size": 1465
+    },
+    {
+      "path": "devicesettings/src/org/lineageos/settings/device/thermal/ThermalService.java",
+      "sha256": "8c8ece8a1e08ea5cf848e258b11c8fef1e1a59e25701903beb083d99b59c33e7",
+      "size": 3368
+    },
+    {
+      "path": "devicesettings/src/org/lineageos/settings/device/thermal/ThermalSettingsFragment.java",
+      "sha256": "c11b8168d95b0d3889aca05298a1aa8ace742b5e16e0883ed514031e31ffe238",
+      "size": 15636
+    },
+    {
+      "path": "devicesettings/src/org/lineageos/settings/device/thermal/ThermalUtils.java",
+      "sha256": "a6f698e2fc96c2b6b3c9bc51fdd45cb47c5fb500a57e93288ade0cce37b1ace6",
+      "size": 9230
+    },
+    {
+      "path": "devicesettings/src/org/lineageos/settings/device/thermal/TouchSettingsFragment.java",
+      "sha256": "b18cc7e3f3ac022982219b478abf88b62b1d99aad6a68b38d8dec80cab5508f7",
+      "size": 5089
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ed67d941dfbd82ebac4476384039340586c59f690b84fff80c61f266279be4df",
+      "size": 2918
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d4552b216b2eed4040bccd34ab193e77223094397279757686662e13d2a3e705",
+      "size": 75571
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "system.prop",
+      "sha256": "74cd49a461c0968af2bc7eb8af28c4ac64960ca28192fb597086cea779a3edc1",
+      "size": 1036
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b0d44b8b200dc846e09a5e7b6638067559eefdbed8f166f8c6efb328b6815438",
+      "size": 13874
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "844c2ee1a79739448025057f76e35c4ecb4fd57c86699e87becc6f8bacc8989f",
+      "size": 582
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_sweet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-03-03T20:38:27Z",
+  "vendor": "xiaomi"
+}

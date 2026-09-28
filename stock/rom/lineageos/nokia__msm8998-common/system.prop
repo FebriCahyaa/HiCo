@@ -1,0 +1,90 @@
+# Audio
+af.fast_track_multiplier=1
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=false
+ro.af.client_heap_size_kbyte=7168
+tunnel.audiovideo.decode=false
+tunnel.decode=false
+persist.audio.fluence.voicecomm=true
+
+# Camera
+camera.disable_zsl_mode=1
+vendor.camera.aux.packagelist=com.evenwell.camera2,com.tools.alt,com.hmdglobal.camera2,org.codeaurora.snapcam
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Data
+persist.data.netmgrd.qos.enable=true
+persist.data.iwlan.enable=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+
+# Display
+debug.sf.layer_caching_active_layer_timeout_ms=1000
+ro.vendor.display.cabl=2
+sdm.debug.disable_skip_validate=1
+sdm.perf_hint_window=50
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
+# Fastbootd
+ro.fastbootd.available=true
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+vidc.enc.dcvs.extra-buff-count=2
+
+# OEM Unlock
+ro.oem_unlock_supported=1
+
+# RCS
+persist.rcs.supported=1
+
+# RIL
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+keyguard.no_require_sim=true
+persist.radio.multisim.config=dsds
+ril.subscription.types=NV,RUIM
+ro.telephony.call_ring.multiple=false
+ro.telephony.default_network=22,20
+telephony.lteOnCdmaDevice=1
+vendor.service.qti.ims.enabled=1
+
+# RmNet Data
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.wda.enable=true
+persist.rmnet.data.enable=true
+
+# SurfaceFlinger
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_virtual_display_dimension=4096
+
+# System
+persist.sys.binary_xml=false
+
+# Wifi
+wifi.interface=wlan0
+
+# Voice assistant
+ro.opa.eligible_device=true
+
+# Voice over LTE
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# Telephony
+ro.telephony.handle_audio_direction_changes_between_call_state_changes=false

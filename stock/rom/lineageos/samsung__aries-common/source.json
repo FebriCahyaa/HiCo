@@ -1,0 +1,42 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_aries-common.git",
+  "codename": "aries-common",
+  "commit": "593cf8f59c33c98bee667dcbcfa1f4080e839b99",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4a3fcb60bb669d7abf7c61d114ddf225e25b720bcdff17ce56d53adaf2d840a5",
+      "size": 87
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5be488427e867496cf1ca36d5091ce5ccd4fba240b811383fd9b2897298a5911",
+      "size": 3966
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4af4b03fab30b7b75926fa8dafdb82d0a701f8462b8ee18db1c7afeacce105e9",
+      "size": 356
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f6aaedfea2f700ac99ab8851ce6500dc2e41c3359d2b03055f081580a2b10267",
+      "size": 679
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cdd46638a162449f28cca9e68964da6da710d5d9833685bea64ca1e54075be65",
+      "size": 121
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_aries-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:07:19Z",
+  "vendor": "samsung"
+}

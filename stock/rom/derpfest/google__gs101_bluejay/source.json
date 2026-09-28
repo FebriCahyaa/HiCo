@@ -1,0 +1,57 @@
+{
+  "branch": "16-einar",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_gs101_bluejay.git",
+  "codename": "gs101_bluejay",
+  "commit": "3c85c3fe81613beff26102de994ff5b13e9089d5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "88af858cd8a85a3b68f4600ee80f1c193b16fd0dd1de3afa9aa0e41046fca58c",
+      "size": 1202
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "bf16209015b15c38aab54541e15ee747d740e496797c8e5e29816e5385101f57",
+      "size": 14341
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "9ae6987d75e5bc92752f87385a8111efe9868133b801b58103ab938b066676f4",
+      "size": 1040
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "0dfba286b79149c2ec01ce7fe6e3257822ae3a9ef6c8db3a51f41285d9adfb3f",
+      "size": 1872
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "35402fc936329949fc54dddc023a9c749c4369219bcda8b7100fc719ddc9fd67",
+      "size": 850
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f54b34f9505cd89409b8edcfe4bd1b4a9a088785b560f9b71bfc5c1f4632e8e2",
+      "size": 38139
+    },
+    {
+      "path": "sepolicy/whitechapel/vendor/google/hal_thermal_default.te",
+      "sha256": "d85ca3945b1bd5e52f144dbfab5b3f0d03a5947a04fd3237935e05b207b9b747",
+      "size": 117
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e14fe5f81c0a44b7325cddc6dc0a2fd1a8fd81d4bc16e6595603759d6c388ec7",
+      "size": 1283
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_gs101_bluejay",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-02-10T11:25:41Z",
+  "vendor": "google"
+}

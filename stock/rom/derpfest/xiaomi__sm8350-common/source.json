@@ -1,0 +1,62 @@
+{
+  "branch": "14",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "c890cf11b9828bbc66ce91a55d4e8f75beee64a8",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "7a48e242387ab9fd6e07d77693ecff2c1983d41b42452e1d7396f35d75bcba9c",
+      "size": 4025
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "55bb2fab9c5de36b99eb3da3959c117d4e2dc043febf82cc68e755679a5541b9",
+      "size": 6807
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "544b380a56620e93685190d4a32ead12662f79435b98422cd40ed95cb7f852ce",
+      "size": 2981
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "78a838473d25cc4de2fae125e82a30988e9b05d3e44d21c5f02ad95d66d6b51a",
+      "size": 29555
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "343c2f8d01fafd62ce5b7879da578b7c5cedcfcf35473737610fbd2275b06ebb",
+      "size": 310
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "550c767bb820ca148815db61a06fb139088f9f77e80c60aab3581336f0b0928a",
+      "size": 1022
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "82e1efffec57e50818def49fe322e9db2236438bc415a3df8c6b27b075604b57",
+      "size": 10455
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-07-11T05:44:30Z",
+  "vendor": "xiaomi"
+}

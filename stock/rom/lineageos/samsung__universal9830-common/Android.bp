@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2021-2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+soong_namespace {
+	imports: [
+        "hardware/samsung_slsi-linaro/interfaces",
+        "vendor/samsung/universal9830-common"
+	],
+}
+
+cc_library_headers {
+    name: "audio_proxy_headers",
+    export_include_dirs: ["include"],
+}

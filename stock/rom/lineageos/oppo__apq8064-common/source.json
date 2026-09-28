@@ -1,0 +1,42 @@
+{
+  "branch": "cm-11.0",
+  "clone_url": "https://github.com/LineageOS/android_device_oppo_apq8064-common.git",
+  "codename": "apq8064-common",
+  "commit": "cbbf09897900a4aa62f27ba925ea353e5c50c81d",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4753059719b5c17cc50b0e6ff9f77d0b1a4a56c9087771fd73ed2d37c3263ffc",
+      "size": 1867
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b7d97b62db6d5bd194c482fd51e4593d5544d5928371a8d2396a6d6c65fde68e",
+      "size": 4512
+    },
+    {
+      "path": "configs/thermal-engine-8064.conf",
+      "sha256": "fbdb061f40e80d75a20988aaeb65a9f5dda680b7c2a1497c86c0d65d7ccfc2d8",
+      "size": 875
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "851154b797db4fce4aabbba4e2bcf33c6cf8a18735793d47fbc0574f25455832",
+      "size": 1766
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b2dd7aad2f96ac8e15043bffa120f140d8cfe2189add391bc831478199b154c1",
+      "size": 721
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oppo_apq8064-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:05:40Z",
+  "vendor": "oppo"
+}

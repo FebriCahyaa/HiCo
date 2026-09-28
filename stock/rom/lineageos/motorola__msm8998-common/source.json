@@ -1,0 +1,92 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "ae6f229637962cb3815d6bb539910b337c4ff782",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1c7ca31b2aa62b1b4b79764fc5774d36457f07277874ab38cab75d7269708d4c",
+      "size": 664
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "480a0be45fb302111f4f255d892342622588cd66f54a7e7bd46879e718b055a2",
+      "size": 5180
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d94339109be81fea20dcdb785fd5380af94d8ce1e014323ba3f8cbd767e326c4",
+      "size": 4603
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c2ba1338a2374a85d76c68691265545fbb60b9d3c4a577433f34010f9c4a16de",
+      "size": 292
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2a653678aa210ed69af6ef46a79bffe8c4c7727b26e247fc71556ee08882c7dc",
+      "size": 43836
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "13dc8b22130b2273b7e8c628bafa0203f73860b773423594ef9ca81c217f7aec",
+      "size": 645
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1b7bf027d6aaa5ffc6bafeef2c65dbbd4a18ad0e05246c0a9fd1a26d5067cd56",
+      "size": 271
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "c93eaabbd82d0a0a2500c78e950ec376e1f23b9098d78ef0e873f1bd813e50a8",
+      "size": 1067
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "d46ee1c33530dd6b1497234c98b010d1008f33b267652f52d7cba174e4eca510",
+      "size": 5560
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "2312dc2bfcf238da6aaeafb999d390cc74247acf418bca034e6852f03d44f342",
+      "size": 2410
+    },
+    {
+      "path": "thermal/android.hardware.thermal@1.1-service.msm8998.rc",
+      "sha256": "c800f78d30766a1bf0f1aaeb55a39f1e08ef7d58a212d26dce41942b8bf953f6",
+      "size": 138
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "eb4e18a81792fa73c976a8c7f959c81bccf71ac619d4ede55e2c94792f74be60",
+      "size": 1839
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "86a514f8c9a62c2d936963ef8685e83f90ec81a382ae30e176f6518777ffc2a0",
+      "size": 9289
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "96940ff8d81262fb8bc39be40abef226ed31d2b55deecaa17b702bfe76cad482",
+      "size": 3701
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3863c224b3c737e9f6768a50253627a6ebf1758f3242d372073dca85e4167ae0",
+      "size": 6812
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-26T02:25:05Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_mt6768-common.git",
+  "codename": "mt6768-common",
+  "commit": "5f2af937479bda63e8a9133bc842d10bfb0eaf13",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e6de6c8fb357e7fd0edbb27307f1e890bd4eb783c41f1eab7f1e9499259811ed",
+      "size": 1420
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "409d792fc36dfca5149cc085cc114c1c219327002054ffb2a99c60f2732912c4",
+      "size": 5456
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "be62c9b33852d8e75c79e62084d7650ffe42138cd566be1bb585a2de78261c22",
+      "size": 1292
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "99ac36173efd441f1dc2b205bdbadae6407eda380709f764983d89921c1e7dda",
+      "size": 921
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b82e2b73d2a0ee7fcf419aa074fc8f6af2f84c13fa47b6166cc76259a424b23",
+      "size": 1437
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a7b41257471599e1b9140ad24821351054dbbdec3e8e9943a23cc5750cda3556",
+      "size": 6212
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_mt6768-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-12T08:25:50Z",
+  "vendor": "xiaomi"
+}

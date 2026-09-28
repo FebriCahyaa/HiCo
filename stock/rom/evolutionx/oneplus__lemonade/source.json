@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oneplus_lemonade.git",
+  "codename": "lemonade",
+  "commit": "afccf20f2c91dcc9fa8956cd6cea52ea48bafef1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2d5f473d2553103cc2a2cec92c83d2df7fb4194bfa881fd666d8056ef4c2e698",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4662ba4086927b40851e4d811ba0a2159e7a88854ff52194b1925919459de4c7",
+      "size": 551
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b9e93386c4f0ba5545b988553bb6506edda591da3f5e323127f4dfd4c98be755",
+      "size": 3375
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "939a8707748755c8b6b5f4b1fe83f37c343e8072914b9135a540e35a101e9061",
+      "size": 4013
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4fab0ba9097e7d5768a4b565dc84abaecc3f8059e66757c07fac0d8fc9d333a0",
+      "size": 43226
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ab0a220083b72221554ef3da6a7cf7e23b3d2b9a9fe8d00e4575830162dc176b",
+      "size": 192
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_lemonade",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-07-16T12:28:13Z",
+  "vendor": "oneplus"
+}

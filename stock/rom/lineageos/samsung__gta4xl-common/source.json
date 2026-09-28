@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gta4xl-common.git",
+  "codename": "gta4xl-common",
+  "commit": "b7dc0f1b0b0b51d19292d6235b7c87d76cdf2c94",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "81a36f535f912d8962e3c8d3bde0ea895e75730969b54cb612e05be8c186f988",
+      "size": 180
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6a2d58e68286db64e37a6e6aa138a6aea0c6ccc88b090ca69e0dced5e88c2fff",
+      "size": 6245
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "cfc965427231fffd49b6fc61a6ac36f92dcf0ffbe54308cf0fd34ca7e4419f1f",
+      "size": 1835
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "717588a808f9804c510b3a95d621cdf3dcf604fc5b2db17d65a24e5caf66cad9",
+      "size": 1687
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6a7c9a0a2b220ca7504f97a4db5a909e66c90aa0a06fd619b468e76bbe4f41be",
+      "size": 5202
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "da63e511d961f301390782cf6dc216e67805224e8c3de7e789397a9c0481a3b5",
+      "size": 2143
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_gta4xl-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T18:25:08Z",
+  "vendor": "samsung"
+}

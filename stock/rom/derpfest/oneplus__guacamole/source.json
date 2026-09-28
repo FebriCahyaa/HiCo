@@ -1,0 +1,52 @@
+{
+  "branch": "15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_guacamole.git",
+  "codename": "guacamole",
+  "commit": "14fc95c1e2b8781aa3f50764c172b6368d2baca4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ebb109a2ac8fa4102345616364e24223fc8bd9fe3765520564053ea260894829",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2d9c557c13c57f5b85ba4c1ef0ad4280cd3c17feb29f9f9fa678427eca289fcd",
+      "size": 1081
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d31309f61f0d6892254b6a99b6bd0f1ee1ceebb318d2b464cfd65567ec815a9d",
+      "size": 1452
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9638ea48f3705236632e1dd9fa5ac0dcbb9df54861b7a6b5b01be7e5fa1040fc",
+      "size": 903
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bde1c125ab27c487e30ca1e47539759575f111576dfe29884b2dea99c5f7b995",
+      "size": 24003
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8e6d8485294c85994bd2084374807c320f034c0b65d4c21b450ae137915fe6a3",
+      "size": 911
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_guacamole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-02-10T13:23:47Z",
+  "vendor": "oneplus"
+}

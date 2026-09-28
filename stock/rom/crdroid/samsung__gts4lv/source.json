@@ -1,67 +1,57 @@
 {
   "branch": "13.0",
-  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_gts4lv-common.git",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_gts4lv.git",
   "codename": "gts4lv",
-  "commit": "04cc09320ad39f7885e2876c0f1701815121cf2b",
-  "file_count": 10,
+  "commit": "9355a10758fb8f2eb85b1df453e3a084dd90bff2",
+  "file_count": 8,
   "files": [
     {
-      "path": "Android.bp",
-      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
-      "size": 20
-    },
-    {
       "path": "Android.mk",
-      "sha256": "a870a2e8b85c266248401690b85e690e94ee6d0aa1dd9fc6123f7b2810152915",
-      "size": 4780
+      "sha256": "fddbcc5392abc07d6ee181f15b74fd17854e3af3b9a4bb4db1fcb08b320229b7",
+      "size": 1314
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "68ffd3c75709f22a7adbfda415bee99546bc59028507f77b241e92a07dbb12b3",
-      "size": 6147
+      "path": "AndroidProducts.mk",
+      "sha256": "b1029aa67bf63548b2103ff032c9e30e435f75b93354f2157cf196f4980b9f50",
+      "size": 753
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d2267f3e262fa159936e2b185df51030dfe0cba9549b90d8961dcd6c4397c7fa",
+      "size": 1274
+    },
+    {
+      "path": "device.mk",
+      "sha256": "70431e630012e30c326aa4704c1f273a4095772f8ac0bc7d37796e3a0fb61b9c",
+      "size": 1720
     },
     {
       "path": "extract-files.sh",
-      "sha256": "e6554cbc8f667733a03eecd3983454f4c7dc954774862d04c8d7d229f64b8de6",
-      "size": 2104
+      "sha256": "3c5b0dee35842a30192f2619679236fb0ed4f4cedb7e6baf16a1e6e921c77caf",
+      "size": 471
     },
     {
       "path": "lineage.dependencies",
-      "sha256": "0feff8f705ff4bf5851a07992bcff0280dddca52809ae0acf7f14ff11fd222c2",
-      "size": 199
+      "sha256": "f8887f4b143518c8da940ff045162af839e4a07f90a586665ea9c41af8f5fb88",
+      "size": 120
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "e70f63d45ed6201df6e1094936b9a904c412ee9019fff2dfd65f8c36cb89eec2",
-      "size": 30865
-    },
-    {
-      "path": "sepolicy/vendor/hal_thermal_default.te",
-      "sha256": "c378a17c359b09a9a56b9266c8d3d45a3923147b724e61e46c7bcf27dd204834",
-      "size": 116
-    },
-    {
-      "path": "sepolicy/vendor/thermal-engine.te",
-      "sha256": "230fab339fd9138af5d7fb4bd9d9428d0c0c07997ea1547ea83f3695d1497ed8",
-      "size": 87
-    },
-    {
-      "path": "system.prop",
-      "sha256": "9c1375d13dfb670a5557e8706de3c369390dce5f310f9a823a9c54d230d72ed8",
-      "size": 83
+      "sha256": "042dc523a9806ef1495fecf0c8e8ff37aa8e6a5bc8aeb54a71c247bc8399be3d",
+      "size": 3831
     },
     {
       "path": "vendor.prop",
-      "sha256": "5c5c0f638997f988618debb0850f4eb555749596c70f2defbfa70c112869197c",
-      "size": 5105
+      "sha256": "dc7bd1a9d565c11aae355b6fc3608ca08369b0c3a5a5474671f25e74e361711a",
+      "size": 354
     }
   ],
   "kind": "device",
-  "repo": "android_device_samsung_gts4lv-common",
+  "repo": "android_device_samsung_gts4lv",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "crdroid",
-  "upstream_pushed_at": "2023-09-14T08:56:31Z",
+  "upstream_pushed_at": "2023-04-03T15:47:35Z",
   "vendor": "samsung"
 }

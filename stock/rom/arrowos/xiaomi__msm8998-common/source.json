@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "c81e20d557476a32429aa534c3f1cea125ac7dd1",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "57c3c33b2a08e7ea7e6fe7b70057ec9d0032af868ed9a037189077952317665e",
+      "size": 4431
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "14ac94e7146016bfaf2ad390591c62ef550de5176c68a8c5d9d65fcc0ad06f3a",
+      "size": 5296
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ddbb18a29758db9722d7488eac178826af327d64c5ebe2a384c738af92552699",
+      "size": 3708
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6e9a800a76edc27a6461e4f6c4391fbe258a039534e9136f723777eeec76ff30",
+      "size": 23124
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "db1fcca568c96fc27652f3a63079ecaead4e0d5d768b92e8fd2435f85c3f3abd",
+      "size": 526
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-03-29T13:51:25Z",
+  "vendor": "xiaomi"
+}

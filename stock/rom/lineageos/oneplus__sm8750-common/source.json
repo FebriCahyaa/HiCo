@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_sm8750-common.git",
+  "codename": "sm8750-common",
+  "commit": "a69537957399da9327278c04a5facb345202b64b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "00b9e344737fa1641ec7de9ffd235e4114506c5dd60a753b33df140cc4338150",
+      "size": 10394
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "04a7879bbfcff80ef6669538f377bcf552419b03ed25c60f0489b0c994bf2dd5",
+      "size": 5874
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d078cdd94b7b2417687a3231691f5132891467fbe137c90cd51a60b5d86fc334",
+      "size": 441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "236f0a556fbf09a1be07ef627bb69502ce80f7f0dbac85e997cb34a8150f4830",
+      "size": 38692
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm8750-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T01:33:06Z",
+  "vendor": "oneplus"
+}

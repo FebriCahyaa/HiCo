@@ -1,0 +1,42 @@
+{
+  "branch": "cm-13.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_trelte-common.git",
+  "codename": "trelte-common",
+  "commit": "b6800e30e601679695a3a70314654afe2d18a96d",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d38de38aaf5e552aab777d0dd55a75500f4d6f41214720aa4c07381cf8d0e10d",
+      "size": 1147
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "496aa404396858f2059586b77dc62c07b9842cd7ffaadd0ef79831556298c62b",
+      "size": 5023
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "14954555876d1a6c31e66254047c7ba682723f180bcf3e00d0089519f2b4bf2c",
+      "size": 7601
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b7483aa636620214264ec2a855dfa53819fa857267818424845a1bb82f363d37",
+      "size": 733
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "623061bdac630788be840ec48870a5e2f29e23a877d944fb1c0b9126efb20d56",
+      "size": 8060
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_trelte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:53Z",
+  "vendor": "samsung"
+}

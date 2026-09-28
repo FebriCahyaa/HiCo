@@ -1,0 +1,52 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_msm8610-common.git",
+  "codename": "msm8610-common",
+  "commit": "9b7069d035d16b88d62b5eb00192af7d359db53b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "5f0776e4d91126775889a623957133209c58ca60e387acb236ecbafa1fba87a2",
+      "size": 5508
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "eed2ddf2c7870c76acf08bb1511de9f8f8ec6b446ec14edbdaa96892f2a43568",
+      "size": 3964
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "40ffacffbe515ec5482d5aff120d209573569a83f20d59eb3cfa6f5c199c27cd",
+      "size": 2323
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2932dd6a207bb3e9b0f827e7a2094cc4e0642034b36096b50202da5851a55786",
+      "size": 208
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a5f81757e167df041de3b55825b9aeae5e56ef081645bfe709c3bde5909ed938",
+      "size": 4229
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "3e3235fc0a9cdcb2eaa6b4afe8c97bd306b7524245577d189ab223023db48967",
+      "size": 211
+    },
+    {
+      "path": "system.prop",
+      "sha256": "062025c9914612e8e48130540f38e1ed09bb7e0d86748184404fd388fc39eba2",
+      "size": 2479
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_msm8610-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:02:14Z",
+  "vendor": "motorola"
+}

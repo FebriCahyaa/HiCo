@@ -1,0 +1,37 @@
+{
+  "branch": "marshmallow-caf",
+  "clone_url": "https://github.com/AOSPA/android_device_lge_g3-common.git",
+  "codename": "g3-common",
+  "commit": "d02de2ca4121bdb6c20212c9ce592f0404a4072a",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3ec45ff24458fc950068775a87e1d929bac97fe303deaefee4353e2efca2751d",
+      "size": 3412
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "af205061a2d1da2338f864faba7ad420e4aeb349a2dcf3e2c20f2a99d1f178e1",
+      "size": 3932
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "07a10830af728170701e427a2d5d8022903129f86a39d5080c997f23f029c63b",
+      "size": 4104
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "18323cfc88825142611d7af24c22f0d4c887ba92c26eff44bfc024fd90e1cb30",
+      "size": 607
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_g3-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2020-04-08T04:39:49Z",
+  "vendor": "lge"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_wahoo.git",
+  "codename": "wahoo",
+  "commit": "a41bc999fff38261748770edf99d7de33f2a2376",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a05e3dbcd63c334b35296363ed70f0cca0b5fb74b0c2efb14e4a489e75269dd6",
+      "size": 75
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "33a2bc4ffb104ad669573f62ecf08d755725b17047bbd668425f6976da4b16b3",
+      "size": 3734
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "8d02ab9dba4f78243f0b99244743411e785644defe39746075810da667871a34",
+      "size": 5897
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a70f45c845223dcb992e0b28cf6b5bc48308ceeafaffca20bf0c658167accc88",
+      "size": 33628
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "c3010bfac9c746c20eb4792ddad1a5c04cf7f403b2b52794161a7f49cdc73af2",
+      "size": 1448
+    },
+    {
+      "path": "system.prop",
+      "sha256": "95aab3ba38ca9d90d86f9901fbca718e9cb3f66250752c114c58fa888e7d45fd",
+      "size": 1993
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_wahoo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-07-21T17:47:45Z",
+  "vendor": "google"
+}

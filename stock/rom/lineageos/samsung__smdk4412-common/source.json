@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_smdk4412-common.git",
+  "codename": "smdk4412-common",
+  "commit": "b4e87485e059cb395a9a7ae109fdb41a402f3f91",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f45841d76cd126ff6ae0c2167b1b9028c8fa0d0e333bd0e98dcef778379f714d",
+      "size": 861
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "883f6d9f812368a7884330405d6e08caeb4dfc5a3534ab8ad85226dc2b02cad5",
+      "size": 1759
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a021128d8ce240205d46fd0e6340460f4df2cffd5a3ac488a4f5bf3b9a226898",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7889257f0cc38cca38c19c851bf5bcf406b37a8d5b27af0e2746c9effa13bc9a",
+      "size": 1302
+    },
+    {
+      "path": "system.prop",
+      "sha256": "bf6039aab05cb030b024b410186ab4104eab10c655b1dc8af1481dab3131f931",
+      "size": 211
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_smdk4412-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-11T22:24:26Z",
+  "vendor": "samsung"
+}

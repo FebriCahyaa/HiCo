@@ -1,0 +1,57 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_samsung_exynos9820-common.git",
+  "codename": "exynos9820-common",
+  "commit": "e32f83aa8426b0f85d7f3682916c8be4f9f7a6d3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f66a93049caeedde2b1fe84f373a9eb0407eee79d89ca2fcd9ce7e9b794114f7",
+      "size": 1445
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a8d3d2f5c9dec21d9c19d0afd219877a9446ac667a1d7ae82e69f04e444aa509",
+      "size": 5854
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "5b0a68356a09e40a103cca1c2b9dde14f8df4be2863b230c1f366938e7e6d0bf",
+      "size": 3151
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2037b93ff9dc70d852b40d929df45e0b8635d6d0ef31bffc21c547ebd0625059",
+      "size": 2517
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "96656dcae45a80f08882ad32adef5197c41ec538502303c38495838259ab34af",
+      "size": 1083
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6dd356ebcd1dcf7a36f221f43eacf7f3cdc1df5ad617fa54e38a6ad569cc6e30",
+      "size": 6176
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c6335ffd4ab37875099a68792ff164dd4033658509dd2b6e810100cf05b3d2c2",
+      "size": 1892
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_exynos9820-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-06-04T18:31:47Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "sixteen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_sm7550-common.git",
+  "codename": "sm7550-common",
+  "commit": "60f39655f09f505355dc65bf8a10d82fdd50737c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9639eeddbe987b0a4891621f468ccaad9cb745acdf257ad84857cc4decfeb218",
+      "size": 759
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "178e834e734ae6be28cfc6d785e8511404f00fb15ee84247d2db95232702c182",
+      "size": 9003
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1270b5eeffb737e9e1c8818ddc6b4aa0ce102b37662f3925be4e31d1e3f88aad",
+      "size": 4360
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9ea05aa1852308ef8cd54b51f59f421b76ed9a7bcda28199502cf4043de9ced6",
+      "size": 105727
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d392bdedba5ab22411f879172b9a7034e1b2315471d46f49f65df1786876bb79",
+      "size": 6030
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm7550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2025-11-26T15:11:09Z",
+  "vendor": "oneplus"
+}

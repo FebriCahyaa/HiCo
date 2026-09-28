@@ -1,0 +1,42 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "057331d0ba606aef22be5eb6e945c055553dc79b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9ac21e8ccc7df95e70799f2e799a6aa7b17c01259a681261782f6736af2104e9",
+      "size": 785
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5af5d4428995582d689812d56e5c68d26412980270d50bbc85b490c37a3f6831",
+      "size": 3630
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c74595620c66889dbb19ea705c679e9ad89d08d168cf2e09cb5d1af5030ce2c8",
+      "size": 2457
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f6343b7a1bde8981533ea037a52357f0b7c85d16ffffe916ed3a4cfa11feaafc",
+      "size": 775
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-07-16T11:55:38Z",
+  "vendor": "samsung"
+}

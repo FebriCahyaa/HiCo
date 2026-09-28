@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_lake.git",
+  "codename": "lake",
+  "commit": "9b785a302e0e94887ace23b5301b1a2ac4275027",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "761b28af5205e5db3f73c4bd524f2df18ddf22e7eea027499cb016ead811c6f1",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "80c713af70f37cf5f302c9054d720baef5f33452cccdb2087c771037fd41a947",
+      "size": 1728
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e146d4271681f6db9876295eb6b810b5f45c2eead1ccc02ea8539e41453f74a7",
+      "size": 3636
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3443de6dd25e772134d36d90691175199ac40a2dd4455d9e76a5b1023bde0037",
+      "size": 3816
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "813dbd26e4484565dee439a6acdfcdab9ab27935d7982111b1bd807a1438627d",
+      "size": 1866
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2fc909a5290368ed0ff23f4d4056f79cc395bc825bd4e0daa160b416fe42ef75",
+      "size": 23862
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d5b1c1ff702478ff89d71a7e380c6f5d889521ebd861be4ff81722a6c1137ced",
+      "size": 1719
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_lake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:33Z",
+  "vendor": "motorola"
+}

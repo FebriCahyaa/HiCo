@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gta4l-common.git",
+  "codename": "gta4l-common",
+  "commit": "9c98611eab55ad2b0dde94490ba8cdffc4a3ce09",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "44880bba7b7bc45efe668e38caf2cb28b447530ec3ccbe90047c8237d81a207a",
+      "size": 330
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7ab9cee5d6531cbaf11de6425966fdaa4cde550c3badccfcc301c1b3eb5159d1",
+      "size": 8042
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3a2ab5a7a819f7bb2d5d4cc8c807f5215b83d6475485ae92550287dad9305b1e",
+      "size": 1461
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b502807d135a8805614a0fd7439ee156ac0e374e9ffb93a5885a6b98976261fa",
+      "size": 199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5156a965261d36c45c38fbbcfae0b44dcc4820cea14c5ba44322007b283f9752",
+      "size": 42833
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "32f3db0243b00865f3f03a893e62732c709a4958f233bbeb1f1cc924e0b654e4",
+      "size": 139
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8c97c8b4991366ed48ef5253253c03c21a593ac5240945b9f1824ea450cfbb65",
+      "size": 191
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "444c2224503d110152bd72a870617009e93825041f223dcf27d2e6548b2483d9",
+      "size": 9360
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_gta4l-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-24T18:48:19Z",
+  "vendor": "samsung"
+}

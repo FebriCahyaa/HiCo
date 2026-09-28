@@ -1,0 +1,52 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_pantech_msm8974-common.git",
+  "codename": "msm8974-common",
+  "commit": "20ff0a534a39e0bea1a1845e099f96b8936f2090",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3abf52d7c3887e7f02edbe5ae268d5dcc548ccc28bb214eaf22f761eb01fa315",
+      "size": 739
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "38f40ed1e3418ebbdf637f1dd659eb895d56217b97e4fe940ea828be1c7b4b7d",
+      "size": 6754
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "6435495546ae4ee237f457d6f77aa7d2a7f3cffa0e10fc8a8250f120e4d83a8a",
+      "size": 2087
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4d1dff296b7d619c4a3b8020008d2996002b2a85d93655630143918641787af2",
+      "size": 1618
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8a4320c864142032764008087cfb2a8276d11330d091d58044c4950397867409",
+      "size": 189
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d6429d1afb8645dd38e5b224fb83809019a3ef33f278a5e8dd1eb26192f7a8d1",
+      "size": 10550
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1389ee24345a665e8903a319ff2ab001acdeb63df2c3db1ebd1b17b585ec291a",
+      "size": 2176
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_pantech_msm8974-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-08-18T17:19:07Z",
+  "vendor": "pantech"
+}

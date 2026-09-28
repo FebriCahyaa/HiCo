@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "f9eda99e3d250f3e70d24f0e68fad510625a0815",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a4ec97c6418d4067916fc582280af4c6d5fc54f99e98a7bd3833a0f14c996372",
+      "size": 330
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "779cb2caf76c242e1ac487014220096c372629630fe3aa5bfb6141f486c9011d",
+      "size": 6291
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4bfd34703fb1052662c687111aa66c0cd4619c8d81d567bd3e982d2951927e86",
+      "size": 2193
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9f11cf7af53638ae04c2bb6abffb1e7564c0b4116aa1bd26b5abb3c0567f8ee8",
+      "size": 199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "535c99757c3f6bf7c1c9a9a8a39c5b9385fea2898f7b279a0f70bb8f190c6c9b",
+      "size": 22765
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "f386dca3251876b978dddc2c2b1f32f02d6a9dace65b1f59645adb9b6b009de8",
+      "size": 528
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2734191cbc9be2a24009b0f6c6524084f90e56b5943f7b4f91e60ad42085b4b3",
+      "size": 378
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "91df85befbd49ef0b4289c7f1dc4ccddd173f0fba77c925dbdf63df631d0e297",
+      "size": 7065
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-06T09:02:19Z",
+  "vendor": "samsung"
+}

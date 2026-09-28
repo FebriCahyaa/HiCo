@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_samsung_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "5e4753d4ab5e15291991b21f3b78197ef5b747c0",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ea99533c4773aed4bd23d4b2508e2359b10d73bfdffafc6b69b2dbbee55ef432",
+      "size": 571
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "823b1a12ac99c001b601a6b8816fe7231aee150c228fe27b19c4c4906d815c62",
+      "size": 7095
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0d230b7f271cfc816c40f92d1797ed2786de1706e04a733f1302144a902b2cd4",
+      "size": 2010
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "55fef790cde2009978c4f293e214f869914fa92b10589fe13a2dfe89b6575bff",
+      "size": 30755
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "bf314a80d283f1df13ba45fc775e54de823e2878ecfcfc0d2282fd8ef1870381",
+      "size": 332
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "4928d59764fe9823078f78003d2d8304b4bf7cdff338d9db773231e33a67f557",
+      "size": 106
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d07e26b8e32c3496a63cd49bbb6eaf94f644aafeed7c80e2b2629e6dcb2fbd4b",
+      "size": 202
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bde5a1ff0abf9c2f7e15e7b62fad650aa03bbb38d9993dcdf773dfe15ac0230b",
+      "size": 5990
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-08-12T16:49:40Z",
+  "vendor": "samsung"
+}

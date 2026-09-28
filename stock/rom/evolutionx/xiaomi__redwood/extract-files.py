@@ -1,0 +1,109 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'device/xiaomi/redwood',
+    'hardware/qcom-caf/common/libqti-perfd-client',
+    'hardware/qcom-caf/sm8350',
+    'hardware/qcom-caf/wlan',
+    'hardware/xiaomi',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
+]
+
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'libmmosal',
+        'vendor.qti.diaghal@1.0',
+        'vendor.qti.imsrtpservice@3.0',
+    ): lib_fixup_vendor_suffix,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    ('vendor/etc/camera/pureShot_parameter.xml', 'vendor/etc/camera/pureView_parameter.xml'): blob_fixup()
+        .regex_replace(r'=(\d+)>', r'="\1">'),
+    'vendor/lib/hw/audio.primary.redwood.so': blob_fixup()
+        .replace_needed('/vendor/lib/liba2dpoffload.so', '/odm/lib/liba2dpoffload.so')
+        .replace_needed('/vendor/lib/libssrec.so', '/odm/lib/libssrec.so')
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib/libaudioroute_ext.so': blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .sig_replace('73 74 5F 6C 69 63 65 6E 73 65 2E 6C 69 63', '63 61 6D 65 72 61 5F 63 6E 66 2E 74 78 74')
+        .add_needed('libprocessgroup_shim.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/lib64/hw/camera.xiaomi.so': blob_fixup()
+        .sig_replace('29 07 00 94', '1F 20 03 D5'),
+    'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
+    'vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc': blob_fixup()
+        .add_line_if_missing('    task_profiles ServiceCapacityLow'),
+    'vendor/etc/media_yupik_v1/video_system_specs.json': blob_fixup()
+        .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
+    'vendor/etc/msm_irqbalance.conf': blob_fixup()
+        .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
+    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
+        .regex_replace('.*ozoaudio.*\n?', '')
+        .regex_replace('.*dolby.*\n?', ''),
+    ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
+        .add_needed('libcrypto_shim.so'),
+    'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
+        .remove_needed('android.hidl.base@1.0.so'),
+    ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
+         .clear_symbol_version('AHardwareBuffer_allocate')
+         .clear_symbol_version('AHardwareBuffer_describe')
+         .clear_symbol_version('AHardwareBuffer_lock')
+         .clear_symbol_version('AHardwareBuffer_release')
+         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/lib64/libarcsoft_hdrplus_hvx_stub.so': blob_fixup()
+         .clear_symbol_version('remote_handle_close')
+         .clear_symbol_version('remote_handle_invoke')
+         .clear_symbol_version('remote_handle_open'),
+    'vendor/lib64/libmisight.so': blob_fixup()
+        .add_needed('libjsoncpp_shim.so')
+        .add_needed('libmisightjson_shim.so'),
+    'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
+         .add_needed('libjsoncpp_shim.so'),
+    'vendor/lib64/libmialgoengine.so' : blob_fixup()
+        .remove_needed('android.hardware.graphics.allocator@3.0.so')
+        .remove_needed('vendor.qti.hardware.display.allocator@3.0.so'),
+     ('vendor/lib64/libdpps.so', 'vendor/lib64/libsnapdragoncolor-manager.so', 'vendor/lib/libaudiocloudctrl.so', 'vendor/lib64/liblearningmodule.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+}  # fmt: skip
+
+module = ExtractUtilsModule(
+    'redwood',
+    'xiaomi',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()

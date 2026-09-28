@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_redfin.git",
+  "codename": "redfin",
+  "commit": "b46dca1622de07665442ec23068e1f03435b7537",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f7459bd87f8e7caa11920b6e40fc913629bd95f40155270b76366fee36f99136",
+      "size": 1451
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "5634e646e9e23cdde0054889cbb9e067998800ebf19e6c050ba1a63419201d20",
+      "size": 1013
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "a007cf77b5c82aa77d805d2c86fb55ce42ad6e14a3a455030520c6c1588d6a65",
+      "size": 342
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "71b0eb904946787db15f8fd33d460986d833e77e11b743b0a37e4cbb04c4a6ce",
+      "size": 541
+    },
+    {
+      "path": "device-redfin.mk",
+      "sha256": "b363bdfb83b0dccebdabcc7e91df0e9d707b0e8afa0ad3a73e96cb6998e9cc92",
+      "size": 11161
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "fce48f3e4e36e983122b62c5c80c101595be2a452924e7ff2e11f7f6267969b5",
+      "size": 212
+    },
+    {
+      "path": "thermal-engine-redfin.conf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal_info_config_redfin.json",
+      "sha256": "35bc12fd0885e865b4d6f8c99318cb31e8bd2f77d9291fcb7f99b5344820ee99",
+      "size": 8355
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_redfin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-07-06T06:31:03Z",
+  "vendor": "google"
+}

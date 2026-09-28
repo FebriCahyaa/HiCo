@@ -1,0 +1,67 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_gauguin.git",
+  "codename": "gauguin",
+  "commit": "f168a728a76d75a4d0f659528cdb55cfc4b9e019",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "46aea9a198eabec96c1f4e534726fc1448f3e225effe626a1470963775291661",
+      "size": 162
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f84785456a46e2e26d12bca88f8f5aecc1df391d46c13f2bd9670cde0f8aa53b",
+      "size": 4982
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "eaa5cbd27e144572179a0f5a718fda6086a1369e1e5479b04046a595f31aaf9f",
+      "size": 212
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e053292b608e8da05e0909b58433d4ddd0652ef79d18ca28e7c3b9bbac626a7d",
+      "size": 6265
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4f01afde033a956a534260f74c1fef60092ae81ac1e65693fc9083dcc85ea64d",
+      "size": 17622
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d4975e727c36308c6f1e6f0bc182a8603eea29f7674dc58d3f30a15d4f46b936",
+      "size": 1773
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "abb9a204dc7deb4ff911952818d815aa412ba33ee9174ca817c4e976dec33cc6",
+      "size": 54547
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1865eee21a9765b84f08f57e4148688eda79f2638a10bab4c263ead8555105de",
+      "size": 852
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "fea497aa3a1272414da8e1d1cd70a2f71b7fdca4a6cd7cfb9740a8d1d8cb7ea4",
+      "size": 295
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_gauguin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2023-09-21T20:23:23Z",
+  "vendor": "xiaomi"
+}

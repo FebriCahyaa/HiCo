@@ -1,0 +1,52 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_amlogic_sm1-common.git",
+  "codename": "sm1-common",
+  "commit": "ff0033e5a8014f1442ab556cedbaaf21da364863",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2a5caa3892a762fbd3ad5ddbeea1132696a5a2301533cbc14d5aa82e0f37d7f6",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "dcab1e7700b942d5b0fff6a54db4e37e7c819a28c1329e9ad44d1591a9eb8502",
+      "size": 225
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "afdad89f020135ac3cbc6dcf83bc4b54c5596ea70dee7c85a76549c49ce0dc9b",
+      "size": 2009
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "42c7aea580ae687303920b717c336df628b76bc1c59721c18bb5d7a94bf0a417",
+      "size": 3332
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "84481ba862de2150e130407d376540b16a2d9505b9fe0351eb3746844dd6f7f7",
+      "size": 7020
+    },
+    {
+      "path": "system.prop",
+      "sha256": "65ddaa6258d37de120b95c723b1b2bddb711b475fcfb6a0fe466a354e8b7b9b9",
+      "size": 65
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3d98c8bff6f5b7ddec2cacb1e6e692eb1d8bc19b695658745f7b3c5171069d84",
+      "size": 1299
+    }
+  ],
+  "kind": "common",
+  "repo": "device_amlogic_sm1-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2024-11-04T10:39:11Z",
+  "vendor": "amlogic"
+}

@@ -1,0 +1,77 @@
+{
+  "branch": "dot12.1",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_dipper-common.git",
+  "codename": "dipper-common",
+  "commit": "d1472bea95cb5b96c714672b526aae542a335540",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8c3b1d53bde1071374ef1be487e47b7b0914c92095d3d077cfab56f12ffb8af0",
+      "size": 4445
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4a69cd3d2d9693000aebbda616b640ea0b1fde02045dbd19a894da958ba65cf0",
+      "size": 4882
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c4cad0ec26c0e922c2857e1001964a214f0980a027f54d6d863110f542e6bde2",
+      "size": 2873
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "b0331dc19f7e902a9eafb4c69b0dd9f518fe62890cd9194d068564b205b94874",
+      "size": 1462
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "b2011f4ce443b45b9768f79dbc26370ba4b50de52e53f8ba97cbfde3c871d4b4",
+      "size": 3266
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "71a959eaafb6561be20ecdec6b4b0dacb258fd6d9ecc318c5778fcfffb91daee",
+      "size": 14259
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2d4c0f48368bbbfe550f6d7bcf4a8783a2b8a67d606a1bd39add980a9a4916ee",
+      "size": 59336
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "02f0fcf31f00919d7ad93e055bcacb011a5c19e38b734f93e3ef772d20fb8a99",
+      "size": 2619
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "42806d8551771fb943ec7a04e3f498ac319121e6959f4e5a6e7adea983a1a919",
+      "size": 5100
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_dipper-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2022-04-22T10:59:02Z",
+  "vendor": "xiaomi"
+}

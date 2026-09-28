@@ -1,0 +1,62 @@
+{
+  "branch": "14",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_gs201.git",
+  "codename": "gs201",
+  "commit": "9ce87b249d882fcb6d8db7ee059cee1cf0cbac7e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a43c7353aa3b505fbf2eb0e012335b3b9b602e404e0f55b2e9909cf8284e22e3",
+      "size": 1434
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cd63310128f712f34666055a558978292074f5ca2083ff4e417dca775a164a2c",
+      "size": 1210
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "748952b8de659f9dd1a58299fee687aa65b35bccb77368e872c2839829caf47d",
+      "size": 13993
+    },
+    {
+      "path": "BoardConfigDerpFest.mk",
+      "sha256": "4da4e0c0302a81f39c83ca5e3a92bcc04e9485104e4cc1f5a66f40f46a1c3703",
+      "size": 1314
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "85b8c93381e6a6cecc75cbb2301de8186a3c93abbeba935431c5acf957710044",
+      "size": 1980
+    },
+    {
+      "path": "device-shipping-common.mk",
+      "sha256": "e2bfc1eedd953c55e636569a1defcad442545ab53f8b522760702098cdccbbe4",
+      "size": 648
+    },
+    {
+      "path": "device.mk",
+      "sha256": "780bd178dd96ba8d04a5b38c12557507882f1d6bb9936fed8e5190619d14a573",
+      "size": 41087
+    },
+    {
+      "path": "sepolicy/tracking_denials/hal_thermal_default.te",
+      "sha256": "2dd0347ca857e063c151ed06f88a0cd2e6395e1d667e0fd37f8df7dcec8ec2e0",
+      "size": 520
+    },
+    {
+      "path": "sepolicy/whitechapel_pro/hal_thermal_default.te",
+      "sha256": "2c7a81b5de7d1cde7987b71603cf43b5f41538c3aff3d57f3f0bb36c8fb6908c",
+      "size": 95
+    }
+  ],
+  "kind": "common",
+  "repo": "device_google_gs201",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-07-26T16:19:40Z",
+  "vendor": "google"
+}

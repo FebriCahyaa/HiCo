@@ -1,0 +1,57 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_fleur.git",
+  "codename": "fleur",
+  "commit": "84dff4cb1f55e4b10dbbae10f1dfc3d090ae3892",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a19392b0583f2b259c78c0edbd1b97df42b66e95e74922a9d87034255d8bb10d",
+      "size": 534
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fb9fab53a6d69d2119d86c30d33571622d0ce5166651ec10715db1a5533f5b52",
+      "size": 192
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "20a6775f097934e7d114ce8aeec18123522b675af11016209d640995222aa69d",
+      "size": 4938
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4938afb2e81cfa6998509d5a7deeb7f0ee63f68a048dffd61406dd5e0e5ce74b",
+      "size": 6452
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d5827a50c56c0cd7825ccbf6fc81e76fea261e643e68ee8ae0474eee5ed0e8df",
+      "size": 1860
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "88ed858d3fbeacc77d84ee3275c2c7dd6f13fed59e0db7fa6296a11e28406c03",
+      "size": 1348
+    },
+    {
+      "path": "sepolicy/private/mi_thermald.te",
+      "sha256": "32ac3153a1f21be8699e2103d4f9ad872f16827bb231b8c824fdd4e28dfbf12e",
+      "size": 261
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_fleur",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2023-10-03T16:48:59Z",
+  "vendor": "xiaomi"
+}

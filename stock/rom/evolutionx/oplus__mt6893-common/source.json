@@ -1,0 +1,52 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oplus_mt6893-common.git",
+  "codename": "mt6893-common",
+  "commit": "5905e4bfa7a2ab97e7ea78ac28f8d089a6037199",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b47a522892cec51db7758776c8a110a7d7a9391c41479d2d8949320b548801ce",
+      "size": 182
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1dd0abe522bcc89b4fa31f8a9c5bb41d1ca2b1ebe2f63c31b128026a97b3156b",
+      "size": 4867
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b82f4b0b4f59ddbb6686690459ac9bcac904cea23248de03fc15559a4d450327",
+      "size": 6828
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "918fa69ba4bac30127e50c922ae74c05824cec08559f47386866cf89097487be",
+      "size": 4015
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c8e3be72db0d2e8557e5b6ca55c3bc303a06175c3f035e5ae068b7bcc6c9ef84",
+      "size": 63801
+    },
+    {
+      "path": "sepolicy/vendor/thermal_manager.te",
+      "sha256": "7e0318566583ae701813d104fc0fe5399b6f4fb78d9373b3fb5b106d2c981436",
+      "size": 47
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "84ba197e5ac29420394c2f87a546ece7b055563d30ed2ed494f5fe7b6c0cb1c7",
+      "size": 612
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oplus_mt6893-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-05-12T13:29:43Z",
+  "vendor": "oplus"
+}

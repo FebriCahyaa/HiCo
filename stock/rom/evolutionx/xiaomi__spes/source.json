@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_spes.git",
+  "codename": "spes",
+  "commit": "ab0e59db0da5620ecc9e08d8bc6110427a26f897",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c04ef6136c418a58cf9f78a2aefaf918f7cbbcd79d8adaec48166067a737cf1d",
+      "size": 303
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4a45e8a49086c3c7f340241545c31b9a72cdf403bc06500e72c7cca26324e1ce",
+      "size": 5133
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "42b37784e095c5da6f66ad23b0006b1b6a84fcaa298e5db8394e6c4a8a2e5423",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b0512cc5d3d6fb0f6aaa3a3f5f95563c52c069dbcfe7f956344d2030ba445024",
+      "size": 8966
+    },
+    {
+      "path": "device.mk",
+      "sha256": "790dfb34774369a56eeefd2e832755bd0d90493e413af3c9d934a6a7af787f03",
+      "size": 22414
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dd68a0219546f6255e4a4ff8194347bb95161db987c309f2885df1438888a5c0",
+      "size": 2050
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "989c61c0b8acb21cb788fdadb96fc1684bb0ef47018e2b7a7bf75d553ffb9235",
+      "size": 53168
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e1e31ef4a1f00ed0f584da9e78e1bb28ef13783496214308cbec27879143d930",
+      "size": 1043
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "89b71d2ab9b71036a24502d0d6da452577a713d9406ee03b0cae7ce3e3b53dc3",
+      "size": 1583
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_spes",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-16T09:43:40Z",
+  "vendor": "xiaomi"
+}

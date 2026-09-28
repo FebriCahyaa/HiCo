@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "1f7d950ef13ad419b748e844fd5d891b41eb463a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "db509c35f0ed33906615c6ba37e20137f82db9fac030bc8a67a19196923689d4",
+      "size": 744
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fe4b2ab0f6d2fc40095fec5076155672af2b1e686c521547565d8eb6f5d8d66e",
+      "size": 7078
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "214c0d0d568e6a6ada463fbe23ce1305a0262df2ba78722ac6a7ea512b3b66ef",
+      "size": 2344
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "03c4471f8087db2483d78b7f66f0506bf2347da5fe16dcd4fb1f6c3239f5e5b3",
+      "size": 203
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "28bcb17a1f6e7ae224f12fa1aa73c7f5ca159e3176f53ae2e9c5655b0c1925d8",
+      "size": 30229
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b496ab02f6ac45e18161c99f9f7d8722986d2118a67eada2df890be90a4cb23e",
+      "size": 2705
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "17bcc89e5a3283a2d3f553ca31bd0451097440ff8ff1254178501fa32fac95cb",
+      "size": 9187
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-06T05:25:00Z",
+  "vendor": "motorola"
+}

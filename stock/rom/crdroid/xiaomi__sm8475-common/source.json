@@ -1,0 +1,42 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm8475-common.git",
+  "codename": "sm8475-common",
+  "commit": "bdba47528b88182f35bd95638cf1ade5d33e3a0c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "490c94a80ef8c34577b7ccbfc9904c4ea6653162780b83f09e87e8a50c6720fc",
+      "size": 1360
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "97b92471c1448cb85356c9eb95eeb78e18d10443aa8b7c42a7369aa672082687",
+      "size": 9576
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1da781416a81bf2f046444135a4e176db935721e4f846e198cc1eba81ac44e17",
+      "size": 4228
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a1f103bd57c42c965d45ba143f034d591e00576a41740282b797008699061c0e",
+      "size": 44986
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "86a822dfdaefdd9b9ccd34409ec88ecff6cbaeaf21e0f4e04d71aa50b1162c6b",
+      "size": 1770
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8475-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-03-27T20:48:08Z",
+  "vendor": "xiaomi"
+}

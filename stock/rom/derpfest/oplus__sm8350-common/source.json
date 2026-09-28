@@ -1,0 +1,52 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oplus_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "8084dcceb52aca5f6d302ba8842f973a2293d36d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "270d78808abae72a3fd252d9a0910055b5884d1aebc364291f1402146c808268",
+      "size": 5191
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bed847b68244c9da91f5e64fad6367f209ae6d7c86f696393df881c81eaf9002",
+      "size": 8049
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c4229a6edb2a731c966becf5d7f66e0b90ca915d568f93c43026b2c8f206abd",
+      "size": 3293
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ffdd6f435c6152aa61ff7187f321e8ed601504882a549981bcf8e9e803277f70",
+      "size": 191
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b7b1c2d59028688125cae0e0accaf8c7789bf5fbea3d5dc2dce8e3972d36cb0c",
+      "size": 44898
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e45ca701fba6094c337a10299b5007823785cac5e7ea6509cb028070389df651",
+      "size": 6334
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oplus_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-04-13T19:46:54Z",
+  "vendor": "oplus"
+}

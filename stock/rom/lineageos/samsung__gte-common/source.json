@@ -1,0 +1,42 @@
+{
+  "branch": "cm-14.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gte-common.git",
+  "codename": "gte-common",
+  "commit": "c7a77448964d5e4171f426809d84e2221365450b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0c27cd91c1e43ab17fc3685354708cdbf8b92947b33fb3b744085d2f77d318bb",
+      "size": 965
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "d3c804b40151ea150707ccf70e4e0199911cfc4ece88a42c82ddf19016d29c0a",
+      "size": 1816
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8577c92606879266f25604a8c1efcb965730aa57c2dd8be7936a3f1f3eb9de97",
+      "size": 1021
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8fda8daf9cbba01425e253ff38960b24a99fda89233d72072feda685a187f8c3",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7943e42c8ae17ba5f6ed15d89f6b568c1df50bf862df0bdb99f5c312d1703210",
+      "size": 211
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_gte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:09:55Z",
+  "vendor": "samsung"
+}

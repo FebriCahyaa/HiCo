@@ -1,0 +1,37 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_bn_omap4-common.git",
+  "codename": "omap4-common",
+  "commit": "9159cd8999bfdd342169588efa2dafc5bac8c806",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "6c1508f8f880ab9b5d1cfa28f638d2d107f5a53348ff9f871e67931a3f19c480",
+      "size": 1765
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f6c6977abcccc1cc5ea47152fa6c08cc8924b0ac6aeff70e2e476c92cca54594",
+      "size": 3764
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "51f875eff0db36f3ceebef5207992200b366c07c3c46fa8be0b94baf5e0f480b",
+      "size": 336
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fd7c4a8346fc5bae9eefd9ba97a2c7c4588b0a0a9bccc2741d52b5de5552cf82",
+      "size": 1524
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_bn_omap4-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T20:51:11Z",
+  "vendor": "bn"
+}

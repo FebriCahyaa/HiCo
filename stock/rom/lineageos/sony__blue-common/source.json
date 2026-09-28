@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_blue-common.git",
+  "codename": "blue-common",
+  "commit": "5da31eed98577ec9feb8d5a42dfd04d09601cd1d",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "58d387967c60cded3d1189828a67d48eda887798b0b88a74b44e4e0fb50f75ec",
+      "size": 985
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "96358a5b7a6dcebcb040f44d445ea8567defaccebe5c7adc94db74f418075c71",
+      "size": 916
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "34252dbc05c8e647df9f8f1bbd37dac4431abd53fb9a174e7188f9a461070996",
+      "size": 2355
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "74a2140fb53b3e8f074edec58183fef18980efd8d624721d05e85e9779995811",
+      "size": 534
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_blue-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:10Z",
+  "vendor": "sony"
+}

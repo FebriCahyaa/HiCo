@@ -16,48 +16,8 @@
 
 set -e
 
-# Load extract_utils and do some sanity checks
-MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+export DEVICE=t6
+export DEVICE_COMMON=t6-common
+export VENDOR=htc
 
-CM_ROOT="$MY_DIR"/../../..
-
-HELPER="$CM_ROOT"/vendor/cm/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
-    exit 1
-fi
-. "$HELPER"
-
-if [ $# -eq 0 ]; then
-    SRC=adb
-else
-    if [ $# -eq 1 ]; then
-        SRC=$1
-    else
-        echo "$0: bad number of arguments"
-        echo ""
-        echo "usage: $0 [PATH_TO_EXPANDED_ROM]"
-        echo ""
-        echo "If PATH_TO_EXPANDED_ROM is not specified, blobs will be extracted from"
-        echo "the device using adb pull."
-        exit 1
-    fi
-fi
-
-# Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
-
-extract "$MY_DIR"/common-proprietary-files.txt "$SRC"
-
-if [ ! -s "$CM_ROOT"/vendor/qcom/binaries/msm8960/graphics/graphics-vendor.mk ]; then
-    extract "$CM_ROOT"/device/qcom/common/extractors/graphics-msm8960.txt "$SRC"
-fi
-
-# Reinitialize the helper for device
-setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
-
-extract "$MY_DIR"/proprietary-files.txt "$SRC"
-extract "$MY_DIR"/../$DEVICE/device-proprietary-files.txt "$SRC"
-
-"$MY_DIR"/setup-makefiles.sh
+./../$DEVICE_COMMON/extract-files.sh $@

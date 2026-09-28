@@ -1,0 +1,47 @@
+{
+  "branch": "dot-p",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "3fe1067b7fffb8d1b880a18797efeab65bbf06fc",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e0592f9410199e9e498ba865d4f5a79fea27470e3dd4a2cb2c563786b77b1a9c",
+      "size": 4084
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "38a71fd839374a498d5553f5227dca97a988b49846c46bba4a1b519c3ef4e0aa",
+      "size": 4739
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "84af87b818c744522b5ec62b43f022ccd2b17133f6ace76da68199af848b2f7d",
+      "size": 1612
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7794bb09e09f63c6e63457dfe73599c795ac221ca099ccaa61bd448d16b958ae",
+      "size": 33421
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "8c94c0e9ce99fa62efcc28ca0e21790bf7a44d494e7c227e97e677d3b8a8704f",
+      "size": 166
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2019-09-27T15:24:58Z",
+  "vendor": "xiaomi"
+}

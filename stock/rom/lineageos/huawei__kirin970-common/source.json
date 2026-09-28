@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_kirin970-common.git",
+  "codename": "kirin970-common",
+  "commit": "fdc0d3f35d8e23b92bdfaa021570cbe638e97dde",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "04cdbaa518458971497b1def57ce04a43bef770d56544b39f5e39eed99699533",
+      "size": 736
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b029446337356a6ce38e4782b8394fd566ccd0cd5f0627774fcf5644afad01dc",
+      "size": 3087
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "53a8dee33d0ceffde9e47c4b12cc7ab4f119f1f6b26196d3ee9597c3ae32ff61",
+      "size": 1914
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d52ae1bb53f42a4aacf0c110c4c14d5096c4f28e153bfd40bae0bda7086db1cf",
+      "size": 108
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "55c15e6a319a84c122f05a5577851962cf83e2c59a7a763f988f286445d1b6fb",
+      "size": 91424
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_huawei_kirin970-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-31T20:21:19Z",
+  "vendor": "huawei"
+}

@@ -1,0 +1,182 @@
+{
+  "branch": "15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_caimito.git",
+  "codename": "caimito",
+  "commit": "4e00e18a026113a591e6252ecb5766693ab73626",
+  "file_count": 33,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dc1d4ddbaff92abcd16c50d472e98c256006cdc63cb63a327c8198e9d2cfc7b4",
+      "size": 995
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0613dfcdfb8f4185a1a74ebac1b03be6b4f28dc470e7cc1575e053013be5f04b",
+      "size": 1688
+    },
+    {
+      "path": "BoardConfigDerpFest.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-caiman.mk",
+      "sha256": "86c99faf0dfbccd7b058aacd7bbc03cc0be9b3a8af142145db85cbf902921876",
+      "size": 17739
+    },
+    {
+      "path": "device-caimito-16k-common.mk",
+      "sha256": "352e6950355cf28f3f4f85a53ccb662b7a0d3eca35fdf06e6955b2feeb9992c0",
+      "size": 730
+    },
+    {
+      "path": "device-caimito-common.mk",
+      "sha256": "cbe4377e3e2b7436e98d04ac3e5f35127f5a679ad2ff12eeba02724d4e757014",
+      "size": 2850
+    },
+    {
+      "path": "device-derp.mk",
+      "sha256": "2cec38ac21014d37b0faf761120176cd11488a2c3733557dea6daf3b600e5eea",
+      "size": 1779
+    },
+    {
+      "path": "device-komodo.mk",
+      "sha256": "2f13e098ed8ee064c6eb1b80c99e5989d7d78b5904cd8859768eaf4f784797ca",
+      "size": 17780
+    },
+    {
+      "path": "device-ripcurrent24.mk",
+      "sha256": "dc4d489a0663911af9a548668b0595019085fa773301c48a411719e58f0f0baa",
+      "size": 9410
+    },
+    {
+      "path": "device-ripcurrentpro.mk",
+      "sha256": "b5e181537dacdc1cb6dc4467c8589208f1305b9971d181832c8f2b62ae870ae7",
+      "size": 9455
+    },
+    {
+      "path": "device-tokay.mk",
+      "sha256": "406d925a79766f37c3ffabb9b4be7b8e6520f3b3da9f1e8a524e22846c5ea0c6",
+      "size": 16647
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman.json",
+      "sha256": "9e32da7a5b24edf286e239cd93ca52cc92e16bd30da437f04acc9cc946e1dd66",
+      "size": 63585
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman_proto.json",
+      "sha256": "c9020897b9e8878d9d1fa2a0dc8db3ee242b683a7551b4d698e2216bf15b4627",
+      "size": 36463
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman_wingboard.json",
+      "sha256": "9f843f81b8cba77c27143e02270fb0046d707b3bb87c0f7bede04031fade70e1",
+      "size": 44838
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_caiman.json",
+      "sha256": "42881ee741baa7638bf50386c5b02cb2142b7f26f4af98e4bb187e28a1a93956",
+      "size": 12528
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_komodo.json",
+      "sha256": "c6eabefaaf03680cc0573c93672423d034fd96aa9591a806e451b936df6a2670",
+      "size": 13062
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_ripcurrent24.json",
+      "sha256": "60fd5da654dee80ec5e1f0dea49253c1da55ccc9dcd35231322fe54f7b151bad",
+      "size": 375
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_ripcurrentpro.json",
+      "sha256": "60fd5da654dee80ec5e1f0dea49253c1da55ccc9dcd35231322fe54f7b151bad",
+      "size": 375
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_tokay.json",
+      "sha256": "2e7a4f5220ab2811b4cdfb1264b4de62dfc1894184a80896ec2fc6608aa91a20",
+      "size": 11442
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo.json",
+      "sha256": "273a205e7acc8d3b6ae62c6fd3b4d06e49a79c532cdc6390f8f321b959ce1d2f",
+      "size": 64659
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo_proto.json",
+      "sha256": "fcb18d57fa762476f0db5d872f901d45af53dca1e0a91b5dbb5bc1e364a8250f",
+      "size": 41238
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo_wingboard.json",
+      "sha256": "6eca46eaf3dadf92dd07b80eb3aba512b4980c695533fe2ee725657bc05ed39f",
+      "size": 44094
+    },
+    {
+      "path": "thermal/thermal_info_config_ripcurrent24.json",
+      "sha256": "718338f46c561d9d584ef0664783aabffc0dfeca0504222852311ca469f60d7b",
+      "size": 12851
+    },
+    {
+      "path": "thermal/thermal_info_config_ripcurrentpro.json",
+      "sha256": "b0f3b8f05d50913b1f1df7e9c54e660720196af9efbd08171670d6424c10ebbf",
+      "size": 2439
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay.json",
+      "sha256": "f93b3a8ff45250f7e430b159ed8f90ea4c96b1f1793c6b98292a1f661fc7a8e3",
+      "size": 61625
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay_proto.json",
+      "sha256": "9b91eaddf92d05afaed056dce64ef1edb41a9b2078d466252d4b1b9f8f9b7d4d",
+      "size": 37790
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay_wingboard.json",
+      "sha256": "9f68692b93869fb77fa5586690f73a72c45257bf56b1c926e01251cc62d15301",
+      "size": 45145
+    },
+    {
+      "path": "thermal/vt_estimation_model_caiman.tflite",
+      "sha256": "0357de9ef22a8c26575f941c420d21870e5497adcf187face4ac4f59e031a008",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_estimation_model_komodo.tflite",
+      "sha256": "eb8135f3129904ae4de79ad1140ee095cc0b954fbe5cec7b6284c5c13a41d9cd",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_estimation_model_tokay.tflite",
+      "sha256": "d5571bc76edf03baa044768e0683fdd5ec4807663704fbb07d2cdc97d6927351",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_caiman.tflite",
+      "sha256": "993d989bc3f5c1396fd2ba5650f35583fc59b1faf46dc279c974546e37a4b572",
+      "size": 16856
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_komodo.tflite",
+      "sha256": "7c81d47acc2355b8e3b5164f979de3298792399835d29b3e2de4c0915114a74d",
+      "size": 16856
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_tokay.tflite",
+      "sha256": "67db946480300e92e11d63842061145842ac0bcdda3788cbdef9cbea51b8bf95",
+      "size": 16736
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_caimito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-02-17T17:20:13Z",
+  "vendor": "google"
+}

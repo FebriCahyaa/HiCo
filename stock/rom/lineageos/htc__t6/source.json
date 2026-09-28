@@ -1,47 +1,47 @@
 {
   "branch": "cm-14.1",
-  "clone_url": "https://github.com/LineageOS/android_device_htc_t6-common.git",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_t6.git",
   "codename": "t6",
-  "commit": "f127d9f7b4d59992ee8afbb8ac17338d42016da7",
+  "commit": "419195ef323257d278da61f630f69e93180612f9",
   "file_count": 6,
   "files": [
     {
-      "path": "Android.mk",
-      "sha256": "f058664b50c247de1090029cba7d737c16aeb8aa62a8c4d872a4622b6e0f8f85",
-      "size": 2764
+      "path": "BoardConfig.mk",
+      "sha256": "e313eba83efec32342283cbf7be818dbf7dd32907659eec9d861a16a4d0ad5e6",
+      "size": 1336
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "9b9583d7769a0f903f6775ea8ce55c7e11580a1e6aa5d077d187e527de1cab42",
-      "size": 3639
+      "path": "device.mk",
+      "sha256": "c95e27e9b1148e9f402bcbef33463658b13057b66b0e7e48c956acbb0cf759c7",
+      "size": 854
     },
     {
       "path": "extract-files.sh",
-      "sha256": "6f2a649a8ec38a0e2bba50cd88dca54c24e6d9a9a6bd8fe46bad66c35946d31f",
-      "size": 1838
+      "sha256": "6f440c7cea42828e16e0c6d5ffac440751bc2253a2cb5280df934f5049a0b9ff",
+      "size": 716
     },
     {
       "path": "lineage.dependencies",
-      "sha256": "c43e4efd009c7f83938c61dd1273e1a598642c7cdae67d063601289f965c00d6",
-      "size": 211
+      "sha256": "cddc3d73d96119a8d2735b499b361fe4456ee54014ea32171978a9230f452aca",
+      "size": 104
     },
     {
-      "path": "proprietary-files.txt",
-      "sha256": "d5e0a187c84d5631676c51e3c1be8ef15dfbd6e7dad95ce850c4f9c914606b4a",
-      "size": 482
+      "path": "system.prop",
+      "sha256": "93af423a52077748717c954dfebab7e1432ed24d0a675f978b650d723b325a54",
+      "size": 152
     },
     {
-      "path": "sepolicy/thermal-engine.te",
-      "sha256": "270c1acb90e4c3fef6a7042ad6a0cdc20514822829a22f3191289d5b9b3d9c47",
-      "size": 58
+      "path": "vendorsetup.sh",
+      "sha256": "821775af8bb0a703b1337c472a46834a0e1d0618a93a55576fd228f66f409fc1",
+      "size": 26
     }
   ],
   "kind": "device",
-  "repo": "android_device_htc_t6-common",
+  "repo": "android_device_htc_t6",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2018-04-07T20:56:10Z",
+  "upstream_pushed_at": "2018-04-07T20:56:02Z",
   "vendor": "htc"
 }

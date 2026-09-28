@@ -1,0 +1,102 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_millennium_common-kernel.git",
+  "codename": "common-kernel",
+  "commit": "2be2446afb991a7a54c05e8ce58db3a702a5a7ab",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "kernel-headers/include/config/sched/thermal/pressure.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/default/gov/step/wise.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/emergency/poweroff/delay/ms.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/emulation.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/gov/power/allocator.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/gov/step/wise.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/gov/user/space.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/netlink.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/of.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/statistics.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/config/thermal/writable/trips.h",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/lm90.h",
+      "sha256": "bd787718b71d4e86ddef0eb85aef4cfb090e768e61768f144aac294a3962590d",
+      "size": 297
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/tegra124-soctherm.h",
+      "sha256": "51a731fc62304aa0cb220b94e67632db9b0699f1986429b6eeed89ffa6d00d21",
+      "size": 591
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/tegra186-bpmp-thermal.h",
+      "sha256": "85423168425ac35b9b6d860b612aa7f8308c62a1557488cda6ac225266e0e5ae",
+      "size": 404
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/tegra194-bpmp-thermal.h",
+      "sha256": "3c6673ef355c6d4348242ec01fa37e5323b8f6e8f574071a1a47c922c0e48169",
+      "size": 448
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/thermal.h",
+      "sha256": "d74d498871c3bf3d6aa985ad01c15dfa916614369dbcd832bdcb9d2d45b15e08",
+      "size": 369
+    },
+    {
+      "path": "kernel-headers/include/dt-bindings/thermal/thermal_exynos.h",
+      "sha256": "1e42670b8ca2f254d634a64b2073838a40f4fe1ce128441605a764598389dbf1",
+      "size": 472
+    }
+  ],
+  "kind": "common",
+  "repo": "device_millennium_common-kernel",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:08Z",
+  "vendor": "millennium"
+}

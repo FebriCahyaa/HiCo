@@ -1,0 +1,42 @@
+{
+  "branch": "8.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_msm8930-common.git",
+  "codename": "msm8930-common",
+  "commit": "b153dfe629c61239e89f6cb3a5c784d6dae1684e",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "866f6441b532e58508b0689e4de6ee9372a01dc2eea3e3f755cf4dbb110a7ca6",
+      "size": 43
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "eda78b97351625504341f24fa8b4fe1b217ebc6eba65441745b1fc99ff996113",
+      "size": 4800
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "00cbf14fcf99787eb9e2a9f597117bc8dee77f14d178c2550d5c91889d919a10",
+      "size": 2717
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "12ea560e7d48c72fa56f37e014f61229c0a1892db1d5510c9443c1c552d9f14a",
+      "size": 497
+    },
+    {
+      "path": "sepolicy/thermald.te",
+      "sha256": "58b7a891f0f03a768992c2d609a48f71ec512c53a51d14816b3771ba7a3bdac0",
+      "size": 911
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_msm8930-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2018-07-17T11:45:25Z",
+  "vendor": "samsung"
+}

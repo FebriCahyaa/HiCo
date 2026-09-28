@@ -1,0 +1,172 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_caimito.git",
+  "codename": "caimito",
+  "commit": "e029aceb942cbfc96f83b7d44d46ba1a9a7cba72",
+  "file_count": 31,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "dc1d4ddbaff92abcd16c50d472e98c256006cdc63cb63a327c8198e9d2cfc7b4",
+      "size": 995
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fb6a5d0d910ba2014f241df16d192288c10182b7e08171d30f17b5933b6867a2",
+      "size": 837
+    },
+    {
+      "path": "BoardConfigEvolution.mk",
+      "sha256": "a63855a6ff6cfe0403902028ff9c8b8eb711d823a28a24a07e58d8dcd87da0a7",
+      "size": 97
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-caiman.mk",
+      "sha256": "7d44186de7dc4e22dea8d03dd85f9aa564de6aaedd1f57dc2f00f4ffed2b4085",
+      "size": 15754
+    },
+    {
+      "path": "device-caimito-common.mk",
+      "sha256": "af6fa04c62789918dcaceb9bbefafb2ca8aadc7aa305a7c81ec2ceca87d4bbc3",
+      "size": 2723
+    },
+    {
+      "path": "device-evolution.mk",
+      "sha256": "85626178a6c7d2cf80a232636dd140cd5e2dcd7c061d02336389b4c1bdb08f5b",
+      "size": 184
+    },
+    {
+      "path": "device-komodo.mk",
+      "sha256": "6c2746f8748f5ce3293ece5139129b8f00ce5df3de8f1714506a51f149a54806",
+      "size": 15795
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "d88f0f96cff1343505945ba7c42ab9db6de88b5a461420dcb13c7a814c2435ca",
+      "size": 1419
+    },
+    {
+      "path": "device-tokay.mk",
+      "sha256": "1187837afded05a6b5e867084c51a3dccbaedd696cf091fde4c2ae9ad186e5b5",
+      "size": 14934
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman.json",
+      "sha256": "2a97bd2b2e93cd83418f561d4bcf934b6bb835abe72d02b8a1e49ad1d067469e",
+      "size": 70597
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman_proto.json",
+      "sha256": "c9020897b9e8878d9d1fa2a0dc8db3ee242b683a7551b4d698e2216bf15b4627",
+      "size": 36463
+    },
+    {
+      "path": "thermal/thermal_info_config_caiman_wingboard.json",
+      "sha256": "016a31e4afa3b16341bf51c1771d19f1209157b714811febecae1ab9c3b6bdcc",
+      "size": 44827
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_caiman.json",
+      "sha256": "23aba769b8030e666b35cc9e0db6d1ec0d6ced1193a98fcaf6b57f791885cf23",
+      "size": 12828
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_komodo.json",
+      "sha256": "a379a41edc7fa03dbe567a6b8d7986e1582b5fa9e6a5650e5523c2232ae869d0",
+      "size": 13362
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_tokay.json",
+      "sha256": "1e81c0e7de3c1e76a4bff5cf2e2b97a8cc59fda0bb3a2185a3f34466b49ff063",
+      "size": 11742
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo.json",
+      "sha256": "ee71b2176e475ca9bb8ce15bb905ea256439a6caa9e31cdd4c5ec6e2d18500a9",
+      "size": 71679
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo_proto.json",
+      "sha256": "fcb18d57fa762476f0db5d872f901d45af53dca1e0a91b5dbb5bc1e364a8250f",
+      "size": 41238
+    },
+    {
+      "path": "thermal/thermal_info_config_komodo_wingboard.json",
+      "sha256": "57c99278e034848db68844dbf20c7c7d59cc7e89b25a2d9ebbc7bc48a2e55e6b",
+      "size": 44083
+    },
+    {
+      "path": "thermal/thermal_info_config_lpm_caiman.json",
+      "sha256": "5e7d1eeec018376c3dfceec57b32fbf6be0647d8112c48dfa4845bcc2a88cf2e",
+      "size": 4178
+    },
+    {
+      "path": "thermal/thermal_info_config_lpm_komodo.json",
+      "sha256": "5e7d1eeec018376c3dfceec57b32fbf6be0647d8112c48dfa4845bcc2a88cf2e",
+      "size": 4178
+    },
+    {
+      "path": "thermal/thermal_info_config_lpm_tokay.json",
+      "sha256": "9644821c52bbff9000a55d46142c0f286f74f11b29cff443c6c4897b3502d436",
+      "size": 4178
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay.json",
+      "sha256": "df758e2387ba02ddfc772a921af9029239357dc562e163d085f070f9681797d4",
+      "size": 68637
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay_proto.json",
+      "sha256": "9b91eaddf92d05afaed056dce64ef1edb41a9b2078d466252d4b1b9f8f9b7d4d",
+      "size": 37790
+    },
+    {
+      "path": "thermal/thermal_info_config_tokay_wingboard.json",
+      "sha256": "7eb977c89224b45eb035c13fa5d3ff443d913ee0429b796ffa09e1eae33299cf",
+      "size": 45134
+    },
+    {
+      "path": "thermal/vt_estimation_model_caiman.tflite",
+      "sha256": "0357de9ef22a8c26575f941c420d21870e5497adcf187face4ac4f59e031a008",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_estimation_model_komodo.tflite",
+      "sha256": "eb8135f3129904ae4de79ad1140ee095cc0b954fbe5cec7b6284c5c13a41d9cd",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_estimation_model_tokay.tflite",
+      "sha256": "d5571bc76edf03baa044768e0683fdd5ec4807663704fbb07d2cdc97d6927351",
+      "size": 4575
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_caiman.tflite",
+      "sha256": "975f7b99333c86d4d0f2127bfa83741571aea62e5641cdf29335756f0777cf5f",
+      "size": 15579
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_komodo.tflite",
+      "sha256": "7f25b09fdf739da60c7c98615c1b68121db235c74bc89df153562bc1400dabc0",
+      "size": 15751
+    },
+    {
+      "path": "thermal/vt_prediction_lstm_model_tokay.tflite",
+      "sha256": "8396ba7ed7f79ab7be23e02adbec54d8c1e1748617a0e7f46dfe3ee002d69215",
+      "size": 15751
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_caimito",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:03:26Z",
+  "vendor": "google"
+}

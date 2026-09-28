@@ -1,0 +1,72 @@
+{
+  "branch": "twelve",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "03482b0b7246903211ef2e396c05281858ab491c",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b4573e1e91037f3eac566b3e6e03a9dc3f64b0b49b8f32c441ad6916c276c923",
+      "size": 9246
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "63fbd23bd1da4fcadedff74921be45311d1dbf42440e7b703e320c80fb6be86e",
+      "size": 6954
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b28b325d2b9cc213b63e114cd429757381c17a6265ab5c679961dfeb909348da",
+      "size": 1879
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "79f16d4ff0a5c7bd1cda3ec09158afc13da375e480cd25811c7d368588d61001",
+      "size": 1553
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "e66373a2f5c97a746175b255b3901a6b887258fe548cab9479152ae6ff089b87",
+      "size": 6354
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "336077f9934995ad27fe40171cad239c39ac44ad122a60a24facdb8bd8307096",
+      "size": 30015
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "124e3892247413d0fa5e2c46e34ba32eef577459904446a0c168ea2bf6ff5205",
+      "size": 876
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2022-09-16T05:21:27Z",
+  "vendor": "xiaomi"
+}

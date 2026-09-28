@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "2dad2ed08d58cd3e74f55173edbc61384b588de5",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a4ec97c6418d4067916fc582280af4c6d5fc54f99e98a7bd3833a0f14c996372",
+      "size": 330
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "35953c84db92c3bb1bba46ade86b23579ea51b1da0dcae42dd29d389ca9f7e5b",
+      "size": 6203
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "89d7c9e5493da3feb7af5b42bb1eca368b0b120647db5759af16e305902e133e",
+      "size": 2084
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2fabc6191451e7f0d41daec7daf358f60221cf06da7204fc228b470a616a0389",
+      "size": 22757
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "f386dca3251876b978dddc2c2b1f32f02d6a9dace65b1f59645adb9b6b009de8",
+      "size": 528
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2734191cbc9be2a24009b0f6c6524084f90e56b5943f7b4f91e60ad42085b4b3",
+      "size": 378
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "48248fbd8c50f406068be52e34ae5cc30c4128dab8c999c51516bdc870582d18",
+      "size": 7019
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:55:24Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,82 @@
+{
+  "branch": "dot11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_oneplus_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "1a2c1e6cd6c1108573e85ecb5fdaddd0fdd81f62",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6ba7006ccdcd0995c8fe13d481b6fc2bf16f348a4484206012752f72534b30d8",
+      "size": 664
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "621767c04fb9894eb39cfc238625f3595a59c7100ab34ed2fcd96d52e8167221",
+      "size": 5278
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bdd54f83c212890b22a6d15906a86bd0c404ff32e56a94b6704e2ef614f5d8f6",
+      "size": 5369
+    },
+    {
+      "path": "DeviceSettings/src/com/oneplus/extras/DeviceSettings/thermal/ThermalActivity.java",
+      "sha256": "bf231ca335d7e1967eab63dbd7bef1eb18813d21244e9dbec757a20864b018e8",
+      "size": 1451
+    },
+    {
+      "path": "DeviceSettings/src/com/oneplus/extras/DeviceSettings/thermal/ThermalService.java",
+      "sha256": "d5f4bdd003c44f0eb78e077ef894bb9049f3e61e6ecf56937ee4d54a938fd549",
+      "size": 3511
+    },
+    {
+      "path": "DeviceSettings/src/com/oneplus/extras/DeviceSettings/thermal/ThermalSettingsFragment.java",
+      "sha256": "93250519deb99c3e36361cbd507c7a067c08d2c26c10b04e4af30c1528ba9bcb",
+      "size": 16612
+    },
+    {
+      "path": "DeviceSettings/src/com/oneplus/extras/DeviceSettings/thermal/ThermalTileService.java",
+      "sha256": "a59d6fdd1bff1ba058d5f0fd68dbee1fc0ccba80022c5a6b4afafcf928686566",
+      "size": 1616
+    },
+    {
+      "path": "DeviceSettings/src/com/oneplus/extras/DeviceSettings/thermal/ThermalUtils.java",
+      "sha256": "b451d6c566bb4c5d95eb8e1fbc6a02b6744dbbfd019f1bdbf2dbfd831ce910a3",
+      "size": 6258
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a987db62eb0c2e8723e8b81dff5cceda15312a800fbf026772dd2e4aa961f3d6",
+      "size": 3202
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "493c9959748d188b3b8160f6ea9818bc3b4d3904dc230820eba950cbebc32be5",
+      "size": 39128
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "83b8b3fbfb15ca0050f5f356ec4cd1ea926b30e6edb34fb7e2b683ba4d95ad56",
+      "size": 258
+    },
+    {
+      "path": "system.prop",
+      "sha256": "64f8ba1cd7c0688a8d4caf80241847ad2d8b0b5cf0eb4c8bd22374a1e17d1b88",
+      "size": 1987
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "793d3e60dd97c4aa2b729b7299c512376cc1ddd06abec0c1b70dca90b452ef8d",
+      "size": 4164
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-10-07T03:15:26Z",
+  "vendor": "oneplus"
+}

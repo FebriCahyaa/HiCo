@@ -1,0 +1,57 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_asus_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "9410eadebd6d434a503276ed372b10ec8d711430",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b390eb4013da201b766102b891ae8ef66abeb7d201b38fc6b71710bf49ed36e9",
+      "size": 4628
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "92dc86db8454934aab5a46cd4c0265881898f852ee7ddb13002cb9455b678b2c",
+      "size": 4491
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3007d448c37853125ed6f3aa1ecc9d3f796c0bcc84b6d80939f1f959d1d6131d",
+      "size": 2177
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "06cd67e0adfa44b0c3640190d8569b74ace2f50161e20c7a376c59351a41c8d5",
+      "size": 40119
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "81bad231d03e1537c0ccde0183f30ce165e8668ffa2a88a7bc9ab9977f3740bf",
+      "size": 1452
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d023bd47cae4110bb64779884323ac18284a264e1ca985d6fbf4fe2a185ff011",
+      "size": 7245
+    }
+  ],
+  "kind": "common",
+  "repo": "device_asus_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-04-28T04:22:36Z",
+  "vendor": "asus"
+}

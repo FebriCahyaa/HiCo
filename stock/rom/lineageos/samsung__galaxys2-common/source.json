@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_galaxys2-common.git",
+  "codename": "galaxys2-common",
+  "commit": "bead14adae2f9f67d9027f7fcb04aee628ea0554",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "33e15aafd6053b2c72ca56420d0971fa5d823cf2100f61a936fb4d540bc409ab",
+      "size": 28
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e9f0fa7db3a819834d6201bae7fbc52d37fb371ea16830814cf7761dedd20340",
+      "size": 753
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6cb1ca9744db29a7f2cf36c02412c8dac846303524557f6a0a1363285948d42c",
+      "size": 4390
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "46ad0e38b738c0bf8a131caa06a36fce3c9fed9ab0115066aa37a5408711cb0d",
+      "size": 130
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "389f4e16eca26462911efa51178deb172fd81219da829aa256a6c2c71421368d",
+      "size": 930
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_galaxys2-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:04:51Z",
+  "vendor": "samsung"
+}

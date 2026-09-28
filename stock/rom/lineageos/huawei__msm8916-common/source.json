@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-16.0",
+  "clone_url": "https://github.com/LineageOS/android_device_huawei_msm8916-common.git",
+  "codename": "msm8916-common",
+  "commit": "d1446dfddd49b8454c003141cabc599ea37a6a53",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "82d0e6664cf204579b45a14ac46ebc71f42b7b78ce63b6a0adf5fe0ae9e4c182",
+      "size": 770
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0f0284b82b5371e53a03114f880c1dc6a18e030f98b5a321f19a67590baf1103",
+      "size": 3406
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b94d61ea03de1878c08bb95be320d1cef2c8af81a1e4dc4283a597c0ade9a604",
+      "size": 2003
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "11212a9bb70ff29c1ff6704c3c8fcdb991149f927d92f3e71f8ccf00a9bbe572",
+      "size": 227
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "76df3faf3bc1b3fcd339cf379682a527837fc80960d25a805ed7707834d5d6db",
+      "size": 24143
+    },
+    {
+      "path": "system.prop",
+      "sha256": "eceeefe5b376e7a22e0f7d41f1970565257475ee8f655274827e00b44ec50d78",
+      "size": 762
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_huawei_msm8916-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:15Z",
+  "vendor": "huawei"
+}

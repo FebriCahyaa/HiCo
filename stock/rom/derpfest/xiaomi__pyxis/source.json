@@ -1,0 +1,67 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_pyxis.git",
+  "codename": "pyxis",
+  "commit": "69989e92f88903b4cc9c89a4be2d74675c3079f7",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "281b87da7c741788b945e6600c46e5e6886d15122b103c2885cd1bff5c9b4e98",
+      "size": 263
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "850955feeebf16b940e7432c3f37a602c2ca2b5b7547e7ea334da9c6725650b1",
+      "size": 3948
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "209118784aad5c841fc22e9e8a581f801d98735897b8155b4074862cd3ef03dc",
+      "size": 216
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4de1b12d0ac98fa47768d3bcf34233a318aa0b5c6846c60d9a14a7d4e04cfda6",
+      "size": 5915
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3c7378de18962de89a367112022ed593f8801ff52f4401ac303c14f12a3728ea",
+      "size": 20012
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ed892ab117cd2f3a0bcd7665f8b5381eea829dc7575a60593c72132fe7b13e0a",
+      "size": 422
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e4863d5829e4c7985df893b5ae9091fb44636c96e56d6f0200fe39d6ce414ba7",
+      "size": 44233
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "8c94c0e9ce99fa62efcc28ca0e21790bf7a44d494e7c227e97e677d3b8a8704f",
+      "size": 166
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e04975acf43cfd39ff3abd0fce9d8c9493d7bcbc4aeb639da405b4f9dccf8dbb",
+      "size": 2866
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4c011f2d9f4e499bf3b3a474debd87556c81b81a42c5c4b54d53584f11fa0ff5",
+      "size": 7136
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_pyxis",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-05-30T13:28:55Z",
+  "vendor": "xiaomi"
+}

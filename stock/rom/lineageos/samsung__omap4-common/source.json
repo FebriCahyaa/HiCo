@@ -1,0 +1,37 @@
+{
+  "branch": "cm-10.1-staging",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_omap4-common.git",
+  "codename": "omap4-common",
+  "commit": "bc2f96cd7b83d2259b2d9bd0d4183345eec8f720",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ab56f59314edd16b5343d31b1d520b7148df934896854bbdfa3656e3ec3cec4b",
+      "size": 752
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "363752627870828cbbb04bfe3a1be73d9ce9a323934d254ac5e4438f2dadfaa0",
+      "size": 3304
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "32532aee75936919bdc46f6d43723e5b5ffb565424978116e1ec1e7d0f667d82",
+      "size": 5123
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c81a056ddae2cb85239bbe793b2d1d56b5ae28ec80ee9f57b0af2a3d811991d6",
+      "size": 1297
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_omap4-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2018-04-07T21:16:17Z",
+  "vendor": "samsung"
+}

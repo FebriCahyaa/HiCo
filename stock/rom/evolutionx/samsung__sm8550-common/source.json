@@ -1,0 +1,62 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_samsung_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "8f1d20b5f20377b16e95c91193ff7e31bee8761b",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f37835ab3ebf417a5ad2bd328e8a1abc0b2b7d6e17f0255e6cf1b5a353092202",
+      "size": 225
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8543d6d34c429bbe2aa3ea968a6af23d79a4679bd1ca2d679833b7813eab7665",
+      "size": 7644
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "15c529a441d8f11d521bce4fde499888924db3f8da08595e9f7b5793fb7d6040",
+      "size": 4804
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4353fdce87a4149612a3bab84d3b67f1e878bdb63079122c655daab5675be705",
+      "size": 3869
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a8038bd20241f33291461761d9731363cd92191effbd4a41308ce2f2a2ae2638",
+      "size": 42039
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "f2d54df73df9a56ba470476335e9ae6e6117cb330a5e05b21716037710108aeb",
+      "size": 514
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks-sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "fa7cb6d6bb43b9bc49812b5165c0af1ac7f55c7ff44806d6bea8b0f8eb81fdea",
+      "size": 7435
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "bd145ab86a2ead588babd5bbeec70600d4889f13c1964e9b413f1154228a690c",
+      "size": 204
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-08-10T16:49:52Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,22 @@
+# Audio
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.voicecall.speaker.stereo=true
+
+# Camera
+persist.vendor.camera.physical.num=4
+
+# Display
+debug.sf.frame_rate_multiple_threshold=120
+debug.sf.high_speed_scroll_factor=0
+ro.surface_flinger.has_wide_color_display=false
+ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.uclamp.min=512
+
+# Fingerprint
+vendor.false_touch_quality=38
+
+# NFC
+persist.vendor.nfc.config_file_name=libnfc-nci-st.conf
+
+# Radio
+ro.vendor.radio.imei.sv=33

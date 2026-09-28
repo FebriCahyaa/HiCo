@@ -1,0 +1,77 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_pipa.git",
+  "codename": "pipa",
+  "commit": "797a94b94bcac50f3e828c27b5a8c012ddf64e50",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a35959d9c1aa8e114e2475c5e66578ded1d636c80550040cab7ffe6d8e520dd3",
+      "size": 203
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "7557f5c384c9760088817cd3ee1371cd858ce7acd5c168d7bfe9e9327986d9f3",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0ee7a4c381595cd04cf7f63acd4faad096342b4bde88dd94b4e45ac64fa9db91",
+      "size": 708
+    },
+    {
+      "path": "device.mk",
+      "sha256": "275e2014b599e80bd0b8400c06ad1c44300fbdf4d5d850743cede0465587a0fe",
+      "size": 1932
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4640d2d4d758a5897686464808aa58ea7d12303a24c7dc4226794c5280e1c374",
+      "size": 2922
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e68742ba3ec3d697b87f9b0c77fb72bf9ea38270c4b3e5a1c28313a0ac61ec50",
+      "size": 1103
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1e1e67873fff1c797e81fbf56fde23cb32f01ccfb149c340c6265d7e5907b36c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d32e74e78beab46fa57c4d1198e618807e42b232c3236f1a998b35c7256cb118",
+      "size": 18469
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3f0e281e0349408f65171b3938f033cc4a3560914c727b7c46c08cb4a1a0b1ad",
+      "size": 87
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1a0c33614eb8ea9cc8dc7faf325fa00714976c4330a1ad67441f4aab0d96f3cf",
+      "size": 2089
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a8fb7f2e0cabde6b79e7d1641b547164c2aa289d36107da15dbf390d14e7e9aa",
+      "size": 11645
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_pipa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:26Z",
+  "vendor": "xiaomi"
+}

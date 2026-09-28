@@ -1,0 +1,95 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'device/samsung/sm8550-common',
+    'hardware/qcom-caf/sm8550',
+    'hardware/qcom-caf/wlan',
+    'hardware/samsung',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
+]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'vendor.qti.diaghal@1.0',
+        'libsecril-client',
+    ): lib_fixup_vendor_suffix,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    ('vendor/bin/hw/android.hardware.security.keymint-service-qti', 'vendor/lib64/libskeymint10device.so', 'vendor/lib64/libskeymint_cli.so'): blob_fixup()
+        .add_needed('android.hardware.security.rkp-V3-ndk.so')
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so')
+        .replace_needed('libcppbor_external.so', 'libcppbor.so'),
+    'vendor/lib64/hw/gatekeeper.mdfpp.so': blob_fixup()
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+    ('vendor/lib64/ese_spi_nxp.so', 'vendor/lib64/nfc_nci_nxpsn.so'): blob_fixup()
+	.add_needed('libbase_shim.so'),
+    'vendor/lib64/libsec-ril-impl.so': blob_fixup()
+        .binary_regex_replace(b'ril.dds.call.ongoing', b'vendor.calls.slot_id')
+        # Always emit uiccApplicationsEnablementChanged
+        .sig_replace('88 58 9D 52 1F 00 08 6B AB 01 00 54', '88 58 9D 52 1F 00 08 6B 1F 20 03 D5')
+        .sig_replace('88 58 9D 52 FF 02 08 6B AB 01 00 54', '88 58 9D 52 FF 02 08 6B 1F 20 03 D5'),
+    'vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_0.xml': blob_fixup()
+        .regex_replace('default0', 'software'),
+    'vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc': blob_fixup()
+        .regex_replace('.*disabled.*\n', ''),
+    ('vendor/etc/media_codecs_kalama.xml'): blob_fixup()
+        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .add_needed('libcodec2_shim.so'),
+    'vendor/lib64/unihal_android.so': blob_fixup()
+        .add_needed('libui_shim.so'),
+    'vendor/lib64/libsamsungcamerahal.so': blob_fixup()
+        .sig_replace('E0 8A', '94 8B'),
+    'vendor/etc/init/android.hardware.security.keymint-service-qti.rc': blob_fixup()
+        .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service-qti'),
+    (
+        'vendor/lib64/libdpps.so',
+        'vendor/lib64/libsnapdragoncolor-manager.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2_1.so'),
+    'vendor/lib64/libsnaplite_native.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+
+}  # fmt: skip
+
+module = ExtractUtilsModule(
+    'sm8550-common',
+    'samsung',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()

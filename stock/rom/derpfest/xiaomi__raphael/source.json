@@ -1,0 +1,107 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_raphael.git",
+  "codename": "raphael",
+  "commit": "e24aa628ea0b3601b0d9df3da3573867e5f5d23d",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cbc47535b8116d5b4ddb843a5193a4d0da9f90e33aca329265988389a554d64e",
+      "size": 251
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a905c04b77e58831350e95320dbb3dc6b81922d6f37a8f28ae2e9e935caba82c",
+      "size": 6331
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e62f38fb6c89531bb805203fca5bca25ede70084a80e427ab7f6b7e23c85c334",
+      "size": 736
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "3cd70b1e271f3a070f950668cabdb914f05674e0dfce8ecbc2e32b8be7274c0b",
+      "size": 7143
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4d02d32e2a7f04e5ff73d5d58af847619e22f99b532d7248d42b94d3f7228982",
+      "size": 21972
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dc5bcbb09c2e00396af9c049ca569626ae27c12aa3e6affb3e1a74d6c2042ba2",
+      "size": 1753
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bd9044d95aab13682b30cf51c17475c5b6a46b3ac307862855b6b7ebe38e12e8",
+      "size": 74131
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file.te",
+      "sha256": "103c480e368196f554068f69936f1b748669520894d7c21c55cfa40a4be07655",
+      "size": 73
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/file_contexts",
+      "sha256": "13ab0d51a930731e440b1054b2136baae8c9d859560cc1e51cacfa886598ccd8",
+      "size": 403
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/hal_thermal_default.te",
+      "sha256": "b8c7bc830eca85da341426d054b3f451641e0668c1978003185dde0acdb25108",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/init.te",
+      "sha256": "0d638fc9ff6bc92d5569172710fbae1c0138fe467f4674f13636849fd2cc0ab1",
+      "size": 140
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/mi_thermald.te",
+      "sha256": "9b2042fbb0a57ce82738d4a84586db3657d356a5c6798d7a1ca8b8f304d4a821",
+      "size": 1638
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property.te",
+      "sha256": "b3e5ded79b6717d2eeeaf3fe486c250b6e87577f5f35103dc5a114ad567ca024",
+      "size": 93
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/property_contexts",
+      "sha256": "1187da7fd7b5908d70701d87fd61bbc8e685031d0a0ead01771f93d0d4bafd3d",
+      "size": 82
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/thermal-engine.te",
+      "sha256": "e8238de60b63d7c6dbe3d6d132f661c375b950694c03e7cd8834b28adae7cf59",
+      "size": 278
+    },
+    {
+      "path": "sepolicy/vendor/xiaomi/thermald/vendor_thermal-engine.te",
+      "sha256": "9f18e777a5d1251a34fef15251e8405e02cbbb87509bc7831770fc5878056d33",
+      "size": 58
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9048fb209cffe695816aceb60c0d9ffee84b119a20e8e92b72f08d03d092ab65",
+      "size": 3006
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "744d54cac83099e8d7bd8150b6f64cda9fdb20f11d523b76dae1ef0d777cbe69",
+      "size": 7177
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_raphael",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2023-02-11T17:41:59Z",
+  "vendor": "xiaomi"
+}

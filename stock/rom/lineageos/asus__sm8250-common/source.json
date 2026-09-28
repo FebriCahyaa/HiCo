@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "3f2b0779ce083f50b22e757dab061c3c23d7f153",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5ac9dd93eaf90891bc725e47e0e4242b8115151fc9db7dd1521034dff35eab4d",
+      "size": 9569
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "dc450fc7e8f0bbd83bcd112f6580e63463d9cca69ce0fbbeaca65aef7dc854c8",
+      "size": 8282
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "80f9605b435c15dd58114fd5b6dd129c276683ae30e1c106ce91b1975ea2d4cf",
+      "size": 1972
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "142a244d33668ed082cdca288f3954bb55f22cab0cbc910e84ee9d798d4be970",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5486b8fabd0a3dba7c4724abe47779a6a4cb69061710820e6a1dd32b82933674",
+      "size": 5539
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "549ef869669a7464e53c3fc5a574bfce2c4e8296bb9a87e8d1a207adc6efecf1",
+      "size": 53
+    },
+    {
+      "path": "system.prop",
+      "sha256": "923db0da43c4695a9d0c809fa27202c16e47f2b6f463180baec5cb5991a0bcc2",
+      "size": 2354
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:49Z",
+  "vendor": "asus"
+}

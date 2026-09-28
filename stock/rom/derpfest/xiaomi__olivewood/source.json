@@ -1,0 +1,87 @@
+{
+  "branch": "11",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_olivewood.git",
+  "codename": "olivewood",
+  "commit": "3149ea07cc0d5db26e5c2db5f79c992bb7ca0947",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9c8803f4aa72364c74e1d3298bdbcc37bdea23bea4ab9ec2130238e1d239e265",
+      "size": 4528
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ce00439e52e35db676a89b85bb5748b7482da6ad12e5fbc3dd35f2f679da2d46",
+      "size": 58
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "41de95ab08daaba893ff2470c327442c2a95f4756cf199988d3f3d74f8591e62",
+      "size": 5848
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalActivity.java",
+      "sha256": "21124e0c3d2eac5ac0a5aab09a3d43d2cd65993290b601da2c354fcc3a939a62",
+      "size": 1108
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalService.java",
+      "sha256": "70067de57c68f0255776c66259c228dbefce19bda895c4afe59f98d27924ffa1",
+      "size": 3593
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalSettingsFragment.java",
+      "sha256": "7372b0db72e6942d4c5584498ae9236cb90106b9b23dc4adb5a513addb08f00e",
+      "size": 17371
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalUtils.java",
+      "sha256": "420401547b18aa5cee5dde4c9de56f9378bf69714c6b677f7d9088a8f9f9dfb0",
+      "size": 6408
+    },
+    {
+      "path": "device.mk",
+      "sha256": "fcf846ac10f6eb606c3ab2d2cfd5da775abadcb42a397507bdd3883356920652",
+      "size": 19739
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5615eff1d4fcf9c06c0baf7e0010a9f51d1aa3e987da3b5838e313970d731779",
+      "size": 1288
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e4f5148ffaa8c6f7d286617b73f580e2427b418538fd87fdbdaab5ab3cf7ebe3",
+      "size": 333564
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "af554cad222e6762cd745b43831cd6cd5b1f2195bd6b9091fef9818679751b4d",
+      "size": 333
+    },
+    {
+      "path": "system.prop",
+      "sha256": "32b1a0c7f1ceadea71e2bab8c873f5e2e8c3ac7d5da9cd484d22d73784a18389",
+      "size": 3319
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "857f6fa262728cdc92a95d4f1e2fc5f3b04c12043d7f36e3646e3dcd57ee2567",
+      "size": 2671
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_olivewood",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-10-11T09:50:58Z",
+  "vendor": "xiaomi"
+}

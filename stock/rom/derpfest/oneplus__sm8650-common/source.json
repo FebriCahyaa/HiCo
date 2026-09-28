@@ -1,0 +1,52 @@
+{
+  "branch": "15.2",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_sm8650-common.git",
+  "codename": "sm8650-common",
+  "commit": "7998542c0cbd89c76d3afe6f3fa50b2ab0e47df1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "40f0c42c08a0f7a704f87ae41b539367fdfd1e69eb0769f5cf1c10715e10f6f4",
+      "size": 1083
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "00782352bec416faebd3e722c0979823bfdb05576a5add53026afff2291e30aa",
+      "size": 9818
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "16928e45c0355c960191ded17aa569954a1abfd14928ff91515cb1feceda02c1",
+      "size": 6658
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4b55171c9b49178c2f200f205cfc01a913595601b7fc6c580e68db3af2c8e7e7",
+      "size": 441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "97d94df4e6525258646223b31d1b1e272a758fd8c3daaa8335c21e558beb654c",
+      "size": 127892
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "94e6886b5a6ae8937e9552c693b9024f245aa7f48e33486876ca6d061cc57913",
+      "size": 12500
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "f4c80bbd9008b45a7bd8787af54eb3ba23ccea10e8ef0a6b3bc6238b3763b1ff",
+      "size": 1440
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_sm8650-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-01-30T04:55:38Z",
+  "vendor": "oneplus"
+}

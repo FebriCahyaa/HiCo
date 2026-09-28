@@ -1,0 +1,42 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_sdm632-common.git",
+  "codename": "sdm632-common",
+  "commit": "b2da3827f7682c76845c4ae8cba2729fd2ac2252",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5e7b0d2df67abeda60dbc00952a0ddafac6c97f7c59580d40da31a466af48a3f",
+      "size": 249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "72cccab4ed9fdd0e3bcc4a5d8524fb6865a4463cc1bf7ae9b35092219e078157",
+      "size": 6884
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "04a7dce40d32b941dfda4a78c1571b66688eb182f2988476d3b3568988126385",
+      "size": 3716
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7bb5260093c780c88ec4156af191e060c45a0407fb61ef2e51a663b99a1c1983",
+      "size": 35464
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "6b79a22cf2fa8bc2d36bb4b665b7ee67b62ba20e8d21e31e58bd3eac27b45907",
+      "size": 637
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sdm632-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-04-28T01:21:51Z",
+  "vendor": "motorola"
+}

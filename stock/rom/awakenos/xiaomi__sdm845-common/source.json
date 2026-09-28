@@ -1,0 +1,82 @@
+{
+  "branch": "12",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "784ddf95ba6d957756381287faa364acb21ba66e",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8f0332178af45a135efe96c3b073630e0148172c891bd0ed45e7dcc15104d31a",
+      "size": 4084
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "3ccf14ee084429f8e01d1b9cfdb04f8d349d048507efeebea3610d37d4c51410",
+      "size": 4987
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7c4a7ab2258de058cb19e37f3da2c448855eacac3a23c07b9158cd492ae05590",
+      "size": 1879
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "b0331dc19f7e902a9eafb4c69b0dd9f518fe62890cd9194d068564b205b94874",
+      "size": 1462
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "197103c2fce4d7f2e35304e1a0d58274200d0a9558cbbc5a1fe52b48e6f54d34",
+      "size": 3317
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "34ff8c5f40f7117d2436ea7d6a61a8128c7b1aa0bf8b1db46396f1c4fd7004da",
+      "size": 14219
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "f9b71c4744130e39abe93d9caa89a1d87e2f981b0c0d83c4167cfa6576fb8ebc",
+      "size": 1606
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7554784da87da445601b572b68b02f4c26e0a6fe04b2b29aaeeb1b68b22fd142",
+      "size": 55722
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8a3a57914f5838b19e2960dbb19c6fd34fab0acd1767856cef1351936d2a0fb1",
+      "size": 3026
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7c580e36562405bff0674e9c58e17699f81700d78e574d64ecb76e138dab3781",
+      "size": 5345
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2022-12-08T17:00:07Z",
+  "vendor": "xiaomi"
+}

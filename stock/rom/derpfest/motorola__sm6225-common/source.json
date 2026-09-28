@@ -1,0 +1,52 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_motorola_sm6225-common.git",
+  "codename": "sm6225-common",
+  "commit": "29136a3a77c153baabc9fcac703b7d98f0d4057f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "63aaeb9a932048f76d4d153c6a5319b9d1ff9c474c7bba1bde18ed43393ea6f2",
+      "size": 6510
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ced6e7c565743a1b3c5d2c458a2dbdaa5a78f7f06f534402d805058ebe2188d5",
+      "size": 6470
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "46e8f0c80a307718caea0385dea2913115b6c4c1cb27c374051f6448bb4c26c8",
+      "size": 2466
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "595618cc961f54c58914073256ee74371879d2880b66d6808ee7a7f41c24cb8c",
+      "size": 33327
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "2b53c3a406264ba02f85fcf70909884d575800d0b99df570af6b8f9daa018d42",
+      "size": 148
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8facf61f0be2e5f60b53aa797bfa1cdace068edd0aeb9ec470eccf843ddee576",
+      "size": 8746
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sm6225-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2023-07-22T08:11:44Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,147 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_sunfish.git",
+  "codename": "sunfish",
+  "commit": "c727ed3149a0bfed8b55cfc6a548694cc0ab0016",
+  "file_count": 26,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b28a179029bfad802d1b230d88ab5a2853d1972a8491d25e39281a3d8a3e62fd",
+      "size": 1336
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d3d687115344001299189b29fb44c8608d719e840a47b9c5558cfaaa281158a7",
+      "size": 851
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "7472ac6627a8dd665b55c6cf6e4bdc98551f7c1be00aaac8640d5bccf50b2cb7",
+      "size": 7332
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "3135039f07701a80c66fb6baf230300fc70c95e58bf00de620c1a3e04a534361",
+      "size": 685
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "a8df3decf12ddd219832134eff113a1710d5eb20fd304bb5b5aca9c3220c60e7",
+      "size": 5695
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "23142649235f2709b3e3ba664ec8b22e8e4abd529b96c4d4873e4cf3129b9880",
+      "size": 2828
+    },
+    {
+      "path": "device-sunfish.mk",
+      "sha256": "445196e925c7f106fcf34930cd7cbe7ae3cc078e31aebb158364d7a161e0a3b5",
+      "size": 8243
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e3ab14bc6d82de35d1fbaac002a0f6033876f195dc865c01e585cc4d8b4a938e",
+      "size": 28616
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e9ff602358ba010da049894e7a968efd40d1d54cfb4a58835a00eee5dc3ccb96",
+      "size": 213
+    },
+    {
+      "path": "sepolicy/tracking_denials/thermal-engine.te",
+      "sha256": "516d4d443f6e51084ec846cfc0745d1f7c978156020432cc25d0e017704b442c",
+      "size": 106
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/dump_thermal.te",
+      "sha256": "8409f4f5e3954a6cc73571c48d4e5ea9763d833ef6013f3dcaefae989618ab06",
+      "size": 252
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file.te",
+      "sha256": "6cefe2edab3ad3a76666a7860ad02549452219e8dd2ea8d5fc8c7fd355d35753",
+      "size": 81
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/file_contexts",
+      "sha256": "755d7ef948f4f1582f8b12e9c3c0e31747d5cc70c052a271dc4b4534ce225f5a",
+      "size": 849
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/genfs_contexts",
+      "sha256": "842299c326461e2a878336e05832621185922df8dd12cc3b172e2d3c6441a5e1",
+      "size": 644
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/hal_thermal_default.te",
+      "sha256": "3bd19caa5b8b364d6d027fa7e7895fb4e904285556a87281561d634636c3b644",
+      "size": 813
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-logging.sh.te",
+      "sha256": "b38377b629836fb4b218827a86577f245c700e008ec3166781f79d696de775c8",
+      "size": 381
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/pixel-thermal-control.sh.te",
+      "sha256": "652d80278862e213932dfa08ecb2b7fb820c87d07355442fe5ee2adeee9cc6f7",
+      "size": 589
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property.te",
+      "sha256": "9e7c9001131fc88bddd6faac201bd2ca7a534b569bdb27222d05862ec97388ce",
+      "size": 55
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/property_contexts",
+      "sha256": "7e85a2e2653801b14213ac6ae40cbeb3c5ce3e60db2bdde520be114990ee3b71",
+      "size": 76
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal/vendor_init.te",
+      "sha256": "88739ab42caab3f4c51f1e2e7c82c51e7fc21a8e546500734056afc57b694382",
+      "size": 159
+    },
+    {
+      "path": "sepolicy/vendor/google/thermal-engine.te",
+      "sha256": "a0709d76ee7355fedbd11b49aba74834f6122aa515268ba38746017288126b1b",
+      "size": 720
+    },
+    {
+      "path": "sepolicy/vendor/qcom/common/thermal-engine.te",
+      "sha256": "531af437b8981b9927fec3f696348e9e5778f70de9fbe0606019223b3f665c5b",
+      "size": 464
+    },
+    {
+      "path": "thermal-engine-sunfish.conf",
+      "sha256": "4ff506ca1cbe240c36e713330d721e2fabd8a1646d09f544e5be646bf60315e0",
+      "size": 1518
+    },
+    {
+      "path": "thermal_info_config_sunfish.json",
+      "sha256": "ae751e70d5b28a82c5a63438fa4d2945f871c18a10db0892736535536c2e3495",
+      "size": 6056
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4614a177b826e5952f8914432bbcb0b87ab14ab88284c1382681ea8e3ceb5f5b",
+      "size": 355
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_sunfish",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-07-08T12:01:02Z",
+  "vendor": "google"
+}

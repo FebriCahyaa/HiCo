@@ -1,0 +1,47 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_gigaset_mt6763-common.git",
+  "codename": "mt6763-common",
+  "commit": "9620170f0908e66bd0ef2d88fd6058f2df2388df",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cfbe7eb52d6031799ae62d7e37216ed939adcfcc2f35b7638dd74e875c643c4c",
+      "size": 1377
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "668bc78e0db13baed8337bc72560250afc8b15f25b1ead1668dd915fa38dc42a",
+      "size": 5108
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "38733cdf6ff7074c0f6575b93ade393885bcf6198964b4f6819b07c1cd214d01",
+      "size": 2793
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c53d9134572e63b5a969ee5ebbe6afdc51a57f881c459a73d4b4d243b899f32c",
+      "size": 43110
+    },
+    {
+      "path": "sepolicy/vendor/thermal.te",
+      "sha256": "5974045ea3be624eeb55b0a07eef68531c5061d27a0ba9eba9ac28b3ad2b741a",
+      "size": 46
+    }
+  ],
+  "kind": "common",
+  "repo": "device_gigaset_mt6763-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-04-11T06:48:09Z",
+  "vendor": "gigaset"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_samsung_hlte-common.git",
+  "codename": "hlte-common",
+  "commit": "0676690bd11eae553b9bfadfb4d804c79e4ebf47",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "852befdda5e9c44b27cdad25c8a2df4664544a0a35b1515f18a6eb10619de3c0",
+      "size": 9944
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2db128567151c2444170288c19dbf8e91d6109d7720d506eb8cca5fffebd8fb1",
+      "size": 6760
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "size": 727
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "498686583ff112c6fde3f202b37903e12db75d928533d90f0517cb506cab78cf",
+      "size": 2136
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "cd6c6b30bc5c4b0dd26da013426e828026bb1d1665dca841829e7f97bff8fde8",
+      "size": 332
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0d84d2372ff292834dc0fefb40e732757335467fe9b5fd96188e7aa5c02a9cf9",
+      "size": 2276
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_hlte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T21:06:11Z",
+  "vendor": "samsung"
+}

@@ -1,5 +1,6 @@
 {
-  "device_count": 105,
+  "common_count": 32,
+  "device_count": 102,
   "devices": [
     {
       "archived": false,
@@ -7,8 +8,8 @@
       "codename": "g",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_10or_G",
-      "size_kb": 57345,
       "updated_at": "2023-04-03T08:10:05Z",
       "vendor": "10or"
     },
@@ -18,8 +19,8 @@
       "codename": "i01wd",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_I01WD",
-      "size_kb": 14705,
       "updated_at": "2020-08-02T10:05:41Z",
       "vendor": "asus"
     },
@@ -29,9 +30,20 @@
       "codename": "sake",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_sake",
-      "size_kb": 1129,
       "updated_at": "2022-08-17T06:12:39Z",
+      "vendor": "asus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_sdm660-common.git",
+      "codename": "sdm660-common",
+      "default_branch": "arrow-13.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_asus_sdm660-common",
+      "updated_at": "2023-01-01T14:53:52Z",
       "vendor": "asus"
     },
     {
@@ -40,8 +52,8 @@
       "codename": "x00t",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_X00T",
-      "size_kb": 3368,
       "updated_at": "2022-03-28T17:51:42Z",
       "vendor": "asus"
     },
@@ -51,9 +63,20 @@
       "codename": "x00td",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_X00TD",
-      "size_kb": 44,
       "updated_at": "2023-03-31T05:05:24Z",
+      "vendor": "asus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_X00TD-common.git",
+      "codename": "x00td-common",
+      "default_branch": "arrow-13.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_asus_X00TD-common",
+      "updated_at": "2023-07-06T07:20:51Z",
       "vendor": "asus"
     },
     {
@@ -62,8 +85,8 @@
       "codename": "x01bd",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_X01BD",
-      "size_kb": 18988,
       "updated_at": "2022-12-10T09:06:49Z",
       "vendor": "asus"
     },
@@ -73,8 +96,8 @@
       "codename": "z01r",
       "default_branch": "arrow-14.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_Z01R",
-      "size_kb": 4556,
       "updated_at": "2023-10-24T05:41:24Z",
       "vendor": "asus"
     },
@@ -84,8 +107,8 @@
       "codename": "zenfone3",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_asus_zenfone3",
-      "size_kb": 36058,
       "updated_at": "2019-07-30T20:41:34Z",
       "vendor": "asus"
     },
@@ -95,8 +118,8 @@
       "codename": "gm8_sprout",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_gm_GM8_sprout",
-      "size_kb": 361,
       "updated_at": "2021-08-29T22:20:55Z",
       "vendor": "gm"
     },
@@ -106,8 +129,8 @@
       "codename": "blueline",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_blueline",
-      "size_kb": 1,
       "updated_at": "2022-03-24T07:35:14Z",
       "vendor": "google"
     },
@@ -117,8 +140,8 @@
       "codename": "coral",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_coral",
-      "size_kb": 12647,
       "updated_at": "2022-11-25T23:28:37Z",
       "vendor": "google"
     },
@@ -128,8 +151,8 @@
       "codename": "crosshatch",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_crosshatch",
-      "size_kb": 17873,
       "updated_at": "2022-11-12T07:03:02Z",
       "vendor": "google"
     },
@@ -139,8 +162,8 @@
       "codename": "flame",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_flame",
-      "size_kb": 4,
       "updated_at": "2022-11-25T23:36:03Z",
       "vendor": "google"
     },
@@ -150,8 +173,8 @@
       "codename": "marlin",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_marlin",
-      "size_kb": 18273,
       "updated_at": "2021-02-15T13:43:54Z",
       "vendor": "google"
     },
@@ -161,8 +184,8 @@
       "codename": "taimen",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_taimen",
-      "size_kb": 1286,
       "updated_at": "2022-04-22T11:46:55Z",
       "vendor": "google"
     },
@@ -172,8 +195,8 @@
       "codename": "wahoo",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_wahoo",
-      "size_kb": 3545,
       "updated_at": "2022-09-21T11:00:57Z",
       "vendor": "google"
     },
@@ -183,8 +206,8 @@
       "codename": "walleye",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_google_walleye",
-      "size_kb": 1655,
       "updated_at": "2021-11-11T09:47:43Z",
       "vendor": "google"
     },
@@ -194,8 +217,8 @@
       "codename": "angler",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_huawei_angler",
-      "size_kb": 17701,
       "updated_at": "2020-08-07T15:12:14Z",
       "vendor": "huawei"
     },
@@ -205,8 +228,8 @@
       "codename": "kiwi",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_huawei_kiwi",
-      "size_kb": 5397,
       "updated_at": "2020-03-09T08:16:28Z",
       "vendor": "huawei"
     },
@@ -216,8 +239,8 @@
       "codename": "s2",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_leeco_s2",
-      "size_kb": 14644,
       "updated_at": "2020-01-19T06:12:35Z",
       "vendor": "leeco"
     },
@@ -227,8 +250,8 @@
       "codename": "a6020",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_lenovo_A6020",
-      "size_kb": 9112,
       "updated_at": "2021-02-07T01:36:19Z",
       "vendor": "lenovo"
     },
@@ -238,8 +261,8 @@
       "codename": "aljeter",
       "default_branch": "twrp-9.0-arm",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_aljeter",
-      "size_kb": 183,
       "updated_at": "2020-02-15T23:29:42Z",
       "vendor": "motorola"
     },
@@ -249,8 +272,8 @@
       "codename": "athene",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_athene",
-      "size_kb": 12402,
       "updated_at": "2020-02-16T02:08:22Z",
       "vendor": "motorola"
     },
@@ -260,8 +283,8 @@
       "codename": "cedric",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_cedric",
-      "size_kb": 42384,
       "updated_at": "2019-04-18T17:23:01Z",
       "vendor": "motorola"
     },
@@ -271,8 +294,8 @@
       "codename": "chef",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_chef",
-      "size_kb": 5889,
       "updated_at": "2019-11-29T05:23:17Z",
       "vendor": "motorola"
     },
@@ -282,8 +305,8 @@
       "codename": "dubai",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_dubai",
-      "size_kb": 320,
       "updated_at": "2023-12-24T14:11:59Z",
       "vendor": "motorola"
     },
@@ -293,8 +316,8 @@
       "codename": "potter",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_potter",
-      "size_kb": 4188,
       "updated_at": "2020-12-02T10:47:18Z",
       "vendor": "motorola"
     },
@@ -304,9 +327,31 @@
       "codename": "sanders",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_motorola_sanders",
-      "size_kb": 4128,
       "updated_at": "2021-08-07T12:50:26Z",
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_sdm660-common.git",
+      "codename": "sdm660-common",
+      "default_branch": "arrow-10.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_motorola_sdm660-common",
+      "updated_at": "2019-11-30T17:10:43Z",
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_sm7325-common.git",
+      "codename": "sm7325-common",
+      "default_branch": "arrow-13.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_motorola_sm7325-common",
+      "updated_at": "2023-12-24T14:09:07Z",
       "vendor": "motorola"
     },
     {
@@ -315,8 +360,8 @@
       "codename": "spacewar",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_nothing_Spacewar",
-      "size_kb": 750,
       "updated_at": "2023-06-16T23:56:01Z",
       "vendor": "nothing"
     },
@@ -326,8 +371,8 @@
       "codename": "nx512j",
       "default_branch": "arrow-8.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_nubia_nx512j",
-      "size_kb": 5171,
       "updated_at": "2018-10-05T13:51:51Z",
       "vendor": "nubia"
     },
@@ -337,8 +382,8 @@
       "codename": "avicii",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_avicii",
-      "size_kb": 122,
       "updated_at": "2022-08-21T18:16:08Z",
       "vendor": "oneplus"
     },
@@ -348,8 +393,8 @@
       "codename": "bacon",
       "default_branch": "arrow-9.x",
       "fork": true,
+      "kind": "device",
       "repo": "android_device_oneplus_bacon",
-      "size_kb": 8258,
       "updated_at": "2019-07-21T20:37:16Z",
       "vendor": "oneplus"
     },
@@ -359,9 +404,20 @@
       "codename": "cheeseburger",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_cheeseburger",
-      "size_kb": 131,
       "updated_at": "2021-11-10T08:48:10Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_common.git",
+      "codename": "common",
+      "default_branch": "arrow-11.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_common",
+      "updated_at": "2021-08-19T09:29:03Z",
       "vendor": "oneplus"
     },
     {
@@ -370,8 +426,8 @@
       "codename": "dumpling",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_dumpling",
-      "size_kb": 132,
       "updated_at": "2021-11-10T08:47:12Z",
       "vendor": "oneplus"
     },
@@ -381,8 +437,8 @@
       "codename": "enchilada",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_enchilada",
-      "size_kb": 57,
       "updated_at": "2020-10-26T17:49:23Z",
       "vendor": "oneplus"
     },
@@ -392,8 +448,8 @@
       "codename": "extras",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_extras",
-      "size_kb": 1,
       "updated_at": "2021-10-31T00:02:57Z",
       "vendor": "oneplus"
     },
@@ -403,8 +459,8 @@
       "codename": "fajita",
       "default_branch": "arrow-9.x",
       "fork": true,
+      "kind": "device",
       "repo": "android_device_oneplus_fajita",
-      "size_kb": 22,
       "updated_at": "2019-03-02T16:47:08Z",
       "vendor": "oneplus"
     },
@@ -414,8 +470,8 @@
       "codename": "guacamole",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_guacamole",
-      "size_kb": 3581,
       "updated_at": "2022-08-10T13:20:42Z",
       "vendor": "oneplus"
     },
@@ -425,9 +481,20 @@
       "codename": "lemonades",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_lemonades",
-      "size_kb": 168,
       "updated_at": "2022-10-17T04:38:09Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_msm8998-common.git",
+      "codename": "msm8998-common",
+      "default_branch": "arrow-11.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_msm8998-common",
+      "updated_at": "2021-11-16T17:37:49Z",
       "vendor": "oneplus"
     },
     {
@@ -436,8 +503,8 @@
       "codename": "oneplus3",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_oneplus3",
-      "size_kb": 106280,
       "updated_at": "2021-05-15T18:24:08Z",
       "vendor": "oneplus"
     },
@@ -447,10 +514,109 @@
       "codename": "opkona",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oneplus_opkona",
-      "size_kb": 4522,
       "updated_at": "2023-06-30T15:37:18Z",
       "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sdm845-common.git",
+      "codename": "sdm845-common",
+      "default_branch": "arrow-11.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sdm845-common",
+      "updated_at": "2020-12-09T14:10:25Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sm7250-common.git",
+      "codename": "sm7250-common",
+      "default_branch": "arrow-12.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm7250-common",
+      "updated_at": "2022-08-22T11:16:26Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sm8150-common.git",
+      "codename": "sm8150-common",
+      "default_branch": "arrow-11.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm8150-common",
+      "updated_at": "2021-09-19T09:14:11Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sm8250-common.git",
+      "codename": "sm8250-common",
+      "default_branch": "arrow-13.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm8250-common",
+      "updated_at": "2022-10-17T04:26:54Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "arrow-13.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oneplus_sm8350-common",
+      "updated_at": "2023-05-29T12:38:19Z",
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oppo_common.git",
+      "codename": "common",
+      "default_branch": "arrow-9.x",
+      "fork": true,
+      "kind": "common",
+      "repo": "android_device_oppo_common",
+      "updated_at": "2019-06-12T11:09:17Z",
+      "vendor": "oppo"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oppo_common_op3.git",
+      "codename": "common_op3",
+      "default_branch": "arrow-9.x",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oppo_common_op3",
+      "updated_at": "2019-04-18T07:09:30Z",
+      "vendor": "oppo"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oppo_common_op5.git",
+      "codename": "common_op5",
+      "default_branch": "arrow-9.x",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_oppo_common_op5",
+      "updated_at": "2019-11-01T19:40:03Z",
+      "vendor": "oppo"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_oppo_msm8974-common.git",
+      "codename": "msm8974-common",
+      "default_branch": "arrow-9.x",
+      "fork": true,
+      "kind": "common",
+      "repo": "android_device_oppo_msm8974-common",
+      "updated_at": "2019-06-12T11:57:56Z",
+      "vendor": "oppo"
     },
     {
       "archived": false,
@@ -458,10 +624,21 @@
       "codename": "op4a89",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_oppo_OP4A89",
-      "size_kb": 51575,
       "updated_at": "2022-08-21T10:25:55Z",
       "vendor": "oppo"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_qcom_common.git",
+      "codename": "common",
+      "default_branch": "arrow-13.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_qcom_common",
+      "updated_at": "2023-07-02T15:25:05Z",
+      "vendor": "qcom"
     },
     {
       "archived": false,
@@ -469,8 +646,8 @@
       "codename": "porsche",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_porsche",
-      "size_kb": 1389,
       "updated_at": "2023-06-25T08:58:42Z",
       "vendor": "realme"
     },
@@ -480,8 +657,8 @@
       "codename": "rmp6768",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_RMP6768",
-      "size_kb": 2534,
       "updated_at": "2023-04-14T13:26:44Z",
       "vendor": "realme"
     },
@@ -491,8 +668,8 @@
       "codename": "rmx1801",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_RMX1801",
-      "size_kb": 2603,
       "updated_at": "2023-05-20T18:24:10Z",
       "vendor": "realme"
     },
@@ -502,8 +679,8 @@
       "codename": "rmx1851",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_RMX1851",
-      "size_kb": 957,
       "updated_at": "2023-07-20T19:31:42Z",
       "vendor": "realme"
     },
@@ -513,8 +690,8 @@
       "codename": "rmx2020",
       "default_branch": "arrow-14.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_RMX2020",
-      "size_kb": 83635,
       "updated_at": "2023-11-18T15:33:51Z",
       "vendor": "realme"
     },
@@ -524,8 +701,8 @@
       "codename": "x3",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_realme_x3",
-      "size_kb": 48399,
       "updated_at": "2023-03-27T17:19:44Z",
       "vendor": "realme"
     },
@@ -535,19 +712,19 @@
       "codename": "crownlte",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_samsung_crownlte",
-      "size_kb": 51,
       "updated_at": "2022-05-20T19:30:55Z",
       "vendor": "samsung"
     },
     {
       "archived": false,
       "clone_url": "https://github.com/ArrowOS-Devices/android_device_samsung_exynos9810-common.git",
-      "codename": "exynos9810",
+      "codename": "exynos9810-common",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "common",
       "repo": "android_device_samsung_exynos9810-common",
-      "size_kb": 229,
       "updated_at": "2022-08-31T12:27:28Z",
       "vendor": "samsung"
     },
@@ -557,8 +734,8 @@
       "codename": "slsi_sepolicy",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_samsung_slsi_sepolicy",
-      "size_kb": 88,
       "updated_at": "2022-05-12T18:42:32Z",
       "vendor": "samsung"
     },
@@ -568,8 +745,8 @@
       "codename": "star2lte",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_samsung_star2lte",
-      "size_kb": 46,
       "updated_at": "2022-05-16T07:33:12Z",
       "vendor": "samsung"
     },
@@ -579,19 +756,19 @@
       "codename": "starlte",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_samsung_starlte",
-      "size_kb": 50,
       "updated_at": "2022-05-16T07:32:43Z",
       "vendor": "samsung"
     },
     {
       "archived": false,
       "clone_url": "https://github.com/ArrowOS-Devices/android_device_samsung_universal9810-common.git",
-      "codename": "universal9810",
+      "codename": "universal9810-common",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "common",
       "repo": "android_device_samsung_universal9810-common",
-      "size_kb": 2464,
       "updated_at": "2022-02-08T20:51:05Z",
       "vendor": "samsung"
     },
@@ -601,8 +778,8 @@
       "codename": "rimo02a",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_smartron_rimo02a",
-      "size_kb": 4754,
       "updated_at": "2019-03-02T10:58:34Z",
       "vendor": "smartron"
     },
@@ -612,8 +789,8 @@
       "codename": "alioth-prebuilt",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_alioth-prebuilt",
-      "size_kb": 29474,
       "updated_at": "2021-05-19T16:39:13Z",
       "vendor": "xiaomi"
     },
@@ -623,8 +800,8 @@
       "codename": "apollo",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_apollo",
-      "size_kb": 215,
       "updated_at": "2023-10-20T19:26:16Z",
       "vendor": "xiaomi"
     },
@@ -634,8 +811,8 @@
       "codename": "beryllium_archive",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_beryllium_archive",
-      "size_kb": 177,
       "updated_at": "2021-08-25T23:05:32Z",
       "vendor": "xiaomi"
     },
@@ -645,8 +822,8 @@
       "codename": "cas",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_cas",
-      "size_kb": 63001,
       "updated_at": "2022-10-30T15:53:39Z",
       "vendor": "xiaomi"
     },
@@ -656,8 +833,8 @@
       "codename": "chiron",
       "default_branch": "arrow-10.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_chiron",
-      "size_kb": 1049,
       "updated_at": "2020-08-02T10:01:18Z",
       "vendor": "xiaomi"
     },
@@ -667,8 +844,8 @@
       "codename": "clover",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_clover",
-      "size_kb": 820,
       "updated_at": "2021-08-23T06:40:26Z",
       "vendor": "xiaomi"
     },
@@ -678,9 +855,20 @@
       "codename": "cmi",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_cmi",
-      "size_kb": 80165,
       "updated_at": "2021-04-09T17:19:28Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_common.git",
+      "codename": "common",
+      "default_branch": "arrow-10.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_common",
+      "updated_at": "2020-02-22T17:36:29Z",
       "vendor": "xiaomi"
     },
     {
@@ -689,8 +877,8 @@
       "codename": "daisy",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_daisy",
-      "size_kb": 10007,
       "updated_at": "2022-11-18T05:21:23Z",
       "vendor": "xiaomi"
     },
@@ -700,8 +888,8 @@
       "codename": "davinci",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_davinci",
-      "size_kb": 2994,
       "updated_at": "2023-08-06T07:54:03Z",
       "vendor": "xiaomi"
     },
@@ -711,8 +899,8 @@
       "codename": "dipper",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_dipper",
-      "size_kb": 109,
       "updated_at": "2019-03-13T17:26:12Z",
       "vendor": "xiaomi"
     },
@@ -722,8 +910,8 @@
       "codename": "extras",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_extras",
-      "size_kb": 8,
       "updated_at": "2021-10-29T12:13:32Z",
       "vendor": "xiaomi"
     },
@@ -733,8 +921,8 @@
       "codename": "ginkgo",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_ginkgo",
-      "size_kb": 4614,
       "updated_at": "2023-12-24T14:00:06Z",
       "vendor": "xiaomi"
     },
@@ -744,8 +932,8 @@
       "codename": "jasmine_sprout",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_jasmine_sprout",
-      "size_kb": 113578,
       "updated_at": "2023-10-25T17:57:43Z",
       "vendor": "xiaomi"
     },
@@ -755,8 +943,8 @@
       "codename": "karna",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_karna",
-      "size_kb": 37255,
       "updated_at": "2020-12-14T12:45:36Z",
       "vendor": "xiaomi"
     },
@@ -766,8 +954,8 @@
       "codename": "kenzo",
       "default_branch": "arrow-9.x",
       "fork": true,
+      "kind": "device",
       "repo": "android_device_xiaomi_kenzo",
-      "size_kb": 1164,
       "updated_at": "2018-11-05T12:13:52Z",
       "vendor": "xiaomi"
     },
@@ -777,8 +965,8 @@
       "codename": "land",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_land",
-      "size_kb": 100836,
       "updated_at": "2022-07-31T13:38:31Z",
       "vendor": "xiaomi"
     },
@@ -788,8 +976,8 @@
       "codename": "lavender",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_lavender",
-      "size_kb": 105192,
       "updated_at": "2023-07-28T02:34:23Z",
       "vendor": "xiaomi"
     },
@@ -799,8 +987,8 @@
       "codename": "lisa",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_lisa",
-      "size_kb": 1172,
       "updated_at": "2024-01-31T14:47:35Z",
       "vendor": "xiaomi"
     },
@@ -810,8 +998,8 @@
       "codename": "lmi",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_lmi",
-      "size_kb": 42296,
       "updated_at": "2021-12-14T13:10:04Z",
       "vendor": "xiaomi"
     },
@@ -821,8 +1009,8 @@
       "codename": "merlinx",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_merlinx",
-      "size_kb": 1762,
       "updated_at": "2022-08-10T22:34:49Z",
       "vendor": "xiaomi"
     },
@@ -832,8 +1020,8 @@
       "codename": "miatoll",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_miatoll",
-      "size_kb": 82,
       "updated_at": "2023-01-14T05:04:21Z",
       "vendor": "xiaomi"
     },
@@ -843,8 +1031,8 @@
       "codename": "mido",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_mido",
-      "size_kb": 65598,
       "updated_at": "2022-02-08T15:48:46Z",
       "vendor": "xiaomi"
     },
@@ -854,9 +1042,20 @@
       "codename": "mojito",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_mojito",
-      "size_kb": 2364,
       "updated_at": "2024-01-18T14:16:45Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_msm8953-common.git",
+      "codename": "msm8953-common",
+      "default_branch": "arrow-9.x",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_msm8953-common",
+      "updated_at": "2019-01-16T06:46:33Z",
       "vendor": "xiaomi"
     },
     {
@@ -865,9 +1064,42 @@
       "codename": "msm8953-daisy",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_msm8953-daisy",
-      "size_kb": 56401,
       "updated_at": "2022-11-18T05:25:01Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_msm8956-common.git",
+      "codename": "msm8956-common",
+      "default_branch": "arrow-9.x",
+      "fork": true,
+      "kind": "common",
+      "repo": "android_device_xiaomi_msm8956-common",
+      "updated_at": "2018-10-27T02:59:56Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_msm8998-common.git",
+      "codename": "msm8998-common",
+      "default_branch": "arrow-10.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_msm8998-common",
+      "updated_at": "2020-03-29T13:51:25Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_mt6768-common.git",
+      "codename": "mt6768-common",
+      "default_branch": "arrow-12.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_mt6768-common",
+      "updated_at": "2022-08-12T08:25:50Z",
       "vendor": "xiaomi"
     },
     {
@@ -876,8 +1108,8 @@
       "codename": "munch",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_munch",
-      "size_kb": 237,
       "updated_at": "2023-08-29T08:11:12Z",
       "vendor": "xiaomi"
     },
@@ -887,8 +1119,8 @@
       "codename": "nabu",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_nabu",
-      "size_kb": 310,
       "updated_at": "2023-08-01T07:42:37Z",
       "vendor": "xiaomi"
     },
@@ -898,8 +1130,8 @@
       "codename": "perseus",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_perseus",
-      "size_kb": 146,
       "updated_at": "2021-08-25T23:08:30Z",
       "vendor": "xiaomi"
     },
@@ -909,8 +1141,8 @@
       "codename": "phoenix",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_phoenix",
-      "size_kb": 2072,
       "updated_at": "2022-08-17T10:26:17Z",
       "vendor": "xiaomi"
     },
@@ -920,8 +1152,8 @@
       "codename": "picasso",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_picasso",
-      "size_kb": 26559,
       "updated_at": "2022-03-29T04:21:06Z",
       "vendor": "xiaomi"
     },
@@ -931,8 +1163,8 @@
       "codename": "platina",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_platina",
-      "size_kb": 41523,
       "updated_at": "2019-03-15T13:23:00Z",
       "vendor": "xiaomi"
     },
@@ -942,8 +1174,8 @@
       "codename": "polaris",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_polaris",
-      "size_kb": 425,
       "updated_at": "2021-08-25T23:01:42Z",
       "vendor": "xiaomi"
     },
@@ -953,8 +1185,8 @@
       "codename": "raphael",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_raphael",
-      "size_kb": 15863,
       "updated_at": "2022-10-17T09:47:33Z",
       "vendor": "xiaomi"
     },
@@ -964,9 +1196,75 @@
       "codename": "santoni",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_santoni",
-      "size_kb": 99225,
       "updated_at": "2019-01-16T12:36:54Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": true,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sdm660-common.git",
+      "codename": "sdm660-common",
+      "default_branch": "arrow-12.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sdm660-common",
+      "updated_at": "2023-07-28T02:35:38Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sdm845-common.git",
+      "codename": "sdm845-common",
+      "default_branch": "arrow-11.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sdm845-common",
+      "updated_at": "2021-08-25T22:58:55Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sm6150-common.git",
+      "codename": "sm6150-common",
+      "default_branch": "arrow-11.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm6150-common",
+      "updated_at": "2023-08-05T13:20:14Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sm6250-common.git",
+      "codename": "sm6250-common",
+      "default_branch": "arrow-13.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm6250-common",
+      "updated_at": "2023-01-15T16:39:42Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sm8250-common.git",
+      "codename": "sm8250-common",
+      "default_branch": "arrow-12.1",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm8250-common",
+      "updated_at": "2023-11-11T17:49:39Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sm8350-common.git",
+      "codename": "sm8350-common",
+      "default_branch": "arrow-12.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_xiaomi_sm8350-common",
+      "updated_at": "2022-03-21T18:21:38Z",
       "vendor": "xiaomi"
     },
     {
@@ -975,8 +1273,8 @@
       "codename": "surya",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_surya",
-      "size_kb": 26247,
       "updated_at": "2021-10-05T23:51:37Z",
       "vendor": "xiaomi"
     },
@@ -986,8 +1284,8 @@
       "codename": "sweet",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_sweet",
-      "size_kb": 24094,
       "updated_at": "2023-05-30T11:22:09Z",
       "vendor": "xiaomi"
     },
@@ -997,19 +1295,19 @@
       "codename": "tissot",
       "default_branch": "arrow-9.x",
       "fork": true,
+      "kind": "device",
       "repo": "android_device_xiaomi_tissot",
-      "size_kb": 85,
       "updated_at": "2019-01-01T07:17:43Z",
       "vendor": "xiaomi"
     },
     {
       "archived": true,
       "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_trinket-common.git",
-      "codename": "trinket",
+      "codename": "trinket-common",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "common",
       "repo": "android_device_xiaomi_trinket-common",
-      "size_kb": 2713,
       "updated_at": "2021-01-24T09:58:30Z",
       "vendor": "xiaomi"
     },
@@ -1019,8 +1317,8 @@
       "codename": "tucana",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_tucana",
-      "size_kb": 1129,
       "updated_at": "2022-09-11T09:21:04Z",
       "vendor": "xiaomi"
     },
@@ -1030,8 +1328,8 @@
       "codename": "umi",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_umi",
-      "size_kb": 120920,
       "updated_at": "2021-04-09T17:15:20Z",
       "vendor": "xiaomi"
     },
@@ -1041,8 +1339,8 @@
       "codename": "vayu",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_vayu",
-      "size_kb": 1589,
       "updated_at": "2023-08-01T07:41:35Z",
       "vendor": "xiaomi"
     },
@@ -1052,8 +1350,8 @@
       "codename": "vayu-prebuilt",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_vayu-prebuilt",
-      "size_kb": 59431,
       "updated_at": "2022-08-23T11:32:21Z",
       "vendor": "xiaomi"
     },
@@ -1063,8 +1361,8 @@
       "codename": "veux",
       "default_branch": "arrow-12.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_veux",
-      "size_kb": 918,
       "updated_at": "2023-01-03T08:51:18Z",
       "vendor": "xiaomi"
     },
@@ -1074,8 +1372,8 @@
       "codename": "veux-kernel",
       "default_branch": "arrow-13.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_veux-kernel",
-      "size_kb": 67442,
       "updated_at": "2022-09-05T13:09:11Z",
       "vendor": "xiaomi"
     },
@@ -1085,8 +1383,8 @@
       "codename": "vince",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_vince",
-      "size_kb": 192085,
       "updated_at": "2018-12-25T12:17:35Z",
       "vendor": "xiaomi"
     },
@@ -1096,19 +1394,30 @@
       "codename": "violet",
       "default_branch": "arrow-13.1",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_violet",
-      "size_kb": 82100,
       "updated_at": "2023-04-16T08:58:01Z",
       "vendor": "xiaomi"
     },
     {
       "archived": false,
-      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_wayne-common.git",
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_wayne.git",
       "codename": "wayne",
       "default_branch": "arrow-12.0",
       "fork": false,
+      "kind": "device",
+      "repo": "android_device_xiaomi_wayne",
+      "updated_at": "2022-01-07T04:03:09Z",
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_wayne-common.git",
+      "codename": "wayne-common",
+      "default_branch": "arrow-12.0",
+      "fork": false,
+      "kind": "common",
       "repo": "android_device_xiaomi_wayne-common",
-      "size_kb": 1317,
       "updated_at": "2022-01-09T02:57:38Z",
       "vendor": "xiaomi"
     },
@@ -1118,8 +1427,8 @@
       "codename": "whyred",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_xiaomi_whyred",
-      "size_kb": 110555,
       "updated_at": "2022-04-17T05:44:37Z",
       "vendor": "xiaomi"
     },
@@ -1129,10 +1438,21 @@
       "codename": "lettuce",
       "default_branch": "arrow-9.x",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_yu_lettuce",
-      "size_kb": 4879,
       "updated_at": "2019-11-03T06:46:12Z",
       "vendor": "yu"
+    },
+    {
+      "archived": false,
+      "clone_url": "https://github.com/ArrowOS-Devices/android_device_zuk_msm8996-common.git",
+      "codename": "msm8996-common",
+      "default_branch": "arrow-10.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "android_device_zuk_msm8996-common",
+      "updated_at": "2020-12-31T12:47:28Z",
+      "vendor": "zuk"
     },
     {
       "archived": false,
@@ -1140,8 +1460,8 @@
       "codename": "z2_plus",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_zuk_z2_plus",
-      "size_kb": 20206,
       "updated_at": "2020-09-15T04:24:39Z",
       "vendor": "zuk"
     },
@@ -1151,16 +1471,17 @@
       "codename": "z2_row",
       "default_branch": "arrow-11.0",
       "fork": false,
+      "kind": "device",
       "repo": "android_device_zuk_z2_row",
-      "size_kb": 20101,
       "updated_at": "2020-09-18T13:07:53Z",
       "vendor": "zuk"
     }
   ],
+  "family": "rom",
   "org": "ArrowOS-Devices",
   "provider": "github",
   "repo_prefix": "android_device_",
-  "schema": "hico.ingest-manifest.v1",
+  "schema": "hico.ingest-manifest.v2",
   "source_id": "arrowos",
   "source_name": "ArrowOS"
 }

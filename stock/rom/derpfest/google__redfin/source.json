@@ -1,0 +1,57 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_redfin.git",
+  "codename": "redfin",
+  "commit": "b372bd33acb24e13b87d0b972fc97b81a85dd546",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c7cbe8336ae31a70b99b9f42f774e5ced91beee8eabac7baee6082daf7d1a36a",
+      "size": 1485
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "01713e3c9b1a475a8191635f1c4419cc65700e21479df0d26f8c3b44fa1c6fe4",
+      "size": 3073
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4958eaf825dae467e884512a5c5c94b556bad3f06400b776d61c48bfa89a043b",
+      "size": 920
+    },
+    {
+      "path": "BoardConfigKogasa.mk",
+      "sha256": "3adb922b89a4482d1b6ac0c9c90d8be7ae5d888a5f923c36c1882c409f7a1b5a",
+      "size": 261
+    },
+    {
+      "path": "device-kogasa.mk",
+      "sha256": "6f7816fdea139bb690c6c7a011164e07c3c02158d25a6a6551beebddc1627e88",
+      "size": 413
+    },
+    {
+      "path": "device-redfin.mk",
+      "sha256": "6e8c25a4297f5f725a005b697a6238563a589c9142560c41a929cdc7a65c951f",
+      "size": 11454
+    },
+    {
+      "path": "thermal-engine-redfin.conf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "thermal_info_config_redfin.json",
+      "sha256": "c075d7f566ea6d3a1a03392729dccc94bf571fe037d43695a78c0319ad7071a8",
+      "size": 7891
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_redfin",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-11-03T18:34:14Z",
+  "vendor": "google"
+}

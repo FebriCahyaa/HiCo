@@ -1,0 +1,87 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_motorola_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "81f42129f6279f4fd4122b48bac60be6da554909",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "00594f0d771ac9022e0e80f614cdd4ddbb6433d14474c1003679ed4e8552973e",
+      "size": 5235
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2c98cb02c548875afa35833a9234a387a9e357481cee24f6ccb819b2524889f4",
+      "size": 8061
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0d1d70fda12bf3b4fa97bea7f55c2d5f96a0140e7ca86bc090d61dd816e81e01",
+      "size": 2451
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b7342defc922b5b928cd34974a39be3013dfa3b65ac033917e51f8085a8dda5f",
+      "size": 407
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6dd0749c2960c4c45806c1840005b05c4833ea83ba279aff4ce1586e56661c6c",
+      "size": 28977
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e11dcbf255659ef15e054e8b501d1cbebc055ec2064adbfe38618dd5dd98bc1a",
+      "size": 103
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "ae9d6c40b7c2d9c29eea227c60838bf6194fe68c03893c403ae0ab8e9801f25c",
+      "size": 1116
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "d46ee1c33530dd6b1497234c98b010d1008f33b267652f52d7cba174e4eca510",
+      "size": 5560
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "37362265a80f6d2063fea3ef2f0d85572524e4d1baf47beb759507ca9be3d372",
+      "size": 2565
+    },
+    {
+      "path": "thermal/android.hardware.thermal@1.1-service.sdm660.rc",
+      "sha256": "8b6245e60f0163c2b2065e8f872e537f7ccb05b1a90ed5b31988d0bdc528aabf",
+      "size": 137
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "eb4e18a81792fa73c976a8c7f959c81bccf71ac619d4ede55e2c94792f74be60",
+      "size": 1839
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "a4b95ed901787d7b6e0fe8364b5da453d7be5eb1f6958e46be8eda39a2371576",
+      "size": 9288
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "96940ff8d81262fb8bc39be40abef226ed31d2b55deecaa17b702bfe76cad482",
+      "size": 3701
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2019-11-30T17:10:43Z",
+  "vendor": "motorola"
+}

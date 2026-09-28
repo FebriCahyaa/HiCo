@@ -1,0 +1,72 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_veux.git",
+  "codename": "veux",
+  "commit": "7172cb5e4439de47e044bee3874c16b66e7d792d",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f20dc996bb20038037ba65ad239a212f24df82d8f96ea99a6c2c8285261be326",
+      "size": 494
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ab236d117fa0d156a9a3ff263bab34d1c4de038622144af902f105ede7db231a",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6d1ac8d143f21369f5eb7c40de9d9e01fbe87d86373386ab360076dea7ec8161",
+      "size": 6788
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1c5d57aee88660192902996997072e175705d7e3a40beadd1eb686da886e17a9",
+      "size": 21657
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a02b8f3c47c06b45ca3ec24e913b42e5b1ed111de446070b9cc1c97e45472784",
+      "size": 4680
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "ed1da71b46a16d99a0c04d800e1b1b8a4f975cfa4ff7aca90062d7458b4a7fc6",
+      "size": 1544
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "72cfff0df8991110ec5c424e53916428ccc9d4cb0785f18382666f0b945ac894",
+      "size": 4011
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "f733f178e154d2b86e03b9b64adf52b5d3ad9f2ef2e3377501018442e7044857",
+      "size": 14292
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "3d9678f3988b3ab36d808b627f5da0ab5ee4433a01a562a05f5047ec0a530ab5",
+      "size": 6147
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d758c28e9d1e0b2329cf80dc2a470c89a5138f028e6f5571cd0dd9b71f513656",
+      "size": 53385
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_veux",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-08-23T15:41:43Z",
+  "vendor": "xiaomi"
+}

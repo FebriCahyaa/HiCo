@@ -1,0 +1,87 @@
+{
+  "branch": "triton",
+  "clone_url": "https://github.com/AwakenOS-Devices/android_device_xiaomi_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "e95686e1f186c3a5cf0a19451cb7b0eb3f58c20f",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5c55d09233a8e3adb298febb24eb3619e2b9686f5347a0579bd566adcd78da3a",
+      "size": 4007
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b235bc8ee7b50f1ac3f6c0f1b9177f38c7fa4ad1ab36e9b6cfe6a94997b06091",
+      "size": 7583
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9713e8f41e2097c106494472f67054393f765a789a869ba0ad5c419acc454333",
+      "size": 3240
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "532d8de81005fb103af39ce5e755bab5ed373ae303067564b385ad51fd7a53fc",
+      "size": 324
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "cc6805ae3cd16909e9322e6ce07fb1e3700eb833769a4dc1737a6e3513bf77cd",
+      "size": 3272
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "c961f3da8842a016adacfaca3c5f9ec66eee83e826573f6d2c4103345c100176",
+      "size": 1454
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "01f1c720e777fa39f79a36e887964124b582a9f3aeb809f7220db9b8af4d3b33",
+      "size": 14214
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "5826767f23abf5d6844dfe6f858ddd02c7d353d7a7a03971f976f0419794453b",
+      "size": 6486
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "92e2e416651e4983c1eac8c13782d9908f2aa0fe88024836aa652a2e9b0dfbd3",
+      "size": 43065
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "8cee51dbb83eb0237a9b63d4db594128daa65b5eefde87cbcffa2f1cefbf065e",
+      "size": 1297
+    },
+    {
+      "path": "system.prop",
+      "sha256": "97ecd45856929dee0e66a2afaef5152033d2ea2c05959586075edc7593eb85ec",
+      "size": 1523
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ce1c3bdfe8f9b386b49173de3faffa04cae6c1dfbfd5731f9edd7aaee184624c",
+      "size": 9947
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "awakenos",
+  "upstream_pushed_at": "2023-05-13T13:40:35Z",
+  "vendor": "xiaomi"
+}

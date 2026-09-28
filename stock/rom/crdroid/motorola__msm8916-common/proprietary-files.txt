@@ -1,0 +1,221 @@
+# Proprietary files for msm8916-common
+
+# ADSP
+bin/adsprpcd
+vendor/lib/libadsprpc.so
+
+# Audio
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libaudcal.so
+vendor/lib/libqct_resampler.so
+
+# Bluetooth - from aljeter
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|9a330c399b3b07040bb63fa62773b1f24e29fdd8
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so|24e30d803c9f312bc1813d89bd70cf2c64a0b9ae
+vendor/lib/libbtnv.so|88cd17744fb1a52536c1f2f77d5712f7847ca82e
+vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so|471dbf178e4c0708bb0ce3617ce767f271dbc49d
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|66b356e832ec1c045b80b1508162430c99927bb3
+vendor/lib/libbt-hidlclient.so|73e677521c6f8c3dc1bfb8f344bac678ec0cc458
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|1a2dc1c2d217f47b9c99a0afa9e4912abd32e381
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|b5465f0bc302b47a67b34751d6f3f472af3eb75b
+
+# Camera
+lib/libmot_sensorlistener.so
+vendor/lib/libbson.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libmmcamera2_imglib_modules.so
+
+# Camera firmware
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw
+
+# Display Color Calibration
+vendor/lib/libmm-disp-apis.so
+vendor/lib/libmm-qdcm.so
+
+# DRM
+bin/qseecomd
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libmmQSM.so
+vendor/lib/librpmb.so
+vendor/lib/libssd.so
+
+# FM Radio - from addision
+lib/vendor.qti.hardware.fm@1.0.so|f2f8c0a7e34ce6a57212607eda7193cfc1e84db6
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so|d0793240a61058da5d871e94f11f0f4afd6a4614
+
+# GPS - from A6020
+vendor/lib/libloc_api_v02.so|b948d5ec82280f111d728a61a1308a0754b93814
+vendor/lib/libloc_ds_api.so|bb7debdbe94af80cc692cb72eca17655103c5f14
+vendor/lib/hw/flp.default.so|6d0fbc257f55373274a970f7081c3504a0a5178f
+vendor/lib/libflp.so|927b1caf06f19271e26f450e730bb21cb90b1a2f
+vendor/lib/libgeofence.so|b91de149da071fddb42772bb10439077d7b0b39a
+vendor/lib/libizat_core.so|bf23714f97dbe611148c592c6677ee0171d36336
+vendor/lib/liblbs_core.so|3d8b57d39bf143cc5cce96cd11af34ec621044cb
+
+# Graphics - from aosp & caf
+vendor/lib/egl/eglsubAndroid.so|a5defdbcb8c0728d28f46cf1cb7ce1f1db1b6c01
+vendor/lib/egl/eglSubDriverAndroid.so|1fd1f3d52fd8dc088cf203089dd941153346ce62
+vendor/lib/egl/libEGL_adreno.so|43edd22345700e4e02af140102a5b8aad372ba9b
+vendor/lib/egl/libESXEGL_adreno.so|d5074fd3ef035e5bcb5cd8473468eb5f83affbe5
+vendor/lib/egl/libESXGLESv1_CM_adreno.so|20475a289ad996ca31236bc8ddeac5433bdc269f
+vendor/lib/egl/libESXGLESv2_adreno.so|36bb5cf5767b92bc813961e8f891b93d74c2421e
+vendor/lib/egl/libGLESv1_CM_adreno.so|cd3c480a00336d8f2b9a71fb15983c78f10ce16b
+vendor/lib/egl/libGLESv2_adreno.so|70ecb1c6d04493760bb133b363679d7ba40817dd
+vendor/lib/egl/libq3dtools_adreno.so|eccdb64e9d75a5e516c02ba85f55e03d89da2813
+vendor/lib/egl/libQTapGLES.so|641e9dcb76d8339a162f7be548cd199685815583
+vendor/lib/egl/libRBEGL_adreno.so|63159a9743045a5fead3a9817430f724f83a0a1a
+vendor/lib/egl/libRBGLESv1_CM_adreno.so|579c1fddeadbbca4bd45bfa4d2d2d06ca1604818
+vendor/lib/egl/libRBGLESv2_adreno.so|5b8dee9657c8e6c5657b47569cf7735f31482c3d
+vendor/lib/libadreno_utils.so|f396fe3d1cf5d8981e248a0f13e555e0722e797f
+vendor/lib/libbccQTI.so|19ab8268addaa5b73631551dbc61154581636eca
+vendor/lib/libc2d30-a3xx.so|2ecb96f0d7f8eb2baf2e786a6a029b989763bf0f
+vendor/lib/libc2d30-a4xx.so|f9afec859c654cb646a27af8f9e16e8a8c412055
+vendor/lib/libC2D2.so|8d71be527eb6edfaed345de5d51551595db352f3
+vendor/lib/libCB.so|940c158f4284061680ae47c8bf5cf62151b83ffc
+vendor/lib/libgsl.so|eb6c8e27ca86e40d3339669655997d10dcd52d1c
+vendor/lib/libllvm-glnext.so|f89e2037b462c8af0f94cdbdeca075452bce0edd
+vendor/lib/libllvm-qcom.so|c8d224dc9b3d159f9d48a4880d84383335609bbb
+vendor/lib/libOpenCL.so|e1f8c3fdb58fa9fbb1465d909e9ab7ba31176bd6
+vendor/lib/librs_adreno_sha1.so|e797997d3ac69dfa87904863672c5b9769c796cc
+vendor/lib/librs_adreno.so|cceaf847d749ac2f1a3af3a1ae6ba653d93e0ed9
+vendor/lib/libRSDriver_adreno.so|2044baf0169177e52aba6d7138f80559ecf2b58d
+vendor/lib/libsc-a3xx.so|8c3ae2f1e0b553fcc2663845def885ed13c04bf1
+vendor/lib/libscale.so|4e7752b6c12e4ff3ab7ae89c53a0b3ad9809f5ec
+
+# Graphics firmware
+etc/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw
+etc/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw
+
+# Copybit
+vendor/lib/hw/copybit.msm8916.so
+
+# Media - from aljeter
+vendor/lib/libmm-color-convertor.so|a2f4491469425c3698e6a4a894ec46218a198f2b
+vendor/lib/libOmxAacDec.so|d4d36b943fd18b565af4ed6d81e422b60ac6b5c2
+vendor/lib/libOmxEvrcDec.so|b003a2147230e3040a2b64ba9fa94367961fc7e2
+vendor/lib/libOmxQcelp13Dec.so|8e890cbe50cb2f404648c967d00d7d0d8770bd6d
+
+
+# Qualcomm framework
+etc/permissions/qti_permissions.xml
+bin/irsc_util
+vendor/lib/libdiag.so
+vendor/lib/libDiagService.so
+vendor/lib/libdsi_netctrl.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libFileMux.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqdi.so
+vendor/lib/libqdp.so
+vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+vendor/lib/libsmemlog.so
+
+# Radio
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+bin/netmgrd
+bin/qmuxd
+bin/radish
+bin/rmt_storage
+bin/qmi_motext_hook
+etc/data/dsi_config.xml
+etc/data/netmgr_config.xml
+etc/data/qmi_config.xml
+etc/permissions/qcnvitems.xml
+etc/permissions/qcrilhook.xml
+-framework/qcnvitems.jar
+-framework/qcrilhook.jar
+lib/libadropbox.so
+lib/libmdmcutback.so
+lib/libmotext_inf.so
+lib/libqmimotext.so
+vendor/qcril.db
+vendor/lib/libcneapiclient.so|4e1db44c810c73ef3b3fd1a3f5ab3d1112cc7fcc
+vendor/lib/libconfigdb.so
+vendor/lib/liblqe.so
+vendor/lib/libmdmdetect.so
+vendor/lib/libnetmgr.so
+vendor/lib/libril-qc-ltedirectdisc.so
+vendor/lib/libril-qc-qmi-1.so
+vendor/lib/libril-qc-radioconfig.so
+vendor/lib/libril-qcril-hook-oem.so
+vendor/lib/librilqmiservices.so
+vendor/lib/libsettings.so|50532a1a88bd3d785eb5ecc500788763c582e442
+vendor/lib/libsystem_health_mon.so
+vendor/lib/libxml.so
+vendor/lib/libsubsystem_control.so
+vendor/lib/libSubSystemShutdown.so
+vendor/lib/libvoice-svc.so
+
+# Peripheral Manager
+vendor/bin/pm-service
+vendor/lib/libperipheral_client.so
+
+# Perf - from nowhere
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|3a266ba24abf70b58ee8438b2f205ce283b9e95f
+vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b50182aadab2e31409df61c523d0fb914a394e43
+vendor/etc/perf/perfboostsconfig.xml|3d4aa8615d9b007727604c584a8ebe8812ae6c3e
+vendor/lib/libfeedbackhandler.so|370453e642770c038b69da6da92b3490fe7d2f93
+vendor/lib/libperfgluelayer.so|0e24b1e39dd3203514ab445530b6b29b0dd9b969
+vendor/lib/libqti-perfd.so|b806efa38c19680501ab329e3a3020999d5b1e8a
+vendor/lib/libqti-util.so|26c0e29785df406d2a4a1efbe6b1760e9d780b26
+vendor/lib/libqti-utils.so|099c8d4824e39c0985c45f0212849f679768cddb
+vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so|7ab33bafde073de04365e0134736b80b0f19bf20
+vendor/lib/libqti-perfd-client.so|bd14a4befc446699bd02c93c7f7492d4c88938bc
+# Sensorhub Firmware
+etc/firmware/sensorhubfw.bin|90ec2a32050faf764529c22639e7a2a0196e28fc
+etc/firmware/sensorhubver.txt|7719a1c782a1ba91c031a682a0a2f8658209adbf
+
+# Sensors
+lib/hw/sensorhub.msm8916.so
+
+# STLport
+vendor/lib/libstlport.so
+
+# Time services
+-app/TimeService/TimeService.apk
+bin/time_daemon
+vendor/lib/libtime_genoff.so
+vendor/lib/libTimeService.so
+
+# Venus (media) firmware
+etc/firmware/venus.b00
+etc/firmware/venus.b01
+etc/firmware/venus.b02
+etc/firmware/venus.b03
+etc/firmware/venus.b04
+etc/firmware/venus.mbn
+etc/firmware/venus.mdt
+
+#AptX - from aljeter
+vendor/lib/libaptXHD_encoder.so|b65cd3b72ae3e6a57901fd5b5383bfa1a88c5737
+vendor/lib/libaptX_encoder.so|b03772672144d4b750a5672c2922aded93bb0512
+vendor/lib/libldacBT_enc.so|6b9ad026c3e4dcd5cba654bd7b3848a0446f4e8c
+
+# DRM
+vendor/lib/liboemcrypto.so
+vendor/bin/hw/android.hardware.drm@1.0-service.widevine
+vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
+vendor/lib/libwvhidl.so

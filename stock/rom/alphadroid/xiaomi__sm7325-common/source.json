@@ -1,0 +1,67 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "bdf8bef2d826a2d52eaf072371db542fcaa9e5e5",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "de4293beafc7ed0194512a4dd7f05d868bddee6270b16a5cb212176c04c5a4e6",
+      "size": 3991
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "539053e3d64f0933026124adbbbcbe6cd6cbf8bb29ed57bc5009fd93a183d571",
+      "size": 6810
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2c92398f0454add5f91d40102b347b501e8b4df2a6ab2646e33aa65333a37cd1",
+      "size": 2645
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b6a81a231d359f66f0f6bd2085c7f3c434ecd39be6066cecf70bf7e48d3271dc",
+      "size": 195
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "728c8e8164316aa527033a4c7cfc30f80eec84641547bd8b41f795c7e8152f7a",
+      "size": 31960
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4ed585fe002a954cb662380f7f3b4ed9c6095dc640dba4fd9a9c5cbac99a607f",
+      "size": 1188
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e52411958018113f415d0275c4fe2fede014244023cbef2699f373511b901a3b",
+      "size": 10502
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-06-11T07:47:29Z",
+  "vendor": "xiaomi"
+}

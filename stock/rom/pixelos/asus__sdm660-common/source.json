@@ -1,0 +1,57 @@
+{
+  "branch": "sixteen-qpr2",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_asus_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "3a2e07796a9fc42544b15caaf72ed872412372e7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1a7d4c3f1ae0bcfd6e16fc96d42545b31f5d92bd58bf26c2701c4b30cb41914f",
+      "size": 535
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bf983c41beef45da313650bb721a78643e94c368b7362d26556b5fc15641275a",
+      "size": 5324
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "72f6609e282b5acea1c80e8676daa0054fbace86176fa082791c89017ece80d3",
+      "size": 1867
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "74e5b42190e5e084566af34faf3c14119c699c71733e1d50c705f7162c69aef3",
+      "size": 48790
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "646e5914f672e13786caf91f3cb894189b527b23ccb1133783189813eda55bbb",
+      "size": 67
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "86e32baef67b464b50280e83933b2a49e49ee2878add00891fb2de1cc050a63c",
+      "size": 1841
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4aacd924c43f77d712da876c598a079ff1c2faff651da1e28ae6c79dbb1a0ed5",
+      "size": 6909
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-08-05T18:17:21Z",
+  "vendor": "asus"
+}

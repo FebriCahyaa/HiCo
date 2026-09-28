@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_jf-common.git",
+  "codename": "jf-common",
+  "commit": "5c8c1b8e9ec738faaa9d164e7dc80a5b65ae7831",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e67f70f7ac033cb571eda29ebc31f983c826b03acc816ecae66ae2d0683a5951",
+      "size": 3105
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fadce60c7c09a4433adb1ad2f63ae811153b96e313d1af9eae57f184740d4b00",
+      "size": 6414
+    },
+    {
+      "path": "configs/thermal-engine-8064ab.conf",
+      "sha256": "852a61e9ff08cf743a051f709994f0314c9ee19ca29b50fdde94e14bc24e302f",
+      "size": 1768
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b28b325d2b9cc213b63e114cd429757381c17a6265ab5c679961dfeb909348da",
+      "size": 1879
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5ba1038a9f95f43ec9d63c19f9575ec45aa93d3a8b18409432215b3c602162d3",
+      "size": 211
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f68b63ca1bed4f6fe0ca934f14abc4969eceaa7f111cb6e022802f0021ffc23a",
+      "size": 2854
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5888bdca6f85af1b2b180a39aa1dc0b27c91696ba055a2d228b319a2f7499ccb",
+      "size": 832
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_jf-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-27T16:48:49Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-10.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_zuk_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "ae0e7c64b920f576c3e70c4dfc793413dfe951b0",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "de2616b3ef05cbcfd7d69fa5df363e07a93eb545f73be673f44280f29406e1a4",
+      "size": 4794
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "eb1a0011bc2aafcd1f101d396ace4ac37b837a9f9fb0b795c72746315bae3be1",
+      "size": 6291
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "073359b1c3a02855411669b9035a9416d20fc75e7494e7271f39b88c75fbac33",
+      "size": 1050
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "660d17258577a51066d3bdd46a8deb498398eb757ab4cfa028115f0d94264a5d",
+      "size": 4212
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9d4c85dfb211d48c1b5d007148ede8aed13656614dc5d43c3febdbbf209cb019",
+      "size": 39995
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4eacb682521fcbb5fd1bfe91f51bff3555da26440a5ce1fa4a25f763382795f1",
+      "size": 202
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_zuk_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-12-31T12:47:28Z",
+  "vendor": "zuk"
+}

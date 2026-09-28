@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_zero-common.git",
+  "codename": "zero-common",
+  "commit": "9680fd225ccb9a58a56addbef0038e678234d62c",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5e50e367138c529bef9dbb916d103fd224d840ca87be8edc6df2c0d60fca71bf",
+      "size": 30
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0dbe28a9e9fe04785d964420b2d9a23de339f0aeebd3abb94b7c773e6cf4e240",
+      "size": 886
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c1acd20cff2b3d25b63aeaff174732f54c762bd041b98133d0a74c9ec4e98cf4",
+      "size": 7542
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a33cd120494d8c84138498178f7d1d2d5e7c5c761a1dcf6fbb1acfb312cafe7e",
+      "size": 1628
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5c7a2b07dfb24ff1aac0278ea0b9ae93c7a35968cbccff6bbce3d8f4cdb7d039",
+      "size": 783
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f61fb921afa0e59ed04f0d985fd4da5571cf5bb33d06315edeabef669026dcc5",
+      "size": 1228
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_zero-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:01Z",
+  "vendor": "samsung"
+}

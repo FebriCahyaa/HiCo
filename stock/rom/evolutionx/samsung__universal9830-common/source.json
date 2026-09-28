@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_samsung_universal9830-common.git",
+  "codename": "universal9830-common",
+  "commit": "becb3ab7dc7b9f2b2481e695c81f158cf70fe1ab",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "df09262a7d70b88ffd7d5d5dd2e976ac59cfc6e5acfad4cbae8e4da50fbbfeab",
+      "size": 230
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "540a209087587751e30a0065167daa41cbfe99df9161c62feed569dd7e49b75d",
+      "size": 7740
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "3927ae8074823e9a5881665c5b619228906b82de039f2f8f35d254b58959378f",
+      "size": 3496
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "562dfaf5b51554c3e6aed7f5311b8ca04e7332fdf7938a37c8240ef17c72ddb7",
+      "size": 18433
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "be1c0ea961de1b43dba9e600ccd29b44ab44c963a2f29658e1a173c38709b96e",
+      "size": 2991
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f6b5e0331bbe59043e2c105ca1f710f0ecaef3ef3b8fcf5bfc8f50d7b34608ef",
+      "size": 1223
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c841d449e8d952f3c7d8f2a19a8c7464f9876406433e4fdfa8b5e75b3a5bab9c",
+      "size": 9159
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "94e4b3983feea684ef88b9175213cb96c427a991835f0c59458000e101786cbf",
+      "size": 95
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09bba9ee268ff2710886c8897a0f2a53862e2387a3a418fd78bb5eaa5d1dd0c0",
+      "size": 717
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a8d1eec06c7b480bf0c4bd611035a98bcdb99e7cec5d67d1159af7afebc7d284",
+      "size": 2863
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_universal9830-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:06:13Z",
+  "vendor": "samsung"
+}

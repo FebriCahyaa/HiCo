@@ -1,0 +1,97 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'device/oneplus/msm8998-common',
+    'hardware/qcom-caf/msm8998-4-14',
+    'hardware/qcom-caf/wlan',
+    'hardware/oneplus',
+    'vendor/qcom/opensource/commonsys-intf/display',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/display',
+]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'vendor.qti.imsrtpservice@3.0',
+    ): lib_fixup_vendor_suffix,
+    (
+    ): lib_fixup_remove,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    'product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml': blob_fixup()
+        .binary_regex_replace(b'/system/framework/', b'/system/product/framework/'),
+    (
+        'system_ext/lib64/lib-imsvideocodec.so',
+        'system_ext/lib64/lib-imscamera.so',
+    ): blob_fixup()
+        .add_needed('libgui_shim.so')
+        .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
+    'vendor/etc/permissions/com.fingerprints.extension.xml': blob_fixup()
+        .binary_regex_replace(b'/system/framework/', b'/vendor/framework/'),
+    (
+        'vendor/lib/libSonyIMX371RmscLibrary.so',
+        'vendor/lib/libmms_gyro_vstab.so',
+        'vendor/lib/libmms_gyro_vstab_auth.so',
+    ): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib64/libwvhidl.so': blob_fixup()
+        .add_needed('libcrypto_shim.so'),
+    (
+        'vendor/lib/libOGLManager.so',
+        'vendor/lib64/libOGLManager.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    (
+        'vendor/lib/libmmcamera_faceproc.so',
+        'vendor/lib64/libmmcamera_faceproc.so',
+    ): blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    (
+        'vendor/lib/libEIS.so',
+        'vendor/lib64/libEIS.so',
+    ): blob_fixup()
+        .add_needed('libsensor1.so'),
+}  # fmt: skip
+
+module = ExtractUtilsModule(
+    'msm8998-common',
+    'oneplus',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()

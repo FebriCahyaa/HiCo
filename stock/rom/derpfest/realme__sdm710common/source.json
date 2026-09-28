@@ -1,0 +1,57 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_realme_sdm710common.git",
+  "codename": "sdm710common",
+  "commit": "40ccab89270b65dfbcd9ea75017573a28e58b2a3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4ffe8f0d0087d75adf36e81c52c036e6f45472737467d6ca28a9097dc35992f0",
+      "size": 4301
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "277ad87866acd7a7834df4ac6618229bebe966446f38cfaa0d0e97ae483417b1",
+      "size": 6494
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f3105a1926ba2804fada9d896de160f4597a5652283edceb8796bbf65c6d8c31",
+      "size": 1796
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7fbafea4cf35b08e5b272541453922ee07b596fe27aa96c53aa6fe435c9f360d",
+      "size": 79647
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "66cc32b035aa3380af8cb5dc3fe9394877a73ad7bf8e49dfa2dcd39b94071d10",
+      "size": 391
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "18cf93f51385c2805e110a0451fb40c10a564b549ac29cb30e490554f0ae32e8",
+      "size": 92
+    },
+    {
+      "path": "system.prop",
+      "sha256": "16ef4cc26bef6e2cea36d8df622c8be8d08123dd20c51e0929f0ea60f5fff289",
+      "size": 4646
+    }
+  ],
+  "kind": "common",
+  "repo": "device_realme_sdm710common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2023-09-24T01:52:16Z",
+  "vendor": "realme"
+}

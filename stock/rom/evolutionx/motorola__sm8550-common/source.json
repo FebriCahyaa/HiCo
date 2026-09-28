@@ -1,0 +1,62 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "dea65230309f924e91993f6fe88e009c1c23f378",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "95886d84732e706305bd5c893e7e3be89699e64fe3b869d9b6744c3cd881ad8a",
+      "size": 949
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f4c540585842f78ffb1979b495696a0bf72959fe60d34de9023129734d6b7485",
+      "size": 1315
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b28df697c6176e6790c2dd4cc1f1c21bbca4f2c82d5b1be5072c79be9dc16742",
+      "size": 9152
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "81417932af40ea19be3cc9f2c1ee27d7090b417e6c1951df3765bb8e5c989f38",
+      "size": 3717
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6f7ee32ed5e55a87bb4d2968e125d1bf274ba0811d377e9fd06d78205a9ccbb5",
+      "size": 536
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5ad507ae1a9cd7fe8f2f424965ca462ae9d379ee380d9f8d478d43faf61cdb83",
+      "size": 54835
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "0c882c16ab1676c715e66b0a426c75d4b748e3ea55bcf79f8b5830eb7a047ad1",
+      "size": 270
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4c02d698a90fec82b577b4251894dc08c07ed84a90c674717fef85ed9685d2fc",
+      "size": 1801
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb41861228c70e8acea0ac9d365c30ec1952b5ed81fa0186fee80b0014c1fc21",
+      "size": 12241
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-25T09:06:49Z",
+  "vendor": "motorola"
+}

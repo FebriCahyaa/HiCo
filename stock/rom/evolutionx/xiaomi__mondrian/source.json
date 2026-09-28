@@ -1,0 +1,77 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_mondrian.git",
+  "codename": "mondrian",
+  "commit": "fae0ca54a0058a36e474796d606729f557861730",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "cb6e3d733bd2f0426db9203e2898fcc056da13cb282bbc9126116d63cd3322fe",
+      "size": 219
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2badd538b1074efc45bf15deaeaded0cda31312f62c59925f27aa42a4e7ef6b2",
+      "size": 6862
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "1bcb647fc38ff22984c51c99f607e25421a676e97d36a3af504d8f0a71795904",
+      "size": 265
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aa1bb2b402356e750bf57d17d05c27722c18a68ced53e00bda3c32cd1360eb2c",
+      "size": 8993
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0e9b71f33c3e893871c31e3e16e6da5c0b1a0a5fa1c8b8411dbe56011b0e9884",
+      "size": 22591
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "031e67d8cad885ee53b65fd17ffdb96c11f1dc8ad7b59d2ca127ef65f5e17b60",
+      "size": 7277
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "85cc6630f5b5b04ee21eae3658c2b5ca4383fdfb3fb01ca28802f6468d05d4aa",
+      "size": 1549
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "e66373a2f5c97a746175b255b3901a6b887258fe548cab9479152ae6ff089b87",
+      "size": 6354
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "33e4fbc441239efcc7da61a57715dd93bbede8a4244e4bc43a31cfb4fd3c8d4c",
+      "size": 152570
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "5c95e0b7b4d8c1c270a6735efbf90904ec24e062dfba0aaf9d72c7364c044e83",
+      "size": 61
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_mondrian",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:16Z",
+  "vendor": "xiaomi"
+}

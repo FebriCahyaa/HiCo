@@ -1,0 +1,99 @@
+# Art
+dalvik.vm.dex2oat-swap=false
+
+# Audio
+audio.offload.buffer.size.kb=32
+audio.offload.gapless.enabled=false
+av.offload.enable=true
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+media.aac_51_output_enabled=true
+mm.enable.smoothstreaming=true
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+ro.vendor.audio.sdk.fluencetype=fluence
+tunnel.audio.encode=true
+vendor.audio.av.streaming.offload.enable=true
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.offload.multiple.enabled=true
+vendor.voice.path.for.pcm.voip=true
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
+
+# Camera
+camera2.portability.force_api=1
+
+# Dalvik heap
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=8m
+
+# Display
+debug.sf.hw=1
+debug.egl.hw=1
+ro.hdcp2.rx=tz
+ro.qualcomm.cabl=1
+ro.secwvk=144
+ro.sf.lcd_density=480
+debug.hwui.use_buffer_age=false
+debug.sf.disable_backpressure=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.sf.recomputecrop=0
+
+# GL
+ro.opengles.version=196608 
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+ro.qc.sdk.izat.premium_enabled=0
+ro.qc.sdk.izat.service_mask=0x0
+
+# perf api
+ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
+
+# Mdcomp
+debug.mdpcomp.logs=0
+persist.hwc.mdpcomp.enable=true
+
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# NFC
+ro.nfc.port=I2C
+
+# Radio
+persist.data.netmgrd.qos.enable=true
+persist.data.qmi.adb_logmask=0
+persist.radio.add_power_save=1
+rild.libpath=/system/vendor/lib/libsec-ril.so
+ro.ril.telephony.qan_resp_strings=6
+ro.telephony.mms_data_profile=5
+ro.telephony.call_ring.multiple=0
+
+# RIL
+persist.rild.nitz_plmn=""
+persist.rild.nitz_long_ons_0=""
+persist.rild.nitz_long_ons_1=""
+persist.rild.nitz_long_ons_2=""
+persist.rild.nitz_long_ons_3=""
+persist.rild.nitz_short_ons_0=""
+persist.rild.nitz_short_ons_1=""
+persist.rild.nitz_short_ons_2=""
+persist.rild.nitz_short_ons_3=""
+
+# Sensors
+debug.sensors=1
+
+# WFD
+wlan.wfd.hdcp=disable
+persist.debug.wfd.enable=1 
+persist.sys.wfd.virtual=0
+
+# Wifi
+wifi.interface=wlan0

@@ -1,0 +1,77 @@
+{
+  "branch": "ruby",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "50485205e88b30b2acdf23f3d53573ff2e249259",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0ab64f5f94af83eab5666b993ee47118411801e3a9309d1fccb16072c96b9525",
+      "size": 224
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a3b1dc32cbba21980703527712ce124b1e9884d381b6a8c196b1627a7f59cf93",
+      "size": 4483
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1ab467fe0c41b211eb5d879e9408bcf771bc6a52201caea170b1ac5b6a8ac610",
+      "size": 5238
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7c4a7ab2258de058cb19e37f3da2c448855eacac3a23c07b9158cd492ae05590",
+      "size": 1879
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "95aa5afcf5b596a7f58325e093125642e126ab3fa8c956d87a2c8431725de3e8",
+      "size": 1440
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "301da73955da3d33dc4d13a3c29d33d22eae4dbc311b92e67cbbdf0a5c5dcc41",
+      "size": 3621
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "bf7f90c40945484697a9fff8e87b6da6302226698824a82f9639715dcc038b04",
+      "size": 16084
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "dc05333c54111aed230484ecba8a81651f47fa8d4b308f8ad9aa62dc89eb7da5",
+      "size": 6247
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "46bd2e1e96f9b782c2186220b79c08838b1ac25ea88b7510ab8ab8594f2fcc71",
+      "size": 27063
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7a1a6f8e3cde664d0c2e4a66c17527178e9523e124909cddbb3c310601b58105",
+      "size": 2996
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "434b7e0314e554f05e35a573b220166d5d95033586970fe09c27b83d9d770b3c",
+      "size": 4786
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T22:40:31Z",
+  "vendor": "xiaomi"
+}

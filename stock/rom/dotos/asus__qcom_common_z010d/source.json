@@ -1,0 +1,92 @@
+{
+  "branch": "dot-n",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_asus_qcom_common_Z010D.git",
+  "codename": "qcom_common_z010d",
+  "commit": "203c6e58e977f44d78cab4c01a3545602187009a",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "9e93e4bdb53e816d3fb445f9bb996920e0fd66609db2634b3d837c81bc0eea7d",
+      "size": 1758
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cf2aa7bbd1bad420aae7efebe8eabaad9657e75aaf7797ee2cc12ae34c1aa36c",
+      "size": 5703
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4278e74146b9c4972c159c5078358bb9b473e7d4ea94603b2170d94d47c2e6f7",
+      "size": 2188
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bfd95ecf3cacf6c7dfd2948a2131c91944007b7faaaa397d2db7abe4fff07a38",
+      "size": 17645
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "7fb590bcf3e2aadbe2f054a29e10927941c9c1e390d1dec8b2b34118b5786323",
+      "size": 173
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6034101b5e37c78aaef35290145c32e6dc33cd995517156bbddb7412ec62de03",
+      "size": 2465
+    },
+    {
+      "path": "thermal/thermal-engine-8916-ze550kl.conf",
+      "sha256": "2f11720c6c7412f17d8f33185e08abc98fd742f7de6255c421662b79a7ca6312",
+      "size": 1622
+    },
+    {
+      "path": "thermal/thermal-engine-8916.conf",
+      "sha256": "fe0d60664c9ff3bb4c9486b52462f4f36b18356dab7b6acb4a19e2b44bf43a44",
+      "size": 2123
+    },
+    {
+      "path": "thermal/thermal-engine-8929-ze600kl.conf",
+      "sha256": "db74cf7f31709b554f1f37b369784283371ed2381b79f5121c4bf18c9b379592",
+      "size": 3617
+    },
+    {
+      "path": "thermal/thermal-engine-8939-zd550kl.conf",
+      "sha256": "ce4c6e337c591802b1f8abfc1bf5c24388ac41ae55dbfc26113cf3101f828b38",
+      "size": 3914
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze550kl.conf",
+      "sha256": "6e80b56c9e5fee08d8c878117870882a368ea4bb1e1abb3715f745b2c90c6e6f",
+      "size": 4004
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze551kl.conf",
+      "sha256": "14566e47e8d5a6e2ed29ebb6cc47886036a1db6099e6999cbd573a74dfbde715",
+      "size": 3914
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze600kl.conf",
+      "sha256": "e282e59bf9dc4691acee5f7bd88f8e2ed47de2c0e34d4beb627d0172003990a0",
+      "size": 3933
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze601kl.conf",
+      "sha256": "7ae06edd27ae346912767fb2fc5ebf39e538b39c5039256d5a4ed31bbc03e993",
+      "size": 3932
+    },
+    {
+      "path": "thermal/thermal-engine-8939.conf",
+      "sha256": "fa352b1e0231122bb39365d4d5c10f171224c93881c502700d35142500492e92",
+      "size": 2336
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_qcom_common_Z010D",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-01-05T17:10:24Z",
+  "vendor": "asus"
+}

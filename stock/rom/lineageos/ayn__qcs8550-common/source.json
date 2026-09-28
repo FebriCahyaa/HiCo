@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_ayn_qcs8550-common.git",
+  "codename": "qcs8550-common",
+  "commit": "948a9411657078bca529fe70a121211277c57394",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3ca1d8fa14d9aa7d722e448dc08f9172354899347c84fdc49ad3e06c9f5180fe",
+      "size": 755
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "39f26e84bc0600515c7d015d842b31a5e64e3ad4bba47d2c304200546aaaa7da",
+      "size": 8313
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "04e282b74e7d7153f8a6ce90cfe1d80301cfac5b2524d27d5cc4ad0b1f7153dd",
+      "size": 3214
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "04def017c74bef4caa84a0594d7549ce080525953e760ab0075a42955deb7883",
+      "size": 530
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ef406e2e359658dc2fe65545821572b8db575f1cd1bdeb0f21c44c218e12b709",
+      "size": 37258
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_ayn_qcs8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T00:57:52Z",
+  "vendor": "ayn"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_xpeng.git",
+  "codename": "xpeng",
+  "commit": "5e51c3f4183509648fb43a84821d9a5df35461be",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "20b8f1b9acea43c028d051aeb9fa6cf61516a5af28412880f5dd23534a7087d7",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7684a55b1f0c38fccc84f75eff13e81e463b5ba4cd400466bb627212cb2ec3ca",
+      "size": 1397
+    },
+    {
+      "path": "configs/thermal-engine-xpeng-game-perf.conf",
+      "sha256": "6fbb76291bccf97b4efc16d5fad51edb7f7dbec65228706f68e0e06933c6db5e",
+      "size": 4502
+    },
+    {
+      "path": "device.mk",
+      "sha256": "195c9158f852a413e0071c88cd35796a6617a8d7e68f5fd43b0c15596d86ec76",
+      "size": 3788
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ce9d076872d2e50b0d34b55810c410d66dfe26296ac63489ea2f9d87909e8881",
+      "size": 2234
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "87c7848be9d809e530c8445bcf08ee1161de07d3541325a108d706f17db1ddea",
+      "size": 15871
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0db0d30b42d1e2224cd3f31084e4eb6dd7235aa5be129b6fb87ab323b863bc4b",
+      "size": 193
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_xpeng",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:00Z",
+  "vendor": "motorola"
+}

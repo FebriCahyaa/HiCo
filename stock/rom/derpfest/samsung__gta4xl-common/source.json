@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-20.0",
+  "clone_url": "https://github.com/DerpFest-Devices/device_samsung_gta4xl-common.git",
+  "codename": "gta4xl-common",
+  "commit": "e57f9cf1ff8812d5c344921b2266c570aabd676a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0f56c71f80f8bd989569b9f5a316ff194f5837e61df4dab93d04bd5b54d2923d",
+      "size": 1398
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "af84cca7d13582cdcdb3b3477238ac69a1103fc9ddfe640c73cd9b75c4e44d8e",
+      "size": 6188
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "02d463279358cd70cdbd7fa90d634f6b177c70ff86db8acb97adc5acbf6d63b7",
+      "size": 2064
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1069670672a27801853d5eb452df633be38d9709bcbb84fbdcbb0e869e73a77f",
+      "size": 1536
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e222acb445a1f610980dd337a02fa4038abb78cbb7b58679fe2d6b6f8ed11117",
+      "size": 5225
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ae9a5e378cd0447d633eb1900a95512c7932c30633ff98651db9ad2d227897c7",
+      "size": 1374
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_gta4xl-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-01-23T09:07:07Z",
+  "vendor": "samsung"
+}

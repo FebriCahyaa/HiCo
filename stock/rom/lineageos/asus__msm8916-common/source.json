@@ -1,0 +1,102 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_msm8916-common.git",
+  "codename": "msm8916-common",
+  "commit": "f047cab87db68efd66d1a420137ce19061dcfeca",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "316ccadc563a1f5fcfc20674abb71dcd3d4cfcf67a6a7edd7dda2253a96e741e",
+      "size": 29
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ccb0a6497794a9e2857e0c051ad8c4dce4e72794f4f5842ae108058eaff8c7bb",
+      "size": 4595
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8be5237d2d2d0cfa64c57c3b0998534774a035a9beacdb0279a9db885275a41a",
+      "size": 5624
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "44b1c1f3a50dd61cad70dcda1829f308a63efe164ff99a9fe9c3498ba8d04b7b",
+      "size": 2266
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "87ccf924e8fe7424193445296e3a63f5c1eb65c2bfff1702079cc918ddf20cfc",
+      "size": 230
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "610e549667e4c22cdd29b061e92da761ac5a5068f23612a46be3c83c7be0d42b",
+      "size": 41584
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4528d2fe978f6cc876a4815d9ae4d0f5fbe075a29607f270ed17842f404a3e7d",
+      "size": 145
+    },
+    {
+      "path": "system.prop",
+      "sha256": "61e51ec296f6bf558b179549503450b33297945a97b8281d722518fe1421f34c",
+      "size": 2867
+    },
+    {
+      "path": "thermal/thermal-engine-8916-ze550kl.conf",
+      "sha256": "2f11720c6c7412f17d8f33185e08abc98fd742f7de6255c421662b79a7ca6312",
+      "size": 1622
+    },
+    {
+      "path": "thermal/thermal-engine-8916.conf",
+      "sha256": "fe0d60664c9ff3bb4c9486b52462f4f36b18356dab7b6acb4a19e2b44bf43a44",
+      "size": 2123
+    },
+    {
+      "path": "thermal/thermal-engine-8929-ze600kl.conf",
+      "sha256": "db74cf7f31709b554f1f37b369784283371ed2381b79f5121c4bf18c9b379592",
+      "size": 3617
+    },
+    {
+      "path": "thermal/thermal-engine-8939-zd550kl.conf",
+      "sha256": "ce4c6e337c591802b1f8abfc1bf5c24388ac41ae55dbfc26113cf3101f828b38",
+      "size": 3914
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze550kl.conf",
+      "sha256": "6e80b56c9e5fee08d8c878117870882a368ea4bb1e1abb3715f745b2c90c6e6f",
+      "size": 4004
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze551kl.conf",
+      "sha256": "14566e47e8d5a6e2ed29ebb6cc47886036a1db6099e6999cbd573a74dfbde715",
+      "size": 3914
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze600kl.conf",
+      "sha256": "e282e59bf9dc4691acee5f7bd88f8e2ed47de2c0e34d4beb627d0172003990a0",
+      "size": 3933
+    },
+    {
+      "path": "thermal/thermal-engine-8939-ze601kl.conf",
+      "sha256": "7ae06edd27ae346912767fb2fc5ebf39e538b39c5039256d5a4ed31bbc03e993",
+      "size": 3932
+    },
+    {
+      "path": "thermal/thermal-engine-8939.conf",
+      "sha256": "1e59166afbe0053992cfba21abea3885209d0cb8946de815f35c76861d120df7",
+      "size": 3443
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_msm8916-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2021-12-09T16:22:52Z",
+  "vendor": "asus"
+}

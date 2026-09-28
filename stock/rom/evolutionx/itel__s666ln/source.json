@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_itel_S666LN.git",
+  "codename": "s666ln",
+  "commit": "20e47565ffef88bed3cf86b56fef50fafb100427",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ee9dc959e5b4e53106bdaa9696ae2a23e686f89c483d84d1e84f70957d2a98b6",
+      "size": 1237
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "248eded01a2decd13524d0e3a4ad365d6a545d8a826ab959eb6b49a748534ace",
+      "size": 531
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d31c06c95e8e49e99a01dda4eb68d4b83d2595fd7ce66909edbd1c22a5ab28b4",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "38960819cb943854d233afd88c29a68a6e4d223fe61d11032a30f432b006115d",
+      "size": 8576
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "437d3c34ece56d6a54c27f71381ab0323e446e8c26caa03ecb776c1ac6c29d0e",
+      "size": 1176
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4b1c9ecf24cebaf10a06abd9515abf64076f10a410c01038ad5c383d9bb1c848",
+      "size": 20956
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "58ab509025b1bd61a2a7ba249794501ef832daf488ee56e2d75439ccc2c75ea7",
+      "size": 7274
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c58d4a1a4a4e1d05e8bfda2c5c85e0ff9840e36e110e54b8913e0263363575d6",
+      "size": 109888
+    },
+    {
+      "path": "sepolicy/vendor/thermal_core.te",
+      "sha256": "4345649f84979c5d7a7bc2e34490a260f90ded102b48f2765539080b30580e9f",
+      "size": 45
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "bc1a7ec0e13ce95ef8e37fc122b6d674d390fa67a96289e8a475ebd5f3c20671",
+      "size": 551
+    }
+  ],
+  "kind": "device",
+  "repo": "device_itel_S666LN",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:04Z",
+  "vendor": "itel"
+}

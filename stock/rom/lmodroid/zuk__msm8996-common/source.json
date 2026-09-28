@@ -1,0 +1,62 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_zuk_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "cc2aeb2a7543f588b72d8c709790ef340425afe8",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "80c64e122f45c91cca35e87b9ffe07988ef3f26cf7760a98750e96d8d7510773",
+      "size": 4814
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6da5df73d5c91020512080977f2b812994153397b00416e3c2a7a76a409521ca",
+      "size": 5174
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "d7ce6c761c0063439865ae571b3e2fdae075c178a3bf1ca553324fed1e76daf7",
+      "size": 1340
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "39875e7268b7ff0ecd245a8401ffb1e1831a4064a0d2b1e5a9e7a28c4690056d",
+      "size": 5753
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d8e06beaee94fa217a2f3244330978c9b8fda7ca68205697ca2aa2907a3c147a",
+      "size": 37569
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e12d3d6fc2b6dfddfaca495b7d7293544089a718242879e75a08b2ccfe259b4c",
+      "size": 282
+    },
+    {
+      "path": "thermal/Android.mk",
+      "sha256": "ae769c51db331707b5b91dcdaac8bff5b5e83047cb0ef99a1801b51cb6acbd52",
+      "size": 971
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "30d2c8c7e8e3ee9037dcdf45cbccd5818000ea82c7645630c48474e7581418fd",
+      "size": 8561
+    }
+  ],
+  "kind": "common",
+  "repo": "device_zuk_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-12-01T04:05:20Z",
+  "vendor": "zuk"
+}
