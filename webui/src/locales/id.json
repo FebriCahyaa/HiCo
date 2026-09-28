@@ -257,7 +257,7 @@
     "trip_zones": "Zona yang mencapai/melewati trip",
     "no_cooling": "Tidak ada cooling device yang sedang aktif.",
     "no_trip_zones": "Tidak ada zona termal yang sedang mencapai atau melewati ambang trip.",
-    "error": "Tidak bisa membaca monitor termal: {error}",
+    "error": "{error}",
     "sources": {
       "title": "Sumber thermal",
       "description": "Config dan daemon thermal mana yang melindungi HP ini, dan mana yang sedang diambil alih HiCo. HiCo tidak pernah mengedit file ROM: salinan yang disetel dipasang di atasnya selama skenario membutuhkannya.",
@@ -292,10 +292,21 @@
       "by_hico": {
         "stopped": "Dihentikan HiCo",
         "restarted": "Dimuat ulang HiCo"
-      }
+      },
+      "unavailable": "Sumber termal tidak dapat dibaca saat ini. Ini tidak memengaruhi proteksi termal.",
+      "path": "Lokasi berkas",
+      "format_label": "Format",
+      "size": "Ukuran",
+      "owner": "Pemilik",
+      "name": "Nama",
+      "kind_label": "Jenis",
+      "state": "Status"
     },
     "active": "aktif",
-    "idle": "diam"
+    "idle": "diam",
+    "unavailable": "Monitor termal tidak tersedia",
+    "trend_building": "Membangun tren dari pembacaan langsung…",
+    "no_zones": "Tidak ada zona termal yang dilaporkan kernel saat ini."
   },
   "games": {
     "search": "Cari aplikasi",

@@ -257,7 +257,7 @@
     "trip_zones": "Zones at or above trip",
     "no_cooling": "No cooling device is currently active.",
     "no_trip_zones": "No thermal zone is currently at or above a reported trip threshold.",
-    "error": "Cannot read the thermal monitor: {error}",
+    "error": "{error}",
     "sources": {
       "title": "Thermal sources",
       "description": "Which thermal configs and daemons protect this phone, and which of them HiCo overrides right now. HiCo never edits the ROM's files: a tuned copy is mounted over them while a scenario needs it.",
@@ -292,10 +292,21 @@
       "by_hico": {
         "stopped": "Stopped by HiCo",
         "restarted": "Reloaded by HiCo"
-      }
+      },
+      "unavailable": "Could not read thermal sources right now. This does not affect thermal protection.",
+      "path": "File path",
+      "format_label": "Format",
+      "size": "Size",
+      "owner": "Owner",
+      "name": "Name",
+      "kind_label": "Kind",
+      "state": "State"
     },
     "active": "active",
-    "idle": "idle"
+    "idle": "idle",
+    "unavailable": "Thermal monitor unavailable",
+    "trend_building": "Building the trend from live readings…",
+    "no_zones": "No thermal zone is currently reported by the kernel."
   },
   "games": {
     "search": "Search apps",
