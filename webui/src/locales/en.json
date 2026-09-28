@@ -205,7 +205,8 @@
         "Protection returns at 102 °C CPU / 49 °C battery",
         "Use with a cooler or in short sessions"
       ]
-    }
+    },
+    "unavailable": "Could not load thermal presets right now."
   },
   "monitor": {
     "title": "Thermal Monitor",
@@ -557,6 +558,9 @@
       "other": "Other apps (camera, video editors, …) that get HiCo Balanced while on screen, never Aggressive.",
       "games": "Games come from Flux Tweaks' game list (add or remove them in Flux). Switch a game off to keep stock thermal for it."
     },
-    "saved": "{scenario}: {level}"
+    "saved": "{scenario}: {level}",
+    "active": "Active now",
+    "app_count": "{n} apps",
+    "apps_error": "Could not read the installed app list right now."
   }
 }

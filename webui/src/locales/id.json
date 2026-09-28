@@ -205,7 +205,8 @@
         "Proteksi kembali di CPU 102 °C / baterai 49 °C",
         "Pakai dengan kipas pendingin atau sesi singkat"
       ]
-    }
+    },
+    "unavailable": "Mode termal tidak dapat dimuat saat ini."
   },
   "monitor": {
     "title": "Monitor Termal",
@@ -557,6 +558,9 @@
       "other": "Aplikasi lain (kamera, editor video, …) yang mendapat HiCo Balanced selama tampil, tidak pernah Agresif.",
       "games": "Game berasal dari daftar game Flux Tweaks (tambah atau hapus di Flux). Matikan sebuah game agar termalnya tetap bawaan."
     },
-    "saved": "{scenario}: {level}"
+    "saved": "{scenario}: {level}",
+    "active": "Aktif sekarang",
+    "app_count": "{n} aplikasi",
+    "apps_error": "Daftar aplikasi terpasang tidak dapat dibaca saat ini."
   }
 }
