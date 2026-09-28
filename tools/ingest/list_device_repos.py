@@ -1,183 +1,287 @@
 #!/usr/bin/env python3
-"""Enumerate device-tree repositories for every entry in stock/sources.yaml.
+"""Enumerate device-tree / vendor-blob repositories for stock/sources.yaml.
 
-Uses the GitHub API (via `gh api`) for github providers. Writes one JSON
-per source into stock/manifest/<source_id>.json listing each repo's
-{name, default_branch, updated_at, size_kb, sha}. This is the metadata
-layer — no repo content is downloaded.
+Writes one JSON per source into stock/manifest/<source_id>.json listing each
+repository: vendor, codename, kind (device | common), repo, clone_url,
+default_branch, updated_at (upstream pushed_at when known). This is the
+metadata layer: no repository content is downloaded.
+
+Providers:
+  github         GitHub REST API (orgs/<org>/repos, users/<org>/repos as a
+                 fallback). Uses GH_TOKEN / GITHUB_TOKEN when set.
+  repo-manifest  A repo-tool manifest file (e.g. TheMuppets/manifests
+                 muppets.xml) read from raw.githubusercontent.com, one per
+                 branch. No API needed.
+
+A source that cannot be listed keeps its committed manifest (reported, not
+overwritten), so an API outage never empties the database.
 
     python3 tools/ingest/list_device_repos.py
-    python3 tools/ingest/list_device_repos.py --only lineageos,pixelos
+    python3 tools/ingest/list_device_repos.py --only lineageos,themuppets
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
-import subprocess
 import sys
 import time
+import urllib.error
+import urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-MANIFEST_DIR = ROOT / "stock" / "manifest"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import MANIFEST_DIR, ROOT, SOURCES_YAML, load_sources, write_json  # noqa: E402
 
+API = "https://api.github.com"
+RAW = "https://raw.githubusercontent.com"
 
-def _load_sources(path: Path) -> list[dict]:
-    sys.path.insert(0, str(ROOT / "tools" / "verify"))
-    from rom_sources import _load_sources  # type: ignore
-    data = _load_sources(path)
-    return [s for s in (data.get("sources") or []) if s.get("provider") == "github"]
-
-
-def _gh_paginated(endpoint: str, per_page: int = 100) -> list[dict]:
-    """Fetch every page of a github API listing via `gh api --paginate`."""
-    cmd = ["gh", "api", "--paginate", f"{endpoint}?per_page={per_page}"]
-    proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
-    if proc.returncode != 0:
-        raise RuntimeError(f"gh api failed: {proc.stderr.strip()}")
-    # gh --paginate concatenates JSON arrays as one stream; split them.
-    out = proc.stdout.strip()
-    if not out:
-        return []
-    # Simple approach: replace "][" between arrays with "," to make one list
-    combined = out.replace("]\n[", ",").replace("][", ",")
-    return json.loads(combined)
-
-
-# SoC/vendor "common" packages that use the device_ / android_device_
-# prefix but are NOT per-device trees. Filtered out during enumeration.
-COMMON_TOKENS = frozenset({
+# Names that use the device prefix but are not device or SoC-common trees.
+NON_DEVICE = frozenset({
     "sepolicy", "sepolicy_vndr", "sepolicy-legacy-um", "sepolicy-legacy",
-    "common", "qcom-common", "qcom_common", "mtk-common", "mtk_common",
-    "exynos-common", "exynos_common", "kirin-common", "kirin_common",
-    "tegra-common", "tegra_common", "unisoc-common", "unisoc_common",
-    "generic", "opensource", "libs", "tools",
-    "manifest", "hardware", "kernel",
+    "generic", "opensource", "libs", "tools", "manifest", "hardware", "kernel",
 })
+# SoC / platform family names: shared trees even without a "-common" suffix
+# (android_device_xiaomi_sm8250, android_device_google_gs101 ...).
+PLATFORM_RE = re.compile(
+    r"^(sm|sdm|msm|apq|mt|mtk|kirin|tegra|exynos|universal|gs|zuma|lahaina|kona|taro|"
+    r"kalama|pineapple|sun|parrot|lito|atoll|trinket|bengal|holi|khaje|blair|crow|yupik)\d*[a-z]?$"
+)
 
 
-def _matches(repo_name: str, prefix: str) -> bool:
-    if not prefix:
-        return True
-    return repo_name.startswith(prefix)
+class ListingError(RuntimeError):
+    pass
 
 
-def _is_real_device(vendor: str, codename: str) -> bool:
-    if vendor in COMMON_TOKENS or codename in COMMON_TOKENS:
-        return False
-    if "common" in codename:
-        return False
-    if codename.startswith(("sm", "msm", "sdm", "mt", "mtk", "kirin", "tegra")) and codename.replace("-", "").isalnum() and any(c.isdigit() for c in codename) and len(codename) < 10:
-        # e.g. sm8350, msm8996 — SoC-common, not device
-        return False
-    return True
+def _http_json(url: str, token: str | None) -> tuple[object, dict[str, str]]:
+    req = urllib.request.Request(url, headers={
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "hico-ingest",
+        "X-GitHub-Api-Version": "2022-11-28",
+    })
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode()), dict(resp.headers)
+        except urllib.error.HTTPError as exc:
+            if exc.code in (502, 503, 504) and attempt < 2:
+                time.sleep(2 * (attempt + 1))
+                continue
+            body = exc.read().decode(errors="replace")[:200]
+            raise ListingError(f"HTTP {exc.code} {url}: {body}") from exc
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if attempt < 2:
+                time.sleep(2 * (attempt + 1))
+                continue
+            raise ListingError(f"{url}: {exc}") from exc
+    raise ListingError(f"{url}: retries exhausted")
 
 
-def _extract_identity(repo_name: str, prefix: str) -> tuple[str, str] | None:
-    """From e.g. android_device_xiaomi_alioth → ("xiaomi", "alioth")."""
-    if not repo_name.startswith(prefix):
+def _next_link(headers: dict[str, str]) -> str | None:
+    link = headers.get("Link") or headers.get("link") or ""
+    for part in link.split(","):
+        m = re.match(r'\s*<([^>]+)>;\s*rel="next"', part)
+        if m:
+            return m.group(1)
+    return None
+
+
+def github_repos(org: str, token: str | None) -> list[dict]:
+    """Every repository of an org (or user account), following Link pagination."""
+    last_error: ListingError | None = None
+    for kind in ("orgs", "users"):
+        url: str | None = f"{API}/{kind}/{org}/repos?per_page=100&type=all"
+        repos: list[dict] = []
+        try:
+            while url:
+                page, headers = _http_json(url, token)
+                if not isinstance(page, list):
+                    raise ListingError(f"unexpected response for {url}")
+                repos.extend(page)
+                url = _next_link(headers)
+            return repos
+        except ListingError as exc:
+            last_error = exc
+            if "HTTP 404" not in str(exc):
+                break  # 403 / network: the users/ endpoint will not do better
+    raise last_error or ListingError(f"cannot list {org}")
+
+
+def identity(repo_name: str, prefix: str) -> tuple[str, str, str] | None:
+    """android_device_xiaomi_alioth -> ("xiaomi", "alioth", "device").
+
+    Common trees keep their full name: android_device_xiaomi_sm8250-common ->
+    ("xiaomi", "sm8250-common", "common"). They often hold the thermal HAL
+    config or the thermal-engine file for a whole SoC family, so they are
+    kept (not dropped) and marked kind=common.
+    """
+    if prefix and not repo_name.startswith(prefix):
         return None
     rest = repo_name[len(prefix):]
-    parts = rest.split("_", 1)
-    if len(parts) != 2:
-        # e.g. "aosp_redfin" or plain "redfin"
-        if "_" in rest:
-            return None
-        return ("unknown", rest)
-    vendor, codename = parts
-    codename = codename.replace("-common", "")
-    return (vendor.lower(), codename.lower())
+    vendor, sep, codename = rest.partition("_")
+    if not sep or not vendor or not codename:
+        return None
+    vendor, codename = vendor.lower(), codename.lower()
+    if vendor in NON_DEVICE or codename in NON_DEVICE:
+        return None
+    kind = "common" if ("common" in codename or PLATFORM_RE.match(codename)) else "device"
+    return vendor, codename, kind
 
 
-def list_source(src: dict) -> dict:
-    sid = src["id"]
-    org = src["org"]
+def list_github(src: dict, token: str | None) -> dict[str, dict]:
     prefix = src.get("repo_prefix", "")
-    print(f"  ↳ listing {org} (prefix={prefix or '*'}) ...", flush=True)
-    started = time.time()
-    repos = _gh_paginated(f"orgs/{org}/repos")
-
     devices: dict[str, dict] = {}
-    other: list[str] = []
-    for repo in repos:
-        name = repo.get("name") or ""
-        if not _matches(name, prefix):
-            other.append(name)
-            continue
-        ident = _extract_identity(name, prefix) if prefix else None
+    for repo in github_repos(src["org"], token):
+        ident = identity(repo.get("name") or "", prefix)
         if ident is None:
-            other.append(name)
             continue
-        vendor, codename = ident
-        if not _is_real_device(vendor, codename):
-            other.append(name)
-            continue
-        key = f"{vendor}/{codename}"
-        # Prefer the -common repo's sibling when both exist; keep both by key.
-        devices.setdefault(key, {
+        vendor, codename, kind = ident
+        devices.setdefault(f"{vendor}/{codename}", {
             "vendor": vendor,
             "codename": codename,
-            "repo": name,
-            "clone_url": repo.get("clone_url"),
+            "kind": kind,
+            "repo": repo["name"],
+            "clone_url": repo.get("clone_url") or f"https://github.com/{src['org']}/{repo['name']}.git",
             "default_branch": repo.get("default_branch"),
             "updated_at": repo.get("pushed_at"),
-            "size_kb": repo.get("size", 0),
-            "archived": repo.get("archived", False),
-            "fork": repo.get("fork", False),
+            "archived": bool(repo.get("archived")),
+            "fork": bool(repo.get("fork")),
         })
+    return devices
 
-    elapsed = time.time() - started
-    print(f"     → {len(devices)} devices, {len(other)} non-device repos, {elapsed:.1f}s",
-          flush=True)
 
+def fetch_text(url: str) -> str | None:
+    req = urllib.request.Request(url, headers={"User-Agent": "hico-ingest"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.read().decode()
+    except (urllib.error.URLError, TimeoutError):
+        return None
+
+
+def parse_repo_manifest(xml_text: str, org: str, prefix: str) -> dict[str, dict]:
+    """Projects of one repo-tool manifest: {key: entry with `serves` codenames}."""
+    out: dict[str, dict] = {}
+    root = ET.fromstring(xml_text)
+    for proj in root.iter("project"):
+        name = proj.get("name") or ""
+        repo = name.split("/", 1)[1] if name.startswith(f"{org}/") else name
+        ident = identity(repo, prefix)
+        if ident is None:
+            continue
+        vendor, codename, kind = ident
+        groups = [g for g in (proj.get("groups") or "").split(",") if g.startswith("muppets_")]
+        serves = sorted({g[len("muppets_"):].lower() for g in groups})
+        out[f"{vendor}/{codename}"] = {
+            "vendor": vendor,
+            "codename": codename,
+            "kind": kind,
+            "repo": repo,
+            "clone_url": f"https://github.com/{org}/{repo}.git",
+            "serves": serves,
+        }
+    return out
+
+
+def list_repo_manifest(src: dict) -> dict[str, dict]:
+    branches = src.get("branches") or []
+    if isinstance(branches, str):
+        branches = [branches]
+    devices: dict[str, dict] = {}
+    read_any = False
+    for branch in branches:  # newest first: the newest branch listing a repo wins
+        text = fetch_text(f"{RAW}/{src['manifest_repo']}/{branch}/{src['manifest_file']}")
+        if text is None:
+            print(f"     ! {branch}: manifest not readable, skipped", flush=True)
+            continue
+        read_any = True
+        for key, entry in parse_repo_manifest(text, src["org"], src.get("repo_prefix", "")).items():
+            if key in devices:
+                devices[key]["branches"].append(branch)
+                continue
+            devices[key] = {**entry, "default_branch": branch, "branches": [branch], "updated_at": None,
+                            "archived": False, "fork": False}
+    if not read_any:
+        raise ListingError(f"no manifest readable for {src['manifest_repo']}")
+    return devices
+
+
+def build_manifest(src: dict, devices: dict[str, dict]) -> dict:
+    rows = sorted(devices.values(), key=lambda d: (d["vendor"], d["codename"]))
     return {
-        "schema": "hico.ingest-manifest.v1",
-        "source_id": sid,
-        "source_name": src.get("name", sid),
+        "schema": "hico.ingest-manifest.v2",
+        "source_id": src["id"],
+        "source_name": src.get("name", src["id"]),
         "provider": src.get("provider"),
-        "org": org,
-        "repo_prefix": prefix,
-        "device_count": len(devices),
-        "devices": sorted(devices.values(), key=lambda d: (d["vendor"], d["codename"])),
+        "family": src.get("family"),
+        "org": src.get("org"),
+        "repo_prefix": src.get("repo_prefix", ""),
+        "device_count": sum(1 for d in rows if d["kind"] == "device"),
+        "common_count": sum(1 for d in rows if d["kind"] == "common"),
+        "devices": rows,
     }
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--sources", default=str(ROOT / "stock" / "sources.yaml"))
-    ap.add_argument("--only", default=None, help="comma-separated source ids")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--sources", default=str(SOURCES_YAML))
+    ap.add_argument("--only", default="", help="comma-separated source ids")
+    ap.add_argument("--manifest-dir", default=str(MANIFEST_DIR))
     args = ap.parse_args()
 
-    only = set(args.only.split(",")) if args.only else None
-    sources = _load_sources(Path(args.sources))
-    if only:
-        sources = [s for s in sources if s.get("id") in only]
+    manifest_dir = Path(args.manifest_dir)
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    wanted = {s for s in args.only.split(",") if s}
+    data = load_sources(Path(args.sources))
+    sources = [s for s in data.get("sources") or []
+               if s.get("provider") in ("github", "repo-manifest") and (not wanted or s["id"] in wanted)]
 
-    MANIFEST_DIR.mkdir(parents=True, exist_ok=True)
-    summary: list[dict] = []
+    failed: list[str] = []
     for src in sources:
-        print(f"[{src['id']}]", flush=True)
-        manifest = list_source(src)
-        out = MANIFEST_DIR / f"{src['id']}.json"
-        out.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
+        started = time.time()
+        print(f"[{src['id']}] {src['provider']} {src.get('org')}", flush=True)
+        try:
+            devices = list_github(src, token) if src["provider"] == "github" else list_repo_manifest(src)
+        except ListingError as exc:
+            failed.append(src["id"])
+            print(f"     ✗ listing failed, committed manifest kept: {exc}", flush=True)
+            continue
+        manifest = build_manifest(src, devices)
+        changed = write_json(manifest_dir / f"{src['id']}.json", manifest)
+        print(f"     → {manifest['device_count']} devices + {manifest['common_count']} common trees"
+              f" in {time.time() - started:.1f}s{'' if changed else ' (unchanged)'}", flush=True)
+
+    # The index covers every committed manifest, listed or not in this run.
+    summary = []
+    for src in data.get("sources") or []:
+        path = manifest_dir / f"{src['id']}.json"
+        if not path.is_file():
+            continue
+        m = json.loads(path.read_text())
         summary.append({
             "source_id": src["id"],
             "source_name": src.get("name"),
-            "device_count": manifest["device_count"],
-            "manifest": str(out.relative_to(ROOT)),
+            "family": src.get("family"),
+            "device_count": m.get("device_count", 0),
+            "common_count": m.get("common_count", 0),
+            "manifest": str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else str(path),
         })
-
-    index = MANIFEST_DIR / "index.json"
-    index.write_text(json.dumps({
-        "schema": "hico.ingest-manifest-index.v1",
-        "generated_at_epoch": int(time.time()),
+    write_json(manifest_dir / "index.json", {
+        "schema": "hico.ingest-manifest-index.v2",
         "source_count": len(summary),
         "device_total": sum(s["device_count"] for s in summary),
+        "common_total": sum(s["common_count"] for s in summary),
         "sources": summary,
-    }, indent=2, sort_keys=True) + "\n")
-    print(f"---\nindex → {index.relative_to(ROOT)}  ({sum(s['device_count'] for s in summary)} devices across {len(summary)} sources)")
-    return 0
+    })
+    print(f"---\n{sum(s['device_count'] for s in summary)} devices + "
+          f"{sum(s['common_count'] for s in summary)} common trees across {len(summary)} sources"
+          + (f"; listing failed for {', '.join(failed)}" if failed else ""))
+    # Exit 0 when at least one source listed; the workflow reads failures from the log.
+    return 1 if failed and len(failed) == len(sources) else 0
 
 
 if __name__ == "__main__":

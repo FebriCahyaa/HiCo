@@ -54,8 +54,11 @@ sources:
     name: DerpFest
     family: rom
     provider: github
-    org: DerpFest-AOSP
-    repo_prefix: android_device_
+    # Device trees live in DerpFest-Devices (device_<vendor>_<codename>); the
+    # DerpFest-AOSP org only holds the ROM itself. Checked with git ls-remote:
+    # DerpFest-Devices/device_xiaomi_sweet, device_oneplus_lemonadep.
+    org: DerpFest-Devices
+    repo_prefix: device_
     branch_hint: 15|14
     notes: AOSP-based, wide device coverage.
 
@@ -63,7 +66,9 @@ sources:
     name: Evolution X
     family: rom
     provider: github
-    org: Evolution-X
+    # Device trees live in Evolution-X-Devices (device_<vendor>_<codename>), not
+    # the Evolution-X org. Checked: Evolution-X-Devices/device_google_husky.
+    org: Evolution-X-Devices
     repo_prefix: device_
     branch_hint: "udc|vic|bic"
     notes: Pixel-experience-derived; Pixel and select others.
@@ -146,8 +151,30 @@ sources:
     provider: github
     org: ProtonAOSP
     repo_prefix: android_device_
-    branch_hint: 13
+    branch_hint: "13"
     notes: Older; keep for legacy device evidence only.
+
+  # ------------------------------------------------------------------
+  # Vendor blob mirrors — the stock thermal files themselves
+  # ------------------------------------------------------------------
+  # Device trees rarely carry vendor thermal configs; the extracted stock
+  # files (thermal-*.conf, thermal-engine*.conf, thermal_info_config*.json)
+  # live in the vendor blob repositories LineageOS builds against.
+  # TheMuppets publishes one repo-tool manifest per LineageOS branch listing
+  # every blob repository, so it is enumerated without the GitHub API. The
+  # `groups="muppets_<codename>"` attribute maps each -common repo to the
+  # devices that use it.
+  - id: themuppets
+    name: TheMuppets (LineageOS vendor blobs)
+    family: blobs
+    provider: repo-manifest
+    org: TheMuppets
+    manifest_repo: TheMuppets/manifests
+    manifest_file: muppets.xml
+    # Newest first: a repository listed on several branches is fetched from the newest.
+    branches: [lineage-24.0, lineage-23.2, lineage-23.1, lineage-23.0, lineage-22.2, lineage-22.1, lineage-22.0]
+    repo_prefix: proprietary_vendor_
+    notes: Stock vendor partitions extracted per device; covers older devices through the older branches.
 
   # ------------------------------------------------------------------
   # OEM firmware dumps
@@ -194,18 +221,47 @@ thermal_paths:
   # init scripts that touch thermal
   - "**/init.*thermal*.rc"
   - "**/init.*thermal*.sh"
-  # supporting evidence (identity, blobs referenced, build config)
-  - "AndroidProducts.mk"
-  - "device.mk"
-  - "device-*.mk"
-  - "Android.bp"
-  - "Android.mk"
-  - "BoardConfig*.mk"
-  - "extract-files.sh"
-  - "proprietary-files.txt"
-  - "system.prop"
-  - "vendorsetup.sh"
-  - "lineage.dependencies"
+  # supporting evidence (identity, blobs referenced, build config).
+  # Anchored to the repository root: with `sparse-checkout --no-cone` a
+  # pattern without a leading "/" matches in every subdirectory, which pulled
+  # every nested Android.bp / Android.mk of a tree (megabytes of build rules).
+  - "/AndroidProducts.mk"
+  - "/device.mk"
+  - "/device-*.mk"
+  - "/Android.bp"
+  - "/Android.mk"
+  - "/BoardConfig*.mk"
+  - "/extract-files.sh"
+  - "/extract-files.py"
+  - "/proprietary-files.txt"
+  - "/system.prop"
+  - "/vendor.prop"
+  - "/vendorsetup.sh"
+  - "/lineage.dependencies"
   # sepolicy references (helps confirm HAL type)
   - "sepolicy/**/*thermal*"
   - "sepolicy/**/thermal*"
+
+# --------------------------------------------------------------------
+# Paths sparse-fetched from vendor blob mirrors (family: blobs). Only the
+# stock thermal configuration, its init scripts and the power HAL tables;
+# never binaries (vendor/bin, vendor/lib*), which would add hundreds of MB,
+# nor the generated Android.bp / *-vendor.mk (prebuilt module lists, up to
+# 650 KB each): the fetched files are listed in each source.json instead.
+# --------------------------------------------------------------------
+blob_paths:
+  - "proprietary/vendor/etc/thermal*"
+  - "proprietary/vendor/etc/*thermal*.json"
+  - "proprietary/vendor/etc/*thermal*.xml"
+  - "proprietary/vendor/etc/*thermal*.conf"
+  - "proprietary/vendor/etc/thermal/**"
+  - "proprietary/vendor/etc/init/*thermal*"
+  - "proprietary/vendor/etc/vintf/manifest/*thermal*"
+  - "proprietary/vendor/etc/powerhint*.json"
+  - "proprietary/vendor/etc/power_hal*"
+  - "proprietary/odm/etc/thermal*"
+  - "proprietary/odm/etc/*thermal*"
+  - "proprietary/odm/etc/thermal/**"
+  - "proprietary/odm/etc/init/*thermal*"
+  - "proprietary/product/etc/thermal*"
+  - "proprietary/system_ext/etc/thermal*"

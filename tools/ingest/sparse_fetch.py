@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
-"""Sparse-fetch thermal-relevant paths from every device tree in a manifest.
+"""Sparse-fetch thermal-relevant paths from every repository in a manifest.
 
-Reads stock/manifest/<source_id>.json (produced by list_device_repos.py) and
-for each device runs:
+Reads stock/manifest/<source_id>.json (list_device_repos.py) and, per
+repository:
 
-    git clone --depth=1 --filter=blob:none --sparse --branch <default> <clone_url> <tmp>
-    cd <tmp>; git sparse-checkout set --skip-checks <thermal_paths...>
-    copy every matched file to stock/rom/<source_id>/<vendor>__<codename>/
+    git clone --depth=1 --filter=blob:none --sparse [--branch B] <url> <tmp>
+    git sparse-checkout set --no-cone <paths from sources.yaml>
+    replace stock/<family>/<source_id>/<vendor>__<codename>/ with the result
 
-Files that a device does not ship are silently skipped — that is normal:
-LineageOS trees rarely carry vendor thermal blobs, but they do carry
-device.mk, BoardConfig.mk, proprietary-files.txt (evidence) and often
-init.<device>.thermal.rc.
+Only the matched files are downloaded (blob:none + sparse), a few kilobytes
+per device. The destination is replaced as a whole, so files removed
+upstream disappear here too. Every outcome (ok / empty / failed) is recorded
+in stock/manifest/<source_id>.state.json with the fetched commit, which is
+what diff_manifests.py compares against upstream.
 
-    python3 tools/ingest/sparse_fetch.py --source lineageos
     python3 tools/ingest/sparse_fetch.py --source lineageos --limit 50
-    python3 tools/ingest/sparse_fetch.py --all --jobs 8
+    python3 tools/ingest/sparse_fetch.py --all --jobs 16
+    python3 tools/ingest/sparse_fetch.py --all --only-changed changed.json
 """
 from __future__ import annotations
 
@@ -24,27 +25,19 @@ import concurrent.futures
 import hashlib
 import json
 import shutil
-import subprocess
 import sys
 import tempfile
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
-STOCK_ROM = ROOT / "stock" / "rom"
-MANIFEST_DIR = ROOT / "stock" / "manifest"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from common import (  # noqa: E402
+    MANIFEST_DIR, SOURCES_YAML, STOCK, candidate_branches, dest_root, device_dir_name, device_key,
+    load_sources, load_state, paths_for, remote_heads, resolve_branch, run, save_state, source_map,
+    write_json,
+)
 
-
-def _load_paths(sources_yaml: Path) -> list[str]:
-    sys.path.insert(0, str(ROOT / "tools" / "verify"))
-    from rom_sources import _load_sources  # type: ignore
-    data = _load_sources(sources_yaml)
-    return data.get("thermal_paths") or []
-
-
-def _run(cmd: list[str], cwd: Path | None = None, timeout: int = 120) -> tuple[int, str]:
-    p = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True, timeout=timeout)
-    return p.returncode, (p.stderr or p.stdout).strip()
+MAX_FILE_BYTES = 2 * 1024 * 1024  # no thermal or evidence file is bigger; guards the repo size
 
 
 def _sha256(path: Path) -> str:
@@ -55,211 +48,231 @@ def _sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def fetch_device(dev: dict, source_id: str, paths: list[str], dest_root: Path) -> dict:
-    vendor = dev["vendor"]
-    codename = dev["codename"]
-    dest = dest_root / source_id / f"{vendor}__{codename}"
-    clone_url = dev["clone_url"]
-    branch = dev.get("default_branch") or "HEAD"
+def fetch_device(dev: dict, source: dict, paths: list[str], stock: Path = STOCK) -> dict:
+    """Fetch one repository. Never raises: failures come back as a status."""
+    key = device_key(dev)
+    result = {"key": key, "dir": device_dir_name(dev), "status": "pending", "commit": None, "branch": None,
+              "file_count": 0, "error": None, "pushed_at": dev.get("updated_at")}
+    dest = dest_root(source, stock) / device_dir_name(dev)
 
-    result = {
-        "source_id": source_id,
-        "vendor": vendor,
-        "codename": codename,
-        "repo": dev.get("repo"),
-        "clone_url": clone_url,
-        "branch": branch,
-        "status": "pending",
-        "files": [],
-        "error": None,
-    }
+    branch = dev.get("default_branch") or None
+    if len(candidate_branches(dev)) > 1:
+        heads = remote_heads(dev["clone_url"])
+        if heads is None:
+            result.update(status="clone-failed", error="repository unreachable (ls-remote)")
+            return result
+        branch, _ = resolve_branch(dev, heads)
+        if branch is None:
+            result.update(status="clone-failed", error=f"none of {candidate_branches(dev)} exists upstream")
+            return result
+    result["branch"] = branch
 
-    # Idempotency: if we already have this device at the same upstream
-    # timestamp, skip. This makes a rerun cheap and lets ingest.yml delta
-    # fetches be safe to run repeatedly.
-    existing_meta = dest / "source.json"
-    if existing_meta.is_file():
-        try:
-            existing = json.loads(existing_meta.read_text())
-            if existing.get("upstream_pushed_at") == dev.get("updated_at"):
-                result["status"] = "cached"
-                return result
-        except Exception:  # noqa: BLE001
-            pass
-
-    with tempfile.TemporaryDirectory(prefix=f"hico-{codename}-") as td:
+    with tempfile.TemporaryDirectory(prefix="hico-fetch-") as td:
         tmp = Path(td) / "repo"
-        # Retry once on transient clone failure (network/rate-limit).
-        rc = -1
-        err = ""
-        for attempt in range(2):
-            rc, err = _run(
-                [
-                    "git", "clone",
-                    "--depth=1",
-                    "--filter=blob:none",
-                    "--sparse",
-                    "--single-branch",
-                    "--branch", branch,
-                    clone_url,
-                    str(tmp),
-                ],
-                timeout=120,
-            )
+        clone = ["git", "clone", "-q", "--depth=1", "--filter=blob:none", "--sparse", "--single-branch"]
+        if branch:
+            clone += ["--branch", branch]
+        rc, err = 1, ""
+        for attempt in range(2):  # one retry for transient network / rate-limit failures
+            rc, err = run([*clone, dev["clone_url"], str(tmp)], timeout=180)
             if rc == 0:
                 break
+            shutil.rmtree(tmp, ignore_errors=True)
             if attempt == 0:
-                if tmp.exists():
-                    shutil.rmtree(tmp, ignore_errors=True)
                 time.sleep(3)
         if rc != 0:
-            result["status"] = "clone-failed"
-            result["error"] = err[:200]
+            result.update(status="clone-failed", error=err[:300])
             return result
 
-        # Set sparse checkout to only the thermal paths (--no-cone allows globs).
-        rc, err = _run(
-            ["git", "sparse-checkout", "set", "--no-cone", *paths],
-            cwd=tmp,
-            timeout=30,
-        )
+        rc, err = run(["git", "sparse-checkout", "set", "--no-cone", *paths], cwd=tmp, timeout=180)
         if rc != 0:
-            result["status"] = "sparse-failed"
-            result["error"] = err[:200]
+            result.update(status="sparse-failed", error=err[:300])
             return result
+        rc, sha = run(["git", "rev-parse", "HEAD"], cwd=tmp, timeout=30)
+        result["commit"] = sha if rc == 0 and len(sha) == 40 else None
 
-        # Get the commit SHA for provenance.
-        _, sha = _run(["git", "rev-parse", "HEAD"], cwd=tmp, timeout=10)
-        result["sha"] = sha[:40]
+        staged = Path(td) / "out"
+        files: list[dict] = []
+        skipped_large: list[str] = []
+        for path in sorted(tmp.rglob("*")):
+            if ".git" in path.relative_to(tmp).parts or path.is_symlink() or not path.is_file():
+                continue
+            rel = path.relative_to(tmp)
+            size = path.stat().st_size
+            if size > MAX_FILE_BYTES:
+                skipped_large.append(str(rel))
+                continue
+            out = staged / rel
+            out.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(path, out)
+            files.append({"path": rel.as_posix(), "sha256": _sha256(out), "size": size})
 
-        # Find every file that matched.
-        files_found: list[Path] = []
-        for path in tmp.rglob("*"):
-            if path.is_file() and ".git" not in path.parts:
-                files_found.append(path)
-
-        if not files_found:
+        if not files:
+            # Nothing thermal-related upstream: drop an old copy, remember it in the state.
+            shutil.rmtree(dest, ignore_errors=True)
             result["status"] = "empty"
             return result
 
-        dest.mkdir(parents=True, exist_ok=True)
-        source_meta = []
-        for src_file in files_found:
-            rel = src_file.relative_to(tmp)
-            out = dest / rel
-            out.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src_file, out)
-            source_meta.append({
-                "path": str(rel),
-                "sha256": _sha256(out),
-                "size": out.stat().st_size,
-            })
-
-        # Sidecar: where this device came from.
-        (dest / "source.json").write_text(json.dumps({
-            "schema": "hico.stock-device-source.v1",
-            "source_id": source_id,
-            "vendor": vendor,
-            "codename": codename,
+        write_json(staged / "source.json", {
+            "schema": "hico.stock-device-source.v2",
+            "source_id": source["id"],
+            "vendor": dev["vendor"],
+            "codename": dev["codename"],
+            "kind": dev.get("kind", "device"),
+            "serves": dev.get("serves", []),
             "repo": dev.get("repo"),
-            "clone_url": clone_url,
-            "default_branch": branch,
-            "commit": sha[:40],
+            "clone_url": dev["clone_url"],
+            "branch": branch,
+            "commit": result["commit"],
             "upstream_pushed_at": dev.get("updated_at"),
-            "fetched_at_epoch": int(time.time()),
-            "file_count": len(files_found),
-            "files": sorted(source_meta, key=lambda f: f["path"]),
-        }, indent=2, sort_keys=True) + "\n")
-
-        result["status"] = "ok"
-        result["files"] = [m["path"] for m in source_meta]
+            "file_count": len(files),
+            "skipped_large": skipped_large,
+            "files": files,
+        })
+        # Replace the whole directory: files deleted upstream must not linger.
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if dest.exists():
+            shutil.rmtree(dest)
+        shutil.move(str(staged), str(dest))
+        result.update(status="ok", file_count=len(files))
         return result
 
 
-def _load_manifest(source_id: str) -> dict:
-    path = MANIFEST_DIR / f"{source_id}.json"
+def _stage(source: dict, sid: str, dirs: list[str], stock: Path, manifest_dir: Path, stage: Path) -> None:
+    """Copy this run's results into a fixed layout for a CI artifact:
+    <stage>/<rom|blobs>/<sid>/<vendor>__<codename>/ and <stage>/manifest/<sid>.state.json."""
+    root = dest_root(source, stock)
+    for name in dirs:
+        out = stage / root.relative_to(stock) / name
+        if out.exists():
+            shutil.rmtree(out)
+        shutil.copytree(root / name, out)
+    (stage / "manifest").mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(manifest_dir / f"{sid}.state.json", stage / "manifest" / f"{sid}.state.json")
+
+
+def load_manifest(source_id: str, manifest_dir: Path = MANIFEST_DIR) -> dict:
+    path = manifest_dir / f"{source_id}.json"
     if not path.is_file():
-        raise SystemExit(f"missing manifest: {path.relative_to(ROOT)} (run list_device_repos.py first)")
+        raise SystemExit(f"missing manifest {path} (run list_device_repos.py first)")
     return json.loads(path.read_text())
 
 
-def run_source(source_id: str, paths: list[str], jobs: int, limit: int | None,
-               only_keys: set[str] | None = None) -> None:
-    manifest = _load_manifest(source_id)
-    devices = manifest["devices"]
-    if only_keys is not None:
-        devices = [d for d in devices if f"{d['vendor']}/{d['codename']}" in only_keys]
-    if limit:
-        devices = devices[:limit]
-    if not devices:
-        print(f"[{source_id}] no devices to fetch", flush=True)
-        return
-    print(f"[{source_id}] fetching {len(devices)} device(s) with {jobs} worker(s)", flush=True)
+def select(devices: list[dict], state: dict[str, dict], only_keys: set[str] | None,
+           refetch: bool) -> list[dict]:
+    """Which repositories to fetch this run.
 
-    ok = empty = cached = failed = 0
+    only_keys (from a change set) wins. Otherwise skip what the state already
+    has at the same upstream push time, so an interrupted seed resumes where
+    it stopped instead of starting over.
+    """
+    if only_keys is not None:
+        return [d for d in devices if device_key(d) in only_keys]
+    if refetch:
+        return devices
+    out = []
+    for d in devices:
+        prev = state.get(device_key(d))
+        if prev and prev.get("status") in ("ok", "empty") and (
+                d.get("updated_at") is None or prev.get("pushed_at") == d.get("updated_at")):
+            continue
+        out.append(d)
+    return out
+
+
+def run_source(source: dict, data: dict, jobs: int, limit: int | None, only_keys: set[str] | None,
+               refetch: bool, stock: Path = STOCK, manifest_dir: Path = MANIFEST_DIR,
+               stage: Path | None = None) -> dict[str, int]:
+    sid = source["id"]
+    manifest = load_manifest(sid, manifest_dir)
+    state = load_state(sid, manifest_dir)
+    todo = select(manifest["devices"], state, only_keys, refetch)
+    if limit:
+        todo = todo[:limit]
+    counts = {"ok": 0, "empty": 0, "failed": 0}
+    fetched_ok: list[str] = []
+    if not todo:
+        print(f"[{sid}] nothing to fetch", flush=True)
+        if stage is not None:
+            _stage(source, sid, [], stock, manifest_dir, stage)
+        return counts
+    paths = paths_for(source, data)
+    print(f"[{sid}] fetching {len(todo)} repositories with {jobs} workers", flush=True)
     started = time.time()
     with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
-        futures = {pool.submit(fetch_device, d, source_id, paths, STOCK_ROM): d for d in devices}
+        futures = [pool.submit(fetch_device, d, source, paths, stock) for d in todo]
         for i, fut in enumerate(concurrent.futures.as_completed(futures), 1):
             r = fut.result()
-            if r["status"] == "ok":
-                ok += 1
-            elif r["status"] == "empty":
-                empty += 1
-            elif r["status"] == "cached":
-                cached += 1
+            bucket = r["status"] if r["status"] in ("ok", "empty") else "failed"
+            counts[bucket] += 1
+            if bucket == "ok":
+                fetched_ok.append(r["dir"])
+            prev = state.get(r["key"], {})
+            if bucket == "failed":
+                # Keep the last good commit: a transient failure must not look like a change.
+                state[r["key"]] = {**prev, "status": r["status"], "error": r["error"]}
+                print(f"     ✗ {r['key']}: {r['status']} {r['error'] or ''}", flush=True)
             else:
-                failed += 1
-                print(f"     ✗ {r['vendor']}/{r['codename']}: {r['status']} — {r.get('error','')}", flush=True)
-            if i % 25 == 0 or i == len(devices):
-                elapsed = time.time() - started
-                rate = i / elapsed if elapsed else 0
-                remaining = (len(devices) - i) / rate if rate else 0
-                print(
-                    f"     [{i}/{len(devices)}] ok={ok} empty={empty} cached={cached} fail={failed}  "
-                    f"{rate:.1f}/s  eta≈{remaining/60:.1f}min",
-                    flush=True,
-                )
-    print(f"[{source_id}] done  ok={ok} empty={empty} cached={cached} fail={failed}  {(time.time()-started)/60:.1f}min",
-          flush=True)
+                state[r["key"]] = {"status": r["status"], "commit": r["commit"], "branch": r["branch"],
+                                   "pushed_at": r["pushed_at"], "file_count": r["file_count"]}
+            if i % 50 == 0 or i == len(todo):
+                rate = i / max(time.time() - started, 1e-6)
+                print(f"     [{i}/{len(todo)}] ok={counts['ok']} empty={counts['empty']} "
+                      f"failed={counts['failed']}  {rate:.1f}/s  eta {(len(todo) - i) / rate / 60:.1f} min",
+                      flush=True)
+            if i % 200 == 0:
+                save_state(sid, state, manifest_dir)  # resumable if the run is interrupted
+    # Forget repositories that left the manifest.
+    listed = {device_key(d) for d in manifest["devices"]}
+    for gone in [k for k in state if k not in listed]:
+        del state[gone]
+    save_state(sid, state, manifest_dir)
+    if stage is not None:
+        _stage(source, sid, fetched_ok, stock, manifest_dir, stage)
+    print(f"[{sid}] done ok={counts['ok']} empty={counts['empty']} failed={counts['failed']} "
+          f"in {(time.time() - started) / 60:.1f} min", flush=True)
+    return counts
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--sources", default=str(ROOT / "stock" / "sources.yaml"))
-    ap.add_argument("--source", help="single source id (e.g. lineageos)")
-    ap.add_argument("--all", action="store_true", help="every source in the index")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--sources", default=str(SOURCES_YAML))
+    ap.add_argument("--source", help="single source id")
     ap.add_argument("--only", help="comma-separated source ids")
+    ap.add_argument("--all", action="store_true", help="every source with a manifest")
     ap.add_argument("--jobs", type=int, default=8)
-    ap.add_argument("--limit", type=int, default=None, help="max devices per source")
-    ap.add_argument("--only-changed", help="path to change set JSON from diff_manifests.py")
+    ap.add_argument("--limit", type=int, default=None, help="max repositories per source")
+    ap.add_argument("--only-changed", help="change set JSON from diff_manifests.py")
+    ap.add_argument("--refetch", action="store_true", help="ignore the state and fetch everything")
+    ap.add_argument("--stage", help="also copy this run's results into DIR (CI artifact layout)")
     args = ap.parse_args()
 
-    paths = _load_paths(Path(args.sources))
-    if not paths:
-        raise SystemExit("no thermal_paths in sources.yaml")
-
-    changed_by_source: dict[str, set[str]] = {}
-    if args.only_changed:
-        change_set = json.loads(Path(args.only_changed).read_text())
-        for dev in change_set.get("devices", []):
-            key = f"{dev['vendor']}/{dev['codename']}"
-            changed_by_source.setdefault(dev["source_id"], set()).add(key)
-
+    data = load_sources(Path(args.sources))
+    sources = source_map(data)
     if args.source:
-        source_ids = [args.source]
-    elif args.all or args.only:
-        index = json.loads((MANIFEST_DIR / "index.json").read_text())
-        source_ids = [s["source_id"] for s in index["sources"]]
-        if args.only:
-            wanted = set(args.only.split(","))
-            source_ids = [s for s in source_ids if s in wanted]
+        ids = [args.source]
+    elif args.only:
+        ids = [s for s in args.only.split(",") if s]
+    elif args.all:
+        ids = [sid for sid in sources if (MANIFEST_DIR / f"{sid}.json").is_file()]
     else:
-        raise SystemExit("pick --source <id>, --only <a,b,c>, or --all")
+        raise SystemExit("pick --source <id>, --only <a,b>, or --all")
 
-    for sid in source_ids:
-        run_source(sid, paths, args.jobs, args.limit, changed_by_source.get(sid) if changed_by_source else None)
-    return 0
+    changed: dict[str, set[str]] | None = None
+    if args.only_changed:
+        cs = json.loads(Path(args.only_changed).read_text())
+        changed = {}
+        for d in cs.get("devices", []):
+            changed.setdefault(d["source_id"], set()).add(device_key(d))
+
+    failed = 0
+    for sid in ids:
+        if sid not in sources:
+            raise SystemExit(f"unknown source {sid!r} (not in {args.sources})")
+        only_keys = changed.get(sid, set()) if changed is not None else None
+        failed += run_source(sources[sid], data, args.jobs, args.limit, only_keys, args.refetch,
+                             stage=Path(args.stage) if args.stage else None)["failed"]
+    return 0 if failed == 0 else 2
 
 
 if __name__ == "__main__":

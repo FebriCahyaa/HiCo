@@ -168,6 +168,14 @@ using KV = std::pair<std::string_view, std::string_view>;
 
 // Presets touch the level, the safety limits and the timing only; lists stay as they are.
 // Safety limits never leave the schema ranges, so no preset can switch the guard off.
+// Daily: for social media, streaming and general use. HiCo never touches the peak here; the
+// vendor thermal system stays in charge. Games in the foreground still get the Relaxed level so
+// they do not stutter, but no vendor limit is removed and clocks are never pinned.
+constexpr std::array kDaily{
+    KV{"mode", "auto"}, KV{"game_level", "relaxed"}, KV{"unlock_on_lite", "0"}, KV{"thermal_overclock", "0"},
+    KV{"relax_margin", "2"}, KV{"safety_cpu_temp", "85"}, KV{"safety_battery_temp", "42"},
+    KV{"safety_cooldown", "45"}, KV{"poll_interval", "3"},
+};
 constexpr std::array kCool{
     KV{"mode", "auto"}, KV{"game_level", "relaxed"}, KV{"unlock_on_lite", "0"}, KV{"thermal_overclock", "0"},
     KV{"relax_margin", "0"}, KV{"safety_cpu_temp", "88"}, KV{"safety_battery_temp", "43"},
@@ -190,6 +198,7 @@ constexpr std::array kOverclock{
 };
 
 const std::array kPresets{
+    ConfigPreset{"daily", kDaily},
     ConfigPreset{"cool", kCool},
     ConfigPreset{"balanced", kBalanced},
     ConfigPreset{"extreme", kExtreme},
@@ -204,7 +213,7 @@ std::span<const ConfigPreset> config_presets() {
 
 std::optional<std::string> apply_preset(Config &cfg, std::string_view name) {
     const auto it = std::find_if(kPresets.begin(), kPresets.end(), [name](const ConfigPreset &p) { return p.name == name; });
-    if (it == kPresets.end()) return std::format("unknown preset '{}' (cool, balanced, extreme, overclock)", name);
+    if (it == kPresets.end()) return std::format("unknown preset '{}' (daily, cool, balanced, extreme, overclock)", name);
     Config next = cfg;
     for (const auto &[key, value] : it->values) {
         if (auto err = next.set(key, value)) return err;

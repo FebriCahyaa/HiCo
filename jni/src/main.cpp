@@ -55,7 +55,7 @@ int usage() {
         "  config get <key>\n"
         "  config set <key> <value>\n"
         "  config reset           restore default settings\n"
-        "  config preset <name>   apply a preset: cool, balanced, extreme, overclock\n"
+        "  config preset <name>   apply a preset: daily, cool, balanced, extreme, overclock\n"
         "  config presets         presets and their values (JSON)\n"
         "  config upgrade         add new keys and normalise values (installer)\n"
         "  config schema          settings description (JSON)\n"

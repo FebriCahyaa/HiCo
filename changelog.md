@@ -1,5 +1,24 @@
 # Unreleased
 
+### Stock thermal dataset and delta-only ingest
+- `stock/` now holds the thermal-relevant files of 2,400+ custom-ROM device trees (LineageOS,
+  crDroid, LMODroid, AOSPA, ArrowOS, DotOS, AlphaDroid, PixelOS, ProtonAOSP, AwakenOS) and the
+  stock vendor thermal blobs of 209 devices / common trees from TheMuppets (Xiaomi, Motorola,
+  Samsung, OnePlus, Google, LG, Sony, Nubia, Realme, …), each with a `source.json` recording the
+  upstream commit and every file's SHA-256.
+- `ingest.yml` fetches only what moved upstream: `pushed_at` first, then one `git ls-remote` per
+  candidate against the commit in `stock/manifest/<source>.state.json`. The fetch matrix comes
+  from the change set; fetched data travels as artifacts and `tools/ingest/merge_fetch.py` merges
+  it (removed repositories and trees that lost their thermal files are cleaned up, failed ones keep
+  their last good copy). Fixed: the old diff never saw a change, manifests were not passed between
+  jobs, common trees were dropped, the DerpFest / Evolution X orgs were wrong, PR failures were hidden.
+- New `repo-manifest` provider (TheMuppets `muppets.xml`, newest LineageOS branch per repository,
+  no API quota) and `blob_paths` for vendor blobs. `tests/ingest_test.py` covers the cycle offline.
+- **Daily preset**: social media, streaming and general use. The vendor thermal system stays in
+  charge; foreground games get the Relaxed level only; safety 85 °C CPU / 42 °C battery.
+
+# Unreleased
+
 ### Thermal monitor scope guard
 - Monitor telemetry now exposes all discovered cooling devices as thermal state, with active/idle status and counts.
 - Added a regression guard that rejects Flux/Tweaks/game/performance identifiers from the thermal monitor/tooling surfaces.
