@@ -85,5 +85,5 @@ export function useSettingsActions() {
     return guarded(() => hico.set(key, v), t('notify.saved'))
   }
 
-  return { setMode, applyPreset, setKey }
+  return { setMode, applyPreset, setKey, WARN_ON }
 }

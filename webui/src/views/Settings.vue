@@ -48,6 +48,7 @@
           </RippleComponent>
         </div>
 
+        <h2 class="section">{{ $t('settings.section.behavior') }}</h2>
         <div class="mb-4">
           <div v-for="k in toggles" :key="k.key" class="md3-list">
             <div class="md3-list-item flex items-center gap-4 px-5 py-4">
@@ -99,36 +100,49 @@
           </div>
         </div>
 
-        <!-- More -->
-        <h2 class="section">{{ $t('settings.section.more') }}</h2>
-        <div class="mb-4">
-          <div v-for="e in entries" :key="e.key" class="md3-list">
-            <RippleComponent class="md3-list-item" tabindex="0" @click="e.run">
-              <div class="flex items-center gap-4 px-5 py-4">
-                <span class="badge" :class="[e.shape, e.tone]"
-                  ><component :is="e.icon" :size="20"
-                /></span>
-                <span class="flex-1 min-w-0">
-                  <span
-                    class="block text-sm font-semibold"
-                    :class="e.danger ? 'text-error' : 'text-on-surface'"
-                    >{{ $t(`settings.${e.key}.title`) }}</span
-                  >
-                  <span class="block text-xs text-on-surface-variant mt-1">{{
-                    e.subtitle ? e.subtitle() : $t(`settings.${e.key}.description`)
-                  }}</span>
-                </span>
-              </div>
-            </RippleComponent>
+        <!-- Diagnostics, appearance, system and about: each its own grouped surface -->
+        <template v-for="grp in entryGroups" :key="grp.key">
+          <h2 class="section">{{ $t(`settings.section.${grp.key}`) }}</h2>
+          <div class="mb-4">
+            <div v-for="e in grp.entries" :key="e.key" class="md3-list">
+              <RippleComponent
+                class="md3-list-item"
+                tabindex="0"
+                :aria-disabled="busy === e.key"
+                @click="run(e)"
+              >
+                <div class="flex items-center gap-4 px-5 py-4">
+                  <span class="badge" :class="[e.shape, e.tone]"
+                    ><component :is="e.icon" :size="20"
+                  /></span>
+                  <span class="flex-1 min-w-0">
+                    <span
+                      class="block text-sm font-semibold"
+                      :class="e.danger ? 'text-error' : 'text-on-surface'"
+                      >{{ $t(`settings.${e.key}.title`) }}</span
+                    >
+                    <span class="block text-xs text-on-surface-variant mt-1">{{
+                      e.subtitle ? e.subtitle() : $t(`settings.${e.key}.description`)
+                    }}</span>
+                  </span>
+                  <LoadingSpinner v-if="busy === e.key" :size="20" />
+                  <ChevronRightIcon
+                    v-else-if="e.chevron"
+                    class="text-on-surface-variant rtl:rotate-180 shrink-0"
+                    :size="20"
+                  />
+                </div>
+              </RippleComponent>
+            </div>
           </div>
-        </div>
+        </template>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed, reactive, onMounted } from 'vue'
+import { computed, reactive, ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useHiCoStore } from '@/stores/HiCo'
@@ -139,6 +153,7 @@ import { LANGUAGES } from '@/helpers/Locales'
 
 import RippleComponent from '@/components/ui/Ripple.vue'
 import ToggleSwitch from '@/components/ui/ToggleSwitch.vue'
+import LoadingSpinner from '@/components/ui/LoadingSpinner.vue'
 import ChevronRightIcon from '@/components/icons/ChevronRight.vue'
 import InformationOutlineIcon from '@/components/icons/InformationOutline.vue'
 import ShieldIcon from '@/components/icons/Shield.vue'
@@ -160,6 +175,7 @@ const actions = useSettingsActions()
 
 const cfg = computed(() => hico.config)
 const draft = reactive({})
+const busy = ref('')
 onMounted(() => hico.loadConfig())
 
 const preset = computed(() => PRESET_STYLE[hico.currentPreset] || PRESET_STYLE.balanced)
@@ -226,11 +242,14 @@ async function saveLimit(l, value) {
 }
 
 async function restart() {
+  busy.value = 'restart'
   try {
     await hico.restart()
     notify.success(t('actions.restarted'))
   } catch (e) {
     notify.error(t('notify.failed', { error: e.message }))
+  } finally {
+    busy.value = ''
   }
 }
 
@@ -242,11 +261,14 @@ async function restoreStock() {
     confirmText: t('settings.restore.action'),
   })
   if (!ok) return
+  busy.value = 'restore'
   try {
     await hico.restore()
     notify.success(t('settings.restore.done'))
   } catch (e) {
     notify.error(t('notify.failed', { error: e.message }))
+  } finally {
+    busy.value = ''
   }
 }
 
@@ -258,12 +280,20 @@ async function resetSettings() {
     confirmText: t('settings.reset.action'),
   })
   if (!ok) return
+  busy.value = 'reset'
   try {
     await hico.reset()
     notify.success(t('settings.reset.done'))
   } catch (e) {
     notify.error(t('notify.failed', { error: e.message }))
+  } finally {
+    busy.value = ''
   }
+}
+
+function run(e) {
+  if (busy.value) return
+  e.run()
 }
 
 function switchLanguage() {
@@ -277,57 +307,81 @@ function switchLanguage() {
   }
 }
 
-const entries = [
+const entryGroups = [
   {
-    key: 'advanced',
-    icon: TuneIcon,
-    shape: 'shape-pentagon',
-    tone: 'bg-secondary-container text-on-secondary-container',
-    run: () => router.push('/settings/advanced'),
+    key: 'diagnostics',
+    entries: [
+      {
+        key: 'advanced',
+        icon: TuneIcon,
+        shape: 'shape-pentagon',
+        tone: 'bg-secondary-container text-on-secondary-container',
+        run: () => router.push('/settings/advanced'),
+        chevron: true,
+      },
+      {
+        key: 'log',
+        icon: TextIcon,
+        shape: 'shape-cookie4',
+        tone: 'bg-surface-container-highest text-on-surface',
+        run: () => router.push('/settings/log'),
+        chevron: true,
+      },
+    ],
   },
   {
-    key: 'log',
-    icon: TextIcon,
-    shape: 'shape-cookie4',
-    tone: 'bg-surface-container-highest text-on-surface',
-    run: () => router.push('/settings/log'),
+    key: 'appearance',
+    entries: [
+      {
+        key: 'language',
+        icon: LanguageIcon,
+        shape: 'shape-circle',
+        tone: 'bg-surface-container-highest text-on-surface',
+        run: switchLanguage,
+        subtitle: () => LANGUAGES[locale.value],
+        chevron: true,
+      },
+    ],
   },
   {
-    key: 'language',
-    icon: LanguageIcon,
-    shape: 'shape-circle',
-    tone: 'bg-surface-container-highest text-on-surface',
-    run: switchLanguage,
-    subtitle: () => LANGUAGES[locale.value],
-  },
-  {
-    key: 'restart',
-    icon: RefreshIcon,
-    shape: 'shape-clover4',
-    tone: 'bg-primary-container text-on-primary-container',
-    run: restart,
-  },
-  {
-    key: 'restore',
-    icon: SnowflakeIcon,
-    shape: 'shape-cookie9',
-    tone: 'bg-tertiary-container text-on-tertiary-container',
-    run: restoreStock,
-  },
-  {
-    key: 'reset',
-    icon: ErrorIcon,
-    shape: 'shape-cookie6',
-    tone: 'bg-error-container text-on-error-container',
-    run: resetSettings,
-    danger: true,
+    key: 'system',
+    entries: [
+      {
+        key: 'restart',
+        icon: RefreshIcon,
+        shape: 'shape-clover4',
+        tone: 'bg-primary-container text-on-primary-container',
+        run: restart,
+      },
+      {
+        key: 'restore',
+        icon: SnowflakeIcon,
+        shape: 'shape-cookie9',
+        tone: 'bg-tertiary-container text-on-tertiary-container',
+        run: restoreStock,
+      },
+      {
+        key: 'reset',
+        icon: ErrorIcon,
+        shape: 'shape-cookie6',
+        tone: 'bg-error-container text-on-error-container',
+        run: resetSettings,
+        danger: true,
+      },
+    ],
   },
   {
     key: 'about',
-    icon: InformationOutlineIcon,
-    shape: 'shape-sunny',
-    tone: 'bg-secondary-container text-on-secondary-container',
-    run: () => router.push('/settings/about'),
+    entries: [
+      {
+        key: 'about',
+        icon: InformationOutlineIcon,
+        shape: 'shape-sunny',
+        tone: 'bg-secondary-container text-on-secondary-container',
+        run: () => router.push('/settings/about'),
+        chevron: true,
+      },
+    ],
   },
 ]
 </script>
