@@ -1,0 +1,32 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/vendor_realme_spartan.git",
+  "codename": "spartan",
+  "commit": "e8ae02d832be7549d6f53c38243610884f96d71e",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
+      "size": 595
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "abd7b4db6d6ecaec544a781529c927879a7b3fa4901081de70ae513ef90c4787",
+      "size": 41462
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_realme_spartan",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "realme"
+}

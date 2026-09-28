@@ -1,0 +1,67 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_realme_RMX2020.git",
+  "codename": "rmx2020",
+  "commit": "ea5d09d6b2f7f0fe6dcc918d7ec84bf376ec190a",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "464367c7397132699cada55856d076e27ed2abe34da4259e3488677565babcda",
+      "size": 3839
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_00",
+      "sha256": "8bc68d4f98b60b273ba825aae07291664ead28d657d10f57ec9dd442e29f6329",
+      "size": 3732
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_03",
+      "sha256": "8bc68d4f98b60b273ba825aae07291664ead28d657d10f57ec9dd442e29f6329",
+      "size": 3732
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_05",
+      "sha256": "8bc68d4f98b60b273ba825aae07291664ead28d657d10f57ec9dd442e29f6329",
+      "size": 3732
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_08",
+      "sha256": "64bd27d4479e03e705f76a1134efe3aa9853cad7207fcdd83a3ad00b74dfff50",
+      "size": 3408
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "2026e7fc4ce44a7d364200d98d654a58e26aca2f6880866a04e63572357afe41",
+      "size": 3732
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "c876f90f1d53127497caf2d260f6380ff57d42890fcb7300059993444fdf0ce8",
+      "size": 3897
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_realme_RMX2020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "realme"
+}

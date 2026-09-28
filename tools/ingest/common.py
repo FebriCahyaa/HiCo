@@ -91,6 +91,17 @@ def remote_heads(url: str, timeout: int = 30) -> dict[str, str] | None:
     return heads
 
 
+def remote_default_branch(url: str, timeout: int = 30) -> str | None:
+    """Default branch of a remote repository ("" when HEAD is detached), None when unreachable / missing."""
+    rc, out = run(["git", "ls-remote", "--symref", url, "HEAD"], timeout=timeout)
+    if rc != 0 or not out:
+        return None
+    for line in out.splitlines():
+        if line.startswith("ref: refs/heads/") and line.endswith("\tHEAD"):
+            return line[len("ref: refs/heads/"):-len("\tHEAD")]
+    return ""
+
+
 def candidate_branches(dev: dict) -> list[str]:
     """Branches to try, preferred first. Repo-tool manifests list a repository on
     a new branch before the repository itself has that branch."""

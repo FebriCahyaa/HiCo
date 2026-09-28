@@ -3,8 +3,28 @@
   "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_rosemary.git",
   "codename": "rosemary",
   "commit": "67b416580f481bc105e13091af5b1d109dbd9009",
-  "file_count": 14,
+  "file_count": 18,
   "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "9858666f0c57a8c0791da12188b67e41e5cd51c29de3df79c0ba994bc4daf0c1",
+      "size": 3833
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_08",
+      "sha256": "7679013319d44a30606a43e1da42bce0739ebd30ab676adc7971d1ff6825006c",
+      "size": 3761
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "db57d1b7b592461fd020275ceb7d06fc0e99db19d258f14f39865aaae1f221cc",
+      "size": 3761
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "0356cb44b5b57c4e17a2ee01d9a324c3b7674c8986b1cd6360a2e5a5c53e242c",
+      "size": 3761
+    },
     {
       "path": "proprietary/vendor/etc/init/init.thermal.rc",
       "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",

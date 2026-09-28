@@ -1,0 +1,687 @@
+{
+  "branch": "alpha-16.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/vendor_xiaomi_rubyx.git",
+  "codename": "rubyx",
+  "commit": "fc7838f8096c4cc17f64df92693283d58c009a4e",
+  "file_count": 134,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "8ee1869a82546bf1a207f2510e996c5059c4ddb918551fcac4e8fb16389edf3b",
+      "size": 4194
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "028440d89d069120e103fad309fb2e8f62cd74a8d65e8fbc5ce194f3b9933a43",
+      "size": 3292
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-4k.conf",
+      "sha256": "eb9dcd33f29437d8b124dad06bc3ed83a1549af0a0f91b57e7b7c1947b263135",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "37b8e3e97367343377b754e903876aa78151eac8393d7268c1c1746915b546d3",
+      "size": 2288
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only-1.conf",
+      "sha256": "0ae346481939b18b0281e6682529b6e0b2feb0b0641b9470ba89a70cc2285833",
+      "size": 638
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only-2.conf",
+      "sha256": "afe4290864e9402e28b814f5c103027255f01473e56d86375d5d8770eee13b57",
+      "size": 1112
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only-3.conf",
+      "sha256": "b23925bc50b822f6350e737ccee6b9721cf2ff3ad7da5926e6966bf6ae43ded5",
+      "size": 889
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "503af666a795524365cb3cf06ee661bdf65db1ed322bf7308245b9be6f99eb58",
+      "size": 689
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-class0.conf",
+      "sha256": "14bf3f29e04fd7f866914162d2b1b9e6813a44fbce61f86c9bcf30459bb58bc6",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-dolbyvision.conf",
+      "sha256": "01866c008d8a6642a102d5ad4f24ab1899ed94a305f3c42c3758d1a97f67396d",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-4k.conf",
+      "sha256": "74860da8fc6dffdd3e6a329f87801cdc744fe40d38e7a14d5dbc58688d11bde4",
+      "size": 2464
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-camera.conf",
+      "sha256": "0fbe850418685986f5b1d75c399d298f94fa42c9b8ddaa7b2d30acfb0c4b80aa",
+      "size": 2480
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-class0.conf",
+      "sha256": "a8aa957e64ae10427e9ea45cbdbac76a6f6f0cb00a08a7f923de8a67b300ddcf",
+      "size": 2448
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-dolbyvision.conf",
+      "sha256": "c994d678b819db5ad8c6792802872bf2a46d1f44780534dde468f9d432141452",
+      "size": 2416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-hp-mgame.conf",
+      "sha256": "687db8ca624ef7e6875585ffe9dd8b5cc393a73d90a7b2e13c70750ae124ddef",
+      "size": 2368
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-hp-normal.conf",
+      "sha256": "5c0012292f9a6eab71ef3dce1c16c7440a03a3633e7b2af2b6edf600683b6d43",
+      "size": 3088
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-huanji.conf",
+      "sha256": "93557cd6dc698eb5e63eb5f885ee13c9bb13f96da4d89edbcceb2f95274b85ee",
+      "size": 2688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-map.conf",
+      "sha256": "e0b09685d49d2971d10024a561d9ba84d8231f4a80e5810611f5c3fb974b69c6",
+      "size": 1184
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-mgame.conf",
+      "sha256": "a0859ff5ff34bd4b5d832200b27451da755ec645f5b4f9d1207869f97caa4a95",
+      "size": 2304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-navigation.conf",
+      "sha256": "1ca63f63886fa8d453372c335667892c544dc44b52674591747c1bb9411db815",
+      "size": 2560
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-nolimits.conf",
+      "sha256": "31e704b097928722a65cbdbe705cd8da7dddb88ef7408a790e1ceee00a03214b",
+      "size": 1632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-normal.conf",
+      "sha256": "df9f58068c97f103fc393febf3b606c6251c308cf4051e63d9623917dab7c0ca",
+      "size": 3040
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-per-class0.conf",
+      "sha256": "0e8c04866b265e76029df4e103bcae52ed1e461d34c4ab52c5a7aaa4ee5593fb",
+      "size": 2512
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-per-normal.conf",
+      "sha256": "843b749e39db7d905af53c85ff736beb4a2bff849a083ee834e5dd8082c6622c",
+      "size": 3168
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-per-video.conf",
+      "sha256": "4b5330e5dc65832d549a72a7787a69c22e2a11539c0384e88abf9f8e29979450",
+      "size": 2528
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-phone.conf",
+      "sha256": "2ba563668aece7a62de62532437f55eec993f2e44095021268ff2ce1a3a3f180",
+      "size": 2224
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-tgame.conf",
+      "sha256": "865c45d607dbddb4816ea0a471152132707457f52aab66703d8779ede0c1ebe7",
+      "size": 2400
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-video.conf",
+      "sha256": "298d3d20c65475107e7225232f996f3bc15ec5bd9b7ab44b68591119aa0af7bb",
+      "size": 2480
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-gl-videochat.conf",
+      "sha256": "dcd356546cece6f9501116ba8107ecc30460f55c1fcc7cc87a03a9fa38bc36e7",
+      "size": 2608
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-huanji.conf",
+      "sha256": "0ebbeba94eb52f2498ca29f2408118e6de7435a6f0cfa1c3e8fdecc755fd9370",
+      "size": 2496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-4k.conf",
+      "sha256": "5e6a54838b0a3b57aef2493e5b513241d1445e8cd9a01b777fb0fabbb2637ba7",
+      "size": 2336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-camera.conf",
+      "sha256": "97ef693ade1d15dfb15a35faf1bdaa7c10cff4fd14de2d0b0fe4f3c1eb5d4f39",
+      "size": 2352
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-class0.conf",
+      "sha256": "ec434db9256c32b4223ce2324e8594b53a5c6df779a95502ecb34dab5250f724",
+      "size": 2320
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-dolbyvisionconf",
+      "sha256": "59f57d7598f4cef4516a23dd771315122e4dae2e5cb3b455a1019a60299ee38c",
+      "size": 2416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-huanji.conf",
+      "sha256": "5788930f98ddd23166c47ba7375149ca5cb31b9719ed4ab91ffa24496e9d019f",
+      "size": 2544
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-map.conf",
+      "sha256": "231813ac8cd308376c903534902e790fab4b5e25ca54ef956eecf43beefbedc3",
+      "size": 1136
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-mgame.conf",
+      "sha256": "d65b76ef12633309324e1030acb350b3487c92cf3ee32f4b32dc585472b83d59",
+      "size": 2176
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-navigation.conf",
+      "sha256": "0c88dfb8752bac3f74f2fb875425d3d123836c65203e7b12db716be1e9ed468c",
+      "size": 2544
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-nolimits.conf",
+      "sha256": "270f78a1ddbd9eeed77c142ca2ef7af498371f7b847a316a6d51b1740dfacab0",
+      "size": 1600
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-normal.conf",
+      "sha256": "86cf57456ebc4bbd379d73d6b138b756c0578bec335fabd85442e89a235f3125",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-per-class0.conf",
+      "sha256": "1b047eed72e1f9f4ab6a65f6b2068c641024fa6cc40c42559405c811bfa1683a",
+      "size": 2368
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-per-normal.conf",
+      "sha256": "ab2def15ed15a68507d1a5a4300e9502da4bea54175a35201862015960e406ea",
+      "size": 3024
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-per-video.conf",
+      "sha256": "2376b033776f3101990b5df0e80e942e425b1cbee62716bc2248633fbb382a34",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-phone.conf",
+      "sha256": "40eda06fc4e3605d19a499cd59dbb7d940e3ee95eddca690bbecceabcbe2f90c",
+      "size": 2096
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-tgame.conf",
+      "sha256": "3efe5f3d5f28551a23ef5068ea1dc4734ad1c9530c8f0f2852df08452802f29d",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-video.conf",
+      "sha256": "476a59430431c638c3bbcabcf865f10384092535a0b49879509baa47ba67acb8",
+      "size": 2336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-in-videochat.conf",
+      "sha256": "9ad7decd57ddde3a8d58b28c01cad07ce0a1edb84e25d53c981f8ea7fc686a86",
+      "size": 2496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "866c74053273f308b08e193535c33e8f1e248da811ed960c7c28618513851e4d",
+      "size": 1008
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-mgame.conf",
+      "sha256": "92404fc2a7b1f64da78df753ccd1b7ecf38365bc4c3fbda53b90bb6f7c60dca7",
+      "size": 2128
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-navigation.conf",
+      "sha256": "af057c21c869427e9f3eb6792ca6b0e8fee6945ad8db4797075db0d568c2784c",
+      "size": 2384
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "ac513c2e208d3e2ce1869512f438029bccd14d959bd5a06758a645734b4cdb0b",
+      "size": 1600
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "21c5a4651fce38b2b73fd5b1da3da9cd1e257d39a2e48a68b7026f113a0c4cab",
+      "size": 2864
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-class0.conf",
+      "sha256": "9a5ae34dd56709e51cf7c3f30ffb16c0e93c883ebbf3bce6d89cbd237c9a97bb",
+      "size": 2336
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-normal.conf",
+      "sha256": "f696fe232c37eaa4c5bcbd772fe1c2bdf24aa019fa05cc6c2ed7684a6a416d79",
+      "size": 2992
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-per-video.conf",
+      "sha256": "e764da1d371979325c446160c0ae08d5abba47d79cab80a55a2605b0cebdbe76",
+      "size": 2352
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "fb24554c2bbbe1bc0b0a302eaca1ac43826128695671362fa20a5da260039110",
+      "size": 2048
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-region-map.conf",
+      "sha256": "9423fbce9f49cdf797a3be30b488ffc2e4b17ac4cd0c2d0c8361e87e6f643943",
+      "size": 992
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "6ccfb2e14a81d7dd86ef6cc69667b8f4700cff6178e2bb777e8337a69b7c66b7",
+      "size": 2224
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-4k.conf",
+      "sha256": "2f92a41338523aea5301f572c82913b17bdc3df1e1eeb277c4d1ed742e27c570",
+      "size": 2480
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-camera.conf",
+      "sha256": "585e95b4b3c8df72f2e9daab12f2f282df88a1d3d4ee120fd11108d92acce60b",
+      "size": 2496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-class0.conf",
+      "sha256": "986bb37e995a4404be7314b0bdcbd3263623565cafb760e018739d0b36875ac6",
+      "size": 2816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-dolbyvision.conf",
+      "sha256": "e3b700361a8e98e1459b91a7b4f608ca564635c731f8fafd586f725e674fe8f8",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-huanji.conf",
+      "sha256": "fcbded07e261e2a0b28034a30bf190f3e27339188c77a255b0702f1c7354a185",
+      "size": 2640
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-map.conf",
+      "sha256": "086fd5a86834393f32bcfb7ddc33a131378635290e3791e679b78cbc57434f84",
+      "size": 1248
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-mgame.conf",
+      "sha256": "98c470c9d419eabf3a0e89e571306d3c85c818b872dfe8c284ca39fbed3197bb",
+      "size": 2640
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-navigation.conf",
+      "sha256": "479024b86d80e2ecd83858228545bafeebc9f2cb9e0ba3707a7aeaf2884f46dc",
+      "size": 2576
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-nolimits.conf",
+      "sha256": "a363ab0d16c2ad90c8dcd4ea38a9258206657a468b60f0ec7f143ce979491c7d",
+      "size": 1984
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-normal.conf",
+      "sha256": "50c14974537e901452eb6a93c1bafa5eb88374fd8338695cb7e8c43eac20b223",
+      "size": 3392
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-per-class0.conf",
+      "sha256": "9ecebb3ad1852da8e3b1c14762cfc6a8d602d5999e284bc5473d095a0141fc59",
+      "size": 2880
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-per-normal.conf",
+      "sha256": "7a8a9a8786bf5cec3323b6e0f5e0dc04d3ebd831045d211833ea36a5e8e71c27",
+      "size": 3536
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-per-video.conf",
+      "sha256": "3722825dc857945ef6cb2cb54afccbf550db047c921420a8af3eced2a385ec40",
+      "size": 2864
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-phone.conf",
+      "sha256": "b44efdda494fd54c19756171117c577608e2393b63019b9bd1ad04efc4f239f9",
+      "size": 2368
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-tgame.conf",
+      "sha256": "995ae175c7aa50b4a568237cf28538ade5bc190de26521e349ea1bd50d30282f",
+      "size": 2688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-video.conf",
+      "sha256": "eb8550e941ae609bfe2ca2072f5de7462976e26342f2e0bf5e66f760fb86e2f8",
+      "size": 2816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-200-videochat.conf",
+      "sha256": "6e570cb073836a6e2212ce667d1e44fd09dc82a583b8012a3faae8d9b602e49e",
+      "size": 2560
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-4k.conf",
+      "sha256": "d4b99d835576091bb36ad614d190247ce5ebbc22bd60342affbb1e1a0c36e76b",
+      "size": 2416
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-camera.conf",
+      "sha256": "3b9d5dc80ba714c1ca8cc8ec380f576beae08ead8749f60fe58f8b6ad53c7d8c",
+      "size": 2464
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-class0.conf",
+      "sha256": "a7791937ca1a00923ec7237a4a47a47a2fef8ab793b86a562a233ac909f5446d",
+      "size": 2784
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-dolbyvision.conf",
+      "sha256": "4d127a2a804dd20a30dcf242e28a38f93a2edf9b53e4d3fd0fe4f7a3a2d5b183",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-4k.conf",
+      "sha256": "8cc4c3dd7a5e0b1f6be649455f88e75df617d19930377d15ab45676c91f7c6e2",
+      "size": 2592
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-camera.conf",
+      "sha256": "9a2485904d64ee4b47dbc5b29d943632e43c9dbf77a65d406d067cb43b3c7091",
+      "size": 2624
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-class0.conf",
+      "sha256": "69b108e7e9d20120c178248f4de2fd616eb383abeaf4f23011a7782fa677f527",
+      "size": 2960
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-dolbyvision.conf",
+      "sha256": "18ccc69db802d4a5bf05607397aeab8d1ff71a39a1217d037855c57d941d5c25",
+      "size": 3088
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-hp-mgame.conf",
+      "sha256": "d2a7c353c60bae2d228991561d5920ca8b4979681acf7934f94448002fcb185d",
+      "size": 2912
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-hp-normal.conf",
+      "sha256": "c78a058a880bfcc8c0e29f0edeee1e514030d20470c3068d16dd8cb349796039",
+      "size": 3600
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-huanji.conf",
+      "sha256": "dd8d0fafa6fd162531313b57b6386540297a4d09befadb65ab9e5384477ada0c",
+      "size": 2752
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-map.conf",
+      "sha256": "70c0fe56f3652361925372beca0cf1d84ed9cf1f67f0900ca18b4511e4be551e",
+      "size": 1280
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-mgame.conf",
+      "sha256": "0f9e2b8ed12b3fa921e84eb603c9cacc47a96407ee67e036a2ec8223922e5472",
+      "size": 2816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-navigation.conf",
+      "sha256": "a5ef66e63cf0a7238a055cbbb834603fa068122fe8d4aca34a9b83296363235a",
+      "size": 2704
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-nolimits.conf",
+      "sha256": "9257a5cbc965975466be3ef07a37722453321addcfd1d8da6311196f8915147c",
+      "size": 1968
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-normal.conf",
+      "sha256": "eebc09607b1309c69fbcc1ed2cd8762f397646b0214a0fe2b019d90986ed9126",
+      "size": 3776
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-per-class0.conf",
+      "sha256": "258f1a7b486831de33f561716a736689cc2735d2266bfe4d318fa29518147371",
+      "size": 3024
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-per-normal.conf",
+      "sha256": "ef149c9b95c575a6e7c171801c44e3f48a4eb4ef125ffbebfaab03e948b6bfff",
+      "size": 3952
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-per-video.conf",
+      "sha256": "1b9492b3f43f9fb90529d7a3cd886d97c9e9db3c6a2c301d70fe93829ee1a18c",
+      "size": 3056
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-phone.conf",
+      "sha256": "3762f60b74b3480661e068e3ea27f5a21d5044bbbddf8824fecdd283df4dd6f0",
+      "size": 2480
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-tgame.conf",
+      "sha256": "52e1a0315da1f7c6a3fc3ff0df8ccddc14cb66859ef27994af0ceee1fef57c6a",
+      "size": 2880
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-video.conf",
+      "sha256": "3b9f6661ae4a3c2638b0d7284735f9100abced23d9f031e801fb822e31ce9771",
+      "size": 2992
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-gl-videochat.conf",
+      "sha256": "db2b502ded85aa1924b2b22f7ec1f1e01e54de8a1cb106f28afd9bf1e4950bfb",
+      "size": 2688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-huanji.conf",
+      "sha256": "1f1cacb464add54e68c136cdb045363a18d67965ef74150c77b099d86606507d",
+      "size": 2576
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-4k.conf",
+      "sha256": "52dedde4a1c4929da792e001c91c50b97cb8c65f41bc2836f28cc441bfceed66",
+      "size": 2464
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-camera.conf",
+      "sha256": "2232a172d5469c6bcda6fc2f87d0c24498ebc0185aa9607f493692ee1f27c9e1",
+      "size": 2496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-class0.conf",
+      "sha256": "bf5207303c7ca87f6b2edb92cce5d2615f62c9216ab5243d8ded3c3730747dff",
+      "size": 2832
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-dolbyvision.conf",
+      "sha256": "7d52e4fc1801d0808afa520060f65344c19cd254238bf4941aad8533f89700de",
+      "size": 2944
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-huanji.conf",
+      "sha256": "cef676ee397aa911d777af9f35437c3424492fabcf4a065329b16ee5d2b21388",
+      "size": 2624
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-map.conf",
+      "sha256": "ea8670a7c4dc721683b5ea885c94263837bb46eb26cabe69cba70d5b95e9ae13",
+      "size": 1216
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-mgame.conf",
+      "sha256": "d22087a9276c9ee09d65c3d37a1367d541fe30de7ce5834659c22893ae28b637",
+      "size": 2704
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-navigation.conf",
+      "sha256": "78e00ee249912957daa5ce8478051ffa57ee4b3cd00743629f12b6cf0508a07f",
+      "size": 2560
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-nolimits.conf",
+      "sha256": "43ce64cd2e6f8276b208159df20ce4357318cafe6a9d2e9ccb87700774c5e5ed",
+      "size": 1968
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-normal.conf",
+      "sha256": "66de3a2a174825bd41d1c60761602aea8a566ba4f1231b828b34dbee12bb7dac",
+      "size": 3632
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-per-class0.conf",
+      "sha256": "1ce1ebd7b9b927fc75e57cbe1def9821cf3fcd80973bca3afd00ed8a9b878b38",
+      "size": 2896
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-per-normal.conf",
+      "sha256": "a0ea13b5ec4c6f808ab424afbc7b993e321ff1d83b08d4154a8afe2d5113d428",
+      "size": 3808
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-per-video.conf",
+      "sha256": "5f675c63fe36609852a271f65aebee66e25d62881e1da3c4772e223dc6554537",
+      "size": 2912
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-phone.conf",
+      "sha256": "334394df0dbf0fd325edd5c60932886ed41c6a785f58dc792cd07c2a6443b72f",
+      "size": 2352
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-tgame.conf",
+      "sha256": "8d7e0787719302d2a0bf4bd4c492e0028f786ffe45375633aca9f2e7da6cb476",
+      "size": 2736
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-video.conf",
+      "sha256": "1e78e91f292d4f2fa14379acbf47339c597cdea821a54bec22df709eb8eae63d",
+      "size": 2848
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-in-videochat.conf",
+      "sha256": "43e547421d4f94ffb9ded9ea37c22e49062c224b7fa554774eff1dffdfd75a47",
+      "size": 2544
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-map.conf",
+      "sha256": "e95b103db7ce1098823847e752eb822cdf83eea1fcc906cb56427576e1e51b89",
+      "size": 1088
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-mgame.conf",
+      "sha256": "23659a4431f5dfb8035a42fe5f19fc19f97c30bf86c17c1214c3c4b063aa1edb",
+      "size": 2656
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-navigation.conf",
+      "sha256": "c87132a0c30bc1d9afe01f4d0e6126487a24bbd01ba856cb7e495ca72bba6234",
+      "size": 2512
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-nolimits.conf",
+      "sha256": "173a89c5ed1ebc8f44fe1b9258b4e84b1eeee6fd6e17ee3965ff050871375304",
+      "size": 1936
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-normal.conf",
+      "sha256": "7803f26802badd205afb152c3d1c9bb22fbae63e19064b9a3b40b4756551f6cb",
+      "size": 3600
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-per-class0.conf",
+      "sha256": "db9b71fb4b956ac2ca8735ad1e35c5b30c43e7bc6f80e41b7d925b205d409ecc",
+      "size": 2848
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-per-normal.conf",
+      "sha256": "60bad460daa83adec5d5949fc563ae10a06e7060e46506f1b97e5ec190c53429",
+      "size": 3760
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-per-video.conf",
+      "sha256": "91c661187dfc2b0ac83b6821d2d6d92255cc91019382854fe8224219432aaf48",
+      "size": 2864
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-phone.conf",
+      "sha256": "47db472441bcdf34ad5d09e77c0403ae7d6a8b939427898537ea1d2bb7cd1e3f",
+      "size": 2304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-tgame.conf",
+      "sha256": "38099bb84bb6d26a61acc54b9c66f2d8deb3cc052d3a3e762e92eb5f868e5498",
+      "size": 2688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-video.conf",
+      "sha256": "ce408ebc7fa1b8bdd397d8d5aa9977b2346a5665e1c784bf051dc9b79a19f10a",
+      "size": 2816
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-u-videochat.conf",
+      "sha256": "6306114778dd14e5dc35e5b5141d7b94be77f2da64714ba0a775f07f8b3428e7",
+      "size": 2496
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-video.conf",
+      "sha256": "896ae7bcf3bd687be297be6aaae45607e291bb458944aa80f6ff7326e596fb47",
+      "size": 2304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-videochat.conf",
+      "sha256": "79f0169637e85e8ee0941a50b2da3ebab4520bae5ed317ef36090d0d6ea1868a",
+      "size": 2464
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "dedacc30480017574570197dd15de5ab44872eba9fb690bc82a67dc7828b774e",
+      "size": 1507
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_xiaomi_rubyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

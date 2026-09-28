@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 SCHEMA = "hico.ingest-sources.v1"
 FAMILIES = {"rom", "oem", "kernel", "aosp", "blobs"}
-PROVIDERS = {"github", "gitlab", "git", "repo-manifest"}
+PROVIDERS = {"github", "gitlab", "git", "repo-manifest", "vendor-probe"}
 
 
 def _load_sources(path: Path) -> dict:
@@ -210,6 +210,17 @@ def verify(sources_path: Path, strict: bool) -> int:
                 print(f"FAIL {line}  — manifest unreadable or empty")
             else:
                 print(f"OK   {line}  projects per branch={dict(zip(branches, counts))}")
+        elif prov == "vendor-probe":
+            # Derived from other sources' manifests: those must exist in this file, listed before it.
+            known = [x.get("id") for x in (data.get("sources") or [])]
+            here = known.index(sid)
+            missing = [f for f in (src.get("from_sources") or []) + (src.get("skip_covered_by") or [])
+                       if f not in known[:here]]
+            if missing or not src.get("from_sources"):
+                failures.append(f"{sid}: from_sources / skip_covered_by must name sources listed before it: {missing}")
+                print(f"FAIL {line}  — unknown or later sources {missing}")
+            else:
+                print(f"OK   {line}  probes {len(src['from_sources'])} sources")
         elif prov == "gitlab":
             exists = _gitlab_group_exists(org)
             if not exists:

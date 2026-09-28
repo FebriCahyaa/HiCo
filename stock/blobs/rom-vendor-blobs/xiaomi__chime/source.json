@@ -1,0 +1,82 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_xiaomi_chime.git",
+  "codename": "chime",
+  "commit": "5f1022cc765452626ee74ea7a8a2943490c2c1f9",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "eef1e4f3d90983ec244041ccc6aca2ed5c5606f02eb14536a7ee741f1eb8abef",
+      "size": 532
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "89640c2975e6cd6486646e912b3c2782414792535cda22ebdccca2c08138f41d",
+      "size": 18242
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-arvr.conf",
+      "sha256": "f2c65e161d1db642229fcf59bea2f4fbcf87ce6949f6fb7e9bd92c76309a8b9f",
+      "size": 3728
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-camera.conf",
+      "sha256": "a0c54bcb0c5b5e6a0153f607b0394d8e61a9ffcd3a6f86c507cbe8fcb0a744e6",
+      "size": 3744
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-chg-only.conf",
+      "sha256": "a4e7feb165473fca1e398b4c1b25d78c81fac80c103cfba0e93bb82ddcb19c5c",
+      "size": 2272
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-map.conf",
+      "sha256": "7175e1e8df088e502913708cb16fbf8606a424b363abfca77b8e8080b540e570",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-nolimits.conf",
+      "sha256": "faf4164d1fd3d10a6a258cbf9ce2ea5881a8eee4773b1ecbaf5fa2b277e3542f",
+      "size": 3408
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-normal.conf",
+      "sha256": "2f9925b7ae5d49198c6fd6a4a9c6bb2ce981a5d707928464ae30f9e84051db5e",
+      "size": 3456
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-phone.conf",
+      "sha256": "35539a74f1b00cfae343cd7c1fef9b6c6d2408d4c7d6babbda341050ac03e46f",
+      "size": 3760
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-tgame.conf",
+      "sha256": "1fbca65f6dc8f29503827e38739984d2576203a455fbc4db3016d65c6ee0aed7",
+      "size": 3280
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-youtube.conf",
+      "sha256": "23e9bc73525496cc583031196a84dafc70e149c8a55b9e2fbb2dd47f10619da8",
+      "size": 3664
+    },
+    {
+      "path": "proprietary/vendor/etc/thermald-devices.conf",
+      "sha256": "1c2fbd0c7ec48e143f5e4793e12066200ba6b217e50456522e3fb1f066d2c9dd",
+      "size": 511
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_chime",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

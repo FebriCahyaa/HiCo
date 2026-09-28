@@ -3,12 +3,17 @@
   "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_sm8250-common.git",
   "codename": "sm8250-common",
   "commit": "27a9c758a445e61167bfada29b884b8f067dc394",
-  "file_count": 2,
+  "file_count": 3,
   "files": [
     {
       "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
       "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
       "size": 595
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "abd7b4db6d6ecaec544a781529c927879a7b3fa4901081de70ae513ef90c4787",
+      "size": 41462
     },
     {
       "path": "proprietary/vendor/etc/thermal-engine.conf",

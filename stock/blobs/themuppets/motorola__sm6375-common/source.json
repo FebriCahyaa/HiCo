@@ -3,12 +3,17 @@
   "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_sm6375-common.git",
   "codename": "sm6375-common",
   "commit": "f6a02ddb0740a78f91ea878b709f49f854056d33",
-  "file_count": 1,
+  "file_count": 2,
   "files": [
     {
       "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
       "sha256": "91b83c41aa8054d66db932eae27e4e97d97579ae661246b5376c7e730c1f6880",
       "size": 698
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "dd6a9e5716897f9724807fcf072c7f9a1228d61cdc40628aba465fb9b40d3314",
+      "size": 30818
     }
   ],
   "kind": "common",

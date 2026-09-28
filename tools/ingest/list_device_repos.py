@@ -12,6 +12,12 @@ Providers:
   repo-manifest  A repo-tool manifest file (e.g. TheMuppets/manifests
                  muppets.xml) read from raw.githubusercontent.com, one per
                  branch. No API needed.
+  vendor-probe   Vendor blob repositories that ROM orgs keep next to their
+                 device trees (device_<oem>_<codename> ->
+                 vendor_<oem>_<codename> in the same org), for devices the
+                 blob mirrors above do not cover. Reads the other sources'
+                 manifests and asks each remote with `git ls-remote`, so it
+                 must be listed after them. No API needed.
 
 A source that cannot be listed keeps its committed manifest (reported, not
 overwritten), so an API outage never empties the database.
@@ -22,6 +28,7 @@ overwritten), so an API outage never empties the database.
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import json
 import os
 import re
@@ -33,7 +40,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import MANIFEST_DIR, ROOT, SOURCES_YAML, load_sources, write_json  # noqa: E402
+from common import MANIFEST_DIR, ROOT, SOURCES_YAML, load_sources, remote_default_branch, write_json  # noqa: E402
 
 API = "https://api.github.com"
 RAW = "https://raw.githubusercontent.com"
@@ -210,6 +217,69 @@ def list_repo_manifest(src: dict) -> dict[str, dict]:
     return devices
 
 
+def vendor_repo_name(device_repo: str) -> str | None:
+    """android_device_realme_RMX2001 -> android_vendor_realme_RMX2001 (None without a device_ part)."""
+    head, sep, tail = device_repo.partition("device_")
+    return f"{head}vendor_{tail}" if sep and tail else None
+
+
+def list_vendor_probe(src: dict, manifest_dir: Path, probe=remote_default_branch, jobs: int = 32) -> dict[str, dict]:
+    covered: set[tuple[str, str]] = set()
+    for sid in src.get("skip_covered_by") or []:
+        path = manifest_dir / f"{sid}.json"
+        if not path.is_file():
+            raise ListingError(f"{sid} manifest missing: cannot tell which devices it covers")
+        for d in json.loads(path.read_text()).get("devices", []):
+            covered.add((d["vendor"], d["codename"]))
+            covered.update((d["vendor"], s) for s in d.get("serves") or [])
+
+    # Candidates in from_sources order: the first org that has the vendor repo wins.
+    candidates: dict[tuple[str, str], list[tuple[str, dict, str]]] = {}
+    read_any = False
+    for sid in src.get("from_sources") or []:
+        path = manifest_dir / f"{sid}.json"
+        if not path.is_file():
+            continue
+        read_any = True
+        for d in json.loads(path.read_text()).get("devices", []):
+            key = (d["vendor"], d["codename"])
+            if key in covered:
+                continue
+            base, _, repo = d["clone_url"].rstrip("/").rpartition("/")
+            name = vendor_repo_name(repo.removesuffix(".git"))
+            if name:
+                candidates.setdefault(key, []).append((sid, d, f"{base}/{name}.git"))
+    if not read_any:
+        raise ListingError("none of from_sources has a manifest yet")
+
+    urls = sorted({url for cands in candidates.values() for _, _, url in cands})
+    with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
+        branch_of = dict(zip(urls, pool.map(probe, urls)))
+    if urls and all(b is None for b in branch_of.values()):
+        raise ListingError(f"no remote answered for {len(urls)} candidates (network?)")
+
+    devices: dict[str, dict] = {}
+    for (vendor, codename), cands in sorted(candidates.items()):
+        for sid, dev, url in cands:
+            branch = branch_of.get(url)
+            if branch is None:
+                continue
+            devices[f"{vendor}/{codename}"] = {
+                "vendor": vendor,
+                "codename": codename,
+                "kind": dev.get("kind", "device"),
+                "repo": url.rsplit("/", 1)[1].removesuffix(".git"),
+                "clone_url": url,
+                "default_branch": branch or dev.get("default_branch"),
+                "updated_at": None,
+                "archived": False,
+                "fork": False,
+                "device_source": sid,
+            }
+            break
+    return devices
+
+
 def build_manifest(src: dict, devices: dict[str, dict]) -> dict:
     rows = sorted(devices.values(), key=lambda d: (d["vendor"], d["codename"]))
     return {
@@ -238,14 +308,19 @@ def main() -> int:
     wanted = {s for s in args.only.split(",") if s}
     data = load_sources(Path(args.sources))
     sources = [s for s in data.get("sources") or []
-               if s.get("provider") in ("github", "repo-manifest") and (not wanted or s["id"] in wanted)]
+               if s.get("provider") in ("github", "repo-manifest", "vendor-probe") and (not wanted or s["id"] in wanted)]
 
     failed: list[str] = []
     for src in sources:
         started = time.time()
         print(f"[{src['id']}] {src['provider']} {src.get('org')}", flush=True)
         try:
-            devices = list_github(src, token) if src["provider"] == "github" else list_repo_manifest(src)
+            if src["provider"] == "github":
+                devices = list_github(src, token)
+            elif src["provider"] == "vendor-probe":
+                devices = list_vendor_probe(src, manifest_dir)
+            else:
+                devices = list_repo_manifest(src)
         except ListingError as exc:
             failed.append(src["id"])
             print(f"     ✗ listing failed, committed manifest kept: {exc}", flush=True)

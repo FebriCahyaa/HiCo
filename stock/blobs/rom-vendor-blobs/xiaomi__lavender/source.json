@@ -1,0 +1,37 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_xiaomi_lavender.git",
+  "codename": "lavender",
+  "commit": "779498259fcd811956063ff9b9af4cbd31d0dd5c",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-camera.conf",
+      "sha256": "39f660d31dac30955b0a90a852f9300c13af99881a57e5463af7bd3c7d614c7a",
+      "size": 5766
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "c04b9487e00b0ffe3c6ee6ca0d726d27ea7e9c5625b0f6be6819e28dff229993",
+      "size": 391
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-normal.conf",
+      "sha256": "b1776010f91f9368718fa935493e09874a58399c7b70e00cd37b25f81e7e1cdd",
+      "size": 5925
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_lavender",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

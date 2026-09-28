@@ -269,6 +269,21 @@ std::vector<std::string> device_config_files() {
     return out;
 }
 
+std::vector<std::string> identify_config_files() {
+    std::vector<std::string> out = device_config_files();
+    static constexpr std::array<std::string_view, 2> kMtkDirs{"/vendor/etc/.tp", "/system/etc/.tp"};
+    for (const auto dir : kMtkDirs) {
+        const size_t before = out.size();
+        for (const auto &name : fs::list_dir(dir)) {
+            const bool policy = (name.starts_with("thermal") && name.ends_with(".conf")) ||
+                                name.starts_with(".thermal_policy_") || name.ends_with(".mtc");
+            if (policy) out.push_back(std::string(dir) + "/" + name);
+        }
+        if (out.size() > before) break; // vendor first; /system only on pre-Treble devices
+    }
+    return out;
+}
+
 static bool is_engine_text(std::string_view content) {
     if (content.empty()) return false;
     const std::string_view sample = content.substr(0, 4096);

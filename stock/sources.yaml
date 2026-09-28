@@ -176,6 +176,18 @@ sources:
     repo_prefix: proprietary_vendor_
     notes: Stock vendor partitions extracted per device; covers older devices through the older branches.
 
+  # Vendor blob repositories that ROM orgs host next to their device trees
+  # (ArrowOS, crDroid, AlphaDroid, DotOS, ... keep vendor_<oem>_<codename>
+  # beside device_<oem>_<codename>). Only devices TheMuppets does not cover:
+  # many Realme / OPPO / OnePlus and MediaTek phones are only here.
+  - id: rom-vendor-blobs
+    name: ROM org vendor blobs
+    family: blobs
+    provider: vendor-probe
+    from_sources: [lineageos, crdroid, arrowos, alphadroid, dotos, aospa, pixelos, lmodroid, awakenos, derpfest, evolutionx, voltageos, spark, protonaosp]
+    skip_covered_by: [themuppets]
+    notes: Probed with git ls-remote from the device-tree manifests above; no API.
+
   # ------------------------------------------------------------------
   # OEM firmware dumps
   # ------------------------------------------------------------------
@@ -258,6 +270,10 @@ blob_paths:
   - "proprietary/vendor/etc/init/*thermal*"
   - "proprietary/vendor/etc/vintf/manifest/*thermal*"
   - "proprietary/vendor/etc/powerhint*.json"
+  - "proprietary/vendor/etc/powerhint*.xml"
+  # MediaTek thermal policies (thermal.conf, .thermal_policy_NN, .ht120.mtc)
+  - "proprietary/vendor/etc/.tp/**"
+  - "proprietary/etc/.tp/**"
   - "proprietary/vendor/etc/power_hal*"
   - "proprietary/odm/etc/thermal*"
   - "proprietary/odm/etc/*thermal*"

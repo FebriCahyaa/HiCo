@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_mt6768-common.git",
+  "codename": "mt6768-common",
+  "commit": "0a42761c30b8c44b2ddf26732358c3584cf67af8",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "16b39ae52cafb7d47662184f5e1b9075465840707ab6c3aede5e4a0526924381",
+      "size": 3737
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "ca6f4c865686c25e11cdb16d887b474c292121cecf4159b81b5aa4b1861f06b1",
+      "size": 3897
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_mt6768-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "lamu"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

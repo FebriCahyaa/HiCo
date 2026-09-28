@@ -382,11 +382,13 @@ int cmd_thermal_sources(const std::vector<std::string_view> &args) {
         bool hico = false;
     };
     std::vector<ConfigInfo> configs;
-    for (const auto &path : thermalcfg::device_config_files()) {
+    for (const auto &path : thermalcfg::identify_config_files()) {
         const auto content = fs::read_raw(path, 4 << 20);
         if (!content) continue;
-        configs.push_back({path, format_name(thermalcfg::detect_format(*content)), content->size(),
-                           thermalcfg::plain_text(*content).has_value(), journal.has_mount(path)});
+        // MediaTek thermal policies: identified by location, never tuned.
+        const bool mtk = path.find("/.tp/") != std::string::npos;
+        configs.push_back({path, mtk ? "mtk-thermal-policy" : format_name(thermalcfg::detect_format(*content)),
+                           content->size(), !mtk && thermalcfg::plain_text(*content).has_value(), journal.has_mount(path)});
     }
     const auto svcs = services::thermal_services(d.thermal_services);
     std::vector<std::string> backends;

@@ -270,6 +270,49 @@ class RepoManifest(unittest.TestCase):
         self.assertEqual(devs["xiaomi/alioth_old"]["default_branch"], "b-old")
 
 
+class VendorProbe(unittest.TestCase):
+    def test_probe(self):
+        self.assertEqual(list_device_repos.vendor_repo_name("android_device_realme_RMX2001"),
+                         "android_vendor_realme_RMX2001")
+        self.assertEqual(list_device_repos.vendor_repo_name("device_oneplus_sm8250-common"),
+                         "vendor_oneplus_sm8250-common")
+        self.assertIsNone(list_device_repos.vendor_repo_name("proprietary_vendor_x"))
+        with tempfile.TemporaryDirectory() as tmp:
+            md = Path(tmp)
+            dev = lambda org, repo, v, c, br="main": {"vendor": v, "codename": c, "kind": "device", "repo": repo,
+                                                      "clone_url": f"https://g/{org}/{repo}.git", "default_branch": br}
+            (md / "muppets.json").write_text(json.dumps({"devices": [
+                {"vendor": "oneplus", "codename": "sm8250-common", "serves": ["kebab"]},
+                {"vendor": "xiaomi", "codename": "alioth"}]}))
+            (md / "a.json").write_text(json.dumps({"devices": [
+                dev("A", "android_device_realme_rmx", "realme", "rmx", "thirteen"),
+                dev("A", "android_device_xiaomi_alioth", "xiaomi", "alioth"),  # covered by the mirror
+                dev("A", "android_device_oneplus_kebab", "oneplus", "kebab"),  # covered through serves
+                dev("A", "android_device_oppo_op1", "oppo", "op1")]}))
+            (md / "b.json").write_text(json.dumps({"devices": [
+                dev("B", "device_oppo_op1", "oppo", "op1"),
+                dev("B", "device_realme_rmx", "realme", "rmx")]}))
+            exists = {"https://g/A/android_vendor_realme_rmx.git": "",          # detached HEAD
+                      "https://g/B/vendor_realme_rmx.git": "fifteen",
+                      "https://g/B/vendor_oppo_op1.git": "udc"}
+            asked = []
+            probe = lambda url: asked.append(url) or exists.get(url)
+            src = {"from_sources": ["a", "b", "missing"], "skip_covered_by": ["muppets"]}
+            got = list_device_repos.list_vendor_probe(src, md, probe=probe, jobs=2)
+            self.assertEqual(sorted(got), ["oppo/op1", "realme/rmx"])
+            # First source in order wins; a detached HEAD falls back to the device tree's branch.
+            self.assertEqual(got["realme/rmx"]["clone_url"], "https://g/A/android_vendor_realme_rmx.git")
+            self.assertEqual(got["realme/rmx"]["default_branch"], "thirteen")
+            self.assertEqual(got["oppo/op1"]["default_branch"], "udc")
+            self.assertEqual(got["oppo/op1"]["device_source"], "b")
+            self.assertFalse(any("alioth" in u or "kebab" in u for u in asked))
+            # Nothing answers at all: a network failure keeps the committed manifest.
+            with self.assertRaises(list_device_repos.ListingError):
+                list_device_repos.list_vendor_probe(src, md, probe=lambda url: None, jobs=2)
+            with self.assertRaises(list_device_repos.ListingError):
+                list_device_repos.list_vendor_probe({"from_sources": ["missing"]}, md, probe=probe)
+
+
 class Loader(unittest.TestCase):
     def test_mini_yaml_matches_pyyaml_on_the_real_file(self):
         text = (ROOT / "stock" / "sources.yaml").read_text()

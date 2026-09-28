@@ -1,0 +1,25 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "3d6b72f093ccfb99e8bfc17af204441b6e6322aa",
+  "file_count": 1,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "4e5833314a251675fed1308eafc77cc192724c5ba689bf785d3f5c5f7e01fd52",
+      "size": 36217
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_oneplus_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "enchilada",
+    "fajita"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "oneplus"
+}

@@ -16,6 +16,11 @@ Read-only for tools. See `docs/ARCHITECTURE.md` for the full contract.
   thermal blobs themselves (`thermal-*.conf`, `thermal_info_config*.json`,
   thermal HAL init / VINTF, power hints) from TheMuppets, i.e. what the
   OEM firmware ships, per device and per common tree.
+- `blobs/rom-vendor-blobs/<vendor>__<codename>/proprietary/…` — the same
+  kind of stock vendor blobs from the `vendor_<oem>_<codename>` repositories
+  ROM orgs keep next to their device trees, for devices TheMuppets does not
+  cover (many Realme / OPPO and MediaTek phones). MediaTek policies live in
+  `vendor/etc/.tp/` (obfuscated by the vendor: identified, never tuned).
 - every device directory has `source.json`: upstream repo, branch, commit,
   and SHA-256 + size of every file (files over 2 MB are listed, not stored).
 - `manifest/<source>.json` — what upstream lists (metadata only);
@@ -47,7 +52,7 @@ rejected in code review — reingest instead.
     ├── rom/<source>/<vendor>__<codename>/
     │   ├── source.json
     │   └── … (thermal-relevant files, repo layout kept)
-    ├── blobs/themuppets/<vendor>__<codename>/
+    ├── blobs/<themuppets|rom-vendor-blobs>/<vendor>__<codename>/
     │   ├── source.json
     │   └── proprietary/vendor/etc/thermal-*.conf, …
     ├── oem/<vendor>/<codename>/    # firmware dumps

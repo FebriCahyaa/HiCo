@@ -1,8 +1,8 @@
 {
   "common_total": 83,
-  "device_total": 2847,
+  "device_total": 2947,
   "schema": "hico.ingest-manifest-index.v2",
-  "source_count": 15,
+  "source_count": 16,
   "sources": [
     {
       "common_count": 0,
@@ -123,6 +123,14 @@
       "manifest": "stock/manifest/themuppets.json",
       "source_id": "themuppets",
       "source_name": "TheMuppets (LineageOS vendor blobs)"
+    },
+    {
+      "common_count": 0,
+      "device_count": 100,
+      "family": "blobs",
+      "manifest": "stock/manifest/rom-vendor-blobs.json",
+      "source_id": "rom-vendor-blobs",
+      "source_name": "ROM org vendor blobs"
     }
   ]
 }

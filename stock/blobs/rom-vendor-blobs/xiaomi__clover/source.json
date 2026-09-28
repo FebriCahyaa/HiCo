@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_xiaomi_clover.git",
+  "codename": "clover",
+  "commit": "df2044e685b3847b58b245352b503b143abfa126",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-battery.conf",
+      "sha256": "ed6f3371c3a46781ed1d6f28611ce83e02ce4e39a42c4523d03d7e5032bb354b",
+      "size": 1447
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-battery2.conf",
+      "sha256": "15041aecb3af694809ce570880cf955b7016d70e540b22167f51a01d327c3b53",
+      "size": 1446
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-default.conf",
+      "sha256": "ae938f2995c83be0abb61c5e002e4972bcebeefac68fd1aad9bb997218ba621e",
+      "size": 1447
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-gameing.conf",
+      "sha256": "3976e8e1c09543da2180922224e337a644b5557bf09e61facf411b0180436650",
+      "size": 327
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "d644be9908cc5f33bf9ecb5fe153ee8cdc0f68b98479fb1743fdf432ffeed004",
+      "size": 165
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-performance.conf",
+      "sha256": "6ba88b10a61d7b1ab7a9f886bc2c8e33635f14c2f95a1c3e1038a3379f6700c6",
+      "size": 327
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_clover",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_xiaomi_jason.git",
+  "codename": "jason",
+  "commit": "0f027269d10826d699893609c9d1bad23950c025",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm660-high.conf",
+      "sha256": "a454a38cc221493f97d128df2e8f32b86d847bd11566ce6cd592f225700bd8dc",
+      "size": 3760
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm660-map.conf",
+      "sha256": "8e5ff632d41c3b4fc491f5fb288c119bc90c8858cd1bcbcadb96a6863cc83995",
+      "size": 304
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm660-nolimits.conf",
+      "sha256": "affc528476669364772b5aee1aec9c5a338106db6764c581290b594430c48555",
+      "size": 688
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sdm660.conf",
+      "sha256": "d32bec0313db01b4fba218ffb7ee26b60035ba097138a47b7b40c27451714513",
+      "size": 3760
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_jason",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

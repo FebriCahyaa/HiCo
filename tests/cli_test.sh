@@ -88,6 +88,11 @@ thresholds_clr 90000'
 	fail "thermal sources --json config"
 "$HICOD" thermal sources --json | grep -q '"controller":"vendor"' || fail "thermal sources --json controller"
 "$HICOD" thermal sources | grep -q '^== thermal configs' || fail "thermal sources"
+put /vendor/etc/.tp/thermal.conf 'SfebGmowgWang'
+put /vendor/etc/.tp/.thermal_policy_00 'x'
+"$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/.tp/thermal.conf","format":"mtk-thermal-policy"[^}]*"tunable":false' ||
+	fail "thermal sources MediaTek policy"
+"$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/.tp/.thermal_policy_00"' || fail "thermal sources MediaTek policy file"
 
 # ── Daemon ───────────────────────────────────────────────────────────────────
 "$HICOD" run 2>"$HICO_ROOT/log" &

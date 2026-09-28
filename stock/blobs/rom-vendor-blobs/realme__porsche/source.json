@@ -1,0 +1,32 @@
+{
+  "branch": "arrow-13.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_vendor_realme_porsche.git",
+  "codename": "porsche",
+  "commit": "386977fc492f74d49e321ebb092c59a8abc83d26",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "dfd3933808c94b179b22b5e5cb82a014d88d5fbd42ff46fee70cdb5200bb22eb",
+      "size": 595
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "d91f995a023e6a898aa50138b70827654cecc3d2477e66a499818844d2a1aaa9",
+      "size": 45467
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_realme_porsche",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "realme"
+}

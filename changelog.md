@@ -12,6 +12,17 @@
   device, chipset, ROM and whether the device database has a verified profile.
 - Daily preset now also sets Social media and Multimedia to HiCo Balanced.
 
+### More devices: ROM org vendor blobs, MediaTek
+- New ingest source `rom-vendor-blobs` (provider `vendor-probe`): the `vendor_<oem>_<codename>`
+  repositories that ArrowOS, crDroid, AlphaDroid, DotOS and others keep next to their device trees,
+  probed with `git ls-remote` from the device-tree manifests, only for devices TheMuppets does not
+  cover. 100 repositories found, 40 with stock thermal files (Xiaomi / Redmi, Realme, OPPO, OnePlus,
+  MediaTek and older devices).
+- Vendor blob paths now include MediaTek's thermal policies (`vendor/etc/.tp/`: thermal.conf,
+  .thermal_policy_NN, .ht120.mtc) and `powerhint*.xml`; TheMuppets refetched with them.
+- `hicod thermal sources` and the Monitor list MediaTek thermal policies as "MediaTek thermal policy"
+  (read-only: the vendor obfuscates them, HiCo does not tune them).
+
 ### Stock thermal dataset and delta-only ingest
 - `stock/` now holds the thermal-relevant files of 2,400+ custom-ROM device trees (LineageOS,
   crDroid, LMODroid, AOSPA, ArrowOS, DotOS, AlphaDroid, PixelOS, ProtonAOSP, AwakenOS) and the

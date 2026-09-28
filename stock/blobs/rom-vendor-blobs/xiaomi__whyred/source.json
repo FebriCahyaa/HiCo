@@ -1,0 +1,32 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_vendor_xiaomi_whyred.git",
+  "codename": "whyred",
+  "commit": "cc505f0e8adb4c7ad4d21a66a851c2a7843c6e62",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "c04b9487e00b0ffe3c6ee6ca0d726d27ea7e9c5625b0f6be6819e28dff229993",
+      "size": 391
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-normal.conf",
+      "sha256": "e975a1d05d78cabb8d0b8d43896e8752122db51a855183186146420985bf589b",
+      "size": 5620
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_xiaomi_whyred",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

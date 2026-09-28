@@ -1,0 +1,62 @@
+{
+  "branch": "12.0",
+  "clone_url": "https://github.com/crdroidandroid/android_vendor_realme_RMX1941.git",
+  "codename": "rmx1941",
+  "commit": "eeb11021cf83c7dc666ad282a84d34f26349cc0a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "fd8a81fb021bdadde879b0dea32cc7e7236088585f9ae1bc6f7d615ea4afb7e6",
+      "size": 2673
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_00",
+      "sha256": "67f2e75f215f08a3a431413f42d3598902c13c3668b3cc95b4f259c38ee4b05b",
+      "size": 3842
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_03",
+      "sha256": "67f2e75f215f08a3a431413f42d3598902c13c3668b3cc95b4f259c38ee4b05b",
+      "size": 3842
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_05",
+      "sha256": "67f2e75f215f08a3a431413f42d3598902c13c3668b3cc95b4f259c38ee4b05b",
+      "size": 3842
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "bd112533debc61437a91ff6ce172c35a0207ac67a6991778b00977718d26799c",
+      "size": 3662
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "f767a910d6d163354be7602678ff3b91b57a4941b1b90887e10c722d78a2223a",
+      "size": 3020
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d739fb217b0cfe5b951920efb36d236121f9db7b0c96210b4d3bf4cd482e12d2",
+      "size": 110
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    }
+  ],
+  "kind": "device",
+  "repo": "android_vendor_realme_RMX1941",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "realme"
+}

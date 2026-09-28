@@ -3,7 +3,7 @@
   "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_gts4lv-common.git",
   "codename": "gts4lv-common",
   "commit": "b04a4eef4efc9975b2e6fbb0beee31c525fc0c95",
-  "file_count": 4,
+  "file_count": 5,
   "files": [
     {
       "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
@@ -14,6 +14,11 @@
       "path": "proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc",
       "sha256": "228faf829ec9e4370ce2dbbe1a6fe950330de4caf979a4eaa5df07d101bd818f",
       "size": 294
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "0b722b633b4229ce7d2a6e8580941a725bfa2f55b2907fad39466af89d01fef2",
+      "size": 3788
     },
     {
       "path": "proprietary/vendor/etc/thermal-engine.conf",
