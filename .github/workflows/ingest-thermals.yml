@@ -41,14 +41,18 @@ jobs:
             groups: 'dumps/xiaomi,dumps/redmi,dumps/poco'
             scanner: 'tools/xiaomi_devices.py'
             status: 'ready'
+          - id: lineage
+            # Every LineageOS-supported device with a public TheMuppets vendor
+            # blob: Pixel, Motorola, Fairphone, Nothing, some Xiaomi.
+            # --only-changed skips devices whose device-tree HEAD SHA already
+            # matches the SHA stored in the .prop file, so scheduled runs
+            # touch only the phones that actually moved.
+            scanner: 'tools/lineage_devices.py'
+            status: 'ready'
+            differential: 'yes'
           - id: oplus
             groups: 'dumps/oneplus,dumps/oppo,dumps/realme'
             scanner: 'tools/oplus_devices.py'
-            status: 'planned'
-          - id: aosp
-            # Pixel, Nothing, later Motorola: all use the AOSP HAL 2.0 JSON.
-            groups: 'dumps/google,dumps/nothing,dumps/motorola'
-            scanner: 'tools/aosp_devices.py'
             status: 'planned'
           - id: mediatek
             # MediaTek stock: `thermal.conf` + HAL JSON. Cross-brand scan.
@@ -84,8 +88,8 @@ jobs:
         run: |
           echo "::notice title=Scanner not implemented::${SCANNER} is planned but not written yet. See docs/THERMAL-COVERAGE.md for status."
 
-      - name: Run scanner
-        if: matrix.vendor.status == 'ready' && steps.guard.outputs.skip == 'false'
+      - name: Run scanner (dumps.tadiphone.dev source)
+        if: matrix.vendor.status == 'ready' && matrix.vendor.differential != 'yes' && steps.guard.outputs.skip == 'false'
         env:
           GROUPS: ${{ matrix.vendor.groups }}
           LIMIT: ${{ inputs.limit }}
@@ -97,12 +101,32 @@ jobs:
           [ -n "$LIMIT" ] && flags+=(--limit "$LIMIT")
           python3 "$SCANNER" --gitlab https://dumps.tadiphone.dev --group "$GROUPS" --jobs 6 "${flags[@]}"
 
-      - name: Upload results
-        if: matrix.vendor.status == 'ready' && steps.guard.outputs.skip == 'false'
+      - name: Run scanner (LineageOS source, differential)
+        if: matrix.vendor.status == 'ready' && matrix.vendor.differential == 'yes' && steps.guard.outputs.skip == 'false'
+        env:
+          LIMIT: ${{ inputs.limit }}
+          SCANNER: ${{ matrix.vendor.scanner }}
+        run: |
+          set -euo pipefail
+          flags=(--only-changed --jobs 6)
+          [ -n "$LIMIT" ] && flags+=(--limit "$LIMIT")
+          python3 "$SCANNER" "${flags[@]}"
+
+      - name: Upload results (single-vendor cell)
+        if: matrix.vendor.status == 'ready' && matrix.vendor.differential != 'yes' && steps.guard.outputs.skip == 'false'
         uses: actions/upload-artifact@v6
         with:
           name: devices-${{ matrix.vendor.id }}
           path: devices/${{ matrix.vendor.id }}
+
+      - name: Upload results (cross-vendor lineage cell)
+        # lineage_devices.py writes to devices/<vendor>/<codename>/ for many vendors;
+        # capture the whole devices/ tree so the compile job can merge every one.
+        if: matrix.vendor.status == 'ready' && matrix.vendor.differential == 'yes' && steps.guard.outputs.skip == 'false'
+        uses: actions/upload-artifact@v6
+        with:
+          name: devices-${{ matrix.vendor.id }}
+          path: devices
 
   compile:
     name: Compile device database and open PR
@@ -123,8 +147,13 @@ jobs:
           for dir in /tmp/vendors/devices-*; do
             [ -d "$dir" ] || continue
             vendor="${dir##*devices-}"
-            mkdir -p "devices/$vendor"
-            cp -r "$dir"/. "devices/$vendor/"
+            if [ "$vendor" = lineage ]; then
+              # This artifact carries the whole devices/ tree already.
+              cp -r "$dir"/. devices/
+            else
+              mkdir -p "devices/$vendor"
+              cp -r "$dir"/. "devices/$vendor/"
+            fi
           done
 
       - name: Compile device table

@@ -3,6 +3,16 @@
 ## Unreleased
 
 ### New
+- **LineageOS ingest**: `tools/lineage_devices.py` reads thermal configs from LineageOS device
+  trees and TheMuppets vendor blobs via sparse git clones (a few kilobytes per device). The
+  device-tree HEAD SHA is recorded in each `.prop`, so `--only-changed` scans only phones whose
+  device tree actually moved
+- **Ingest workflow now includes LineageOS**: `ingest-thermals.yml` runs the new scanner in
+  differential mode alongside the Xiaomi scanner, in one workflow with a matrix per source
+- **First 20+ non-Xiaomi devices**: 14 Pixels (bluejay through komodo, HAL 2.0 JSON), 3 Fairphones
+  and 2 Motorolas (thermal-engine.conf), 1 Nothing Phone (1). All under `devices/<vendor>/<codename>/`
+- **HAL 2.0 JSON now analysed**: `analyze_thermal` parses Pixel-style `thermal_info_config*.json`
+  and records the SEVERE trip and shutdown temperatures so `index.tsv` shows real data
 - **Daily preset**: for social media, streaming and general use. HiCo does not touch the peak
   and games in the foreground get only the Relaxed level, never full unlock (mode=auto,
   game_level=relaxed, safety CPU 85 °C / battery 42 °C)

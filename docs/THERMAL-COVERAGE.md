@@ -45,7 +45,7 @@ LineageOS mirrors, AOSP thermal HAL headers).
 |---|---|---|---|
 | Google Pixel | AOSP HAL 2.0 JSON | none | ✅ works today via `HalJson` |
 | Nothing | AOSP HAL 2.0 JSON (Snapdragon) | none | ✅ works today via `HalJson` |
-| OPlus (Oppo, Realme, OnePlus after 2022) | AOSP HAL 2.0 JSON with OPlus extensions | none | ✅ base tuning works; extensions are a documentation gap |
+| OPlus (Oppo, Realme, OnePlus after 2022) | AOSP HAL 2.0 JSON with OPlus extensions | none | ✅ base tuning works; extensions are a documentation gap. Vendor blobs are not on TheMuppets — scanner needs a fork discovery step |
 | OPlus older (pre-ColorOS 12) | `thermal-engine.conf` derivatives (`thermal-engine.conf.xml`) | none | ⚠️ engine format works; XML variant needs a new parser |
 | Motorola | AOSP HAL 2.0 JSON (later devices), `thermal-engine.conf` (older) | none | ✅ works today |
 | Samsung Exynos | Thermal tables baked into DT (device tree blob), TMU driver | none, but **not user-space configurable** | ❌ almost nothing to tune from user space; needs `/sys/class/thermal/thermal_zoneN/policy` overrides only |
@@ -170,16 +170,25 @@ HiCo intervention.
 
 ## Order of work
 
-1. ✅ **Daily preset** (this commit).
-2. ✅ **This doc**: real coverage table, honest gaps.
-3. Next PR: split `devices.yml` into a `ingest-thermals.yml` matrix with a
-   real Xiaomi cell (current script) and empty cells for oplus / aosp / mtk
-   / samsung that print "not implemented yet".
-4. Next PR: `tools/aosp_devices.py` for Pixel / Nothing / Motorola. Simplest
-   because the format is exactly the AOSP HAL 2.0 JSON HiCo already tunes.
-5. Next PR: `tools/oplus_devices.py`.
-6. Deferred: `tools/mtk_devices.py`, `tools/samsung_devices.py` (very
-   different shape, less user-space to tune).
+1. ✅ **Daily preset** — landed.
+2. ✅ **Coverage doc** — landed.
+3. ✅ **Ingest matrix** `ingest-thermals.yml` — Xiaomi cell (existing
+   `tools/xiaomi_devices.py`) and LineageOS cell
+   (`tools/lineage_devices.py`, differential with `--only-changed`) are
+   `ready`. OPlus / MediaTek / Samsung cells are `planned` and log a
+   clear notice.
+4. ✅ **`tools/lineage_devices.py`** — pulls thermal configs from the
+   LineageOS device trees AND the matching TheMuppets vendor blobs via
+   sparse `git clone`. Records the device-tree HEAD SHA in each `.prop`
+   so incremental runs skip unchanged devices. Analyses AOSP HAL 2.0
+   JSON (Pixel format) as well as thermal-engine text.
+5. ✅ **First 20+ devices ingested** across google / motorola / fairphone
+   / nothing (see `docs/DEVICES-LINEAGE.md`). Every file was pulled from
+   a public repository at a specific commit and can be re-verified.
+6. Next: `tools/oplus_devices.py` (needs fork discovery — TheMuppets does
+   not carry OnePlus / Oppo / Realme vendor blobs).
+7. Deferred: `tools/mtk_devices.py`, `tools/samsung_devices.py` (Samsung
+   Exynos has almost nothing user-space to tune).
 
 Each of these is a real, testable delta. The scaffolding is intentionally
 not written all at once — it would be a lot of code that has never seen a
