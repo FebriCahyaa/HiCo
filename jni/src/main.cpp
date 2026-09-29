@@ -18,6 +18,7 @@
 #include "Log.hpp"
 #include "MiCrypt.hpp"
 #include "Monitor.hpp"
+#include "ThermalOwnership.hpp"
 #include "ThermalServices.hpp"
 #include "ThermalZones.hpp"
 
@@ -149,7 +150,8 @@ int cmd_restore() {
     journal.load();
     const auto r = journal.restore();
     fs::remove(HICO_STATE_FILE);
-    out(std::format("stock thermal restored ({} nodes, {} services, {} failed)\n", r.nodes, r.services, r.failed));
+    out(std::format("stock thermal restored ({} nodes, {} services, {} failed{})\n", r.nodes, r.services, r.failed,
+                    r.skipped ? std::format(", {} mounts left in place: not HiCo's", r.skipped) : ""));
     return r.failed ? 1 : 0;
 }
 
@@ -411,7 +413,8 @@ int cmd_thermal_sources(const std::vector<std::string_view> &args) {
         std::string_view format;
         size_t size = 0;
         bool tunable = false;
-        bool hico = false;
+        thermal_owner::Mount own; ///< who controls the file right now (mount table + journal)
+        bool candidate = false;   ///< HiCo has a tuned copy ready in /dev/hico/thermal (not necessarily mounted)
     };
     std::vector<ConfigInfo> configs;
     for (const auto &path : thermalcfg::identify_config_files()) {
@@ -420,7 +423,8 @@ int cmd_thermal_sources(const std::vector<std::string_view> &args) {
         // MediaTek thermal policies: identified by location, never tuned.
         const bool mtk = path.find("/.tp/") != std::string::npos;
         configs.push_back({path, mtk ? "mtk-thermal-policy" : format_name(thermalcfg::detect_format(*content)),
-                           content->size(), !mtk && thermalcfg::plain_text(*content).has_value(), journal.has_mount(path)});
+                           content->size(), !mtk && thermalcfg::plain_text(*content).has_value(),
+                           thermal_owner::classify(journal, path), fs::exists(thermal_owner::candidate_path(path))});
     }
     const auto svcs = services::thermal_services(d.thermal_services);
     std::vector<std::string> backends;
@@ -432,8 +436,13 @@ int cmd_thermal_sources(const std::vector<std::string_view> &args) {
                         d.in_database ? "yes" : "no", d.rom_name, join(backends), journal.empty() ? "no" : "yes"));
         out("== thermal configs\n");
         for (const auto &c : configs) {
-            out(std::format("{:<52} {:<22} {:>8} B  {}{}\n", c.path, c.format, c.size, c.hico ? "HiCo (tuned copy)" : "vendor",
-                            c.tunable ? "" : ", read-only"));
+            using thermal_owner::Ownership;
+            const std::string owner_text =
+                c.own.ownership == Ownership::Hico       ? "HiCo (tuned copy)"
+                : c.own.ownership == Ownership::External ? "external mount" + (c.own.mount_owner.empty() ? "" : " (" + c.own.mount_owner + ")")
+                : c.own.ownership == Ownership::Inconsistent ? "inconsistent (journal and mount table disagree)"
+                                                             : "vendor";
+            out(std::format("{:<52} {:<22} {:>8} B  {}{}\n", c.path, c.format, c.size, owner_text, c.tunable ? "" : ", read-only"));
         }
         out("\n== thermal services\n");
         for (const auto &sv : svcs) {
@@ -450,8 +459,12 @@ int cmd_thermal_sources(const std::vector<std::string_view> &args) {
     o += std::format(R"(]}},"hico_active":{},"journal_entries":{},"configs":[)", journal.empty() ? "false" : "true", journal.size());
     for (size_t i = 0; i < configs.size(); ++i) {
         const auto &c = configs[i];
-        o += std::format(R"({}{{"path":"{}","format":"{}","size":{},"tunable":{},"controller":"{}"}})", i ? "," : "",
-                         json_escape(c.path), c.format, c.size, c.tunable ? "true" : "false", c.hico ? "hico" : "vendor");
+        // Old fields first and unchanged; the ownership fields are appended (WebUI and scripts read both).
+        o += std::format(
+            R"({}{{"path":"{}","format":"{}","size":{},"tunable":{},"controller":"{}","mounted":{},"ownership":"{}","mount_source":"{}","mount_owner":"{}","candidate":{}}})",
+            i ? "," : "", json_escape(c.path), c.format, c.size, c.tunable ? "true" : "false", c.own.hico_owned ? "hico" : "vendor",
+            c.own.mounted ? "true" : "false", thermal_owner::to_string(c.own.ownership), json_escape(c.own.mount_source),
+            json_escape(c.own.mount_owner), c.candidate ? "true" : "false");
     }
     o += "],\"services\":[";
     for (size_t i = 0; i < svcs.size(); ++i) {
@@ -562,20 +575,40 @@ int cmd_thermal(const std::vector<std::string_view> &args) {
     }
     if (args[0] == "scan") {
         // What the relaxed level would do on this device, without changing anything.
-        for (const auto &path : thermalcfg::device_config_files()) add_ceilings(path);
+        // Ownership comes from the mount table plus the journal: a mounted file is only HiCo's when HiCo mounted it.
+        using thermal_owner::Ownership;
+        Journal journal(HICO_JOURNAL_FILE);
+        journal.load();
+        const auto paths = thermalcfg::device_config_files();
+        std::vector<thermal_owner::Mount> owners;
+        for (const auto &path : paths) owners.push_back(thermal_owner::classify(journal, path));
+        // Same rule as relax(): only stock files feed the ceilings.
+        for (size_t i = 0; i < paths.size(); ++i) {
+            if (owners[i].ownership == Ownership::Stock) add_ceilings(paths[i]);
+        }
         out(describe() + std::format(" mi_ceilings={}\n", policy.mi_ceilings.size()));
-        for (const auto &path : thermalcfg::device_config_files()) {
-            const bool mounted = fs::is_mounted(path);
-            const auto content = fs::read_raw(path, 512 * 1024);
-            const auto r = content ? thermalcfg::tune(*content, policy) : std::nullopt;
-            out(std::format("{:<48} {}\n", path,
-                            mounted ? "relaxed (mounted)"
-                            : !content ? "unreadable"
-                            : !r       ? "not tunable (unknown format)"
-                                       : std::format("{} of {} sections tunable{}", r->tuned_sections, r->sections,
-                                                     thermalcfg::detect_format(*content) == thermalcfg::Format::MiEncrypted
-                                                         ? " (encrypted mi_thermald)"
-                                                         : "")));
+        for (size_t i = 0; i < paths.size(); ++i) {
+            const auto &path = paths[i];
+            const auto &own = owners[i];
+            std::string status;
+            if (own.ownership == Ownership::Hico) {
+                status = "hico-mounted";
+            } else if (own.ownership == Ownership::External) {
+                status = "external-mounted" + (own.mount_owner.empty() ? "" : " (" + own.mount_owner + ")");
+            } else if (own.ownership == Ownership::Inconsistent) {
+                status = own.mounted ? "inconsistent (HiCo-sourced mount, no journal entry)"
+                                     : "inconsistent (journal entry, nothing mounted)";
+            } else if (const auto content = fs::read_raw(path, 512 * 1024); !content) {
+                status = "unreadable";
+            } else if (const auto r = thermalcfg::tune(*content, policy); !r) {
+                status = "not tunable (unknown format)";
+            } else {
+                status = std::format("tunable: {} of {} sections{}", r->tuned_sections, r->sections,
+                                     thermalcfg::detect_format(*content) == thermalcfg::Format::MiEncrypted ? " (encrypted mi_thermald)" : "");
+                // A tuned copy left in /dev/hico/thermal is not an active overlay.
+                if (fs::exists(thermal_owner::candidate_path(path))) status += ", candidate present but not mounted";
+            }
+            out(std::format("{:<48} {}\n", path, status));
         }
         return 0;
     }

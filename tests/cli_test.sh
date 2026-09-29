@@ -94,6 +94,19 @@ put /vendor/etc/.tp/.thermal_policy_00 'x'
 	fail "thermal sources MediaTek policy"
 "$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/.tp/.thermal_policy_00"' || fail "thermal sources MediaTek policy file"
 
+# Ownership (garnet): a Magisk module bind-mounts thermal-normal.conf; HiCo has done nothing.
+"$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/thermal-engine.conf"[^}]*"mounted":false,"ownership":"stock"' ||
+	fail "thermal sources stock ownership"
+put /vendor/etc/thermal-normal.conf 'SfebGmowgWang'
+put /__mounts__ "/vendor/etc/thermal-normal.conf <- /adb/modules/fast_charging/vendor/etc/thermal-normal.conf"
+"$HICOD" thermal sources --json | grep -q '"path":"/vendor/etc/thermal-normal.conf"[^}]*"controller":"vendor","mounted":true,"ownership":"external","mount_source":"/adb/modules/fast_charging/vendor/etc/thermal-normal.conf","mount_owner":"fast_charging"' ||
+	fail "thermal sources external ownership"
+"$HICOD" thermal sources --json | grep -q '"hico_active":false,"journal_entries":0' || fail "external mount must not make hico_active"
+"$HICOD" thermal sources | grep -q 'thermal-normal.conf.*external mount (fast_charging)' || fail "thermal sources text external"
+"$HICOD" thermal scan | grep -q 'thermal-normal.conf  *external-mounted (fast_charging)' || fail "thermal scan external-mounted"
+"$HICOD" thermal scan | grep 'thermal-normal.conf' | grep -q 'relaxed' && fail "thermal scan called an external mount relaxed"
+rm -f "$HICO_ROOT/__mounts__" "$HICO_ROOT/vendor/etc/thermal-normal.conf"
+
 # ── Integrity (docs/INTEGRITY.md) ───────────────────────────────────────────
 # No integrity.manifest shipped: reported distinctly from a real failure, and exits nonzero
 # (this command is a plain yes/no check; the daemon's own fail-open policy for this same case

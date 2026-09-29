@@ -198,6 +198,40 @@ std::optional<std::string> read_raw(std::string_view path, size_t max_bytes) {
     return out;
 }
 
+namespace {
+
+/// mountinfo escapes space, tab, newline and backslash as \ooo (octal).
+std::string unescape_mount_field(std::string_view f) {
+    std::string out;
+    for (size_t i = 0; i < f.size(); ++i) {
+        if (f[i] == '\\' && f.size() - i >= 4 && f[i + 1] >= '0' && f[i + 1] <= '3' &&
+            f[i + 2] >= '0' && f[i + 2] <= '7' && f[i + 3] >= '0' && f[i + 3] <= '7') {
+            out += static_cast<char>(((f[i + 1] - '0') << 6) | ((f[i + 2] - '0') << 3) | (f[i + 3] - '0'));
+            i += 3;
+        } else {
+            out += f[i];
+        }
+    }
+    return out;
+}
+
+} // namespace
+
+std::optional<MountEntry> find_mount(std::string_view mountinfo, std::string_view target) {
+    std::optional<MountEntry> found;
+    for (const auto &line : str::split(mountinfo, '\n')) {
+        // id parent major:minor root mount_point options [optional fields...] - fstype source super_options
+        const auto f = str::split(line, ' ');
+        if (f.size() < 7) continue;
+        if (unescape_mount_field(f[4]) != target) continue;
+        size_t dash = 6;
+        while (dash < f.size() && f[dash] != "-") ++dash;
+        if (dash + 2 >= f.size()) continue;
+        found = MountEntry{unescape_mount_field(f[4]), unescape_mount_field(f[3]), f[dash + 1], unescape_mount_field(f[dash + 2])};
+    }
+    return found; // later lines are stacked on top of earlier ones
+}
+
 #ifdef __ANDROID__
 
 bool bind_mount(std::string_view source, std::string_view target) {
@@ -212,14 +246,20 @@ bool unmount(std::string_view target) {
     return ::umount2(std::string(target).c_str(), MNT_DETACH) == 0 || errno == EINVAL;
 }
 
-bool is_mounted(std::string_view target) {
+std::optional<MountEntry> mount_at(std::string_view target) {
     const auto info = read_raw("/proc/self/mountinfo", 4 * 1024 * 1024);
-    if (!info) return false;
-    for (const auto &line : str::split(*info, '\n')) {
-        const auto fields = str::split(line, ' ');
-        if (fields.size() > 4 && fields[4] == target) return true;
-    }
-    return false;
+    if (!info) return std::nullopt;
+    return find_mount(*info, target);
+}
+
+bool is_mounted(std::string_view target) {
+    return mount_at(target).has_value();
+}
+
+bool same_file(std::string_view a, std::string_view b) {
+    struct stat sa{}, sb{};
+    if (::stat(std::string(a).c_str(), &sa) != 0 || ::stat(std::string(b).c_str(), &sb) != 0) return false;
+    return sa.st_dev == sb.st_dev && sa.st_ino == sb.st_ino;
 }
 
 #else // Host emulation: record the mounts, never touch the real mount table.
@@ -249,9 +289,21 @@ bool unmount(std::string_view target) {
     return save_mounts(list);
 }
 
+std::optional<MountEntry> mount_at(std::string_view target) {
+    const std::string prefix = std::string(target) + " <- ";
+    std::optional<MountEntry> found;
+    for (const auto &m : mounts()) {
+        if (m.starts_with(prefix)) found = MountEntry{std::string(target), m.substr(prefix.size()), "host", "host"};
+    }
+    return found;
+}
+
 bool is_mounted(std::string_view target) {
-    const auto list = mounts();
-    return std::any_of(list.begin(), list.end(), [target](const std::string &m) { return m.starts_with(std::string(target) + " <- "); });
+    return mount_at(target).has_value();
+}
+
+bool same_file(std::string_view, std::string_view) {
+    return false;
 }
 
 #endif

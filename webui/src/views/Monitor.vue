@@ -191,17 +191,8 @@
                       {{ formatSize(c.size) }}</span
                     >
                   </span>
-                  <span
-                    class="owner-pill shrink-0"
-                    :class="c.controller === 'hico' ? 'owner-hico' : 'owner-vendor'"
-                  >
-                    {{
-                      c.controller === 'hico'
-                        ? $t('monitor.sources.tuned')
-                        : c.tunable
-                          ? $t('monitor.sources.vendor')
-                          : $t('monitor.sources.vendor_locked')
-                    }}
+                  <span class="owner-pill shrink-0" :class="ownerClass(c)">
+                    {{ ownerLabel(c) }}
                   </span>
                 </RippleComponent>
               </div>
@@ -361,14 +352,28 @@
         </div>
         <div class="detail-row">
           <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.owner') }}</span>
-          <span class="text-sm text-on-surface">{{
-            sheetConfig.controller === 'hico'
-              ? $t('monitor.sources.tuned')
-              : sheetConfig.tunable
-                ? $t('monitor.sources.vendor')
-                : $t('monitor.sources.vendor_locked')
+          <span class="text-sm text-on-surface">{{ ownerLabel(sheetConfig) }}</span>
+        </div>
+        <div v-if="sheetConfig.mount_source" class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{
+            $t('monitor.sources.mount_source')
+          }}</span>
+          <span class="text-sm text-on-surface font-mono break-all">{{
+            sheetConfig.mount_source
           }}</span>
         </div>
+        <p
+          v-if="ownershipOf(sheetConfig) === 'external'"
+          class="text-xs text-on-surface-variant leading-relaxed"
+        >
+          {{ $t('monitor.sources.external_note') }}
+        </p>
+        <p
+          v-else-if="ownershipOf(sheetConfig) === 'inconsistent'"
+          class="text-xs text-on-surface-variant leading-relaxed"
+        >
+          {{ $t('monitor.sources.inconsistent_note') }}
+        </p>
       </div>
       <div v-else-if="sheetService" class="space-y-3">
         <div class="detail-row">
@@ -448,6 +453,26 @@ const deviceName = computed(() => {
   return d.codename ? `${name || d.codename} (${d.codename})` : name || '–'
 })
 const formatSize = (b) => (b >= 1024 ? `${(b / 1024).toFixed(1)} KB` : `${b} B`)
+
+// Who controls a config file: 'stock' | 'hico' | 'external' | 'inconsistent'. Older hicod builds only
+// send `controller`; a mounted file is never assumed to be HiCo's.
+const ownershipOf = (c) => c.ownership || (c.controller === 'hico' ? 'hico' : 'stock')
+const ownerClass = (c) =>
+  ({
+    hico: 'owner-hico',
+    external: 'owner-external',
+    inconsistent: 'owner-warn',
+  })[ownershipOf(c)] || 'owner-vendor'
+const ownerLabel = (c) => {
+  const o = ownershipOf(c)
+  if (o === 'hico') return t('monitor.sources.tuned')
+  if (o === 'external')
+    return c.mount_owner
+      ? t('monitor.sources.external_by', { owner: c.mount_owner })
+      : t('monitor.sources.external')
+  if (o === 'inconsistent') return t('monitor.sources.inconsistent')
+  return c.tunable ? t('monitor.sources.vendor') : t('monitor.sources.vendor_locked')
+}
 
 // Who controls thermal changes only when HiCo switches level: refreshed on open and every 10 s.
 async function loadSources() {
@@ -772,5 +797,15 @@ onUnmounted(stop)
 .owner-hico {
   color: var(--color-on-tertiary-container);
   background: var(--color-tertiary-container);
+}
+
+.owner-external {
+  color: var(--color-on-secondary-container);
+  background: var(--color-secondary-container);
+}
+
+.owner-warn {
+  color: var(--color-on-error-container);
+  background: var(--color-error-container);
 }
 </style>

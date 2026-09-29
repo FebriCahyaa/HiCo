@@ -72,6 +72,23 @@ bool unmount(std::string_view target);
 /// True when @p target is a bind-mount point (Android: /proc/self/mountinfo; host: the recorded list).
 [[nodiscard]] bool is_mounted(std::string_view target);
 
+/// One line of /proc/self/mountinfo, reduced to what tells who mounted something.
+struct MountEntry {
+    std::string mount_point; ///< where it is mounted (octal escapes decoded)
+    std::string root;        ///< path inside the source filesystem; the source file itself for a bind-mounted file
+    std::string fstype;
+    std::string source;      ///< device or pseudo-source ("tmpfs", "/dev/block/...")
+};
+
+/// The top-most (last) entry of @p mountinfo whose mount point is @p target. Pure text parsing, no I/O.
+[[nodiscard]] std::optional<MountEntry> find_mount(std::string_view mountinfo, std::string_view target);
+
+/// Top-most mount on @p target (Android: /proc/self/mountinfo; host: the recorded list, source in `root`).
+[[nodiscard]] std::optional<MountEntry> mount_at(std::string_view target);
+
+/// True when both paths resolve to the same file (same device and inode). Always false on host builds.
+[[nodiscard]] bool same_file(std::string_view a, std::string_view b);
+
 } // namespace hico::fs
 
 namespace hico::str {

@@ -55,6 +55,7 @@ public:
         int services = 0;
         int mounts = 0;
         int failed = 0;
+        int skipped = 0; ///< journaled mounts left alone because another party's mount is on top
     };
 
     /// Undoes every recorded change, newest first, then clears the journal.

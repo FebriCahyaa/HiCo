@@ -275,6 +275,12 @@
       "tuned": "HiCo tuned copy",
       "vendor": "Vendor",
       "vendor_locked": "Vendor (read-only)",
+      "external": "External",
+      "external_by": "External · {owner}",
+      "inconsistent": "Inconsistent",
+      "mount_source": "Mounted from",
+      "external_note": "Another module mounted this file over the ROM's config. HiCo did not mount it, leaves it as it is, and does not count it as tuned.",
+      "inconsistent_note": "HiCo's journal and the mount table disagree about this file, so HiCo is not touching it. Restoring stock thermal or rebooting clears it.",
       "no_configs": "No thermal config file found in /vendor, /odm or /system.",
       "no_services": "No thermal daemon registered with init.",
       "format": {
