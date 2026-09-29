@@ -13,3 +13,6 @@ sources/collector-last-run.json
 
 # Reproducible native build outputs — always regenerate from tools + stock/
 generated/artifacts/
+
+# tools/seed_local.sh run logs — local diagnostics only, not repo content
+/logs/
