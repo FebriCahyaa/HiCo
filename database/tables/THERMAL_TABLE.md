@@ -5,7 +5,7 @@ Original thermal trip values and HiCo candidate values derived from the device's
 `original_max_trip_c` is the highest value found in the source artifact/section.
 `hico_candidate_max_trip_c` is the highest value produced by HiCo's tuning policy for the same source scope. It is a candidate, not a measured or certified safe temperature.
 
-Artifacts: **3237** · tuning rows: **7024** · tuning rows with candidate: **7024**
+Artifacts: **3255** · tuning rows: **7024** · tuning rows with candidate: **7024**
 
 ## Tuning table
 
