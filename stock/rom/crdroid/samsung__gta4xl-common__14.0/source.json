@@ -1,0 +1,57 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_gta4xl-common.git",
+  "codename": "gta4xl-common",
+  "commit": "8b4154fbbc6e8e75de54419170cbf66b2c9131bd",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b8810d2541b5565bf68b84f65922baf0f73bac3a3e2ac770fba93f64870c9b94",
+      "size": 9362
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "44ab00d6d759c2381aaa8944c2b5abf9486844f898dff45e5fc503d4c6cc6078",
+      "size": 10044
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "827f72d2e7e4d64d9653498bb3f590aa155cf00931bc81452929aeaae1417762",
+      "size": 2570
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "45cba67df9f2fe37a1ee8e8e952eed1c66d84f16d81a0e96d3452f7d9bc93eb8",
+      "size": 45003
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "32f3db0243b00865f3f03a893e62732c709a4958f233bbeb1f1cc924e0b654e4",
+      "size": 139
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7b9e0eea0b6f3200563faa1ed03d3b1f007ce4bc49d8923eb04ddf186f213688",
+      "size": 1826
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "259fa9bbd0de497806c42b074d30a6467fb0e14fb4d688a1776053b9df23a227",
+      "size": 11105
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_gta4xl-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-07-11T10:51:54Z",
+  "vendor": "samsung"
+}

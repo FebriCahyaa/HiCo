@@ -1,0 +1,82 @@
+{
+  "branch": "alpha-13old",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "68c967fc85be34f933f2724917e90e8622f362a7",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "297ead17aa376ab56d44f6757ac2680010e1eb13ed73bd7ca1b4d8ff9aa2d758",
+      "size": 313
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d60b1ca80e3afcb4436bfe50f7cfc1e29d921cc9296af0d732236251c74541bd",
+      "size": 9276
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d061f7650d6b3c1508ee2cc483ae586de0b6f194b24c8fe5e4f4d2a73bca119c",
+      "size": 8586
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "af5e38fe8ed18f44670184ac1f816c614744cbc720e29a49a9cfaa894965a4db",
+      "size": 2051
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "73d8915dc98799e1ee40a1bf1b6b62b3f6db6045e9344c82e13f2da8a3c00a0b",
+      "size": 1542
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "9a8763a38e6c3658b3f4bb5975b70e8ff95792ff88743808a4159ae57e16c7a4",
+      "size": 6355
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7ec2b9b41dcfee33e224d460121719f7751724bfc9427c6601e9d9d30fc49d23",
+      "size": 29428
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "124e3892247413d0fa5e2c46e34ba32eef577459904446a0c168ea2bf6ff5205",
+      "size": 876
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "76141c03c98c5e5aeb1c6f88b87bb4c8c2cc4ddb148703eec47d87c97d4474b0",
+      "size": 359
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b2675f45d58ecfc0c4a92f3efcdcfaf5b45c520b1fe7ed175ac509b1af827b4e",
+      "size": 1566
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a4d51a5875e13d8ce6c46798a85dca419eaa6f7ff6ed8852d0917f35573e49a7",
+      "size": 10414
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-10-15T11:14:28Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,87 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "d08b46caa6990fc2c239b6aa1d706ebc208bb480",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1343285aa6030bc952288b4270d1271e775e8ab8b9be789cfa184fc0fde6218b",
+      "size": 1486
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9b07668a3f9e8235f922781337f40abd0e4ff21dde35056ee454af8199e3b256",
+      "size": 7533
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "c375bbee035466999f712e44b964b239385779902f6034aed2ee7c59cc58a3bb",
+      "size": 2635
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "be63313b8d219c68d09c385a9b02be945da1c1fe7d180516d181967ee7c1933c",
+      "size": 1503
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "3246520851f6b5d3bfde2c172a68afc1e554956eb8c01f09918a86b745906ae9",
+      "size": 1572
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "b44abe742bd19a11b61c6f8a7eeebfe1a82323f24925bfd02cd71c18bae676e7",
+      "size": 4131
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "3fc17058137ae541d46d818eeadb082bb7da18a3d05aa3419fe088ae1ed82e28",
+      "size": 15856
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "5937260b32122128d17d7ce7cde2ec68076ceff78a979c53f19b24d017c9b61b",
+      "size": 10615
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "6d97d10444ee5752d4de87d57ec76625eb514df25de5f9edbf5b026f73772f81",
+      "size": 6224
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "81600975f5a18d12c80c2628db6ce6deff073412b1ddcc67efe925a6afdf9eea",
+      "size": 28606
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "503b533f82c4f7c3fdfed515c3731cfe490babb1f2b81f9735cdd2a1ec39628f",
+      "size": 1626
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5b612b7ca2c9aced4245e40b61fba453d2b8ce2b81297a988e81114c9d256253",
+      "size": 490
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f59818ead7a6ec554d5162145ca522db20e0b58dc990712355438f0a8d7610b9",
+      "size": 911
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0385860570de9a759b8b6bc2643304a30f01200e506e4f25bdf536533fa6d0de",
+      "size": 8871
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-22T12:02:35Z",
+  "vendor": "xiaomi"
+}

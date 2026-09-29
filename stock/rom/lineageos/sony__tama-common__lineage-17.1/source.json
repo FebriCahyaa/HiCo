@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_tama-common.git",
+  "codename": "tama-common",
+  "commit": "3145e05d70e15561c98a722eb5bb6e8cec0a9763",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a2d6b4b95df6b6ad8d8ddced1696b1d8edfbbf5586a1cdc5c58c737d1a7172a6",
+      "size": 7997
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cc177c1c0b2418b420091f105338e173052a6bd4b5b97cb92c9868dee27ab345",
+      "size": 5276
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e80328ed91bf35a1757835bc56ada3288c45703286dbec36fab7187e2e75db2d",
+      "size": 1734
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "25b21f1718fd2d80b1770bb98dbbc3b77599276cdbb5113d4c0ad1207e14417f",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9bb975bae6b16b6a7b5837f89cb48bc5f1b13c4040f032a0d2b71fe5ec5041aa",
+      "size": 44772
+    },
+    {
+      "path": "sepolicy/vendor/hal_somc_thermal.te",
+      "sha256": "65714b0994e6dc000a6b72b49af8a96b163d41f417ed9ddd18922b18f0344834",
+      "size": 325
+    },
+    {
+      "path": "sepolicy/vendor/hal_somc_thermal_default.te",
+      "sha256": "f2d538dd1e7ea66ca6a110dc61be3cf9c21a065ac9b8ab7abe1946bb24b8db5f",
+      "size": 549
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e302b02be3cf433d63cfee5f92d321172cb77bb3233761b9bbe0ad783d59e588",
+      "size": 101
+    },
+    {
+      "path": "system.prop",
+      "sha256": "31137fb68f7b0bbccce73f8d4bcde66c5a11d2f4a9c561ecd681a600e9ef0268",
+      "size": 872
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "27573b4e68ad1a4979d4ecd64ef173cfce636873f5b15f850e1c6b69552e0563",
+      "size": 5961
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_tama-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-07-07T22:00:19Z",
+  "vendor": "sony"
+}

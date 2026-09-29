@@ -1,0 +1,42 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_klte-common.git",
+  "codename": "klte-common",
+  "commit": "90815add12f8f87ce0967eab570a2d83955e964f",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7509ed91fc2de77fd161b5552eac97e8a8751a5878f86592f12ce060ccaa6a4f",
+      "size": 827
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "535566c6ac4731384f8feba2c49809f48b2958bff34c73c336ac5cb57ac42b21",
+      "size": 4215
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "4822ffc1f994fba20f1995baa60dbf0b1df92c921f5204de6e563bcfc649308a",
+      "size": 1934
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b44beadee8cd3fa77e7c4ecc09a67c7c76fd807caca2f4492bb3ddc6006823ee",
+      "size": 2190
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7ef7eab499333bb272aef5fbfd7f13e3c8c7d221c66b3b8c735df57e48802ce2",
+      "size": 1436
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_klte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-07-02T06:22:38Z",
+  "vendor": "samsung"
+}

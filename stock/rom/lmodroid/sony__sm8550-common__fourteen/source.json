@@ -1,0 +1,57 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "3a07f8368006939d335105238dcde0abafa4e5fb",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bb05c4a839d756bc4b02bb8f28dba2e8ab8d3b3c2223f8a29e96ebeb29639c85",
+      "size": 806
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f0d418af8a6dc4fd410ae4f37d830da3b91059934ad6f7b4fa59156fbfccba64",
+      "size": 1047
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "88c1782649e0c37e23dcb5c7bec6ef077f478c41aadd5b0767ccc443425b0641",
+      "size": 11362
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "627e6deb6ef0735ca7a17d70a80c500dc77625e23b6403b8cf23b08e1ff91f38",
+      "size": 63374
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2feea560e63fcccb18716d1ff4f45a25265db30c80f31453580e561e6f763208",
+      "size": 4422
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f4f9a1662b7ccd96d5a7b2c037d0bb2336a6ed38249cd4c7d0a12e522568e9be",
+      "size": 62377
+    },
+    {
+      "path": "system.prop",
+      "sha256": "918eb50eb13d3e7d3536a13660579fa8bd59bebf11e3b1acc3091b4b3cc21617",
+      "size": 1406
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bb7f2a4e0848c43165e54537eb7ca91b8747e52e51e87547dc3bfe80bb875d4d",
+      "size": 10290
+    }
+  ],
+  "kind": "common",
+  "repo": "device_sony_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-21T19:02:42Z",
+  "vendor": "sony"
+}

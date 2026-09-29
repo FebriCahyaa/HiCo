@@ -1,0 +1,171 @@
+# Common proprietary files - from Samsung package version G973FXXSGHWA3, unless pinned
+
+## Audio
+vendor/etc/audio_board_info.xml
+vendor/etc/default_volume_tables.xml
+vendor/etc/usb_audio_policy_configuration.xml
+-vendor/lib/vndk/libtinyalsa.so;MODULE=libtinyalsa.exynos9820
+-vendor/lib/vndk/libaudioroute.so;MODULE=libaudioroute.exynos9820
+-vendor/lib/libSamsungPostProcessConvertor.so
+-vendor/lib/lib_SoundAlive_SRC384_ver320.so
+-vendor/lib/lib_soundaliveresampler.so
+-vendor/lib/libalsautils_sec.so
+-vendor/lib/libfloatingfeature.so
+-vendor/lib/libprofileparamstorage.so
+-vendor/lib/libsecaudiocoreutils.so
+-vendor/lib/libsecaudioinfo.so
+-vendor/lib64/libfloatingfeature.so
+-vendor/lib64/libsecaudioinfo.so
+
+## Camera Dependencies
+-vendor/lib/libuniplugin.so
+-vendor/lib64/libuniplugin.so
+
+## Camera Dependencies - from beyond1lte - G973FXXSEGVA9
+-vendor/lib64/libSEF.quram.so|2e9d5d3b403bddc78b9854acfd8ae19f43511f82
+-vendor/lib64/libhwjsqz.so|9185e4d27d12b96d875a837d259ebd3ac9800f40
+-vendor/lib64/libsensorlistener.so|b440957789f50d8ea22c6428cb46c453d822b779
+-vendor/lib64/libuniapi.so|0ac709e10a701768055e0f6559c14ae3daf83712
+
+## Codecs
+vendor/etc/media_codecs.xml
+vendor/etc/media_profiles_V1_0.xml
+
+## Exynos Multi-Format Codec (MFC) Firmware
+vendor/firmware/mfc_fw.bin
+
+## Fingerprint
+-vendor/lib/libegis_fp_normal_sensor_test.so
+-vendor/lib/libgf_in_system_lib.so
+-vendor/lib/libqfp_sensortest.so
+-vendor/lib/libsynaFpSensorTestNwd.so
+-vendor/lib64/libegis_fp_normal_sensor_test.so
+-vendor/lib64/libgf_in_system_lib.so
+-vendor/lib64/libqfp_sensortest.so
+-vendor/lib64/libsynaFpSensorTestNwd.so
+
+## Firmware
+vendor/firmware/NPU.bin
+vendor/firmware/WithLightFixNoBN.SDNNmodel
+vendor/firmware/cs47l93-dsp1-trace.wmfw
+vendor/firmware/default_configuration.hfd.cfg.json
+vendor/firmware/dual_cal_front_subfront.bin
+vendor/firmware/epx.bin
+vendor/firmware/iva30_rt-makalu.bin
+vendor/firmware/pp_cfg.json
+vendor/firmware/tracker_cfg.json
+vendor/firmware/usbin.bin
+vendor/firmware/usbout.bin
+vendor/firmware/score/camera2/score_dummy
+vendor/firmware/score/camera1/score_br_dmb.bin
+vendor/firmware/score/camera1/score_ts_pmw.bin
+vendor/firmware/score/camera1/score_ts_dmb.bin
+vendor/firmware/score/camera1/score_br_pmw.bin
+vendor/firmware/score/camera3/score_dummy
+vendor/firmware/score/develop1/score_br_dmb.bin
+vendor/firmware/score/develop1/score_ts_pmw.bin
+vendor/firmware/score/develop1/score_ts_dmb.bin
+vendor/firmware/score/develop1/score_br_pmw.bin
+
+## GPS
+vendor/bin/hw/gps.sh
+vendor/etc/gnss/gps.cer
+-vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+
+## Graphics
+-vendor/lib/egl/libGLES_mali.so
+-vendor/lib/hw/vulkan.mali.so
+-vendor/lib64/egl/libGLES_mali.so
+-vendor/lib64/hw/vulkan.mali.so
+
+## Keymaster
+-vendor/lib64/libkeymaster_helper.so
+-vendor/lib64/libskeymaster4device.so
+
+## NFC
+system/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
+
+## RIL
+-vendor/bin/cbd
+vendor/etc/init/init.vendor.rilchip.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_attaio.bin
+vendor/etc/plmn_delta_usagsm.bin
+-vendor/lib/libaudio-ril.so
+-vendor/lib/libsecril-client.so;MODULE=libsecril-client.exynos9820
+-vendor/lib64/libengmode_client.so
+-vendor/lib64/libsecril-client.so;MODULE=libsecril-client.exynos9820
+-vendor/lib64/libvkmanager_vendor.so
+-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
+-vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
+-vendor/lib64/vendor.samsung.hardware.radio@2.0.so
+-vendor/lib64/vendor.samsung.hardware.radio@2.1.so
+
+## RIL - from beyond1lte - G973FXXSDFUI5
+-vendor/bin/hw/rild|78c28a1e254318abae9c45699b69a61cf96d73b1
+-vendor/lib/libsemnativecarrierfeature.so|ac27187c27eba2b96eaa4812b8e9b60193ca18d6
+-vendor/lib64/libril-samsung.so|cf62752d95d5bd16fe2613ee0b4ab1cb5328b37c
+-vendor/lib64/libsemnativecarrierfeature.so|b9663215a8cae356b4ddf86790359beda9c30f47
+
+## SECNATIVE
+-vendor/lib/libsecnativefeature.so
+-vendor/lib64/libsecnativefeature.so
+
+## Sensors
+vendor/etc/sensors/hals.conf
+-vendor/lib/sensors.grip.so
+-vendor/lib64/libflicker_sec.so
+-vendor/lib64/sensors.grip.so
+
+## TEEGRIS
+-vendor/bin/tzdaemon
+-vendor/bin/tzts_daemon
+vendor/etc/init/teegris_v3.rc
+-vendor/lib/libteecl.so
+-vendor/lib/libuuid.so
+-vendor/lib64/libiwt.so
+-vendor/lib64/libteecl.so
+-vendor/lib64/libuuid.so
+
+## TEEGRIS Firmware
+vendor/tee/00000000-0000-0000-0000-000000010081
+vendor/tee/00000000-0000-0000-0000-000000020081
+vendor/tee/00000000-0000-0000-0000-000048444350
+vendor/tee/00000000-0000-0000-0000-0000534b504d
+vendor/tee/00000000-0000-0000-0000-0050524f4341
+vendor/tee/00000000-0000-0000-0000-00575644524d
+vendor/tee/00000000-0000-0000-0000-42494f535542
+vendor/tee/00000000-0000-0000-0000-446e6c6f6164
+vendor/tee/00000000-0000-0000-0000-474154454b45
+vendor/tee/00000000-0000-0000-0000-5345435f4652
+vendor/tee/00000000-0000-0000-0000-53454d655345
+vendor/tee/00000000-0000-0000-0000-535355504341
+vendor/tee/00000000-0000-0000-0000-5354494d4552
+vendor/tee/00000000-0000-0000-0000-564c544b5052
+vendor/tee/00000000-0000-0000-0000-64756c444152
+vendor/tee/00000000-0000-0000-0000-656e676d6f64
+vendor/tee/00000000-0000-0000-0000-657365636f6d
+vendor/tee/00000000-0000-0000-0000-6d73745f5441
+vendor/tee/driver/00000000-0000-0000-0000-00535453540b
+vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374
+vendor/tee/driver/00000000-0000-0000-0000-564c544b4456
+vendor/tee/ffffffff-0000-0000-0000-000000000030
+vendor/tee/tui/resolution_common/ID00000100
+
+## Widevine - from beyond1lte - G973FXXUFHVE1
+-vendor/bin/hw/android.hardware.drm@1.4-service.widevine|247dd44a8dd853ca3c1bd6c797d2be827c2a7719
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
+-vendor/lib/liboemcrypto.so|808d043101c4f23061e2964fb7ebec4c44aaffcb
+-vendor/lib/libwvhidl.so|9bd93316e85b3d1ab9e919b53508008b42478978
+
+## Wi-Fi
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_brcm.rc
+vendor/firmware/bcmdhd_mfg.bin_b1
+vendor/firmware/bcmdhd_mon.bin_b1
+vendor/firmware/bcmdhd_sta.bin_b1
+vendor/firmware/nvram.txt_ES00_semco_b0
+vendor/firmware/nvram.txt_ES01_semco_b0
+vendor/firmware/nvram.txt_ES02_semco_b0

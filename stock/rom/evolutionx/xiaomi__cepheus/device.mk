@@ -1,0 +1,57 @@
+#
+# Copyright (C) 2021 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+TARGET_HAS_IR := true
+TARGET_HAS_UDFPS := true
+TARGET_IS_LEGACY := true
+
+# Inherit from sm8150-common
+$(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
+
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Audio configs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
+# Camera
+PRODUCT_PACKAGES += \
+    libMegviiFacepp-0.5.2 \
+    libmegface \
+    libpiex_shim
+
+$(call soong_config_set,camera,package_name,com.android.camera)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
+TARGET_USES_MIUI_CAMERA := true
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-cepheus/config.mk)
+
+# Init
+$(call soong_config_set,xiaomi_msmnile,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_cepheus)
+
+# Overlays
+PRODUCT_PACKAGES += \
+    ApertureOverlayDevice \
+    FrameworkResOverlayDevice \
+    LineageSDKOverlayDevice \
+    LineageSystemUIOverlayDevice \
+    SettingsOverlayDevice \
+    SystemUIOverlayDevice
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Inherit from vendor blobs
+$(call inherit-product, vendor/xiaomi/cepheus/cepheus-vendor.mk)

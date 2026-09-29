@@ -1,0 +1,102 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_comet.git",
+  "codename": "comet",
+  "commit": "e76dd3bc11fe78adbb4e188b9901332187ca6723",
+  "file_count": 17,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "35e869d2878c0d15d615c92eeee84148ec6c52fe0886da662c139be645b251b2",
+      "size": 991
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3cc433d150010d3a4a722c724b67051ca6b2869418c3521a075ae3312e93452f",
+      "size": 695
+    },
+    {
+      "path": "BoardConfigEvolution.mk",
+      "sha256": "a63855a6ff6cfe0403902028ff9c8b8eb711d823a28a24a07e58d8dcd87da0a7",
+      "size": 97
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-comet.mk",
+      "sha256": "10108025e17d1e10c9cfa133477d1304771888be4414693cd0d37dc9e75edc04",
+      "size": 18275
+    },
+    {
+      "path": "device-evolution.mk",
+      "sha256": "f1ac19d77aa4f33a0d3aa7b64e97acc279fd42e585688fe5015a8f1fefdba6a7",
+      "size": 158
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "0cb737ff6e8af3c9fcf33d68cc22863c6b1a831cabc0e94c44697acab8b84aaf",
+      "size": 1613
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "24fc72bdfbc979817502bcafbf073df7a05177957dbd5845310f83550a41c31f",
+      "size": 211
+    },
+    {
+      "path": "sepolicy/vendor/init_thermal_config.te",
+      "sha256": "f2697c4e298bffc8c6b4b43ab086c58fb06e1094f348b7cab1398ecb53077c86",
+      "size": 197
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "1dca369a1ac5c7bea4233a7ed7551e89f2461acde3413c4307f44c1d109159b0",
+      "size": 1189
+    },
+    {
+      "path": "thermal/init_thermal_config.cpp",
+      "sha256": "7fb091dd7ef4f41431eb74f6e209a97f3031d1fee239489b526b5e23005fa9fc",
+      "size": 1326
+    },
+    {
+      "path": "thermal/thermal_info_config_backup_comet.json",
+      "sha256": "82cf2c1af3cd8bcad318a16a802ca69511f62e39dc6319d5f5f7aa2ada5b2a84",
+      "size": 12609
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_comet.json",
+      "sha256": "201381614e21b16c16ec0f0c0c30f1c072eb4beea58167410f71ec9b9bdec8f7",
+      "size": 10272
+    },
+    {
+      "path": "thermal/thermal_info_config_comet.json",
+      "sha256": "7ff16be040f7270ee3581b409494602adab93766521915d9460670ea0cc99986",
+      "size": 62671
+    },
+    {
+      "path": "thermal/thermal_info_config_lpm_comet.json",
+      "sha256": "9edc2433212dc84368530f79f4f4767e37ea4974ec96c3b33b379798fce0fefb",
+      "size": 3982
+    },
+    {
+      "path": "thermal/vt_estimation_model_comet.tflite",
+      "sha256": "96f750844395b9af651200a0026d0c396801c989a46d951e06ad11dee1c9a54c",
+      "size": 5682
+    },
+    {
+      "path": "thermal/vt_speaker_estimation_model_comet.tflite",
+      "sha256": "29e2de4af08cf066218b3908c45084cad1959b6aa23ea08ebdc6e0187c8b8752",
+      "size": 6382
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_comet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:03:28Z",
+  "vendor": "google"
+}

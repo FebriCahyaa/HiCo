@@ -1,0 +1,52 @@
+{
+  "branch": "15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "c0baf297237bbd9dbf2f900a1b3bfd6c73f9a399",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e50540b9728e281f82c94712231b7080143e72bbf0538bf7f7de0b541e5bc12b",
+      "size": 622
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "626d09c2d514700cb772246d31b383167896e3d60e694b6cbb29b2f7011ec450",
+      "size": 4754
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "53a5a878a18920e8a2ba631ab394cde31550b1c154a76a0c3839c89cb099e84a",
+      "size": 3630
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a01fa15c380808234b0bae266b1fb853f34d6eb3faa5cd19388d44726a70e89c",
+      "size": 41439
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a00442376d44285f95989b86e67e7ae9a364313e4ea3adf75d9c49765b2088c",
+      "size": 81
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1edf2c32f9f4928d1bd5e12b7e590e8c66a0696ffbcd3608a967f115ec29063a",
+      "size": 1563
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a9a18162bdd27d713bd4419626efd3087f703f136b24ae7b4d33db34b3933133",
+      "size": 5384
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-05-14T18:06:56Z",
+  "vendor": "oneplus"
+}

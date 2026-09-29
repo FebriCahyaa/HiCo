@@ -1,0 +1,42 @@
+{
+  "branch": "15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "edaebf37b0f39c4f826e704be7b7ece2264cb841",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "44f7cc98019895ae04be1463010157d9ff274286574e5aa539d23100ee49958d",
+      "size": 534
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b57b7de28c1d5b62d0e0b45136dfbb0e29686bbc0ecbdd5a57a670687618a868",
+      "size": 5360
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ffc90514dac1fc39b4e6e7ceaa00425966355081250a424eea26ac09a96932d6",
+      "size": 3684
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c809bd7d69dbf8f512c6d90b735ffa756a751b5119401c900f98fea351bed4a4",
+      "size": 44591
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "05e64ba4816e6feb90fa3c0dc12c501080f7cd41e0949972d9ab6af82428a3d8",
+      "size": 7241
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-03-16T22:42:58Z",
+  "vendor": "oneplus"
+}

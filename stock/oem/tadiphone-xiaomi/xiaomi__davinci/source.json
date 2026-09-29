@@ -1,0 +1,32 @@
+{
+  "branch": "davinci-user-11-RKQ1.200826.002-21.10.27-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/davinci.git",
+  "codename": "davinci",
+  "commit": "0e679c8c81c29c0033d0c015d85413d82e87ea7e",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "system/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-08T11:24:55.683Z",
+  "vendor": "xiaomi"
+}

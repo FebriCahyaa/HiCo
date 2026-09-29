@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_gta4l.git",
+  "codename": "gta4l",
+  "commit": "e5f53a76f45eb3bbc2e7dc70f436d0b6c25ad4d4",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "247d58cf002721a425b4ddef6bd8e404c1930d2f02914264d3a5aa1a33dd0e1d",
+      "size": 646
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "536967023a74590cc09da12cd0a5dad3910eb1f8766cff52bfc5218fd17ba440",
+      "size": 1597
+    },
+    {
+      "path": "device.mk",
+      "sha256": "13368eb818f304b0c7b415d91f68f5b424f8772cf8ec679b0495972c621b1dfe",
+      "size": 1730
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "904be838dcf50f503e702ce579c1dba27f01b564ae39d9a10124565823266e8c",
+      "size": 525
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c38344c74c16db63b8e02fd3eb7c49323fd6a74f49a273bb243191a39938370a",
+      "size": 5176
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c5fcfd51a482f9135b5c34cf9745f287d56a247fd7428a1625e65d67685e826a",
+      "size": 349
+    }
+  ],
+  "kind": "device",
+  "repo": "device_samsung_gta4l",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T12:54:19Z",
+  "vendor": "samsung"
+}

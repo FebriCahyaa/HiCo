@@ -1,0 +1,62 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_grus.git",
+  "codename": "grus",
+  "commit": "f8daf781d53aba21401cbdc5d7b6e34daca0c6a2",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a400ed71fc063bdae7f1836476d4c9f6d0d4db5f4ce1430f0d68eee4029e7a3b",
+      "size": 92
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "138d31ffbcbc20bd463530486f239e0c5bbd43315d529302c9272ca6af4cea5b",
+      "size": 7418
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "de15e26ce50f3d5c1f50896a334cb6f89632051a0ef4835ce9cf01e33c58ff8a",
+      "size": 714
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "5c5c469f2f4cbbf3037a441a34a140c65b2499be1eee914c0a906197bfb0b06b",
+      "size": 8794
+    },
+    {
+      "path": "device-props.mk",
+      "sha256": "6a4dc557c974ec758d1993f3d785266f45fb2cf891cebfa406baf531d85dfded",
+      "size": 4251
+    },
+    {
+      "path": "device.mk",
+      "sha256": "903a26165610db0d09abd5e8f3936e343431b8f439d9c28beb92897deb5390d3",
+      "size": 26166
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fce1ae3f5ff91041f128f66ca321dc523da3814a6c2f55167dd5b9556aacc6a0",
+      "size": 2251
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a2b6ea3fe5cf0d41ed4267c4675f415458a6d4cf56330e6460ecd3e1024cead7",
+      "size": 56190
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "8c94c0e9ce99fa62efcc28ca0e21790bf7a44d494e7c227e97e677d3b8a8704f",
+      "size": 166
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_grus",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-04-10T18:50:30Z",
+  "vendor": "xiaomi"
+}

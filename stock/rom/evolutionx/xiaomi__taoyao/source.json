@@ -1,0 +1,82 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_taoyao.git",
+  "codename": "taoyao",
+  "commit": "fb9968694567958a6348c61f746a6394ff25766b",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1746dad60462ec230e8730a76b78e3103e9b6a14a24bf76cef7c59c97498321a",
+      "size": 745
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9d4b39b7fd39cd3743e8b87961ee68131ec54932f0c63fdeac6594822e62de11",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f8508e16e52980f5d744fceab05bfcf88e0322a8714e4cb2fca612f5333a97fa",
+      "size": 7019
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cbe93226eb4446acd67a742c6937e1235407f58f42307e4e7512c50028570509",
+      "size": 24545
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "07ffb92aa42556b910c1a4f46daeb0fc5cc32a420b03bef415d0099b2f6df086",
+      "size": 3952
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "ed1da71b46a16d99a0c04d800e1b1b8a4f975cfa4ff7aca90062d7458b4a7fc6",
+      "size": 1544
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "72cfff0df8991110ec5c424e53916428ccc9d4cb0785f18382666f0b945ac894",
+      "size": 4011
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "ca3bb936a5be2c11206d8e378cae9ca223bab877c457da6866a7bf20d93e5ba8",
+      "size": 14976
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "f9b71c4744130e39abe93d9caa89a1d87e2f981b0c0d83c4167cfa6576fb8ebc",
+      "size": 1606
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "13b602bd105b1bd3b7e80b433660e804a908c8acb2a8cfd060c87284f8dcf62c",
+      "size": 9118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "716b3867e2cab42d8fb431e365d56485aa1bc889b5fb026cfd69b221d0f0bece",
+      "size": 112950
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "82177aaf2b97ab10a4c41eed48deebce1f8c2e41138dc24e411ad980d2219081",
+      "size": 1296
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_taoyao",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-18T06:52:10Z",
+  "vendor": "xiaomi"
+}

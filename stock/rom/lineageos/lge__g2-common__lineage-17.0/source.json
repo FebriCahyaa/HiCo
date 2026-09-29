@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_g2-common.git",
+  "codename": "g2-common",
+  "commit": "fc91d10c3894f05c1e4f45c4c85ec1316aa80daf",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "999008082882f1bbd03a1258e8c126cd337a72d55aa650e4d6dd147223d87054",
+      "size": 2559
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a0bab371b23b185d2d49cc4bbbed2c1324b9f5b85394c52f26f6e306095d1cfb",
+      "size": 5394
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "75e4988ad3371808707079ee21184fdcda0e09293fa7738b4dbcd451de227c34",
+      "size": 3162
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c9a544c09db3886d5230abbd26cef5afbee1fd20236a4661c9eb0c34ea7de246",
+      "size": 2489
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "055808b57d922fe718fdca36e1ddbfa3f34c58f8ab6211fd182686f97dae855b",
+      "size": 221
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9e3b3a3e5a047d8caa7177ff379635184c9ecb2c5d93fa1413dec6a85be5a030",
+      "size": 11390
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "201d4bdec5b1166a293d89b71779532355a9841a5ae0ffd0aa091a6435dc6869",
+      "size": 269
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_g2-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:43Z",
+  "vendor": "lge"
+}

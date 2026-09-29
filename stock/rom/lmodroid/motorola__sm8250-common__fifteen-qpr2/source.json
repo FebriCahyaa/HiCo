@@ -1,0 +1,42 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "b1769bb9e4ee7bbe345140a36d47995a1d1d51ba",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "db509c35f0ed33906615c6ba37e20137f82db9fac030bc8a67a19196923689d4",
+      "size": 744
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "04580d23ea4abc48ead299360cdd1bfe0bb67e03460c6f00eb790f1a82d7c288",
+      "size": 7082
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "96c5a1b86cb18ace943156ef5d52b3d870495b462cf34f80df3260c4412da8c7",
+      "size": 2235
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "28bcb17a1f6e7ae224f12fa1aa73c7f5ca159e3176f53ae2e9c5655b0c1925d8",
+      "size": 30229
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7aa98e5eea4909db289d056b89daad35e32136c3860320c617c8c04ed6cf4c05",
+      "size": 4082
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:10:14Z",
+  "vendor": "motorola"
+}

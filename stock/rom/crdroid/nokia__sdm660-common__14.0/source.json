@@ -1,0 +1,57 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_nokia_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "60e14cc780560d634b201799d015fa33a7ed4295",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "afa90df3e5c195fe2eb76867310af185dab56adbc1311efb14c826652a7c38b8",
+      "size": 5249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c5b1cf4f709cb127be07d0b236b867f2774a82434417b3306fa6f380b3a20e62",
+      "size": 4985
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c8e00453248f97774ae038be573333e2d365f05e2f2227edf4fef4acf406ea73",
+      "size": 4940
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0f27593fea91dad84b7f260bec0ebacdbda0fda08554638aa560dc0c1395243b",
+      "size": 38256
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "7ca3d47233cc993bb590f81d9fb87c7a096ad383086d76be22d7a8869a8fa1b6",
+      "size": 127
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ec2dc98c259e5758a6de7ca5a6043068efdb413d8d9c5be0f3b3fa5ee07f7b1a",
+      "size": 4157
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c5156e93d81ecafba4cc76cd216f07b2219019fb8f2cf84a34293b50eb43de07",
+      "size": 7170
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nokia_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-03-25T06:39:51Z",
+  "vendor": "nokia"
+}

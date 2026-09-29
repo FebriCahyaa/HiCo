@@ -1,0 +1,72 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_motorola_mumba.git",
+  "codename": "mumba",
+  "commit": "f3d1a39809d9f31d2fbfb1e3bf63a242f7a3e813",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine-v2.rc",
+      "sha256": "34541fc28515c307b48382034381adbfc7748484c0489ed83e51fd1938d42a93",
+      "size": 670
+    },
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "73f445b91b0eb3a1de690932f2f73998f51bb0460d2e515ea621e661ab6cece5",
+      "size": 63704
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-auto.conf",
+      "sha256": "351790635b137b6a23b522cec57695ec5247070797ee1d405d9220fae21ee222",
+      "size": 4210
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-camera.conf",
+      "sha256": "f8893a9fd1f4c1f0fa14b635e394d338516b8463d42f15c59ceab1443e3660ff",
+      "size": 4182
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-game-perf.conf",
+      "sha256": "aac2f83d9582c6048c694bdda0345c743db8196bce8f507a760c9c5cf8dc3afe",
+      "size": 4185
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-ngb.conf",
+      "sha256": "28b49f10e48b73e59dd7cdbbea3df10b7b4957f5e1525fc3cba4504016f163c6",
+      "size": 4244
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-perf.conf",
+      "sha256": "5d9a05178af996c94da0b425516ab5d381cb9d27167a5cafe9435bb392a2fd49",
+      "size": 4218
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-skynet.conf",
+      "sha256": "ea8b5a22fc68153b28737d964de8a2473bf211e8a877693c19eef8af971197e3",
+      "size": 4282
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba-tiktok.conf",
+      "sha256": "2f7f03b44d4fca09775d2cec7264c52fbc026bdf0398d0c2269892282ca35c2e",
+      "size": 4243
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-mumba.conf",
+      "sha256": "720e61af40f7510b0ce7816636fa63c2fe928d26346d105682dea0dc25b08cd4",
+      "size": 4200
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_motorola_mumba",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

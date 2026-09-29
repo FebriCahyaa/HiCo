@@ -1,0 +1,77 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm6150-common-davinci.git",
+  "codename": "sm6150-common-davinci",
+  "commit": "4fd296963525d134918e61730a082e43e1e292c2",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5d80665dad44491bae4459e05ad7e2f356072a0e6690592c59db8fe0322b102b",
+      "size": 762
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fb1fedf4290a4f726f1f24cc6ac3ce72fdef7d89138923b2b8515f77bbff226c",
+      "size": 1589
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9e09002da08fb459b4e75ac4049455ee3e2b90a5cb67a380f4637ead7a1ab9eb",
+      "size": 6292
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8262f4fde987c576fd311efb40f417c4fd2fa8bbb5781d5b35c147cd810db547",
+      "size": 3256
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "96a11837a2c15956be78f880c486617151ea2e744517e754ebe211007a24e3a6",
+      "size": 3772
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "1164313c8c839f3edc58a279ec36c5c99e62b9ff6fb902ed932ff3b18b339fe6",
+      "size": 1477
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "5a4735a7dc89af1697755d3222821c2f4814c9e0e35cb065cda9e5b50d7c1b60",
+      "size": 14499
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "54d248af1659139b6c12ea27c8714dd4a035bf2cdb17df26168c0c7cf27764a6",
+      "size": 7572
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a30cb28271db4d386c5e48c52fd872f7a84f1a841f909bbc4486ddc84ad63e77",
+      "size": 22662
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "d1ef7fd087ef74039bd582285a15fd731d57c8e379d1d20da67d1a95e2f4f7c5",
+      "size": 1392
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e52c2f6122cf1b79845c25d45e4964b48671ed9fd7bae372d2756d4653b6fa63",
+      "size": 702
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "899c55f60d866a0a19374b9518c86f5ee923af4e6bb0f483a7be21986619bc72",
+      "size": 8102
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6150-common-davinci",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:47Z",
+  "vendor": "xiaomi"
+}

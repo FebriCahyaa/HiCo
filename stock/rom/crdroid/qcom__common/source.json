@@ -1,0 +1,42 @@
+{
+  "branch": "14.0-raphael",
+  "clone_url": "https://github.com/crdroidandroid/android_device_qcom_common.git",
+  "codename": "common",
+  "commit": "6627e143290afa0f53b61ab143c600228da9fd9c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2c54ad9be30dccf775027119f5bc027cc203bc5daecfc2f5280408daaa5dde5d",
+      "size": 879
+    },
+    {
+      "path": "BoardConfigQcom.mk",
+      "sha256": "86dece35a2d3a973dee50887b9e4fe33f8c002e9c674311535a202766c61eb9c",
+      "size": 1395
+    },
+    {
+      "path": "sepolicy/legacy/vendor/common/hal_thermal_default.te",
+      "sha256": "67b0db1d2083aa2e9254f8e04ff116e839dfe0a403c723df5381ffe57c3cbe42",
+      "size": 1905
+    },
+    {
+      "path": "sepolicy/legacy/vendor/common/thermal-engine.te",
+      "sha256": "933be7ef9cc46c072bdbbb5498b989fdbc819a7af92f19207156e32a0ff9883b",
+      "size": 4220
+    },
+    {
+      "path": "sepolicy/legacy/vendor/sdm660/thermal-engine.te",
+      "sha256": "67788951340bcd489cc1ad687ff97801a4501a8b2906679e719d241d7d80b673",
+      "size": 1786
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_qcom_common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-12-18T06:45:11Z",
+  "vendor": "qcom"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_oneplus_sm8650-common.git",
+  "codename": "sm8650-common",
+  "commit": "3a73c800ba7157a5f9768e363a447277e099246c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a1d17d81d9202d83051ec2537d93d3942ae8ac5942b93366a9071233ca9de778",
+      "size": 316
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a8931e974d214f3e4e025a90695c65fded374e37d74c44739cf5137972a94ead",
+      "size": 9883
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "bd4b4b927e16308ab7c541c8aab7f9d424d1fe6d3bb520c368f432bc0754e250",
+      "size": 3893
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f37423ae658d6dd6ed76ca7120921a06df7ab853000dd79f33040ea05351f101",
+      "size": 50933
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f67da0cb2517929ab536f897c095dbcf41ac5812314befe5932850c8f5184cac",
+      "size": 11677
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_sm8650-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:10:42Z",
+  "vendor": "oneplus"
+}

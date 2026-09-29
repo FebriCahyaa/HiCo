@@ -1,0 +1,57 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_marble.git",
+  "codename": "marble",
+  "commit": "7e689b62d5ebe0a9e13f11a08905713684a1b6a3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "70462de6bc0bcbd769df0e2fa8e73444bd435ca59e7e8fe005d827dbafc9fc5b",
+      "size": 307
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "eef45c620afc83b1b6a392db46cae31d0f5b0e8506ae7fb6709d01c04b87aa69",
+      "size": 5429
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fcf9f5da793b8139ebb6207930cbfc523918ac8ad2372ed806e3aff6ff05af9a",
+      "size": 251
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e9558900cdb2e0e3a3de74ae579d58fce8def09ff95b4ee0cc14a334c4661829",
+      "size": 9655
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e2618b0c6c80694e10d6ad0432acf38efaa6541b5a515ff1b311ec2198508a7d",
+      "size": 31373
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "91f0dd3b8a818a02c5b8d0cbedcbc8f5126d08045663e83201879f40f39ca8c1",
+      "size": 1965
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "397b182dbb7c71382883925a40fc557f7bc6f9f6040802d6bde363ea82d890a1",
+      "size": 146486
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "9d280a3088e18a0ad73a093ce4e46b50d664d8fbd90c388858014c75282faa51",
+      "size": 2296
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_marble",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-01-01T19:11:58Z",
+  "vendor": "xiaomi"
+}

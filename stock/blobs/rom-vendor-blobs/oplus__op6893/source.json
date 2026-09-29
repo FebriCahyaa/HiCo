@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/vendor_oplus_op6893.git",
+  "codename": "op6893",
+  "commit": "0259b0d72273fb1536fcfe5f2d11eccdf5ac10cd",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "93673500a48545fc974c38cf0abcfb435baf988a181ef9129a5553a41ee0430f",
+      "size": 2822
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_08",
+      "sha256": "f12214c04689b800b683db5368cd3cf007a7f522264cdf807dfec56f679251f9",
+      "size": 4132
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "efd8bd677059e0bfeebef5d32fafc2cb74268565bdc675ed95b581d047ef8d04",
+      "size": 4133
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "9206308971024d9c6b0488ef63fcc4f0306df42fe94fd1bfa1792ed501729a21",
+      "size": 3287
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_core.rc",
+      "sha256": "d32b120f2f4b87909f9f18303a9c283361b0c70716fd3a156381d073ff110e7a",
+      "size": 223
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_oplus_op6893",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "oplus"
+}

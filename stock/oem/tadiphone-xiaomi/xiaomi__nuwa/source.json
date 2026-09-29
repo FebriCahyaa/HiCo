@@ -1,0 +1,32 @@
+{
+  "branch": "missi-user-15-AQ3A.240912.001-OS2.0.100.0.VMBMIXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/nuwa.git",
+  "codename": "nuwa",
+  "commit": "d516082b3e6965cd2c1f35957f08126c84632239",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "aosp-device-tree/rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/init/hw/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/nuwa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2025-03-17T18:09:08.138Z",
+  "vendor": "xiaomi"
+}

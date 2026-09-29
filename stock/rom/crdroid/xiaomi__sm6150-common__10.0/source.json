@@ -1,0 +1,82 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm6150-common.git",
+  "codename": "sm6150-common",
+  "commit": "1471d42bbbc8a7c6826a004e747f70e5d2c513eb",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3f7aab5ea58262299954caefc147d0b50791da0eb211df1b46c8a272adc57653",
+      "size": 4415
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "739c563c74cfadfcd71275a4f387d2fc266a95b7ffffb8ff985d2a6f2398eb48",
+      "size": 7020
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "66b3afb52a3ee82d5d3734a412c46983aa737338fdb4cc8e231a06517a169dbb",
+      "size": 2497
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2752f53d541f2177b0e27f8a73e02d8b852a814c7c39066aa76fae408b616292",
+      "size": 195
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "1b422498f163839ff7d11d1125943552da6a2b91616fdfc179ccd29486e29a8c",
+      "size": 4140
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "3f0739d5a95cbcd8f46707ffb3566c0aee1f757b2ce5df00f87e1a86fdf85498",
+      "size": 17997
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "429cb1a279cf909b61abbe8ed7ccc41b37672a027ac78b51750b2c41863bcbb0",
+      "size": 6975
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7ff367ae08314e79d71380e3a7397661501e83087488e4758622519c3386e368",
+      "size": 47889
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "1e2db3bea38ab58c219c0cd3e7372c13967b96355561db8f5c8577375eb1eb6e",
+      "size": 1172
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5f98105da5f2d10c65d6546d3dc2c99e71c7bbed5ddf2ab643928dc6c03e830d",
+      "size": 303
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c194d1536ad40ca0b5a9662177e5342795eb7f5e99b229542ab48bb19e8ddaea",
+      "size": 5851
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-22T23:13:39Z",
+  "vendor": "xiaomi"
+}

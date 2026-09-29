@@ -1,0 +1,77 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_rosemary.git",
+  "codename": "rosemary",
+  "commit": "724bf5211efdf66a1520887387ac9fff7ffb0f02",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a90d5e097e26294730c8cae76ac344d11179b8aaee094d7dc6575185013042da",
+      "size": 195
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "724c68e50117e26fc862e3a0480068b8d2da8dad8cc4452c7a36cbacbb3dac39",
+      "size": 2057
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "43fd54550b70ebf48570c0c77cfe6154041208d969b51d42c0b32328e584f3d2",
+      "size": 261
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b4c3cb7a37a10e8fdb52c3b0668aba508fe355b9294bf0c49498efa8c0f16194",
+      "size": 6167
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "6415734155051007562372ccfed6dbc8f0532465152a9f7f35080af95261b3aa",
+      "size": 6380
+    },
+    {
+      "path": "device.mk",
+      "sha256": "4f57d53ba459a2f82d5ea797585a6d2ddb6895ad58de2fa7ddc69f40ec0fec0c",
+      "size": 21138
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "96e4b48877ec85c899eee94040e3a6b48be9f0aa62ac25e7ccd3dcc3c06946cb",
+      "size": 3777
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "194aa8276206023a4b5d6ff185a79315bc1e413743a24953729b5cac462e5ba5",
+      "size": 409
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6c36a3bfc6adc433b26a08f4b528a3203a35bb10838f3088652a6b79fc56436c",
+      "size": 124884
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "aae768d3286383a9ea4b5ae1750a11afabd623c19622ecec16f60cabfaab2bcb",
+      "size": 1269
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a42076e4cb6a4fb4df3309ee27ba94f24606b37cf7960a24f6504c7c017e8b05",
+      "size": 1247
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2ed82723a9714289884a386e46d845d21edc521aaa7e99a256789f10d49774e0",
+      "size": 9059
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_rosemary",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-04-04T10:25:55Z",
+  "vendor": "xiaomi"
+}

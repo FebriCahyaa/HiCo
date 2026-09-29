@@ -1,0 +1,82 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sky.git",
+  "codename": "sky",
+  "commit": "07e91d9a2d279cdb67394678fcf6dba5ab967ee4",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a47771a715c85d1e506faedca1ba9c9d79b54663eb1d9b636beb17adac86c7f8",
+      "size": 691
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "bf972c80c0784fcca42b3e215e3f07c4bab4ef76f2bba952ed4f0246ac4582ff",
+      "size": 1205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ce32925c41895380fb8416aeb61677ba8ba00af4c735da14dae2a08c45101d24",
+      "size": 266
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0c7cca2ea2b98cabe7eb5f94f705331b4b85d1c09bb0f420d52e68500ab41fdd",
+      "size": 9876
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d6008fcd889f6eff68c2fe1c9c25f6151cbc0b3517df6140163dc6d546b7f0e2",
+      "size": 22581
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "762fb5cc2f6861eb069e3bc32374d91a756228c49a4d23df6c02787a51c60c1e",
+      "size": 4847
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "bdc8fda085f3e3f42a483cd9e4751c69e75e00540fe3b005719948a0ecb2ab75",
+      "size": 1565
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "48cab0bc4c69a28fca00face06b31db5fe2ca4e1ffb5d8cd7f6a6167e1e38b3a",
+      "size": 6358
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0a4cf0d336b331531b147613e1e4b165ede9d70e1c5c8f7fa2b4cc6fbd72a1e3",
+      "size": 69701
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e5fa9568799f839eae1dc98659c367a8d8555d2f48b88255a2715791f177cf87",
+      "size": 1797
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "4c7a3ee5a56e915f06b5700fd4f52f566775db57315e3a3a010458dbfcd17ffa",
+      "size": 1650
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_sky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:43Z",
+  "vendor": "xiaomi"
+}

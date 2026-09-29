@@ -1,0 +1,57 @@
+{
+  "branch": "16.2",
+  "clone_url": "https://github.com/DerpFest-Devices/device_lenovo_zippo.git",
+  "codename": "zippo",
+  "commit": "2a29bb7adf9af4a0e1dcce7e07764c11d7498476",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dd512aa03f420cef9f95ea05e6825c4e533665f9c3556ed65ef74d52933997ea",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b815c730a448dbe0f5dd4a788e72c7d5dcece933fcf5ca51f38d69c020812112",
+      "size": 839
+    },
+    {
+      "path": "device.mk",
+      "sha256": "31146efa4053b65b6a2e62681c99ce163bcfe071c8ad535e13b3fd71c4624c3e",
+      "size": 1003
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "84184ed6a255b5a5520e485c301153339532488399afbaf68f50e6f8e912340c",
+      "size": 2357
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f7f43a8f8ca7fbffc203a481b41c4683f7f0254a46cda839236fcba3cfddd54",
+      "size": 15140
+    },
+    {
+      "path": "system.prop",
+      "sha256": "68a94e23aaec68b2570d19562319a714430dc95fb5fffd1c2b68af652ba299ea",
+      "size": 60
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a426325056039e26c518521208d1986d5f00b06090247915a2b35760bcaf521e",
+      "size": 103
+    }
+  ],
+  "kind": "device",
+  "repo": "device_lenovo_zippo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-04-13T18:56:24Z",
+  "vendor": "lenovo"
+}

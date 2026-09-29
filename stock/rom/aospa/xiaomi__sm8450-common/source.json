@@ -1,0 +1,67 @@
+{
+  "branch": "beryl",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_sm8450-common.git",
+  "codename": "sm8450-common",
+  "commit": "3ded87dd1997c54d23aad7358f42c2d4021785c9",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87bde3c154f8b36f47f70337a2042cf3e0f409c189c20924578569d8bf5cdbc1",
+      "size": 835
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f398a41a72e2f7b6c0ada6bfd8db8be99d88026eafa77e547f762d0e95dcbcac",
+      "size": 285
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "885f701f58705e80c3579d1609062de0d159a1ab445af795b0e71ae5a4dea9bb",
+      "size": 4419
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "4fc3fd2700397d9621319824425a2d7f13cffa85685ab0350025d8e3dcf6e122",
+      "size": 5584
+    },
+    {
+      "path": "parts/src/co/aospa/xiaomiparts/thermal/ThermalService.kt",
+      "sha256": "7fa4ac91352eca959748b28b806c4005b1fcb48d7df3b5c96f519c06fa0183f7",
+      "size": 3003
+    },
+    {
+      "path": "parts/src/co/aospa/xiaomiparts/thermal/ThermalSettingsActivity.kt",
+      "sha256": "3ea9a5cdc0a312a4793310f22bd57000d085432ccf61a87c6503c5106401b0f3",
+      "size": 2240
+    },
+    {
+      "path": "parts/src/co/aospa/xiaomiparts/thermal/ThermalSettingsFragment.kt",
+      "sha256": "abb90c99dee7274f107eb80291cc09b6ddce0ca852d79cfe7dd6ecc67e48ce0d",
+      "size": 10122
+    },
+    {
+      "path": "parts/src/co/aospa/xiaomiparts/thermal/ThermalUtils.kt",
+      "sha256": "1328a11b7ea6e7e9dfb94685de02de82aa2388fa2e365aae45a70e78390cf081",
+      "size": 8172
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "35aa2a2e1962a2bb2c3ae62153705c1c5a0de453fdff8c1b1b5a3b5d405e1b23",
+      "size": 32189
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "b2bfa7157dc75f20435f28a324c2251a8960d75127f0c75c54a11c68f93b603f",
+      "size": 1284
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8450-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2026-09-28T12:05:38Z",
+  "vendor": "xiaomi"
+}

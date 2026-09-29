@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "e2cddb60fca9044d0cc3194a5d5ae8027b3a9210",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0a50e4b0782ce683214ac5231a6f9ce61e8208c5d4b7c8249a2109eb5aa387b3",
+      "size": 136
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "80a77e975fec10d201c34ecf0201b58b8b83cdc70286628938c7c3a6bbe62c74",
+      "size": 4316
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7a40ede2a7af27709d185c6648b9d22f7eef92909dd34817245fa7ba1c3caddc",
+      "size": 1738
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f0ce8daa3cae9a2237fdde8254fdbf3f016086ada168049bf6cff7822ad4c37f",
+      "size": 352
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ce0bd366e645559420eb8dda881df34ef3ada3e4837a08cf23b870545fe79046",
+      "size": 59
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-06T09:02:19Z",
+  "vendor": "samsung"
+}

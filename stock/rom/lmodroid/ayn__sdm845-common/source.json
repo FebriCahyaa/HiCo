@@ -1,0 +1,72 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_ayn_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "04cdb092935df38d5d17d54a49e2459783dff237",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c8b3819fe986d60186923e5cc22e8ae2662cc8034805dedd0ffe70ca38b0700",
+      "size": 618
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ca3cf5aa9a77e9bb10a1f550cf43befed87afa7f61ca90963c9a9c28f44d86b2",
+      "size": 4849
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a8ac52d1fc8d45bc904e8ca77f25c6439c99cfc0a830fd6c7ca47ce30da15a17",
+      "size": 3286
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "6bb37274478ec64e9a0101808f773286def165dd136a73f28bbd361e9e176b34",
+      "size": 1476
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "b2011f4ce443b45b9768f79dbc26370ba4b50de52e53f8ba97cbfde3c871d4b4",
+      "size": 3266
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "3e00cffad6782ebb3e99455cd28a498b40e3250de77035a64ba9623cff0d7629",
+      "size": 14271
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "10c83d216e2cc4290fd033f41de6de39e366a4cdc2937354fd935961b276483f",
+      "size": 33813
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e0ebc89b496040df4f4fc0faf3f5ffa91fdeb6cdf59a7e6dfff9d6323cfeb3cc",
+      "size": 444
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f5da275ae5be38b9aa609b05eac1e4af62a7dda6d197e0b5d742fc54ce95864e",
+      "size": 1929
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "373ed407d2d9fb1f1549bdadda98e07ab5b36197e8f6e78456ef8a68eb442059",
+      "size": 5362
+    }
+  ],
+  "kind": "common",
+  "repo": "device_ayn_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-09-26T02:30:38Z",
+  "vendor": "ayn"
+}

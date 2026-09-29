@@ -1,0 +1,67 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_exynos9820-common.git",
+  "codename": "exynos9820-common",
+  "commit": "ad2c9afd80f07fefd8cebacf59eddc58b8270cd2",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a586ba4e0f8649f8ef09d866d63d5835236aa5464d27db0419fcf26456f49b46",
+      "size": 1506
+    },
+    {
+      "path": "BoardConfig9820.mk",
+      "sha256": "7d23dfca2d8a3a7df0f7302de061045a9d82756ad89312a74502e18b955b90c6",
+      "size": 1502
+    },
+    {
+      "path": "BoardConfig9825-r.mk",
+      "sha256": "676f8c621f416f6a5c1c43190895938667a99aa80ed24d626b791e3ccbad2214",
+      "size": 2597
+    },
+    {
+      "path": "BoardConfig9825.mk",
+      "sha256": "2e62f838305fac3f902ab6c40c0e69faac46fc3278bbd437eafd117ab7ead983",
+      "size": 878
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "172397c1301c4cc1852f9693d8b4a81adc8af4603f941cdda901e5c326ef76fd",
+      "size": 5050
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "5b0a68356a09e40a103cca1c2b9dde14f8df4be2863b230c1f366938e7e6d0bf",
+      "size": 3151
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "bca64bbc3a74df02730d8da48d623db7526174c939aba4ece5fddc76b504be5e",
+      "size": 2680
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0afc6ae0b350d6c787c9102b5530559d67a8e69906b9a9ccaeda8abbe8695f19",
+      "size": 6205
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "81bac130799327046ee30a463a29434e297a65a3484d5752737ff21aa8c12628",
+      "size": 1819
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_exynos9820-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:07:34Z",
+  "vendor": "samsung"
+}

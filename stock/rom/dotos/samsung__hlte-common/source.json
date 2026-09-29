@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_hlte-common.git",
+  "codename": "hlte-common",
+  "commit": "be5c03f3801491f0e278a311a6b3dec78557c5fe",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1933aaf86139761c2e5d4988c8c3e26450473fa9afda6cac0d82cbaf9d1864fb",
+      "size": 832
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "453dec71274332e5cb915a066c73a1169c5110e7f0cc5ff79d8d28205928801f",
+      "size": 4299
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "793589d3570cb197eea817ac13db97a384e4614a03eb5d17408acb62a7440ab0",
+      "size": 727
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6dbbcb72a159d4c6fe2dc26074d21a07587e751c44278443fd247cb00b84b798",
+      "size": 2203
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4b3c6d12054920c6ba3ecc2f003b8d42eb5d4dc1e9f8f3739f02eab49f8da623",
+      "size": 332
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3ad023c09979df1558b8444c506e968e6ad09871348e3c1428e791fa86e2aa59",
+      "size": 1287
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_hlte-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-08-13T08:15:03Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "0c84268964e9a313db40667137d881d1524897e6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a9a2a6c13e64410c989afc3f8e705146164b9d4acfe497369570ce5b4b692197",
+      "size": 4465
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2ce7a8289f276f82d15f8007ccba0254d65e47d95dff2b71c4983e0883f069be",
+      "size": 6754
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "79aac2b9eb062293309e5e048e54cbcf57cc2c06174dc4ba6239744a9efbbaf4",
+      "size": 2234
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8235a1b688026dd7e8e4dab0ac1aa73a06199e3f3c6237a28b47678d115d70de",
+      "size": 199
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cd7d953efa06963ad0ce7acc9f3e5ced6a72dae09f7ae8911c9a3ff7e8ce7e7b",
+      "size": 45685
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0965c81da36418143c6af205623bed6c179938ff0fa74feb322a22ec4409df70",
+      "size": 1155
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "234270ec5ac269c21150ca1f1b45522aafea3a3b55b1e1d92c4250c86c782b38",
+      "size": 8025
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-13T17:10:34Z",
+  "vendor": "oneplus"
+}

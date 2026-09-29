@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.0",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_salami.git",
+  "codename": "salami",
+  "commit": "1494ce3b6bd35e6557cfaded17e97dc7a895f50b",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "97429e0109f4fc9d34585505f56138d3f863b704bd2e1a75ed132f9d8af4f4f1",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d5cd66c734cf40d9f6c894014761c48575897677d4bacf33f931584eb0799d53",
+      "size": 604
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2e2941e222a4259a4e6169e6ca42d38d2a1a9598f58f43520e8eb25d8d7779fd",
+      "size": 1504
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1a65ea17eb0768a5139b1aeceebb276e4bc299010015952d98528505318596a3",
+      "size": 924
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "47437989fb20f115ce7fea28f714c1ab69169ddd04234a0b497db0cc2ad18d25",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a9c3d1a7d2fba4fcc568a5a748663ec30d3bfc04e356fef2a4dd9636caad9082",
+      "size": 12671
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b948147f0618fa8f515a02666327b33eefed3e7d7a9ac9786dc58555022ae64d",
+      "size": 198
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_salami",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T20:32:10Z",
+  "vendor": "oneplus"
+}

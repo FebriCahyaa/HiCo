@@ -1,42 +1,47 @@
 {
   "branch": "arrow-12.0",
-  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_wayne-common.git",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_wayne.git",
   "codename": "wayne",
-  "commit": "627468ce320ad3bf3bff2b628f4d4d1e13acc3cd",
-  "file_count": 5,
+  "commit": "6665cc9fdfe03d214709afd3d03038a07caca726",
+  "file_count": 6,
   "files": [
     {
       "path": "Android.mk",
-      "sha256": "7886055650d91d2b897db5ec50ba2eec55f3405c117483f16a0344c6efa23d37",
-      "size": 233
+      "sha256": "321ddee4946c8bcc59e1374201ff33d3d5a3a99036d7793aafe4338110696ee4",
+      "size": 218
     },
     {
-      "path": "BoardConfigCommon.mk",
-      "sha256": "5be010b25cc0a158c41628067d03fc773ab78af3ee558ab10668e37230105956",
-      "size": 624
+      "path": "AndroidProducts.mk",
+      "sha256": "03987310cd19408928ec1a98801302aa7b135d0469a930e01e6c3ecb08d263d3",
+      "size": 241
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "31e1449d305a8a32afb4c627d1c646181efb21e50df1b539cc5de46030928664",
+      "size": 425
+    },
+    {
+      "path": "device.mk",
+      "sha256": "32d61dd62271bd2ee1a570082c2233873e072a7ab77f3f96e74d20005cdb6f15",
+      "size": 440
     },
     {
       "path": "extract-files.sh",
-      "sha256": "147bab7c21962262792d8bf026778a36368222289c88452dc0eb19c18484ac32",
-      "size": 675
+      "sha256": "ddb020b4ddc85e9ec7d614af87adc46f0692c4c2375c9cdc966b149d1f8f211d",
+      "size": 488
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "c696a377a3ead4fda7c1828e921423ff424205e597a5022dc80cd9141f26841f",
-      "size": 48446
-    },
-    {
-      "path": "vendor.prop",
-      "sha256": "bb7a06663a67180b4aa69924f6e5a63c198c261c39f433a36574058b6fade725",
-      "size": 582
+      "sha256": "970a0f1019746c5d22d103603f045626d63f3eb9930966a0c942aac232efe3a3",
+      "size": 479
     }
   ],
   "kind": "device",
-  "repo": "android_device_xiaomi_wayne-common",
+  "repo": "android_device_xiaomi_wayne",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "arrowos",
-  "upstream_pushed_at": "2022-01-09T02:57:38Z",
+  "upstream_pushed_at": "2022-01-07T04:03:09Z",
   "vendor": "xiaomi"
 }

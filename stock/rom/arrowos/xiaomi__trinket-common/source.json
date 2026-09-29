@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_trinket-common.git",
+  "codename": "trinket-common",
+  "commit": "45b27ea31bec6c69a7b181604616ef0ba4b394a3",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "4a7a5ffb477bcfd5fc02d363bf3a9cb393992cad9f758406ffa128f30329a1ce",
+      "size": 4787
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "54470743ec0045dfbcf7bd4b6b8759bbee38503ec2d048d81957d6a683ee6c05",
+      "size": 5787
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c0ad2fabbd54f37beaf487bb04bf7766e411b92f3cbcc01d899a25ad38a527b4",
+      "size": 2406
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "feb369173b60919573949d6e2c021809f2bb4a1e6be8774737a092f9352184f9",
+      "size": 41963
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "05a95a220d20957afadd0817f95c7e35586e54888ad65f02a2c261b653a0047b",
+      "size": 187
+    },
+    {
+      "path": "system.prop",
+      "sha256": "76b5aa5c66f2f132c7b8fabd43e66df1b4dddeaa93b9a2cd950f6121f4e73fef",
+      "size": 1642
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4740763917c349aeaff732d5934e7d7c089584eeef2da8a302dee6dd9f7ee62e",
+      "size": 3760
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_trinket-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-01-24T09:58:30Z",
+  "vendor": "xiaomi"
+}

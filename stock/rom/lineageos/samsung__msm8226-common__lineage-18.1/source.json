@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_msm8226-common.git",
+  "codename": "msm8226-common",
+  "commit": "702c16ad3616ecb61cd64a31aa56f37495f4e192",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "71be3081f459cf1e933a56c747179a10c8365f1e0b4143f6e81b2bc3b7a623c0",
+      "size": 8246
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d62069209a2b5f93d3246992c79008a0a7279c72c8fcff1a455b3eb7238a0bdf",
+      "size": 4324
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3d8e953897a7a08e8d8fbc7496ba965b646c8210bb99f42d78ee170b919b92e8",
+      "size": 853
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ab5fc9f96d251caf512f0f343449b4bc8b971c48c9f98bcbfc53ed489772475c",
+      "size": 221
+    },
+    {
+      "path": "sepolicy/common/thermal-engine.te",
+      "sha256": "0a6029d2947f85ac7981fd16aad9cc704c3a37ee99e47fa576e67a3964622a93",
+      "size": 441
+    },
+    {
+      "path": "system.prop",
+      "sha256": "297454394a23837c9ca54e1fb6bed5669d31b4a7230cedeb083594bac41b71df",
+      "size": 1177
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_msm8226-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-12-19T22:00:18Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_sm7435-common.git",
+  "codename": "sm7435-common",
+  "commit": "1578fae6fc9eeab310ab4dbef3ef6b49a3166296",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e7f93d11038651283f0de0a9e7d3b33e9e34f0f95c2308aee1e4cd9596f00d0a",
+      "size": 1164
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "14f6f68cc9ac60846ccff649c3c748ec2ba075726cedd70d6226fb508c6beceb",
+      "size": 8892
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "47f5db513a9594e41a5a0f9b926ed096d25ccad813d481bdab32b9fd6473bbd9",
+      "size": 4262
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "63cb9bac0fc99308e82b9889fbcf162988aaee5deb748574a5c8ebaddfa3cbec",
+      "size": 453
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b2c90a2a758b14b1a0ceb2ef961c8c01ef1be43f17a3e262f288a70f416a5bbf",
+      "size": 40535
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "de0d84c2e368405531e23027027ad70ec5037c0cae8278785c4f2d856f221e30",
+      "size": 10723
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sm7435-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-29T00:26:07Z",
+  "vendor": "motorola"
+}

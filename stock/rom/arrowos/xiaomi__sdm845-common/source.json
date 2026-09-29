@@ -1,0 +1,77 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_xiaomi_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "abfa9e1dbcad8e857e98aa73ef265a99dbe7a2e2",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8fd98dbe2676671765a2370a5a89b365df4e815e3c2255445d79c1658068ddef",
+      "size": 4700
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f6938519e1542804c4aec06d67fdd5907003f4aa5b9082568f7e5739c281c5fe",
+      "size": 4957
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7c4a7ab2258de058cb19e37f3da2c448855eacac3a23c07b9158cd492ae05590",
+      "size": 1879
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "95aa5afcf5b596a7f58325e093125642e126ab3fa8c956d87a2c8431725de3e8",
+      "size": 1440
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "73c4bc961c1c51a9036ddb63307f5d22ce9ece58158824a02921438ad0591a37",
+      "size": 3609
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "2f2aca1b42eee8ba0d688aac67ba384baafc9e0958d954c31885f8d44ad67a82",
+      "size": 17776
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "c093318bb271a34eb9cab603bfd7b2a0e2b6c2fc0361df8337d9bc0328ada4ed",
+      "size": 7084
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0a63b61a9a6d3659b4fce1d44c49f39f6f22ad6b22e28a251cfbb1e9b54266bf",
+      "size": 39714
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c474231ed6039a82735a08d8069c769a07ce0d4fc2ceaa2e2c10d59a7ae7948a",
+      "size": 2164
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6817cafd0cf157381f3af5f4eadd948063377cba22d0c9b836ec0dccd4b4fd6c",
+      "size": 5022
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2021-08-25T22:58:55Z",
+  "vendor": "xiaomi"
+}

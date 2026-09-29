@@ -1,0 +1,72 @@
+{
+  "branch": "16.0-x1s",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_universal9830-common.git",
+  "codename": "universal9830-common",
+  "commit": "8b54ad0ada3fe52df141fcd33c6baf68e2684cf3",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c7f8e2269152b10bb640e90ab751b2f79b269796d2ab5a596249fb3bf6b80ccb",
+      "size": 229
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a40ce0164c2a8ea3df73f9476ddb9dcbba34e58430ff36be5608d843e70ce97c",
+      "size": 5234
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "3927ae8074823e9a5881665c5b619228906b82de039f2f8f35d254b58959378f",
+      "size": 3496
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "5890da25a1f6c065e46b351fbbc84a5a69f1470257e22095bff995acc14a8aa5",
+      "size": 20561
+    },
+    {
+      "path": "device-hubble.mk",
+      "sha256": "54e93999ac5d3f8fa35eb0d1fcd131799934149a94930ac5a9e52f914a929495",
+      "size": 903
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "77cc5ddd52e5286868520a3adbd91f523ebec7041bc996874214343b1778245e",
+      "size": 2733
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "860f4da5ad7b0b994cd8feafc9aec8e84a10c5e05cfae96cea4c0a7577df88d5",
+      "size": 1362
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "144375f147d423847501f24c8c744d54fb58b81364ce24c7846165976de7dc04",
+      "size": 9380
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "94e4b3983feea684ef88b9175213cb96c427a991835f0c59458000e101786cbf",
+      "size": 95
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d9b5164da939b7d16785c1bedb6553a2a004f9b4dcac1678e783875dd58ecb35",
+      "size": 469
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "da5023ba96131479b09d2aebb8894340dc5d70523df2eecdad0c07feaa2329eb",
+      "size": 3085
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal9830-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-05-29T00:46:02Z",
+  "vendor": "samsung"
+}

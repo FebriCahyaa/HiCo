@@ -1,0 +1,77 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+    imports: [
+        "hardware/mainline/qcom",
+    ],
+}
+
+install_symlink {
+    name: "vendor_etc_hexagonrpcd-root_dsp_symlink",
+    vendor: true,
+    installed_location: "etc/hexagonrpcd-root/dsp",
+    symlink_target: "/vendor/dsp",
+}
+
+install_symlink {
+    name: "vendor_etc_hexagonrpcd-root_sensors_registry_symlink",
+    vendor: true,
+    installed_location: "etc/hexagonrpcd-root/sensors/registry",
+    symlink_target: "/mnt/vendor/persist/sensors/registry/registry",
+}
+
+mkdir {
+    name: "mainline_qcom-common_vendor_dsp_mountpoint",
+    dir: "dsp",
+    vendor: true,
+    enabled: select(soong_config_variable("mainline_qcom_common", "path_hardware_qcom_caf_common_is_absent"), {
+        true: true,
+        default: false,
+    }),
+}
+
+mkdir {
+    name: "mainline_qcom-common_vendor_firmware_mnt_mountpoint",
+    dir: "firmware_mnt",
+    vendor: true,
+    enabled: select(soong_config_variable("mainline_qcom_common", "path_hardware_qcom_caf_common_is_absent"), {
+        true: true,
+        default: false,
+    }),
+}
+
+phony {
+    name: "hexagonrpcd_common_phony",
+    required: [
+        "hexagonrpcd",
+        "vendor_etc_hexagonrpcd-root_dsp_symlink",
+        "vendor_etc_hexagonrpcd-root_sensors_registry_symlink",
+    ],
+}
+
+phony {
+    name: "hexagonrpcd_adsp_rootpd_phony",
+    required: [
+        "hexagonrpcd-adsp-rootpd.rc",
+        "hexagonrpcd_common_phony",
+    ],
+}
+
+phony {
+    name: "hexagonrpcd_adsp_sensorspd_phony",
+    required: [
+        "hexagonrpcd-adsp-sensorspd.rc",
+        "hexagonrpcd_common_phony",
+    ],
+}
+
+phony {
+    name: "hexagonrpcd_sdsp_phony",
+    required: [
+        "hexagonrpcd-sdsp.rc",
+        "hexagonrpcd_common_phony",
+    ],
+}

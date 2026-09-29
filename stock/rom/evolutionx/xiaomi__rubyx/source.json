@@ -1,0 +1,82 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_rubyx.git",
+  "codename": "rubyx",
+  "commit": "b5b76d46183f40ba98e0fa06db75d1f1dbe35565",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5f815fb055703bac4e6eab209a21725b88bef190be00b37f191e02327684d46a",
+      "size": 125
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fbde9f58017fd8b3834d67b4051be334766b9251344bde98c4c21cacbdbb70af",
+      "size": 158
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "f42e86c1bd8fc4907556202e9ad9a08087a1533515df18098c8dac0ad1a60918",
+      "size": 6694
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "596954073c7bc7ebb83148a6829df0360e60f4b13dfb11acf7ba66c3afcc4417",
+      "size": 6924
+    },
+    {
+      "path": "device.mk",
+      "sha256": "128f6053b0d75331f1226910520e7371138013f8c4519164f0b9077d4ecd89d9",
+      "size": 16939
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e2e5d59cda552af0e1b454627b7a49fcb4b32abc9b7419f65a3d0ff798cf4ec3",
+      "size": 4392
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "21a19129a633f3524bf777442950912df84372e3d87dc86816a89365674a0496",
+      "size": 1558
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "a95e2e0204da403d2c41cc1a089d4358b67958438791555fac11e343a1266246",
+      "size": 14578
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "31fb5fe7d8d76ad484bb3fcf14b030c5e91f8ab8098e53072ca6ed8adf2f0d74",
+      "size": 7441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "da5344aab3dd287e3bee6b9fc1d46639b7f9d1dfc3965bbb2d0eded1fe407841",
+      "size": 98183
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "03b24bf10bdb927bd94faa181dffd5c9bda09f25c0ab853ee09d2e6ac449108f",
+      "size": 246
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "8e9662290881e3d04f5a6f97f1a584332a344b86323739a52fefa02131de0a07",
+      "size": 1248
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_rubyx",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:35Z",
+  "vendor": "xiaomi"
+}

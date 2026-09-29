@@ -1,0 +1,27 @@
+{
+  "branch": "qssi-user-11-RKQ1.200826.002-V12.1.4.0.RFNMIXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/toco.git",
+  "codename": "toco",
+  "commit": "8a8e96e79043d3049e78fb6faa0b6fb20a7bc26d",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "f8b4213aa62dbffbf52cb30c46aa22f97ae167f615627225945f9170bc3c4317",
+      "size": 163
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/toco",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-08T10:41:15.964Z",
+  "vendor": "xiaomi"
+}

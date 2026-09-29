@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_klte.git",
+  "codename": "klte",
+  "commit": "ec20f8cdb1622007ed030a950d4dea310085e0cf",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2bcc09c5369ef7d6034f879637ab12ea9a0b8d2b84a26c2f5680f205559e1fe8",
+      "size": 713
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "dcbfb2545d2c173f5093bbd960ecf398c44081311b382eb8bf34901555a06a25",
+      "size": 649
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a0eb57440a5a9f0b9237e8c12e0ba66fe3d8e6b177e545ce4aaa257412218e36",
+      "size": 1182
+    },
+    {
+      "path": "device.mk",
+      "sha256": "b9749d7054398763a933de79aad00867a92e8026dbdf008a9beedc508cb14c32",
+      "size": 1200
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e11fb74955cc50870a59fc1070faf8ebe98426920cb0b37d0bca50075c23a8db",
+      "size": 1584
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9b77768b8bdd35910174e9b6d871f096017a54efcef8bf699697cb7d6dc33f4b",
+      "size": 116
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_klte",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-01-02T18:04:25Z",
+  "vendor": "samsung"
+}

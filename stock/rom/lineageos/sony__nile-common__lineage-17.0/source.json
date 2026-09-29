@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_nile-common.git",
+  "codename": "nile-common",
+  "commit": "90901dffcd85d1655035946d239a346cf198d3ca",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "81851b4c21c51e766fa344a567407346e6b510b4a936835653ccef108ed557e6",
+      "size": 5238
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b9c3c069909837589ce22f85870457a45924c65f27187ced3b3dd4ac8a625938",
+      "size": 7040
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5287cf4d70c427114322dec062861c5923dbe755749b9776b556ddd355019900",
+      "size": 2498
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "dfc0f373a4c85711e3932bb2b6e094991fccdf56469f825bada5144a5332bca8",
+      "size": 320
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2661334056cd1d97584a65b88059ccbeb33709f601c0ad64f7c62b60acc36ac0",
+      "size": 38106
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "aa6002094681fa7a9077ffe29dc09bcb11eb6a9046291051616f65f9fec66a99",
+      "size": 48
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3a08088adcd8438bd55562bfdab116de6edd97ed1e7af49f4fe5a05e1b9228ca",
+      "size": 402
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_nile-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-14T22:32:56Z",
+  "vendor": "sony"
+}

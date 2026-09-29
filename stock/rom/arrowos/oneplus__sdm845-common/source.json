@@ -1,0 +1,47 @@
+{
+  "branch": "arrow-11.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "29cfe2cd3893f071a0042bf0b3a75e4132a7fbd8",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "12ef40ff2a73529ba4b089aae90b2166ebe4e4199e435ae309dfc8a7eb103942",
+      "size": 832
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ba041c1ed8676d7fe5899794e90b7d157f663192a9802796948279bc43d23ef3",
+      "size": 4044
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c32d9fcf4d2449ee3e80fd79144957f9959c0eb8bdfdd400ed57607b354760a7",
+      "size": 2637
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "48f35a457cd3bfa24ec2355040904ff9a993851c90c1f76eb15b0e5ac3347002",
+      "size": 3738
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a14b7536f38ac6b58ce57ed5ab47c52c68fb5103b4370d0ab4cf09bd28f4105d",
+      "size": 1726
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2020-12-09T14:10:25Z",
+  "vendor": "oneplus"
+}

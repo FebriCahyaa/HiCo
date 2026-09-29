@@ -1,0 +1,57 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nokia_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "40233dbfdaa257963f3ea6248e517dce351e72a6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a6c03c1dc72efeda2581fb4a1c7ae78c8ebb888f178221d70c1955487945d0c2",
+      "size": 561
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fd2c86faa3d6415f0e846268b58b40ea75cd09255cfd5e72130b5843340e1894",
+      "size": 1078
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "acd781107a937062f810a5e19e6aaef731aac7239d2fa73b628c8366e918e84c",
+      "size": 4934
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3384f4741d56328661b933b9b78ae251f518f2fc4c62c072680d3237c6b7ff1e",
+      "size": 3213
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ed11c52ed592eff59cb4fba7f330779230513bf5eafd5daeb0d46b6642359e76",
+      "size": 21565
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "90f4771c166304630424f98e8c2f067b37b3018a7e816c7a46082ed2dd101e05",
+      "size": 85
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7981d78be6b7d2515aff03b2fd5f9c8dfa512f7b635b47a7efb331fea957a7fa",
+      "size": 2154
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f2dda724196b5c99a89428e9e1574b616b46c61205868d0692927e4fea545d62",
+      "size": 5536
+    }
+  ],
+  "kind": "common",
+  "repo": "device_nokia_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-03T03:07:45Z",
+  "vendor": "nokia"
+}

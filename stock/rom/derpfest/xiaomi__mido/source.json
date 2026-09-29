@@ -1,0 +1,97 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_mido.git",
+  "codename": "mido",
+  "commit": "24bea590c07fb227161027e827d66b7047903a07",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "db1522b78d42075674856f2906153e6c3dfb1e4e50a910688a1ed52ece1b9397",
+      "size": 5249
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fa7082ca7df9440aa5abc2a55786a23ca9bfd389905b151e9554cf7746234ba4",
+      "size": 743
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ef8920ba52cb0deeb4ba59651e5919c8cadf6436bbe67cf6a4b5c541f3b84207",
+      "size": 5453
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0a829590380461cf2ade921cb0e2f04f6a380a9adec74ecc4907e3f198fe528b",
+      "size": 4364
+    },
+    {
+      "path": "device.mk",
+      "sha256": "da555b5ce2c3348a5a21729a1f7b04443d5e35714fb55b1ad4fbd76c348f6740",
+      "size": 19976
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "80e03b0b5d1edea235c3baac84804e068def3d505b100e3535cc21080c39935d",
+      "size": 3929
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7299b29dd0aa387b1e04272ea9ff95333e4ad75cec5757e23db5fb30dc4dac23",
+      "size": 96
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b5ccb8753b890b85e6479ed814c4b725b878240fafc3cac010c806bbeafb4cfa",
+      "size": 79367
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "145bf30b423507211c817b23a295acd7004e566ca28534c077761159e5b83223",
+      "size": 197
+    },
+    {
+      "path": "system.prop",
+      "sha256": "af9744bf56f642f49db64861b7ee6dad0cba83c390d446915e0dc92deb2c2cc5",
+      "size": 4095
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "9ce585d062336d302c3ce7ed249af0e4702ebee12c2e77af9f0db264e546d629",
+      "size": 984
+    },
+    {
+      "path": "thermal/thermal-8953.c",
+      "sha256": "4b690085f4838a12c660fa82a43561f43c0ac377f06a505094dede9513a8d4f1",
+      "size": 2643
+    },
+    {
+      "path": "thermal/thermal.c",
+      "sha256": "fc19a975ce3eb07aad10101c7dee6363653f6ce3286e63377c0822d5826697dd",
+      "size": 5452
+    },
+    {
+      "path": "thermal/thermal_common.c",
+      "sha256": "3f4537489e41d9197fbf0e04201586ad02d932c60146168cc4d94ddbec460a10",
+      "size": 10914
+    },
+    {
+      "path": "thermal/thermal_common.h",
+      "sha256": "6aee2168ab1a998b63355e54b693bd646967ea3a6baae4ccc196f646f6a3e103",
+      "size": 2216
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1d88bbcb37af28904888aa19e94b88b3b3c4dfb1a29f84eea491e918915b8bbd",
+      "size": 3494
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_mido",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-08-13T20:10:08Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_bramble.git",
+  "codename": "bramble",
+  "commit": "0f4a828719d851d667892a8ebbfd65b8ddbbc913",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e0aff24157cd46e63b88df023adaa8016f030db50be617d2a9c0fede05ed1d1",
+      "size": 1229
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e11cc0d71ecee760ebe93ce9dbe868c3c14eb8fb9e2a7876be9edfecca47ffcb",
+      "size": 889
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "746cc18c70e2143652cba6a5e672870c0c9b8f49dbeac9ef62bdeb1be0ada9ae",
+      "size": 338
+    },
+    {
+      "path": "device-bramble.mk",
+      "sha256": "633334714f96c69912782db51ac05070259e972b2aefe592ce1d03ccd1beb001",
+      "size": 10226
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "da1464e2fc405a15ab7f1791bec3766c753fe52d38e4df5de82d16c1887619e6",
+      "size": 303
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "61911be26a412be2e1504f69926880811c50fb7aa16fee2a20f44e3665221ba5",
+      "size": 213
+    },
+    {
+      "path": "thermal-engine-bramble.conf",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "thermal_info_config_bramble.json",
+      "sha256": "b6bbde6cb49a849e24e48f96a5fa65dc8f0e7f3fb98227e42b33ae18bebd85c2",
+      "size": 6771
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_bramble",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-07-06T06:30:56Z",
+  "vendor": "google"
+}

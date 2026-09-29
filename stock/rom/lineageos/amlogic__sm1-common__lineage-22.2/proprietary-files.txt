@@ -1,0 +1,191 @@
+## All blobs from this list, unless pinned and noted as otherwise,
+## are from adt3-user 13 TTT1.230205.001 9565391 release-keys.
+
+## ATV specific
+product/etc/permissions/privapp-permissions-atv-product.xml
+product/priv-app/Adt3LauncherCustomization/Adt3LauncherCustomization.apk
+
+## Audio
+vendor/lib/hw/audio.primary.amlogic.so
+vendor/lib/libAmlAudioOutPort.so
+vendor/lib/libamadec.so
+vendor/lib/libamaudioutils.so
+vendor/lib/libamladecs.so
+vendor/lib/libamlaudiohal.7.0.so
+vendor/lib/libamlaudiorc.so
+vendor/lib/libamlparser.so
+vendor/lib/libamlresampler.so
+vendor/lib/libamlspeed.so
+vendor/lib/libamltinyalsa.so
+vendor/lib/libdroidaudiospdif.so
+vendor/lib/libdvbaudioutils.so
+vendor/lib/libfaad.so
+vendor/lib/libmad.so
+vendor/lib/libms12api_v24.so
+vendor/lib/libnano.so
+vendor/lib/libsonic_ext.so
+
+## Audio Effects
+vendor/lib/soundfx/libavl.so
+vendor/lib/soundfx/libbalance.so
+vendor/lib/soundfx/libdbx.so
+vendor/lib/soundfx/libhpeqwrapper.so
+vendor/lib/soundfx/libms12dapwrapper.so
+vendor/lib/soundfx/libsrswrapper.so
+vendor/lib/soundfx/libtreblebasswrapper.so
+vendor/lib/soundfx/libvirtualsurround.so
+vendor/lib/soundfx/libvirtualx.so
+
+## Bluetooth
+product/etc/permissions/privapp-permissions-deadpool.xml
+product/priv-app/DeadpoolService/DeadpoolService.apk
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-droidlogic
+vendor/etc/bluetooth/auto_pairing.conf
+vendor/etc/bluetooth/blacklist.conf
+vendor/etc/bluetooth/bt_vendor.conf
+vendor/etc/bluetooth/bt_vendor_usb.conf
+vendor/etc/init/android.hardware.bluetooth@1.0-service-droidlogic.rc
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-droidlogic.so
+
+## Camera
+vendor/lib/hw/camera.amlogic.so
+vendor/lib/libispaaa.so
+
+## Common
+vendor/bin/ddrtest.sh
+vendor/etc/lowmemorykiller.txt
+vendor/etc/lowmemorykiller_2G.txt
+vendor/etc/lowmemorykiller_512M.txt
+vendor/etc/permissions/android.software.cant_save_state.xml
+
+## Composer - from sabrina_prod_stable-user 12 STTE 240615 007 12033466 release-keys
+vendor/bin/hw/android.hardware.graphics.composer@2.4-service.droidlogic|2e9a56800bc0cbb1e3aa83506c41c7f57193b9fa
+vendor/etc/init/android.hardware.graphics.composer@2.4-service.droidlogic.rc|689db5f70830b552185429f04b9dba2f2b51bb02
+vendor/etc/vintf/manifest/android.hardware.graphics.composer@2.4-service.droidlogic.xml|d8c4e120e0b771b05bb38c3cfe91d983e511c7ea
+vendor/lib/android.hardware.graphics.composer@2.1-resources-vendor.so|62eba15c9159c9f8b3a071a8efc58106b5cc2737
+vendor/lib/android.hardware.graphics.composer@2.2-resources-vendor.so|01fc678f2966779cc3a5c3a7d1d156c8d0a67572
+vendor/lib/hw/hwcomposer.amlogic.so|1822dc9b6ece03c5b6fda4a70fcba8dde0b98812|5a43e7e80d4d653af4d3fef68675d3548999a72d
+vendor/lib/libmeson_display_adapter_remote.so|e0ef6a547fe8f7e53c3a8103b76b6a62848ea38c
+vendor/lib/libmeson_display_service.so|1c6a3a233620847635f788eff203d263c18b4e57|e21a9867ea3d3b49db4f95c32932bdbb91fc665c
+vendor/lib/libvideotunnel.so|540f2161f82b069f1802413aa5407bd17238b7ef
+vendor/lib/vendor.amlogic.display.meson_display_ipc@1.0.so|662c72f559599d6199db30f3882ce6dcaf81d53e
+
+## Dumpstate
+vendor/bin/hw/android.hardware.dumpstate@1.1-service.droidlogic
+vendor/etc/init/android.hardware.dumpstate@1.1-service.droidlogic.rc
+vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.droidlogic.xml
+
+## DVB
+vendor/lib/libam_adp.so
+
+## Graphics
+vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
+vendor/lib/arm.graphics-V1-ndk_platform.so
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/hw/vulkan.amlogic.so
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so
+vendor/lib/libamgralloc_ext.so
+
+## HDMI CEC
+vendor/lib/hw/hdmi_cec.amlogic.so
+
+## Kernel Modules
+vendor/lib/modules/amlogic_fbc_lib.ko:vendor_dlkm/lib/modules/amlogic_fbc_lib.ko
+
+## ICU
+vendor/lib/libicuuc_vendor.so
+
+## Init-files
+vendor/etc/init/bluetooth.rc
+vendor/etc/init/dvb.rc
+vendor/etc/init/fs.rc
+vendor/etc/init/irblaster1.rc
+vendor/etc/init/power.rc
+vendor/etc/init/sysfs_permissions.rc
+
+## Media (Hardware)
+vendor/bin/DecInfo_test
+vendor/bin/esplayer
+vendor/lib/libamavutils.so
+
+## Media
+vendor/lib/libmediahal_mediasync.so
+vendor/lib/libmediahal_passthrough.so
+vendor/lib/libmediahal_resman.so
+vendor/lib/libmediahal_tsplayer.so
+vendor/lib/libmediahal_tunnelrenderer.so
+vendor/lib/libmediahal_videodec.so
+
+## Memtrack
+vendor/lib/hw/memtrack.amlogic.so
+
+## OMX
+vendor/lib/libOmxAudio.so
+vendor/lib/libOmxBase.so
+vendor/lib/libOmxCore.so
+vendor/lib/libOmxVideo.so
+vendor/lib/libdatachunkqueue_alt.so
+vendor/lib/libdsm.so
+vendor/lib/libfpscalculator_alt.so
+vendor/lib/libge2d.so
+vendor/lib/libomx_av_core_alt.so
+vendor/lib/libomx_clock_utils_alt.so
+vendor/lib/libomx_framework_alt.so
+vendor/lib/libomx_timed_task_queue_alt.so
+vendor/lib/libomx_worker_peer_alt.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/libthreadworker_alt.so
+
+## remotecfg - v1.1.0 - from adt3-user 11 RTT1.200909.003.A2 6832896 release-keys
+vendor/bin/remotecfg|6735ab3cd6f776318f7b11de3e10bd62275642df
+
+## remotecfg - Configs
+vendor/etc/remote.cfg
+vendor/etc/remote.tab1
+vendor/etc/remote.tab2
+vendor/etc/remote.tab3
+
+## screen_source
+vendor/lib/hw/screen_source.amlogic.so
+
+## seccomp
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
+
+## systemcontrol - Recovery
+recovery/root/system/bin/systemcontrol_static;EXTRACT_ONLY|f22ccf670e797938082033955623954c13e9955f
+
+## systemcontrol - Vendor - from sabrina_prod_stable-user 12 STTE 240615 007 12033466 release-keys
+vendor/bin/hdcp_tx22|7db5ef22d8417586f900f0e246f6d22b3e0dc25f
+vendor/bin/systemcontrol|ff502c83d0f6ac52bc053784984d493200b7ba30
+vendor/etc/init/systemcontrol.rc|816b3193c97518903c15efb172a6225177e9bd96
+vendor/lib/libfbc.so|c04fd40373778bb1b43f96d2d86f99936dc2026f
+vendor/lib/libpqcontrol.so|a1b752d1fed2cfe2a2df353e1e686434088daa1b
+vendor/lib/libsystemcontrolservice.so|d86b270eecf9029d5ec3c40738c152770b38b054
+vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so|a6318ac0fc68d6c6bccb297b17b7f0dca072b4d2
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so|c1e371311620444fa46e0d35fdd3f24597dda673
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so|e7d5001c7f91b0a551ba8c37e15d8f7b6d6e9483
+vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so|a18ec3b774800de0cacee286fa8cd300346e3795
+
+## Thermal
+vendor/bin/hw/android.hardware.thermal@2.0-service.droidlogic
+vendor/etc/init/android.hardware.thermal@2.0-service.droidlogic.rc
+vendor/etc/thermal_info_config.json
+vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.droidlogic.xml
+
+## USB
+vendor/bin/hw/android.hardware.usb.gadget@1.2-service.droidlogic
+vendor/etc/init/android.hardware.usb.gadget@1.2-service.droidlogic.rc
+vendor/etc/vintf/manifest/android.hardware.usb.gadget@1.2-service.droidlogic.xml
+
+## Widevine
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib/libwvhidl.so
+
+## Wi-Fi
+vendor/etc/wifi/p2p_supplicant.conf
+vendor/etc/wifi/p2p_supplicant_overlay.conf

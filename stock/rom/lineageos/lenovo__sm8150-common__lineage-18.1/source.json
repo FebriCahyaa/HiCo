@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "f51497c077d20bbaafa8160974092b4375fd6b76",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3ae1c426505e6430632ce6b5ba29226faa017d1742a5a2239336a23f50553f3b",
+      "size": 21
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9c99567ff278ee54f1d8391f06feecabe591c381d054eaaf36d5990c16424583",
+      "size": 4636
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "078d0e878437d0f6d4a7fd8a6665b059ddbcf34ae60c8c8c6f502ced50815c4a",
+      "size": 6363
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "692096b869868b7488630de8a7173b3baff1ec60d0366adf94a714f05375c7ed",
+      "size": 1934
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "04078b86cf73f66e11f1eddf626cb174962f6a9bff7af3a95ca6048e64a0ac61",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "088b00a7988bc8e914405779f0e035b3f710c1d52cb1271503103046f84ad19e",
+      "size": 40302
+    },
+    {
+      "path": "system.prop",
+      "sha256": "5320df64d846dad166656b9ca0a0ffcfce821dfec401f634be76a5905a31a86d",
+      "size": 2277
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "894cbc3013816001da1750347f57986ea6c05490eb075e1d3a67fdd974c3a63d",
+      "size": 4241
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lenovo_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-24T17:46:49Z",
+  "vendor": "lenovo"
+}

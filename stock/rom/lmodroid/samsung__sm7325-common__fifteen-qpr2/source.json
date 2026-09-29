@@ -1,0 +1,62 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "d596457b4a4a69ff24ce142683708a14bf3d7504",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ea99533c4773aed4bd23d4b2508e2359b10d73bfdffafc6b69b2dbbee55ef432",
+      "size": 571
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "40c375cbd7570e6ea6758a0280df814bf6c22375ff9c9d13f2f82dcd9db39c57",
+      "size": 1679
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cabd9f65d6a307642a45048c432cf986026ff7589140dc68fc236710e93e6eeb",
+      "size": 8639
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "af88a131e91cff071403c73d2439df3e8d8b7498f875654430aee2adc234d473",
+      "size": 3600
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f806be64f547848210410895b673415ab8e5109b839894035be0773997021136",
+      "size": 31008
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "bf314a80d283f1df13ba45fc775e54de823e2878ecfcfc0d2282fd8ef1870381",
+      "size": 332
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "4928d59764fe9823078f78003d2d8304b4bf7cdff338d9db773231e33a67f557",
+      "size": 106
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2713ee5dfb6b107f4912a3b21767ed3d6d7cb8e81f27db4ecb8ff4aedae621eb",
+      "size": 86
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5122fe52327d103dcf651665c04eb0dff43691c28e97990421b72df66a144073",
+      "size": 7578
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-23T17:50:40Z",
+  "vendor": "samsung"
+}

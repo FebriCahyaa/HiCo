@@ -35,19 +35,19 @@
       "pushed_at": "2018-04-07T20:49:26Z",
       "status": "ok"
     },
-    "acer/t20": {
-      "branch": "ics",
-      "commit": "62734d84b1c31ef1eec49245e795b92596d3ded1",
-      "file_count": 2,
+    "acer/t20-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:49:29Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "acer/t30": {
-      "branch": "cm-10.1-staging",
-      "commit": "dbf28388c3b62d2721894dfb5eef48472a9694b3",
-      "file_count": 2,
+    "acer/t30-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:49:34Z",
-      "status": "ok"
+      "status": "empty"
     },
     "advent/vega": {
       "branch": "gb-release-7.2",
@@ -70,19 +70,19 @@
       "pushed_at": "2018-04-07T20:49:43Z",
       "status": "ok"
     },
-    "amazon/bowser": {
-      "branch": "cm-11.0",
-      "commit": "ccbc4e946ede313bc8506d40d25147d109a2f4a9",
-      "file_count": 4,
+    "amazon/bowser-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:49:44Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "amazon/hdx": {
-      "branch": "cm-14.1",
-      "commit": "ee0590e90b540bb550173de4267cc5bf535c3ac4",
-      "file_count": 6,
+    "amazon/hdx-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:23:13Z",
-      "status": "ok"
+      "status": "empty"
     },
     "amazon/jem": {
       "branch": "cm-11.0",
@@ -91,19 +91,26 @@
       "pushed_at": "2018-04-07T20:49:48Z",
       "status": "ok"
     },
-    "amazon/omap4": {
-      "branch": "cm-10.1-staging",
-      "commit": "d3c48ef21da104ee7ac3424ec826da435657e9d3",
-      "file_count": 4,
+    "amazon/omap4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:49:49Z",
-      "status": "ok"
+      "status": "empty"
     },
     "amazon/otter": {
-      "branch": "cm-10.1-staging",
-      "commit": "ec647920d6165d425409f49aabf0877fba18f81f",
-      "file_count": 4,
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:49:53Z",
+      "status": "empty"
+    },
+    "amazon/otter-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:49:56Z",
-      "status": "ok"
+      "status": "empty"
     },
     "amazon/otter2": {
       "branch": "cm-10.1-staging",
@@ -133,23 +140,30 @@
       "pushed_at": "2018-04-07T20:50:01Z",
       "status": "ok"
     },
-    "amlogic/g12": {
-      "branch": "lineage-23.2",
-      "commit": "441fe386d17c4843d846d7c6a906e646ccecdf44",
+    "amlogic/common": {
+      "branch": "lineage-24.0",
+      "commit": "1c17e24c278f720aa38f7bd9c4d14d6fcdb92e0a",
+      "file_count": 4,
+      "pushed_at": "2026-09-21T21:36:28Z",
+      "status": "ok"
+    },
+    "amlogic/g12-common": {
+      "branch": "lineage-24.0",
+      "commit": "e4e364e9dceafca38f8fdb9281c461d54ff11323",
       "file_count": 7,
       "pushed_at": "2026-09-17T00:01:10Z",
       "status": "ok"
     },
-    "amlogic/gx": {
-      "branch": "lineage-22.1",
-      "commit": "128645d8dacfafe331e19be44fa3509dc8a73eff",
-      "file_count": 8,
+    "amlogic/gx-common": {
+      "branch": "lineage-22.2",
+      "commit": "df2a41b7f34e92e337501aa6421fb58785d88200",
+      "file_count": 7,
       "pushed_at": "2026-09-14T16:36:29Z",
       "status": "ok"
     },
-    "amlogic/ne": {
-      "branch": "lineage-23.2",
-      "commit": "a1341d772e24702424fbf24e7be7c48577717d94",
+    "amlogic/ne-common": {
+      "branch": "lineage-24.0",
+      "commit": "9d6bb25040e457df8616929dfb3ff3796f979f1d",
       "file_count": 6,
       "pushed_at": "2026-09-25T17:23:54Z",
       "status": "ok"
@@ -168,12 +182,26 @@
       "pushed_at": "2026-09-24T03:50:13Z",
       "status": "ok"
     },
+    "amlogic/sm1-common": {
+      "branch": "lineage-22.2",
+      "commit": "a9c893510eae6a107724d8f6bc7eb361cd3a09d8",
+      "file_count": 7,
+      "pushed_at": "2025-07-23T22:02:00Z",
+      "status": "ok"
+    },
     "apple/snowcastle": {
       "branch": "lineage-23.2",
       "commit": "0b43c0629a7813dc533a8ad4d1a537f70b8aa576",
       "file_count": 5,
       "pushed_at": "2026-09-21T06:27:13Z",
       "status": "ok"
+    },
+    "ark/msm8916-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:50:03Z",
+      "status": "empty"
     },
     "ark/peach": {
       "branch": "cm-14.1",
@@ -246,8 +274,11 @@
       "status": "ok"
     },
     "asus/i001": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2020-04-18T01:42:06Z",
+      "status": "empty"
     },
     "asus/i001d": {
       "branch": "lineage-17.1",
@@ -263,11 +294,25 @@
       "pushed_at": "2024-02-13T14:43:13Z",
       "status": "ok"
     },
-    "asus/mofd": {
-      "branch": "cm-14.1",
-      "commit": "159edf8f8b4dd1b1c1e59bd5021233a7c6d48281",
-      "file_count": 6,
+    "asus/mofd-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:21:43Z",
+      "status": "empty"
+    },
+    "asus/msm8916-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-09T16:22:52Z",
+      "status": "empty"
+    },
+    "asus/msm8937-common": {
+      "branch": "lineage-18.1",
+      "commit": "7f9108303268277796427a845458a0f59ed1b39f",
+      "file_count": 8,
+      "pushed_at": "2022-03-06T18:37:46Z",
       "status": "ok"
     },
     "asus/obiwan": {
@@ -291,9 +336,26 @@
       "pushed_at": "2026-09-22T02:24:57Z",
       "status": "ok"
     },
+    "asus/sdm660-common": {
+      "branch": "lineage-24.0",
+      "commit": "3c9fa259844f55a35f1e9d0e2b8e8c24b9838610",
+      "file_count": 9,
+      "pushed_at": "2026-09-15T17:38:29Z",
+      "status": "ok"
+    },
+    "asus/sm8250-common": {
+      "branch": "lineage-18.1",
+      "commit": "3f2b0779ce083f50b22e757dab061c3c23d7f153",
+      "file_count": 8,
+      "pushed_at": "2022-11-20T08:00:49Z",
+      "status": "ok"
+    },
     "asus/tequila": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2020-07-26T10:13:54Z",
+      "status": "empty"
     },
     "asus/tf101": {
       "branch": "cm-10.1",
@@ -414,7 +476,7 @@
       "pushed_at": "2021-12-11T22:15:38Z",
       "status": "ok"
     },
-    "ayn/cq8725s": {
+    "ayn/cq8725s-common": {
       "branch": "lineage-23.2",
       "commit": "6d1a4214540c91a914a2726346eb58203bfa631c",
       "file_count": 0,
@@ -484,18 +546,25 @@
       "pushed_at": "2026-07-16T02:19:01Z",
       "status": "ok"
     },
-    "ayn/qcs8550": {
-      "branch": "lineage-23.2",
-      "commit": "948a9411657078bca529fe70a121211277c57394",
-      "file_count": 5,
-      "pushed_at": "2026-09-24T18:51:24Z",
-      "status": "ok"
-    },
     "ayn/qcs8550-ack": {
       "branch": "lineage-23.2",
       "commit": "38de015c14e3f80abea775f9a52cae44ecf57476",
       "file_count": 3,
       "pushed_at": "2026-08-12T03:42:34Z",
+      "status": "ok"
+    },
+    "ayn/qcs8550-common": {
+      "branch": "lineage-24.0",
+      "commit": "45688b3248c7fd9d782fe2e508b017dceb4da96e",
+      "file_count": 5,
+      "pushed_at": "2026-09-29T00:48:04Z",
+      "status": "ok"
+    },
+    "ayn/sdm845-common": {
+      "branch": "lineage-22.2",
+      "commit": "f6cb270b717923bcfa60eec043114b98257338ba",
+      "file_count": 12,
+      "pushed_at": "2026-07-20T18:21:19Z",
       "status": "ok"
     },
     "bananapi/m5": {
@@ -519,6 +588,13 @@
       "pushed_at": "2021-12-11T22:24:14Z",
       "status": "ok"
     },
+    "bn/common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:51:01Z",
+      "status": "empty"
+    },
     "bn/encore": {
       "branch": "cm-10.1-staging",
       "commit": "b002cc0d2dcd2953b2bc69dd9132baf94a81b516",
@@ -533,12 +609,12 @@
       "pushed_at": "2018-04-07T20:51:13Z",
       "status": "ok"
     },
-    "bn/omap4": {
-      "branch": "cm-10.1-staging",
-      "commit": "9159cd8999bfdd342169588efa2dafc5bac8c806",
-      "file_count": 4,
+    "bn/omap4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:51:11Z",
-      "status": "ok"
+      "status": "empty"
     },
     "bn/ovation": {
       "branch": "cm-10.1",
@@ -575,6 +651,27 @@
       "pushed_at": "2021-12-11T22:20:58Z",
       "status": "ok"
     },
+    "bq/msm8916-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:00:57Z",
+      "status": "empty"
+    },
+    "bq/msm8937-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:00:57Z",
+      "status": "empty"
+    },
+    "bq/msm8953-common": {
+      "branch": "lineage-19.1",
+      "commit": "0a2ae7fcee385c97bf481ba13a03f41626afd759",
+      "file_count": 8,
+      "pushed_at": "2025-12-05T22:00:18Z",
+      "status": "ok"
+    },
     "bq/paella": {
       "branch": "lineage-15.1",
       "commit": "e7777ebfd1ecf432edac3613998f0c061bf98d6e",
@@ -588,6 +685,13 @@
       "file_count": 9,
       "pushed_at": "2022-11-20T08:00:59Z",
       "status": "ok"
+    },
+    "bq/sdm660-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2024-02-26T22:03:23Z",
+      "status": "empty"
     },
     "bq/tenshi": {
       "branch": "cm-14.1",
@@ -631,21 +735,54 @@
       "pushed_at": "2016-12-27T19:38:35Z",
       "status": "empty"
     },
+    "cyanogen/msm8916-common": {
+      "branch": "lineage-18.1",
+      "commit": "c7b9d210f5ff2f2971febecc9922add927c663fc",
+      "file_count": 3,
+      "pushed_at": "2026-01-18T07:33:38Z",
+      "status": "ok"
+    },
+    "cyanogen/msm8939-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:51:53Z",
+      "status": "empty"
+    },
+    "cyanogen/mt6735-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:01:05Z",
+      "status": "empty"
+    },
     "daylight/jagar": {
-      "error": "fatal: Remote branch main not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2026-08-23T21:35:30Z",
+      "status": "empty"
     },
     "dell/streak7": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:33:04Z",
+      "status": "empty"
     },
     "elocity/a7": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:33:02Z",
+      "status": "empty"
     },
     "essential/gem": {
-      "error": "fatal: Remote branch main not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2026-08-23T21:47:42Z",
+      "status": "empty"
     },
     "essential/mata": {
       "branch": "lineage-22.2",
@@ -669,24 +806,24 @@
       "status": "ok"
     },
     "fairphone/fp4": {
-      "branch": "lineage-23.2",
-      "commit": "46292b827e6eab42779738f0a35f0222e2da55a3",
+      "branch": "lineage-24.0",
+      "commit": "5e4e2ae1fa9b282b19e9cd18bebcf72e9b7849de",
       "file_count": 8,
-      "pushed_at": "2026-09-27T14:42:13Z",
+      "pushed_at": "2026-09-29T00:13:11Z",
       "status": "ok"
     },
     "fairphone/fp5": {
-      "branch": "lineage-23.2",
-      "commit": "76d530b7c339c73321ff92ba5fb827c22132fa10",
+      "branch": "lineage-24.0",
+      "commit": "fa8d6daeae2b08b64bc00bbc13251e33f8c6b594",
       "file_count": 8,
-      "pushed_at": "2026-09-27T14:42:46Z",
+      "pushed_at": "2026-09-29T00:37:35Z",
       "status": "ok"
     },
     "fairphone/fp6": {
-      "branch": "lineage-23.2",
-      "commit": "0d518675dd20f139168c75ca16243e6a5e4e8b02",
+      "branch": "lineage-24.0",
+      "commit": "ea712d58bdeb926c788ccfd244a5dcb28821a781",
       "file_count": 7,
-      "pushed_at": "2026-09-20T21:42:20Z",
+      "pushed_at": "2026-09-28T21:29:47Z",
       "status": "ok"
     },
     "freebox/nicepool": {
@@ -941,7 +1078,7 @@
       "pushed_at": "2026-06-24T16:29:15Z",
       "status": "ok"
     },
-    "google/gs": {
+    "google/gs-common": {
       "branch": "lineage-23.2",
       "commit": "52b4e62c80f982e895da2b13b6421e1055423b4d",
       "file_count": 1,
@@ -1010,6 +1147,13 @@
       "file_count": 8,
       "pushed_at": "2026-04-24T06:43:22Z",
       "status": "ok"
+    },
+    "google/msm8952-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:52:43Z",
+      "status": "empty"
     },
     "google/muskie": {
       "branch": "lineage-22.2",
@@ -1186,6 +1330,13 @@
       "pushed_at": "2018-04-07T20:52:50Z",
       "status": "ok"
     },
+    "google/sprout-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-07-24T18:44:03Z",
+      "status": "empty"
+    },
     "google/sprout4": {
       "branch": "cm-12.1",
       "commit": "ba61a7648932d519fd6daf5882939652fa9036ed",
@@ -1354,6 +1505,13 @@
       "pushed_at": "2018-04-07T20:53:17Z",
       "status": "ok"
     },
+    "htc/a5-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:53:14Z",
+      "status": "empty"
+    },
     "htc/a5dwg": {
       "branch": "cm-13.0",
       "commit": "8dbdca09dc49dd50cfc00c4900e7c50be6381c16",
@@ -1375,6 +1533,13 @@
       "pushed_at": "2018-04-07T20:53:21Z",
       "status": "ok"
     },
+    "htc/bravo-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:39:18Z",
+      "status": "empty"
+    },
     "htc/bravoc": {
       "branch": "froyo-stable",
       "commit": "2996278f77303a7c5481ccc7d7fdcde71e9c19b1",
@@ -1395,6 +1560,13 @@
       "file_count": 6,
       "pushed_at": "2018-04-07T20:53:28Z",
       "status": "ok"
+    },
+    "htc/common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:39:21Z",
+      "status": "empty"
     },
     "htc/desirec": {
       "branch": "gb-release-7.2",
@@ -1418,12 +1590,18 @@
       "status": "ok"
     },
     "htc/dlxu": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:57:50Z",
+      "status": "empty"
     },
     "htc/dlxub1": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:57:51Z",
+      "status": "empty"
     },
     "htc/doubleshot": {
       "branch": "cm-10.1",
@@ -1524,11 +1702,18 @@
       "status": "ok"
     },
     "htc/hiae": {
-      "branch": "lineage-15.1",
-      "commit": "b6e727a939726d5b95c91e06734e86018201c5a3",
-      "file_count": 10,
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:01:46Z",
+      "status": "empty"
+    },
+    "htc/hiae-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:01:47Z",
-      "status": "ok"
+      "status": "empty"
     },
     "htc/hiaeuhl": {
       "branch": "lineage-15.1",
@@ -1552,11 +1737,18 @@
       "status": "ok"
     },
     "htc/hima": {
-      "branch": "lineage-15.1",
-      "commit": "01ac5b967fa33c276e68bc62115eb952aa11db7e",
-      "file_count": 7,
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:01:48Z",
+      "status": "empty"
+    },
+    "htc/hima-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:21:05Z",
-      "status": "ok"
+      "status": "empty"
     },
     "htc/himaul": {
       "branch": "lineage-15.1",
@@ -1594,8 +1786,11 @@
       "status": "ok"
     },
     "htc/incs": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:33:24Z",
+      "status": "empty"
     },
     "htc/jewel": {
       "branch": "cm-14.1",
@@ -1633,11 +1828,18 @@
       "status": "ok"
     },
     "htc/m7": {
-      "branch": "cm-14.1",
-      "commit": "530db5dc4e33a888cf07c9fddbc014462938b77c",
-      "file_count": 6,
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:54:42Z",
+      "status": "empty"
+    },
+    "htc/m7-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:54:50Z",
-      "status": "ok"
+      "status": "empty"
     },
     "htc/m7att": {
       "branch": "cm-10.1",
@@ -1688,6 +1890,13 @@
       "pushed_at": "2022-11-20T08:01:56Z",
       "status": "ok"
     },
+    "htc/m8-common": {
+      "branch": "lineage-18.1",
+      "commit": "cfb8b98dc966be5b8ab8cdda1f5955147fbeeac7",
+      "file_count": 5,
+      "pushed_at": "2022-11-20T08:01:57Z",
+      "status": "ok"
+    },
     "htc/m8d": {
       "branch": "lineage-18.1",
       "commit": "edfcc49908aa3e56207cecea90220a1f348366df",
@@ -1709,12 +1918,47 @@
       "pushed_at": "2018-04-07T20:55:15Z",
       "status": "ok"
     },
+    "htc/msm7x30-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:55:20Z",
+      "status": "empty"
+    },
+    "htc/msm8660-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:55:19Z",
+      "status": "empty"
+    },
+    "htc/msm8960-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:02:00Z",
+      "status": "empty"
+    },
+    "htc/msm8974-common": {
+      "branch": "lineage-18.1",
+      "commit": "b32d3bd366e138334a20d298dc10777aff4f8200",
+      "file_count": 5,
+      "pushed_at": "2023-09-16T04:22:14Z",
+      "status": "ok"
+    },
     "htc/passion": {
       "branch": "froyo-stable",
       "commit": "dc542bc3d2ca2336d839683f152aba02e51c2d23",
       "file_count": 3,
       "pushed_at": "2018-04-07T20:55:27Z",
       "status": "ok"
+    },
+    "htc/passion-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:55:26Z",
+      "status": "empty"
     },
     "htc/pme": {
       "branch": "cm-14.1",
@@ -1724,12 +1968,18 @@
       "status": "ok"
     },
     "htc/protou": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:58:40Z",
+      "status": "empty"
     },
     "htc/puccinilte": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:57:15Z",
+      "status": "empty"
     },
     "htc/pyramid": {
       "branch": "ics",
@@ -1746,15 +1996,18 @@
       "status": "ok"
     },
     "htc/runnymede": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:56:40Z",
+      "status": "empty"
     },
-    "htc/s4": {
-      "branch": "cm-14.1",
-      "commit": "630a97ee53f1b6a43f02f9fb3841db026967f5ed",
-      "file_count": 6,
+    "htc/s4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-07-24T18:45:14Z",
-      "status": "ok"
+      "status": "empty"
     },
     "htc/saga": {
       "branch": "gb-release-7.2",
@@ -1792,11 +2045,18 @@
       "status": "ok"
     },
     "htc/t6": {
-      "branch": "cm-14.1",
-      "commit": "f127d9f7b4d59992ee8afbb8ac17338d42016da7",
-      "file_count": 6,
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:56:02Z",
+      "status": "empty"
+    },
+    "htc/t6-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:56:10Z",
-      "status": "ok"
+      "status": "empty"
     },
     "htc/t6spr": {
       "branch": "cm-14.1",
@@ -1812,9 +2072,19 @@
       "pushed_at": "2018-04-07T20:56:08Z",
       "status": "ok"
     },
+    "htc/tegra3-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:56:17Z",
+      "status": "empty"
+    },
     "htc/vigor": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:56:41Z",
+      "status": "empty"
     },
     "htc/ville": {
       "branch": "cm-14.1",
@@ -1851,6 +2121,13 @@
       "pushed_at": "2018-04-07T20:56:25Z",
       "status": "ok"
     },
+    "htc/zara-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:24:56Z",
+      "status": "empty"
+    },
     "htc/zaracl": {
       "branch": "cm-12.0",
       "commit": "3c38054cc61c9941b764e5092bf0d3655569b604",
@@ -1873,8 +2150,11 @@
       "status": "ok"
     },
     "huawei/ascend": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:32:41Z",
+      "status": "empty"
     },
     "huawei/berkeley": {
       "branch": "lineage-16.0",
@@ -1918,12 +2198,19 @@
       "pushed_at": "2018-04-07T20:56:44Z",
       "status": "ok"
     },
-    "huawei/hi6250": {
+    "huawei/hi6250-common": {
       "branch": "lineage-17.1",
       "commit": "0e194b615640b9f312a02fe25148a18ba53657bf",
       "file_count": 5,
       "pushed_at": "2022-10-14T20:00:21Z",
       "status": "ok"
+    },
+    "huawei/kirin970-common": {
+      "branch": "lineage-22.2",
+      "commit": "c775b90c6a6b70c1e334ebaa4e42819f6114ddbe",
+      "file_count": 0,
+      "pushed_at": "2026-07-31T20:21:19Z",
+      "status": "empty"
     },
     "huawei/kiwi": {
       "branch": "lineage-17.1",
@@ -1933,8 +2220,25 @@
       "status": "ok"
     },
     "huawei/m660": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T16:00:01Z",
+      "status": "empty"
+    },
+    "huawei/msm8916-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:02:15Z",
+      "status": "empty"
+    },
+    "huawei/mt2": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-06-20T06:10:46Z",
+      "status": "empty"
     },
     "huawei/u8150": {
       "branch": "gb-release-7.2",
@@ -1990,6 +2294,13 @@
       "commit": "fcb464f3abf4f023d901483dbb3a03ea106d38ed",
       "file_count": 8,
       "pushed_at": "2026-09-21T21:38:59Z",
+      "status": "ok"
+    },
+    "leeco/msm8996-common": {
+      "branch": "lineage-18.1",
+      "commit": "7f924f3cba29e914690419cdea9ded8f76dda46f",
+      "file_count": 8,
+      "pushed_at": "2024-06-22T06:20:47Z",
       "status": "ok"
     },
     "leeco/s2": {
@@ -2055,7 +2366,21 @@
       "pushed_at": "2024-02-13T14:41:49Z",
       "status": "ok"
     },
-    "lenovo/tb": {
+    "lenovo/sdm710-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2024-05-04T11:37:44Z",
+      "status": "empty"
+    },
+    "lenovo/sm8150-common": {
+      "branch": "lineage-24.0",
+      "commit": "cb2310b962f52e8d64398fd6dfd8daa7a4a6a2c0",
+      "file_count": 7,
+      "pushed_at": "2026-09-24T17:46:49Z",
+      "status": "ok"
+    },
+    "lenovo/tb-common": {
       "branch": "lineage-17.1",
       "commit": "378367981ebf47575255ae2aac60b8ea8366e4dd",
       "file_count": 6,
@@ -2083,7 +2408,7 @@
       "pushed_at": "2021-12-11T22:12:06Z",
       "status": "ok"
     },
-    "lenovo/ytx703": {
+    "lenovo/ytx703-common": {
       "branch": "lineage-18.1",
       "commit": "4515eb727ca984a14d53ddc6c05a22b55c5b98ab",
       "file_count": 14,
@@ -2167,6 +2492,13 @@
       "pushed_at": "2025-11-25T16:21:48Z",
       "status": "ok"
     },
+    "lge/common": {
+      "branch": "lineage-18.1",
+      "commit": "30143c114ca9ba227c2cb866940417aec965aa80",
+      "file_count": 3,
+      "pushed_at": "2023-03-18T03:36:32Z",
+      "status": "ok"
+    },
     "lge/d800": {
       "branch": "lineage-18.1",
       "commit": "788bb71376f51ea224b1d8eaa866b4f8146e593f",
@@ -2238,8 +2570,11 @@
       "status": "ok"
     },
     "lge/d950": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T14:51:14Z",
+      "status": "empty"
     },
     "lge/dory": {
       "branch": "cm-11.0",
@@ -2256,8 +2591,11 @@
       "status": "ok"
     },
     "lge/e430": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T16:43:17Z",
+      "status": "empty"
     },
     "lge/e510": {
       "branch": "gb-release-7.2",
@@ -2336,7 +2674,7 @@
       "pushed_at": "2025-11-25T16:11:11Z",
       "status": "ok"
     },
-    "lge/g2": {
+    "lge/g2-common": {
       "branch": "lineage-18.1",
       "commit": "5e4b5a576e27597ede4628f9259934583afb0209",
       "file_count": 7,
@@ -2350,30 +2688,30 @@
       "pushed_at": "2018-04-07T20:58:16Z",
       "status": "ok"
     },
-    "lge/g3": {
+    "lge/g3-common": {
       "branch": "lineage-18.1",
       "commit": "54f17e3885629bab4b7484679589088b6b77f79e",
       "file_count": 7,
       "pushed_at": "2023-06-22T20:00:18Z",
       "status": "ok"
     },
-    "lge/g4": {
-      "branch": "lineage-15.1",
-      "commit": "7b9b1ad8276d47db1ae4adf9367661bdac3321cb",
-      "file_count": 8,
+    "lge/g4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:02:43Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "lge/g5": {
-      "branch": "lineage-22.1",
-      "commit": "7f046e4faab86ba5f6bdcd22f56415d990b73262",
+    "lge/g5-common": {
+      "branch": "lineage-22.2",
+      "commit": "c9f7cff25731af99d634bb6289f3e1f92efdb9b9",
       "file_count": 6,
       "pushed_at": "2026-06-18T06:02:40Z",
       "status": "ok"
     },
-    "lge/g6": {
-      "branch": "lineage-22.1",
-      "commit": "f6748f5469a96b7373d08ccedbc80721c5fa5010",
+    "lge/g6-common": {
+      "branch": "lineage-22.2",
+      "commit": "d2fe3874aa922c970d54c8ae984465f745bd3493",
       "file_count": 6,
       "pushed_at": "2026-07-19T16:15:01Z",
       "status": "ok"
@@ -2392,19 +2730,19 @@
       "pushed_at": "2025-03-20T16:19:49Z",
       "status": "ok"
     },
-    "lge/gpad83": {
-      "branch": "lineage-15.1",
-      "commit": "56e0e948c16c6cc4c21111f1a05156f85244ee7c",
-      "file_count": 4,
+    "lge/gpad83-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:21:17Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "lge/gproj": {
-      "branch": "cm-10.2",
-      "commit": "47ce81f1efa4c3a28ccbddd948e83137b4347e8d",
-      "file_count": 2,
+    "lge/gproj-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:58:29Z",
-      "status": "ok"
+      "status": "empty"
     },
     "lge/h811": {
       "branch": "lineage-15.1",
@@ -2518,12 +2856,12 @@
       "pushed_at": "2021-12-11T22:24:55Z",
       "status": "ok"
     },
-    "lge/iprj": {
-      "branch": "cm-9.1.0",
-      "commit": "dc1cd31d0277c0b6d34303b2ee67822bed0a5a9c",
-      "file_count": 3,
+    "lge/iprj-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:59:03Z",
-      "status": "ok"
+      "status": "empty"
     },
     "lge/jag3gds": {
       "branch": "cm-14.1",
@@ -2541,9 +2879,16 @@
     },
     "lge/joan": {
       "branch": "lineage-22.2",
-      "commit": "47c49396cc653d861d9df2d6bb3686733fab4c3f",
+      "commit": "0053e5025795da63f8aa94ce86bd831a1004ca4a",
+      "file_count": 7,
+      "pushed_at": "2026-01-12T08:14:55Z",
+      "status": "ok"
+    },
+    "lge/joan-common": {
+      "branch": "lineage-22.2",
+      "commit": "187b7e443bc8dac1c5a89f157f7a04314e887b45",
       "file_count": 9,
-      "pushed_at": "2026-09-26T22:22:54Z",
+      "pushed_at": "2026-09-28T22:00:19Z",
       "status": "ok"
     },
     "lge/judyln": {
@@ -2551,6 +2896,13 @@
       "commit": "00adfabd0ec3f9ffaf025b96850d40d6b8cb0e6c",
       "file_count": 6,
       "pushed_at": "2025-03-20T16:19:28Z",
+      "status": "ok"
+    },
+    "lge/judyln-common": {
+      "branch": "lineage-22.2",
+      "commit": "4119393f49908b20378c069e0e85decabf22a362",
+      "file_count": 6,
+      "pushed_at": "2025-06-23T06:57:05Z",
       "status": "ok"
     },
     "lge/judyp": {
@@ -2582,19 +2934,32 @@
       "status": "ok"
     },
     "lge/l1m": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T14:48:38Z",
+      "status": "empty"
     },
     "lge/lgl55c": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:59:16Z",
+      "status": "empty"
     },
     "lge/ls970": {
-      "branch": "cm-10.1",
-      "commit": "afd4f49bd11ebfaeed55bc2a9d7a1e558df87c7a",
-      "file_count": 2,
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:59:13Z",
+      "status": "empty"
+    },
+    "lge/ls970-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:59:18Z",
-      "status": "ok"
+      "status": "empty"
     },
     "lge/ls980": {
       "branch": "lineage-18.1",
@@ -2639,8 +3004,39 @@
       "status": "ok"
     },
     "lge/ms695": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T16:59:15Z",
+      "status": "empty"
+    },
+    "lge/msm7x27a-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:59:24Z",
+      "status": "empty"
+    },
+    "lge/msm8226-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2026-03-31T10:32:06Z",
+      "status": "empty"
+    },
+    "lge/msm8916-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:59:25Z",
+      "status": "empty"
+    },
+    "lge/msm8996-common": {
+      "branch": "lineage-22.2",
+      "commit": "45e3845fa4a663ee2ad9548fc590876a864ed3df",
+      "file_count": 9,
+      "pushed_at": "2026-08-12T12:07:09Z",
+      "status": "ok"
     },
     "lge/p350": {
       "branch": "gingerbread",
@@ -2692,8 +3088,11 @@
       "status": "ok"
     },
     "lge/p925": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:38:11Z",
+      "status": "empty"
     },
     "lge/p930": {
       "branch": "cm-10.1-staging",
@@ -2730,12 +3129,33 @@
       "pushed_at": "2026-06-07T04:35:49Z",
       "status": "ok"
     },
-    "lge/star": {
-      "branch": "cm-7.2.0",
-      "commit": "fd54d6dc41a37f89b5f3eec242628d2740897de3",
-      "file_count": 3,
-      "pushed_at": "2018-04-07T20:59:47Z",
+    "lge/sdm845-common": {
+      "branch": "lineage-22.2",
+      "commit": "31815e4878a228df0ee486b38f3dc755a23d42fc",
+      "file_count": 11,
+      "pushed_at": "2025-11-25T16:09:22Z",
       "status": "ok"
+    },
+    "lge/sm7250-common": {
+      "branch": "lineage-23.2",
+      "commit": "438e18df1858f091ae96274f83915ede77ba07c3",
+      "file_count": 7,
+      "pushed_at": "2026-09-28T15:21:41Z",
+      "status": "ok"
+    },
+    "lge/sm8150-common": {
+      "branch": "lineage-22.2",
+      "commit": "49f6801466c1d911435b669001d72051a08ee74a",
+      "file_count": 9,
+      "pushed_at": "2025-11-25T16:08:37Z",
+      "status": "ok"
+    },
+    "lge/star-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T20:59:47Z",
+      "status": "empty"
     },
     "lge/style3lm": {
       "branch": "lineage-22.2",
@@ -2752,8 +3172,11 @@
       "status": "ok"
     },
     "lge/thunderc": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:33:51Z",
+      "status": "empty"
     },
     "lge/thunderg": {
       "branch": "gingerbread-release",
@@ -2790,16 +3213,16 @@
       "pushed_at": "2026-06-07T04:36:19Z",
       "status": "ok"
     },
-    "lge/v10": {
-      "branch": "cm-12.1",
-      "commit": "e34e6ee3032aa4682f770d49e0dbe39a9d811831",
-      "file_count": 6,
+    "lge/v10-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T20:59:59Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "lge/v20": {
-      "branch": "lineage-22.1",
-      "commit": "dea5dfe13549af42d8bcf52ed5221cb988d11916",
+    "lge/v20-common": {
+      "branch": "lineage-22.2",
+      "commit": "587a3fe64b091fea2040a9611563c997daf8726f",
       "file_count": 6,
       "pushed_at": "2026-06-18T06:02:34Z",
       "status": "ok"
@@ -2832,12 +3255,12 @@
       "pushed_at": "2018-04-07T21:00:05Z",
       "status": "ok"
     },
-    "lge/v4xx": {
-      "branch": "cm-14.1",
-      "commit": "22f129ab7d451b19bd22d12f13fb7097570a038d",
-      "file_count": 6,
+    "lge/v4xx-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:00:08Z",
-      "status": "ok"
+      "status": "empty"
     },
     "lge/v500": {
       "branch": "lineage-15.1",
@@ -2860,9 +3283,9 @@
       "pushed_at": "2018-04-07T21:00:25Z",
       "status": "ok"
     },
-    "lge/victor": {
-      "branch": "master",
-      "commit": "26986a1d24027d802f1ba930986c74182072ab3e",
+    "lge/victor-common": {
+      "branch": null,
+      "commit": null,
       "file_count": 0,
       "pushed_at": "2018-04-07T21:00:21Z",
       "status": "empty"
@@ -2875,12 +3298,18 @@
       "status": "ok"
     },
     "lge/vs840": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:57:55Z",
+      "status": "empty"
     },
     "lge/vs910": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T16:59:12Z",
+      "status": "empty"
     },
     "lge/vs920": {
       "branch": "clockworkmod",
@@ -2952,19 +3381,26 @@
       "pushed_at": "2026-07-12T23:46:10Z",
       "status": "empty"
     },
-    "mainline/qcom": {
-      "branch": "lineage-23.2",
-      "commit": "829c9367b1c7b065693890815969721b2cc85240",
+    "mainline/common": {
+      "branch": "lineage-24.0",
+      "commit": "8d10a7bb4bf017893c94de4c3465d341af5fd3d9",
+      "file_count": 3,
+      "pushed_at": "2026-09-26T22:46:32Z",
+      "status": "ok"
+    },
+    "mainline/qcom-common": {
+      "branch": "lineage-24.0",
+      "commit": "61dbf90ab5febffcde6e5cb5e734197c01def431",
       "file_count": 7,
       "pushed_at": "2026-09-26T17:21:13Z",
       "status": "ok"
     },
-    "malata/smb": {
-      "branch": "gb-release-7.2",
-      "commit": "fe0fd46716230b0d2a5c5bcba64ae089b2ba4d06",
-      "file_count": 1,
+    "malata/smb-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:00:42Z",
-      "status": "ok"
+      "status": "empty"
     },
     "malata/smb_a1002": {
       "branch": "froyo",
@@ -2993,6 +3429,13 @@
       "file_count": 5,
       "pushed_at": "2018-04-07T21:00:52Z",
       "status": "ok"
+    },
+    "moto/common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:42:32Z",
+      "status": "empty"
     },
     "moto/everest": {
       "branch": "cm-10.1",
@@ -3044,8 +3487,11 @@
       "status": "ok"
     },
     "motorola/asanti": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:44:54Z",
+      "status": "empty"
     },
     "motorola/athene": {
       "branch": "cm-14.1",
@@ -3062,8 +3508,11 @@
       "status": "ok"
     },
     "motorola/backflip": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:32:05Z",
+      "status": "empty"
     },
     "motorola/bangkk": {
       "branch": "lineage-23.2",
@@ -3163,6 +3612,13 @@
       "pushed_at": "2022-11-20T08:03:24Z",
       "status": "ok"
     },
+    "motorola/common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:01:13Z",
+      "status": "empty"
+    },
     "motorola/condor": {
       "branch": "cm-14.1",
       "commit": "64bdbfa2877ae7600d79269fbeee293e1738e971",
@@ -3226,9 +3682,9 @@
       "pushed_at": "2025-08-28T17:22:17Z",
       "status": "ok"
     },
-    "motorola/exynos9610": {
-      "branch": "lineage-23.2",
-      "commit": "e7d5034c4a391f252d0a1a75c29b9bc281cffeb2",
+    "motorola/exynos9610-common": {
+      "branch": "lineage-24.0",
+      "commit": "76fc75b4dacd4a7c823f4e7400020989e6a296cd",
       "file_count": 12,
       "pushed_at": "2026-09-23T19:29:20Z",
       "status": "ok"
@@ -3241,17 +3697,17 @@
       "status": "ok"
     },
     "motorola/fogo": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "21a7f41c99b5b2197673ae29e85fcee9ed73d9aa",
       "file_count": 8,
-      "pushed_at": "2026-08-22T03:58:56Z",
+      "pushed_at": "2026-09-28T20:29:48Z",
       "status": "ok"
     },
     "motorola/fogos": {
-      "branch": "lineage-23.2",
-      "commit": "eb605967825f23f9f649b1f05b3b3d4f2fbc5fcc",
+      "branch": "lineage-24.0",
+      "commit": "3b16e67d27607e5f26f6e76f93a7ce6b14216336",
       "file_count": 8,
-      "pushed_at": "2026-09-22T14:31:42Z",
+      "pushed_at": "2026-09-28T20:29:51Z",
       "status": "ok"
     },
     "motorola/genevn": {
@@ -3303,6 +3759,13 @@
       "pushed_at": "2022-02-08T23:03:26Z",
       "status": "ok"
     },
+    "motorola/hannah-common": {
+      "branch": "lineage-18.1",
+      "commit": "1cfba10e85153d4fa8d4325c646bc1aafce037ed",
+      "file_count": 6,
+      "pushed_at": "2022-02-15T10:45:15Z",
+      "status": "ok"
+    },
     "motorola/harpia": {
       "branch": "lineage-18.1",
       "commit": "efffec240052296ec2a67bb96926e0dbd83bb4bb",
@@ -3330,6 +3793,13 @@
       "file_count": 7,
       "pushed_at": "2018-04-07T21:01:30Z",
       "status": "ok"
+    },
+    "motorola/jordan-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:01:28Z",
+      "status": "empty"
     },
     "motorola/jordan_plus": {
       "branch": "gingerbread",
@@ -3478,11 +3948,74 @@
       "pushed_at": "2018-04-07T21:01:59Z",
       "status": "ok"
     },
-    "motorola/msm8960_jbbl": {
-      "branch": "cm-14.1",
-      "commit": "680cf488ebc5bfbeaaeb19c7ceb77f724f30c8ec",
-      "file_count": 5,
+    "motorola/msm8226-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-07-24T18:47:54Z",
+      "status": "empty"
+    },
+    "motorola/msm8610-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:02:14Z",
+      "status": "empty"
+    },
+    "motorola/msm8916-common": {
+      "branch": "lineage-18.1",
+      "commit": "c99df45ae0ad2503273820fe12f2ea55060f5559",
+      "file_count": 8,
+      "pushed_at": "2022-11-20T08:03:38Z",
+      "status": "ok"
+    },
+    "motorola/msm8937-common": {
+      "branch": "lineage-18.1",
+      "commit": "ae102afc616b32865d95a38d048432ff0f50666f",
+      "file_count": 7,
+      "pushed_at": "2023-06-28T20:00:18Z",
+      "status": "ok"
+    },
+    "motorola/msm8960-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:19:27Z",
+      "status": "empty"
+    },
+    "motorola/msm8960_jbbl-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:19:32Z",
+      "status": "empty"
+    },
+    "motorola/msm8960dt-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:24:55Z",
+      "status": "empty"
+    },
+    "motorola/msm8998-common": {
+      "branch": "lineage-22.2",
+      "commit": "ae6f229637962cb3815d6bb539910b337c4ff782",
+      "file_count": 15,
+      "pushed_at": "2026-04-26T02:25:05Z",
+      "status": "ok"
+    },
+    "motorola/mt6768-common": {
+      "branch": "lineage-23.2",
+      "commit": "9646fa5027ce562f91119a4f6d374499be804fed",
+      "file_count": 7,
+      "pushed_at": "2026-09-17T15:54:46Z",
+      "status": "ok"
+    },
+    "motorola/mt6879-common": {
+      "branch": "lineage-23.2",
+      "commit": "1d7b52461ad5e93b93ef1e4bbbefa7e926ad6ae2",
+      "file_count": 8,
+      "pushed_at": "2026-09-26T22:20:42Z",
       "status": "ok"
     },
     "motorola/nairo": {
@@ -3534,12 +4067,12 @@
       "pushed_at": "2018-04-07T21:02:38Z",
       "status": "ok"
     },
-    "motorola/omap4": {
-      "branch": "cm-14.1",
-      "commit": "032e925b786bcd02119d9c488882856a860bd5a8",
-      "file_count": 6,
+    "motorola/omap4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:22:50Z",
-      "status": "ok"
+      "status": "empty"
     },
     "motorola/osprey": {
       "branch": "lineage-18.1",
@@ -3604,12 +4137,12 @@
       "pushed_at": "2026-07-26T04:19:12Z",
       "status": "ok"
     },
-    "motorola/qcom": {
-      "branch": "cm-14.1",
-      "commit": "afb91508a30ea952bf1138708f8467a97cda918e",
-      "file_count": 4,
+    "motorola/qcom-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:23:57Z",
-      "status": "ok"
+      "status": "empty"
     },
     "motorola/quark": {
       "branch": "cm-14.1",
@@ -3660,6 +4193,20 @@
       "pushed_at": "2026-09-16T03:18:40Z",
       "status": "ok"
     },
+    "motorola/sdm632-common": {
+      "branch": "lineage-23.0",
+      "commit": "7c003acf7ae64f4c375a1a37192a809cf82f1d3e",
+      "file_count": 8,
+      "pushed_at": "2025-09-02T03:54:16Z",
+      "status": "ok"
+    },
+    "motorola/sdm660-common": {
+      "branch": "lineage-19.1",
+      "commit": "938cd7c0ad9cbe4850e8e8bda921b1972fcf1367",
+      "file_count": 16,
+      "pushed_at": "2023-05-02T00:49:54Z",
+      "status": "ok"
+    },
     "motorola/shadow": {
       "branch": "froyo-gem_obsidian",
       "commit": "449ff331194556d2becb771817158b9c977e968b",
@@ -3672,6 +4219,69 @@
       "commit": "4544f049667463891a02d808f40c70d84eae82b1",
       "file_count": 5,
       "pushed_at": "2018-04-07T21:03:24Z",
+      "status": "ok"
+    },
+    "motorola/sm6150-common": {
+      "branch": "lineage-19.1",
+      "commit": "e54dac06e8b9789b15f414e8fbf9e85127cdda7a",
+      "file_count": 7,
+      "pushed_at": "2023-11-03T21:29:19Z",
+      "status": "ok"
+    },
+    "motorola/sm6225-common": {
+      "branch": "lineage-24.0",
+      "commit": "78b952f93518b0c97e69b678ff44b21e4f3fccdb",
+      "file_count": 6,
+      "pushed_at": "2026-09-28T21:53:50Z",
+      "status": "ok"
+    },
+    "motorola/sm6375-common": {
+      "branch": "lineage-24.0",
+      "commit": "373150694cf7213775539b89517e5a86687bc704",
+      "file_count": 6,
+      "pushed_at": "2026-09-28T20:29:58Z",
+      "status": "ok"
+    },
+    "motorola/sm7250-common": {
+      "branch": "lineage-24.0",
+      "commit": "b919da999e7aebb5973db8bc54a12959e3e792d0",
+      "file_count": 7,
+      "pushed_at": "2026-09-19T06:43:32Z",
+      "status": "ok"
+    },
+    "motorola/sm7325-common": {
+      "branch": "lineage-24.0",
+      "commit": "968c855570c5a3032ec23bd9f6ace311532225d8",
+      "file_count": 6,
+      "pushed_at": "2026-09-27T14:28:00Z",
+      "status": "ok"
+    },
+    "motorola/sm7435-common": {
+      "branch": "lineage-24.0",
+      "commit": "1578fae6fc9eeab310ab4dbef3ef6b49a3166296",
+      "file_count": 6,
+      "pushed_at": "2026-09-29T00:26:07Z",
+      "status": "ok"
+    },
+    "motorola/sm8250-common": {
+      "branch": "lineage-24.0",
+      "commit": "7beffc7ced5d89931ca33a0ca563ff0b0bb3986e",
+      "file_count": 7,
+      "pushed_at": "2026-09-06T05:25:00Z",
+      "status": "ok"
+    },
+    "motorola/sm8475-common": {
+      "branch": "lineage-24.0",
+      "commit": "6be51bf5d80096ea00fc8e373df844d0427ffeea",
+      "file_count": 6,
+      "pushed_at": "2026-09-28T05:13:02Z",
+      "status": "ok"
+    },
+    "motorola/sm8550-common": {
+      "branch": "lineage-24.0",
+      "commit": "8be8899d2cbaa64ed7597fc6d0709d363e1c3bbd",
+      "file_count": 6,
+      "pushed_at": "2026-09-24T17:42:22Z",
       "status": "ok"
     },
     "motorola/smith": {
@@ -3738,8 +4348,11 @@
       "status": "ok"
     },
     "motorola/triumph": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:34:52Z",
+      "status": "empty"
     },
     "motorola/troika": {
       "branch": "lineage-23.2",
@@ -3762,9 +4375,12 @@
       "pushed_at": "2018-04-07T21:03:47Z",
       "status": "ok"
     },
-    "motorola/vanquish": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+    "motorola/vanquish-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:58:17Z",
+      "status": "empty"
     },
     "motorola/victara": {
       "branch": "lineage-18.1",
@@ -3774,10 +4390,10 @@
       "status": "ok"
     },
     "motorola/xpeng": {
-      "branch": "lineage-23.2",
-      "commit": "d210f816e2749587c26e6a020528ea0ed647e8c4",
+      "branch": "lineage-24.0",
+      "commit": "b4ea50b824df2e76326d2cb57b55773eb02c3876",
       "file_count": 9,
-      "pushed_at": "2026-09-16T10:43:38Z",
+      "pushed_at": "2026-09-27T21:32:54Z",
       "status": "ok"
     },
     "motorola/xt1053": {
@@ -3899,6 +4515,13 @@
       "pushed_at": "2026-05-14T18:04:03Z",
       "status": "ok"
     },
+    "nokia/msm8998-common": {
+      "branch": "lineage-22.2",
+      "commit": "87d803d2afb8174e29702319646007899d48ce39",
+      "file_count": 8,
+      "pushed_at": "2026-08-16T07:22:25Z",
+      "status": "ok"
+    },
     "nokia/nb1": {
       "branch": "lineage-22.2",
       "commit": "a8f71e8998789d6862eade68594006a8f5972654",
@@ -3920,6 +4543,13 @@
       "pushed_at": "2026-03-31T11:27:55Z",
       "status": "ok"
     },
+    "nokia/sdm660-common": {
+      "branch": "lineage-22.2",
+      "commit": "6021c4799f9df86d27809787e0e7758a09520907",
+      "file_count": 8,
+      "pushed_at": "2026-04-02T02:45:17Z",
+      "status": "ok"
+    },
     "nothing/pong": {
       "branch": "lineage-23.2",
       "commit": "4c8a91e95540b0d075a66f18b4fb61092d99d510",
@@ -3932,6 +4562,13 @@
       "commit": "12105288a84b60468577c6e8ccaf410324d8033b",
       "file_count": 7,
       "pushed_at": "2026-09-17T08:46:00Z",
+      "status": "ok"
+    },
+    "nubia/msm8998-common": {
+      "branch": "lineage-22.2",
+      "commit": "d1a3824cff196d85a9ccf04b17c5b2df3484d8bb",
+      "file_count": 7,
+      "pushed_at": "2026-08-23T13:27:41Z",
       "status": "ok"
     },
     "nubia/nx512j": {
@@ -4010,6 +4647,20 @@
       "file_count": 9,
       "pushed_at": "2026-08-29T21:04:25Z",
       "status": "ok"
+    },
+    "nubia/sdm845-common": {
+      "branch": "lineage-22.2",
+      "commit": "e64b54f523835725defecdc3f4f8ad63c11aa19c",
+      "file_count": 8,
+      "pushed_at": "2026-08-07T08:45:53Z",
+      "status": "ok"
+    },
+    "nubia/sm7250-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2024-04-14T06:31:17Z",
+      "status": "empty"
     },
     "nubia/tp1803": {
       "branch": "lineage-23.2",
@@ -4137,8 +4788,8 @@
       "pushed_at": "2021-04-15T16:54:44Z",
       "status": "ok"
     },
-    "nvidia/shield": {
-      "branch": "lineage-23.2",
+    "nvidia/shield-common": {
+      "branch": "lineage-24.0",
       "commit": "3b5f044bf4647644700a85b845c17b1a885821f5",
       "file_count": 0,
       "pushed_at": "2026-08-14T22:11:43Z",
@@ -4158,51 +4809,51 @@
       "pushed_at": "2026-08-14T22:13:54Z",
       "status": "ok"
     },
-    "nvidia/t114": {
-      "branch": "lineage-16.0",
-      "commit": "a36ce69f65af635c42dda9b2e871503d82e9efbf",
-      "file_count": 3,
+    "nvidia/t114-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-04-15T16:55:31Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "nvidia/t124": {
+    "nvidia/t124-common": {
       "branch": "lineage-18.1",
       "commit": "d0ce1e35000dc1fbfa4d6ba6b778b36ffaa12612",
       "file_count": 3,
       "pushed_at": "2022-11-21T21:20:45Z",
       "status": "ok"
     },
-    "nvidia/t186": {
-      "branch": "lineage-23.2",
+    "nvidia/t186-common": {
+      "branch": "lineage-24.0",
       "commit": "92ecc142c3375385cc12aca3535922c4b2dfd71f",
       "file_count": 5,
       "pushed_at": "2026-08-14T22:12:14Z",
       "status": "ok"
     },
-    "nvidia/t194": {
-      "branch": "lineage-23.2",
+    "nvidia/t194-common": {
+      "branch": "lineage-24.0",
       "commit": "b896b72a8c48e45d30ed9661f89739d8e8d67c60",
       "file_count": 5,
       "pushed_at": "2026-08-14T22:12:23Z",
       "status": "ok"
     },
-    "nvidia/t210": {
-      "branch": "lineage-23.2",
+    "nvidia/t210-common": {
+      "branch": "lineage-24.0",
       "commit": "c2c9cd3f3c3971af110a2a4d2cd7878b74fdec6d",
       "file_count": 5,
-      "pushed_at": "2026-09-27T19:25:45Z",
+      "pushed_at": "2026-09-29T00:41:29Z",
       "status": "ok"
     },
-    "nvidia/t234": {
-      "branch": "lineage-23.2",
+    "nvidia/t234-common": {
+      "branch": "lineage-24.0",
       "commit": "f93af25beffa2e7e4f948dd161f2844fc5f6d404",
       "file_count": 5,
       "pushed_at": "2026-08-14T22:12:31Z",
       "status": "ok"
     },
-    "nvidia/tegra": {
-      "branch": "lineage-23.2",
-      "commit": "38177fe731b6145a2c1c89eb1a983dc4a8037c7d",
+    "nvidia/tegra-common": {
+      "branch": "lineage-24.0",
+      "commit": "dbfa4e2527cab60b85e7e98fee52c4f1b2025f7a",
       "file_count": 3,
       "pushed_at": "2026-09-23T18:42:16Z",
       "status": "ok"
@@ -4291,6 +4942,13 @@
       "pushed_at": "2025-07-21T02:56:11Z",
       "status": "ok"
     },
+    "oneplus/common": {
+      "branch": "lineage-18.1",
+      "commit": "e37c822fc6b6451a66b6456b0d116b821bdbd42c",
+      "file_count": 1,
+      "pushed_at": "2021-05-10T10:34:39Z",
+      "status": "ok"
+    },
     "oneplus/corvette": {
       "branch": "lineage-23.2",
       "commit": "95c0c20f713ef33ce6edc00e35e2f5644edb5eef",
@@ -4299,10 +4957,10 @@
       "status": "ok"
     },
     "oneplus/dodge": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "75c3a614086d78db259a5794ec38b3e929d80554",
       "file_count": 7,
-      "pushed_at": "2026-09-27T18:41:11Z",
+      "pushed_at": "2026-09-28T20:49:43Z",
       "status": "ok"
     },
     "oneplus/dre": {
@@ -4327,17 +4985,17 @@
       "status": "ok"
     },
     "oneplus/erhai": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "5539cd06eef5bfa647c86f971137c8c2e6ca2577",
       "file_count": 7,
-      "pushed_at": "2026-09-27T18:41:26Z",
+      "pushed_at": "2026-09-28T20:50:24Z",
       "status": "ok"
     },
     "oneplus/fairlady": {
       "branch": "lineage-24.0",
       "commit": "c529dddc06ad55e84b05572fd37d748fd314d0ed",
       "file_count": 7,
-      "pushed_at": "2026-09-27T18:40:16Z",
+      "pushed_at": "2026-09-28T22:36:05Z",
       "status": "ok"
     },
     "oneplus/fajita": {
@@ -4407,7 +5065,7 @@
       "branch": "lineage-24.0",
       "commit": "d56ed5fa8035961ecab8ae067061e20dc0a8f560",
       "file_count": 7,
-      "pushed_at": "2026-09-27T12:42:23Z",
+      "pushed_at": "2026-09-28T22:36:43Z",
       "status": "ok"
     },
     "oneplus/instantnoodle": {
@@ -4480,6 +5138,13 @@
       "pushed_at": "2026-09-02T22:00:18Z",
       "status": "ok"
     },
+    "oneplus/msm8998-common": {
+      "branch": "lineage-22.2",
+      "commit": "213a9c24ebcc555c67fde3af8c7c7951502b20cd",
+      "file_count": 8,
+      "pushed_at": "2026-09-25T22:00:19Z",
+      "status": "ok"
+    },
     "oneplus/oneplus2": {
       "branch": "lineage-17.1",
       "commit": "8e47d591dcc795a784c8a0b43cdc70bb926ce9f5",
@@ -4509,14 +5174,87 @@
       "status": "ok"
     },
     "oneplus/ovaltine": {
-      "error": "fatal: Remote branch main not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2025-01-29T17:36:32Z",
+      "status": "empty"
     },
     "oneplus/salami": {
-      "branch": "lineage-23.2",
-      "commit": "e4a4840f40e3e75d6f7850430dec0c924002952e",
+      "branch": "lineage-24.0",
+      "commit": "ba39228718c28c8aa0e46c48f89f9e8ba9450467",
       "file_count": 7,
-      "pushed_at": "2026-09-12T00:38:05Z",
+      "pushed_at": "2026-09-28T20:32:10Z",
+      "status": "ok"
+    },
+    "oneplus/sdm845-common": {
+      "branch": "lineage-23.2",
+      "commit": "ed71e26a59ddca84832c6b0a9c2e2079198fcd2a",
+      "file_count": 8,
+      "pushed_at": "2026-09-11T10:22:35Z",
+      "status": "ok"
+    },
+    "oneplus/sm6375-common": {
+      "branch": "lineage-24.0",
+      "commit": "b9de2fcbb26e1e3b136d664a74f9b8a541a8ccd0",
+      "file_count": 7,
+      "pushed_at": "2026-09-17T02:55:08Z",
+      "status": "ok"
+    },
+    "oneplus/sm8150-common": {
+      "branch": "lineage-24.0",
+      "commit": "6cdabfa3f3c930975f6e1ac0916a2251610add65",
+      "file_count": 6,
+      "pushed_at": "2026-09-18T08:18:24Z",
+      "status": "ok"
+    },
+    "oneplus/sm8250-common": {
+      "branch": "lineage-24.0",
+      "commit": "97cc8701359f2554225d0761e3f285311b27dd95",
+      "file_count": 6,
+      "pushed_at": "2026-09-13T17:10:34Z",
+      "status": "ok"
+    },
+    "oneplus/sm8350-common": {
+      "branch": "lineage-24.0",
+      "commit": "88ef16a01303b36544633ee55c2d9bf413d4bd3c",
+      "file_count": 6,
+      "pushed_at": "2026-09-16T22:00:19Z",
+      "status": "ok"
+    },
+    "oneplus/sm8450-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2025-01-29T17:36:30Z",
+      "status": "empty"
+    },
+    "oneplus/sm8550-common": {
+      "branch": "lineage-24.0",
+      "commit": "abb530767d5719f7089f860c2242c65c222d9bde",
+      "file_count": 5,
+      "pushed_at": "2026-09-28T23:03:11Z",
+      "status": "ok"
+    },
+    "oneplus/sm8650-common": {
+      "branch": "lineage-23.2",
+      "commit": "5cf61acbc4a1168e1481cefed014c8801850e766",
+      "file_count": 6,
+      "pushed_at": "2026-09-28T14:58:19Z",
+      "status": "ok"
+    },
+    "oneplus/sm8750-common": {
+      "branch": "lineage-24.0",
+      "commit": "f87c3392ecd15992bde1405e7b0ee150162734bf",
+      "file_count": 5,
+      "pushed_at": "2026-09-28T23:54:53Z",
+      "status": "ok"
+    },
+    "oneplus/sm8850-common": {
+      "branch": "lineage-24.0",
+      "commit": "d4de3ab15421d3117265bb135e9770f749105c86",
+      "file_count": 5,
+      "pushed_at": "2026-09-28T20:49:10Z",
       "status": "ok"
     },
     "oneplus/waffle": {
@@ -4527,17 +5265,24 @@
       "status": "ok"
     },
     "oneplus/xueying": {
-      "branch": "lineage-23.2",
-      "commit": "b40377e20ce6cccee8bf18eab1eab578f13cd2fa",
+      "branch": "lineage-24.0",
+      "commit": "e03ffb6b692c0e7cf4883f5d7e927659a72a41fc",
       "file_count": 7,
-      "pushed_at": "2026-09-12T00:38:00Z",
+      "pushed_at": "2026-09-29T00:03:11Z",
       "status": "ok"
     },
-    "oppo/apq8064": {
-      "branch": "cm-11.0",
-      "commit": "cbbf09897900a4aa62f27ba925ea353e5c50c81d",
-      "file_count": 5,
+    "oppo/apq8064-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:05:40Z",
+      "status": "empty"
+    },
+    "oppo/common": {
+      "branch": "lineage-18.1",
+      "commit": "1d1f3bee0eb8f86b6e1f44a2a65fcb98edc72453",
+      "file_count": 3,
+      "pushed_at": "2024-02-13T14:41:44Z",
       "status": "ok"
     },
     "oppo/f1f": {
@@ -4561,11 +5306,32 @@
       "pushed_at": "2022-11-20T08:04:25Z",
       "status": "ok"
     },
+    "oppo/find7-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:05:53Z",
+      "status": "empty"
+    },
     "oppo/find7s": {
       "branch": "cm-14.1",
       "commit": "d3bade3844f7e6c0feaa1a5b44c70b961a7d7631",
       "file_count": 5,
       "pushed_at": "2018-04-07T21:06:04Z",
+      "status": "ok"
+    },
+    "oppo/msm8939-common": {
+      "branch": "lineage-17.1",
+      "commit": "e345035411c6324971009b206b273dd102d352bf",
+      "file_count": 6,
+      "pushed_at": "2022-11-20T08:04:27Z",
+      "status": "ok"
+    },
+    "oppo/msm8974-common": {
+      "branch": "lineage-18.1",
+      "commit": "06cfb4bc7c7a4a437e321efdfc2f8520fec9a718",
+      "file_count": 7,
+      "pushed_at": "2026-01-31T21:07:57Z",
       "status": "ok"
     },
     "oppo/n1": {
@@ -4625,17 +5391,17 @@
       "status": "ok"
     },
     "osom/ingot": {
-      "branch": "lineage-23.2",
-      "commit": "1fad057745cad45f54e8b01a6fbae9881a9433f3",
+      "branch": "lineage-24.0",
+      "commit": "5993b7ab6f3c67d10787d79360cd6bd9605db86a",
       "file_count": 8,
-      "pushed_at": "2026-09-17T03:14:43Z",
+      "pushed_at": "2026-09-29T00:19:03Z",
       "status": "ok"
     },
     "osom/pyrite": {
-      "branch": "lineage-23.2",
-      "commit": "ee037d489648113735aa8fd6ad72224d6888c8a6",
+      "branch": "lineage-24.0",
+      "commit": "6fc60049bf497561e489e4c59a34562098de77cd",
       "file_count": 8,
-      "pushed_at": "2026-09-27T14:41:22Z",
+      "pushed_at": "2026-09-29T00:14:23Z",
       "status": "ok"
     },
     "pantech/presto": {
@@ -4652,12 +5418,26 @@
       "pushed_at": "2026-09-17T16:00:46Z",
       "status": "ok"
     },
+    "qcom/common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-11-06T04:56:59Z",
+      "status": "empty"
+    },
     "qcom/msm8916_64": {
       "branch": "LA.BR.1.2.6_rb1.12",
       "commit": "d8e2364431f1be999b657034a1af3a977f1a2ed1",
       "file_count": 3,
       "pushed_at": "2018-04-07T21:06:52Z",
       "status": "ok"
+    },
+    "qcom/msm8996": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:06:50Z",
+      "status": "empty"
     },
     "radxa/radxa0": {
       "branch": "lineage-23.2",
@@ -4730,10 +5510,10 @@
       "status": "ok"
     },
     "razer/nicole": {
-      "branch": "lineage-23.2",
-      "commit": "36943b4fd4574f5b1caea0e7c45b9493d34a8381",
+      "branch": "lineage-24.0",
+      "commit": "6786c899f9047771991f44d23ba516b2efc6437a",
       "file_count": 8,
-      "pushed_at": "2026-09-27T14:41:09Z",
+      "pushed_at": "2026-09-29T00:15:21Z",
       "status": "ok"
     },
     "realme/bale": {
@@ -4799,6 +5579,13 @@
       "pushed_at": "2022-11-20T08:04:33Z",
       "status": "ok"
     },
+    "realme/sm6375-common": {
+      "branch": "lineage-24.0",
+      "commit": "4dec33eb4ae0cb1e8566fb6424efcfc460bfef50",
+      "file_count": 7,
+      "pushed_at": "2026-09-15T13:38:15Z",
+      "status": "ok"
+    },
     "retroidpocket/rp6": {
       "branch": "lineage-23.2",
       "commit": "58372a499b4f6dd38b4f2985f1b00b8578e948cb",
@@ -4818,6 +5605,13 @@
       "commit": "d1df7743efe85a8d1b68bb9fced066d1086c0502",
       "file_count": 7,
       "pushed_at": "2026-07-23T21:59:31Z",
+      "status": "ok"
+    },
+    "samsung/a21s-common": {
+      "branch": "lineage-24.0",
+      "commit": "1137b66610be271b3556080d074923b382085c8e",
+      "file_count": 7,
+      "pushed_at": "2026-09-25T18:05:40Z",
       "status": "ok"
     },
     "samsung/a3xelte": {
@@ -4883,6 +5677,13 @@
       "pushed_at": "2026-08-14T21:25:29Z",
       "status": "ok"
     },
+    "samsung/a71-common": {
+      "branch": "lineage-24.0",
+      "commit": "79a66bc396ea4dbadaaf31030690933378714910",
+      "file_count": 10,
+      "pushed_at": "2026-08-15T11:50:04Z",
+      "status": "ok"
+    },
     "samsung/a72q": {
       "branch": "lineage-23.2",
       "commit": "4a0f14f0e4f5f7de11d0b5d8d6d8c6ac195b4cc1",
@@ -4912,8 +5713,11 @@
       "status": "ok"
     },
     "samsung/amazing3gcri": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T14:48:58Z",
+      "status": "empty"
     },
     "samsung/apexqtmo": {
       "branch": "cm-10.2",
@@ -4922,19 +5726,19 @@
       "pushed_at": "2018-04-07T21:07:09Z",
       "status": "ok"
     },
-    "samsung/apq8084": {
-      "branch": "lineage-16.0",
-      "commit": "6f94a35102200495d67e3ffae7d7197e2906e315",
-      "file_count": 7,
+    "samsung/apq8084-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:04:37Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "samsung/aries": {
-      "branch": "cm-10.1-staging",
-      "commit": "593cf8f59c33c98bee667dcbcfa1f4080e839b99",
-      "file_count": 5,
+    "samsung/aries-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:07:19Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/b0s": {
       "branch": "lineage-23.2",
@@ -4978,18 +5782,18 @@
       "pushed_at": "2016-12-27T19:44:22Z",
       "status": "ok"
     },
-    "samsung/c1": {
-      "branch": "gb-release-7.2",
-      "commit": "2cd0b405fa1c172e8302f480c504410d03371545",
-      "file_count": 1,
+    "samsung/c1-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:07:31Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/c1s": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "c71ac5d13cf09dd7b7cf219015de0fbccce75dc7",
       "file_count": 8,
-      "pushed_at": "2026-09-27T16:35:20Z",
+      "pushed_at": "2026-09-28T16:21:53Z",
       "status": "ok"
     },
     "samsung/c2s": {
@@ -5006,19 +5810,19 @@
       "pushed_at": "2018-04-07T21:07:26Z",
       "status": "ok"
     },
-    "samsung/celox": {
-      "branch": "cm-10.1-staging",
-      "commit": "203f3ce9eb6081755852c70388620fd1d798fb75",
-      "file_count": 2,
+    "samsung/celox-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:07:24Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "samsung/chagall": {
-      "branch": "cm-12.1",
-      "commit": "ac0d794a3fdb1b5c9df761f21415d9511ddab3a5",
-      "file_count": 1,
+    "samsung/chagall-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:07:39Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/chagalllte": {
       "branch": "cm-14.1",
@@ -5042,8 +5846,18 @@
       "status": "ok"
     },
     "samsung/charge": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:33:39Z",
+      "status": "empty"
+    },
+    "samsung/common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-01-21T14:14:14Z",
+      "status": "empty"
     },
     "samsung/cooper": {
       "branch": "gb-release-7.2",
@@ -5087,12 +5901,12 @@
       "pushed_at": "2026-09-15T18:24:42Z",
       "status": "ok"
     },
-    "samsung/d2": {
-      "branch": "cm-14.1",
-      "commit": "e16e7463af1968700faac62c5d8ef3b47fc3e12b",
-      "file_count": 5,
+    "samsung/d2-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:22:38Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/d2att": {
       "branch": "cm-14.1",
@@ -5193,8 +6007,11 @@
       "status": "ok"
     },
     "samsung/epic4g": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:33:05Z",
+      "status": "empty"
     },
     "samsung/epicmtd": {
       "branch": "cm-10.1-staging",
@@ -5203,12 +6020,12 @@
       "pushed_at": "2018-04-07T21:08:47Z",
       "status": "ok"
     },
-    "samsung/espresso": {
-      "branch": "cm-14.1",
-      "commit": "113a2b93675cb0159a9611af251bcdc952e3fe97",
-      "file_count": 8,
+    "samsung/espresso-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:08:45Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/espresso3g": {
       "branch": "cm-14.1",
@@ -5238,25 +6055,28 @@
       "pushed_at": "2018-04-07T21:09:03Z",
       "status": "ok"
     },
-    "samsung/exynos": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+    "samsung/exynos-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2017-02-13T16:46:51Z",
+      "status": "empty"
     },
-    "samsung/exynos5420": {
-      "branch": "lineage-15.1",
-      "commit": "8a13ded2d6b4ff97d91d0110bdb8ce04f36e5d88",
-      "file_count": 5,
+    "samsung/exynos5420-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:04:49Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "samsung/exynos9810": {
-      "branch": "lineage-20",
-      "commit": "4aaa1075094e13834a1f769dddac51601085d89d",
-      "file_count": 9,
+    "samsung/exynos9810-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2025-04-07T22:00:20Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "samsung/exynos9820": {
+    "samsung/exynos9820-common": {
       "branch": "lineage-23.2",
       "commit": "38af956a4eec889cb352b4fd42e5e801c19a51b8",
       "file_count": 11,
@@ -5278,8 +6098,11 @@
       "status": "ok"
     },
     "samsung/fascinate": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:32:56Z",
+      "status": "empty"
     },
     "samsung/fascinatemtd": {
       "branch": "cm-10.1-staging",
@@ -5303,14 +6126,24 @@
       "status": "ok"
     },
     "samsung/galaxyace": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:34:15Z",
+      "status": "empty"
     },
     "samsung/galaxys2": {
       "branch": "cm-9.0.0",
       "commit": "5f88e80ee96d1b7fd02a3e5bb5316c40c5384ad8",
       "file_count": 5,
       "pushed_at": "2018-04-07T21:09:11Z",
+      "status": "ok"
+    },
+    "samsung/galaxys2-common": {
+      "branch": "lineage-17.0",
+      "commit": "bead14adae2f9f67d9027f7fcb04aee628ea0554",
+      "file_count": 5,
+      "pushed_at": "2022-11-20T08:04:51Z",
       "status": "ok"
     },
     "samsung/galaxys2att": {
@@ -5335,8 +6168,11 @@
       "status": "ok"
     },
     "samsung/golden": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:57:11Z",
+      "status": "empty"
     },
     "samsung/gprimelte": {
       "branch": "cm-14.1",
@@ -5344,6 +6180,13 @@
       "file_count": 7,
       "pushed_at": "2018-04-07T21:09:32Z",
       "status": "ok"
+    },
+    "samsung/gprimelte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:09:29Z",
+      "status": "empty"
     },
     "samsung/gprimeltespr": {
       "branch": "cm-14.1",
@@ -5373,6 +6216,13 @@
       "pushed_at": "2026-09-24T18:33:10Z",
       "status": "ok"
     },
+    "samsung/gta4l-common": {
+      "branch": "lineage-24.0",
+      "commit": "9c98611eab55ad2b0dde94490ba8cdffc4a3ce09",
+      "file_count": 8,
+      "pushed_at": "2026-09-24T18:48:19Z",
+      "status": "ok"
+    },
     "samsung/gta4lwifi": {
       "branch": "lineage-23.2",
       "commit": "5f474513c2180126e27f28cf2862f705936fa289",
@@ -5382,12 +6232,26 @@
     },
     "samsung/gta4xl": {
       "branch": "lineage-23.2",
+      "commit": "a56bd59d139dd543f18d0e33ff5564f243805af2",
+      "file_count": 7,
+      "pushed_at": "2026-02-09T11:44:30Z",
+      "status": "ok"
+    },
+    "samsung/gta4xl-common": {
+      "branch": "lineage-23.2",
       "commit": "b7dc0f1b0b0b51d19292d6235b7c87d76cdf2c94",
       "file_count": 7,
       "pushed_at": "2026-09-15T18:25:08Z",
       "status": "ok"
     },
     "samsung/gta4xls": {
+      "branch": "lineage-23.2",
+      "commit": "1e990591469e99e26149136305fe7b74ffcca8af",
+      "file_count": 7,
+      "pushed_at": "2026-06-11T12:39:53Z",
+      "status": "ok"
+    },
+    "samsung/gta4xls-common": {
       "branch": "lineage-23.2",
       "commit": "0f6472b04ff59fc82de9dc94a6ae6454f17738f1",
       "file_count": 7,
@@ -5408,12 +6272,12 @@
       "pushed_at": "2026-01-24T07:16:11Z",
       "status": "ok"
     },
-    "samsung/gte": {
-      "branch": "cm-14.1",
-      "commit": "c7a77448964d5e4171f426809d84e2221365450b",
-      "file_count": 5,
+    "samsung/gte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:09:55Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/gtelwifiue": {
       "branch": "cm-14.1",
@@ -5436,12 +6300,12 @@
       "pushed_at": "2025-09-02T06:07:07Z",
       "status": "ok"
     },
-    "samsung/gts2": {
-      "branch": "lineage-15.1",
-      "commit": "0f358b1dfa3aced78749da7dcfdbf2ce0e4b5b86",
-      "file_count": 6,
+    "samsung/gts2-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:18:48Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/gts210ltexx": {
       "branch": "lineage-15.1",
@@ -5501,14 +6365,24 @@
     },
     "samsung/gts4lv": {
       "branch": "lineage-22.2",
+      "commit": "3260fd2c4f1abcf0303485afa9fa4a7b3faec98b",
+      "file_count": 8,
+      "pushed_at": "2025-06-16T22:41:19Z",
+      "status": "ok"
+    },
+    "samsung/gts4lv-common": {
+      "branch": "lineage-22.2",
       "commit": "d1b339be7abea07f62fef2bee3b7a2006694df67",
       "file_count": 8,
       "pushed_at": "2025-10-06T09:50:03Z",
       "status": "ok"
     },
     "samsung/gts4lv_car": {
-      "error": "fatal: Remote branch main not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2024-02-17T20:07:26Z",
+      "status": "empty"
     },
     "samsung/gts4lvwifi": {
       "branch": "lineage-22.2",
@@ -5566,12 +6440,12 @@
       "pushed_at": "2018-04-07T21:10:34Z",
       "status": "ok"
     },
-    "samsung/hero": {
-      "branch": "lineage-15.1",
-      "commit": "0d5055b5722313b6933c51cb26fc4db3ae667b04",
-      "file_count": 5,
+    "samsung/hero-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:05:00Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/hero2lte": {
       "branch": "lineage-18.1",
@@ -5588,22 +6462,38 @@
       "status": "ok"
     },
     "samsung/herring": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:32:18Z",
+      "status": "empty"
     },
     "samsung/hl3g": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:45:10Z",
+      "status": "empty"
     },
     "samsung/hllte": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-05-15T06:55:11Z",
+      "status": "empty"
     },
     "samsung/hlte": {
       "branch": "lineage-18.1",
       "commit": "2b55024fb76b8a8ebd4dc3412fbd15c453282e2f",
       "file_count": 6,
       "pushed_at": "2022-11-20T08:05:02Z",
+      "status": "ok"
+    },
+    "samsung/hlte-common": {
+      "branch": "lineage-18.1",
+      "commit": "ed41c427d76168944a2c540baca16769b698bef9",
+      "file_count": 6,
+      "pushed_at": "2022-11-20T08:05:03Z",
       "status": "ok"
     },
     "samsung/hltecan": {
@@ -5712,8 +6602,11 @@
       "status": "ok"
     },
     "samsung/i927": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:56:22Z",
+      "status": "empty"
     },
     "samsung/i9300": {
       "branch": "cm-14.1",
@@ -5743,12 +6636,12 @@
       "pushed_at": "2023-01-06T21:00:18Z",
       "status": "ok"
     },
-    "samsung/j7lte": {
-      "branch": "cm-14.1",
-      "commit": "c460cfcce01ac3b4f9d04a265f2013773722e79b",
-      "file_count": 5,
+    "samsung/j7lte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:12:11Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/j7ltespr": {
       "branch": "cm-14.1",
@@ -5764,7 +6657,7 @@
       "pushed_at": "2021-04-12T18:24:21Z",
       "status": "ok"
     },
-    "samsung/jf": {
+    "samsung/jf-common": {
       "branch": "lineage-18.1",
       "commit": "5c8c1b8e9ec738faaa9d164e7dc80a5b65ae7831",
       "file_count": 8,
@@ -5862,12 +6755,12 @@
       "pushed_at": "2019-04-06T07:07:47Z",
       "status": "ok"
     },
-    "samsung/klimt": {
-      "branch": "cm-12.1",
-      "commit": "dc247e693c9893b5b57deee7e812182d2529bb73",
-      "file_count": 2,
+    "samsung/klimt-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:13:02Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/klimtlte": {
       "branch": "cm-14.1",
@@ -5884,6 +6777,13 @@
       "status": "ok"
     },
     "samsung/klte": {
+      "branch": "lineage-18.1",
+      "commit": "ec20f8cdb1622007ed030a950d4dea310085e0cf",
+      "file_count": 6,
+      "pushed_at": "2024-01-02T18:04:25Z",
+      "status": "ok"
+    },
+    "samsung/klte-common": {
       "branch": "lineage-18.1",
       "commit": "8f71a63415397def5ba886f4030b0d91e2253262",
       "file_count": 6,
@@ -5974,12 +6874,12 @@
       "pushed_at": "2018-04-07T21:14:05Z",
       "status": "ok"
     },
-    "samsung/kona": {
-      "branch": "cm-14.1",
-      "commit": "f4baea094f4344932e2c267280a86f6760ea4fda",
-      "file_count": 5,
+    "samsung/kona-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:24:26Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/ks01lte": {
       "branch": "cm-14.1",
@@ -5989,16 +6889,25 @@
       "status": "ok"
     },
     "samsung/kylepro": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:46:07Z",
+      "status": "empty"
     },
     "samsung/kyleprods": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:46:07Z",
+      "status": "empty"
     },
     "samsung/kyleve": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:46:07Z",
+      "status": "empty"
     },
     "samsung/l900": {
       "branch": "cm-14.1",
@@ -6014,12 +6923,12 @@
       "pushed_at": "2019-04-06T07:08:03Z",
       "status": "ok"
     },
-    "samsung/lt02lte": {
-      "branch": "cm-14.1",
-      "commit": "3a8896061fbcc588aa3286c309657b8bfe0821c4",
-      "file_count": 5,
+    "samsung/lt02lte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:14:15Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/lt02ltespr": {
       "branch": "cm-14.1",
@@ -6105,12 +7014,12 @@
       "pushed_at": "2021-12-11T22:24:38Z",
       "status": "ok"
     },
-    "samsung/ms01": {
-      "branch": "lineage-16.0",
-      "commit": "7141aad061c551a4f5b294f40718b34adf5d9211",
-      "file_count": 6,
+    "samsung/ms01-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2020-05-29T08:15:08Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/ms013g": {
       "branch": "lineage-16.0",
@@ -6118,6 +7027,55 @@
       "file_count": 7,
       "pushed_at": "2020-05-23T15:16:59Z",
       "status": "ok"
+    },
+    "samsung/msm8226-common": {
+      "branch": "lineage-18.1",
+      "commit": "702c16ad3616ecb61cd64a31aa56f37495f4e192",
+      "file_count": 7,
+      "pushed_at": "2023-12-19T22:00:18Z",
+      "status": "ok"
+    },
+    "samsung/msm8660-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:15:13Z",
+      "status": "empty"
+    },
+    "samsung/msm8916-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:20:49Z",
+      "status": "empty"
+    },
+    "samsung/msm8930-common": {
+      "branch": "lineage-18.1",
+      "commit": "e9f153c41e13c5b1f1da55d0750befdb2c08849b",
+      "file_count": 4,
+      "pushed_at": "2022-11-20T08:05:25Z",
+      "status": "ok"
+    },
+    "samsung/msm8960-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:05:26Z",
+      "status": "empty"
+    },
+    "samsung/msm8974-common": {
+      "branch": "lineage-18.1",
+      "commit": "76e37827c12dec17bd28ff7209f49c8fd6b5974e",
+      "file_count": 6,
+      "pushed_at": "2025-05-01T04:28:32Z",
+      "status": "ok"
+    },
+    "samsung/msm8976-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:05:28Z",
+      "status": "empty"
     },
     "samsung/n1awifi": {
       "branch": "cm-14.1",
@@ -6182,19 +7140,19 @@
       "pushed_at": "2018-04-07T21:15:52Z",
       "status": "ok"
     },
-    "samsung/n80xx": {
-      "branch": "cm-14.1",
-      "commit": "a2bfbcade9d045888e53b0ceb1979e2a417cbf3f",
-      "file_count": 4,
+    "samsung/n80xx-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2019-03-16T16:19:55Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "samsung/noblelte": {
-      "branch": "cm-14.1",
-      "commit": "d37c575fa44809034fa0fd45e062f035f215c469",
-      "file_count": 5,
+    "samsung/noblelte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:24:22Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/nobleltejv": {
       "branch": "cm-14.1",
@@ -6210,12 +7168,12 @@
       "pushed_at": "2018-04-07T21:15:57Z",
       "status": "ok"
     },
-    "samsung/omap4": {
-      "branch": "cm-10.1-staging",
-      "commit": "bc2f96cd7b83d2259b2d9bd0d4183345eec8f720",
-      "file_count": 4,
+    "samsung/omap4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:16:17Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/p1": {
       "branch": "cm-9.0.0",
@@ -6223,6 +7181,13 @@
       "file_count": 5,
       "pushed_at": "2018-04-07T21:16:15Z",
       "status": "ok"
+    },
+    "samsung/p1-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:16:26Z",
+      "status": "empty"
     },
     "samsung/p1c": {
       "branch": "cm-9.0.0",
@@ -6274,18 +7239,25 @@
       "status": "ok"
     },
     "samsung/p4": {
-      "branch": "cm-10.1",
-      "commit": "997a9e479036e5c6cf547b0c409f6d19e128be70",
-      "file_count": 1,
-      "pushed_at": "2018-04-07T21:16:42Z",
-      "status": "ok"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:16:43Z",
+      "status": "empty"
     },
-    "samsung/p4notelte": {
-      "branch": "cm-14.1",
-      "commit": "9a745a5b8f6f0ffaa6776cc27ddc9c7949b3849f",
-      "file_count": 4,
+    "samsung/p4-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:16:42Z",
+      "status": "empty"
+    },
+    "samsung/p4notelte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:16:49Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/p4tmo": {
       "branch": "cm-10.1",
@@ -6314,6 +7286,13 @@
       "file_count": 6,
       "pushed_at": "2016-12-27T19:46:56Z",
       "status": "ok"
+    },
+    "samsung/p5-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:46:56Z",
+      "status": "empty"
     },
     "samsung/p5100": {
       "branch": "cm-10.1-staging",
@@ -6351,8 +7330,11 @@
       "status": "ok"
     },
     "samsung/p7100": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:34:01Z",
+      "status": "empty"
     },
     "samsung/picassowifi": {
       "branch": "cm-11.0",
@@ -6369,22 +7351,25 @@
       "status": "ok"
     },
     "samsung/prevail2spr": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:57:05Z",
+      "status": "empty"
     },
-    "samsung/qcom": {
+    "samsung/qcom-common": {
       "branch": "lineage-22.2",
       "commit": "3f56559a5436fd7be36fc6b7010ed3506ebe6e08",
       "file_count": 3,
       "pushed_at": "2025-03-12T22:31:03Z",
       "status": "ok"
     },
-    "samsung/quincy": {
-      "branch": "cm-10.1-staging",
-      "commit": "44472e70e3f48c2d559ac4e483cac1adef68e015",
-      "file_count": 2,
+    "samsung/quincy-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:17:25Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/quincyatt": {
       "branch": "cm-10.1-staging",
@@ -6442,6 +7427,13 @@
       "pushed_at": "2018-04-07T21:17:39Z",
       "status": "ok"
     },
+    "samsung/s3ve3g-common": {
+      "branch": "lineage-18.1",
+      "commit": "cd08f8d8b81bc305168dab17d77b4c780999f938",
+      "file_count": 7,
+      "pushed_at": "2022-11-20T08:05:41Z",
+      "status": "ok"
+    },
     "samsung/s3ve3gds": {
       "branch": "lineage-18.1",
       "commit": "3697b74dd6b6943cfd6166cf1774c9757ad756da",
@@ -6470,9 +7462,9 @@
       "pushed_at": "2016-12-27T19:47:12Z",
       "status": "ok"
     },
-    "samsung/s5e9925": {
-      "branch": "lineage-23.2",
-      "commit": "7be96871126c07d6d51d250a4e0048b58e94eb63",
+    "samsung/s5e9925-common": {
+      "branch": "lineage-24.0",
+      "commit": "ea9daee5f779fb9f321c65c7e1c2ecb4cdd6613f",
       "file_count": 8,
       "pushed_at": "2026-09-23T19:35:57Z",
       "status": "ok"
@@ -6491,7 +7483,7 @@
       "pushed_at": "2016-12-27T19:47:13Z",
       "status": "ok"
     },
-    "samsung/serrano": {
+    "samsung/serrano-common": {
       "branch": "lineage-18.1",
       "commit": "0ef37933d94e36a5c1fa913d229e1b45f733ced8",
       "file_count": 6,
@@ -6540,19 +7532,75 @@
       "pushed_at": "2026-09-26T11:22:55Z",
       "status": "empty"
     },
-    "samsung/smdk4412-qcom": {
-      "branch": "cm-14.1",
-      "commit": "9daa268ebd9742f416b84b13c5884576b8da2063",
-      "file_count": 1,
-      "pushed_at": "2021-12-11T22:24:53Z",
+    "samsung/sm6150-common": {
+      "branch": "lineage-22.2",
+      "commit": "678c81a1471b4b32a3e8148696cd0df00455b5fb",
+      "file_count": 10,
+      "pushed_at": "2026-09-28T07:42:06Z",
       "status": "ok"
     },
-    "samsung/star": {
-      "branch": "lineage-15.1",
-      "commit": "1b0d73e3688f7fc7bea8145ab29f8628e2277b44",
-      "file_count": 6,
-      "pushed_at": "2022-11-20T08:05:47Z",
+    "samsung/sm7125-common": {
+      "branch": "lineage-24.0",
+      "commit": "865ff7e3742428d282f17b4995f8d37908b7ca82",
+      "file_count": 10,
+      "pushed_at": "2026-09-27T14:00:05Z",
       "status": "ok"
+    },
+    "samsung/sm7325-common": {
+      "branch": "lineage-24.0",
+      "commit": "5a5b0449857403249239f9c69ab7972445f20199",
+      "file_count": 9,
+      "pushed_at": "2026-09-27T10:02:35Z",
+      "status": "ok"
+    },
+    "samsung/sm8150-common": {
+      "branch": "lineage-17.1",
+      "commit": "a5305d2cd5be70a91310eca282b9bd3e64f8de50",
+      "file_count": 7,
+      "pushed_at": "2020-12-23T13:50:40Z",
+      "status": "ok"
+    },
+    "samsung/sm8250-common": {
+      "branch": "lineage-24.0",
+      "commit": "a3fea588eaed675b57157429b920db04cefc16d4",
+      "file_count": 8,
+      "pushed_at": "2026-09-06T09:02:19Z",
+      "status": "ok"
+    },
+    "samsung/sm8550-common": {
+      "branch": "lineage-24.0",
+      "commit": "a2b8dc0b0b6f54ff40ac51b0eacfa93d2732fadf",
+      "file_count": 8,
+      "pushed_at": "2026-09-27T10:44:33Z",
+      "status": "ok"
+    },
+    "samsung/smdk4412-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:24:26Z",
+      "status": "empty"
+    },
+    "samsung/smdk4412-qcom-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:24:53Z",
+      "status": "empty"
+    },
+    "samsung/smdk5260-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:47:23Z",
+      "status": "empty"
+    },
+    "samsung/star-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:05:47Z",
+      "status": "empty"
     },
     "samsung/star2lte": {
       "branch": "lineage-20",
@@ -6625,8 +7673,11 @@
       "status": "ok"
     },
     "samsung/t0ltespr": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:56:46Z",
+      "status": "empty"
     },
     "samsung/t0ltetmo": {
       "branch": "cm-10.1",
@@ -6636,8 +7687,11 @@
       "status": "ok"
     },
     "samsung/t0ltevzw": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:56:49Z",
+      "status": "empty"
     },
     "samsung/t769": {
       "branch": "cm-10.1",
@@ -6674,12 +7728,12 @@
       "pushed_at": "2016-12-27T19:47:37Z",
       "status": "ok"
     },
-    "samsung/trelte": {
-      "branch": "cm-13.0",
-      "commit": "b6800e30e601679695a3a70314654afe2d18a96d",
-      "file_count": 5,
+    "samsung/trelte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:24:53Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/treltexx": {
       "branch": "cm-12.1",
@@ -6695,12 +7749,12 @@
       "pushed_at": "2021-12-11T22:24:51Z",
       "status": "ok"
     },
-    "samsung/trlte": {
-      "branch": "lineage-15.1",
-      "commit": "e0575ba5afc11d4fc7ef1910403251b3faeb22f3",
-      "file_count": 4,
+    "samsung/trlte-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-10-25T13:59:15Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/trltespr": {
       "branch": "cm-12.0",
@@ -6737,58 +7791,58 @@
       "pushed_at": "2021-12-11T22:13:47Z",
       "status": "ok"
     },
-    "samsung/universal5420": {
+    "samsung/universal5420-common": {
       "branch": "lineage-17.1",
       "commit": "7b22a71358940fc45a084c90f13f2b472ec5382f",
       "file_count": 7,
       "pushed_at": "2021-07-30T20:16:17Z",
       "status": "ok"
     },
-    "samsung/universal7580": {
+    "samsung/universal7580-common": {
       "branch": "lineage-18.1",
       "commit": "1a9704712d8c7f9938ada30da91e5287af1bfa8d",
       "file_count": 7,
       "pushed_at": "2023-08-05T20:00:19Z",
       "status": "ok"
     },
-    "samsung/universal7880": {
+    "samsung/universal7880-common": {
       "branch": "lineage-19.1",
       "commit": "ca7327289294f27026ba0a12f1ed6c9ddbbc02cc",
       "file_count": 7,
       "pushed_at": "2022-11-20T08:05:56Z",
       "status": "ok"
     },
-    "samsung/universal7904": {
-      "branch": "lineage-18.1",
-      "commit": "99c618b46ab7cee28cf3bc2de3405791ae38db2f",
+    "samsung/universal7904-common": {
+      "branch": "lineage-19.0",
+      "commit": "24c6842d087a0107235fd8b5ac9a875c57de525f",
       "file_count": 9,
       "pushed_at": "2022-12-31T21:00:19Z",
       "status": "ok"
     },
-    "samsung/universal8890": {
-      "branch": "lineage-18.1",
-      "commit": "72526c6be960755e132899a9a93c3019b1f9d421",
+    "samsung/universal8890-common": {
+      "branch": "lineage-19.0",
+      "commit": "e34fecc93f16170f419fbebb183583cea8eb9a2f",
       "file_count": 9,
       "pushed_at": "2023-01-07T21:00:19Z",
       "status": "ok"
     },
-    "samsung/universal9611": {
+    "samsung/universal9611-common": {
       "branch": "lineage-22.1",
       "commit": "dbc7da265e5e39643b09bc0fa631955a600ad698",
       "file_count": 7,
       "pushed_at": "2026-03-09T22:00:26Z",
       "status": "ok"
     },
-    "samsung/universal9810": {
+    "samsung/universal9810-common": {
       "branch": "lineage-17.1",
       "commit": "bf1b3259981a1fcd1119fe9bd9e2006476a28877",
       "file_count": 6,
       "pushed_at": "2022-11-20T08:05:57Z",
       "status": "ok"
     },
-    "samsung/universal9830": {
-      "branch": "lineage-23.2",
-      "commit": "96d43e19d657df7d8c8732973150b0b722df989c",
+    "samsung/universal9830-common": {
+      "branch": "lineage-24.0",
+      "commit": "3c2d565a7e3d544903856f4aa209c6edae81e8f4",
       "file_count": 12,
       "pushed_at": "2026-09-23T18:06:23Z",
       "status": "ok"
@@ -6808,8 +7862,11 @@
       "status": "ok"
     },
     "samsung/v2wifixx": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:47:49Z",
+      "status": "empty"
     },
     "samsung/vibrant": {
       "branch": "froyo-stable",
@@ -6882,15 +7939,18 @@
       "status": "ok"
     },
     "samsung/zenlte": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-27T19:47:54Z",
+      "status": "empty"
     },
-    "samsung/zero": {
-      "branch": "lineage-15.1",
-      "commit": "9680fd225ccb9a58a56addbef0038e678234d62c",
-      "file_count": 6,
+    "samsung/zero-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:06:01Z",
-      "status": "ok"
+      "status": "empty"
     },
     "samsung/zerofltecan": {
       "branch": "cm-14.1",
@@ -6983,12 +8043,26 @@
       "pushed_at": "2018-04-07T21:20:30Z",
       "status": "ok"
     },
-    "semc/mogami": {
-      "branch": "gb-release-7.2",
-      "commit": "07a1a5426b54e9b085230eb8193d6c2346830093",
-      "file_count": 2,
+    "semc/mogami-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:20:29Z",
-      "status": "ok"
+      "status": "empty"
+    },
+    "semc/msm7x27-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:20:37Z",
+      "status": "empty"
+    },
+    "semc/msm7x30-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:20:38Z",
+      "status": "empty"
     },
     "semc/robyn": {
       "branch": "gb-release-7.2",
@@ -7032,6 +8106,13 @@
       "pushed_at": "2018-04-07T21:21:09Z",
       "status": "ok"
     },
+    "semc/zeus-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-07T21:21:06Z",
+      "status": "empty"
+    },
     "semc/zeusc": {
       "branch": "gb-release-7.2",
       "commit": "3d96d3052fb24ec4a58f5a87b8c7b3d136efc742",
@@ -7047,10 +8128,10 @@
       "status": "ok"
     },
     "shift/otter": {
-      "branch": "lineage-23.2",
-      "commit": "78fa105b75c599c629e62b32ee3de7e220904725",
+      "branch": "lineage-24.0",
+      "commit": "1112a0fc37d8e6901f96dec57c2a9052a1342e1a",
       "file_count": 8,
-      "pushed_at": "2026-09-27T14:40:52Z",
+      "pushed_at": "2026-09-29T00:14:41Z",
       "status": "ok"
     },
     "smartfren/rendang": {
@@ -7102,7 +8183,7 @@
       "pushed_at": "2025-07-02T13:00:36Z",
       "status": "ok"
     },
-    "sony/blue": {
+    "sony/blue-common": {
       "branch": "lineage-18.1",
       "commit": "5da31eed98577ec9feb8d5a42dfd04d09601cd1d",
       "file_count": 5,
@@ -7121,6 +8202,13 @@
       "commit": "c607c164c320553d61d561b93b19eca4b0b44d59",
       "file_count": 8,
       "pushed_at": "2022-11-20T08:06:10Z",
+      "status": "ok"
+    },
+    "sony/common": {
+      "branch": "lineage-18.1",
+      "commit": "c5ec35885b267c94c5db9abef675f096a9e6b826",
+      "file_count": 2,
+      "pushed_at": "2020-12-28T13:25:59Z",
       "status": "ok"
     },
     "sony/discovery": {
@@ -7151,19 +8239,19 @@
       "pushed_at": "2018-07-24T18:52:58Z",
       "status": "ok"
     },
-    "sony/fuji": {
-      "branch": "cm-10.1",
-      "commit": "cd4abecd345ba8e5fee908631802badfb3ebc810",
-      "file_count": 3,
+    "sony/fuji-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-07T21:21:58Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "sony/fusion3": {
-      "branch": "lineage-16.0",
-      "commit": "ab03e0069fb328e2d0e75e65925754fb752bf8f1",
-      "file_count": 4,
+    "sony/fusion3-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:06:14Z",
-      "status": "ok"
+      "status": "empty"
     },
     "sony/hayabusa": {
       "branch": "lineage-18.1",
@@ -7228,12 +8316,12 @@
       "pushed_at": "2026-09-14T20:29:17Z",
       "status": "ok"
     },
-    "sony/kitakami": {
-      "branch": "cm-14.1",
-      "commit": "51e3fe99fd5060effbfc9317dbef8d6e7be3470f",
-      "file_count": 8,
+    "sony/kitakami-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2022-11-20T08:06:18Z",
-      "status": "ok"
+      "status": "empty"
     },
     "sony/kugo": {
       "branch": "lineage-18.1",
@@ -7249,7 +8337,7 @@
       "pushed_at": "2018-04-08T00:42:00Z",
       "status": "ok"
     },
-    "sony/loire": {
+    "sony/loire-common": {
       "branch": "lineage-18.1",
       "commit": "0b1acf7796261de4c60332333b2fa5006ac2fb5d",
       "file_count": 6,
@@ -7284,11 +8372,32 @@
       "pushed_at": "2022-01-03T21:00:19Z",
       "status": "ok"
     },
-    "sony/montblanc": {
-      "branch": "ics",
-      "commit": "1a3dd6f3596dda1622976141fbe6788ee134a3cc",
-      "file_count": 2,
+    "sony/montblanc-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-08T00:42:22Z",
+      "status": "empty"
+    },
+    "sony/msm8226-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-08T00:42:21Z",
+      "status": "empty"
+    },
+    "sony/msm8960-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2018-04-08T00:42:20Z",
+      "status": "empty"
+    },
+    "sony/msm8974-common": {
+      "branch": "lineage-18.1",
+      "commit": "720f46b1c31bf7c2eb7f74096a65bfd7a6daae48",
+      "file_count": 5,
+      "pushed_at": "2022-11-20T08:06:21Z",
       "status": "ok"
     },
     "sony/nanhu": {
@@ -7305,9 +8414,9 @@
       "pushed_at": "2018-07-24T18:53:19Z",
       "status": "ok"
     },
-    "sony/nile": {
-      "branch": "lineage-23.2",
-      "commit": "cdffeededede4e95a15c9ca074d4e8d385c8c125",
+    "sony/nile-common": {
+      "branch": "lineage-24.0",
+      "commit": "0571bfb0dd359c9180f223450df5bb0f99e4f96c",
       "file_count": 8,
       "pushed_at": "2026-09-14T22:32:56Z",
       "status": "ok"
@@ -7438,6 +8547,13 @@
       "pushed_at": "2019-03-04T08:10:34Z",
       "status": "ok"
     },
+    "sony/pollux-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:06:24Z",
+      "status": "empty"
+    },
     "sony/pollux_windy": {
       "branch": "lineage-16.0",
       "commit": "e4262f620376d31dc5ab6b9525ffff0e7162a293",
@@ -7445,23 +8561,26 @@
       "pushed_at": "2019-03-04T08:10:36Z",
       "status": "ok"
     },
-    "sony/qcom": {
-      "branch": "cm-10.1-staging",
-      "commit": "de91b527894454609b2dceb55cbae3fe1b024d0a",
-      "file_count": 4,
+    "sony/qcom-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-08T00:43:02Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "sony/rhine": {
-      "branch": "cm-10.2",
-      "commit": "d7de2213b99678815793d3d60fc52aef2359146a",
-      "file_count": 4,
+    "sony/rhine-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2021-12-11T22:24:49Z",
-      "status": "ok"
+      "status": "empty"
     },
     "sony/satsuki": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2017-02-16T00:13:25Z",
+      "status": "empty"
     },
     "sony/scorpion": {
       "branch": "cm-12.0",
@@ -7484,7 +8603,7 @@
       "pushed_at": "2018-04-08T00:43:17Z",
       "status": "ok"
     },
-    "sony/shinano": {
+    "sony/shinano-common": {
       "branch": "lineage-18.1",
       "commit": "afc4485ed91543e38ecf66a814cbb037d7247dc0",
       "file_count": 5,
@@ -7496,6 +8615,48 @@
       "commit": "196849caa6e34f292e4e0b347395257e34068fd1",
       "file_count": 6,
       "pushed_at": "2021-12-11T22:24:13Z",
+      "status": "ok"
+    },
+    "sony/sm6375-common": {
+      "branch": "lineage-24.0",
+      "commit": "d1d80af1ad9032cb092ff6d85db437709cc54e28",
+      "file_count": 6,
+      "pushed_at": "2026-09-15T07:14:35Z",
+      "status": "ok"
+    },
+    "sony/sm8250-common": {
+      "branch": "lineage-24.0",
+      "commit": "4b30abff5b3c2e770b1ddd7b7825dd2e252ca758",
+      "file_count": 7,
+      "pushed_at": "2026-09-07T11:04:09Z",
+      "status": "ok"
+    },
+    "sony/sm8350-common": {
+      "branch": "lineage-24.0",
+      "commit": "cab5a95f9fbdc26e0095e8aa9830fdf59262e864",
+      "file_count": 8,
+      "pushed_at": "2026-09-27T00:32:45Z",
+      "status": "ok"
+    },
+    "sony/sm8450-common": {
+      "branch": "lineage-24.0",
+      "commit": "905bb5c8a95ab868e3ae4139d41c501f0c5c7541",
+      "file_count": 8,
+      "pushed_at": "2026-09-16T03:35:18Z",
+      "status": "ok"
+    },
+    "sony/sm8550-common": {
+      "branch": "lineage-24.0",
+      "commit": "89c64cf058ab2407db06a7cfab424ae7017c88ad",
+      "file_count": 8,
+      "pushed_at": "2026-09-27T00:37:05Z",
+      "status": "ok"
+    },
+    "sony/sm8650-common": {
+      "branch": "lineage-24.0",
+      "commit": "27d83a37298bc0a9e472dec027267c34b2675346",
+      "file_count": 7,
+      "pushed_at": "2026-09-16T20:51:04Z",
       "status": "ok"
     },
     "sony/sumire": {
@@ -7519,26 +8680,26 @@
       "pushed_at": "2021-12-11T22:13:52Z",
       "status": "ok"
     },
-    "sony/tama": {
+    "sony/tama-common": {
       "branch": "lineage-23.0",
       "commit": "8d239ef0bd68baedd486c613d03e50a87be0d4af",
       "file_count": 9,
       "pushed_at": "2026-07-07T22:00:19Z",
       "status": "ok"
     },
-    "sony/tamsui": {
-      "branch": "jellybean-3.4",
-      "commit": "e8c4a51e5afe7544b7b3484b6e100f668bf70ca9",
-      "file_count": 2,
+    "sony/tamsui-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-08T00:43:49Z",
-      "status": "ok"
+      "status": "empty"
     },
-    "sony/tamsui-legacy": {
-      "branch": "jellybean",
-      "commit": "a8430cb491d2ac4744cad12b8b95ddb25782f613",
-      "file_count": 2,
+    "sony/tamsui-common-legacy": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
       "pushed_at": "2018-04-08T00:43:47Z",
-      "status": "ok"
+      "status": "empty"
     },
     "sony/taoshan": {
       "branch": "cm-14.1",
@@ -7652,13 +8813,6 @@
       "pushed_at": "2018-04-08T00:44:21Z",
       "status": "ok"
     },
-    "unknown/sample": {
-      "branch": "cm-10.1",
-      "commit": "7e69d9273013cd718f36c8a592a6f0b2b5b13db1",
-      "file_count": 1,
-      "pushed_at": "2016-12-27T19:44:18Z",
-      "status": "ok"
-    },
     "virt/vboxware": {
       "branch": "lineage-23.2",
       "commit": "f9ee81f5431e20cfc8f9cc877d0a5f1568038643",
@@ -7673,16 +8827,16 @@
       "pushed_at": "2025-10-31T15:03:33Z",
       "status": "ok"
     },
-    "virt/virt": {
-      "branch": "lineage-23.2",
-      "commit": "00c9589ac97793bc7a023c6db88e704c191c8f24",
+    "virt/virt-common": {
+      "branch": "lineage-24.0",
+      "commit": "619771081e1fe074403acd08620169681aca47b6",
       "file_count": 3,
       "pushed_at": "2026-09-26T13:32:07Z",
       "status": "ok"
     },
-    "virt/virtio": {
-      "branch": "lineage-23.2",
-      "commit": "f17927b21dd5eceaf85c8dd3f3e7f8e1a7d3d074",
+    "virt/virtio-common": {
+      "branch": "lineage-24.0",
+      "commit": "9d5c9307434bba31d19030fcc61086efcd248997",
       "file_count": 4,
       "pushed_at": "2026-09-07T18:37:55Z",
       "status": "ok"
@@ -8024,10 +9178,10 @@
       "status": "ok"
     },
     "xiaomi/lavender": {
-      "branch": "lineage-20",
-      "commit": "2ef94800395ee64ca11967baefe36fc86d4266f2",
+      "branch": "lineage-19.1",
+      "commit": "8d0e035cb03683baba0a54b86f5c8977890721c4",
       "file_count": 9,
-      "pushed_at": "2024-07-25T22:00:17Z",
+      "pushed_at": "2026-09-28T21:38:02Z",
       "status": "ok"
     },
     "xiaomi/libra": {
@@ -8038,10 +9192,10 @@
       "status": "ok"
     },
     "xiaomi/lisa": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "abc2631a6f59755f457e141e9714e4f183ef27e4",
       "file_count": 8,
-      "pushed_at": "2026-09-19T07:28:37Z",
+      "pushed_at": "2026-09-28T18:05:53Z",
       "status": "ok"
     },
     "xiaomi/lithium": {
@@ -8142,10 +9296,10 @@
       "pushed_at": "2022-11-20T08:06:51Z",
       "status": "ok"
     },
-    "xiaomi/mithorium": {
-      "branch": "lineage-23.2",
-      "commit": "2639cd7377cbd6b6ecf6f5317637c3faca96f86c",
-      "file_count": 22,
+    "xiaomi/mithorium-common": {
+      "branch": "lineage-24.0",
+      "commit": "ee31e7ba27bba652b0ab9bdcdefa271ba02cd71c",
+      "file_count": 23,
       "pushed_at": "2026-09-10T09:15:15Z",
       "status": "ok"
     },
@@ -8161,6 +9315,55 @@
       "commit": "d90757722eff18f8e43d8758d159fcf57fc69a80",
       "file_count": 8,
       "pushed_at": "2025-11-20T06:12:47Z",
+      "status": "ok"
+    },
+    "xiaomi/msm8937-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2022-11-20T08:06:52Z",
+      "status": "empty"
+    },
+    "xiaomi/msm8953-common": {
+      "branch": "lineage-19.1",
+      "commit": "c6a7af6f9d1dccdbba5519453d59ce257eeb2254",
+      "file_count": 9,
+      "pushed_at": "2025-10-15T22:00:19Z",
+      "status": "ok"
+    },
+    "xiaomi/msm8956-common": {
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2021-12-11T22:22:56Z",
+      "status": "empty"
+    },
+    "xiaomi/msm8996-common": {
+      "branch": "lineage-22.2",
+      "commit": "54b5000fa478da0b3818360503cca70e79aed74e",
+      "file_count": 9,
+      "pushed_at": "2026-01-02T01:26:52Z",
+      "status": "ok"
+    },
+    "xiaomi/msm8998-common": {
+      "branch": "lineage-22.2",
+      "commit": "caf386dad2976223fef61c587885353fe860a941",
+      "file_count": 7,
+      "pushed_at": "2026-09-16T22:00:19Z",
+      "status": "ok"
+    },
+    "xiaomi/mt6768-common": {
+      "branch": "lineage-24.0",
+      "commit": "e0864b93faeb201d53278368b8b338c3982e3473",
+      "file_count": 8,
+      "pushed_at": "2026-09-23T07:36:16Z",
+      "status": "ok"
+    },
+    "xiaomi/mt6785-common": {
+      "branch": "lineage-17.1",
+      "commit": "f93a39c4f4a51982be591e326324d70b2dc847ab",
+      "file_count": 8,
+      "pushed_at": "2022-11-20T08:06:54Z",
       "status": "ok"
     },
     "xiaomi/munch": {
@@ -8220,10 +9423,10 @@
       "status": "ok"
     },
     "xiaomi/platina": {
-      "branch": "lineage-20",
-      "commit": "d29905355c49d1529e5ab55162274efa224f475c",
+      "branch": "lineage-19.1",
+      "commit": "6ac7b682c9c38ffb8d1fe634ce9107bdbd4169cf",
       "file_count": 8,
-      "pushed_at": "2023-07-14T17:39:10Z",
+      "pushed_at": "2026-09-28T21:59:27Z",
       "status": "ok"
     },
     "xiaomi/polaris": {
@@ -8296,11 +9499,95 @@
       "pushed_at": "2026-01-12T20:54:14Z",
       "status": "ok"
     },
+    "xiaomi/sdm660-common": {
+      "branch": "lineage-22.2",
+      "commit": "309ce2ecc4544bfa7438c8bb25a4fbbd8221a143",
+      "file_count": 8,
+      "pushed_at": "2026-06-15T18:32:57Z",
+      "status": "ok"
+    },
+    "xiaomi/sdm710-common": {
+      "branch": "lineage-22.2",
+      "commit": "f8463989abe4e6001e95e072cd3223760565fe1a",
+      "file_count": 9,
+      "pushed_at": "2026-03-12T19:17:57Z",
+      "status": "ok"
+    },
+    "xiaomi/sdm845-common": {
+      "branch": "lineage-23.2",
+      "commit": "35cf356b095e033e71261b16c7fa319faac12cb3",
+      "file_count": 12,
+      "pushed_at": "2026-09-20T12:37:26Z",
+      "status": "ok"
+    },
     "xiaomi/shark": {
       "branch": "lineage-22.2",
       "commit": "16f1b013e55b2691bc4c01fb3e45b46deb370866",
       "file_count": 14,
       "pushed_at": "2026-08-07T12:27:05Z",
+      "status": "ok"
+    },
+    "xiaomi/sm6125-common": {
+      "branch": "lineage-24.0",
+      "commit": "2597d8e5b15a1825c3182becc9675c55a2b789c0",
+      "file_count": 8,
+      "pushed_at": "2026-09-17T16:40:51Z",
+      "status": "ok"
+    },
+    "xiaomi/sm6150-common": {
+      "branch": "lineage-24.0",
+      "commit": "d1ddd0e988e170cc7c9eaa1aeab5dc1d2ebf1cce",
+      "file_count": 9,
+      "pushed_at": "2026-09-23T05:07:01Z",
+      "status": "ok"
+    },
+    "xiaomi/sm6250-common": {
+      "branch": "lineage-23.2",
+      "commit": "45b3b7dab47ac792be975fb7623f03268c4a6dc2",
+      "file_count": 10,
+      "pushed_at": "2026-08-30T09:10:40Z",
+      "status": "ok"
+    },
+    "xiaomi/sm7250-common": {
+      "branch": "lineage-23.0",
+      "commit": "137463a1b23e011334195b8c6ffb08107273605a",
+      "file_count": 13,
+      "pushed_at": "2026-09-25T15:04:41Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8150-common": {
+      "branch": "lineage-23.2",
+      "commit": "7851f8fe6e156bf19ee5f1678a04ce17a8dffc22",
+      "file_count": 9,
+      "pushed_at": "2026-09-24T20:01:28Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8250-common": {
+      "branch": "lineage-24.0",
+      "commit": "e695de6d70f996b5af35a4951779622d0e02eb63",
+      "file_count": 13,
+      "pushed_at": "2026-09-27T20:30:17Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8350-common": {
+      "branch": "lineage-24.0",
+      "commit": "ea54a321886b99fcac3dcc8f72b287d6848f7434",
+      "file_count": 9,
+      "pushed_at": "2026-09-28T18:05:54Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8450-common": {
+      "branch": "lineage-23.2",
+      "commit": "ffe9fc07b5ec4c5d3276897a49a4e9fdde9a4a62",
+      "file_count": 6,
+      "pushed_at": "2026-09-28T14:08:38Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8550-common": {
+      "branch": "lineage-24.0",
+      "commit": "5917f07f4d3d43a93b0122ee5542bad84c1421d9",
+      "file_count": 6,
+      "pushed_at": "2026-09-28T16:07:03Z",
       "status": "ok"
     },
     "xiaomi/socrates": {
@@ -8353,10 +9640,10 @@
       "status": "ok"
     },
     "xiaomi/twolip": {
-      "branch": "lineage-20",
-      "commit": "5b0a7602e01d513db4a6166bded30cfec93b0567",
-      "file_count": 8,
-      "pushed_at": "2024-07-13T22:00:17Z",
+      "branch": "lineage-19.1",
+      "commit": "a9d206175232593e8e3646938cebc3dac70908a9",
+      "file_count": 7,
+      "pushed_at": "2026-09-28T20:49:46Z",
       "status": "ok"
     },
     "xiaomi/umi": {
@@ -8429,6 +9716,13 @@
       "pushed_at": "2023-07-14T17:41:38Z",
       "status": "ok"
     },
+    "xiaomi/wayne-common": {
+      "branch": "lineage-22.2",
+      "commit": "db7db62f7446d70be9cb691fe29b212e16d44fe6",
+      "file_count": 5,
+      "pushed_at": "2026-06-12T12:00:32Z",
+      "status": "ok"
+    },
     "xiaomi/whyred": {
       "branch": "lineage-20",
       "commit": "d7483e3ae4e5aa13fd894c743dd068c7611ae27f",
@@ -8451,8 +9745,11 @@
       "status": "ok"
     },
     "xiaomi/yudi": {
-      "error": "fatal: Remote branch main not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2024-06-28T15:03:29Z",
+      "status": "empty"
     },
     "xiaomi/zeus": {
       "branch": "lineage-23.2",
@@ -8462,8 +9759,11 @@
       "status": "ok"
     },
     "xiaomi/ziyi": {
-      "error": "fatal: Remote branch main not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2024-06-28T15:03:10Z",
+      "status": "empty"
     },
     "xiaomi/zizhan": {
       "branch": "lineage-23.2",
@@ -8564,8 +9864,11 @@
       "status": "ok"
     },
     "zte/v8000": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:58:30Z",
+      "status": "empty"
     },
     "zte/v9": {
       "branch": "gb-release-7.2",
@@ -8575,18 +9878,31 @@
       "status": "ok"
     },
     "zte/warp2": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T15:56:59Z",
+      "status": "empty"
     },
     "zte/x500": {
-      "error": "fatal: Remote branch master not found in upstream origin",
-      "status": "clone-failed"
+      "branch": null,
+      "commit": null,
+      "file_count": 0,
+      "pushed_at": "2016-12-05T16:59:10Z",
+      "status": "empty"
     },
     "zuk/ham": {
       "branch": "lineage-17.1",
       "commit": "0a810c7ddf453a7d3684353b39091960815b3150",
       "file_count": 9,
       "pushed_at": "2022-11-20T08:07:15Z",
+      "status": "ok"
+    },
+    "zuk/msm8996-common": {
+      "branch": "lineage-19.1",
+      "commit": "0f913274e58a9c9a84d40019ef37583d583f2739",
+      "file_count": 10,
+      "pushed_at": "2024-12-26T22:00:18Z",
       "status": "ok"
     },
     "zuk/z2_plus": {

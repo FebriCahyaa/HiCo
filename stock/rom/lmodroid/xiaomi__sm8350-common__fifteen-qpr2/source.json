@@ -1,0 +1,57 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "670fe9dac367b949ca1d1c0f07a331a2fb561c1d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d237c85fce606082bf4e7a28874e3f7643640818c122b8229e3d9f06083d153c",
+      "size": 379
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9370b2313df386a903babb9b0a4c92c0a38addeddd73d2c818e8cf6b3dff427f",
+      "size": 6143
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "580493aeec785eae7194963f021592ba14775a05a74b7b4fa6e48beafd33deb6",
+      "size": 2813
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "101c158a7a1e7b91a5c7400537af0e2b6634dd8af31fed4cbb5b59348076b00e",
+      "size": 28462
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ccc470e16765178cba88718d0cede2f10eb42b6502b2a340f0ec6a7a0aef000e",
+      "size": 888
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9112eeae2a29df07dca29c4e566fb0fb630ed12d1bfac0426ea9bf0625a54bc2",
+      "size": 10068
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:55Z",
+  "vendor": "xiaomi"
+}

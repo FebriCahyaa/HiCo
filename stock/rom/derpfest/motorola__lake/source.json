@@ -1,0 +1,62 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_motorola_lake.git",
+  "codename": "lake",
+  "commit": "7e588d336177e894087520bc6b5af3e67b076e46",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "06935e8ec50ab0b3bf0bf04f713edfcc3d112b3a3b727686a95eaf4371134c36",
+      "size": 320
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8686b8b0263fae08768b0ddc99a974d89d4915412b202e666642f8b726c5c8d6",
+      "size": 238
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "59bd5271d88ca2b0b1c882aa20aae0f84ea3b9ee8d212f0c3aa8ae6108d00203",
+      "size": 1884
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "e146d4271681f6db9876295eb6b810b5f45c2eead1ccc02ea8539e41453f74a7",
+      "size": 3636
+    },
+    {
+      "path": "device.mk",
+      "sha256": "65c9d561094a7564d418e56da57a541da77ed99868e4627931f6422c63640d34",
+      "size": 3393
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0ab471de1f860fef422541288719b6a3c5fb24aab0e7fbba34815e9576149703",
+      "size": 1383
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c35a95650dad66fbff1a25484c98344930981cd7b418c5f75921ebe76779d8ee",
+      "size": 25836
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "98582969afa5870270e7d81577d012349a67461baba2fbf63425a09e1b89b510",
+      "size": 1714
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_lake",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-12-14T15:59:35Z",
+  "vendor": "motorola"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oneplus_instantnoodle.git",
+  "codename": "instantnoodle",
+  "commit": "6c12c2ec0a556c49388e9046a130abab79e2ffbc",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c16b9e423ad45b9879e3e01de3d43c0053557dfc538f641794fe570dd94ad6aa",
+      "size": 158
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "adf1a7673d3c7824299845ab44fc3faf4e412aa22468a713c04b522f80e01fb6",
+      "size": 720
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6e92f3666cb36fe29435d8f34ae68c044f924f3c1af8c8335361e0c9985f871f",
+      "size": 1566
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "75f33e6619b7252125f7353d6891e0a5675d04ea173ab9827bb0123e9e6928cd",
+      "size": 591
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "42d7e47c4eed84acd59519fc80a83cbed4e33369c4dce54864ef11fd043fd6d9",
+      "size": 3534
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9fb737d838a5cf77fbdc93001c928e72d911f14e3b7f4e16c9221591500f0f7d",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_instantnoodle",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:20Z",
+  "vendor": "oneplus"
+}

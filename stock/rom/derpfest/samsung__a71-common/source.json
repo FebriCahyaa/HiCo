@@ -1,0 +1,62 @@
+{
+  "branch": "derp15",
+  "clone_url": "https://github.com/DerpFest-Devices/device_samsung_a71-common.git",
+  "codename": "a71-common",
+  "commit": "a54ec635123e58f0e3889d74143d5d5c3287a397",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ad4a7f7ddc564bcfa7ff4fed094efbe98d7a13319449ebe7b0aee9308df71c46",
+      "size": 406
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "c2ba91ad99a4fcef44d136096ea9a8319eaa3e458f946d7c551e8637106f354c",
+      "size": 2501
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2c49bdce7fff4d6a86a9c04d85edd644129b36a905220ea412a754fe70288683",
+      "size": 9094
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f6602f039c08d464fdbf614e32eabe61bf1f0b4821a4206e043684b06e3abe43",
+      "size": 2286
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "106f2c38c2e8773e060e9200e5ff41e0170da89a3bc6cee5cd09ebf60d0621e6",
+      "size": 28342
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "67f0b9b1775ab02d92a9623850941ec8d855bef38152dae214157ed34070fee9",
+      "size": 354
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "f95448ff317871e57615c872c4b73d86fa228f25fc2b6b6d676d455faa9b3123",
+      "size": 110
+    },
+    {
+      "path": "system.prop",
+      "sha256": "286402ea69a24f07a536db93f4d357641b4f5ef03984db35cd35c0169cd2ab24",
+      "size": 273
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f0947bb91dc49376fa507e4823da592d5e392a3e0f65ccf8565a2d4fa82ca727",
+      "size": 8309
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_a71-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-12-06T19:20:21Z",
+  "vendor": "samsung"
+}

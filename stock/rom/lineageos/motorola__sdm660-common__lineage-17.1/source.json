@@ -1,0 +1,87 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "fe99587e0bff81f2ccd5803628471e81be99752b",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a0c9e718e9adfe91bc6f57287a2ccad501b460ff1c69425f35a0b1967464d959",
+      "size": 5135
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "08e34d57a2b71fe13db1b0cc368bb0576850d6417a1691578764f4e31ea56356",
+      "size": 6166
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "51ee78db2d0868ff28735fe8a022439c20e437c5ed0a9bf55de6e3f6c2717f4b",
+      "size": 2814
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e093d6a89c79b93aa9a144e59611a15c4528a613d1551638ab0a55eeb5297922",
+      "size": 375
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "19a317d5146827b076080be7e1486e71633955d7eaef21fe7a58ccf083c084a8",
+      "size": 29417
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "0b1a8437b87138ed44602b8862e63a2630972f55556754347f406a972e7145bd",
+      "size": 669
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "ae9d6c40b7c2d9c29eea227c60838bf6194fe68c03893c403ae0ab8e9801f25c",
+      "size": 1116
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "d46ee1c33530dd6b1497234c98b010d1008f33b267652f52d7cba174e4eca510",
+      "size": 5560
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "37362265a80f6d2063fea3ef2f0d85572524e4d1baf47beb759507ca9be3d372",
+      "size": 2565
+    },
+    {
+      "path": "thermal/android.hardware.thermal@1.1-service.sdm660.rc",
+      "sha256": "8b6245e60f0163c2b2065e8f872e537f7ccb05b1a90ed5b31988d0bdc528aabf",
+      "size": 137
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "eb4e18a81792fa73c976a8c7f959c81bccf71ac619d4ede55e2c94792f74be60",
+      "size": 1839
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "a4b95ed901787d7b6e0fe8364b5da453d7be5eb1f6958e46be8eda39a2371576",
+      "size": 9288
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "96940ff8d81262fb8bc39be40abef226ed31d2b55deecaa17b702bfe76cad482",
+      "size": 3701
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-05-02T00:49:54Z",
+  "vendor": "motorola"
+}

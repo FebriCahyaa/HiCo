@@ -1,0 +1,57 @@
+{
+  "branch": "12.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_exynos9820-common.git",
+  "codename": "exynos9820-common",
+  "commit": "3032d81d69d61ec8327a9d19ddd293a67ee8e767",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f66a93049caeedde2b1fe84f373a9eb0407eee79d89ca2fcd9ce7e9b794114f7",
+      "size": 1445
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "65f1e64bb315c3fb6822bc007d4a336073e8103d5a4d56df45551fdbd01cb821",
+      "size": 5111
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "5b0a68356a09e40a103cca1c2b9dde14f8df4be2863b230c1f366938e7e6d0bf",
+      "size": 3151
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "242fa31295fa88702f35cb1efe325737471e40a7312aa44af808efe7266a5f4b",
+      "size": 2179
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "518368200bed946a187bd1887b61bd9f5dd9de91be5535d7ef12bc2bd31806d0",
+      "size": 360
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "86d29db7dd532d9ee4705d102cc5a0c165cd2bd1cb8e7389df01e5baa4106338",
+      "size": 8308
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c1b47fa70130f8b8abb0b1248185000692abf96c1fb4c27e154b1a599e7ec8fc",
+      "size": 1085
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_exynos9820-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-09-02T16:44:27Z",
+  "vendor": "samsung"
+}

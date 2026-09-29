@@ -1,0 +1,82 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "56de0b0c52dad1e0475db17363e9fd4fd6f08c25",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "120d834e4702b49e45510d72b7b8b264b614232cb205b4da18c3b93dc4d6bb29",
+      "size": 1460
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "aec8004aad08f2173066f32bbda63b0581cf81d784b28e8cf2d79219eb63524c",
+      "size": 7816
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "77bc99d5b460b7bfd0f3e91a34faf4d2785198f759a968b3cb4d8d2acf408776",
+      "size": 4335
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cc1258a588d6529b3444f9eb664df6ad4ad9702d7a1744ca69251e5d285d71a6",
+      "size": 437
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalService.java",
+      "sha256": "3a475b59672e220583ecdbb0b93cbc2d185ad062977a547ac4464f02e4fada0a",
+      "size": 4139
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "521c52e8f4dd93ffdd3694cd8dfd0b2f102cde20cb92b3e4e1dee5e241b6ea84",
+      "size": 1452
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "e552666fa1a64632613df0ae193928bd0094d52be42468c28ee66c8287620fc7",
+      "size": 14984
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalTileService.java",
+      "sha256": "a2c0b2797cfe271d667b7c25500ce98c451ff920450428cade4514633bf7c7eb",
+      "size": 2725
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalUtils.java",
+      "sha256": "135e8e26925eaf6d1a720a76cc52227fe75f3f7ea6a27edbe5027767b56124e4",
+      "size": 10257
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9b03cae87b0c3aebfdcd9ac0e6d6b24186b17df3872df34a5244d506f70a321a",
+      "size": 61476
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "341c5bc42a75058b0955d339c5b7fa8416ee2c67dfb9fbbf39da411a2df31c64",
+      "size": 3135
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f9b1c62d8b465c7d5760a920871fed969e09caee9029cab10b288ee410621946",
+      "size": 859
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "353ad79611ca7ceff4de10b807c383dbbb57144b21e6f256943f348594c6c8d5",
+      "size": 12504
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-14T21:01:50Z",
+  "vendor": "xiaomi"
+}

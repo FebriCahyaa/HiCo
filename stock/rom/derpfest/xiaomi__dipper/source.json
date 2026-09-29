@@ -1,0 +1,52 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_dipper.git",
+  "codename": "dipper",
+  "commit": "e2a4f37bf3178d196886354adb626fdbdb4b7f25",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e179855651495dc9267c7cd1128ca4cd12c1c2d74f636d39b6a60c40f5994f0b",
+      "size": 969
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "ee8cc3630eff8759a757c816acefb9cc24d03dfbd8ead5eb695ebbc9c5119bc3",
+      "size": 734
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "899fb031d731f1352dcf1e41638ff96c2a7277500eccab6a36c0eeed1394377a",
+      "size": 1017
+    },
+    {
+      "path": "device.mk",
+      "sha256": "6fe6806f785176306f0411f4f10f5abef00135334c2ba931ca3e7c48b5062d13",
+      "size": 4770
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0e1cf8c0d01b898b662f8aec2f9702c9538377ccdbfdb6783b3d373cc3d95104",
+      "size": 941
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1444bb3c7954e991ebeed7cb0b752132d3489475ae94079dafbe1ef0d97308d5",
+      "size": 11917
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "83592d1525c61cb03f0dbfa12607e320444da74f7617efb8068ba6f7b0e83e70",
+      "size": 284
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_dipper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-11-15T07:59:03Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "alpha-13",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "201b2533e08903fd071d610e024a6648ada1e2db",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "956c32e5b2fe4929b97ba818be7cd24be9494c49ed035ae14fde3b5a43ec387b",
+      "size": 4249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "3b1fa64b7c8d33872dab538dbff37a292ccaf83fcbcec7fc585b7ae73fec97cd",
+      "size": 7775
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalActivity.java",
+      "sha256": "09f216233614aba9cc4b7c92d29f7d1fff2bc44194655af3f625452e75abd62e",
+      "size": 1650
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalService.java",
+      "sha256": "f19b88cd59ced0bbc282c2e167d2f55015acf32d2f3de462bc1f9f8c5b83e444",
+      "size": 4690
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalSettingsFragment.java",
+      "sha256": "25c48d5931aa733eb13d02f870b895defdf3f7e8a81472a367e55e2ef98a58d2",
+      "size": 15622
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalUtils.java",
+      "sha256": "c364d600da709e724f036942f6a24aa55f08f2e124272dfa219c8a7e3eca19ac",
+      "size": 7987
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "a6941297c9e27d70c20691eb23cc2ef2b7610ba85e383f6348ca8a60b81c8229",
+      "size": 2076
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6800279c3585289b1bfeb8a10c26fbc16678ae29e860d3b39fee9a1be38d3642",
+      "size": 56718
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "a665cf0c591ca2375c3b1621b7664e75ab009d59092139c8829ab36715169be8",
+      "size": 602
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2023-07-26T11:14:48Z",
+  "vendor": "xiaomi"
+}

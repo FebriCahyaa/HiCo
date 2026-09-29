@@ -1,0 +1,57 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_sony_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "0f96afe7a2ea7355d3db62b30d3e01040d87f849",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f0bd0b3da0e85b37ad53e046b466623e04121e7f5cb77d306284a2170c9b2b52",
+      "size": 753
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "15b7516e0a585f6b19e37ec2213051fa5d9d8d0fa2f079b3e0111b7e344d9503",
+      "size": 10661
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "627e6deb6ef0735ca7a17d70a80c500dc77625e23b6403b8cf23b08e1ff91f38",
+      "size": 63374
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a101be596dfbdade8d2f1ab8ddfab239cf81d979fa5bce4bab22c9d628733491",
+      "size": 5205
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8919b346e8b7f5305900840dafdbaa533224c924f9b08bbd307faa44cf8d6b03",
+      "size": 421
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "00f063400cd67e3c106d53256ddd0d4cead51490356b5c3ddc4d04d55aef92e3",
+      "size": 64172
+    },
+    {
+      "path": "system.prop",
+      "sha256": "44b519cd1d32c17a19cfde103032bdae3daeb19241e09d953c5106d0d692e082",
+      "size": 1189
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f6b85263776ee5d037c56ccba61c7e23f1e376a783d62139b059637a76251b5b",
+      "size": 9653
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-09-26T10:39:12Z",
+  "vendor": "sony"
+}

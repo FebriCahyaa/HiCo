@@ -1,0 +1,52 @@
+{
+  "branch": "arrow-12.1",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_oneplus_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "33c13a940b455e7435b7b7e3c6563c8b74fd79aa",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9eba10a070a3fc68b2c78485d1253c90ba6a48bc81a955d3a226374cc4a8d1b6",
+      "size": 4784
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "206e5fe91d8f7f74bb8f55bc1e8372abd9a3045a5309eecd3db2d0e70e38dbe2",
+      "size": 6488
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8630e7ecaa8688f112c1e33d86d23631cf022b9bf5a4bf1d0d0deab5e78a2ba0",
+      "size": 2469
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1615e9dd6724ca47f98017b4d5d777e944d3f70b8239928569a5f381abbb7e7b",
+      "size": 66800
+    },
+    {
+      "path": "system.prop",
+      "sha256": "34d86f82282ff3e539074c117f5fcdd880f8c40f8a00cfba7e1ba40fcfe643c1",
+      "size": 2276
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6c16f63f191aedf2a6d03ec33c8b91ffa74e611d7834b4ed0caa09791206a7f4",
+      "size": 8552
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2022-08-22T11:16:26Z",
+  "vendor": "oneplus"
+}

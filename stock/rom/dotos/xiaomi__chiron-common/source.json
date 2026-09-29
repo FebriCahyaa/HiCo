@@ -1,0 +1,52 @@
+{
+  "branch": "dot-11",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_xiaomi_chiron-common.git",
+  "codename": "chiron-common",
+  "commit": "59d670ee99c42729e77e8ad97187d5920af72639",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "800a1871fb24d412b513ad931f22fcc395c278ad4c123ee9360351a7f5643572",
+      "size": 4458
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7d3d8db8faa7e309da8e775fb1d66d67a83ee7ce4e57a1296d649d19b077ba38",
+      "size": 4836
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1bc670654167ed83ae9930b22b3c6f349125b7fce884fed1f4fdfb1fbae0336f",
+      "size": 4248
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "276b295e7f6a30c56afb840693c3865f240781195cc9c4395cbba5dc92da1645",
+      "size": 106
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "63182b0d637ba7f7eea55d7935ab2fc37498acedc7d51bf67c801d957f018cb8",
+      "size": 29769
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "db1fcca568c96fc27652f3a63079ecaead4e0d5d768b92e8fd2435f85c3f3abd",
+      "size": 526
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_chiron-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2021-04-19T07:55:11Z",
+  "vendor": "xiaomi"
+}

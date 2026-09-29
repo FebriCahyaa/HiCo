@@ -1,0 +1,57 @@
+{
+  "branch": "arrow-13.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_device_asus_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "b4ac109873bd99e1ef5f8a4cf8311f72e07cd390",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "b390eb4013da201b766102b891ae8ef66abeb7d201b38fc6b71710bf49ed36e9",
+      "size": 4628
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "85062a116a6aed57b332bc0fb6fe2cd0fe25c29f4628afb73bf3a6724389c3fa",
+      "size": 6787
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3007d448c37853125ed6f3aa1ecc9d3f796c0bcc84b6d80939f1f959d1d6131d",
+      "size": 2177
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f4f291b5a97ecdcd8cdb838f44aee34ba770decff26da5f1b3787135a3620866",
+      "size": 41385
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "74d720b255353859acb271ca70844ad392a1e7e35cf4bc0f6406db1dd6567ccd",
+      "size": 1576
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f6c05bf69a0542a54f478dd49c0e23645880aaf459efac3d2e875594c23abecb",
+      "size": 5064
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "arrowos",
+  "upstream_pushed_at": "2023-01-01T14:53:52Z",
+  "vendor": "asus"
+}

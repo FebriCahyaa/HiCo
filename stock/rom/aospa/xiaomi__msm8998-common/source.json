@@ -1,0 +1,52 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "7a0a55c06bbd4544a622b8c6b8fcc87ee28a46d5",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "42248943567061660e8aeda570b8a322a34c373bd21fd297ebc0dce7c9b2f5b6",
+      "size": 4447
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "575716f1f683d0c187ab61965e91c00f128ead0830bbb7a8187de6997a182a80",
+      "size": 5207
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "acf6b7d2b7de1a70abdca9d8f6d1bc75b848735c2899c720d1bc92c9701415ec",
+      "size": 3538
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "276b295e7f6a30c56afb840693c3865f240781195cc9c4395cbba5dc92da1645",
+      "size": 106
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0232a5470ef9fb8a7c83a9f6e4c030fb92e854e17f82b30511482470788b29ac",
+      "size": 36989
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "db1fcca568c96fc27652f3a63079ecaead4e0d5d768b92e8fd2435f85c3f3abd",
+      "size": 526
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T20:48:21Z",
+  "vendor": "xiaomi"
+}

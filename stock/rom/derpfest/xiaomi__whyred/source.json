@@ -1,0 +1,67 @@
+{
+  "branch": "11",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_whyred.git",
+  "codename": "whyred",
+  "commit": "e388809d91cfe7ba989640d9d979fdab8f74e908",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "80ef8987b22fac606f0749c8c0e651486a9a16f9d9f684fbea68a2521ff5211f",
+      "size": 5122
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0dcc8c18411432b9ca54a72c067c24db98ca0166cfb608686aff79f0fcd62f89",
+      "size": 648
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dcce4a04d0433f3f04b2bc59e56c2c3a01cdc5f9c8d76ac96823fa5929bd183f",
+      "size": 7743
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e28f5ad0027772fe6372a539cd22c381a5b2ba9fc8d70a259afa617242f7ab60",
+      "size": 20728
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "fa6cdd2d730fda31496b5ba5c1151780758510dd9f33fa0801466be94cef9459",
+      "size": 2894
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b699a236d6cf80c4194afbdbc41b612fc6474686b49093c04e75a67b5b863532",
+      "size": 96360
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "3cf50e6b8d7759eec42e6d99f434e41f46dd919026e69fc92884eefef054d987",
+      "size": 338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "11008813811ba3654be74759ce23558eb939803d761a65ec74e1c493c0585380",
+      "size": 232
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2d43213729616082e092931d6caf3b8d1c54e440de7998828e8c5213e9be7c68",
+      "size": 6064
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_whyred",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-06-02T13:51:58Z",
+  "vendor": "xiaomi"
+}

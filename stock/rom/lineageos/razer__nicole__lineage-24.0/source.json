@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_razer_nicole.git",
+  "codename": "nicole",
+  "commit": "6786c899f9047771991f44d23ba516b2efc6437a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "26a788ce005d7a7670603f36a2ec47a61cb7b6646ece82f039b3986eb6a067f1",
+      "size": 535
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "d6c784003aa6ee0e9f7f5458bc432673550e6e1acb5fe843342cb7fc287ec559",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e8bc8d6d7677772dfad039210e8dd305fdb3224fc9f5e15332779a413c5bacfd",
+      "size": 6287
+    },
+    {
+      "path": "device.mk",
+      "sha256": "5ab439fce7c3d102154481ab5f7b7cafd4ddf7a7cdb513be4fc8a3cf60bf9004",
+      "size": 16361
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "41819c15df7bc4cefc25bc0396e123924c2e80ea6bb736a0b12c5bbb9b66adda",
+      "size": 2644
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "aa33dae6c13802c141c0b7ba0affc65900de5cbded0880ee655a40095ac71ec3",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c7d4211c66cd2c79c9826386810dc8a40caed2478167a555f68e9a4acad63e70",
+      "size": 45182
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "38792506a29decaf2aea9364a2ccbdf38683dedc69565f54bce5ed1c16bb9069",
+      "size": 6515
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_razer_nicole",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-29T00:15:21Z",
+  "vendor": "razer"
+}

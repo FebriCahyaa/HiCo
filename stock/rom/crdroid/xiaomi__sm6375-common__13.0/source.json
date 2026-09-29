@@ -1,0 +1,82 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "99777355ccb9ea485985b57e0279424e7e4aac16",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "3743277d2a55c36be2e87e39be0b2ed74870d4952089b6385baac71bcabb920e",
+      "size": 4539
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4a38915534d728ca33e2d163193fdee17f318d8494155c4840731c1deeeb33a8",
+      "size": 7291
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "171a24c835ecbade89968faa87c9e96bfb222444af1576ef25cb070053f99421",
+      "size": 2076
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "33baeee28ee6352ba6e831a1af973b35b084084d7d88c6424453db3e8c05c642",
+      "size": 104
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "e731df9c10efe52ee1b5b1d03addcbe68377d0216e79c8e153f8cd1f7946258f",
+      "size": 1199
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "4f2ed973daf28de93663ff4b28d970e2e33a05569f05f4a8750eaa3bcbd70ce7",
+      "size": 3840
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "5857c0a477c57a6ec3f1c99c3ff2fa515bba503a30139cf39fb27f5962002256",
+      "size": 14202
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "bee29efd08bd1d3e1e79c6ad1e27643a5db8aa86d15a7abfefdafa5478655609",
+      "size": 6871
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "25cdd494f06d4c295a63c4d068c37857a8ecd929775bb10edc9d06b66c58d459",
+      "size": 31912
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "447c475c8ad9ac6fd60eaa6b571cbfe4f48192e6f5703a64a81194926fefd20a",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "87e358e00438a14afb94c2d7d1875d2f79b3dbf1077f55cdc92aaef00d89ddf4",
+      "size": 923
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8ac6f931a1f9567b3ec8472aeba73040c3111d42a614b4a54a1269ea73682a1b",
+      "size": 11564
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-01T13:51:45Z",
+  "vendor": "xiaomi"
+}

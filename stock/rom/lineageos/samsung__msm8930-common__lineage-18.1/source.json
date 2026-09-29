@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_msm8930-common.git",
+  "codename": "msm8930-common",
+  "commit": "e9f153c41e13c5b1f1da55d0750befdb2c08849b",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "83b22ee8aae8961e3f65e17a0044c1fee343e312052c1c89d191821fc7b71463",
+      "size": 4830
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1f4c033769a3c64b6efa340c572ad2df940c7fcf9d099031d12f1415a3d6e30b",
+      "size": 3218
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5888bdca6f85af1b2b180a39aa1dc0b27c91696ba055a2d228b319a2f7499ccb",
+      "size": 832
+    },
+    {
+      "path": "sepolicy/vendor/thermald.te",
+      "sha256": "923c987b098cb94a8943f3711b9c50e124fda58409455caf1fa629640e45b1bf",
+      "size": 1069
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_msm8930-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:25Z",
+  "vendor": "samsung"
+}

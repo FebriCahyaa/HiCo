@@ -1,0 +1,8 @@
+# Camera
+persist.vendor.camera.physical.num=4
+
+# NFC
+persist.vendor.nfc.st.multisim_fw_config=true
+
+# SKU specific properties
+import /vendor/etc/props/hardware.sku.${ro.boot.hardware.sku}.prop

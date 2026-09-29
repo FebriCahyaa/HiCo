@@ -1,0 +1,52 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_google_redbull.git",
+  "codename": "redbull",
+  "commit": "74cfc2ef3c78fe76350a1efc1f65514ab3f732ac",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5c468ace5c652ec9f95ea6a5169e03fd9b08f5491bab9bd8d4c77cc0802e84ff",
+      "size": 1596
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "549ef4340881455d107ffa066e542b7bc37837b0bbe6a7127bae2a2027367b42",
+      "size": 6991
+    },
+    {
+      "path": "BoardConfig-common.mk",
+      "sha256": "89dcb20b2123ac474c8c3f28a6ee39e2c26fccc31229a8aee29d274398e859de",
+      "size": 14336
+    },
+    {
+      "path": "BoardConfigKogasa.mk",
+      "sha256": "c3d0d956346751800d0dec6ffee466b02401e70113ddba958df352079ba83069",
+      "size": 1749
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "736cd45cf6fe625a9a354dcb43624ab58a431a3d8691e8dabf2366babb62f4bd",
+      "size": 40070
+    },
+    {
+      "path": "device-kogasa.mk",
+      "sha256": "e72e6653a73efb551fb70ce74c7cbbf9e529025669b91bff4bd047415f0bce70",
+      "size": 8112
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "db3a12b071c12a8070d0b644294c7abdbd411ec15434756d9d8f55a7ae7b2d78",
+      "size": 126
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_redbull",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-11-03T18:56:29Z",
+  "vendor": "google"
+}

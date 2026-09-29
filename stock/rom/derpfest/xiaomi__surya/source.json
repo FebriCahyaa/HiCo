@@ -1,0 +1,67 @@
+{
+  "branch": "R",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_surya.git",
+  "codename": "surya",
+  "commit": "4b13b23ccbc5f4549b127e16287166b4b357004a",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "7760071dd110fc5292881fbbf12f0570f735f83373fa93bfe72a1ea12a8b7c1b",
+      "size": 1270
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "4378a1c60f0c663a1ce8e576b2407014c7427181f5afe7802d318dec1709f3ca",
+      "size": 237
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "876bd2070f2f8fe3d081be0bb945fac015c7fa0faa9f9a945070888aa2c4db0d",
+      "size": 5497
+    },
+    {
+      "path": "device.mk",
+      "sha256": "eff4bcff026e21ce9197e4107ec7183d73b367446ef887b62851f09930bab809",
+      "size": 4925
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b0e157956e8abcb8bd56946735eafb92c41d3e20397528cb0317933cd4cac6cb",
+      "size": 1149
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "1651026d3d4b8f10635cada631f89cdbd495d0e680e15524ae88938454978c48",
+      "size": 3547
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "08d33a9438d77d6612a97cdc5bd3fa81e9ea23473063e1c11c476e19ca9422a8",
+      "size": 17064
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "4d00dafd93fba0bf947f613da2ace4bca47c1f685ad5f36736dbf7873042aab0",
+      "size": 5865
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bb06c22adbe5f4bf012824f50eaef5af832ac281bcb3781b17ec902a9232749c",
+      "size": 1441
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_surya",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2021-02-08T12:01:47Z",
+  "vendor": "xiaomi"
+}

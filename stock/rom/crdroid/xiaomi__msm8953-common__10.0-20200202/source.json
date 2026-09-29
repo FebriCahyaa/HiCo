@@ -1,0 +1,42 @@
+{
+  "branch": "10.0-20200202",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "8a45cdeab82f4085cbac9c395dc4683b80fe141d",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6f02587c9ee704e30954a6179fba60e0390f5fd6d1b463b56788ab79458ce4c5",
+      "size": 624
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "405fda8529492089e3a32f09d0b5f30a836f84e2accee80cda45abba85c90453",
+      "size": 4700
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1dbd5e86ae476dcd14ab470c54c5cb9d8786cb7f583b76f18ec3099e1b8fc90b",
+      "size": 6105
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "6de4b1e23e6dc570eada9f9663820575bfd6d76a697c3f84ae79a0b8f9345bb0",
+      "size": 1819
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4120e974ccd82acb275f6d1c9525f94cc95dccbbec3891cc5fdde5ef3cfe11e3",
+      "size": 2214
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-07-03T02:17:34Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,157 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_nothing_Tetris.git",
+  "codename": "tetris",
+  "commit": "e5938ea8fb1de42e2f85036d8b5374486b457a40",
+  "file_count": 28,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "85a9ee8e9d8748a7df880ca5b8951bbb946b4db16de289381f4054c837933284",
+      "size": 168
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ee057eb7cae5b8e93f9f65bb98af923ef4ca42d3f3569b3b246fab4c9d5daa00",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "e5c174ef44814670706fab7ad5d421b00fd6bab2162d5bc5a03ae07aef1f9919",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "9fce1b6c438ff570333303bfae9387f1c9dcef3c22a752c47a484186fd8fd383",
+      "size": 7305
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ddc673aa78ec82319bf86bdeeeb704f5bd515c21b290eeb5d2ce6f412e0ec020",
+      "size": 19401
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e56e86bb68a68b9e2e46952765d87ff808e805ea6f6120ea75078bb0f73e7cb7",
+      "size": 4997
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d195cb9d5b70ee599f0fc63c2b30cfd3ed6cd3d08a15eee41eb16da750c2ccd8",
+      "size": 115415
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/hal_thermal_default.te",
+      "sha256": "64d0d9c816c6f8cd304d6140a8f686ed364efedc0539ea27688063dda483ffe8",
+      "size": 1071
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/init-thermal-logging.sh.te",
+      "sha256": "2ba6386cf99592669e60d57d22d72d0aab02ec112222e2d26ba89c7eb41a9cf8",
+      "size": 377
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/init-thermal-symlinks.sh.te",
+      "sha256": "f43b5ef29dbe2976839cd1345e0f7a42d6e9468498e0f84cb4a9f4a1dcb29ab6",
+      "size": 489
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/thermal.te",
+      "sha256": "22fd2daed277502c0da47c2ba0f96614af4d8f978c0c2710350d6474d1641ca1",
+      "size": 22
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/thermal_core.te",
+      "sha256": "e4127eea2ca768fe1a8b6f1f745e049a0afc3b0559dc0c64d57bdf0491bcf561",
+      "size": 2951
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/thermal_manager.te",
+      "sha256": "610596bc9755b3684e2787fe7380e3a9f1e870b096d7edd2efc51d25ed03dbcf",
+      "size": 1857
+    },
+    {
+      "path": "sepolicy/mtk/basic/non_plat/thermalloadalgod.te",
+      "sha256": "fcf40b02ed9b047aec6fbe558cceda8e95f78dd52ef8129f294fd6b72f0f1201",
+      "size": 1866
+    },
+    {
+      "path": "sepolicy/mtk/basic/plat_public/thermald.te",
+      "sha256": "ffdb39d220d9c7d0e75797dc26eefa203c8d4c7d53c1320236add1b325cce39e",
+      "size": 244
+    },
+    {
+      "path": "sepolicy/mtk/bsp/non_plat/thermal.te",
+      "sha256": "8d9f0a5dd07b32390b7d89aaf62263e05a4f3573f5e0156533a989c9d75e20e9",
+      "size": 1473
+    },
+    {
+      "path": "sepolicy/mtk/bsp/non_plat/thermal_manager.te",
+      "sha256": "0e98916172232a060d21da8f603a3ab1128289d5da026e63259176e02677d781",
+      "size": 191
+    },
+    {
+      "path": "sepolicy/mtk/bsp/non_plat/thermald.te",
+      "sha256": "76f4978df5851be0e9b9588123ca57c9ebb40a4abdf14a4e0a9b016a65aaec1e",
+      "size": 406
+    },
+    {
+      "path": "sepolicy/mtk/bsp/plat_private/thermald.te",
+      "sha256": "2eecffc89c339836b993e2a59272090e3064da24cd900c69e2beefa531a22a4d",
+      "size": 995
+    },
+    {
+      "path": "sepolicy/prop/base/private/thermald.te",
+      "sha256": "4d289f88f36cd4d7fc1360ecab758effc806281ceaddff1d6d75c67175aa4f90",
+      "size": 940
+    },
+    {
+      "path": "sepolicy/prop/base/public/thermald.te",
+      "sha256": "1d57ba66f2ec50c36168c59426384557e01610c9d49970a4e18b8f2c6c303bda",
+      "size": 194
+    },
+    {
+      "path": "sepolicy/prop/base/vendor/hal_thermal_default.te",
+      "sha256": "38399ebc8a650e157d8574d6574d43a8c076cd018498b32e00e0db264abe4ba4",
+      "size": 692
+    },
+    {
+      "path": "sepolicy/prop/base/vendor/thermal.te",
+      "sha256": "e19863f908989f352d62d2976c11c7d397eaeadfc256cc41565e773530f10d6e",
+      "size": 1412
+    },
+    {
+      "path": "sepolicy/prop/base/vendor/thermal_core.te",
+      "sha256": "1efcfbc7090ea8f8b9acc45c098b4f6ca8a5042752060657368f900f7cc28950",
+      "size": 3481
+    },
+    {
+      "path": "sepolicy/prop/base/vendor/thermal_manager.te",
+      "sha256": "4326895af48b8ced623dfc40e4c6a315d454388f31800e3dc06e5f0eca2080a4",
+      "size": 1747
+    },
+    {
+      "path": "sepolicy/prop/base/vendor/thermald.te",
+      "sha256": "fbeeb04e7b6392f53256f3c94c77dddd1079e3f9536bf0e51f377b0a827fb170",
+      "size": 351
+    },
+    {
+      "path": "sepolicy/prop/base/vendor/thermalloadalgod.te",
+      "sha256": "c2dd2fb765bcdf370e8594d96da1b7b4c44dc679babd3af3c8c78a7e14f74b92",
+      "size": 1689
+    },
+    {
+      "path": "sepolicy/prop/debug/vendor/thermal_core.te",
+      "sha256": "481c11583fb33c71c4cc022bd3f07f1b01756c5c71322579467aa88254bf675c",
+      "size": 252
+    }
+  ],
+  "kind": "device",
+  "repo": "device_nothing_Tetris",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-08-18T21:44:36Z",
+  "vendor": "nothing"
+}

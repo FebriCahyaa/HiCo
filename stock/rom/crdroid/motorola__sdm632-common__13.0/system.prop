@@ -1,0 +1,32 @@
+# ART
+dalvik.vm.dex2oat-filter=quicken
+dalvik.vm.image-dex2oat-filter=quicken
+
+# Audio
+use.voice.path.for.pcm.voip=false
+
+# Deep Sleep
+pm.sleep_mode=1
+
+# Dexopt
+pm.dexopt.first-boot=quicken
+pm.dexopt.bg-dexopt=everything
+
+# Display
+ro.sf.hwc_set_default_colormode=true
+dev.pm.dyn_samplingrate=1
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Moto
+ro.mot.build.customerid=retail
+
+# Radio
+persist.radio.aosp_usr_pref_sel=true
+persist.radio.fi_supported=1
+persist.vendor.cne.feature=1
+persist.vendor.dpm.feature=0
+DEVICE_PROVISIONED=1
+ril.subscription.types=RUIM
+telephony.lteOnCdmaDevice=1

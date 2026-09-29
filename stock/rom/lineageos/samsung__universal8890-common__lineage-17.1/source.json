@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_universal8890-common.git",
+  "codename": "universal8890-common",
+  "commit": "a6ed56ac5c10a39db885b02440d42370cf2bf7e7",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e919d6d1adeb33a996be3ac753c24483735c5d7e7455178f35654a74a9da5a76",
+      "size": 51
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4ecabc1477f5c05ded03298f7e5c13168b5daf1223fea1a91b2cd80fa1d7ce50",
+      "size": 856
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "983ea5f827c792097f3cc8566d5fa7e663eed687b360b4309628bad7597f8845",
+      "size": 6380
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "f6362c013e38b66383b9dea1542d8fb762ab18b3b23526ca570308b1a5dbb721",
+      "size": 3598
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "a2f5245f2afd8fd83ca63b6fce13eda64bad88235854a074dfe0338bd500e7f1",
+      "size": 16580
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b5b3b4dcc674bc60e95c8153ac9624d7bb281d8d55a541d695f116e0322597d0",
+      "size": 2960
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2742d7a162d09526f36c4b23e72a6c7cb62af8ed7689101e70b703a244ee7903",
+      "size": 237
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d088d53363770997cd8ff02587a13eae751da9d4422ff0ce31afac5abc011901",
+      "size": 14787
+    },
+    {
+      "path": "sepolicy/hal_thermal_default.te",
+      "sha256": "337eef508ab57adf5cf47fc2a462bfe6fc2f8de249fb63299dc338bbede92a19",
+      "size": 264
+    },
+    {
+      "path": "system.prop",
+      "sha256": "0bd46e1694c6e851c094672dfcbb3ca12a3f7f2b372d27dc6d3bab9ae39c80bf",
+      "size": 1200
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal8890-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2023-01-07T21:00:19Z",
+  "vendor": "samsung"
+}

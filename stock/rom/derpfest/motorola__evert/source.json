@@ -1,0 +1,62 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_motorola_evert.git",
+  "codename": "evert",
+  "commit": "4911b84f9d7b1e57299ca2f522d5297777c59b41",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9dffecfbd3ef2b080d2ef3e9a1de9a18f3250dadab985ac044b76f8c03ed8f06",
+      "size": 223
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "117e2921b59413d00ffa4ffe675892e3f842e79886c56f344fe0654f3f53a20a",
+      "size": 242
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e2638d0ad09139e153c18c6c33a985bdc2a92d10185a8446e2eac7cc4f0e44d5",
+      "size": 1602
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "de30b724eb70329345a46c9e8c34c37e8b032feaf3acf1c06e31502d008d4ebf",
+      "size": 2393
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a83cc21110cab687e0f2c3530aae7d92c4cc519ed840e07d43dc90ea421eece6",
+      "size": 3066
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "45496484cb9c95a65d93256e1b90153a77528009c7de036f0e0e4a5d8538921c",
+      "size": 1047
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d8a2cb14942b745927e78eec4bae4c0bf4ce33d85d4efc2308c7113b880258e7",
+      "size": 25107
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7adfbfe89edcc45aa54d3f664689f0fe1255f67e95821c9def830d28666e09c2",
+      "size": 1594
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_evert",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2024-12-14T15:52:21Z",
+  "vendor": "motorola"
+}

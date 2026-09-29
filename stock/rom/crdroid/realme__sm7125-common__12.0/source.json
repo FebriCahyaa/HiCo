@@ -1,0 +1,57 @@
+{
+  "branch": "12.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_realme_sm7125-common.git",
+  "codename": "sm7125-common",
+  "commit": "6214ae455076b759443b2192ccbb4414d0caca9f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2fc4236988166d098adbc8fed6e800759189867b32c237509cb123a9f348043a",
+      "size": 4298
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1b078e4e5b0cb48f6c2c080b36a9a1df0274aa3ff846a11c6f169f980b1570d3",
+      "size": 7509
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0dd7de7626a9b601f15013398456a369f5fe128dc90c8b669e2c2b518f08aa2b",
+      "size": 2137
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cff29efab16b6f8b3d8d1a285b07b35640e7b94f965012b3c20a083a1ed70bcb",
+      "size": 47285
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "c7df84b63c94147e1625ec1d7a3c4c05b37637f5c4c9fd8035da9393f8c3b273",
+      "size": 57
+    },
+    {
+      "path": "system.prop",
+      "sha256": "16d8b6542185a2899f5b662892c3f6f81647d14769a9f1c334f0b2b1a9b2b1bf",
+      "size": 3451
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8b7194b5670c87b03a36073cc007883bebb901ff3eaf2b001cb9d52266e11d44",
+      "size": 6812
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_realme_sm7125-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-02-18T09:08:18Z",
+  "vendor": "realme"
+}

@@ -1,0 +1,92 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "c3e8911f86610beb415043f36987245626647318",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9892b89bb9c7ea69860026be0259c3a179c18f27b1a095ce9a08c6066cb0d9f8",
+      "size": 5074
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4930eece8ef5f753dfc11065171c7756e1c23c09c0413fc347e7202bb550399e",
+      "size": 5395
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7ff941c7c85a0fa6b0fc16a49d370b67bf04615e930f2c348b0f63572d0177ac",
+      "size": 3487
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "8ba846faa868d6fb2bd17e4e6513c138a0187a4265bee8df09797e07e55ede09",
+      "size": 26182
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3f3fbf3afea2e948cfac23dadf769df99886611e8bebafa04f97e8f4b9d839e0",
+      "size": 687
+    },
+    {
+      "path": "system.prop",
+      "sha256": "734b3c8c05f34c612fe82b8ebe3fe71fdd8f9dd11e1a3e76fcbb3787a5d620c7",
+      "size": 370
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "4ccf7ac2727a1c381879f6f7d1baf2890a82e592ef98f59e8cf036c76a6c8768",
+      "size": 1065
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "d46ee1c33530dd6b1497234c98b010d1008f33b267652f52d7cba174e4eca510",
+      "size": 5560
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "37362265a80f6d2063fea3ef2f0d85572524e4d1baf47beb759507ca9be3d372",
+      "size": 2565
+    },
+    {
+      "path": "thermal/android.hardware.thermal@1.1-service.sdm660.rc",
+      "sha256": "8b6245e60f0163c2b2065e8f872e537f7ccb05b1a90ed5b31988d0bdc528aabf",
+      "size": 137
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "eb4e18a81792fa73c976a8c7f959c81bccf71ac619d4ede55e2c94792f74be60",
+      "size": 1839
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "a4b95ed901787d7b6e0fe8364b5da453d7be5eb1f6958e46be8eda39a2371576",
+      "size": 9288
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "96940ff8d81262fb8bc39be40abef226ed31d2b55deecaa17b702bfe76cad482",
+      "size": 3701
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e7765ff72174cfb1533520c15370f8c7fabf69c23f9a422c1d60e3e38340d6d6",
+      "size": 6503
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-05-05T03:28:09Z",
+  "vendor": "motorola"
+}

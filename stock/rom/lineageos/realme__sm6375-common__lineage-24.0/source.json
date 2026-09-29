@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_realme_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "4dec33eb4ae0cb1e8566fb6424efcfc460bfef50",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "223e4cab4652412ff4194f1e5f8ca69b605b5d53fe1708f0d68397df052f4cc7",
+      "size": 827
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d7b590bfeb0bdefcb8fa252fb258cb24ee2c5547720988e0c583ae472da21cda",
+      "size": 7152
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "16b42da2fa32c46f4b8bf2f474ee1bd23fea8599a7ebba127ffe0b7b061a55cb",
+      "size": 2548
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d22c03f1c6e2eabc8ae01db071cd76a19380e23ca7cb1893eac1035af2d3b820",
+      "size": 194
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6575aa2a66b7b5fe35d9eb61526f0c065d8dc7810e34fd56705f92601d08e9ed",
+      "size": 44246
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ec73d7c6b2f2d93a70846074ee27f1945baa9b524f1dec10eb94d6b8ea0dd7f7",
+      "size": 538
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8c79fd26bd9a321ec9bcae02b4ce1392220c37aff420d4b9bd703d7fc99483ac",
+      "size": 8134
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_realme_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T13:38:15Z",
+  "vendor": "realme"
+}

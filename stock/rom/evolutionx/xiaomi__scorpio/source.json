@@ -1,0 +1,57 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_scorpio.git",
+  "codename": "scorpio",
+  "commit": "61b1deac27379e1a2c9823798227ec1ec495957a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6435d4834c6a0a4ac90d8e3ff5bf7e27c7c1a5a3a8fc423a2fe9cc33306e9615",
+      "size": 658
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6c4c6f6097bfb74eecede3ebdf4d72eb0d8733e0673af2eebd5b5a9522e147f0",
+      "size": 1117
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "2137c7bc6f6cea2d708406163f4063788c63f5997b8b0a7bc9be47317c3d3db1",
+      "size": 3061
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f563d6a65bc7226c878be8a973b56758f16a872ed38b09c5a9c094aa2dec0176",
+      "size": 2846
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "588ebe73c881c07d217c2e619faebe6ae7214e0bcae0aac1141e9a641aed1f8b",
+      "size": 472
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5cf4d97bbc99c94cc212411580b14d4f6db0f2bde1fa4e60cbbb3b7cc8711714",
+      "size": 10697
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2112283c1e641354c05f52259263500f608e89350d36afafced85810c0a1ca9f",
+      "size": 238
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_scorpio",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:39Z",
+  "vendor": "xiaomi"
+}

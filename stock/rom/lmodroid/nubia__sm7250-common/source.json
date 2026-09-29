@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_nubia_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "feb85bbb602ccd2a575f1b485e1b0d2505a734b9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4a847a045dcf58a9cb1ffd7254f6e6d62f1f9be340371f008f1d52ebb13da869",
+      "size": 84
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9559d5e144867f885523da01acac8328481f25a1ee17954a71d0ea5da1c33f49",
+      "size": 6318
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "02e64b940750b629816f3598d36b1205b90059fbea769908e40cd1236e6ceaa6",
+      "size": 7461
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "227eb2fd20aab8ed4ed19ea81cb58ee6ec7c56a3600bfc5ecde386c491946814",
+      "size": 2775
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0f95db66e0e485cbf7a7745df9f190853e455609e2ce2eb80e3d23789420cd75",
+      "size": 78420
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a90d5f6baa951056ba98ebf1201960a5a4398cb45773cfc4950d4b5d43285da8",
+      "size": 364
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c4f56c879fcd14249f0649d6648ec7ae5334b305111dd7fdb0ef5efd331bb392",
+      "size": 7547
+    }
+  ],
+  "kind": "common",
+  "repo": "device_nubia_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-12-15T04:04:22Z",
+  "vendor": "nubia"
+}

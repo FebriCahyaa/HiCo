@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nubia_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "252ddc2a0b5569c97c30f2e1ac639a9af6254320",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0bb4423a821e01cdf58ff85f561aa89dc688d61b1c4f6c7b95a1273e85c2fee9",
+      "size": 5142
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "6d7ce3d99399735b9765189be2c371ddcfc653dd61786f276ba94b7d9149166c",
+      "size": 9131
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1ced0d9d1850b03d024b630b566850f8d452bc1471c96411760cad6377288918",
+      "size": 2728
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "8fb20f1a82c1e74f1e061c59f567aa513380b197c1b80995dbc0f6c2248a60c1",
+      "size": 103
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "d78080e421ccaaac97bcf846718ede2f1dbbf9665cc452f069b43267a1e2fb7d",
+      "size": 67
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nubia_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-23T13:27:41Z",
+  "vendor": "nubia"
+}

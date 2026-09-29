@@ -1,0 +1,27 @@
+{
+  "branch": "missi_pad_global-user-14-UKQ1.240624.001-OS2.0.2.0.UMZMIXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/pipa.git",
+  "codename": "pipa",
+  "commit": "362610d91c8750fc8aa30effe6d4000ae35fc932",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/pipa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2025-02-27T17:26:36.900Z",
+  "vendor": "xiaomi"
+}

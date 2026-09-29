@@ -1,0 +1,72 @@
+{
+  "branch": "ten",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "87426a940b153f3a5e8aa16450ca8f554c228795",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e0592f9410199e9e498ba865d4f5a79fea27470e3dd4a2cb2c563786b77b1a9c",
+      "size": 4084
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "943bdb7ca25ea68094a917c82215c67de216faa79658a1cc2124a2ff58d7ad80",
+      "size": 5228
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "324463bd501f2ad17f8c9021b70ff31ced3c107f44989edbd4d1e30b6b74691f",
+      "size": 1867
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "9a33a6ae2d5c58c80fc2f3f2b0427191a767abca0d3820e9efe874232dcd1805",
+      "size": 3500
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "bf7f90c40945484697a9fff8e87b6da6302226698824a82f9639715dcc038b04",
+      "size": 16084
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "dc05333c54111aed230484ecba8a81651f47fa8d4b308f8ad9aa62dc89eb7da5",
+      "size": 6247
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d503df7faa865c1192fb092c52cb4b2607ec14dd20337372ce2b2395a7d7d9cd",
+      "size": 34168
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f5f5270afe558b41c46364e098b26079892e7ef74e58e79331921e6fa78e6338",
+      "size": 5070
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2020-08-10T05:18:32Z",
+  "vendor": "xiaomi"
+}

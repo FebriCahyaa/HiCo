@@ -1,0 +1,62 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_universal9830-common.git",
+  "codename": "universal9830-common",
+  "commit": "d6b9d8da4cf422a28f67b75d19dbf080cf1fbff6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "32a0a8650b7c48025a3bfa4707428bfb3d9a916b11f14d380cd9bb983c1d39fa",
+      "size": 231
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9104bd4fda162e58e6522655882e44ccc0e2a53dc9ab737b156d44742528c97e",
+      "size": 7465
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "3927ae8074823e9a5881665c5b619228906b82de039f2f8f35d254b58959378f",
+      "size": 3496
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "a7fbb0d4f7c2220c2afa5d831ef1d489e640dffd880d1103a537807e2fff1c1b",
+      "size": 18549
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "be1c0ea961de1b43dba9e600ccd29b44ab44c963a2f29658e1a173c38709b96e",
+      "size": 2991
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c841d449e8d952f3c7d8f2a19a8c7464f9876406433e4fdfa8b5e75b3a5bab9c",
+      "size": 9159
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "94e4b3983feea684ef88b9175213cb96c427a991835f0c59458000e101786cbf",
+      "size": 95
+    },
+    {
+      "path": "system.prop",
+      "sha256": "09bba9ee268ff2710886c8897a0f2a53862e2387a3a418fd78bb5eaa5d1dd0c0",
+      "size": 717
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a583b4d6b4659eb98b9f52c7e4b7b72de01284dc500796fa4beb5508a37dfc3e",
+      "size": 2947
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal9830-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-05-29T00:46:02Z",
+  "vendor": "samsung"
+}

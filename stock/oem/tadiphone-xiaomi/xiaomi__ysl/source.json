@@ -1,0 +1,37 @@
+{
+  "branch": "ysl-user-9-PKQ1.181203.001-V12.0.2.0.PEFMIXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/ysl.git",
+  "codename": "ysl",
+  "commit": "7b6f31271d984ee28002adf1a667d063d25265bd",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "vendor/etc/thermal-engine-map.conf",
+      "sha256": "45d7dd1c5c39886345b75e76b1352dbb10964464e7fb9b4099c3cc40abb7019d",
+      "size": 129
+    },
+    {
+      "path": "vendor/etc/thermal-engine-normal.conf",
+      "sha256": "0d9ae9fbf716b1f64fce48701c75e103498849a8ce237eebbdfa6c0f652ce140",
+      "size": 65
+    },
+    {
+      "path": "vendor/etc/thermal-engine-video.conf",
+      "sha256": "2fcd5c3277defd93f638a931f4d621b451d17761b1ed4a3c7a484693877cbdd4",
+      "size": 67
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/ysl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-08T10:24:33.534Z",
+  "vendor": "xiaomi"
+}

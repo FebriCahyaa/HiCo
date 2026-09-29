@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_sdm632-common.git",
+  "codename": "sdm632-common",
+  "commit": "0461bb1baf9762b871e288f3654a2fd6cd88573f",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0e78e9af22217606f38e3ac5f040e537b94052d0c9db97d738e8fa93d7f3b517",
+      "size": 249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4516f1c18739d4d6ac9023c904c0f88583ab70b57efe37f716a6180f7f067ca9",
+      "size": 6231
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "dffb86989f68d894ef47fa76385f1a1cda9179165973859f24b997e11c1985ae",
+      "size": 3829
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aed1c8b680c8694c3251634886dd208e439afd4007f58e5cc8d925e696ca6fea",
+      "size": 35568
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "6b79a22cf2fa8bc2d36bb4b665b7ee67b62ba20e8d21e31e58bd3eac27b45907",
+      "size": 637
+    },
+    {
+      "path": "system.prop",
+      "sha256": "70224240b0b3c8c308f277254875029c95dcdf27a60d2f7b50e7f8b99f73a515",
+      "size": 350
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d69ea0efa2c2f7da75844df16533eebf920c5523f2f5baa2265027486f3da873",
+      "size": 7036
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sdm632-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:51Z",
+  "vendor": "motorola"
+}

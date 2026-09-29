@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_xpeng.git",
+  "codename": "xpeng",
+  "commit": "52450dae3d7218d1a92867fc43ba386378909adf",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "03d48fbf7e44ec26be1a724c68f6fe788e125269c92012e903d81f65e0e8e456",
+      "size": 209
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8861ad065cb9de262464aff785dd0478b094b1804fcfe217fdd3ed57a1552537",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "7b85ba76a10ec0a37e0af9dea41bb1f2e8aa2b654bb1897454152313d4dece93",
+      "size": 1318
+    },
+    {
+      "path": "configs/thermal-engine-xpeng-game-perf.conf",
+      "sha256": "6fbb76291bccf97b4efc16d5fad51edb7f7dbec65228706f68e0e06933c6db5e",
+      "size": 4502
+    },
+    {
+      "path": "device.mk",
+      "sha256": "3024b742177e967c41e74530304979e6c295695cb987119f1c27cb539e4c55e6",
+      "size": 4178
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6aec962d97e2b6cfa87bd88c9a7f5e4b3d7d18944efdc02e65bc3d244d69a773",
+      "size": 1241
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0e1d47b997238bf23e9612b5c500b3277bc2b2e418bf009a6428b604da91424a",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b4b2772868cce28b6cc455d63c316cd1bb1178fb1492bcc52415036d25b37432",
+      "size": 19639
+    },
+    {
+      "path": "system.prop",
+      "sha256": "538c3113599adf3c0f7ce02b1180b78712d5dc42946444485975f28ffdae85dc",
+      "size": 75
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9da6813c62973c13253ef188dfc2072a1682686096b88204debab4f9b6d3a614",
+      "size": 176
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_xpeng",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T21:32:54Z",
+  "vendor": "motorola"
+}

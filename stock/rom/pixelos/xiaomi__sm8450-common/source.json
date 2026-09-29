@@ -1,0 +1,42 @@
+{
+  "branch": "sixteen-qpr2",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm8450-common.git",
+  "codename": "sm8450-common",
+  "commit": "10194d1cb242dc6cdba2e48f6e3397e4aec91331",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "490c94a80ef8c34577b7ccbfc9904c4ea6653162780b83f09e87e8a50c6720fc",
+      "size": 1360
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5e18456301aa3d57ff6eb22755676c4cbedbef1324c708556d0cb7324b078caf",
+      "size": 8750
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "61a362c2e2b6778485d4bbed4700dce90bce0a59bfc858ec2389ee8caf4aa1fe",
+      "size": 3542
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7db7f2cf9359b8bb11c5f9b4d53713967830dfa7a7edf476eb8b96d3b172c8a6",
+      "size": 46407
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "b28d8bb62ba52e0d4a2df41aee6c3c59d467aa89b8ffa3cb32e681e70c24b507",
+      "size": 1655
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8450-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-06-26T22:37:32Z",
+  "vendor": "xiaomi"
+}

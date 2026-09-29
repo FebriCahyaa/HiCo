@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_judyln-common.git",
+  "codename": "judyln-common",
+  "commit": "9cccfd59afa2c4d57aaa162b8eeec4f3922931fb",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e8dd1eb9e0f2923809f1d41eba66a3f55df2085e22247699c23a2789ab774777",
+      "size": 1293
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "baf9f55eb94613c0e137841f2dafb043a999bb89bd002a61dbd80e76ccedbdc4",
+      "size": 937
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "83178b4f21c2fa92733c4b970feb468800c0f7d43d29011ec81efc2bbb1814e8",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f60dfe66f6c8331d4fb960d425eeeb0a7340315d05d4df9d7bc942f53880e18a",
+      "size": 15392
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4bb48b96c6444ec18c39c82e80fcdc87f14c747997a8305183287a93db6ee025",
+      "size": 449
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_judyln-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-06-23T06:57:05Z",
+  "vendor": "lge"
+}

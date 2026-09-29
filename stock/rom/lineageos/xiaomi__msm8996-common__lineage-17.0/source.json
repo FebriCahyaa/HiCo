@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "58ce9ab772d7c2ee8ad67867ea9ae18aea38413d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d83ee4eb4db56f1c87d5e66127adf8defebf2d0cd5b3fe20786d14808b84399e",
+      "size": 4715
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "917e74efb04c62ed55898706c0890ae7eeaadb9ce76274f43cdbafb0a73952eb",
+      "size": 6445
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9db742a75d3d67b5d2f4b913e7868f90f1e4f7e696516b90fdc8332f2bd18b5b",
+      "size": 2541
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3d0e9d471bb276304ad1d6de91d153b7cb9e2488fbc479c8f06469b6ef70e85b",
+      "size": 233
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a7d4aafa468355222ea78bb61e3bb9529fd6da8675480b4d9f1f2e188b6ccb4e",
+      "size": 35660
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "5e237f36cfba4addb2773bd48953e862b563a3d6c80d89180481533626c54b14",
+      "size": 51
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-01-02T01:26:52Z",
+  "vendor": "xiaomi"
+}

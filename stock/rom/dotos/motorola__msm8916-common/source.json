@@ -1,0 +1,57 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_motorola_msm8916-common.git",
+  "codename": "msm8916-common",
+  "commit": "21dbe6db8bd7fa6f697a92b2a39470438de2de7d",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "83abc67e6aac3031a5c7c8de2c98779608fd330d2a55b816d613c713bead0aea",
+      "size": 2463
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a7e565aea14b005b387f4f5ac023a0a2302107b76ccdf6aeea5e066374fea074",
+      "size": 5200
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "4afc8ed0f65d8f064e45f0ff8ddeb8820ef7dc6acab4a18bfe3b93b3a0454c4e",
+      "size": 1204
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e35017eeaa7f138d2b6c0cdfbd4435aa6696df5f9f9ed650a9b854b6d6bef7c8",
+      "size": 1667
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f446dd4e199c8b5e284309786062a6038cb9b569607284edea0024d3dc223c3a",
+      "size": 422
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c23f2f0b1e7b4323b31fd8ab528603f1360645ca5271e5989ad87f78ea21338d",
+      "size": 7066
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "9102fb3457bf7cbca3ca712491195e05dd13ed84829c441c728be11620aca914",
+      "size": 90
+    },
+    {
+      "path": "system.prop",
+      "sha256": "79a5669a5babc345ff3d09a3dce60a3773313fcbb6799ac8661c3ab259145e9e",
+      "size": 2000
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_msm8916-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-09-15T07:05:26Z",
+  "vendor": "motorola"
+}

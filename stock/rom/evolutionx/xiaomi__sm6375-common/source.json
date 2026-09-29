@@ -1,0 +1,47 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "7eca964bfd2335b3b315366bdb7aacfe2058a2f1",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "28904d5aafc2cab27489c3a3fbde0e1e52180984490283fc782c91488b1b4d98",
+      "size": 330
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f79e85967034157a45d1ed8fe67f6e1f41c6256d6cce100248b669f8158ec133",
+      "size": 5753
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a98b28b6197b0edf9e5e4db7e1b543fea38a577350fd600da5fbf0052d52f969",
+      "size": 1976
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b4215b1d0b79b817d07fc3a29e529e551af7805ad28775607509be7fbac95b3c",
+      "size": 27247
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c0fc88bd5ac2e8062c60a1c28ec9418ba1babe92052120344d9dd7cfd567a4e2",
+      "size": 8556
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:07:50Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "13.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm8450-common.git",
+  "codename": "sm8450-common",
+  "commit": "7503a919ddd6fc6e8d9799b3109fac4050d32914",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "39f2e5be6af769b89c315eb92886c8ebdf2a1d675ebeb3ce6b1e61a18b7772c3",
+      "size": 257
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0086d60815131f3d1d7e90f2d0fd3a4e8ecbf5b1c187939f9eb2230d91c7448a",
+      "size": 5506
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f984a94d3bac19c17062dbe396903960513feb8113f9cec50e5542bf9f964f00",
+      "size": 8884
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ba201f8a6e32d0fa1001a2022eb4a3a3b266381e1be4493f085a55baa76ab5ac",
+      "size": 2154
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "7cb24e6e42bc02b7af905cc26e1814462eecec49adee16642bf514eea3281162",
+      "size": 1204
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "5cfd92c4a1d7ca97a66e73c0d5c041705dc2798cf8b2981a8ffffc30928b272a",
+      "size": 3266
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "365eccaae570915fec9dfe18a0d0f0c4bac1e61d593689fca48edc59d40f0c16",
+      "size": 14128
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "3d9678f3988b3ab36d808b627f5da0ab5ee4433a01a562a05f5047ec0a530ab5",
+      "size": 6147
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2916552a9d3599d2b83a530fca48c402a6dfdbe91619e31f9fe45656e8a11008",
+      "size": 99184
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e5fa9568799f839eae1dc98659c367a8d8555d2f48b88255a2715791f177cf87",
+      "size": 1797
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8450-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-07-24T14:42:27Z",
+  "vendor": "xiaomi"
+}

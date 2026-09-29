@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_samsung_gta4xl-common.git",
+  "codename": "gta4xl-common",
+  "commit": "3976c8d0b8f4b8bdcde8b8b054782b237a870a38",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "81a36f535f912d8962e3c8d3bde0ea895e75730969b54cb612e05be8c186f988",
+      "size": 180
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "17fd448f6a0256d54d0f4ecab684f6263584a1b655531856cd7438eed4f32168",
+      "size": 6240
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a82c0916c3edd262ea11bf0da7fad1335ea1a5df2aab10dbd8ffaf1bc37bc17c",
+      "size": 1989
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "717588a808f9804c510b3a95d621cdf3dcf604fc5b2db17d65a24e5caf66cad9",
+      "size": 1687
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5e7c99b601215f0532874edb6e423e3f526b6379ca0253955ba9e61845a57b8c",
+      "size": 5082
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "eb9c7dbf2b47cf01e0dbd58fd71ccd8ea903d62d9f27608d4a6b8526279f2894",
+      "size": 2097
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_gta4xl-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:06:01Z",
+  "vendor": "samsung"
+}

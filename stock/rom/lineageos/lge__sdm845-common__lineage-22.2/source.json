@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "31815e4878a228df0ee486b38f3dc755a23d42fc",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a4b07c5a51ff6aaf99c39b7d5f08b0b6cf8fd0aa3d54776e612441a2c19eb630",
+      "size": 443
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "de3e869eb308fc85839a1d4328c3c8016e9a57aaed4a9edc15283cb5ea5d45aa",
+      "size": 4458
+    },
+    {
+      "path": "BoardConfigDynamic.mk",
+      "sha256": "e095ca8d5044d962c80113aab4614f585951e5fddb47966b3b74048f8b676214",
+      "size": 1032
+    },
+    {
+      "path": "BoardConfigJudy.mk",
+      "sha256": "7fedf77973d1ab005c31d607dde2d87e5e46f3b337aef51c43ef325abac6349c",
+      "size": 586
+    },
+    {
+      "path": "configs/thermal-engine-845.conf",
+      "sha256": "6706d886d52604a7637befd0ffcb273cc0800a9180fd8eed49377e5499b97c31",
+      "size": 5658
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e4a67ec4ea338627e497f9330b2c69e39106e46cc7c8c6d5fd12b3469f1bd606",
+      "size": 1564
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "70924e873066bba6aa2070cd5e039a07875beec482e0579882dd68633120345c",
+      "size": 183
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "415a7c2db6b2eab8d75970e072ea6627f35df3cc11dc4f33fec98632e6077fd6",
+      "size": 31325
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "a3ac0ca6a8308c7df14cd4939c779182c38156d74a10017d740fa26decbdcdc1",
+      "size": 471
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a33a09756b75137ae672cccbd477a6b3bf43159ad32d751d03312ae733efd743",
+      "size": 2037
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "015af8338b4eab5278d3ff1553b49b5c8b5de0adb59797da9d71f9c5ba3ac8b2",
+      "size": 6328
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-11-25T16:09:22Z",
+  "vendor": "lge"
+}

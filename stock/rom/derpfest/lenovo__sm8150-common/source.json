@@ -1,0 +1,47 @@
+{
+  "branch": "16.2",
+  "clone_url": "https://github.com/DerpFest-Devices/device_lenovo_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "8ef75e65fc339e7d73f439c4a2636fe47ccdc373",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e87462d8f6dcf11d9443d83a724e899df69782431494410d9c95efa5b959ad15",
+      "size": 495
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "424efe2c09ef0db84ec4cd4f18571ce67ff2c2ab03868ef43dcb2ba31c0dd901",
+      "size": 6621
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2634553c60d87e4003d5ee913c245d0392f71adbb27b7fb0eb6f50442214ecb9",
+      "size": 1903
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "816c7222d9cbb1eec3afb8ae794a23c05de12d3e287c405d416266cc8647c75a",
+      "size": 28429
+    },
+    {
+      "path": "system.prop",
+      "sha256": "dc9223630a2ca16886567453e700b767a7d203e52b18934c4ce8fde10a99ecde",
+      "size": 2168
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "330af6ae50045265b8fa95f6250a59b1546fba865dbb2f2ce0cb15950b8665e7",
+      "size": 5325
+    }
+  ],
+  "kind": "common",
+  "repo": "device_lenovo_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-05-12T07:48:59Z",
+  "vendor": "lenovo"
+}

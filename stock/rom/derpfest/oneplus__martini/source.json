@@ -1,0 +1,67 @@
+{
+  "branch": "13",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_martini.git",
+  "codename": "martini",
+  "commit": "88e64219d18d701c989c0e4e966ff8af06c99eb3",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "70af9bf7a93d30ba0e52fd9ff1944137a8ce2e74c4330e7409c5884e84e8e553",
+      "size": 5260
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "56c557a899c86d13341d1aa0f6bf4f619487b5bdc809fec36490a249d1233b9d",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "2455dec56616004098d2c0c190472e985df5cceaef32e80d1e884e56bffdf720",
+      "size": 8291
+    },
+    {
+      "path": "device.mk",
+      "sha256": "869b91364f3f5fc9f39c2ac7999766164c4ef9fbc278a2bdd81b8c3f062e1e28",
+      "size": 22493
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "22a052738325991f91d676cd1a850884d9575d8237b81499e590cd4432b40962",
+      "size": 2912
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bc33e812f73bee7fc4d4a2e1a251dc6598becf663b129a19d8e9d07804af2a0a",
+      "size": 95935
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "7a20ab50d76b9464cf2ddf36643f86205edffb5a1f82d1e8745a13016787c7d7",
+      "size": 59
+    },
+    {
+      "path": "system.prop",
+      "sha256": "49783c5298e85c91b7b3da43647118379b45ffb3acaa7b6a0f835cbfdddd13b6",
+      "size": 57
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c8beeb4bec38066477d5a753b727310e9e8f56d38007194d1dfa33fe4a426bc7",
+      "size": 6555
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_martini",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2023-08-12T19:54:01Z",
+  "vendor": "oneplus"
+}

@@ -1,0 +1,37 @@
+{
+  "branch": "quartz",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "433b6b237a1b7014aee78d9aa3bf3279472c35fc",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "3a79f2dbe2e6c5471e1f16b6e0aa46dfea9cd7195611c2639a3b3b5b8da26e2f",
+      "size": 4695
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d43a1cb7611289d439009b78a21dd59c201c1425c7cff92022e8f44cbf14c5b2",
+      "size": 5500
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "6de4b1e23e6dc570eada9f9663820575bfd6d76a697c3f84ae79a0b8f9345bb0",
+      "size": 1819
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "09c33d9099962591255a9d621013284f712173f5302c830eaca703053e9c9e85",
+      "size": 142
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2022-05-28T21:15:56Z",
+  "vendor": "xiaomi"
+}

@@ -84,6 +84,13 @@
       "pushed_at": "2025-04-06T23:08:27Z",
       "status": "ok"
     },
+    "motorola/sm7325-common": {
+      "branch": "alpha-16.2",
+      "commit": "de5112108dfba71ddb17f2ca3f5b2531c043ae5a",
+      "file_count": 7,
+      "pushed_at": "2026-09-13T05:35:49Z",
+      "status": "ok"
+    },
     "motorola/xpeng": {
       "branch": "alpha-16.2",
       "commit": "0ab16944bff795cae3b3fd91cb8cbf28778c5571",
@@ -140,6 +147,41 @@
       "pushed_at": "2023-10-08T18:12:04Z",
       "status": "ok"
     },
+    "oneplus/sdm845-common": {
+      "branch": "alpha-13",
+      "commit": "77695a7426937bb6dfb528c3bae553b8de0493d8",
+      "file_count": 8,
+      "pushed_at": "2023-09-01T17:04:32Z",
+      "status": "ok"
+    },
+    "oneplus/sm8250-common": {
+      "branch": "alpha-13-old",
+      "commit": "27dd5480bac440c7a6e2e85fb0d200b42919f62d",
+      "file_count": 6,
+      "pushed_at": "2023-08-02T13:40:58Z",
+      "status": "ok"
+    },
+    "oneplus/sm8350-common": {
+      "branch": "alpha-14",
+      "commit": "63f4cbae834a41f6bd046eba538c7d17e3b18ae3",
+      "file_count": 6,
+      "pushed_at": "2024-08-20T19:14:25Z",
+      "status": "ok"
+    },
+    "oneplus/sm8550-common": {
+      "branch": "alpha-16.2",
+      "commit": "1938b983c4a64acfecefba0c24518612129747c8",
+      "file_count": 5,
+      "pushed_at": "2026-09-21T19:46:07Z",
+      "status": "ok"
+    },
+    "oneplus/sm8650-common": {
+      "branch": "alpha-16.2",
+      "commit": "04231171e85dfafd19ef6ed2f15b3fc2d5e1c3c4",
+      "file_count": 6,
+      "pushed_at": "2026-09-15T21:01:25Z",
+      "status": "ok"
+    },
     "oneplus/waffle": {
       "branch": "alpha-16.1",
       "commit": "8205199b26769c04801fcf9b2deffde2bae87653",
@@ -180,6 +222,13 @@
       "commit": "10d696dffdbbb91e65a6e6f9f63b5df33cc8cc92",
       "file_count": 11,
       "pushed_at": "2023-03-16T18:14:26Z",
+      "status": "ok"
+    },
+    "realme/sm8250-common": {
+      "branch": "alpha-13.0",
+      "commit": "8c308f46fbdd22a3b214622474fbeaa6da5b47d6",
+      "file_count": 6,
+      "pushed_at": "2023-05-11T20:24:54Z",
       "status": "ok"
     },
     "realme/spartan": {
@@ -238,7 +287,7 @@
       "pushed_at": "2023-06-20T18:08:56Z",
       "status": "ok"
     },
-    "samsung/exynos9820": {
+    "samsung/exynos9820-common": {
       "branch": "alpha-13",
       "commit": "e32f83aa8426b0f85d7f3682916c8be4f9f7a6d3",
       "file_count": 8,
@@ -441,6 +490,13 @@
       "pushed_at": "2026-03-28T16:57:34Z",
       "status": "ok"
     },
+    "xiaomi/sdm710-common": {
+      "branch": "alpha-16.2",
+      "commit": "8481355495a5c0afb1abd941233d549fe46a6b37",
+      "file_count": 8,
+      "pushed_at": "2026-09-13T20:16:50Z",
+      "status": "ok"
+    },
     "xiaomi/selene": {
       "branch": "alpha-13",
       "commit": "c8a38b12954ae078fa89c3f63218bfc62922ee2c",
@@ -448,11 +504,60 @@
       "pushed_at": "2023-10-26T16:26:53Z",
       "status": "ok"
     },
-    "xiaomi/sm8250_alioth": {
+    "xiaomi/sm6150-common": {
+      "branch": "alpha-16.2",
+      "commit": "6a22c0df254bbda1bdc2d2067440e4a54f22acaa",
+      "file_count": 12,
+      "pushed_at": "2026-07-15T17:42:24Z",
+      "status": "ok"
+    },
+    "xiaomi/sm6250-common": {
+      "branch": "alpha-13",
+      "commit": "201b2533e08903fd071d610e024a6648ada1e2db",
+      "file_count": 10,
+      "pushed_at": "2023-07-26T11:14:48Z",
+      "status": "ok"
+    },
+    "xiaomi/sm7325-common": {
+      "branch": "alpha-13",
+      "commit": "bdf8bef2d826a2d52eaf072371db542fcaa9e5e5",
+      "file_count": 10,
+      "pushed_at": "2023-06-11T07:47:29Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8250-common": {
+      "branch": "alpha-13old",
+      "commit": "68c967fc85be34f933f2724917e90e8622f362a7",
+      "file_count": 13,
+      "pushed_at": "2023-10-15T11:14:28Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8250-common_alioth": {
       "branch": "alpha-15.1",
       "commit": "f54c3a6d3fa479a210d547279400759dea944087",
       "file_count": 15,
       "pushed_at": "2025-05-22T10:50:29Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8350-common": {
+      "branch": "alpha-16.2",
+      "commit": "f96f46e70214b1bb27141130a54bed57656816e7",
+      "file_count": 14,
+      "pushed_at": "2026-06-23T06:24:21Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8450-common": {
+      "branch": "alpha-15.2",
+      "commit": "0af9693fb09444f365ddae25a240617f9d8eb05d",
+      "file_count": 9,
+      "pushed_at": "2025-05-30T13:19:35Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8550-common": {
+      "branch": "alpha-16.2",
+      "commit": "2b0f4849da3a21f8f0d9a63da4b0a81c64c1aef6",
+      "file_count": 6,
+      "pushed_at": "2026-09-19T18:19:09Z",
       "status": "ok"
     },
     "xiaomi/spes": {

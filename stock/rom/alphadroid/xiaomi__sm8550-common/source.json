@@ -1,0 +1,47 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8550-common.git",
+  "codename": "sm8550-common",
+  "commit": "2b0f4849da3a21f8f0d9a63da4b0a81c64c1aef6",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "478835003d1b8d00c66845a21c10a2463d191a435381e31f5749c17ed153cccf",
+      "size": 1008
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e4114453225469b072a074624af943bd7aedd337f0529297c87488d1df67864f",
+      "size": 7439
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "70ed119829cea4244d54bdfef9950c2e8d82059082192b51a2d1d1d430d0523e",
+      "size": 3760
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "cc1258a588d6529b3444f9eb664df6ad4ad9702d7a1744ca69251e5d285d71a6",
+      "size": 437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3b5f3a284dd2f9887c86f9df1ea3b46aeff00d394bd6ac0dfebd320bcc21320c",
+      "size": 51977
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "406d1bd9a45abb0c5402958a349e13b278cb81706fc7b0121491a6ec7d3b3c4d",
+      "size": 1419
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8550-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-09-19T18:19:09Z",
+  "vendor": "xiaomi"
+}

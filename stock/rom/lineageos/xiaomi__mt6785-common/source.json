@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mt6785-common.git",
+  "codename": "mt6785-common",
+  "commit": "f93a39c4f4a51982be591e326324d70b2dc847ab",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "5c022d6fe383561bdd3aa89d4d1e5ad36ecc4474406d2fe6bdd367af8cd78e31",
+      "size": 1574
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4411dd3e04f6c521fb41b9def2cf4196ff355ac3578fa51af42eec00219cbb6c",
+      "size": 4340
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4ddefc58cb5976ba5ff8297126d8b703961db39d3e335a8b574d08604496cfbd",
+      "size": 2215
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "70601171a4f22944207df4feb0cdd2e51987b9fe0cfa1c391dad262385e9d85b",
+      "size": 311
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "376bdcfaf3c9673c10a1e63d3f4a0e5a6c2c12e95acd91fd4f8c7ffc31c8b391",
+      "size": 99241
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e484ccfe1319cb3d705bf57a17c340928e8678173af116854558d2445061ac3e",
+      "size": 1656
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "45d00deee83f62e7ee0757088a9e42595c3347ba768de26e61a60a8405453caa",
+      "size": 6174
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_mt6785-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:54Z",
+  "vendor": "xiaomi"
+}

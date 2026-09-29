@@ -1,0 +1,52 @@
+{
+  "branch": "16-qpr2",
+  "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_dodge.git",
+  "codename": "dodge",
+  "commit": "49c80c077f4907f1d358995f716d42c5b204a3f8",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "56b28e7ab8a45dd2b15ed9ab70b0db362d1510bcd8c385f811d44cdf55498de9",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "97abddc02682ded04cf73db681cea566df5f416c656d754cd21c44ff54f909fd",
+      "size": 760
+    },
+    {
+      "path": "device.mk",
+      "sha256": "73e1936dab437eca112077d57d4b96c4148dedb7142d2d2f1d7051ffe3acd327",
+      "size": 3599
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "15ba178c2c7fa42bddbaaf79b14a540e7e107f920321bf89a448e57f9d8a194d",
+      "size": 3034
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9aca7637b702e9484170c7d01763e4b22a5d9cecc9ab30098a6b6ef1e5475a83",
+      "size": 72641
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "524f5eab3d0e4faa58686c67da256a79648b028e835a84726239a0defbbd1675",
+      "size": 528
+    }
+  ],
+  "kind": "device",
+  "repo": "device_oneplus_dodge",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2026-07-12T12:57:37Z",
+  "vendor": "oneplus"
+}

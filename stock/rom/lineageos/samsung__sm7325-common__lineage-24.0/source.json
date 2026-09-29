@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "5a5b0449857403249239f9c69ab7972445f20199",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "ea99533c4773aed4bd23d4b2508e2359b10d73bfdffafc6b69b2dbbee55ef432",
+      "size": 571
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "49e82b075ae342597cc5a0f6ee64b94ba55ec52cbad1fd97564bb9d76ddbeae4",
+      "size": 7035
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0d230b7f271cfc816c40f92d1797ed2786de1706e04a733f1302144a902b2cd4",
+      "size": 2010
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "aec48868cb4be664132a68c65f1906df04eeabde2567ca850933e185e0f1edac",
+      "size": 334
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "55fef790cde2009978c4f293e214f869914fa92b10589fe13a2dfe89b6575bff",
+      "size": 30755
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "bf314a80d283f1df13ba45fc775e54de823e2878ecfcfc0d2282fd8ef1870381",
+      "size": 332
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "4928d59764fe9823078f78003d2d8304b4bf7cdff338d9db773231e33a67f557",
+      "size": 106
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d07e26b8e32c3496a63cd49bbb6eaf94f644aafeed7c80e2b2629e6dcb2fbd4b",
+      "size": 202
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d51f9de782e8a1c13a1e2dbb436c4a0645f657e141db6b3ced741feffbe9e529",
+      "size": 6067
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T10:02:35Z",
+  "vendor": "samsung"
+}

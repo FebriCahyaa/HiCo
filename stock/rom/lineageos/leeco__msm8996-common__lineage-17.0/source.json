@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_leeco_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "ea60c70e37d82cebf3881bcc095056cc6b7730ef",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "92c2f07aac6f3d89c428aa8552dec3c812eb071c9377f8990437c23f7120a978",
+      "size": 7062
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ec12bd4c1aaaf079b4615edd12614a89461c51893b9c99d8a3e26792d4f54623",
+      "size": 7467
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "772b85982ea6593a8a715b851af342e3fd257bcaad744d30f922af8178a6ea98",
+      "size": 7182
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "141cd3961136e27e5c7dbf9b433b0f8535c91333a563924fa37f48a3266d737b",
+      "size": 3078
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "396420bf4686a10000df9da9dc4438a555535e7e9cb9078da74a5e81eaa87034",
+      "size": 255
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "94ae66c4279f2932c6308ce4e3ebb3b624352aadfe6264407e1a316fc2d70f21",
+      "size": 49353
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "f322ef2e2506c731f558df8e639b73c8f6c6b2c17ff82a305d05050fd1ba052e",
+      "size": 753
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_leeco_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-06-22T06:20:47Z",
+  "vendor": "leeco"
+}

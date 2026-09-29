@@ -1,0 +1,57 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "351ff4ed8f13e3c0475d4e39a1ae11f73ba88900",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "6f02587c9ee704e30954a6179fba60e0390f5fd6d1b463b56788ab79458ce4c5",
+      "size": 624
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0506e31ceed5af925802e408fed4e3f8987859e8c9a2796d2434073fdd3e55a0",
+      "size": 9099
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "926bc8f11d15a3c7539f63431ba91dda50678faca06709a360d9ce7092faddf1",
+      "size": 8174
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d528439b982bc4809e67b6a6ac1b8f88d75c37f609edb71b0b559ec93134755f",
+      "size": 2828
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "74881cc066aee6bd78c9740ba264a982de7a9aed307d7a95c7ae5d7266e07fb6",
+      "size": 205
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "43483cfbaa15343817884442c93909cf8657d6e4975bc94df0623937b6853392",
+      "size": 4236
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3c581bd0ac18d5c3f639dd800b793f98032cc0b67ab1b573c252957589f1addd",
+      "size": 487
+    },
+    {
+      "path": "system.prop",
+      "sha256": "30611d0b797b0182b816f434913f63c38081f7351b54d1392bc9e79a33db8f27",
+      "size": 244
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-02-12T17:54:54Z",
+  "vendor": "oneplus"
+}

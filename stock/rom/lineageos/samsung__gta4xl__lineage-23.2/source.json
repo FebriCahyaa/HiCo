@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_gta4xl.git",
+  "codename": "gta4xl",
+  "commit": "a56bd59d139dd543f18d0e33ff5564f243805af2",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bc04511caef02b23657d780bd8c68ea58d0c5cea400ae49e71ed114e3c356ed8",
+      "size": 760
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "30a4841263a98f6546903c8c26f07b798eb8900e04c0041d5fad7a97ef474696",
+      "size": 1135
+    },
+    {
+      "path": "device.mk",
+      "sha256": "566deb671872eb2cb0bfe44456a62486be8189198bcff426d9e0e2193971d077",
+      "size": 1594
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d0605d872d057d0cf9b1eb51e8cf190f3dbe265c7bcdbededcee2b9d0cd070e1",
+      "size": 1436
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "83bd64009268eb9d1d8b43f20c46ba2f9955cf1e6b761931ca20daa52174cb3c",
+      "size": 132
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aac516edabe9e94a8c398c27624057d6391970ce55a3af7e5a74e74b1a11249f",
+      "size": 3437
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0211344e523993e00d7b6dbc0362f82b2a20796450149fdae64db60646f7bd5c",
+      "size": 144
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_gta4xl",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-09T11:44:30Z",
+  "vendor": "samsung"
+}

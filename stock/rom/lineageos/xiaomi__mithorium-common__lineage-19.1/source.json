@@ -1,0 +1,127 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mithorium-common.git",
+  "codename": "mithorium-common",
+  "commit": "c50e6b942da8a0380589babfce4347d6ee6b18e8",
+  "file_count": 22,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2dada4a0f0d1313403a9c6c4d46f2114598830b0ee122f46d8ac87442ab996d0",
+      "size": 5990
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b107f840b7e8135e80af9e85895b1d166c35918294f725d486bac25d0d5aa15a",
+      "size": 5562
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1162ae273f4686d7f6c6995b587ba22beaf8f3835b9ac3aef044998bdb354c71",
+      "size": 3483
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "e254313b081c7839ce16b278462a9ef178c6417682d9b3f16025521a64fa370f",
+      "size": 163
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d8400c4cfabda44afc3960579cbb33d2f236bc07c697478a16819056477a594e",
+      "size": 4568
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "64c7f2c4b55fafcb26737d39c1a6d39d2a45301967a793ff56b495be6eecf64f",
+      "size": 752
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti.xiaomi_mithorium.rc",
+      "sha256": "b3d5600648ec210cdd78aab9b4c03221d612530f0b0c387ecf73e47309f3a3a0",
+      "size": 1778
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.qti.xiaomi_mithorium.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "678d9ce62c7975ab0a6bc26775b594ed9b30c6b658bab35a52ff93bda358b345",
+      "size": 8257
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "09fa1d1151e183de630d73ee2c5d4a5c9ff55eccadd1c1b7ef94b5adbe0c38b2",
+      "size": 3778
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "1270cb1801f77b3a2946f54d432b7cf2be881c219d55fa12e188ad54ae611367",
+      "size": 17459
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "9d74a136eb87e597252829f0124ebf2fa173290412639df07f3426c1cfd4134f",
+      "size": 2852
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "39aa8eec14bd686f2ab591fc2f8c9959d5b3fefe61eb6a158f3817582d548a3f",
+      "size": 18952
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "55ba25577176f80e02fddf3484c51f73666beda022b6ad505d7a2d1d813be5f5",
+      "size": 2286
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "aa3a9d35ac10009e9419a317adea329baed5a62c755520adb3ef72ee0f68220a",
+      "size": 3387
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "778ed5291d6a35f801f445b39b71e921e6a8a4621e1d647eae4baedb07f2cf0b",
+      "size": 6618
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "482324d631cf9e14b461f0318c78ff0254fed288295c1e6d815142c0ce357f3b",
+      "size": 7637
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_mithorium-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-10T09:15:15Z",
+  "vendor": "xiaomi"
+}

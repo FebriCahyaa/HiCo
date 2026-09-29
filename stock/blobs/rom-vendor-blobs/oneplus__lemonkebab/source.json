@@ -1,0 +1,27 @@
+{
+  "branch": "a12",
+  "clone_url": "https://github.com/DerpFest-Devices/vendor_oneplus_lemonkebab.git",
+  "codename": "lemonkebab",
+  "commit": "fb9a1025fedaa6d14bbd5fb4e9111b7aa40fa348",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "381bad641a1d5a3392c040f1156c102cc6a2051838c651d3a044e4480258531c",
+      "size": 11622
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "vendor_oneplus_lemonkebab",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "oneplus"
+}

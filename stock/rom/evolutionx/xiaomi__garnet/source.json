@@ -1,0 +1,107 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_garnet.git",
+  "codename": "garnet",
+  "commit": "7efcab3e5687cb1cdfcebdc7eb3ccb1fb5a9855c",
+  "file_count": 18,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0d6c110e21ccc3cdce6169409981576ce1ff674b666638f6ac021b8f6e26b91a",
+      "size": 851
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "6a6f6a91eb071bb37adbf1073ae0142c08a2292e60cfa1009cb8a89e8078eece",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b3fee95ff509a029999e1b31859cab10058c2dbbbeba7103ee39b24d874e8c5d",
+      "size": 8593
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ea2f7b992a65b83bbaad268d7a918bef6c70c81dc59af14c28042ed5db7a927c",
+      "size": 20397
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "74a1e0246dc410be3a27f70f5f93e63bb15dc6b9cd4f57da39eb363c7fd400fc",
+      "size": 6445
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalComposeActivity.kt",
+      "sha256": "aae6dc96658ce66092029a443a8b5375437af00678ea58b42a42bc8323d93268",
+      "size": 2365
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.kt",
+      "sha256": "d28dd33e7a60425561dfc3992df767f9c2c4f193bc894adcc4351b78abe00148",
+      "size": 3035
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.kt",
+      "sha256": "75a525bcb7a3ce02e4434cd33508f949b0386d82e5f66dc1e2470974c7de6108",
+      "size": 7417
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalViewModel.kt",
+      "sha256": "c4c235b7df84dc8d86b6c46524844f32b16255a2cec2f9ae2472872baaab946f",
+      "size": 7812
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/model/ThermalUiState.kt",
+      "sha256": "783fb5e7edcd1fb98863915ecc7d664609f9b36c835fd28d0264e2a241f3ccf8",
+      "size": 1076
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/AppThermalItem.kt",
+      "sha256": "36b7eaf69175360f2ec41d884c72d6ddc6c446640e603a4f19be9c69f038689f",
+      "size": 4993
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/ThermalDialogs.kt",
+      "sha256": "7528873dbe2bdc293d0cf6d2f06bbba0da5aa8ea27b1a42e74760983c091c9b1",
+      "size": 1126
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/ThermalDropdown.kt",
+      "sha256": "537b2827b5ed164d40dd7c2c0c4f3858ae5bc3cf292bc75380ca8b2090ffaf4a",
+      "size": 1656
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/ThermalScreen.kt",
+      "sha256": "055f368cb019b24112ef8e55ecd8b2a05294a6370e898923ee31212dd4a7c64b",
+      "size": 8914
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/theme/Theme.kt",
+      "sha256": "917618eec604d9e9c244b23606a752fd37c84a1b9fcd692b0b702beba0a77bd1",
+      "size": 1866
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/theme/Type.kt",
+      "sha256": "f33f75915b93a6a00a4c3f5b98b46a0a7c51921800e3be5c3370ff6ab7abe0b6",
+      "size": 1019
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d57e56a3fafc2939c48258f72fb0a583aa82d1cce2619937c494041473847e02",
+      "size": 106946
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e315ca14839321b101051d4b01fe693a8f2f4f9e42f20b7bb18c4daafe90b180",
+      "size": 1934
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_garnet",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-22T08:37:27Z",
+  "vendor": "xiaomi"
+}

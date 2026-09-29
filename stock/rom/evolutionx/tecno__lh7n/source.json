@@ -1,0 +1,67 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_tecno_LH7n.git",
+  "codename": "lh7n",
+  "commit": "de7294eba3c58371ffa09a981caf2d9fa5507bf7",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cfdf350c8a87ad76d355c210b52e9773e4700ee807130af8f34009336d041868",
+      "size": 206
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8572c74e7bffc45bd23a08a55bc367a9df3f6be73b152cbb7c65a32ac0c35c74",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "b886128b3559100d3149af9e172f483cff910e10f35ac3f7ae9587f27f9c8a6e",
+      "size": 8639
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "437d3c34ece56d6a54c27f71381ab0323e446e8c26caa03ecb776c1ac6c29d0e",
+      "size": 1176
+    },
+    {
+      "path": "device.mk",
+      "sha256": "c9bda15f8073e0a881698f768d59ba3481589d4bec471346d7cc3e217ada6d99",
+      "size": 20177
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b1da63ed88fa7e2f3fcdaf111d5fc8a0c70e33d47b62c00b6b3d7bb6ab605b2e",
+      "size": 7706
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "087b2bfdaba8e6bb8a72e4d329c4b641a88d7588224600dc0adcfa365b28d291",
+      "size": 92502
+    },
+    {
+      "path": "sepolicy/vendor/thermal_core.te",
+      "sha256": "4345649f84979c5d7a7bc2e34490a260f90ded102b48f2765539080b30580e9f",
+      "size": 45
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "35c7be4848b0c6b5dff7c10e921d56c3fff4396da7777eb7d887093ed5e45a96",
+      "size": 462
+    }
+  ],
+  "kind": "device",
+  "repo": "device_tecno_LH7n",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:06:14Z",
+  "vendor": "tecno"
+}

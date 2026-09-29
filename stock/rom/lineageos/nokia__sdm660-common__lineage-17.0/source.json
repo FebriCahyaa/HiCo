@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_nokia_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "ae68a85d854f25befa1f71bbb1f9931c6d69f367",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "452437e51a12fe3e6bf682dfb3086e84df23fc34f359ae420d7fed0b4f47a10e",
+      "size": 808
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ae90fc25ac7a4a7f705479f77f613227c7b3e51a3b9d3219a551a708ead619b5",
+      "size": 3935
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6fecc8f9fa9457005c2ca5812316aee70dafda6eaad813917148d09fb3a5fa92",
+      "size": 1942
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e7924ca1133139485f36eb3115236ef7242482bbc7870ae5e48abf7f6dd6326c",
+      "size": 102
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4d115d98edef9b0bdbffda8842e499261f7d482af01de17071a626290669900e",
+      "size": 2786
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nokia_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-04-02T02:45:17Z",
+  "vendor": "nokia"
+}

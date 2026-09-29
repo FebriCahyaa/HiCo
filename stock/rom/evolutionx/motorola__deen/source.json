@@ -1,0 +1,62 @@
+{
+  "branch": "vic",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_deen.git",
+  "codename": "deen",
+  "commit": "98a733b4054d0d6cf8a207194944515fb1e1215a",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "469360d27d2f5e21e87c464f2e67eb59bd7ae137efc1cbfb0341ce9d5eff5681",
+      "size": 656
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "4d78a4dc459005a491c62ce9aa1f46234a0571a8caf5315c57e83d4eead48dfe",
+      "size": 1398
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "721762edefe9b1bdad623664fa55d5c99b0e99cd565e71cef23c6c06a9a944a3",
+      "size": 2530
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d78985145af4ce814e8bcb545bbd7f66fb0c02befe355f2f08e58998a5d6a4dc",
+      "size": 4421
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "0104ce336ad86d6aa82f64549f9c0dd10dd6a9213194757f2cfec94290e7ac82",
+      "size": 2233
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "97ea43c09523a725f6c5fbaaea599d1b8720607174c4e43242b3da6203f7687b",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b131d74ce6652aca51e6e019829fd35d17eb1e6510c70c6f7e521c5051d97b7a",
+      "size": 13894
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5a951856e90442249e356e5736e0ba83cc1faf285e51fe6a7d591c30ff6650db",
+      "size": 1157
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_deen",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-06T07:48:05Z",
+  "vendor": "motorola"
+}

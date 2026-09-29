@@ -1,0 +1,57 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_nokia_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "2379247be1761d4fbcceb5c2a5402114eac63e4f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "afa90df3e5c195fe2eb76867310af185dab56adbc1311efb14c826652a7c38b8",
+      "size": 5249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1b0d7fcce3bed9b573ae8abc11cad96e805bb2278d86b8a9ff4246d37a4e92cf",
+      "size": 4672
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "cae595f0745c9fdd44861b9a3fa60ce43d399573fd1bd666de934195be4bd8f9",
+      "size": 4486
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f20e3181e7e14f0502fa4f0758ba744b03a147180bb836033a2cdb9193d45def",
+      "size": 38272
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "7ca3d47233cc993bb590f81d9fb87c7a096ad383086d76be22d7a8869a8fa1b6",
+      "size": 127
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ec2dc98c259e5758a6de7ca5a6043068efdb413d8d9c5be0f3b3fa5ee07f7b1a",
+      "size": 4157
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "c5156e93d81ecafba4cc76cd216f07b2219019fb8f2cf84a34293b50eb43de07",
+      "size": 7170
+    }
+  ],
+  "kind": "common",
+  "repo": "device_nokia_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-05-28T06:16:13Z",
+  "vendor": "nokia"
+}

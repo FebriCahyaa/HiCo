@@ -1,0 +1,57 @@
+{
+  "branch": "12",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sakura.git",
+  "codename": "sakura",
+  "commit": "a1d497c53f81262959f6cd26eca542a0efa796b5",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2dcb4229722a54af9eab244a8fab87848f327406932f08e046fa49742e42fca5",
+      "size": 5409
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c55aa642319923c088ce0d60e24d0c84b5a81b0d6416f6e05fc4961c7e2019be",
+      "size": 653
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "05362181a062e218904480df7107395ec59b1ac2bf64f7bca5a07267e5c01448",
+      "size": 7315
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "fc6de0e9e5a580988da832157d8f464baae09c857bcad09ace1710e64c8bfca2",
+      "size": 1821
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0e97069e9460e49d5b2131cf69722ba365dc658e273c9361b6a8b7ea83cd7b68",
+      "size": 19930
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9119bbb084cd57df3737ac76603ebd2e8fc5a6e9c908813ddc35fcefc741155d",
+      "size": 790
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7b6d007b76419de8af78090e601f414de13d283a4aa0eefd68f257bfe70e5963",
+      "size": 97069
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "09c33d9099962591255a9d621013284f712173f5302c830eaca703053e9c9e85",
+      "size": 142
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_sakura",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2022-02-12T21:19:38Z",
+  "vendor": "xiaomi"
+}

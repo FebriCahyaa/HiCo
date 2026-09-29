@@ -1,0 +1,48 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Dalvik
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapsize=384m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.75
+
+## DRM
+drm.service.enabled=1
+
+## Graphics
+persist.sys.hdmi.keep_awake=false
+persist.vendor.sys.hdmionly=true
+ro.hardware.egl=mali
+ro.hdmi.device_type=4
+ro.surface_flinger.max_graphics_height=1080
+ro.surface_flinger.max_graphics_width=1920
+ro.surface_flinger.update_device_product_info_on_hotplug_reconnect=1
+ro.vendor.platform.hdmi.device_type=4
+ro.vendor.platform.has.mbxuimode=true
+
+## LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
+ro.lmk.use_new_strategy=true
+
+## Media
+ro.media.maxmem=629145600
+ro.vendor.platform.support.dolby=true
+
+## Platform
+ro.vendor.platform.is.tv=0
+vendor.sys.pq.supports=false
+
+## SOC
+ro.soc.manufacturer=Amlogic
+
+## Wi-Fi
+ro.boot.wificountrycode=US
+ro.carrier?=wifi-only
+wifi.interface=wlan0

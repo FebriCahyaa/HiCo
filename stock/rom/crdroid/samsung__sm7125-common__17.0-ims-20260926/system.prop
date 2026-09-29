@@ -1,0 +1,14 @@
+# Display
+sys.brightness.disable_gamma_conversion=true
+
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
+# Keystore
+ro.security.keystore.keytype=sakv2,gak
+
+# RIL
+ro.vendor.qti.va_aosp.support=1
+
+# Netflix
+ro.netflix.bsp_rev=Q6250-19132-1

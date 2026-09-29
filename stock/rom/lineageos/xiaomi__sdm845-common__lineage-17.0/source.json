@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "35019edae2653abf2d5bbda0c3d26c28da35561d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "e0592f9410199e9e498ba865d4f5a79fea27470e3dd4a2cb2c563786b77b1a9c",
+      "size": 4084
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5a63262d6a2f459cbec12f9c148f1531d4f50e96fedf6132ca2d275f1072d6fe",
+      "size": 4715
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ab464a700b57f15dc3d2e6ef9f2e6e44236f7bf3da611c4174175499209d2346",
+      "size": 1912
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ec81377eacc00cdf54896964160b103d71b76e5b305a5c50d38c2659afe78375",
+      "size": 231
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6edf44420c7d5be4cd7e760bd0afea80c77c45b04f9328234d31a6f7b46c565e",
+      "size": 37012
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "8c94c0e9ce99fa62efcc28ca0e21790bf7a44d494e7c227e97e677d3b8a8704f",
+      "size": 166
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-20T12:37:26Z",
+  "vendor": "xiaomi"
+}

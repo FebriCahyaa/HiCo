@@ -1,0 +1,32 @@
+{
+  "branch": "missi_phone_cn-user-14-UKQ1.231003.002-V816.0.10.0.ULTCNXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/mayfly.git",
+  "codename": "mayfly",
+  "commit": "84f04b9a4f9f9e3c1701ada65f13e66212ca7331",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "aosp-device-tree/rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/init/hw/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/mayfly",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-10-20T13:11:32.285Z",
+  "vendor": "xiaomi"
+}

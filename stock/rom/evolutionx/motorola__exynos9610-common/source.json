@@ -1,0 +1,72 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_exynos9610-common.git",
+  "codename": "exynos9610-common",
+  "commit": "4978da0c580f6dd008647bf27b0e25a66184aa33",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9b3b283b09ba7abb1ee07bad1ee9835ec4e1e2ba28b39077f3279c9479a1b056",
+      "size": 380
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f1caf9a76299be71581417c20ecbdff000d4919e781e63262f1409be413c0bac",
+      "size": 4470
+    },
+    {
+      "path": "configs/thermal/exynos-thermal-kane-retin.conf",
+      "sha256": "217e49af6d8e5427266bbfca7d604e567ecfcd7f068f741ce8b723d736bfca7f",
+      "size": 2840
+    },
+    {
+      "path": "configs/thermal/exynos-thermal-kane.conf",
+      "sha256": "25bbdd202dc7a2b5321c2cdfc20fa8341838cffdc664af3a9c0f64dd4378e576",
+      "size": 2840
+    },
+    {
+      "path": "configs/thermal/exynos-thermal-troika.conf",
+      "sha256": "8f4da4bec1fdb60632b490c1329ff8b8e76de80ed414da8f0c14dc6c1478be55",
+      "size": 2796
+    },
+    {
+      "path": "configs/thermal/exynos-thermal.conf",
+      "sha256": "25bbdd202dc7a2b5321c2cdfc20fa8341838cffdc664af3a9c0f64dd4378e576",
+      "size": 2840
+    },
+    {
+      "path": "configs/thermal/exynos-thermal.env",
+      "sha256": "75941cfe0b341031e808de4812a967fb4deac4bf553ed4f953389ee8c9f4cc67",
+      "size": 2462
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "868595e5d98e28e5eca7a2822cf2307d91c64f2436149ed7c9b4245070ca3492",
+      "size": 2930
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "93835b1782d88c0235ea95c2a6d3ae2d3e9de9e188c8573fb4fff7d89555cf5d",
+      "size": 7327
+    },
+    {
+      "path": "sepolicy/vendor/exynos-thermald.te",
+      "sha256": "f836d8192e043c3329096de7cb0299b853e9eb05c22ec854612fba13b0ded678",
+      "size": 832
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8ec1103f986dd51eea64b798aff9c231a2e8759b31bb3b3efd7b7655dc01bb28",
+      "size": 2587
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_exynos9610-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:04:26Z",
+  "vendor": "motorola"
+}

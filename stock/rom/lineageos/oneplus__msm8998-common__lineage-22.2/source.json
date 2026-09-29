@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "213a9c24ebcc555c67fde3af8c7c7951502b20cd",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e50540b9728e281f82c94712231b7080143e72bbf0538bf7f7de0b541e5bc12b",
+      "size": 622
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9e61bb3a3877be0e9cc6590566903bfb3c6b8a6cd784fd4160db0726af8bbc84",
+      "size": 3928
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b4ab85ba818207b8059aa1b35974b5fc70c6c321ed865a21617771bb943bb0f8",
+      "size": 2937
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9f0fd66e621f55ae9d4ac0cf6a7dfcbc86f3f5fdf8376ace95c70970484835a0",
+      "size": 201
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7fc9111e8827437ed29d3e54ded7200bccd1ff9a872dd393d15dd44faecce8de",
+      "size": 42442
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "5a00442376d44285f95989b86e67e7ae9a364313e4ea3adf75d9c49765b2088c",
+      "size": 81
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b66aee84b56e7182b5f11b6e30eda6a1c7ba13f8e5167e73f905ea3970dc253d",
+      "size": 1487
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "3bcfe6c2f8919f980037731302b34a143a26d4ab277492d57dfdd2e871dc453e",
+      "size": 5156
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T22:00:19Z",
+  "vendor": "oneplus"
+}

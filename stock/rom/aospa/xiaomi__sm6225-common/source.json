@@ -1,0 +1,62 @@
+{
+  "branch": "vauxite",
+  "clone_url": "https://github.com/AOSPA/android_device_xiaomi_sm6225-common.git",
+  "codename": "sm6225-common",
+  "commit": "78965979eb71018c78a2845cda44add46a7f998e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0b908875ded18f68a84f150b9d4a8493d406eb840db2c8fc67bdd4a1a523092e",
+      "size": 1123
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e5bed4afa081249f7dc0fb9f8c39ce7221d7fdb3c0be361784689b245507c7e4",
+      "size": 5104
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e418cfc1f29f3c3d5784395311d34e5498cd453e6c5cf90b923c743860f89bab",
+      "size": 5580
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "b106cbb918d7edbe3a719f83540b3dc07aaed040370c86f54d7b89e0ccb81b15",
+      "size": 4390
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "16ef6e429b3c1aa474815aae079d6162857eb39de1f084553ec49c8e15c99a79",
+      "size": 1225
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "f587b73ca41a87655952db7764c6c26198ebf13927f5305f2e612c88e11fb5da",
+      "size": 14201
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "4a6dc7ea87e5a98e15e6d459976146f880c5ddb21fd5cb338e89c7fa635c7ccd",
+      "size": 6870
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "85608cf2203fdb668370ea4b722074c9fff564a0b9e74e270416ec4c1acd2f17",
+      "size": 47649
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "a4feb86b6c16af496667660019fc90948ee605e3df112286bcfeaaadd90e434d",
+      "size": 133
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6225-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "aospa",
+  "upstream_pushed_at": "2026-07-04T06:00:42Z",
+  "vendor": "xiaomi"
+}

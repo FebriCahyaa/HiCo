@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sm8450-common.git",
+  "codename": "sm8450-common",
+  "commit": "ba5d180baef0e8f74547843a1e6041b389c8209d",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "490c94a80ef8c34577b7ccbfc9904c4ea6653162780b83f09e87e8a50c6720fc",
+      "size": 1360
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "475a8036f20b5bcbb8b7d594ca06032c79f7af83bbca58098cad81894248f2d8",
+      "size": 8596
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "a2ff0399b9665235a9903fadafece01ed76b4630ae01e5d3d71f0bdf2e317447",
+      "size": 3813
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "38df25e5cb2bc8ebcb98ad9567338466d4590ed3f14e2352ba4a982c6446e979",
+      "size": 437
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "15dd5112dca6dcd55a129b3b95b2c24c2071582b605405e866b4908cb9050395",
+      "size": 45225
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "86a822dfdaefdd9b9ccd34409ec88ecff6cbaeaf21e0f4e04d71aa50b1162c6b",
+      "size": 1770
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8450-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T14:08:38Z",
+  "vendor": "xiaomi"
+}

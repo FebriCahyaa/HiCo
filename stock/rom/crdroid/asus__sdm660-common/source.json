@@ -1,0 +1,147 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_asus_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "2cfa095ab524f385c0659dca9ab37ce433bd18f2",
+  "file_count": 26,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e8b0daf21977dcf6a132d185037280a1839486a628a496e3063c636178cb2933",
+      "size": 46
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1442c35e254cfe359db2bea33dfd6bc224928fb3a33df65a8352f8472699cd48",
+      "size": 4747
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "d5b323393ca825ed67a57cfaab011ab291ff86110a44947ae0f029e62b86f219",
+      "size": 4959
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "0e21f16be941d43d5e7e521fe095242ec8ca15393028485174e041f792d73e88",
+      "size": 2403
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2546b0376f88b56c6331f9682b3e44db725c79359ad83537af44cb63a7fdd891",
+      "size": 101
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a45da5bf04cdac10a6badda77e333edfb09e9485d451930cfca9311031c21e82",
+      "size": 48818
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "a0a233565c681c10cd7feb98d7c6a7935323984d2db9298b035a99611c96a946",
+      "size": 339
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "1a59da1387c5e54364f2a6f890eb74eda9d382673e57647cadd7bef7a1444f2c",
+      "size": 1890
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "e0fd88396a2db113786664629d47f9e3f5f08da2a856538b0f55f098a282a9e0",
+      "size": 737
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.asus_sdm660.qti.rc",
+      "sha256": "c178dfb8be22931293089ae4535445ed03b8b4fc3e1b2310b031fdc8e89111ea",
+      "size": 1773
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.asus_sdm660.qti.xml",
+      "sha256": "963119de0310765a376a61ec01854f70c6daa91bff75f0d6eaedc6e4b7f2a8b3",
+      "size": 1844
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "ee94848e57ae796c3770bb4973dfb4e39445a0c7db4199dcf4fbb2315c93d767",
+      "size": 1931
+    },
+    {
+      "path": "thermal/thermal.cpp",
+      "sha256": "678d9ce62c7975ab0a6bc26775b594ed9b30c6b658bab35a52ff93bda358b345",
+      "size": 8257
+    },
+    {
+      "path": "thermal/thermal.h",
+      "sha256": "09fa1d1151e183de630d73ee2c5d4a5c9ff55eccadd1c1b7ef94b5adbe0c38b2",
+      "size": 3778
+    },
+    {
+      "path": "thermal/thermalCommon.cpp",
+      "sha256": "32dd31e3311d41c87ffe8c70ee9b483bd22b0435be29173b4e0a637886ec48b1",
+      "size": 17354
+    },
+    {
+      "path": "thermal/thermalCommon.h",
+      "sha256": "9d74a136eb87e597252829f0124ebf2fa173290412639df07f3426c1cfd4134f",
+      "size": 2852
+    },
+    {
+      "path": "thermal/thermalConfig.cpp",
+      "sha256": "fc46c7b8250b665ab481286c2a4e363b6d2e56f09f36db2f50bbbfd44027c4c0",
+      "size": 14146
+    },
+    {
+      "path": "thermal/thermalConfig.h",
+      "sha256": "55ba25577176f80e02fddf3484c51f73666beda022b6ad505d7a2d1d813be5f5",
+      "size": 2286
+    },
+    {
+      "path": "thermal/thermalData.h",
+      "sha256": "aa3a9d35ac10009e9419a317adea329baed5a62c755520adb3ef72ee0f68220a",
+      "size": 3387
+    },
+    {
+      "path": "thermal/thermalMonitor.cpp",
+      "sha256": "8ada34fcc56e4912e0de471119cbaf35c62bf31c03bdc987d970d803e423d67b",
+      "size": 5465
+    },
+    {
+      "path": "thermal/thermalMonitor.h",
+      "sha256": "24005667cd0aa4ba5f5f4666c70a2907ebf67cab2d2b0f31bf51bcc76f529ab9",
+      "size": 2365
+    },
+    {
+      "path": "thermal/thermalUtils.cpp",
+      "sha256": "778ed5291d6a35f801f445b39b71e921e6a8a4621e1d647eae4baedb07f2cf0b",
+      "size": 6618
+    },
+    {
+      "path": "thermal/thermalUtils.h",
+      "sha256": "8b6f2974f335e4d62e84dc79e20a24bd0e18db5bce31a1100dd580f882fa9704",
+      "size": 3304
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2d5e4124088530ff7d0161873d207121ab60e06cc5af091c6e93ea8da50980a5",
+      "size": 6729
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "45d42b978a9dcc2b5da62c3b4f36f892931658d5c8c8562bae20beb3f1426ab8",
+      "size": 574
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-04-17T10:49:40Z",
+  "vendor": "asus"
+}

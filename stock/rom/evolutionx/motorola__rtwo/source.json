@@ -1,0 +1,72 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_motorola_rtwo.git",
+  "codename": "rtwo",
+  "commit": "d497b7a4d37333cf1bafa8f8600c01d1cc7082c0",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "35e923dec8fb16e8cc42872bd898f1027aa999a059053241048bf746d51080cb",
+      "size": 68
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8a149de3a15855c58c184fad9dd2910bc9e90649e31595ebde8faec4e27897cc",
+      "size": 710
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9caea980adaa1af43890b29ec8fa32714789c10d4bcb9a287c5a3883da28bab4",
+      "size": 149
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "998c00dc12b2565cd38de5b17867ebe1fdb636306147d5207cdce51b15215f99",
+      "size": 1476
+    },
+    {
+      "path": "configs/thermal-engine-rtwo-game-perf.conf",
+      "sha256": "cd557a7933eb1504f055bf0844fe7e4eabf4e5b181b9fbe97b2570e7ae090ad7",
+      "size": 3424
+    },
+    {
+      "path": "device.mk",
+      "sha256": "bc0e2b200a1bdc36ce50263059f937c668c81d3e13ad12152c523bbdd9826fb6",
+      "size": 4480
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "5ada08b81bbacebcb974e00dff7f51026aad7e2e58f30f32a29933a95947f421",
+      "size": 1582
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "3d912d1613d584ac51f5fac666a573293bab88f4d518a49526270a801bcdfc77",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a896c67bd0ea7c1a50761c482faa1ccb4b232188e6629378c07a6d448b6dfb6c",
+      "size": 21381
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e465f891d06393215c5d967c32094ea4fd9b40d5d14484e82c08abf201477ba8",
+      "size": 548
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0735a4ab588aae99f3be3f6973c67fd106ec92b444ba5f07f73bcb62928e8d77",
+      "size": 286
+    }
+  ],
+  "kind": "device",
+  "repo": "device_motorola_rtwo",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-09-25T09:05:45Z",
+  "vendor": "motorola"
+}

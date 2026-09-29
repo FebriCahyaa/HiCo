@@ -1,0 +1,52 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_a21s-common.git",
+  "codename": "a21s-common",
+  "commit": "be0db6b3ddce59d7fe1a636720cfd1f8bc806e86",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2bcbefe4419472c1323ed217edc378ea99438698877e6f2beb23e82c3348e696",
+      "size": 178
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "26f87c1f4d40f87c1b9fa435a5ea25e070bc065acf5ba3b84c465c00c7db668f",
+      "size": 6749
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "eb23e93da59b81850de96d6752c32126b7d3059a607b9f39db746467d8e4c3e8",
+      "size": 2288
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "278c6901e38b39becfc048f205da6a87546395b98339be7dbad5dd958956419c",
+      "size": 2258
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4bc8af2c557024f975e756df9848d1df1103359e5574282e101e5788183730ce",
+      "size": 1816
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a27efaeb7c8b8761894147483df9461b63f1d7ed1eff83da6fd9ee39d7113b7f",
+      "size": 8524
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e7a6aab59028480872e65f9dade445236e7d12a1af172d651b705ef0b2cc6d91",
+      "size": 2052
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_a21s-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-04-20T11:25:45Z",
+  "vendor": "samsung"
+}

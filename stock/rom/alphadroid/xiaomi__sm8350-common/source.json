@@ -1,0 +1,87 @@
+{
+  "branch": "alpha-16.2",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "f96f46e70214b1bb27141130a54bed57656816e7",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bef765279caf3d52582907a6849f859cb725cde13e1a3406f717fdef8a19a082",
+      "size": 379
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e7df7db06155605d04ec2c3efff9bb742573fe8b23bbcc063e76f6bb451b1222",
+      "size": 6778
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9571921438e3c57085edca816207ecb322c0d882e6ebe6c66c4ba6be505d173c",
+      "size": 2684
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "15dbf9eae983b098f674e7caa6e8640ee3736742ab4f342db9c6af8e8e9af940",
+      "size": 195
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "ed1da71b46a16d99a0c04d800e1b1b8a4f975cfa4ff7aca90062d7458b4a7fc6",
+      "size": 1544
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "72cfff0df8991110ec5c424e53916428ccc9d4cb0785f18382666f0b945ac894",
+      "size": 4011
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "43a81f046392b8fb970a690a9065b629cc98af38ce5e6722aedd79ce7bc5c271",
+      "size": 14577
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "f9b71c4744130e39abe93d9caa89a1d87e2f981b0c0d83c4167cfa6576fb8ebc",
+      "size": 1606
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "13b602bd105b1bd3b7e80b433660e804a908c8acb2a8cfd060c87284f8dcf62c",
+      "size": 9118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d8ad0e6a858220b532a9d6c54fa182bf87e9fe7b881e52e95d82fcbf969871eb",
+      "size": 30453
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "cbf0f0964a82ca6f288fd97499f61cf2e710b1d194b13df847c6696d134ebb5e",
+      "size": 1199
+    },
+    {
+      "path": "system.prop",
+      "sha256": "92d1fa15bfeee86159403e948ea0d9cfcdfcdb65b117b59bec3ec821851fca1c",
+      "size": 1667
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "8a10b8b901cd1623a9da97d272159a3248868f4e101fe4c749fd8744e845cd31",
+      "size": 10917
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2026-06-23T06:24:21Z",
+  "vendor": "xiaomi"
+}

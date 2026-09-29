@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_tegra-common.git",
+  "codename": "tegra-common",
+  "commit": "030cede4f1c262978327f94def7e11c927b941b1",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "22de1a1173e44609894306d50aea90fa4c2caa2f472ea722db914936738b8a06",
+      "size": 656
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "190cbf8e3dc7b7ab88fdca08e7e4e1fa512e9ec89ee1a740acfaeb19cc839896",
+      "size": 712
+    },
+    {
+      "path": "BoardConfigTegra.mk",
+      "sha256": "9898b13eed71b07538a92a9f29ddee4dbe0a121fc52914a902dfc8a460d0f1a3",
+      "size": 2676
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a987f3e8f96547aec38400ab9b41fa1870baedd63a031a482bd4b2565f479303",
+      "size": 104
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nvidia_tegra-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T18:42:16Z",
+  "vendor": "nvidia"
+}

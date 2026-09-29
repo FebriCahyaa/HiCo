@@ -1,0 +1,22 @@
+#
+# Copyright (C) 2024 E FOUNDATION
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+DEVICE_KERNEL_PATH := device/nothing/Tetris-kernel
+
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Kernel
+TARGET_KERNEL_SOURCE := device/nothing/Tetris-kernel/kernel-headers
+TARGET_PREBUILT_KERNEL := $(DEVICE_KERNEL_PATH)/Image
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_KERNEL_CONFIG := gki_defconfig
+
+# DTB
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_KERNEL_PATH)/dtbs
+
+# DTBO
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_KERNEL_PATH)/dtbo.img
+

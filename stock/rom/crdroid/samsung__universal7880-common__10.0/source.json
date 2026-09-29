@@ -1,0 +1,52 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_universal7880-common.git",
+  "codename": "universal7880-common",
+  "commit": "86e1d2166b8db8bce98320fd03cb2637fa394e11",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6e79e61c988ea6b4d198b15b4f6ca20d0ddea688991176ef372ee824ffe1a5ce",
+      "size": 738
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fbf67317577278a278fc5679e545d3786ad141a20bc751ebfdfed7866fab1ef8",
+      "size": 7482
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "02a4df0161ceb83be3c9f1f7629e8faa33d3d8825aec786fe7b127427885ebcd",
+      "size": 1476
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "83234a1df7b268de62bac693bfa1811fff36df6c9c62012fbdbb97f5f72f8916",
+      "size": 237
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "52f116dfe55af324dc6df9d52c3d626861fd34c4cdb63f0aff6db1f42f8204a1",
+      "size": 10207
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8d59645fbfa5598822d978163a9cb76021844d7beceb3c694b482f1e70dca388",
+      "size": 1496
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal7880-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-07-04T11:45:24Z",
+  "vendor": "samsung"
+}

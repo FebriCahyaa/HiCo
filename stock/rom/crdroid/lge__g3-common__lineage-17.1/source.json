@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lge_g3-common.git",
+  "codename": "g3-common",
+  "commit": "b482dcd07a6fc0255d76afb31870a1e0c74b02cf",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "a76c99fd310508e2219d29b9574eb9618dc54e0ede43fab6398a20dd7d532f94",
+      "size": 3427
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "da56c9e0793387c89d550e29850c84dbf23e41bcbffae92e8b85f7ba66f2ade5",
+      "size": 3614
+    },
+    {
+      "path": "configs/thermal-engine-8974.conf",
+      "sha256": "07a10830af728170701e427a2d5d8022903129f86a39d5080c997f23f029c63b",
+      "size": 4104
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2208d6fa12d7efe9282f968250aac553d9123477d3fe5c7a3f4477dd4613d702",
+      "size": 2198
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e0541a12b2fc09a6950ccce184a1a6e61fb2e3d9402e669f56397fa5f99f2a80",
+      "size": 90
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d08d1a80083212dde7766de501321625df8b581c19b10e4ccc8c50513a88729b",
+      "size": 7979
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "58dd0b065f262277cd340002c9e6255787de7eb52c4e906cab7a7ae65129c04a",
+      "size": 365
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_g3-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2020-07-02T09:14:39Z",
+  "vendor": "lge"
+}

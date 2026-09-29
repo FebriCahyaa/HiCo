@@ -1,0 +1,92 @@
+{
+  "branch": "alpha-15.1",
+  "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8250-common_alioth.git",
+  "codename": "sm8250-common_alioth",
+  "commit": "f54c3a6d3fa479a210d547279400759dea944087",
+  "file_count": 15,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1f9339a08fbfa1bdcd8ad7c9147b63970e4fd164704fd70675fb0044d288952f",
+      "size": 1524
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cc7b60c6ec824f82393b9f60fb3bfd324be8f836b27a4f9cd2b9d36704ab0024",
+      "size": 9163
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3369773153061d847e942c866c79e30786d47ed47587e6d759528c3c944e1b79",
+      "size": 5153
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/Constants.java",
+      "sha256": "be63313b8d219c68d09c385a9b02be945da1c1fe7d180516d181967ee7c1933c",
+      "size": 1503
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "244c44d99cca47ec81b49f30efb6b9178f3a0d8e0cdf01d3bcaf78bb48aef4cb",
+      "size": 1548
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "4d6c7626067a8fc3358f3945ab9b4f8bbaed659563452bed08b17fa1901529ea",
+      "size": 4663
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "dc5ea2371ebfd3a14bbba3f1e1e5958bfbf35dd017346ca4475a4e9468c47fe0",
+      "size": 15640
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalTileService.java",
+      "sha256": "f9b71c4744130e39abe93d9caa89a1d87e2f981b0c0d83c4167cfa6576fb8ebc",
+      "size": 1606
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "25a6a7aa3a0a7e14ee079733b3f13cdbf44146aeedb24125dae9bf6654cc8edf",
+      "size": 10848
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/TouchSettingsFragment.java",
+      "sha256": "673f0164b05acc52ee7478028a44564fd66a1f9ec076390afba0effbf1833e78",
+      "size": 5572
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6069c222864be32071a2d22c994a5bd75c10cea874f86b6b5e1afeabc142ceb3",
+      "size": 27509
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "503b533f82c4f7c3fdfed515c3731cfe490babb1f2b81f9735cdd2a1ec39628f",
+      "size": 1626
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "5b612b7ca2c9aced4245e40b61fba453d2b8ce2b81297a988e81114c9d256253",
+      "size": 490
+    },
+    {
+      "path": "system.prop",
+      "sha256": "b67b3969be2fe7b1c941e738acbf6f3b818276a0548eb9c5ca5f9e1ed88a700e",
+      "size": 2070
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2322e9515d6491bac6807be95542b824e8b49abaceb5f26ae9b8b03f9bb8b3f9",
+      "size": 10211
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8250-common_alioth",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "alphadroid",
+  "upstream_pushed_at": "2025-05-22T10:50:29Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,87 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_google_tegu.git",
+  "codename": "tegu",
+  "commit": "e6c0c1fae0e569bc373ee0f51353edfebdf275f3",
+  "file_count": 14,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b01bea7206e8d7eb06c05a0f4f474e767fddfc8266ad486615729d07a245de15",
+      "size": 989
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "0708fa48cb34f51cc21386866ff4270cf235c095abe00a42963e4ffac9dc2e38",
+      "size": 693
+    },
+    {
+      "path": "BoardConfigEvolution.mk",
+      "sha256": "a63855a6ff6cfe0403902028ff9c8b8eb711d823a28a24a07e58d8dcd87da0a7",
+      "size": 97
+    },
+    {
+      "path": "BoardConfigLineage.mk",
+      "sha256": "4c8830ac9cb3c8e61f8f142715223c06073a8599bdeec566ab41dce073e0fbf9",
+      "size": 664
+    },
+    {
+      "path": "device-evolution.mk",
+      "sha256": "8e341a40e0047e539a52fd19fc84c437b29d5f2189bcec0d9a9a333a00784422",
+      "size": 158
+    },
+    {
+      "path": "device-lineage.mk",
+      "sha256": "ce26e7d8b2039e4471b563bdc6ff6ee956e83c9bb707d580af01caf16fc8c251",
+      "size": 1333
+    },
+    {
+      "path": "device-tegu-common.mk",
+      "sha256": "edf7d929f605f77e007e2289ca727eb1d36c07ca68dda4796eca5908f4aea257",
+      "size": 1312
+    },
+    {
+      "path": "device-tegu.mk",
+      "sha256": "c63f1f703bf3ca8f3920f283c94c06dcc74aeeb6d05625d6c1d8a16af32308d3",
+      "size": 15330
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ef499df64b1bc2162a8df1d6781fe49722ee7304124b975b5b091d9a6b02debd",
+      "size": 210
+    },
+    {
+      "path": "thermal/thermal_info_config_charge_tegu.json",
+      "sha256": "d3781a6798e2760526ac976784fda3cc9400daf9a4c91cc5e6efdec2d7e6eabe",
+      "size": 9636
+    },
+    {
+      "path": "thermal/thermal_info_config_tegu.json",
+      "sha256": "5610573e48f855321fa9ff17a3eff731dc8019a544aaf179f893e0ce6ac43f04",
+      "size": 64655
+    },
+    {
+      "path": "thermal/vt_estimation_model_tegu.tflite",
+      "sha256": "05d264fd969dd5bcd6581afc45cb13d5e512e5b2e7aebc2b523a67cac6090032",
+      "size": 6099
+    },
+    {
+      "path": "thermal/vt_estimation_odpm_model_tegu.tflite",
+      "sha256": "8a0cc95d50cbeb9859fedfdfd968309b298cae3e1cefa78635b38ce4ac0af80d",
+      "size": 8256
+    },
+    {
+      "path": "thermal/vt_speaker_estimation_model_tegu.tflite",
+      "sha256": "29e5f800823ae87f064cccd5359bf6f6f9f78813ba036279d54b66a63e663641",
+      "size": 4542
+    }
+  ],
+  "kind": "device",
+  "repo": "device_google_tegu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:03:58Z",
+  "vendor": "google"
+}

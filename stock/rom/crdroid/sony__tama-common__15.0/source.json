@@ -1,0 +1,62 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_sony_tama-common.git",
+  "codename": "tama-common",
+  "commit": "739b70b45f2e0c60fade10d348d3b2d6ee614091",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c9e3b86bbb2f5a82783840ddb4323714990ba8717b525e60352f31fc5acbc6ba",
+      "size": 109
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "cc8510f2175589cb9b513bcae4cfc87872be257b3fcc25725941c23b8cff6ba6",
+      "size": 8365
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b5a861051da00401f2b3f44561d0d0af0fa4a831fd5ed9b1913a535149c497f7",
+      "size": 5549
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "facfedfd04203788baa0cdca0dacda5b4f94883a81c2d3f6bd34b6ea6010ae13",
+      "size": 3449
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "defc87b791702c2a931fd7c7ac04b68c7c4ad1eb0f123975958b3f1850a113a9",
+      "size": 223
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e892f357676db706f8e75b61506caa70e7535d23b7ec64c4917ef40f94622f03",
+      "size": 62738
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "86fef730341caeb2d4d926e088ec98588cd7fca4caca678e0133091f45639aaa",
+      "size": 181
+    },
+    {
+      "path": "system.prop",
+      "sha256": "546e187a4060a6ded799451838ebdfd896126192313180e6fe2af0753b055ae2",
+      "size": 741
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "092837befa11146b64192db21367c9cd648ab00c76ff9484335848b12c905ac1",
+      "size": 6952
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_tama-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-02-24T01:21:08Z",
+  "vendor": "sony"
+}

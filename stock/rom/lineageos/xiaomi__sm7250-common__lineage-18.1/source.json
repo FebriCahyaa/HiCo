@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "a1c6683f96c96b771aea30fe9c1d277233107fd9",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f6cefac589598589db06f070c5b4036c369693caf2b22c9fbc3a53055972b738",
+      "size": 11682
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "63ed085a1f36750b416218448889ad09b3879c48361cedbe80d476493c371af8",
+      "size": 6927
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b28b325d2b9cc213b63e114cd429757381c17a6265ab5c679961dfeb909348da",
+      "size": 1879
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d9b6980e53c0d1301bc66141276ad9d112f65b98e54c8c27805f93a7798fef14",
+      "size": 195
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cd09bef5ed58189cfe8e7ac6a75ddacb63620517e5662117579a7e4df89cab00",
+      "size": 27524
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "b6a168074c47858e412ca5ecdbea9a51ddbbf5b8e9842317fcee40937da82314",
+      "size": 845
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "441361cee0e86ab2ba1466ced889d936cf6c5c0d061e1d1cbbe2048bdd9481ad",
+      "size": 352
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T15:04:41Z",
+  "vendor": "xiaomi"
+}

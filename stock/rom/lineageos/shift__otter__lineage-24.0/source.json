@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_shift_otter.git",
+  "codename": "otter",
+  "commit": "1112a0fc37d8e6901f96dec57c2a9052a1342e1a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7fdbcb695a295dbe964e4b048c0f91681af5304b04284911816c57459de5c5b7",
+      "size": 546
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8545f9d1bf55811ecc2a5282b70910977fcd4d35558bb0943c01a88ae0d924e3",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6098be8e8e3d270cf8e28d5f9c4afe06501e585f076bde937ce1d54274445ef2",
+      "size": 5915
+    },
+    {
+      "path": "device.mk",
+      "sha256": "79c7ea4dfa9aaadf09857a6a4640b72d5bda9064999b468f11423b9eeb1859a2",
+      "size": 17252
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "41ac3de47f9045e739e2c1d5433d0e2f77ed28b2e07a3524eb59f8e1891cd27d",
+      "size": 2570
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a14c1b972f8012582111f5a67f7f04ad6b38d5fd7ad16d78069c395bfd2b709a",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "55155db31899382c71a445b62cd2b5110ac324884ad97b576d3737c1d2947161",
+      "size": 46426
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2b136777361554597cbce683170f60c205197ecbce690c00358e6ef91e1e65e0",
+      "size": 6925
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_shift_otter",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-29T00:14:41Z",
+  "vendor": "shift"
+}

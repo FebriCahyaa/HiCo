@@ -1,0 +1,52 @@
+{
+  "branch": "15.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "e1b2998149bdd5ae23570390368fcc006812c520",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "67c38a260e26dd829f91c6dcb9ca8c8ee0fb67de2bfd6e5577ab63eb977e9239",
+      "size": 1068
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4158c5afd11ba47e178a868e21d54e0412fc3eb2e381ed986248efd62d2e69d8",
+      "size": 6503
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "54c3ebd05bd382594fafb79719a88cc070f5b93d619bf4c663a9ee04ab15d08c",
+      "size": 2765
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "71814f817dc8748ba99debf48e7aca5900fc29793eddedc727e77fa1860612b4",
+      "size": 41698
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "0c882c16ab1676c715e66b0a426c75d4b748e3ea55bcf79f8b5830eb7a047ad1",
+      "size": 270
+    },
+    {
+      "path": "system.prop",
+      "sha256": "97f832de1975e6c824a27ac400c4b01c074979dbb9d61c25d3e031d230db35fc",
+      "size": 1252
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "49c881e8ad75e7c85a7405f8ff650513bff6c73b75664e5c3e57168f3affe1e4",
+      "size": 12009
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-06-22T20:03:20Z",
+  "vendor": "motorola"
+}

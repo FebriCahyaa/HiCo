@@ -1,0 +1,57 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_mt6768-common.git",
+  "codename": "mt6768-common",
+  "commit": "8c30eb69f717280ef3ecb1c08501ee774068dc54",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a0f9e3a0cded942d822c30634cff82bd8238368e4b1d1959598d5ff380785a61",
+      "size": 993
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "eafe5634f30b62998c6dce31b388108ab003056c3cda4782d87fbeab483de98a",
+      "size": 5733
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "6f32abc4447be09a818c1bea2161d4f3ca2d1be3b4f659db417f2e548818c45c",
+      "size": 4182
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "02dc17064bb3a5bbd5dc5f00283d2e558b15442b5ead350e3566fe240b218893",
+      "size": 47489
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "aae768d3286383a9ea4b5ae1750a11afabd623c19622ecec16f60cabfaab2bcb",
+      "size": 1269
+    },
+    {
+      "path": "system.prop",
+      "sha256": "66148d99d4bf1ff1b9542a19e5202bc721caf7ce54e21e995835049ae7293e3e",
+      "size": 1410
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "bdbc0c5febefa14f14714caaf38b5f8f8ccee282ac51acc16905b0245d51fd2f",
+      "size": 7786
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_mt6768-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2023-09-01T03:45:31Z",
+  "vendor": "xiaomi"
+}

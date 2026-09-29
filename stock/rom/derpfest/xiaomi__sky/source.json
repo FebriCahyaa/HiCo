@@ -1,0 +1,77 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/DerpFest-Devices/device_xiaomi_sky.git",
+  "codename": "sky",
+  "commit": "82b7946f5bdb3f5263628314a6bdf8cbc60d34f0",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d903e455bc429c910acd45a4ea7c47a3b710e123d33f7e64f2caca1bf37b5ba8",
+      "size": 257
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8fb8fba35052fc7328759ab330dfc4e431f9c76f9d9b45815fb3d0a467cfdf37",
+      "size": 5057
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bcb8194fea20944aaaf645356cb78f19575f2632df1fac612dcc4703ce85958c",
+      "size": 239
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "bf652e16677832737fb2c1ca36dc5d406503618b29cc89df625dd27f9a2cc252",
+      "size": 9793
+    },
+    {
+      "path": "device.mk",
+      "sha256": "2703af4300061acb7a9b934b1a590690c4da006946b349f6f73718e2ba5904d3",
+      "size": 25126
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "40d035b1444254b084e1323a8fabce32c20aa1fddda72221ffe551803444d8e5",
+      "size": 5168
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "bdc8fda085f3e3f42a483cd9e4751c69e75e00540fe3b005719948a0ecb2ab75",
+      "size": 1565
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "a656ea700e611af8ff721d8fc2a032a5f4c3711b34a2f7aef1c81e1b436974e2",
+      "size": 3363
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4de7215fea6006b5510537a00ed863ebff84b76e978644e1cc8a62093a41056b",
+      "size": 14293
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "48cab0bc4c69a28fca00face06b31db5fe2ca4e1ffb5d8cd7f6a6167e1e38b3a",
+      "size": 6358
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a27f2320b0f4b419df95d0a10c54edc1541158aff67ef1a1ad35e83a02d1b28e",
+      "size": 92617
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "e5fa9568799f839eae1dc98659c367a8d8555d2f48b88255a2715791f177cf87",
+      "size": 1797
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_sky",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "derpfest",
+  "upstream_pushed_at": "2025-02-19T06:23:00Z",
+  "vendor": "xiaomi"
+}

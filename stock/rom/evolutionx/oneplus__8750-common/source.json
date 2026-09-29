@@ -1,0 +1,52 @@
+{
+  "branch": "bka",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oneplus_8750-common.git",
+  "codename": "8750-common",
+  "commit": "ee870c874dea5cf6c283d7d614a0fb01331c330d",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "238c8bbae299477fb17fc8a8453289e4cd7270c0c9910b246d8470fbb92c6c2a",
+      "size": 115
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aebc595e2e1546e797938a969b4a1f5a0981d7f18cc3a80b7bca486af78a290f",
+      "size": 839
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f072ab0463262a5d6ff9ca5a3fafdf4bcd36dafc4b77575d52a40e60e8c7ca42",
+      "size": 10413
+    },
+    {
+      "path": "device.mk",
+      "sha256": "37abea789e664c22fa30a460b198865c113b4c7c7a6dc06a532b12b8cb55ca47",
+      "size": 2467
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "611f49678d25ec74952d3606f550a3e4b7cb2f33697db8ce29016cb7d28f2961",
+      "size": 5772
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bccf0f8e54005013059bd9b14e37274cbfa69551ecb55ccfcf4127daf3e2fb15",
+      "size": 47222
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "851617e6f792538cba75a9cd9dc277f7540b718326ffadb436db109c13de3405",
+      "size": 9007
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_8750-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-06-29T08:05:10Z",
+  "vendor": "oneplus"
+}

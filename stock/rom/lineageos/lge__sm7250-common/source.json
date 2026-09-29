@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_sm7250-common.git",
+  "codename": "sm7250-common",
+  "commit": "438e18df1858f091ae96274f83915ede77ba07c3",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "004d7f43a65bba4392a211cc32694238efdf1385b3db81811c276f77e0a6df13",
+      "size": 533
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "aba221418f5c8357c02f194ea1a76124b077d678c60cb59dc726f5fde1fa6a19",
+      "size": 234
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "533a211bc87238af625d78545b88f722e60e24d475cc2b5f7db500c22959ad79",
+      "size": 4800
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9faaf7b7ca86be6c5270293da3758bdc00cb37fdea44aa33185258cb7b6f94bf",
+      "size": 1650
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "26c13e0ea2882ae8b0fcf5e435092dfc254ab6a4adfa6fe1f84640471ed4659e",
+      "size": 183
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6f34cdb795fd204602ef3e166fb1258b57d6c45bd0e73addb8e0824e2798ab91",
+      "size": 26278
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2d91038097cfb8336fd09425a34ee6ff55a31465ed692bcf0c63b7c271c64e0c",
+      "size": 9119
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_sm7250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T15:21:41Z",
+  "vendor": "lge"
+}

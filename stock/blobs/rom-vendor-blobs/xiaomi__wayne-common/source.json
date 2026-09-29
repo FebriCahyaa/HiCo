@@ -1,0 +1,37 @@
+{
+  "branch": "arrow-12.0",
+  "clone_url": "https://github.com/ArrowOS-Devices/android_vendor_xiaomi_wayne-common.git",
+  "codename": "wayne-common",
+  "commit": "91ecc7486c0b4a105eb2cd821328e6960c02d450",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-map.conf",
+      "sha256": "5dd879b280d3c1b0544bd51907a87397315e2e2ab2a11acf5f033a1b57e57202",
+      "size": 130
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-normal.conf",
+      "sha256": "0b391615e4d8e31c9d19475c279b67efdad8cce0aa8021eeda624ba6eb839769",
+      "size": 5972
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-sgame.conf",
+      "sha256": "64cf6215e6136ec4370bac962c55131883721e70a30c9b9766eb38591282af49",
+      "size": 5683
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "common",
+  "repo": "android_vendor_xiaomi_wayne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "rom-vendor-blobs",
+  "upstream_pushed_at": null,
+  "vendor": "xiaomi"
+}

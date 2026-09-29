@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-23.2",
+  "clone_url": "https://github.com/LineageOS/android_device_osom_pyrite.git",
+  "codename": "pyrite",
+  "commit": "ae8df23b1ffd0e00af6b15e044b526ee7d3645df",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c040c57469bacbf4fbf1fab41fe8e3805523528102a51e54660cd0b5b595d55c",
+      "size": 340
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "be339116a7886d2e4b9c67625147bd56066299db242552daedc1fb480e360cb9",
+      "size": 154
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d25cbb09089c6db76d838164c18245e98fb857896cff9467c2d029153ea60728",
+      "size": 5903
+    },
+    {
+      "path": "device.mk",
+      "sha256": "1ea35014433af96941edbb0afb7df0c6e9666fd316b88c642dbe4372bd0b8b09",
+      "size": 16871
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "55792b91f59ff0d05f7c7997a06aae884f5bf8d598aa58baf82c07e0e3fe3edb",
+      "size": 1791
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5a1b60c1636646c16175adafab02b3ff969ce669e29cd8433000018838b0eae3",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c654bf1aa4b7352fca8f8762af24e5c4d60b8f77bfbe20f6cf3a7ba29be91a0f",
+      "size": 51879
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2e8b0c3c5385871479ac9340866e954d1db59ae80b96351345ac389bc42bbe6e",
+      "size": 7738
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_osom_pyrite",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-29T00:14:23Z",
+  "vendor": "osom"
+}

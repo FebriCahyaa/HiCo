@@ -1,0 +1,37 @@
+{
+  "branch": "dot-o",
+  "clone_url": "https://github.com/dotOS-Devices/android_device_samsung_msm8974-common.git",
+  "codename": "msm8974-common",
+  "commit": "217c0ed0a3691aea41508e8e2f2d5a2eae964a92",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "df8d5d848037615113fd01c24cb1aca720cb3d55be006654e76b366a52963b79",
+      "size": 10101
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fe169ea9e69a927a4858efc855c63c706196bbc5fe15101b888f048d90988e5d",
+      "size": 2623
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "61528981f25ab64a4365407ee53d9e476fec9eb1571c72b4b169c8b17481247f",
+      "size": 1610
+    },
+    {
+      "path": "sepolicy/common/thermal-engine.te",
+      "sha256": "cd6c6b30bc5c4b0dd26da013426e828026bb1d1665dca841829e7f97bff8fde8",
+      "size": 332
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_msm8974-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "dotos",
+  "upstream_pushed_at": "2018-07-25T17:42:20Z",
+  "vendor": "samsung"
+}

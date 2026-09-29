@@ -1,5 +1,12 @@
 {
   "devices": {
+    "asus/sdm660-common": {
+      "branch": "sixteen-qpr2",
+      "commit": "3a2e07796a9fc42544b15caaf72ed872412372e7",
+      "file_count": 8,
+      "pushed_at": "2026-08-05T18:17:21Z",
+      "status": "ok"
+    },
     "asus/x00td": {
       "branch": "sixteen-qpr2",
       "commit": "0596281143339c30c89c115f5604fff06c10bbaa",
@@ -40,6 +47,20 @@
       "commit": "4a86be2b8aa28e62ca7067c8b0de9fd7f3cc83ab",
       "file_count": 7,
       "pushed_at": "2026-06-01T19:42:32Z",
+      "status": "ok"
+    },
+    "motorola/sm7250-common": {
+      "branch": "sixteen-qpr2",
+      "commit": "e0ffc4ec065d5339e3718750bef5f39d46f72619",
+      "file_count": 6,
+      "pushed_at": "2026-06-01T20:52:55Z",
+      "status": "ok"
+    },
+    "motorola/sm7325-common": {
+      "branch": "seventeen",
+      "commit": "7796be8bd8769070b1f44607646a29c899ffb6d8",
+      "file_count": 6,
+      "pushed_at": "2026-08-20T13:46:31Z",
       "status": "ok"
     },
     "nothing/spacewar": {
@@ -105,12 +126,47 @@
       "pushed_at": "2026-08-30T19:21:51Z",
       "status": "ok"
     },
+    "oneplus/sm6375-common": {
+      "branch": "seventeen",
+      "commit": "2d8551fd4337593f4635fbb55354d6fc0deecbe2",
+      "file_count": 5,
+      "pushed_at": "2026-09-28T19:43:01Z",
+      "status": "ok"
+    },
+    "oneplus/sm7550-common": {
+      "branch": "sixteen",
+      "commit": "60f39655f09f505355dc65bf8a10d82fdd50737c",
+      "file_count": 5,
+      "pushed_at": "2025-11-26T15:11:09Z",
+      "status": "ok"
+    },
+    "oneplus/sm8350-common": {
+      "branch": "seventeen",
+      "commit": "8e5da21cbb704d3026f16a00f6eae14033725e1d",
+      "file_count": 5,
+      "pushed_at": "2026-08-31T17:13:56Z",
+      "status": "ok"
+    },
+    "oneplus/sm8550-common": {
+      "branch": "sixteen-qpr1",
+      "commit": "8199b42a591499e7e0098cf76404291e10229442",
+      "file_count": 5,
+      "pushed_at": "2026-09-28T17:33:16Z",
+      "status": "ok"
+    },
     "oneplus/sm8550-kernel": {
       "branch": "sixteen",
       "commit": "617d45dec5138db97ad5632eea11ca5127f20762",
       "file_count": 0,
       "pushed_at": "2025-07-29T16:55:56Z",
       "status": "empty"
+    },
+    "oneplus/sm8650-common": {
+      "branch": "sixteen-qpr2",
+      "commit": "07fbe71b84c407ca6e6aec1210f6e53d75b95d0c",
+      "file_count": 5,
+      "pushed_at": "2026-09-26T10:18:24Z",
+      "status": "ok"
     },
     "oneplus/waffle": {
       "branch": "sixteen-qpr2",
@@ -140,7 +196,7 @@
       "pushed_at": "2026-08-30T18:56:52Z",
       "status": "ok"
     },
-    "realme/rm6785": {
+    "realme/rm6785-common": {
       "branch": "sixteen",
       "commit": "65bf08f23da31bef62b45de6bf163a4feeb2f891",
       "file_count": 8,
@@ -158,7 +214,7 @@
       "branch": "seventeen",
       "commit": "d0f25e2a2e43047635ebbe5c4b50ecdac286f551",
       "file_count": 8,
-      "pushed_at": "2026-09-27T19:26:06Z",
+      "pushed_at": "2026-09-28T06:59:44Z",
       "status": "ok"
     },
     "realme/salaa": {
@@ -187,6 +243,20 @@
       "commit": "776e7b4f0c9b6d297734ee7f8ba212d1a9472ef6",
       "file_count": 8,
       "pushed_at": "2026-09-26T10:39:17Z",
+      "status": "ok"
+    },
+    "sony/sm8450-common": {
+      "branch": "seventeen",
+      "commit": "aa442351d827203c8d1186ead80763035dc90f1f",
+      "file_count": 7,
+      "pushed_at": "2026-09-13T16:50:48Z",
+      "status": "ok"
+    },
+    "sony/sm8550-common": {
+      "branch": "seventeen",
+      "commit": "0f96afe7a2ea7355d3db62b30d3e01040d87f849",
+      "file_count": 8,
+      "pushed_at": "2026-09-26T10:39:12Z",
       "status": "ok"
     },
     "xiaomi/alioth": {
@@ -350,11 +420,53 @@
       "pushed_at": "2025-12-30T09:29:51Z",
       "status": "ok"
     },
+    "xiaomi/sm6125-common": {
+      "branch": "sixteen-qpr2",
+      "commit": "c5b85f6df893855159d6ecaebb72a0f3c0fc8d65",
+      "file_count": 7,
+      "pushed_at": "2026-09-17T20:43:58Z",
+      "status": "ok"
+    },
+    "xiaomi/sm6150-common": {
+      "branch": "seventeen",
+      "commit": "de7ecac72f12177f653cf50145c54d8951cd3254",
+      "file_count": 12,
+      "pushed_at": "2026-09-23T11:51:44Z",
+      "status": "ok"
+    },
+    "xiaomi/sm6250-common": {
+      "branch": "sixteen-qpr1",
+      "commit": "70def54db25ced37b6d7698b8745a5fd90b11275",
+      "file_count": 9,
+      "pushed_at": "2026-02-22T09:47:43Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8250-common": {
+      "branch": "seventeen",
+      "commit": "d08b46caa6990fc2c239b6aa1d706ebc208bb480",
+      "file_count": 14,
+      "pushed_at": "2026-09-22T12:02:35Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8350-common": {
+      "branch": "sixteen-qpr2",
+      "commit": "890ff28aa31f30beab61641116568a70c7a26132",
+      "file_count": 8,
+      "pushed_at": "2026-03-19T12:14:19Z",
+      "status": "ok"
+    },
+    "xiaomi/sm8450-common": {
+      "branch": "sixteen-qpr2",
+      "commit": "10194d1cb242dc6cdba2e48f6e3397e4aec91331",
+      "file_count": 5,
+      "pushed_at": "2026-06-26T22:37:32Z",
+      "status": "ok"
+    },
     "xiaomi/sunny": {
       "branch": "seventeen",
       "commit": "70b2463194c52b4e95bd44b6c1c6b5cd055f8655",
       "file_count": 8,
-      "pushed_at": "2026-09-14T09:42:48Z",
+      "pushed_at": "2026-09-27T19:42:38Z",
       "status": "ok"
     },
     "xiaomi/sunny-kernel": {

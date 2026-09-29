@@ -1,0 +1,49 @@
+# MiuiCamera - manually patched
+product/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera2,GCamGOPrebuilt,Aperture
+
+# MiuiCamera - libraries
+vendor/lib64/libCameraEffectJNI.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so
+vendor/lib64/libarc_layer_sgl.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libarc_layer_sgl.so
+vendor/lib64/libarcsoft_wideselfie.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libarcsoft_wideselfie.so
+vendor/lib64/libcamera_algoup_jni.xiaomi.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_algoup_jni.xiaomi.so
+vendor/lib64/libcamera_arcsoft_beautyshot.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_arcsoft_beautyshot.so
+vendor/lib64/libcamera_arcsoft_handgesture.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_arcsoft_handgesture.so
+vendor/lib64/libcamera_beauty_mpbase.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_beauty_mpbase.so
+vendor/lib64/libcamera_handgesture_mpbase.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_handgesture_mpbase.so
+vendor/lib64/libcamera_mianode_jni.xiaomi.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_mianode_jni.xiaomi.so
+vendor/lib64/libcamera_wideselfie_mpbase.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcamera_wideselfie_mpbase.so
+vendor/lib64/libcom.xiaomi.camera.requestutil.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.requestutil.so
+vendor/lib64/libhandengine.arcsoft.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libhandengine.arcsoft.so
+vendor/lib64/libjni_arcsoft_beautyshot.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libjni_arcsoft_beautyshot.so
+vendor/lib64/libjni_jpegutil_xiaomi.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libjni_jpegutil_xiaomi.so
+vendor/lib64/libjni_wideselfie.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libjni_wideselfie.so
+vendor/lib64/libmorpho_memory_allocator.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libmorpho_memory_allocator.so
+vendor/lib64/libmorpho_panorama_gp3.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp3.so
+vendor/lib64/libmorpho_sensor_fusion.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiCamera/lib/arm64/libmorpho_sensor_fusion.so
+
+# MiuiExtraPhoto
+product/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk
+
+# MiuiExtraPhoto - libraries
+vendor/lib64/libdoc_photo.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo.so
+vendor/lib64/libdoc_photo_c++_shared.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libdoc_photo_c++_shared.so
+vendor/lib64/libgallery_arcsoft_dualcam_refocus.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_dualcam_refocus.so
+vendor/lib64/libgallery_arcsoft_portrait_lighting.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting.so
+vendor/lib64/libgallery_arcsoft_portrait_lighting_c.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting_c.so
+vendor/lib64/libgallery_mpbase.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libgallery_mpbase.so
+vendor/lib64/libmibokeh_gallery.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libmibokeh_gallery.so
+vendor/lib64/libmisr.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libmisr.so
+vendor/lib64/libmotion_photo.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo.so
+vendor/lib64/libmotion_photo_c++_shared.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo_c++_shared.so
+vendor/lib64/libmotion_photo_mace.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libmotion_photo_mace.so
+vendor/lib64/librefocus.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/librefocus.so
+vendor/lib64/librefocus_mibokeh.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/librefocus_mibokeh.so
+vendor/lib64/libselection.so;DISABLE_DEPS;SYMLINK=product/priv-app/MiuiExtraPhoto/lib/arm64/libselection.so
+
+# Fonts
+vendor/camera/fonts/MFYueYuan-Regular.ttf
+vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
+vendor/camera/fonts/MIUI_Time.ttf
+
+# Config
+vendor/etc/camera/sceneDetection.xml

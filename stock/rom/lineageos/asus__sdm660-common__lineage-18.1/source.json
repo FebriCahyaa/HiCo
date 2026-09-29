@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_sdm660-common.git",
+  "codename": "sdm660-common",
+  "commit": "e1abccf7cb9c25838c73556f52ffc26ec1da027e",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d5bec438273fe9e0ecd6458c9b11401a812d9fbfd787ef1d24e6e601d4c0f0aa",
+      "size": 4358
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1c7039c2ddb014b724bbc372cbcfa9ea925a208e23ac3f999e351673d77cd7be",
+      "size": 4571
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d7f2cd72003fc5e1ff695bdc2da20457abd90b0711e728472f2b1cbaa41b37f8",
+      "size": 2364
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2546b0376f88b56c6331f9682b3e44db725c79359ad83537af44cb63a7fdd891",
+      "size": 101
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5a7a411112811813cc810729d34f12076053bfbbf1eb0b4afa4894007a9cb2cc",
+      "size": 19958
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "16c76dfdcece9df379e6e1c32ae91393e2265ca2b0b63642b4c9055ea1c9441a",
+      "size": 79
+    },
+    {
+      "path": "system.prop",
+      "sha256": "063bab85394d705fa3879dfbe84b6fb3db2ab806fd6138245cadbb203d45a96e",
+      "size": 1838
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "94642e90de038820d5c82ea9148deef8bf31dc8cfd29427e36029bac7c9e0b20",
+      "size": 5415
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_sdm660-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-15T17:38:29Z",
+  "vendor": "asus"
+}

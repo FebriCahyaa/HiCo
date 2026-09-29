@@ -1,0 +1,57 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_gts4lv-common.git",
+  "codename": "gts4lv-common",
+  "commit": "621210d16358d8196be34dbbcc2a0bec6391b55a",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a870a2e8b85c266248401690b85e690e94ee6d0aa1dd9fc6123f7b2810152915",
+      "size": 4780
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "68ffd3c75709f22a7adbfda415bee99546bc59028507f77b241e92a07dbb12b3",
+      "size": 6147
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e6554cbc8f667733a03eecd3983454f4c7dc954774862d04c8d7d229f64b8de6",
+      "size": 2104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e70f63d45ed6201df6e1094936b9a904c412ee9019fff2dfd65f8c36cb89eec2",
+      "size": 30865
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "230fab339fd9138af5d7fb4bd9d9428d0c0c07997ea1547ea83f3695d1497ed8",
+      "size": 87
+    },
+    {
+      "path": "system.prop",
+      "sha256": "9c1375d13dfb670a5557e8706de3c369390dce5f310f9a823a9c54d230d72ed8",
+      "size": 83
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5c5c0f638997f988618debb0850f4eb555749596c70f2defbfa70c112869197c",
+      "size": 5105
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_gts4lv-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-10T03:10:11Z",
+  "vendor": "samsung"
+}

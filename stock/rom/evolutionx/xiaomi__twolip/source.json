@@ -1,0 +1,62 @@
+{
+  "branch": "udc",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_twolip.git",
+  "codename": "twolip",
+  "commit": "f8771e6f8d24f566ee886b2b40c2dcbd4705ecba",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8dd39c5cd60cf794b84d67827e00ee82287328388ba5573ed983fa4108f121ee",
+      "size": 134
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "49cbf82334416ca4c4a4f63b5c8a0b7cefb1413f8a4e2b84d990bdebbb16a960",
+      "size": 5295
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "bef97405a0e0e73569f90eed396bb9956f87f9cd148d8d55ac887ac64efe1ddd",
+      "size": 258
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "71f059861d388ec1708b031036b199fa7d017c574f5bebfe797212114e0bded1",
+      "size": 6716
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "a4bafa86ccaf134598814c5a18d0e8bf8cb5b3bf113f0526659a555e2af7a6bc",
+      "size": 5797
+    },
+    {
+      "path": "device.mk",
+      "sha256": "62957b19391feb288226b6fb1545939f2ba4cabb03859211f4c5788ae1eb7eeb",
+      "size": 21771
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dd23e9ef46f26d38b7c8dc94162b261bbdf2a72ffdebdbea68a0f33b3af613bc",
+      "size": 2742
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4762e9cab62389ebd31d1aaa17c7525d42f0b0402ee73f5cec07e50f06336a55",
+      "size": 81559
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "b09eec71fe8c8099e4796e72f0a1252bc433d52a735b87b6d9e765d11558ce5f",
+      "size": 322
+    }
+  ],
+  "kind": "device",
+  "repo": "device_xiaomi_twolip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2024-05-15T07:08:22Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,152 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "3781bb97b6af0542462d768026623b3ff4fd35b5",
+  "file_count": 27,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b4a46ae48d7da1bd68db7f54712fb091eb6682e57b615fe1f4e144101efc452e",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6244b6c48c5e2a7f9a707099a552f0e359868b6fe25a73220f4b4c431a2df05d",
+      "size": 4218
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "da9e41b9f78b485ab95cbbeab4a66b71ab19f51d8758cfbc1e529f8cccc13257",
+      "size": 6758
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "0adcba09905542ee9336591174286d413efbb915f4180058b969766119761904",
+      "size": 5482
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b28b325d2b9cc213b63e114cd429757381c17a6265ab5c679961dfeb909348da",
+      "size": 1879
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "56aa948309973fa4c420c580253cee4fbbe502d77ed34adf94b5bb8c7d091594",
+      "size": 195
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d485c57c7371b27e1f59e9256389cd7d9a96eb6fba2ec60ddbd62d006593a896",
+      "size": 50121
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "42beb60d63f16c71e8387bf64bcb11392613f8454875bed3273408d6bee3c93a",
+      "size": 494
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "3a85901111374742c44b36a4cf5f900d959f755605818c57929590787f771c72",
+      "size": 332
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d920b75205be6cfb4a3d9ac009afc1bbb1bf800bbf6657b796f46514eab43cd7",
+      "size": 564
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "c0d6050f7c0c5bf5edaaf5c6c4a8e4b5d06a2d2480da19b0a599542e4eb0bad2",
+      "size": 1034
+    },
+    {
+      "path": "thermal/OWNERS",
+      "sha256": "2394ec057804e4c8b65a3f47815654fd3fc2cc7e2440e16bbdf891dfb109ab52",
+      "size": 52
+    },
+    {
+      "path": "thermal/Thermal.cpp",
+      "sha256": "ec6c3db0a3070522e51a4b3753a5e8f10fe423dadc20fe2102bd8580d0d04a14",
+      "size": 17443
+    },
+    {
+      "path": "thermal/Thermal.h",
+      "sha256": "bc1750982e00674cee1822ed5fa4f4ffa806551d3a27f4e603a2d9189c3fb4dc",
+      "size": 3722
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.xiaomi_atoll.rc",
+      "sha256": "b4e07b2ebbadf3ffead6023b4b4de5adef5ab54fe36113f999908d75e03d5674",
+      "size": 265
+    },
+    {
+      "path": "thermal/android.hardware.thermal@2.0-service.xiaomi_atoll.xml",
+      "sha256": "e232ddad5a10b5524e16356d8f786154b7e6fbbbd85b603cf8763f2d6d288a44",
+      "size": 350
+    },
+    {
+      "path": "thermal/service.cpp",
+      "sha256": "5b649f7353dd6076ba13b681f37bbb887607a2f7a77b8d6abe0bb3b56dc3d730",
+      "size": 1925
+    },
+    {
+      "path": "thermal/thermal-helper.cpp",
+      "sha256": "33989ef5efa8d6c4c03f7e2ecb0365f526eeb010ff545b644989e351c2ed3651",
+      "size": 31314
+    },
+    {
+      "path": "thermal/thermal-helper.h",
+      "sha256": "c578a291e4f333f7827d7792564ed819f8e1d5c0368a467367f5224696efc550",
+      "size": 7693
+    },
+    {
+      "path": "thermal/utils/config_parser.cpp",
+      "sha256": "f845ede21e8a8187f3eea1fef9b35b7ccdf1b4d520e7407513457b5e1cadb0a9",
+      "size": 11956
+    },
+    {
+      "path": "thermal/utils/config_parser.h",
+      "sha256": "ecbdc0a8c62ae2b51089ad3a3d9ce1fd1cfdf71b46f71f8a2b331b41e1b7e87c",
+      "size": 2011
+    },
+    {
+      "path": "thermal/utils/config_schema.json",
+      "sha256": "0e8021bf405a6c231ee2948c1f5115235661dd8a499f4ba891b383d947486b1a",
+      "size": 6592
+    },
+    {
+      "path": "thermal/utils/thermal_files.cpp",
+      "sha256": "4d080396d5ff9a6bd5f5c17817d339fcc5d527f94c2bd5ef6e149d30b079ba31",
+      "size": 2012
+    },
+    {
+      "path": "thermal/utils/thermal_files.h",
+      "sha256": "7f3f764f8fad558b4247cc6b7a8865a1326e37f70420d32b38400c9c00477fc4",
+      "size": 1926
+    },
+    {
+      "path": "thermal/utils/thermal_watcher.cpp",
+      "sha256": "d857290729c08fa9fd3c6d044078acff149a043b157f6073084aa85464cc1147",
+      "size": 5095
+    },
+    {
+      "path": "thermal/utils/thermal_watcher.h",
+      "sha256": "1774fa87b3d6f19531c722d47dc759c1cbffcc550bb917166a9d4531b33beb9e",
+      "size": 3699
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2960e22e5982db4573c699b40412f9cbe7870c1f25da173e8f26ba779cfdc382",
+      "size": 7142
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-30T09:10:40Z",
+  "vendor": "xiaomi"
+}
