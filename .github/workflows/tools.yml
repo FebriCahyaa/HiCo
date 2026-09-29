@@ -220,7 +220,7 @@ jobs:
       - name: Upload mapping matrix definition
         uses: actions/upload-artifact@v6
         with:
-          name: full-mapping-matrix
+          name: mapping-matrix-definition
           path: build/map-matrix.json
           if-no-files-found: error
 
@@ -254,7 +254,7 @@ jobs:
       - name: Download mapping matrix definition
         uses: actions/download-artifact@v6
         with:
-          name: full-mapping-matrix
+          name: mapping-matrix-definition
           path: build/matrix
 
       - name: Write shard roots
@@ -269,15 +269,15 @@ jobs:
       - name: Map shard
         run: |
           set -euo pipefail
-          mkdir -p "build/mapping/${{ matrix.id }}"
+          mkdir -p build/mapping
           python3 tools/hico_thermal.py --hicod build/hicod \
-            deep-map-set build/roots.txt "build/mapping/${{ matrix.id }}/mapping.json" --decode --max-depth 1
+            deep-map-set build/roots.txt "build/mapping/${{ matrix.id }}.json" --decode --max-depth 1
 
       - name: Upload mapping shard
         uses: actions/upload-artifact@v6
         with:
           name: full-mapping-${{ matrix.id }}
-          path: build/mapping/${{ matrix.id }}/mapping.json
+          path: build/mapping/${{ matrix.id }}.json
 
   full-merge:
     name: Merge, validate and publish full mapping
