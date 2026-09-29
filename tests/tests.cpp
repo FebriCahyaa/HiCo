@@ -836,7 +836,7 @@ void test_device_database() {
     // The generated table is sorted (binary search relies on it).
     const auto db = device_db::records();
     CHECK(std::is_sorted(db.begin(), db.end(), [](const DeviceRecord &a, const DeviceRecord &b) { return a.codename < b.codename; }));
-    CHECK(device_db::generated_from().find("dumps.tadiphone.dev") != std::string_view::npos);
+    CHECK(device_db::generated_from().find("multi-vendor device database") != std::string_view::npos);
 
     Daemon d;
     d.tick(Daemon::Clock::time_point{} + 100s);
