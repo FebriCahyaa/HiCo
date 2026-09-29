@@ -226,7 +226,7 @@ def vendor_repo_name(device_repo: str) -> str | None:
     return f"{head}vendor_{tail}" if sep and tail else None
 
 
-def list_vendor_probe(src: dict, manifest_dir: Path, probe=remote_default_branch, jobs: int = 32) -> dict[str, dict]:
+def list_vendor_probe(src: dict, manifest_dir: Path, probe=remote_default_branch, jobs: int = 8) -> dict[str, dict]:
     covered: set[tuple[str, str]] = set()
     for sid in src.get("skip_covered_by") or []:
         path = manifest_dir / f"{sid}.json"
@@ -388,6 +388,10 @@ def main() -> int:
     ap.add_argument("--sources", default=str(SOURCES_YAML))
     ap.add_argument("--only", default="", help="comma-separated source ids")
     ap.add_argument("--manifest-dir", default=str(MANIFEST_DIR))
+    ap.add_argument("--jobs", type=int, default=8,
+                     help="parallel git ls-remote probes for vendor-probe sources "
+                          "(rom-vendor-blobs alone probes candidates from every ROM source "
+                          "combined, easily 1000+ URLs; keep this low on constrained hosts)")
     args = ap.parse_args()
 
     manifest_dir = Path(args.manifest_dir)
@@ -421,7 +425,7 @@ def main() -> int:
                 gl_token = os.environ.get("TADIPHONE_TOKEN") or None
                 devices = list_gitlab(src, gl_token)
             elif src["provider"] == "vendor-probe":
-                devices = list_vendor_probe(src, manifest_dir)
+                devices = list_vendor_probe(src, manifest_dir, jobs=args.jobs)
             else:
                 devices = list_repo_manifest(src)
         except ListingError as exc:

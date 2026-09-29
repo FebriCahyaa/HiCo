@@ -95,8 +95,12 @@ list_and_fetch() {
   local log_file="$LOG_DIR/${sid}.log"
 
   log "=== $sid: listing repositories ==="
+  # rom-vendor-blobs (vendor-probe) ignored --jobs entirely until this fix and
+  # always ran 32 parallel git ls-remote probes across every ROM source's
+  # combined device list (1000+ URLs) — the real cause of a signal-9 kill
+  # right as that source starts, regardless of $JOBS used for sparse_fetch.py.
   if ! GH_TOKEN="${GH_TOKEN:-}" $PYTHON tools/ingest/list_device_repos.py \
-        --only "$sid" 2>&1 | tee -a "$log_file"; then
+        --only "$sid" --jobs "$JOBS" 2>&1 | tee -a "$log_file"; then
     log "WARNING: list_device_repos failed for $sid (check $log_file)"
     return 1
   fi
