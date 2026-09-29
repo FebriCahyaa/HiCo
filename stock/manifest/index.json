@@ -1,8 +1,8 @@
 {
   "common_total": 798,
-  "device_total": 3215,
+  "device_total": 3340,
   "schema": "hico.ingest-manifest-index.v2",
-  "source_count": 19,
+  "source_count": 25,
   "sources": [
     {
       "common_count": 273,
@@ -142,6 +142,22 @@
     },
     {
       "common_count": 0,
+      "device_count": 1,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-redmi.json",
+      "source_id": "tadiphone-redmi",
+      "source_name": "TadiPhone dumps \u2014 Redmi"
+    },
+    {
+      "common_count": 0,
+      "device_count": 0,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-poco.json",
+      "source_id": "tadiphone-poco",
+      "source_name": "TadiPhone dumps \u2014 POCO"
+    },
+    {
+      "common_count": 0,
       "device_count": 54,
       "family": "oem",
       "manifest": "stock/manifest/tadiphone-samsung.json",
@@ -155,6 +171,38 @@
       "manifest": "stock/manifest/tadiphone-oneplus.json",
       "source_id": "tadiphone-oneplus",
       "source_name": "TadiPhone dumps \u2014 OnePlus"
+    },
+    {
+      "common_count": 0,
+      "device_count": 1,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-oppo.json",
+      "source_id": "tadiphone-oppo",
+      "source_name": "TadiPhone dumps \u2014 OPPO"
+    },
+    {
+      "common_count": 0,
+      "device_count": 8,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-realme.json",
+      "source_id": "tadiphone-realme",
+      "source_name": "TadiPhone dumps \u2014 Realme"
+    },
+    {
+      "common_count": 0,
+      "device_count": 77,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-motorola.json",
+      "source_id": "tadiphone-motorola",
+      "source_name": "TadiPhone dumps \u2014 Motorola"
+    },
+    {
+      "common_count": 0,
+      "device_count": 38,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-google.json",
+      "source_id": "tadiphone-google",
+      "source_name": "TadiPhone dumps \u2014 Google"
     }
   ]
 }
