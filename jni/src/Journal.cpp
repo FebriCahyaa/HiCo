@@ -10,6 +10,7 @@
 
 #include "Fs.hpp"
 #include "Log.hpp"
+#include "ThermalOwnership.hpp"
 #include "ThermalServices.hpp"
 
 #include <algorithm>
@@ -138,7 +139,12 @@ Journal::RestoreResult Journal::restore() {
                 LOGW("restore: cannot start service {}", it->target);
             }
         } else if (it->type == Entry::Type::Mount) {
-            if (fs::unmount(it->target)) {
+            // Only HiCo's own mount is ever detached: unmounting whatever is on top could remove a
+            // Magisk module's config (mounted after ours, or in place of a mount that never happened).
+            if (const auto top = fs::mount_at(it->target); top && !thermal_owner::is_hico_mount(*top, it->target)) {
+                ++r.skipped;
+                LOGW("restore: {} is mounted from {}, not by HiCo; leaving it mounted", it->target, top->root);
+            } else if (fs::unmount(it->target)) {
                 ++r.mounts;
             } else {
                 ++r.failed;

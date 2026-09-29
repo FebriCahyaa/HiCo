@@ -30,6 +30,7 @@
 #include "ThermalBackend.hpp"
 #include "ThermalConfig.hpp"
 #include "ThermalController.hpp"
+#include "ThermalOwnership.hpp"
 #include "ThermalServices.hpp"
 #include "ThermalZones.hpp"
 
@@ -999,6 +1000,188 @@ void test_relaxed_overlay() {
     CHECK(hostile.empty());
 }
 
+// Real /proc/self/mountinfo lines from Xiaomi garnet: these three configs are mounted by the
+// Magisk module "fast_charging", not by HiCo.
+constexpr const char *kGarnetMountinfo =
+    "2000000314 1400 259:33 /adb/modules/fast_charging/vendor/etc/thermal-tgame.conf /vendor/etc/thermal-tgame.conf "
+    "ro,relatime shared:1 - ext4 /dev/block/dm-9 ro\n"
+    "2000000315 1400 259:33 /adb/modules/fast_charging/vendor/etc/thermal-normal.conf /vendor/etc/thermal-normal.conf "
+    "ro,relatime shared:1 - ext4 /dev/block/dm-9 ro\n"
+    "2000000350 1400 259:33 /adb/modules/fast_charging/vendor/etc/thermal-mgame.conf /vendor/etc/thermal-mgame.conf "
+    "ro,relatime shared:1 - ext4 /dev/block/dm-9 ro\n";
+
+void test_mountinfo_parsing() {
+    using thermal_owner::module_id;
+    const auto e = fs::find_mount(kGarnetMountinfo, "/vendor/etc/thermal-normal.conf");
+    CHECK(e.has_value());
+    CHECK_EQ(e->root, std::string("/adb/modules/fast_charging/vendor/etc/thermal-normal.conf"));
+    CHECK_EQ(e->mount_point, std::string("/vendor/etc/thermal-normal.conf"));
+    CHECK_EQ(e->fstype, std::string("ext4"));
+    CHECK(!fs::find_mount(kGarnetMountinfo, "/vendor/etc/thermal-4k.conf"));
+    CHECK(!fs::find_mount(kGarnetMountinfo, "/vendor/etc")); // a parent directory is not the target
+
+    // Stacked mounts: the later line is the visible one. Several optional fields, octal escapes.
+    const std::string stacked =
+        "10 1 0:1 /hico/thermal/vendor_etc_a.conf /vendor/etc/a.conf rw shared:2 master:3 - tmpfs tmpfs rw\n"
+        "11 1 0:2 /adb/modules/my\\040mod/vendor/etc/a.conf /vendor/etc/a.conf rw - ext4 /dev/x rw\n";
+    const auto top = fs::find_mount(stacked, "/vendor/etc/a.conf");
+    CHECK(top && top->root == "/adb/modules/my mod/vendor/etc/a.conf");
+    CHECK(!fs::find_mount("garbage\n\n1 2 3\n", "/vendor/etc/a.conf"));
+
+    CHECK_EQ(module_id("/adb/modules/fast_charging/vendor/etc/x.conf"), std::string("fast_charging"));
+    CHECK_EQ(module_id("/data/adb/modules_update/other-mod/system/x"), std::string("other-mod"));
+    CHECK_EQ(module_id("/dev/hico/thermal/vendor_etc_x.conf"), std::string(""));
+    CHECK_EQ(module_id("/adb/modules//x"), std::string("")); // never invent an owner
+    CHECK_EQ(module_id("/adb/modules/bad name/x"), std::string(""));
+
+    // HiCo's own mount as Android reports it: /dev is a tmpfs, so the root loses its "/dev" prefix.
+    const auto own = fs::find_mount("30 1 0:19 /hico/thermal/vendor_etc_thermal-normal.conf /vendor/etc/thermal-normal.conf "
+                                    "ro - tmpfs tmpfs rw\n", "/vendor/etc/thermal-normal.conf");
+    CHECK(own && thermal_owner::is_hico_mount(*own, "/vendor/etc/thermal-normal.conf"));
+    CHECK(!thermal_owner::is_hico_mount(*e, "/vendor/etc/thermal-normal.conf"));
+}
+
+void test_thermal_ownership() {
+    using thermal_owner::Ownership;
+    using thermal_owner::classify;
+    const std::string normal = "/vendor/etc/thermal-normal.conf";
+    const std::string engine = "/vendor/etc/thermal-engine.conf";
+    const std::string external = "/adb/modules/fast_charging/vendor/etc/";
+    const auto reset = [&] {
+        build_device();
+        put(normal, std::string("\x13\x9f\x01\x02", 4) + std::string(64, '\x01'));
+        put(engine, kEngineConf);
+        put("/__props__/init.svc.thermal-engine", "running");
+    };
+    DeviceProfile qcom;
+    qcom.soc = SocVendor::Qualcomm;
+    qcom.platform = "taro";
+
+    // Case A - stock: nothing mounted, nothing journaled.
+    reset();
+    {
+        Journal journal(HICO_JOURNAL_FILE);
+        const auto a = classify(journal, normal);
+        CHECK(a.ownership == Ownership::Stock);
+        CHECK(!a.mounted && !a.hico_owned && !a.external_owned);
+        CHECK(a.mount_source.empty());
+    }
+
+    // Case B - HiCo mount: relax() mounts a tuned copy, journals it, and both agree.
+    reset();
+    {
+        Journal journal(HICO_JOURNAL_FILE);
+        ThermalController c(journal, qcom);
+        CHECK_EQ(c.relax(Config{}), 1);
+        const auto b = classify(journal, engine);
+        CHECK(b.ownership == Ownership::Hico);
+        CHECK(b.mounted && b.hico_owned && !b.external_owned && b.journaled);
+        CHECK_EQ(b.mount_source, std::string("/dev/hico/thermal/vendor_etc_thermal-engine.conf"));
+        CHECK(c.unlocked()); // hico_active: the journal is populated
+        CHECK(classify(journal, normal).ownership == Ownership::Stock); // the untouched file stays stock
+    }
+
+    // Case C - a Magisk module's mount: external, never HiCo's, and HiCo stays inactive.
+    reset();
+    put("/__mounts__", normal + " <- " + external + "thermal-normal.conf\n");
+    {
+        Journal journal(HICO_JOURNAL_FILE);
+        const auto e = classify(journal, normal);
+        CHECK(e.ownership == Ownership::External);
+        CHECK(e.mounted && e.external_owned && !e.hico_owned && !e.journaled);
+        CHECK(e.mount_source.find("fast_charging") != std::string::npos);
+        CHECK_EQ(e.mount_owner, std::string("fast_charging"));
+        CHECK(journal.empty()); // hico_active stays false, journal_entries stays 0
+        ThermalController c(journal, qcom);
+        c.relax(Config{});
+        CHECK(!c.unlocked() || !journal.has_mount(normal));
+        CHECK(get("/__mounts__").find(external + "thermal-normal.conf") != std::string::npos); // left in place
+    }
+
+    // Case D - external mount over a config that is itself tunable: still external, never taken over.
+    reset();
+    put("/__mounts__", engine + " <- " + external + "thermal-engine.conf\n");
+    {
+        Journal journal(HICO_JOURNAL_FILE);
+        ThermalController c(journal, qcom);
+        CHECK(thermalcfg::plain_text(kEngineConf).has_value()); // tunable=true
+        CHECK_EQ(c.relax(Config{}), 0);                          // not counted as HiCo's work (no configs>0)
+        const auto d = classify(journal, engine);
+        CHECK(d.ownership == Ownership::External && d.external_owned && !d.hico_owned);
+        CHECK(journal.empty() && !c.unlocked());
+        CHECK_EQ(get("/__mounts__"), engine + " <- " + external + "thermal-engine.conf");
+        CHECK(get("/dev/hico/thermal/vendor_etc_thermal-engine.conf") == "<missing>"); // no candidate written either
+    }
+
+    // Case E - inconsistent: a HiCo-sourced mount with no journal must not be reported healthy, nor taken over.
+    reset();
+    put("/dev/hico/thermal/vendor_etc_thermal-engine.conf", "tuned");
+    put("/__mounts__", engine + " <- /dev/hico/thermal/vendor_etc_thermal-engine.conf\n");
+    {
+        Journal journal(HICO_JOURNAL_FILE);
+        const auto i = classify(journal, engine);
+        CHECK(i.ownership == Ownership::Inconsistent);
+        CHECK(i.mounted && !i.hico_owned && !i.external_owned && !i.journaled);
+        ThermalController c(journal, qcom);
+        CHECK_EQ(c.relax(Config{}), 0);
+        CHECK(journal.empty()); // no silent adoption
+    }
+    // ... and the opposite: a journal record with nothing mounted (failed bind mount) is retried, then consistent.
+    reset();
+    put(HICO_JOURNAL_FILE, "M\t" + engine + "\n");
+    {
+        Journal journal(HICO_JOURNAL_FILE);
+        journal.load();
+        const auto before = classify(journal, engine);
+        CHECK(before.ownership == Ownership::Inconsistent && !before.mounted && before.journaled);
+        ThermalController c(journal, qcom);
+        CHECK_EQ(c.relax(Config{}), 1);
+        CHECK(classify(journal, engine).ownership == Ownership::Hico);
+    }
+}
+
+void test_restore_never_unmounts_foreign_mounts() {
+    const std::string engine = "/vendor/etc/thermal-engine.conf";
+    const std::string module_mount = engine + " <- /adb/modules/fast_charging/vendor/etc/thermal-engine.conf";
+    const std::string hico_mount = engine + " <- /dev/hico/thermal/vendor_etc_thermal-engine.conf";
+
+    // The journal names a target, but what is mounted there now belongs to a module.
+    build_device();
+    put(engine, kEngineConf);
+    put("/__mounts__", module_mount + "\n");
+    put(HICO_JOURNAL_FILE, "M\t" + engine + "\n");
+    Journal j(HICO_JOURNAL_FILE);
+    j.load();
+    auto r = j.restore();
+    CHECK_EQ(r.skipped, 1);
+    CHECK_EQ(r.mounts, 0);
+    CHECK_EQ(r.failed, 0);
+    CHECK(get("/__mounts__").find("fast_charging") != std::string::npos);
+
+    // HiCo mounted first, a module mounted on top afterwards: the module's mount is the visible one.
+    build_device();
+    put(engine, kEngineConf);
+    put("/__mounts__", hico_mount + "\n" + module_mount + "\n");
+    put(HICO_JOURNAL_FILE, "M\t" + engine + "\n");
+    Journal j2(HICO_JOURNAL_FILE);
+    j2.load();
+    r = j2.restore();
+    CHECK_EQ(r.skipped, 1);
+    CHECK(get("/__mounts__").find("fast_charging") != std::string::npos);
+
+    // HiCo's own mount is still unmounted as before.
+    build_device();
+    put(engine, kEngineConf);
+    put("/__mounts__", hico_mount + "\n");
+    put(HICO_JOURNAL_FILE, "M\t" + engine + "\n");
+    Journal j3(HICO_JOURNAL_FILE);
+    j3.load();
+    r = j3.restore();
+    CHECK_EQ(r.skipped, 0);
+    CHECK_EQ(r.mounts, 1);
+    CHECK(get("/__mounts__").find("thermal-engine.conf") == std::string::npos);
+}
+
 void test_levels_whitelist_blacklist() {
     build_device();
     put("/vendor/etc/thermal-engine.conf", kEngineConf);
@@ -1617,6 +1800,9 @@ int main() {
         {"device database", test_device_database},
         {"thermal tuner", test_thermal_tuner},
         {"relaxed overlay", test_relaxed_overlay},
+        {"mountinfo parsing", test_mountinfo_parsing},
+        {"thermal ownership", test_thermal_ownership},
+        {"restore leaves foreign mounts", test_restore_never_unmounts_foreign_mounts},
         {"graduated safety and respawning HAL", test_graduated_safety},
         {"levels, whitelist, blacklist", test_levels_whitelist_blacklist},
         {"scenarios", test_scenarios},

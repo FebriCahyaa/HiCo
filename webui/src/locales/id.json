@@ -275,6 +275,12 @@
       "tuned": "Salinan HiCo",
       "vendor": "Vendor",
       "vendor_locked": "Vendor (hanya baca)",
+      "external": "Eksternal",
+      "external_by": "Eksternal · {owner}",
+      "inconsistent": "Tidak konsisten",
+      "mount_source": "Dipasang dari",
+      "external_note": "Modul lain memasang file ini di atas config ROM. HiCo tidak memasangnya, membiarkannya apa adanya, dan tidak menghitungnya sebagai hasil setelan.",
+      "inconsistent_note": "Journal HiCo dan tabel mount tidak sepakat soal file ini, jadi HiCo tidak menyentuhnya. Memulihkan thermal bawaan atau reboot akan membersihkannya.",
       "no_configs": "Tidak ada file config thermal di /vendor, /odm atau /system.",
       "no_services": "Tidak ada daemon thermal yang terdaftar di init.",
       "format": {

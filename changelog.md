@@ -1,5 +1,21 @@
 # Unreleased
 
+### Thermal ownership: who mounted a config, not just whether it is mounted
+- `hicod thermal scan` and `thermal sources` used to answer "is something mounted on this file",
+  so a Magisk module's bind mount (e.g. `fast_charging` on `thermal-normal.conf`) was shown as
+  `relaxed (mounted)`, as if HiCo had done it. Ownership now comes from one place
+  (`ThermalOwnership`): the top-most `/proc/self/mountinfo` entry (where it is mounted *from*) plus
+  HiCo's journal. Four states: `stock`, `hico`, `external` (with the module id when the source is
+  under a modules directory), and `inconsistent` (journal and mount table disagree).
+- `thermal scan` prints `tunable`, `hico-mounted`, `external-mounted (fast_charging)` or
+  `inconsistent`; `thermal sources --json` keeps every old field and appends `mounted`, `ownership`,
+  `mount_source`, `mount_owner` and `candidate` (a tuned copy exists in `/dev/hico/thermal`; not
+  the same as active). `hico_active` is unchanged: it still means "HiCo's journal is populated".
+- `relax()` no longer counts an external mount as a relaxed config, and never tunes or unmounts it.
+  `restore` only unmounts a mount that comes from HiCo's own candidate file: a module's mount that
+  sits on top of (or in place of) HiCo's is left alone and reported.
+- The WebUI Monitor page shows Vendor / HiCo / External (with the module name) / Inconsistent.
+
 ### Tamper detection: signed releases, runtime self-check, revocation list
 - **Signed release manifest** (`docs/INTEGRITY.md`): releases are now Ed25519-signed, not just
   SHA-256-checksummed. `tools/sign_release.py` + `hico_sign` (offline, `HICO_INTEGRITY_PRIVATE_KEY`

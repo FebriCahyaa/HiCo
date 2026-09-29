@@ -109,6 +109,7 @@ private:
     std::vector<thermal::CoolingDevice> fixed_cooling_;
     std::vector<std::pair<std::string, long long>> trip_targets_; ///< passive trip node -> raised temp (m°C)
     std::set<std::string> warned_services_;
+    std::set<std::string> warned_mounts_;            ///< configs already reported as inconsistent this session
     static constexpr int kMaxRespawns = 3;           ///< returns before HiCo stops stopping a service
     std::map<std::string, int> respawns_;            ///< service -> times it came back after HiCo stopped it
     std::set<std::string> respawning_;               ///< services left running for this session

@@ -249,8 +249,9 @@ void Daemon::transition(State next, Clock::time_point now, std::string reason) {
     const bool keeps_overlay = next == State::Boost || next == State::Relaxed || (next == State::Safety && safety_relaxed_);
     if (!keeps_overlay && controller_.unlocked()) {
         const auto r = controller_.restore();
-        LOGI("thermal restored: {} nodes, {} services, {} configs{}", r.nodes, r.services, r.mounts,
-             r.failed ? std::format(", {} failed", r.failed) : "");
+        LOGI("thermal restored: {} nodes, {} services, {} configs{}{}", r.nodes, r.services, r.mounts,
+             r.failed ? std::format(", {} failed", r.failed) : "",
+             r.skipped ? std::format(", {} not HiCo's mounts left in place", r.skipped) : "");
         summary_ = {};
     }
     if (!keeps_overlay) applied_.reset();

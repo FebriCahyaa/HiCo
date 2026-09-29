@@ -13,6 +13,7 @@
 #include "ThermalConfig.hpp"
 #include "Fs.hpp"
 #include "Log.hpp"
+#include "ThermalOwnership.hpp"
 #include "ThermalServices.hpp"
 
 #include <algorithm>
@@ -259,7 +260,8 @@ int ThermalController::relax(const Config &cfg) {
     // mi_thermald: this device's own highest trip per device/sensor (nolimits, game scenes)
     // bounds every tuned section, so the template follows Xiaomi's data for this phone.
     for (const auto &path : files) {
-        if (journal_.has_mount(path) || fs::is_mounted(path)) continue;
+        // Only stock files feed the ceilings: a mounted config (ours or a module's) is already modified.
+        if (thermal_owner::classify(journal_, path).ownership != thermal_owner::Ownership::Stock) continue;
         const auto raw = fs::read_raw(path, 512 * 1024);
         if (!raw) continue;
         const auto fmt = thermalcfg::detect_format(*raw);
@@ -275,10 +277,25 @@ int ThermalController::relax(const Config &cfg) {
     std::vector<Pending> pending;
     int relaxed = 0;
     for (const auto &path : files) {
-        // Already overlaid (this session or a crashed one): never tune a tuned file again.
-        if (journal_.has_mount(path) || fs::is_mounted(path)) {
-            ++relaxed;
+        switch (const auto own = thermal_owner::classify(journal_, path); own.ownership) {
+        case thermal_owner::Ownership::Hico:
+            ++relaxed; // already overlaid by HiCo (this session or a crashed one): never tune a tuned file again
             continue;
+        case thermal_owner::Ownership::External:
+            // Another module owns this file. Not ours to tune, unmount or count as relaxed.
+            LOGD("relax: {} is mounted by {}, leaving it", path, own.mount_owner.empty() ? own.mount_source : own.mount_owner);
+            continue;
+        case thermal_owner::Ownership::Inconsistent:
+            // A journal record with nothing mounted is HiCo's own leftover (a failed bind mount):
+            // safe to tune and mount again. A HiCo-sourced mount with no journal cannot be restored: hands off.
+            if (!own.mounted) break;
+            if (warned_mounts_.insert(path).second) {
+                LOGW("relax: {} has a journal/mount mismatch (journaled={}, mounted={}); not touching it", path, own.journaled,
+                     own.mounted);
+            }
+            continue;
+        case thermal_owner::Ownership::Stock:
+            break;
         }
         const auto original = fs::read_raw(path, 512 * 1024);
         if (!original) continue;
@@ -309,9 +326,7 @@ int ThermalController::relax(const Config &cfg) {
 
     std::vector<std::string> tuned_names;
     for (const auto &p : pending) {
-        std::string flat = p.target.substr(1);
-        std::replace(flat.begin(), flat.end(), '/', '_');
-        const std::string source = std::string(HICO_RUNTIME_DIR "/thermal/") + flat;
+        const std::string source = thermal_owner::candidate_path(p.target);
         if (!fs::write_atomic(source, p.tuned, 0644)) continue;
         journal_.record_mount(p.target);
         if (fs::bind_mount(source, p.target)) {
@@ -338,6 +353,7 @@ Journal::RestoreResult ThermalController::restore() {
     const auto r = journal_.restore();
     act_.reset_warnings();
     warned_services_.clear();
+    warned_mounts_.clear();
     respawns_.clear();
     respawning_.clear();
     return r;
