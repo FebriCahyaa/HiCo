@@ -37,7 +37,7 @@ def main() -> int:
         raise AssertionError("tools workflow contains a pipe to head under pipefail")
     require(tools, "sed -n '1p'", "safe first-root selection")
     require(tools, "matrix_ids: ${{ steps.matrix.outputs.ids }}", "compact full-matrix output")
-    require(tools, "name: full-mapping-matrix", "full mapping matrix artifact")
+    require(tools, "name: mapping-matrix-definition", "full mapping matrix artifact")
     require(tools, "download-artifact@v6", "artifact transfer")
     require(tools, "name: Download mapping matrix definition", "full-map matrix download")
     require(tools, "jq -r --arg id \"$JOB_ID\" '.[] | select(.id == $id) | .roots[]'", "local shard resolution")
