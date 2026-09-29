@@ -394,7 +394,8 @@ class GeneratorTest(unittest.TestCase):
             self.assertEqual(subprocess.run([str(tmp / "probe")]).returncode, 0)
 
             # Stale table: --check fails.
-            (data / "testdev_a.prop").write_text((data / "testdev_a.prop").read_text().replace("Test A", "Test A2"))
+            prop = data / "test" / "testdev_a.prop"
+            prop.write_text(prop.read_text().replace("Test A", "Test A2"))
             self.assertEqual(run_gen("--data", str(data), "--output", str(out), "--check").returncode, 1)
 
     def test_rejects_mismatched_codename(self):
