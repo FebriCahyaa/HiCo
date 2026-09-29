@@ -62,7 +62,7 @@ recorded here. Deleting any of these trees requires a `DELETION_MANIFEST.md` ent
 | `LICENSE`, `EULA.md`, `NOTICE.md` | 3 | Legal; shipped in the zip | `compile_zip.sh` | AUTHORITATIVE (legal) |
 | `.gitattributes` | 1 | LFS rules for `*.img`/`*.bin` under `thermal-data/` and `generated-thermal/` | git | DEPENDENCY |
 | `.gitignore` | 1 | Ignores build output, collector cache, **signing keys** (`priv.hex`, `*_priv.hex`, `*.private.hex`) | git | DEPENDENCY |
-| `README.md` | 1 | **Currently holds "HiCo Phase 2 Final Local Cleanup" instructions, not a project README** | humans | UNKNOWN — preserved (Flux `docs/agent-state/BLOCKERS.md` B-06) |
+| `README.md` | 1 | **Currently holds "HiCo Phase 2 Final Local Cleanup" instructions, not a project README** | humans | HISTORICAL — phase document, preserve, never remove (owner decision, Flux `DECISIONS.md` D-12) |
 
 ## Runtime data on the device (not repository data)
 
@@ -75,4 +75,4 @@ recorded here. Deleting any of these trees requires a `DELETION_MANIFEST.md` ent
 
 ## UNKNOWN entries
 
-- `README.md` (see above).
+None. (`README.md` reclassified HISTORICAL by owner decision D-12.)
