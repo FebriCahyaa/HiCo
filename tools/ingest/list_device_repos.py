@@ -35,6 +35,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -44,6 +45,8 @@ from common import MANIFEST_DIR, ROOT, SOURCES_YAML, load_sources, remote_defaul
 
 API = "https://api.github.com"
 RAW = "https://raw.githubusercontent.com"
+
+CODENAME_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
 
 # Names that use the device prefix but are not device or SoC-common trees.
 NON_DEVICE = frozenset({
@@ -280,6 +283,90 @@ def list_vendor_probe(src: dict, manifest_dir: Path, probe=remote_default_branch
     return devices
 
 
+def _gitlab_paginate(url: str, token: str | None) -> list[dict]:
+    """Walk GitLab pagination (X-Next-Page header), return all items."""
+    items: list[dict] = []
+    while url:
+        req = urllib.request.Request(url, headers={"User-Agent": "hico-ingest"})
+        if token:
+            req.add_header("PRIVATE-TOKEN", token)
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    items.extend(json.loads(resp.read().decode()))
+                    next_page = resp.headers.get("X-Next-Page") or ""
+                    if next_page.isdigit():
+                        base = url.split("?")[0]
+                        url = f"{base}?per_page=100&page={next_page}"
+                    else:
+                        url = None
+                break
+            except urllib.error.HTTPError as exc:
+                if exc.code in (502, 503, 504) and attempt < 2:
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                body = exc.read().decode(errors="replace")[:200]
+                raise ListingError(f"HTTP {exc.code} {url}: {body}") from exc
+            except (urllib.error.URLError, TimeoutError) as exc:
+                if attempt < 2:
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                raise ListingError(f"{url}: {exc}") from exc
+    return items
+
+
+def list_gitlab(src: dict, token: str | None) -> dict[str, dict]:
+    """List devices from a GitLab group dump repository (e.g. dumps.tadiphone.dev).
+
+    Each project in the group IS a device dump; repo path == codename, group
+    path == vendor. No android_device_ prefix needed.
+    """
+    base_url = (src.get("base_url") or "https://dumps.tadiphone.dev").rstrip("/")
+    group = src["org"]  # e.g. "dumps/samsung"
+    vendor = group.rsplit("/", 1)[-1].lower()
+    encoded = urllib.parse.quote(group, safe="")
+    url = f"{base_url}/api/v4/groups/{encoded}/projects?per_page=100&archived=false&include_subgroups=false"
+    try:
+        repos = _gitlab_paginate(url, token)
+    except ListingError:
+        raise
+    devices: dict[str, dict] = {}
+    for repo in repos:
+        codename = (repo.get("path") or "").lower().strip()
+        if not codename or not CODENAME_RE.match(codename):
+            continue
+        devices[f"{vendor}/{codename}"] = {
+            "vendor": vendor,
+            "codename": codename,
+            "kind": "device",
+            "repo": repo.get("path_with_namespace", repo.get("path")),
+            "clone_url": repo.get("http_url_to_repo"),
+            "default_branch": repo.get("default_branch"),
+            "updated_at": repo.get("last_activity_at"),
+            "archived": bool(repo.get("archived")),
+            "fork": False,
+        }
+    return devices
+
+
+def rom_device_set(manifest_dir: Path, sources: list[dict]) -> set[str]:
+    """All '<vendor>/<codename>' keys that appear in ANY committed ROM-family manifest.
+
+    Used to gate OEM dump ingestion: only devices that have custom ROM support
+    are worth fetching from stock firmware mirrors.
+    """
+    keys: set[str] = set()
+    for src in sources:
+        if src.get("family") not in ("rom", "aosp"):
+            continue
+        path = manifest_dir / f"{src['id']}.json"
+        if not path.is_file():
+            continue
+        for d in json.loads(path.read_text()).get("devices", []):
+            keys.add(f"{d['vendor']}/{d['codename']}")
+    return keys
+
+
 def build_manifest(src: dict, devices: dict[str, dict]) -> dict:
     rows = sorted(devices.values(), key=lambda d: (d["vendor"], d["codename"]))
     return {
@@ -308,7 +395,18 @@ def main() -> int:
     wanted = {s for s in args.only.split(",") if s}
     data = load_sources(Path(args.sources))
     sources = [s for s in data.get("sources") or []
-               if s.get("provider") in ("github", "repo-manifest", "vendor-probe") and (not wanted or s["id"] in wanted)]
+               if s.get("provider") in ("github", "gitlab", "repo-manifest", "vendor-probe")
+               and (not wanted or s["id"] in wanted)]
+
+    # ROM device set is built once (lazily) for filter_requires_rom sources.
+    _rom_keys: set[str] | None = None
+
+    def get_rom_keys() -> set[str]:
+        nonlocal _rom_keys
+        if _rom_keys is None:
+            _rom_keys = rom_device_set(manifest_dir, data.get("sources") or [])
+            print(f"     rom-gate: {len(_rom_keys)} devices covered by ROM sources", flush=True)
+        return _rom_keys
 
     failed: list[str] = []
     for src in sources:
@@ -317,6 +415,11 @@ def main() -> int:
         try:
             if src["provider"] == "github":
                 devices = list_github(src, token)
+            elif src["provider"] == "gitlab":
+                # dumps.tadiphone.dev is a public GitLab instance — no token needed.
+                # TADIPHONE_TOKEN is optional; omit it to use anonymous access.
+                gl_token = os.environ.get("TADIPHONE_TOKEN") or None
+                devices = list_gitlab(src, gl_token)
             elif src["provider"] == "vendor-probe":
                 devices = list_vendor_probe(src, manifest_dir)
             else:
@@ -325,6 +428,15 @@ def main() -> int:
             failed.append(src["id"])
             print(f"     ✗ listing failed, committed manifest kept: {exc}", flush=True)
             continue
+
+        if src.get("filter_requires_rom"):
+            before = len(devices)
+            rom_keys = get_rom_keys()
+            devices = {k: v for k, v in devices.items() if k in rom_keys}
+            dropped = before - len(devices)
+            if dropped:
+                print(f"     rom-gate: dropped {dropped} devices without custom ROM support", flush=True)
+
         manifest = build_manifest(src, devices)
         changed = write_json(manifest_dir / f"{src['id']}.json", manifest)
         print(f"     → {manifest['device_count']} devices + {manifest['common_count']} common trees"

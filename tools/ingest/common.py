@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -120,6 +121,63 @@ def resolve_branch(dev: dict, heads: dict[str, str]) -> tuple[str | None, str | 
         (b, sha), = heads.items()
         return b, sha
     return None, None
+
+
+# ---------------------------------------------------------------------------
+# Multi-branch helpers (multi_branch: oldest_and_newest in sources.yaml)
+# ---------------------------------------------------------------------------
+
+_LINEAGE_VER_RE = re.compile(r"lineage[_-](\d+)\.\d+")
+_NUMERIC_VER_RE = re.compile(r"^(\d{2})\.\d")
+_NAMED_ANDROID: dict[str, int] = {
+    "udc": 14, "vic": 15, "bic": 16,
+    "topaz": 14, "uvite": 15,
+    "fifteen": 15, "fourteen": 14, "thirteen": 13,
+    "arrow-13": 13, "arrow-14": 14, "arrow-15": 15,
+}
+_MIN_ANDROID = 10  # never fetch branches older than Android 10
+
+
+def android_ver_from_branch(branch: str) -> int | None:
+    """Return the Android version encoded in a ROM branch name, or None if unknown.
+
+    lineage-17.1 → 10, lineage-21.0 → 14, 15.0 → 15, udc → 14, etc.
+    """
+    m = _LINEAGE_VER_RE.match(branch)
+    if m:
+        n = int(m.group(1))
+        return (n - 7) if n >= 17 else None  # lineage-17 == Android 10
+    m = _NUMERIC_VER_RE.match(branch)
+    if m:
+        return int(m.group(1))
+    return _NAMED_ANDROID.get(branch.split("-")[0].lower())
+
+
+def qualifying_branches(heads: dict[str, str]) -> list[tuple[str, str, int]]:
+    """(branch, sha, android_ver) sorted oldest→newest, Android >= _MIN_ANDROID only."""
+    result = []
+    for branch, sha in heads.items():
+        ver = android_ver_from_branch(branch)
+        if ver is not None and ver >= _MIN_ANDROID:
+            result.append((branch, sha, ver))
+    return sorted(result, key=lambda t: t[2])
+
+
+def oldest_and_newest(heads: dict[str, str]) -> list[tuple[str, str]]:
+    """Return [(branch, sha)] for oldest AND newest qualifying branches (deduplicated)."""
+    qs = qualifying_branches(heads)
+    if not qs:
+        return []
+    oldest = qs[0]
+    newest = qs[-1]
+    if oldest[0] == newest[0]:
+        return [(oldest[0], oldest[1])]
+    return [(oldest[0], oldest[1]), (newest[0], newest[1])]
+
+
+def branch_dir_suffix(branch: str) -> str:
+    """Filesystem-safe suffix from a branch name: lineage-17.1 → __lineage-17.1."""
+    return "__" + re.sub(r"[^A-Za-z0-9._-]", "_", branch)
 
 
 # ---------------------------------------------------------------------------

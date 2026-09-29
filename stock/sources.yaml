@@ -29,8 +29,9 @@ sources:
     provider: github
     org: LineageOS
     repo_prefix: android_device_
-    branch_hint: "lineage-2\\d\\.\\d+"
-    notes: Largest device-tree corpus; multi-OEM.
+    branch_hint: "lineage-\\d+\\.\\d+"
+    multi_branch: true
+    notes: "Largest device-tree corpus; multi-OEM. multi_branch fetches oldest Android 10+ AND newest branch per device (captures kernel-era thermal format differences, e.g. lavender 4.4 vs 4.19)."
 
   - id: pixelos
     name: PixelOS
@@ -47,8 +48,9 @@ sources:
     provider: github
     org: crdroidandroid
     repo_prefix: android_device_
-    branch_hint: "15\\.0|14\\.0"
-    notes: Very broad device support.
+    branch_hint: "\\d+\\.\\d+"
+    multi_branch: true
+    notes: Very broad device support. multi_branch enabled for kernel-era coverage.
 
   - id: derpfest
     name: DerpFest
@@ -116,7 +118,8 @@ sources:
     org: LMODroid-Devices
     repo_prefix: device_
     branch_hint: v5\\.\\d|v4\\.\\d
-    notes: LineageOS-derived, broad device coverage.
+    multi_branch: true
+    notes: LineageOS-derived, broad device coverage. multi_branch enabled.
 
   - id: awakenos
     name: AwakenOS
@@ -189,31 +192,93 @@ sources:
     notes: Probed with git ls-remote from the device-tree manifests above; no API.
 
   # ------------------------------------------------------------------
-  # OEM firmware dumps
+  # OEM firmware dumps (TadiPhone — dumps.tadiphone.dev)
+  #
+  # filter_requires_rom: true — only fetch devices that appear in at least
+  # one custom ROM source above. Devices with no custom ROM support are
+  # skipped: they typically lack an active developer community and their
+  # thermal configs are less useful for calibration.
   # ------------------------------------------------------------------
   - id: tadiphone-xiaomi
     name: TadiPhone dumps — Xiaomi
     family: oem
     provider: gitlab
+    base_url: https://dumps.tadiphone.dev
     org: dumps/xiaomi
-    branch_hint: ""
-    notes: Requires TADIPHONE_TOKEN secret in CI.
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only devices with custom ROM support.
 
   - id: tadiphone-redmi
     name: TadiPhone dumps — Redmi
     family: oem
     provider: gitlab
+    base_url: https://dumps.tadiphone.dev
     org: dumps/redmi
-    branch_hint: ""
-    notes: Requires TADIPHONE_TOKEN.
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only devices with custom ROM support.
 
   - id: tadiphone-poco
     name: TadiPhone dumps — POCO
     family: oem
     provider: gitlab
+    base_url: https://dumps.tadiphone.dev
     org: dumps/poco
-    branch_hint: ""
-    notes: Requires TADIPHONE_TOKEN.
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only devices with custom ROM support.
+
+  - id: tadiphone-samsung
+    name: TadiPhone dumps — Samsung
+    family: oem
+    provider: gitlab
+    base_url: https://dumps.tadiphone.dev
+    org: dumps/samsung
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only Samsung devices with custom ROM support.
+
+  - id: tadiphone-oneplus
+    name: TadiPhone dumps — OnePlus
+    family: oem
+    provider: gitlab
+    base_url: https://dumps.tadiphone.dev
+    org: dumps/oneplus
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only OnePlus devices with custom ROM support.
+
+  - id: tadiphone-oppo
+    name: TadiPhone dumps — OPPO
+    family: oem
+    provider: gitlab
+    base_url: https://dumps.tadiphone.dev
+    org: dumps/oppo
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only OPPO devices with custom ROM support.
+
+  - id: tadiphone-realme
+    name: TadiPhone dumps — Realme
+    family: oem
+    provider: gitlab
+    base_url: https://dumps.tadiphone.dev
+    org: dumps/realme
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only Realme devices with custom ROM support.
+
+  - id: tadiphone-motorola
+    name: TadiPhone dumps — Motorola
+    family: oem
+    provider: gitlab
+    base_url: https://dumps.tadiphone.dev
+    org: dumps/motorola
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only Motorola devices with custom ROM support.
+
+  - id: tadiphone-google
+    name: TadiPhone dumps — Google
+    family: oem
+    provider: gitlab
+    base_url: https://dumps.tadiphone.dev
+    org: dumps/google
+    filter_requires_rom: true
+    notes: Public GitLab instance; no token required. Only Google Pixel devices with custom ROM support.
 
 # --------------------------------------------------------------------
 # Thermal-related paths sparse-fetched from each device-tree repo.
@@ -262,6 +327,7 @@ thermal_paths:
 # 650 KB each): the fetched files are listed in each source.json instead.
 # --------------------------------------------------------------------
 blob_paths:
+  # Qualcomm thermal-engine (all vendors: Xiaomi, OnePlus, Motorola, Google Pixel 6-)
   - "proprietary/vendor/etc/thermal*"
   - "proprietary/vendor/etc/*thermal*.json"
   - "proprietary/vendor/etc/*thermal*.xml"
@@ -272,12 +338,23 @@ blob_paths:
   - "proprietary/vendor/etc/powerhint*.json"
   - "proprietary/vendor/etc/powerhint*.xml"
   # MediaTek thermal policies (thermal.conf, .thermal_policy_NN, .ht120.mtc)
+  # Covers: OPPO/Realme MTK, Samsung Dimensity, some Motorola/OnePlus MTK
   - "proprietary/vendor/etc/.tp/**"
   - "proprietary/etc/.tp/**"
   - "proprietary/vendor/etc/power_hal*"
+  # Samsung Exynos thermal (vendor.samsung.hardware.thermal HAL configs)
+  - "proprietary/vendor/etc/samsung*thermal*"
+  - "proprietary/vendor/etc/thermal_info_config*.json"
+  - "proprietary/vendor/etc/thermal_zone_config*.xml"
+  - "proprietary/vendor/etc/thermal_platform_supported*.xml"
+  - "proprietary/vendor/etc/thermal-scenes*.xml"
+  - "proprietary/vendor/etc/thermal_srv_config.xml"
+  # ODM partition (common for Samsung, Realme, OPPO ODM-partitioned devices)
   - "proprietary/odm/etc/thermal*"
   - "proprietary/odm/etc/*thermal*"
   - "proprietary/odm/etc/thermal/**"
   - "proprietary/odm/etc/init/*thermal*"
+  # Google Tensor (gs101/gs201/gs301 use pixel-specific thermal HAL)
+  - "proprietary/vendor/etc/thermal_info_config*.json"
   - "proprietary/product/etc/thermal*"
   - "proprietary/system_ext/etc/thermal*"

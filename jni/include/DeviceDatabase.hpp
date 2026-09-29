@@ -17,8 +17,8 @@
  *
  * Pipeline (all generated, nothing typed by hand):
  *
- *   firmware dumps ──tools/xiaomi_devices.py──▶ devices/xiaomi/<codename>.prop (repository only)
- *                  ──tools/gen_device_db.py───▶ jni/src/XiaomiDevices.gen.cpp (this table)
+ *   firmware dumps ──tools/<vendor>_devices.py──▶ devices/<vendor>/<codename>.prop (repository only)
+ *                  ──tools/gen_device_db.py─────▶ jni/src/DeviceDatabase.gen.cpp (this table)
  *
  * The .prop files never ship in the module: the facts they hold are compiled
  * in, so the table cannot be edited on a device and needs no parsing at boot.

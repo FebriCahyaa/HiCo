@@ -1,26 +1,27 @@
 <template>
   <!--
-    M3 Expressive navigation bar (phones) / rail (md+). The active indicator pill
-    grows out of the icon on the default spatial spring; the icon bounces and the
-    label gets heavier when selected.
+    M3 Expressive floating navigation: a rounded glass pill afloat above the
+    content on phones, a tall floating rail on desktop/tablet. The active
+    indicator pill grows out of the icon on the default spatial spring; the
+    icon bounces and the label gets heavier when selected.
   -->
-  <nav
+  <div
     ref="navEl"
-    class="m3-nav footer fixed bottom-0 left-0 right-0 w-full flex items-end bg-surface-container z-50 md:left-0 md:top-0 md:bottom-0 md:w-24 md:h-full md:flex-col"
+    class="m3-nav-wrap fixed bottom-0 left-0 right-0 z-50 flex justify-center md:left-0 md:top-0 md:bottom-0 md:w-24 md:h-full md:justify-start md:items-center"
     :style="{
-      paddingBottom: 'var(--window-inset-bottom, 0px)',
+      paddingBottom: 'calc(var(--window-inset-bottom, 0px) + 12px)',
       paddingRight: 'var(--window-inset-right, 0px)',
       paddingLeft: 'var(--window-inset-left, 0px)',
     }"
   >
-    <div
-      class="w-full h-20 flex items-center justify-center px-2 md:h-full md:flex-col md:justify-center md:gap-3 md:px-0"
+    <nav
+      class="m3-nav glass-surface flex items-center justify-center gap-1 px-2 py-2 shadow-lg md:flex-col md:py-4 md:px-2 md:gap-3 md:ml-3"
     >
       <router-link
         v-for="item in navItems"
         :key="item.name"
         :to="item.path"
-        class="nav-item flex-1 max-w-40 flex flex-col items-center justify-center gap-1 no-underline select-none"
+        class="nav-item flex flex-col items-center justify-center gap-1 no-underline select-none"
         :class="isActive(item) ? 'is-active text-on-surface' : 'text-on-surface-variant'"
         :aria-current="isActive(item) ? 'page' : undefined"
       >
@@ -30,10 +31,10 @@
             <component :is="item.icon" :active="isActive(item)" />
           </span>
         </span>
-        <span class="label text-xs">{{ item.label }}</span>
+        <span class="label text-[11px]">{{ item.label }}</span>
       </router-link>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 
 <script setup>
@@ -97,8 +98,29 @@ onBeforeUnmount(() => ro?.disconnect())
 </script>
 
 <style scoped>
+.m3-nav-wrap {
+  pointer-events: none;
+}
+
 .m3-nav {
-  border-top-left-radius: 0;
+  pointer-events: auto;
+  border-radius: 999px;
+  width: max-content;
+  max-width: calc(100vw - 24px);
+}
+
+@media (min-width: 768px) {
+  .m3-nav {
+    border-radius: 32px;
+  }
+}
+
+.nav-item {
+  flex: 1;
+  min-width: 56px;
+  max-width: 72px;
+  padding: 4px 6px;
+  border-radius: 999px;
 }
 
 .indicator-wrap {

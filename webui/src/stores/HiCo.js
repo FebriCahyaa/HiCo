@@ -107,6 +107,20 @@ export const useHiCoStore = defineStore('hico', () => {
 
   const monitor = () => run(`${HICOD} monitor --json`).then((s) => JSON.parse(s))
   const thermalSources = () => run(`${HICOD} thermal sources --json`).then((s) => JSON.parse(s))
+  // Signed release manifest check (docs/INTEGRITY.md): independent of whether the daemon is
+  // running, same command the daemon itself uses every 30 min. Read-only, no state changed.
+  const integrityCheck = () => run(`${HICOD} integrity --json`).then((s) => JSON.parse(s))
+  // Not exposed by any hicod command (only device/thermal facts are); read the same way
+  // saveLog() already reads ro.product.vendor.device, one getprop/uname call, not a new
+  // capability.
+  const systemInfo = () =>
+    run(
+      'a=$(getprop ro.build.version.release); s=$(getprop ro.build.version.sdk); ' +
+        'k=$(uname -r); m=$(uname -m); echo "$a|$s|$k|$m"',
+    ).then((s) => {
+      const [android, sdk, kernel, arch] = s.trim().split('|')
+      return { android, sdk, kernel, arch }
+    })
   const log = (lines = 200) => run(`tail -n ${lines} ${LOG_FILE} 2>/dev/null`)
   // One text file in Download for bug reports: state, device, settings and the whole
   // log (with the part rotated to .old). Prints the path.
@@ -148,6 +162,8 @@ export const useHiCoStore = defineStore('hico', () => {
     loadSessions,
     monitor,
     thermalSources,
+    integrityCheck,
+    systemInfo,
     log,
     restart,
     restore,

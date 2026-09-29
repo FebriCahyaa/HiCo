@@ -53,7 +53,9 @@ jobs:
             || echo "::warning::A source failed verification; its committed manifest is kept (see log)."
 
       - name: Re-list repositories (metadata only)
-        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", ONLY: "${{ inputs.only }}" }
+        env:
+          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          ONLY: "${{ inputs.only }}"
         run: python3 tools/ingest/list_device_repos.py --only "$ONLY"
 
       - name: Ask upstream what moved

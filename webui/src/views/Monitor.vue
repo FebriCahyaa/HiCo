@@ -12,17 +12,44 @@
         </div>
 
         <LoadingSpinner v-if="!snap && !error" class="pt-10" :size="48" />
-        <div v-else-if="error" class="m3-card p-5 text-sm text-on-surface-variant">{{ error }}</div>
+        <div v-else-if="error" class="m3-card p-5 flex items-start gap-3">
+          <WarningIcon class="shrink-0 text-error" :size="22" />
+          <div>
+            <p class="text-sm font-semibold text-on-surface">{{ $t('monitor.unavailable') }}</p>
+            <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">{{ error }}</p>
+          </div>
+        </div>
 
         <template v-else>
-          <section class="hero" :class="verdict.card">
+          <!-- Daemon-stopped notice, from state already loaded elsewhere (no extra poll here) -->
+          <div
+            v-if="daemonStopped"
+            class="banner bg-error-container text-on-error-container m3-enter"
+          >
+            <WarningIcon class="shrink-0" :size="22" />
+            <div class="flex-1">
+              <p class="text-sm font-semibold">{{ $t('home.stopped.title') }}</p>
+              <p class="text-xs mt-1 opacity-90">{{ $t('home.stopped.description') }}</p>
+            </div>
+          </div>
+
+          <!-- 1. Overall thermal state -->
+          <section class="hero m3-enter" :class="verdict.card">
             <p class="text-xs font-semibold uppercase tracking-widest opacity-70">
               {{ $t('monitor.verdict') }}
             </p>
             <h2 class="m3-headline text-2xl mt-1">{{ $t(`monitor.v.${snap.verdict}.title`) }}</h2>
             <p class="text-sm mt-1 opacity-90">{{ $t(`monitor.v.${snap.verdict}.description`) }}</p>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
+            <!-- Core sensors: only readings the backend actually reports -->
+            <div class="sensor-grid mt-4">
+              <div v-for="m in coreSensors" :key="m.key" class="sensor">
+                <span class="text-xs opacity-70">{{ $t(`home.${m.key}`) }}</span>
+                <span class="m3-headline text-2xl tabular-nums">{{ formatTemp(m.value, 0) }}</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3">
               <div class="stat">
                 <span class="text-xs opacity-70">{{ $t('monitor.hottest') }}</span>
                 <span class="m3-headline text-xl tabular-nums">{{
@@ -58,7 +85,30 @@
             </div>
           </section>
 
-          <section v-if="sources" class="m3-card p-5">
+          <!-- 2. Live temperature trend -->
+          <section class="m3-card p-5 m3-enter">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.temp_chart') }}</h3>
+              <span class="legend"
+                ><i class="bg-primary" />{{ $t('monitor.hottest') }} <i class="bg-secondary" />{{
+                  $t('home.battery')
+                }}</span
+              >
+            </div>
+            <LineChart
+              v-if="hasTrend"
+              :series="tempSeries"
+              :height="110"
+              unit="°C"
+              :label="$t('monitor.temp_chart')"
+            />
+            <p v-else class="text-xs text-on-surface-variant py-6 text-center">
+              {{ $t('monitor.trend_building') }}
+            </p>
+          </section>
+
+          <!-- 3. Thermal sources -->
+          <section class="m3-card p-5 m3-enter">
             <div class="flex items-start justify-between gap-3 mb-3">
               <div class="min-w-0">
                 <h3 class="text-sm font-semibold text-primary">
@@ -69,6 +119,7 @@
                 </p>
               </div>
               <span
+                v-if="sources"
                 class="owner-pill shrink-0"
                 :class="sources.hico_active ? 'owner-hico' : 'owner-vendor'"
               >
@@ -80,112 +131,121 @@
               </span>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
-              <div class="ident">
-                <span class="text-xs text-on-surface-variant">{{
-                  $t('monitor.sources.device')
-                }}</span>
-                <span class="text-sm font-semibold truncate">{{ deviceName }}</span>
-              </div>
-              <div class="ident">
-                <span class="text-xs text-on-surface-variant">{{
-                  $t('monitor.sources.chipset')
-                }}</span>
-                <span class="text-sm font-semibold truncate"
-                  >{{ sources.device.soc }} {{ sources.device.platform }}</span
-                >
-              </div>
-              <div class="ident">
-                <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.rom') }}</span>
-                <span class="text-sm font-semibold truncate">{{
-                  sources.device.rom_name || '–'
-                }}</span>
-              </div>
-              <div class="ident">
-                <span class="text-xs text-on-surface-variant">{{
-                  $t('monitor.sources.database')
-                }}</span>
-                <span class="text-sm font-semibold truncate">{{
-                  sources.device.in_database
-                    ? $t('monitor.sources.verified')
-                    : $t('monitor.sources.generic')
-                }}</span>
-              </div>
-            </div>
+            <p v-if="sourcesError" class="text-xs text-on-surface-variant">
+              {{ $t('monitor.sources.unavailable') }}
+            </p>
 
-            <h4 class="sub">{{ $t('monitor.sources.configs', { n: sources.configs.length }) }}</h4>
-            <div v-if="sources.configs.length" class="space-y-1 mb-4">
-              <div v-for="c in sources.configs" :key="c.path" class="row items-center">
-                <span class="min-w-0">
-                  <span class="block text-sm text-on-surface truncate">{{
-                    c.path.split('/').pop()
+            <template v-else-if="sources">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+                <div class="ident">
+                  <span class="text-xs text-on-surface-variant">{{
+                    $t('monitor.sources.device')
                   }}</span>
-                  <span class="block text-xs text-on-surface-variant truncate"
-                    >{{ c.path }} · {{ $t(`monitor.sources.format.${c.format}`) }} ·
-                    {{ formatSize(c.size) }}</span
+                  <span class="text-sm font-semibold truncate">{{ deviceName }}</span>
+                </div>
+                <div class="ident">
+                  <span class="text-xs text-on-surface-variant">{{
+                    $t('monitor.sources.chipset')
+                  }}</span>
+                  <span class="text-sm font-semibold truncate"
+                    >{{ sources.device.soc }} {{ sources.device.platform }}</span
                   >
-                </span>
-                <span
-                  class="owner-pill shrink-0"
-                  :class="c.controller === 'hico' ? 'owner-hico' : 'owner-vendor'"
+                </div>
+                <div class="ident">
+                  <span class="text-xs text-on-surface-variant">{{
+                    $t('monitor.sources.rom')
+                  }}</span>
+                  <span class="text-sm font-semibold truncate">{{
+                    sources.device.rom_name || '–'
+                  }}</span>
+                </div>
+                <div class="ident">
+                  <span class="text-xs text-on-surface-variant">{{
+                    $t('monitor.sources.database')
+                  }}</span>
+                  <span class="text-sm font-semibold truncate">{{
+                    sources.device.in_database
+                      ? $t('monitor.sources.verified')
+                      : $t('monitor.sources.generic')
+                  }}</span>
+                </div>
+              </div>
+
+              <h4 class="sub">
+                {{ $t('monitor.sources.configs', { n: sources.configs.length }) }}
+              </h4>
+              <div v-if="sources.configs.length" class="space-y-1 mb-4">
+                <RippleComponent
+                  v-for="c in sources.configs"
+                  :key="c.path"
+                  class="row items-center block"
+                  tabindex="0"
+                  @click="openConfig(c)"
                 >
-                  {{
-                    c.controller === 'hico'
-                      ? $t('monitor.sources.tuned')
-                      : c.tunable
-                        ? $t('monitor.sources.vendor')
-                        : $t('monitor.sources.vendor_locked')
-                  }}
-                </span>
-              </div>
-            </div>
-            <p v-else class="text-xs text-on-surface-variant mb-4">
-              {{ $t('monitor.sources.no_configs') }}
-            </p>
-
-            <h4 class="sub">
-              {{ $t('monitor.sources.services', { n: sources.services.length }) }}
-            </h4>
-            <div v-if="sources.services.length" class="space-y-1">
-              <div v-for="sv in sources.services" :key="sv.name" class="row items-center">
-                <span class="min-w-0">
-                  <span class="block text-sm text-on-surface truncate">{{ sv.name }}</span>
-                  <span class="block text-xs text-on-surface-variant"
-                    >{{ $t(`monitor.sources.kind.${sv.kind}`) }} · {{ sv.state }}</span
+                  <span class="min-w-0">
+                    <span class="block text-sm text-on-surface truncate">{{
+                      c.path.split('/').pop()
+                    }}</span>
+                    <span class="block text-xs text-on-surface-variant truncate"
+                      >{{ c.path }} · {{ $t(`monitor.sources.format.${c.format}`) }} ·
+                      {{ formatSize(c.size) }}</span
+                    >
+                  </span>
+                  <span
+                    class="owner-pill shrink-0"
+                    :class="c.controller === 'hico' ? 'owner-hico' : 'owner-vendor'"
                   >
-                </span>
-                <span class="owner-pill shrink-0" :class="sv.hico ? 'owner-hico' : 'owner-vendor'">
-                  {{
-                    sv.hico
-                      ? $t(`monitor.sources.by_hico.${sv.hico}`)
-                      : $t('monitor.sources.vendor')
-                  }}
-                </span>
+                    {{
+                      c.controller === 'hico'
+                        ? $t('monitor.sources.tuned')
+                        : c.tunable
+                          ? $t('monitor.sources.vendor')
+                          : $t('monitor.sources.vendor_locked')
+                    }}
+                  </span>
+                </RippleComponent>
               </div>
-            </div>
-            <p v-else class="text-xs text-on-surface-variant">
-              {{ $t('monitor.sources.no_services') }}
-            </p>
+              <p v-else class="text-xs text-on-surface-variant mb-4">
+                {{ $t('monitor.sources.no_configs') }}
+              </p>
+
+              <h4 class="sub">
+                {{ $t('monitor.sources.services', { n: sources.services.length }) }}
+              </h4>
+              <div v-if="sources.services.length" class="space-y-1">
+                <RippleComponent
+                  v-for="sv in sources.services"
+                  :key="sv.name"
+                  class="row items-center block"
+                  tabindex="0"
+                  @click="openService(sv)"
+                >
+                  <span class="min-w-0">
+                    <span class="block text-sm text-on-surface truncate">{{ sv.name }}</span>
+                    <span class="block text-xs text-on-surface-variant"
+                      >{{ $t(`monitor.sources.kind.${sv.kind}`) }} · {{ sv.state }}</span
+                    >
+                  </span>
+                  <span
+                    class="owner-pill shrink-0"
+                    :class="sv.hico ? 'owner-hico' : 'owner-vendor'"
+                  >
+                    {{
+                      sv.hico
+                        ? $t(`monitor.sources.by_hico.${sv.hico}`)
+                        : $t('monitor.sources.vendor')
+                    }}
+                  </span>
+                </RippleComponent>
+              </div>
+              <p v-else class="text-xs text-on-surface-variant">
+                {{ $t('monitor.sources.no_services') }}
+              </p>
+            </template>
           </section>
 
-          <section class="m3-card p-5">
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.temp_chart') }}</h3>
-              <span class="legend"
-                ><i class="bg-primary" />{{ $t('monitor.hottest') }} <i class="bg-secondary" />{{
-                  $t('home.battery')
-                }}</span
-              >
-            </div>
-            <LineChart
-              :series="tempSeries"
-              :height="110"
-              unit="°C"
-              :label="$t('monitor.temp_chart')"
-            />
-          </section>
-
-          <section class="m3-card p-5">
+          <!-- 4. Other thermal zones -->
+          <section class="m3-card p-5 m3-enter">
             <div class="flex items-center justify-between mb-3">
               <div>
                 <h3 class="text-sm font-semibold text-primary">{{ $t('monitor.zones') }}</h3>
@@ -198,7 +258,10 @@
               >
             </div>
 
-            <div class="table-wrap">
+            <p v-if="!snap.zones.length" class="text-xs text-on-surface-variant py-4 text-center">
+              {{ $t('monitor.no_zones') }}
+            </p>
+            <div v-else class="table-wrap">
               <table class="thermal-table">
                 <thead>
                   <tr>
@@ -238,7 +301,8 @@
             </div>
           </section>
 
-          <section class="grid md:grid-cols-2 gap-3">
+          <!-- 5. Session-level info: cooling activity and tripped zones right now -->
+          <section class="grid md:grid-cols-2 gap-3 m3-enter">
             <div class="m3-card p-5">
               <h3 class="text-sm font-semibold text-primary mb-3">{{ $t('monitor.cooling') }}</h3>
               <div v-if="snap.cooling_devices?.length" class="space-y-1">
@@ -273,6 +337,66 @@
         </template>
       </div>
     </div>
+
+    <!-- Thermal-source detail sheet: config file or service -->
+    <BottomSheet v-model:open="sheetOpen" :title="sheetTitle">
+      <div v-if="sheetConfig" class="space-y-3">
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.path') }}</span>
+          <span class="text-sm text-on-surface font-mono break-all">{{ sheetConfig.path }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{
+            $t('monitor.sources.format_label')
+          }}</span>
+          <span class="text-sm text-on-surface">{{
+            $t(`monitor.sources.format.${sheetConfig.format}`)
+          }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.size') }}</span>
+          <span class="text-sm text-on-surface tabular-nums">{{
+            formatSize(sheetConfig.size)
+          }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.owner') }}</span>
+          <span class="text-sm text-on-surface">{{
+            sheetConfig.controller === 'hico'
+              ? $t('monitor.sources.tuned')
+              : sheetConfig.tunable
+                ? $t('monitor.sources.vendor')
+                : $t('monitor.sources.vendor_locked')
+          }}</span>
+        </div>
+      </div>
+      <div v-else-if="sheetService" class="space-y-3">
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.name') }}</span>
+          <span class="text-sm text-on-surface">{{ sheetService.name }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{
+            $t('monitor.sources.kind_label')
+          }}</span>
+          <span class="text-sm text-on-surface">{{
+            $t(`monitor.sources.kind.${sheetService.kind}`)
+          }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.state') }}</span>
+          <span class="text-sm text-on-surface">{{ sheetService.state }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="text-xs text-on-surface-variant">{{ $t('monitor.sources.owner') }}</span>
+          <span class="text-sm text-on-surface">{{
+            sheetService.hico
+              ? $t(`monitor.sources.by_hico.${sheetService.hico}`)
+              : $t('monitor.sources.vendor')
+          }}</span>
+        </div>
+      </div>
+    </BottomSheet>
   </div>
 </template>
 
@@ -282,16 +406,25 @@ import { useI18n } from 'vue-i18n'
 import { useHiCoStore } from '@/stores/HiCo'
 import LineChart from '@/components/ui/LineChart.vue'
 import LoadingSpinner from '@/components/ui/LoadingSpinner.vue'
+import BottomSheet from '@/components/ui/BottomSheet.vue'
+import RippleComponent from '@/components/ui/Ripple.vue'
+import WarningIcon from '@/components/icons/Warning.vue'
 
 const { t } = useI18n()
 const hico = useHiCoStore()
 
 const snap = ref(null)
 const sources = ref(null)
+const sourcesError = ref(false)
 const error = ref('')
 const paused = ref(false)
 const history = ref([])
 const HISTORY = 60
+
+// hico.status is only fresh when Home has been visited (its own poll pauses
+// when deactivated); when present and stopped, surface it here too rather
+// than adding a second status poll just for this banner.
+const daemonStopped = computed(() => hico.status?.running === '0')
 
 const verdictClasses = {
   normal: 'bg-primary-container text-on-primary-container',
@@ -320,15 +453,31 @@ const formatSize = (b) => (b >= 1024 ? `${(b / 1024).toFixed(1)} KB` : `${b} B`)
 async function loadSources() {
   try {
     sources.value = await hico.thermalSources()
+    sourcesError.value = false
   } catch {
     sources.value = null
+    sourcesError.value = true
   }
 }
 
 const tripped = computed(() => (snap.value?.zones || []).filter((z) => z.at_or_above_trip))
 
-const formatTemp = (value) =>
-  value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`
+// Only cpu/gpu/battery are ever populated by hicod's `temperatures` object
+// (hico.monitor.v2 schema); a sensor the backend didn't report is left out
+// rather than shown as 0 or invented.
+const coreSensors = computed(() => {
+  const t = snap.value?.temperatures || {}
+  return [
+    { key: 'cpu', value: t.cpu },
+    { key: 'gpu', value: t.gpu },
+    { key: 'battery', value: t.battery },
+  ].filter((m) => m.value !== null && m.value !== undefined)
+})
+
+const hasTrend = computed(() => history.value.length > 1)
+
+const formatTemp = (value, decimals = 1) =>
+  value === null || value === undefined ? '–' : `${Number(value).toFixed(decimals)} °C`
 const formatHeadroom = (value) =>
   value === null || value === undefined ? '–' : `${Number(value).toFixed(1)} °C`
 const stateClass = (state) =>
@@ -338,6 +487,29 @@ const stateClass = (state) =>
     mitigating: 'state-mitigating',
     critical: 'state-critical',
   })[state] || 'state-unknown'
+
+// Thermal-source detail sheet: reuses the rows already fetched by loadSources(),
+// no extra backend calls.
+const sheetOpen = ref(false)
+const sheetConfig = ref(null)
+const sheetService = ref(null)
+const sheetTitle = computed(() =>
+  sheetConfig.value
+    ? sheetConfig.value.path.split('/').pop()
+    : sheetService.value
+      ? sheetService.value.name
+      : '',
+)
+function openConfig(c) {
+  sheetConfig.value = c
+  sheetService.value = null
+  sheetOpen.value = true
+}
+function openService(sv) {
+  sheetService.value = sv
+  sheetConfig.value = null
+  sheetOpen.value = true
+}
 
 async function tick() {
   if (paused.value || document.hidden) return
@@ -390,6 +562,38 @@ onUnmounted(stop)
   background: color-mix(in srgb, var(--color-surface) 35%, transparent);
 }
 
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.sensor {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--color-surface) 45%, transparent);
+}
+
+.banner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 24px;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--color-surface-container-high);
+}
+
 .live {
   display: inline-flex;
   align-items: center;
@@ -419,6 +623,12 @@ onUnmounted(stop)
 @keyframes pulse {
   50% {
     opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live .dot {
+    animation: none;
   }
 }
 

@@ -5,18 +5,25 @@
     shape="shape-pentagon"
     tone="bg-secondary-container text-on-secondary-container"
   >
-    <div class="warn mb-5">
-      <WarningIcon class="shrink-0" :size="20" />
-      <p class="text-xs leading-relaxed">{{ $t('advanced.warning') }}</p>
+    <div class="warn glass-surface mb-5 m3-enter">
+      <WarningIcon class="shrink-0" :size="24" />
+      <div>
+        <p class="text-sm font-semibold">{{ $t('advanced.warning_title') }}</p>
+        <p class="text-xs leading-relaxed mt-1 opacity-90">{{ $t('advanced.warning') }}</p>
+      </div>
     </div>
 
     <template v-for="g in groups" :key="g.key">
       <h2 class="section">{{ $t(`advanced.group.${g.key}`) }}</h2>
-      <div class="mb-5">
+      <div class="mb-5 m3-enter">
         <div v-for="k in g.keys.filter((k) => byKey[k])" :key="k" class="md3-list">
           <div class="md3-list-item flex items-center gap-4 px-5 py-4">
             <span class="flex-1 min-w-0">
-              <span class="block text-sm font-semibold text-on-surface">{{ title(k) }}</span>
+              <span
+                class="block text-sm font-semibold"
+                :class="isWarned(k) ? warnedClass(k) : 'text-on-surface'"
+                >{{ title(k) }}</span
+              >
               <span class="block text-xs text-on-surface-variant mt-1 leading-relaxed">{{
                 help(k)
               }}</span>
@@ -56,6 +63,11 @@ const { t, te } = useI18n()
 const hico = useHiCoStore()
 const actions = useSettingsActions()
 onMounted(() => hico.loadConfig())
+
+// Same table useSettingsActions() already confirms against before enabling a
+// key: read-only here, just to color the row consistently with that warning.
+const isWarned = (k) => k in actions.WARN_ON
+const warnedClass = (k) => (actions.WARN_ON[k] === 'danger' ? 'text-error' : 'text-tertiary')
 
 const groups = [
   {
@@ -100,16 +112,20 @@ function step(k, d) {
   font-size: 14px;
   font-weight: 600;
   color: var(--color-primary);
-  padding: 8px 16px;
+  padding: 8px 4px;
 }
 
 .warn {
   display: flex;
   gap: 12px;
-  padding: 14px 16px;
-  border-radius: 20px;
-  background: var(--color-tertiary-container);
-  color: var(--color-on-tertiary-container);
+  padding: 16px;
+  border-radius: 24px;
+  color: var(--color-tertiary);
+  box-shadow: inset 0 0 0 1px var(--color-tertiary-container);
+}
+
+.warn p {
+  color: var(--color-on-surface);
 }
 
 .stepper {
