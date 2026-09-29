@@ -58,6 +58,15 @@
               $t('mode.extreme.title')
             }}</span>
           </div>
+
+          <!-- Big glanceable readout: the hottest tracked zone right now -->
+          <div v-if="hottest.value !== null" class="hero-readout mt-4">
+            <span class="hero-readout-value m3-headline tabular-nums">{{
+              hottest.value.toFixed(0)
+            }}</span>
+            <span class="hero-readout-unit m3-headline">°C</span>
+            <span class="hero-readout-label">{{ $t(`home.${hottest.key}`) }}</span>
+          </div>
           <p class="text-sm mt-3 opacity-90 leading-relaxed">
             {{ $t(`state.${stateKey}.description`) }}
           </p>
@@ -317,6 +326,14 @@ const meters = computed(() => {
   })
 })
 
+// The hottest of the currently known temperature readings, for the hero's
+// single glanceable number (same data as the meters section below).
+const hottest = computed(() => {
+  const candidates = meters.value.filter((m) => m.value !== null)
+  if (!candidates.length) return { key: 'cpu', value: null }
+  return candidates.reduce((a, b) => (b.value > a.value ? b : a))
+})
+
 const verified = computed(() => s.value.device_profile === 'verified')
 const facts = computed(() => [
   { key: 'soc', value: s.value.soc },
@@ -413,6 +430,32 @@ void locale
   display: grid;
   place-items: center;
   flex-shrink: 0;
+}
+
+.hero-readout {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.hero-readout-value {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.hero-readout-unit {
+  font-size: 24px;
+  opacity: 0.85;
+}
+
+.hero-readout-label {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  align-self: center;
 }
 
 .game-row {

@@ -205,7 +205,8 @@
         "Protection returns at 102 °C CPU / 49 °C battery",
         "Use with a cooler or in short sessions"
       ]
-    }
+    },
+    "unavailable": "Could not load thermal presets right now."
   },
   "monitor": {
     "title": "Thermal Monitor",
@@ -257,7 +258,7 @@
     "trip_zones": "Zones at or above trip",
     "no_cooling": "No cooling device is currently active.",
     "no_trip_zones": "No thermal zone is currently at or above a reported trip threshold.",
-    "error": "Cannot read the thermal monitor: {error}",
+    "error": "{error}",
     "sources": {
       "title": "Thermal sources",
       "description": "Which thermal configs and daemons protect this phone, and which of them HiCo overrides right now. HiCo never edits the ROM's files: a tuned copy is mounted over them while a scenario needs it.",
@@ -292,10 +293,21 @@
       "by_hico": {
         "stopped": "Stopped by HiCo",
         "restarted": "Reloaded by HiCo"
-      }
+      },
+      "unavailable": "Could not read thermal sources right now. This does not affect thermal protection.",
+      "path": "File path",
+      "format_label": "Format",
+      "size": "Size",
+      "owner": "Owner",
+      "name": "Name",
+      "kind_label": "Kind",
+      "state": "State"
     },
     "active": "active",
-    "idle": "idle"
+    "idle": "idle",
+    "unavailable": "Thermal monitor unavailable",
+    "trend_building": "Building the trend from live readings…",
+    "no_zones": "No thermal zone is currently reported by the kernel."
   },
   "games": {
     "search": "Search apps",
@@ -310,7 +322,12 @@
     "section": {
       "games": "Games",
       "safety": "Safety guard",
-      "more": "More"
+      "more": "More",
+      "behavior": "Behavior",
+      "diagnostics": "Diagnostics",
+      "appearance": "Appearance",
+      "system": "System",
+      "about": "About"
     },
     "level_extreme": "Extreme mode always uses Max for games.",
     "safety_note": "The safety guard cannot be switched off. It checks CPU and battery every few seconds while a game runs and restores stock thermal at these limits.",
@@ -451,7 +468,8 @@
       "unlock": "What is unlocked",
       "safety": "Safety guard timing",
       "service": "Service"
-    }
+    },
+    "warning_title": "Advanced controls"
   },
   "log": {
     "all": "All",
@@ -459,7 +477,37 @@
     "empty": "The log is empty.",
     "save": "Save",
     "saved": "Log saved to {path}",
-    "save_failed": "Could not save the log"
+    "save_failed": "Could not save the log",
+    "engine": "Thermal engine",
+    "engine_unknown": "State unknown",
+    "sessions_title": "Recent activity",
+    "sessions_empty": "No sessions recorded yet.",
+    "actions_title": "Actions",
+    "save_hint": "Exports HiCo state and the log for a bug report.",
+    "clear": "Clear sessions",
+    "clear_hint": "Removes the recent activity list. The log itself is kept.",
+    "clear_confirm": {
+      "title": "Clear session history",
+      "message": "The recent activity list is emptied. This cannot be undone."
+    },
+    "clear_done": "Session history cleared",
+    "unavailable": "The log could not be read right now.",
+    "level": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "info": "INFO",
+      "debug": "DEBUG"
+    },
+    "session": {
+      "scenario": "Scenario",
+      "started": "Started",
+      "duration": "Duration",
+      "boosted": "Unlocked for",
+      "peak_cpu": "Peak CPU",
+      "peak_battery": "Peak battery",
+      "trips": "Safety guard activations"
+    },
+    "clear_none": "No sessions to clear yet."
   },
   "about": {
     "title": "About",
@@ -501,9 +549,60 @@
     "links": "Links",
     "link": {
       "hico": "HiCo Thermal releases",
-      "flux": "Flux Tweaks releases"
+      "flux": "Flux Tweaks releases",
+      "issues": "Report a problem"
     },
-    "legal": "HiCo Thermal is proprietary software © 2026 FebriCahyaa, used under its EULA. Parts of the WebUI come from Flux Tweaks and Encore Tweaks (Apache License 2.0); the Google Sans Flex font is under the SIL Open Font License."
+    "legal": {
+      "license": "License",
+      "notice": "Third-party notices",
+      "unavailable": "Could not read this file right now."
+    },
+    "unavailable": "Unavailable",
+    "system_title": "System",
+    "system": {
+      "device": "Device",
+      "android": "Android",
+      "kernel": "Kernel",
+      "arch": "Architecture",
+      "root": "Root manager"
+    },
+    "engine_title": "Thermal engine",
+    "engine": {
+      "preset": "Current template",
+      "flux": "Flux Tweaks"
+    },
+    "flux_status": {
+      "ready": "Ready",
+      "not_installed": "Not installed",
+      "disabled": "Disabled",
+      "outdated": "Outdated",
+      "not_running": "Not running"
+    },
+    "integrity_title": "Integrity",
+    "integrity": {
+      "unavailable": "Could not check integrity right now.",
+      "status": {
+        "ok": "Verified",
+        "missing": "Not signed",
+        "bad-format": "Invalid manifest",
+        "bad-signature": "Invalid signature",
+        "file-mismatch": "File changed",
+        "file-missing": "File missing",
+        "revoked": "Revoked"
+      },
+      "manifest": "Manifest version",
+      "files": "Signed files",
+      "files_n": "{n} verified",
+      "runtime_flagged": "A debugger or {n} hook library is present. Informational only — not itself treated as a failure.",
+      "runtime_clear": "No debugger or hook library detected."
+    },
+    "section": {
+      "resources": "Resources",
+      "legal": "Legal"
+    },
+    "footer": "Open-source-friendly thermal control for rooted Android.",
+    "built_for": "Built for Android",
+    "legal_summary": "HiCo Thermal is proprietary software © 2026 FebriCahyaa, used under its EULA. Parts of the WebUI come from Flux Tweaks and Encore Tweaks (Apache License 2.0); the Google Sans Flex font is under the SIL Open Font License."
   },
   "scenarios": {
     "title": "Scenarios",
@@ -546,6 +645,9 @@
       "other": "Other apps (camera, video editors, …) that get HiCo Balanced while on screen, never Aggressive.",
       "games": "Games come from Flux Tweaks' game list (add or remove them in Flux). Switch a game off to keep stock thermal for it."
     },
-    "saved": "{scenario}: {level}"
+    "saved": "{scenario}: {level}",
+    "active": "Active now",
+    "app_count": "{n} apps",
+    "apps_error": "Could not read the installed app list right now."
   }
 }

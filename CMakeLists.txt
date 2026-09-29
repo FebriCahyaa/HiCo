@@ -27,7 +27,12 @@ list(REMOVE_ITEM HICO_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/jni/src/main.cpp")
 
 add_library(hico_core STATIC ${HICO_SOURCES})
 target_include_directories(hico_core PUBLIC jni/include)
-target_compile_definitions(hico_core PUBLIC HICO_VERSION="${HICO_VERSION}-host")
+set(HICO_HOST_TEST_PUBLIC_KEY_HEX
+    "00d05a1d1ea251396d557afbd4588b3c6d99dbeb972fed10a32562ea26dcdcfa")
+
+target_compile_definitions(hico_core PUBLIC
+    HICO_VERSION="${HICO_VERSION}-host"
+    HICO_INTEGRITY_PUBLIC_KEY_HEX="${HICO_HOST_TEST_PUBLIC_KEY_HEX}")
 target_compile_options(hico_core PUBLIC -Wall -Wextra -Wpedantic -Werror -Wformat -Wuninitialized)
 target_link_libraries(hico_core PUBLIC vendor_crypto)
 

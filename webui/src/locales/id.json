@@ -205,7 +205,8 @@
         "Proteksi kembali di CPU 102 °C / baterai 49 °C",
         "Pakai dengan kipas pendingin atau sesi singkat"
       ]
-    }
+    },
+    "unavailable": "Mode termal tidak dapat dimuat saat ini."
   },
   "monitor": {
     "title": "Monitor Termal",
@@ -257,7 +258,7 @@
     "trip_zones": "Zona yang mencapai/melewati trip",
     "no_cooling": "Tidak ada cooling device yang sedang aktif.",
     "no_trip_zones": "Tidak ada zona termal yang sedang mencapai atau melewati ambang trip.",
-    "error": "Tidak bisa membaca monitor termal: {error}",
+    "error": "{error}",
     "sources": {
       "title": "Sumber thermal",
       "description": "Config dan daemon thermal mana yang melindungi HP ini, dan mana yang sedang diambil alih HiCo. HiCo tidak pernah mengedit file ROM: salinan yang disetel dipasang di atasnya selama skenario membutuhkannya.",
@@ -292,10 +293,21 @@
       "by_hico": {
         "stopped": "Dihentikan HiCo",
         "restarted": "Dimuat ulang HiCo"
-      }
+      },
+      "unavailable": "Sumber termal tidak dapat dibaca saat ini. Ini tidak memengaruhi proteksi termal.",
+      "path": "Lokasi berkas",
+      "format_label": "Format",
+      "size": "Ukuran",
+      "owner": "Pemilik",
+      "name": "Nama",
+      "kind_label": "Jenis",
+      "state": "Status"
     },
     "active": "aktif",
-    "idle": "diam"
+    "idle": "diam",
+    "unavailable": "Monitor termal tidak tersedia",
+    "trend_building": "Membangun tren dari pembacaan langsung…",
+    "no_zones": "Tidak ada zona termal yang dilaporkan kernel saat ini."
   },
   "games": {
     "search": "Cari aplikasi",
@@ -310,7 +322,12 @@
     "section": {
       "games": "Game",
       "safety": "Pengaman",
-      "more": "Lainnya"
+      "more": "Lainnya",
+      "behavior": "Perilaku",
+      "diagnostics": "Diagnostik",
+      "appearance": "Tampilan",
+      "system": "Sistem",
+      "about": "Tentang"
     },
     "level_extreme": "Mode Ekstrem selalu memakai Maks untuk game.",
     "safety_note": "Pengaman tidak bisa dimatikan. Ia memeriksa CPU dan baterai setiap beberapa detik selama game berjalan dan mengembalikan termal bawaan di batas ini.",
@@ -451,7 +468,8 @@
       "unlock": "Yang dibuka",
       "safety": "Waktu pengaman",
       "service": "Layanan"
-    }
+    },
+    "warning_title": "Kontrol lanjutan"
   },
   "log": {
     "all": "Semua",
@@ -459,7 +477,37 @@
     "empty": "Log kosong.",
     "save": "Simpan",
     "saved": "Log disimpan ke {path}",
-    "save_failed": "Log gagal disimpan"
+    "save_failed": "Log gagal disimpan",
+    "engine": "Mesin termal",
+    "engine_unknown": "Status tidak diketahui",
+    "sessions_title": "Aktivitas terbaru",
+    "sessions_empty": "Belum ada sesi yang tercatat.",
+    "actions_title": "Tindakan",
+    "save_hint": "Mengekspor status HiCo dan log untuk laporan bug.",
+    "clear": "Hapus riwayat sesi",
+    "clear_hint": "Menghapus daftar aktivitas terbaru. Log itu sendiri tetap disimpan.",
+    "clear_confirm": {
+      "title": "Hapus riwayat sesi",
+      "message": "Daftar aktivitas terbaru akan dikosongkan. Tindakan ini tidak bisa dibatalkan."
+    },
+    "clear_done": "Riwayat sesi dihapus",
+    "unavailable": "Log tidak dapat dibaca saat ini.",
+    "level": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "info": "INFO",
+      "debug": "DEBUG"
+    },
+    "session": {
+      "scenario": "Skenario",
+      "started": "Dimulai",
+      "duration": "Durasi",
+      "boosted": "Terbuka selama",
+      "peak_cpu": "CPU tertinggi",
+      "peak_battery": "Baterai tertinggi",
+      "trips": "Aktivasi penjaga keamanan"
+    },
+    "clear_none": "Belum ada sesi untuk dihapus."
   },
   "about": {
     "title": "Tentang",
@@ -501,9 +549,60 @@
     "links": "Tautan",
     "link": {
       "hico": "Rilis HiCo Thermal",
-      "flux": "Rilis Flux Tweaks"
+      "flux": "Rilis Flux Tweaks",
+      "issues": "Laporkan masalah"
     },
-    "legal": "HiCo Thermal adalah perangkat lunak proprietary © 2026 FebriCahyaa, dipakai sesuai EULA-nya. Sebagian WebUI berasal dari Flux Tweaks dan Encore Tweaks (Apache License 2.0); font Google Sans Flex di bawah SIL Open Font License."
+    "legal": {
+      "license": "Lisensi",
+      "notice": "Notis pihak ketiga",
+      "unavailable": "Berkas ini tidak dapat dibaca saat ini."
+    },
+    "unavailable": "Tidak tersedia",
+    "system_title": "Sistem",
+    "system": {
+      "device": "Perangkat",
+      "android": "Android",
+      "kernel": "Kernel",
+      "arch": "Arsitektur",
+      "root": "Root manager"
+    },
+    "engine_title": "Mesin termal",
+    "engine": {
+      "preset": "Template saat ini",
+      "flux": "Flux Tweaks"
+    },
+    "flux_status": {
+      "ready": "Siap",
+      "not_installed": "Belum terpasang",
+      "disabled": "Dinonaktifkan",
+      "outdated": "Versi lama",
+      "not_running": "Tidak berjalan"
+    },
+    "integrity_title": "Integritas",
+    "integrity": {
+      "unavailable": "Integritas tidak dapat diperiksa saat ini.",
+      "status": {
+        "ok": "Terverifikasi",
+        "missing": "Tidak ditandatangani",
+        "bad-format": "Manifest tidak valid",
+        "bad-signature": "Tanda tangan tidak valid",
+        "file-mismatch": "Berkas berubah",
+        "file-missing": "Berkas hilang",
+        "revoked": "Dicabut"
+      },
+      "manifest": "Versi manifest",
+      "files": "Berkas bertanda tangan",
+      "files_n": "{n} terverifikasi",
+      "runtime_flagged": "Debugger atau {n} hook library terdeteksi. Hanya informatif — tidak dianggap sebagai kegagalan.",
+      "runtime_clear": "Tidak ada debugger atau hook library yang terdeteksi."
+    },
+    "section": {
+      "resources": "Sumber daya",
+      "legal": "Legal"
+    },
+    "footer": "Kontrol termal ramah open-source untuk Android root.",
+    "built_for": "Dibuat untuk Android",
+    "legal_summary": "HiCo Thermal adalah perangkat lunak proprietary © 2026 FebriCahyaa, digunakan berdasarkan EULA-nya. Sebagian WebUI berasal dari Flux Tweaks dan Encore Tweaks (Apache License 2.0); font Google Sans Flex berada di bawah SIL Open Font License."
   },
   "scenarios": {
     "title": "Skenario",
@@ -546,6 +645,9 @@
       "other": "Aplikasi lain (kamera, editor video, …) yang mendapat HiCo Balanced selama tampil, tidak pernah Agresif.",
       "games": "Game berasal dari daftar game Flux Tweaks (tambah atau hapus di Flux). Matikan sebuah game agar termalnya tetap bawaan."
     },
-    "saved": "{scenario}: {level}"
+    "saved": "{scenario}: {level}",
+    "active": "Aktif sekarang",
+    "app_count": "{n} aplikasi",
+    "apps_error": "Daftar aplikasi terpasang tidak dapat dibaca saat ini."
   }
 }

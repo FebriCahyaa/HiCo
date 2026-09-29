@@ -9,12 +9,20 @@
       {{ $t('presets.brief') }}
     </p>
 
-    <div class="space-y-3 mb-5">
+    <LoadingSpinner v-if="!hico.loaded" class="pt-8 pb-8" :size="48" />
+    <div v-else-if="!hico.presets.length" class="m3-card p-5 text-sm text-on-surface-variant mb-5">
+      {{ $t('presets.unavailable') }}
+    </div>
+
+    <div v-else class="space-y-3 mb-5">
       <RippleComponent
         v-for="(p, i) in hico.presets"
         :key="p.name"
         class="preset m3-enter block"
-        :class="{ active: hico.currentPreset === p.name }"
+        :class="{
+          active: hico.currentPreset === p.name,
+          'glass-surface': hico.currentPreset === p.name,
+        }"
         :style="{ animationDelay: `${i * 50}ms` }"
         tabindex="0"
         @click="choose(p.name)"
@@ -84,6 +92,7 @@ import { useSettingsActions } from '@/composables/useSettingsActions'
 import { PRESET_STYLE } from '@/helpers/presets'
 import SubPage from '@/components/ui/SubPage.vue'
 import RippleComponent from '@/components/ui/Ripple.vue'
+import LoadingSpinner from '@/components/ui/LoadingSpinner.vue'
 import TuneIcon from '@/components/icons/Tune.vue'
 import InformationOutlineIcon from '@/components/icons/InformationOutline.vue'
 
@@ -120,7 +129,6 @@ const choose = (name) => name !== hico.currentPreset && actions.applyPreset(name
 
 .preset.active {
   border-radius: 36px;
-  background: var(--color-surface-container-highest);
   box-shadow: inset 0 0 0 2px var(--color-primary);
 }
 

@@ -5,12 +5,24 @@
         <h1 class="m3-headline text-[32px] text-on-surface px-1 mb-2">
           {{ $t('scenarios.title') }}
         </h1>
-        <p class="text-xs text-on-surface-variant px-1 mb-4 leading-relaxed">
+        <p class="text-xs text-on-surface-variant px-1 mb-2 leading-relaxed">
           {{ $t('scenarios.intro') }}
         </p>
 
-        <!-- One level per scenario -->
-        <div v-for="sc in scenarios" :key="sc.key" class="m3-card p-5 mb-3">
+        <!-- Currently active, only when the backend already reports it (no polling added here) -->
+        <div v-if="activeGame" class="active-row m3-enter mb-4">
+          <img :src="apps.icon(activeGame)" class="w-8 h-8 rounded-lg" alt="" @error="iconError" />
+          <span class="flex-1 min-w-0 truncate text-sm">
+            <span class="font-semibold text-on-surface">{{ apps.label(activeGame) }}</span>
+            <span class="text-on-surface-variant">
+              · {{ $t(`scenarios.level.${hico.status.level || 'max'}`) }}</span
+            >
+          </span>
+          <span class="tag bg-primary text-on-primary shrink-0">{{ $t('scenarios.active') }}</span>
+        </div>
+
+        <!-- One card per scenario: level + how many apps it currently applies to -->
+        <div v-for="sc in scenarios" :key="sc.key" class="m3-card p-5 mb-3 m3-enter">
           <div class="flex items-center gap-3 mb-3">
             <span class="badge" :class="[sc.shape, sc.tone]"
               ><component :is="sc.icon" :size="20"
@@ -21,6 +33,12 @@
               }}</span>
               <span class="block text-xs text-on-surface-variant mt-0.5">{{
                 $t(`scenarios.${sc.key}.description`)
+              }}</span>
+            </span>
+            <span class="stat-pair shrink-0">
+              <span class="stat-level">{{ $t(`scenarios.level.${levelOf(sc)}`) }}</span>
+              <span class="stat-count">{{
+                $t('scenarios.app_count', { n: scenarioCount(sc) })
               }}</span>
             </span>
           </div>
@@ -75,7 +93,13 @@
 
         <LoadingSpinner v-if="loading" class="pt-8" :size="48" />
         <div v-else-if="!shown.length" class="m3-card p-5 text-sm text-on-surface-variant">
-          {{ tab === 'games' ? $t('games.empty_games') : $t('games.empty_apps') }}
+          {{
+            tab === 'games'
+              ? $t('games.empty_games')
+              : appsError
+                ? $t('scenarios.apps_error')
+                : $t('games.empty_apps')
+          }}
         </div>
         <div v-else class="pb-4">
           <div v-for="pkg in shown" :key="pkg" class="md3-list">
@@ -152,6 +176,11 @@ const scenarios = [
   },
 ]
 const levelOf = (sc) => cfg.value[sc.config] || (sc.key === 'game' ? 'max' : 'stock')
+// Membership count already computed from the same config lists the app tabs use below.
+const scenarioCount = (sc) => (sc.key === 'game' ? hico.games.length : members(sc.key).length)
+// A one-off snapshot (not a poll) so the hero can show what's active right now
+// without duplicating Home.vue's 3s status loop on a page that doesn't need it.
+const activeGame = computed(() => hico.status.game || '')
 
 async function setLevel(sc, lv) {
   if (levelOf(sc) === lv) return
@@ -175,6 +204,7 @@ const tab = ref('social')
 const query = ref('')
 const loading = ref(true)
 const userApps = ref([])
+const appsError = ref(false)
 
 const members = (k) => hico.config[listKey[k]]?.split(',').filter(Boolean) || []
 const isOn = (pkg) =>
@@ -204,13 +234,21 @@ const shown = computed(() => {
 })
 
 async function load() {
-  await Promise.all([hico.loadGames(), hico.loaded ? null : hico.loadConfig()])
+  await Promise.all([
+    hico.loadGames(),
+    hico.loaded ? null : hico.loadConfig(),
+    hico.refreshStatus(),
+  ])
   try {
     userApps.value = await listApps()
+    appsError.value = false
   } catch {
     userApps.value = []
+    appsError.value = true
   }
-  await apps.resolve([...hico.games, ...userApps.value])
+  const known = [...hico.games, ...userApps.value]
+  if (hico.status.game) known.push(hico.status.game)
+  await apps.resolve(known)
   loading.value = false
 }
 onMounted(load)
@@ -244,7 +282,7 @@ const iconError = (e) => (e.target.src = './app_icon_fallback.avif')
   font-size: 14px;
   font-weight: 600;
   color: var(--color-primary);
-  padding: 16px 4px 8px;
+  padding: 8px 4px;
 }
 
 .badge {
@@ -253,6 +291,41 @@ const iconError = (e) => (e.target.src = './app_icon_fallback.avif')
   display: grid;
   place-items: center;
   flex-shrink: 0;
+}
+
+.active-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--color-surface-container-high);
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 650;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+
+.stat-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  text-align: right;
+}
+
+.stat-level {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stat-count {
+  font-size: 11px;
+  color: var(--color-on-surface-variant);
 }
 
 .segmented {

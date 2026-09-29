@@ -136,6 +136,23 @@ body,
       transition: none;
     }
   }
+
+  /*
+   * Selective glass surface: floating nav, sheets, dialogs. Falls back to a
+   * plain translucent tint when backdrop-filter is unavailable in the host
+   * WebView, so content stays fully readable either way.
+   */
+  .glass-surface {
+    background: color-mix(in srgb, var(--color-surface-container) 92%, transparent);
+  }
+
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .glass-surface {
+      background: color-mix(in srgb, var(--color-surface-container) 72%, transparent);
+      -webkit-backdrop-filter: blur(20px) saturate(1.5);
+      backdrop-filter: blur(20px) saturate(1.5);
+    }
+  }
 }
 
 @theme {
