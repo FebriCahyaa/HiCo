@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_amlogic_g12-common.git",
+  "codename": "g12-common",
+  "commit": "fd96486c0e6dd673b6337e9b713e95d1561fec16",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2a5caa3892a762fbd3ad5ddbeea1132696a5a2301533cbc14d5aa82e0f37d7f6",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "da4166820c3306f5f47d12fd6c22e1ba204ab6fa5a2f770cbb82a841a9cf6c5d",
+      "size": 230
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f30d4b72a4da649f64efa68d5e41d7fc7954aad7a191554e1939a3d3faa339ac",
+      "size": 4702
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5b8616b2509e04170293c36db1f9821615e9cbe3a3601963a43b3c9dc46e2a3c",
+      "size": 3368
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "788f953e25939b46695578da11379e3474a870676e26384f2c15744c0e150559",
+      "size": 904
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "67911124e5fb614c6be3e7a3cc2979beef1f32f64f37259c8bc9d237208fafdb",
+      "size": 8440
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "5f29e100369327944c09d3ac06704604d203a5fac7d5b8dd805686b4a7a2fe7a",
+      "size": 117
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cc6e1fa1e1f88bcb11b733396fc076caf1e817149db5865fdfe067d13edb4a8f",
+      "size": 40
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a58728997625dad4418491fe35fe36c96a3bcbea7e9972a5733102e0c0e7e774",
+      "size": 2281
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_amlogic_g12-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T00:01:10Z",
+  "vendor": "amlogic"
+}

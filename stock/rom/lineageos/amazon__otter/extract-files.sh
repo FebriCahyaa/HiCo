@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=amazon
-DEVICE=otter
+DEVICE=otter-common
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 
@@ -16,6 +16,6 @@ done
 
 ./setup-makefiles.sh
 
-# Call up to otter-common
-cd ../otter-common
+# Call up to omap4-common
+cd ../omap4-common
 ./extract-files.sh

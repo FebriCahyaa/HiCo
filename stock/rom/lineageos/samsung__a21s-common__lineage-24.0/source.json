@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_a21s-common.git",
+  "codename": "a21s-common",
+  "commit": "1137b66610be271b3556080d074923b382085c8e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "df34a14810071183d00b600a27c5105c42b882e7e5ed21cc2329c788a5935fe9",
+      "size": 175
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0781fdf75bf301c01d6e768c44dd8bbb97772b18020dfde465e857ce45e806f6",
+      "size": 6327
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "eb23e93da59b81850de96d6752c32126b7d3059a607b9f39db746467d8e4c3e8",
+      "size": 2288
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "1b859f77e7b5fbfcd3a48aaf616611da71b1795aba55d775ad9340d42ce97539",
+      "size": 2595
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4bc8af2c557024f975e756df9848d1df1103359e5574282e101e5788183730ce",
+      "size": 1816
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ca9b3b8250a5f6a56c2d57a7ebdc6a06c00bf77de6dbf08dd85d3288d9e0df81",
+      "size": 8482
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e7a6aab59028480872e65f9dade445236e7d12a1af172d651b705ef0b2cc6d91",
+      "size": 2052
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_a21s-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T18:05:40Z",
+  "vendor": "samsung"
+}

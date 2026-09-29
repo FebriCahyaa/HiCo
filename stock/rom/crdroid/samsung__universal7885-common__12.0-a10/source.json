@@ -1,0 +1,52 @@
+{
+  "branch": "12.0-a10",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_universal7885-common.git",
+  "codename": "universal7885-common",
+  "commit": "f2f81b5c4c847f29f9f63407f13a01ed1a7e9232",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "5da5bc24fc562800891fab41dbcc311fe397ff6d6f022dbfe5cad95f4b95e828",
+      "size": 62
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "22418b5276b60474eba6c7392b508382e5a97bf15105c56254da25bbdbcec4ee",
+      "size": 1257
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c71f089c370ff448b0416e4056b03a80534b830a9bd117f998d94be893db7da2",
+      "size": 2966
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "beb549332680061b219ff8da39fac99b64e20c034c3c0733c586fccbaaf0740b",
+      "size": 2283
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "560c36cc7316a279135afc7d9e8bed956ae4fd4a799c88584ed61dea7b890f77",
+      "size": 546
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "2644584e24e7e54f92ae153a6fb56bd2a3f4547cecb011f9ccc644c4a2b4c200",
+      "size": 686
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e30a90a62d8549aa6d20fd72f3351f94be552b905b81a61aa68d178dc249d1a7",
+      "size": 507
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal7885-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-04-06T05:21:58Z",
+  "vendor": "samsung"
+}

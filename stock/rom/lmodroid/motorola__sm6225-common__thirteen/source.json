@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_motorola_sm6225-common.git",
+  "codename": "sm6225-common",
+  "commit": "e905ae094f352d7b27160d6fe327a6bc5ed1d6af",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "025891502dfbe96090e576ec4669e76deab3ee15ec84266e22d272bd54760bb1",
+      "size": 6533
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "16e848af1b95095d5001f5521a7dce13b338b1098f6b0eae919e34ee86bd50c4",
+      "size": 6802
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "c93f729743a3f95049393fc4ea76753311e64ce681810b351ac0c120d8a11ce6",
+      "size": 3429
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f8a4f16d50f5d2a5dd51f8d40b1a497b7713046b08cf29eb87bd7fcff8f148b6",
+      "size": 33330
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "2b53c3a406264ba02f85fcf70909884d575800d0b99df570af6b8f9daa018d42",
+      "size": 148
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4f31a4f61fcb322a8974c7e7e2c983f10ae334e24e31b03765d846375c195af6",
+      "size": 8346
+    }
+  ],
+  "kind": "common",
+  "repo": "device_motorola_sm6225-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-12-12T03:09:06Z",
+  "vendor": "motorola"
+}

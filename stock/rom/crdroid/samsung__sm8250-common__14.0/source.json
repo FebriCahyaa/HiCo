@@ -1,0 +1,62 @@
+{
+  "branch": "14.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_samsung_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "4c80faedcadf74c003694b0efa62512247c21bb6",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9e67549cb4845bcebde26b8a3eb088627f0f608f54823e9226b62bd17861337d",
+      "size": 235
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "801f72a2f0408847579a8b929970168dff328926dabda8bc3e71efcf37c2ccb5",
+      "size": 7551
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8e97dde5160f4d2f0562fcfc000be30409b6268853ac62f3e4eb003abc258dfb",
+      "size": 8583
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8033ff13a6fd524da2ab76ed18b4af77533eb9839b69809cf598de2f33697fb0",
+      "size": 3353
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "23f8c899949bdd712025f8be4771ddc8e66225935a1e6a911a2f1a1b295f321e",
+      "size": 54897
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "c39b404355657dec92bcc984e2b6c53328b7e47aa5524dce446be626cc383e2e",
+      "size": 508
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "4928d59764fe9823078f78003d2d8304b4bf7cdff338d9db773231e33a67f557",
+      "size": 106
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cf84b4da4dc4db92bebc36876a950d4c07cbb5724e6d23a40a115579c13d0d2e",
+      "size": 214
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ab6461d9c07307f1e08f16c047e8378c8084e1b5b6423a6e9ac081503661ebb6",
+      "size": 6726
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-06-05T19:23:30Z",
+  "vendor": "samsung"
+}

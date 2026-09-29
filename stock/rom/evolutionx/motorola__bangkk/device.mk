@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     ProductFrameworksResDevice \
     SettingsResDevice \
     SystemUIResDevice \
-    TurboPowerOverlay \
     WifiResDevice
 
 # Audio
@@ -59,7 +58,6 @@ $(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
 
 # Moto Camera 4
 TARGET_MOTCAMERA4 := bangkk
-TARGET_USES_MOTCAMERA4 := true
 
 $(call inherit-product, vendor/motorola/MotCamera4-sm6375/motcamera4.mk)
 

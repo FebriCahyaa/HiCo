@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nokia_msm8998-common.git",
+  "codename": "msm8998-common",
+  "commit": "45bda10d1751ce96de1e459a2f69190d996d36dc",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1d480c2a32c91959efe2aba63cb4f1ff19eed1ea979a3a090f0d0dbff32ce4be",
+      "size": 559
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "9aae2ef62350413b3a4997af6d3562e6d2fa9dac89bc37b8f4eb69a60796e480",
+      "size": 4513
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d537be04c7f92e3a7d0b727696ffc45163c0cd5ed8bc04bcb9f37e669bfd0033",
+      "size": 2397
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5f50678a86056e6bd5e097809b7850334163017f56aa32a29edce458ef5f5fb2",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1d056b936f89628d4c6c63a219025f2d991030b491587dc3fa18b1e4f5f9f85d",
+      "size": 35028
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "90f4771c166304630424f98e8c2f067b37b3018a7e816c7a46082ed2dd101e05",
+      "size": 85
+    },
+    {
+      "path": "system.prop",
+      "sha256": "7981d78be6b7d2515aff03b2fd5f9c8dfa512f7b635b47a7efb331fea957a7fa",
+      "size": 2154
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "f2dda724196b5c99a89428e9e1574b616b46c61205868d0692927e4fea545d62",
+      "size": 5536
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nokia_msm8998-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-16T07:22:25Z",
+  "vendor": "nokia"
+}

@@ -1,0 +1,67 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "be732a7648bb38b4e9789ea3ab2a15f973aabd28",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7616e4885627301043aee073f4dd4cf45ae33e9d2de8469721a0075668e54526",
+      "size": 113
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6244b6c48c5e2a7f9a707099a552f0e359868b6fe25a73220f4b4c431a2df05d",
+      "size": 4218
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ebba912c5bd3235c9941e970c3880d149f0ca79e8ef80cb6e019f67cd1dd8e63",
+      "size": 6863
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "0adcba09905542ee9336591174286d413efbb915f4180058b969766119761904",
+      "size": 5482
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2eebd54ecad64d498f8404636a1e515bed8191ace94a56be041c1a543a97bdc0",
+      "size": 2939
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "32128fdf4e6d46bca8997ef03b35422d155de02297bf37f8e54250180b9e5cf3",
+      "size": 48285
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "25adb54e8afb3afcd21bccd18eecc40e15fb299f6f2c35487a4e44160a1de9ac",
+      "size": 493
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "system.prop",
+      "sha256": "3d0246ca9a1d298854e51e96e3439846645965624e701b43f974458ca6b038ef",
+      "size": 617
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "446431f16cbf103eed521fbe6f5ae46937c3d79897366fdd52a803dc57e4e502",
+      "size": 7679
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:12:04Z",
+  "vendor": "xiaomi"
+}

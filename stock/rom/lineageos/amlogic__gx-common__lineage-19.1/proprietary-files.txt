@@ -1,0 +1,137 @@
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from kvim-userdebug 9 PPR1.180610.011 20211022 test-keys.
+
+# Audio
+product/lib/libamavutils.so
+vendor/etc/init/init.hbg.remote.rc
+vendor/etc/audio_effects.conf
+vendor/etc/remote.txt
+vendor/lib/hw/audio.primary.amlogic.so
+vendor/lib/libam_adp.so
+vendor/lib/libamadec.so
+vendor/lib/libamaudioutils.so
+vendor/lib/libamavutils.so
+vendor/lib/libamlaudiorc.so
+vendor/lib/libdroidaudiospdif.so
+vendor/lib/libdtvad.so
+vendor/lib/libhbg.so
+vendor/lib/libhbgdecode.so
+vendor/lib/libicuuc_vendor.so
+vendor/lib/libms12api.so
+vendor/lib/libnano.so
+
+# Audio Effects
+vendor/lib/soundfx/libavl.so
+vendor/lib/soundfx/libbalance.so
+vendor/lib/soundfx/libdbx.so
+vendor/lib/soundfx/libgeq.so
+vendor/lib/soundfx/libhpeqwrapper.so
+vendor/lib/soundfx/libms12dapwrapper.so
+vendor/lib/soundfx/libsrswrapper.so
+vendor/lib/soundfx/libtreblebasswrapper.so
+vendor/lib/soundfx/libvirtualsurround.so
+vendor/lib/soundfx/libvirtualx.so
+
+# Camera
+vendor/lib/hw/camera.amlogic.so
+#vendor/lib/libispaaa.so
+
+# Gatekeeper
+vendor/lib/hw/gatekeeper.amlogic.so
+
+# Gralloc
+vendor/lib/libamgralloc_ext.so
+
+# Hardware Composer
+-vendor/lib/libge2d.so
+
+# HDMI-CEC
+vendor/bin/hdmicecd
+vendor/etc/init/hdmicecd.rc
+vendor/lib/hw/hdmi_cec.amlogic.so
+vendor/lib/libhdmicec.so
+vendor/lib/libhdmicec_jni.so
+vendor/lib/libtvbinder.so
+
+# Interfaces (HIDL)
+lib/vendor.amlogic.hardware.droidvold@1.0.so
+vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so
+vendor/lib/vendor.amlogic.hardware.hdmicec@1.0.so
+vendor/lib/vendor.amlogic.hardware.miracast_hdcp2@1.0.so
+vendor/lib/vendor.amlogic.hardware.remotecontrol@1.0.so
+vendor/lib/vendor.amlogic.hardware.screencontrol@1.0.so
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so:lib/vendor.amlogic.hardware.systemcontrol@1.0.so
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:lib/vendor.amlogic.hardware.systemcontrol@1.1.so
+vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so
+
+# Java
+vendor/framework/droidlogic.jar
+vendor/framework/droidlogic-tv.jar
+-product/priv-app/droidlogic-res/droidlogic-res.apk
+vendor/lib/libremotecontrol_jni.so
+vendor/lib/libsystemcontrol_jni.so
+vendor/lib/libsystemcontrol_jni.so:lib/libsystemcontrol_jni.so
+vendor/lib/libdisplaysetting.so
+vendor/etc/permissions/droidlogic.software.core.xml:product/etc/permissions/droidlogic.software.core.xml
+vendor/etc/permissions/droidlogic.tv.software.core.xml
+vendor/lib/libremotecontrolserver.so
+vendor/lib/libsystemcontrolclient.so:lib/libsystemcontrolclient.so
+vendor/lib/libsystemcontrolclient.so
+
+# Memtrack
+vendor/lib/hw/memtrack.amlogic.so
+
+# OMX
+vendor/lib/libdatachunkqueue_alt.so
+#vendor/lib/libdolbyms12.so
+vendor/lib/libdra.so
+vendor/lib/libfpscalculator_alt.so
+vendor/lib/libHwAudio_dcvdec.so
+vendor/lib/libHwAudio_dtshd.so
+#vendor/lib/libms12dap.so
+vendor/lib/libOmxAudio.so
+vendor/lib/libomx_av_core_alt.so
+vendor/lib/libomx_clock_utils_alt.so
+vendor/lib/libomx_framework_alt.so
+vendor/lib/libomx_timed_task_queue_alt.so
+vendor/lib/libomx_worker_peer_alt.so
+vendor/lib/libOmxBase.so
+vendor/lib/libOmxCore.so
+vendor/lib/libOmxCoreSw.so
+vendor/lib/libOmxVideo.so
+vendor/lib/libstagefright_soft_amsoftdec.so
+#vendor/lib/libstagefright_soft_xaacdec.so
+vendor/lib/libstagefrighthw.so
+vendor/lib/libthreadworker_alt.so
+
+# OMX (Firmware)
+vendor/lib/firmware/video/h264_enc.bin
+vendor/lib/firmware/video/video_ucode.bin
+
+# Power
+vendor/lib/hw/power.amlogic.so
+
+# Seccomp Policy
+vendor/etc/seccomp_policy/mediacodec.policy
+vendor/etc/seccomp_policy/mediaextractor.policy
+
+# System Control
+vendor/bin/systemcontrol
+vendor/etc/init/systemcontrol.rc
+vendor/lib/libfbc.so
+vendor/lib/libpqcontrol.so
+vendor/lib/libsystemcontrolservice.so
+
+# Thermal
+vendor/lib/hw/thermal.amlogic.so
+
+# Widevine DRM
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/lib/libwvhidl.so
+
+# Wi-Fi
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant.conf:vendor/etc/wifi/wpa_supplicant_overlay.conf|0977f35dc5944616485fc0b3f21a8369b896a47f|0977f35dc5944616485fc0b3f21a8369b896a47f

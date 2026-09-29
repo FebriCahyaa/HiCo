@@ -1,0 +1,82 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm8350-common.git",
+  "codename": "sm8350-common",
+  "commit": "e057a5351ad851e898c97706ea0982c15eb35e11",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0cab9e3983febe1bb78a52e53f8e1cba7981dd9ff2eedda38d4893c0bb980f97",
+      "size": 107
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "174065ab02cc3a5bc691e207ff5b399fb8b97f776f2e4d20002548840626ea7d",
+      "size": 3989
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a740051dc047b623d12263341c283b570f6f96541bd0dad0339961f91027c1fa",
+      "size": 7181
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4fbea82325bea926340a8f8662fa1cd42fd42f8121e40d5c26ea100fc7b0dab8",
+      "size": 3755
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "3bbf2f5515ef73ac7868def2b233f0c6fa2b7c6a3e1f64b04bafbaa09ece6661",
+      "size": 1452
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "f26ad719f686d184a5fd2618a61c0e630761aa4f1814a28883a175edc2798e14",
+      "size": 2743
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "4e6fab15f435bb141ac06ed8e616c5af03c0a197b560c288c802179b169f4ee6",
+      "size": 14171
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "826f639fa01602fe32c2b67ee0546df66eb6c0129c40b773f189bf09028f4131",
+      "size": 6023
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "5071938f714207b9fcae2414bbd113157a12913fbcb2bf78c369e657c21d4028",
+      "size": 33460
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "60a3b1790039d14afa75d4dc631eb0e55b7b1f81974efad3b3dbc3fc955f5b3a",
+      "size": 1156
+    },
+    {
+      "path": "system.prop",
+      "sha256": "69a8fa0cefc2b3b8dc4854593f6947480147bed1120906db0bf02bee304069c0",
+      "size": 1510
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4f63d791eefc88d96c7b681b23b1b7872fe8b17fd20e2ea86f2ef701bd906e07",
+      "size": 9609
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm8350-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-06T06:41:38Z",
+  "vendor": "xiaomi"
+}

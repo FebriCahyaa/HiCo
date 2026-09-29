@@ -1,0 +1,27 @@
+{
+  "branch": "missi-user-16-BP2A.250605.031.A3-OS3.0.302.0.WMAMIXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/ishtar.git",
+  "codename": "ishtar",
+  "commit": "8b7b369e72792db7114210792906c69940a41da4",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "vendor/etc/init/hw/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/ishtar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2026-08-27T15:15:15.303Z",
+  "vendor": "xiaomi"
+}

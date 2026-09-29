@@ -18,9 +18,8 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/oneplus/sm8350-common',
+    'device/oneplus/sm6375-common',
     'hardware/oplus',
-    'hardware/pixelworks/interfaces',
     'hardware/qcom-caf/sm8350',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
@@ -46,8 +45,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'odm/bin/hw/vendor.pixelworks.hardware.display.iris-service': blob_fixup()
-        .add_needed('libprocessgroup.so'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
@@ -58,21 +55,21 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('blob-patches/WfdCommon.patch'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
-    'vendor/bin/init.kernel.post_boot-lahaina.sh': blob_fixup()
-        .regex_replace('uag', 'schedutil'),
-    ('vendor/etc/media_lahaina/video_system_specs.json', 'vendor/etc/media_yupik_v1/video_system_specs.json'): blob_fixup()
-        .regex_replace('"max_retry_alloc_output_timeout": 1000,', '"max_retry_alloc_output_timeout": 0,'),
+    ('vendor/etc/media_blair/video_system_specs.json', 'vendor/etc/media_holi/video_system_specs.json'): blob_fixup()
+        .regex_replace('"max_retry_alloc_output_timeout": 10000,', '"max_retry_alloc_output_timeout": 0,'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
-        .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
+        .regex_replace('IGNORED_IRQ=19,21,38$', 'IGNORED_IRQ=19,21,38,209,218'),
     (
         'vendor/lib64/libdpps.so',
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/qcril_database/upgrade/config/*.sql': blob_fixup()
+        .regex_replace('def_val="1" WHERE property="persist.vendor.radio.poweron_opt"', 'def_val="0" WHERE property="persist.vendor.radio.poweron_opt"'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm8350-common',
+    'sm6375-common',
     'oneplus',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

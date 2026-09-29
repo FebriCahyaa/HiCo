@@ -1,0 +1,57 @@
+{
+  "branch": "12.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_lenovo_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "5571a06852562bc5550ca3314b7c8bb5110366d3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "032d062d8ca6eb517e82f988d836025bdaaccdc2c8e767ebc6cc764cfd5caebb",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9c99567ff278ee54f1d8391f06feecabe591c381d054eaaf36d5990c16424583",
+      "size": 4636
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "778af839a21c88bb527001171d59224cb550bf82728172a1f21b91c2c2ff8708",
+      "size": 6336
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "692096b869868b7488630de8a7173b3baff1ec60d0366adf94a714f05375c7ed",
+      "size": 1934
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "04078b86cf73f66e11f1eddf626cb174962f6a9bff7af3a95ca6048e64a0ac61",
+      "size": 104
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "02ca0d4c43049ef4adba6bc588b35c2a3d7772d2dd30a33365ec92a066133487",
+      "size": 58126
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8968f07340cd6d6516d41ba73820b1d41acc6c69f1e9be578b9a8d7fc149e70f",
+      "size": 2665
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9c08d64ee7ec843230f7775c4c1f0209fb2fcc26ab1f45888d0cf33c3773335c",
+      "size": 4742
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lenovo_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-01-10T21:35:56Z",
+  "vendor": "lenovo"
+}

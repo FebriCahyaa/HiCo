@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_bq_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "20affb001a227eb5b336aca92c1298419d77cd37",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "021f9636c6fea69cdf165e0fcd60287d22f855df5da8b9c5eb1d0c31ca7ae41d",
+      "size": 4172
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "57aa83f94bff12573f9d20cc53f6f8143475a39562387636d63adccd0fc0aff2",
+      "size": 6628
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "eab09f3408ddb373cd9477d2d403b721d8248acc14998d6c057923b171dddb4f",
+      "size": 4603
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "8688ebc615e324dd2aa3a026ee39edb3e94f0f3268030e2eda442dcf6b4afa83",
+      "size": 3709
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7d51b3e06c3b4709621b3df5763424bf823ca6b7d91706496cd1446cf44c3371",
+      "size": 94
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a263a786fd834ea5bb3a3b216d3d8b3365d257033a541cb969d585e2c54ab961",
+      "size": 63525
+    },
+    {
+      "path": "system.prop",
+      "sha256": "f7ac4f8165354bffeba37237cdcb054e7f27728e3c776faab8732b2bf72358f1",
+      "size": 5454
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_bq_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-12-05T22:00:18Z",
+  "vendor": "bq"
+}

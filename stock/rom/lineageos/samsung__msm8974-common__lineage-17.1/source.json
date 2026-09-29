@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_msm8974-common.git",
+  "codename": "msm8974-common",
+  "commit": "271ce383226d4d9145c3f9783eec68d2c5d3101f",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "df8d5d848037615113fd01c24cb1aca720cb3d55be006654e76b366a52963b79",
+      "size": 10101
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a7c617b01e99b04547b72dd9a0ed46dd2f83e4bc508eb5ba5241fb98426135cd",
+      "size": 2844
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "61528981f25ab64a4365407ee53d9e476fec9eb1571c72b4b169c8b17481247f",
+      "size": 1610
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ab5fc9f96d251caf512f0f343449b4bc8b971c48c9f98bcbfc53ed489772475c",
+      "size": 221
+    },
+    {
+      "path": "sepolicy/common/thermal-engine.te",
+      "sha256": "cd6c6b30bc5c4b0dd26da013426e828026bb1d1665dca841829e7f97bff8fde8",
+      "size": 332
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ccff7e8bcd232483c46dc2b5ab3a2a549250a12c83b7065076deff4142c14c75",
+      "size": 566
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_msm8974-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-05-01T04:28:32Z",
+  "vendor": "samsung"
+}

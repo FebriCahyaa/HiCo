@@ -1,0 +1,62 @@
+{
+  "branch": "fourteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lge_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "ff2b96a8972fc9a8c7372f1a6ce2b45617b61839",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a4b07c5a51ff6aaf99c39b7d5f08b0b6cf8fd0aa3d54776e612441a2c19eb630",
+      "size": 443
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1698ffe8165049e966b65f14919cb88a1a3b7d4b66a4ab2a5bec91aca9c5e748",
+      "size": 1400
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a97b32906ff7c5467ab8687cae4a3c167f01fb1b55863edac21f9c7d66e098f9",
+      "size": 5709
+    },
+    {
+      "path": "configs/thermal-engine-845.conf",
+      "sha256": "6706d886d52604a7637befd0ffcb273cc0800a9180fd8eed49377e5499b97c31",
+      "size": 5658
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "814b03f0cf7b3ee14bc01542474f773b5f2b0a59b0fed51ec3b00ab5686b96f1",
+      "size": 3620
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "079429da60636032ad7ad89dc9929c349991e2e66bfb2ae1b71508ec5512bbb1",
+      "size": 33338
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "a3ac0ca6a8308c7df14cd4939c779182c38156d74a10017d740fa26decbdcdc1",
+      "size": 471
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a33a09756b75137ae672cccbd477a6b3bf43159ad32d751d03312ae733efd743",
+      "size": 2037
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2a34f5fd69dd0875948d9574c11fafc0334c5f5329da4b060f9317ea8a029f92",
+      "size": 6300
+    }
+  ],
+  "kind": "common",
+  "repo": "device_lge_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-03T03:08:13Z",
+  "vendor": "lge"
+}

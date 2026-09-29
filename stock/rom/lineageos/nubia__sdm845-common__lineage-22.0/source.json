@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-22.0",
+  "clone_url": "https://github.com/LineageOS/android_device_nubia_sdm845-common.git",
+  "codename": "sdm845-common",
+  "commit": "6fedbb37c7583a7dd4911fb75dd22512490bba40",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "8c5afc0177150654e16da629460e8d74698a39491c0b7bb5b1d8a1d7ba315467",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "f1aed4b4191c5fed95b18e34d2eb8ecac72a47bca823168c2ab5aeb389f61521",
+      "size": 1843
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "ef3a4bb98a9068b1819db90d375a19ce3cab8481f6aeac91278716c945212b7a",
+      "size": 5147
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "611c6533f2bb1caf78a566dc0219fd6b9517d96a9c48e0b106134f31e35844a9",
+      "size": 2766
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1544061627c2456f3236987a29dcc71c0cbd39299a6ef97b7833d36e435487e7",
+      "size": 191
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fd201890bd8be61ba18ddc4a4e4efa7bb4a9ae8aa2c7084978a671cd1c8c1c9a",
+      "size": 57675
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "291cf8b21bb6f331cd90a0d1ea4916c311707f27a4b624d5353fb14bc5362015",
+      "size": 2136
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9ad4ac1df30a0787b048f2049f17928615261f84d5dd7dd3fc516b9d5b5aab9d",
+      "size": 6357
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nubia_sdm845-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-08-07T08:45:53Z",
+  "vendor": "nubia"
+}

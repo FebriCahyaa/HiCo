@@ -1,0 +1,32 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_nvidia_t210-common.git",
+  "codename": "t210-common",
+  "commit": "aeffd4d9dac1274c3c531b00f1e1453b565fc43b",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "ac52ba9bece325a9db0f9ae52efad93e3c0fa457625b62d3f9d4164f9dd36fac",
+      "size": 755
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e29eb05aa7d57b8067b6040de5656f8dde0a6816c9f8326ac604d6922fe29bf3",
+      "size": 1055
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7f1b44976caad1ac59a86fff17e3c960c443365846f570965a01670516ea8dee",
+      "size": 112
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_nvidia_t210-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-29T00:41:29Z",
+  "vendor": "nvidia"
+}

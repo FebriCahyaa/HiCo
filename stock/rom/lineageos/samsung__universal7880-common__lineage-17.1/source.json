@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_universal7880-common.git",
+  "codename": "universal7880-common",
+  "commit": "2e524da57e18bc82486a40f8b1e4f3e86fc45ad1",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6e79e61c988ea6b4d198b15b4f6ca20d0ddea688991176ef372ee824ffe1a5ce",
+      "size": 738
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c0730dd4600354ea76b7deb82c3efac64794bd3f34acd64d7b940765f074b11a",
+      "size": 7351
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "02a4df0161ceb83be3c9f1f7629e8faa33d3d8825aec786fe7b127427885ebcd",
+      "size": 1476
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "83234a1df7b268de62bac693bfa1811fff36df6c9c62012fbdbb97f5f72f8916",
+      "size": 237
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "83e4ef8c2327bc4d1499f5bd34a6bb372a907c35e1b80ee6300495877678b29b",
+      "size": 9666
+    },
+    {
+      "path": "system.prop",
+      "sha256": "a0d003a7def3c1f26ec90d4ed61b34f3ed06013002408f6c068cb21e9b7d465f",
+      "size": 1436
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal7880-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:56Z",
+  "vendor": "samsung"
+}

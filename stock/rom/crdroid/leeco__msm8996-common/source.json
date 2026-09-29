@@ -1,34 +1,44 @@
 {
-  "branch": "8.1",
+  "branch": "10.0",
   "clone_url": "https://github.com/crdroidandroid/android_device_leeco_msm8996-common.git",
   "codename": "msm8996-common",
-  "commit": "a16b88346a91b31ec1551521af069d4ec12beeef",
-  "file_count": 5,
+  "commit": "688cd3f47d86955d69fb9552a90740f242b61d2c",
+  "file_count": 7,
   "files": [
     {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
       "path": "Android.mk",
-      "sha256": "a2e7886f85fc9b3f72a818af86f4db2409271f06cf0385371e843435e1c4db0f",
-      "size": 5370
+      "sha256": "47079788211e550e30435acc0e633d267e828cf1b1f35f3bec20dfa952d389ca",
+      "size": 6632
     },
     {
       "path": "BoardConfigCommon.mk",
-      "sha256": "a200c8d3b30c28aba377ba3e001abb778078f7c6381cb89ce24ecd3d2d031010",
-      "size": 7202
+      "sha256": "314f6212e7c256efccf7ef11698b08c07c9ec47c7ecf1d03509504f3754ca5ce",
+      "size": 6952
     },
     {
-      "path": "configs/thermal-engine-8996.conf",
-      "sha256": "e0465015e5748740e87b2e25bb9a5f52e5e0778f5c01d1983d3334df4689dbba",
-      "size": 8360
+      "path": "configs/thermal-engine.conf",
+      "sha256": "772b85982ea6593a8a715b851af342e3fd257bcaad744d30f922af8178a6ea98",
+      "size": 7182
     },
     {
       "path": "extract-files.sh",
-      "sha256": "54170d727f6992649fed242530546d6cb4627454e32940e2883c2de47599839c",
-      "size": 1981
+      "sha256": "2a9fcabbe8438e898da64c21ddb8b0cd053a5aa5da9737dbe0b3c15a8286dfb4",
+      "size": 4616
     },
     {
-      "path": "sepolicy/thermal_engine.te",
-      "sha256": "5d33730497d1f8f849018c00a04dc02ee242850012c320baf5f5f01b8a7157e0",
-      "size": 227
+      "path": "proprietary-files.txt",
+      "sha256": "8b230a0ccd22b2d7a66e207103d1e4ea7c820f789c801b07c6d4096809f067e5",
+      "size": 40021
+    },
+    {
+      "path": "sepolicy/vendor/thermal_engine.te",
+      "sha256": "5be9b0f0f3bdda9c429a9ea8209fb947e1fd53211c35b3312e683e17fdfb2cf5",
+      "size": 903
     }
   ],
   "kind": "common",

@@ -1,24 +1,24 @@
 {
-  "branch": "lineage-16.0",
-  "clone_url": "https://github.com/LineageOS/android_device_htc_hiae.git",
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_hiae-common.git",
   "codename": "hiae",
-  "commit": "adadf5ac41d5ec8dbce3d6a900cd195a82807eff",
-  "file_count": 12,
+  "commit": "b6e727a939726d5b95c91e06734e86018201c5a3",
+  "file_count": 10,
   "files": [
     {
+      "path": "Android.bp",
+      "sha256": "46a0bbaac2b06a50445d180a1d3226414704f8742a9d52bd365daf83792df445",
+      "size": 68
+    },
+    {
       "path": "Android.mk",
-      "sha256": "cc02269193e46a08d9407516b845f201407670fb977b7497f05441ee898d1e88",
-      "size": 5460
+      "sha256": "30d75a212f297519c9897a65bbc4051931904c8f7d82510387eac0c8daf3bba6",
+      "size": 4989
     },
     {
-      "path": "AndroidProducts.mk",
-      "sha256": "e1882d9cd3b2f71874d8c471b175b093a4ff4fe0ad50595e86ffde8af681bb48",
-      "size": 649
-    },
-    {
-      "path": "BoardConfig.mk",
-      "sha256": "185a79e963ad42f5de0a6178c8a55c2b166fbcd5c8901497e4f60bfa27a854d3",
-      "size": 6124
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b12334958128ecae06700579cce9e66fe69b2cc459f48ef8ad171fd8ed69dcbd",
+      "size": 5800
     },
     {
       "path": "configs/thermal-engine.conf",
@@ -26,24 +26,19 @@
       "size": 5888
     },
     {
-      "path": "device.mk",
-      "sha256": "10f706abb54d00d328a78be900fe36b90335fb94b091bfc5cc4881aad5052cbf",
-      "size": 14066
-    },
-    {
       "path": "extract-files.sh",
-      "sha256": "8dfae62c534b1768cf7ec0e02836e09cd8c6f37d4dbfc1b2f33e2d904af6ef72",
-      "size": 1873
+      "sha256": "ae3b48e0276e4c65335fce848caf5d86c6979bf4bc189de582e3a0add6a39574",
+      "size": 1627
     },
     {
       "path": "lineage.dependencies",
-      "sha256": "9fe7d57a14ef8d3ec6611547a962e8a3d2071c6d0a420525a323f9c0e49061bc",
-      "size": 332
+      "sha256": "190b19110186d61664075f3053e762e956b292a278b150c2f5cbf89c4540fe44",
+      "size": 429
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "457ad5533e1346a49d0c484fc52d4674dc8023d468ab9a7647b14dc6b8b2766d",
-      "size": 20932
+      "sha256": "4f0b7d44d267f1199cf5a75c64db4f56915f5f3bacbcd771796a1599a3939c8a",
+      "size": 17707
     },
     {
       "path": "sepolicy/hal_thermal_default.te",
@@ -52,26 +47,21 @@
     },
     {
       "path": "sepolicy/thermal-engine.te",
-      "sha256": "32637e8500cf0f89186909e6629222453d144990227e3a7f6ad6dc548186450f",
-      "size": 2311
+      "sha256": "9ab557529522db5a5eb7efd094f3f774100664bd8e5e542059524149f39b9ca1",
+      "size": 2400
     },
     {
       "path": "system.prop",
-      "sha256": "bfd3f3a73ab8cee3c956c7ad69e893454379b937128d6bd38f88ac1fe603bade",
-      "size": 2795
-    },
-    {
-      "path": "vendorsetup.sh",
-      "sha256": "610473878935f08112eb3c75b7297414a4eadb59ec9c57fcb4f8b466ebaaf2bb",
-      "size": 39
+      "sha256": "d4c5fd2ee3516e940377e556540697e8a3e992702339dad0d4ae99f4903b6c47",
+      "size": 2208
     }
   ],
   "kind": "device",
-  "repo": "android_device_htc_hiae",
+  "repo": "android_device_htc_hiae-common",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2022-11-20T08:01:46Z",
+  "upstream_pushed_at": "2022-11-20T08:01:47Z",
   "vendor": "htc"
 }

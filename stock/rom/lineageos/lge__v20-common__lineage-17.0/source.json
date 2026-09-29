@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_lge_v20-common.git",
+  "codename": "v20-common",
+  "commit": "6ae9b7ec1025c862c07d60bb91a7b76c026710f7",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "56f71d3a002917d8e767c50e67831784a59b5c2d4a95e9f35a46aaf48e9ce572",
+      "size": 798
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1bc168879618aeae98c8ed83935b03684059e61963b172223131af83e93b4c82",
+      "size": 1457
+    },
+    {
+      "path": "configs/thermal-engine-8996.conf",
+      "sha256": "8d88acb6defe6c3ae1960c9cc6e9911fc4c0e4c6d98303d8b1e406f43520fbaa",
+      "size": 1924
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4477f4b9c1ea9601d136cacb706f5c1bf62e30d0503b3109c8aca1badfa75aa6",
+      "size": 114
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "bad63f7197b39f5ffa78b92e9a66dd703b88b9f954d73fc3f7cfc39459c10cde",
+      "size": 19410
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lge_v20-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-18T06:02:34Z",
+  "vendor": "lge"
+}

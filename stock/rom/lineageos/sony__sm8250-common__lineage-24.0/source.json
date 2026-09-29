@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "4b30abff5b3c2e770b1ddd7b7825dd2e252ca758",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "4e52ad4d8f7e6584ac01bbcac3e519769f0044613f6fcd5a0f2647343e587ff3",
+      "size": 874
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fac741905da150626ab9de3c58cf8bc0faeae28dbe6d4b7c8eb07203b79f23db",
+      "size": 7116
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "96150b666b6784e730e41c57b89ca505f16332da55a2e08c071df44e0241c6b0",
+      "size": 4568
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d4413804e31a973ea07f3610feea51e96434e66aa0a9b8cf0c4229100dbb763",
+      "size": 187
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "159ea13bae1fa6bbbc10d02bd4728a491a162c46ed63c0e5cda027f8e9b505d6",
+      "size": 65508
+    },
+    {
+      "path": "system.prop",
+      "sha256": "6b4a63d625d4d4de8fc7ddda181a97b8b5fa8f49ba60175beed7881582cea3fb",
+      "size": 1537
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ad665b7450aba169361adc5af92ee5d22536b5c77f0ff420182f2e7f9486ab12",
+      "size": 9188
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-07T11:04:09Z",
+  "vendor": "sony"
+}

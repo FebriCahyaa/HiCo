@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_fairphone_FP5.git",
+  "codename": "fp5",
+  "commit": "fa8d6daeae2b08b64bc00bbc13251e33f8c6b594",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "59ce788373a50844b1dd43e801f97954f2d8e63045edc2d03a15ee658e461634",
+      "size": 536
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8d2c9b5f054b69d089593fe2810d0f2bda616e2e84a86cc67573f82ffaec9f80",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a94043f003563b0eaf25fde5a1b14bf539ef99410bede8686da4e0cd20575061",
+      "size": 5963
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ad2ea4420bec381a0988f83738aa5ea4deac505a91b45ff17cdbac43600583be",
+      "size": 16699
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9f42dfed972e89948b45cb97ea55224dae045ff3713fac34a61698fb9d83fc25",
+      "size": 2534
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0d0b33519f3c5875868da803fb9a73503a463546c55867096e23384d89d17fc2",
+      "size": 112
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c5cbf252fe77aec8f17c92d54d22c355eb233b1c25e20695dfeb92a8420e5387",
+      "size": 50977
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6f24291cd96ef38f62e1ea0e739c61b1c7cab844924ac0601d1d7d0b48522f3c",
+      "size": 6935
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_fairphone_FP5",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-29T00:37:35Z",
+  "vendor": "fairphone"
+}

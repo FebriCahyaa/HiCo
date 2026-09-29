@@ -1,0 +1,57 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "94d04f31f288dc1d0ac12f82c0bab87069b288e7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "33a85fb7a24221664bcc388b845d45e2bb699480e9aaf740df700354181468cf",
+      "size": 9946
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "89855df578a0617190ec4d730f5d7306d1c1823d2bc4a0eff6de4ac0b607b3b3",
+      "size": 8075
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "009eb433d845dbeaf45184f580e533ccae13170a618ef40e88245391123616d7",
+      "size": 2515
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0b8ebd4a206c23b69873c0fce1f095a58d31dd615f000bcc6faecb5f932b36b8",
+      "size": 75306
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "cf69b05b2e6a0a7f05950438cdb89f67104cbe806c4fc031d9fdd3be571de439",
+      "size": 266
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cbfe2464e9e17ea9272d84067234d77f6d2840bace7196c09d7740d781f4ffa8",
+      "size": 1540
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a6fe16be329659a493c97e72f029850d430d145d53a1e38ac8ebc969aedfe66f",
+      "size": 9318
+    }
+  ],
+  "kind": "common",
+  "repo": "device_sony_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-07T13:06:55Z",
+  "vendor": "sony"
+}

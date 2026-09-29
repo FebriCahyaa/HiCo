@@ -1,0 +1,47 @@
+{
+  "branch": "15.0-20250330-backup",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_sdm632-common.git",
+  "codename": "sdm632-common",
+  "commit": "c0682f8d832685a12630266e02305300e054843c",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0631437e2b302641ad01536ba403464ab59e4a1f6385741603c5864b3bcc6be3",
+      "size": 478
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4251caaaa462f622bff3fba56c0b2fdb89f855ba294a932c3f810f180d13c153",
+      "size": 1183
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b68fad089e40a677da33c3411592eaf61caa032e90b6900a797c55f9d7bfff09",
+      "size": 7778
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4109454c4fa0ae03acb8914a6b8d5d6dda3b6a1f5d2a8dde1f1c98c16a7e91e0",
+      "size": 5482
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d1bed88bf87457d2aebaa21eed8e2e42f87fc039c47b8c2c90391c5edcb55944",
+      "size": 28103
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "6b79a22cf2fa8bc2d36bb4b665b7ee67b62ba20e8d21e31e58bd3eac27b45907",
+      "size": 637
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sdm632-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-04-28T01:21:51Z",
+  "vendor": "motorola"
+}

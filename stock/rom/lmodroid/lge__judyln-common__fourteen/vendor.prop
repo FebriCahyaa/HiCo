@@ -1,0 +1,20 @@
+#
+# vendor props for judyln
+#
+
+# Bluetooth
+bluetooth.device.default_name=LG G7 ThinQ
+
+# Camera
+vendor.lge.faceprint.use.camera=0
+ro.vendor.lge.logical.camera=1
+ro.vendor.lge.physical.camera=3
+
+# Misc
+ro.vendor.lge.build.target_country=COM
+ro.vendor.lge.build.target_operator=LAO
+ro.vendor.lge.capp_cupss.rootdir=/oem/OP
+ro.vendor.lge.swversion=G71030e
+
+# USB
+vendor.usb.product_string=LG G7 ThinQ

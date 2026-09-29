@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_msm8916-common.git",
+  "codename": "msm8916-common",
+  "commit": "b92fad462be2cdcc3f83874089f2c965655395b8",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "eec588cb559b3a001fc48bcb81648498b7777a72c10fdd28e4b87b2a48197987",
+      "size": 49
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1d2fdf0e1c1f8bfcb24a0a6675b9e511203a3a03c64927f033545b331ed92bbb",
+      "size": 2761
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0223dd63ba4c13e6bf3fdfdd61acf0dcdbb5e145a47cf7285f17e5a32e5a68f0",
+      "size": 5215
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "4afc8ed0f65d8f064e45f0ff8ddeb8820ef7dc6acab4a18bfe3b93b3a0454c4e",
+      "size": 1204
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "3c9ca935a090a6ad861b0df56a8e29f73ec241b0952b7cf14bff042e753b3e2e",
+      "size": 1690
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "925f598a6908ada5a4332d7863a2ab0d006555e71ff923cca20deecdd4e39507",
+      "size": 508
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "69d351261b092f8f975abd0edfc150f1df9dd6263bda7a19c2300fa4bb729fdd",
+      "size": 13120
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "5b3f3a53b438d5de332537513d373a040ea2e1ef0437fea80a7774e26d68f2ee",
+      "size": 94
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_msm8916-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:03:38Z",
+  "vendor": "motorola"
+}

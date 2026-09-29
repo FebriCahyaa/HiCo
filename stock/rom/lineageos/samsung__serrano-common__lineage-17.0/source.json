@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_serrano-common.git",
+  "codename": "serrano-common",
+  "commit": "6d59c19290106a76594fb52d194e9c9a500ccec5",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c7b79e36ed7dcdc2b8a0efe95c9574655339dfb10dc8009af414ed48f0a86544",
+      "size": 1273
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "53cee713d4226b84ede5c5ff27e9f56cb8daeea313e7f4519566b9d5ed8715ec",
+      "size": 3671
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "780ea9fde245ded5543988135a32a8a107e685f49a183e800319d0dd75ffd808",
+      "size": 1408
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7f3c01c56a608df9648339a035301cd018b1ebbf6288907bdcaff333fe389f48",
+      "size": 459
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "405a5be69dc3087e7d51acc1b664f41b3ad58f14a226b97d32d1307674501366",
+      "size": 3397
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_serrano-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-06-22T06:20:41Z",
+  "vendor": "samsung"
+}

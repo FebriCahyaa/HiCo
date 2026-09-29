@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_sm6375-common.git",
+  "codename": "sm6375-common",
+  "commit": "c659fca5e684f1e4bab399e79466f5b3cb91a72b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "223e4cab4652412ff4194f1e5f8ca69b605b5d53fe1708f0d68397df052f4cc7",
+      "size": 827
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7427bd133bd9b42b5d24b5f944aa86fba2c1d5cc6b541850b9b306262d48b878",
+      "size": 7564
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "231266f3d21ca6838d62c24814115314afdaa41cf02468ac59d96996e423fa8b",
+      "size": 2474
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f1edf711bec28806bcec74bb61dba67d2047a98521f8498cd6ec5087c6aa5869",
+      "size": 196
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f4adb7d0e2fb0641581d1daea2646438c02c4f570dcdf9d9458d6dc6585f91d7",
+      "size": 51107
+    },
+    {
+      "path": "system.prop",
+      "sha256": "ae33bb10c9e9c86988711060c41d325f35667ed0501a620a1077711885b0e732",
+      "size": 506
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0540e44143f206a107993da7753e8555f7666ae13533c4394e0b0f1a7f185ac1",
+      "size": 8115
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm6375-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-17T02:55:08Z",
+  "vendor": "oneplus"
+}

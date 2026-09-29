@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lenovo_sm8150-common.git",
+  "codename": "sm8150-common",
+  "commit": "09dbc14c8a12db357801036b7835ea21b0c93b98",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "745dac4baa483b9fa59ced04eaeadd50180dc94201ccaaba7bd3c5755e0ea065",
+      "size": 43
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "9c99567ff278ee54f1d8391f06feecabe591c381d054eaaf36d5990c16424583",
+      "size": 4636
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b3128fa39afbcade7e556f29205d5a3fc2631630dd88b2520eaccb1575aba0d6",
+      "size": 6252
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "692096b869868b7488630de8a7173b3baff1ec60d0366adf94a714f05375c7ed",
+      "size": 1934
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f5fac0a2f4f529c3cc550b1b77b7159f2968cde46ed3049ee89e4df443380ca6",
+      "size": 32686
+    },
+    {
+      "path": "system.prop",
+      "sha256": "8aac2ce7ababf264cbf8f02848b2141306dc909209b52c8d8f819a98ba42c3d6",
+      "size": 2075
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0ecf9a82f8c18413b5135d3e64abab7d1445311c1c6d05c3af2f3fb6a7fcd854",
+      "size": 5075
+    }
+  ],
+  "kind": "common",
+  "repo": "device_lenovo_sm8150-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-10-03T03:08:44Z",
+  "vendor": "lenovo"
+}

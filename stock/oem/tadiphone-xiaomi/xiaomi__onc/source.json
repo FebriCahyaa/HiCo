@@ -1,0 +1,37 @@
+{
+  "branch": "onc-user-10-QKQ1.191008.001-V11.0.2.0.QFLMIXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/onc.git",
+  "codename": "onc",
+  "commit": "2246db4417dfe5e6229ff57a960eb8066a179690",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "vendor/etc/thermal-engine-map.conf",
+      "sha256": "45d7dd1c5c39886345b75e76b1352dbb10964464e7fb9b4099c3cc40abb7019d",
+      "size": 129
+    },
+    {
+      "path": "vendor/etc/thermal-engine-normal.conf",
+      "sha256": "b69bbbb31da558651b29a41528d66aabcfc4c3f34ac01c0872de25f451010f7a",
+      "size": 2278
+    },
+    {
+      "path": "vendor/etc/thermal-engine-video.conf",
+      "sha256": "b69bbbb31da558651b29a41528d66aabcfc4c3f34ac01c0872de25f451010f7a",
+      "size": 2278
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/onc",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-08T14:39:43.156Z",
+  "vendor": "xiaomi"
+}

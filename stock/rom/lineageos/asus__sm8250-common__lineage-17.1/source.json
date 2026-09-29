@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_asus_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "d201222df1b5b853d6730ea5e4fa3fd46ab4d127",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "ffe72b80bf01a25b19d93b88357d1733ff9c3a96c5285772aa1a900d7588143e",
+      "size": 9561
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f78672f499dfa3f4cb06d792673d6cdf3a1cfe8ac33d91cdb7978c6163de663d",
+      "size": 7157
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "de14308b53f2bba8024ad82dd426624abd11ee0519429640e9996a6620cd3586",
+      "size": 2322
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "142a244d33668ed082cdca288f3954bb55f22cab0cbc910e84ee9d798d4be970",
+      "size": 100
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1aff05403630261c458959308d98616da38aa3e47aa2aa70b731fb7e7bd3769a",
+      "size": 5429
+    },
+    {
+      "path": "system.prop",
+      "sha256": "923db0da43c4695a9d0c809fa27202c16e47f2b6f463180baec5cb5991a0bcc2",
+      "size": 2354
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_asus_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:00:49Z",
+  "vendor": "asus"
+}

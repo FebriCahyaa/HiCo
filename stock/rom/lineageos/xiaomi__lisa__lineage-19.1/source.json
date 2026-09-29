@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_lisa.git",
+  "codename": "lisa",
+  "commit": "538a5afe0daf348fc105d11868eb02b754eeddc3",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "614c49b2600eb35ae0931698c305d154ebd352c7dd42c00874e9afdab9d56eaf",
+      "size": 81
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8bcec435fed429bc8d2e133a4dea8ea0f5bb67c3f06e19f4b60950b576a31589",
+      "size": 205
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a05e5af8fed36e3c5dabe2020655c7b7c5e10730a786cca9703fbc0a6a5df649",
+      "size": 245
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c7ea5c66ebbc92c8c2875e8e8f8ce012f2ed91e97e0bf27aab7a83f13e3e51a2",
+      "size": 687
+    },
+    {
+      "path": "device.mk",
+      "sha256": "f0abc941a16b482946698eb0205f565311d3e958d50b32f757e449001d2c0c92",
+      "size": 1550
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "46c7ff3274faeaf60772aaef97baea13d49ed7e9464780ff5c23a4235837193e",
+      "size": 430
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "a8d046a5623065bcd2f19bbd09459c6010f15d9694e8eebc7805a02ca4e1366f",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "ea8fe6190e7052afa9c944a9c19afba58b29fa79a1e144c12efe34868aa48db8",
+      "size": 26806
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_lisa",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T18:05:53Z",
+  "vendor": "xiaomi"
+}

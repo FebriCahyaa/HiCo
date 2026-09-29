@@ -1,0 +1,57 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_sony_nile-common.git",
+  "codename": "nile-common",
+  "commit": "fced2bf40104d8666e236b7bbdcdf23e12171bb7",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "2bce8d7f6cadca6394135d380208be9f949e9f364650de6327c8e799ca536f89",
+      "size": 5235
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c87bec5165ed70f1bbe77364b74635543c43518567f3b530eb1832b47cff1f06",
+      "size": 7206
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "72c54bd0faf79e3578368747fe8863dc3b6a8a9c5687be2f1ce4d46ad5aa48a1",
+      "size": 2926
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a6025b24df321272d4e44be2a4d1382935e7eb72c3d8d9efde5740250cb14daa",
+      "size": 27798
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "35f983b2a651892f6e3deb0b78df36d6f2cda5de725c66d5eb207207d8f594d5",
+      "size": 180
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2124b24189ebf1cb0ee1059aa974871f88d8ae96d49158fdaf7a2fc766a82790",
+      "size": 564
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ec2e4a460dba0c169ee859a6023a1957f6c513b7e5434c9b4469ff40566fa7b1",
+      "size": 5793
+    }
+  ],
+  "kind": "common",
+  "repo": "device_sony_nile-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2025-09-19T03:08:11Z",
+  "vendor": "sony"
+}

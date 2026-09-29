@@ -1,24 +1,24 @@
 {
-  "branch": "lineage-16.0",
-  "clone_url": "https://github.com/LineageOS/android_device_htc_hima.git",
+  "branch": "lineage-15.1",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_hima-common.git",
   "codename": "hima",
-  "commit": "5874ed03f06a9aedd5d21566e4cd51ead737f135",
-  "file_count": 11,
+  "commit": "01ac5b967fa33c276e68bc62115eb952aa11db7e",
+  "file_count": 7,
   "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "46a0bbaac2b06a50445d180a1d3226414704f8742a9d52bd365daf83792df445",
+      "size": 68
+    },
     {
       "path": "Android.mk",
       "sha256": "afab6c8d352957612a1f0e771ddd7982df0979aa81e7fcab9b9cf12bdbda3eb7",
       "size": 2886
     },
     {
-      "path": "AndroidProducts.mk",
-      "sha256": "7286a68e049a5c63b1061c2ea1ff4920fcb365675e049de3319cd1a837662876",
-      "size": 649
-    },
-    {
-      "path": "BoardConfig.mk",
-      "sha256": "d50edf06cdb10215611064aea10f2157ca7ee0b3e36c2c62614eddff66b1dd0f",
-      "size": 5771
+      "path": "BoardConfigCommon.mk",
+      "sha256": "8a32688355956651e0f5ae87a6cebb70d3a2dbebe9b8e5d48dfd8af7d1faf6eb",
+      "size": 4867
     },
     {
       "path": "configs/thermal/thermal-engine.conf",
@@ -26,47 +26,27 @@
       "size": 8261
     },
     {
-      "path": "device.mk",
-      "sha256": "ed14289397340e8023ec760019704d133bd0a3e1e80f7a115c00fc52aa8a4c7d",
-      "size": 13047
-    },
-    {
       "path": "extract-files.sh",
-      "sha256": "6229d9de05a5049f286fe9a37a1f6aedb182560cfbe5fd075d9087b9b7e1d723",
-      "size": 1627
+      "sha256": "3c9ca935a090a6ad861b0df56a8e29f73ec241b0952b7cf14bff042e753b3e2e",
+      "size": 1690
     },
     {
       "path": "lineage.dependencies",
-      "sha256": "0a9546f41069894edd2b773deb45355f4105972f831de64174b70a857a80b6ea",
-      "size": 332
+      "sha256": "8405be32b6fc5c4de3a96fd228e98423b4a027bc36ba9f620595940cab0fbb86",
+      "size": 429
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "d2cd863a9d52547f4ecdedc1ed4ea2682929b8926f1d4c2e000074ee0fc5b6a7",
-      "size": 36894
-    },
-    {
-      "path": "system.prop",
-      "sha256": "d812a85b902c9acba616bc12cb3f0dfe577c092dc0de6b7475e4881e48ef94e9",
-      "size": 2439
-    },
-    {
-      "path": "thermal/Android.bp",
-      "sha256": "cf702df7bce134422142bdab8797315b1a3dbf0e3374f44ea73d2f04322f8779",
-      "size": 850
-    },
-    {
-      "path": "thermal/thermal.c",
-      "sha256": "580a30f3b659a39847ac4f323a610d16591d03af0278c043fb96fb4ffa121878",
-      "size": 8799
+      "sha256": "6cd87e533b01d1512eb1a622da5eb7ff199b3865e7b9a9b47321b08220fa6b5d",
+      "size": 34585
     }
   ],
   "kind": "device",
-  "repo": "android_device_htc_hima",
+  "repo": "android_device_htc_hima-common",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2022-11-20T08:01:48Z",
+  "upstream_pushed_at": "2021-12-11T22:21:05Z",
   "vendor": "htc"
 }

@@ -1,0 +1,32 @@
+{
+  "branch": "lavender-userdebug-9-PKQ1.180904.001-241-test-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/lavender.git",
+  "codename": "lavender",
+  "commit": "f0f236ff76fa174f4c9998630bfbf2194ac399a9",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "vendor/etc/thermal-engine-map.conf",
+      "sha256": "6fe93144d55b822b487e40c2f1fadd32517e54f602390c6cc7367ca1674bf2e2",
+      "size": 97
+    },
+    {
+      "path": "vendor/etc/thermal-engine-normal.conf",
+      "sha256": "1fee3f616d7c6f45793fe0192bd920bfc416b3fa3dd6da1c5475502ab7ad0a98",
+      "size": 5347
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/lavender",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-09-17T18:42:41.247Z",
+  "vendor": "xiaomi"
+}

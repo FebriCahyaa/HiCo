@@ -1,0 +1,58 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+
+from extract_utils.fixups_lib import (
+    lib_fixups,
+)
+
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+
+namespace_imports = [
+    'device/amlogic/ne-common',
+]
+
+blob_fixups: blob_fixups_user_type = {
+    (
+       'vendor/lib/egl/libGLES_mali.so',
+       'vendor/lib/hw/android.hardware.graphics.allocator-V2-arm.so',
+       'vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so',
+       'vendor/lib/hw/mapper.arm.so',
+       'vendor/bin/hw/android.hardware.graphics.allocator-service'
+    ): blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V4-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/lib/libamlaudiohal@7.0.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
+    'vendor/lib/hw/audio.primary.amlogic.so': blob_fixup()
+        .replace_needed('android.hardware.bluetooth.audio-V3-ndk.so', 'android.hardware.bluetooth.audio-V6-ndk.so')
+        .add_needed('libbluetooth_audio_session_aidl_shim.so'),
+    (
+        'vendor/lib/hw/camera.amlogic.so',
+        'vendor/lib/hw/hwcomposer.amlogic.so',
+        'vendor/lib/libmeson_display_service.so',
+        'vendor/lib/libscreencontrolservice.so'
+    ): blob_fixup()
+        .add_needed('libui_shim.so'),
+}  # fmt: skip
+
+module = ExtractUtilsModule(
+    'ne-common',
+    'amlogic',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()

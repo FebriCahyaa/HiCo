@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_s3ve3g-common.git",
+  "codename": "s3ve3g-common",
+  "commit": "523c3c4fa7f43c37af31b99f65c8a3cb66e45f68",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "801c52c6014d943541d4ae5c9fab9d253eea213dd6ccd84d76bafaa580d60f05",
+      "size": 754
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "98b2809a3b6714d22fa10d92c7b8278eb5b7d557583a876d20b1f97dfb93ad5c",
+      "size": 3386
+    },
+    {
+      "path": "configs/thermal-engine-8226.conf",
+      "sha256": "4a8c09fc74c44f16f4b719952654a6afb8febb91887142fa50d9dbf59595a497",
+      "size": 823
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e6f1d49a8baa9ee0b926c8dc83aba421b0b00c4206bef0420f98b6bed029238e",
+      "size": 1905
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "00e3154999749290b63b733a1f939dae05c49882673efc01ff42ed40ea5e9478",
+      "size": 332
+    },
+    {
+      "path": "system.prop",
+      "sha256": "79b52e217008348c7f22d22261722300b0425fa6aebdd6ad756b217536c2d538",
+      "size": 3368
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_s3ve3g-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:05:41Z",
+  "vendor": "samsung"
+}

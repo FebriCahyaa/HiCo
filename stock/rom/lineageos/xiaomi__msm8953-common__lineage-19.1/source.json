@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "c6a7af6f9d1dccdbba5519453d59ce257eeb2254",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fa2ed9ef0d92854848d6cfef7d1971920b0e24e86c5f8f6c7085175b9451e430",
+      "size": 4091
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4b96cd22986b0e4bbd8108a16db3e9baeb1cd5ae375cce189290b730d89702a8",
+      "size": 4546
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "ea36bac4f4fb5ce86844f619e4d286873f068c9b3f49f7f6a45a7f134c765297",
+      "size": 4168
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "f43e58dc4459aafddec3a2f335022d2a45b545b53aec636ccbf5f7fe9686a634",
+      "size": 94
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9470cc0adef54822c6cef9c61922773818250aa3c1feb4c49a01c8c6ee16423f",
+      "size": 27642
+    },
+    {
+      "path": "system.prop",
+      "sha256": "4bc08c02eabfb605c71b8fb6a271e2a007655e82b012cd615869990f543bee72",
+      "size": 45
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "6a459cccddb79d613fca26a3358411d8343470d5606bc9ed00c4a146ead91c3b",
+      "size": 4622
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-10-15T22:00:19Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_twolip.git",
+  "codename": "twolip",
+  "commit": "a9d206175232593e8e3646938cebc3dac70908a9",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "c1440dd327389c650e0ac156fe0e842e7e32e05e23427ed29824c6efc9a33e73",
+      "size": 815
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a8462860697bdb7146fd5aa5fdba5ca79ca1e81ec3cb7d9cbdeb6eeab799dfce",
+      "size": 763
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "12ef342f75873e97fc162a6ab8e79524398c619107aac64d3ecd95972ff45e73",
+      "size": 1604
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ac713dd6b2a8855bdb12204e42ecf49d5f068572ed719be9ec2daf5b75a92927",
+      "size": 2859
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1ebcfc2c050eebb27ff0c9efafc417fc4c205f7e17fa84eccfa684271916a8c0",
+      "size": 782
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2d8b79ccadf0a40344dd9f6a5153c80c467d9dea0fcd3c3280f55faa40f18e3c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2d7d9acd9457af3fb5f8fba0c8b4131c631a6bf2da6bd6f7e3a3ac8407c66a16",
+      "size": 43325
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_twolip",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T20:49:46Z",
+  "vendor": "xiaomi"
+}

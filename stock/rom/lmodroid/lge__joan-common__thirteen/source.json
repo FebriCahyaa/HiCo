@@ -1,0 +1,52 @@
+{
+  "branch": "thirteen",
+  "clone_url": "https://github.com/LMODroid-Devices/device_lge_joan-common.git",
+  "codename": "joan-common",
+  "commit": "65ff84dd2c9d39ab7f1c561b33d744b457cdc98b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "2c5fd88bcd7f9e4ddded70946f9fd1983be85fd485869505e57604aa813749fd",
+      "size": 11279
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "508afa71acf7be06280189f0cc4b9703eeb8fea7c49be99acf6e094c6d837aae",
+      "size": 7785
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7886bef1c60ca60382048f6b7680b2f0e68ab7df896e616f997a24daf90a97f1",
+      "size": 3076
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "61ba4536de04d5d83e0c5f94cceaf4650ebf78cc306ace3b61b44cd786d09374",
+      "size": 31188
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "e6dbb784f74747cb2943371741184ee3a8e9a9b2e2db3540c68d4c9b2f0e76b7",
+      "size": 772
+    },
+    {
+      "path": "system.prop",
+      "sha256": "37876aa9a48c545748f378b35fe1532896e88e4e15f6e900a65ee0aeb619c6d4",
+      "size": 2533
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "03a0c06f61b7c43fb2e2bbeeca7ff2e775605b3dd8bf7c20cc4539d7e9a12fc9",
+      "size": 8811
+    }
+  ],
+  "kind": "common",
+  "repo": "device_lge_joan-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-07-10T03:11:53Z",
+  "vendor": "lge"
+}

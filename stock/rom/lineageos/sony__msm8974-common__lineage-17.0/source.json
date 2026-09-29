@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_msm8974-common.git",
+  "codename": "msm8974-common",
+  "commit": "3990d718417b254223b7bca9ec89217b8a50402c",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "63bad6fba9bd8332bd1cc23d71e5dd68c3639d989a0e2c1eebc8051d7ef4a620",
+      "size": 165
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "b53ee39183877ce830c287f3da7766e99d471c4ef2817544d587568e47e491ad",
+      "size": 3479
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "f602d2151ff1763b7bf9fccf1ff0c3076785ce7a6cf3d5752be4e4b718b8e656",
+      "size": 2494
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9b0f4f825d85b80bec59d7fb44c2fd0d601b403d1904b1121e8b6d8abcff57da",
+      "size": 528
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c1bc3799d43009cf4dd2f9e45b771a97b522ef53b4bde31bb07b40a7961c02fb",
+      "size": 2090
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_msm8974-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:06:21Z",
+  "vendor": "sony"
+}

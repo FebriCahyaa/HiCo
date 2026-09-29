@@ -1,0 +1,57 @@
+{
+  "branch": "17.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_realme_RMX2020.git",
+  "codename": "rmx2020",
+  "commit": "e829b33ad9e0684c90ee8a7e0e76bcb4f06c377f",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a2fd0ef9834eabda922096d265e8f446182cfaa40cdeeab7f3c4e41067f269c4",
+      "size": 645
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "b948a73f2ebba42e8f5e1c419d41612e3016c5b77688c02600dd993b62107234",
+      "size": 138
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "109ded02c99336ba86919ddf0c4f58e2c201cebd08b00b4abb7802142f21c71f",
+      "size": 6166
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "875bc9be904b09af68219c0a978b014cca2b2a1e839cfb8f9a5ecd3dd98b9bca",
+      "size": 7071
+    },
+    {
+      "path": "device.mk",
+      "sha256": "969fd6ceeb9e0708f92b7e7a1aacfc8d96de59c524d0b6c85fe35435be1b7375",
+      "size": 16825
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ce6c45bf92ce90d6e99af8a579bea56cdb1eefe103f60503c5a603411bc497a3",
+      "size": 4575
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a4d5591730df3cd8f8b527c24c234ed76b7f14e72c824744ffe82fb26e853ec6",
+      "size": 61587
+    },
+    {
+      "path": "sepolicy/vendor/thermal.te",
+      "sha256": "5974045ea3be624eeb55b0a07eef68531c5061d27a0ba9eba9ac28b3ad2b741a",
+      "size": 46
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_realme_RMX2020",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-27T23:02:18Z",
+  "vendor": "realme"
+}

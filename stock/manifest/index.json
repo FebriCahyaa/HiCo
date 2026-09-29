@@ -1,8 +1,8 @@
 {
   "common_total": 798,
-  "device_total": 3062,
+  "device_total": 3215,
   "schema": "hico.ingest-manifest-index.v2",
-  "source_count": 16,
+  "source_count": 19,
   "sources": [
     {
       "common_count": 273,
@@ -22,7 +22,7 @@
     },
     {
       "common_count": 105,
-      "device_count": 354,
+      "device_count": 355,
       "family": "rom",
       "manifest": "stock/manifest/crdroid.json",
       "source_id": "crdroid",
@@ -131,6 +131,30 @@
       "manifest": "stock/manifest/rom-vendor-blobs.json",
       "source_id": "rom-vendor-blobs",
       "source_name": "ROM org vendor blobs"
+    },
+    {
+      "common_count": 0,
+      "device_count": 82,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-xiaomi.json",
+      "source_id": "tadiphone-xiaomi",
+      "source_name": "TadiPhone dumps \u2014 Xiaomi"
+    },
+    {
+      "common_count": 0,
+      "device_count": 54,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-samsung.json",
+      "source_id": "tadiphone-samsung",
+      "source_name": "TadiPhone dumps \u2014 Samsung"
+    },
+    {
+      "common_count": 0,
+      "device_count": 16,
+      "family": "oem",
+      "manifest": "stock/manifest/tadiphone-oneplus.json",
+      "source_id": "tadiphone-oneplus",
+      "source_name": "TadiPhone dumps \u2014 OnePlus"
     }
   ]
 }

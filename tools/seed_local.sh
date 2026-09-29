@@ -95,23 +95,33 @@ list_and_fetch() {
   local log_file="$LOG_DIR/${sid}.log"
 
   log "=== $sid: listing repositories ==="
+  # rom-vendor-blobs (vendor-probe) ignored --jobs entirely until this fix and
+  # always ran 32 parallel git ls-remote probes across every ROM source's
+  # combined device list (1000+ URLs) — the real cause of a signal-9 kill
+  # right as that source starts, regardless of $JOBS used for sparse_fetch.py.
   if ! GH_TOKEN="${GH_TOKEN:-}" $PYTHON tools/ingest/list_device_repos.py \
-        --only "$sid" 2>&1 | tee -a "$log_file"; then
+        --only "$sid" --jobs "$JOBS" 2>&1 | tee -a "$log_file"; then
     log "WARNING: list_device_repos failed for $sid (check $log_file)"
     return 1
   fi
 
   log "=== $sid: fetching thermal files (jobs=$JOBS) ==="
-  if ! $PYTHON tools/ingest/sparse_fetch.py \
-        --source "$sid" --jobs "$JOBS" 2>&1 | tee -a "$log_file"; then
-    local rc=$?
-    if [[ $rc -eq 2 ]]; then
-      # Exit 2 means some repos failed — not fatal; they'll be retried next run.
-      log "WARNING: $sid finished with some failures (rc=2); see $log_file"
-    else
-      log "ERROR: sparse_fetch.py failed for $sid (rc=$rc); see $log_file"
-      return 1
-    fi
+  # `!` on a pipeline inverts $? itself, not just the if/else branch taken —
+  # `rc=$?` read afterward would capture that inverted value (always 0 or 1),
+  # never the real exit code. Disable errexit so a nonzero sparse_fetch.py
+  # doesn't abort the script here, then read ${PIPESTATUS[0]} as the very
+  # next statement, before anything else can overwrite it.
+  set +e
+  $PYTHON tools/ingest/sparse_fetch.py \
+        --source "$sid" --jobs "$JOBS" 2>&1 | tee -a "$log_file"
+  local rc=${PIPESTATUS[0]}
+  set -e
+  if [[ $rc -eq 2 ]]; then
+    # Exit 2 means some repos failed — not fatal; they'll be retried next run.
+    log "WARNING: $sid finished with some failures (rc=2); see $log_file"
+  elif [[ $rc -ne 0 ]]; then
+    log "ERROR: sparse_fetch.py failed for $sid (rc=$rc); see $log_file"
+    return 1
   fi
 
   log "=== $sid: committing ==="

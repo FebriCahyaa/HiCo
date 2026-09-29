@@ -1,0 +1,82 @@
+{
+  "branch": "10.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sdm710-common.git",
+  "codename": "sdm710-common",
+  "commit": "9a5ff44bb30a11bc07bd166abbf6785d096cced0",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "2ed0186b2df96fe5be3852786bcaa9554daa79e9ece5028980f0d2897a1bc8a2",
+      "size": 69
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1a56e9bd88f90d3e61e9acfdb35c359c971a18ee9e7fde47b09681185ee74325",
+      "size": 4415
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "7255c137bec9bfcb7ecd307213d42cc138660166e00e573029a7008a964e31f8",
+      "size": 4940
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "5068691121e124b2e83698ce398b66e2f650e09f9c386b050899440c39aedf2c",
+      "size": 1869
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "51d0371916f0e4df7ef2f7bc6d25617f97da1a77dd1ba4ae83f6a3bb6cfe90e3",
+      "size": 195
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "4dfd3d059a069542fb4305d56e1701fb6c8dec1e2f559d5a9161a344b2c8b969",
+      "size": 1114
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "301da73955da3d33dc4d13a3c29d33d22eae4dbc311b92e67cbbdf0a5c5dcc41",
+      "size": 3621
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "bf7f90c40945484697a9fff8e87b6da6302226698824a82f9639715dcc038b04",
+      "size": 16084
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "dc05333c54111aed230484ecba8a81651f47fa8d4b308f8ad9aa62dc89eb7da5",
+      "size": 6247
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "071e81a3032c8d90d95764a4cece6706755fc9fd5a316c95d48e234d3e54e719",
+      "size": 32815
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "865118be26c66bd138528ae0f5aa0d22f22e03d91335d80be0f52c83e1b90567",
+      "size": 2814
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "421ee07301614c3f6481789806ca0a5515eb01d27dbec998ec90fed06ec67c24",
+      "size": 4752
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sdm710-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2022-02-26T13:35:39Z",
+  "vendor": "xiaomi"
+}

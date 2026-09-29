@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "2fc17c4102a5f8e97f1973017639847adc2ba211",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bfd4a6ba54a5a8a8a949986097574e1e3f8998cdd699a6cfd36b5372df87ac1b",
+      "size": 65
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d007f0dfb62e34797322f657e6ff6568d5df53ffe51e972c226c17afbbaef9be",
+      "size": 10055
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bd9c7d2cea32479fd25cc8f516cde16d1acf4d010155cf032a05a76be1dfd272",
+      "size": 7930
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "01fb1eb25c605639867e5f158c26aeb21adf15905d8b8db8d038cf353d44970d",
+      "size": 2342
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d4413804e31a973ea07f3610feea51e96434e66aa0a9b8cf0c4229100dbb763",
+      "size": 187
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a43ebe57a0132c73b08e19328d13cb0bfd19b89da2fb8328fcbeb68f9b75b0e3",
+      "size": 57639
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "cf69b05b2e6a0a7f05950438cdb89f67104cbe806c4fc031d9fdd3be571de439",
+      "size": 266
+    },
+    {
+      "path": "system.prop",
+      "sha256": "de482dd9bd82ab68bf655f12bdbb3499bc43ee870ce983e1f8db6a2248bf9bff",
+      "size": 1490
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "135b07641b4289a5dd72956b2f261d83d5e8bfa14a2da3b599f2ae3d99bdfc58",
+      "size": 8159
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-07T11:04:09Z",
+  "vendor": "sony"
+}

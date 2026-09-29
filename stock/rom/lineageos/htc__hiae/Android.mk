@@ -1,6 +1,5 @@
 #
 # Copyright 2016 The CyanogenMod Project
-# Copyright 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,25 +25,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hiae hiaeul hiaeuhl hiaewhl,$(TARGET_DEVICE)),)
+ifneq ($(filter hiaeul hiaeuhl hiaewhl,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
-
-EGL32_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so
-$(EGL32_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL32_SYMLINK)
-
-EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib64/libEGL_adreno.so
-$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
 
 ADSP_IMAGES := \
     adsp.b00 adsp.b01 adsp.b02 adsp.b03 adsp.b04 adsp.b05 adsp.b06 adsp.b07 \
@@ -151,7 +136,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MPSS_SYMLINKS)
 WCNSS_CFG_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 $(WCNSS_CFG_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
-	$(hide) ln -sf /data/vendor/wifi/$(notdir $@) $@
+	$(hide) ln -sf /data/misc/wifi/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_CFG_SYMLINK)
 

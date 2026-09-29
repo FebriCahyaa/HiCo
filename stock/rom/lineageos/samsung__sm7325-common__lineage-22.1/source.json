@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_sm7325-common.git",
+  "codename": "sm7325-common",
+  "commit": "50dd205d942b216e6d921ba72d6a0980a74ea570",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "eb1152e667062cd24da3f8af32a3a8573765445cf9d084362128957b08c577d9",
+      "size": 5453
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "5c5316f5505285a630de7448bb751f4f4be24af6f20956e0dc45b66392b2f6cc",
+      "size": 8914
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "af88a131e91cff071403c73d2439df3e8d8b7498f875654430aee2adc234d473",
+      "size": 3600
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "24f3e6314bc4f19a0dcc0f41c5636b01aff1817724fbad174946adc4a94de2a3",
+      "size": 207
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d98ad2c31b8b391cc4c6525173c4f989c01bcde4bba2506663f797811fffff00",
+      "size": 32738
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "bf314a80d283f1df13ba45fc775e54de823e2878ecfcfc0d2282fd8ef1870381",
+      "size": 332
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "4928d59764fe9823078f78003d2d8304b4bf7cdff338d9db773231e33a67f557",
+      "size": 106
+    },
+    {
+      "path": "system.prop",
+      "sha256": "2713ee5dfb6b107f4912a3b21767ed3d6d7cb8e81f27db4ecb8ff4aedae621eb",
+      "size": 86
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "5122fe52327d103dcf651665c04eb0dff43691c28e97990421b72df66a144073",
+      "size": 7578
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_sm7325-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-27T10:02:35Z",
+  "vendor": "samsung"
+}

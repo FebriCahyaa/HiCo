@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_dodge.git",
+  "codename": "dodge",
+  "commit": "27e0b5ceb95c98024d63148e2ee7231a66b3c243",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "56b28e7ab8a45dd2b15ed9ab70b0db362d1510bcd8c385f811d44cdf55498de9",
+      "size": 145
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "c6dc73a4bd53bda1fc9fc6a69b718e35c644fdc10af01710cd6ca8ccfee49714",
+      "size": 817
+    },
+    {
+      "path": "device.mk",
+      "sha256": "d2be374ab910892794a45366b41fd552c2dfe050a53c2541cce6bbd92eae6ed5",
+      "size": 2227
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "6ba95ebd9d9c9046186f1b6846016e2671b645521f7b972bb895a574fa7adea1",
+      "size": 2751
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "86735a516d2cf8eba28b23b6979e1803bb942c37d56f94bc59ac3192faa671bc",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "96c5bf28757807afefb9ecaf74d6e015343858046634056a6b4021acd32db4e9",
+      "size": 70159
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "34b377f47049b6e195fc0500f5be72ddedf3983bd2ae8d6258a46c7260a062a2",
+      "size": 97
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_dodge",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-28T20:49:43Z",
+  "vendor": "oneplus"
+}

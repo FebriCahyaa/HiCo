@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "b8321fccd28be738a9fc668bfecf31921c4cae98",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "d62fbe2640ec3654f07bf713e3b72fdcf75d92754d4901017732cc0c0f41a702",
+      "size": 4694
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "aa828d8f86b98c61236a2583d1797784e6db7dbe57c4758c2ac5807d84202fe7",
+      "size": 5723
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "33833cdcee1aeedf0b9cbfd5f518a83eb75eb7986d3d3fb16fd236c285dab50f",
+      "size": 4600
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "4120e974ccd82acb275f6d1c9525f94cc95dccbbec3891cc5fdde5ef3cfe11e3",
+      "size": 2214
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "1eec1309251e6a3179b7495411ad11c87337e4c63c91c9e8dff59762a0666d98",
+      "size": 225
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2025-10-15T22:00:19Z",
+  "vendor": "xiaomi"
+}

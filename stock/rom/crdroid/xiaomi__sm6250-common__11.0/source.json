@@ -1,0 +1,77 @@
+{
+  "branch": "11.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "3991505536180645ff19f6a17b6bdcc00fec507c",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "956c32e5b2fe4929b97ba818be7cd24be9494c49ed035ae14fde3b5a43ec387b",
+      "size": 4249
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "512288b4dd210706dff988a27c2de18be668ee6b11b81a97f34fa16cf72a670a",
+      "size": 7109
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalActivity.java",
+      "sha256": "21124e0c3d2eac5ac0a5aab09a3d43d2cd65993290b601da2c354fcc3a939a62",
+      "size": 1108
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalService.java",
+      "sha256": "70067de57c68f0255776c66259c228dbefce19bda895c4afe59f98d27924ffa1",
+      "size": 3593
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalSettingsFragment.java",
+      "sha256": "7372b0db72e6942d4c5584498ae9236cb90106b9b23dc4adb5a513addb08f00e",
+      "size": 17371
+    },
+    {
+      "path": "XiaomiParts/src/com/xiaomi/parts/thermal/ThermalUtils.java",
+      "sha256": "420401547b18aa5cee5dde4c9de56f9378bf69714c6b677f7d9088a8f9f9dfb0",
+      "size": 6408
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "7bc7fc60551919454716f4bbd94b232f8c8c68b7bf4b78cd174c2d40983187f8",
+      "size": 1843
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9042632e930c11a8445b8801d5e6015ab7bb84774b1eb56e6d41cb33e33e9b5f",
+      "size": 484
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "cd027512d46569c9f890fade00013448649a0d54b5a98be055dc49690991d3a3",
+      "size": 55649
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "f5acaa75c1b5887fdb1c1d13462164fd565963fb72d2b04af9ee3155ca779315",
+      "size": 226
+    },
+    {
+      "path": "system.prop",
+      "sha256": "80372d3f89f7173ee57c4db7bf48dd82b4b96b52f89e8ec076664c4dadf44d68",
+      "size": 4277
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4282f69ed00d48e4286589cd0fec8f97d663f7dff7d3bc433011c986a3a6a0b1",
+      "size": 7922
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-07T06:13:39Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,32 @@
+{
+  "branch": "raphael-user-11-RKQ1.200826.002-21.1.26-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/raphael.git",
+  "codename": "raphael",
+  "commit": "11f33e57b43c0562f4436efcebc1edb00ba43b38",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "system/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/raphael",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-05T19:21:12.465Z",
+  "vendor": "xiaomi"
+}

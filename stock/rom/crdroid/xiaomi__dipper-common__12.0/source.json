@@ -1,0 +1,82 @@
+{
+  "branch": "12.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_dipper-common.git",
+  "codename": "dipper-common",
+  "commit": "4eba2dada9f7407a3c1d3f26359a55f431c2e565",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "3cb040e28ed8e1ba3d868ed5b8b515e2d75fb084807dc7007b739b559ddd6fe1",
+      "size": 140
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "8c3b1d53bde1071374ef1be487e47b7b0914c92095d3d077cfab56f12ffb8af0",
+      "size": 4445
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4819135e8d7ba3d72a92e61d571cc4127f422e6c4a34b7f1d26caa46e68efc16",
+      "size": 4779
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "35f75fcebef6d0a3ea08450acfd0fbc6e5b06f43949371b5287b4129bb046c71",
+      "size": 2870
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "39f8085edccef885497581bff250db87c519db0595936a7a7224c84079cba273",
+      "size": 195
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalActivity.java",
+      "sha256": "b0331dc19f7e902a9eafb4c69b0dd9f518fe62890cd9194d068564b205b94874",
+      "size": 1462
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.java",
+      "sha256": "b2011f4ce443b45b9768f79dbc26370ba4b50de52e53f8ba97cbfde3c871d4b4",
+      "size": 3266
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "34ff8c5f40f7117d2436ea7d6a61a8128c7b1aa0bf8b1db46396f1c4fd7004da",
+      "size": 14219
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.java",
+      "sha256": "964307adc828f50168cc6e129719b96621d218bc62a6bcf3468f795eea93197d",
+      "size": 6504
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "74ea523eacdba59a2f89ae26d73438c835640d690d030cac06d606b05ec34650",
+      "size": 40354
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "676ecafbaa47ebe586ecb9a67e7b87ec1ddf7d3c1724399f8728287dd9f4c71e",
+      "size": 372
+    },
+    {
+      "path": "system.prop",
+      "sha256": "32ddaed7f673b605c89cf9179bf8d46522e757c9ac896790f0e6ebf35130c6c4",
+      "size": 2563
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "42806d8551771fb943ec7a04e3f498ac319121e6959f4e5a6e7adea983a1a919",
+      "size": 5100
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_dipper-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2024-02-05T15:15:50Z",
+  "vendor": "xiaomi"
+}

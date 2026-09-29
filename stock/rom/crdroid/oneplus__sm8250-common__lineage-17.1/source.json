@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "029a335e3ee232f359e42321650b119adb33e190",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "87ed9c33a3fd067b75dc0cdaea44f75472357c8e406c8ffa0fd21daa6222348d",
+      "size": 61
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "0456b63455bb00646e19fe2ea88d5429edb7f3ebf47d190af87288b364c2c8b0",
+      "size": 844
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4e965d7db151b60595ac90e44858b75cd70b698296eed69698688d4d8bdd3412",
+      "size": 5455
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "356da0db5460fc636bcb095d3936878372b1dbc8206629016b7c51cb6423098b",
+      "size": 2401
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2a57850fde9a7ce8032eea77ff76e2f8dfe1fca9f8f4cdb94d4322a438cf3eea",
+      "size": 209
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "9e1c1caabaeb8fa4f5499367eddf7ea10cbc5db85b747ab871dbde02c1a31736",
+      "size": 3702
+    },
+    {
+      "path": "system.prop",
+      "sha256": "c604df94e737f5b7c625fe0e30a1282026fb5ce17298f485253feb01181b3131",
+      "size": 1167
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-06T19:39:00Z",
+  "vendor": "oneplus"
+}

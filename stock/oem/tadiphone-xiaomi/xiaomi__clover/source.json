@@ -1,0 +1,42 @@
+{
+  "branch": "clover-user-8.1.0-OPM1.171019.019-9.7.4-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/clover.git",
+  "codename": "clover",
+  "commit": "d75a3a615b94922a3aeb751d50ad600c91ec1fd4",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "vendor/etc/thermal-engine-high.conf",
+      "sha256": "6ba88b10a61d7b1ab7a9f886bc2c8e33635f14c2f95a1c3e1038a3379f6700c6",
+      "size": 327
+    },
+    {
+      "path": "vendor/etc/thermal-engine-map.conf",
+      "sha256": "0c5fe4524f1fd6d6dbb2b7b937daf70c1da5da2d2d16014642093f075dafb89e",
+      "size": 94
+    },
+    {
+      "path": "vendor/etc/thermal-engine-nolimits.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "vendor/etc/thermal-engine-normal.conf",
+      "sha256": "ae938f2995c83be0abb61c5e002e4972bcebeefac68fd1aad9bb997218ba621e",
+      "size": 1447
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/clover",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-08T12:42:49.855Z",
+  "vendor": "xiaomi"
+}

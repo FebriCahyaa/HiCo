@@ -1,0 +1,97 @@
+{
+  "branch": "16.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_fire.git",
+  "codename": "fire",
+  "commit": "81bca1679833e854bfb0257219c83a4e75ab79f1",
+  "file_count": 16,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "1641ad2daab607d342053f210e3bb8c6c12ea63972fae8f61dc032585e00281f",
+      "size": 112
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "fc50de0cc21fa4feba7a4da66df2b9e17f32c4b29fb2a9a2c3f5505515c0134b",
+      "size": 203
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3e43ae1a6b663a6350d15ddd551d6a51788649e83cc1116299857af87f1cfbf6",
+      "size": 143
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e689c58502123b5f2dd8a3caa689bbd2147bdcc60a00ce794aacbc8e50b7e5d2",
+      "size": 8915
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "4ed3da4194bd3ef8c21813250b3e02c35ed0fc270e9f15b1c02b9be9a7f8d067",
+      "size": 6752
+    },
+    {
+      "path": "device.mk",
+      "sha256": "25ff267a771967787275f9a4cfdd32f5c4581d539e47150ac33c477874bfee7f",
+      "size": 15789
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "9d9665f329dd0a931e29548663b6fd1a1ebb6e0b030f5c107242f463d5a72214",
+      "size": 12818
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "395994d9ccbb39b56ca7220d775a378c613bb40f93a876a9ac3a9be572b0afde",
+      "size": 200716
+    },
+    {
+      "path": "rootdir/etc/init.mi_thermald.rc",
+      "sha256": "c4df5a461db6685b06cbde220fe54970e82ab623ec3be37fe4597f653764e4e8",
+      "size": 513
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "12c15bfeed794df7a9f3e20be3c87e3424e58b1c4bc679bbc573642275d5343c",
+      "size": 257
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "3b0b78bdd237916aefdbe8335a11d33d73b7047d4c1a4b68c716867316724828",
+      "size": 1224
+    },
+    {
+      "path": "thermal/Android.bp",
+      "sha256": "45268190f99b96486a0a3853e61f72deea59bda43ae2e4a0d1779ddd52ec98ac",
+      "size": 528
+    },
+    {
+      "path": "thermal/android.hardware.thermal-service.fire.rc",
+      "sha256": "b4c2abd5b2da667db013cf235bf4021ab8a7213fb81a350f7e0ee89de1416ee4",
+      "size": 241
+    },
+    {
+      "path": "thermal/android.hardware.thermal-service.fire.xml",
+      "sha256": "48e0bddf045dea0e2ee6712af5bb97644ec34dd5a6a31be4971c1438c0b0e6a6",
+      "size": 203
+    },
+    {
+      "path": "thermal/main.cpp",
+      "sha256": "cd4b04446e202ba7a3184baed587f59ac2bfe8dc1657da44c0b53c9b0693f236",
+      "size": 9868
+    },
+    {
+      "path": "thermal/sensors.h",
+      "sha256": "208300f1d0a2fc157aeecd0fa807dcd3cf8df7d2ca3850edc1e8e63676ef8ae9",
+      "size": 2149
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_fire",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-28T17:04:01Z",
+  "vendor": "xiaomi"
+}

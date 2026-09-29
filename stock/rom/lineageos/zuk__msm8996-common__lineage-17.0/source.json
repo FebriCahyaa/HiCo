@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_zuk_msm8996-common.git",
+  "codename": "msm8996-common",
+  "commit": "35d2ae96e5f690a945e5a62bc49d3fd9294b0c38",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "de2616b3ef05cbcfd7d69fa5df363e07a93eb545f73be673f44280f29406e1a4",
+      "size": 4794
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1c21abde9f2042e64dde491b941235859d54993032c32c080de2ea471e6a3f3b",
+      "size": 6427
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "0fa3594fb0226f4b67a296de1cabf8e64dd96c07cb368d8035074e11c9fc8484",
+      "size": 739
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "2c4d4ef17c5a0df138a3c8fbba3ada1a04d5a8cd0f3bf05155807a4ddd0a3d41",
+      "size": 4222
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6884f0c81ec6c6e7cb83543cef95eccd8d4d663d746d63d6f19c2e413880b3c3",
+      "size": 227
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "dd228fc78e4751f1bb9fc93f0e8ffd7c77d25bf8d944a8380adf788a53c7b636",
+      "size": 40803
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "4eacb682521fcbb5fd1bfe91f51bff3555da26440a5ce1fa4a25f763382795f1",
+      "size": 202
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_zuk_msm8996-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2024-12-26T22:00:18Z",
+  "vendor": "zuk"
+}

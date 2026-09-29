@@ -1,0 +1,32 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_mainline_common.git",
+  "codename": "common",
+  "commit": "fd76010a3b5c93051678bfe8bc043b5a0c4ec7b1",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "BoardConfigMainlineCommon.mk",
+      "sha256": "bbd33df2bc5e84ab1110d7fbfbbedb7d23780535593b5bb8ccafa4caa2e91310",
+      "size": 1950
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "4bbe9fb2e16d76c69c3ca2fcc315f3c917c440619a9112b20d7ecb1dda538205",
+      "size": 310
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_mainline_common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-26T22:46:32Z",
+  "vendor": "mainline"
+}

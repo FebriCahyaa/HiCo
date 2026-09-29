@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_sm8650-common.git",
+  "codename": "sm8650-common",
+  "commit": "27d83a37298bc0a9e472dec027267c34b2675346",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "f0bd0b3da0e85b37ad53e046b466623e04121e7f5cb77d306284a2170c9b2b52",
+      "size": 753
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "fb9c6ccb6e05eb811fd48bbd0b48b41cc749fa517521d3c284f0e0077e82d81e",
+      "size": 10951
+    },
+    {
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "627e6deb6ef0735ca7a17d70a80c500dc77625e23b6403b8cf23b08e1ff91f38",
+      "size": 63374
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2bb146a83215ac36269d61d5e9a4bcad4e7e4f876482afef17384b49cbaf1841",
+      "size": 6014
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b26af9fe6e7ff02b82d7df1329c4dd97450714f05895565d60fd2c929c18d5fa",
+      "size": 421
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "f03e2d7fe8dc1552fd8ec5914d6533b0a4ce87a312cb0ce00a1dd6ebfc3adeb8",
+      "size": 70872
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "718efd04b4acd1c9d0595921d6c3ce1c212a9fc38a459dc5e99dcedf972cc1ed",
+      "size": 10208
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_sm8650-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-16T20:51:04Z",
+  "vendor": "sony"
+}

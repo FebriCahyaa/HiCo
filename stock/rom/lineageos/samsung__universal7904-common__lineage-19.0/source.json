@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-19.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_universal7904-common.git",
+  "codename": "universal7904-common",
+  "commit": "24c6842d087a0107235fd8b5ac9a875c57de525f",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6f74fd53b2f748c4d8695d8731c51583f6e0f401ada2694940a2e652dd50c56d",
+      "size": 2530
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2b4dbdbf956a21d2e22a8fa92f163c0ee14b7953a4ee165bd94d527540f212fd",
+      "size": 2964
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "beb549332680061b219ff8da39fac99b64e20c034c3c0733c586fccbaaf0740b",
+      "size": 2283
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "e182c78e7d7a5ccbb01ef6be49eb9611bc3badb43fa60c61668cf1848afc7a30",
+      "size": 2297
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6d259169f3de6beca73701a946a8d9a18662e6d7e5734935123598a48d4bd327",
+      "size": 940
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "fc59e05a73045298b3e4255db67d53ea770ceb279e711a524bbf0985a182ad04",
+      "size": 8843
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "ad52a6352f57843624061f9079d847e2bcbadb466da1fc79a8227f56e1d123ac",
+      "size": 47
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ba3fd11ba3752761222c087dc66bd7c949039c5c20636e55b3ced0ff25fcb550",
+      "size": 676
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal7904-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-12-31T21:00:19Z",
+  "vendor": "samsung"
+}

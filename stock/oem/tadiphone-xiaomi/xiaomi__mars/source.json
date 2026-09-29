@@ -1,0 +1,27 @@
+{
+  "branch": "missi-user-11-RKQ1.201112.002-21.4.13-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/mars.git",
+  "codename": "mars",
+  "commit": "23dc2ba4d06ba9e63ff70b0bf677a88767f82d1f",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "vendor/etc/init/hw/init.mi_thermald.rc",
+      "sha256": "40904c6fb3d4321504d835b2068d77a5bc2cc3ad5d23efc605244c7442fa82ac",
+      "size": 285
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/mars",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-07T21:58:22.788Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,62 @@
+{
+  "branch": "11.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_motorola_msm8953-common.git",
+  "codename": "msm8953-common",
+  "commit": "ab5e7240bbb10e585526385152dbc720665f7aba",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "0a880ee037dbb366667e50891c5585bf0def8fdae81fd881dd63fb95f82e9d59",
+      "size": 27
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a6220020b5e526a1902bfb5d45e6936ca5e69713aae3f11de8c52be05089fe3c",
+      "size": 4793
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "c385dbdac9f3412b8c2b051d3e2e30a4f184c0a368ec05facb45c5188b7197bc",
+      "size": 7016
+    },
+    {
+      "path": "configs/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "59ad5970167db10843a6fc7471ec7ac07ce9b17572c273f777110ffadd67ea48",
+      "size": 3123
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "34e56dc2e1465961a5e114d438a19f87e5c9685d002c5f24cbb99b790945c73a",
+      "size": 264
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aed2f422502052b918d80d34cc82c4d32d6d43efa87fc19638bf9f54e413d78f",
+      "size": 32556
+    },
+    {
+      "path": "sepolicy/vendor/thermal-engine.te",
+      "sha256": "63e8a3c68b89d4401e09b959e53859b4452afb7626abb0d23ac010f0a9c4f5f9",
+      "size": 826
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "26de90065bd693525f27d2f89d0ab862f6ac5e27f69e0ba52f6581335eadf9e6",
+      "size": 4453
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_msm8953-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2023-02-04T20:53:10Z",
+  "vendor": "motorola"
+}

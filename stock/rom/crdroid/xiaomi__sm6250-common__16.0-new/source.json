@@ -1,0 +1,67 @@
+{
+  "branch": "16.0-new",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_sm6250-common.git",
+  "codename": "sm6250-common",
+  "commit": "057db23a610cc2a582c7ed50eb43c870cd29c053",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bef765279caf3d52582907a6849f859cb725cde13e1a3406f717fdef8a19a082",
+      "size": 379
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "bca250a9456bcfd4b93557ccba46a4d09b7a88be35eb39e8d5597e3896539e48",
+      "size": 6756
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "0adcba09905542ee9336591174286d413efbb915f4180058b969766119761904",
+      "size": 5482
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f87fb16f4c242e34ad7ef5f59dd3317d13cec67a1b8885e8de6c9efdd1ae6ac6",
+      "size": 4615
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "822578af460776acad8decc3abffce9c30b6c320eed2a2708cabdc741ef36172",
+      "size": 300
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4490972c5d535e3a4ef9709af3f348e33ad8c88b99494918058b3663cb0fca7e",
+      "size": 49381
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "25adb54e8afb3afcd21bccd18eecc40e15fb299f6f2c35487a4e44160a1de9ac",
+      "size": 493
+    },
+    {
+      "path": "sepolicy/vendor/init-thermal-symlinks.sh.te",
+      "sha256": "8db774fbdcfd7e8ba2d0b09ffca2f2f9378576360f75c6dca1651bdcdccb6c4e",
+      "size": 631
+    },
+    {
+      "path": "system.prop",
+      "sha256": "cb320efb837ed96380a609aa0aa3172b70a7734ee19d73db5abf6c4cf961e092",
+      "size": 626
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e6c07eb776a1a1fc2d1626360c029a354e47f75d37acbbd5d1778096abdbbf46",
+      "size": 8005
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_sm6250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-08-07T06:13:39Z",
+  "vendor": "xiaomi"
+}

@@ -1,42 +1,47 @@
 {
   "branch": "cm-14.1",
-  "clone_url": "https://github.com/LineageOS/android_device_htc_m7.git",
+  "clone_url": "https://github.com/LineageOS/android_device_htc_m7-common.git",
   "codename": "m7",
-  "commit": "aefb4b89ea3dd3d7fdb7c9fe24bac52a1d63e6c0",
-  "file_count": 5,
+  "commit": "530db5dc4e33a888cf07c9fddbc014462938b77c",
+  "file_count": 6,
   "files": [
     {
-      "path": "BoardConfig.mk",
-      "sha256": "efee6fbb9d5b90b3654a5b9e601000d9211e68ab6867c2cb9ab16d658991dfef",
-      "size": 2582
+      "path": "Android.mk",
+      "sha256": "6cbaf99f011952aa5d172822cfb49984167af77a309a526936e96d8bddbf140f",
+      "size": 2097
     },
     {
-      "path": "device.mk",
-      "sha256": "709b697de25d54006cfe7f2924843ad435f4a9f648ffa7b15884171e02b762be",
-      "size": 921
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4a9603c9856ac2004c2c98e595562036436e50b1444f618369419258f897b7d8",
+      "size": 3619
     },
     {
       "path": "extract-files.sh",
-      "sha256": "3852d930a05c03697ef4ffecaf371598b7d66c3664faeafc4e30b667b94e39ef",
-      "size": 716
+      "sha256": "057c0fb4ad6e50dd9948b57743a3bc24c8a56dc9374467bef946ea921bee4875",
+      "size": 1667
     },
     {
       "path": "lineage.dependencies",
-      "sha256": "32d4658144abe1924bdeb40176d8bbafd6e680b99f5d7a3ad168ec364ce7dee5",
-      "size": 104
+      "sha256": "c43e4efd009c7f83938c61dd1273e1a598642c7cdae67d063601289f965c00d6",
+      "size": 211
     },
     {
-      "path": "system.prop",
-      "sha256": "74d0aa6832433e1a4da0a31d04ac52cb0bab5300eed45d33d6f008263e3b97fa",
-      "size": 152
+      "path": "proprietary-files.txt",
+      "sha256": "d5e0a187c84d5631676c51e3c1be8ef15dfbd6e7dad95ce850c4f9c914606b4a",
+      "size": 482
+    },
+    {
+      "path": "sepolicy/thermal-engine.te",
+      "sha256": "270c1acb90e4c3fef6a7042ad6a0cdc20514822829a22f3191289d5b9b3d9c47",
+      "size": 58
     }
   ],
   "kind": "device",
-  "repo": "android_device_htc_m7",
+  "repo": "android_device_htc_m7-common",
   "schema": "hico.stock-device-source.v2",
   "serves": [],
   "skipped_large": [],
   "source_id": "lineageos",
-  "upstream_pushed_at": "2018-04-07T20:54:42Z",
+  "upstream_pushed_at": "2018-04-07T20:54:50Z",
   "vendor": "htc"
 }

@@ -77,6 +77,7 @@ vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
+vendor/lib/libhwdaphal.so
 vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
@@ -85,6 +86,7 @@ vendor/lib/soundfx/libswdap.so
 
 # Bluetooth
 etc/firmware/BCM4356A2_001.003.015.0100.0102.hcd:etc/firmware/BCM4354A2_001.003.015.0100.0102.hcd
+vendor/lib/libaptX_encoder.so
 
 # Camera
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
@@ -93,9 +95,8 @@ lib/libawb_calibration.so:vendor/lib/libawb_calibration.so
 lib/libBeautyChat.so:vendor/lib/libBeautyChat.so
 lib/libc2dcolorconvertgpu.so:vendor/lib/libc2dcolorconvertgpu.so
 lib/libcameraface.so:vendor/lib/libcameraface.so
-lib/libcamerapp.so:vendor/lib/libcamerapp.so|c7a577c6479af68e490c984a88fb00fa396d5c7e
+lib/libcamerapp.so:vendor/lib/libcamerapp.so
 lib/libFaceRetrieve.so:vendor/lib/libFaceRetrieve.so
-lib/libhtc_facebeauty.so
 lib/libHtcVteEngine.so:vendor/lib/libHtcVteEngine.so
 lib/libhtcsecure.so:vendor/lib/libhtcsecure.so
 lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
@@ -587,7 +588,6 @@ vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_t4ka7.so
 vendor/lib/libmmcamera_vd6869.so
-vendor/lib/libSonyIMX230PdafLibrary.so
 
 # DRM
 bin/qseecomd:vendor/bin/qseecomd
@@ -650,56 +650,58 @@ vendor/lib/libizat_core.so:vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so:vendor/lib/liblbs_core.so
 
 # Graphics
-vendor/lib/egl/eglSubDriverAndroid.so|b88e4972d259e1e518793aa8fb9ab9ce7b574137
-vendor/lib/egl/libEGL_adreno.so|c34a55560cbe0dec10736ee48f1d3531b7eb30da
-vendor/lib/egl/libGLESv1_CM_adreno.so|12559bdb260be99259c5114eb18141a6f55ec5c6
-vendor/lib/egl/libGLESv2_adreno.so|99b5d3351ff74dd80ce8788d8cf813f795c004d3
-vendor/lib/egl/libq3dtools_adreno.so|32f28df5844ed9826af5a77d7519db6b5db93ceb
-vendor/lib/hw/vulkan.msm8994.so|8bd98116b5a586839aad4c93468fc04f044d4ef4
-vendor/lib/libC2D2.so|668aaec9820480a9f1b04a6994be28bc4fef5677
-vendor/lib/libCB.so|ced7d5bfdbb5b5c0cb2b69e67942d568bedff4d5
-vendor/lib/libRSDriver_adreno.so|ee3386248adfa7d1a8c1107e051bcbbd3e8df0c1
-vendor/lib/libadreno_utils.so|4fd27f46943412ddbb69c4e32059a3a765db8b9a
-vendor/lib/libbccQTI.so|7cd380e1ce6c80fa57bec7d9f81f7826382ccea7
-vendor/lib/libc2d30-a4xx.so|e9e4975a5e16e1799cd1883bbb8905ce4b51aa7c
-vendor/lib/libgsl.so|b90e66e879dfee14997282358ca4cf9cd3cbee83
-vendor/lib/libllvm-glnext.so|18ecddeb137e38ca12563a2b3a39dd2f6df1f68b
-vendor/lib/libllvm-qcom.so|ab8604edbedb9db19ac9f0cfbeb4473adf20b2c5
-vendor/lib/libllvm-qgl.so|ffd2e9c41d8976bf259b6463a1690a516daa458f
-vendor/lib/librs_adreno.so|bb1d5cb84f14ed18fcbfb4815692cb196e44f180
-vendor/lib/librs_adreno_sha1.so|be8a817743950dac6e22b50cbd9657c2d35c35f2
-vendor/lib/libscale.so|9c1044395f1a93b10d3f85ce3123a73676b1bac5
-vendor/lib64/egl/eglSubDriverAndroid.so|03e2c66eebed80a91b08e2c18d011844682bdd7b
-vendor/lib64/egl/libEGL_adreno.so|3193346e9938e05ce611db0d0f9e456009289ebd
-vendor/lib64/egl/libGLESv1_CM_adreno.so|e429adb54d16ea1e359bc0a56b0a3a7336989a77
-vendor/lib64/egl/libGLESv2_adreno.so|f072b33a708cc81de6e6a2d09741696f8c9ce034
-vendor/lib64/egl/libq3dtools_adreno.so|c5fcb698418bf5aedb15e6cf87a6d649b7f09aba
-vendor/lib64/hw/vulkan.msm8994.so|123f72ad06ab296028dc5d14884453630676027f
-vendor/lib64/libC2D2.so|da5c955221f736361a3646870600744756a6bd87
-vendor/lib64/libCB.so|7bd8ce62b1f4e52b162481d89b9f4af5e94d588f
-vendor/lib64/libRSDriver_adreno.so|05d94ad793ba74c1f6635762eb7871a611001c9c
-vendor/lib64/libadreno_utils.so|6e6252196f0b510989a6f4f54a4bb3492f56e695
-vendor/lib64/libbccQTI.so|e39a9a997196757a9830dd217dba086581b35a4d
-vendor/lib64/libc2d30-a4xx.so|e40a2efbecaccd34970b981bb8d83f3fa58f3cec
-vendor/lib64/libgsl.so|e6435ecf1baae08408a0cc43e1568ce42f1ddb56
-vendor/lib64/libllvm-glnext.so|abbf71eceb4048c63741cc43f2c15d4f8034bffa
-vendor/lib64/libllvm-qcom.so|10fe39e71615629bb5af03794fd0a970f4b700fc
-vendor/lib64/libllvm-qgl.so|192a30d29c1f0c5e2a6f38ca3df58118be85f346
+etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/hw/vulkan.msm8994.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libbccQTI.so
+vendor/lib/libc2d30-a4xx.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libllvm-qgl.so
+vendor/lib/librs_adreno.so
+vendor/lib/librs_adreno_sha1.so
+vendor/lib/libscale.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/hw/vulkan.msm8994.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libbccQTI.so
+vendor/lib64/libc2d30-a4xx.so
+vendor/lib64/libgsl.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libllvm-qgl.so
 vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libmm-qdcm.so
-vendor/lib64/librs_adreno.so|18e913b6d8f79e4b8563a8c8a0b2475e609d4813
-vendor/lib64/librs_adreno_sha1.so|ef430803f5b7623d774166d7c6130012f5f24845
-vendor/lib64/libscale.so|248355dab3b68ad2fa320b173580cdf9410bdc66
+vendor/lib64/librs_adreno.so
+vendor/lib64/librs_adreno_sha1.so
+vendor/lib64/libscale.so
+vendor/lib64/libuiblur.so
 
-# Graphics firmware
-etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw|ceb61d9f1385b3f2956d72f33e0bd43cb12f72f0
-etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw|96addc1f5cb6dd3a57fc40ef0a6ba8721d5b601f
+# IPA
+bin/ipacm-diag:vendor/bin/ipacm-diag
 
 # IR
 bin/cir_fw_update:vendor/bin/cir_fw_update
-etc/cir.img
-lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.msm8994.so
-lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8994.so
+etc/cir.img:vendor/etc/cir.img
+lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so
+lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.default.so
 
 # Keymaster
 vendor/firmware/keymaster.b00:vendor/firmware/keymaster/keymaster.b00
@@ -707,6 +709,9 @@ vendor/firmware/keymaster.b01:vendor/firmware/keymaster/keymaster.b01
 vendor/firmware/keymaster.b02:vendor/firmware/keymaster/keymaster.b02
 vendor/firmware/keymaster.b03:vendor/firmware/keymaster/keymaster.b03
 vendor/firmware/keymaster.mdt:vendor/firmware/keymaster/keymaster.mdt
+
+# Listen
+vendor/lib/hw/sound_trigger.primary.msm8994.so
 
 # Media
 vendor/lib/libI420colorconvert.so
@@ -728,15 +733,14 @@ etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # NFC
-lib64/hw/nfc_nci_pn547.default.so:vendor/lib64/hw/nfc_nci.msm8994.so|5f0a93a9deb5225d0b0de454a5e8bf871eb67265
 vendor/firmware/libpn547_fw.so
 
 # Perf
 bin/energy-awareness:vendor/bin/energy-awareness
 bin/msm_irqbalance:vendor/bin/msm_irqbalance
-vendor/bin/perfd|3abbda7d519d567429cfab3294ae5e62d8e8d5eb
-vendor/lib64/libqti-perfd-client.so|eb3bb8c51fd022efe89341ffb91d238e388256e9
-vendor/lib/libqti-perfd-client.so|a52d27399fd4ca2522a4ca3a97697346ed9cb7d1
+vendor/bin/perfd
+vendor/lib64/libqti-perfd-client.so
+vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
 bin/pm-proxy:vendor/bin/pm-proxy
@@ -749,6 +753,10 @@ vendor/lib64/libmm-als.so
 vendor/lib64/libmm-qdcm.so
 vendor/lib/libmm-als.so
 vendor/lib/libmm-qdcm.so
+
+# Protobuf
+vendor/lib64/libprotobuf-cpp-fulm.so
+vendor/lib64/libprotobuf-cpp-litm.so
 
 # QMI
 bin/irsc_util:vendor/bin/irsc_util
@@ -790,10 +798,8 @@ bin/netmgrd:vendor/bin/netmgrd
 bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
 bin/rmt_storage:vendor/bin/rmt_storage
-lib64/libhtc_rilhook.so:vendor/lib64/libhtc_rilhook.so
-vendor/lib64/com.quicinc.cne.api@1.0.so|503825cc8a3c0d422e16e04b398d2c1924e518ca
-vendor/lib64/com.quicinc.cne.constants@1.0.so|a60fde6f9328635bf43bb7008dd9517e4e749e8b
-vendor/lib64/libcneapiclient.so|33e7465996749a8823ac03e34a94e3112c88dda4
+lib64/libhtc_rilhook.so:lib64/libhtc_rilhook.so
+vendor/lib64/libcneapiclient.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
@@ -802,8 +808,8 @@ vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
-lib64/librilqmiservices.so:vendor/lib64/librilqmiservices.so
-vendor/lib64/libsettings.so|3e459839d90a27d2eb23a3c9d030f46a5c4bfaf1
+vendor/lib64/librilqmiservices.so
+vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libxml.so
 
@@ -811,10 +817,10 @@ vendor/lib64/libxml.so
 lib64/hw/sensors.msm8994.so:vendor/lib64/hw/sensors.msm8994.so
 
 # Thermal
-vendor/bin/thermal-engine|d501a7b6261f606cd79c188548d747f4c3ec1b03
-vendor/lib64/libthermalclient.so|b8b3af940651f0e06a6c769051eed76a208ffbd6
-vendor/lib64/libthermalioctl.so|6165b829945d8133f02e3f2d368399a06ede9f5a
-vendor/lib/libthermalclient.so|6b84a374b99baef6218886c8a8b87081c054de84
+vendor/bin/thermal-engine
+vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
+vendor/lib/libthermalclient.so
 
 # Time services
 -app/TimeService/TimeService.apk
@@ -830,6 +836,6 @@ etc/firmware/fw_bcm4356_apsta.bin
 etc/firmware/fw_bcm4356.bin
 
 # Widevine
-vendor/lib/libdrmdecrypt.so|045f69fc0af0979e1a59628cd1d39ef4ce183a38
-vendor/lib64/mediadrm/libwvdrmengine.so|4278a71cfc06525187e571561e9e53fdf15e13b8
-vendor/lib/mediadrm/libwvdrmengine.so|a66b5270bfb797ce5c821f97d30d2c8d8dcb3d1evendor/lib/libdrmdecrypt.so
+vendor/lib/libdrmdecrypt.so
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib/mediadrm/libwvdrmengine.so

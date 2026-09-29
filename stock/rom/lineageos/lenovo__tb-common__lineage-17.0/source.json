@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-17.0",
+  "clone_url": "https://github.com/LineageOS/android_device_lenovo_tb-common.git",
+  "codename": "tb-common",
+  "commit": "2d1f7e75952f33cb4582dd33f17aca1839239571",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "1f3d539dccb200552f3f86f20bccfddf9763f539acbb80a8c5ced1eca3a8b151",
+      "size": 5767
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "4855cffc2f5d34b699b19cd052cdb1fd053500cc906c70255d72eabbf17418bd",
+      "size": 6513
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "113e9d6f3bf2dcb4d2fba01472dfaa715520e03f0bda88b76f308862a4f91685",
+      "size": 2154
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0f487772b7e4870b897e8ec5337e9bda61753a0077c58aa6c85bb560d9341f96",
+      "size": 106
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "77c05e06aceb7687a995801c34b48f0d865ef656c2f5aa89affd9bbf78d236a4",
+      "size": 30305
+    },
+    {
+      "path": "system.prop",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_lenovo_tb-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2022-11-20T08:02:28Z",
+  "vendor": "lenovo"
+}

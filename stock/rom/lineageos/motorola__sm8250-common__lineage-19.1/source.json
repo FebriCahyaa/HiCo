@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-19.1",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "68de974898322a51d8c3f4febe1778a8067c05b2",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "caee012d98e6e131e38ff055a94381895eb38b965923eecc1457fa38baa56f30",
+      "size": 7590
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1e5b94e5944a7a1bbdd4a24c7396788b00774827aeeaf033823d4ffff4ee7316",
+      "size": 7975
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "1e5fc82e6bd0fefdf08a900178e449df456ef59813354793c54d6ca539d3a727",
+      "size": 3365
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "9878c773bf3db17666448155ca09324c82b11c050bb76c796b82d0f255d2c1a5",
+      "size": 286
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "0fb15e743a95fbc93d889a3a872cf1d2038ce820678bbf6732d8c522d38ea90d",
+      "size": 39744
+    },
+    {
+      "path": "sepolicy/vendor/vendor_thermal-engine.te",
+      "sha256": "2b53c3a406264ba02f85fcf70909884d575800d0b99df570af6b8f9daa018d42",
+      "size": 148
+    },
+    {
+      "path": "system.prop",
+      "sha256": "efedfc46f0b673e37ff17059f0463f4bf194b5b8a85356f0337c2a82188315f6",
+      "size": 4208
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-06T05:25:00Z",
+  "vendor": "motorola"
+}

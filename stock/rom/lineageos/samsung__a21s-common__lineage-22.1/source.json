@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-22.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_a21s-common.git",
+  "codename": "a21s-common",
+  "commit": "f490c642d89596690b803508b76718617f5fe58a",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "1cb5337fc2efdccd98ccf3c9f267767c8d4c0660cced8df7228a084f742ece92",
+      "size": 6638
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "9bf36ba83eb9312613a51f0f58b89bbfab8ed160e6e50573e4ef9448a002ae12",
+      "size": 3323
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "48a43152c76b610936639fbd376ec3e98f60eeea0c85b08ffe461719ffeef469",
+      "size": 819
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "a71a54657e20e3c203326aa796e6f2fe1f592664c3d880bf3ae7103fdee7efe9",
+      "size": 14211
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "55e14638a77017affe2a1d3fdac708aab40b827d78adda1b38651e88bf3b9d76",
+      "size": 898
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "ce68d3c4c1eab0ebbd65327dc1ae5364d21e810dc6bc1cf58c2edb69ba4e22cf",
+      "size": 1686
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_a21s-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-25T18:05:40Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,77 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_exynos9610-common.git",
+  "codename": "exynos9610-common",
+  "commit": "76fc75b4dacd4a7c823f4e7400020989e6a296cd",
+  "file_count": 12,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9b3b283b09ba7abb1ee07bad1ee9835ec4e1e2ba28b39077f3279c9479a1b056",
+      "size": 380
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "a4c23e1a5e0685ac557f4e9a3e62129630ef2357802c86d4c6ddb5891c91f4e1",
+      "size": 5523
+    },
+    {
+      "path": "configs/thermal/exynos-thermal-kane-retin.conf",
+      "sha256": "217e49af6d8e5427266bbfca7d604e567ecfcd7f068f741ce8b723d736bfca7f",
+      "size": 2840
+    },
+    {
+      "path": "configs/thermal/exynos-thermal-kane.conf",
+      "sha256": "25bbdd202dc7a2b5321c2cdfc20fa8341838cffdc664af3a9c0f64dd4378e576",
+      "size": 2840
+    },
+    {
+      "path": "configs/thermal/exynos-thermal-troika.conf",
+      "sha256": "8f4da4bec1fdb60632b490c1329ff8b8e76de80ed414da8f0c14dc6c1478be55",
+      "size": 2796
+    },
+    {
+      "path": "configs/thermal/exynos-thermal.conf",
+      "sha256": "25bbdd202dc7a2b5321c2cdfc20fa8341838cffdc664af3a9c0f64dd4378e576",
+      "size": 2840
+    },
+    {
+      "path": "configs/thermal/exynos-thermal.env",
+      "sha256": "75941cfe0b341031e808de4812a967fb4deac4bf553ed4f953389ee8c9f4cc67",
+      "size": 2462
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "868595e5d98e28e5eca7a2822cf2307d91c64f2436149ed7c9b4245070ca3492",
+      "size": 2930
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "e6529c76df9180af36c3171ae0daeda2ba0cce0b940fe4daaaf83028f47d731a",
+      "size": 2191
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "93835b1782d88c0235ea95c2a6d3ae2d3e9de9e188c8573fb4fff7d89555cf5d",
+      "size": 7327
+    },
+    {
+      "path": "sepolicy/vendor/exynos-thermald.te",
+      "sha256": "f836d8192e043c3329096de7cb0299b853e9eb05c22ec854612fba13b0ded678",
+      "size": 832
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d482eb9a209501d1ad691f81bd20835731c348a36a3043e74e10403af3fe814b",
+      "size": 2714
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_exynos9610-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T19:29:20Z",
+  "vendor": "motorola"
+}

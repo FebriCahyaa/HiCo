@@ -1,0 +1,27 @@
+{
+  "branch": "missi_phoneext4_cn-user-13-TKQ1.220829.002-V14.0.6.0.TGACNXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/thyme.git",
+  "codename": "thyme",
+  "commit": "ed99c13f965a863e04783032961975906efcd4b9",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/thyme",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2024-03-08T00:06:12.266Z",
+  "vendor": "xiaomi"
+}

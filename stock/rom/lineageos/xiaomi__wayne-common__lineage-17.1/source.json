@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-17.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_wayne-common.git",
+  "codename": "wayne-common",
+  "commit": "cc45c4986a55cafe441f7959803b7828e5ed712a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "f13b9a53ceaf62f0bd50ff7a958214c4c26ad87f29f61e582a11836186971af9",
+      "size": 740
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "e34e05d1bce34b8403af7d2059b4b60380186a7aaa87b5de48d7d9c9701a476c",
+      "size": 1349
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "affbea7bb37e13001bc2e4ea61a1fab31bf274e65337b6480d500991d4ed5650",
+      "size": 1072
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2d8b79ccadf0a40344dd9f6a5153c80c467d9dea0fcd3c3280f55faa40f18e3c",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "1fd8f099768738abeeda8c929fa9da624d731cbd2a999ae7de4afcb554f87fcf",
+      "size": 49965
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_wayne-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-06-12T12:00:32Z",
+  "vendor": "xiaomi"
+}

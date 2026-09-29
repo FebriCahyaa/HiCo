@@ -1,0 +1,27 @@
+{
+  "branch": "missi_padext4_global-user-13-TKQ1.221114.001-V816.0.16.0.TKXINXM-release-keys",
+  "clone_url": "https://dumps.tadiphone.dev/dumps/xiaomi/nabu.git",
+  "codename": "nabu",
+  "commit": "959aebbff2ff40d8c1325239d42dd4b46243adab",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "vendor/etc/init/init.mi_thermald.rc",
+      "sha256": "68c94bfebde4a1ab4d7bc14353a7211e0702fd3caba68922d39d7157bdb8950c",
+      "size": 277
+    },
+    {
+      "path": "vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "dumps/xiaomi/nabu",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "tadiphone-xiaomi",
+  "upstream_pushed_at": "2025-03-17T14:16:30.024Z",
+  "vendor": "xiaomi"
+}

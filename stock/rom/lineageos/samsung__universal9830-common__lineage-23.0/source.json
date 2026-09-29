@@ -1,0 +1,72 @@
+{
+  "branch": "lineage-23.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_universal9830-common.git",
+  "codename": "universal9830-common",
+  "commit": "02674b0d38608ac70c4418c50efb143362fde6ab",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "c7f8e2269152b10bb640e90ab751b2f79b269796d2ab5a596249fb3bf6b80ccb",
+      "size": 229
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "28b40feebff75fc405d551487c31e1c8e62e4b8ceaf842b5c0ed22ffb127d5a6",
+      "size": 5323
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "3927ae8074823e9a5881665c5b619228906b82de039f2f8f35d254b58959378f",
+      "size": 3496
+    },
+    {
+      "path": "device-common.mk",
+      "sha256": "5e76548e0a8023a77a29a85a3092ee73257cfa35cffcfe363933fbaa08c3bdcc",
+      "size": 20368
+    },
+    {
+      "path": "device-hubble.mk",
+      "sha256": "6bdfd1578c5680f0e3084d00a4698f8dbc27fc1d38d0179d9608b4731e5e2272",
+      "size": 907
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "8f0881ebd4a4d77e198d4a8d21da71a11667cfe5efa3782365e8a464567cf669",
+      "size": 2822
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "860f4da5ad7b0b994cd8feafc9aec8e84a10c5e05cfae96cea4c0a7577df88d5",
+      "size": 1362
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3ee00673d8fc3bb03de6765259bfe9a0685bf0f88ed5cd98ed1a1f2e48c1bcbb",
+      "size": 9380
+    },
+    {
+      "path": "sepolicy/vendor/hal_thermal_default.te",
+      "sha256": "94e4b3983feea684ef88b9175213cb96c427a991835f0c59458000e101786cbf",
+      "size": 95
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d9b5164da939b7d16785c1bedb6553a2a004f9b4dcac1678e783875dd58ecb35",
+      "size": 469
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "7a9c102e95e55d8e7ced551c2d8c8d4a37ac77d4874fec86aba59d65da1f7f78",
+      "size": 3103
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_universal9830-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T18:06:23Z",
+  "vendor": "samsung"
+}

@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_exynos9820-common.git",
+  "codename": "exynos9820-common",
+  "commit": "8fec7c38ed6927cfeaf548be0c45c30eeeea759c",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d70a7bc75a56371d30e9906b974be0ef72190e219dcf3775e49e5f79622d1e1a",
+      "size": 86
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "6e8e5ef028c1a84cd899a259a89bbea10a71a3907789e475fb657f96c33a90e3",
+      "size": 1483
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "cb1398814e205b6d61ba5b5361e38a6328311cf9d932060ecc530beefcb7ccf0",
+      "size": 5111
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "5b0a68356a09e40a103cca1c2b9dde14f8df4be2863b230c1f366938e7e6d0bf",
+      "size": 3151
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "46335b1f650feee84f15002e5b024a272323a249843bbebf451c37af68d53c7a",
+      "size": 2300
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "c811d281f5dc697f4bc47f675f4cfd9681240f88c1332fd390a92c53a00a5ea5",
+      "size": 473
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "d5662e1af4104a21f4afc8efd27cbb5baefa973c8530f330e6418174c5b0f255",
+      "size": 8021
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "a3947a642a7007c86b7a21547960eb0b03160ce8e858b141e6b55688611f6421",
+      "size": 1189
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_exynos9820-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-02-08T05:08:54Z",
+  "vendor": "samsung"
+}

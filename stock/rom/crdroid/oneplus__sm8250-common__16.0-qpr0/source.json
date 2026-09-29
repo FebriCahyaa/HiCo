@@ -1,0 +1,42 @@
+{
+  "branch": "16.0-qpr0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_oneplus_sm8250-common.git",
+  "codename": "sm8250-common",
+  "commit": "3adc1f2976dee25f6e5ea4606457f62cbbbf08a2",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "811164a8e8987602db05f0c016338db6e9da7e4704195936948d62fa77cd67c5",
+      "size": 542
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "3afdaf23862e51a1c989ccd106308a8d82316f3f85ccddad42f7f98a9c1bc266",
+      "size": 5373
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "2544d10db0e3f36ec93ac55a2c3fccbeb8af29491b0a3737f768bfab4c75ed6e",
+      "size": 5235
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "38c9f2f79819be2fe92a265531fb7bb845c78a2e9c25676604670392bb70fb99",
+      "size": 118364
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "0a229142920e807ec36b647f8d1f2e17d1a35c88649ac3ffcb6023ac0feb7523",
+      "size": 8500
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_oneplus_sm8250-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-06T19:39:00Z",
+  "vendor": "oneplus"
+}

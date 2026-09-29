@@ -1,0 +1,62 @@
+{
+  "branch": "12.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_dipper.git",
+  "codename": "dipper",
+  "commit": "1420743ca6aee4900314d557211e88233939b853",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.mk",
+      "sha256": "e513920c79120cb74d0a465b8d78ea99a03cffa43b2aca428006723e0fdf4370",
+      "size": 871
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c9b2875cdc6a2adc8640e6eb5432565821f99ad191314d35b74cf0d5b534c611",
+      "size": 763
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "32e2f4833a471b08b83a1bab48a270905d1f190a046cd640dd2587a49cf95a9a",
+      "size": 864
+    },
+    {
+      "path": "device.mk",
+      "sha256": "0fa3be3a3f1da6591ae859810a8dd9ac172b4ebf028b0367f7f055a555bae752",
+      "size": 4223
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "d343342b799cb8a6d7fab22773965161d7dcccab4529d789f714dc222e1b68c3",
+      "size": 470
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "ae87dd474cdb6e917d8c77a16cfb905de1d305c7f32fdb7c85981ef0e5d9c171",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e82ce4914af7bcfb804eeef4543a8c71a93c01643fd144854a9b7ff40ed42164",
+      "size": 11678
+    },
+    {
+      "path": "system.prop",
+      "sha256": "aa1b9667650857afa78808e17c45c0aa8a43ad35421061611b71a0c388f6fb7a",
+      "size": 218
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "2f50e48cd0b59dae10219d9cca44fecc88d97c65959c7b4d7721c8cc45713a03",
+      "size": 280
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_dipper",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2025-12-14T16:15:21Z",
+  "vendor": "xiaomi"
+}

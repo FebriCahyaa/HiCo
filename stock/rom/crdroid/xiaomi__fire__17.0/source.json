@@ -1,0 +1,67 @@
+{
+  "branch": "17.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_fire.git",
+  "codename": "fire",
+  "commit": "2e9408155ba2cbc3803201747a036e0633b2a8a8",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "bc28f971e9b182b29a6d151f8fefc9eaff2d47e07415c357082c6cce841993d5",
+      "size": 162
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "359e373fae92dfda3cdb42a1419cb37e28be93fa96704979d90229c818a5f637",
+      "size": 3093
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3435c171a86b0b7f5a0e1433648951309a292e57477c11599936ed0c2dcfd39e",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "cda152b96ee4e5001186dbd470b8ad864cfb8e385c0ea859cda7c247be8baadd",
+      "size": 6267
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8bfc41e5f3669ef38af340411146ba1b5e8b2ee89a227a807e46d098a92ddc73",
+      "size": 14067
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "785ab0df18c78e01d5ecff7303e64724952f5b2e4e752cb0d0b66cd84fce6631",
+      "size": 7702
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "58ec1e90ec9a313f2f5005402eec40c1aeace3f6912184dbbc6fa9327fe7d127",
+      "size": 45879
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "90294ccaa03ea35165aca7a104b86f3487614bca57870b752ae11112436cd545",
+      "size": 1095
+    },
+    {
+      "path": "system.prop",
+      "sha256": "d71b9a5d02dc45009ade5b36fef76be4a65128bf349aaab908e66edc2742e453",
+      "size": 219
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "9a0311e0cb13cbbb692d26c5cb340a4c0f31c208d0ea7552e4ca1cbe7182465e",
+      "size": 8107
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_fire",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-09-28T17:04:01Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-18.1",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mt6768-common.git",
+  "codename": "mt6768-common",
+  "commit": "113912fa58e2668d6080551d73485f130bab595a",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "1ffda1e267d6f82843bfe42d6c6ec260e1a8278a64ab623f550eacff1f190889",
+      "size": 228
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "f3426b0bde6102f537a09066bcbd30be878262590095bb663c142d5b488afffc",
+      "size": 221
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "b28b325d2b9cc213b63e114cd429757381c17a6265ab5c679961dfeb909348da",
+      "size": 1879
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b3f46366f8801561fb9bd9ae1199663798b696e3f99388e1dda4f28cba080b1e",
+      "size": 104
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_mt6768-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-23T07:36:16Z",
+  "vendor": "xiaomi"
+}

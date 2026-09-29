@@ -1,0 +1,37 @@
+{
+  "branch": "lineage-22.2",
+  "clone_url": "https://github.com/LineageOS/android_device_mainline_qcom-common.git",
+  "codename": "qcom-common",
+  "commit": "d0e0408f317cce4228426dd5ba1a035c94e32f56",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "9bf6feef07d82d7ccb320fbf49bc971bf3f30ca97980eabeb517433f63aeb084",
+      "size": 1527
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "d4fa222ba5303fc1fb442ddb7fe350ec7057f100686a82ae8b70845d699b440a",
+      "size": 219
+    },
+    {
+      "path": "BoardConfigMainlineQcomCommon.mk",
+      "sha256": "300b23d5e85a8d82374f6443020062a8cb328702d700535dd44de1066b5a9c61",
+      "size": 1050
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b1516986ae9bc59601c2e4942c35bcdf877d3a5511fdb95263a48d4b1507ce85",
+      "size": 306
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_mainline_qcom-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-09-26T17:21:13Z",
+  "vendor": "mainline"
+}
