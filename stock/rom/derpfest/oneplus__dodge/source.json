@@ -1,9 +1,9 @@
 {
-  "branch": "16-qpr2",
+  "branch": "17",
   "clone_url": "https://github.com/DerpFest-Devices/device_oneplus_dodge.git",
   "codename": "dodge",
-  "commit": "49c80c077f4907f1d358995f716d42c5b204a3f8",
-  "file_count": 7,
+  "commit": "8976e533fd524de78ad08121bfead0c8b03c2a36",
+  "file_count": 6,
   "files": [
     {
       "path": "Android.bp",
@@ -12,33 +12,28 @@
     },
     {
       "path": "AndroidProducts.mk",
-      "sha256": "56b28e7ab8a45dd2b15ed9ab70b0db362d1510bcd8c385f811d44cdf55498de9",
-      "size": 145
+      "sha256": "9fd10d8dc2374e726b60859b2fddf13991203b7fc670c7a35130ec5383079b95",
+      "size": 148
     },
     {
       "path": "BoardConfig.mk",
-      "sha256": "97abddc02682ded04cf73db681cea566df5f416c656d754cd21c44ff54f909fd",
-      "size": 760
+      "sha256": "43e025acfc7e738f9096f3b3239fc954f5f4c612de2b72c507a90fa27354a837",
+      "size": 791
     },
     {
       "path": "device.mk",
-      "sha256": "73e1936dab437eca112077d57d4b96c4148dedb7142d2d2f1d7051ffe3acd327",
-      "size": 3599
+      "sha256": "c89e5b0914b8dd0db3bb2a37e72a56f22239414cbb9ee7f1fa4836b268e14e3b",
+      "size": 2968
     },
     {
       "path": "extract-files.py",
-      "sha256": "15ba178c2c7fa42bddbaaf79b14a540e7e107f920321bf89a448e57f9d8a194d",
-      "size": 3034
+      "sha256": "9837f66d0f704c9f901ddedf4087c557c4fd44556b465ae4be0e8b4aefcc24e9",
+      "size": 3029
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "9aca7637b702e9484170c7d01763e4b22a5d9cecc9ab30098a6b6ef1e5475a83",
-      "size": 72641
-    },
-    {
-      "path": "vendor.prop",
-      "sha256": "524f5eab3d0e4faa58686c67da256a79648b028e835a84726239a0defbbd1675",
-      "size": 528
+      "sha256": "7089d65f86e98fe0bd14114962625d0061f9407b451ea4ec32161506ec435018",
+      "size": 73256
     }
   ],
   "kind": "device",
@@ -47,6 +42,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "derpfest",
-  "upstream_pushed_at": "2026-07-12T12:57:37Z",
+  "upstream_pushed_at": "2026-10-03T10:22:51Z",
   "vendor": "oneplus"
 }

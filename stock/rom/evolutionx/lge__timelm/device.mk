@@ -19,17 +19,18 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlay \
+    CarrierConfigOverlay \
+    FrameworksResOverlay \
+    LineageSDKOverlay \
+    LineageSettingsOverlay \
+    LineageSettingsProviderOverlay \
     NcmTetheringOverlay \
-    TimelmApertureOverlay \
-    TimelmCarrierConfigOverlay \
-    TimelmFrameworksOverlay \
-    TimelmLineageSDKOverlay \
-    TimelmLineageSettingsOverlay \
-    TimelmLineageSettingsProviderOverlay \
-    TimelmSettingsOverlay \
-    TimelmSystemUIOverlay \
     TimelmTelephonyOverlay \
-    LGEAISound
+    LGEAISound \
+    SettingsOverlay \
+    SystemUIOverlay \
+    WifiResourcesOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -120,7 +121,7 @@ TARGET_SCREEN_HEIGHT := 2460
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.lineage
+    android.hardware.camera.provider-service.lge
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -394,7 +395,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    TimelmWifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 

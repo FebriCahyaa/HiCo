@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 15 (CPH2745_16.0.10.500(EX01)).
+## are from OnePlus 15 (CPH2745_16.0.10.601(EX01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -1718,6 +1718,21 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
+# Face unlock
+odm/lib64/libstfaceunlockocl_uff.so;FIX_SONAME
+
+# Face unlock firmware
+odm/firmware/uff_face.b00
+odm/firmware/uff_face.b01
+odm/firmware/uff_face.b02
+odm/firmware/uff_face.b03
+odm/firmware/uff_face.b04
+odm/firmware/uff_face.b05
+odm/firmware/uff_face.b06
+odm/firmware/uff_face.b07
+odm/firmware/uff_face.b08
+odm/firmware/uff_face.mdt
+
 # Fingerprint firmware
 odm/firmware/uff_gx.b00
 odm/firmware/uff_gx.b01
@@ -1808,6 +1823,8 @@ odm/etc/nfc/libnfc-nci.conf_24863:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # Sensors config
+my_product/etc/fusionlight_profile/fusionlight_Main_1_A.json:odm/etc/fusionlight_profile/fusionlight_Main_1_A.json
+my_product/etc/fusionlight_profile/fusionlight_Main_2_A.json:odm/etc/fusionlight_profile/fusionlight_Main_2_A.json
 odm/etc/sensor/config/infiniti_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/kaanapali_mtp_ak09919.json
