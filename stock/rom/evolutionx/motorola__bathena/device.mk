@@ -37,7 +37,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set_bool,livedisplay_sysfs,enable_ab,true)
 
 # Moto Camera 2
-TARGET_MOTCAMERA2 := whitney
+TARGET_MOTCAMERA2 := nevis
 
 $(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
 

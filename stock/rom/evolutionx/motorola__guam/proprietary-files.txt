@@ -134,9 +134,8 @@ vendor/lib64/libswregistrationalgo.so|a647844c7fbab585cc5678247a79ef59bdfaf034
 vendor/lib64/libtfestriping.so|2df838e6faa75b6223ced5ab7e58368e2132c1f8
 vendor/lib64/libvidhance.so|78f06bc683c17aeb6e186588e8051e808f596c2e|b58c6f0af6939b3e62759ce1ef7a653580249f69
 
-# Camera configs - from guamp_retail RPX31.Q2-58-17-7-5
-vendor/etc/camera/dual_golden_depth.bin|78e4660e3d3b2aeda3841e3d946da8b56d075453
-vendor/etc/camera/vidhance_calibration|0c182eb706875ad1bc244fc7378629e182c10f57
+# Camera configs
+vendor/etc/camera/dual_golden_depth.bin
 
 # Display (Calibration Data)
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_720p_652.xml
@@ -168,27 +167,13 @@ vendor/firmware/a630_sqe.fw
 # OEM
 vendor/etc/vhw.xml
 
-# Perf - from guamna_retail RZA31.Q2-146-14-22-2
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|694e55782f489fc11efa0581111f817ba47e0e9f
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+# Perf configs - from guamna_retail RZA31.Q2-146-14-22-2
 vendor/etc/perf/commonresourceconfigs.xml|47651621904d0a0ea42b72bc9a0df27f99eaeab6
 vendor/etc/perf/perfboostsconfig.xml|983ebd4b46fa1e5c0a0e5405395dc479b440dac3
 vendor/etc/perf/perfconfigstore.xml|b324e1042d611a0739c632ad7a8b81a77f3dfdbb
 vendor/etc/perf/targetconfig.xml|1e89cc36c4c7bdd44581d35e79f66441bd93540e
 vendor/etc/perf/targetresourceconfigs.xml|0e65b492065b6a5e2015ea378eb812016c304fd6
 vendor/etc/powerhint.xml|eb6e36a68c3408eebccfdf791f858b115c59cc46
-vendor/lib/libperfconfig.so|bb969d159f09208cd4cb119847e44512c689108d
-vendor/lib/libperfgluelayer.so|94024bb818ee64054f192bb0a15908b24a861a41
-vendor/lib/libperfioctl.so|e1db386b19247c9b1211bef3e820a43debfc07c7
-vendor/lib/libqti-perfd-client.so|dd75c53653fffda5532dc83fa56ebb7e802f24b4
-vendor/lib/libqti-perfd.so|c1589083d730d2ad7de3e07ac2f3a206d78170e2
-vendor/lib/libqti-util.so|2516086c9cf963f90faeb5bd990c5b70207f5c6f
-vendor/lib64/libperfconfig.so|ffd8757cfc9c2722bd509acfdb27e1033c00aefe
-vendor/lib64/libperfgluelayer.so|321c9b5f90740e529589dd4cbf93ce8e0e8ab76a
-vendor/lib64/libperfioctl.so|82daef5e743c747c5884c8ccfad941accf5a13a4
-vendor/lib64/libqti-perfd-client.so|548235d31c33e1d8021cfe124d83a00e963a1de5
-vendor/lib64/libqti-perfd.so|8fe71fe47d4384bc883372e177c8ce60ee2da264
-vendor/lib64/libqti-util.so|9dfdf056a5e18d35af4db111b65a2a320e05ad87
 
 # Sensors configs
 vendor/etc/sensors/config/bengal_default_sensors.json

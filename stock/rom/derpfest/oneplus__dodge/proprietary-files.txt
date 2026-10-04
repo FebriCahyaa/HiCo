@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13 (CPH2653_16.0.8.301(EX01)).
+## are from OnePlus 13 (CPH2653_16.0.10.501(EX01)).
 
 # ACDB
 odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb
@@ -1435,6 +1435,21 @@ vendor/etc/spr_cfg_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
 my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
 my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
+# Face unlock
+odm/lib64/libstfaceunlockocl_uff.so;FIX_SONAME
+
+# Face unlock firmware
+odm/firmware/uff_face.b00
+odm/firmware/uff_face.b01
+odm/firmware/uff_face.b02
+odm/firmware/uff_face.b03
+odm/firmware/uff_face.b04
+odm/firmware/uff_face.b05
+odm/firmware/uff_face.b06
+odm/firmware/uff_face.b07
+odm/firmware/uff_face.b08
+odm/firmware/uff_face.mdt
+
 # Fingerprint firmware
 odm/firmware/uff_gx.b00
 odm/firmware/uff_gx.b01
@@ -1464,6 +1479,8 @@ odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 vendor/lib64/sensors.qsh.so
 
 # Sensors config
+my_product/etc/fusionlight_profile/fusionlight_Main_1_3.json:odm/etc/fusionlight_profile/fusionlight_Main_1_3.json
+odm/etc/display/cwb_weightspos.json
 odm/etc/sensor/config/dodge_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lux_aod.json
@@ -1524,6 +1541,8 @@ odm/firmware/tp/23821/sys_touch_function_feature_config.xml
 odm/firmware/tp/23821/sys_touch_scene_config.xml
 
 # Vibration effects
+odm/etc/vibrator/9999/def/effect_0.bin
+odm/etc/vibrator/9999/def/effect_1.bin
 odm/etc/vibrator/9999/def/effect_10.bin
 odm/etc/vibrator/9999/def/effect_100.bin
 odm/etc/vibrator/9999/def/effect_101.bin
@@ -1543,6 +1562,7 @@ odm/etc/vibrator/9999/def/effect_118.bin
 odm/etc/vibrator/9999/def/effect_12.bin
 odm/etc/vibrator/9999/def/effect_122.bin
 odm/etc/vibrator/9999/def/effect_170.bin
+odm/etc/vibrator/9999/def/effect_2.bin
 odm/etc/vibrator/9999/def/effect_3.bin
 odm/etc/vibrator/9999/def/effect_302.bin
 odm/etc/vibrator/9999/def/effect_303.bin

@@ -1,6 +1,6 @@
 {
   "common_count": 83,
-  "device_count": 342,
+  "device_count": 343,
   "devices": [
     {
       "archived": false,
@@ -4712,6 +4712,24 @@
       "archived": false,
       "branches": [
         "lineage-24.0",
+        "lineage-23.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_ktm.git",
+      "codename": "ktm",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_ktm",
+      "serves": [
+        "ktm"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
         "lineage-23.0",
@@ -5108,6 +5126,7 @@
         "dodge",
         "erhai",
         "hummer",
+        "ktm",
         "piloti",
         "pista"
       ],

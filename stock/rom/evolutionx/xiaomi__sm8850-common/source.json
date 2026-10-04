@@ -1,0 +1,42 @@
+{
+  "branch": "cnb",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm8850-common.git",
+  "codename": "sm8850-common",
+  "commit": "5123d277973dc44747874496375861287abcbf6b",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "b349506f707b4711bf0ae23a3832e3d8aaeccd0b4a7f0b5ed7d3ab1bd295f27f",
+      "size": 1377
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "42a94c0cbcd7a5f24b0c49974e7f88c4230b3881fee294f9bcd4a54c36050308",
+      "size": 6681
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "7d5e51c7d60da3d65aaba6746230d92037683195fb68ed9dda31f4db8314adbd",
+      "size": 5527
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "aa97ac6704181328b074c5579368552866f810fcc2720f73b1e2c44b0330b5ae",
+      "size": 78827
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "20c1b3dfb70f1e9558c09c9df4778e9fc1a5fdeeab5983b3e18e7f58edb04268",
+      "size": 2233
+    }
+  ],
+  "kind": "common",
+  "repo": "device_xiaomi_sm8850-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-10-02T14:20:52Z",
+  "vendor": "xiaomi"
+}

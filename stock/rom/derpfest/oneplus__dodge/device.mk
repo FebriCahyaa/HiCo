@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2021-2026 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -17,9 +16,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/configs/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
-
-# BCR Basic Call Recorder
-$(call inherit-product, vendor/bcr/bcr.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3168
@@ -58,12 +54,11 @@ PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.oplus
 
 # Regional properties
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23821/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23821/build.default.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23893/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/23893/build.EU.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23893/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/23893/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23893/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/23893/build.NA.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23893/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23893/build.default.prop
+REGIONAL_PROP_FILES := $(wildcard $(LOCAL_PATH)/properties/*/*.prop)
+
+PRODUCT_COPY_FILES += $(foreach f,$(REGIONAL_PROP_FILES), \
+    $(f):$(TARGET_COPY_OUT_ODM)/etc/$(patsubst $(LOCAL_PATH)/properties/%,%,$(f)) \
+    $(f):$(TARGET_COPY_OUT_RECOVERY)/root/vendor/odm/etc/$(patsubst $(LOCAL_PATH)/properties/%,%,$(f)))
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -82,11 +77,11 @@ $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,false)
 
 # Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.oplus
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/vibrator/def/effect_0.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_0.bin\
-    $(LOCAL_PATH)/configs/vibrator/def/effect_1.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_1.bin\
-    $(LOCAL_PATH)/configs/vibrator/def/effect_2.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_2.bin\
-    $(LOCAL_PATH)/configs/vibrator/def/effect_21.bin:$(TARGET_COPY_OUT_ODM)/etc/vibrator/9999/def/effect_21.bin
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
 

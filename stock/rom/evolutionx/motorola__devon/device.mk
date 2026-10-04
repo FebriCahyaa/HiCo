@@ -36,7 +36,6 @@ $(call soong_config_set_bool,livedisplay_sysfs,enable_ab,true)
 
 # Moto Camera 4
 TARGET_MOTCAMERA4 := devon
-TARGET_USES_MOTCAMERA4 := true
 
 $(call inherit-product, vendor/motorola/MotCamera4-bengal/motcamera4.mk)
 

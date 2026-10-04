@@ -2,7 +2,7 @@
   "branch": "bka",
   "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_garnet.git",
   "codename": "garnet",
-  "commit": "7efcab3e5687cb1cdfcebdc7eb3ccb1fb5a9855c",
+  "commit": "699431bc9221597f96ed0373428e51c3d631c588",
   "file_count": 18,
   "files": [
     {
@@ -17,13 +17,13 @@
     },
     {
       "path": "BoardConfig.mk",
-      "sha256": "b3fee95ff509a029999e1b31859cab10058c2dbbbeba7103ee39b24d874e8c5d",
-      "size": 8593
+      "sha256": "a54885a80b34418f600bc73a9f857a3bca08f094ff149c7116992f8cf8907dfc",
+      "size": 8389
     },
     {
       "path": "device.mk",
-      "sha256": "ea2f7b992a65b83bbaad268d7a918bef6c70c81dc59af14c28042ed5db7a927c",
-      "size": 20397
+      "sha256": "c919c0b741a6e98af6e81e0c0ba3189a83dd68ff3e32aa416ee714c343996cb2",
+      "size": 20331
     },
     {
       "path": "extract-files.py",
@@ -87,8 +87,8 @@
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "d57e56a3fafc2939c48258f72fb0a583aa82d1cce2619937c494041473847e02",
-      "size": 106946
+      "sha256": "d40103ead46650d2c8a735bcee5f12dd0d9dfd3c1cb970f9bd10b70c576929fc",
+      "size": 106082
     },
     {
       "path": "sepolicy/vendor/mi_thermald.te",
@@ -102,6 +102,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "evolutionx",
-  "upstream_pushed_at": "2026-09-22T08:37:27Z",
+  "upstream_pushed_at": "2026-10-02T12:22:23Z",
   "vendor": "xiaomi"
 }

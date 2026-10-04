@@ -2,8 +2,8 @@
   "branch": "cnb",
   "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm8150-common.git",
   "codename": "sm8150-common",
-  "commit": "cc651a35e8573fa51b67b611b73d859e7cf1d124",
-  "file_count": 8,
+  "commit": "668f57f93cc1eaf9a3993d23e5cb681a8f19a6c2",
+  "file_count": 9,
   "files": [
     {
       "path": "Android.bp",
@@ -19,6 +19,11 @@
       "path": "extract-files.py",
       "sha256": "b84a6e1780c65d2fca7d3cecce7110f004ffbf60d898654e0baea09044c2b41c",
       "size": 3129
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b9e0ebd279cbe7acc49ff6e2a525b0f17a029f5db5143d9d760ad59aa8ce2475",
+      "size": 195
     },
     {
       "path": "proprietary-files.txt",
@@ -52,6 +57,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "evolutionx",
-  "upstream_pushed_at": "2026-09-28T18:07:56Z",
+  "upstream_pushed_at": "2026-10-01T07:44:54Z",
   "vendor": "xiaomi"
 }
