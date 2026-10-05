@@ -47,7 +47,7 @@ void out(std::string_view s) {
 }
 
 int usage() {
-    out("HiCo Thermal " HICO_VERSION " - device-aware thermal management\n\n"
+    out(SYNREI_PUBLIC_NAME " " HICO_VERSION " - device-aware thermal management (HiCo backend)\n\n"
         "Usage: hicod <command>\n\n"
         "  daemon                 start the background service\n"
         "  run                    run in the foreground (debugging)\n"
@@ -133,7 +133,7 @@ int cmd_daemon(bool foreground) {
 
     log::init(foreground ? "" : HICO_LOG_FILE, log::Level::Info);
     Daemon d;
-    LOGI("HiCo Thermal {} started (pid {})", HICO_VERSION, getpid());
+    LOGI(SYNREI_PUBLIC_NAME " {} started (HiCo backend, pid {})", HICO_VERSION, getpid());
     d.recover();
     return d.run();
 }

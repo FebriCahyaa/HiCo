@@ -287,7 +287,7 @@ void Daemon::tick(Clock::time_point now) {
         // Ahead of mode=off and the Flux check on purpose: this must hold regardless of
         // anything else, and it must never unlock even once before the check runs.
         if (cfg_.notify && !integrity_notified_) {
-            notify(std::format("HiCo Thermal integrity check failed ({}). Thermal stays at stock "
+            notify(std::format("Synrei Thermal Intelligence integrity check failed ({}). Thermal stays at stock "
                                "until this is fixed (reinstall from the official release).",
                                integrity_.reason));
             integrity_notified_ = true;
@@ -537,7 +537,7 @@ void Daemon::update_module_description() {
     std::string out;
     for (const auto &line : str::split(*prop, '\n')) {
         if (line.starts_with("description=")) {
-            out += "description=[" + status + "] Automatic thermal unlock for games, powered by Flux.\n";
+            out += "description=[" + status + "] Synrei Thermal Intelligence: automatic thermal unlock for games, powered by Flux.\n";
         } else {
             out += line + '\n';
         }

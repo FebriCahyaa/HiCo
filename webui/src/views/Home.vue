@@ -5,7 +5,7 @@
         <!-- Header -->
         <div class="flex items-end justify-between px-1 mb-2">
           <div>
-            <h1 class="m3-headline text-[32px] text-on-surface leading-none">HiCo Thermal</h1>
+            <h1 class="m3-headline text-[32px] text-on-surface leading-none">Synrei Thermal Intelligence</h1>
             <p class="text-sm text-on-surface-variant mt-1">{{ $t('home.tagline') }}</p>
           </div>
           <span class="chip whitespace-nowrap bg-surface-container-high text-on-surface-variant"

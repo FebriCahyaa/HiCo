@@ -195,7 +195,7 @@ jobs:
           flags=()
           [[ "$PRERELEASE" == "true" ]] && flags+=(--prerelease)
           gh release create "$TAG" "${files[@]}" --repo "$RELEASE_REPO" \
-            --title "HiCo Thermal $TAG" --notes-file "$RUNNER_TEMP/notes.md" "${flags[@]}"
+            --title "Synrei Thermal Intelligence $TAG" --notes-file "$RUNNER_TEMP/notes.md" "${flags[@]}"
 
       - name: Publish update.json (public channel)
         # Pre-releases are not offered as updates.
@@ -212,7 +212,7 @@ jobs:
           raw="https://raw.githubusercontent.com/$RELEASE_REPO/$branch"
 
           {
-            echo "## HiCo Thermal $TAG"
+            echo "## Synrei Thermal Intelligence $TAG"
             echo
             sed 's/^### /#### /' "$RUNNER_TEMP/changes.md"
             if [ -f "$dir/changelog.md" ]; then

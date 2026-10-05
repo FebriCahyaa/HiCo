@@ -13,11 +13,11 @@ HICOD="/data/adb/modules/hico/system/bin/hicod"
 
 if [ "$("$HICOD" config get mode)" = "off" ]; then
 	"$HICOD" config set mode auto
-	echo "- HiCo Thermal: AUTO"
+	echo "- Synrei Thermal Intelligence: AUTO"
 	echo "  Thermal throttling is disabled while a Flux game runs."
 else
 	"$HICOD" config set mode off
-	echo "- HiCo Thermal: OFF"
+	echo "- Synrei Thermal Intelligence: OFF"
 	echo "  Stock thermal everywhere, games included."
 fi
 

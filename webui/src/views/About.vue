@@ -10,7 +10,7 @@
       <span class="hero-badge shape-sunny bg-primary text-on-primary">
         <FlameIcon :size="30" />
       </span>
-      <p class="m3-headline text-3xl mt-3">HiCo Thermal</p>
+      <p class="m3-headline text-3xl mt-3">Synrei Thermal Intelligence</p>
       <p class="text-sm text-on-surface-variant mt-1">{{ $t('about.tagline') }}</p>
       <span class="chip mt-4">v{{ hico.status.version || '–' }}</span>
     </section>
@@ -170,7 +170,7 @@
 
     <!-- Footer -->
     <div class="footer mb-8">
-      <p class="text-sm font-semibold text-on-surface">HiCo Thermal</p>
+      <p class="text-sm font-semibold text-on-surface">Synrei Thermal Intelligence</p>
       <p class="text-xs text-on-surface-variant mt-1 leading-relaxed">{{ $t('about.footer') }}</p>
       <p class="text-xs text-on-surface-variant mt-3">{{ $t('about.built_for') }}</p>
       <p class="text-[11px] text-on-surface-variant mt-4 leading-relaxed opacity-80">

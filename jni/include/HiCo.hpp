@@ -12,8 +12,11 @@
 #define HICO_VERSION "dev"
 #endif
 
-#define HICO_NAME "HiCo Thermal"
-#define HICO_TAG "HiCoThermal"
+// Public identity (Phase 4.5B): Synrei Thermal Intelligence. HiCo stays the technical backend
+// identity: hicod, hico, /data/adb/.config/hico, /dev/hico and the module ID are frozen.
+#define SYNREI_PUBLIC_NAME "Synrei Thermal Intelligence"
+#define HICO_NAME SYNREI_PUBLIC_NAME // human-readable label (notification title)
+#define HICO_TAG "HiCoThermal"       // machine-readable notification tag: frozen
 
 // ── HiCo ─────────────────────────────────────────────────────────────────────
 // Persistent data (survives reboots) lives next to Flux's config directory.

@@ -37,14 +37,14 @@ check_flux() {
 		flux_prop="$FLUX_DIR/module.prop"
 		if [ -f "$FLUX_DIR/disable" ] || [ -f "$FLUX_DIR/remove" ]; then
 			abort_box "Flux Tweaks is disabled or scheduled for removal." \
-				"HiCo Thermal works only together with Flux Tweaks." \
+				"Synrei Thermal Intelligence works only together with Flux Tweaks." \
 				"Enable Flux Tweaks in your root manager, reboot," \
-				"then install HiCo Thermal again."
+				"then install Synrei Thermal Intelligence again."
 		fi
 	else
 		abort_box "Flux Tweaks is not installed." \
-			"HiCo Thermal is part of the Flux ecosystem: Flux detects" \
-			"your games and HiCo unlocks thermal while they run." \
+			"Synrei Thermal Intelligence is part of the Flux ecosystem: Flux detects" \
+			"your games and Synrei unlocks thermal while they run." \
 			"Install Flux Tweaks first:" \
 			"$FLUX_RELEASES"
 	fi
@@ -52,7 +52,7 @@ check_flux() {
 	flux_code=$(prop_value "$flux_prop" versionCode)
 	case "$flux_code" in '' | *[!0-9]*) flux_code=0 ;; esac
 	if [ "$flux_code" -gt 0 ] && [ "$flux_code" -lt "$FLUX_MIN_VERSION_CODE" ]; then
-		abort_box "Flux Tweaks $(prop_value "$flux_prop" version) is too old for HiCo Thermal." \
+		abort_box "Flux Tweaks $(prop_value "$flux_prop" version) is too old for Synrei Thermal Intelligence." \
 			"Update Flux Tweaks to v1.2.0 or newer:" \
 			"$FLUX_RELEASES"
 	fi
@@ -69,7 +69,7 @@ esac
 
 check_flux
 
-ui_print "- HiCo Thermal is private software, licensed under EULA.md"
+ui_print "- Synrei Thermal Intelligence is private software, licensed under EULA.md"
 ui_print "  (English / Bahasa Indonesia). Installing means you accept it:"
 ui_print "  personal use only, no redistribution, and thermal throttling is"
 ui_print "  disabled while gaming at your own risk."
@@ -96,12 +96,12 @@ else
 fi
 case "$flavor" in
 arm64)
-	[ "$ARCH" = "arm64" ] || abort_box "This is the 64-bit (arm64) build of HiCo Thermal," \
+	[ "$ARCH" = "arm64" ] || abort_box "This is the 64-bit (arm64) build of Synrei Thermal Intelligence," \
 		"but this ROM runs a 32-bit (armeabi-v7a) userspace." \
 		"Install the 32-bit build: hico-*-arm.zip"
 	;;
 arm)
-	[ "$ARCH" = "arm" ] || abort_box "This is the 32-bit (arm) build of HiCo Thermal," \
+	[ "$ARCH" = "arm" ] || abort_box "This is the 32-bit (arm) build of Synrei Thermal Intelligence," \
 		"but this ROM is 64-bit (arm64-v8a)." \
 		"Install the 64-bit build: hico-*-arm64.zip"
 	;;
@@ -158,6 +158,6 @@ fi
 ui_print "  ROM: $(printf '%s\n' "$device_info" | sed -n 's/^rom: //p' | cut -d';' -f1)"
 ui_print "  Thermal backends: $(printf '%s\n' "$device_info" | sed -n 's/^backends: //p')"
 
-ui_print "- HiCo Thermal installed. Reboot to activate."
+ui_print "- Synrei Thermal Intelligence installed. Reboot to activate."
 ui_print "  Daily use keeps stock thermal; games launched through"
 ui_print "  Flux unlock it automatically, with a temperature guard."

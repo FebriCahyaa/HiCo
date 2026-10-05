@@ -1,0 +1,27 @@
+# Phase 4.5B classification of remaining HiCo / hico / hicod occurrences (case-insensitive).
+# path_prefix<TAB>class<TAB>reason. Longest matching prefix wins. Checked by tests/synrei_brand_test.sh.
+# Classes: compatibility | technical identifier | historical documentation | legal attribution | test fixture | migration documentation | intentional legacy reference
+.github/workflows/release.yml	compatibility	release channel HiCo-Release, tag/commit text, changelog heading parser; release title rebranded to Synrei
+.github/	compatibility	CI workflow names and job/step identifiers (unrelated CI, unchanged)
+.gitignore	technical identifier	ignore patterns for hico build outputs
+CMakeLists.txt	technical identifier	hicod / hico_sign / hico_tests targets
+EULA.md	legal attribution	licence names the licensed software HiCo Thermal; changes need legal review
+LICENSE	legal attribution	licence text
+NOTICE.md	legal attribution	attribution notices
+README.md	historical documentation	HiCo Phase 2 cleanup document (owner decision D-12: preserve)
+changelog.md	historical documentation	release history; heading parsed by release.yml
+database/	technical identifier	thermal database data and schema (protected data; no rename)
+docs/architecture/SYNREI_BRAND_MIGRATION.md	migration documentation	this migration
+docs/architecture/hico_identifiers.tsv	migration documentation	this registry
+docs/	historical documentation	architecture and phase history
+generated/	technical identifier	tracked generated placeholders
+generated-thermal/	technical identifier	tracked generated thermal artifacts (protected data)
+jni/	technical identifier	hicod sources: HICO_* macros, paths, namespaces, status output parsed by Zairenkai; file headers are legal attribution (EULA)
+module/webroot/	intentional legacy reference	tracked built WebUI bundle; not regenerated in this phase (rebuild at next WebUI release)
+module/	compatibility	module ID hico, /data/adb/modules/hico, hicod, config/state paths, Flux ecosystem gate
+sources/	technical identifier	source index data (protected)
+stock/	technical identifier	stock thermal dataset (protected)
+tests/	test fixture	tests reference technical identifiers exactly
+thermal-data/	technical identifier	thermal dataset (protected)
+tools/	technical identifier	hico_* tools, artifact codec, generators (data identifiers)
+webui/	technical identifier	WebUI code: hicod commands, config keys, store names; public labels rebranded; legal summary unchanged
