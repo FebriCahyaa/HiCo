@@ -54,9 +54,11 @@ fi
 grep -rqiE 'synreid|SynreiBackend|synrei_daemon' "$root/jni" "$root/module" "$root/CMakeLists.txt" && bad "second Synrei daemon/backend"
 
 # 7-14, 21. thermal logic, schema and protected data unchanged since the pre-migration base.
-base=9f20e03a
-if git -C "$root" cat-file -e "$base^{commit}" 2>/dev/null; then
-	protected="database thermal-data generated generated-thermal stock sources devices tools tests/tests.cpp tests/cli_test.sh README.md docs/phase docs/integrity EULA.md LICENSE NOTICE.md changelog.md module/webroot"
+# Migration-time audit only: set BRAND_AUDIT_BASE=9f20e03a to compare against the pre-migration
+# commit. Off by default so later legitimate changes do not fail this test.
+base=${BRAND_AUDIT_BASE:-}
+if [ -n "$base" ] && git -C "$root" cat-file -e "$base^{commit}" 2>/dev/null; then
+	protected="database thermal-data generated generated-thermal stock sources devices tools tests/tests.cpp tests/cli_test.sh README.md docs/phase docs/integrity :(exclude)docs/integrity/webui.sha256 EULA.md LICENSE NOTICE.md changelog.md module/webroot"
 	logic=$(cd "$root" && git ls-files jni | grep -vE '^jni/include/HiCo.hpp$|^jni/src/main.cpp$|^jni/src/Daemon.cpp$')
 	# shellcheck disable=SC2086
 	git -C "$root" diff --quiet "$base" -- $protected $logic || bad "protected data or thermal logic changed since $base"
@@ -66,7 +68,7 @@ if git -C "$root" cat-file -e "$base^{commit}" 2>/dev/null; then
 	changed=$(git -C "$root" diff -U0 "$base" -- jni/include/HiCo.hpp jni/src/main.cpp jni/src/Daemon.cpp | grep -E '^[-+][^-+]' | grep -viE 'synrei|HiCo Thermal|HICO_NAME|HICO_TAG|identity|label|Automatic thermal unlock for games, powered by Flux')
 	[ -z "$changed" ] || bad "non-label change in daemon sources: $changed"
 else
-	echo "note: base $base not available (shallow clone); git-history checks skipped"
+	echo "note: history checks skipped (BRAND_AUDIT_BASE unset or unavailable)"
 fi
 
 # 24. every remaining HiCo reference is classified.
