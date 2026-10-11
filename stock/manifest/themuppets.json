@@ -1,7 +1,24 @@
 {
   "common_count": 83,
-  "device_count": 342,
+  "device_count": 348,
   "devices": [
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_amazon_sunstone.git",
+      "codename": "sunstone",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_amazon_sunstone",
+      "serves": [
+        "sunstone"
+      ],
+      "updated_at": null,
+      "vendor": "amazon"
+    },
     {
       "archived": false,
       "branches": [
@@ -75,7 +92,8 @@
       "repo": "proprietary_vendor_amlogic_ne-common",
       "serves": [
         "ohm",
-        "oppen"
+        "oppen",
+        "tifa"
       ],
       "updated_at": null,
       "vendor": "amlogic"
@@ -437,6 +455,23 @@
       ],
       "updated_at": null,
       "vendor": "bananapi"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_daylight_jagar.git",
+      "codename": "jagar",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_daylight_jagar",
+      "serves": [
+        "jagar"
+      ],
+      "updated_at": null,
+      "vendor": "daylight"
     },
     {
       "archived": false,
@@ -4243,6 +4278,24 @@
       "archived": false,
       "branches": [
         "lineage-24.0",
+        "lineage-23.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_billie.git",
+      "codename": "billie",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_billie",
+      "serves": [
+        "billie"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
         "lineage-23.0"
@@ -4627,6 +4680,24 @@
         "lineage-24.0",
         "lineage-23.2"
       ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_iceland.git",
+      "codename": "iceland",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_iceland",
+      "serves": [
+        "iceland"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
+        "lineage-23.2"
+      ],
       "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_infiniti.git",
       "codename": "infiniti",
       "default_branch": "lineage-24.0",
@@ -4704,6 +4775,24 @@
       "repo": "proprietary_vendor_oneplus_kebab",
       "serves": [
         "kebab"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
+        "lineage-23.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_ktm.git",
+      "codename": "ktm",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_ktm",
+      "serves": [
+        "ktm"
       ],
       "updated_at": null,
       "vendor": "oneplus"
@@ -5108,6 +5197,7 @@
         "dodge",
         "erhai",
         "hummer",
+        "ktm",
         "piloti",
         "pista"
       ],
@@ -5128,6 +5218,7 @@
       "repo": "proprietary_vendor_oneplus_sm8850-common",
       "serves": [
         "fairlady",
+        "iceland",
         "infiniti"
       ],
       "updated_at": null,
@@ -6774,6 +6865,23 @@
       ],
       "updated_at": null,
       "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sdmc_tifa.git",
+      "codename": "tifa",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_sdmc_tifa",
+      "serves": [
+        "tifa"
+      ],
+      "updated_at": null,
+      "vendor": "sdmc"
     },
     {
       "archived": false,

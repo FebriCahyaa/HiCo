@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_mt6895-common.git",
+  "codename": "mt6895-common",
+  "commit": "eee4291595da54afd3eb0c5e00ca0a1f6fba1e78",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "438c0006c1823dbcacdbcd0f80be7e0c1a6772366df343054873313fa8f46be9",
+      "size": 113
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "756aa1f49aa2850e0797f9df67c29082d6fda35cd3206cf1c1c669fb5cbd5f24",
+      "size": 6257
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "463c654d9cfcb79211623098b198a68d89f015f3bbf58957f656bd4845428083",
+      "size": 2936
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f4fd076d935230f0c4104f0a10b630f609b5d5fd23e67126c01b062b37ed3561",
+      "size": 9028
+    },
+    {
+      "path": "init/init.mi_thermald.rc",
+      "sha256": "8b2afaa8fc87e22cebcb649532b9f3714e3defe342daf72a637b90e8fa3eda52",
+      "size": 245
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6fe8aa3e3d24c87c7d471de9cb257d7fa2a532e1aed685e58514e3349fe3e846",
+      "size": 28430
+    },
+    {
+      "path": "sepolicy/vendor/vendor_mi_thermald.te",
+      "sha256": "9a887945da52c04835c5e5903b651d88f1217e177ee6aea7f80ba428b081c77c",
+      "size": 1098
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1952201e1db2e2dacf9e7a31416dee12d5813d5837f8055c152ccc3095ae8766",
+      "size": 7202
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xiaomi_mt6895-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-10T10:05:03Z",
+  "vendor": "xiaomi"
+}

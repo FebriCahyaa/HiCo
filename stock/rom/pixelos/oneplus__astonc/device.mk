@@ -24,6 +24,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     sys.brightness.disable_gamma_conversion=true
 
 $(call soong_config_set,qtidisplay,pxlw_vendor_namespace,vendor/oneplus/astonc)
+$(call soong_config_set_bool,surfaceflinger,supports_oplus_adfr,true)
 $(call soong_config_set_bool,qtidisplay,pxlw_hw_iris7,true)
 
 # IR
@@ -41,8 +42,12 @@ $(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 
+# OplusParts
+$(call inherit-product, packages/apps/OplusParts/oplusparts.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-custom \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
