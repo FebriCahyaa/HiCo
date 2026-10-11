@@ -19,17 +19,18 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlay \
+    CarrierConfigOverlay \
+    FrameworksResOverlay \
+    LineageSDKOverlay \
+    LineageSettingsOverlay \
+    LineageSettingsProviderOverlay \
     NcmTetheringOverlay \
-    TimelmApertureOverlay \
-    TimelmCarrierConfigOverlay \
-    TimelmFrameworksOverlay \
-    TimelmLineageSDKOverlay \
-    TimelmLineageSettingsOverlay \
-    TimelmLineageSettingsProviderOverlay \
-    TimelmSettingsOverlay \
-    TimelmSystemUIOverlay \
     TimelmTelephonyOverlay \
-    LGEAISound
+    LGEAISound \
+    SettingsOverlay \
+    SystemUIOverlay \
+    WifiResourcesOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -120,7 +121,7 @@ TARGET_SCREEN_HEIGHT := 2460
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.lineage
+    android.hardware.camera.provider-service.lge
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -148,10 +149,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.lge
-
-$(call soong_config_set_bool,LGE_FINGERPRINT_HAL,TARGET_HAS_EGISTEC_UDFPS,true)
+$(call inherit-product, hardware/lge/fingerprint/udfps.mk)
 
 # FM packages
 PRODUCT_PACKAGES += \
@@ -301,7 +299,7 @@ $(call soong_config_set,lineage_recovery,bootloader_message_offset,128)
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5-service.lge
+    android.hardware.radio-service.lge
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -328,8 +326,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
-    libsensorndkbridge \
-    sensors.lge
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -394,7 +391,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    TimelmWifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 

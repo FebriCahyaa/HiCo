@@ -36,6 +36,9 @@ PRODUCT_PACKAGES += \
     SettingsOverlayGP4BC \
     SystemUIGoogleOverlayVendorCheetah
 
+PRODUCT_PACKAGES += \
+    ApertureOverlayCheetah
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 

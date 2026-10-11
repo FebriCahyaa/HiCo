@@ -54,34 +54,21 @@ blob_fixups: blob_fixups_user_type = {
     (
         'odm/bin/hw/vendor-oplus-hardware-touch-V2-hbp5-service',
         'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
-        'odm/bin/touchDaemon',
         'odm/lib64/libdisplayfossfeature_nature.so',
         'odm/lib64/libstc_color_feature.so',
-        'vendor/bin/hw/audiohalservice.qti',
-        'vendor/bin/hw/vendor.qti.hardware.display.composer-service',
-        'vendor/bin/poweropt-service',
-        'vendor/bin/qsap_mpamsvc',
-        'vendor/bin/qvrdatauploader',
         'vendor/lib64/hw/libaudioeffecthal.qti.so',
-        'vendor/lib64/libaodoptfeature.so',
-        'vendor/lib64/libapengine.so',
-        'vendor/lib64/libcamerapoweroptfeature.so',
-        'vendor/lib64/libgamepoweroptfeature.so',
-        'vendor/lib64/liblearningmodule.so',
-        'vendor/lib64/liboffscreenpoweroptfeature.so',
-        'vendor/lib64/libpowercallback.so',
-        'vendor/lib64/libpowercore.so',
-        'vendor/lib64/libpsmoptfeature.so',
-        'vendor/lib64/libstandbyfeature.so',
-        'vendor/lib64/libvideooptfeature.so',
         'vendor/lib64/soundfx/libquasar.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so'),
+    'odm/bin/touchDaemon': blob_fixup()
+        .binary_regex_replace(b'AA020118', b'AA020114'),
     'odm/etc/gps.conf': blob_fixup()
         .binary_regex_replace(b'com.oplus.locationproxy', b'com.google.android.carrierlocation')
         .binary_regex_replace(b'DEBUG_LEVEL = 3', b'DEBUG_LEVEL = 2'),
     'odm/etc/init/init.network.rc': blob_fixup()
         .regex_replace(r'/\* (Huo\.Chen@SYSTEM\.RF, 2024/09/06, Add for ICC) \*/', r'# \1'),
+    'odm/etc/izat.conf': blob_fixup()
+        .regex_replace(r'(PROCESS_NAME=xtra-daemon\nPROCESS_ARGUMENT=\nPROCESS_STATE=)ENABLED', r'\1DISABLED'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
     'system/framework/WfdCommon.jar': blob_fixup()
@@ -90,7 +77,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-lite.so', 'libprotobuf-cpp-lite-21.12.so'),
     (
         'system_ext/etc/seccomp_policy/tcmd.policy',
-        'vendor/etc/seccomp_policy/qsap_qapeservice.policy',
         'vendor/etc/seccomp_policy/syshealthmon.policy'
     ): blob_fixup()
         .add_line_if_missing('lseek: 1'),
@@ -105,11 +91,14 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.media.c2-V1-ndk.so', 'android.hardware.media.c2-V2-ndk.so'),
     'vendor/etc/perf/perfboostsconfig.xml': blob_fixup()
         .regex_replace(r'Enable="false"', r'Enable="true"'),
+    'vendor/etc/sensors/hals.conf': blob_fixup()
+        .regex_replace(r'sensors\.qsh\.so', 'sensors.fusionlight.so'),
     (
         'vendor/etc/media_codecs_canoe_sku3.xml',
         'vendor/etc/media_codecs_canoe_v2.xml',
     ): blob_fixup()
-        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', ''),
+        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video).*\n', '')
+        .regex_replace('media_codecs_vendor_audio', 'media_codecs_dolby_vision'),
     'vendor/lib64/libaudioserviceexampleimpl.so': blob_fixup()
         .add_needed('libaudioutils_shim.so')
         .add_needed('libbluetooth_audio_session_aidl_shim.so'),
