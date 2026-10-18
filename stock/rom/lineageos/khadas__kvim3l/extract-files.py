@@ -16,8 +16,8 @@ namespace_imports = [
 ]
 
 module = ExtractUtilsModule(
-    'radxa0',
-    'radxa',
+    'kvim3l',
+    'khadas',
     add_firmware_proprietary_file=True,
     namespace_imports=namespace_imports,
 )
@@ -30,8 +30,8 @@ if __name__ == '__main__':
     with open(path) as f:
         content = f.read()
     content = re.sub(
-        r'ifeq \(\$\(TARGET_DEVICE\),radxa0\)',
-        'ifneq ($(filter radxa0 radxa0_car radxa0_tab,$(TARGET_DEVICE)),)',
+        r'ifeq \(\$\(TARGET_DEVICE\),kvim3l\)',
+        'ifneq ($(filter kvim3l kvim3l_car kvim3l_tab,$(TARGET_DEVICE)),)',
         content,
     )
     with open(path, 'w') as f:

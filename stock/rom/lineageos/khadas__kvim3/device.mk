@@ -9,7 +9,7 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 $(call soong_config_set,brcm_libbt,bdroid_buildcfg_include_dir,$(LOCAL_PATH)/bluetooth/include)
-$(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_radxa0.txt)
+$(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_kvim3.txt)
 
 ## Bluetooth firmware
 include kernel/amlogic/kernel-modules/dhd-driver/firmware/bluetooth/bluetooth.mk
@@ -21,6 +21,11 @@ PRODUCT_HOST_PACKAGES += \
 ## Init
 PRODUCT_PACKAGES += \
     init.amlogic.wifi_buildin.rc
+
+## Keylayout (IR)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl
+
 
 ## TEE
 TARGET_HAS_TEE := false
@@ -37,4 +42,4 @@ include kernel/amlogic/kernel-modules/dhd-driver/firmware/wifi/wifi.mk
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
 
 ## Inherit from the proprietary files makefile
-$(call inherit-product, vendor/radxa/radxa0/radxa0-vendor.mk)
+$(call inherit-product, vendor/khadas/kvim3/kvim3-vendor.mk)

@@ -1,5 +1,12 @@
 {
   "devices": {
+    "amazon/sunstone": {
+      "branch": "lineage-24.0",
+      "commit": "7ebe65bcee35ea434f146931aadd769555544d54",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
+    },
     "amlogic/g12-common": {
       "branch": "lineage-23.2",
       "commit": "62f2d48c2fb4879702e5ba373ebc375fa940f713",
@@ -16,7 +23,7 @@
     },
     "amlogic/ne-common": {
       "branch": "lineage-24.0",
-      "commit": "0a83253a84376a532cfb2c26552ced5ded99c7bd",
+      "commit": "482b29a2c65f34cf7aa3c01e20b675505170bfd9",
       "file_count": 3,
       "pushed_at": null,
       "status": "ok"
@@ -64,7 +71,7 @@
       "status": "empty"
     },
     "asus/sake": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "0e9e7be68c4a31fe9bb08115e5c299d17d1017ab",
       "file_count": 1,
       "pushed_at": null,
@@ -85,11 +92,18 @@
       "status": "empty"
     },
     "asus/z01r": {
-      "branch": "lineage-22.2",
+      "branch": "lineage-23.2",
       "commit": "7c0a81de359181884b40268622980fd502bf99a6",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
+    },
+    "ayn/cq8725s-common": {
+      "branch": "lineage-24.0",
+      "commit": "9ff9e9eb6864db2f938966db5c03286ef3292332",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
     },
     "ayn/odin2": {
       "branch": "lineage-24.0",
@@ -126,6 +140,13 @@
       "pushed_at": null,
       "status": "empty"
     },
+    "ayn/odin3": {
+      "branch": "lineage-24.0",
+      "commit": "8172b091024b04cacf226336d9e421f1f5aef687",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
+    },
     "ayn/qcs8550-common": {
       "branch": "lineage-24.0",
       "commit": "1cd26508e935fbb78254722188df0f475dfec9d2",
@@ -146,6 +167,13 @@
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
+    },
+    "daylight/jagar": {
+      "branch": "lineage-24.0",
+      "commit": "bee189442f031f10d75ca2930542b8a3533496e4",
+      "file_count": 11,
+      "pushed_at": null,
+      "status": "ok"
     },
     "essential/mata": {
       "branch": "lineage-22.2",
@@ -177,7 +205,7 @@
     },
     "fairphone/fp6": {
       "branch": "lineage-24.0",
-      "commit": "764eecd8549b0dd3fee10549256211055c404094",
+      "commit": "6c63b696c89bff29e4413b5290aff39626843b90",
       "file_count": 2,
       "pushed_at": null,
       "status": "ok"
@@ -744,7 +772,7 @@
     },
     "motorola/avatrn": {
       "branch": "lineage-24.0",
-      "commit": "edb8ce2e1782b5ba2be57d198cdfc60bda95f8c4",
+      "commit": "95a80925547faecfe899469f8b0efccef46b5d16",
       "file_count": 6,
       "pushed_at": null,
       "status": "ok"
@@ -765,7 +793,7 @@
     },
     "motorola/beckham": {
       "branch": "lineage-22.2",
-      "commit": "795a5965dc8675818255cdc612b5e1a52ee2bc99",
+      "commit": "6a4d10da40809f6dba77a3172aec55ccba7b3b11",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -828,7 +856,7 @@
     },
     "motorola/chef": {
       "branch": "lineage-22.2",
-      "commit": "6883b6156b2ae6d736d07cabca0316ae47aa9e5f",
+      "commit": "1ea2d61ad397a3bb5454109ec47226aa627a988f",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -854,6 +882,13 @@
       "pushed_at": null,
       "status": "ok"
     },
+    "motorola/ellis": {
+      "branch": "lineage-24.0",
+      "commit": "fc522f195f7e8a3789f32b9b4543b1da2907bd52",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
+    },
     "motorola/eqs": {
       "branch": "lineage-23.2",
       "commit": "11e46b79f1259221cd757089eba7c0a3f5c6e332",
@@ -863,7 +898,7 @@
     },
     "motorola/evert": {
       "branch": "lineage-22.2",
-      "commit": "c2f055ab8fbe37e35754c8b15ec70599f892dc0d",
+      "commit": "6d325f36e5cf78c0447139f5c1535fb75651e20f",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -899,6 +934,13 @@
     "motorola/guam": {
       "branch": "lineage-24.0",
       "commit": "371e8e36f49213c3c705476087d19eb74abe6f5d",
+      "file_count": 3,
+      "pushed_at": null,
+      "status": "ok"
+    },
+    "motorola/guamna": {
+      "branch": "lineage-24.0",
+      "commit": "dc00c2acabd4b22af92a8346f9353c1e0503c1a5",
       "file_count": 3,
       "pushed_at": null,
       "status": "ok"
@@ -946,8 +988,8 @@
       "status": "empty"
     },
     "motorola/lamu": {
-      "branch": "lineage-23.2",
-      "commit": "0475c5f1cb189d60f65aa0091b1046a5b3fc7d0a",
+      "branch": "lineage-24.0",
+      "commit": "6ff54739b601bd8de21281d1dd7a1f8c706e141e",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -961,7 +1003,7 @@
     },
     "motorola/messi": {
       "branch": "lineage-22.2",
-      "commit": "81b677424c7e1af7feb07fbd6a6a7088255f2b38",
+      "commit": "43e6ec5f8d210955ef4a60037d6e38bc25f23340",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
@@ -987,9 +1029,16 @@
       "pushed_at": null,
       "status": "empty"
     },
+    "motorola/mt6765-common": {
+      "branch": "lineage-24.0",
+      "commit": "c39e37eac04b0556b29aaae261cd05804cd0ca66",
+      "file_count": 9,
+      "pushed_at": null,
+      "status": "ok"
+    },
     "motorola/mt6768-common": {
-      "branch": "lineage-23.2",
-      "commit": "0a42761c30b8c44b2ddf26732358c3584cf67af8",
+      "branch": "lineage-24.0",
+      "commit": "f011bd290beecb8dc2a1c69be2cf6d276a909426",
       "file_count": 2,
       "pushed_at": null,
       "status": "ok"
@@ -1010,7 +1059,7 @@
     },
     "motorola/nash": {
       "branch": "lineage-22.2",
-      "commit": "1a172c00ce0e11b9e319d26ba7dd60a1c9534773",
+      "commit": "6ba528bfaf0414139514449cc37b11edf0f71eb1",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
@@ -1115,7 +1164,7 @@
     },
     "motorola/sm7435-common": {
       "branch": "lineage-24.0",
-      "commit": "67de1daf028f3b422f6a25d560cf1ef529c86351",
+      "commit": "404c36b57d427e5828424164dae0fc6aff3644bc",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
@@ -1142,8 +1191,8 @@
       "status": "ok"
     },
     "motorola/smith": {
-      "branch": "lineage-23.2",
-      "commit": "dad30710a0c3f3f074a91e6a9045798e878f4b7a",
+      "branch": "lineage-24.0",
+      "commit": "4529df673ca369f4ae4faa2975944da6c3538276",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
@@ -1331,18 +1380,18 @@
       "status": "empty"
     },
     "oneplus/aston": {
-      "branch": "lineage-23.2",
-      "commit": "06bfa17cd7a546b64ce19599d0a7375a0dcc13b5",
-      "file_count": 0,
+      "branch": "lineage-24.0",
+      "commit": "da4223057724ccc1d9bf68e133cdf942f9f0d636",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "oneplus/astonc": {
-      "branch": "lineage-23.2",
-      "commit": "5910f6cc654879c8f8a31671355e3825130d02a5",
-      "file_count": 0,
+      "branch": "lineage-24.0",
+      "commit": "4824607c4d007e80690b667d16cfd9cddffd32fd",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "oneplus/audi": {
       "branch": "lineage-23.2",
@@ -1353,20 +1402,27 @@
     },
     "oneplus/avalon": {
       "branch": "lineage-23.2",
-      "commit": "73511598d8758de9bca9a77294ac9e5bf7590ac9",
+      "commit": "3ed712ae70812bc53400506e568848e51fbbe1a1",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "oneplus/benz": {
-      "branch": "lineage-23.2",
-      "commit": "2cf9c7aa58112e8350df7a2eb3945f16328b59be",
+      "branch": "lineage-24.0",
+      "commit": "8729bb226e967e011b6e5ce6d87cab1e26e9af8e",
+      "file_count": 2,
+      "pushed_at": null,
+      "status": "ok"
+    },
+    "oneplus/billie": {
+      "branch": "lineage-24.0",
+      "commit": "d3a5a63145e24085a07238b09934d7e1941f0258",
       "file_count": 2,
       "pushed_at": null,
       "status": "ok"
     },
     "oneplus/caihong": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "38adb77268f8a50a7e9f3e6fac6a48b05f38103f",
       "file_count": 0,
       "pushed_at": null,
@@ -1388,10 +1444,10 @@
     },
     "oneplus/dodge": {
       "branch": "lineage-24.0",
-      "commit": "5cdea50164c2c9435e8612da132396877acd8730",
-      "file_count": 0,
+      "commit": "bbd72c485f85fa1e60cb4ca6e569bf218f0a5073",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "oneplus/dre": {
       "branch": "lineage-24.0",
@@ -1408,7 +1464,7 @@
       "status": "empty"
     },
     "oneplus/enchilada": {
-      "branch": "lineage-22.2",
+      "branch": "lineage-24.0",
       "commit": "2dedc8d1099e0b4d3e507c0049ee9bdcf12d77f0",
       "file_count": 0,
       "pushed_at": null,
@@ -1416,20 +1472,20 @@
     },
     "oneplus/erhai": {
       "branch": "lineage-24.0",
-      "commit": "1ccdf923dffcc543467fd08e58c1453cfac1c236",
-      "file_count": 0,
+      "commit": "93ae0f96dc3ad975f0de0342546882404076dce1",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "oneplus/fairlady": {
       "branch": "lineage-24.0",
-      "commit": "523934204a63d98141978ed0af0eb19cfedbfea4",
-      "file_count": 0,
+      "commit": "251d0bee67e75ba10656d57f4a4e89630a5677ce",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "oneplus/fajita": {
-      "branch": "lineage-22.2",
+      "branch": "lineage-24.0",
       "commit": "91bb0ea54fb0870c0b3ec2bc1c584ee456206cdf",
       "file_count": 0,
       "pushed_at": null,
@@ -1485,18 +1541,25 @@
       "status": "empty"
     },
     "oneplus/hummer": {
-      "branch": "lineage-23.2",
-      "commit": "528b7adb46e140d9bf43e864878ac50d1ff02dff",
-      "file_count": 0,
+      "branch": "lineage-24.0",
+      "commit": "8c93f37f3ed725c454ab173c4261d7aef3834593",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
+    },
+    "oneplus/iceland": {
+      "branch": "lineage-24.0",
+      "commit": "e0a754f2409383e8e15fb4873bfe6a93b6431dea",
+      "file_count": 1,
+      "pushed_at": null,
+      "status": "ok"
     },
     "oneplus/infiniti": {
       "branch": "lineage-24.0",
-      "commit": "0691f05abe71f8fb126504df0fb6a7caabdbdf06",
-      "file_count": 0,
+      "commit": "29649bc278169b63dd010c69306e5196096f1a5c",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "oneplus/instantnoodle": {
       "branch": "lineage-24.0",
@@ -1515,6 +1578,13 @@
     "oneplus/kebab": {
       "branch": "lineage-24.0",
       "commit": "9ecfe6349188e4f961aa7fc878e478e23cc3a6aa",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
+    },
+    "oneplus/ktm": {
+      "branch": "lineage-24.0",
+      "commit": "7a6b0a06aab2aeee82b9b8c1ca27c64dd8c6d64c",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1549,7 +1619,7 @@
     },
     "oneplus/lexus": {
       "branch": "lineage-23.2",
-      "commit": "9ef0d12851ad880f5f400e9752cc21aa5aafe3eb",
+      "commit": "9c0d85a2463041a760c26ec5d5a56f5a9d7459a4",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1577,17 +1647,17 @@
     },
     "oneplus/salami": {
       "branch": "lineage-24.0",
-      "commit": "2ae5c2548d5150b9948ddec33f9b5bbb2f07fd66",
-      "file_count": 0,
-      "pushed_at": null,
-      "status": "empty"
-    },
-    "oneplus/sdm845-common": {
-      "branch": "lineage-22.2",
-      "commit": "3d6b72f093ccfb99e8bfc17af204441b6e6322aa",
+      "commit": "401c13749ea22c74c627cd6518096e09178e9c3a",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
+    },
+    "oneplus/sdm845-common": {
+      "branch": "lineage-23.2",
+      "commit": "8ad63dca3256d254e780822c2fb3b04d68889d7f",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
     },
     "oneplus/sm6375-common": {
       "branch": "lineage-24.0",
@@ -1619,13 +1689,13 @@
     },
     "oneplus/sm8550-common": {
       "branch": "lineage-24.0",
-      "commit": "888206a4098e0bb08b4d99c9ac9e007aae897e9b",
-      "file_count": 2,
+      "commit": "19c1ed52114348b20cc5fd889acfccf500255568",
+      "file_count": 1,
       "pushed_at": null,
       "status": "ok"
     },
     "oneplus/sm8650-common": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "78be77b59ee25d1711095567cf26f46017ed416a",
       "file_count": 2,
       "pushed_at": null,
@@ -1633,15 +1703,15 @@
     },
     "oneplus/sm8750-common": {
       "branch": "lineage-24.0",
-      "commit": "63a6a7d21fc57139a88608e0b192e92f1999763d",
-      "file_count": 2,
+      "commit": "0b21452f53150d8a929eb2d3269ff3355992fbf3",
+      "file_count": 1,
       "pushed_at": null,
       "status": "ok"
     },
     "oneplus/sm8850-common": {
       "branch": "lineage-24.0",
-      "commit": "b782779c194795451d7bf14be6413843f99c19d6",
-      "file_count": 2,
+      "commit": "62baaa3b62a9d93649bcef6128c25a6095a06a29",
+      "file_count": 1,
       "pushed_at": null,
       "status": "ok"
     },
@@ -1654,7 +1724,7 @@
     },
     "osom/ingot": {
       "branch": "lineage-24.0",
-      "commit": "03bd13bc73bf5834c3ab6d797fbc958c49fce252",
+      "commit": "bb950dea4e1788166dada8c5e798078385551d87",
       "file_count": 2,
       "pushed_at": null,
       "status": "ok"
@@ -1716,7 +1786,7 @@
       "status": "empty"
     },
     "realme/luigi": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "9de0bdf252bfa1f0c57ec2dfbfa02b49aec07076",
       "file_count": 0,
       "pushed_at": null,
@@ -1745,17 +1815,17 @@
     },
     "realme/piloti": {
       "branch": "lineage-24.0",
-      "commit": "ef1d071d10b465ad6fb69212397878a54ae3b419",
-      "file_count": 0,
+      "commit": "0aa06f095a5431421261e49b37dc02bab6ece492",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "realme/pista": {
       "branch": "lineage-24.0",
-      "commit": "d97e9f6472f1c1eff1b8e77b4aecabd87a19f6c4",
-      "file_count": 0,
+      "commit": "9d83fe0d5467abf4c2e53dc3828984401b8ddbb3",
+      "file_count": 1,
       "pushed_at": null,
-      "status": "empty"
+      "status": "ok"
     },
     "realme/sm6375-common": {
       "branch": "lineage-24.0",
@@ -1787,7 +1857,7 @@
     },
     "samsung/a21s-common": {
       "branch": "lineage-24.0",
-      "commit": "1eadc830f8d9650afe44c8ac39a732dc768ce0a8",
+      "commit": "4d2baf3971dc142b6530d7ec3a5e5025c4c732da",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1800,15 +1870,15 @@
       "status": "empty"
     },
     "samsung/a52q": {
-      "branch": "lineage-23.2",
-      "commit": "226639944997e2eebafc889ae4e35080dbd41faf",
+      "branch": "lineage-24.0",
+      "commit": "a36f1ceb968530d27d18736550aec2b84bf101ea",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/a52sxq": {
-      "branch": "lineage-23.2",
-      "commit": "7ef1eb6eff980ba09c365eebd763f264b7f994e9",
+      "branch": "lineage-24.0",
+      "commit": "4a575119fceba2c01fa5f7fe324fead1c6f2fdbb",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1828,22 +1898,22 @@
       "status": "ok"
     },
     "samsung/a72q": {
-      "branch": "lineage-23.2",
-      "commit": "99fdb7fa105843f23c2f8c4811cc8bf04c9f1d19",
+      "branch": "lineage-24.0",
+      "commit": "eff235167d83a99fc152cedb99ef433d3ea87858",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/a73xq": {
-      "branch": "lineage-23.2",
-      "commit": "d1c2333a5fd1e2d871236d9c945ae52caebbd477",
+      "branch": "lineage-24.0",
+      "commit": "2de8740f4c7f20087d922f9ac8e1608864f2e571",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/b0s": {
       "branch": "lineage-24.0",
-      "commit": "3d094600ee9b7cc219a77a96109c17c3dddf7df3",
+      "commit": "162d9c24061bfda4da752802c151778e3532a5b8",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1920,7 +1990,7 @@
     },
     "samsung/dm1q": {
       "branch": "lineage-24.0",
-      "commit": "d13904afcdd0321f7149eefb7ed6df3d3efa1f21",
+      "commit": "d4d2b1729fb4e925c7a1ff12574fa1806bebab32",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1948,7 +2018,7 @@
     },
     "samsung/g0s": {
       "branch": "lineage-24.0",
-      "commit": "8cb925efa1d1803eb0fc3fe8666786b8c48ad28e",
+      "commit": "9f8db826fba590b0a25164ea70ad340822aa4252",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -1962,7 +2032,7 @@
     },
     "samsung/gta4l-common": {
       "branch": "lineage-24.0",
-      "commit": "b3ad53486fafbcca29dbf01d60b0052bb0c060ff",
+      "commit": "8ee0c6e54a34256a5d0e2c13f60f10a0b307518b",
       "file_count": 5,
       "pushed_at": null,
       "status": "ok"
@@ -2039,28 +2109,28 @@
     },
     "samsung/gts7l": {
       "branch": "lineage-24.0",
-      "commit": "58fe4510a382d3a032a3b12f24df32434197ce44",
+      "commit": "ed95e440313f337c52ec289640c0bc537a759fcf",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/gts7lwifi": {
       "branch": "lineage-24.0",
-      "commit": "ceee92d784c16edba3b921279850e3dba60f74e5",
+      "commit": "f6bdc0854726574eeadb30931553da3f7b866431",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/gts7xl": {
       "branch": "lineage-24.0",
-      "commit": "7f6980d6715d34522dcb06c0b974cada789925cf",
+      "commit": "4598283b2ebcf3aeb80d72d9fb1f673a1f7747fe",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/gts7xlwifi": {
       "branch": "lineage-24.0",
-      "commit": "52730512a2cc7bad10cd9900cba03a297ff50007",
+      "commit": "a7a941e33852fb25f11659ffafe7f8aa5863ac05",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -2087,15 +2157,15 @@
       "status": "empty"
     },
     "samsung/m52xq": {
-      "branch": "lineage-23.2",
-      "commit": "c7304b65ac4b407727cd23d8ff90ab9f86206c10",
+      "branch": "lineage-24.0",
+      "commit": "1b8fe8b1ad2c9f33071f051586feadb8fc4c46f3",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "samsung/r0s": {
       "branch": "lineage-24.0",
-      "commit": "3b01e9a1e92a4582eabe6bd330bd365b1d3d0af0",
+      "commit": "c84626a241fccbc86dd866a6b460849bf15b8170",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -2122,29 +2192,29 @@
       "status": "empty"
     },
     "samsung/sm7125-common": {
-      "branch": "lineage-23.2",
-      "commit": "a269ee9ec56af95f2ef2f554d17cf282684de502",
+      "branch": "lineage-24.0",
+      "commit": "6fc0c6e7e330a7a5a8f014f5c968cbf0d25880ba",
       "file_count": 4,
       "pushed_at": null,
       "status": "ok"
     },
     "samsung/sm7325-common": {
-      "branch": "lineage-23.2",
-      "commit": "5ec797d1addb6da68f584c958bbb9ea243333ab5",
+      "branch": "lineage-24.0",
+      "commit": "6f60ceaca5495daaafecddaf2c9682ca38fd37e4",
       "file_count": 4,
       "pushed_at": null,
       "status": "ok"
     },
     "samsung/sm8250-common": {
       "branch": "lineage-24.0",
-      "commit": "33c1899715e3fcb84001d6183c6f3992120a7b36",
+      "commit": "9991284b746f6cb7d0406bd4cbb28d86bfb451ee",
       "file_count": 4,
       "pushed_at": null,
       "status": "ok"
     },
     "samsung/sm8550-common": {
       "branch": "lineage-24.0",
-      "commit": "65167fd7a74a05648b09794453907d41fe38432c",
+      "commit": "030600527dc57870d200a79af94022d14d6c8baf",
       "file_count": 4,
       "pushed_at": null,
       "status": "ok"
@@ -2180,6 +2250,13 @@
     "samsung/z3s": {
       "branch": "lineage-24.0",
       "commit": "65871f017be6df1cf3e58aa4393de74d5efec301",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
+    },
+    "sdmc/tifa": {
+      "branch": "lineage-24.0",
+      "commit": "6c3eaca039ab3f478e0b30165d750ff542e51ca5",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
@@ -2333,7 +2410,7 @@
     },
     "sony/pdx257": {
       "branch": "lineage-24.0",
-      "commit": "b746cd7ffebc23edcfd331607503c458f6f3901a",
+      "commit": "acdbb83f7fc6c2a2d2f58cc330a980de75329ffd",
       "file_count": 2,
       "pushed_at": null,
       "status": "ok"
@@ -2417,7 +2494,7 @@
     },
     "xelex/q25": {
       "branch": "lineage-24.0",
-      "commit": "8094dcefcc78d19958b3d47cf2c685f78505b279",
+      "commit": "6e56a6416582956089a4411df6ad473e20c74963",
       "file_count": 11,
       "pushed_at": null,
       "status": "ok"
@@ -2472,7 +2549,7 @@
       "status": "ok"
     },
     "xiaomi/cupid": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "82f1641acef601044d9f75b0954fdbf576e62f57",
       "file_count": 44,
       "pushed_at": null,
@@ -2493,7 +2570,7 @@
       "status": "ok"
     },
     "xiaomi/diting": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "6f318c6ee949b7912be97cdb4d2fb8f3e5ef284a",
       "file_count": 27,
       "pushed_at": null,
@@ -2501,7 +2578,7 @@
     },
     "xiaomi/earth": {
       "branch": "lineage-24.0",
-      "commit": "e5731f3f56d6e705b8718ce0a32ce1870ccf6cb1",
+      "commit": "41e45b6ace0c08c25e52caf0cf2d1dd5477b38e7",
       "file_count": 22,
       "pushed_at": null,
       "status": "ok"
@@ -2515,7 +2592,7 @@
     },
     "xiaomi/fuxi": {
       "branch": "lineage-24.0",
-      "commit": "a237839b8a67e7df7f4e2604211bdb3df296afd8",
+      "commit": "24085d5ae330e335996b67867f5498f7b83aa51a",
       "file_count": 28,
       "pushed_at": null,
       "status": "ok"
@@ -2591,21 +2668,21 @@
       "status": "ok"
     },
     "xiaomi/marble": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "b86988fe75b05029bf031a3322333516580821b0",
       "file_count": 30,
       "pushed_at": null,
       "status": "ok"
     },
     "xiaomi/mars": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "4cc9926781cd567ce943bd37eabc6941f7574fb4",
       "file_count": 40,
       "pushed_at": null,
       "status": "ok"
     },
     "xiaomi/mayfly": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "9a1d5d4b9d03366c927b258e3644125c4096728d",
       "file_count": 26,
       "pushed_at": null,
@@ -2654,7 +2731,7 @@
       "status": "ok"
     },
     "xiaomi/mondrian": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "3535868a024688fb69067e1e2c701935210f8d68",
       "file_count": 34,
       "pushed_at": null,
@@ -2683,10 +2760,17 @@
     },
     "xiaomi/mt6768-common": {
       "branch": "lineage-24.0",
-      "commit": "8e7ec44fdec81181fcd916f1799478318a2d89ad",
+      "commit": "b62d70f6ab91a76e62cc9b7f8697f8389a805152",
       "file_count": 17,
       "pushed_at": null,
       "status": "ok"
+    },
+    "xiaomi/mt6895-common": {
+      "branch": "lineage-24.0",
+      "commit": "535bb4921befe6a6b14382182b4f95da99a20218",
+      "file_count": 0,
+      "pushed_at": null,
+      "status": "empty"
     },
     "xiaomi/munch": {
       "branch": "lineage-23.2",
@@ -2753,7 +2837,7 @@
     },
     "xiaomi/rosemary": {
       "branch": "lineage-24.0",
-      "commit": "67b416580f481bc105e13091af5b1d109dbd9009",
+      "commit": "673c6d010484ffadc4261f2b29ba5a69e924952c",
       "file_count": 18,
       "pushed_at": null,
       "status": "ok"
@@ -2837,21 +2921,21 @@
     },
     "xiaomi/sm8350-common": {
       "branch": "lineage-24.0",
-      "commit": "054f494dcfe9cf6967aee3897e220040d20cb45c",
+      "commit": "83b35ce3657bf254c32ce8fa92c2074a5bc5b33b",
       "file_count": 0,
       "pushed_at": null,
       "status": "empty"
     },
     "xiaomi/sm8450-common": {
-      "branch": "lineage-23.2",
-      "commit": "a65718c8f25a2b676ce79ab5428fede3bdf11c7b",
+      "branch": "lineage-24.0",
+      "commit": "e0a81d91e4a25d66be42c7c1a08e6b374b5af9c3",
       "file_count": 1,
       "pushed_at": null,
       "status": "ok"
     },
     "xiaomi/sm8550-common": {
       "branch": "lineage-24.0",
-      "commit": "0c9140245d91660b96dfd80667e7b018d73c2850",
+      "commit": "7f638055a219059ee573a1b936782114c6509e80",
       "file_count": 2,
       "pushed_at": null,
       "status": "ok"
@@ -2878,7 +2962,7 @@
       "status": "ok"
     },
     "xiaomi/thor": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "a20daa7ceac42f515570b7efcca5508dddd2d925",
       "file_count": 25,
       "pushed_at": null,
@@ -2906,7 +2990,7 @@
       "status": "ok"
     },
     "xiaomi/unicorn": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "cbad98827e2733ba825a0377aff8258642fbb138",
       "file_count": 25,
       "pushed_at": null,
@@ -2954,15 +3038,22 @@
       "pushed_at": null,
       "status": "ok"
     },
+    "xiaomi/xaga": {
+      "branch": "lineage-24.0",
+      "commit": "4df97065e771a1e3957afec40d8ddca9b0b336a0",
+      "file_count": 90,
+      "pushed_at": null,
+      "status": "ok"
+    },
     "xiaomi/zeus": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "b5fb69dc01cd8e1f7ebf9069e776c017d67a88a9",
       "file_count": 43,
       "pushed_at": null,
       "status": "ok"
     },
     "xiaomi/zizhan": {
-      "branch": "lineage-23.2",
+      "branch": "lineage-24.0",
       "commit": "87e2093ee5dc83f5b3acaef6c261eab63dd36b41",
       "file_count": 57,
       "pushed_at": null,

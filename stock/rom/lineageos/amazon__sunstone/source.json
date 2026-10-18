@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_amazon_sunstone.git",
+  "codename": "sunstone",
+  "commit": "7a594e5bf37bbc8f2ca25756aed2a2fdf0a86d85",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "8b06504770d47059edcbb1001996b4e7ed8575e944dc5bcb2cdac3821c2d95f1",
+      "size": 151
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "d42f245fb3d27f44020c085e2f1a5d5bc5b039cb722681243f57c095222733a3",
+      "size": 5219
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "b9f8241e2c07678dc3215367c953b51abd5534ff306f2de0c0f7a444de981819",
+      "size": 1910
+    },
+    {
+      "path": "device.mk",
+      "sha256": "836d99f86e14143e2a8e878ab3a3265be7c639a92675d61fad0c258bbfae80e5",
+      "size": 8815
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "42e97e4320be8ed597ef68eca54044065935392698602337761788a9717af6a6",
+      "size": 5752
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "0ba69954d2e0ae64f6dcc397baf94070ad2e1d2801dcbde974ae8f6121bb444e",
+      "size": 409
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "b0beb30e1665d267672473c2f4835eef3f6ea97103711524408bd3a4b5e17e07",
+      "size": 51715
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "d22a9f4548b91c25eeb7b589aa711592547ed8d5ee3695bed2e71dab3094d006",
+      "size": 1042
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_amazon_sunstone",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-17T23:05:52Z",
+  "vendor": "amazon"
+}

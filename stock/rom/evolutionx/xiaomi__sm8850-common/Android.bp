@@ -1,0 +1,58 @@
+//
+// Copyright (C) 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+    imports: [
+        "hardware/xiaomi",
+    ],
+}
+
+install_symlink {
+    name: "firmware_wlanmdsp.otaupdate_symlink",
+    vendor: true,
+    installed_location: "firmware/wlanmdsp.otaupdate",
+    symlink_target: "/data/vendor/firmware/wlanmdsp.mbn",
+}
+
+install_symlink {
+    name: "firmware_wlan_mac.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/peach_v2/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/peach_v2/wlan_mac.bin",
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/peach_v2/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/peach_v2/WCNSS_qcom_cfg.ini",
+}
+
+mkdir {
+    name: "vendor_modem_firmware_mountpoint",
+    dir: "modem_firmware",
+    vendor: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libv4a_aidl",
+    owner: "oneplus",
+    vendor: true,
+    relative_install_path: "soundfx",
+    srcs: ["prebuilt/lib64/soundfx/libv4a_aidl.so"],
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+}
+
+android_app_import {
+    name: "ViPER4Android",
+    apk: "prebuilt/app/ViPER4Android/ViPER4Android.apk",
+    product_specific: true,
+    presigned: true,
+    preprocessed: true,
+}
