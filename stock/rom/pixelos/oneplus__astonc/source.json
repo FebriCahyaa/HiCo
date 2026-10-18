@@ -2,13 +2,13 @@
   "branch": "seventeen",
   "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_astonc.git",
   "codename": "astonc",
-  "commit": "b56997eee3f8c2a7f951b09b5159a36257c2e75a",
-  "file_count": 7,
+  "commit": "6edaa4b72b1fc28589f0603c620c0ed677a23152",
+  "file_count": 6,
   "files": [
     {
       "path": "Android.bp",
-      "sha256": "21537c43790f3d7034dc370a4fa182ecb0bf91b5404592a77af310a737878013",
-      "size": 100
+      "sha256": "88749f6153f6c88d9f48419441c743cd6190c379006e1e10634055168f61022f",
+      "size": 101
     },
     {
       "path": "AndroidProducts.mk",
@@ -17,28 +17,23 @@
     },
     {
       "path": "BoardConfig.mk",
-      "sha256": "501f7bce03b171896338e6d35cced97cf6cea024017f442e3a1a0486013b0d93",
-      "size": 751
+      "sha256": "953360b4bb9a4259407dee2130074a4069cf30e69155fff0e0d22c8be103d300",
+      "size": 784
     },
     {
       "path": "device.mk",
-      "sha256": "a2b3e11a5a0b6271593d411370e046de201e55bea3a3bd506182440830de141c",
-      "size": 2635
+      "sha256": "8cd442ce5a247e559f025d4c5ea4e5d47ed73a7cd2d701a4345f563d7526a51f",
+      "size": 2818
     },
     {
       "path": "extract-files.py",
-      "sha256": "8900aed222b41a5431f1a3cc6bd99fa9847736d05aa12de06a7365d67a11144b",
-      "size": 3270
+      "sha256": "052e1c89850dc951918a26d382105b17135aa8fd484585ef1a9e31383c4ffdbb",
+      "size": 3703
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "135e7284d7dd5d57391e7e8c4abdd1affc8c7a44e8229ec46d831c7958d4cfaf",
-      "size": 61998
-    },
-    {
-      "path": "vendor.prop",
-      "sha256": "1d1eecfc1e622934e1f8c2f55a0e3a75fa3081dc92271979c55552776b646e0c",
-      "size": 198
+      "sha256": "b97e78707c6b4b0e96e5fc7093dbc4d65b57126162251830212995c852c3c97f",
+      "size": 62676
     }
   ],
   "kind": "device",
@@ -47,6 +42,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "pixelos",
-  "upstream_pushed_at": "2026-09-26T10:33:43Z",
+  "upstream_pushed_at": "2026-10-15T16:56:18Z",
   "vendor": "oneplus"
 }

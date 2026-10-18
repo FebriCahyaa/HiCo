@@ -1,0 +1,42 @@
+{
+  "branch": "cnb",
+  "clone_url": "https://github.com/Evolution-X-Devices/device_oneplus_sm8750-common.git",
+  "codename": "sm8750-common",
+  "commit": "372e38e08f69410f68d147d8c290deec5d24372d",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "22df313d452aa7da9e9cdd24341519840ca188e6e9ecc8ed51c2757f93bc0721",
+      "size": 10517
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "91ea3363b0a930db6e447a1ff1846eddea8432f39ceb4077f8210cd22e66fb9c",
+      "size": 5575
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d078cdd94b7b2417687a3231691f5132891467fbe137c90cd51a60b5d86fc334",
+      "size": 441
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "87329f3943659e6ac1db7d1ef5aca87c65f559b4b58a3bdd09c03fc45ba74fb8",
+      "size": 37464
+    }
+  ],
+  "kind": "common",
+  "repo": "device_oneplus_sm8750-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "evolutionx",
+  "upstream_pushed_at": "2026-10-07T05:15:24Z",
+  "vendor": "oneplus"
+}

@@ -1,4 +1,4 @@
-#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils:../../../hardware/oplus/extract-utils-ext python3
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -15,6 +15,9 @@ from extract_utils.fixups_lib import (
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
+)
+from extract_utils_oplus import (
+    add_generated_thermal_engine_config,
 )
 
 namespace_imports = [
@@ -65,6 +68,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     'odm/lib64/liboprec_audrec.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'odm/lib64/soundfx/libOplusSpatializerAidl.so': blob_fixup()
+        .add_needed('libbase.so')
+        .patch_file('blob-patches/libOplusSpatializerAidl.py'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()
@@ -91,6 +97,8 @@ module = ExtractUtilsModule(
     namespace_imports=namespace_imports,
     add_firmware_proprietary_file=True,
 )
+
+add_generated_thermal_engine_config(module)
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_oneplus_iceland.git",
+  "codename": "iceland",
+  "commit": "b37629cd1a76c247fc02383a2f375456009da949",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "a52e71a4149b3739f8b6175af8dadc25509a7a97f2eccf201c423191df2fd3a3",
+      "size": 150
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "488bb4176c1f80b6859e62a3b54565e7bf829d7af6498a2db401dfd9cd956332",
+      "size": 909
+    },
+    {
+      "path": "device.mk",
+      "sha256": "82e9b6e99835d35b3411687f842ae48a137cf60656cd6f3f855940e5de06ba2c",
+      "size": 2765
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "414028e50dd056b63e771df23e28e29292c54daab7e7fc06ee6489a8b5d847e2",
+      "size": 4052
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5d6958c24146ba4d6c6324d2346bfd35c6ed4a1ff276c1c5bfd0bfb9f536e4b4",
+      "size": 120
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "777b4bfcf0ecb80b504d285d2fa4312ddf0f6ea074dbf90bcb52b7d0e3e765ea",
+      "size": 78900
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_oneplus_iceland",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-17T20:51:58Z",
+  "vendor": "oneplus"
+}
