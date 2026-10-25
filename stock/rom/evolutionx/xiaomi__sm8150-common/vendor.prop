@@ -88,7 +88,7 @@ vendor.audio.usb.disable.sidetone=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
-vendor.voice.path.for.pcm.voip=true
+vendor.voice.path.for.pcm.voip=false
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -199,6 +199,7 @@ vendor.gatekeeper.disable_spu=true
 
 # Graphics
 debug.graphics.game_default_frame_rate.disabled=true
+debug.renderengine.blur_algorithm=kawase_darkmoon
 debug.sf.auto_latch_unsignaled=1
 debug.sf.early.app.duration=16500000
 debug.sf.early.sf.duration=16000000
@@ -273,3 +274,13 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# APEX
+# Don't store updated APEXes as pinned images in /data/apex/images. apexd
+# activates those through dm-linear devices over userdata and reports the
+# /dev/block/dm-N node as the module path; system_server can't stat it
+# (dm_device), PackageManager fails to parse it and boot loops. Seen with a
+# Play ExtServices update. Keep updates as plain files in /data/apex/active
+# instead. Pinned images already on a device are then ignored and the
+# pre-installed APEX is used.
+apexd.config.use_fiemap=false

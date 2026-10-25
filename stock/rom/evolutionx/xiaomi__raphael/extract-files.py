@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import os
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -15,12 +17,37 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+from extract_utils.tools import (
+    patchelf_version_path_map,
+)
+from extract_utils.utils import (
+    run_cmd,
+)
+
+
+def mpbase_use_padding_shim(ctx, file, file_path, *args, **kwargs):
+    # Route libmpbase's malloc/realloc through libmpbase_shim, which pads
+    # large allocations (the refocus engine reads past their end).
+    syms = f'{file_path}.syms'
+    with open(syms, 'w') as f:
+        f.write('malloc mpbase_shim_malloc\nrealloc mpbase_shim_realloc\n')
+    run_cmd([patchelf_version_path_map['0_18'], '--rename-dynamic-symbols', syms, file_path])
+    os.remove(syms)
+
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/init.batterysecret.rc': blob_fixup()
         .regex_replace('.*seclabel u:r:batterysecret:s0\n', ''),
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.udfps.so'),
+    'vendor/etc/init/vendor.sensors.sscrpcd.rc': blob_fixup()
+        .regex_replace(
+            r'capabilities BLOCK_SUSPEND\n',
+            'capabilities BLOCK_SUSPEND\n'
+            '    # The fastrpc default search path. Set it so apps_std stops logging a\n'
+            '    # failed getenv on every file it opens (the backlight, several times a second).\n'
+            '    setenv ADSP_LIBRARY_PATH ";/vendor/lib/rfsa/adsp;/vendor/lib/rfsa/dsp;/vendor/dsp"\n',
+        ),
     'vendor/lib/hw/audio.primary.raphael.so': blob_fixup()
         .binary_regex_replace(
             b'/vendor/lib/liba2dpoffload.so',
@@ -55,9 +82,13 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle64_open')
         .clear_symbol_version('remote_register_dma_handle')
         .clear_symbol_version('remote_register_dma_handle_attr'),
+    'vendor/lib64/libmpbase.so': blob_fixup()
+        .call(mpbase_use_padding_shim)
+        .add_needed('libmpbase_shim.so'),
 }  # fmt: skip
 
 namespace_imports = [
+    'device/xiaomi/raphael',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8150',
     'hardware/xiaomi',

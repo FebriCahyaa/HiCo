@@ -5,24 +5,15 @@
             "Type":"UNKNOWN",
             "Hidden":true,
             "TempPathType": "DEVICE_PROPERTY",
-            "TempPath":"vendor.powerhal.mode.aa"
-        },
-        {
-            "Name":"AA_THROTTLING_TRIGGER",
-            "Type":"UNKNOWN",
-            "Hidden":true,
-            "VirtualSensor":true,
-            "Formula":"WEIGHTED_AVG",
-            "Combination":["VIRTUAL-SKIN"],
-            "Coefficient":[1.0],
-            "HotThreshold":["NAN", "35000", "NAN", "NAN", "NAN", "NAN", "NAN"],
-            "Multiplier":1
+            "TempPath":"vendor.thermal.mode.aa"
         },
         {
             "Name":"DEVICE-SCREEN-AOD-OFF-HINT",
             "Type":"UNKNOWN",
             "VirtualSensor":true,
-            "TriggerSensor": ["AA_THROTTLING_TRIGGER"],
+            "TriggerSensor": [
+                "VIRTUAL-SKIN-OVER-35C-TRIGGER"
+            ],
             "Formula":"COUNT_THRESHOLD",
             "Combination":["AA_ACTIVE_PROPERTY", "VIRTUAL-SKIN"],
             "Coefficient":[1.0, 39000],
