@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_mona.git",
+  "codename": "mona",
+  "commit": "b41432100a054e1e47cb05e874e5154faa1c47ac",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "fd7af47ad694864f567eed9f47254415a52567abfa4e80646e79e2a96ee519d8",
+      "size": 651
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0d8ce946c504ada4b12d5b5194506899997608ea447cb55ffee1bba488e94196",
+      "size": 1490
+    },
+    {
+      "path": "device.mk",
+      "sha256": "cc38768f3ce1db4050ce973e88e597e9626050275b16e5cdab836e10a52c6a04",
+      "size": 2896
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "383ea1227efc09b05d7b5dbafb66b6a24be0fe49760fd70f05579aafbe474151",
+      "size": 3422
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "6a2300b3c443c45b8fcecc2f9fb6ae5743a8afec938e410a778e09638f7ffbde",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "7c697d2854c0e94c8829fae4feed04718b7840437765d759d64ffa3aaf7813a5",
+      "size": 17873
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "b958a8683aecf8fbd243ac4d3da13ac2d3fc440089d4da2d809e97f993d7bccc",
+      "size": 653
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_mona",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-21T23:41:39Z",
+  "vendor": "motorola"
+}

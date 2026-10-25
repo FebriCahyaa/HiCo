@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
     SettingsOverlayGWKK3 \
     SystemUIGoogleOverlayVendorLynx
 
+PRODUCT_PACKAGES += \
+    ApertureOverlayLynx
+
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/vendor.prop

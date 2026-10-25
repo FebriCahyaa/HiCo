@@ -37,7 +37,6 @@ PRODUCT_PACKAGES += \
 
 # Moto Camera 4
 TARGET_MOTCAMERA4 := hawao
-TARGET_USES_MOTCAMERA4 := true
 
 $(call inherit-product, vendor/motorola/MotCamera4-bengal/motcamera4.mk)
 

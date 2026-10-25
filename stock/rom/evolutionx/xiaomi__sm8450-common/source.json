@@ -2,23 +2,23 @@
   "branch": "cnb",
   "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm8450-common.git",
   "codename": "sm8450-common",
-  "commit": "90877f0f422a9344f0f28b18323273f0e8e856ef",
+  "commit": "188e2b2357e559f8f209b99eaa918a60391c60e7",
   "file_count": 16,
   "files": [
     {
       "path": "Android.bp",
-      "sha256": "d091d3925bda68087600143b4b3c890dbad0595814d01e8981315981ae2e60d7",
-      "size": 1604
+      "sha256": "64276e9151e8d75c992aa189cccade1de4f64a577caa4b59c268222bfae78813",
+      "size": 1700
     },
     {
       "path": "BoardConfigCommon.mk",
-      "sha256": "994d03d0eb99f2b9c9c0a8838b46f242975c54084e4421199d73dc0aa86bd4f7",
-      "size": 9345
+      "sha256": "242d15cae15f028ee20c26e144cb2fbe2483b826511227314c46d1ca248d00b0",
+      "size": 9390
     },
     {
       "path": "extract-files.py",
-      "sha256": "1e4a0d429b491b371732c035ef70b1798dbfdcdb8a8e5bcfb7a200eba09cfbfc",
-      "size": 4642
+      "sha256": "e60dcd08a3c2af91ee90f7692191cfbe8a5107ff858ed26887f8b984ea13c4ce",
+      "size": 4831
     },
     {
       "path": "parts/src/org/lineageos/settings/thermal/ThermalComposeActivity.kt",
@@ -77,8 +77,8 @@
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "614611e1c3516a0b78b6a2c2254abe264b18e573d9fb8e1c392e2e2a629e2d52",
-      "size": 52472
+      "sha256": "b82574f617e0aeaca54e265da26db28ce340183f285fd39998c0802a6e88055c",
+      "size": 52485
     },
     {
       "path": "sepolicy/vendor/mi_thermald.te",
@@ -92,6 +92,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "evolutionx",
-  "upstream_pushed_at": "2026-09-28T10:02:47Z",
+  "upstream_pushed_at": "2026-10-23T15:39:00Z",
   "vendor": "xiaomi"
 }

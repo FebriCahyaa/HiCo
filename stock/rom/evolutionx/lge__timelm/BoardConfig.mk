@@ -50,6 +50,11 @@ TARGET_NO_BOOTLOADER := true
 
 # Display
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
+
+# Gralloc: resolve impl-defined + UBWC + 10-bit buffers to TP10_UBWC (CamX asks for
+# these when recording HDR video; without it the buffer size is too small)
+SOONG_CONFIG_qtidisplay += target_uses_tp10_ubwc_for_10bit
+SOONG_CONFIG_qtidisplay_target_uses_tp10_ubwc_for_10bit := true
 TARGET_SCREEN_DENSITY := 420
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
@@ -180,10 +185,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/lge/sepolicy/SEPolicy.mk
-
-PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Vendor SPL
 VENDOR_SECURITY_PATCH := 2023-07-01

@@ -357,6 +357,28 @@
       "ResetOnInit": true
     },
     {
+      "Name": "EnablePTick",
+      "Path": "/proc/vendor_sched/enable_ptick",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true,
+      "Condition": "!enable_ptick"
+    },
+    {
+      "Name": "EnablePTick",
+      "Path": "/proc/vendor_sched/enable_ptick",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 1,
+      "ResetOnInit": true,
+      "Condition": "enable_ptick"
+    },
+    {
       "Name": "TARampupMultiplier",
       "Path": "/proc/vendor_sched/groups/ta/rampup_multiplier",
       "Values": [
@@ -503,7 +525,7 @@
     },
     {
       "Name": "AAModeProperty",
-      "Path": "vendor.powerhal.mode.aa",
+      "Path": "vendor.thermal.mode.aa",
       "Values": [
         "0",
         "1"
@@ -2441,6 +2463,12 @@
     },
     {
       "PowerHint": "GAME",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "GAME",
       "Node": "CPULittleClusterResponseTimeMs",
       "Duration": 0,
       "Value": "-1"
@@ -3239,6 +3267,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_EXTREME",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_EXTREME",
       "Node": "AutoUclampMaxStUtilThreshold",
       "Duration": 0,
       "Value": "0"
@@ -3491,6 +3525,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_HIGH",
       "Node": "AutoUclampMaxStUtilThreshold",
       "Duration": 0,
       "Value": "0"
@@ -3731,6 +3771,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_STANDARD",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_STANDARD",
       "Node": "AutoUclampMaxStUtilThreshold",
       "Duration": 0,
       "Value": "0"
@@ -3936,6 +3982,12 @@
     {
       "PowerHint": "CAMERA_STREAMING_LOW",
       "Node": "UpdateFreqOnIdleEnable",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "EnablePTick",
       "Duration": 0,
       "Value": "0"
     },
@@ -4158,6 +4210,12 @@
     {
       "PowerHint": "CAMERA_STREAMING_VIDEO_CALL",
       "Node": "UpdateFreqOnIdleEnable",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_VIDEO_CALL",
+      "Node": "EnablePTick",
       "Duration": 0,
       "Value": "0"
     },
@@ -4900,6 +4958,12 @@
       "Value": "0"
     },
     {
+      "PowerHint": "CAMERA_PROJECT11",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
       "Node": "CL1MinResidency",
       "Duration": 0,
@@ -5029,6 +5093,7 @@
     },
     {
       "Name": "SYSTEM_UI_PROFILE",
+      "Condition": "!system_ui_profile_update",
       "PID_On": true,
       "PID_Po": 2.0,
       "PID_Pu": 0.5,
@@ -5064,6 +5129,46 @@
       "MaxRecordsNum": 300,
       "GpuBoost": true,
       "GpuCapacityBoostMax": 25000
+    },
+    {
+      "Name": "SYSTEM_UI_PROFILE",
+      "Condition": "system_ui_profile_update",
+      "PID_On": true,
+      "PID_Po": 1.2,
+      "PID_Pu": 0.7,
+      "PID_I": 0.0,
+      "PID_I_Init": 200,
+      "PID_I_High": 512,
+      "PID_I_Low": -30,
+      "PID_Do": 660.0,
+      "PID_Du": 320.0,
+      "UclampMin_On": true,
+      "UclampMin_Init": 440,
+      "UclampMin_LoadUp": 730,
+      "UclampMin_LoadReset": 730,
+      "UclampMin_High": 440,
+      "UclampMin_Low": 2,
+      "UclampMax_EfficientBase": 500,
+      "UclampMax_EfficientOffset": 200,
+      "SamplingWindow_P": 1,
+      "SamplingWindow_I": 0,
+      "SamplingWindow_D": 1,
+      "ReportingRateLimitNs": 166666660,
+      "TargetTimeFactor": 1.0,
+      "StaleTimeFactor": 15.0,
+      "HeuristicBoost_On": true,
+      "HBoostModerateJankThreshold": 2,
+      "HBoostOffMaxAvgDurRatio": 4.0,
+      "HBoostSevereJankPidPu": 0.25,
+      "HBoostSevereJankThreshold": 8,
+      "HBoostUclampMinCeilingRange": [480, 722],
+      "HBoostUclampMinFloorRange": [230, 410],
+      "JankCheckTimeFactor": 1.2,
+      "LowFrameRateThreshold": 25,
+      "MaxRecordsNum": 300,
+      "GpuBoost": true,
+      "GpuCapacityBoostMax": 25000,
+      "PidTargetMarginFactor": 0.2
     }
   ],
   "OtherConfigs": {

@@ -104,10 +104,6 @@ USE_DEX2OAT_DEBUG := false
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
-# Dolby
-PRODUCT_PACKAGES += \
-    DolbyAtmos
-
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck_ramdisk \
@@ -238,9 +234,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
-
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Boot control
@@ -278,15 +271,6 @@ PRODUCT_COPY_FILES += \
 # Override 120 for SurfaceFlinger frame_rate_category_m8n
 $(call soong_config_set,surfaceflinger,frame_rate_category_min,120)
 
-# Thermal HAL
-PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.pixel
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
-
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -453,6 +437,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml \
     telephony-ext
+
+PRODUCT_PACKAGES += \
+    NothingNrEnabler
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
