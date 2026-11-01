@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_xaga.git",
+  "codename": "xaga",
+  "commit": "6a08306b6d00b359f1cb9fcbf59cf874df3c9e13",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "3c11cbdf34b1c9a8e93640114bab3f830312e30c8ba4ba506d6bd3129f6ae234",
+      "size": 144
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "dd3c582e1589855073ecb472b200f91eb543cfc37fca87953c42c2e9d6c989f5",
+      "size": 1206
+    },
+    {
+      "path": "device.mk",
+      "sha256": "edaa94d865218333347abf119140cf00577d310d2afc3ed3faaa2127491087a1",
+      "size": 2591
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d5db0d1f15f391592b3e470b4eefe169312fc5f09b564fd9d4b7211548960f1b",
+      "size": 4140
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "601e5cc32ad568a1137d9243fad74b79449161e34fdfc851553f2e980a37d005",
+      "size": 118
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "4eecc49e53889085a2b536a335d1e5ea8a52d1a13771cc69462334b273230952",
+      "size": 54252
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "4c8d31c90818ace22fe460a27af19e751cd7e5f536fe873119ccc37ba021100e",
+      "size": 1474
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_xaga",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-11T13:40:26Z",
+  "vendor": "xiaomi"
+}

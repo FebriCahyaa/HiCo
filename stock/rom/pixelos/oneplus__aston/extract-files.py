@@ -1,6 +1,6 @@
-#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils:../../../hardware/oplus/extract-utils-ext python3
 #
-# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -16,9 +16,13 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+from extract_utils_oplus import (
+    add_generated_thermal_engine_config,
+)
 
 namespace_imports = [
     'hardware/oplus',
+    'hardware/pixelworks/interfaces',
     'hardware/qcom-caf/sm8550',
     'vendor/oneplus/sm8550-common',
     'vendor/qcom/opensource/display',
@@ -34,19 +38,14 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'libhwconfigurationutil',
-        'vendor.oplus.hardware.cammidasservice-V1-ndk',
     ): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
         .regex_replace('SystemCamera =  0;  0;  0;  1;  0;  1;', 'SystemCamera =  0;  0;  0;  0;  0;  0;'),
-    (
-        'odm/etc/libnfc-mtp-SN220.conf_23801',
-        'odm/etc/libnfc-mtp-SN220.conf_23861'
-    ): blob_fixup()
-        .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
+    'odm/etc/resourcemanager.xml': blob_fixup()
+        .regex_replace('<speaker_protection_enabled>1</speaker_protection_enabled>', '<speaker_protection_enabled>0</speaker_protection_enabled>'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     (
@@ -74,7 +73,15 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_buf'),
     'odm/lib64/libextensionlayer.so': blob_fixup()
         .replace_needed('libziparchive.so', 'libziparchive_odm.so'),
+    (
+        'vendor/bin/hw/vendor.qti.camera.provider-service_64',
+        'vendor/lib64/camx.provider-impl.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
+        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
+    'vendor/etc/libnfc-nxp.conf': blob_fixup()
+        .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0')
 }  # fmt: skip
 
@@ -84,6 +91,12 @@ module = ExtractUtilsModule(
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
+    add_firmware_proprietary_file=True,
+)
+
+add_generated_thermal_engine_config(
+    module,
+    horae_target_config='system_ext/etc/horae/horae_SM8550.conf',
 )
 
 if __name__ == '__main__':

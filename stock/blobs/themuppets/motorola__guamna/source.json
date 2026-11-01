@@ -1,0 +1,34 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_guamna.git",
+  "codename": "guamna",
+  "commit": "dc00c2acabd4b22af92a8346f9353c1e0503c1a5",
+  "file_count": 3,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/init/init_thermal-engine.rc",
+      "sha256": "85f2f6380eaa12f11495cb421e33232ad395cba4b29e3db4eb506286d6ea801a",
+      "size": 548
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine-guamna.conf",
+      "sha256": "384f844c65d66b7e8c2339d41c8634ff47e078851ff4f07f9e24dc2d33a11551",
+      "size": 1826
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_guamna",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "guamna"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_sony_elbe-common.git",
+  "codename": "elbe-common",
+  "commit": "8ab913c8eb7da506ac8016ef760950701b9e2295",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "66d1fc66737211f00c149bd563c9b1c6f2d30c25c71f6c7b97faac95e1347130",
+      "size": 449
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "07180947c5297a8b714033b8724eb5bf94d7f1dbb47f75133f2f290d37165734",
+      "size": 8777
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e1b9bfaa0a618f95ea2446bd0774ff11c87e28550ec78ef9fa980d549ce93724",
+      "size": 5174
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "2595f53ceedb6f81566a58520f60a83cedaee26cfa5b76d1df7e6e0f12314574",
+      "size": 421
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "c4c3728b21873122aa88e1c1f7e93545028b123184bcf6b13be9f451be499a63",
+      "size": 64474
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1607d3824f05ee586835d57748af8e397723103c52a61334f4a51378f2d88f55",
+      "size": 10631
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_sony_elbe-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-31T09:30:01Z",
+  "vendor": "sony"
+}

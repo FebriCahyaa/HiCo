@@ -340,6 +340,28 @@
       "ResetOnInit": true
     },
     {
+      "Name": "EnablePTick",
+      "Path": "/proc/vendor_sched/enable_ptick",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true,
+      "Condition": "!enable_ptick"
+    },
+    {
+      "Name": "EnablePTick",
+      "Path": "/proc/vendor_sched/enable_ptick",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 1,
+      "ResetOnInit": true,
+      "Condition": "enable_ptick"
+    },
+    {
       "Name": "TARampupMultiplier",
       "Path": "/proc/vendor_sched/groups/ta/rampup_multiplier",
       "Values": [
@@ -486,7 +508,7 @@
     },
     {
       "Name": "AAModeProperty",
-      "Path": "vendor.powerhal.mode.aa",
+      "Path": "vendor.thermal.mode.aa",
       "Values": [
         "0",
         "1"
@@ -2507,6 +2529,12 @@
     },
     {
       "PowerHint": "GAME",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "GAME",
       "Node": "CPULittleClusterResponseTimeMs",
       "Duration": 0,
       "Value": "-1"
@@ -3305,6 +3333,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_EXTREME",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_EXTREME",
       "Node": "AutoUclampMaxStUtilThreshold",
       "Duration": 0,
       "Value": "0"
@@ -3557,6 +3591,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_HIGH",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_HIGH",
       "Node": "AutoUclampMaxStUtilThreshold",
       "Duration": 0,
       "Value": "0"
@@ -3797,6 +3837,12 @@
     },
     {
       "PowerHint": "CAMERA_STREAMING_STANDARD",
+      "Node": "EnablePTick",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_STANDARD",
       "Node": "AutoUclampMaxStUtilThreshold",
       "Duration": 0,
       "Value": "0"
@@ -4002,6 +4048,12 @@
     {
       "PowerHint": "CAMERA_STREAMING_LOW",
       "Node": "UpdateFreqOnIdleEnable",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "EnablePTick",
       "Duration": 0,
       "Value": "0"
     },
@@ -4224,6 +4276,12 @@
     {
       "PowerHint": "CAMERA_STREAMING_VIDEO_CALL",
       "Node": "UpdateFreqOnIdleEnable",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_VIDEO_CALL",
+      "Node": "EnablePTick",
       "Duration": 0,
       "Value": "0"
     },
@@ -4998,6 +5056,12 @@
     {
       "PowerHint": "CAMERA_PROJECT11",
       "Node": "UpdateFreqOnIdleEnable",
+      "Duration": 0,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_PROJECT11",
+      "Node": "EnablePTick",
       "Duration": 0,
       "Value": "0"
     },

@@ -1,0 +1,39 @@
+## All proprietary files from this list, unless pinned and noted otherwise, are
+## from PDX268_GLOBALEEA-A4_USER_74.1.A.2.42.
+
+# ACDBs
+vendor/etc/acdbdata/parrot_qrd/QRD_acdb_cal.acdb
+vendor/etc/acdbdata/parrot_qrd/QRD_workspaceFileXml.qwsp
+
+# Audio
+vendor/lib64/libar-pal.so;DISABLE_DEPS
+
+# Display configurations
+vendor/etc/displayconfig/display_id_4630946521025525378.xml
+
+# NFC
+oem/etc/libnfc-nxp.conf:vendor/etc/libnfc-nxp.conf;TRYSRCFIRST
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+
+# SKU
+odm/etc/customization/XQ-GH44/config.prop
+odm/etc/customization/XQ-GH54_EEA/config.prop
+odm/etc/customization/XQ-GH74/config.prop
+odm/etc/customization/c001526/config.prop
+odm/etc/customization/c001707/config.prop
+odm/etc/customization/c001884/config.prop
+odm/etc/customization/c001894/config.prop
+odm/etc/customization/c002429/config.prop
+odm/etc/customization/c999990/config.prop
+odm/etc/customization/c999997/config.prop
+odm/etc/customization/c999998/config.prop
+odm/etc/customization/c999999/config.prop
+
+# Thermal engine
+vendor/etc/thermal/thermal-engine.conf
+
+# Touchscreen firmware
+vendor/firmware/focaltech_ts_fw_.bin
+
+# WiFi
+vendor/etc/wifi/bdwlan.elf;SYMLINK=vendor/firmware/qca6755/bdwlan.elf

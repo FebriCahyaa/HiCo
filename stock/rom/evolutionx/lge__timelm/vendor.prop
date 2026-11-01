@@ -163,6 +163,13 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
+# Fingerprint
+persist.vendor.fingerprint.has_touch_reset_ctrl=true
+persist.vendor.fingerprint.managed_sequence=true
+persist.vendor.fingerprint.sensor_location=540|2217|96
+persist.vendor.fingerprint.type=udfps_optical
+ro.vendor.fingerprint.dimming_reference=1363
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 

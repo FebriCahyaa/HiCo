@@ -1,0 +1,52 @@
+{
+  "branch": "seventeen",
+  "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_yupei.git",
+  "codename": "yupei",
+  "commit": "11481a595b1cbb9f832c176a80816052326c134b",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e7d60ac2dcd82648ee690752243ed8c0606a339839ae9fc6140d50a9c47a47b2",
+      "size": 957
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f54ce97631a248ab0c720abc725dc27327eca19cf929ef9589fb16cca6aa5d73",
+      "size": 147
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "e4612edb3ff17419e687727f73ba12e3b129cd682b87cb640f0fb64ddf784986",
+      "size": 7888
+    },
+    {
+      "path": "device.mk",
+      "sha256": "7254ae65c9c6567c080325859bf561d0f26a8a6f5def75a2c006b31a9a5d0199",
+      "size": 16390
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "76ff0725449bdea2e6a9fc52335be2367152e55e772129bdf4624693ae6ea022",
+      "size": 16325
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "e4a267ed1e3710c0500d300297e41353aa504cc4ad2f43f3fbe6f4b26d8854a6",
+      "size": 114624
+    },
+    {
+      "path": "sepolicy/vendor/mi_thermald.te",
+      "sha256": "0c4fec7366fe6954f0672c7abf42e8254f7d5d3c1c1c56d47b7aedebf84f2aad",
+      "size": 1916
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_yupei",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "pixelos",
+  "upstream_pushed_at": "2026-10-30T14:28:30Z",
+  "vendor": "xiaomi"
+}
