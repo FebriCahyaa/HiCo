@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 15 (CPH2745_16.0.10.500(EX01)).
+## are from OnePlus 15 (CPH2745_16.0.10.601(EX01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -82,6 +82,32 @@ odm/etc/audio/oprec_audrec_params/oprec_record_ID8_Fast.bin
 odm/etc/audio/oprec_audrec_params/oprec_record_ID99_Bypass.bin
 odm/etc/audio/oprec_audrec_params/oprec_record_ID9_HE.bin
 odm/etc/audio/oprec_audrec_params/oprec_record_calibration.bin
+
+# Audio spatializer
+odm/etc/spatializer/HP_MOVIE_ANALOG.bin
+odm/etc/spatializer/HP_MOVIE_BLUETOOTH.bin
+odm/etc/spatializer/HP_MOVIE_DIGITAL.bin
+odm/etc/spatializer/HP_MOVIE_GALILEO.bin
+odm/etc/spatializer/HP_MUSIC_ANALOG.bin
+odm/etc/spatializer/HP_MUSIC_BLUETOOTH.bin
+odm/etc/spatializer/HP_MUSIC_DIGITAL.bin
+odm/etc/spatializer/HP_MUSIC_GALILEO.bin
+odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MOVIE.bin
+odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MOVIE_SPK.bin
+odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MUSIC.bin
+odm/etc/spatializer/SPAT_AUDIOX_ROOMMODEL_MUSIC_SPK.bin
+odm/etc/spatializer/SPK_MOVIE_lvl1.bin
+odm/etc/spatializer/SPK_MOVIE_lvl10.bin
+odm/etc/spatializer/SPK_MOVIE_lvl2.bin
+odm/etc/spatializer/SPK_MOVIE_lvl3.bin
+odm/etc/spatializer/SPK_MOVIE_lvl4.bin
+odm/etc/spatializer/SPK_MOVIE_lvl5.bin
+odm/etc/spatializer/SPK_MOVIE_lvl6.bin
+odm/etc/spatializer/SPK_MOVIE_lvl7.bin
+odm/etc/spatializer/SPK_MOVIE_lvl8.bin
+odm/etc/spatializer/SPK_MOVIE_lvl9.bin
+odm/lib64/soundfx/libOplusSpatializerAidl.so
+odm/lib64/liboplus_audiox.so
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
@@ -1120,7 +1146,7 @@ odm/lib64/libzlib.so
 odm/lib64/vendor.oplus.hardware.camera.aon-service-impl.so
 odm/lib64/vendor.oplus.hardware.camera_rfi-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
-vendor/bin/hw/vendor.qti.camera.provider-service_64;DISABLE_DEPS
+vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.offlinecamera-impl.xml
@@ -1311,7 +1337,7 @@ vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/camx.device-impl.so
-vendor/lib64/camx.provider-impl.so;DISABLE_DEPS
+vendor/lib64/camx.provider-impl.so
 vendor/lib64/com.qti.camx.chiiqutils.so
 vendor/lib64/com.qti.chifeaturecompatibility.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -1453,7 +1479,7 @@ vendor/lib64/libtfestriping.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_DEPS
+vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
@@ -1657,10 +1683,14 @@ vendor/etc/spr_cfg_AA601_P_7_A0020_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AD296_P_3_A0020_dsc_cmd_mode_panel.xml
 
 # Dolby Vision
+odm/bin/hw/dvs-aidl-service
 odm/etc/dolby/display/dolby_vision.cfg
 odm/etc/dolby/dolby_vision.cfg
-odm/etc/media_codecs_dolby_vision.xml
+odm/etc/init/dvs-aidl-service.rc
+odm/etc/vintf/manifest/dvs-aidl-service.xml
+odm/etc/media_codecs_dolby_vision.xml:vendor/etc/media_codecs_dolby_vision.xml
 odm/lib64/libdolbyclstc.so
+odm/lib64/vendor.dolby.dvs-V1-ndk.so
 
 # DSP modules
 vendor/lib64/rfs/dsp/libDLDPP_skel.so
@@ -1717,6 +1747,21 @@ vendor/firmware/evass.b18
 vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
+
+# Face unlock
+odm/lib64/libstfaceunlockocl_uff.so;FIX_SONAME
+
+# Face unlock firmware
+odm/firmware/uff_face.b00
+odm/firmware/uff_face.b01
+odm/firmware/uff_face.b02
+odm/firmware/uff_face.b03
+odm/firmware/uff_face.b04
+odm/firmware/uff_face.b05
+odm/firmware/uff_face.b06
+odm/firmware/uff_face.b07
+odm/firmware/uff_face.b08
+odm/firmware/uff_face.mdt
 
 # Fingerprint firmware
 odm/firmware/uff_gx.b00
@@ -1808,6 +1853,8 @@ odm/etc/nfc/libnfc-nci.conf_24863:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # Sensors config
+my_product/etc/fusionlight_profile/fusionlight_Main_1_A.json:odm/etc/fusionlight_profile/fusionlight_Main_1_A.json
+my_product/etc/fusionlight_profile/fusionlight_Main_2_A.json:odm/etc/fusionlight_profile/fusionlight_Main_2_A.json
 odm/etc/sensor/config/infiniti_qrd_ois_system.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/kaanapali_mtp_ak09919.json

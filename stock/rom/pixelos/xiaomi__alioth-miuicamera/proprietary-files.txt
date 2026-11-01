@@ -1,0 +1,20 @@
+# Unpinned blobs from alioth-user 13 RKQ1.211001.001 V816.0.10.0.TKHCNXM release-keys
+
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk
+system/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
+system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so;MODULE_SUFFIX=_system
+
+# Mimoji & Camera Resources
+vendor/camera/mimoji/data.zip
+vendor/camera/mimoji/model2.zip
+vendor/camera/model/model_front.dlc
+vendor/camera/fonts/FZMiaoWuJW.ttf
+vendor/camera/fonts/MFYueYuan-Regular.ttf
+vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
+vendor/camera/fonts/MIUI_Time.ttf
+
+# ExtraPhoto
+product/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk:system/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk
+system_ext/framework/gson.jar:system/framework/gson.jar;MAKE_COPY_RULE_ONLY

@@ -1,0 +1,29 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_billie.git",
+  "codename": "billie",
+  "commit": "d3a5a63145e24085a07238b09934d7e1941f0258",
+  "file_count": 2,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/powerhint.xml",
+      "sha256": "7b6aa930e43b3f32ca976e6057350f2c5ce4d1ac745c29ee8ea426ef454e5c01",
+      "size": 39288
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal-engine.conf",
+      "sha256": "c32b39af7a19759a7db7f8b2d92d069a0534848aa7a195ca2cec24aa6c317cb3",
+      "size": 84
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_oneplus_billie",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "billie"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "oneplus"
+}

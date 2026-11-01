@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xelex_P26.git",
+  "codename": "p26",
+  "commit": "42689f342a2bce282c4cfc51dc7acc1596225553",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "c761d12debdfac673c67ba892f8fa6ae7633c68fae4d1c1c9be31005254cac52",
+      "size": 146
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "ad06e6b573fb3590e60e972f67cfc50cdab8cf3d36b11a3d2265eade6386c459",
+      "size": 1252
+    },
+    {
+      "path": "device.mk",
+      "sha256": "a5a9e413b907ce485d0adf53889f8e4061db01fb4b3f6ca7033d98b14db0b195",
+      "size": 659
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "d1039c2acafc6c9c1a676e0a6369f0b46251a49c29eda8cb241c2a0f008cc835",
+      "size": 1456
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "66966562a316f920a1f4d6bc8b1745657e2c7a42ff108f038d463e04bc73167e",
+      "size": 116
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "111dcf3603c463645c94634c3297d5653df873a7ed90a100623ff9e666563c57",
+      "size": 36949
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "62952d0afc68801e3b5b4b4415b658bc00cbe7820def0506eb9a917cb38af43d",
+      "size": 251
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xelex_P26",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-30T05:24:41Z",
+  "vendor": "xelex"
+}

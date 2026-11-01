@@ -1,0 +1,67 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_lyriq.git",
+  "codename": "lyriq",
+  "commit": "d8d4dfe1213d5610819b519479a135932218b3df",
+  "file_count": 10,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "47ba1602c6252caf779f471bcd2c2e8abb84483041c07d71269492009c263a86",
+      "size": 158
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "894196169e6776b7d09386bfcfdd3afad36cff6dae748e0fcdea2ae56e0e568d",
+      "size": 140
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "03fff07ebd8b3283e06a8462d54d03970656e6b396d955a5c02f8081370ed561",
+      "size": 7888
+    },
+    {
+      "path": "configs/thermal_info_config.json",
+      "sha256": "74f0c7e947739baa29b559786e0d0c85dc7bc130c42ee12192b56b6089e04c7a",
+      "size": 3228
+    },
+    {
+      "path": "device.mk",
+      "sha256": "618f54235cf0c102177632714ffe1278d814b20018f3d4076827f0d5d45d8612",
+      "size": 15974
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "32368175ee39b125d93e67ce299ef58772f398c6fc2e770db7d7f511eb6d5ab5",
+      "size": 7730
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "7d4e40271dc99b3926300b5f5380c6f66786fa62128c653b0d898a1e0ba865be",
+      "size": 431
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "70e9b5eccd6966f8d51d90979d429baceff0e25843d96d32823c1b2eb6a2e731",
+      "size": 64435
+    },
+    {
+      "path": "system.prop",
+      "sha256": "53aa5873952e5c9b05ef5a0254cdf1820a7154bc337f61b0ea7151da31df6750",
+      "size": 91
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "307e036a1bff0140774ac6f3b3093fd4c716ffa4669ad9a244ae3d24083c3c7b",
+      "size": 13837
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_lyriq",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-28T20:15:33Z",
+  "vendor": "motorola"
+}

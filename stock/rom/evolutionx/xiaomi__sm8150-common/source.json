@@ -2,8 +2,8 @@
   "branch": "cnb",
   "clone_url": "https://github.com/Evolution-X-Devices/device_xiaomi_sm8150-common.git",
   "codename": "sm8150-common",
-  "commit": "cc651a35e8573fa51b67b611b73d859e7cf1d124",
-  "file_count": 8,
+  "commit": "2cef399c80de2e2335fe82147b3f65171a8e467d",
+  "file_count": 18,
   "files": [
     {
       "path": "Android.bp",
@@ -17,8 +17,58 @@
     },
     {
       "path": "extract-files.py",
-      "sha256": "b84a6e1780c65d2fca7d3cecce7110f004ffbf60d898654e0baea09044c2b41c",
-      "size": 3129
+      "sha256": "3bce0335772e0664422d1e1ccc0bf165a79cd797259d0f83d7b7132752a45048",
+      "size": 5126
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "b9e0ebd279cbe7acc49ff6e2a525b0f17a029f5db5143d9d760ad59aa8ce2475",
+      "size": 195
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalComposeActivity.kt",
+      "sha256": "d3fff739fbcb0b370695720bfe19bddf4d72ebb9145d0ee7907c47917345034e",
+      "size": 2357
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalService.kt",
+      "sha256": "58863951bd8b5cec2cb7bcaefcbf9c81003a43dcbb5f526c1bd84568c2e6ae11",
+      "size": 3025
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalUtils.kt",
+      "sha256": "71e910f52aa81ba51d93eeca39dca478e34dd1576055bd6c70358d71f04343a5",
+      "size": 8254
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ThermalViewModel.kt",
+      "sha256": "c4c235b7df84dc8d86b6c46524844f32b16255a2cec2f9ae2472872baaab946f",
+      "size": 7812
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/model/ThermalUiState.kt",
+      "sha256": "783fb5e7edcd1fb98863915ecc7d664609f9b36c835fd28d0264e2a241f3ccf8",
+      "size": 1076
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/AppThermalItem.kt",
+      "sha256": "36b7eaf69175360f2ec41d884c72d6ddc6c446640e603a4f19be9c69f038689f",
+      "size": 4993
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/ThermalDialogs.kt",
+      "sha256": "7528873dbe2bdc293d0cf6d2f06bbba0da5aa8ea27b1a42e74760983c091c9b1",
+      "size": 1126
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/ThermalDropdown.kt",
+      "sha256": "537b2827b5ed164d40dd7c2c0c4f3858ae5bc3cf292bc75380ca8b2090ffaf4a",
+      "size": 1656
+    },
+    {
+      "path": "parts/src/org/lineageos/settings/thermal/ui/ThermalScreen.kt",
+      "sha256": "055f368cb019b24112ef8e55ecd8b2a05294a6370e898923ee31212dd4a7c64b",
+      "size": 8914
     },
     {
       "path": "proprietary-files.txt",
@@ -37,13 +87,13 @@
     },
     {
       "path": "system.prop",
-      "sha256": "b3978b3f58f4681ffa0c4a1454a5e34c12594320c435b8912961156bc5b6656f",
-      "size": 1195
+      "sha256": "7ed142f5e69caec5373c2e6dcef16a9e00e6e7ce845ed2bf83f77a096fa3af96",
+      "size": 1486
     },
     {
       "path": "vendor.prop",
-      "sha256": "5b010fb3774ecfc3a260963b8615a835b779b32c3514598167f5e28abbc6342d",
-      "size": 9163
+      "sha256": "752ea4dbee907dfd20e084bb5d727c3f65bebe12fec98093289af63b71ddc7f6",
+      "size": 9905
     }
   ],
   "kind": "common",
@@ -52,6 +102,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "evolutionx",
-  "upstream_pushed_at": "2026-09-28T18:07:56Z",
+  "upstream_pushed_at": "2026-10-27T05:49:33Z",
   "vendor": "xiaomi"
 }

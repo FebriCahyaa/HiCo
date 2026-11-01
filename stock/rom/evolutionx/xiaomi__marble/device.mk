@@ -20,9 +20,6 @@ $(call soong_config_set,camera,package_name,com.android.camera)
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_marble)
 
-# call gamebar
-$(call inherit-product, packages/apps/GameBar/gamebar.mk)
-
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc
@@ -30,6 +27,9 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
+
+# Fingerprint
+TARGET_USES_MFP_DAEMON := true
 
 # Light
 $(call soong_config_set,xiaomi_sm8450_sensor_notifier,extension_lib,//device/xiaomi/marble:libsensor-notifier-ext-light)

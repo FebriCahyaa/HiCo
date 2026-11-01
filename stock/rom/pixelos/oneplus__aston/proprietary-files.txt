@@ -1,11 +1,15 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 12R (CPH2609_15.0.0.870(EX01)).
+## are from OnePlus 12R (CPH2585_16.0.5.1301(EX01)).
 
 # ACDB
 odm/etc/acdbdata/FTM/acdb_cal.acdb
 odm/etc/acdbdata/FTM/workspaceFileXml.qwsp
 odm/etc/acdbdata/Audio_Parameter_Version.txt
 odm/etc/acdbdata/acdb_cal.acdb
+
+# ADSP modules
+odm/lib/rfsa/adsp/libtfadsp_sb4_0_rx.so
+odm/lib/rfsa/adsp/libtfadsp_sb4_0_tx.so
 
 # Audio configs
 odm/etc/mixer_paths.xml
@@ -448,6 +452,7 @@ odm/etc/camera/meishe_lut/White.cube.rgb.bin
 odm/etc/camera/meishe_lut/black_gold.bin
 odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin
 odm/etc/camera/meishe_lut/bright_coloured.bin
+odm/etc/camera/meishe_lut/city.cube.rgb.bin
 odm/etc/camera/meishe_lut/cola.bin
 odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/drjw1994.bin
@@ -475,12 +480,14 @@ odm/etc/camera/meishe_lut/gt-old-times.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin
 odm/etc/camera/meishe_lut/interstellar_space.bin
+odm/etc/camera/meishe_lut/island.cube.rgb.bin
 odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/kodak.cube.rgb.bin
 odm/etc/camera/meishe_lut/meicam.child.bin
 odm/etc/camera/meishe_lut/mono.cube.rgb.bin
 odm/etc/camera/meishe_lut/morandi.cube.rgb.bin
+odm/etc/camera/meishe_lut/mountains.cube.rgb.bin
 odm/etc/camera/meishe_lut/natural.cube.rgb.bin
 odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin
 odm/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin
@@ -948,6 +955,8 @@ odm/lib64/libaisd.so
 odm/lib64/libaiseg.so
 odm/lib64/libaisr.so
 odm/lib64/libalCFR.so
+odm/lib64/libalog.so
+odm/lib64/libalogencrypt.so
 odm/lib64/libancbase_rt_fusion.so;FIX_SONAME
 odm/lib64/libancbase_segbase.so
 odm/lib64/libancbase_segment.so
@@ -996,6 +1005,8 @@ odm/lib64/libarcsoft_videoautozoom.so;FIX_SONAME
 odm/lib64/libcalculator.so
 odm/lib64/libcalculator_htp.so
 odm/lib64/libcreatebin.so
+odm/lib64/libcreatebinForBaseretouch.so
+odm/lib64/libcreatebinForFaceretouch.so
 odm/lib64/libcustomer_halalgovisual.so
 odm/lib64/libcvface_api.so
 odm/lib64/libdlrmsc.so
@@ -1042,12 +1053,9 @@ odm/lib64/libwatermark_photo.so
 odm/lib64/libwrapper_te.so
 odm/lib64/libyuv2.so
 odm/lib64/libyuvwrapper.so
-odm/lib64/vendor.oplus.hardware.camera_rfi-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.camera_rfi-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
-odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
-odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so
 system/lib64/libziparchive.so:odm/lib64/libziparchive_odm.so;FIX_SONAME
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
@@ -1230,9 +1238,6 @@ vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
-vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
-vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so;MODULE_SUFFIX=_vendor
-vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
@@ -1244,6 +1249,26 @@ odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/firmware/fastchg/smart_chg_config_table.txt
 
 # Display (Pixelworks)
+odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
+odm/bin/irisConfig
+odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service-lazy.rc
+odm/etc/vintf/manifest/vendor.pixelworks.hardware.display@1.2.xml
+odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
+odm/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2-i7.so
+odm/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2-i7p.so
+odm/lib64/libpwirisIoctlWrapper.so
+odm/lib64/libpwirisPCS.so
+odm/lib64/libpwiriscalibrate.so
+odm/lib64/libpwirisfeature.so
+odm/lib64/libpwirishalwrapper.so
+odm/lib64/libpwirispq.so
+odm/lib64/libpwirisservicei7.so
+odm/lib64/libpwirisservicei7p.so
+odm/lib64/libpwirissoft.so
+odm/lib64/libpwsoftirisPCS.so
+odm/lib64/libsnapdragoncolor-pxlw.so
+
+# Display (Pixelworks configs)
 odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm14.txt
 odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm17.txt
 odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm2.txt
@@ -1270,17 +1295,40 @@ odm/etc/iris_configs.xml
 odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.dat
 odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.fw
 odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.xml
+
+# Display (Pixelworks firmware)
 odm/firmware/pxlw_i7p_panel_AA551_P_3_A0004_dsc_cmd.fw
-odm/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2-i7p.so
-odm/lib64/libpwirisservicei7p.so
 
 # Display calibration data
 vendor/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json
 vendor/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml
 
+# Dolby Vision
+odm/bin/hw/dvs-hal-service
+odm/etc/dolby_vision.cfg
+odm/etc/init/vendor.dolby.media.dvs-service.rc
+odm/etc/vintf/manifest/vendor.dolby.media.dvs-service.xml
+odm/etc/media_codecs_dolby_vision.xml:vendor/etc/media_codecs_dolby_vision.xml
+odm/lib64/vendor.dolby.dvs@1.0.so
+
 # eUICC
 my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
 my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+
+# Face unlock
+odm/lib64/libstfaceunlockocl.so
+
+# Face unlock firmware
+odm/vendor/firmware/facereg.b00
+odm/vendor/firmware/facereg.b01
+odm/vendor/firmware/facereg.b02
+odm/vendor/firmware/facereg.b03
+odm/vendor/firmware/facereg.b04
+odm/vendor/firmware/facereg.b05
+odm/vendor/firmware/facereg.b06
+odm/vendor/firmware/facereg.b07
+odm/vendor/firmware/facereg.b08
+odm/vendor/firmware/facereg.mdt
 
 # Fingerprint firmware
 odm/vendor/firmware/uff_gx.b00
@@ -1305,12 +1353,14 @@ odm/vendor/firmware/uff_spi.b08
 odm/vendor/firmware/uff_spi.mdt
 
 # NFC configs
-odm/etc/nfc/libnfc-mtp-SN220.conf_23801:odm/etc/libnfc-mtp-SN220.conf_23801
-odm/etc/nfc/libnfc-mtp-SN220.conf_23861:odm/etc/libnfc-mtp-SN220.conf_23861
+odm/etc/nfc/libnfc-mtp-SN220.conf_23861:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_23861:vendor/etc/libnfc-nci.conf
 
 # NFC firmware
-odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_30:vendor/firmware/sn220u.bin
+odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
+
+# Secure Element
+odm/etc/vintf/manifest/manifest_secure_element.xml
 
 # Sensors config
 odm/etc/sensor/config/aston_qrd_ois_system.json

@@ -1,9 +1,9 @@
 {
-  "branch": "sixteen-qpr2",
+  "branch": "seventeen",
   "clone_url": "https://github.com/PixelOS-Devices/android_device_oneplus_aston.git",
   "codename": "aston",
-  "commit": "c81e93c5442676cd8858cf69ce66edb9f26f499f",
-  "file_count": 7,
+  "commit": "138b92b08bfd2525b82f4077da72b5de21f5a0e1",
+  "file_count": 6,
   "files": [
     {
       "path": "Android.bp",
@@ -12,33 +12,28 @@
     },
     {
       "path": "AndroidProducts.mk",
-      "sha256": "a2ba49d124c55308b7b6dc1637d24fc5fda6e702b11f281ead4f8f0f5118e71c",
-      "size": 144
+      "sha256": "a442ee44be7f13b3cc329aca6ec2920db7d73680dcdd1b4d125bf1069795cc23",
+      "size": 147
     },
     {
       "path": "BoardConfig.mk",
-      "sha256": "3952616c1f63017b94b02ba9a492dac816e1763ed5537767c68e5358f23d7cd8",
-      "size": 887
+      "sha256": "27c724c9ec308b0dbb10f683dd57639b13cf9b021c7a0860119ce029bfb93e5f",
+      "size": 782
     },
     {
       "path": "device.mk",
-      "sha256": "46d44c1cf3252a053c8c1f5ef78c39705660a4f9fea3c30dfe8a719bef2bf015",
-      "size": 3147
+      "sha256": "6142057e45add102190ee45fea11fbd58551989d6bb452cad369fc0b4260be50",
+      "size": 3183
     },
     {
       "path": "extract-files.py",
-      "sha256": "ed71c7044d2dd9485f993cb495d33a35768b6c56cf158e7e04516cee76fa7f4b",
-      "size": 3124
+      "sha256": "0e186c1968aaf67608d378211f7306280ef777f4d4315c1415a3f275de77128c",
+      "size": 3702
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "5c31ab21034fd739f1c0268a5f8a11751f31f715adcf1f72bdf72a311216c3e3",
-      "size": 61502
-    },
-    {
-      "path": "vendor.prop",
-      "sha256": "5aa534a80639cf569f95b6f1a8fa91ad9fc8ba0213e255622c0160c1dfb29e8e",
-      "size": 194
+      "sha256": "0d77b331e801766636478daea69f8bcdd93ebd8e846067d968b3a69c76b2c750",
+      "size": 62901
     }
   ],
   "kind": "device",
@@ -47,6 +42,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "pixelos",
-  "upstream_pushed_at": "2026-09-27T11:25:57Z",
+  "upstream_pushed_at": "2026-10-15T16:56:03Z",
   "vendor": "oneplus"
 }

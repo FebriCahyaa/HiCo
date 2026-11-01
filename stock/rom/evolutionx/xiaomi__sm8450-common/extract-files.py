@@ -53,10 +53,7 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/etc/seccomp_policy/tcmd.policy': blob_fixup()
         .add_line_if_missing('lseek: 1'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
-        .replace_needed(
-            'android.media.audio.common.types-V4-cpp.so',
-            'android.media.audio.common.types-V5-cpp.so',
-        ),
+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
         .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-21.7.so'),
     (
@@ -103,6 +100,12 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    (
+        'vendor/bin/hw/vendor.qti.media.c2@1.0-service',
+        'vendor/bin/hw/vendor.qti.media.c2audio@1.0-service',
+    ): blob_fixup().binary_regex_replace(
+        b'\x00\x21\x80\x52', b'\x00\x22\x80\x52',
+    ),
     'vendor/lib64/libssc.so': blob_fixup()
         .sig_replace('C2 09 00 94', '1F 20 03 D5')
         .sig_replace('F4 05 00 94', '1F 20 03 D5')

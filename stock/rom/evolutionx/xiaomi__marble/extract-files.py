@@ -65,9 +65,13 @@ blob_fixups: blob_fixups_user_type = {
         rb'\[%s\] openat: %s xiaomi_sysfs_fd,failed:\[fingerdown\]',
         b'[%s] openat: xiaomi_sysfs_fd,failed:[fingerdown]\x00\x00\x00',
     ),
+    'vendor/etc/libnfc-nxp.conf': blob_fixup()
+        .regex_replace('DEVICE_HOST_WHITE_LIST', 'DEVICE_HOST_ALLOW_LIST'),
     'vendor/lib64/libssccalapi@2.0.so': blob_fixup()
         .sig_replace('A0 7F 00 94', '1F 20 03 D5')
         .sig_replace('94 7F 00 94', '1F 20 03 D5'),
+    'vendor/bin/hw/mfp-daemon': blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     (
         'vendor/lib64/libTrueSight.so',
         'vendor/lib64/libalLDC.so',
