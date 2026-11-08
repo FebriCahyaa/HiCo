@@ -1,0 +1,42 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_s5e8825-common.git",
+  "codename": "s5e8825-common",
+  "commit": "fddeb8657afed756280add3c0e185ec24aaa19f4",
+  "file_count": 5,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "39c819fa65e1b4d92265ab8fd24c8e8125a10c3538bd72f4c006d2bdaff70efe",
+      "size": 163
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "26e406b426a7ebc64665aee13dd484b2e75f6b6fe98a3f228497bc60b699a2f0",
+      "size": 3823
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3d2d98c56b892f44ab2c2a8b7d6da65565baf3538d380f8055351a4348727998",
+      "size": 4149
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "5295df3f1364b020d8b99292694056be3244bb41fc53177dacdaf165adbf7dd7",
+      "size": 1676
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6ce788b896ccf0b575f9fe0678517e74bf7a4fff2259bc1cdffe4b8c531b75ff",
+      "size": 5741
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_samsung_s5e8825-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-11-08T00:27:42Z",
+  "vendor": "samsung"
+}

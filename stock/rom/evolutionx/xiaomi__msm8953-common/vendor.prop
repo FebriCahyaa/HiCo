@@ -114,7 +114,7 @@ persist.qfp=false
 ro.fm.transmitter=false
 
 # FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/config
+ro.frp.pst=
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
@@ -183,8 +183,24 @@ ro.soc.model=SDM450
 # Time Services
 persist.timed.enable=true
 
+# USB
+sys.usb.mtp.batchcancel=1
+vendor.usb.controller=7000000.dwc3
+vendor.usb.device=7000000.ssusb
+vendor.usb.diag.func.name=diag
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rndis_bam
+vendor.usb.use_ffs_mtp=1
+vendor.usb.use_gadget_hal=1
+
 # Watchdog
 ro.hw_timeout_multiplier=3
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Fwk detect
+ro.vendor.qti.va_odm.support=1

@@ -1,28 +1,14 @@
 # All unpinned blobs below are extracted from marble OS3.0.4.0.VMRMIXM
 
 # ACDB
-vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb|0eeaed76d929ef4b3d00287561b47fedf990faf0
-vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp|ec6264426da0f91a627b1e5e90b169a57f6eb6ff
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb|37b3cd4c4f3df074ac7818acb07bdc3d5d6f16ef
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp|cfa88f898675164f78b4cb964b634840d91981b4
-vendor/etc/acdbdata/ukee_cdp/CDP_ukee_acdb_cal.acdb|956545f8fa8363a4ed7269bb460a797575da8d7c
-vendor/etc/acdbdata/ukee_cdp/CDP_ukee_workspaceFileXml.qwsp|17f010540dd315dafab9ecdd97b627d49a553a05
-vendor/etc/acdbdata/ukee_mtp/MTP_ukee_acdb_cal.acdb|ce5cf34bf694606ae27c9093b001873e6bb4d81f
-vendor/etc/acdbdata/ukee_mtp/MTP_ukee_workspaceFileXml.qwsp|103a34082c4fc587f238f176a47547df5919b3f4
-vendor/etc/acdbdata/ukee_qrd/QRD_ukee_acdb_cal.acdb|f0343336fd1ed17675137dd761f38d0dffc4d814
-vendor/etc/acdbdata/ukee_qrd/QRD_ukee_workspaceFileXml.qwsp|9b89080626bcbfa25046ea7804259dd8d0353a41
-vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb:vendor/etc/acdbdata/ukee_mtp/Forte_acdb_cal.acdb|0eeaed76d929ef4b3d00287561b47fedf990faf0
-vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:vendor/etc/acdbdata/ukee_mtp/Forte_workspaceFileXml.qwsp|ec6264426da0f91a627b1e5e90b169a57f6eb6ff
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd|b51c1d6f36a45604bfd6de452c1f330182493ee9
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd|4160e57be26f1ca99b857276be74c40294a26665
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd|7aace2629ef623922c3387e2ce014b3bc608195d
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd|51e02c05d2b183f2291cf5a82f440491627f267e
-vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd|118ebd81bdddce6e98189dafe36ffab04e6610bd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd|997e9e31b6bc7e9abc3f060f824ac3dd14c3d662
-vendor/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml|ef0cdc9ac80ab1a14c279e3f73f8a2090f360bda
-vendor/etc/audio_policy_engine_default_stream_volumes.xml|6a02168032d91dd0cc6e2d14bf5f3757441d1025
-vendor/etc/audio_policy_engine_product_strategies.xml|57074da402535ad5ab160bbbe7a92ac3f012f954
-vendor/etc/audio_policy_engine_stream_volumes.xml|e282467fda218cf320d43e1e785a1dc6ad7bcab2
+vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb:vendor/etc/acdbdata/ukee_mtp/Forte_acdb_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp:vendor/etc/acdbdata/ukee_mtp/Forte_workspaceFileXml.qwsp
+vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
+vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -117,7 +103,6 @@ vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
 
 # Camera
-vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/bin/hw/vendor.xiaomi.hardware.quickcamera@1.0-service
 vendor/etc/camera/102_SummerDay.png
 vendor/etc/camera/103_Fantasy.png
@@ -506,7 +491,6 @@ vendor/etc/camera/xiaomi/thirdpartyrawsupernightjpeg.json
 vendor/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomiSceneDetection.xml
-vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera@1.0-service.xml
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/components/com.bots.node.vendortagwrite.so
@@ -633,22 +617,6 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.swjpegencode.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.tsskinbeautifier.so
-vendor/lib64/camx.device@3.2-impl.so
-vendor/lib64/camx.device@3.3-impl.so
-vendor/lib64/camx.device@3.4-ext-impl.so
-vendor/lib64/camx.device@3.4-impl.so
-vendor/lib64/camx.device@3.5-ext-impl.so
-vendor/lib64/camx.device@3.5-impl.so
-vendor/lib64/camx.device@3.6-ext-impl.so
-vendor/lib64/camx.device@3.6-impl.so
-vendor/lib64/camx.device@3.7-impl.so
-vendor/lib64/camx.provider@2.4-external.so
-vendor/lib64/camx.provider@2.4-impl.so
-vendor/lib64/camx.provider@2.4-legacy.so
-vendor/lib64/camx.provider@2.5-external.so
-vendor/lib64/camx.provider@2.5-legacy.so
-vendor/lib64/camx.provider@2.6-legacy.so
-vendor/lib64/camx.provider@2.7-legacy.so
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
@@ -694,7 +662,6 @@ vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.mcx.policy.xr.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
-vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/camera.xiaomi.so
 vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/libAF.so
@@ -737,7 +704,6 @@ vendor/lib64/libcamxfdalgo.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
 vendor/lib64/libcamxstatscore.so
@@ -831,7 +797,6 @@ vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxmi_slow_motion_mein.so
 vendor/lib64/libxmi_slow_motion_triger.so
 vendor/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
@@ -943,8 +908,8 @@ vendor/firmware/evautil64.b07
 vendor/firmware/evautil64.mdt
 
 # Display configs
-product/etc/displayconfig/display_id_4630946370515662722.xml:vendor/etc/displayconfig/display_id_4630946370515662721.xml
-product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061761.xml
+product/etc/displayconfig/display_id_4630946370515662722.xml:vendor/etc/displayconfig/display_id_4630946370515662722.xml
+product/etc/displayconfig/display_id_4630946480857061762.xml:vendor/etc/displayconfig/display_id_4630946480857061762.xml
 vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_m16t_36_02_0a_dsc_vid_mi.xml|ce8f6f1501c65b33203e55d9fc96f084ee735450
@@ -1080,3 +1045,6 @@ vendor/firmware/vpu20_4v.b18
 vendor/firmware/vpu20_4v.b19
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
+
+# Camera - image format ABI compatibility
+vendor/lib64/hw/camera.qcom.so

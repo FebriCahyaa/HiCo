@@ -1,7 +1,24 @@
 {
-  "common_count": 83,
-  "device_count": 342,
+  "common_count": 91,
+  "device_count": 363,
   "devices": [
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_amazon_sunstone.git",
+      "codename": "sunstone",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_amazon_sunstone",
+      "serves": [
+        "sunstone"
+      ],
+      "updated_at": null,
+      "vendor": "amazon"
+    },
     {
       "archived": false,
       "branches": [
@@ -74,8 +91,10 @@
       "kind": "common",
       "repo": "proprietary_vendor_amlogic_ne-common",
       "serves": [
+        "jaws",
         "ohm",
-        "oppen"
+        "oppen",
+        "tifa"
       ],
       "updated_at": null,
       "vendor": "amlogic"
@@ -291,6 +310,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_ayn_cq8725s-common.git",
+      "codename": "cq8725s-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_ayn_cq8725s-common",
+      "serves": [
+        "odin3"
+      ],
+      "updated_at": null,
+      "vendor": "ayn"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2"
       ],
@@ -382,6 +418,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_ayn_odin3.git",
+      "codename": "odin3",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_ayn_odin3",
+      "serves": [
+        "odin3"
+      ],
+      "updated_at": null,
+      "vendor": "ayn"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2"
       ],
@@ -437,6 +490,23 @@
       ],
       "updated_at": null,
       "vendor": "bananapi"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_daylight_jagar.git",
+      "codename": "jagar",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_daylight_jagar",
+      "serves": [
+        "jagar"
+      ],
+      "updated_at": null,
+      "vendor": "daylight"
     },
     {
       "archived": false,
@@ -2596,6 +2666,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_ellis.git",
+      "codename": "ellis",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_motorola_ellis",
+      "serves": [
+        "ellis"
+      ],
+      "updated_at": null,
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
@@ -2741,6 +2828,23 @@
       "repo": "proprietary_vendor_motorola_guam",
       "serves": [
         "guam"
+      ],
+      "updated_at": null,
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_guamna.git",
+      "codename": "guamna",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_motorola_guamna",
+      "serves": [
+        "guamna"
       ],
       "updated_at": null,
       "vendor": "motorola"
@@ -2898,6 +3002,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_lyriq.git",
+      "codename": "lyriq",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_motorola_lyriq",
+      "serves": [
+        "lyriq"
+      ],
+      "updated_at": null,
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2"
       ],
@@ -3003,6 +3124,23 @@
         "messi",
         "nash",
         "payton"
+      ],
+      "updated_at": null,
+      "vendor": "motorola"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_mt6765-common.git",
+      "codename": "mt6765-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_motorola_mt6765-common",
+      "serves": [
+        "ellis"
       ],
       "updated_at": null,
       "vendor": "motorola"
@@ -3337,6 +3475,7 @@
         "cebu",
         "devon",
         "guam",
+        "guamna",
         "guamp",
         "hawao",
         "rhode"
@@ -4221,6 +4360,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_avicii.git",
+      "codename": "avicii",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_avicii",
+      "serves": [
+        "avicii"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
@@ -4235,6 +4391,24 @@
       "repo": "proprietary_vendor_oneplus_benz",
       "serves": [
         "benz"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
+        "lineage-23.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_billie.git",
+      "codename": "billie",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_billie",
+      "serves": [
+        "billie"
       ],
       "updated_at": null,
       "vendor": "oneplus"
@@ -4361,6 +4535,23 @@
       "repo": "proprietary_vendor_oneplus_dumpling",
       "serves": [
         "dumpling"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_ebba.git",
+      "codename": "ebba",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_ebba",
+      "serves": [
+        "ebba"
       ],
       "updated_at": null,
       "vendor": "oneplus"
@@ -4627,6 +4818,24 @@
         "lineage-24.0",
         "lineage-23.2"
       ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_iceland.git",
+      "codename": "iceland",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_iceland",
+      "serves": [
+        "iceland"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
+        "lineage-23.2"
+      ],
       "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_infiniti.git",
       "codename": "infiniti",
       "default_branch": "lineage-24.0",
@@ -4704,6 +4913,24 @@
       "repo": "proprietary_vendor_oneplus_kebab",
       "serves": [
         "kebab"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0",
+        "lineage-23.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_ktm.git",
+      "codename": "ktm",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_ktm",
+      "serves": [
+        "ktm"
       ],
       "updated_at": null,
       "vendor": "oneplus"
@@ -4960,6 +5187,24 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_sm7250-common.git",
+      "codename": "sm7250-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_oneplus_sm7250-common",
+      "serves": [
+        "avicii",
+        "ebba"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
@@ -5055,7 +5300,8 @@
       "serves": [
         "aston",
         "astonc",
-        "salami"
+        "salami",
+        "xueying"
       ],
       "updated_at": null,
       "vendor": "oneplus"
@@ -5108,6 +5354,7 @@
         "dodge",
         "erhai",
         "hummer",
+        "ktm",
         "piloti",
         "pista"
       ],
@@ -5128,6 +5375,7 @@
       "repo": "proprietary_vendor_oneplus_sm8850-common",
       "serves": [
         "fairlady",
+        "iceland",
         "infiniti"
       ],
       "updated_at": null,
@@ -5150,6 +5398,23 @@
       "repo": "proprietary_vendor_oneplus_waffle",
       "serves": [
         "waffle"
+      ],
+      "updated_at": null,
+      "vendor": "oneplus"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_oneplus_xueying.git",
+      "codename": "xueying",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_oneplus_xueying",
+      "serves": [
+        "xueying"
       ],
       "updated_at": null,
       "vendor": "oneplus"
@@ -5621,6 +5886,40 @@
       "repo": "proprietary_vendor_samsung_a52sxq",
       "serves": [
         "a52sxq"
+      ],
+      "updated_at": null,
+      "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_a53x.git",
+      "codename": "a53x",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_samsung_a53x",
+      "serves": [
+        "a53x"
+      ],
+      "updated_at": null,
+      "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_a55x.git",
+      "codename": "a55x",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_samsung_a55x",
+      "serves": [
+        "a55x"
       ],
       "updated_at": null,
       "vendor": "samsung"
@@ -6408,6 +6707,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-22.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_m20lte.git",
+      "codename": "m20lte",
+      "default_branch": "lineage-22.2",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_samsung_m20lte",
+      "serves": [
+        "m20lte"
+      ],
+      "updated_at": null,
+      "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
@@ -6496,6 +6812,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_q5q.git",
+      "codename": "q5q",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_samsung_q5q",
+      "serves": [
+        "q5q"
+      ],
+      "updated_at": null,
+      "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2"
       ],
@@ -6549,6 +6882,23 @@
       "repo": "proprietary_vendor_samsung_r8s",
       "serves": [
         "r8s"
+      ],
+      "updated_at": null,
+      "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_s5e8825-common.git",
+      "codename": "s5e8825-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_samsung_s5e8825-common",
+      "serves": [
+        "a53x"
       ],
       "updated_at": null,
       "vendor": "samsung"
@@ -6659,7 +7009,25 @@
       "kind": "common",
       "repo": "proprietary_vendor_samsung_sm8550-common",
       "serves": [
-        "dm1q"
+        "dm1q",
+        "q5q"
+      ],
+      "updated_at": null,
+      "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-22.2"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_universal7904-common.git",
+      "codename": "universal7904-common",
+      "default_branch": "lineage-22.2",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_samsung_universal7904-common",
+      "serves": [
+        "m20lte"
       ],
       "updated_at": null,
       "vendor": "samsung"
@@ -6774,6 +7142,23 @@
       ],
       "updated_at": null,
       "vendor": "samsung"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sdmc_tifa.git",
+      "codename": "tifa",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_sdmc_tifa",
+      "serves": [
+        "tifa"
+      ],
+      "updated_at": null,
+      "vendor": "sdmc"
     },
     {
       "archived": false,
@@ -6917,6 +7302,24 @@
       "repo": "proprietary_vendor_sony_discovery",
       "serves": [
         "discovery"
+      ],
+      "updated_at": null,
+      "vendor": "sony"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_elbe-common.git",
+      "codename": "elbe-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_sony_elbe-common",
+      "serves": [
+        "pdx257",
+        "pdx268"
       ],
       "updated_at": null,
       "vendor": "sony"
@@ -7249,6 +7652,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_sony_pdx268.git",
+      "codename": "pdx268",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_sony_pdx268",
+      "serves": [
+        "pdx268"
+      ],
+      "updated_at": null,
+      "vendor": "sony"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2",
         "lineage-23.1",
@@ -7490,6 +7910,41 @@
       ],
       "updated_at": null,
       "vendor": "vsmart"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xelex_mt6789-common.git",
+      "codename": "mt6789-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_xelex_mt6789-common",
+      "serves": [
+        "p26",
+        "q25"
+      ],
+      "updated_at": null,
+      "vendor": "xelex"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xelex_P26.git",
+      "codename": "p26",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_xelex_P26",
+      "serves": [
+        "p26"
+      ],
+      "updated_at": null,
+      "vendor": "xelex"
     },
     {
       "archived": false,
@@ -7945,6 +8400,23 @@
     {
       "archived": false,
       "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_jaws.git",
+      "codename": "jaws",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_xiaomi_jaws",
+      "serves": [
+        "jaws"
+      ],
+      "updated_at": null,
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "branches": [
         "lineage-24.0",
         "lineage-23.2"
       ],
@@ -8320,6 +8792,23 @@
       "serves": [
         "lancelot",
         "merlinx"
+      ],
+      "updated_at": null,
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_mt6895-common.git",
+      "codename": "mt6895-common",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "common",
+      "repo": "proprietary_vendor_xiaomi_mt6895-common",
+      "serves": [
+        "xaga"
       ],
       "updated_at": null,
       "vendor": "xiaomi"
@@ -9168,6 +9657,23 @@
       "repo": "proprietary_vendor_xiaomi_violet",
       "serves": [
         "violet"
+      ],
+      "updated_at": null,
+      "vendor": "xiaomi"
+    },
+    {
+      "archived": false,
+      "branches": [
+        "lineage-24.0"
+      ],
+      "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_xaga.git",
+      "codename": "xaga",
+      "default_branch": "lineage-24.0",
+      "fork": false,
+      "kind": "device",
+      "repo": "proprietary_vendor_xiaomi_xaga",
+      "serves": [
+        "xaga"
       ],
       "updated_at": null,
       "vendor": "xiaomi"

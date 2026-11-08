@@ -1,0 +1,39 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_xelex_P26.git",
+  "codename": "p26",
+  "commit": "11b20b6c5b2e08badfe4cdec875f3da3f317e823",
+  "file_count": 4,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal.conf",
+      "sha256": "31531be65bb857ba108eb65a120b2fa89372468615a3cc620a1bc7701a9eedef",
+      "size": 660
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_policy_00.conf",
+      "sha256": "d285c84b9fb121dac13dec0a2b5d8b43bfde8f6ffee705b4e0c07b4c7e7eaf53",
+      "size": 659
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_policy_02.conf",
+      "sha256": "d285c84b9fb121dac13dec0a2b5d8b43bfde8f6ffee705b4e0c07b4c7e7eaf53",
+      "size": 659
+    },
+    {
+      "path": "proprietary/vendor/etc/thermal/thermal_policy_08.conf",
+      "sha256": "ca228da5212bb34c94eab5b19b560680cad5dbc7661fc4944cc728316691292f",
+      "size": 659
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_xelex_P26",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "p26"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "xelex"
+}

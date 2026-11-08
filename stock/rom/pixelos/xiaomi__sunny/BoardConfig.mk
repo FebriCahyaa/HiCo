@@ -101,6 +101,9 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 # Media
 TARGET_USES_ION := true
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-sunny/BoardConfig.mk
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728

@@ -1,0 +1,62 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_a55x.git",
+  "codename": "a55x",
+  "commit": "2d5c1250089eed4e0343bef0cb4c70ce36b69e58",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "851a98b7ef3e25617495699e351a7e5287df98136b058fa93eb04875fc1f6b92",
+      "size": 1011
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f8acc5fde94798623e496bd444e945f697c17402e4fc94542fd5a0b9ce3502cd",
+      "size": 141
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "429c62ce292ccf490bf859e66a6d6c37f8a072f29a047f71a4cf2e5d85ca5bf9",
+      "size": 4451
+    },
+    {
+      "path": "configs/thermal/Android.bp",
+      "sha256": "c6853fb5f54e6751f2843e3bd7438d68a65692567b1bc908f94822291d50e503",
+      "size": 205
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "14b0f62601047db5c6da6f4bcd4a8986b1dbf7fdc9307a535b0c51d89f7cd004",
+      "size": 2718
+    },
+    {
+      "path": "device.mk",
+      "sha256": "8764eb4350cd78ed0c4b528b6fafa66bacc170b169a616cf1d052137093ec47f",
+      "size": 12432
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "04e134db0ccf2719f5438ebf922abc5d0a224c5ecbfa55796d074a64999d69fc",
+      "size": 5489
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "15c380e8407d17925e40ee5adb14146741fa71cb124344a5b5f3c14602612dbb",
+      "size": 1908
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2bed1ed028b00cb129a211ad48f68d59becd6aa916c6ddef9a95493c2ad80ad4",
+      "size": 14259
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_a55x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-11-07T13:41:44Z",
+  "vendor": "samsung"
+}
