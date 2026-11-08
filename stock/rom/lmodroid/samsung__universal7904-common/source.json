@@ -1,0 +1,52 @@
+{
+  "branch": "fifteen-qpr2",
+  "clone_url": "https://github.com/LMODroid-Devices/device_samsung_universal7904-common.git",
+  "codename": "universal7904-common",
+  "commit": "ca09dad512141cef23934ac3631e78403c35024e",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "a96742237a99a2e8d6b3882e389ec5af85edc583324173f487d41a753091b827",
+      "size": 268
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "2f5ef3ba63fa16e74941a5cb61db7a7c948e81fa62a791c64e6671a7d72ada87",
+      "size": 3352
+    },
+    {
+      "path": "configs/thermal/thermal_info_config.json",
+      "sha256": "beb549332680061b219ff8da39fac99b64e20c034c3c0733c586fccbaaf0740b",
+      "size": 2283
+    },
+    {
+      "path": "extract-files.sh",
+      "sha256": "dfdc081a5baac0c98da4e12e43b3d3c9ce046a9b6c833e061397e6412bb4f70a",
+      "size": 4507
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "2f3fe3b045644221a91df6dbbf3c1819395fcf0a65bd7ce54a2ba200f3cb275c",
+      "size": 5916
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "12853bfa4d0ce344d20503e384862392fdeb07b97337e724d7b739dfba7718c3",
+      "size": 1837
+    }
+  ],
+  "kind": "common",
+  "repo": "device_samsung_universal7904-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lmodroid",
+  "upstream_pushed_at": "2026-11-06T04:20:12Z",
+  "vendor": "samsung"
+}

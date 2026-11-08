@@ -15,9 +15,8 @@ TARGET_BOOTLOADER_BOARD_NAME := guamna
 TARGET_SCREEN_DENSITY := 280
 
 # HIDL
-ODM_MANIFEST_SKUS += b d f
+ODM_MANIFEST_SKUS += b f
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
-ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
 ODM_MANIFEST_F_FILES := $(DEVICE_PATH)/sku/manifest_f.xml
 
 # Kernel

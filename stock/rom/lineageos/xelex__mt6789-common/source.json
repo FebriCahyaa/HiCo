@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xelex_mt6789-common.git",
+  "codename": "mt6789-common",
+  "commit": "fd308035cdbf58f5de46515fb0a0e97fe5453980",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "24ef077a75e4dd528ba24a002995c938544a0e1dc6a792d42a84f4d9c7a2cb1c",
+      "size": 5437
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "3baf4c358642342cf970a58aa788d26091ec2ec5730d3e74344168234befe212",
+      "size": 6342
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "49590c1bb77c19596b451d05c52055f3a39367195f43a7a54a0d8d8fdb53d097",
+      "size": 316
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "be2a9f3cd5191f8109404166d59c12c01f548cbf09450b386793f8d5fe33f7a2",
+      "size": 40639
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "e31dc88fa7164d78dff38d391bcaf7db13084c6db0467d1cd149637837d6eb82",
+      "size": 8181
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_xelex_mt6789-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-30T19:24:01Z",
+  "vendor": "xelex"
+}

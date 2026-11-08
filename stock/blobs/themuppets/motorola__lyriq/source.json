@@ -1,0 +1,54 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_lyriq.git",
+  "codename": "lyriq",
+  "commit": "2a7778dfd5d3492b1ec068a815bb6aff57bfd831",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_08",
+      "sha256": "5e7da6847a9cfc9745de4e169efb76700757532f0df0c7e57a715a76d764c58e",
+      "size": 4132
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_12",
+      "sha256": "655811b80193d3d075592407b83e190b0e4353dfa51e2f90790058260f494e7d",
+      "size": 4745
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_13",
+      "sha256": "655811b80193d3d075592407b83e190b0e4353dfa51e2f90790058260f494e7d",
+      "size": 4745
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_14",
+      "sha256": "655811b80193d3d075592407b83e190b0e4353dfa51e2f90790058260f494e7d",
+      "size": 4745
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "655811b80193d3d075592407b83e190b0e4353dfa51e2f90790058260f494e7d",
+      "size": 4745
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "9206308971024d9c6b0488ef63fcc4f0306df42fe94fd1bfa1792ed501729a21",
+      "size": 3287
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_core.rc",
+      "sha256": "87d94f35eedd7c34e7184c18fc83251c0df68643196ebf73ae839a365c77aa09",
+      "size": 273
+    }
+  ],
+  "kind": "device",
+  "repo": "proprietary_vendor_motorola_lyriq",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "lyriq"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

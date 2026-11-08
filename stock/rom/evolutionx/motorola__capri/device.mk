@@ -38,7 +38,6 @@ $(call soong_config_set_bool,livedisplay_sysfs,enable_ab,true)
 
 # Moto Camera 4
 TARGET_MOTCAMERA3 := capri
-TARGET_USES_MOTCAMERA3 := true
 
 $(call inherit-product, vendor/motorola/MotCamera4-bengal/motcamera4.mk)
 

@@ -1,7 +1,7 @@
 {
   "devices": {
     "google/akita": {
-      "error": "remote: A repository for this project does not exist yet.\nfatal: repository 'https://dumps.tadiphone.dev/dumps/google/akita.git/' not found",
+      "error": "remote: GitLab is not responding\nfatal: unable to access 'https://dumps.tadiphone.dev/dumps/google/akita.git/': The requested URL returned error: 502",
       "status": "clone-failed"
     },
     "google/baracus": {
@@ -103,7 +103,7 @@
       "status": "ok"
     },
     "google/flame": {
-      "error": "remote: A repository for this project does not exist yet.\nfatal: repository 'https://dumps.tadiphone.dev/dumps/google/flame.git/' not found",
+      "error": "remote: GitLab is not responding\nfatal: unable to access 'https://dumps.tadiphone.dev/dumps/google/flame.git/': The requested URL returned error: 502",
       "status": "clone-failed"
     },
     "google/husky": {

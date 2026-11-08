@@ -1,6 +1,6 @@
 #!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
-# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -70,10 +70,14 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'DEBUG_LEVEL = 3', b'DEBUG_LEVEL = 2'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
+    'system/framework/WfdCommon.jar': blob_fixup()
+        .apktool_patch('blob-patches/WfdCommon.patch'),
     'system_ext/bin/horae': blob_fixup()
         .replace_needed('libprotobuf-cpp-lite.so', 'libprotobuf-cpp-lite-21.7.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
+    'system_ext/etc/seccomp_policy/tcmd.policy': blob_fixup()
+        .add_line_if_missing('lseek: 1'),
+    'system_ext/lib64/libwfdservice.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     'system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so': blob_fixup()
         .replace_needed('libprotobuf-cpp-full.so', 'libprotobuf-cpp-full-21.7.so'),
     'vendor/bin/init.kernel.post_boot-memory.sh': blob_fixup()
@@ -98,7 +102,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/etc/media_codecs_cliffs_v1.xml',
         'vendor/etc/media_codecs_pineapple.xml',
     ): blob_fixup()
-        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video|vendor_audio).*\n', '')
+        .regex_replace('.*media_codecs_(google_audio|google_c2|google_telephony|google_video).*\n', '')
+        .regex_replace('media_codecs_vendor_audio', 'media_codecs_dolby_vision')
         .regex_replace('</MediaCodecs>','    <Include href="media_codecs_dolby_audio.xml" />')
         .add_line_if_missing('</MediaCodecs>'),
     'vendor/etc/init/nicmd.rc': blob_fixup()
@@ -111,10 +116,10 @@ blob_fixups: blob_fixups_user_type = {
             r'(service\s+vendor\.dpmd\s+/vendor/bin/vendor\.dpmd\s*\n)',
             r'\1    user root\n'
         ),
-    'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
-        .add_line_if_missing('sched_get_priority_min: 1')
-        .add_line_if_missing('sched_get_priority_max: 1'),
+    'vendor/etc/pwr/PowerFeatureConfig.xml': blob_fixup()
+        .regex_replace(r'(<Name>GamePowerOptFeature</Name>\s*<Enable>)0(<\/Enable>)', r'\g<1>1\g<2>'),
     'vendor/etc/sensors/hals.conf': blob_fixup()
+        .regex_replace(r'sensors\.qsh\.so', 'sensors.fusionlight.so')
         .add_line_if_missing('sensors.oplus.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),

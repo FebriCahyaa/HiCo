@@ -27,6 +27,9 @@ $(call inherit-product-if-exists, vendor/oplus/camera/camera.mk)
 # Vendor Log Tag
 include $(DEVICE_PATH)/configs/props/logtag.mk
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -51,19 +54,19 @@ PRODUCT_PACKAGES += \
     SettingsOverlayPlatform \
     SettingsProviderOverlay \
     SystemUIOverlayPlatform \
-    TelephonyOverlay \
-    TetheringConfigOverlay \
-    WifiOverlay \
-    WifiOverlayCupida \
-    WifiOverlayDenniz \
     LineageSDKOverlay \
     LineageSDKOverlayDenniz \
     LineageSettingsProviderOverlay \
     ApertureOverlay \
     KeyHandlerOverlay
 
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6893
 
 # Updater
 AB_OTA_UPDATER := false
@@ -83,10 +86,12 @@ PRODUCT_USE_SCUDO := true
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
+    android.hardware.audio@7.0-util.op6893 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.3-impl:32 \
     audio.bluetooth.default \
+    audio.r_submix.default \
     libbluetooth_audio_session \
     libalsautils \
     libnbaio_mono \
@@ -154,6 +159,9 @@ PRODUCT_PACKAGES += \
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
+# Fastbootd
+$(call soong_config_set_bool,fastbootd,bypass_lock_state,true)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -223,10 +231,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/nfc_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nfc_features.xml
-
-# fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -316,6 +320,9 @@ PRODUCT_PACKAGES += \
     fstab.mt6893.ramdisk \
     ueventd.oplus.rc \
     ueventd.mtk.rc
+
+# Gadget
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
 
 # Soundtrigger
 PRODUCT_PACKAGES += \

@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -47,9 +46,6 @@ AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-TARGET_PROVIDES_AUDIO_HAL := true
-TARGET_PROVIDES_LIBAGM := true
-TARGET_PROVIDES_LIBAR_PAL := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := kalama
@@ -61,19 +57,14 @@ BOARD_RAMDISK_USE_LZ4 := true
 
 # DTB / DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-ifeq ($(USE_PREBUILT_KERNEL), true)
-BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_KERNEL_SEPARATED_DTBO := true
-else
 BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 TARGET_NEEDS_DTBOIMAGE := true
-endif
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
@@ -98,7 +89,6 @@ BOARD_KERNEL_IMAGE_NAME := Image
 
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
 
-ifneq ($(USE_PREBUILT_KERNEL), true)
 TARGET_KERNEL_ADDITIONAL_FLAGS := CONFIG_OPLUS_DEVICE_DTBS=y
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
@@ -141,8 +131,8 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/wlan/platform \
     qcom/opensource/wlan/qcacld-3.0/.kiwi_v2 \
     qcom/opensource/bt-kernel \
-    nxp/opensource/driver
-endif
+    nxp/opensource/driver \
+    oplus/kernel/explorer
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -189,13 +179,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-BOOT_SECURITY_PATCH := 2025-10-01
+BOOT_SECURITY_PATCH := 2026-09-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
