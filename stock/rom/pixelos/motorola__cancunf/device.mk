@@ -143,6 +143,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/felica/ymobile/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/mfm.cfg \
     $(LOCAL_PATH)/configs/felica/ymobile/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/mfs.cfg
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.cancunf
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
@@ -166,6 +170,7 @@ $(call inherit-product, hardware/mediatek/frameworks/mediatek-frameworks.mk)
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.telephony.xml \
     $(DEVICE_PATH)/configs/permissions/mediatek-ims-base.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-ims-base.xml \
     $(DEVICE_PATH)/configs/permissions/mediatek-ims-oem-plugin.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-ims-oem-plugin.xml
 
@@ -184,7 +189,7 @@ PRODUCT_PACKAGES += \
     init.mt6855.power.rc \
     init.mt6855.usb.rc \
     init.mtkgki.rc \
-    init.oem.fingerprint.sh \
+    init.oem.fingerprint2.sh \
     init.oem.hw.sh \
     init.project.rc \
     init.recovery.mt6855.rc \
@@ -402,9 +407,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
-    hardware/google/pixel \
+    hardware/google/pixel/pixelstats \
+    hardware/google/pixel/power-libperfmgr \
     hardware/mediatek \
-    hardware/mediatek/libaedv \
+    hardware/mediatek/libion_mtk \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/wlan/wifi_hal \
     $(DEVICE_PATH)
@@ -422,6 +428,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 $(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
@@ -442,6 +449,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     hostapd \
+    wlan_assistant \
     wpa_supplicant
 
 PRODUCT_COPY_FILES += \

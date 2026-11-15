@@ -2,7 +2,7 @@
   "branch": "bka",
   "clone_url": "https://github.com/Evolution-X-Devices/device_nothing_Spacewar.git",
   "codename": "spacewar",
-  "commit": "69bf605162ac89d7ff6bac1feb5613640ec9257d",
+  "commit": "3dff4f5ddca938995b9959540f1eaafd51bf841c",
   "file_count": 7,
   "files": [
     {
@@ -17,18 +17,18 @@
     },
     {
       "path": "BoardConfig.mk",
-      "sha256": "12d1b3a2f75c60aaa6a950d9d76bddeda7723d3f8782b53c8c2c2c3e67fbd9b5",
-      "size": 6607
+      "sha256": "1d3a4207871ad66d0652603bdaf5257d19224a98a264be9ccf124fb1f7d9ed12",
+      "size": 6800
     },
     {
-      "path": "configs/thermal_info_config.json",
-      "sha256": "d3a63094b2dbe451033ffae7937b888a917414a4c0701bfefdcb461e8cf56e38",
-      "size": 9626
+      "path": "configs/thermal/thermal-engine.conf",
+      "sha256": "40ce69c3aabd5b670c7f91922d89c7e47516fccaa0b5eef656cb4b2a886572e8",
+      "size": 634
     },
     {
       "path": "device.mk",
-      "sha256": "339bd1edc2f66803899a21af061dbcf45eb1d8db08cf0798ccf77e23101206c9",
-      "size": 21005
+      "sha256": "97475542f7c9e2fa4e90cdb6f9589c0546d1abfb14f5f84d46b0ae03ab68a806",
+      "size": 20944
     },
     {
       "path": "extract-files.py",
@@ -37,8 +37,8 @@
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "18685418db0638bd3df6ce39508897a70149a53d09c2b854956895fb4af064f9",
-      "size": 64421
+      "sha256": "6eefdd5955d8f3f63aca925757cb4a2ffe28f77353937b292cefdcbbab50aaa2",
+      "size": 64080
     }
   ],
   "kind": "device",
@@ -47,6 +47,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "evolutionx",
-  "upstream_pushed_at": "2026-09-26T09:58:32Z",
+  "upstream_pushed_at": "2026-11-12T14:56:34Z",
   "vendor": "nothing"
 }

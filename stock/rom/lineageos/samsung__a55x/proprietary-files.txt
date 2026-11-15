@@ -1,0 +1,356 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Proprietary files - from A556BXXSIDZI3, unless pinned
+
+# Audio - Configurations
+vendor/etc/dolby/dax-default.xml
+vendor/etc/SoundBoosterParam.txt
+vendor/etc/audio_board_info.xml
+vendor/etc/mixer_usb_default.xml
+vendor/etc/mixer_usb_gray.xml
+vendor/etc/mixer_usb_white.xml
+
+# Audio - Effects
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/lib64/soundfx/libaudiosaplus_sec.so
+vendor/lib64/soundfx/libmyspace.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswspatializer.so
+vendor/lib64/libSamsungPostProcessConvertor.so
+vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib64/lib_SoundAlive_SRC384_ver330.so
+vendor/lib64/lib_SoundAlive_play_plus_ver600.so
+vendor/lib64/lib_SoundBooster_ver2000.so
+vendor/lib64/lib_soundaliveresampler.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libsecaudioinfo.so
+vendor/lib64/libspatializerparamstorage.so
+
+# Audio - Firmware
+vendor/firmware/APBargeIn_AUDIO_SLSI.bin
+vendor/firmware/APDVRX_AUDIO_SLSI.bin
+vendor/firmware/APDVTX_AUDIO_SLSI.bin
+vendor/firmware/AP_AUDIO_SLSI.bin
+vendor/firmware/SoundAlive.bin
+vendor/firmware/SoundBoosterParam.bin
+vendor/firmware/a2dpcom.bin
+vendor/firmware/abox_solution.conf
+vendor/firmware/abox_solution_rev00.conf
+vendor/firmware/abox_solution_ti.conf
+vendor/firmware/abox_system.conf
+vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
+vendor/firmware/avsyncmix.bin
+vendor/firmware/calliope_dram.bin
+vendor/firmware/compress_capture.bin
+vendor/firmware/cs40l26.wmfw
+vendor/firmware/dax_param.bin
+vendor/firmware/dolby.bin
+vendor/firmware/lc3dec.bin
+vendor/firmware/lc3enc.bin
+vendor/firmware/listenbackeffect.bin
+vendor/firmware/param_ti.bin
+vendor/firmware/rxse.bin
+vendor/firmware/sb_ll.bin
+vendor/firmware/sb_music.bin
+vendor/firmware/sb_others.bin
+vendor/firmware/sectiongraph_tplg.bin
+vendor/firmware/sectiongraph_tplg.conf
+vendor/firmware/spkamp.bin
+vendor/firmware/tfa9878.bin
+vendor/firmware/tfa98xx.cnt
+vendor/firmware/tismartpa_driver_tuning.bin
+vendor/firmware/txse1.bin
+vendor/firmware/txse2.bin
+vendor/firmware/volctrl.bin
+vendor/firmware/volumemonitor.bin
+
+# Camera
+vendor/lib64/hw/camera.s5e8845.so
+vendor/lib64/libIRTA.so
+vendor/lib64/libeis_core.so
+vendor/lib64/libeis_interface.so
+vendor/lib64/libsec2lsi_conversion.so
+vendor/lib64/libuniapi.so
+vendor/lib64/libuniplugin.so
+
+# Camera - Dependencies
+vendor/lib64/libexynos_sensor_interface.so
+vendor/lib64/libhwjsqz.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libsemseg.so
+vendor/lib64/libsensorlistener.so
+vendor/lib64/libvpl.so
+vendor/lib64/vendor.samsung.hardware.thermal-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+
+# Camera - Firmware
+vendor/firmware/camera_tilt_calibration_info_1_2
+vendor/firmware/default_configuration.flm.cfg.bin
+vendor/firmware/icc_profile.bin
+vendor/firmware/rear3_dualcal_param.bin
+vendor/firmware/secure_configuration.flm.cfg.bin
+vendor/firmware/setfile_gc05a3.bin
+vendor/firmware/setfile_gn5.bin
+vendor/firmware/setfile_imx258.bin
+vendor/firmware/setfile_imx616.bin
+vendor/firmware/setfile_imx906.bin
+
+# Codec2
+vendor/lib64/libHDRMetaGenerator.so
+
+# Codec2 - Configuration
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_performance_c2.xml
+vendor/etc/media_profiles_V1_0.xml
+
+# Display - Touch - Firmware
+vendor/firmware/tsp/gt9895_a55x.bin
+
+# DQE
+vendor/etc/dqe/DQE_coef_data.xml
+vendor/etc/dqe/calib_data_bypass.xml
+vendor/etc/dqe/calib_data_colormode0.xml
+vendor/etc/dqe/calib_data_colormode0_off.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_hdr.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_natural.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid0.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid1.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid2.xml
+vendor/etc/dqe/calib_data_colortemp.xml
+vendor/etc/dqe/calib_data_eyetemp.xml
+vendor/etc/dqe/calib_data_rgbgain.xml
+vendor/etc/dqe/calib_data_skincolor.xml
+vendor/etc/dqe/calib_data_whitepoint.xml
+vendor/etc/dqe/hdr10Info.xml
+vendor/etc/dqe/hdr10Lut_Default.xml
+vendor/etc/dqe/hdr10Lut_Inner_SRGB.xml
+vendor/etc/dqe/hdr10pInfo.xml
+vendor/etc/dqe/hdr10pLut_Default.xml
+vendor/etc/dqe/hdr10pLut_Inner_SRGB.xml
+vendor/etc/dqe/hdrHwDPU.xml
+vendor/etc/dqe/hdrModuleSpecifiers.xml
+vendor/etc/dqe/hdrTuneLut.xml
+vendor/etc/dqe/hlgInfo.xml
+vendor/etc/dqe/hlgLut_Default.xml
+vendor/etc/dqe/hlgLut_Inner_SRGB.xml
+vendor/etc/dqe/wcgLut.xml
+
+# DRM - Widevine
+vendor/apex/com.google.android.widevine.nonupdatable.apex
+
+# ENN
+vendor/lib64/libenn_common_utils.so
+vendor/lib64/libenn_cpu_operators.so
+vendor/lib64/libenn_engine_lib.so
+vendor/lib64/libenn_model.so
+vendor/lib64/libenn_public_api_cpp.so
+vendor/lib64/libenn_public_api_cpp_lib.so
+vendor/lib64/libenn_user.samsung_slsi.so
+vendor/lib64/libenn_user_driver_cpu.so
+vendor/lib64/libenn_user_driver_gpu_lib.so
+vendor/lib64/libenn_user_driver_unified.so
+vendor/lib64/libenn_user_lib.so
+vendor/lib64/vendor.samsung_slsi.hardware.enn_aidl-V1-ndk.so
+
+# ENN - Firmware
+vendor/firmware/OD_V3.4.10_11_17_QVGA_ROSE_ENN_BGRA.nnc
+vendor/firmware/OD_V3.5.3_06_12_VGA_ROSE_ENN_BGRA.nnc
+
+# Fingerprint - Dependencies
+vendor/lib64/libegis_fp_normal_sensor_test.so
+vendor/lib64/libsfp_sensor.so
+vendor/lib64/libsfp_teegw.so
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
+
+# Fingerprint - Init
+vendor/etc/init/init.fingerprint.rc
+
+# Firmware
+vendor/firmware/AIE.bin:vendor/firmware/SM-A556B/AIE.bin
+vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A556B/calliope_sram.bin
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A556B/mfc_fw.bin
+vendor/firmware/os.checked.bin:vendor/firmware/SM-A556B/os.checked.bin
+vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556B/pablo_icpufw.bin
+vendor/firmware/vts.bin:vendor/firmware/SM-A556B/vts.bin
+
+# Firmware - from SM-A556E - A556EXXSIDZI3
+vendor/firmware/AIE.bin:vendor/firmware/SM-A556E/AIE.bin|98c538d2ff415c48044aa3d450f268d85bb8392c
+vendor/firmware/calliope_sram.bin:vendor/firmware/SM-A556E/calliope_sram.bin|41d0f1ae314779530c9ebcfa1a4c66a6ea379a09
+vendor/firmware/mfc_fw.bin:vendor/firmware/SM-A556E/mfc_fw.bin|84423f8e1b9d4936ae6db828a8d9e680da46af01
+vendor/firmware/os.checked.bin:vendor/firmware/SM-A556E/os.checked.bin|b8b00b689c5bc5451b2e502d2094d18f5d646df3
+vendor/firmware/pablo_icpufw.bin:vendor/firmware/SM-A556E/pablo_icpufw.bin|1e24a8b3f38194bb0dea8667ec2abab57079e7d6
+vendor/firmware/vts.bin:vendor/firmware/SM-A556E/vts.bin|affbd71ecb177db91e5cea7a68550a6c05d10b80
+
+# GNSS
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gps.rose.sh:vendor/bin/hw/gps.sh
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/init.gps.rose.apex.sh.rc:vendor/etc/init/init.gps.rose.rc
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/vendor.samsung.hardware.gnss.lsi.rose-service.rc:vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/gnss_aidl_lib.so:vendor/lib64/gnss_aidl_lib.so
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/libwrappergps.so:vendor/lib64/libwrappergps.so
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/lib64/vendor.samsung.hardware.gnss-V3-ndk.so:vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
+vendor/etc/init/init.gps.rc
+
+# GNSS - A556BXXSABYI1
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/gpsd_K44:vendor/bin/hw/gpsd_K44|2865193f8e27a80066fe92c954f27ffee1aa50cf|a103a7f3b10dbe50ac345c8c34ec8a6b3bf3db60
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/bin/vendor.samsung.hardware.gnss.lsi.rose-service:vendor/bin/hw/vendor.samsung.hardware.gnss-service|1c16eb8af8452b4c2628eee34c72c80233f97eba
+
+# GNSS - Configuration
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.cfg:vendor/etc/gnss/gps.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.debug.cfg:vendor/etc/gnss/gps.debug.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/cfg/gps.rose.issuetracker.cfg:vendor/etc/gnss/gps.issuetracker.cfg
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/ca.pem:vendor/etc/gnss/ca.pem
+
+# GNSS - Firmware - A556BXXSABYI1
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/firmware/firmware_signed_a55xnaxx.bin:vendor/firmware/gnss/firmware_signed_a55xnaxx.bin|b1055b06ed8ccc092815df984482a50acd152346
+vendor/apex/com.samsung.android.gnss.lsi.rose.signed/etc/firmware/firmware_signed_a55xnsxx.bin:vendor/firmware/gnss/firmware_signed_a55xnsxx.bin|3c36342ca215c92268e005d4dd5ab7b7184bcd83
+
+# Graphics
+vendor/etc/Khronos/OpenCL/samsung.icd;SYMLINK=vendor/Khronos/OpenCL/vendors/samsung.icd
+vendor/etc/hdr_samsung_mx.key
+vendor/lib64/egl/libEGL_samsung.so
+vendor/lib64/egl/libGLESv1_CM_samsung.so
+vendor/lib64/egl/libGLESv2_samsung.so
+vendor/lib64/hw/vulkan.samsung.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libSGPUOpenCL.so
+
+# HDR
+vendor/lib64/libhdr_plugin.so:vendor/lib64/libhdr_plugin_a55x.so;FIX_SONAME
+vendor/lib64/vendor.samsung.libcolor.custom.so
+
+# Keymint
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+
+# Miscellaneous
+vendor/etc/floating_feature.xml
+vendor/lib64/libfloatingfeature.so
+vendor/lib64/libsecnativefeature.so
+
+# NFC
+vendor/etc/init/init.nfc.samsung.rc
+vendor/etc/libnfc-sec-vendor.conf
+vendor/etc/libse-gto-hal.conf
+
+# NFC - Firmware
+vendor/etc/nfc/sec_s3nsen6_hwreg.bin
+vendor/etc/nfc/sec_s3nsen6_swreg.bin
+vendor/firmware/nfc/sec_s3nsen6_firmware.bin
+
+# Ramdisk - Touch - Firmware
+vendor/firmware/tsp/gt9895_a55x.bin:recovery/root/vendor/firmware/tsp/gt9895_a55x.bin
+vendor/firmware/tsp/gt9895_a55x.bin:vendor_ramdisk/vendor/firmware/tsp/gt9895_a55x.bin
+
+# Ramdisk - SGPU - Firmware - from SM-A556B
+recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_b.bin|b81fb7ebc7227ec061e11d9af1e3b5a40be664e9
+
+# Ramdisk - SGPU - Firmware - from SM-A556E - A556EXXSIDZI3
+recovery/lib/firmware/sgpu/vangogh_lite_unified_evt0.bin:vendor_ramdisk/lib/firmware/sgpu/vangogh_lite_unified_evt0_e.bin|0c82d839993799403ac6e0790e2e5beb0db1d12f
+
+# RIL
+vendor/bin/hw/rild
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_34.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_34.xml
+vendor/lib64/libVendorSemDataProps.so
+vendor/lib64/libVendorSemTelephonyProps.so
+vendor/lib64/libril_sem.so
+vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME
+vendor/lib64/libsecril-client.so
+vendor/lib64/libsemnativecarrierfeature.so
+vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
+vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
+
+# RIL - Init
+vendor/etc/init/init.baseband.rc
+vendor/etc/init/init.vendor.onebinary.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/etc/init/vendor.samsung.rilchip.slsi.rc
+vendor/etc/init/vendor.samsung.rild.rc
+
+# RIL - Miscellaneous
+vendor/etc/locale/plmn_delta_eng.bin
+vendor/etc/locale/plmn_delta_zh-rCN.bin
+vendor/etc/locale/plmn_delta_zh-rHK.bin
+vendor/etc/locale/plmn_delta_zh-rTW.bin
+vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_attaio.bin
+vendor/etc/plmn_delta_hktw.bin
+vendor/etc/plmn_delta_ltn.bin
+vendor/etc/plmn_delta_usagsm.bin
+vendor/etc/plmn_se13_prebuilt.bin
+
+# Sensors
+vendor/lib64/sensors.inputvirtual.so
+vendor/lib64/sensors.sensorhub.so
+
+# Sensors - Init
+vendor/etc/init/init.sensorhub.rc
+
+# TEEGRIS
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris.rc
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+
+# TEEGRIS - Firmware - from SM-A556B - A556BXXSABYI1
+vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374|c4554c8b466a1bf4191373b349a2eb625ef639da
+vendor/tee/driver/00000000-0000-0000-0000-53626f786476|2614d2230c7be491d94208efc8ee73e354e34b57
+vendor/tee/00000000-0000-0000-0000-0053545354ab|68be33fcc20256d90098b8a8361e916b9c236b37
+vendor/tee/00000000-0000-0000-0000-46494e474552|2374e66833659db5b22fc6c8ebb1611c8290d6a1
+vendor/tee/00000000-0000-0000-0000-474154454b45|1f4a9084d97a9ef0df79956e046ab3e55bed8148
+vendor/tee/00000000-0000-0000-0000-4b45594d5354|bd22a74f70c5759d49ec07a2fa6301c4c87b0df5
+
+# TEEGRIS - Firmware - from SM-A556E - A556EXXSABYI4
+vendor/firmware/tee/A556EXXSABYI4/driver/00000000-0000-0000-0000-494363447256|a6779e0d4b926042abc9fd1ac0eb1310e91397ee
+vendor/firmware/tee/A556EXXSABYI4/driver/00000000-0000-0000-0000-53626f786476|ab95065035e60441700a3e08ef9df1a496794a19
+vendor/firmware/tee/A556EXXSABYI4/00000000-0000-0000-0000-0053545354ab|091cb57af8d0b27479dee2925acb8e6d50f1b922
+vendor/firmware/tee/A556EXXSABYI4/00000000-0000-0000-0000-46494e474552|4ce5ca84c0ad8895f57ef59fb35cd87e58d1f829
+vendor/firmware/tee/A556EXXSABYI4/00000000-0000-0000-0000-474154454b45|f0b52b584aebfbc78a3ef3f503a918ad9e01bef8
+vendor/firmware/tee/A556EXXSABYI4/00000000-0000-0000-0000-4b45594d5354|ed0ddb40aac52a296bc2223aea31bb9d873890a1
+
+# Vibrator - Firmware
+vendor/firmware/RTP_1.bin
+vendor/firmware/RTP_119.bin
+vendor/firmware/RTP_124.bin
+vendor/firmware/RTP_2.bin
+vendor/firmware/RTP_41.bin
+vendor/firmware/RTP_5.bin
+
+# VNDK - from prebuilts/vndk/v34 - android-17.0.0_r1
+vendor/lib64/libcryptx.so;FIX_SONAME|645314168ce45185344f03e86cebd9363791eee1|24151524870d9083332f9417b4fd65f9f64a095c
+
+# Wi-Fi - Configuration
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+
+# Wi-Fi - Firmware
+vendor/firmware/wifi/mx140/wpal
+vendor/firmware/wifi/hydra_config.sdb
+vendor/firmware/wifi/mx140.bin
+vendor/firmware/wifi/mx140_bt.hcf
+vendor/firmware/wifi/mx140_common.hcf
+vendor/firmware/wifi/mx140_wlan.hcf
+vendor/firmware/wifi/mx140_wlan_sw.hcf
+vendor/firmware/wifi/mx140_wlan_t.hcf
+vendor/firmware/wifi/mx140_wlan_t_sw.hcf
+vendor/firmware/wifi/slsi_reg_database.bin
+
+# Wi-Fi - Init
+vendor/bin/init.insmod.sh
+vendor/etc/init/init.exynos.wifi.rc
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_slsi.rc
+vendor/etc/wifi/init.insmod.wifi.cfg
+vendor/etc/init.insmod.vendor_dlkm.cfg

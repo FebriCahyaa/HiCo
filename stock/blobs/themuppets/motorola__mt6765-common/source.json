@@ -1,0 +1,64 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/TheMuppets/proprietary_vendor_motorola_mt6765-common.git",
+  "codename": "mt6765-common",
+  "commit": "c39e37eac04b0556b29aaae261cd05804cd0ca66",
+  "file_count": 9,
+  "files": [
+    {
+      "path": "proprietary/vendor/etc/.tp/.ht120.mtc",
+      "sha256": "fd8a81fb021bdadde879b0dea32cc7e7236088585f9ae1bc6f7d615ea4afb7e6",
+      "size": 2673
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_00",
+      "sha256": "67f2e75f215f08a3a431413f42d3598902c13c3668b3cc95b4f259c38ee4b05b",
+      "size": 3842
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_03",
+      "sha256": "67f2e75f215f08a3a431413f42d3598902c13c3668b3cc95b4f259c38ee4b05b",
+      "size": 3842
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/.thermal_policy_05",
+      "sha256": "67f2e75f215f08a3a431413f42d3598902c13c3668b3cc95b4f259c38ee4b05b",
+      "size": 3842
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.conf",
+      "sha256": "b8c4550e4c1e89502fbab85d41ab97ca7001bc39426dd2329fb77d3479577730",
+      "size": 3844
+    },
+    {
+      "path": "proprietary/vendor/etc/.tp/thermal.off.conf",
+      "sha256": "f767a910d6d163354be7602678ff3b91b57a4941b1b90887e10c722d78a2223a",
+      "size": 3020
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal.rc",
+      "sha256": "8cf87bfd8728c85f591c789bb1f54fd97c2c3fcd51e0ad180a9b99fee169cf36",
+      "size": 83
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermal_manager.rc",
+      "sha256": "d8fe6bb70c4db34942bd4d2db49493ffbc3609e3745da6ba6003ecd1a5dec18d",
+      "size": 190
+    },
+    {
+      "path": "proprietary/vendor/etc/init/init.thermalloadalgod.rc",
+      "sha256": "c4b574f224b859fb9c0b59e7e31666af58b469890fe15f4da0e7ba36953a27e7",
+      "size": 102
+    }
+  ],
+  "kind": "common",
+  "repo": "proprietary_vendor_motorola_mt6765-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [
+    "ellis"
+  ],
+  "skipped_large": [],
+  "source_id": "themuppets",
+  "upstream_pushed_at": null,
+  "vendor": "motorola"
+}

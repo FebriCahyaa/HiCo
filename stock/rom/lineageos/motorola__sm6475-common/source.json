@@ -1,0 +1,47 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_sm6475-common.git",
+  "codename": "sm6475-common",
+  "commit": "a0fe3968b045102f9892c27e5ecc611972eab49f",
+  "file_count": 6,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "e7f93d11038651283f0de0a9e7d3b33e9e34f0f95c2308aee1e4cd9596f00d0a",
+      "size": 1164
+    },
+    {
+      "path": "BoardConfigCommon.mk",
+      "sha256": "0e9807b26d113874cc44b87623e4e2d5483d4770774dbb5dad944929a2337991",
+      "size": 8937
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f19a84bf532fe07858857f7afce70439a3befcb1d13ffd2cd4430831d8cbf425",
+      "size": 4262
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "aaa69d17f7bd9ab9f0597806200e507849db1627fc1943978258b2041601fd1e",
+      "size": 453
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "93cd07eb25c0be903ac2fe61876bc47ce27635765be35d4e2f0c02126d505da3",
+      "size": 40535
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "de0d84c2e368405531e23027027ad70ec5037c0cae8278785c4f2d856f221e30",
+      "size": 10723
+    }
+  ],
+  "kind": "common",
+  "repo": "android_device_motorola_sm6475-common",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-10-21T23:34:30Z",
+  "vendor": "motorola"
+}

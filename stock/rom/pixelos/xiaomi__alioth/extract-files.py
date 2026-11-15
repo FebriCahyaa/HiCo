@@ -28,19 +28,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib/libaudioroute_ext.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
-    'vendor/lib/hw/audio.primary.alioth.so': blob_fixup()
-        .binary_regex_replace(
-            b'/vendor/lib/liba2dpoffload.so',
-            b'liba2dpoffload_alioth.so\x00\x00\x00\x00\x00',
-        )
+    'vendor/lib/hw/audio.primary.kona.so': blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
     'vendor/lib64/camera/components/com.mi.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
-    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
-        .binary_regex_replace(
-            b'\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63',
-            b'\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74',
-        ),
+    'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
+        .binary_regex_replace(b'\x02\x20\x80\x52', b'\x02\xA6\x81\x52'),
     (
         'vendor/lib64/libalAILDC.so',
         'vendor/lib64/libalLDC.so',
