@@ -32,8 +32,6 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     (
-        'vendor/lib64/com.qti.feature2.gs.so',
-        'vendor/lib64/com.qti.feature2.rt.so',
         'vendor/lib64/hw/camera.qcom.so',
         'vendor/lib64/hw/com.qti.chi.override.so',
     ): blob_fixup()

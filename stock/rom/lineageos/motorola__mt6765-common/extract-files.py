@@ -1,0 +1,152 @@
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+from extract_utils.file import File
+from extract_utils.fixups_blob import (
+    BlobFixupCtx,
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
+from extract_utils.main import (
+    ExtractUtils,
+    ExtractUtilsModule,
+)
+from extract_utils.tools import (
+    llvm_objdump_path,
+)
+from extract_utils.utils import (
+    run_cmd,
+)
+
+namespace_imports = [
+    'device/motorola/mt6765-common',
+    'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
+    'hardware/motorola',
+]
+
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+}
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
+}
+
+blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libimsma.so': blob_fixup()
+        .replace_needed('libsink.so', 'libsink-mtk.so'),
+    'system_ext/lib64/libsink-mtk.so': blob_fixup()
+        .add_needed('libaudioclient_shim.so'),
+    'system_ext/priv-app/ImsService/ImsService.apk': blob_fixup()
+        .apktool_patch('blob-patches/ImsService'),
+    'system_ext/priv-app/LPPeService/LPPeService.apk': blob_fixup()
+        .apktool_patch('blob-patches/LPPeService'),
+    ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
+        .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
+    'vendor/etc/gnss/agps_profiles_conf2.xml': blob_fixup()
+        .regex_replace(r'(aosp_pos_mode_enable|aosp_profile_enable|bind_nlp_setting_to_supl)="false"', r'\1="true"'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
+    'vendor/lib64/libmnl_mtk.so' : blob_fixup()
+        .add_needed('libcutils.so'),
+    'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.12-impl.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    'vendor/lib64/hw/vulkan.mt6765.so': blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_createFromHandle')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_getNativeHandle')
+        .clear_symbol_version('AHardwareBuffer_release'),
+    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so',
+     'vendor/lib64/libsysenv.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v32.so'),
+    'vendor/lib/librt_extamp_intf.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek': blob_fixup()
+        .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so')
+        .replace_needed('libcodec2_hidl@1.0.so', 'libcodec2_hidl@1.0-v31.so')
+        .replace_needed('libcodec2_hidl@1.1.so', 'libcodec2_hidl@1.1-v31.so')
+        .replace_needed('libcodec2_hidl@1.2.so', 'libcodec2_hidl@1.2-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so'),
+    'vendor/lib/libcodec2_hidl@1.0-v31.so': blob_fixup()
+        .replace_needed('libstagefright_bufferqueue_helper.so', 'libstagefright_bufferqueue_helper-v31.so')
+        .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libui.so', 'libui-v31.so')
+        .add_needed('libbase_shim.so'),
+    'vendor/lib/libcodec2_hidl@1.1-v31.so': blob_fixup()
+        .replace_needed('libstagefright_bufferqueue_helper.so', 'libstagefright_bufferqueue_helper-v31.so')
+        .replace_needed('libcodec2_hidl@1.0.so', 'libcodec2_hidl@1.0-v31.so')
+        .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libui.so', 'libui-v31.so')
+        .add_needed('libbase_shim.so'),
+    'vendor/lib/libcodec2_hidl@1.2-v31.so': blob_fixup()
+        .replace_needed('libstagefright_bufferqueue_helper.so', 'libstagefright_bufferqueue_helper-v31.so')
+        .replace_needed('libcodec2_hidl@1.0.so', 'libcodec2_hidl@1.0-v31.so')
+        .replace_needed('libcodec2_hidl@1.1.so', 'libcodec2_hidl@1.1-v31.so')
+        .replace_needed('libcodec2_hidl_plugin.so', 'libcodec2_hidl_plugin-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libui.so', 'libui-v31.so')
+        .add_needed('libbase_shim.so'),
+    'vendor/lib/libcodec2_hidl_plugin-v31.so': blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so'),
+    ('vendor/lib/libcodec2_mtk_c2store.so', 'vendor/lib/libcodec2_vpp_qt_plugin.so', 'vendor/lib/libcodec2_vpp_rs_plugin.so'): blob_fixup()
+        .replace_needed('libcodec2_soft_common.so', 'libcodec2_soft_common-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
+        .replace_needed('libsfplugin_ccodec_utils.so', 'libsfplugin_ccodec_utils-v31.so'),
+    ('vendor/lib/libcodec2_mtk_vdec.so', 'vendor/lib/libcodec2_mtk_venc.so'): blob_fixup()
+        .replace_needed('libcodec2_soft_common.so', 'libcodec2_soft_common-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
+        .replace_needed('libsfplugin_ccodec_utils.so', 'libsfplugin_ccodec_utils-v31.so')
+        .replace_needed('libui.so', 'libui-v31.so')
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
+    'vendor/lib/libcodec2_soft_common-v31.so': blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
+        .replace_needed('libsfplugin_ccodec_utils.so', 'libsfplugin_ccodec_utils-v31.so'),
+    'vendor/lib/libcodec2_vndk-v31.so': blob_fixup()
+        .replace_needed('libui.so', 'libui-v31.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    'vendor/lib/libsfplugin_ccodec_utils-v31.so': blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    'vendor/lib/libui-v31.so': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V2-ndk_platform.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/lib64/libutinterface_custom_md.so': blob_fixup()
+        .add_needed('libutinterface_md.so'),
+}  # fmt: skip
+
+module = ExtractUtilsModule(
+    'mt6765-common',
+    'motorola',
+    blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
+)
+
+if __name__ == '__main__':
+    utils = ExtractUtils.device(module)
+    utils.run()

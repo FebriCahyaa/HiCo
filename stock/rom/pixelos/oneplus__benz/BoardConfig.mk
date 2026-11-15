@@ -1,11 +1,9 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
 DEVICE_PATH := device/oneplus/benz
-USE_PREBUILT_KERNEL ?= true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -51,9 +49,6 @@ AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-TARGET_PROVIDES_AUDIO_HAL := true
-TARGET_PROVIDES_LIBAGM := true
-TARGET_PROVIDES_LIBAR_PAL := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := crow
@@ -68,19 +63,14 @@ TARGET_SCREEN_DENSITY := 450
 
 # DTB / DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-ifeq ($(USE_PREBUILT_KERNEL), true)
-BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_KERNEL_SEPARATED_DTBO := true
-else
 BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 TARGET_NEEDS_DTBOIMAGE := true
-endif
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -106,9 +96,6 @@ BOARD_KERNEL_IMAGE_NAME := Image
 
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
 
-ifeq ($(USE_PREBUILT_KERNEL), true)
-include device/oneplus/benz-kernel/BoardConfig.mk
-else
 TARGET_KERNEL_ADDITIONAL_FLAGS := CONFIG_OPLUS_DEVICE_DTBS=y CONFIG_BENZ_DTB=y
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
@@ -152,7 +139,6 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/wlan/qcacld-3.0/.qca6750 \
     qcom/opensource/bt-kernel \
     nxp/opensource/driver
-endif
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -201,7 +187,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
-BOOT_SECURITY_PATCH := 2025-10-01
+BOOT_SECURITY_PATCH := 2026-10-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy

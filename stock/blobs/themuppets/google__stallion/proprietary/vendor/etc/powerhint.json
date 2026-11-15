@@ -1095,7 +1095,7 @@
     },
     {
       "Name": "AAModeProperty",
-      "Path": "vendor.powerhal.mode.aa",
+      "Path": "vendor.thermal.mode.aa",
       "Values": [
         "1",
         "0"
@@ -3400,13 +3400,13 @@
       "PowerHint": "DISPLAY_IDLE",
       "Type": "MaskHint",
       "Value":"DISPLAY_UPDATE_IMMINENT",
-      "EnableProperty": "vendor.powerhal.mode.aa"
+      "EnableProperty": "vendor.thermal.mode.aa"
     },
     {
       "PowerHint": "DISPLAY_IDLE",
       "Type": "MaskHint",
       "Value":"CPU_LOAD_RESET",
-      "EnableProperty": "vendor.powerhal.mode.aa"
+      "EnableProperty": "vendor.thermal.mode.aa"
     },
     {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",

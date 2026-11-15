@@ -176,6 +176,15 @@ PRODUCT_PACKAGES += \
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Face unlock
+TARGET_PROVIDES_FACE_UNLOCK_HAL := true
+
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face-service.xiaomi
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.lineage
@@ -267,6 +276,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/miuicamera-sunny/device.mk)
 
 # Network
 PRODUCT_COPY_FILES += \
@@ -392,7 +404,9 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.3-service.dual_role_usb \
+    android.hardware.usb.gadget-service.qti \
+    usb_compositions.conf
 
 PRODUCT_PACKAGES += \
     init.qcom.usb.rc \

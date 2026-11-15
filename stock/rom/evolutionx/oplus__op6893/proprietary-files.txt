@@ -52,7 +52,6 @@ vendor/bin/rt5512_calibration
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6893.so
-vendor/lib/hw/audio.r_submix.mt6893.so
 vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so;FIX_SONAME
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
@@ -95,7 +94,6 @@ vendor/lib/vendor.oplus.hardware.performance@1.0.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6893.so
-vendor/lib64/hw/audio.r_submix.mt6893.so
 vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so;FIX_SONAME
 vendor/lib64/lib_bsscore.so
 vendor/lib64/lib_iir.so
@@ -356,8 +354,6 @@ vendor/lib/libbluetooth_mtk_pure.so
 vendor/lib/libbluetooth_relayer.so
 vendor/lib/libbluetoothem_mtk.so
 vendor/lib/libbt-vendor.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
@@ -367,8 +363,6 @@ vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbluetooth_relayer.so
 vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
 # Camera - lib3a - from RMX3031_11.C.14
 vendor/lib64/lib3a.af.core.so|0d3c747b1bb8a85289aae1226f9da70927103486
@@ -1235,7 +1229,7 @@ vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so
 
 # Pin patched activity exported engineer mode
-system/priv-app/EngineerMode/EngineerMode.apk|9c90462d8caf098ce923bb947a58e49ca13be579
+system_ext/priv-app/EngineerMode/EngineerMode.apk|9c90462d8caf098ce923bb947a58e49ca13be579
 
 # Extra
 odm/lib/libosensehalclient.so
@@ -1802,8 +1796,6 @@ vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
-vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
@@ -1901,8 +1893,6 @@ vendor/lib64/libsysenv.so
 vendor/lib64/libtranslator_mapi_v3.0.so
 vendor/lib64/libtranslator_mdmi_v2.8.2.so;DISABLE_DEPS
 vendor/lib64/libtranslator_utils.so;DISABLE_DEPS
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so;MODULE_SUFFIX=_vendor
 
 # Secure Element
@@ -2030,9 +2020,7 @@ vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
-vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so

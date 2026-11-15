@@ -1,23 +1,20 @@
-# Unpinned blobs from alioth_global-user 13 RKQ1.211001.001 V816.0.3.0.TKHMIXM release-keys
+# Unpinned blobs from alioth-user 13 RKQ1.211001.001 V816.0.10.0.TKHMIXM release-keys
 
 # ACDB
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_General_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Global_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Handset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Hdmi_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Headset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp:vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 vendor/lib/rfsa/adsp/hrtf5c.bin
-vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
 vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
@@ -31,8 +28,10 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libfrc_mobilenet.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
+vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp.so
+vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libremosaichvx_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -42,21 +41,22 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/misound_karaoke_res.bin
+vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.alioth.so;FIX_SONAME
+vendor/lib/hw/audio.primary.kona.so
 vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_alioth.so;FIX_SONAME
+vendor/lib/liba2dpoffload.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudiocloudctrl.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libfcsam.so
-vendor/lib/libmmhardware.so
 vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
@@ -152,6 +152,7 @@ vendor/lib64/libalLDC.so
 vendor/lib64/libalhLDC.so
 vendor/lib64/libarcdualcamsat.so
 vendor/lib64/libarcmulticamsat.so
+vendor/lib64/libarcsat.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
 vendor/lib64/libarcsoft_distortion_correction.so
@@ -317,21 +318,34 @@ vendor/lib64/camera/components/libubifocus.so
 
 # Camera configs
 vendor/camera/model/model_front.dlc
-vendor/etc/camera/misupermoon/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
-vendor/etc/camera/CFR_para_UW_V01.bin
-vendor/etc/camera/CFR_para_UW_V07.bin
-vendor/etc/camera/CFR_para_W_V01.bin
-vendor/etc/camera/CFR_para_W_V07.bin
-vendor/etc/camera/GpuKernelRepo.pb
-vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
-vendor/etc/camera/LDC_FPC_TUNING_DATA_AI.bin
-vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
-vendor/etc/camera/LDC_PACKDATA_VENDORID_0x03.bin
-vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
+vendor/etc/camera/102_SummerDay.png
+vendor/etc/camera/103_Fantasy.png
+vendor/etc/camera/104_Meet.png
+vendor/etc/camera/105_WindSing.png
+vendor/etc/camera/106_Lost.png
+vendor/etc/camera/107_Central.png
+vendor/etc/camera/108_NorthernEurope.png
+vendor/etc/camera/109_Rome.png
+vendor/etc/camera/110_BlackGold.png
+vendor/etc/camera/111_GreenOrange.png
+vendor/etc/camera/112_CyberPunk.png
+vendor/etc/camera/113_BlackIce.png
+vendor/etc/camera/121_Bleach.png
+vendor/etc/camera/122_Thriller.png
+vendor/etc/camera/123_TealOrange.png
+vendor/etc/camera/124_JapaneseStyle.png
+vendor/etc/camera/125_Latin.png
+vendor/etc/camera/126_Fantasy2.png
+vendor/etc/camera/127_Creamy.png
+vendor/etc/camera/128_Sepia.png
 vendor/etc/camera/ai_enhance.dlc
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/bokehParams.json
 vendor/etc/camera/camxoverridesettings.txt
+vendor/etc/camera/CFR_para_UW_V01.bin
+vendor/etc/camera/CFR_para_UW_V07.bin
+vendor/etc/camera/CFR_para_W_V01.bin
+vendor/etc/camera/CFR_para_W_V07.bin
 vendor/etc/camera/com.xiaomi.dcal.wu.fake
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
 vendor/etc/camera/det_quantize.dlc
@@ -339,11 +353,18 @@ vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/eyelineblush.cng
 vendor/etc/camera/goturn_search_dsp.dlc
 vendor/etc/camera/goturn_target_dsp.dlc
+vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/hdrd_ui9_params.config
+vendor/etc/camera/LDC_FPC_TUNING_DATA_AI.bin
+vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x03.bin
+vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/mibokeh_855_opencl.bin
 vendor/etc/camera/mibokeh_855_parameter.bin
-vendor/etc/camera/model.dat
+vendor/etc/camera/misupermoon/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
 vendor/etc/camera/model_back.dlc
+vendor/etc/camera/model.dat
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/model_front_mibokeh_video.dlc
 vendor/etc/camera/reid_float.dlc
@@ -401,14 +422,23 @@ vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 
+# Dolby
+vendor/etc/dolby/dax-default.xml
+
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
-# HotwordEnrollment - from OS1.0.3.0.TKHMIXM
+# Face unlock
+product/app/MiuiBiometric3389/MiuiBiometric3389.apk:vendor/etc/faceunlock/resources.zip
+
+# HotwordEnrollment - from alioth OS1.0.3.0.TKHMIXM
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|bc8f390ea005b72f37a155a9340238c29052ae5b
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|17f2d9083436c0ff32c1b653c2c55f8ad1c41ba2
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|7549028e83df9783ea5c7fbf78e5d904e2de0cf7
+
+# HWC - from alioth MIUI
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF;REQUIRED=vendor.qti.hardware.display.composer-service.rc,vendor.qti.hardware.display.composer-service.xml|d06e05a67a8764a9fc66918607dd5e6bc61101b2
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc

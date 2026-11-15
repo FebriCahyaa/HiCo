@@ -26,3 +26,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
 include vendor/xiaomi/alioth/BoardConfigVendor.mk
+
+# Camera
+include device/xiaomi/alioth-miuicamera/BoardConfig.mk

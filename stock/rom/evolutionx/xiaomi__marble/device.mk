@@ -17,11 +17,12 @@ $(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-marble/device.mk)
 $(call soong_config_set,camera,package_name,com.android.camera)
 
+# Camera
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml
+
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_marble)
-
-# call gamebar
-$(call inherit-product, packages/apps/GameBar/gamebar.mk)
 
 # Init scripts
 PRODUCT_COPY_FILES += \
@@ -30,6 +31,14 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/mixer_paths_ukee_mtp.xml \
+    $(LOCAL_PATH)/audio/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/resourcemanager_ukee_mtp.xml \
+    $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
+
+# Gamebar
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
 
 # Light
 $(call soong_config_set,xiaomi_sm8450_sensor_notifier,extension_lib,//device/xiaomi/marble:libsensor-notifier-ext-light)
@@ -65,6 +74,9 @@ PRODUCT_PACKAGES += \
     SystemUIResMarble \
     WifiResMarble \
     WifiResMarbleCN
+
+# Remove packages
+PRODUCT_PACKAGES += RemovePackages
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

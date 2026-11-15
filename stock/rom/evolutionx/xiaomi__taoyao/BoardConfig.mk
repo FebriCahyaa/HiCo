@@ -102,7 +102,6 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_CONFIG := taoyao_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/taoyao
-TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_VERSION := 5.4
 
 # Partitions
@@ -192,8 +191,6 @@ BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := //hardware/qcom-caf/wlan/qcwcn:lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 CONFIG_ACS := true
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB_EVENT := "ON"
-CONFIG_IEEE80211AX := true
-QC_WIFI_HIDL_FEATURE_DUAL_AP := true
 WIFI_FEATURE_HOSTAPD_11AX := true
 WIFI_DRIVER_DEFAULT := wlan
 # (1 STA + 1 AP) or (1 STA + 1 of (P2P or NAN)) or (2 AP) or (2 STA)

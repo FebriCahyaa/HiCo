@@ -36,6 +36,24 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
     'vendor/lib64/libdpps.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/seccomp_policy/imsrtp.policy': blob_fixup()
+        .regex_replace('socket: 1\n', '')
+        .regex_replace('\nsigreturn: 1', ''),
+    'vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy': blob_fixup()
+        .regex_replace('futex: 1\ngetpid: 1', 'getpid: 1'),
+    'vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy': blob_fixup()
+        .regex_replace('_llseek: 1\n', '')
+        .regex_replace('getdents64: 1\n', ''),
+    'vendor/etc/configstore/vpp.configstore.xml': blob_fixup()
+        .regex_replace(r'(<capability key="enable" value=)"false"/>', r'\g<1>"true"/>'),
+    (
+        'vendor/lib/libstagefright_soft_ddpdec.so',
+        'vendor/lib/libstagefrightdolby.so',
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libstagefright_soft_ddpdec.so',
+        'vendor/lib64/libstagefrightdolby.so',
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
 }  # fmt: skip
 
 
