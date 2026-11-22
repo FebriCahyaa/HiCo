@@ -3,8 +3,10 @@ aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=1
 audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=256
 audio.offload.gapless.enabled=true
+audio.offload.video=true
+audio.offload.min.duration.secs=30
+af.fast_track_multiplier=1
 persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
@@ -18,6 +20,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.ring.filter.mask=0
 persist.vendor.audio.spv3.enable=true
+persist.vendor.audio.delta.refresh=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 ro.vendor.audio.game.effect=true
 ro.vendor.audio.ring.filter=true
@@ -34,7 +37,6 @@ ro.vendor.audio.us.proximity=true
 ro.vendor.audio.vocal.support=true
 ro.vendor.audio.voice.change.support=true
 ro.vendor.audio.voice.change.youme.support=true
-vendor.audio.capture.enforce_legacy_copp_sr=true
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
@@ -98,6 +100,12 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
+
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
+ro.vendor.audio.dolby.dax.version=DAX3_3.6
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.audio.dolby.dap.control=qdsp
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -169,12 +177,15 @@ vendor.display.enable_optimize_refresh=1
 vendor.display.enable_posted_start_dyn=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
-vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=1
 vendor.display.enable_camera_smooth=1
 vendor.display.enable_allow_idle_fallback=1
 vendor.display.disable_idle_time_video=1
 vendor.display.disable_idle_time_hdr=1
+vendor.display.vds_allow_hwc=1
+
+# DPM
+persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
@@ -189,15 +200,36 @@ persist.sys.fuse.passthrough.enable=true
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
-debug.sf.auto_latch_unsignaled=0
-debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.auto_latch_unsignaled=1
+debug.sf.early.app.duration=16666666
+debug.sf.early.app.duration.60=16666666
+debug.sf.early.app.duration.90=17222222
+debug.sf.early.app.duration.120=11666666
+debug.sf.early.sf.duration=12333333
+debug.sf.early.sf.duration.60=15666666
+debug.sf.early.sf.duration.90=15111111
+debug.sf.early.sf.duration.120=12333333
+debug.sf.earlyGl.app.duration=16666666
+debug.sf.earlyGl.app.duration.60=16666666
+debug.sf.earlyGl.app.duration.90=17222222
+debug.sf.earlyGl.app.duration.120=11666666
+debug.sf.earlyGl.sf.duration=12333333
+debug.sf.earlyGl.sf.duration.60=15666666
+debug.sf.earlyGl.sf.duration.90=15111111
+debug.sf.earlyGl.sf.duration.120=12333333
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
-debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.late.app.duration=16666666
+debug.sf.late.app.duration.60=16666666
+debug.sf.late.app.duration.90=17222222
+debug.sf.late.app.duration.120=11666666
+debug.sf.late.sf.duration=12333333
+debug.sf.late.sf.duration.60=15666666
+debug.sf.late.sf.duration.90=15111111
+debug.sf.late.sf.duration.120=12333333
+debug.sf.frame_rate_multiple_threshold?=120
 debug.sf.treat_170m_as_sRGB=1
+debug.sf.use_phase_offsets_as_durations=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -217,20 +249,12 @@ ro.odm.build.media_performance_class=30
 # NFC
 ro.camera.notify_nfc=1
 
-# OTG
-persist.sys.oem.otg_support=true
-
-# PASR
-vendor.power.pasr.enabled=false
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# Seamless transfer
-sys.fflag.override.settings_seamless_transfer=true
-
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.sensors.sync_request=true
 
 # Shutdown
@@ -252,6 +276,20 @@ vendor.usb.use_gadget_hal=1
 
 # Volume steps
 ro.config.vc_call_vol_steps=11
+
+# VPP
+debug.media.video.vpp=false
+debug.media.vpp.enable=false
+ro.vendor.media.video.frc.support=true
+ro.vendor.media.video.vpp.support=true
+vendor.media.vpp.aie.cade=100
+vendor.media.vpp.aie.ltm=1
+vendor.media.vpp.aie.ltmacebrih=0
+vendor.media.vpp.aie.ltmacebril=20
+vendor.media.vpp.aie.ltmacestr=37
+vendor.media.vpp.aie.ltmsatgain=55
+vendor.media.vpp.aie.ltmsatoff=55
+vendor.media.vpp.debug.value.use=false
 
 # WiFi
 wifi.aware.interface=wifi-aware0

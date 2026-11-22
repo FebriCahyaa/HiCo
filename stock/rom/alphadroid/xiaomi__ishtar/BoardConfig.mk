@@ -35,10 +35,12 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD += \
 	wl2866d.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += \
-	fts_touch_spi.ko
+	fts_touch_spi.ko \
+	qcom_pm8008-regulator.ko
 
 BOOT_KERNEL_MODULES += \
-	fts_touch_spi.ko
+	fts_touch_spi.ko \
+	qcom_pm8008-regulator.ko
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop

@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_xiaomi_plato.git",
+  "codename": "plato",
+  "commit": "59aa4c9acbce748bdf5fc726062c950ed13cf4af",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "774bfef301afb67c8342af14eaca97f50b64642fb46123bf058c9b34d8f62cd4",
+      "size": 20
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "2a0ff5f9c3025672d6501f2ed5715be1ef75cfe98a4b8151085f3756ffea912c",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "a6fabf89a8b8ba0389337e9c680112d4285c7bc4310ff48bf9dd686e7d251073",
+      "size": 1240
+    },
+    {
+      "path": "device.mk",
+      "sha256": "99ada8776bb5af2fca3859536056784978b4edfc01322839b94742ca20b4b1bb",
+      "size": 2618
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "dac0adaded823bcbbbc73e772d7a78aaf47044448a1a902a7fd4697c34a8abb1",
+      "size": 3893
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "097b841d9eb157b908d9247bf38d18908aa90abee3a0b804ba0a86e3c1e59cab",
+      "size": 50701
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "1464f6530cea89760910529b18b19268873d20921a61132074e03a67c39e543e",
+      "size": 1660
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_plato",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-11-18T18:58:35Z",
+  "vendor": "xiaomi"
+}

@@ -1,0 +1,72 @@
+{
+  "branch": "17.0",
+  "clone_url": "https://github.com/crdroidandroid/android_device_xiaomi_creek.git",
+  "codename": "creek",
+  "commit": "b784c42f6ef77b64aa6134c279202d55f8b30a69",
+  "file_count": 11,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "a0e4ad261e1ed2b7e62fd84fe17c0e441c7c16762b57b173914b33ea05486dad",
+      "size": 1008
+    },
+    {
+      "path": "Android.mk",
+      "sha256": "4383c2f3e979ca016c8336e09459b01885f3e48d2665fc41e2411cb1c460ebc5",
+      "size": 207
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "57c1da7f9b4c0835a8aa8965a78bb884fed5b8230841ec32e773365ace0cb7c8",
+      "size": 252
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "6edd19b21291a11460f729c8900a6fc04d2350ba41c067ab6e1c2e2d5a071091",
+      "size": 16161
+    },
+    {
+      "path": "device.mk",
+      "sha256": "088db631fe6159d18acde5af48f8ae0a08ac0a8e4c545792723c114ed5b7a134",
+      "size": 30289
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "ab0a9a1bad6398108aa919763d203bfa151e27c6b51f69fce83c7b55780021e9",
+      "size": 3794
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalService.kt",
+      "sha256": "521ec90acb7a50e715f47a008c1a24ccf5b9bbda7d7576042528bb2d9f8c6d0b",
+      "size": 3001
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalSettingsActivity.kt",
+      "sha256": "41aa471866100af4f3feb4c0ed950bf234aef3dd6fe18a5270ae24c871d4a913",
+      "size": 2237
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalSettingsFragment.kt",
+      "sha256": "28322a0026d6e5f2ac46d359af1d098309585ff76490991cae6e6c8c762d13bb",
+      "size": 10871
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalUtils.kt",
+      "sha256": "0c1409961486ba5b703ff07faf99d7f76b17091fad1b5f4b0ed2aa65c3a33d54",
+      "size": 8806
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3f70ab5f5488c6b8381b671c4bd64ab8a7492822c635e3dc761833fd35d11beb",
+      "size": 93756
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_xiaomi_creek",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "crdroid",
+  "upstream_pushed_at": "2026-11-22T06:21:38Z",
+  "vendor": "xiaomi"
+}

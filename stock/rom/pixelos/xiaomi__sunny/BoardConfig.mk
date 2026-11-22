@@ -101,6 +101,9 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 # Media
 TARGET_USES_ION := true
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-sunny/BoardConfig.mk
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
@@ -159,6 +162,7 @@ VENDOR_SECURITY_PATCH := 2023-10-05
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/lineage/sepolicy/libion/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include hardware/xiaomi/sepolicy/qti/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

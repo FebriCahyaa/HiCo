@@ -39,8 +39,10 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.ims.callcapability@1.0',
         'vendor.qti.ims.callinfo@1.0',
         'vendor.qti.ims.rcsconfig@1.0',
+        'vendor.qti.ims.rcsconfig@1.1',
         'vendor.qti.ims.rcsconfig@2.0',
         'vendor.qti.ims.rcsconfig@2.1',
+        'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
     ('libwifi-hal-ctrl'): lib_fixup_remove,
 }

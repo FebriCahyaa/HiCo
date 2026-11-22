@@ -21,3 +21,17 @@ install_symlink {
     installed_location: "firmware_mnt/image",
     symlink_target: "/vendor/firmware/qca6390",
 }
+
+install_symlink {
+    name: "Ims6_libimscamera_jni_symlink",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimscamera_jni.so",
+    symlink_target: "/system_ext/lib64/libimscamera_jni.so",
+}
+
+install_symlink {
+    name: "Ims6_libimsmedia_jni_symlink",
+    system_ext_specific: true,
+    installed_location: "priv-app/Ims6/lib/arm64/libimsmedia_jni.so",
+    symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
+}

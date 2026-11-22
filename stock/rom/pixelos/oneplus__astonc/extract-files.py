@@ -1,4 +1,4 @@
-#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils:../../../hardware/oplus/extract-utils-ext python3
 #
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
@@ -16,6 +16,10 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+from extract_utils_oplus import (
+    add_generated_thermal_engine_config,
+)
+
 
 namespace_imports = [
     'hardware/oplus',
@@ -41,6 +45,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
         .regex_replace('SystemCamera =  0;  0;  0;  1;  0;  1;', 'SystemCamera =  0;  0;  0;  0;  0;  0;'),
+    'odm/etc/resourcemanager.xml': blob_fixup()
+        .regex_replace('<speaker_protection_enabled>1</speaker_protection_enabled>', '<speaker_protection_enabled>0</speaker_protection_enabled>'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     (
@@ -51,6 +57,7 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     (
+        'odm/lib64/libEISLive.so',
         'odm/lib64/libHIS.so',
         'odm/lib64/libOGLManager.so',
         'odm/lib64/libOPAlgoCamFaceBeautyCap.so'
@@ -87,6 +94,11 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     add_firmware_proprietary_file=True,
+)
+
+add_generated_thermal_engine_config(
+    module,
+    horae_target_config='system_ext/etc/horae/horae_SM8550.conf',
 )
 
 if __name__ == '__main__':

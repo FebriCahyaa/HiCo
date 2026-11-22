@@ -1,0 +1,52 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_samsung_a53x.git",
+  "codename": "a53x",
+  "commit": "32caafb9bc48acd8aec2410f4ba0ae3b8abaca25",
+  "file_count": 7,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "d843104486d6251cc6f5cd37db30ecda7a45872fc67e213597af487b5cdbba0f",
+      "size": 114
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "9f6d7cf2465efb8ba1b6289bdddc47582df579b5abc0bd0d5f2f7832b0d5ecdb",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "0902ad801c241bbb1bdf1c91eb5b1d15f6cd0c4ab3b426061ef6398c8371b910",
+      "size": 235
+    },
+    {
+      "path": "device.mk",
+      "sha256": "362338e8fd1c5eee66209cf6d16163b57464d04463099f166630efcc8059165b",
+      "size": 1812
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "f1494e63be34d9c0d647527dddc9121fdb66e5dbbb7cd6ce7e37847bb08e10d0",
+      "size": 1996
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "32611c105eedc387564d7ae5ab2d0221624d7db465dbd98fbace48fa49d41d60",
+      "size": 233
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "20d6cd3a48f48845c04fba4b5f4e01846439b5b9076667e1367c84428781d605",
+      "size": 8816
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_samsung_a53x",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-11-21T20:54:15Z",
+  "vendor": "samsung"
+}

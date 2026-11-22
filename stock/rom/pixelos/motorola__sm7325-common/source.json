@@ -2,8 +2,8 @@
   "branch": "seventeen",
   "clone_url": "https://github.com/PixelOS-Devices/android_device_motorola_sm7325-common.git",
   "codename": "sm7325-common",
-  "commit": "7796be8bd8769070b1f44607646a29c899ffb6d8",
-  "file_count": 6,
+  "commit": "a691f2f08bf4a1e254773ba041f835caba7b4d34",
+  "file_count": 5,
   "files": [
     {
       "path": "Android.bp",
@@ -12,28 +12,23 @@
     },
     {
       "path": "BoardConfigCommon.mk",
-      "sha256": "fd5aad64fd7b50ad52bb9078d2128ed5a444c87695093963e934b634723e05ca",
-      "size": 6211
+      "sha256": "1e7ab6c74a1225f8fb0beaede6f6fec790444330e5540c6f0e26115ec4356901",
+      "size": 5731
     },
     {
       "path": "extract-files.py",
-      "sha256": "7de03a69e937c446c7899d89f4c94abc1fc21b155734734eb057e9245d23aa35",
-      "size": 2275
+      "sha256": "3e681d5c9129a9f99624d8df92836e2e2421055ac6243db90b2eab878d0bc791",
+      "size": 2515
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "dc6e750f4aee91b861f03a4d03348fd55b925294493f844a1f640629ba2d2554",
-      "size": 38109
-    },
-    {
-      "path": "system.prop",
-      "sha256": "e0e3214f16b3bdb0fa15c1c1ef97ae2030f17298635859cd322e4e306672988e",
-      "size": 1204
+      "sha256": "f124e18ea2f8af50263a873baa1601aff47b51e0342b6256fee263f03d342b2d",
+      "size": 39900
     },
     {
       "path": "vendor.prop",
-      "sha256": "49d3ff4f7009ec3818e2e9d769def0763a6fac5399359cb03a03f1325540985a",
-      "size": 11462
+      "sha256": "909913ea3fb6dd88bc0e5a28b738eec6070422f9a046ac662cbf52ae98cc0a26",
+      "size": 11872
     }
   ],
   "kind": "common",
@@ -42,6 +37,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "pixelos",
-  "upstream_pushed_at": "2026-08-20T13:46:31Z",
+  "upstream_pushed_at": "2026-10-19T18:38:59Z",
   "vendor": "motorola"
 }

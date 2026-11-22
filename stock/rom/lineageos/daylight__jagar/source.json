@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_daylight_jagar.git",
+  "codename": "jagar",
+  "commit": "0b3977592fd377bd0cbc939e01ec87ccdb660092",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7b2e3367c2497b086ff890f59946e6df59ce635c144e755d9c55c590742bece7",
+      "size": 115
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "360d22c8bb29998e0173d7d0f7364f71261b24ac4295592f9f58009905e52e39",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "eba05fecd0d27866643abdce18b763ad10aa209a82a6acc361d2bf9946dcb653",
+      "size": 6128
+    },
+    {
+      "path": "device.mk",
+      "sha256": "e13654364d38acab3bf3d7bb83689f8439cd19a600efc149a8040b392b3aed8f",
+      "size": 11330
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "b80910756681dcbdc5510e0434995c5707a516dba5cbfac7c50da9bbbe7ccd5b",
+      "size": 3533
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "d1686ee6bf7133eaf39767dcbd9579ee86ea0ae6bc886ab0c3f7886180c813d3",
+      "size": 322
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "6e997a516b58de9df0d72b7331a51b08387b72cf1bd810df26440453009c3add",
+      "size": 27091
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "30faf4feddb6e0b6a1210604e6862783cb3fe82c2e3cd629dffa219529eb0fee",
+      "size": 7465
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_daylight_jagar",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-11-21T16:48:07Z",
+  "vendor": "daylight"
+}

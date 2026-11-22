@@ -2,7 +2,7 @@
   "branch": "lineage-24.0",
   "clone_url": "https://github.com/TheMuppets/proprietary_vendor_samsung_sm8550-common.git",
   "codename": "sm8550-common",
-  "commit": "65167fd7a74a05648b09794453907d41fe38432c",
+  "commit": "3d54461dc974ec972ebbbb3adde192563c49f1d9",
   "file_count": 4,
   "files": [
     {
@@ -30,7 +30,9 @@
   "repo": "proprietary_vendor_samsung_sm8550-common",
   "schema": "hico.stock-device-source.v2",
   "serves": [
-    "dm1q"
+    "dm1q",
+    "dm3q",
+    "q5q"
   ],
   "skipped_large": [],
   "source_id": "themuppets",

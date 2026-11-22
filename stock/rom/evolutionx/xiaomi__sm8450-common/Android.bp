@@ -6,11 +6,6 @@
 
 soong_namespace {
     imports: [
-        "hardware/google/interfaces",
-        "hardware/google/pixel/pixelstats",
-        "hardware/google/pixel/power-libperfmgr",
-        "hardware/lineage/interfaces/power-libperfmgr",
-        "hardware/qcom-caf/common/libqti-perfd-client",
         "hardware/xiaomi",
         "vendor/qcom/opensource/commonsys-intf/display",
     ],
@@ -21,6 +16,13 @@ install_symlink {
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
+}
+
+install_symlink {
+    name: "firmware_qca6490_image_symlink",
+    vendor: true,
+    installed_location: "firmware/qca6490",
+    symlink_target: "/vendor/firmware_mnt/image",
 }
 
 install_symlink {

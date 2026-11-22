@@ -1,8 +1,8 @@
 {
-  "branch": "sixteen-qpr2",
+  "branch": "seventeen",
   "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_sm8350-common.git",
   "codename": "sm8350-common",
-  "commit": "890ff28aa31f30beab61641116568a70c7a26132",
+  "commit": "f691494c16998aa9acc2558e544b38317a085322",
   "file_count": 8,
   "files": [
     {
@@ -12,18 +12,18 @@
     },
     {
       "path": "BoardConfigCommon.mk",
-      "sha256": "53152378835d1b1a159c2711218368daa72c2379ca5af42bdb84056c26d8569e",
-      "size": 6302
+      "sha256": "268855748e0500fabaa9c6b0bc405dd2691e3032282be49eb85de02067dd0bab",
+      "size": 6278
     },
     {
       "path": "extract-files.py",
-      "sha256": "6605e436c1f221006cbc49cf8bb20d0c500b170e9fc43dce04bdaf908f716f32",
-      "size": 2638
+      "sha256": "0606c1f0691900ea06ab46a333a8651e7efec0735bac944b17354c27efe429b2",
+      "size": 2822
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "91289b94c778dcaedb709a14d9c28a44b4ca2121f3373f34d43645cd8e7acf72",
-      "size": 30316
+      "sha256": "62cfd705f7dc9e0578ffe4b0503a10da2313a7b867966c29607cb4e8c8225af2",
+      "size": 30356
     },
     {
       "path": "rootdir/etc/init.mi_thermald.rc",
@@ -42,8 +42,8 @@
     },
     {
       "path": "vendor.prop",
-      "sha256": "9135ea2849a53bfa2229b2ec5c8f9a86d4e4e916dcb2725a64556a0e36e6e8b5",
-      "size": 10311
+      "sha256": "8e5a8d4cf4eebd2befaac8f503ea9bf6066c915d3819e713f31fa02df2aab91f",
+      "size": 10306
     }
   ],
   "kind": "common",
@@ -52,6 +52,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "pixelos",
-  "upstream_pushed_at": "2026-03-19T12:14:19Z",
+  "upstream_pushed_at": "2026-11-09T15:14:51Z",
   "vendor": "xiaomi"
 }

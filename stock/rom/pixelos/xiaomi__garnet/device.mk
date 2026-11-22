@@ -158,10 +158,6 @@ PRODUCT_PACKAGES += \
     XiaomiEsimSwitcher \
     XiaomiEuicc
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.xiaomi \
@@ -207,9 +203,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
-
-# ION
-$(call soong_config_set_bool,libion,legacy_impl,true)
 
 # IPACM
 PRODUCT_PACKAGES += \

@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Redmi K60 Pro (OS3.0.304.0.WMKCNXM).
+## are from Xiaomi 13 Pro (OS3.0.311.0.WMBCNXM).
 
 # ACDBs
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -560,6 +560,12 @@ vendor/lib64/libllvm-qgl.so
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
 
+# Hotword Enrollment - from vermeer OS2.0.207.0.VNKMIXM
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|368fc8e844306eef0effa37a02040da356d9b1e3
+product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk|1c18b1e33ee0dcfbaeb8d94cbd6f655259e332c3
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|01b74943dc0ae9353883298d36fba94128536c9e
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|86baa7f5ff304ca3dae863a6954ec6b285ff984c
+
 # IMS (system)
 system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
@@ -800,7 +806,6 @@ odm/bin/hw/android.hardware.nfc@1.2-service-st
 odm/bin/hw/vendor.nxp.hardware.nfc@2.0-service
 odm/etc/init/android.hardware.nfc@1.2-service-st.rc
 odm/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
-odm/etc/permissions/android.hardware.nfc.beam.xml
 odm/etc/libnfc-nci.conf
 odm/etc/libnfc-nxp.conf
 odm/etc/libnfc-nxp_RF.conf
@@ -988,9 +993,9 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
-# RIL (Esim hooking) - from fuxi OS3.0.307.0.WMCCNXM
-system_ext/framework/xiaomi-modem-common.jar|626b4b3a91c381b7db3acf747030285489adb812
-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|2abf20fc99b4494e67d690adac863f58ab8da34f
+# RIL (Esim hooking) - from fuxi OS2.0.200.7.VMCCNXM
+system_ext/framework/mirilhook.jar|1eef4d279b1180ae5ea4095a20ebd18891a9dae5
+system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|cdbd5157e63394d1ce96630f88de5186f9d821d9
 
 # RIL
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk

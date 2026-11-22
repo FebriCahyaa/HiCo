@@ -196,6 +196,9 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
+# Face unlock
+product/app/MiuiBiometric3389/MiuiBiometric3389.apk:vendor/etc/faceunlock/resources.zip
+
 # FM
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
