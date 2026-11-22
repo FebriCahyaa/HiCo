@@ -2,8 +2,8 @@
   "branch": "alpha-16.2",
   "clone_url": "https://github.com/AlphaDroid-devices/device_xiaomi_sm8550-common.git",
   "codename": "sm8550-common",
-  "commit": "2b0f4849da3a21f8f0d9a63da4b0a81c64c1aef6",
-  "file_count": 6,
+  "commit": "7e29a851f2ab9fe7bc9df2309d3c905b4cb9dc98",
+  "file_count": 11,
   "files": [
     {
       "path": "Android.bp",
@@ -12,8 +12,8 @@
     },
     {
       "path": "BoardConfigCommon.mk",
-      "sha256": "e4114453225469b072a074624af943bd7aedd337f0529297c87488d1df67864f",
-      "size": 7439
+      "sha256": "45ef14940a9540a4d903d31323702765e23f069539ff96f81be2521b75045b7a",
+      "size": 7305
     },
     {
       "path": "extract-files.py",
@@ -26,9 +26,34 @@
       "size": 437
     },
     {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalService.java",
+      "sha256": "0263caa60832522de0daabda88816f96697dad5ded19ee38d0e42aa7928d8a0f",
+      "size": 4142
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalSettingsActivity.java",
+      "sha256": "bad91a388b6241156388c59141ad8f7c38262bf61c92a6844bef7d49ac812223",
+      "size": 1455
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalSettingsFragment.java",
+      "sha256": "1f51e3b51f6caf1f7feebdebf229dd1dc19c52557bfb2fe7f181aba53f1e7dc7",
+      "size": 15554
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalTileService.java",
+      "sha256": "cc687c748a9a9f837c6dc3f4e74339f9ced5d0d8e91b355e4127179d898fb66e",
+      "size": 2731
+    },
+    {
+      "path": "parts/src/com/xiaomi/settings/thermal/ThermalUtils.java",
+      "sha256": "97cf4e4072eef0bbbade93f8151279935e48fb1df2078a5dcebdf08f84823ced",
+      "size": 10810
+    },
+    {
       "path": "proprietary-files.txt",
-      "sha256": "3b5f3a284dd2f9887c86f9df1ea3b46aeff00d394bd6ac0dfebd320bcc21320c",
-      "size": 51977
+      "sha256": "3108bc109b0264958fd257f90b845c68cf8d62eaa4ffb54c5db941e924fd4d66",
+      "size": 52484
     },
     {
       "path": "sepolicy/vendor/mi_thermald.te",
@@ -42,6 +67,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "alphadroid",
-  "upstream_pushed_at": "2026-09-19T18:19:09Z",
+  "upstream_pushed_at": "2026-11-16T17:20:00Z",
   "vendor": "xiaomi"
 }

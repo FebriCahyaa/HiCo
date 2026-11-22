@@ -7,6 +7,11 @@
 # Inherit from sm8250-common
 $(call inherit-product, device/motorola/sm8250-common/common.mk)
 
+# A/B
+AB_OTA_PARTITIONS += \
+    vbmeta_system \
+    vendor_boot
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2520
 TARGET_SCREEN_WIDTH := 1080
@@ -22,6 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     FrameworksResNio \
     FrameworksResDeviceRetcn \
+    LineagePlatformDevice \
     SystemUIResNio \
     WifiResDevice \
     WifiResDeviceRetcn

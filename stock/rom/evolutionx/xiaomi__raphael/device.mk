@@ -38,6 +38,7 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera/device.mk)
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface \
+    libmpbase_shim \
     libpiex_shim
 
 # Camera motor
@@ -75,6 +76,9 @@ PRODUCT_COPY_FILES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Remove packages
+PRODUCT_PACKAGES += RemovePackages
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

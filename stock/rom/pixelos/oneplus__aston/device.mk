@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -17,9 +16,8 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2780
 TARGET_SCREEN_WIDTH := 1264
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    AstonParts
+# Camera
+$(call inherit-product, vendor/oplus/camera/aston/opluscamera.mk)
 
 # Display
 PRODUCT_COPY_FILES += \
@@ -27,6 +25,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     sys.brightness.disable_gamma_conversion=true
+
+$(call soong_config_set,qtidisplay,pxlw_vendor_namespace,vendor/oneplus/aston)
+$(call soong_config_set_bool,surfaceflinger,supports_oplus_adfr,true)
+$(call soong_config_set_bool,qtidisplay,pxlw_hw_iris7,true)
 
 # IR
 PRODUCT_COPY_FILES += \
@@ -37,17 +39,23 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
+$(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
 
 # LiveDisplay
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
 
+# OplusParts
+$(call inherit-product, packages/apps/OplusParts/oplusparts.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-custom \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     FrameworksResEuicc_NA \
+    KeyHandlerResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
@@ -57,12 +65,11 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libperfmgr-ext-aston)
 
 # Regional properties
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23801/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23801/build.default.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23861/build.EU.prop:$(TARGET_COPY_OUT_ODM)/etc/23861/build.EU.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23861/build.IN.prop:$(TARGET_COPY_OUT_ODM)/etc/23861/build.IN.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23861/build.NA.prop:$(TARGET_COPY_OUT_ODM)/etc/23861/build.NA.prop \
-    $(LOCAL_PATH)/recovery/root/vendor/odm/etc/23861/build.default.prop:$(TARGET_COPY_OUT_ODM)/etc/23861/build.default.prop
+REGIONAL_PROP_FILES := $(wildcard $(LOCAL_PATH)/properties/*/*.prop)
+
+PRODUCT_COPY_FILES += $(foreach f,$(REGIONAL_PROP_FILES), \
+    $(f):$(TARGET_COPY_OUT_ODM)/etc/$(patsubst $(LOCAL_PATH)/properties/%,%,$(f)) \
+    $(f):$(TARGET_COPY_OUT_RECOVERY)/root/vendor/odm/etc/$(patsubst $(LOCAL_PATH)/properties/%,%,$(f)))
 
 # Sensors
 PRODUCT_PACKAGES += \

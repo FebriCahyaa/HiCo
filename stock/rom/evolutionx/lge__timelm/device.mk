@@ -19,17 +19,18 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlay \
+    CarrierConfigOverlay \
+    FrameworksResOverlay \
+    LineageSDKOverlay \
+    LineageSettingsOverlay \
+    LineageSettingsProviderOverlay \
     NcmTetheringOverlay \
-    TimelmApertureOverlay \
-    TimelmCarrierConfigOverlay \
-    TimelmFrameworksOverlay \
-    TimelmLineageSDKOverlay \
-    TimelmLineageSettingsOverlay \
-    TimelmLineageSettingsProviderOverlay \
-    TimelmSettingsOverlay \
-    TimelmSystemUIOverlay \
     TimelmTelephonyOverlay \
-    LGEAISound
+    LGEAISound \
+    SettingsOverlay \
+    SystemUIOverlay \
+    WifiResourcesOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -102,7 +103,6 @@ AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc) \
-    $(AUDIO_HAL_DIR)/configs/kona/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(AUDIO_HAL_DIR)/configs/kona/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
@@ -120,7 +120,7 @@ TARGET_SCREEN_HEIGHT := 2460
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.lineage
+    android.hardware.camera.provider-service.lge
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -148,10 +148,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.lge
-
-$(call soong_config_set_bool,LGE_FINGERPRINT_HAL,TARGET_HAS_EGISTEC_UDFPS,true)
+$(call inherit-product, hardware/lge/fingerprint/udfps.mk)
 
 # FM packages
 PRODUCT_PACKAGES += \
@@ -301,7 +298,28 @@ $(call soong_config_set,lineage_recovery,bootloader_message_offset,128)
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5-service.lge
+    android.hardware.radio-service.lge
+
+# IMS JNI Symlinks
+PRODUCT_PACKAGES += \
+    Ims6_libimscamera_jni_symlink \
+    Ims6_libimsmedia_jni_symlink \
+    libbinder_ims \
+    libgui_ims \
+    libhidlbase_ims \
+    libhidltransport_ims \
+    libhwbinder_ims \
+    libmedia_ims \
+    libui_ims \
+    libutils_ims \
+    libbinder_ims_priv-app \
+    libgui_ims_priv-app \
+    libhidlbase_ims_priv-app \
+    libhidltransport_ims_priv-app \
+    libhwbinder_ims_priv-app \
+    libmedia_ims_priv-app \
+    libui_ims_priv-app \
+    libutils_ims_priv-app
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -328,8 +346,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
-    libsensorndkbridge \
-    sensors.lge
+    libsensorndkbridge
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -394,7 +411,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    TimelmWifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 

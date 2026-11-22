@@ -4,6 +4,15 @@ ro.hardware.audio.primary=raphael
 # Camera
 ro.product.mod_device=raphael_global
 
+# The Xiaomi camera HAL expects camera ids to be its role ids. Translate the
+# framework ids 0..10 through the legacy provider's remap list.
+vendor.camera.remapid=0 1 20 21 60 61 62 63 120 100 101
+
+# CamX's high speed batch_size_max assumes a 60 fps preview; advertise it
+# so the framework's batches match, and return HFR video buffers per frame.
+ro.vendor.camera.hfr.preview_fps=60
+ro.vendor.camera.hfr.batch_video_buffers=false
+
 # Fingerprint
 persist.vendor.fingerprint.sensor_location=540|2026|95
 persist.vendor.fingerprint.type=udfps_optical

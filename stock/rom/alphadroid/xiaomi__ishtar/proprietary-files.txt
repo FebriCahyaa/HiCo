@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are taken from ishtar-ota_full-OS3.0.307.0.WMACNXM-user-16.0
+## are taken from ishtar-ota_full-OS3.0.308.0.WMACNXM-user-16.0
 
 # ACDBs
 odm/etc/acdbdata/Forte/Forte_acdb_cal.acdb:vendor/etc/acdbdata/kalama_mtp/Forte_acdb_cal.acdb
@@ -929,6 +929,7 @@ odm/etc/camera/xiaomi/thirdpartysnapshot.json
 odm/etc/camera/xiaomiSceneDetection.xml
 odm/etc/camera/xmi_slmt_4x_1080p.dlc
 odm/etc/camera/xmi_slmt_4x_720p.dlc
+odm/etc/cit_param_config.json
 odm/etc/init/init.vl53l5.rc
 odm/etc/init/vendor.qti.camera.provider-service_64.rc
 odm/etc/vintf/manifest/vendor.xiaomi.camera.aon-impl.xml
@@ -1199,9 +1200,11 @@ odm/lib64/libjpege.so
 odm/lib64/libmctfengine_stub.so
 odm/lib64/libmfGhostDetection.so
 odm/lib64/libmfec.so
+odm/lib64/libmiSensorCtrl.so
 odm/lib64/libmiSAT.so
 odm/lib64/libmiSATTranslate.so
 odm/lib64/libmiZA.so
+odm/lib64/libmi_dspp.so
 odm/lib64/libmi_hdr_raw.so
 odm/lib64/libmi_llhdr_raw.so
 odm/lib64/libmi_mfnr_raw.so
@@ -1273,6 +1276,7 @@ odm/lib64/librawnrv2_shared.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/librfs_warp.so
+odm/lib64/libsdr2hdr.so
 odm/lib64/libsfeShiftExtrapolation.so
 odm/lib64/libshadowhook.so
 odm/lib64/libsupermoon.so
@@ -1281,6 +1285,7 @@ odm/lib64/libtfestriping.so
 odm/lib64/libubifocus.so
 odm/lib64/libvideoBokeh.so
 odm/lib64/libvideoml.so
+odm/lib64/libvideomode.so
 odm/lib64/libvidhance.so
 odm/lib64/libvidhance_active_ois.so
 odm/lib64/libvidhance_face_stabilizer.so

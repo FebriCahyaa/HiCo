@@ -1,0 +1,57 @@
+{
+  "branch": "lineage-24.0",
+  "clone_url": "https://github.com/LineageOS/android_device_motorola_ellis.git",
+  "codename": "ellis",
+  "commit": "81c436de1d17c5275144035613557020d98eabb6",
+  "file_count": 8,
+  "files": [
+    {
+      "path": "Android.bp",
+      "sha256": "7e54d9b579f27fe1625f805418096439e63bc482dfe3e47ea6c5fd6a18e9a0f4",
+      "size": 120
+    },
+    {
+      "path": "AndroidProducts.mk",
+      "sha256": "f6bcd19a8d2ce837272e81b01e82379a112fc8584dbfc579a44b13ed07446dd7",
+      "size": 148
+    },
+    {
+      "path": "BoardConfig.mk",
+      "sha256": "aa2f7613c98e57b4bd4bbd4ab90393fe7deb0da4f90361b5d34a6446c5923cca",
+      "size": 406
+    },
+    {
+      "path": "device.mk",
+      "sha256": "ac85cbbb300ee687b014a0c239db2cb64c37e16d3dd49985ed96c4426d53547d",
+      "size": 771
+    },
+    {
+      "path": "extract-files.py",
+      "sha256": "e9163144e3bbadcbb66445c3151da402ebec6175ba28f0fa59695293bf2b7e6c",
+      "size": 2046
+    },
+    {
+      "path": "lineage.dependencies",
+      "sha256": "fc17aa65dd436daf4c9e76fa5c85d0bfccff6af01626e72afc038dbbd6ce1ef3",
+      "size": 122
+    },
+    {
+      "path": "proprietary-files.txt",
+      "sha256": "3a496a218294c9cb9387d3005c3959f05403888cd32346c675ee3d976b38d348",
+      "size": 12660
+    },
+    {
+      "path": "vendor.prop",
+      "sha256": "78197bfa6e3dc86ce59d1727a010432fd3db65a0270ee8f9fd9f4b0f353c13c8",
+      "size": 163
+    }
+  ],
+  "kind": "device",
+  "repo": "android_device_motorola_ellis",
+  "schema": "hico.stock-device-source.v2",
+  "serves": [],
+  "skipped_large": [],
+  "source_id": "lineageos",
+  "upstream_pushed_at": "2026-11-06T21:16:51Z",
+  "vendor": "motorola"
+}

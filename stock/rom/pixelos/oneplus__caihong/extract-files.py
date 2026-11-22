@@ -1,6 +1,6 @@
-#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils:../../../hardware/oplus/extract-utils-ext python3
 #
-# SPDX-FileCopyrightText: 2024 The LineageOS Project
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -15,6 +15,9 @@ from extract_utils.fixups_lib import (
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
+)
+from extract_utils_oplus import (
+    add_generated_thermal_engine_config,
 )
 
 namespace_imports = [
@@ -34,9 +37,6 @@ lib_fixups: lib_fixups_user_type = {
         'libhwconfigurationutil',
         'libpwirisfeature',
         'libpwirishalwrapper',
-        'vendor.oplus.hardware.camera_rfi-V1-ndk',
-        'vendor.oplus.hardware.cammidasservice-V1-ndk',
-        'vendor.oplus.hardware.displaycolorfeature-V1-ndk',
         'vendor.pixelworks.hardware.display@1.0',
         'vendor.pixelworks.hardware.display@1.1',
         'vendor.pixelworks.hardware.display@1.2',
@@ -65,6 +65,16 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
+    (
+        'odm/lib64/libdisplayfossfeature_nature.so',
+        'odm/lib64/libdisplaycolorfeature.so',
+        'vendor/lib64/libdpps.so',
+        'vendor/lib64/libsnapdragoncolor-manager.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/lib64/libcamera2ndk_vendor.so': blob_fixup()
+        .replace_needed('android.frameworks.cameraservice.device-V1-ndk.so', 'android.frameworks.cameraservice.device-V3-ndk.so')
+        .replace_needed('android.frameworks.cameraservice.service-V1-ndk.so', 'android.frameworks.cameraservice.service-V3-ndk.so'),
     'vendor/lib64/libsdmcore.so': blob_fixup()
         .add_needed('libbase-v33.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
@@ -78,6 +88,11 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     add_firmware_proprietary_file=True,
+)
+
+add_generated_thermal_engine_config(
+    module,
+    horae_target_config='system_ext/etc/horae/horae_SM8650_CAIHONG.conf',
 )
 
 if __name__ == '__main__':

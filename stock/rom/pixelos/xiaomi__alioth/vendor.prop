@@ -1,43 +1,56 @@
 # Audio
-persist.vendor.audio.delta.refresh=true
 persist.vendor.audio.misound.disable=true
 ro.audio.monitorRotation=true
 ro.vendor.audio.enhance.support=false
+ro.vendor.audio.afe.record=true
+ro.vendor.audio.aiasst.support=true
 ro.vendor.audio.gain.support=true
 ro.vendor.audio.karaok.support=true
+ro.vendor.audio.multiroute=true
 ro.vendor.audio.ns.support=false
 ro.vendor.audio.sfx.audiovisual=false
-ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
-ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
-ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
-ro.vendor.audio.soundtrigger.appdefine.vop.level=10
-ro.vendor.audio.soundtrigger.lowpower=true
-ro.vendor.audio.soundtrigger.snr=16
+ro.vendor.audio.soundtrigger.pangaea=1
 ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.lowpower=true
 ro.vendor.audio.soundtrigger.training.level=50
-ro.vendor.audio.soundtrigger.xanzn.cnn.level=80
 ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
 ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=80
 ro.vendor.audio.soundtrigger.xanzn.vop.level=10
-ro.vendor.audio.soundtrigger.xatx.cnn.level=45
 ro.vendor.audio.soundtrigger.xatx.gmm.level=25
 ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
+ro.vendor.audio.soundtrigger.xatx.cnn.level=45
 ro.vendor.audio.soundtrigger.xatx.vop.level=-10
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=65
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=35
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+ro.vendor.audio.soundtrigger.snr=16
 ro.vendor.audio.spk.clean=true
 ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.us.proximity=true
 ro.vendor.audio.us.type=mius
 ro.vendor.audio.zoom.support=true
 ro.vendor.audio.zoom.type=1
-vendor.audio.adm.buffering.ms=2
-vendor.audio.offload.buffer.size.kb=256
-vendor.audio_hal.period_multiplier=2
+ro.vendor.audio.support.sound.id=true
+ro.vendor.audio.surround.headphone.only=true
+vendor.audio.adm.buffering.ms=6
+vendor.audio.feature.compr_voip.enable=false
+vendor.audio_hal.period_multiplier=3
+vendor.audio.offload.buffer.size.kb=32
 
-# Audio hardware
-ro.hardware.audio.primary=alioth
+# Audio - ACDB(Forte)
+persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
+persist.vendor.audio.calfile1=/vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+persist.vendor.audio.calfile2=/vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
+persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
+persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
+persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
+persist.vendor.audio.calfile7=/vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+persist.vendor.audio.calfile8=/vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Display
-ro.vendor.display.paneltype=2
-vendor.display.defer_fps_frame_count=2
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
@@ -74,6 +87,9 @@ ro.vendor.standard.video.enable=true
 ro.vendor.video.decode.only=false
 ro.vendor.whitepoint_calibration_enable=false
 vendor.hbm.enable=true
+ro.vendor.display.truetone.enable=true
+ro.vendor.display.sunlight.enable=true
+ro.vendor.display.doze_brightness.enable=true
 
 # Fingerprint
 persist.vendor.fingerprint.sensor_location=1080|965|115|local:4630946736638489729

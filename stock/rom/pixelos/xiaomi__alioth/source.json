@@ -2,8 +2,8 @@
   "branch": "seventeen",
   "clone_url": "https://github.com/PixelOS-Devices/android_device_xiaomi_alioth.git",
   "codename": "alioth",
-  "commit": "a5f4cc6d3337d3df4938a27893316cffa9046762",
-  "file_count": 8,
+  "commit": "960697e08959f3a5e428164b06cc9e61fd893842",
+  "file_count": 9,
   "files": [
     {
       "path": "Android.bp",
@@ -22,28 +22,33 @@
     },
     {
       "path": "BoardConfig.mk",
-      "sha256": "491d3b704c31851d1a074d12f419b276ac9fc705fa63e7bb5a3367817efed24d",
-      "size": 589
+      "sha256": "f70bfdea9e7f5b46eef4f2ec7c9ae24828ff97780416e29542a525b84403804e",
+      "size": 654
     },
     {
       "path": "device.mk",
-      "sha256": "4d0fb31ed3851336f4767a77b65a9bb2e5009ba1a38a5fdca74fe1a68ab9abf3",
-      "size": 1396
+      "sha256": "d78a602660cb64427d01d497aef67bb32731e01c50a0fb6e2dfa6ffd54ffedf7",
+      "size": 1486
     },
     {
       "path": "extract-files.py",
-      "sha256": "8e60047cefc8bb664a82dbb1000922372755bf0a600c13627d201b02540f9866",
-      "size": 3424
+      "sha256": "1044453ee1fb99cd4b8dca01d7239b48ff264679d9790e20e41f07ca9d092ab9",
+      "size": 3184
     },
     {
       "path": "proprietary-files.txt",
-      "sha256": "d2f24d55cc2dcc6a40b33161fa696fb2f12f652d40748e916926f8f3c3c3ffc6",
-      "size": 22544
+      "sha256": "8b8b62405c0fc5c213b15cde190ecbc6394469038b794d66c835670447798728",
+      "size": 23194
     },
     {
       "path": "vendor.prop",
-      "sha256": "32acb85c78f3b28225d60c17901fef167267aaa95986df55d17ce2f8503f57d9",
-      "size": 2838
+      "sha256": "a7b2a1b9eb086eefb871ce7ef75ff3ba5972b83e9cf142ff287b4b6593388615",
+      "size": 3837
+    },
+    {
+      "path": "vendorsetup.sh",
+      "sha256": "e2f312242c4aeb1750855cc372838eb296a790a1a5f8ad4d77feeff900bcba06",
+      "size": 119
     }
   ],
   "kind": "device",
@@ -52,6 +57,6 @@
   "serves": [],
   "skipped_large": [],
   "source_id": "pixelos",
-  "upstream_pushed_at": "2026-09-22T11:19:22Z",
+  "upstream_pushed_at": "2026-11-12T11:17:52Z",
   "vendor": "xiaomi"
 }
